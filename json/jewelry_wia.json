@@ -1,0 +1,32 @@
+{
+	"name": "Jewelry (with indefinitive article) Generator",
+	"resultPattern": "{jewelry wia}",
+	"tables": [
+		{
+			"name": "jewelry wia",
+			"entries": [
+		    	"an amulet",
+        		"an anklet",
+        		"an armlet",
+        		"a bangle",
+        		"a bracelet",
+        		"a brooch",
+        		"a chain",
+        		"a charm bracelet",
+        		"a chatelaine",
+        		"a choker",
+        		"an earring",
+        		"a gorgerine",
+        		"a locket",
+        		"a medallion",
+        		"a necklace",
+        		"a pendant",
+        		"a periapt",
+        		"a pin",
+        		"a ring",
+        		"a scarab",
+        		"a torc"
+			]
+		}
+	]
+}

@@ -1,0 +1,38 @@
+{
+	"name": "Adjective, Thing Generator",
+	"resultPattern": "{adjThing}",
+	"tables": [
+		{
+			"name": "adjThing",
+			"entries": [
+		    	"accursed",
+		        "ancestral",
+		        "ancient",
+		        "animated", 
+		    	"blinding",
+        		"broken",
+        		"{lib:color}",
+        		"dancing",
+        		"enchanted",
+		        "ethereal",
+        		"fiery",
+        		"flaming",
+        		"frosted",
+        		"gilded",
+        		"glamered",
+        		"holy",
+        		"infamous",
+        		"lost",
+        		"magical",
+        		"powerful",
+        		"royal",
+        		"shadowy",
+        		"shining",
+        		"smoking",
+        		"thundering",
+        		"unholy",
+        		"vicious"
+			]
+		}
+	]
+}

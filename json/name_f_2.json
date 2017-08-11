@@ -1,0 +1,41 @@
+{
+	"name": "Name (Female) Generator",
+	"resultPattern": "{name f}",
+	"tables": [
+		{
+			"name": "name f",
+			"entries": [
+				"Abriella",
+				"Ahlia",
+				"Beaunyld",
+				"Caili",
+				"Danyell",
+				"Delma",
+				"Eavella",
+				"Faustina",
+				"Florine",
+				"Gwynn",
+				"Ivoris",
+				"Jacinta",
+				"Johana",
+				"Karri",
+				"Kimber",
+				"Kirstalia",
+				"Naida",
+				"Nakesha",
+				"Noelia",
+				"Olvyris",
+				"Raina",
+				"Rosalind",
+				"Salema",
+				"Tiania",
+				"Ursula",
+				"Usha",
+				"Xiomara",
+				"Yrnette",
+				"Zenia",
+				"Zoraida"
+			]
+		}
+	]
+}

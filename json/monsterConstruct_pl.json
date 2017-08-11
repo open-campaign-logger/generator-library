@@ -1,0 +1,27 @@
+{
+	"name": "Monster, Construct (plural) Generator",
+	"resultPattern": "{monsterConstruct pl}",
+	"tables": [
+		{
+			"name": "monsterConstruct pl",
+			"entries": [
+				"suits of animated armor",
+				"clay golems",
+				"duodrones",
+				"flesh golems",
+				"flying swords",
+				"helmed horrors",
+				"homunculi",
+				"iron golems",
+				"monodrones",
+				"pentadrones",
+				"quadrones",
+				"rugs of smothering",
+				"scarecrows",
+				"shield guardians",
+				"stone golems",
+				"tridrones"
+			]
+		}
+	]
+}

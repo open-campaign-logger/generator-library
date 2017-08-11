@@ -1,0 +1,34 @@
+{
+	"name": "Monster, Elemental (with indefinitive article) Generator",
+	"resultPattern": "{monsterElemental wia}",
+	"tables": [
+		{
+			"name": "monsterElemental wia",
+			"entries": [
+				"an air elemental",
+				"an azer",
+				"a dao",
+				"a djinni",
+				"a dust mephit",
+				"an earth elemental",
+				"an efreeti",
+				"a fire elemental",
+				"a fire snake",
+				"a galeb duhr",
+				"a gargoyle",
+				"an ice mephit",
+				"an invisible stalker",
+				"a magma mephit",
+				"a magmin",
+				"a marid",
+				"a mud mephit",
+				"a salamander",
+				"a smoke mephit",
+				"a steam mephit",
+				"a water elemental",
+				"a water weird",
+				"a xorn"
+			]
+		}
+	]
+}

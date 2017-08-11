@@ -1,0 +1,41 @@
+{
+	"name": "Name (Female) 1 Generator",
+	"resultPattern": "{name f 1}",
+	"tables": [
+		{
+			"name": "name f 1",
+			"entries": [
+				"Adah",
+				"Adaline",
+				"Adriel",
+				"Anya",
+				"Briseis",
+				"Cara",
+				"Cora",
+				"Dagmar",
+				"Delena",
+				"Dionna",
+				"Evadne",
+				"Hana",
+				"Hermelinda",
+				"Hortensia",
+				"Jynerva",
+				"Lanelle",
+				"Leisa",
+				"Lizbeth",
+				"Lorena",
+				"Milanthe",
+				"Petronila",
+				"Qiana",
+				"Quyen",
+		    	"Sarielle",
+				"Theia",
+				"Urielle",
+				"Valene",
+				"Valeria",
+				"Verda",
+				"Xara"
+			]
+		}
+	]
+}

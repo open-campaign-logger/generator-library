@@ -1,0 +1,28 @@
+{
+	"name": "Place, Terrain Generator",
+	"resultPattern": "{placeTerrain}",
+	"tables": [
+		{
+			"name": "placeTerrain",
+			"entries": [
+		    	"canyon",
+        		"cliff",
+        		"desert",
+        		"field",
+        		"forest",
+        		"grassland",
+        		"hill",
+        		"jungle",
+        		"marsh",
+        		"mountain",
+        		"scrubland",
+        		"swamp",
+        		"tundra",
+        		"valley",
+        		"volcano",
+        		"wasteland",
+        		"wilderness"
+			]
+		}
+	]
+}

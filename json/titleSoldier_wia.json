@@ -1,0 +1,24 @@
+{
+	"name": "Title, Soldier (with indefinitive article) Generator",
+	"resultPattern": "{titleSoldier wia}",
+	"tables": [
+		{
+			"name": "titleSoldier wia",
+			"entries": [
+		    	"an archer",
+        		"a billman",
+        		"a cavalryman",
+        		"a crossbowman",
+        		"a guard",
+        		"a halberdier",
+        		"a hoplite",
+        		"an infantryman",
+        		"a knight",
+        		"a man-at-arms",
+        		"a mercenary",
+        		"a sapper",
+        		"a siege engineer"
+			]
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"name": "Name (Male) 1 Generator",
+	"resultPattern": "{name m 1}",
+	"tables": [
+		{
+			"name": "name m 1",
+			"entries": [
+				"Abarden",
+				"Ambrose",
+				"Boaldeir",
+				"Brylant",
+				"Crestin",
+				"Dagos",
+				"Garith",
+				"Heramon",
+				"Iagan",
+				"Kibidon",
+				"Kael",
+				"Lyron",
+				"Merkesh",
+				"Modesteles",
+				"Monterareis",
+				"Nyfain",
+				"Orellis",
+				"Pasquale",
+				"Phairidon",
+				"Porfirio",
+				"Qysan",
+				"Rhillion",
+				"Rogist",
+				"Rythern",
+		    	"Sebastian",
+				"Thaniel",
+				"Tyralis",
+				"Urien",
+				"Virgilis",
+				"Welentor"
+			]
+		}
+	]
+}

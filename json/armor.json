@@ -1,0 +1,25 @@
+{
+	"name": "Armor Generator",
+	"resultPattern": "{armor}",
+	"tables": [
+		{
+			"name": "armor",
+			"entries": [
+		    	"breastplate",
+        		"suit of chain mail armor",
+        		"chain shirt",
+        		"suit of half plate armor",
+        		"helmet",
+        		"suit of hide armor",
+        		"suit of leather armor",
+        		"suit of padded armor",
+        		"suit of plate mail armor ",
+        		"suit of ring mail armor",
+        		"suit of scale mail armor",
+        		"shield",
+        		"suit of splint mail armor",
+        		"suit of studded leather armor"
+			]
+		}
+	]
+}

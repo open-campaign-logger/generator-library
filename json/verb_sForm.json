@@ -1,0 +1,40 @@
+{
+	"name": "Verb (-s form) Generator",
+	"resultPattern": "{verb sForm}",
+	"tables": [
+		{
+			"name": "verb sForm",
+			"entries": [
+		    	"babbles",
+				"chuckles",
+				"coughs",
+				"cries",
+				"dances",
+				"drools",
+				"gibbers",
+				"hobbles",
+				"hums",
+				"jeers",
+				"laments",
+				"laughs",
+				"loiters",
+				"limps",
+				"passes",
+				"quakes",
+				"quivers",
+				"smiles",
+				"smokes",
+				"snickers",
+				"sobs",
+				"staggers",
+				"stutters",
+				"sways",
+				"sweats",
+				"twitches",
+				"wanders",
+				"wheezes",
+				"whistles"
+			]
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"name": "Person, Race (plural) Generator",
+	"resultPattern": "{personRace pl}",
+	"tables": [
+		{
+			"name": "personRace pl",
+			"entries": [
+		    	"aasimar",
+        		"dwarves",
+        		"elves",
+        		"halflings",
+        		"humans",
+        		"dragonborn",
+        		"gnomes",
+        		"half-elves",
+        		"half-orcs",
+        		"tieflings"
+			]
+		}
+	]
+}

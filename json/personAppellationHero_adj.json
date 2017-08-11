@@ -1,0 +1,38 @@
+{
+	"name": "Person, Hero Appellation (Adjective) Generator",
+	"resultPattern": "{personAppellationHero adj}",
+	"tables": [
+		{
+			"name": "personAppellationHero adj",
+			"entries": [
+				"Beloved",
+		    	"Beneficent",
+				"Blessed",
+				"Enlightened",
+				"Exalted",
+				"Favored",
+				"Fearless",
+				"Great",
+				"Illustrious",
+				"Indomitable",
+				"Legendary",
+				"Lucid",
+				"Lucky",
+				"Merciless",
+				"Noble",
+				"Patient",
+				"Prestigious",
+				"Primal",
+				"Proven",
+				"Provident",
+				"Purified",
+				"Relentess",
+				"Silent",
+				"Tranquil",
+				"Undaunted",
+				"Undying",
+				"Unrelenting"
+			]
+		}
+	]
+}

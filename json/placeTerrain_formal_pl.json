@@ -1,0 +1,33 @@
+{
+	"name": "Place, Terrain (formal plural) Generator",
+	"resultPattern": "{placeTerrain formal pl}",
+	"tables": [
+		{
+			"name": "placeTerrain formal pl",
+			"entries": [
+		    	"Canyons",
+        		"Cliffs",
+        		"Deserts",
+        		"Fields",
+        		"Forests",
+        		"Grasslands",
+        		"Highlands",
+        		"Hills",
+        		"Jungles",
+        		"Lowlands",
+        		"Marshes",
+        		"Mountains",
+        		"Plains",
+        		"Scrublands",
+        		"Swamps",
+        		"Uplands",
+        		"Valleys",
+        		"Volcanoes",
+        		"Wastelands",
+        		"Wastes",
+        		"Woods",
+        		"Wilds"
+			]
+		}
+	]
+}

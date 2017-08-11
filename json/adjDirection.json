@@ -1,0 +1,19 @@
+{
+	"name": "Adjective, Direction Generator",
+	"resultPattern": "{adjDirection}",
+	"tables": [
+		{
+			"name": "adjDirection",
+			"entries": [
+			    "eastern",
+				"northern",
+				"northeastern",
+				"northwestern",
+				"southern",
+				"southeastern",
+				"southwestern",
+				"western"
+			]
+		}
+	]
+}

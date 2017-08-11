@@ -1,0 +1,23 @@
+{
+	"name": "Place, Settlement Generator",
+	"resultPattern": "{placeSettlement}",
+	"tables": [
+		{
+			"name": "placeSettlement",
+			"entries": [
+		    	"castle",
+		    	"city",
+		    	"conurbation",
+        		"fort",
+        		"fortified city",
+        		"fortified town",
+        		"fortress",
+        		"hamlet",
+        		"metropolis",
+        		"thorpe",
+        		"town",
+        		"village"
+			]
+		}
+	]
+}

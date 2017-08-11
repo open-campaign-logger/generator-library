@@ -1,0 +1,40 @@
+{
+	"name": "Monster, Humanoid Generator",
+	"resultPattern": "{monsterHumanoid}",
+	"tables": [
+		{
+			"name": "monsterHumanoid",
+			"entries": [
+				"aarakocra",
+				"bugbear",
+				"bullywug",
+				"drow",
+				"duergar",
+				"githyanki",
+				"githzerai",
+				"gnoll",
+		    	"goblin",
+				"grimlock",
+				"hobgoblin",
+				"jackalwere",
+				"kenku",
+				"kobold",
+				"kuo-toa",
+				"lizardfolk",
+				"merfolk",
+				"orc",
+				"quaggoth",
+				"sahuagin",
+				"svirfneblin",
+				"thri-kreen",
+				"troglodyte",
+				"werebear",
+				"wereboar",
+				"wererat",
+				"weretiger",
+				"werewolf",
+				"yuan-ti pureblood"
+			]
+		}
+	]
+}

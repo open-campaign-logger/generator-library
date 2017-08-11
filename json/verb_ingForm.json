@@ -1,0 +1,40 @@
+{
+	"name": "Verb (-ing form) Generator",
+	"resultPattern": "{verb ingForm}",
+	"tables": [
+		{
+			"name": "verb ingForm",
+			"entries": [
+		    	"babbling",
+				"chuckling",
+				"coughing",
+				"crying",
+				"dancing",
+				"drooling",
+				"gibbering",
+				"hobbling",
+				"humming",
+				"jeering",
+				"lamenting",
+				"laughing",
+				"loitering",
+				"limping",
+				"passing",
+				"quaking",
+				"quivering",
+				"smiling",
+				"smoking",
+				"snickering",
+				"sobbing",
+				"staggering",
+				"stuttering",
+				"swaying",
+				"sweating",
+				"twitching",
+				"wandering",
+				"wheezing",
+				"whistling"
+			]
+		}
+	]
+}

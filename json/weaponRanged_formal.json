@@ -1,0 +1,26 @@
+{
+	"name": "Weapon, Ranged (formal) Generator",
+	"resultPattern": "{weaponRanged formal}",
+	"tables": [
+		{
+			"name": "weaponRanged formal",
+			"entries": [
+		    	"Blowgun",
+				"Dagger",
+				"Dart",
+				"Handaxe",
+				"Hand Crossbow",
+				"Heavy Crossbow",
+				"Javelin",
+				"Light Crossbow",
+				"Light Hammer",
+				"Longbow",
+				"Net",
+				"Shortbow",
+				"Sling",
+				"Spear",
+				"Trident"
+			]
+		}
+	]
+}

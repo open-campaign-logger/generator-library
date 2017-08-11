@@ -1,0 +1,45 @@
+{
+	"name": "Place, Adventure Generator",
+	"resultPattern": "{placeAdventure}",
+	"tables": [
+		{
+			"name": "placeAdventure",
+			"entries": [
+				"archive",
+				"barrow",
+				"bastion",
+				"cave",
+				"chamber",
+				"chapel",
+				"citadel",
+				"crypt",
+				"dungeon",
+				"forge",
+				"garden",
+				"grotto",
+				"hall",
+				"labyrinth",
+				"lair",
+				"library",
+				"maze",
+				"mine",
+				"monastery",
+				"necropolis",
+				"pit",
+				"quarry",
+				"rift",
+				"sanctuary",
+				"sewer",
+				"ship",
+				"spire",
+				"tomb",
+				"tunnel",
+				"undercroft",
+				"vessel",
+				"warren",
+				"well",
+				"wizard's tower"
+			]
+		}
+	]
+}

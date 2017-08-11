@@ -1,0 +1,28 @@
+{
+	"name": "Place, Terrain (with indefinitive article) Generator",
+	"resultPattern": "{placeTerrain wia}",
+	"tables": [
+		{
+			"name": "placeTerrain wia",
+			"entries": [
+		    	"a canyon",
+        		"a cliff",
+        		"a desert",
+        		"a field",
+        		"a forest",
+        		"a grassland",
+        		"a hill",
+        		"a jungle",
+        		"a marsh",
+        		"a mountain",
+        		"a scrubland",
+        		"a swamp",
+        		"a tundra",
+        		"a valley",
+        		"a volcano",
+        		"a wasteland",
+        		"a wilderness"
+			]
+		}
+	]
+}

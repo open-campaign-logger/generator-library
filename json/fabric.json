@@ -1,0 +1,23 @@
+{
+	"name": "Fabric Generator",
+	"resultPattern": "{fabric}",
+	"tables": [
+		{
+			"name": "fabric",
+			"entries": [
+		    	"cotton",
+        		"damask",
+        		"flax",
+        		"fur",
+        		"hemp",
+        		"leather",
+        		"linen",
+        		"ramie",
+        		"silk",
+        		"tafetta",
+        		"velvet",
+        		"wool"
+			]
+		}
+	]
+}

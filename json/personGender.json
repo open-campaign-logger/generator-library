@@ -1,0 +1,13 @@
+{
+	"name": "Person, Gender Generator",
+	"resultPattern": "{personGender}",
+	"tables": [
+		{
+			"name": "personGender",
+			"entries": [
+		    	"female",
+		    	"male"
+			]
+		}
+	]
+}

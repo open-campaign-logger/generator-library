@@ -1,0 +1,25 @@
+{
+	"name": "Armor (with indefinitive article) Generator",
+	"resultPattern": "{armor wia}",
+	"tables": [
+		{
+			"name": "armor wia",
+			"entries": [
+		    	"a breastplate",
+        		"a suit of chain mail armor",
+        		"a chain shirt",
+        		"a suit of half plate armor",
+        		"a helmet",
+        		"a suit of hide armor",
+        		"a suit of leather armor",
+        		"a suit of padded armor",
+        		"a suit of plate mail armor ",
+        		"a suit of ring mail armor",
+        		"a suit of scale mail armor",
+        		"a shield",
+        		"a suit of splint mail armor",
+        		"a suit of studded leather armor"
+			]
+		}
+	]
+}

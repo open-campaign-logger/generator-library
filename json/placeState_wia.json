@@ -1,0 +1,37 @@
+{
+	"name": "Place, State (with indefinitive article) Generator",
+	"resultPattern": "{placeState wia}",
+	"tables": [
+		{
+			"name": "placeState wia",
+			"entries": [
+		    	"an archbarony",
+        		"an archclericy",
+        		"an archduchy",
+        		"a barony",
+        		"a brotherhood",
+        		"a city-state",
+        		"a clericy",
+        		"a county",
+        		"a duchy",
+        		"an earldom",
+        		"an empire",
+        		"a free city",
+        		"a free town",
+        		"a hold",
+        		"a kingdom",
+        		"a land",
+        		"a league",
+        		"a march",
+        		"a mark",
+        		"a prelacy",
+        		"a principality",
+        		"a province",
+        		"a society",
+        		"a stratocracy",
+        		"a theocracy",
+        		"a tribe"
+			]
+		}
+	]
+}

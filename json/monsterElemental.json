@@ -1,0 +1,34 @@
+{
+	"name": "Monster, Elemental Generator",
+	"resultPattern": "{monsterElemental}",
+	"tables": [
+		{
+			"name": "monsterElemental",
+			"entries": [
+				"air elemental",
+				"azer",
+				"dao",
+				"djinni",
+				"dust mephit",
+				"earth elemental",
+				"efreeti",
+				"fire elemental",
+				"fire snake",
+				"galeb duhr",
+				"gargoyle",
+				"ice mephit",
+				"invisible stalker",
+				"magma mephit",
+				"magmin",
+				"marid",
+				"mud mephit",
+				"salamander",
+				"smoke mephit",
+				"steam mephit",
+				"water elemental",
+				"water weird",
+				"xorn"
+			]
+		}
+	]
+}

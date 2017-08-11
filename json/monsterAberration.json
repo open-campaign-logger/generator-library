@@ -1,0 +1,27 @@
+{
+	"name": "Monster, Aberration Generator",
+	"resultPattern": "{monsterAberration}",
+	"tables": [
+		{
+			"name": "monsterAberration",
+			"entries": [
+				"aboleth",
+				"beholder",
+				"blue slaad",
+				"chuul",
+				"cloaker",
+				"death slaad",
+				"gibbering mouther",
+				"gray slaad",
+				"green slaad",
+				"grell",
+				"intellect devourer",
+				"mind flayer",
+				"mind flayer arcanist",
+				"nothic",
+				"red slaad",
+				"spectator"
+			]
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"name": "Armor (plural) Generator",
+	"resultPattern": "{armor pl}",
+	"tables": [
+		{
+			"name": "armor pl",
+			"entries": [
+		    	"breastplates",
+        		"suits of chain mail armor",
+        		"chain shirts",
+        		"suits of half plate armor",
+        		"helmets",
+        		"suits of hide armor",
+        		"suits of leather armor",
+        		"suits of padded armor",
+        		"suits of plate mail armor",
+        		"suits of ring mail armor",
+        		"suits of scale mail armor",
+        		"shields",
+        		"suits of splint mail armor",
+        		"suits of studded leather armor"
+			]
+		}
+	]
+}

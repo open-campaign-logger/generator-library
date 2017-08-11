@@ -1,0 +1,36 @@
+{
+	"name": "Person, Reputation Generator",
+	"resultPattern": "{personReputation}",
+	"tables": [
+		{
+			"name": "personReputation",
+			"entries": [
+		    	"ancient",
+				"blind",
+				"dishonorable",
+				"evil",
+				"famous",
+				"good",
+				"heartless",
+				"holy",
+				"honorable",
+				"infamous",
+				"lecherous",
+				"legendary",
+				"long lost",
+				"mad",
+				"maniacal",
+				"mute",		
+				"murderous",
+				"mysterious",
+				"pompous",
+				"traitorous",
+				"tyrannical",
+				"undead",
+				"undying",
+				"venerable",
+				"wandering"
+			]
+		}
+	]
+}

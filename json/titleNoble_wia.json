@@ -1,0 +1,37 @@
+{
+	"name": "Title, Noble (with indefinitive article) Generator",
+	"resultPattern": "{titleNoble wia}",
+	"tables": [
+		{
+			"name": "titleNoble wia",
+			"entries": [
+		    	"an archduchess",
+        		"an archduke",
+        		"a baron",
+        		"a baroness",
+        		"a baronet",
+        		"a baronetess",
+        		"a count",
+        		"a countess",
+        		"a duchess",
+        		"a duke",
+        		"an emperor",
+        		"an empress",
+        		"a grand duchess",
+        		"a grand duke",
+        		"a hedge knight",
+        		"a king",
+        		"a knight",
+        		"a knight errant",
+        		"a lord",
+        		"a marquis",
+        		"a marquess",
+        		"a prince",
+        		"a princess",
+        		"a queen",
+        		"a viscount",
+        		"a viscountess"
+			]
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"name": "Jewelry Generator",
+	"resultPattern": "{jewelry}",
+	"tables": [
+		{
+			"name": "jewelry",
+			"entries": [
+		    	"amulet",
+        		"anklet",
+        		"armlet",
+        		"bangle",
+        		"bracelet",
+        		"brooch",
+        		"chain",
+        		"charm bracelet",
+        		"chatelaine",
+        		"choker",
+        		"earring",
+        		"gorgerine",
+        		"locket",
+        		"medallion",
+        		"necklace",
+        		"pendant",
+        		"periapt",
+        		"pin",
+        		"ring",
+        		"scarab",
+        		"torc"
+			]
+		}
+	]
+}

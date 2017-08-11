@@ -1,0 +1,39 @@
+{
+	"name": "Weapon, Melee (formal) Generator",
+	"resultPattern": "{weaponMelee formal}",
+	"tables": [
+		{
+			"name": "weaponMelee formal",
+			"entries": [
+		    	"Battleaxe",
+				"Club",
+				"Dagger",
+				"Flail",
+				"Glaive",
+				"Greataxe",
+				"Greatclub",
+				"Greatsword",
+				"Halberd",
+				"Handaxe",
+				"Javelin",
+				"Lance",
+				"Light Hammer",
+				"Longsword",
+				"Mace",
+				"Maul",
+				"Morningstar",
+				"Pike",
+				"Quarterstaff",
+				"Rapier",
+				"Scimitar",
+				"Shortsword",
+				"Sickle",
+				"Spear",
+				"Trident",
+				"War Pick",
+				"Warhammer",
+				"Whip"
+			]
+		}
+	]
+}

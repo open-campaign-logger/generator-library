@@ -1,0 +1,28 @@
+{
+	"name": "Place, Terrain (formal) Generator",
+	"resultPattern": "{placeTerrain formal}",
+	"tables": [
+		{
+			"name": "placeTerrain formal",
+			"entries": [
+		    	"Canyon",
+        		"Cliff",
+        		"Desert",
+        		"Field",
+        		"Forest",
+        		"Grassland",
+        		"Hill",
+        		"Jungle",
+        		"Marsh",
+        		"Mountain",
+        		"Scrubland",
+        		"Swamp",
+        		"Tundra",
+        		"Valley",
+        		"Volcano",
+        		"Wasteland",
+        		"Wilderness"
+			]
+		}
+	]
+}

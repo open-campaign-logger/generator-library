@@ -1,0 +1,23 @@
+{
+	"name": "Person, Class Generator",
+	"resultPattern": "{personClass}",
+	"tables": [
+		{
+			"name": "personClass",
+			"entries": [
+		    	"barbarian",
+        		"bard",
+        		"cleric",
+        		"druid",
+        		"figter",
+        		"monk",
+        		"paladin",
+        		"ranger",
+        		"rogue",
+        		"sorcerer",
+        		"warlock",
+        		"wizard"
+			]
+		}
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"name": "Monster, Construct Generator",
+	"resultPattern": "{monsterConstruct}",
+	"tables": [
+		{
+			"name": "monsterConstruct",
+			"entries": [
+				"suit of animated armor",
+				"clay golem",
+				"duodrone",
+				"flesh golem",
+				"flying sword",
+				"helmed horror",
+				"homunculus",
+				"iron golem",
+				"monodrone",
+				"pentadrone",
+				"quadrone",
+				"rug of smothering",
+				"scarecrow",
+				"shield guardian",
+				"stone golem",
+				"tridrone"
+			]
+		}
+	]
+}

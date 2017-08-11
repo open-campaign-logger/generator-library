@@ -1,0 +1,50 @@
+{
+	"name": "Person, Hero Appellation Generator",
+	"resultPattern": "{personAppellationHero}",
+	"tables": [
+		{
+			"name": "personAppellationHero",
+			"entries": [
+		    	"Artisan",
+		    	"Bane",
+		    	"Champion",
+		    	"Conqueror",
+		    	"Crusader",
+		    	"Defender",
+		    	"Explorer",
+		    	"Guardian",
+		    	"Herald",
+		    	"Hunter",
+		    	"Illuminator",
+		    	"Justiciar",
+		    	"Keeper",
+		    	"Light",
+		    	"Lord",
+		    	"Loremaster",
+		    	"Luminary",
+		    	"Pacifier",
+		    	"Patron",
+		    	"Peacekeeper",
+		    	"Pilgrim",
+		    	"Preserver",
+		    	"Protector",
+		    	"Purifier",
+		    	"Sage",
+		    	"Savior",
+		    	"Scion",
+		    	"Seeker",
+		    	"Shield",
+		    	"Siegebreaker",
+		    	"Spear",
+		    	"Star",
+		    	"Storm",
+		    	"Sword",
+		    	"Tamer",
+		    	"Vanquisher",
+		    	"Warden",
+		    	"Warlord",
+		    	"Wrath"        		
+			]
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"name": "Place, Adventure (formal) Generator",
+	"resultPattern": "{placeAdventure formal}",
+	"tables": [
+		{
+			"name": "placeAdventure formal",
+			"entries": [
+				"Archive",
+				"Barrow",
+				"Bastion",
+				"Cave",
+				"Chamber",
+				"Chapel",
+				"Citadel",
+				"Crypt",
+				"Dungeon",
+				"Forge",
+				"Garden",
+				"Grotto",
+				"Hall",
+				"Labyrinth",
+				"Lair",
+				"Library",
+				"Maze",
+				"Mine",
+				"Monastery",
+				"Necropolis",
+				"Pit",
+				"Quarry",
+				"Rift",
+				"Sanctuary",
+				"Sewer",
+				"Ship",
+				"Spire",
+				"Tomb",
+				"Tunnel",
+				"Undercroft",
+				"Vessel",
+				"Warren",
+				"Well",
+				"Wizard's Tower"
+			]
+		}
+	]
+}

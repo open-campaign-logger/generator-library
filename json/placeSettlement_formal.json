@@ -1,0 +1,23 @@
+{
+	"name": "Place, Settlement (formal) Generator",
+	"resultPattern": "{placeSettlement formal}",
+	"tables": [
+		{
+			"name": "placeSettlement formal",
+			"entries": [
+		    	"Castle",
+		    	"City",
+		    	"Conurbation",
+        		"Fort",
+        		"Fortified City",
+        		"Fortified Town",
+        		"Fortress",
+        		"Hamlet",
+        		"Metropolis",
+        		"Thorpe",
+        		"Town",
+        		"Village"
+			]
+		}
+	]
+}

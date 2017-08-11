@@ -1,0 +1,41 @@
+{
+	"name": "Name (Female) Generator",
+	"resultPattern": "{name f}",
+	"tables": [
+		{
+			"name": "name f",
+			"entries": [
+				"Akarzil",
+				"Barryn",
+				"Bregan",
+				"Casdin",
+				"Celbahr",
+				"Daermond",
+				"Defyrion",
+				"Elidigon",
+				"Guthford",
+				"Halmar",
+				"Ilengar",
+				"Iredorn",
+				"Jespar",
+				"Jathinest",
+				"Larwahl",
+				"Malhshenz",
+				"Namourn",
+				"Ocarin",
+				"Omarion",
+				"Pelebroc",
+				"Ranbalin",
+				"Rhygel",
+				"Sil'forrin",
+				"Sothales",
+				"Trendall",
+				"Uerthin",
+				"Vared",
+				"Voudim",
+				"Yveserin",
+				"Zecane"
+			]
+		}
+	]
+}

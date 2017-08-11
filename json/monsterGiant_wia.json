@@ -1,0 +1,24 @@
+{
+	"name": "Monster, Giant (with indefinitive article) Generator",
+	"resultPattern": "{monsterGiant wia}",
+	"tables": [
+		{
+			"name": "monsterGiant wia",
+			"entries": [
+				"a cloud giant",
+				"a cyclops",
+				"an ettin",
+				"a fire giant",
+				"a fomorian",
+				"a frost giant",
+				"a half-ogre",
+				"a hill giant",
+				"an ogre",
+				"an oni",
+				"a stone giant",
+				"a storm giant",
+				"a troll"
+			]
+		}
+	]
+}

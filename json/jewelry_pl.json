@@ -1,0 +1,32 @@
+{
+	"name": "Jewelry (plural) Generator",
+	"resultPattern": "{jewelry pl}",
+	"tables": [
+		{
+			"name": "jewelry pl",
+			"entries": [
+		    	"amulets",
+        		"anklets",
+        		"armlets",
+        		"bangles",
+        		"bracelets",
+        		"brooches",
+        		"chains",
+        		"charm bracelets",
+        		"chatelaines",
+        		"chokers",
+        		"earrings",
+        		"gorgerines",
+        		"lockets",
+        		"medallions",
+        		"necklaces",
+        		"pendants",
+        		"periapts",
+        		"pins",
+        		"rings",
+        		"scarabs",
+        		"torcs"
+			]
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"name": "Title, Military Generator",
+	"resultPattern": "{titleMilitary wia}",
+	"tables": [
+		{
+			"name": "titleMilitary wia",
+			"entries": [
+		    	"a captain",
+        		"a commander",
+        		"a corporal",
+        		"a general",
+        		"a lieutenant",
+        		"a lord",
+        		"a lord marshal",
+        		"a major",
+        		"a marshal",
+        		"an overseer",
+        		"a sergeant"
+			]
+		}
+	]
+}

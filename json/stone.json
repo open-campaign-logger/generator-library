@@ -1,0 +1,25 @@
+{
+	"name": "Stone Generator",
+	"resultPattern": "{stone}",
+	"tables": [
+		{
+			"name": "stone",
+			"entries": [
+			    "alabaster",
+		    	"basalt",
+        		"fossilstone",
+        		"granite",
+        		"limestone",
+        		"marble",
+        		"pumice",
+        		"quartz",
+        		"sandstone",
+        		"serpentine",
+        		"shale",
+        		"slate",
+        		"soapstone",
+        		"travertine"
+			]
+		}
+	]
+}

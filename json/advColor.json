@@ -1,0 +1,35 @@
+{
+	"name": "Adverb, Color Generator",
+	"resultPattern": "{advColor}",
+	"tables": [
+		{
+			"name": "advColor",
+			"entries": [
+			    "bright",
+		        "dappled",
+		        "dark",
+		        "deep",
+		        "dusty",
+		        "fluorescent",
+		        "glowing",
+		        "iridescent",
+		        "light",
+		        "medium",
+		        "mellow",
+		        "muted",
+		        "opalescent",
+		        "pale",
+		        "pure",
+		        "rich",
+		        "smokey",
+		        "sober",
+		        "soft",
+		        "translucent",
+		        "vibrant",
+		        "vivid",
+		        "warm",
+		        "watery"
+			]
+		}
+	]
+}

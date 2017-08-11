@@ -1,0 +1,37 @@
+{
+	"name": "Title, Noble (Formal) Generator",
+	"resultPattern": "{titleNoble formal}",
+	"tables": [
+		{
+			"name": "titleNoble formal",
+			"entries": [
+		    	"Archduchess",
+        		"Archduke",
+        		"Baron",
+        		"Baroness",
+        		"Baronet",
+        		"Baronetess",
+        		"Count",
+        		"Countess",
+        		"Duchess",
+        		"Duke",
+        		"Emperor",
+        		"Empress",
+        		"Grand Duchess",
+        		"Grand Duke",
+        		"Hedge Knight",
+        		"King",
+        		"Knight",
+        		"Knight Errant",
+        		"Lord",
+        		"Marquis",
+        		"Marquess",
+        		"Prince",
+        		"Princess",
+        		"Queen",
+        		"Viscount",
+        		"Viscountess"
+			]
+		}
+	]
+}

@@ -1,0 +1,40 @@
+{
+	"name": "Monster, Humanoid (with indefinitive article) Generator",
+	"resultPattern": "{monsterHumanoid wia}",
+	"tables": [
+		{
+			"name": "monsterHumanoid wia",
+			"entries": [
+				"an aarakocra",
+				"a bugbear",
+				"a bullywug",
+				"a drow",
+				"a duergar",
+				"a githyanki",
+				"a githzerai",
+				"a gnoll",
+		    	"a goblin",
+				"a grimlock",
+				"a hobgoblin",
+				"a jackalwere",
+				"a kenku",
+				"a kobold",
+				"a kuo-toa",
+				"a lizardfolk",
+				"a merfolk",
+				"an orc",
+				"a quaggoth",
+				"a sahuagin",
+				"a svirfneblin",
+				"a thri-kreen",
+				"a troglodyte",
+				"a werebear",
+				"a wereboar",
+				"a wererat",
+				"a weretiger",
+				"a werewolf",
+				"a yuan-ti pureblood"
+			]
+		}
+	]
+}

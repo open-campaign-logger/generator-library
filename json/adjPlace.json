@@ -1,0 +1,51 @@
+{
+	"name": "Adjective, Place Generator",
+	"resultPattern": "{adjPlace}",
+	"tables": [
+		{
+			"name": "adjPlace",
+			"entries": [
+			    "abandoned",
+			    "accursed",
+			    "aged",
+        		"ancestral",
+        		"ancient",
+		    	"brilliant",
+        		"crumbling",
+        		"cursed",
+        		"decaying",
+        		"desolate",
+        		"diseased",
+        		"eerie",
+        		"enchanted",
+		        "ethereal",
+        		"fallen",
+        		"flaming",
+        		"flooded",
+        		"forboding",
+        		"frozen",
+        		"ghostly",
+        		"glorious",
+        		"great",
+        		"hallowed",
+        		"haunted",
+        		"holy",
+        		"horrific",
+        		"hidden",
+        		"labyrnthine",
+        		"lowly",
+        		"magical",
+        		"melancholic",
+        		"menacing",
+        		"monster-ridden",
+        		"perilous",
+        		"ruined",
+        		"shadowy",
+        		"spectral",
+        		"sunken",
+        		"thundering",
+        		"treasure-filled"
+			]
+		}
+	]
+}

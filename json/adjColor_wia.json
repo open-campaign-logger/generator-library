@@ -1,0 +1,40 @@
+{
+	"name": "Adjective, Color (with indefinitive article) Generator",
+	"resultPattern": "{adjColor wia}",
+	"tables": [
+		{
+			"name": "adjColor wia",
+			"entries": [
+			    "an amber",
+				"an aqua",
+				"an aquamarine",
+				"an azure",
+				"a black",
+				"a blue",
+				"a brown",
+				"a copper",
+				"a crimson",
+				"a fuchsia",
+				"a gold",
+				"a green",
+				"a grey",
+				"an ivory",
+				"a lavender",
+				"an ochre",
+				"an orange",
+				"a pink",
+				"a purple",
+				"a red",
+				"a sepia",
+				"a sienna",
+				"a silver",
+				"a tan",
+				"a turquoise",
+				"an umber",
+				"a violet",
+				"a white",
+				"a yellow"
+			]
+		}
+	]
+}

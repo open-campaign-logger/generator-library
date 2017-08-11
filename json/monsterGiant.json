@@ -1,0 +1,24 @@
+{
+	"name": "Monster, Giant Generator",
+	"resultPattern": "{monsterGiant}",
+	"tables": [
+		{
+			"name": "monsterGiant",
+			"entries": [
+				"cloud giant",
+				"cyclops",
+				"ettin",
+				"fire giant",
+				"fomorian",
+				"frost giant",
+				"half-ogre",
+				"hill giant",
+				"ogre",
+				"oni",
+				"stone giant",
+				"storm giant",
+				"troll"
+			]
+		}
+	]
+}

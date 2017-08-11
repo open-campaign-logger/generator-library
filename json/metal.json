@@ -1,0 +1,23 @@
+{
+	"name": "Metal Generator",
+	"resultPattern": "{metal}",
+	"tables": [
+		{
+			"name": "metal",
+			"entries": [
+		    	"adamantite",
+		    	"brass",
+        		"copper",
+        		"electrum",
+        		"gold",
+        		"iron",
+        		"lead",
+        		"mithral",
+        		"pewter",
+        		"platinum",
+        		"silver",
+        		"steel"
+			]
+		}
+	]
+}

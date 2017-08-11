@@ -1,0 +1,45 @@
+{
+	"name": "Place, Adventure (with indefinitive article) Generator",
+	"resultPattern": "{placeAdventure wia}",
+	"tables": [
+		{
+			"name": "placeAdventure wia",
+			"entries": [
+				"an archive",
+				"a barrow",
+				"a bastion",
+				"a cave",
+				"a chamber",
+				"a chapel",
+				"a citadel",
+				"a crypt",
+				"a dungeon",
+				"a forge",
+				"a garden",
+				"a grotto",
+				"a hall",
+				"a labyrinth",
+				"a lair",
+				"a library",
+				"a maze",
+				"a mine",
+				"a monastery",
+				"a necropolis",
+				"a pit",
+				"a quarry",
+				"a rift",
+				"a sanctuary",
+				"a sewer",
+				"a ship",
+				"a spire",
+				"a tomb",
+				"a tunnel",
+				"an undercroft",
+				"a vessel",
+				"a warren",
+				"a well",
+				"a wizard's tower"
+			]
+		}
+	]
+}

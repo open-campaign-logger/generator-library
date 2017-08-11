@@ -1,0 +1,150 @@
+{
+	"name": "Weapon, Epic Generator",
+	"resultPattern": "{weaponEpic}",
+	"tables": [
+		{
+			"name": "weaponEpic",
+			"entries": [
+				"{weapon prefix1}{weapon suffix1}",
+				"the {weapon prefix2} {weaponType}",
+				"the {weapon prefix2} {weaponType} of {hero}",
+				"the {weaponType} of {weapon suffix2}"
+			]
+		},
+		{
+			"name": "weapon prefix1",
+			"entries": [
+				"Angel",
+				"Black",
+				"Blue",
+				"Dawn",
+				"Demon",
+				"Diamond",
+				"Dragon",
+				"Fire",
+				"Mourn",
+				"Sky",
+				"Sorrow",
+				"Soul",
+				"White",
+				"Witch",
+				"Wolf"
+			]
+		},
+		{
+			"name": "weapon suffix1",
+			"entries": [
+				"bane",
+				"blade",
+				"bringer",
+				"fang",
+				"fate",
+				"grieve",
+				"guard",
+				"reave",
+				"rend",
+				"spite",
+				"storm",
+				"tear"
+			]
+		},
+		{	
+			"name": "weapon prefix2",	
+			"entries": [
+				"Adamantine",
+				"Black",
+				"Blazing",
+				"Blue",
+				"Celestial",
+				"Ebony",
+				"Emblazoned",
+				"Fabled",
+				"Fiery",
+				"Flaming",
+				"Golden",
+				"Green",
+				"Holy",
+				"Illustrious",
+				"Indestructible",
+				"Ivory",
+				"Liberating",
+				"Mithral",
+				"Petrifying",
+				"Red",
+				"Shining",
+				"Silvered",
+				"Singing",
+				"Thundering",
+				"Yellow",
+				"White"
+			]
+		},		
+		{
+			"name": "weapon suffix2",
+			"entries": [
+				"Angels",
+				"Damnation",
+				"Demons",
+				"Destruction",
+				"Doom",
+				"the Dragon",
+				"the East",
+				"Fire",
+				"the Gods",
+				"{hero}",
+				"Lightning",
+				"King {nameMale}",
+				"the {lib:monsterEpic}",
+				"{lib:nameLocation}",
+				"the North",
+				"Peace",
+				"Queen {nameFemale}",
+				"Rending",
+				"Ruination",
+				"the Sea",
+				"Shadows",
+				"Sorrow",
+				"Souls",
+				"the South",
+				"the Stars",
+				"Sundering",
+				"the Swan",
+				"Tears",
+				"the West",
+				"the Wind"
+			]
+		},
+		{
+			"name": "weaponType",
+			"entries": [
+		    	"{lib:weaponMelee_formal}",
+				"{lib:weaponRanged_formal}"
+			]
+		},
+		{
+			"name": "hero",
+			"entries": [
+				"{lib:name_f_1} the {lib:personAppellationHero_adj}",
+				"{lib:name_f_1} the {lib:personAppellationHero}",
+				"{lib:name_f_1} the {lib:personAppellationHero_adj} {lib:personAppellationHero}",
+				"{lib:name_m_1} the {lib:personAppellationHero_adj}",
+				"{lib:name_m_1} the {lib:personAppellationHero}",
+				"{lib:name_m_1} the {lib:personAppellationHero_adj} {lib:personAppellationHero}"
+			]
+		},
+		{
+			"name": "nameFemale",
+			"entries": [
+				"{lib:name_f_1}",
+				"{lib:name_f_2}"
+			]
+		},
+		{
+			"name": "nameMale",
+			"entries": [
+				"{lib:name_m_1}",
+				"{lib:name_m_2}"
+			]
+		}
+	]
+}

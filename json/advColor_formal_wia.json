@@ -1,0 +1,35 @@
+{
+	"name": "Adverb, Color (formal with indefinitive article) Generator",
+	"resultPattern": "{advColor formal wia}",
+	"tables": [
+		{
+			"name": "advColor formal wia",
+			"entries": [
+			    "A bright",
+		        "A dappled",
+		        "A dark",
+		        "A deep",
+		        "A dusty",
+		        "A fluorescent",
+		        "A glowing",
+		        "An iridescent",
+		        "A light",
+		        "A medium",
+		        "A mellow",
+		        "A muted",
+		        "An opalescent",
+		        "A pale",
+		        "A pure",
+		        "A rich",
+		        "A smokey",
+		        "A sober",
+		        "A soft",
+		        "A translucent",
+		        "A vibrant",
+		        "A vivid",
+		        "A warm",
+		        "A watery"
+			]
+		}
+	]
+}

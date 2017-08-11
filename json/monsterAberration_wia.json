@@ -1,0 +1,27 @@
+{
+	"name": "Monster, Aberration (with indefinitive article) Generator",
+	"resultPattern": "{monsterAberration wia}",
+	"tables": [
+		{
+			"name": "monsterAberration wia",
+			"entries": [
+				"an aboleth",
+				"a beholder",
+				"a blue slaad",
+				"a chuul",
+				"a cloaker",
+				"a death slaad",
+				"a gibbering mouther",
+				"a gray slaad",
+				"a green slaad",
+				"a grell",
+				"an intellect devourer",
+				"a mind flayer",
+				"a mind flayer arcanist",
+				"a nothic",
+				"a red slaad",
+				"a spectator"
+			]
+		}
+	]
+}

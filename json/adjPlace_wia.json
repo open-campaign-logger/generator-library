@@ -1,0 +1,51 @@
+{
+	"name": "Adjective, Place (with indefinitive article) Generator",
+	"resultPattern": "{adjPlace wia}",
+	"tables": [
+		{
+			"name": "adjPlace wia",
+			"entries": [
+			    "an abandoned",
+			    "an accursed",
+			    "an aged",
+        		"an ancestral",
+        		"an ancient",
+		    	"a brilliant",
+        		"a crumbling",
+        		"a cursed",
+        		"a decaying",
+        		"a desolate",
+        		"a diseased",
+        		"an eerie",
+        		"an enchanted",
+		        "an ethereal",
+        		"a fallen",
+        		"a flaming",
+        		"a flooded",
+        		"a forboding",
+        		"a frozen",
+        		"a ghostly",
+        		"a glorious",
+        		"a great",
+        		"a hallowed",
+        		"a haunted",
+        		"a horrific",
+        		"a holy",
+        		"a hidden",
+        		"a labyrinthine",
+        		"a lowly",
+        		"a magical",
+        		"a melancholic",
+        		"a menacing",
+        		"a monster-ridden",
+        		"a perilous",
+        		"a ruined",
+        		"a shadowy",
+        		"a spectral",
+        		"a sunken",
+        		"a thundering",
+        		"a treasure-filled"
+			]
+		}
+	]
+}

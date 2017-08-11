@@ -1,0 +1,37 @@
+{
+	"name": "Title, Noble (Plural) Generator",
+	"resultPattern": "{titleNoble pl}",
+	"tables": [
+		{
+			"name": "titleNoble pl",
+			"entries": [
+		    	"archduchesses",
+        		"archdukes",
+        		"barons",
+        		"baronesses",
+        		"baronets",
+        		"baronetesses",
+        		"counts",
+        		"countesses",
+        		"duchesses",
+        		"dukes",
+        		"emperors",
+        		"empresses",
+        		"grand duchesses",
+        		"grand dukes",
+        		"hedge knights",
+        		"kings",
+        		"knights",
+        		"knights errant",
+        		"lords",
+        		"marquises",
+        		"marquesses",
+        		"princes",
+        		"princesses",
+        		"queens",
+        		"viscounts",
+        		"viscountesses"
+			]
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"name": "Person, Race (with indefinitive article) Generator",
+	"resultPattern": "{personRace wia}",
+	"tables": [
+		{
+			"name": "personRace wia",
+			"entries": [
+		    	"an aasimar",
+        		"a dwarf",
+        		"an elf",
+        		"a halfling",
+        		"a human",
+        		"a dragonborn",
+        		"a gnome",
+        		"a half-elf",
+        		"a half-orc",
+        		"a tiefling"
+			]
+		}
+	]
+}

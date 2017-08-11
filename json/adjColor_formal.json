@@ -1,0 +1,40 @@
+{
+	"name": "Adjective, Color (formal) Generator",
+	"resultPattern": "{adjColor formal}",
+	"tables": [
+		{
+			"name": "adjColor formal",
+			"entries": [
+			    "Amber",
+				"Aqua",
+				"Aquamarine",
+				"Azure",
+				"Black",
+				"Blue",
+				"Brown",
+				"Copper",
+				"Crimson",
+				"Fuchsia",
+				"Gold",
+				"Green",
+				"Grey",
+				"Ivory",
+				"Lavender",
+				"Ochre",
+				"Orange",
+				"Pink",
+				"Purple",
+				"Red",
+				"Sepia",
+				"Sienna",
+				"Silver",
+				"Tan",
+				"Turquoise",
+				"Umber",
+				"Violet",
+				"White",
+				"Yellow"
+			]
+		}
+	]
+}

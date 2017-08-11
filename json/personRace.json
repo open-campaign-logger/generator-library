@@ -1,0 +1,21 @@
+{
+	"name": "Person, Race Generator",
+	"resultPattern": "{personRace}",
+	"tables": [
+		{
+			"name": "personRace",
+			"entries": [
+		    	"aasimar",
+        		"dwarf",
+        		"elf",
+        		"halfling",
+        		"human",
+        		"dragonborn",
+        		"gnome",
+        		"half-elf",
+        		"half-orc",
+        		"tiefling"
+			]
+		}
+	]
+}

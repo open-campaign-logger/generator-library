@@ -1,0 +1,24 @@
+{
+	"name": "Title, Soldier Generator",
+	"resultPattern": "{titleSoldier}",
+	"tables": [
+		{
+			"name": "titleSoldier",
+			"entries": [
+		    	"archer",
+        		"billman",
+        		"cavalryman",
+        		"crossbowman",
+        		"guard",
+        		"halberdier",
+        		"hoplite",
+        		"infantryman",
+        		"knight",
+        		"man-at-arms",
+        		"mercenary",
+        		"sapper",
+        		"siege engineer"
+			]
+		}
+	]
+}

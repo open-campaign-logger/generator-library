@@ -1,0 +1,36 @@
+{
+	"name": "Person, Appearance (with indefinitive article) Generator",
+	"resultPattern": "{personAppearance wia}",
+	"tables": [
+		{
+			"name": "personAppearance wia",
+			"entries": [
+		    	"an albino",
+				"an attractive",
+				"a bald",
+				"a bearded",
+				"a blind",
+				"a crippled",
+				"a drunken",
+				"an emaciated",
+				"a foreign",				
+				"a long-haired",
+				"a muscular",	
+				"an obese",
+				"an odorous",
+				"an old",
+				"a one-armed",
+				"a one-eyed",
+				"a rotund",
+				"a petite",
+				"a scantily-clad",
+				"a scarred",
+				"a short",
+				"a skinny",
+				"a tall",
+				"a tattooed",
+				"an ugly"
+			]
+		}
+	]
+}

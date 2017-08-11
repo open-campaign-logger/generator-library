@@ -1,0 +1,37 @@
+{
+	"name": "Place, State (plural) Generator",
+	"resultPattern": "{placeState pl}",
+	"tables": [
+		{
+			"name": "placeState pl",
+			"entries": [
+		    	"archbaronies",
+        		"archclericies",
+        		"archduchies",
+        		"baronies",
+        		"brotherhoods",
+        		"city-states",
+        		"clericies",
+        		"counties",
+        		"duchies",
+        		"earldoms",
+        		"empires",
+        		"free cities",
+        		"free towns",
+        		"holds",
+        		"kingdoms",
+        		"lands",
+        		"leagues",
+        		"marches",
+        		"marks",
+        		"prelacies",
+        		"principalities",
+        		"provinces",
+        		"societies",
+        		"stratocracies",
+        		"theocracies",
+        		"tribes"
+			]
+		}
+	]
+}

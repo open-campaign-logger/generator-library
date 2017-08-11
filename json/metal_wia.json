@@ -1,0 +1,23 @@
+{
+	"name": "Metal (with indefinitive article) Generator",
+	"resultPattern": "{metal wia}",
+	"tables": [
+		{
+			"name": "metal wia",
+			"entries": [
+		    	"an adamantite",
+		    	"a brass",
+        		"a copper",
+        		"an electrum",
+        		"a gold",
+        		"an iron",
+        		"a lead",
+        		"a mithral",
+        		"a pewter",
+        		"a platinum",
+        		"a silver",
+        		"a steel"
+			]
+		}
+	]
+}

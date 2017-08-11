@@ -1,0 +1,27 @@
+{
+	"name": "Monster, Aberration (plural) Generator",
+	"resultPattern": "{monsterAberration pl}",
+	"tables": [
+		{
+			"name": "monsterAberration pl",
+			"entries": [
+				"aboleths",
+				"beholders",
+				"blue slaads",
+				"chuuls",
+				"cloakers",
+				"death slaads",
+				"gibbering mouthers",
+				"gray slaads",
+				"green slaads",
+				"grells",
+				"intellect devourers",
+				"mind flayers",
+				"mind flayer arcanists",
+				"nothics",
+				"red slaads",
+				"spectators"
+			]
+		}
+	]
+}

@@ -1,0 +1,35 @@
+{
+	"name": "Monster, Epic Generator",
+	"resultPattern": "{monsterEpic}",
+	"tables": [
+		{
+			"name": "monsterEpic",
+			"entries": [
+				"Banshee",
+				"Beholder",
+				"Chimera",
+				"Death Knight",
+				"Demon",
+				"Devil",
+				"Dragon",
+				"Empyrean",
+				"Ghost",
+				"Giant",
+				"Gorgon",
+				"Hydra",
+				"Kraken",
+				"Lich",
+				"Medusa",
+				"Mind Flayer",
+				"Mummy",
+				"Rakshasa",
+				"Slaad",
+				"Troll",
+				"Vampire",
+				"Wraith",
+				"Wyvern",
+				"Wolf"
+			]
+		}
+	]
+}

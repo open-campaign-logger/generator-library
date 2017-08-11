@@ -1,0 +1,40 @@
+{
+	"name": "Verb (past form) Generator",
+	"resultPattern": "{verb pastForm}",
+	"tables": [
+		{
+			"name": "verb pastForm",
+			"entries": [
+		    	"babbled",
+				"chuckled",
+				"coughed",
+				"cried",
+				"danced",
+				"drooled",
+				"gibbered",
+				"hobbled",
+				"hummed",
+				"jeered",
+				"lamented",
+				"laughed",
+				"loitered",
+				"limped",
+				"passed",
+				"quaked",
+				"quivered",
+				"smiled",
+				"smoked",
+				"snickered",
+				"sobbed",
+				"staggered",
+				"stuttered",
+				"swayed",
+				"sweated",
+				"twitched",
+				"wandered",
+				"wheezed",
+				"whistled"
+			]
+		}
+	]
+}

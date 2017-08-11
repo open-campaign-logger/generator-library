@@ -1,0 +1,27 @@
+{
+	"name": "Monster, Construct (with indefinitive article) Generator",
+	"resultPattern": "{monsterConstruct wia}",
+	"tables": [
+		{
+			"name": "monsterConstruct wia",
+			"entries": [
+				"a suit of animated armor",
+				"a clay golem",
+				"a duodrone",
+				"a flesh golem",
+				"a flying sword",
+				"a helmed horror",
+				"a homunculus",
+				"an iron golem",
+				"a monodrone",
+				"a pentadrone",
+				"a quadrone",
+				"a rug of smothering",
+				"a scarecrow",
+				"a shield guardian",
+				"a stone golem",
+				"a tridrone"
+			]
+		}
+	]
+}

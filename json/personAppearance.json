@@ -1,0 +1,36 @@
+{
+	"name": "Person, Appearance Generator",
+	"resultPattern": "{personAppearance}",
+	"tables": [
+		{
+			"name": "personAppearance",
+			"entries": [
+		    	"albino",
+				"attractive",
+				"bald",
+				"bearded",
+				"blind",
+				"crippled",
+				"drunken",
+				"emaciated",
+				"foreign",				
+				"long-haired",
+				"muscular",	
+				"obese",
+				"odorous",
+				"old",
+				"one-armed",
+				"one-eyed",
+				"rotund",
+				"petite",
+				"scantily-clad",
+				"scarred",
+				"short",
+				"skinny",
+				"tall",
+				"tattooed",
+				"ugly"
+			]
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"name": "Title, Soldier (plural) Generator",
+	"resultPattern": "{titleSoldier pl}",
+	"tables": [
+		{
+			"name": "titleSoldier pl",
+			"entries": [
+		    	"archers",
+        		"billmen",
+        		"cavalrymen",
+        		"crossbowmen",
+        		"guards",
+        		"halberdiers",
+        		"hoplites",
+        		"infantrymen",
+        		"knights",
+        		"men-at-arms",
+        		"mercenaries",
+        		"sappers",
+        		"siege engineers"
+			]
+		}
+	]
+}

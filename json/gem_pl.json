@@ -1,0 +1,51 @@
+{
+	"name": "Gem (plural) Generator",
+	"resultPattern": "{gem pl} gemstones",
+	"tables": [
+		{
+			"name": "gem pl",
+			"entries": [
+		    	"agate",
+        		"alexandrite",
+        		"amber",
+        		"amethyst",
+        		"aquamarine",
+        		"azurite",
+        		"black pearl",
+        		"bloodstone",
+        		"carnelian",
+        		"chalcedony",
+        		"chrysoberyl",
+        		"chrysoprase",
+        		"citrine",
+        		"coral",
+        		"diamond",
+        		"emerald",
+        		"garnet",
+        		"hematite",
+        		"jacinth",
+        		"jade",
+        		"jasper",
+        		"jet",
+        		"lapis lazuli",
+        		"malachite",
+        		"moonstone",
+        		"obsidian",
+        		"opal",
+        		"pearl",
+        		"peridot",
+        		"quartz",
+        		"rhodochrosite",
+        		"ruby",
+        		"sapphire",
+        		"sardonyx",
+        		"spinel",
+        		"tiger eye",
+        		"topaz",
+        		"tourmaline",
+        		"turquoise",
+        		"zircon"
+			]
+		}
+	]
+}

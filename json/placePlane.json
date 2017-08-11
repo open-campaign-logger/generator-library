@@ -1,0 +1,37 @@
+{
+	"name": "Place, Plane Generator",
+	"resultPattern": "{placePlane}",
+	"tables": [
+		{
+			"name": "placePlane",
+			"entries": [
+		    	"the Abyss",
+				"Acheron",
+				"Arborea",
+				"Arcadia",
+				"the Astral Plane",
+				"the Beastlands",
+				"Bytopia",
+				"Carceri",
+				"the Elemental Chaos",
+				"Elysium",
+				"the Ethereal Plane",
+				"the Feywild",
+				"Gehenna",
+				"Hades",
+				"Limbo",
+				"Mechanus",
+				"Mount Celstia",
+				"the Nine Hells",
+				"the Outlands",
+				"Pandemonium",
+				"the Plane of Air",
+				"the Plane of Earth",
+				"the Plane of Fire",
+				"the Plane of Water",
+				"Shadowfell",
+				"Ysgard"
+			]
+		}
+	]
+}

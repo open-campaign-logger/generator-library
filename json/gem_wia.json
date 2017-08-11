@@ -1,0 +1,51 @@
+{
+	"name": "Gem (with indefinitive article) Generator",
+	"resultPattern": "{gem wia} gemstone",
+	"tables": [
+		{
+			"name": "gem wia",
+			"entries": [
+		    	"an agate",
+        		"an alexandrite",
+        		"an amber",
+        		"an amethyst",
+        		"an aquamarine",
+        		"an azurite",
+        		"a black pearl",
+        		"a bloodstone",
+        		"a carnelian",
+        		"a chalcedony",
+        		"a chrysoberyl",
+        		"a chrysoprase",
+        		"a citrine",
+        		"a coral",
+        		"a diamond",
+        		"an emerald",
+        		"a garnet",
+        		"a hematite",
+        		"a jacinth",
+        		"a jade",
+        		"a jasper",
+        		"a jet",
+        		"a lapis lazuli",
+        		"a malachite",
+        		"a moonstone",
+        		"an obsidian",
+        		"an opal",
+        		"a pearl",
+        		"a peridot",
+        		"a quartz",
+        		"a rhodochrosite",
+        		"a ruby",
+        		"a sapphire",
+        		"a sardonyx",
+        		"a spinel",
+        		"a tiger eye",
+        		"a topaz",
+        		"a tourmaline",
+        		"a turquoise",
+        		"a zircon"
+			]
+		}
+	]
+}

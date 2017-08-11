@@ -1,0 +1,40 @@
+{
+	"name": "Monster, Humanoid (plural) Generator",
+	"resultPattern": "{monsterHumanoid pl}",
+	"tables": [
+		{
+			"name": "monsterHumanoid pl",
+			"entries": [
+				"aarakocra",
+				"bugbears",
+				"bullywugs",
+				"drow",
+				"duergar",
+				"githyanki",
+				"githzerai",
+				"gnolls",
+		    	"goblins",
+				"grimlocks",
+				"hobgoblins",
+				"jackalweres",
+				"kenku",
+				"kobolds",
+				"kuo-toa",
+				"lizardfolk",
+				"merfolk",
+				"orcs",
+				"quaggoths",
+				"sahuagin",
+				"svirfneblin",
+				"thri-kreen",
+				"troglodytes",
+				"werebears",
+				"wereboars",
+				"wererats",
+				"weretigers",
+				"werewolves",
+				"yuan-ti purebloods"
+			]
+		}
+	]
+}

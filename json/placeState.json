@@ -1,0 +1,37 @@
+{
+	"name": "Place, State Generator",
+	"resultPattern": "{placeState}",
+	"tables": [
+		{
+			"name": "placeState",
+			"entries": [
+		    	"archbarony",
+        		"archclericy",
+        		"archduchy",
+        		"barony",
+        		"brotherhood",
+        		"city-state",
+        		"clericy",
+        		"county",
+        		"duchy",
+        		"earldom",
+        		"empire",
+        		"free city",
+        		"free town",
+        		"hold",
+        		"kingdom",
+        		"land",
+        		"league",
+        		"march",
+        		"mark",
+        		"prelacy",
+        		"principality",
+        		"province",
+        		"society",
+        		"stratocracy",
+        		"theocracy",
+        		"tribe"
+			]
+		}
+	]
+}

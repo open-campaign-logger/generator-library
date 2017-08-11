@@ -1,0 +1,45 @@
+{
+	"name": "Place, Adventure (plural) Generator",
+	"resultPattern": "{placeAdventure pl}",
+	"tables": [
+		{
+			"name": "placeAdventure pl",
+			"entries": [
+				"archives",
+				"barrows",
+				"bastions",
+				"caves",
+				"chambers",
+				"chapels",
+				"citadels",
+				"crypts",
+				"dungeons",
+				"forges",
+				"gardens",
+				"grottoes",
+				"halls",
+				"labyrinths",
+				"lairs",
+				"libraries",
+				"mazes",
+				"mines",
+				"monasteries",
+				"necropolises",
+				"pits",
+				"quarries",
+				"rifts",
+				"sanctuaries",
+				"sewers",
+				"ships",
+				"spires",
+				"tombs",
+				"tunnels",
+				"undercrofts",
+				"vessels",
+				"warrens",
+				"wells",
+				"wizard's towers"
+			]
+		}
+	]
+}

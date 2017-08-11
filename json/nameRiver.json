@@ -1,0 +1,89 @@
+{
+	"name": "Name, River Generator",
+	"resultPattern": "{river}",
+	"tables": [
+		{
+			"name": "river",
+			"entries": [
+				"{lib:nameLocation} {river suffix}",
+				"{river prefix1} {river suffix}",
+				"{river prefix1}{river prefix2} {river suffix}",
+				"{river prefix3} {river suffix}"
+			]
+		},
+		{
+			"name": "river prefix1",
+			"entries": [
+				"Berry",
+				"Black",
+				"Blue",
+				"Clear",
+				"Deep",
+				"Ever",
+				"Fire",
+				"Frost",
+				"Froth",
+				"Green",
+				"Lotus",
+				"Peace",
+				"Red",
+				"Tremble",
+				"Wild"
+			]
+		},
+		{
+			"name": "river prefix2",
+			"entries": [
+				"bend",
+				" Cascade",
+				"drop",
+				"falls",
+				"feather",
+				"flood",
+				"flow",
+				"glow",
+				"light",
+				"oak",
+				" {lib:placeTerrain_formal}",
+				" Point",
+				" Rock",
+				" Slide",
+				"wander",
+				"waters",
+				"wine"
+			]
+		},
+		{
+			"name": "river prefix3",
+			"entries": [
+				"Amber",
+				"Cascading",
+				"Deeping",
+				"Diamond",
+				"Ebony",
+				"Emerald",
+				"Enchanted",
+				"Middle",
+				"{lib:nameLocation}",
+				"Placid",
+				"Roaring",
+				"Sacred",
+				"Thundering",
+				"Vanishing",
+				"Wailing",
+				"Willow"
+			]
+		},
+		{
+			"name": "river suffix",
+			"entries": [
+				"Course",
+				"Fork",
+				"Rapids",
+				"River",
+				"Run",
+				"Tributary"
+			]
+		}
+	]
+}

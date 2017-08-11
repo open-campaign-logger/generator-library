@@ -1,0 +1,22 @@
+{
+	"name": "Title, Military (Formal) Generator",
+	"resultPattern": "{titleMilitary formal}",
+	"tables": [
+		{
+			"name": "titleMilitary formal",
+			"entries": [
+		    	"Captain",
+        		"Commander",
+        		"Corporal",
+        		"General",
+        		"Lieutenant",
+        		"Lord",
+        		"Lord Marshal",
+        		"Major",
+        		"Marshal",
+        		"Overseer",
+        		"Sergeant"
+			]
+		}
+	]
+}

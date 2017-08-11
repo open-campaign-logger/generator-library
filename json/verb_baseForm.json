@@ -1,0 +1,40 @@
+{
+	"name": "Verb (base form) Generator",
+	"resultPattern": "{verb baseForm}",
+	"tables": [
+		{
+			"name": "verb baseForm",
+			"entries": [
+		    	"babble",
+				"chuckle",
+				"cough",
+				"cry",
+				"dance",
+				"drool",
+				"gibber",
+				"hobble",
+				"hum",
+				"jeer",
+				"lament",
+				"laugh",
+				"loiter",
+				"limp",
+				"pass",
+				"quake",
+				"quiver",
+				"smile",
+				"smoke",
+				"snicker",
+				"sob",
+				"stagger",
+				"stutter",
+				"sway",
+				"sweat",
+				"twitch",
+				"wander",
+				"wheeze",
+				"whistle"
+			]
+		}
+	]
+}

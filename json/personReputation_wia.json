@@ -1,0 +1,36 @@
+{
+	"name": "Person, Reputation (with indefinitive article) Generator",
+	"resultPattern": "{personReputation wia}",
+	"tables": [
+		{
+			"name": "personReputation wia",
+			"entries": [
+		    	"an ancient",
+				"a blind",
+				"a dishonorable",
+				"an evil",
+				"a famous",
+				"a good",
+				"a heartless",
+				"a holy",
+				"an honorable",
+				"an infamous",
+				"a lecherous",
+				"a legendary",
+				"a long lost",
+				"a mad",
+				"a maniacal",
+				"a mute",		
+				"a murderous",
+				"a mysterious",
+				"a pompous",
+				"a traitorous",
+				"a tyrannical",
+				"an undead",
+				"an undying",
+				"a venerable",
+				"a wandering"
+			]
+		}
+	]
+}
