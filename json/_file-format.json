@@ -1,7 +1,7 @@
 {
     "name": "Simple NSC Generator",
     "explanation": "Based on the file format defined at 'https://campaign-logger.com/generator/help', we will try out new ideas here to define an extended format for generator files. This 'explanation' property is one new extension which should contain details on the generator or a table (where it may occur, too).",
-    "resultPattern": "{name} from {location} has {multiplicity}",
+    "resultPattern": "{name} from {location} has {multiplicity} and is {years} years old",
     "tables": [{
             "name": "name",
             "explanation": "This table just defines the general layout of a table object.",
@@ -23,6 +23,13 @@
             "entries": [
                 "many friends",
                 { "m": 30, "v": "a rather small family" }
+            ]
+        },
+        {
+            "name": "years",
+            "explanation": "This table shows the already supported dice feature.",
+            "entries": [
+                "{dice:3d6+15}"
             ]
         }
     ]
