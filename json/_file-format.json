@@ -19,7 +19,7 @@
         },
         {
             "name": "multiplicity",
-            "explanation": "This tables demonstrates the new multiplicity-feature for entries.",
+            "explanation": "This table demonstrates the new multiplicity-feature for entries.",
             "entries": [
                 "many friends",
                 { "m": 30, "v": "a rather small family" }
