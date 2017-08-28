@@ -1,11 +1,11 @@
 {
   "name": "Metal Generator",
-  "explanation": "Metals for resource and material tables. Including the most commonly known metals, not the whole of periodic table. Subtables have been sorted from common to rare.",
+  "explanation": "Metals for resource and material tables. Including the most commonly known metals and alloys, not the whole of periodic table. Subtables have been sorted from common to rare.",
   "resultPattern": "{metal}",
   "tables": [
     {
       "name": "metal",
-      "explanation": "Subtables present metals known in different types of worlds. The first subtables are compatible with most worlds, and  get more specialized towards the end. Some subtables intentionally overlap.",
+      "explanation": "Subtables present metals known in different types of genres and worlds. The first subtables are compatible with most worlds, and  get more specialized towards the end. Modern and scifi subtables are not called by default to retain compatibility with the default fantasy setting. Some subtables intentionally overlap.",
       "entries": [
         {
           "m": 10,
@@ -13,14 +13,12 @@
         },
         {
           "m": 5,
-          "v": "{ferrous}"
+          "v": "{alloy}"
         },
         {
           "m": 2,
-          "v": "{noble}"
+          "v": "{precious}"
         },
-        "{precious}",
-        "{alloy}",
         "{mythic}",
         "{fantasy}"
       ]
@@ -34,6 +32,7 @@
         "iron",
         "zinc",
         "copper",
+        "{ferrous}",
         "{base alloy}"
       ]
     },
@@ -42,26 +41,9 @@
       "explanation": "Common metals containing iron. Usually magnetic.",
       "entries": [
         "meteoric iron",
-        "wrought iron",
         "cast iron",
+        "wrought iron",
         "steel"
-      ]
-    },
-    {
-      "name": "noble",
-      "explanation": "Common metals that are resistant to corrosion or oxidation.  Excludes metals from modern and scifi subtables. Overlaps with the precious subtable.",
-      "entries": [
-        "silver",
-        "gold"
-      ]
-    },
-    {
-      "name": "precious",
-      "explanation": "Valuable common metals.",
-      "entries": [
-        "silver",
-        "gold",
-        "{precious alloy}"
       ]
     },
     {
@@ -103,6 +85,15 @@
         "purple gold",
         "blue gold",
         "crown gold"
+      ]
+    },
+    {
+      "name": "precious",
+      "explanation": "Valuable common metals.",
+      "entries": [
+        "silver",
+        "gold",
+        "{precious alloy}"
       ]
     },
     {
@@ -153,7 +144,17 @@
         "thallium",
         "platinum",
         "palladium",
+        "{noble}",
         "{heavy}"
+      ]
+    },
+    {
+      "name": "noble",
+      "explanation": "Common metals that are resistant to corrosion or oxidation.  Excludes metals from modern and scifi subtables. Overlaps with the precious subtable.",
+      "entries": [
+        "silver",
+        "gold",
+        "platinum"
       ]
     },
     {
