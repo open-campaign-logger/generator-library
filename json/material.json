@@ -1,0 +1,88 @@
+{
+  "name": "Material Generator",
+  "explanation": "Materials for resource and construction tables. Subtables have been sorted from common to rare. See also: metal.json. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "resultPattern": "{material}",
+  "tables": [
+    {
+      "name": "material",
+      "explanation": "Subtables present materials known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and  get more specialized towards the end. Modern and scifi subtables are not called by default to retain compatibility with the default fantasy setting. Some subtables intentionally overlap.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        {
+          "m": 10,
+          "v": "{rare}"
+        },
+        "{mythic}",
+        "{fantasy}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common materials.",
+      "entries": [
+        "{inorganic}",
+        "{organic}"
+      ]
+    },
+    {
+      "name": "inorganic",
+      "explanation": "Common inorganic materials.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "organic",
+      "explanation": "Common organic materials.",
+      "entries": [
+        "{wood}"
+      ]
+    },
+    {
+      "name": "wood",
+      "explanation": "Wood types.",
+      "entries": [
+        "oak"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare materials.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "mythic",
+      "explanation": "Imaginary materials once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary materials for fantasy worlds.",
+      "entries": [
+        "{mythic}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Materials for modern worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "name": "scifi",
+      "explanation": "Imaginary materials for science fiction worlds.",
+      "entries": [
+        "neutronium",
+        "{modern}"
+      ]
+    }
+  ]
+}

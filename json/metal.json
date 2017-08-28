@@ -1,6 +1,6 @@
 {
   "name": "Metal Generator",
-  "explanation": "Metals for resource and material tables. Subtables have been sorted from common to rare. Authors: Johnn Four, Jochen Linnemann, Esko Vesala. Sources: TvTropes.org, Wikipedia.org.",
+  "explanation": "Metals for resource and material tables. Subtables have been sorted from common to rare. See also: material.json. Authors: Johnn Four, Jochen Linnemann, Esko Vesala. Sources: TvTropes.org, Wikipedia.org.",
   "resultPattern": "{metal}",
   "tables": [
     {
@@ -107,12 +107,14 @@
       "name": "fantasy",
       "explanation": "Imaginary metals for fantasy worlds.",
       "entries": [
+        "{mythic}",
         "cold iron",
         "star iron",
         "hell iron",
         "absolute iron",
         "fine steel",
         "red steel",
+        "brightsteel",
         "elven steel",
         "soulsteel",
         "infernal brass",
@@ -124,11 +126,12 @@
         "philosophic mercury",
         "alchemical silver",
         "moonsilver",
+        "astral silver",
         "true silver",
         "black gold",
         "greater gold",
-        "mithral",
         "grey adamant",
+        "mithral",
         "adamantite",
         "primal metal"
       ]
@@ -198,13 +201,23 @@
       "name": "scifi",
       "explanation": "Imaginary metals for science fiction worlds.",
       "entries": [
+        "{modern}",
         "plasteel",
         "glassteel",
         "red mercury",
         "alien metal",
-        "unobtanium",
-        "wishalloy",
-        "{modern}"
+        "metal X",
+        "unaffordium",
+        "unobtainium",
+        "{scifi alloy}"
+      ]
+    },
+    {
+      "name": "scifi alloy",
+      "explanation": "Imaginary alloys for science fiction metals.",
+      "entries": [
+        "duralloy",
+        "wishalloy"
       ]
     }
   ]
