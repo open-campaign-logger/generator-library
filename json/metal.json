@@ -1,11 +1,11 @@
 {
   "name": "Metal Generator",
-  "explanation": "Metals for resource and material tables. Including the most commonly known metals and alloys, not the whole of periodic table. Subtables have been sorted from common to rare.",
+  "explanation": "Metals for resource and material tables. Subtables have been sorted from common to rare. Authors: Johnn Four, Jochen Linnemann, Esko Vesala. Sources: TvTropes.org, Wikipedia.org.",
   "resultPattern": "{metal}",
   "tables": [
     {
       "name": "metal",
-      "explanation": "Subtables present metals known in different types of genres and worlds. The first subtables are compatible with most worlds, and  get more specialized towards the end. Modern and scifi subtables are not called by default to retain compatibility with the default fantasy setting. Some subtables intentionally overlap.",
+      "explanation": "Subtables present metals known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and  get more specialized towards the end. Modern and scifi subtables are not called by default to retain compatibility with the default fantasy setting. Some subtables intentionally overlap.",
       "entries": [
         {
           "m": 10,
@@ -25,7 +25,7 @@
     },
     {
       "name": "base",
-      "explanation": "Common metals that are easily corrored or oxidized.",
+      "explanation": "Common metals, easily corrored or oxidized.",
       "entries": [
         "tin",
         "lead",
@@ -42,8 +42,7 @@
       "entries": [
         "meteoric iron",
         "cast iron",
-        "wrought iron",
-        "steel"
+        "wrought iron"
       ]
     },
     {
@@ -64,11 +63,10 @@
         "brass",
         "bronze",
         "pewter",
-        "meteoric iron",
-        "cast iron",
         "steel",
         "stainless steel",
-        "alloy steel"
+        "alloy steel",
+        "damascus steel"
       ]
     },
     {
@@ -100,6 +98,7 @@
       "name": "mythic",
       "explanation": "Imaginary metals once rumoured to have existed.",
       "entries": [
+        "hard mercury",
         "adamant",
         "orichalcum"
       ]
@@ -108,8 +107,30 @@
       "name": "fantasy",
       "explanation": "Imaginary metals for fantasy worlds.",
       "entries": [
+        "cold iron",
+        "star iron",
+        "hell iron",
+        "absolute iron",
+        "fine steel",
+        "red steel",
+        "elven steel",
+        "soulsteel",
+        "infernal brass",
+        "dwarven copper",
+        "dwarven metal",
+        "black orichalcum",
+        "darkstone",
+        "solid quicksilver",
+        "philosophic mercury",
+        "alchemical silver",
+        "moonsilver",
+        "true silver",
+        "black gold",
+        "greater gold",
+        "mithral",
+        "grey adamant",
         "adamantite",
-        "mithral"
+        "primal metal"
       ]
     },
     {
@@ -177,6 +198,10 @@
       "name": "scifi",
       "explanation": "Imaginary metals for science fiction worlds.",
       "entries": [
+        "plasteel",
+        "glassteel",
+        "red mercury",
+        "alien metal",
         "unobtanium",
         "wishalloy",
         "{modern}"
