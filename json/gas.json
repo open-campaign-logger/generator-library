@@ -23,28 +23,42 @@
       "name": "common",
       "explanation": "Common gases.",
       "entries": [
-        "{air}"
+        "{air}",
+        "steam",
+        "colorless vapor"
       ]
     },
     {
       "name": "air",
       "explanation": "Water types.",
       "entries": [
-        "pure air"
+        "air",
+        "warm air",
+        "cold air",
+        "pure air",
+        "smoky air",
+        "dusty air",
+        "stale air",
+        "foul reeking air",
+        "sulphuric air",
+        "air bearing a pleasant scent"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare gases.",
       "entries": [
-        "XXX"
+        "natural gas",
+        "volcanic gas"
       ]
     },
     {
       "name": "mythic",
       "explanation": "Imaginary gases once rumoured to have existed.",
       "entries": [
-        "XXX"
+        "miasma",
+        "aether (celestial air)",
+        "akasha (upper sky)"
       ]
     },
     {
@@ -58,14 +72,36 @@
       "name": "modern",
       "explanation": "Gases for modern worlds.",
       "entries": [
-        "{common}"
+        "{common}",
+        "saturated steam (at boiling point)",
+        "hydrogen",
+        "nitrogen",
+        "oxygen",
+        "methane",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare gases for modern worlds.",
+      "entries": [
+        "dry steam (slightly superheated)",
+        "helium",
+        "neon",
+        "argon",
+        "krypton",
+        "xenon",
+        "radon",
+        "fluorine",
+        "chlorine"
       ]
     },
     {
       "name": "scifi",
       "explanation": "Imaginary gases for science fiction worlds.",
       "entries": [
-        "{modern}"
+        "{modern}",
+        "superheated steam"
       ]
     }
   ]

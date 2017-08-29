@@ -23,27 +23,58 @@
       "name": "common",
       "explanation": "Common liquids.",
       "entries": [
-        "{water}"
+        "{water}",
+        "wine",
+        "urine"
       ]
     },
     {
       "name": "water",
       "explanation": "Water types.",
       "entries": [
-        "fresh water"
+        "fresh water",
+        "pure water",
+        "rain water",
+        "groundwater",
+        "lake water",
+        "river water",
+        "spring water",
+        "swamp water",
+        "sea water",
+        "well water",
+        "fountain water",
+        "warm water",
+        "cold water",
+        "melted snow",
+        "melted ice",
+        "soft water",
+        "hard water (mineral-rich)",
+        "muddy water",
+        "stale water",
+        "foul-smelling water",
+        "salt water",
+        "sulphuric water",
+        "magmatic water",
+        "scented water",
+        "holy water"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare liquids.",
       "entries": [
-        "blood"
+        "blood",
+        "tears",
+        "mercury"
       ]
     },
     {
       "name": "mythic",
       "explanation": "Imaginary liquids once rumoured to have existed.",
       "entries": [
+        "yellow bile (aggressive bodily humour)",
+        "black bile (melancholic bodily humour)",
+        "phlegm (apathetic bodily humour)",
         "alkahest",
         "azoth",
         "nectar",
@@ -55,7 +86,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary materials for fantasy worlds.",
+      "explanation": "Imaginary liquids for fantasy worlds.",
       "entries": [
         "{mythic}"
       ]
@@ -65,15 +96,49 @@
       "explanation": "Liquids for modern worlds.",
       "entries": [
         "{common}",
+        "{modern water}",
         "oil",
-        "gasoline"
+        "gasoline",
+        "{modern rare}"
+      ]
+    },
+    {
+      "name": "modern water",
+      "explanation": "Water types for modern worlds.",
+      "entries": [
+        "tap water",
+        "bottled water",
+        "sparkling water",
+        "mineral water",
+        "demineralized water",
+        "distilled water",
+        "purified water",
+        "carbonated water",
+        "aerated water",
+        "fluoridated water",
+        "electrolysed water",
+        "deionized water",
+        "ionized water",
+        "sterile water",
+        "ultrapure water",
+        "contaminated water",
+        "radioactive water",
+        "bromine water"
+      ]
+    },
+    {
+      "name": "modern rare",
+      "explanation": "Rare liquids for modern worlds.",
+      "entries": [
+        "bromine"
       ]
     },
     {
       "name": "scifi",
       "explanation": "Imaginary liquids for science fiction worlds.",
       "entries": [
-        "{modern}"
+        "{modern}",
+        "super-dense water (molecular uniformity)"
       ]
     }
   ]

@@ -52,14 +52,17 @@
       "name": "rare",
       "explanation": "Rare materials.",
       "entries": [
-        "XXX"
+        "sulphur"
       ]
     },
     {
       "name": "mythic",
       "explanation": "Imaginary materials once rumoured to have existed.",
       "entries": [
-        "XXX"
+        "quintessence (fifth element)",
+        "pneuma (breath of life)",
+        "vital spark (life energy)",
+        "soul"
       ]
     },
     {
@@ -73,15 +76,33 @@
       "name": "modern",
       "explanation": "Materials for modern worlds.",
       "entries": [
-        "{common}"
+        "{common}",
+        "{plastic}",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "plastic",
+      "explanation": "Plastic types.",
+      "entries": [
+        "polymer"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Materials for modern worlds.",
+      "entries": [
+        "dry water (silica-coated water droplets)"
       ]
     },
     {
       "name": "scifi",
       "explanation": "Imaginary materials for science fiction worlds.",
       "entries": [
+        "{modern}",
         "neutronium",
-        "{modern}"
+        "dark matter",
+        "antimatter"
       ]
     }
   ]
