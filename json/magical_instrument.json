@@ -1,0 +1,244 @@
+{
+  "name": "Magical Instrument Generator",
+  "explanation": "Subtables have been sorted from common to rare. Author: XXX. Sources: XXX.",
+  "resultPattern": "{magical instrument}",
+  "tables": [
+    {
+      "name": "magical instrument",
+      "explanation": "Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and  get more specialized towards the end. Modern and scifi subtables are not called by default to retain compatibility with the default fantasy setting. Some subtables intentionally overlap.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        {
+          "m": 5,
+          "v": "{rare}"
+        },
+        "{mythic}",
+        "{fantasy}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common magical instruments.",
+      "entries": [
+        "{tool}",
+        "{jewellery}",
+        "{symbol}",
+        "{weapon}",
+        "{vessel}",
+        "{material}",
+        "{clothing}",
+        "{text}",
+        "{familiar}"
+      ]
+    },
+    {
+      "name": "tool",
+      "explanation": "Magical tools.",
+      "entries": [
+        "bundle of herbs",
+        "wand",
+        "rod",
+        "staff",
+        "mirror",
+        "quill",
+        "doll",
+        "knotted rope",
+        "string of beads",
+        "censer",
+        "scepter",
+        "disc",
+        "orb",
+        "crystal ball",
+        "witch ball (hollow glass sphere)",
+        "witch's ladder (knotted cord charm)",
+        "scourge",
+        "burin (engraving tool)"
+      ]
+    },
+    {
+      "name": "jewellery",
+      "explanation": "Magical jewelry.",
+      "entries": [
+        "charm",
+        "charmstone",
+        "amulet (protective charm)",
+        "talisman (magical charm)",
+        "lamen (magical pendant)",
+        "magic ring"
+      ]
+    },
+    {
+      "name": "symbol",
+      "explanation": "Magical symbols.",
+      "entries": [
+        "pentacle (amulet with the symbol of an entity)",
+        "pentagram (five-pointed star)",
+        "hexagram (six-pointed star)",
+        "heptagram (seven-pointed star)",
+        "sigil (occult sign presenting an entity)",
+        "magical circle",
+        "kamea (magic square grid)",
+        "mandala (symbol presenting the universe)"
+      ]
+    },
+    {
+      "name": "weapon",
+      "explanation": "Magical weapons.",
+      "entries": [
+        "dagger",
+        "athame (black-handled ceremonial blade)",
+        "boline (white-handled, curved ritual knife)",
+        "sickle",
+        "mace",
+        "sword",
+        "staff",
+        "spear"
+      ]
+    },
+    {
+      "name": "vessel",
+      "explanation": "Magical vessels.",
+      "entries": [
+        "cup",
+        "chalice (ceremonial footed cup)",
+        "goblet",
+        "cauldron"
+      ]
+    },
+    {
+      "name": "material",
+      "explanation": "Magical materials.",
+      "entries": [
+        "incense",
+        "ointment",
+        "salve",
+        "oil",
+        "holy anointing oil",
+        "holy water"
+      ]
+    },
+    {
+      "name": "clothing",
+      "explanation": "Magical clothing.",
+      "entries": [
+        "pointed hat",
+        "cloak",
+        "cingulum (colored cord belt)"
+      ]
+    },
+    {
+      "name": "text",
+      "explanation": "Magical texts.",
+      "entries": [
+        "grimoire (spellbook)",
+        "scroll",
+        "papyrus",
+        "clay tablet",
+        "lead tablet",
+        "stone tablet"
+      ]
+    },
+    {
+      "name": "familiar",
+      "explanation": "Magical pets.",
+      "entries": [
+        "toad",
+        "rat",
+        "ferret",
+        "bird",
+        "cat",
+        "dog",
+        "hare",
+        "pig",
+        "wasp",
+        "butterfly",
+        "gargoyle",
+        "homonculus",
+        "golem",
+        "automaton",
+        "simulacrum (artificial imitation of a person)",
+        "tulpa (manifestation of a thoughtform)"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare magical instruments.",
+      "entries": [
+        "veve (a symbol drawn by pouring powder)"
+      ]
+    },
+    {
+      "name": "mythic",
+      "explanation": "Imaginary magical instruments once rumoured to have existed.",
+      "entries": [
+        "elf-arrow (flint arrowhead shot by a fairy)",
+        "thunderstone (stone fallen from the sky)",
+        "{rare mythic}"
+      ]
+    },
+    {
+      "name": "rare mythic",
+      "explanation": "Rare imaginary magical instruments once rumoured to have existed.",
+      "entries": [
+        "{mythic}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary magical instruments for fantasy worlds.",
+      "entries": [
+        "{mythic}",
+        "XXX",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary magical instruments for fantasy worlds.",
+      "entries": [
+        "{fantasy}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Magical instruments for modern worlds.",
+      "entries": [
+        "{common}",
+        "Abramelin oil (blended from aromatic plants)",
+        "macerated Abramelin oil (blended from aromatic plants)",
+        "Abramelin oil made with essential oils",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare magical instruments for modern worlds.",
+      "entries": [
+        "{modern}",
+        "doubly consecrated Abramelin oil (blended from aromatic plants)"
+      ]
+    },
+    {
+      "name": "scifi",
+      "explanation": "Imaginary magical instruments for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX",
+        "{rare scifi}"
+      ]
+    },
+    {
+      "name": "rare scifi",
+      "explanation": "Rare imaginary magical instruments for science fiction worlds.",
+      "entries": [
+        "{scifi}",
+        "XXX"
+      ]
+    }
+  ]
+}

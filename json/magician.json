@@ -1,0 +1,116 @@
+{
+  "name": "Magician Generator",
+  "explanation": "Subtables have been sorted from common to rare. Author: Esko Vesala. Sources: Wikipedia.",
+  "resultPattern": "{magician}",
+  "tables": [
+    {
+      "name": "magician",
+      "explanation": "Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and  get more specialized towards the end. Modern and scifi subtables are not called by default to retain compatibility with the default fantasy setting. Some subtables intentionally overlap.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        {
+          "m": 5,
+          "v": "{rare}"
+        },
+        "{mythic}",
+        "{fantasy}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common magicians.",
+      "entries": [
+        "folk healer",
+        "healer",
+        "shaman",
+        "druid",
+        "seer",
+        "conjurer",
+        "wisewoman",
+        "white witch",
+        "witch",
+        "warlock (male witch)"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare magicians.",
+      "entries": [
+        "sorcerer",
+        "wizard",
+        "oracle",
+        "haruspex (diviner reading entrails)"
+      ]
+    },
+    {
+      "name": "mythic",
+      "explanation": "Imaginary magicians once rumoured to have existed.",
+      "entries": [
+        "XXX",
+        "{rare mythic}"
+      ]
+    },
+    {
+      "name": "rare mythic",
+      "explanation": "Rare imaginary magicians once rumoured to have existed.",
+      "entries": [
+        "{mythic}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary magicians for fantasy worlds.",
+      "entries": [
+        "{mythic}",
+        "XXX",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary magicians for fantasy worlds.",
+      "entries": [
+        "{fantasy}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Magicians for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare magicians for modern worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "scifi",
+      "explanation": "Imaginary magicians for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX",
+        "{rare scifi}"
+      ]
+    },
+    {
+      "name": "rare scifi",
+      "explanation": "Rare imaginary magicians for science fiction worlds.",
+      "entries": [
+        "{scifi}",
+        "technomage"
+      ]
+    }
+  ]
+}

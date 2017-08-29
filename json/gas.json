@@ -1,0 +1,108 @@
+{
+  "name": "Gas Generator",
+  "explanation": "Gases for resource tables. Subtables have been sorted from common to rare. See also: liquid, material, metal tables. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "resultPattern": "{gas}",
+  "tables": [
+    {
+      "name": "gas",
+      "explanation": "Subtables present gases known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and  get more specialized towards the end. Modern and scifi subtables are not called by default to retain compatibility with the default fantasy setting. Some subtables intentionally overlap.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        {
+          "m": 5,
+          "v": "{rare}"
+        },
+        "{mythic}",
+        "{fantasy}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common gases.",
+      "entries": [
+        "{air}",
+        "steam",
+        "colorless vapor"
+      ]
+    },
+    {
+      "name": "air",
+      "explanation": "Water types.",
+      "entries": [
+        "air",
+        "warm air",
+        "cold air",
+        "pure air",
+        "smoky air",
+        "dusty air",
+        "stale air",
+        "foul reeking air",
+        "sulphuric air",
+        "air bearing a pleasant scent"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare gases.",
+      "entries": [
+        "natural gas",
+        "volcanic gas"
+      ]
+    },
+    {
+      "name": "mythic",
+      "explanation": "Imaginary gases once rumoured to have existed.",
+      "entries": [
+        "miasma",
+        "aether (celestial air)",
+        "akasha (upper sky)"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary gases for fantasy worlds.",
+      "entries": [
+        "{mythic}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Gases for modern worlds.",
+      "entries": [
+        "{common}",
+        "saturated steam (at boiling point)",
+        "hydrogen",
+        "nitrogen",
+        "oxygen",
+        "methane",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare gases for modern worlds.",
+      "entries": [
+        "dry steam (slightly superheated)",
+        "helium",
+        "neon",
+        "argon",
+        "krypton",
+        "xenon",
+        "radon",
+        "fluorine",
+        "chlorine"
+      ]
+    },
+    {
+      "name": "scifi",
+      "explanation": "Imaginary gases for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "superheated steam"
+      ]
+    }
+  ]
+}

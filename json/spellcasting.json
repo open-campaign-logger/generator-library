@@ -1,0 +1,113 @@
+{
+  "name": "Spellcasting Method Generator",
+  "explanation": "Spellcasting methods for magic tables. Subtables have been sorted from common to rare. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "resultPattern": "{magic}",
+  "tables": [
+    {
+      "name": "spellcasting method",
+      "explanation": "Subtables present energies known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and  get more specialized towards the end. Modern and scifi subtables are not called by default to retain compatibility with the default fantasy setting. Some subtables intentionally overlap.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        {
+          "m": 5,
+          "v": "{rare}"
+        },
+        "{mythic}",
+        "{fantasy}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common spellcasting methods.",
+      "entries": [
+        "speaking words of power",
+        "speaking a magical formula",
+        "chanting",
+        "singing",
+        "repeating a mantra",
+        "praying",
+        "touching a charm",
+        "waving a magical instrument"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare spellcasting methods.",
+      "entries": [
+        "dancing",
+        "dreaming",
+        "writing",
+        "tying knots",
+        "ceremonial mass"
+      ]
+    },
+    {
+      "name": "mythic",
+      "explanation": "Imaginary spellcasting methods once rumoured to have existed.",
+      "entries": [
+        "XXX",
+        "{rare mythic}"
+      ]
+    },
+    {
+      "name": "rare mythic",
+      "explanation": "Imaginary spellcasting methods once rumoured to have existed.",
+      "entries": [
+        "{mythic}",
+        "achieving oneness with divinity"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary spellcasting methods for fantasy worlds.",
+      "entries": [
+        "{mythic}",
+        "spellsinging",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Imaginary spellcasting methods for fantasy worlds.",
+      "entries": [
+        "{fantasy}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Spellcasting methods for modern worlds.",
+      "entries": [
+        "{common}",
+        "concentrating",
+        "vibration of divine names",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare spellcasting methods for modern worlds.",
+      "entries": [
+        "attaining an altered state of consciousness",
+        "practicing yoga"
+      ]
+    },
+    {
+      "name": "scifi",
+      "explanation": "Imaginary spellcasting methods for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "{rare scifi}"
+      ]
+    },
+    {
+      "name": "rare scifi",
+      "explanation": "Imaginary spellcasting methods for science fiction worlds.",
+      "entries": [
+        "{scifi}"
+      ]
+    }
+  ]
+}

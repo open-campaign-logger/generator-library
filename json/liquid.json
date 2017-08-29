@@ -1,0 +1,145 @@
+{
+  "name": "Liquid Generator",
+  "explanation": "Liquids for resource tables. Subtables have been sorted from common to rare. See also: material.json, metal.json. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "resultPattern": "{liquid}",
+  "tables": [
+    {
+      "name": "liquid",
+      "explanation": "Subtables present liquids known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and  get more specialized towards the end. Modern and scifi subtables are not called by default to retain compatibility with the default fantasy setting. Some subtables intentionally overlap.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        {
+          "m": 5,
+          "v": "{rare}"
+        },
+        "{mythic}",
+        "{fantasy}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common liquids.",
+      "entries": [
+        "{water}",
+        "wine",
+        "urine"
+      ]
+    },
+    {
+      "name": "water",
+      "explanation": "Water types.",
+      "entries": [
+        "fresh water",
+        "pure water",
+        "rain water",
+        "groundwater",
+        "lake water",
+        "river water",
+        "spring water",
+        "swamp water",
+        "sea water",
+        "well water",
+        "fountain water",
+        "warm water",
+        "cold water",
+        "melted snow",
+        "melted ice",
+        "soft water",
+        "hard water (mineral-rich)",
+        "muddy water",
+        "stale water",
+        "foul-smelling water",
+        "salt water",
+        "sulphuric water",
+        "magmatic water",
+        "scented water",
+        "holy water"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare liquids.",
+      "entries": [
+        "blood",
+        "tears",
+        "mercury"
+      ]
+    },
+    {
+      "name": "mythic",
+      "explanation": "Imaginary liquids once rumoured to have existed.",
+      "entries": [
+        "yellow bile (aggressive bodily humour)",
+        "black bile (melancholic bodily humour)",
+        "phlegm (apathetic bodily humour)",
+        "alkahest",
+        "azoth",
+        "nectar",
+        "elixir of life",
+        "amrita",
+        "ichor",
+        "eitr"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary liquids for fantasy worlds.",
+      "entries": [
+        "{mythic}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Liquids for modern worlds.",
+      "entries": [
+        "{common}",
+        "{modern water}",
+        "oil",
+        "gasoline",
+        "{modern rare}"
+      ]
+    },
+    {
+      "name": "modern water",
+      "explanation": "Water types for modern worlds.",
+      "entries": [
+        "tap water",
+        "bottled water",
+        "sparkling water",
+        "mineral water",
+        "demineralized water",
+        "distilled water",
+        "purified water",
+        "carbonated water",
+        "aerated water",
+        "fluoridated water",
+        "electrolysed water",
+        "deionized water",
+        "ionized water",
+        "sterile water",
+        "ultrapure water",
+        "contaminated water",
+        "radioactive water",
+        "bromine water"
+      ]
+    },
+    {
+      "name": "modern rare",
+      "explanation": "Rare liquids for modern worlds.",
+      "entries": [
+        "bromine"
+      ]
+    },
+    {
+      "name": "scifi",
+      "explanation": "Imaginary liquids for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "super-dense water (molecular uniformity)"
+      ]
+    }
+  ]
+}
