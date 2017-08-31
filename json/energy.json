@@ -24,15 +24,15 @@
       "explanation": "Common energies.",
       "entries": [
         "heat",
-        "gravity",
-        "magnetism"
+        "gravity"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare energies.",
       "entries": [
-        "XXX"
+        "magnetism",
+        "steam"
       ]
     },
     {
@@ -91,6 +91,7 @@
         "{modern}",
         "geomagnetism",
         "tectonic force",
+        "cosmic radiation",
         "space weather",
         "antimatter"
       ]

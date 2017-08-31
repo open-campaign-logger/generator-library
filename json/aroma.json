@@ -1,0 +1,137 @@
+{
+  "name": "Aroma Generator",
+  "explanation": "Subtables have been sorted from common to rare. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "resultPattern": "{aroma}",
+  "tables": [
+    {
+      "name": "aroma",
+      "explanation": "Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and  get more specialized towards the end. Modern and scifi subtables are not called by default to retain compatibility with the default fantasy setting. Some subtables intentionally overlap.",
+      "entries": [
+        "{rotting}",
+        "{stingy}",
+        "{dark}",
+        "{sharp}",
+        "{alcohol}",
+        "{woody}",
+        "{spicy}",
+        "{fruity}",
+        "{flowery}",
+        "{sweet}"
+      ]
+    },
+    {
+      "name": "rotting",
+      "explanation": "Rotten aromas.",
+      "entries": [
+        "rotting flesh",
+        "fecal",
+        "fishy"
+      ]
+    },
+    {
+      "name": "stingy",
+      "explanation": "Stingy aromas.",
+      "entries": [
+        "sulphuric",
+        "acidic",
+        "urine",
+        "sweaty"
+      ]
+    },
+    {
+      "name": "dark",
+      "explanation": "Dark aromas.",
+      "entries": [
+        "blood",
+        "mushroom-like",
+        "metallic",
+        "tart",
+        "sour",
+        "musky"
+      ]
+    },
+    {
+      "name": "sharp",
+      "explanation": "Sharp aromas.",
+      "entries": [
+        "anise",
+        "spearmint",
+        "camphor",
+        "menthol",
+        "minty"
+      ]
+    },
+    {
+      "name": "alcohol",
+      "explanation": "Alcohol-like aromas.",
+      "entries": [
+        "rum-like",
+        "wine"
+      ]
+    },
+    {
+      "name": "woody",
+      "explanation": "Woody aromas.",
+      "entries": [
+        "woody",
+        "fresh bark",
+        "pine",
+        "wintergreen",
+        "cork",
+        "garlic",
+        "leek"
+      ]
+    },
+    {
+      "name": "spicy",
+      "explanation": "Woody aromas.",
+      "entries": [
+        "vanilla",
+        "caraway",
+        "almond",
+        "clove",
+        "cinnamon",
+        "thyme"
+      ]
+    },
+    {
+      "name": "fruity",
+      "explanation": "Fruit-like aromas.",
+      "entries": [
+        "fruity",
+        "apple",
+        "pear",
+        "grape",
+        "lemon",
+        "strawberry",
+        "cherry"
+      ]
+    },
+    {
+      "name": "flowery",
+      "explanation": "Flower-like aromas.",
+      "entries": [
+        "floral",
+        "rose",
+        "sweet rose",
+        "lavender",
+        "lilac"
+      ]
+    },
+    {
+      "name": "sweet",
+      "explanation": "Sweet aromas.",
+      "entries": [
+        "sweet",
+        "sugary",
+        "grassy",
+        "fresh-cut grass",
+        "nutty",
+        "fresh bread",
+        "creamy",
+        "buttery",
+        "suryp"
+      ]
+    }
+  ]
+}
