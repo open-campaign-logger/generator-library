@@ -5,6 +5,10 @@
     "variables": {
         "gender": ""
     },
+    "categories": [
+        "Names",
+        "Characters"
+    ],
     "tables": [{
             "name": "name",
             "explanation": "This table just defines the general layout of a table object. It also demonstrates how to set meta-information when selecting an entry.",
