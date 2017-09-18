@@ -1,11 +1,11 @@
 {
   "name": "Metal Generator",
-  "explanation": "Metals for resource and material tables. Subtables have been sorted from common to rare. See also: material.json. Authors: Johnn Four, Jochen Linnemann, Esko Vesala. Sources: TvTropes.org, Wikipedia.org.",
+  "explanation": "Metals for resource and material tables. Subtables have been sorted from common to rare. Subtables present metals known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: material table. Authors: Johnn Four, Jochen Linnemann, Esko Vesala. Sources: TvTropes.org, Wikipedia.org.",
   "resultPattern": "{metal}",
   "tables": [
     {
       "name": "metal",
-      "explanation": "Subtables present metals known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and  get more specialized towards the end. Modern and scifi subtables are not called by default to retain compatibility with the default fantasy setting. Some subtables intentionally overlap.",
+      "explanation": "Metal types.",
       "entries": [
         {
           "m": 10,
@@ -15,12 +15,7 @@
           "m": 5,
           "v": "{alloy}"
         },
-        {
-          "m": 2,
-          "v": "{precious}"
-        },
-        "{mythic}",
-        "{fantasy}"
+        "{precious}"
       ]
     },
     {
@@ -173,7 +168,7 @@
     },
     {
       "name": "noble",
-      "explanation": "Common metals that are resistant to corrosion or oxidation.  Excludes metals from modern and scifi subtables. Overlaps with the precious subtable.",
+      "explanation": "Common metals that are resistant to corrosion or oxidation. Excludes metals from modern and futuristic subtables. Overlaps with the precious subtable.",
       "entries": [
         "silver",
         "gold",
@@ -197,7 +192,7 @@
       ]
     },
     {
-      "name": "scifi",
+      "name": "futuristic",
       "explanation": "Imaginary metals for science fiction worlds.",
       "entries": [
         "{modern}",
@@ -208,11 +203,11 @@
         "metal X",
         "unaffordium",
         "unobtainium",
-        "{scifi alloy}"
+        "{futuristic alloy}"
       ]
     },
     {
-      "name": "scifi alloy",
+      "name": "futuristic alloy",
       "explanation": "Imaginary alloys for science fiction metals.",
       "entries": [
         "duralloy",

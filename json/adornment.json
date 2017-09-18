@@ -1,0 +1,224 @@
+{
+  "name": "Adornment Generator",
+  "explanation": "Subtables have been sorted from common to rare. Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. XXX Still a work in progress that would require extending the table libraries. To Do: Remove the XXX's, add content. See also: jewelry.json. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "resultPattern": "{appearance} {adornment} {feature} {finishing}",
+  "tables": [
+    {
+      "name": "appearance",
+      "explanation": "The appearance of the adornment.",
+      "entries": [
+        "{material}"
+      ]
+    },
+    {
+      "name": "material",
+      "explanation": "Material types.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common material}"
+        },
+        "{rare material}"
+      ]
+    },
+    {
+      "name": "common material",
+      "explanation": "Common materials. XXX Just a placeholder - to be replaced with a wider material library once available.",
+      "entries": [
+        "{lib:metal}"
+      ]
+    },
+    {
+      "name": "rare material",
+      "explanation": "Rare material types. XXX Just a placeholder - to be replaced with a wider material library once available.",
+      "entries": [
+        "shell",
+        "hair",
+        "bog-wood"
+      ]
+    },
+    {
+      "name": "adornment",
+      "explanation": "Adornment types.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common adornment types. XXX Just a placeholder - to be expanded with additional item types.",
+      "entries": [
+        "{lib:jewelry}",
+        "{lib:armor}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare adornment types. XXX Just a placeholder - to be expanded with better-suited item types.",
+      "entries": [
+        "{lib:magicitem}",
+        "accessory",
+        "cosmetics"
+      ]
+    },
+    {
+      "name": "accessory",
+      "explanation": "Accessory types.",
+      "entries": [
+        "fan",
+        "cane",
+        "ceremonial {lib:weaponMelee}"
+      ]
+    },
+    {
+      "name": "mythic",
+      "explanation": "Imaginary adornment once rumoured to have existed.",
+      "entries": [
+        "XXX",
+        "{rare mythic}"
+      ]
+    },
+    {
+      "name": "rare mythic",
+      "explanation": "Rare imaginary adornment once rumoured to have existed.",
+      "entries": [
+        "{mythic}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary adornment for fantasy worlds.",
+      "entries": [
+        "{mythic}",
+        "XXX",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary adornment for fantasy worlds.",
+      "entries": [
+        "{fantasy}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Adornment for modern worlds.",
+      "entries": [
+        "{common}",
+        "{modern clothing}",
+        "{modern accessory}",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "modern clothing",
+      "explanation": "Modern clothing types.",
+      "entries": [
+        "{common}",
+        "cravat",
+        "tie",
+        "hat",
+        "gloves",
+        "shoes"
+      ]
+    },
+    {
+      "name": "modern accessory",
+      "explanation": "Modern accessory types.",
+      "entries": [
+        "wallet",
+        "watch",
+        "eyewear",
+        "scarf",
+        "handbag"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare adornment for modern worlds.",
+      "entries": [
+        "parasol",
+        "designer {modern clothing}",
+        "designer {modern accessory}"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary adornment for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary adornment for science fiction worlds.",
+      "entries": [
+        "{futuristic}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Additional features.",
+      "entries": [
+        " ",
+        "encrusted with {lib:gem}s",
+        "embedded with a carved {lib:stone}",
+        "with {decoration} decorations"
+      ]
+    },
+    {
+      "name": "decoration",
+      "explanation": "Decoration materials.",
+      "entries": [
+        "{lib:metal} wire",
+        "toadstone",
+        "insect",
+        "live insect"
+      ]
+    },
+    {
+      "name": "finishing",
+      "explanation": "Finishing.",
+      "entries": [
+        " ",
+        "with some patina",
+        "with heavy patina",
+        "carefully polished",
+        "polished to perfection",
+        "engraved with {pattern}",
+        "engraved with art depicting {artwork subject}"
+      ]
+    },
+    {
+      "name": "pattern",
+      "explanation": "Decorative abstract patterns.",
+      "entries": [
+        "floral pattern",
+        "angular patterns",
+        "round patterns",
+        "tiny writing",
+        "intricate artwork"
+      ]
+    },
+    {
+      "name": "artwork subject",
+      "explanation": "The subject of decorative artwork.",
+      "entries": [
+        "a mythic {lib:monsterEpic}",
+        "the {lib:weaponEpic}",
+        "a posing {lib:personClass}",
+        "scenery from {lib:nameLocation}"
+      ]
+    }
+  ]
+}

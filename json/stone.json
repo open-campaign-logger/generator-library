@@ -1,22 +1,17 @@
 {
   "name": "Stone Generator",
-  "explanation": "Stones for resource and construction tables. Subtables have been sorted from common to rare. See also: metal.json. Authors: Johnn Four, Jochen Linnemann, Esko Vesala. Sources: Wikipedia.org.",
+  "explanation": "Stones for resource and construction tables. Subtables have been sorted from common to rare. Subtables present stone types known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: metal.json. Authors: Johnn Four, Jochen Linnemann, Esko Vesala. Sources: Wikipedia.org.",
   "resultPattern": "{stone}",
   "tables": [
     {
       "name": "stone",
-      "explanation": "Subtables present stone types known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and  get more specialized towards the end. Modern and scifi subtables are not called by default to retain compatibility with the default fantasy setting. Some subtables intentionally overlap.",
+      "explanation": "Stone types.",
       "entries": [
         {
           "m": 10,
           "v": "{common}"
         },
-        {
-          "m": 5,
-          "v": "{rare}"
-        },
-        "{mythic}",
-        "{fantasy}"
+        "{rare}"
       ]
     },
     {
@@ -63,7 +58,7 @@
       ]
     },
     {
-      "name": "scifi",
+      "name": "futuristic",
       "entries": [
         "{modern}"
       ]

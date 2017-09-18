@@ -1,22 +1,17 @@
 {
   "name": "Magician Generator",
-  "explanation": "Subtables have been sorted from common to rare. Author: Esko Vesala. Sources: Wikipedia.",
+  "explanation": "Subtables have been sorted from common to rare. Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. Author: Esko Vesala. Sources: Wikipedia.",
   "resultPattern": "{magician}",
   "tables": [
     {
       "name": "magician",
-      "explanation": "Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and  get more specialized towards the end. Modern and scifi subtables are not called by default to retain compatibility with the default fantasy setting. Some subtables intentionally overlap.",
+      "explanation": "Magician types.",
       "entries": [
         {
           "m": 10,
           "v": "{common}"
         },
-        {
-          "m": 5,
-          "v": "{rare}"
-        },
-        "{mythic}",
-        "{fantasy}"
+        "{rare}"
       ]
     },
     {
@@ -96,19 +91,19 @@
       ]
     },
     {
-      "name": "scifi",
+      "name": "futuristic",
       "explanation": "Imaginary magicians for science fiction worlds.",
       "entries": [
         "{modern}",
         "XXX",
-        "{rare scifi}"
+        "{rare futuristic}"
       ]
     },
     {
-      "name": "rare scifi",
+      "name": "rare futuristic",
       "explanation": "Rare imaginary magicians for science fiction worlds.",
       "entries": [
-        "{scifi}",
+        "{futuristic}",
         "technomage"
       ]
     }

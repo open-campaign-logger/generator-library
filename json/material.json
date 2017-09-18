@@ -1,22 +1,17 @@
 {
   "name": "Material Generator",
-  "explanation": "Materials for resource and construction tables. Subtables have been sorted from common to rare. See also: metal.json. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "explanation": "Materials for resource and construction tables. Subtables have been sorted from common to rare. Subtables present materials known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: metal table. Author: Esko Vesala. Sources: Conservation-Wiki.com, Wikipedia.org.",
   "resultPattern": "{material}",
   "tables": [
     {
       "name": "material",
-      "explanation": "Subtables present materials known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and  get more specialized towards the end. Modern and scifi subtables are not called by default to retain compatibility with the default fantasy setting. Some subtables intentionally overlap.",
+      "explanation": "Material types.",
       "entries": [
         {
           "m": 10,
           "v": "{common}"
         },
-        {
-          "m": 10,
-          "v": "{rare}"
-        },
-        "{mythic}",
-        "{fantasy}"
+        "{rare}"
       ]
     },
     {
@@ -31,28 +26,132 @@
       "name": "inorganic",
       "explanation": "Common inorganic materials.",
       "entries": [
-        "XXX"
+        "{stone}",
+        "{mineral}",
+        "{ceramic}",
+        "{glass}",
+        "{metal}"
+      ]
+    },
+    {
+      "name": "stone",
+      "explanation": "Common stone materials.",
+      "entries": [
+        "{lib:stone}"
+      ]
+    },
+    {
+      "name": "mineral",
+      "explanation": "Common mineral materials.",
+      "entries": [
+        "coal",
+        "chalcedony",
+        "phosphorite",
+        "lodestone",
+        "quartz",
+        "milky quartz",
+        "smoky quartz",
+        "blue quartz",
+        "rose quartz",
+        "rock crystal",
+        "crystal",
+        "alabaster",
+        "obsidian",
+        "{gem}"
+      ]
+    },
+    {
+      "name": "ceramic",
+      "explanation": "Common ceramic materials.",
+      "entries": [
+        "clay",
+        "brick",
+        "terracotta",
+        "earthenware",
+        "stoneware",
+        "porcelain"
+      ]
+    },
+    {
+      "name": "glass",
+      "explanation": "Common glass materials.",
+      "entries": [
+        "volcanic glass",
+        "glass",
+        "colored glass",
+        "mirror glass"
+      ]
+    },
+    {
+      "name": "metal",
+      "explanation": "Common metal materials.",
+      "entries": [
+        "{lib:metal}"
       ]
     },
     {
       "name": "organic",
       "explanation": "Common organic materials.",
       "entries": [
-        "{wood}"
+        "{basketry}",
+        "{wood}",
+        "{leather}",
+        "{horn}",
+        "{bone}",
+        "{textile}"
+      ]
+    },
+    {
+      "name": "basketry",
+      "explanation": "Common basketry materials.",
+      "entries": [
+        "basketry"
       ]
     },
     {
       "name": "wood",
-      "explanation": "Wood types.",
+      "explanation": "Common wood materials.",
       "entries": [
+        "birch",
+        "aspen",
         "oak"
       ]
     },
     {
-      "name": "rare",
-      "explanation": "Rare materials.",
+      "name": "leather",
+      "explanation": "Common leather materials.",
       "entries": [
-        "sulphur"
+        "leather"
+      ]
+    },
+    {
+      "name": "horn",
+      "explanation": "Common horn materials.",
+      "entries": [
+        "horn"
+      ]
+    },
+    {
+      "name": "bone",
+      "explanation": "Common bone materials.",
+      "entries": [
+        "bone",
+        "tooth",
+        "ivory"
+      ]
+    },
+    {
+      "name": "textile",
+      "explanation": "Common textile materials.",
+      "entries": [
+        "{lib:fabric}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare materials. XXX What is the syntax for library subtable calls?",
+      "entries": [
+        "{lib:metal.mythic}"
       ]
     },
     {
@@ -96,7 +195,7 @@
       ]
     },
     {
-      "name": "scifi",
+      "name": "futuristic",
       "explanation": "Imaginary materials for science fiction worlds.",
       "entries": [
         "{modern}",

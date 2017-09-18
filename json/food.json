@@ -1,6 +1,6 @@
 {
   "name": "Food Generator",
-  "explanation": "Food for resource tables. Subtables have been sorted from common to rare. Subtables present foodstuffs known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and  get more specialized towards the end. Genre-specific subtables are not called by default to retain maximum compatibility between settings.\n\n  Subtable classification is based on everyday usage, not scientific taxonomy. Some subtables intentionally overlap. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "explanation": "Food for resource tables. Subtables have been sorted from common to rare. Subtables present foodstuffs known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and get more specialized towards the end. Genre-specific subtables are not called by default to retain maximum compatibility between settings. Subtable classification is based on everyday usage, not scientific taxonomy. Some subtables intentionally overlap. Author: Esko Vesala. Sources: Wikipedia.org.",
   "resultPattern": "{appearance} {recipe} with {ingredients} ({finishing})",
   "tables": [
     {
@@ -342,8 +342,8 @@
         "blended with {flavoring}",
         "mixed with {spice}",
         "aged for {dice:3d6} months",
-        "prepared using a vegetable rennet XXX",
-        "with a sour tang XXX",
+        "prepared using a vegetable rennet",
+        "with a {lib:aroma} tang",
         "coated in wax",
         "mould-ripened",
         "given a light dusting of charcoal",
@@ -489,7 +489,7 @@
       ]
     },
     {
-      "name": "scifi",
+      "name": "futuristic",
       "explanation": "Imaginary foodstuffs for science fiction worlds.",
       "entries": [
         "{modern}"
@@ -511,25 +511,76 @@
       "name": "taste",
       "explanation": "Food tastes.",
       "entries": [
-        "foul-tasting",
-        "sharp-tasting",
-        "strong",
-        "buttery",
-        "rich",
-        "mild",
-        "pungent",
-        "salty",
-        "sour",
-        "bitter",
-        "tasty",
-        "spicy",
-        "nutty flavored",
-        "mellow",
-        "tangy",
-        "sweet",
-        "delicious",
+        "{bad taste}",
+        "{neutral taste}",
+        "{strong taste}",
+        "{good taste}",
         "{strength} {herb} flavored",
         "{strength} flavored with {spice}"
+      ]
+    },
+    {
+      "name": "bad taste",
+      "explanation": "Foul tastes.",
+      "entries": [
+        "putrid",
+        "decaying",
+        "rotten",
+        "vile",
+        "horrid",
+        "foul-tasting",
+        "disgusting",
+        "bitter",
+        "acrid",
+        "oversalted"
+      ]
+    },
+    {
+      "name": "neutral taste",
+      "explanation": "Neutral tastes.",
+      "entries": [
+        "sour",
+        "salty",
+        "peppery",
+        "astringent",
+        "buttery",
+        "meaty",
+        "rich"
+      ]
+    },
+    {
+      "name": "strong taste",
+      "explanation": "Pleasant tastes.",
+      "entries": [
+        "acrid",
+        "pungent",
+        "sharp",
+        "stinging",
+        "poignant",
+        "biting",
+        "burning",
+        "perky",
+        "spicy",
+        "piquant",
+        "highly seasoned",
+        "tangy"
+      ]
+    },
+    {
+      "name": "good taste",
+      "explanation": "Pleasant tastes.",
+      "entries": [
+        "tasty",
+        "appetizing",
+        "flavorful",
+        "pungent",
+        "spicy",
+        "nutty flavored",
+        "aromatic",
+        "mellow",
+        "sweet",
+        "delectable",
+        "delicious"
       ]
     },
     {

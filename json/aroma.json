@@ -1,11 +1,11 @@
 {
   "name": "Aroma Generator",
-  "explanation": "Subtables have been sorted from common to rare. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "explanation": "Subtables have been sorted from common to rare. Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. To do: Improve organization, add content. Author: Esko Vesala. Sources: Wikipedia.org.",
   "resultPattern": "{aroma}",
   "tables": [
     {
       "name": "aroma",
-      "explanation": "Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and  get more specialized towards the end. Modern and scifi subtables are not called by default to retain compatibility with the default fantasy setting. Some subtables intentionally overlap.",
+      "explanation": "Aroma types.",
       "entries": [
         "{rotting}",
         "{stingy}",

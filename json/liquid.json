@@ -1,22 +1,17 @@
 {
   "name": "Liquid Generator",
-  "explanation": "Liquids for resource tables. Subtables have been sorted from common to rare. See also: material.json, metal.json. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "explanation": "Liquids for resource tables. Subtables have been sorted from common to rare. Subtables present liquids known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: material and metal tables. Author: Esko Vesala. Sources: Wikipedia.org.",
   "resultPattern": "{liquid}",
   "tables": [
     {
       "name": "liquid",
-      "explanation": "Subtables present liquids known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and  get more specialized towards the end. Modern and scifi subtables are not called by default to retain compatibility with the default fantasy setting. Some subtables intentionally overlap.",
+      "explanation": "Liquid types.",
       "entries": [
         {
           "m": 10,
           "v": "{common}"
         },
-        {
-          "m": 5,
-          "v": "{rare}"
-        },
-        "{mythic}",
-        "{fantasy}"
+        "{rare}"
       ]
     },
     {
@@ -134,7 +129,7 @@
       ]
     },
     {
-      "name": "scifi",
+      "name": "futuristic",
       "explanation": "Imaginary liquids for science fiction worlds.",
       "entries": [
         "{modern}",

@@ -1,22 +1,17 @@
 {
   "name": "Magical technique Generator",
-  "explanation": "Magical techniques for magic tables. Subtables have been sorted from common to rare. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "explanation": "Magical techniques for magic tables. Subtables have been sorted from common to rare. Subtables present energies known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. Author: Esko Vesala. Sources: Wikipedia.org.",
   "resultPattern": "{magic}",
   "tables": [
     {
       "name": "magical technique",
-      "explanation": "Subtables present energies known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and  get more specialized towards the end. Modern and scifi subtables are not called by default to retain compatibility with the default fantasy setting. Some subtables intentionally overlap.",
+      "explanation": "Types of magical techniques.",
       "entries": [
         {
           "m": 10,
           "v": "{common}"
         },
-        {
-          "m": 5,
-          "v": "{rare}"
-        },
-        "{mythic}",
-        "{fantasy}"
+        "{rare}"
       ]
     },
     {
@@ -79,7 +74,7 @@
       ]
     },
     {
-      "name": "scifi",
+      "name": "futuristic",
       "explanation": "Imaginary magics for science fiction worlds.",
       "entries": [
         "{modern}"
