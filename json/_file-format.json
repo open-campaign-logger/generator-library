@@ -1,5 +1,6 @@
 {
     "name": "Simple NSC Generator",
+    "note-on-names": "If you intend to call your generator from your other generators its name will have to follow the guidelines for table names!",
     "explanation": "Based on the file format defined at 'https://campaign-logger.com/generator/help', we will try out new ideas here to define an extended format for generator files. This 'explanation' property is one new extension which should contain details on the generator or a table (where it may occur, too). The following resultPattern demonstrates how to use special whitespace: \r = carriage return, \n = line feed, \t = tabulator.",
     "resultPattern": "{name} from {location} has {multiplicity}\r\n\tand is a {years}-years old {var:gender}",
     "variables": {
@@ -11,6 +12,7 @@
     ],
     "tables": [{
             "name": "name",
+            "note-on-names": "A table name must start with a letter followed by any number of letters, digits, and spaces. Nothing else is allowed.",
             "explanation": "This table just defines the general layout of a table object. It also demonstrates how to set meta-information when selecting an entry.",
             "entries": [{
                     "v": "Adam",
