@@ -1,6 +1,6 @@
 {
   "name": "Drink Generator",
-  "explanation": "Drink for resource tables. Subtables have been sorted from common to rare. Subtables present beverages known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Subtable classification is based on everyday usage, not scientific taxonomy. Some subtables intentionally overlap. See also: food.json. To do: What is the syntax for library subtable calls (see: herb)? Plus more content. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "explanation": "Drink for resource tables. Subtables have been sorted from common to rare. Subtables present beverages known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Subtable classification is based on everyday usage, not scientific taxonomy. Some subtables intentionally overlap. See also: food.json. To do: What is the syntax for library subtable calls (see: herb)? Plus more content. Author: Esko Vesala. Sources: Wikipedia.org.",
   "resultPattern": "{appearance} {beverage}",
   "tables": [
     {
@@ -148,7 +148,7 @@
     },
     {
       "name": "taste",
-      "explanation": "Beverage tastes. XXX herb: What is the syntax for library subtable calls?",
+      "explanation": "Beverage tastes. (Utilizing the still unreleased subtable call feature.)",
       "entries": [
         "foul-tasting",
         "sharp-tasting",
@@ -167,7 +167,7 @@
         "tangy",
         "sweet",
         "delicious",
-        "{strength} {lib:food.herb} flavored",
+        "{strength} {lib:food#herb} flavored",
         "{strength} flavored with {spice}"
       ]
     },

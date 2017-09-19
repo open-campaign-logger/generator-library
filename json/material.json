@@ -149,9 +149,9 @@
     },
     {
       "name": "rare",
-      "explanation": "Rare materials. XXX What is the syntax for library subtable calls?",
+      "explanation": "Rare materials. (Utilizing the still unreleased subtable call feature.)",
       "entries": [
-        "{lib:metal.mythic}"
+        "{lib:metal#mythic}"
       ]
     },
     {
