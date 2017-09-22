@@ -1,6 +1,6 @@
 {
   "name": "Empty Template",
-  "explanation": "Subtables have been sorted from common to rare. Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: XXX. Author: XXX. Sources: XXX.",
+  "explanation": "Subtables have been sorted from common to rare. Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: XXX. Author: XXX. Sources: XXX.",
   "resultPattern": "{XXX}",
   "tables": [
     {
@@ -29,18 +29,18 @@
       ]
     },
     {
-      "name": "mythic",
+      "name": "mythological",
       "explanation": "Imaginary XXX once rumoured to have existed.",
       "entries": [
         "XXX",
-        "{rare mythic}"
+        "{rare mythological}"
       ]
     },
     {
-      "name": "rare mythic",
+      "name": "rare mythological",
       "explanation": "Rare imaginary XXX once rumoured to have existed.",
       "entries": [
-        "{mythic}",
+        "{mythological}",
         "XXX"
       ]
     },
@@ -48,7 +48,7 @@
       "name": "fantasy",
       "explanation": "Imaginary XXX for fantasy worlds.",
       "entries": [
-        "{mythic}",
+        "{mythological}",
         "XXX",
         "{rare fantasy}"
       ]

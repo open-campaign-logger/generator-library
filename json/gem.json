@@ -1,6 +1,6 @@
 {
-  "name": "Gem Generator",
-  "explanation": "Gems for resource and treasure tables. Subtables have been sorted from common to rare. Subtables present gems known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: material table. To do: more content, better organization. Authors: Johnn Four, Jochen Linnemann, Esko Vesala. Sources: Wikipedia.org.",
+  "name": "Gem",
+  "explanation": "Gems for resource and treasure tables. Subtables have been sorted from common to rare. Subtables present gems known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: material table. To do: more content, better organization. Authors: Johnn Four, Jochen Linnemann, Esko Vesala. Sources: Wikipedia.org.",
   "resultPattern": "{gem}",
   "tables": [
     {

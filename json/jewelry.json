@@ -199,6 +199,7 @@
       "explanation": "Rare jewellery worn on hands.",
       "entries": [
         "slave bracelet (bracelet chained to a ring)",
+        "pair of rings joined by a chain",
         "thumb ring",
         "pinky ring (for little finger)",
         "multi-finger ring",
@@ -251,6 +252,7 @@
       "explanation": "Common jewellery worn on feet.",
       "entries": [
         "toe ring",
+        "a matched pair of toe rings",
         "{rare foot jewelry}"
       ]
     },
@@ -258,7 +260,8 @@
       "name": "rare foot jewelry",
       "explanation": "Rare jewellery worn on feet.",
       "entries": [
-        "paired toe ring"
+        "pair of toe rings joined with a chain",
+        "big toe ring"
       ]
     },
     {

@@ -1,6 +1,6 @@
 {
-  "name": "Stone Generator",
-  "explanation": "Stones for resource and construction tables. Subtables have been sorted from common to rare. Subtables present stone types known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: metal.json. Authors: Johnn Four, Jochen Linnemann, Esko Vesala. Sources: Wikipedia.org.",
+  "name": "Stone table",
+  "explanation": "Stones for resource and construction tables. Subtables have been sorted from common to rare. Subtables present stone types known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: metal.json. Authors: Johnn Four, Jochen Linnemann, Esko Vesala. Sources: Wikipedia.org.",
   "resultPattern": "{stone}",
   "tables": [
     {
@@ -39,28 +39,68 @@
       ]
     },
     {
-      "name": "mythic",
+      "name": "mythological",
+      "explanation": "Imaginary stone types once rumoured to have existed.",
       "entries": [
-        "weirdstone"
+        "lodestone",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary stone types once rumoured to have existed.",
+      "entries": [
+        "{mythological}",
+        "XXX"
       ]
     },
     {
       "name": "fantasy",
+      "explanation": "Imaginary stone types for fantasy worlds.",
       "entries": [
-        "{mythic}",
-        "lodestone"
+        "{mythological}",
+        "weirdstone",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary stone types for fantasy worlds.",
+      "entries": [
+        "{fantasy}",
+        "hellstone"
       ]
     },
     {
       "name": "modern",
+      "explanation": "Stone types for modern worlds.",
       "entries": [
-        "spectrolite"
+        "{common}",
+        "spectrolite",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare stone types for modern worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
       ]
     },
     {
       "name": "futuristic",
+      "explanation": "Imaginary stone types for science fiction worlds.",
       "entries": [
-        "{modern}"
+        "{modern}",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary stone types for science fiction worlds.",
+      "entries": [
+        "XXX"
       ]
     }
   ]

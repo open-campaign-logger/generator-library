@@ -41,18 +41,18 @@
       ]
     },
     {
-      "name": "mythic",
+      "name": "mythological",
       "explanation": "Imaginary magicians once rumoured to have existed.",
       "entries": [
         "XXX",
-        "{rare mythic}"
+        "{rare mythological}"
       ]
     },
     {
-      "name": "rare mythic",
+      "name": "rare mythological",
       "explanation": "Rare imaginary magicians once rumoured to have existed.",
       "entries": [
-        "{mythic}",
+        "{mythological}",
         "XXX"
       ]
     },
@@ -60,7 +60,7 @@
       "name": "fantasy",
       "explanation": "Imaginary magicians for fantasy worlds.",
       "entries": [
-        "{mythic}",
+        "{mythological}",
         "XXX",
         "{rare fantasy}"
       ]

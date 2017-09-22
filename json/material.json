@@ -151,11 +151,11 @@
       "name": "rare",
       "explanation": "Rare materials. (Utilizing the still unreleased subtable call feature.)",
       "entries": [
-        "{lib:metal#mythic}"
+        "{lib:metal#mythological}"
       ]
     },
     {
-      "name": "mythic",
+      "name": "mythological",
       "explanation": "Imaginary materials once rumoured to have existed.",
       "entries": [
         "quintessence (fifth element)",
@@ -168,7 +168,7 @@
       "name": "fantasy",
       "explanation": "Imaginary materials for fantasy worlds.",
       "entries": [
-        "{mythic}"
+        "{mythological}"
       ]
     },
     {

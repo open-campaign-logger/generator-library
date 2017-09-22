@@ -93,7 +93,8 @@
       "explanation": "Wine-based drinks.",
       "entries": [
         "red wine",
-        "white wine"
+        "white wine",
+        "sparkling wine"
       ]
     },
     {
@@ -104,7 +105,7 @@
       ]
     },
     {
-      "name": "mythic",
+      "name": "mythological",
       "explanation": "Imaginary beverages once rumoured to have existed.",
       "entries": [
         "nectar (drink of the gods)"
@@ -114,7 +115,7 @@
       "name": "fantasy",
       "explanation": "Imaginary beverages for fantasy worlds.",
       "entries": [
-        "{mythic}"
+        "{mythological}"
       ]
     },
     {
@@ -168,7 +169,7 @@
         "sweet",
         "delicious",
         "{strength} {lib:food#herb} flavored",
-        "{strength} flavored with {spice}"
+        "{strength} flavored with {lib:plant#spice}"
       ]
     },
     {

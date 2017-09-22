@@ -1,6 +1,6 @@
 {
   "name": "Food Generator",
-  "explanation": "Food for resource tables. Subtables have been sorted from common to rare. Subtables present foodstuffs known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and get more specialized towards the end. Genre-specific subtables are not called by default to retain maximum compatibility between settings. Subtable classification is based on everyday usage, not scientific taxonomy. Some subtables intentionally overlap. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "explanation": "Food for resource tables. Subtables have been sorted from common to rare. Subtables present foodstuffs known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Genre-specific subtables are not called by default to retain maximum compatibility between settings. Subtable classification is based on everyday usage, not scientific taxonomy. Some subtables intentionally overlap. Author: Esko Vesala. Sources: Wikipedia.org.",
   "resultPattern": "{appearance} {recipe} with {ingredients} ({finishing})",
   "tables": [
     {
@@ -62,151 +62,21 @@
       "name": "common",
       "explanation": "Common foodstuffs.",
       "entries": [
-        "{mushroom}",
-        "{vegetable}",
-        "{root}",
-        "{bulb}",
-        "{legume}",
-        "{grain}",
-        "{nut}",
-        "{fruit}",
-        "{berry}",
-        "{herb}",
+        "{lib:plant#mushroom}",
+        "{lib:plant#vegetable}",
+        "{lib:plant#root}",
+        "{lib:plant#bulb}",
+        "{lib:plant#legume}",
+        "{lib:plant#grain}",
+        "{lib:plant#nut}",
+        "{lib:plant#fruit}",
+        "{lib:plant#berry}",
+        "{lib:plant#herb}",
         "{seafood}",
         "{fish}",
         "{egg}",
         "{dairy product}",
         "{meat}"
-      ]
-    },
-    {
-      "name": "mushroom",
-      "explanation": "Edible mushrooms.",
-      "entries": [
-        "chanterelle mushroom",
-        "champignon mushroom",
-        "penny bun mushroom",
-        "milkcap mushroom",
-        "morel mushroom",
-        "truffle"
-      ]
-    },
-    {
-      "name": "vegetable",
-      "explanation": "Edible vegetables.",
-      "entries": [
-        "cabbage",
-        "cauliflower",
-        "spinach",
-        "cucumber",
-        "artichoke",
-        "pumpkin",
-        "eggplant"
-      ]
-    },
-    {
-      "name": "root",
-      "explanation": "Edible roots.",
-      "entries": [
-        "rutabaga",
-        "turnip",
-        "beetroot",
-        "parsnip",
-        "radish",
-        "carrot",
-        "onion",
-        "shallot",
-        "garlic",
-        "celery",
-        "leek"
-      ]
-    },
-    {
-      "name": "bulb",
-      "explanation": "Edible bulbs.",
-      "entries": [
-        "onion",
-        "shallot",
-        "garlic"
-      ]
-    },
-    {
-      "name": "legume",
-      "explanation": "Edible legumes.",
-      "entries": [
-        "bean",
-        "green bean",
-        "kidney bean",
-        "pea",
-        "chickpea",
-        "cowpea",
-        "lentil"
-      ]
-    },
-    {
-      "name": "grain",
-      "explanation": "Edible grains (cereals).",
-      "entries": [
-        "barley",
-        "rye",
-        "oat",
-        "wheat",
-        "spelt"
-      ]
-    },
-    {
-      "name": "nut",
-      "explanation": "Culinary nuts.",
-      "entries": [
-        "chestnut",
-        "hazelnut",
-        "walnut",
-        "almond"
-      ]
-    },
-    {
-      "name": "fruit",
-      "explanation": "Edible fruits.",
-      "entries": [
-        "apple",
-        "plum",
-        "rhubarb",
-        "cherry",
-        "grape",
-        "pear",
-        "lemon",
-        "lime"
-      ]
-    },
-    {
-      "name": "berry",
-      "explanation": "Edible berries.",
-      "entries": [
-        "bilberry",
-        "lingonberry",
-        "strawberry",
-        "juniper berry",
-        "blackberry",
-        "cloudberry",
-        "cranberry",
-        "raspberry",
-        "gooseberry",
-        "wineberry"
-      ]
-    },
-    {
-      "name": "herb",
-      "explanation": "Culinary herbs.",
-      "entries": [
-        "basil",
-        "caraway",
-        "coriander",
-        "dill",
-        "hyssop",
-        "mint",
-        "mustard",
-        "parsley",
-        "sage"
       ]
     },
     {
@@ -340,7 +210,7 @@
         "dipped in {flavoring}",
         "marbled with {flavoring}",
         "blended with {flavoring}",
-        "mixed with {spice}",
+        "mixed with {lib:plant#spice}",
         "aged for {dice:3d6} months",
         "prepared using a vegetable rennet",
         "with a {lib:aroma} tang",
@@ -441,29 +311,11 @@
       "explanation": "Rare foodstuffs.",
       "entries": [
         "ginseng",
-        "{spice}"
+        "{lib:plant#spice}"
       ]
     },
     {
-      "name": "spice",
-      "explanation": "Spices.",
-      "entries": [
-        "salt",
-        "black pepper",
-        "sugar",
-        "cinnamon",
-        "cloves",
-        "cumin",
-        "fennel",
-        "ginger",
-        "horseradish",
-        "nutmeg",
-        "saffron",
-        "aniseed"
-      ]
-    },
-    {
-      "name": "mythic",
+      "name": "mythological",
       "explanation": "Imaginary foodstuffs once rumoured to have existed.",
       "entries": [
         "manna",
@@ -474,7 +326,7 @@
       "name": "fantasy",
       "explanation": "Imaginary foodstuffs for fantasy worlds.",
       "entries": [
-        "{mythic}"
+        "{mythological}"
       ]
     },
     {
@@ -516,7 +368,7 @@
         "{strong taste}",
         "{good taste}",
         "{strength} {herb} flavored",
-        "{strength} flavored with {spice}"
+        "{strength} flavored with {lib:plant#spice}"
       ]
     },
     {
@@ -654,7 +506,7 @@
       "entries": [
         "{berry}",
         "{herb}",
-        "{spice}",
+        "{lib:plant#spice}",
         "{fish}",
         "{meat}",
         "brown",
@@ -662,6 +514,15 @@
         "hot",
         "butter",
         "sweet"
+      ]
+    },
+    {
+      "name": "common spice",
+      "explanation": "Common spices.",
+      "entries": [
+        "salt",
+        "horseradish",
+        "aniseed"
       ]
     },
     {

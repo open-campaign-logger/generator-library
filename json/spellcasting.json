@@ -1,6 +1,6 @@
 {
-  "name": "Spellcasting Method Generator",
-  "explanation": "Spellcasting methods for magic tables. Subtables have been sorted from common to rare. Subtables present energies known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "name": "Spellcasting method table",
+  "explanation": "Spellcasting methods for magic tables. Subtables have been sorted from common to rare. Subtables present different ways to cast spells known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. Author: Esko Vesala. Sources: powerlisting.wikia.com, Wikipedia.org.",
   "resultPattern": "{magic}",
   "tables": [
     {
@@ -19,13 +19,13 @@
       "explanation": "Common spellcasting methods.",
       "entries": [
         "speaking words of power",
-        "speaking a magical formula",
+        "incantation (speaking a magical formula)",
         "chanting",
         "singing",
         "repeating a mantra",
         "praying",
         "touching a charm",
-        "waving a magical instrument"
+        "waving a {lib:magical instrument}"
       ]
     },
     {
@@ -35,32 +35,35 @@
         "dancing",
         "dreaming",
         "writing",
-        "tying knots",
+        "tying knots (the spell is released when the knot is untied)",
         "ceremonial mass"
       ]
     },
     {
-      "name": "mythic",
+      "name": "mythological",
       "explanation": "Imaginary spellcasting methods once rumoured to have existed.",
       "entries": [
-        "XXX",
-        "{rare mythic}"
+        "{rare}",
+        "spellbinding (binding spells to objects)",
+        "spell tattooing (binding spells to tattoos)",
+        "{rare mythological}"
       ]
     },
     {
-      "name": "rare mythic",
+      "name": "rare mythological",
       "explanation": "Imaginary spellcasting methods once rumoured to have existed.",
       "entries": [
-        "{mythic}",
-        "achieving oneness with divinity"
+        "{mythological}",
+        "englightenment (achieving oneness with divinity)"
       ]
     },
     {
       "name": "fantasy",
       "explanation": "Imaginary spellcasting methods for fantasy worlds.",
       "entries": [
-        "{mythic}",
+        "{mythological}",
         "spellsinging",
+        "playing a magical musical instrument",
         "{rare fantasy}"
       ]
     },
@@ -68,7 +71,8 @@
       "name": "rare fantasy",
       "explanation": "Imaginary spellcasting methods for fantasy worlds.",
       "entries": [
-        "{fantasy}"
+        "{fantasy}",
+        "creating art with magical equipment"
       ]
     },
     {
@@ -77,6 +81,7 @@
       "entries": [
         "{common}",
         "concentrating",
+        "practicing yoga",
         "vibration of divine names",
         "{rare modern}"
       ]
@@ -86,7 +91,11 @@
       "explanation": "Rare spellcasting methods for modern worlds.",
       "entries": [
         "attaining an altered state of consciousness",
-        "practicing yoga"
+        "opening a dimensional portal",
+        "asterokinesis (cosmic manipulation)",
+        "essokinesis (altering reality by thought)",
+        "science manipulation (altering the laws of science)",
+        "logic manipulation (controlling rules of logic)"
       ]
     },
     {
@@ -94,6 +103,8 @@
       "explanation": "Imaginary spellcasting methods for science fiction worlds.",
       "entries": [
         "{modern}",
+        "data manipulation (altered data affects reality)",
+        "techno magic (combining magic and technology)",
         "{rare futuristic}"
       ]
     },
@@ -101,7 +112,9 @@
       "name": "rare futuristic",
       "explanation": "Imaginary spellcasting methods for science fiction worlds.",
       "entries": [
-        "{futuristic}"
+        "{futuristic}",
+        "meta-tech (technology affecting other realities)",
+        "techno mysticism (extending mental capacity with technology)"
       ]
     }
   ]

@@ -1,6 +1,6 @@
 {
   "name": "Metal Generator",
-  "explanation": "Metals for resource and material tables. Subtables have been sorted from common to rare. Subtables present metals known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: material table. Authors: Johnn Four, Jochen Linnemann, Esko Vesala. Sources: TvTropes.org, Wikipedia.org.",
+  "explanation": "Metals for resource and material tables. Subtables have been sorted from common to rare. Subtables present metals known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: material table. Authors: Johnn Four, Jochen Linnemann, Esko Vesala. Sources: TvTropes.org, Wikipedia.org.",
   "resultPattern": "{metal}",
   "tables": [
     {
@@ -90,7 +90,7 @@
       ]
     },
     {
-      "name": "mythic",
+      "name": "mythological",
       "explanation": "Imaginary metals once rumoured to have existed.",
       "entries": [
         "hard mercury",
@@ -102,7 +102,7 @@
       "name": "fantasy",
       "explanation": "Imaginary metals for fantasy worlds.",
       "entries": [
-        "{mythic}",
+        "{mythological}",
         "cold iron",
         "star iron",
         "hell iron",

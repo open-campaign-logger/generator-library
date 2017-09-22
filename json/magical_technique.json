@@ -1,6 +1,6 @@
 {
   "name": "Magical technique Generator",
-  "explanation": "Magical techniques for magic tables. Subtables have been sorted from common to rare. Subtables present energies known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "explanation": "Magical techniques for magic tables. Subtables have been sorted from common to rare. Subtables present magical techniques known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. Author: Esko Vesala. Sources: powerlisting.wikia.com, Wikipedia.org.",
   "resultPattern": "{magic}",
   "tables": [
     {
@@ -45,9 +45,18 @@
       ]
     },
     {
-      "name": "mythic",
+      "name": "mythological",
       "explanation": "Imaginary magical techniques once rumoured to have existed.",
       "entries": [
+        "XXX",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary magical techniques once rumoured to have existed.",
+      "entries": [
+        "{mythological}",
         "XXX"
       ]
     },
@@ -55,7 +64,17 @@
       "name": "fantasy",
       "explanation": "Imaginary magical techniques for fantasy worlds.",
       "entries": [
-        "{mythic}"
+        "{mythological}",
+        "XXX",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary magical techniques for fantasy worlds.",
+      "entries": [
+        "{fantasy}",
+        "XXX"
       ]
     },
     {
@@ -63,6 +82,7 @@
       "explanation": "Magical techniques for modern worlds.",
       "entries": [
         "{common}",
+        "XXX",
         "{rare modern}"
       ]
     },
@@ -70,6 +90,7 @@
       "name": "rare modern",
       "explanation": "Rare magics for modern worlds.",
       "entries": [
+        "{modern}",
         "XXX"
       ]
     },
@@ -77,7 +98,17 @@
       "name": "futuristic",
       "explanation": "Imaginary magics for science fiction worlds.",
       "entries": [
-        "{modern}"
+        "{modern}",
+        "magitech",
+        "technomancy"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary magics for science fiction worlds.",
+      "entries": [
+        "{futuristic}",
+        "mystechnology (mystical technology)"
       ]
     }
   ]

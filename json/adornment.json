@@ -1,6 +1,6 @@
 {
   "name": "Adornment Generator",
-  "explanation": "Subtables have been sorted from common to rare. Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of  worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. XXX Still a work in progress that would require extending the table libraries. To Do: Remove the XXX's, add content. See also: jewelry.json. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "explanation": "Subtables have been sorted from common to rare. Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. XXX Still a work in progress that would require extending the table libraries. To Do: Remove the XXX's, add content. See also: jewelry.json. Author: Esko Vesala. Sources: Wikipedia.org.",
   "resultPattern": "{appearance} {adornment} {feature} {finishing}",
   "tables": [
     {
@@ -75,18 +75,18 @@
       ]
     },
     {
-      "name": "mythic",
+      "name": "mythological",
       "explanation": "Imaginary adornment once rumoured to have existed.",
       "entries": [
         "XXX",
-        "{rare mythic}"
+        "{rare mythological}"
       ]
     },
     {
-      "name": "rare mythic",
+      "name": "rare mythological",
       "explanation": "Rare imaginary adornment once rumoured to have existed.",
       "entries": [
-        "{mythic}",
+        "{mythological}",
         "XXX"
       ]
     },
@@ -94,7 +94,7 @@
       "name": "fantasy",
       "explanation": "Imaginary adornment for fantasy worlds.",
       "entries": [
-        "{mythic}",
+        "{mythological}",
         "XXX",
         "{rare fantasy}"
       ]
@@ -214,7 +214,7 @@
       "name": "artwork subject",
       "explanation": "The subject of decorative artwork.",
       "entries": [
-        "a mythic {lib:monsterEpic}",
+        "a mythological {lib:monsterEpic}",
         "the {lib:weaponEpic}",
         "a posing {lib:personClass}",
         "scenery from {lib:nameLocation}"

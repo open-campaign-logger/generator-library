@@ -18,9 +18,9 @@
       "name": "common",
       "explanation": "Common liquids.",
       "entries": [
+        "urine",
         "{water}",
-        "wine",
-        "urine"
+        "{lib:drink}"
       ]
     },
     {
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "name": "mythic",
+      "name": "mythological",
       "explanation": "Imaginary liquids once rumoured to have existed.",
       "entries": [
         "yellow bile (aggressive bodily humour)",
@@ -83,7 +83,7 @@
       "name": "fantasy",
       "explanation": "Imaginary liquids for fantasy worlds.",
       "entries": [
-        "{mythic}"
+        "{mythological}"
       ]
     },
     {
