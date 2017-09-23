@@ -27,8 +27,7 @@
         "iron",
         "zinc",
         "copper",
-        "{ferrous}",
-        "{base alloy}"
+        "{ferrous}"
       ]
     },
     {
