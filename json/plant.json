@@ -363,12 +363,23 @@
       "name": "mythological",
       "explanation": "Imaginary plants once rumoured to have existed.",
       "entries": [
-        "mandrake",
-        "magic bean (grows overnight to cloud kingdom)",
-        "upas tree (so poisonous that it destroys all animal life within miles)",
-        "man-eating tree",
+        "moly (a magical herb with black root and white blossoms)",
+        "raskovnik (a difficult to identity herb that can open locks)",
+        "luck tree (hanging wreaths or ribbons on it can bring good luck)",
+        "wish tree (may cause wishes to become true)",
+        "witch tree (helps in spellcasting)",
+        "oracle tree (helps in divination)",
+        "sacred tree",
+        "lotus tree (bears fruits causing pleasant drowsiness)",
+        "talking tree",
+        "barnacle tree (fruits are barnacles that grow into barnacle geese)",
+        "vegetable lamb (a tree growing sheep as its fruit)",
+        "mandrake (emits a deadly scream when uprooted)",
+        "magic bean (beanstalk can grow up to cloud kingdoms)",
         "vampire vine (capable of draining blood)",
-        "ya-te-veo (man-eating tree with stems that resemble huge serpents)"
+        "upas tree (so poisonous that it destroys all animal life within miles)",
+        "man-eating tree (animated vine-like stems capture prey)",
+        "serpent tree (a man-eating tree with serpent stems)"
       ]
     },
     {
@@ -378,6 +389,7 @@
         "tree of life (bestowing immortality)",
         "tree of knowledge (bestowing understanding)",
         "skytree (reaching to the layers of the sky)",
+        "dawn tree (world tree associated with the sun)",
         "world tree (connecting mythological realms)"
       ]
     },
@@ -385,7 +397,43 @@
       "name": "fantasy",
       "explanation": "Imaginary plants for fantasy worlds.",
       "entries": [
-        "{mythological}"
+        "{mythological}",
+        "{fantasy beginning}{fantasy middle}{fantasy ending}"
+      ]
+    },
+    {
+      "name": "fantasy beginning",
+      "explanation": "Name beginnings for imaginary plants for fantasy worlds.",
+      "entries": [
+        " ",
+        "poisonous ",
+        "lingering ",
+        "deadly ",
+        "{lib:color#plant} "
+      ]
+    },
+    {
+      "name": "fantasy middle",
+      "explanation": "Name stems for imaginary plants for fantasy worlds.",
+      "entries": [
+        "dawn",
+        "night",
+        "moon",
+        "goblin",
+        "elf",
+        "fairy"
+      ]
+    },
+    {
+      "name": "fantasy ending",
+      "explanation": "Name endings for imaginary plants for fantasy worlds.",
+      "entries": [
+        "wort",
+        "bane",
+        "root",
+        "vine",
+        "shade",
+        "flower"
       ]
     },
     {
@@ -399,14 +447,14 @@
     },
     {
       "name": "futuristic",
-      "explanation": "Imaginary plants for science fiction worlds.",
+      "explanation": "XXX Imaginary plants for science fiction worlds.",
       "entries": [
         "{modern}",
-        "XXX"
+        "sentient plant"
       ]
     },
     {
-      "name": "edible plant",
+      "name": "edible",
       "explanation": "Common edible plant types known in most worlds.",
       "entries": [
         "{mushroom}",
