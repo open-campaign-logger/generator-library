@@ -1,6 +1,6 @@
 {
-  "name": "Liquid Generator",
-  "explanation": "Liquids for resource tables. Subtables have been sorted from common to rare. Subtables present liquids known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: material and metal tables. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "name": "liquid table",
+  "explanation": "Liquids for resource tables. Subtables have been sorted from common to rare. Subtables present liquids known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: material and metal tables. Author: Esko Vesala. Sources: MyVocabulary.com, Wikipedia.org.",
   "resultPattern": "{liquid}",
   "tables": [
     {
@@ -18,36 +18,52 @@
       "name": "common",
       "explanation": "Common liquids.",
       "entries": [
-        "urine",
+        "{sewage}",
         "{water}",
         "{lib:drink}"
+      ]
+    },
+    {
+      "name": "sewage",
+      "explanation": "Sewer liquids.",
+      "entries": [
+        "liquid excrement",
+        "urine",
+        "sewer water",
+        "waste water",
+        "{lib:purity#impure} water",
+        "{lib:purity#unclean} water"
       ]
     },
     {
       "name": "water",
       "explanation": "Water types.",
       "entries": [
+        "{water type}",
+        "{lib:purity} {water type}",
+        "{lib:temperature} {water type}",
+        "{lib:temperature} {lib:purity} {water type}"
+      ]
+    },
+    {
+      "name": "water type",
+      "explanation": "Water types.",
+      "entries": [
+        "swamp water",
+        "sea water",
+        "salt water",
         "fresh water",
-        "pure water",
-        "rain water",
-        "groundwater",
         "lake water",
         "river water",
         "spring water",
-        "swamp water",
-        "sea water",
+        "groundwater",
         "well water",
+        "rain water",
         "fountain water",
-        "warm water",
-        "cold water",
         "melted snow",
         "melted ice",
         "soft water",
         "hard water (mineral-rich)",
-        "muddy water",
-        "stale water",
-        "foul-smelling water",
-        "salt water",
         "sulphuric water",
         "magmatic water",
         "scented water",
@@ -70,20 +86,82 @@
         "yellow bile (aggressive bodily humour)",
         "black bile (melancholic bodily humour)",
         "phlegm (apathetic bodily humour)",
-        "alkahest",
-        "azoth",
-        "nectar",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary liquids once rumoured to have existed.",
+      "entries": [
+        "universal solvent",
+        "universal medicine",
         "elixir of life",
-        "amrita",
-        "ichor",
-        "eitr"
+        "nectar (drink of the gods)",
+        "soma (divine drink of immortality)",
+        "ichor (ethereal blood of the immortals)",
+        "eitr (poisonous liquid from the time of creation)"
       ]
     },
     {
       "name": "fantasy",
       "explanation": "Imaginary liquids for fantasy worlds.",
       "entries": [
-        "{mythological}"
+        "{mythological}",
+        "{fantasy beginning} {fantasy middle} {fantasy ending}"
+      ]
+    },
+    {
+      "name": "fantasy beginning",
+      "explanation": "Name beginnings for imaginary liquids for fantasy worlds.",
+      "entries": [
+        {
+          "m": 10,
+          "v": " "
+        },
+        "alchemical ",
+        "enchanted ",
+        "thaumaturgic ",
+        "witches' ",
+        "wondrous ",
+        "occult ",
+        "hermetic ",
+        "arcane ",
+        "esoteric ",
+        "mystical ",
+        "magical ",
+        "chimeric ",
+        "bewitching ",
+        "elemental "
+      ]
+    },
+    {
+      "name": "fantasy middle",
+      "explanation": "Name stems for imaginary liquids for fantasy worlds.",
+      "entries": [
+        "dawn",
+        "night",
+        "moon",
+        "goblin ",
+        "elf ",
+        "fairy "
+      ]
+    },
+    {
+      "name": "fantasy ending",
+      "explanation": "Name endings for imaginary liquids for fantasy worlds.",
+      "entries": [
+        "water",
+        "drink",
+        "tonic",
+        "mixture",
+        "potion",
+        "elixir",
+        "draught",
+        "brew",
+        "mead",
+        "liquor",
+        "remedy",
+        "philter"
       ]
     },
     {
