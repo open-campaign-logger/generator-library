@@ -1,0 +1,191 @@
+{
+  "name": "modifier table",
+  "explanation": "Strengthening intensifiers and weakening mitigators for adjectives in descriptions. Subtables have been sorted from common to rare. Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. Note: Does not include 'quite', as its meaning can vary. Author: Esko Vesala. Sources: BritishCouncil.org, EF.com.",
+  "resultPattern": "{modifier}",
+  "tables": [
+    {
+      "name": "modifier",
+      "explanation": "Basic modifiers.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common modifiers.",
+      "entries": [
+        "{weak}",
+        "{neutral}",
+        "{intermediate}",
+        "{strong}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare modifiers.",
+      "entries": [
+        "{zero}",
+        "{absolute}"
+      ]
+    },
+    {
+      "name": "zero",
+      "explanation": "Nullifying mitigators.",
+      "entries": [
+        "nothing like",
+        "not at all",
+        "not even nearly",
+        "a great deal less than"
+      ]
+    },
+    {
+      "name": "weak",
+      "explanation": "Weak mitigators.",
+      "entries": [
+        "not especially",
+        "not particularly",
+        "just a little bit",
+        "a little bit",
+        "just a bit",
+        "a bit",
+        "a little",
+        "slightly",
+        "fairly",
+        "rather",
+        "pretty",
+        "somewhat"
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Neutral modifiers.",
+      "entries": [
+        " ",
+        "kind of",
+        "no less than",
+        "nothing less than",
+        "nothing more than",
+        "nothing short of",
+        "clearly",
+        "positevely",
+        "undoubtedly",
+        "unquestionably"
+      ]
+    },
+    {
+      "name": "intermediate",
+      "explanation": "intermediate intensifiers.",
+      "entries": [
+        "very",
+        "really",
+        "highly",
+        "downright",
+        "truly"
+      ]
+    },
+    {
+      "name": "strong",
+      "explanation": "Strong intensifiers.",
+      "entries": [
+        "remarkably",
+        "significantly",
+        "especially",
+        "exceedingly",
+        "exceptionally",
+        "extremely",
+        "seriously",
+        "particularly",
+        "uncommonly",
+        "unusually",
+        "terribly",
+        "amazingly",
+        "incredibly",
+        "insanely"
+      ]
+    },
+    {
+      "name": "absolute",
+      "explanation": "Absolute intensifiers.",
+      "entries": [
+        "completely",
+        "entirely",
+        "totally",
+        "utterly",
+        "perfectly",
+        "absolutely",
+        "ultimately"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary modifiers once rumoured to have existed.",
+      "entries": [
+        "XXX",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary modifiers once rumoured to have existed.",
+      "entries": [
+        "{mythological}",
+        "earth-shatteringly"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary modifiers for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "fantastically",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary modifiers for fantasy worlds.",
+      "entries": [
+        "{fantasy}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Modifiers for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare modifiers for modern worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary modifiers for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary modifiers for science fiction worlds.",
+      "entries": [
+        "{futuristic}",
+        "XXX"
+      ]
+    }
+  ]
+}
