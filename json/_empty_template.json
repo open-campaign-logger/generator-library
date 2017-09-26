@@ -1,7 +1,14 @@
 {
   "name": "Empty Template",
-  "explanation": "Subtables have been sorted from common to rare. Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: XXX. Author: XXX. Sources: XXX.",
   "resultPattern": "{XXX}",
+  "explanation": "XXX",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "to do": "",
+  "see also": "",
+  "date": "2017-XX-XX",
+  "authors": "",
+  "sources": "",
   "tables": [
     {
       "name": "XXX",
