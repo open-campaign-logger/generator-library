@@ -1,14 +1,20 @@
 {
   "name": "Empty Template",
   "resultPattern": "{XXX}",
+  "variables": {
+    "footnote": ""
+  },
   "explanation": "XXX",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
+  "bugs": "",
   "to do": "",
-  "see also": "",
+  "see": "",
   "date": "2017-XX-XX",
   "authors": "",
   "sources": "",
+  "category": "",
+  "tags": "",
   "tables": [
     {
       "name": "XXX",

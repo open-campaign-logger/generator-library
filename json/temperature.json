@@ -1,7 +1,19 @@
 {
   "name": "temperature table",
-  "explanation": "Temperatures for environment and material tables. Subtables have been sorted from common to rare. Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: the liquid table. Author: Esko Vesala. Sources: Wikipedia.org.",
   "resultPattern": "{temperature}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Temperatures for environment and material tables. Subtables have been sorted from common to rare. Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: the liquid table. Author: Esko Vesala. Sources: Wikipedia.org.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "",
+  "see": "",
+  "date": "2017-XX-XX",
+  "authors": "",
+  "sources": "",
+  "category": "",
+  "tags": "",
   "tables": [
     {
       "name": "temperature",

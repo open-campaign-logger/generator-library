@@ -1,7 +1,19 @@
 {
   "name": "Adornment Generator",
-  "explanation": "Subtables have been sorted from common to rare. Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. XXX Still a work in progress that would require extending the table libraries. To Do: Remove the XXX's, add content. See also: jewelry.json. Author: Esko Vesala. Sources: Wikipedia.org.",
   "resultPattern": "{appearance} {adornment} {feature} {finishing}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Jewelry and other trinkets carried by a person. Suitable for descriptions of a person as well as treasure.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "XXX Still a work in progress that would require extending the table libraries.",
+  "to do": "Remove the XXX's, add content.",
+  "see": "jewelry.",
+  "date": "2017-XX-XX",
+  "authors": "Esko Vesala.",
+  "sources": "Wikipedia.org.",
+  "category": "",
+  "tags": "",
   "tables": [
     {
       "name": "appearance",

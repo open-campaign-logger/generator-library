@@ -1,7 +1,19 @@
 {
   "name": "liquid table",
-  "explanation": "Liquids for resource tables. Subtables have been sorted from common to rare. Subtables present liquids known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: material and metal tables. Author: Esko Vesala. Sources: MyVocabulary.com, Wikipedia.org.",
   "resultPattern": "{liquid}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Liquids for resource tables. Subtables have been sorted from common to rare. Subtables present liquids known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: material and metal tables. See also: drink, purity. Date: 2017-09-26. Authors: Esko Vesala. Sources: MyVocabulary.com, Wikipedia.org.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "",
+  "see": "",
+  "date": "2017-XX-XX",
+  "authors": "",
+  "sources": "",
+  "category": "",
+  "tags": "",
   "tables": [
     {
       "name": "liquid",
@@ -107,11 +119,12 @@
       "explanation": "Imaginary liquids for fantasy worlds.",
       "entries": [
         "{mythological}",
-        "{fantasy beginning} {fantasy middle} {fantasy ending}"
+        "{fantasy liquid descriptor} {fantasy beginning}{fantasy ending} {fantasy liquid type}",
+        "{fantasy liquid type} of {fantasy beginning}{fantasy ending}"
       ]
     },
     {
-      "name": "fantasy beginning",
+      "name": "fantasy liquid descriptor",
       "explanation": "Name beginnings for imaginary liquids for fantasy worlds.",
       "entries": [
         {
@@ -135,20 +148,32 @@
       ]
     },
     {
-      "name": "fantasy middle",
-      "explanation": "Name stems for imaginary liquids for fantasy worlds.",
+      "name": "fantasy beginning",
+      "explanation": "Name beginning for imaginary liquids for fantasy worlds.",
       "entries": [
         "dawn",
         "night",
         "moon",
-        "goblin ",
-        "elf ",
-        "fairy "
+        "goblin",
+        "elf",
+        "fairy"
       ]
     },
     {
       "name": "fantasy ending",
       "explanation": "Name endings for imaginary liquids for fantasy worlds.",
+      "entries": [
+        "cure",
+        "guard",
+        "ban",
+        "woe",
+        "harm",
+        "bane"
+      ]
+    },
+    {
+      "name": "fantasy liquid type",
+      "explanation": "Types of imaginary liquids for fantasy worlds.",
       "entries": [
         "water",
         "drink",
@@ -161,7 +186,9 @@
         "mead",
         "liquor",
         "remedy",
-        "philter"
+        "philter",
+        "oil",
+        "phial"
       ]
     },
     {

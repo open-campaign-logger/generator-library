@@ -11,6 +11,11 @@ This would produce the name of a random metal from the 'metal' table in the libr
 > gold
 
 
+## JSON
+
+Generator files are written using JSON (JavaScript Object Notation). As the JSON syntax can get complex to write manually, it is recommended to use a JSON editor for creating generator tables. Several JSON editors are freely available on the Internet.
+
+
 ## Table Structure
 
 Complex generators (as opposed to simpler tables) use a standard structure to make table usage more uniform and allow support for various genres.
@@ -42,42 +47,88 @@ A more complex generator could have several calls in the result pattern, as in t
 Note that in addition to the table calls, the result pattern can also contain static words that will be a part of the output every time. In this example, the ingredients will always be preceded by the word "with".
 
 
-### Optional Properties
+### Variables
 
-Each JSON file can also contain several optional properties. The optional properties do not affect the functionality of the table, but they are documentation that helps using and updating the tables.
+Variables is an optional property that is not usually needed in basic tables. However, variables can be a powerful feature when designing advanced generators.
 
-Any of the optional properties can be omitted. Still, using them is recommended, as they make sharing tables easier and can be useful reminders even for yourself.
+Variables a specified as a list or value pairs - the name of the variable and the default value:
 
-Include whichever optional properties that are relevant for the file. All of the optional properties are included in the *_empty_template* sample file.
+    "variables": {
+      "variable 1": "1",
+      "variable 2": "another value"
+    },
 
-The following optional properties are used:
+
+### Metadata Properties
+
+Each JSON file can contain several optional properties for defining metadata (background information) about the file - like who has written it, when was it last updated, improvement ideas, and so on.
+
+The metadata properties do not affect the functionality of the table, but they provide documentation that helps using and updating the tables.
+
+Any of the metadata properties can be omitted. Still, using them is recommended, as they make sharing tables easier and can be useful reminders even for yourself.
+
+Include whichever optional properties that are relevant for the file. All of the optional properties are included in the *_empty_template* sample file for reference.
+
+The following optional properties can be used:
 
 * **explanation**: A one-sentence explanation of the table: what kind of results can be expected.
 
-* **structure**: All the files in the library should contain an introductory text that briefly explains the structure of the file and the conventions used. This way the user can see the basic information from any file, without referring to external documentation.
+* **structure**: A brief explanation of the structure of the file and the conventions used. This is useful especially for complex generators whose logic can be difficult to decipher. The *_empty_template* sample file contains a basic example of a structure property. You can modify it to your liking.
 
-  A boilerplate introduction is included in the *_empty_template* file.
-
-* **note**: Notes and instructions for users, especially to those who plan to update the table. The note could explain some quirks of the table that may be difficult to understad for a casual observer. As an example, the modification table contains the following note:
+* **note**: Notes and instructions for other users, especially for those who plan to update the table. The note should make the logic easier to understand. for example explain some strange seeming details of the implementation. As an example, the modification table contains the following note:
 
       Note: Does not include 'quite', as its meaning can vary.
 
+* **bugs**: If there are known problems with the table, they can be listed  here. This helps you (or whoever next works on the table) to notice the pitfalls, and maybe even fix them.
+
 * **to do**: Information to you and other table authors about still missing functionality and ideas for expansion.
 
-* **see also**: If there are some related library files that could be helpful, mention them here.
+* **see**: If there are related generator files that could be helpful, they can be mentioned here.
 
-* **date**: The date of the last update, preferably using the international notation of year, month and day. (for example *2017-09-26*). This helps others to see if the file is likely to be still in active development.
+* **date**: The date of the last update, preferably using the international notation of year-month-day (for example *2017-09-27*). This helps in sorting the tables and also lets others to see if the file is likely to still be in active development.
 
-* **authors**: Persons who have contributed to the file, listed in chronological order (newest contributor last). Listing all of the authors is not only polite, but also helps other users to ask for assistance and comments, should the need arise.
+* **authors**: Persons who have contributed to the file, listed in chronological order (the newest contributor last). Listing all of the authors is not only polite, it also helps other users who may want to give feedback or ask for assistance.
 
-* **sources**: List the references and other sources that have been helpful when creating the file. This helps others expand the file and seek clarification by themselves, if some details appear obscure to them.
+* **sources**: This property is for listing the references and other information sources that have been helpful when creating the file. This helps others to expand the file and find more information about the subject.
 
-If some of these are not relevant, they can of course be omitted. (For example if there are no relevant references for the "see also" note.)
+* **category**: The category property specifies a class in which the file belongs to. This can  help in organizing the generator files. Select one from the following:
 
-Note: It is also possible to define additional properties in the JSON files. However, it is recommended to stick to the properties defined above. This way it is easier to automatically categorize the tables, for example.
+  * *character* - PC and NPC generation  
+  * *encounter* - events and random encounters
+  * *item* - equipment and treasure generation
+  * *monster* - beast and creature generation
+  * *name* - person, item and location names
+  * *story* - adventure and plot generation
+  * *world* - locations, cultures and history
+
+  While it is possible to specify also other categories, it is recommended to pick from the above list. This makes it easier to organize all tables in a uniform way.
+
+* **tags**: Tags are a more freeform way to organize the generator files. They make it easier to find content that is related to a keyword. Tags should be preceded by the hash symbol (#) and separated by commas.  You can specify as many tags as you like.
+
+  Examples of tags could be for example the following:
+
+      "tags": "#sea, #sailing, #pirates"
+
+If some of the metadata properties are not relevant, they can of course be omitted. (For example if there are no relevant references for the "see" property.)
+
+It is also possible to define additional properties in the JSON files. However, it is recommended to stick to the properties defined above. This way it is easier to automatically categorize the tables, for example.
+
+**Note**: If a metadata property is not necessary for a file, either leave that property out, or leave its content field empty. For example, if your table has no bugs, do not fill the *bugs* property with "none known". Just leave it empty. Keeping unnecessary fields empty makes it easier to automatically find tables that need debugging, for example.
 
 
 ### Tables
+
+The tables property contains a list of table definitions,
+
+    "tables": [
+        {
+          <tables are located here>
+        }
+    ]
+
+Tables can also use the same metadata properties as the file, such as *explanation* to add notes to anyone who reads or edits the table. Metadata properties are completely optional for tables.
+
+Table syntax is like the following:
 
     "tables": [
       {
@@ -91,25 +142,15 @@ Note: It is also possible to define additional properties in the JSON files. How
       }
     ]
 
-Produce entries for different types of genres and worlds.
-
-The 'common' and 'rare' tables are generic and should be compatible with almost any world.
-
-To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.
-
-Some subtables intentionally overlap."
-
-  "tables": [
-
 
 #### Name
 
-  "name": "XXX",
+    "name": "XXX",
 
 
 #### Explanation
 
-  "explanation": "XXX",
+    "explanation": "XXX",
 
 
 #### Entries
@@ -126,21 +167,33 @@ There is a comma between each entry:
       "the final entry"
     ]
 
-Note how the final entry does not have a comma after it.
+*Note*: The final entry in the list does not have a comma after it.
 
 
 
 ##### Weighing Values
 
-  {
-    "m": 10,
-    "v": "{common}"
-  },
+This example defines an entry that appears thee times more likely than unweighed values:
+
+    {
+      "m": 3,
+      "v": "three times as common entry"
+    },
 
 
 ### Subtables
 
+Produce entries for different types of genres and worlds.
+
+The 'common' and 'rare' tables are generic and should be compatible with almost any world.
+
+To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.
+
+Some subtables intentionally overlap.
+
+
 #### common
+
 
 #### rare
 
@@ -151,7 +204,7 @@ Note how the final entry does not have a comma after it.
 #### rare mythological
 
     "name": "rare mythological",
-    "explanation": "Rare imaginary XXX once rumoured to have existed.",
+    "explanation": "Rare imaginary XXX once rumored to have existed.",
 
 
 #### fantasy
