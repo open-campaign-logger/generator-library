@@ -19,7 +19,9 @@ There are several JSON tutorials available online, for example:
 
 But a deeper knowledge of JSON is not really necessary for writing Campaign Logger generators. Just follow this guide.
 
-As the JSON syntax can get complex to write manually, it is recommended to write tables using a text editor with JSON support. Several specialized JSON editors are freely available online - for example:
+Although the JSON syntax may seem daunting at first, it also brings with it flexibility, expandability and powerful features that can be used for creating some quite advanced generators. A standardized file format also means that there are several readily available (and often free) tools that make the task easier.
+
+It is recommended to write generator tables using a text editor with JSON support. Several specialized JSON editors are freely available online - for example:
 
 * https://github.com/jdorn/json-editor
 * https://github.com/rsuter/VisualJsonEditor (Windows only)
