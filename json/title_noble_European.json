@@ -3,16 +3,16 @@
   "resultPattern": "{European noble} ({var:gender} ruling over {var:realm}, addressed as {var:form of address}) \r\n{var:footnote}",
   "variables": {
     "gender": "",
-    "realm": "area reigned over",
+    "realm": "area reigned over (kingdom, county, etc.)",
     "form of address": "how to address the noble when speaking",
     "footnote": ""
   },
-  "explanation": "Produces noble titles from European-style cultures",
-  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "explanation": "Noble titles from European-style cultures",
+  "structure": "Subtable calls set variables that are used in the resultPattern.",
   "note": "The names for ranks are not universal, and 'gentry' and 'minor nobility' have often been used interchangeably. These have been separated in 2 different classes to underline the differences between the titles in those ranks.",
   "bugs": "",
-  "to do": "",
-  "see": "title_noble_Germanic",
+  "to do": "Handling articles in realm results.",
+  "see": "title_noble_Germanic, title_noble_Slavic",
   "date": "2017-10-01",
   "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
   "sources": "Wikipedia.org",
@@ -385,7 +385,7 @@
           "v": "Vicereine",
           "set": {
             "realm": "viceroyalty",
-            "form of address": "Royal Highness"
+            "form of address": "Grace"
           }
         },
         {
@@ -427,7 +427,7 @@
           "v": "Viceroy",
           "set": {
             "realm": "viceroyalty",
-            "form of address": "Royal Highness"
+            "form of address": "Grace"
           }
         },
         {
