@@ -1,9 +1,10 @@
 {
   "name": "title of European noble",
-  "resultPattern": "{European noble} (ruling over {var:realm}) \r\n {var:footnote}",
+  "resultPattern": "{European noble} (ruling over {var:realm}, addressed as {var:form of address}) \r\n {var:footnote}",
   "variables": {
     "gender": "",
     "realm": "area reigned over",
+    "form of address": "",
     "footnote": ""
   },
   "explanation": "Produces noble titles from European-style cultures",
@@ -12,7 +13,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2017-09-30",
+  "date": "2017-10-01",
   "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
   "sources": "",
   "category": "name",
@@ -25,43 +26,47 @@
         {
           "v": "{gentry}",
           "set": {
-            "realm": ""
+            "realm": "house"
           }
         },
         {
           "v": "{minor nobility}",
           "set": {
-            "realm": ""
+            "realm": "barony"
           }
         },
         {
           "v": "{major nobility}",
           "set": {
-            "realm": ""
+            "realm": "county"
           }
         },
         {
           "v": "{princely}",
           "set": {
-            "realm": "principality"
+            "realm": "principality",
+            "form of address": "Grace"
           }
         },
         {
           "v": "{royal}",
           "set": {
-            "realm": "kingdom"
+            "realm": "kingdom",
+            "form of address": "Royal Highness"
           }
         },
         {
           "v": "{high royal}",
           "set": {
-            "realm": "kingdoms of vassal kings"
+            "realm": "grand kingdom",
+            "form of address": "Majesty"
           }
         },
         {
           "v": "{imperial}",
           "set": {
-            "realm": "empire"
+            "realm": "empire",
+            "form of address": "Imperial Majesty"
           }
         }
       ]
@@ -81,19 +86,22 @@
         {
           "v": "lady",
           "set": {
-            "realm": "house"
+            "realm": "house",
+            "form of address": "Lady"
           }
         },
         {
           "v": "dame",
           "set": {
-            "realm": "some land"
+            "realm": "some land",
+            "form of address": "Madam"
           }
         },
         {
           "v": "baronetess",
           "set": {
-            "realm": "baronetcy"
+            "realm": "baronetcy",
+            "form of address": "Madam"
           }
         }
       ]
@@ -105,31 +113,36 @@
         {
           "v": "gentleman",
           "set": {
-            "realm": "house"
+            "realm": "house",
+            "form of address": "Mister"
           }
         },
         {
           "v": "esquire",
           "set": {
-            "realm": "manor"
+            "realm": "manor",
+            "form of address": "Mister"
           }
         },
         {
           "v": "patrician",
           "set": {
-            "realm": "no land"
+            "realm": "no land",
+            "form of address": "Mister"
           }
         },
         {
           "v": "knight",
           "set": {
-            "realm": "some land"
+            "realm": "some land",
+            "form of address": "Sir"
           }
         },
         {
           "v": "baronet",
           "set": {
-            "realm": "baronetcy"
+            "realm": "baronetcy",
+            "form of address": "Sir"
           }
         }
       ]
@@ -149,19 +162,22 @@
         {
           "v": "baroness",
           "set": {
-            "realm": "barony"
+            "realm": "barony",
+            "form of address": "Lady"
           }
         },
         {
           "v": "free baroness",
           "set": {
-            "realm": "barony"
+            "realm": "barony",
+            "form of address": "Lady"
           }
         },
         {
           "v": "viscountess",
           "set": {
-            "realm": "viscounty"
+            "realm": "viscounty",
+            "form of address": "Lady"
           }
         }
       ]
@@ -173,19 +189,22 @@
         {
           "v": "baron",
           "set": {
-            "realm": "barony"
+            "realm": "barony",
+            "form of address": "Lord"
           }
         },
         {
           "v": "free baron",
           "set": {
-            "realm": "barony"
+            "realm": "barony",
+            "form of address": "Lord"
           }
         },
         {
           "v": "viscount",
           "set": {
-            "realm": "viscounty"
+            "realm": "viscounty",
+            "form of address": "Lord"
           }
         }
       ]
@@ -205,43 +224,50 @@
         {
           "v": "countess (an earl's wife)",
           "set": {
-            "realm": "earldom"
+            "realm": "earldom",
+            "form of address": "Lady"
           }
         },
         {
           "v": "countess",
           "set": {
-            "realm": "county"
+            "realm": "county",
+            "form of address": "Lady"
           }
         },
         {
           "v": "countess palatine",
           "set": {
-            "realm": "county palatine (autonomous county)"
+            "realm": "county palatine (autonomous county)",
+            "form of address": "Lady"
           }
         },
         {
           "v": "marquise",
           "set": {
-            "realm": "marquisate (border area)"
+            "realm": "marquisate (border area)",
+            "form of address": "Lady"
           }
         },
         {
           "v": "marchioness",
           "set": {
-            "realm": "marquessate (border area)"
+            "realm": "marquessate (border area)",
+            "form of address": "Lady"
           }
         },
         {
           "v": "margravine",
           "set": {
-            "realm": "margraviate"
+            "realm": "margraviate",
+            "form of address": "Lady"
           }
         },
         {
           "v": "landgravine",
           "set": {
             "realm": "landgraviate",
+            "form of address": "Lady",
             "footnote": "A landgrave owes his duty directly to the ruler. "
           }
         }
@@ -254,43 +280,50 @@
         {
           "v": "earl",
           "set": {
-            "realm": "earldom"
+            "realm": "earldom",
+            "form of address": "Lord"
           }
         },
         {
           "v": "count",
           "set": {
-            "realm": "county"
+            "realm": "county",
+            "form of address": "Lord"
           }
         },
         {
           "v": "count palatine",
           "set": {
-            "realm": "county palatine (autonomous county)"
+            "realm": "county palatine (autonomous county)",
+            "form of address": "Lord"
           }
         },
         {
           "v": "marquess",
           "set": {
-            "realm": "marquessate (border area)"
+            "realm": "marquessate (border area)",
+            "form of address": "Lord"
           }
         },
         {
           "v": "marquis",
           "set": {
-            "realm": "marquisate (border area)"
+            "realm": "marquisate (border area)",
+            "form of address": "Lord"
           }
         },
         {
           "v": "margrave",
           "set": {
-            "realm": "margraviate"
+            "realm": "margraviate",
+            "form of address": "Lord"
           }
         },
         {
           "v": "landgrave",
           "set": {
             "realm": "landgraviate",
+            "form of address": "Lord",
             "footnote": "A landgrave owes his duty directly to the ruler. "
           }
         }
@@ -301,8 +334,7 @@
       "explanation": "Princely titles.",
       "entries": [
         "{female princely}",
-        "{male princely}",
-        "{religious princely}"
+        "{male princely}"
       ]
     },
     {
@@ -312,31 +344,36 @@
         {
           "v": "Vice Duchess",
           "set": {
-            "realm": "duchy"
+            "realm": "duchy",
+            "form of address": "Grace"
           }
         },
         {
           "v": "Duchess",
           "set": {
-            "realm": "duchy"
+            "realm": "duchy",
+            "form of address": "Grace"
           }
         },
         {
           "v": "Grand Duchess",
           "set": {
-            "realm": "grand duchy"
+            "realm": "grand duchy",
+            "form of address": "Grace"
           }
         },
         {
           "v": "Princess",
           "set": {
-            "realm": "principality"
+            "realm": "principality",
+            "form of address": "Royal Highness"
           }
         },
         {
           "v": "Crown Princess",
           "set": {
             "realm": "principality",
+            "form of address": "Royal Highness",
             "footnote": "(Crown Princess is the heir apparent of the current ruler.) "
           }
         }
@@ -349,44 +386,37 @@
         {
           "v": "Vice Duke",
           "set": {
-            "realm": "duchy"
+            "realm": "duchy",
+            "form of address": "Grace"
           }
         },
         {
           "v": "Duke",
           "set": {
-            "realm": "duchy"
+            "realm": "duchy",
+            "form of address": "Grace"
           }
         },
         {
           "v": "Grand Duke",
           "set": {
-            "realm": "grand duchy"
+            "realm": "grand duchy",
+            "form of address": "Grace"
           }
         },
         {
           "v": "Prince",
           "set": {
-            "realm": "principality"
+            "realm": "principality",
+            "form of address": "Royal Highness"
           }
         },
         {
           "v": "Crown Prince",
           "set": {
             "realm": "principality",
+            "form of address": "Royal Highness",
             "footnote": "(Crown Prince is the heir apparent of the current ruler.) "
-          }
-        }
-      ]
-    },
-    {
-      "name": "religious princely",
-      "explanation": "religious princely titles.",
-      "entries": [
-        {
-          "v": "Pope",
-          "set": {
-            "realm": "the church"
           }
         }
       ]
@@ -406,19 +436,22 @@
         {
           "v": "sovereign Grand Duchess",
           "set": {
-            "realm": "sovereign grand duchy"
+            "realm": "sovereign grand duchy",
+            "form of address": "Grace"
           }
         },
         {
           "v": "Archduchess",
           "set": {
-            "realm": "archduchy"
+            "realm": "archduchy",
+            "form of address": "Grace"
           }
         },
         {
           "v": "Grand Princess",
           "set": {
-            "realm": "grand principality"
+            "realm": "grand principality",
+            "form of address": "Royal Highness"
           }
         },
         "Queen"
@@ -431,19 +464,22 @@
         {
           "v": "sovereign Grand Duke",
           "set": {
-            "realm": "sovereign grand duchy"
+            "realm": "sovereign grand duchy",
+            "form of address": "Grace"
           }
         },
         {
           "v": "Archduke",
           "set": {
-            "realm": "archduchy"
+            "realm": "archduchy",
+            "form of address": "Grace"
           }
         },
         {
           "v": "Grand Prince",
           "set": {
-            "realm": "grand principality"
+            "realm": "grand principality",
+            "form of address": "Royal Highness"
           }
         },
         "King"
@@ -462,6 +498,7 @@
       "explanation": "Female high royal titles.",
       "entries": [
         "Great Queen",
+        "Queen of Kings",
         "High Queen"
       ]
     },
@@ -486,6 +523,8 @@
       "name": "female imperial",
       "explanation": "Female imperial titles.",
       "entries": [
+        "Queen-Empress",
+        "Empress-Queen",
         "Empress"
       ]
     },
@@ -493,13 +532,9 @@
       "name": "male imperial",
       "explanation": "Male imperial titles.",
       "entries": [
+        "King-Emperor",
+        "Emperor-King",
         "Emperor"
-      ]
-    },
-    {
-      "name": "foo",
-      "entries": [
-        "lord"
       ]
     }
   ]
