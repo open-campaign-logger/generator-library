@@ -1,0 +1,506 @@
+{
+  "name": "title of European noble",
+  "resultPattern": "{European noble} (ruling over {var:realm}) \r\n {var:footnote}",
+  "variables": {
+    "gender": "",
+    "realm": "area reigned over",
+    "footnote": ""
+  },
+  "explanation": "Produces noble titles from European-style cultures",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "The names for ranks are not universal, and 'gentry' and 'minor nobility' have often been used interchangeably. These have been separated in 2 different classes to underline the differences between the titles in those ranks.",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2017-09-30",
+  "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "sources": "",
+  "category": "name",
+  "tags": "#person, #noble, #Europe",
+  "tables": [
+    {
+      "name": "European noble",
+      "explanation": "European noble titles categorized by rank.",
+      "entries": [
+        {
+          "v": "{gentry}",
+          "set": {
+            "realm": ""
+          }
+        },
+        {
+          "v": "{minor nobility}",
+          "set": {
+            "realm": ""
+          }
+        },
+        {
+          "v": "{major nobility}",
+          "set": {
+            "realm": ""
+          }
+        },
+        {
+          "v": "{princely}",
+          "set": {
+            "realm": "principality"
+          }
+        },
+        {
+          "v": "{royal}",
+          "set": {
+            "realm": "kingdom"
+          }
+        },
+        {
+          "v": "{high royal}",
+          "set": {
+            "realm": "kingdoms of vassal kings"
+          }
+        },
+        {
+          "v": "{imperial}",
+          "set": {
+            "realm": "empire"
+          }
+        }
+      ]
+    },
+    {
+      "name": "gentry",
+      "explanation": "Gentry titles.",
+      "entries": [
+        "{female gentry}",
+        "{male gentry}"
+      ]
+    },
+    {
+      "name": "female gentry",
+      "explanation": "Female gentry titles.",
+      "entries": [
+        {
+          "v": "lady",
+          "set": {
+            "realm": "house"
+          }
+        },
+        {
+          "v": "dame",
+          "set": {
+            "realm": "some land"
+          }
+        },
+        {
+          "v": "baronetess",
+          "set": {
+            "realm": "baronetcy"
+          }
+        }
+      ]
+    },
+    {
+      "name": "male gentry",
+      "explanation": "Male gentry titles.",
+      "entries": [
+        {
+          "v": "gentleman",
+          "set": {
+            "realm": "house"
+          }
+        },
+        {
+          "v": "esquire",
+          "set": {
+            "realm": "manor"
+          }
+        },
+        {
+          "v": "patrician",
+          "set": {
+            "realm": "no land"
+          }
+        },
+        {
+          "v": "knight",
+          "set": {
+            "realm": "some land"
+          }
+        },
+        {
+          "v": "baronet",
+          "set": {
+            "realm": "baronetcy"
+          }
+        }
+      ]
+    },
+    {
+      "name": "minor nobility",
+      "explanation": "Minor nobility titles.",
+      "entries": [
+        "{female minor nobility}",
+        "{male minor nobility}"
+      ]
+    },
+    {
+      "name": "female minor nobility",
+      "explanation": "Female minor nobility titles.",
+      "entries": [
+        {
+          "v": "baroness",
+          "set": {
+            "realm": "barony"
+          }
+        },
+        {
+          "v": "free baroness",
+          "set": {
+            "realm": "barony"
+          }
+        },
+        {
+          "v": "viscountess",
+          "set": {
+            "realm": "viscounty"
+          }
+        }
+      ]
+    },
+    {
+      "name": "male minor nobility",
+      "explanation": "Male minor nobility titles.",
+      "entries": [
+        {
+          "v": "baron",
+          "set": {
+            "realm": "barony"
+          }
+        },
+        {
+          "v": "free baron",
+          "set": {
+            "realm": "barony"
+          }
+        },
+        {
+          "v": "viscount",
+          "set": {
+            "realm": "viscounty"
+          }
+        }
+      ]
+    },
+    {
+      "name": "major nobility",
+      "explanation": "Major nobility titles.",
+      "entries": [
+        "{female major nobility}",
+        "{male major nobility}"
+      ]
+    },
+    {
+      "name": "female major nobility",
+      "explanation": "Female major nobility titles.",
+      "entries": [
+        {
+          "v": "countess (an earl's wife)",
+          "set": {
+            "realm": "earldom"
+          }
+        },
+        {
+          "v": "countess",
+          "set": {
+            "realm": "county"
+          }
+        },
+        {
+          "v": "countess palatine",
+          "set": {
+            "realm": "county palatine (autonomous county)"
+          }
+        },
+        {
+          "v": "marquise",
+          "set": {
+            "realm": "marquisate (border area)"
+          }
+        },
+        {
+          "v": "marchioness",
+          "set": {
+            "realm": "marquessate (border area)"
+          }
+        },
+        {
+          "v": "margravine",
+          "set": {
+            "realm": "margraviate"
+          }
+        },
+        {
+          "v": "landgravine",
+          "set": {
+            "realm": "landgraviate",
+            "footnote": "A landgrave owes his duty directly to the ruler. "
+          }
+        }
+      ]
+    },
+    {
+      "name": "male major nobility",
+      "explanation": "Male major nobility titles.",
+      "entries": [
+        {
+          "v": "earl",
+          "set": {
+            "realm": "earldom"
+          }
+        },
+        {
+          "v": "count",
+          "set": {
+            "realm": "county"
+          }
+        },
+        {
+          "v": "count palatine",
+          "set": {
+            "realm": "county palatine (autonomous county)"
+          }
+        },
+        {
+          "v": "marquess",
+          "set": {
+            "realm": "marquessate (border area)"
+          }
+        },
+        {
+          "v": "marquis",
+          "set": {
+            "realm": "marquisate (border area)"
+          }
+        },
+        {
+          "v": "margrave",
+          "set": {
+            "realm": "margraviate"
+          }
+        },
+        {
+          "v": "landgrave",
+          "set": {
+            "realm": "landgraviate",
+            "footnote": "A landgrave owes his duty directly to the ruler. "
+          }
+        }
+      ]
+    },
+    {
+      "name": "princely",
+      "explanation": "Princely titles.",
+      "entries": [
+        "{female princely}",
+        "{male princely}",
+        "{religious princely}"
+      ]
+    },
+    {
+      "name": "female princely",
+      "explanation": "Female princely titles.",
+      "entries": [
+        {
+          "v": "Vice Duchess",
+          "set": {
+            "realm": "duchy"
+          }
+        },
+        {
+          "v": "Duchess",
+          "set": {
+            "realm": "duchy"
+          }
+        },
+        {
+          "v": "Grand Duchess",
+          "set": {
+            "realm": "grand duchy"
+          }
+        },
+        {
+          "v": "Princess",
+          "set": {
+            "realm": "principality"
+          }
+        },
+        {
+          "v": "Crown Princess",
+          "set": {
+            "realm": "principality",
+            "footnote": "(Crown Princess is the heir apparent of the current ruler.) "
+          }
+        }
+      ]
+    },
+    {
+      "name": "male princely",
+      "explanation": "Male princely titles.",
+      "entries": [
+        {
+          "v": "Vice Duke",
+          "set": {
+            "realm": "duchy"
+          }
+        },
+        {
+          "v": "Duke",
+          "set": {
+            "realm": "duchy"
+          }
+        },
+        {
+          "v": "Grand Duke",
+          "set": {
+            "realm": "grand duchy"
+          }
+        },
+        {
+          "v": "Prince",
+          "set": {
+            "realm": "principality"
+          }
+        },
+        {
+          "v": "Crown Prince",
+          "set": {
+            "realm": "principality",
+            "footnote": "(Crown Prince is the heir apparent of the current ruler.) "
+          }
+        }
+      ]
+    },
+    {
+      "name": "religious princely",
+      "explanation": "religious princely titles.",
+      "entries": [
+        {
+          "v": "Pope",
+          "set": {
+            "realm": "the church"
+          }
+        }
+      ]
+    },
+    {
+      "name": "royal",
+      "explanation": "Royals reigning over kingdoms, etc.",
+      "entries": [
+        "{female royal}",
+        "{male royal}"
+      ]
+    },
+    {
+      "name": "female royal",
+      "explanation": "Female royal titles.",
+      "entries": [
+        {
+          "v": "sovereign Grand Duchess",
+          "set": {
+            "realm": "sovereign grand duchy"
+          }
+        },
+        {
+          "v": "Archduchess",
+          "set": {
+            "realm": "archduchy"
+          }
+        },
+        {
+          "v": "Grand Princess",
+          "set": {
+            "realm": "grand principality"
+          }
+        },
+        "Queen"
+      ]
+    },
+    {
+      "name": "male royal",
+      "explanation": "Male royal titles.",
+      "entries": [
+        {
+          "v": "sovereign Grand Duke",
+          "set": {
+            "realm": "sovereign grand duchy"
+          }
+        },
+        {
+          "v": "Archduke",
+          "set": {
+            "realm": "archduchy"
+          }
+        },
+        {
+          "v": "Grand Prince",
+          "set": {
+            "realm": "grand principality"
+          }
+        },
+        "King"
+      ]
+    },
+    {
+      "name": "high royal",
+      "explanation": "Monarchs reigning over other monarchs.",
+      "entries": [
+        "{female high royal}",
+        "{male high royal}"
+      ]
+    },
+    {
+      "name": "female high royal",
+      "explanation": "Female high royal titles.",
+      "entries": [
+        "Great Queen",
+        "High Queen"
+      ]
+    },
+    {
+      "name": "male high royal",
+      "explanation": "Male high royal titles.",
+      "entries": [
+        "Great King",
+        "King of Kings",
+        "High King"
+      ]
+    },
+    {
+      "name": "imperial",
+      "explanation": "Monarchs reigning over an empire.",
+      "entries": [
+        "{female imperial}",
+        "{male imperial}"
+      ]
+    },
+    {
+      "name": "female imperial",
+      "explanation": "Female imperial titles.",
+      "entries": [
+        "Empress"
+      ]
+    },
+    {
+      "name": "male imperial",
+      "explanation": "Male imperial titles.",
+      "entries": [
+        "Emperor"
+      ]
+    },
+    {
+      "name": "foo",
+      "entries": [
+        "lord"
+      ]
+    }
+  ]
+}
