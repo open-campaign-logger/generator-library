@@ -4,16 +4,17 @@
   "variables": {
     "footnote": ""
   },
-  "explanation": "Stones for resource and construction tables. Subtables have been sorted from common to rare. Subtables present stone types known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: metal.json. Authors: Johnn Four, Jochen Linnemann, Esko Vesala. Sources: Wikipedia.org.",
+  "explanation": "Stones for resource and construction tables.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
   "to do": "",
-  "see": "",
-  "date": "2017-XX-XX",
-  "authors": "",
-  "sources": "",
-  "category": "",
-  "tags": "",
+  "see": "material, metal",
+  "date": "2017-10-04",
+  "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "sources": "Wikipedia.org.",
+  "genre": "universal",
+  "category": "world",
+  "tags": "#material, #resource",
   "tables": [
     {
       "name": "stone",
@@ -52,7 +53,7 @@
     },
     {
       "name": "mythological",
-      "explanation": "Imaginary stone types once rumoured to have existed.",
+      "explanation": "XXX Imaginary stone types once rumoured to have existed.",
       "entries": [
         "lodestone",
         "{rare mythological}"
@@ -60,10 +61,9 @@
     },
     {
       "name": "rare mythological",
-      "explanation": "Rare imaginary stone types once rumoured to have existed.",
+      "explanation": "XXX Rare imaginary stone types once rumoured to have existed.",
       "entries": [
-        "{mythological}",
-        "XXX"
+        "{mythological}"
       ]
     },
     {

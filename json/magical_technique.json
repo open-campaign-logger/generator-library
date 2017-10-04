@@ -1,19 +1,20 @@
 {
-  "name": "Magical technique Generator",
+  "name": "magical technique table",
   "resultPattern": "{magic}",
   "variables": {
     "footnote": ""
   },
-  "explanation": "Magical techniques for magic tables. Subtables have been sorted from common to rare. Subtables present magical techniques known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. Date: 2019-09-26. Authors: Esko Vesala. Sources: powerlisting.wikia.com, Wikipedia.org.",
+  "explanation": "Magical techniques for magic tables.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
   "to do": "",
-  "see": "",
-  "date": "2017-XX-XX",
-  "authors": "",
-  "sources": "",
-  "category": "",
-  "tags": "",
+  "see": "energy, magic, magical_instrument, spellcasting",
+  "date": "2017-10-04",
+  "authors": "Esko Vesala",
+  "sources": "powerlisting.wikia.com, Wikipedia.org.",
+  "genre": "universal",
+  "category": "magic",
+  "tags": "#magic, #spell",
   "tables": [
     {
       "name": "magical technique",

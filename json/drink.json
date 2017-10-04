@@ -4,16 +4,17 @@
   "variables": {
     "footnote": ""
   },
-  "explanation": "Drink for resource tables. Subtables have been sorted from common to rare. Subtables present beverages known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Subtable classification is based on everyday usage, not scientific taxonomy. Some subtables intentionally overlap. See also: food.json. To do: More content. Date: 2017-09-26. Authors: Esko Vesala. Sources: Wikipedia.org.",
+  "explanation": "Drink for resource tables. Subtable classification is based on everyday usage, not scientific taxonomy.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
-  "to do": "",
-  "see": "",
-  "date": "2017-XX-XX",
-  "authors": "",
-  "sources": "",
-  "category": "",
-  "tags": "",
+  "to do": "More content.",
+  "see": "food",
+  "date": "2017-10-04",
+  "authors": "Esko Vesala.",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "category": "item",
+  "tags": "#food, #drink, #tavern",
   "tables": [
     {
       "name": "appearance",

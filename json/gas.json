@@ -1,19 +1,20 @@
 {
-  "name": "Gas Generator",
+  "name": "gas table",
   "resultPattern": "{gas}",
   "variables": {
     "footnote": ""
   },
-  "explanation": "Gases for resource tables. Subtables have been sorted from common to rare. Subtables present gases known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: liquid, material, metal tables. Date: 2019-09-26. Authors: Esko Vesala. Sources: Wikipedia.org.",
+  "explanation": "Gases for resource tables.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
-  "to do": "",
-  "see": "",
-  "date": "2017-XX-XX",
-  "authors": "",
-  "sources": "",
-  "category": "",
-  "tags": "",
+  "to do": "Expand genre-specific subtables.",
+  "see": "liquid, material, metal.",
+  "date": "2017-10-04",
+  "authors": "Esko Vesala.",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "category": "item",
+  "tags": "#material, #resource",
   "tables": [
     {
       "name": "gas",

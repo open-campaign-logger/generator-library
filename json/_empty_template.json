@@ -1,5 +1,5 @@
 {
-  "name": "Empty Template",
+  "name": "Generator Template",
   "resultPattern": "{XXX}",
   "variables": {
     "footnote": ""
@@ -10,9 +10,10 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2017-XX-XX",
+  "date": "20XX-XX-XX",
   "authors": "",
   "sources": "",
+  "genre": "",
   "category": "",
   "tags": "",
   "tables": [

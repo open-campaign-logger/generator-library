@@ -1,3 +1,10 @@
+[//]: # (User Guide document for the Generator functionality of the Campaign Logger gamemastering tool.)
+
+[//]: # (Author: Esko Vesala.)
+
+[//]: # (Date: 2017-10-04.)
+
+
 # Generator Guide
 
 This document explains how to create random table generators for the *Campaign Logger*  gamemastering utility.
@@ -244,15 +251,28 @@ The following optional properties can be used:
 
 * **sources**: This property is for listing the references and other information sources that have been helpful when creating the file. This helps others to expand the file and find more information about the subject.
 
+* **genre**: If the table is intended for only certain genres, it can be specified here. This presents one way to scan for suitable tables. Commonly used genres are the following:
+
+  * *fantasy* - imaginary realms of myth and magic
+  * *futuristic* - science fiction worlds in
+  * *historical* - some period of real-world history
+  * *modern* - contemporary settings resembling the real world
+  * *mythological* - mundane world with hidden, mythic secrets
+  * *universal* - not specific to a genre
+
+  Using these common categories helps to organize the tables in a standard way, but any genre definition can be used.
+
 * **category**: The category property specifies a class in which the file belongs to. This can  help in organizing the generator files. Select one from the following:
 
   * *character* - PC and NPC generation  
   * *encounter* - events and random encounters
   * *item* - equipment and treasure generation
   * *magic* - spells and magic items
+  * *meta* - metadata, such as templates and examples
   * *monster* - beast and creature generation
   * *name* - person, item and location names
   * *story* - plot and adventure generation
+  * *utility* - help tables for use by other tables
   * *world* - locations, cultures and history
 
   While it is possible to specify also other categories, it is recommended to pick from the above list. This makes it easier to organize all tables in a uniform way.

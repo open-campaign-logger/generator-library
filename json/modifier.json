@@ -4,16 +4,17 @@
   "variables": {
     "footnote": ""
   },
-  "explanation": "Strengthening intensifiers and weakening mitigators for adjectives in descriptions. Note: Does not include 'quite', as its meaning can vary. Date: 2019-09-26. Author: Esko Vesala. Sources: BritishCouncil.org, EF.com.",
+  "explanation": "Strengthening intensifiers and weakening mitigators for adjectives in descriptions.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
-  "note": "",
+  "note": "Does not include 'quite', as its meaning can vary.",
   "to do": "",
   "see": "",
-  "date": "2017-XX-XX",
-  "authors": "",
-  "sources": "",
-  "category": "",
-  "tags": "",
+  "date": "2017-10-04",
+  "authors": "Esko Vesala",
+  "sources": "BritishCouncil.org, EF.com.",
+  "genre": "universal",
+  "category": "utility",
+  "tags": "#language",
   "tables": [
     {
       "name": "modifier",
@@ -142,7 +143,7 @@
     },
     {
       "name": "rare mythological",
-      "explanation": "Rare imaginary modifiers once rumoured to have existed.",
+      "explanation": "XXX Rare imaginary modifiers once rumoured to have existed.",
       "entries": [
         "{mythological}",
         "earth-shatteringly"
@@ -150,7 +151,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary modifiers for fantasy worlds.",
+      "explanation": "XXX Imaginary modifiers for fantasy worlds.",
       "entries": [
         "{mythological}",
         "fantastically",
@@ -159,10 +160,9 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary modifiers for fantasy worlds.",
+      "explanation": "XXX Rare imaginary modifiers for fantasy worlds.",
       "entries": [
-        "{fantasy}",
-        "XXX"
+        "{fantasy}"
       ]
     },
     {

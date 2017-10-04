@@ -1,18 +1,19 @@
 {
-  "name": "USA 1850 names",
+  "name": "USA 1850 name table",
   "resultPattern": "{first name} {last name} ({var:gender})",
   "variables": {
     "gender": ""
   },
-  "explanation": "Most popular names based on 1850 US census data.",
+  "explanation": "Most popular US names in 1850 based on census data.",
   "structure": "The fist name table also stores the gender variable which is displayed in the resultPattern.",
   "note": "The name tables have been sorted from the most common to the least common.",
   "bugs": "",
   "to do": "",
-  "see": "",
-  "date": "2017-09-28",
+  "see": "name_USA_1880s_born",
+  "date": "2017-10-04",
   "authors": "Esko Vesala",
   "sources": " http://www.buckbd.com/genea/1850fnfl.txt,  http://www.buckbd.com/genea/1850fnml.txt,  http://www.buckbd.com/genea/1850freq.txt",
+  "genre": "historical",
   "category": "name",
   "tags": "#historical, #western, #1800s, #usa",
   "tables": [

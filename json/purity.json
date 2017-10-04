@@ -4,20 +4,21 @@
   "variables": {
     "footnote": ""
   },
-  "explanation": "The cleanliness of an object, material or person. Subtables have been sorted from common to rare. Subtables present entries known in different types of genres and worlds. The first subtables are compatible with the largest number of worlds, and get more specialized towards the end. Non-generic subtables are not called by default to retain compatibility with most settings. Some subtables intentionally overlap. See also: the liquid table. Author: Esko Vesala. Sources: Thesaurus.com.",
+  "explanation": "The cleanliness of an object, material or person.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "to do": "",
-  "see": "",
-  "date": "2017-XX-XX",
-  "authors": "",
-  "sources": "",
-  "category": "",
-  "tags": "",
+  "see": "liquid, temperature",
+  "date": "2017-10-04",
+  "authors": "Esko Vesala",
+  "sources": "Thesaurus.com",
+  "genre": "universal",
+  "category": "utility",
+  "tags": "#description, #environment, #quality",
   "tables": [
     {
       "name": "purity",
-      "explanation": "Cleanliness.",
+      "explanation": "Cleanliness (in the physical or spiritual sense).",
       "entries": [
         {
           "m": 10,

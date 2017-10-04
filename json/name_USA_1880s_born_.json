@@ -4,15 +4,16 @@
   "variables": {
     "gender": ""
   },
-  "explanation": "Top 1000 first names based on Social Security card applications for births that occurred in the United States in the 1880's. Last names are fetched from an external table containing 1850 US census data.",
-  "structure": "The fist name table also stores the gender variable which is displayed in the resultPattern.",
+  "explanation": "Top 1000 first names based on Social Security card applications for births that occurred in the United States in the 1880's.",
+  "structure": "The fist name table also stores the gender variable which is displayed in the resultPattern. Last names are fetched from an external table containing 1850 US census data.",
   "note": "The name tables have been sorted from the most common to the least common.",
   "bugs": "",
   "to do": "Chronologically closer first and last name data would be nice.",
-  "see": "",
-  "date": "2017-09-28",
+  "see": "name_USA_1850",
+  "date": "2017-10-04",
   "authors": "Esko Vesala",
   "sources": "http://www.baby2see.com/names/1880s.html",
+  "genre": "historical",
   "category": "name",
   "tags": "#historical, #western, #1800s, #usa",
   "tables": [
