@@ -2,7 +2,7 @@
 
 [//]: # (Author: Esko Vesala.)
 
-[//]: # (Date: 2017-10-04.)
+[//]: # (Date: 2017-10-06.)
 
 
 # Generator Guide
@@ -296,12 +296,12 @@ Also tables can use these metadata properties, such as an *explanation* to add n
 
 #### Name
 
-    "name": "XXX",
+    "name": "",
 
 
 #### Explanation
 
-    "explanation": "XXX",
+    "explanation": "",
 
 
 #### Entries
@@ -338,47 +338,47 @@ After these generic tables, genre-specific tables should follow. These subtables
 #### rare
 
     "name": "mythological",
-    "explanation": "Imaginary XXX once rumoured to have existed.",
+    "explanation": "Imaginary X once rumoured to have existed.",
 
 
 #### rare mythological
 
     "name": "rare mythological",
-    "explanation": "Rare imaginary XXX once rumored to have existed.",
+    "explanation": "Rare imaginary X once rumored to have existed.",
 
 
 #### fantasy
 
     "name": "fantasy",
-    "explanation": "Imaginary XXX for fantasy worlds.",
+    "explanation": "Imaginary X for fantasy worlds.",
 
 #### rare fantasy
 
     "name": "rare fantasy",
-    "explanation": "Rare imaginary XXX for fantasy worlds.",
+    "explanation": "Rare imaginary X for fantasy worlds.",
 
 #### modern
 
     "name": "modern",
-    "explanation": "XXX for modern worlds.",
+    "explanation": "X for modern worlds.",
 
 
 #### rare modern
 
     "name": "rare modern",
-    "explanation": "Rare XXX for modern worlds.",
+    "explanation": "Rare X for modern worlds.",
 
 
 #### futuristic
 
     "name": "futuristic",
-    "explanation": "Imaginary XXX for science fiction worlds.",
+    "explanation": "Imaginary X for science fiction worlds.",
 
 
 #### rare futuristic
 
     "name": "rare futuristic",
-    "explanation": "Rare imaginary XXX for science fiction worlds.",
+    "explanation": "Rare imaginary X for science fiction worlds.",
 
 
 ### Special Subtables
