@@ -9,7 +9,7 @@
   "note": "",
   "to do": "",
   "see": "material, metal",
-  "date": "2017-10-04",
+  "date": "2017-10-06",
   "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
   "sources": "Wikipedia.org.",
   "genre": "universal",
@@ -53,7 +53,7 @@
     },
     {
       "name": "mythological",
-      "explanation": "XXX Imaginary stone types once rumoured to have existed.",
+      "explanation": "Imaginary stone types once rumoured to have existed.",
       "entries": [
         "lodestone",
         "{rare mythological}"
@@ -61,9 +61,9 @@
     },
     {
       "name": "rare mythological",
-      "explanation": "XXX Rare imaginary stone types once rumoured to have existed.",
+      "explanation": "Rare imaginary stone types once rumoured to have existed.",
       "entries": [
-        "{mythological}"
+        "piece of the Symplegade (clashing rocks destroying boats)"
       ]
     },
     {
@@ -71,7 +71,8 @@
       "explanation": "Imaginary stone types for fantasy worlds.",
       "entries": [
         "{mythological}",
-        "weirdstone",
+        "weirdstone (containing captured magical essence)",
+        "wyrdstone (containing magical energy)",
         "{rare fantasy}"
       ]
     },
@@ -80,7 +81,9 @@
       "explanation": "Rare imaginary stone types for fantasy worlds.",
       "entries": [
         "{fantasy}",
-        "hellstone"
+        "hellstone",
+        "warpstone (causes chaotic mutations)",
+        "sentient stone"
       ]
     },
     {
@@ -96,8 +99,9 @@
       "name": "rare modern",
       "explanation": "Rare stone types for modern worlds.",
       "entries": [
-        "{modern}",
-        "XXX"
+        "carbonatite",
+        "ijolite",
+        "jadeitite"
       ]
     },
     {
@@ -105,6 +109,8 @@
       "explanation": "Imaginary stone types for science fiction worlds.",
       "entries": [
         "{modern}",
+        "meteor stone",
+        "space rock",
         "{rare futuristic}"
       ]
     },
@@ -112,7 +118,7 @@
       "name": "rare futuristic",
       "explanation": "Rare imaginary stone types for science fiction worlds.",
       "entries": [
-        "XXX"
+        "growing stone (self-replicating nano structure)"
       ]
     }
   ]

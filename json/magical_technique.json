@@ -7,9 +7,9 @@
   "explanation": "Magical techniques for magic tables.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
-  "to do": "",
+  "to do": "Mythological, fantasy, modern and futuristic subtables?",
   "see": "energy, magic, magical_instrument, spellcasting",
-  "date": "2017-10-04",
+  "date": "2017-10-06",
   "authors": "Esko Vesala",
   "sources": "powerlisting.wikia.com, Wikipedia.org.",
   "genre": "universal",
@@ -55,73 +55,6 @@
       "entries": [
         "astral travel",
         "eucharism (infusing with divine properties)"
-      ]
-    },
-    {
-      "name": "mythological",
-      "explanation": "Imaginary magical techniques once rumoured to have existed.",
-      "entries": [
-        "XXX",
-        "{rare mythological}"
-      ]
-    },
-    {
-      "name": "rare mythological",
-      "explanation": "Rare imaginary magical techniques once rumoured to have existed.",
-      "entries": [
-        "{mythological}",
-        "XXX"
-      ]
-    },
-    {
-      "name": "fantasy",
-      "explanation": "Imaginary magical techniques for fantasy worlds.",
-      "entries": [
-        "{mythological}",
-        "XXX",
-        "{rare fantasy}"
-      ]
-    },
-    {
-      "name": "rare fantasy",
-      "explanation": "Rare imaginary magical techniques for fantasy worlds.",
-      "entries": [
-        "{fantasy}",
-        "XXX"
-      ]
-    },
-    {
-      "name": "modern",
-      "explanation": "Magical techniques for modern worlds.",
-      "entries": [
-        "{common}",
-        "XXX",
-        "{rare modern}"
-      ]
-    },
-    {
-      "name": "rare modern",
-      "explanation": "Rare magics for modern worlds.",
-      "entries": [
-        "{modern}",
-        "XXX"
-      ]
-    },
-    {
-      "name": "futuristic",
-      "explanation": "Imaginary magics for science fiction worlds.",
-      "entries": [
-        "{modern}",
-        "magitech",
-        "technomancy"
-      ]
-    },
-    {
-      "name": "rare futuristic",
-      "explanation": "Rare imaginary magics for science fiction worlds.",
-      "entries": [
-        "{futuristic}",
-        "mystechnology (mystical technology)"
       ]
     }
   ]

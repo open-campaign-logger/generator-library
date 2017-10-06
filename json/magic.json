@@ -7,9 +7,9 @@
   "explanation": "Variations of magic.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
-  "to do": "",
+  "to do": "Mythological, fantasy and futuristic subtables.",
   "see": "energy, magical_technique, magical_instrument, spellcasting",
-  "date": "2017-10-04",
+  "date": "2017-10-06",
   "authors": "Esko Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -101,8 +101,18 @@
       "explanation": "Imaginary magics once rumoured to have existed.",
       "entries": [
         "runic magic",
+        "goety (conjuration of demons)",
+        "theurgy (invocation of divinities)",
         "maleficium (malevolent sorcery)",
-        "juju (West-African witchcraft)",
+        "juju (West-African witchcraft)"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary magics once rumoured to have existed.",
+      "entries": [
+        "{mythological}",
+        "anima mundi (intrinsic connection between all living things)",
         "hermeticism (teachings of pagan prophet Hermes Trismegistus)"
       ]
     },
@@ -110,7 +120,19 @@
       "name": "fantasy",
       "explanation": "Imaginary magics for fantasy worlds.",
       "entries": [
-        "{mythological}"
+        "{mythological}",
+        "channeling (harnessing supernatural powers)",
+        "essence (harnessing the world's inherent magical energy)",
+        "mentalism (harnessing personal energy)",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary magics for fantasy worlds.",
+      "entries": [
+        "{fantasy}",
+        "living magic (spells are self-conscious entities)"
       ]
     },
     {
@@ -120,20 +142,21 @@
         "{common}",
         "esoteric Christianity",
         "spiritism",
-        "neopaganism",
-        "wicca",
+        "neopagan magic",
+        "new age magic",
+        "wicca (modern witchcraft)",
+        "rosicrucianisn (modern alchemy)",
         "theosophy (occult philosophy)",
         "thelema (esoteric philosophy)",
-        "rosicrucianism (esoteric movement)",
-        "hermetic order golden dawn",
-        "hermetic kabbalism",
-        "stregheria (Italian-American witchcraft)",
         "lesser magic (mental manipulation)",
         "greater magic (focusing emotional energy)",
+        "qi (flow of vital energy)",
+        "hermetic kabbalism",
         "voodoo",
         "enochian magic (commanding spirits)",
         "magick (will-based magic)",
         "sex magic (focusing the energy of arousal)",
+        "tantrism (channeling sexual energy into magic)",
         "{rare modern}"
       ]
     },
@@ -144,6 +167,12 @@
         "satanic magic",
         "neoshamanism",
         "neo-druidism",
+        "Aryan occultism",
+        "ariosophy (Aryan occult wisdom)",
+        "hermetic order of golden dawn",
+        "Jungian magic",
+        "orgone technology (controls esoteric orgone energy)",
+        "stregheria (Italian-American witchcraft)",
         "obeah (West-Indian sorcery)",
         "brujeria (Mexican witchcraft)",
         "quimbande (Afro-Brazilian religion)",
@@ -163,7 +192,16 @@
       "explanation": "Imaginary magics for science fiction worlds.",
       "entries": [
         "{modern}",
-        "technomancy (affecting technology)"
+        "technomancy (affecting technology)",
+        "magitech"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Imaginary magics for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "mystechnology (mystical technology)"
       ]
     }
   ]

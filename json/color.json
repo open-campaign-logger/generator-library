@@ -7,9 +7,9 @@
   "explanation": "Colors grouped by main color. Contains also subtables for plant, eye and hair color.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
-  "to do": "Plant colors could be expanded.",
+  "to do": "Fantasy colors.",
   "see": "adjColor",
-  "date": "2017-10-04",
+  "date": "2017-10-06",
   "authors": "Esko Vesala.",
   "sources": "Craftsy.com, Wikipedia.org.",
   "genre": "universal",
@@ -360,7 +360,7 @@
     },
     {
       "name": "rare",
-      "explanation": "XXX Rare colors.",
+      "explanation": "Rare colors.",
       "entries": [
         "silver",
         "gold",
@@ -369,7 +369,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "XXX Imaginary colors for fantasy worlds.",
+      "explanation": "Imaginary colors for fantasy worlds.",
       "entries": [
         "goblin green",
         "{rare fantasy}"
@@ -377,7 +377,7 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "XXX Rare imaginary colors for fantasy worlds.",
+      "explanation": "Rare imaginary colors for fantasy worlds.",
       "entries": [
         "{fantasy}",
         "color out of space (alien hue)"

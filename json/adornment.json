@@ -7,11 +7,11 @@
   "explanation": "Jewelry and other trinkets carried by a person. Suitable for descriptions of a person as well as treasure.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "Still a work in progress. Would benefit from extending the available library tables.",
-  "to do": "Remove the XXX's, add content.",
+  "to do": "Mythological and fantasy subtables. Modern clothing.",
   "see": "jewelry",
-  "date": "2017-10-04",
-  "authors": "Esko Vesala.",
-  "sources": "Wikipedia.org.",
+  "date": "2017-10-06",
+  "authors": "Esko Vesala",
+  "sources": "Wikipedia.org",
   "genre": "universal",
   "category": "item",
   "tags": "#jewelry, #treasure",
@@ -36,18 +36,16 @@
     },
     {
       "name": "common material",
-      "explanation": "Common materials. XXX Just a placeholder - to be replaced with a wider material library once available.",
+      "explanation": "Common materials.",
       "entries": [
-        "{lib:metal}"
+        "{lib:material#inorganic}"
       ]
     },
     {
       "name": "rare material",
-      "explanation": "Rare material types. XXX Just a placeholder - to be replaced with a wider material library once available.",
+      "explanation": "Rare material types.",
       "entries": [
-        "shell",
-        "hair",
-        "bog-wood"
+        "{lib:material#organic}"
       ]
     },
     {
@@ -63,15 +61,14 @@
     },
     {
       "name": "common",
-      "explanation": "Common adornment types. XXX Just a placeholder - to be expanded with additional item types.",
+      "explanation": "Common adornment types.",
       "entries": [
-        "{lib:jewelry}",
-        "{lib:armor}"
+        "{lib:jewelry}"
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare adornment types. XXX Just a placeholder - to be expanded with better-suited item types.",
+      "explanation": "Rare adornment types.",
       "entries": [
         "{lib:magicitem}",
         "accessory",
@@ -116,7 +113,6 @@
       "name": "rare fantasy",
       "explanation": "Rare imaginary adornment for fantasy worlds.",
       "entries": [
-        "{fantasy}",
         "XXX"
       ]
     },
@@ -135,31 +131,141 @@
       "explanation": "Modern clothing types.",
       "entries": [
         "{common}",
+        "{shoes}",
+        "{hat}",
+        "{gloves}",
+        "{neckband}",
+        "corsage (small bouquet of flowers)"
+      ]
+    },
+    {
+      "name": "shoes",
+      "explanation": "Modern shoes.",
+      "entries": [
+        "boots",
+        "sneakers",
+        "walking shoes",
+        "loafers",
+        "leather shoes",
+        "brogue shoes",
+        "dress shoes"
+      ]
+    },
+    {
+      "name": "hat",
+      "explanation": "Modern hats.",
+      "entries": [
+        "cap",
+        "beanie",
+        "beret",
+        "bowler hat",
+        "fedora"
+      ]
+    },
+    {
+      "name": "gloves",
+      "explanation": "Modern gloves.",
+      "entries": [
+        "leather gloves"
+      ]
+    },
+    {
+      "name": "neckband",
+      "explanation": "Modern neckbands.",
+      "entries": [
         "cravat",
         "tie",
-        "hat",
-        "gloves",
-        "shoes"
+        "bow tie"
       ]
     },
     {
       "name": "modern accessory",
       "explanation": "Modern accessory types.",
       "entries": [
-        "wallet",
+        "{wallet}",
         "watch",
-        "eyewear",
+        "{eyewear}",
         "scarf",
-        "handbag"
+        "{bag}",
+        "ribbon"
+      ]
+    },
+    {
+      "name": "wallet",
+      "explanation": "Modern wallets.",
+      "entries": [
+        "coin purse",
+        "fabric wallet",
+        "leather wallet",
+        "travel wallet (for storing tickets, passes, etc.)",
+        "wristlet (can be secured to the wrist)"
+      ]
+    },
+    {
+      "name": "eyewear",
+      "explanation": "Modern eyewear.",
+      "entries": [
+        "{eyeglasses}",
+        "{sunglasses}"
+      ]
+    },
+    {
+      "name": "eyeglasses",
+      "explanation": "Modern eyeglasses.",
+      "entries": [
+        "browline glasses",
+        "round, wire-rim glasses",
+        "cat eye glasses",
+        "oversized eyeglasses",
+        "horn-rimmed glasses",
+        "rimless glasses"
+      ]
+    },
+    {
+      "name": "sunglasses",
+      "explanation": "Modern sunglasses.",
+      "entries": [
+        "aviator sunglasses",
+        "browline sunglasses",
+        "oversized sunglasses",
+        "round, wire-rim sunglasses",
+        "wrap-around sunglasses",
+        "mirrored sunglasses",
+        "clip-on sunglasses on {eyeglasses}"
+      ]
+    },
+    {
+      "name": "bag",
+      "explanation": "Modern bags.",
+      "entries": [
+        "plastic bag",
+        "paper bag",
+        "haversack (single shoulder strap)",
+        "backpack",
+        "fanny pack (worn around the hips)",
+        "messenger bag",
+        "tote bag",
+        "shoulder bag",
+        "shopping bag",
+        "handbag",
+        "portfolio (handleless case)",
+        "folio case (retractable handle)",
+        "briefcase",
+        "attaché case (box-style case)"
       ]
     },
     {
       "name": "rare modern",
       "explanation": "Rare adornment for modern worlds.",
       "entries": [
-        "parasol",
         "designer {modern clothing}",
-        "designer {modern accessory}"
+        "designer {modern accessory}",
+        "designer {eyewear}",
+        "designer {bag}",
+        "parasol",
+        "badge",
+        "medal",
+        "carnival mask"
       ]
     },
     {
@@ -167,7 +273,8 @@
       "explanation": "Imaginary adornment for science fiction worlds.",
       "entries": [
         "{modern}",
-        "XXX",
+        "headmounted display",
+        "cybernetic goggles",
         "{rare futuristic}"
       ]
     },
@@ -176,7 +283,8 @@
       "explanation": "Rare imaginary adornment for science fiction worlds.",
       "entries": [
         "{futuristic}",
-        "XXX"
+        "personal miniature drone",
+        "cybernetic tattoo implant"
       ]
     },
     {

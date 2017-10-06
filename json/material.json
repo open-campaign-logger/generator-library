@@ -9,7 +9,7 @@
   "note": "",
   "to do": "",
   "see": "metal, stone, temperature",
-  "date": "2017-10-04",
+  "date": "2017-10-06",
   "authors": "Esko Vesala",
   "sources": "Conservation-Wiki.com, Wikipedia.org.",
   "genre": "universal",
@@ -111,7 +111,16 @@
         "{leather}",
         "{horn}",
         "{bone}",
-        "{textile}"
+        "{textile}",
+        "{rare organic}"
+      ]
+    },
+    {
+      "name": "rare organic",
+      "explanation": "Rare organic materials.",
+      "entries": [
+        "shell",
+        "hair"
       ]
     },
     {
@@ -127,7 +136,8 @@
       "entries": [
         "birch",
         "aspen",
-        "oak"
+        "oak",
+        "bog-wood (from trees buried in peat bogs)"
       ]
     },
     {
@@ -164,7 +174,7 @@
       "name": "rare",
       "explanation": "Rare materials. (Utilizing the still unreleased subtable call feature.)",
       "entries": [
-        "{lib:metal#mythological}"
+        "{rare organic}"
       ]
     },
     {

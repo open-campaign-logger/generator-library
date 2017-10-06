@@ -9,7 +9,7 @@
   "note": "",
   "to do": "",
   "see": "material",
-  "date": "2017-10-04",
+  "date": "2017-10-06",
   "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -393,7 +393,8 @@
       "explanation": "Rare imaginary fabrics for science fiction worlds.",
       "entries": [
         "{futuristic}",
-        "basalt fiber"
+        "basalt fiber",
+        "self-mending fabric"
       ]
     }
   ]

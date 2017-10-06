@@ -7,9 +7,9 @@
   "explanation": "Magical tools for magic users.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
-  "to do": "",
+  "to do": "Mythological, fantasy and futuristic subtables.",
   "see": "magic, magical_technique, spellcasting",
-  "date": "2017-10-04",
+  "date": "2017-10-06",
   "authors": "Esko Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -34,6 +34,7 @@
         "{tool}",
         "{jewellery}",
         "{symbol}",
+        "{lib:musical instrument}",
         "{weapon}",
         "{vessel}",
         "{material}",
@@ -57,13 +58,23 @@
         "string of beads",
         "censer",
         "scepter",
+        "baton",
         "disc",
         "orb",
+        "scourge",
         "crystal ball",
         "witch ball (hollow glass sphere)",
         "witch's ladder (knotted cord charm)",
-        "scourge",
         "burin (engraving tool)"
+      ]
+    },
+    {
+      "name": "rare tool",
+      "explanation": "Rare magical tools.",
+      "entries": [
+        "key",
+        "hammer",
+        "hourglass"
       ]
     },
     {
@@ -83,6 +94,7 @@
       "name": "symbol",
       "explanation": "Magical symbols.",
       "entries": [
+        "rune",
         "pentacle (amulet with the symbol of an entity)",
         "pentagram (five-pointed star)",
         "hexagram (six-pointed star)",
@@ -91,6 +103,14 @@
         "magical circle",
         "kamea (magic square grid)",
         "mandala (symbol presenting the universe)"
+      ]
+    },
+    {
+      "name": "musical instrument",
+      "explanation": "Magical musical instruments.",
+      "entries": [
+        "flute",
+        ""
       ]
     },
     {
@@ -176,7 +196,10 @@
       "name": "rare",
       "explanation": "Rare magical instruments.",
       "entries": [
-        "veve (a symbol drawn by pouring powder)"
+        "periapt (charm worn on a necklace)",
+        "phylactery (leather amulet containing sacred texts)",
+        "scarab (beetle-shaped seal)",
+        "veve (symbol drawn by pouring powder)"
       ]
     },
     {
@@ -185,6 +208,7 @@
       "entries": [
         "elf-arrow (flint arrowhead shot by a fairy)",
         "thunderstone (stone fallen from the sky)",
+        "anachitis (stone for calling spirits from water)",
         "{rare mythological}"
       ]
     },
@@ -193,7 +217,19 @@
       "explanation": "Rare imaginary magical instruments once rumoured to have existed.",
       "entries": [
         "{mythological}",
-        "XXX"
+        "filius philosophorum ('the philosophers' child')",
+        "philosopher's stone (lapis philosophorum)",
+        "{unique mythological}"
+      ]
+    },
+    {
+      "name": "unique mythological",
+      "explanation": "Unique relics believed to have magical properties.",
+      "entries": [
+        "Veil of Veronica (wiped Christ's face on Via Dolorosa)",
+        "Shroud of Turin (covered Christ in burial)",
+        "Holy Grail (Christ's vessel on last supper)",
+        "Ark of the Covenant (containing the Biblical Ten Commandments)"
       ]
     },
     {
@@ -201,7 +237,8 @@
       "explanation": "Imaginary magical instruments for fantasy worlds.",
       "entries": [
         "{mythological}",
-        "XXX",
+        "goggles",
+        "lich hand",
         "{rare fantasy}"
       ]
     },
@@ -210,7 +247,7 @@
       "explanation": "Rare imaginary magical instruments for fantasy worlds.",
       "entries": [
         "{fantasy}",
-        "XXX"
+        "one ring of power"
       ]
     },
     {
@@ -237,7 +274,7 @@
       "explanation": "Imaginary magical instruments for science fiction worlds.",
       "entries": [
         "{modern}",
-        "XXX",
+        "cybernetic implant",
         "{rare futuristic}"
       ]
     },
@@ -245,8 +282,7 @@
       "name": "rare futuristic",
       "explanation": "Rare imaginary magical instruments for science fiction worlds.",
       "entries": [
-        "{futuristic}",
-        "XXX"
+        "spaceship"
       ]
     }
   ]
