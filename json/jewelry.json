@@ -18,57 +18,21 @@
   "tables": [
     {
       "name": "jewelry",
-      "explanation": "Jewelry types.",
+      "explanation": "Jewelry by scarcity.",
       "entries": [
-        "{hair jewelry}",
-        {
-          "m": 5,
-          "v": "{head jewelry}"
-        },
-        {
-          "m": 10,
-          "v": "{neck jewelry}"
-        },
-        {
-          "m": 5,
-          "v": "{chest jewelry}"
-        },
-        {
-          "m": 2,
-          "v": "{arm jewelry}"
-        },
-        {
-          "m": 5,
-          "v": "{hand jewelry}"
-        },
-        {
-          "m": 2,
-          "v": "{waist jewelry}"
-        },
-        "{leg jewelry}",
-        "{foot jewelry}",
-        "{household ornament}"
+        "{common}",
+        "{rare}"
       ]
     },
     {
-      "name": "hair jewelry",
-      "explanation": "Common jewellery worn in the hair.",
+      "name": "common",
+      "explanation": "Common jewelry types.",
       "entries": [
-        "hair ribbon",
-        "hair band",
-        "hairpin",
-        "hair stick (for holding a hair bun)",
-        "hair clip",
-        "{rare hair jewelry}"
-      ]
-    },
-    {
-      "name": "rare hair jewelry",
-      "explanation": "Rare jewellery worn in the hair.",
-      "entries": [
-        "ornamental comb",
-        "hatpin (for holding headgear in place)",
-        "aigrette (plume-shaped hair ornament)"
+        "{head jewelry}",
+        "{neck jewelry}",
+        "{chest jewelry}",
+        "{arm jewelry}",
+        "{hand jewelry}"
       ]
     },
     {
@@ -167,10 +131,7 @@
       "entries": [
         "gorgerine (metal discs worn on the chest)",
         "ornamental breastplate",
-        "scarab (beetle-shaped amulet)",
-        "amulet (defensive charm)",
-        "periapt (magical amulet)",
-        "talisman (magical charm)"
+        "scarab (beetle-shaped amulet)"
       ]
     },
     {
@@ -221,6 +182,38 @@
         "poison ring (with a compartment under the bezel)",
         "key ring (with a key mounted on the bezel)",
         "finger armor ring (jointed cover for whole finger)"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare jewelry types.",
+      "entries": [
+        "{hair jewelry}",
+        "{waist jewelry}",
+        "{leg jewelry}",
+        "{foot jewelry}",
+        "{household ornament}"
+      ]
+    },
+    {
+      "name": "hair jewelry",
+      "explanation": "Common jewellery worn in the hair.",
+      "entries": [
+        "hair ribbon",
+        "hair band",
+        "hairpin",
+        "hair stick (for holding a hair bun)",
+        "hair clip",
+        "{rare hair jewelry}"
+      ]
+    },
+    {
+      "name": "rare hair jewelry",
+      "explanation": "Rare jewellery worn in the hair.",
+      "entries": [
+        "ornamental comb",
+        "hatpin (for holding headgear in place)",
+        "aigrette (plume-shaped hair ornament)"
       ]
     },
     {
@@ -288,6 +281,106 @@
         "harvest wreath",
         "fruit wreath",
         "flower wreath"
+      ]
+    },
+    {
+      "name": "rare household ornament",
+      "explanation": "Rare decoration not worn on person.",
+      "entries": [
+        "standard",
+        "flag",
+        "weather wane"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary jewelry once rumoured to have existed.",
+      "entries": [
+        "{lib:material} amulet (defensive charm)",
+        "{lib:material} periapt (charm worn on a necklace)",
+        "{lib:material} talisman (magical charm)",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary adornment once rumoured to have existed.",
+      "entries": [
+        "cursed {lib:jewelry}",
+        "blessed {lib:jewelry}"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary adornment for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "{lib:personRace}-made {common}",
+        "{lib:monsterHumanoid}-made {common}",
+        "insect",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary adornment for fantasy worlds.",
+      "entries": [
+        "living {common}",
+        "sentient {common}",
+        "talking {common}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Adornment for modern worlds.",
+      "entries": [
+        "{common}",
+        "{lib:material#plastic} {common}",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare adornment for modern worlds.",
+      "entries": [
+        "{quality} {common}"
+      ]
+    },
+    {
+      "name": "quality",
+      "explanation": "Quality of the design adornment.",
+      "entries": [
+        "fake",
+        "pirated",
+        "quality brand",
+        "designer brand",
+        "expensive brand",
+        "luxury brand",
+        "fashion",
+        "high-end fashion",
+        "tailor-made",
+        "haute couture (exclusive custom fitted)"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary adornment for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "{lib:metal#modern} {modern}",
+        "fluorescent {modern}",
+        "self-illuminating {modern}",
+        "color-changing",
+        "holographic {modern}",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary adornment for science fiction worlds.",
+      "entries": [
+        "cybernetic {modern}",
+        "bioengineered {modern}"
       ]
     }
   ]

@@ -207,7 +207,11 @@
       "name": "plastic",
       "explanation": "Plastic types.",
       "entries": [
-        "polymer"
+        "plastic",
+        "polymer",
+        "polycarbonate",
+        "PVC",
+        "synthetic rubber"
       ]
     },
     {

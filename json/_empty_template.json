@@ -54,7 +54,6 @@
       "name": "rare mythological",
       "explanation": "Rare imaginary XXX once rumoured to have existed.",
       "entries": [
-        "{mythological}",
         "XXX"
       ]
     },
@@ -71,7 +70,6 @@
       "name": "rare fantasy",
       "explanation": "Rare imaginary XXX for fantasy worlds.",
       "entries": [
-        "{fantasy}",
         "XXX"
       ]
     },
@@ -88,7 +86,6 @@
       "name": "rare modern",
       "explanation": "Rare XXX for modern worlds.",
       "entries": [
-        "{modern}",
         "XXX"
       ]
     },
@@ -105,7 +102,6 @@
       "name": "rare futuristic",
       "explanation": "Rare imaginary XXX for science fiction worlds.",
       "entries": [
-        "{futuristic}",
         "XXX"
       ]
     }

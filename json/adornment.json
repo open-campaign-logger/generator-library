@@ -71,8 +71,7 @@
       "explanation": "Rare adornment types.",
       "entries": [
         "{lib:magicitem}",
-        "accessory",
-        "cosmetics"
+        "{accessory}"
       ]
     },
     {
@@ -88,7 +87,8 @@
       "name": "mythological",
       "explanation": "Imaginary adornment once rumoured to have existed.",
       "entries": [
-        "XXX",
+        "third eye symbol (to be affixed to the forehead)",
+        "eye make up warding from the effects of the evil eye",
         "{rare mythological}"
       ]
     },
@@ -96,8 +96,8 @@
       "name": "rare mythological",
       "explanation": "Rare imaginary adornment once rumoured to have existed.",
       "entries": [
-        "{mythological}",
-        "XXX"
+        "cursed {lib:gem}",
+        "blessed {lib:gem}"
       ]
     },
     {
@@ -105,7 +105,7 @@
       "explanation": "Imaginary adornment for fantasy worlds.",
       "entries": [
         "{mythological}",
-        "XXX",
+        "flowers growing in hair",
         "{rare fantasy}"
       ]
     },
@@ -113,7 +113,9 @@
       "name": "rare fantasy",
       "explanation": "Rare imaginary adornment for fantasy worlds.",
       "entries": [
-        "XXX"
+        "living {common}",
+        "sentient {common}",
+        "talking {common}"
       ]
     },
     {
@@ -258,14 +260,30 @@
       "name": "rare modern",
       "explanation": "Rare adornment for modern worlds.",
       "entries": [
-        "designer {modern clothing}",
-        "designer {modern accessory}",
-        "designer {eyewear}",
-        "designer {bag}",
+        "{quality} designer {modern clothing}",
+        "{quality} designer {modern accessory}",
+        "{quality} designer {eyewear}",
+        "{quality} designer {bag}",
         "parasol",
         "badge",
         "medal",
         "carnival mask"
+      ]
+    },
+    {
+      "name": "quality",
+      "explanation": "Quality of the design adornment.",
+      "entries": [
+        "fake",
+        "pirated",
+        "quality brand",
+        "designer brand",
+        "expensive brand",
+        "luxury brand",
+        "fashion",
+        "high-end fashion",
+        "tailor-made",
+        "haute couture (exclusive custom fitted)"
       ]
     },
     {
@@ -274,6 +292,7 @@
       "entries": [
         "{modern}",
         "headmounted display",
+        "holographic display",
         "cybernetic goggles",
         "{rare futuristic}"
       ]
@@ -282,7 +301,6 @@
       "name": "rare futuristic",
       "explanation": "Rare imaginary adornment for science fiction worlds.",
       "entries": [
-        "{futuristic}",
         "personal miniature drone",
         "cybernetic tattoo implant"
       ]
