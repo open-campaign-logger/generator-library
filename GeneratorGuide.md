@@ -203,6 +203,8 @@ Simple tables that output just a few words are named 'tables' and not capitalize
 
 The above mentioned "Weather Generator" could produce a detailed weather report, maybe even several sentences long. A simple "weather table" could just print out "heavy rain" or "clear skies", for example.
 
+**Note**: Table names must begin with a non-numeric character. So, instead of *4 seasons*, name the table *four seasons*, for example.
+
 
 ### resultPattern
 
@@ -288,6 +290,19 @@ If some of the metadata properties are not relevant, they can of course be omitt
 It is also possible to define additional properties in the JSON files. However, it is recommended to stick to the properties defined above. This way it is easier to automatically categorize the tables, for example.
 
 Also tables can use these metadata properties, such as an *explanation* to add notes specific to a particular subtable. These metadata properties are completely optional.
+
+This example from the direction table contains a note explaining why the called subtables are named as they are:
+
+    {
+      "name": "rare",
+      "explanation": "Rare compass direction systems.",
+      "note": "A table name cannot begin with a number!",
+      "entries": [
+        "{sixteen winds}",
+        "{thirtytwo winds}"
+      ]
+    },
+
 
 **Note**: If a metadata property is not necessary for a file, either leave that property out, or leave its value field empty. For example, if your table has no bugs, do not fill the *bugs* property with "none known". Just leave it empty. Keeping unnecessary fields empty makes it easier to automatically find tables that need debugging, for example.
 
