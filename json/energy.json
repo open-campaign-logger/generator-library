@@ -1,0 +1,108 @@
+{
+  "name": "energy table",
+  "resultPattern": "{energy}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Energy sources for resource tables.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "",
+  "see": "magic, temperature",
+  "date": "2017-10-04",
+  "authors": "Esko Vesala.",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "category": "utility",
+  "tags": "#machine, #power, #resource",
+  "tables": [
+    {
+      "name": "energy",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common energies.",
+      "entries": [
+        "heat",
+        "gravity"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare energies.",
+      "entries": [
+        "magnetism",
+        "steam"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary energies once rumoured to have existed.",
+      "entries": [
+        "earth energy",
+        "aura (body energy field)",
+        "mental energy",
+        "animal magnetism (mesmerism)",
+        "cosmic magnetism",
+        "life energy",
+        "qi (flowing life force)",
+        "prana (vital principle)",
+        "kundalini (primal body energy)",
+        "shakti (primal cosmic energy)",
+        "spiritual energy",
+        "mana (magical energy)",
+        "väki (power of local spirits)",
+        "fate",
+        "numen (divine will)"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary energies for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "magic",
+        "orgone (esoteric energy)",
+        "odic force (vital energy)",
+        "telluric currents (earth electricity)"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Energies for modern worlds.",
+      "entries": [
+        "{common}",
+        "electricity",
+        "solar energy",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare energies for modern worlds.",
+      "entries": [
+        "radioactivity"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary gases for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "geomagnetism",
+        "tectonic force",
+        "cosmic radiation",
+        "space weather",
+        "antimatter"
+      ]
+    }
+  ]
+}

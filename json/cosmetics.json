@@ -1,0 +1,304 @@
+{
+  "name": "cosmetics table",
+  "resultPattern": "{cosmetics}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Cosmetics and other beautification methods.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2017-10-06",
+  "authors": "Esko Vesala",
+  "sources": "http://www.briskpost.com/2013/11/solah-shringar-hindu-mithology-16.html, Wikipedia.org",
+  "genre": "universal",
+  "category": "character",
+  "tags": "#appearance",
+  "tables": [
+    {
+      "name": "cosmetics",
+      "explanation": "Types of cosmetics.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common cosmetics.",
+      "entries": [
+        "{face}",
+        "{skin}",
+        "{body}",
+        "{perfume}",
+        "{hair}",
+        "{cleansing}",
+        "{washing}"
+      ]
+    },
+    {
+      "name": "face",
+      "explanation": "Cosmetics for the face.",
+      "entries": [
+        "make up primer",
+        "foundation liquid for {coverage} coverage",
+        "foundation cream for {coverage} coverage",
+        "foundation powder for {coverage} coverage",
+        "contour cream (for defining the face shape)",
+        "contour powder (for defining the face shape)",
+        "highlight liquid",
+        "highlight liquid with a shimmer effect",
+        "highlight cream",
+        "highlight cream with a shimmer effect",
+        "highlight powder",
+        "highlight powder with a shimmer effect",
+        "bronzer with a {finish} finish (to add color to skin)",
+        "makeup setting powder",
+        "{eye}",
+        "{mouth}",
+        "{cheeks}"
+      ]
+    },
+    {
+      "name": "coverage",
+      "explanation": "Foundation coverage types.",
+      "entries": [
+        "sheer",
+        "matte",
+        "dewey",
+        "full"
+      ]
+    },
+    {
+      "name": "eye",
+      "explanation": "Cosmetics for the eyes.",
+      "entries": [
+        "eyebrow cream",
+        "eyebrow wax",
+        "eyebrow gel",
+        "eyebrow powder",
+        "eyeliner liquid",
+        "eyeliner gel",
+        "eye shadow cream",
+        "eye shadow powder",
+        "mascara",
+        "mascara with glitter flecks",
+        "belladonna eye drops (for dilating the pupils)"
+      ]
+    },
+    {
+      "name": "mouth",
+      "explanation": "Cosmetics for the mouth.",
+      "entries": [
+        "lip conditioner",
+        "lip primer",
+        "{lib:color#red} lip paint",
+        "{lib:color#red} lipstick",
+        "{lib:color#red} lipstick with a {finish} finish",
+        "lip gloss",
+        "lip liner",
+        "lip balm",
+        "lip butter"
+      ]
+    },
+    {
+      "name": "finish",
+      "explanation": "Finish effects.",
+      "entries": [
+        "shimmer",
+        "matte",
+        "satin",
+        "lustre"
+      ]
+    },
+    {
+      "name": "cheeks",
+      "explanation": "Cosmetics for the cheeks.",
+      "entries": [
+        "{lib:color#red} rouge liquid",
+        "{lib:color#red} rouge cream",
+        "{lib:color#red} rouge powder"
+      ]
+    },
+    {
+      "name": "skin",
+      "explanation": "Cosmetics for the skin.",
+      "entries": [
+        "concealer makeup (for covering skin blemishes)",
+        "skin-care cream",
+        "protective skin balm",
+        "skin lotion",
+        "skin powder",
+        "body butter"
+      ]
+    },
+    {
+      "name": "body",
+      "explanation": "Cosmetics for the body.",
+      "entries": [
+        "deodorant"
+      ]
+    },
+    {
+      "name": "perfume",
+      "explanation": "Perfumes.",
+      "entries": [
+        "rose water perfume"
+      ]
+    },
+    {
+      "name": "hair",
+      "explanation": "Cosmetics for the mouth.",
+      "entries": [
+        "{lib:color#black} hair coloring",
+        "{lib:color#brown} hair coloring",
+        "{lib:color#red} hair coloring",
+        "{lib:color#white} hair coloring",
+        "hair gel"
+      ]
+    },
+    {
+      "name": "cleansing",
+      "explanation": "Cosmetics for cleansing.",
+      "entries": [
+        "skin toner (for freshing up skin)",
+        "facial clay mask (for skin treatment)",
+        "facial peel mask (for skin treatment)",
+        "exfoliant lotion (for removing dead skin)",
+        "exfoliant cream (for removing dead skin)",
+        "exfoliant gel (for removing dead skin)",
+        "moisturizer lotion",
+        "moisturizer cream",
+        "night cream",
+        "eye cream"
+      ]
+    },
+    {
+      "name": "washing",
+      "explanation": "Cosmetics for washing.",
+      "entries": [
+        "soap",
+        "bath oil",
+        "bath salt",
+        "shampoo",
+        "hair conditioner"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare cosmetics.",
+      "entries": [
+        "{limbs}"
+      ]
+    },
+    {
+      "name": "limbs",
+      "explanation": "Cosmetics for the limbs.",
+      "entries": [
+        "{hands}",
+        "{feet}"
+      ]
+    },
+    {
+      "name": "hands",
+      "explanation": "Cosmetics for the mouth.",
+      "entries": [
+        "nail polish"
+      ]
+    },
+    {
+      "name": "feet",
+      "explanation": "Cosmetics for the feet.",
+      "entries": [
+        "nail polish"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary cosmetics once rumoured to have existed.",
+      "entries": [
+        "eye make up warding from the effects of the evil eye",
+        "intricately designed body paint",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary cosmetics once rumoured to have existed.",
+      "entries": [
+        "living flowers growing in hair",
+        "fairy dust"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary cosmetics for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "living body paint (slowly changing)",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary cosmetics for fantasy worlds.",
+      "entries": [
+        "living tattoos (slowly changing)"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Cosmetics for modern worlds.",
+      "entries": [
+        "{common}",
+        "eyebrow pencil",
+        "eyeliner pencil",
+        "eyelash extensions",
+        "false eyelashes",
+        "hair spray",
+        "artificial nails",
+        "{lib:color#green} hair coloring",
+        "{lib:color#cyan} hair coloring",
+        "{lib:color#blue} hair coloring",
+        "{lib:color#violet} hair coloring",
+        "{lib:color#purple} hair coloring",
+        "{lib:color#magenta} hair coloring",
+        "{lib:color#rose} hair coloring",
+        "{lib:color#orange} hair coloring",
+        "{lib:color#yellow} hair coloring",
+        "makeup setting spray",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare cosmetics for modern worlds.",
+      "entries": [
+        "Botox",
+        "colored contact lenses",
+        "permanent makeup"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary cosmetics for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "cybernetic contact lenses (changing appearance)",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary cosmetics for science fiction worlds.",
+      "entries": [
+        "temporary cosmetic nano surgery"
+      ]
+    }
+  ]
+}

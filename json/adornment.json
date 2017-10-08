@@ -1,0 +1,363 @@
+{
+  "name": "Adornment Generator",
+  "resultPattern": "{appearance} {adornment} {feature} {finishing}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Jewelry and other trinkets carried by a person. Suitable for descriptions of a person as well as treasure.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "Still a work in progress. Would benefit from extending the available library tables.",
+  "to do": "Mythological and fantasy subtables. Modern clothing.",
+  "see": "jewelry",
+  "date": "2017-10-06",
+  "authors": "Esko Vesala",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "category": "item",
+  "tags": "#jewelry, #treasure",
+  "tables": [
+    {
+      "name": "appearance",
+      "explanation": "The appearance of the adornment.",
+      "entries": [
+        "{material}"
+      ]
+    },
+    {
+      "name": "material",
+      "explanation": "Material types.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common material}"
+        },
+        "{rare material}"
+      ]
+    },
+    {
+      "name": "common material",
+      "explanation": "Common materials.",
+      "entries": [
+        "{lib:material#inorganic}"
+      ]
+    },
+    {
+      "name": "rare material",
+      "explanation": "Rare material types.",
+      "entries": [
+        "{lib:material#organic}"
+      ]
+    },
+    {
+      "name": "adornment",
+      "explanation": "Adornment types.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common adornment types.",
+      "entries": [
+        "{lib:jewelry}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare adornment types.",
+      "entries": [
+        "{lib:magicitem}",
+        "{accessory}"
+      ]
+    },
+    {
+      "name": "accessory",
+      "explanation": "Accessory types.",
+      "entries": [
+        "fan",
+        "cane",
+        "ceremonial {lib:weaponMelee}"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary adornment once rumoured to have existed.",
+      "entries": [
+        "third eye symbol (to be affixed to the forehead)",
+        "eye make up warding from the effects of the evil eye",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary adornment once rumoured to have existed.",
+      "entries": [
+        "cursed {lib:gem}",
+        "blessed {lib:gem}"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary adornment for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "flowers growing in hair",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary adornment for fantasy worlds.",
+      "entries": [
+        "living {common}",
+        "sentient {common}",
+        "talking {common}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Adornment for modern worlds.",
+      "entries": [
+        "{common}",
+        "{modern clothing}",
+        "{modern accessory}",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "modern clothing",
+      "explanation": "Modern clothing types.",
+      "entries": [
+        "{common}",
+        "{shoes}",
+        "{hat}",
+        "{gloves}",
+        "{neckband}",
+        "corsage (small bouquet of flowers)"
+      ]
+    },
+    {
+      "name": "shoes",
+      "explanation": "Modern shoes.",
+      "entries": [
+        "boots",
+        "sneakers",
+        "walking shoes",
+        "loafers",
+        "leather shoes",
+        "brogue shoes",
+        "dress shoes"
+      ]
+    },
+    {
+      "name": "hat",
+      "explanation": "Modern hats.",
+      "entries": [
+        "cap",
+        "beanie",
+        "beret",
+        "bowler hat",
+        "fedora"
+      ]
+    },
+    {
+      "name": "gloves",
+      "explanation": "Modern gloves.",
+      "entries": [
+        "leather gloves"
+      ]
+    },
+    {
+      "name": "neckband",
+      "explanation": "Modern neckbands.",
+      "entries": [
+        "cravat",
+        "tie",
+        "bow tie"
+      ]
+    },
+    {
+      "name": "modern accessory",
+      "explanation": "Modern accessory types.",
+      "entries": [
+        "{wallet}",
+        "watch",
+        "{eyewear}",
+        "scarf",
+        "{bag}",
+        "ribbon"
+      ]
+    },
+    {
+      "name": "wallet",
+      "explanation": "Modern wallets.",
+      "entries": [
+        "coin purse",
+        "fabric wallet",
+        "leather wallet",
+        "travel wallet (for storing tickets, passes, etc.)",
+        "wristlet (can be secured to the wrist)"
+      ]
+    },
+    {
+      "name": "eyewear",
+      "explanation": "Modern eyewear.",
+      "entries": [
+        "{eyeglasses}",
+        "{sunglasses}"
+      ]
+    },
+    {
+      "name": "eyeglasses",
+      "explanation": "Modern eyeglasses.",
+      "entries": [
+        "browline glasses",
+        "round, wire-rim glasses",
+        "cat eye glasses",
+        "oversized eyeglasses",
+        "horn-rimmed glasses",
+        "rimless glasses"
+      ]
+    },
+    {
+      "name": "sunglasses",
+      "explanation": "Modern sunglasses.",
+      "entries": [
+        "aviator sunglasses",
+        "browline sunglasses",
+        "oversized sunglasses",
+        "round, wire-rim sunglasses",
+        "wrap-around sunglasses",
+        "mirrored sunglasses",
+        "clip-on sunglasses on {eyeglasses}"
+      ]
+    },
+    {
+      "name": "bag",
+      "explanation": "Modern bags.",
+      "entries": [
+        "plastic bag",
+        "paper bag",
+        "haversack (single shoulder strap)",
+        "backpack",
+        "fanny pack (worn around the hips)",
+        "messenger bag",
+        "tote bag",
+        "shoulder bag",
+        "shopping bag",
+        "handbag",
+        "portfolio (handleless case)",
+        "folio case (retractable handle)",
+        "briefcase",
+        "attaché case (box-style case)"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare adornment for modern worlds.",
+      "entries": [
+        "{quality} designer {modern clothing}",
+        "{quality} designer {modern accessory}",
+        "{quality} designer {eyewear}",
+        "{quality} designer {bag}",
+        "parasol",
+        "badge",
+        "medal",
+        "carnival mask"
+      ]
+    },
+    {
+      "name": "quality",
+      "explanation": "Quality of the design adornment.",
+      "entries": [
+        "fake",
+        "pirated",
+        "quality brand",
+        "designer brand",
+        "expensive brand",
+        "luxury brand",
+        "fashion",
+        "high-end fashion",
+        "tailor-made",
+        "haute couture (exclusive custom fitted)"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary adornment for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "headmounted display",
+        "holographic display",
+        "cybernetic goggles",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary adornment for science fiction worlds.",
+      "entries": [
+        "personal miniature drone",
+        "cybernetic tattoo implant"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Additional features.",
+      "entries": [
+        " ",
+        "encrusted with {lib:gem}s",
+        "embedded with a carved {lib:stone}",
+        "with {decoration} decorations"
+      ]
+    },
+    {
+      "name": "decoration",
+      "explanation": "Decoration materials.",
+      "entries": [
+        "{lib:metal} wire",
+        "toadstone",
+        "insect",
+        "live insect"
+      ]
+    },
+    {
+      "name": "finishing",
+      "explanation": "Finishing.",
+      "entries": [
+        " ",
+        "with some patina",
+        "with heavy patina",
+        "carefully polished",
+        "polished to perfection",
+        "engraved with {pattern}",
+        "engraved with art depicting {artwork subject}"
+      ]
+    },
+    {
+      "name": "pattern",
+      "explanation": "Decorative abstract patterns.",
+      "entries": [
+        "floral pattern",
+        "angular patterns",
+        "round patterns",
+        "tiny writing",
+        "intricate artwork"
+      ]
+    },
+    {
+      "name": "artwork subject",
+      "explanation": "The subject of decorative artwork.",
+      "entries": [
+        "a mythological {lib:monsterEpic}",
+        "the {lib:weaponEpic}",
+        "a posing {lib:personClass}",
+        "scenery from {lib:nameLocation}"
+      ]
+    }
+  ]
+}

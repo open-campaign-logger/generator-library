@@ -1,0 +1,270 @@
+{
+  "name": "purity table",
+  "resultPattern": "{purity}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "The cleanliness of an object, material or person.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "to do": "",
+  "see": "liquid, temperature",
+  "date": "2017-10-04",
+  "authors": "Esko Vesala",
+  "sources": "Thesaurus.com",
+  "genre": "universal",
+  "category": "utility",
+  "tags": "#description, #environment, #quality",
+  "tables": [
+    {
+      "name": "purity",
+      "explanation": "Cleanliness (in the physical or spiritual sense).",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common purity.",
+      "entries": [
+        "{unclean}",
+        "{neutral}",
+        "{clean}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare purity.",
+      "entries": [
+        "{impure}",
+        "{pure}"
+      ]
+    },
+    {
+      "name": "impure",
+      "explanation": "Varieties of filthy.",
+      "entries": [
+        "vile",
+        "revolting",
+        "repulsive",
+        "disgusting",
+        "loathsome",
+        "filthy",
+        "foul",
+        "putrid",
+        "gross",
+        "obscene",
+        "horrid",
+        "nasty",
+        "contaminated",
+        "tainted",
+        "impure",
+        "polluted",
+        "foul-smelling"
+      ]
+    },
+    {
+      "name": "unclean",
+      "explanation": "Varieties of unclean.",
+      "entries": [
+        "unclean",
+        "dirty",
+        "icky",
+        "unsightly",
+        "untidy",
+        "unpleasant"
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Varieties of neutral.",
+      "entries": [
+        " ",
+        "passable",
+        "normal",
+        "common",
+        "ordinary",
+        "usual",
+        "mediocre",
+        "plain",
+        "regular",
+        "typical",
+        "standard"
+      ]
+    },
+    {
+      "name": "clean",
+      "explanation": "Varieties of clean.",
+      "entries": [
+        "clean",
+        "tidy",
+        "untarnished",
+        "unblemished",
+        "taintless",
+        "defectless",
+        "faultless",
+        "speckless",
+        "dirtless"
+      ]
+    },
+    {
+      "name": "pure",
+      "explanation": "Varities of pure.",
+      "entries": [
+        "superb",
+        "perfect",
+        "sublime",
+        "flawless",
+        "impeccable",
+        "immaculate",
+        "pure"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary purity once rumoured to have existed.",
+      "entries": [
+        "{mythic impurity}",
+        "{mythic purity}",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "mythic impurity",
+      "explanation": "Imaginary impurity once rumoured to have existed.",
+      "entries": [
+        "devilishly {impure}",
+        "sin-tainted",
+        "cursed",
+        "miasmatic"
+      ]
+    },
+    {
+      "name": "mythic purity",
+      "explanation": "Imaginary purity once rumoured to have existed.",
+      "entries": [
+        "virginally {pure}",
+        "spiritually {pure}",
+        "blessed",
+        "sinless"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary purity once rumoured to have existed.",
+      "entries": [
+        "{mythological}",
+        "infernally {impure}",
+        "divinely {pure}"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary purity for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "{fantastic impurity}",
+        "{fantastic purity}",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "fantastic impurity",
+      "explanation": "Imaginary impurity for fantasy worlds.",
+      "entries": [
+        "abyssally {impure}"
+      ]
+    },
+    {
+      "name": "fantastic purity",
+      "explanation": "Imaginary purity for fantasy worlds.",
+      "entries": [
+        "unearthly {pure}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary purity for fantasy worlds.",
+      "entries": [
+        "{fantasy}",
+        "unnaturally {pure}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Purity for modern worlds.",
+      "entries": [
+        "{common}",
+        "{modern impurity}",
+        "{modern purity}",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "modern impurity",
+      "explanation": "Modern impurity for modern worlds.",
+      "entries": [
+        "septic",
+        "unsanitary",
+        "unhygienic"
+      ]
+    },
+    {
+      "name": "modern purity",
+      "explanation": "Modern purity for modern worlds.",
+      "entries": [
+        "germ-free",
+        "hygienic",
+        "sanitary"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare purity for modern worlds.",
+      "entries": [
+        "{modern}",
+        "decontaminated",
+        "disinfected",
+        "antiseptic",
+        "aseptic",
+        "sterile"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary purity for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "{futuristc impurity}",
+        "{futuristc purity}",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "futuristic impurity",
+      "explanation": "Imaginary impurity for science fiction worlds.",
+      "entries": [
+        "contaminated on a molecular level"
+      ]
+    },
+    {
+      "name": "futuristic purity",
+      "explanation": "Imaginary purity for science fiction worlds.",
+      "entries": [
+        "pure on a molecular level"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary purity for science fiction worlds.",
+      "entries": [
+        "{futuristic}",
+        "subatomically rearranged"
+      ]
+    }
+  ]
+}

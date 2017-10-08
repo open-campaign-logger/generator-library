@@ -1,0 +1,806 @@
+{
+  "name": "color table",
+  "resultPattern": "{color}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Colors grouped by main color. Contains also subtables for plant, eye and hair color.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "Fantasy colors.",
+  "see": "adjColor",
+  "date": "2017-10-06",
+  "authors": "Esko Vesala.",
+  "sources": "Craftsy.com, Wikipedia.org.",
+  "genre": "universal",
+  "category": "utility",
+  "tags": "#sense, #sight, #color",
+  "tables": [
+    {
+      "name": "color",
+      "explanation": "Color types.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common colors.",
+      "entries": [
+        "{black}",
+        "{grey}",
+        "{brown}",
+        "{green}",
+        "{cyan}",
+        "{blue}",
+        "{violet}",
+        "{purple}",
+        "{magenta}",
+        "{red}",
+        "{rose}",
+        "{orange}",
+        "{yellow}",
+        "{white}"
+      ]
+    },
+    {
+      "name": "black",
+      "explanation": "Black hues.",
+      "entries": [
+        "jet black",
+        "ebony",
+        "inky black",
+        "rich black",
+        "charcoal",
+        "black olive",
+        "ivory black (produced by charring bones)",
+        "vine black",
+        "lamp black",
+        "onyx",
+        "marengo (black with a grey tinge)",
+        "noir (greyish black)",
+        "light black (grey black)"
+      ]
+    },
+    {
+      "name": "grey",
+      "explanation": "Gray hues.",
+      "entries": [
+        "dark taupe (very dark grey)",
+        "taupe (dark grey)",
+        "dim gray",
+        "dark grey",
+        "dark medium grey",
+        "warm grey",
+        "middle grey",
+        "blue-grey",
+        "dark slate grey (with an azure tinge)",
+        "slate grey (with a slight azure tinge)",
+        "sage (grey green)",
+        "cinereous (grey tinged with coppery brown)",
+        "cool grey",
+        "silver grey",
+        "ash grey",
+        "lightgrey"
+      ]
+    },
+    {
+      "name": "brown",
+      "explanation": "Brown hues.",
+      "entries": [
+        "black bean (dark brown)",
+        "raw umber (greenish dark brown)",
+        "burnt umber (reddish brown)",
+        "burnt sienna (rich reddish brown)",
+        "sepia (reddish brown)",
+        "russet (dark brown with reddish orange tinge)",
+        "dark brown",
+        "red-brown",
+        "rosy brown",
+        "chestnut brown",
+        "wood brown",
+        "sandy brown",
+        "tan (pale brown)",
+        "buff (pale yellow brown)"
+      ]
+    },
+    {
+      "name": "green",
+      "explanation": "Green hues.",
+      "entries": [
+        "black olive (dark brown green)",
+        "dark green",
+        "chartreuse (yellow green)",
+        "lime green (green yellow)",
+        "apple green (yellowish green)",
+        "citron (orangish green)",
+        "sage (grey green)",
+        "laurel green (greyish green)",
+        "dark moss green",
+        "moss green",
+        "pine green",
+        "fern green",
+        "forest green",
+        "leaf green",
+        "hunter green",
+        "sea green",
+        "emerald green",
+        "malachite green",
+        "jade green",
+        "bright green",
+        "light green",
+        "olive (dark yellowish green)",
+        "yellow green",
+        "green-yellow",
+        "spring gree (cyan green)",
+        "viridian (bluish green)"
+      ]
+    },
+    {
+      "name": "cyan",
+      "explanation": "Greenish-blue hues.",
+      "entries": [
+        "verdigris (vibrant green blue)",
+        "teal (green blue)",
+        "aqua (blue green)",
+        "midnight green (very dark cyan)",
+        "dark cyan",
+        "bright cyan",
+        "light cyan",
+        "light sea green",
+        "blue-green",
+        "green-blue",
+        "cerulean (dark blue-green)",
+        "aquamarine (can with bluish tint)",
+        "teal blue"
+      ]
+    },
+    {
+      "name": "blue",
+      "explanation": "Blue hues.",
+      "entries": [
+        "turquoise (greenish blue)",
+        "dark blue",
+        "glaucous (grayish blue)",
+        "ultramarine (deep blue)",
+        "azure",
+        "midnight blue",
+        "medium blue",
+        "bright blue",
+        "morning blue (color of the morning sky)",
+        "sky blue",
+        "light blue",
+        "baby blue",
+        "powder blue",
+        "periwinkle (lavender blue)",
+        "deep indigo (blue violet)",
+        "indigo (purple blue)",
+        "light indigo (pale purple blue)"
+      ]
+    },
+    {
+      "name": "violet",
+      "explanation": "Violet hues.",
+      "entries": [
+        "puce (grayish red-violet)",
+        "red violet",
+        "pale red violet",
+        "prune (dark reddish violet)",
+        "blush (reddish violet)",
+        "bright violet",
+        "vivid violet",
+        "grape violet",
+        "violet (blue purple)",
+        "pale plum",
+        "blue iris",
+        "deep lavender",
+        "lavender (light tone of violet)",
+        "old lavender (dark grayish violet)",
+        "lavender purple",
+        "pink lavender",
+        "lavender blush (pale pinkish lavender)",
+        "deep mauve (dark lavender-lilac)",
+        "lavender grey (greyish lavender-lilac)",
+        "light lavender",
+        "mauve taupe (dark greyish lavender-lilac)",
+        "old mauve (deep lavender-lilac)",
+        "rich mauve (lavender-lilac)",
+        "mauve (pale lavender-lilac)"
+      ]
+    },
+    {
+      "name": "purple",
+      "explanation": "Purple hues.",
+      "entries": [
+        "dark purple",
+        "plum (deep purple)",
+        "amethyst (bluish purple)",
+        "red purple",
+        "purple",
+        "royal purple",
+        "pearly purple",
+        "fuchsia purple",
+        "deep fuchsia",
+        "fuchsia (vivid purplish red)",
+        "pale fuchsia (purplish red)",
+        "thistle (pale purplish hue)",
+        "aubergine (reddish purple)"
+      ]
+    },
+    {
+      "name": "magenta",
+      "explanation": "Magenta hues.",
+      "entries": [
+        "violet red",
+        "dark magenta",
+        "magenta (purple red)",
+        "magenta haze",
+        "amaranth (reddish-rose)",
+        "amaranth deep purple",
+        "amaranth purple",
+        "amaranth pink",
+        "bright amaranth pink",
+        "sky magenta (color of twilight sky)"
+      ]
+    },
+    {
+      "name": "red",
+      "explanation": "Red hues.",
+      "entries": [
+        "magenta (purple red)",
+        "dark red",
+        "wine red (dark red with a hint of blue)",
+        "blood red",
+        "maroon (dark brownish red)",
+        "terracotta (brownish red)",
+        "crimson (slightly purplish red)",
+        "rich carmine (very deep red)",
+        "carmine (deep red)",
+        "cardinal red (vivid crimson)",
+        "rusty red",
+        "brick red",
+        "bright red",
+        "imperial red",
+        "deep ruby",
+        "ruby red",
+        "rubine red",
+        "flame red",
+        "dark raspberry",
+        "raspberry red",
+        "dark salmon (deep pinkish red)",
+        "salmon (pinkish red)",
+        "light salmon (pale pinkish red)",
+        "scarlet (bright red with orange tinge)",
+        "cinnabar (slightly orange shade of red)",
+        "vermilion (orange red)"
+      ]
+    },
+    {
+      "name": "rose",
+      "explanation": "Rose red hues.",
+      "entries": [
+        "rose ebony",
+        "rose taupe (dark brownish)",
+        "rosy brown",
+        "rose red",
+        "rosewood",
+        "raspberry rose",
+        "fuchsia rose",
+        "dogwood rose",
+        "old rose",
+        "brilliant rose",
+        "misty rose",
+        "rose pink",
+        "rose quartz (rose with a grayish tone)"
+      ]
+    },
+    {
+      "name": "orange",
+      "explanation": "Orange hues.",
+      "entries": [
+        "vermilion (orange red)",
+        "cinnabar (red orange)",
+        "brown orange",
+        "burnt orange",
+        "dark orange",
+        "bright orange",
+        "light orange",
+        "carrot orange",
+        "marigold (yellow orange)",
+        "amber (orange yellow)"
+      ]
+    },
+    {
+      "name": "yellow",
+      "explanation": "Yellow hues.",
+      "entries": [
+        "marigold (yellow orange)",
+        "amber (orange yellow)",
+        "ochre (orangish yellow)",
+        "buff (pale yellow brown)",
+        "golden yellow",
+        "deep saffron (deep golden yellow)",
+        "saffron (bright golden yellow)",
+        "royal yellow",
+        "bright yellow",
+        "mustard (dull yellow)",
+        "sienna (dark yellow ochre)",
+        "light yellow",
+        "lime (green yellow)",
+        "chartreuse (yellow green)"
+      ]
+    },
+    {
+      "name": "white",
+      "explanation": "White hues.",
+      "entries": [
+        "off-white",
+        "platimum grey (pale greyish white)",
+        "beige (pale sandy)",
+        "ecru (light beige)",
+        "bone white",
+        "old lace white",
+        "smoke white",
+        "cream white",
+        "pale",
+        "ivory",
+        "fawn (light yellowish)",
+        "seashell white",
+        "eggshell white",
+        "ghost white",
+        "snow white",
+        "chalky white",
+        "milky white",
+        "bright white"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare colors.",
+      "entries": [
+        "silver",
+        "gold",
+        "platinum"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary colors for fantasy worlds.",
+      "entries": [
+        "goblin green",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary colors for fantasy worlds.",
+      "entries": [
+        "{fantasy}",
+        "color out of space (alien hue)"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Colors for modern worlds.",
+      "entries": [
+        "{common}",
+        "aluminium",
+        "{modern black}",
+        "{pink}",
+        "{pale}",
+        "{pastel}",
+        "{metallic}",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "modern black",
+      "explanation": "Black hues produced by incomplete combustion of modern materials.",
+      "entries": [
+        "carbon black",
+        "acetylene black",
+        "channel black",
+        "furnace black",
+        "thermal black"
+      ]
+    },
+    {
+      "name": "pink",
+      "explanation": "Pink hues.",
+      "entries": [
+        "deep pink",
+        "cerise (deep reddish pink)",
+        "light deep pink",
+        "solid pink",
+        "hot pink",
+        "bright pink",
+        "shocking pink",
+        "light hot pink",
+        "lavender pink",
+        "rose pink",
+        "paradise pink",
+        "cherry blossom pink",
+        "orchid pink",
+        "piggy pink",
+        "cameo pink",
+        "champagne pink",
+        "cotton candy pink",
+        "salmon pink",
+        "queen pink",
+        "silver pink",
+        "baby pink",
+        "light pink",
+        "pale pink"
+      ]
+    },
+    {
+      "name": "pale",
+      "explanation": "Pale colors.",
+      "entries": [
+        "pale",
+        "pale {prime}",
+        "pale {common}"
+      ]
+    },
+    {
+      "name": "pastel",
+      "explanation": "Pastel colors.",
+      "entries": [
+        "beige",
+        "pastel {prime}",
+        "pastel {common}"
+      ]
+    },
+    {
+      "name": "metallic",
+      "explanation": "metallic colors.",
+      "entries": [
+        "steel grey",
+        "battleship grey",
+        "gunmetal (gray with bluish purple tinge)",
+        "nickel",
+        "copper",
+        "bronze",
+        "silver",
+        "gold",
+        "metallic {prime}",
+        "metallic {common}",
+        "{lib:metal}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare Colors for modern worlds.",
+      "entries": [
+        "{modern}",
+        "colorless",
+        "{neon}"
+      ]
+    },
+    {
+      "name": "neon",
+      "explanation": "Neon colors.",
+      "entries": [
+        "neon {prime}",
+        "neon {common}"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary colors for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "mull (infrared)",
+        "glow (ultraviolet)",
+        "grue (changing between green and blue)",
+        "bleen (changing between blue and green)",
+        "infrawhite ('underneath the visible spectrum')"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary colors for science fiction worlds.",
+      "entries": [
+        "{futuristic}",
+        "super black (surface treatmen absorbing almost all light)",
+        "vantablack (covered with Vertically Aligned NanoTube Arrays absorbing practically all light)",
+        "impossible color (unknown hue)",
+        "indescribcolor of an alien spectre",
+        "hyper{prime}",
+        "{chimerical}",
+        "{imaginary}"
+      ]
+    },
+    {
+      "name": "chimerical",
+      "explanation": "Colors that normally cannot be perceived by human eye.",
+      "entries": [
+        "stygian {prime} (simultaneously dark and impossibly saturated)",
+        "self-luminous {prime} (glowing without a light source)",
+        "hyperbolic {prime} (impossibly saturated)"
+      ]
+    },
+    {
+      "name": "imaginary",
+      "explanation": "Impossible colors combinations for human eye.",
+      "entries": [
+        "reddish green",
+        "yellowish blue"
+      ]
+    },
+    {
+      "name": "prime",
+      "explanation": "Prime colors.",
+      "entries": [
+        "green",
+        "blue",
+        "violet",
+        "red",
+        "orange",
+        "yellow"
+      ]
+    },
+    {
+      "name": "plant",
+      "explanation": "Common plant colors.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{green}"
+        },
+        {
+          "m": 2,
+          "v": "{brown}"
+        },
+        "{yellow}",
+        "{white}"
+      ]
+    },
+    {
+      "name": "hair",
+      "explanation": "Common hair colors categorized on the Fischer-Saller scale.",
+      "entries": [
+        "{black hair}",
+        "{dark brown hair}",
+        "{brown hair}",
+        "{light brown hair}",
+        "{dark blond hair}",
+        "{blond hair}",
+        "{light blond hair}",
+        "{very light blond hair}",
+        "{red blond hair}",
+        "{red hair}"
+      ]
+    },
+    {
+      "name": "black hair",
+      "explanation": "Black hair colors.",
+      "entries": [
+        "glossy black",
+        "raven black",
+        "soft-black",
+        "jet-black",
+        "blue-black",
+        "brown-black",
+        "red-black"
+      ]
+    },
+    {
+      "name": "dark brown hair",
+      "explanation": "Dark brown hair colors.",
+      "entries": [
+        "blackish brown",
+        "deepest brunette",
+        "dark brown",
+        "very dark chestnut",
+        "dark chestnut",
+        "chestnut brown",
+        "brunette"
+      ]
+    },
+    {
+      "name": "brown hair",
+      "explanation": "Brown hair colors.",
+      "entries": [
+        "maple (dark golden) brown",
+        "medium brown",
+        "light chestnut brown",
+        "walnut (warm) brown",
+        "medium golden brown",
+        "cinnamon brown"
+      ]
+    },
+    {
+      "name": "light brown hair",
+      "explanation": "Light brown hair colors.",
+      "entries": [
+        "light golden brown",
+        "light brown",
+        "light ash brown",
+        "lightest brown"
+      ]
+    },
+    {
+      "name": "dark blond hair",
+      "explanation": "Dark blond hair colors.",
+      "entries": [
+        "dark blond",
+        "dirty blond (with flecks of brown)",
+        "dark golden blond"
+      ]
+    },
+    {
+      "name": "blond hair",
+      "explanation": "Blond hair colors.",
+      "entries": [
+        "honey (dark iridescent) blond",
+        "medium blond",
+        "golden blond (golden-yellow)",
+        "flaxen (light but not whitish)"
+      ]
+    },
+    {
+      "name": "light blond hair",
+      "explanation": "Light blond hair colors.",
+      "entries": [
+        "light blond",
+        "yellow blond",
+        "sandy (golden-brownish) blond",
+        "cream-colored",
+        "ash (grayish) blond"
+      ]
+    },
+    {
+      "name": "very light blond hair",
+      "explanation": "Very light blond hair colors.",
+      "entries": [
+        "fair",
+        "very pale",
+        "platinum white"
+      ]
+    },
+    {
+      "name": "red blond hair",
+      "explanation": "Red blond hair colors.",
+      "entries": [
+        "strawberry (reddish) blond",
+        "Venetian blond (golden yellow)"
+      ]
+    },
+    {
+      "name": "red hair",
+      "explanation": "Red hair colors.",
+      "entries": [
+        "dark ginger",
+        "ginger",
+        "deep burgundy (hint of purple)",
+        "burgundy (slight hint of purple)",
+        "copper",
+        "bright copper",
+        "dark auburn (dark brownish red)",
+        "auburn (brownish red)",
+        "red",
+        "burnt orange",
+        "Titian (brownish orange)",
+        "red-orange"
+      ]
+    },
+    {
+      "name": "greyed hair",
+      "explanation": "Greyed hair colors (for old people).",
+      "entries": [
+        "grey",
+        "white"
+      ]
+    },
+    {
+      "name": "rare hair",
+      "explanation": "Rare hair colors.",
+      "entries": [
+        "blonde with a bluish tint"
+      ]
+    },
+    {
+      "name": "eye",
+      "explanation": "Common eye colors categorized on the Martin-Schultz scale.",
+      "entries": [
+        "{dark eyes}",
+        "{dark mixed eyes}",
+        "{mixed eyes}",
+        "{light mixed eyes}",
+        "{light eyes}"
+      ]
+    },
+    {
+      "name": "dark eyes",
+      "explanation": "Dark eye colors.",
+      "entries": [
+        "black-brown",
+        "dark-brown",
+        "brown"
+      ]
+    },
+    {
+      "name": "dark mixed eyes",
+      "explanation": "Dark-mixed eye colors.",
+      "entries": [
+        "light-brown",
+        "hazel"
+      ]
+    },
+    {
+      "name": "mixed eyes",
+      "explanation": "Mixed eye colors.",
+      "entries": [
+        "green with brown spots",
+        "green with yellow and brown spots",
+        "blue-gray with brown spots",
+        "blue-gray with yellow and brown spots",
+        "gray-green with brown spots",
+        "gray-green with yellow and brown spots",
+        "gray with brown spots",
+        "gray with yellow and brown spots"
+      ]
+    },
+    {
+      "name": "light mixed eyes",
+      "explanation": "light-mixed eye colors.",
+      "entries": [
+        "green with yellow spots",
+        "green",
+        "blue-gray with yellow spots",
+        "blue-gray",
+        "gray-green with yellow spots",
+        "gray-green",
+        "gray with yellow spots"
+      ]
+    },
+    {
+      "name": "light eyes",
+      "explanation": "Light eye colors.",
+      "entries": [
+        "dark gray",
+        "light gray",
+        "blue",
+        "light blue"
+      ]
+    },
+    {
+      "name": "rare eyes",
+      "explanation": "Rare eye colors.",
+      "entries": [
+        "amber",
+        "copper",
+        "deep blue",
+        "violet",
+        "red",
+        "{light eyes} with {dark eyes} section in one eye",
+        "{light mixed eyes} with {dark mixed eyes} section in one eye",
+        "{light mixed eyes} near the pupil with a dark ring around the iris",
+        "dark near the pupil with a {light mixed eyes} ring around the iris",
+        "{light eyes} near the pupil with a dark ring around the iris",
+        "{eye} on one eye and {eye} on the other"
+      ]
+    },
+    {
+      "name": "black and white",
+      "explanation": "Black and white tones.",
+      "entries": [
+        "{black}",
+        "{grey}",
+        "{white}"
+      ]
+    },
+    {
+      "name": "gray",
+      "explanation": "Handling the US spelling of grey.",
+      "entries": [
+        "{grey}"
+      ]
+    }
+  ]
+}

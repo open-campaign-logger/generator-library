@@ -1,0 +1,109 @@
+{
+  "name": "Generator Template",
+  "resultPattern": "{XXX}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "XXX",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "20XX-XX-XX",
+  "authors": "",
+  "sources": "",
+  "genre": "",
+  "category": "",
+  "tags": "",
+  "tables": [
+    {
+      "name": "XXX",
+      "explanation": "XXX",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common XXX.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare XXX.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary XXX once rumoured to have existed.",
+      "entries": [
+        "XXX",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary XXX once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary XXX for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "XXX",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary XXX for fantasy worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "XXX for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare XXX for modern worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary XXX for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary XXX for science fiction worlds.",
+      "entries": [
+        "XXX"
+      ]
+    }
+  ]
+}

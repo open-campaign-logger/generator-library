@@ -1,0 +1,134 @@
+{
+  "name": "spellcasting method table",
+  "resultPattern": "{spellcasting method}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Spellcasting methods for magic tables.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "to do": "",
+  "see": "magic, magician, magical_technique, magical_instrument",
+  "date": "2017-10-04",
+  "authors": "Esko Vesala",
+  "sources": "powerlisting.wikia.com, Wikipedia.org.",
+  "genre": "universal",
+  "category": "magic",
+  "tags": "#magic, #spell",
+  "tables": [
+    {
+      "name": "spellcasting method",
+      "explanation": "Methods of using magic.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common spellcasting methods.",
+      "entries": [
+        "speaking words of power",
+        "incantation (speaking a magical formula)",
+        "chanting",
+        "singing",
+        "repeating a mantra",
+        "praying",
+        "touching a charm",
+        "waving a {lib:magical instrument}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare spellcasting methods.",
+      "entries": [
+        "dancing",
+        "dreaming",
+        "writing",
+        "tying knots (the spell is released when the knot is untied)",
+        "ceremonial mass"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary spellcasting methods once rumoured to have existed.",
+      "entries": [
+        "{rare}",
+        "spellbinding (binding spells to objects)",
+        "spell tattooing (binding spells to tattoos)",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Imaginary spellcasting methods once rumoured to have existed.",
+      "entries": [
+        "{mythological}",
+        "englightenment (achieving oneness with divinity)"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary spellcasting methods for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "spellsinging",
+        "playing a magical musical instrument",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Imaginary spellcasting methods for fantasy worlds.",
+      "entries": [
+        "{fantasy}",
+        "creating art with magical equipment"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Spellcasting methods for modern worlds.",
+      "entries": [
+        "{common}",
+        "concentrating",
+        "practicing yoga",
+        "vibration of divine names",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare spellcasting methods for modern worlds.",
+      "entries": [
+        "attaining an altered state of consciousness",
+        "opening a dimensional portal",
+        "asterokinesis (cosmic manipulation)",
+        "essokinesis (altering reality by thought)",
+        "science manipulation (altering the laws of science)",
+        "logic manipulation (controlling rules of logic)"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary spellcasting methods for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "data manipulation (altered data affects reality)",
+        "techno magic (combining magic and technology)",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Imaginary spellcasting methods for science fiction worlds.",
+      "entries": [
+        "{futuristic}",
+        "meta-tech (technology affecting other realities)",
+        "techno mysticism (extending mental capacity with technology)"
+      ]
+    }
+  ]
+}

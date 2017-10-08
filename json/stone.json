@@ -1,25 +1,125 @@
 {
-	"name": "Stone Generator",
-	"resultPattern": "{stone}",
-	"tables": [
-		{
-			"name": "stone",
-			"entries": [
-			    "alabaster",
-		    	"basalt",
-        		"fossilstone",
-        		"granite",
-        		"limestone",
-        		"marble",
-        		"pumice",
-        		"quartz",
-        		"sandstone",
-        		"serpentine",
-        		"shale",
-        		"slate",
-        		"soapstone",
-        		"travertine"
-			]
-		}
-	]
+  "name": "Stone table",
+  "resultPattern": "{stone}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Stones for resource and construction tables.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "",
+  "see": "material, metal",
+  "date": "2017-10-06",
+  "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "sources": "Wikipedia.org.",
+  "genre": "universal",
+  "category": "world",
+  "tags": "#material, #resource",
+  "tables": [
+    {
+      "name": "stone",
+      "explanation": "Stone types.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "entries": [
+        "granite",
+        "limestone",
+        "sandstone",
+        "shale",
+        "slate"
+      ]
+    },
+    {
+      "name": "rare",
+      "entries": [
+        "alabaster",
+        "basalt",
+        "fossilstone",
+        "marble",
+        "pumice",
+        "quartz",
+        "serpentine",
+        "soapstone",
+        "travertine"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary stone types once rumoured to have existed.",
+      "entries": [
+        "lodestone",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary stone types once rumoured to have existed.",
+      "entries": [
+        "piece of the Symplegade (clashing rocks destroying boats)"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary stone types for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "weirdstone (containing captured magical essence)",
+        "wyrdstone (containing magical energy)",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary stone types for fantasy worlds.",
+      "entries": [
+        "{fantasy}",
+        "hellstone",
+        "warpstone (causes chaotic mutations)",
+        "sentient stone"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Stone types for modern worlds.",
+      "entries": [
+        "{common}",
+        "spectrolite",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare stone types for modern worlds.",
+      "entries": [
+        "carbonatite",
+        "ijolite",
+        "jadeitite"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary stone types for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "meteor stone",
+        "space rock",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary stone types for science fiction worlds.",
+      "entries": [
+        "growing stone (self-replicating nano structure)"
+      ]
+    }
+  ]
 }

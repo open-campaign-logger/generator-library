@@ -1,0 +1,296 @@
+{
+  "name": "musical instrument table",
+  "resultPattern": "{musical instrument}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Musical instruments for characters and treasure.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "Mythological, fantasy and futuristic instruments.",
+  "see": "magical_instrument",
+  "date": "2017-10-06",
+  "authors": "Esko Vesala.",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "category": "item",
+  "tags": "#music, #treasure",
+  "tables": [
+    {
+      "name": "musical instrument",
+      "explanation": "Musical instrument types.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common musical instruments.",
+      "entries": [
+        "{percussion}",
+        "{wind}",
+        "{string}"
+      ]
+    },
+    {
+      "name": "percussion",
+      "explanation": "Percussion instruments.",
+      "entries": [
+        "{unpitched percussion}",
+        "{pitched percussion}"
+      ]
+    },
+    {
+      "name": "unpitched percussion",
+      "explanation": "Percussion instruments.",
+      "entries": [
+        "wood block drum",
+        "clapper",
+        "bass drum",
+        "drum",
+        "bell",
+        "cymbal",
+        "gong",
+        "rattle",
+        "tambourine",
+        "wind chime"
+      ]
+    },
+    {
+      "name": "pitched percussion",
+      "explanation": "Percussion instruments.",
+      "entries": [
+        "bell",
+        "chime"
+      ]
+    },
+    {
+      "name": "wind",
+      "explanation": "Wind instruments.",
+      "entries": [
+        "{natural wind}",
+        "{woodwind}",
+        "{brass}"
+      ]
+    },
+    {
+      "name": "natural wind",
+      "explanation": "Natural wind instruments.",
+      "entries": [
+        "conch (seashell horn)",
+        "bullhorn",
+        "bullroarer"
+      ]
+    },
+    {
+      "name": "woodwind",
+      "explanation": "Woodwind instruments.",
+      "entries": [
+        "willow flute",
+        "flute",
+        "pan flute",
+        "ocarina",
+        "whistle"
+      ]
+    },
+    {
+      "name": "brass",
+      "explanation": "Brass instruments.",
+      "entries": [
+        "horn"
+      ]
+    },
+    {
+      "name": "string",
+      "explanation": "String instruments.",
+      "entries": [
+        "dulcimer",
+        "psaltery",
+        "lyre",
+        "harp",
+        "lute",
+        "zither",
+        "hurdy-gurdy",
+        "viol"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare musical instruments.",
+      "entries": [
+        "musical bow",
+        "nose flute",
+        "bagpipe"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary musical instruments once rumoured to have existed.",
+      "entries": [
+        "sistrum (rattle scaring away evil forces)",
+        "death whistle (skull-shaped whistle producing a ghastly sound)",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary musical instruments once rumoured to have existed.",
+      "entries": [
+        "{mythological}",
+        "carved unicorn horn",
+        "angelic horn (blown by the angelic host)",
+        "{unique mythological}"
+      ]
+    },
+    {
+      "name": "unique mythological",
+      "explanation": "Unique imaginary musical instruments once rumoured to have existed.",
+      "entries": [
+        "Triton's conch shell (can calm or raise the waves)",
+        "Väinämöinen's kantele (draws all creatures to listen)",
+        "Gjallarhorn (to be blown at the onset of the world's end)"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary musical instruments for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "harp playing by itself",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary musical instruments for fantasy worlds.",
+      "entries": [
+        "{fantasy}",
+        "silent bagpipe"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Musical instruments for modern worlds.",
+      "entries": [
+        "{common}",
+        "{modern percussion}",
+        "{modern wind}",
+        "{modern stringed}",
+        "{keyboard}",
+        "{electronic}",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "modern percussion",
+      "explanation": "Modern percussion instruments.",
+      "entries": [
+        "xylophone",
+        "glockenspiel (xylophone with metal bars)",
+        "vibraphone"
+      ]
+    },
+    {
+      "name": "modern wind",
+      "explanation": "Modern wind instruments.",
+      "entries": [
+        "harmonica (mouth organ)",
+        "melodica (blow-organ)",
+        "{modern woodwind}",
+        "{modern brass}"
+      ]
+    },
+    {
+      "name": "modern woodwind",
+      "explanation": "Modern woodwind instruments.",
+      "entries": [
+        "kazoo",
+        "recorder",
+        "piccolo",
+        "clarinet",
+        "oboe",
+        "saxophone"
+      ]
+    },
+    {
+      "name": "modern brass",
+      "explanation": "Modern wind instruments.",
+      "entries": [
+        "bugle",
+        "trombone",
+        "trumpet",
+        "cornet",
+        "tuba",
+        "saxhorn"
+      ]
+    },
+    {
+      "name": "modern stringed",
+      "explanation": "Modern stringed instruments.",
+      "entries": [
+        "balalaika",
+        "banjo",
+        "mandolin",
+        "guitar",
+        "bass guitar",
+        "ukulele",
+        "violin"
+      ]
+    },
+    {
+      "name": "keyboard",
+      "explanation": "Rare musical instruments for modern worlds.",
+      "entries": [
+        "accordion",
+        "harpsichord",
+        "clavichord",
+        "piano",
+        "grand piano"
+      ]
+    },
+    {
+      "name": "electronic",
+      "explanation": "Electronic instruments for modern worlds.",
+      "entries": [
+        "electric guitar",
+        "electric bass guitar",
+        "electric organ",
+        "elecric piano",
+        "drum machine",
+        "electronic drum",
+        "synthesizer",
+        "turntable"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare musical instruments for modern worlds.",
+      "entries": [
+        "sousaphone",
+        "theremin"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary musical instruments for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "hydraulophone (produces sound from liqud)",
+        "plasmaphone (produces sound from plasma)",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary musical instruments for science fiction worlds.",
+      "entries": [
+        "neural instrument (creates sound directly in the brain)"
+      ]
+    }
+  ]
+}

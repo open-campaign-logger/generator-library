@@ -1,32 +1,387 @@
 {
-	"name": "Jewelry Generator",
-	"resultPattern": "{jewelry}",
-	"tables": [
-		{
-			"name": "jewelry",
-			"entries": [
-		    	"amulet",
-        		"anklet",
-        		"armlet",
-        		"bangle",
-        		"bracelet",
-        		"brooch",
-        		"chain",
-        		"charm bracelet",
-        		"chatelaine",
-        		"choker",
-        		"earring",
-        		"gorgerine",
-        		"locket",
-        		"medallion",
-        		"necklace",
-        		"pendant",
-        		"periapt",
-        		"pin",
-        		"ring",
-        		"scarab",
-        		"torc"
-			]
-		}
-	]
+  "name": "jewelry table",
+  "resultPattern": "{jewelry}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Jewelry for person appearance and treasure tables.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "",
+  "see": "gem",
+  "date": "2017-10-04",
+  "authors": "Authors: Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "category": "#person, #treasure",
+  "tags": "item",
+  "tables": [
+    {
+      "name": "jewelry",
+      "explanation": "Jewelry by scarcity.",
+      "entries": [
+        "{common}",
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common jewelry types.",
+      "entries": [
+        "{head jewelry}",
+        "{neck jewelry}",
+        "{chest jewelry}",
+        "{arm jewelry}",
+        "{hand jewelry}"
+      ]
+    },
+    {
+      "name": "head jewelry",
+      "explanation": "Common jewellery worn on the head.",
+      "entries": [
+        "wreath crown",
+        "corolla (wreath garland worn as crown)",
+        "chaplet (flower garland worn as crown)",
+        "fillet (narrow head band)",
+        "headband",
+        "earring",
+        "stud earring (pinned through earlobe)",
+        "hoop earring (circular)",
+        "drop earring (dangling on a chain)",
+        "dangle earring (hanging from the bottom of the earlobe)",
+        "barbell earring (orbs connected by a bar)",
+        "ear thread (thin dangling chain)",
+        "ear spike",
+        "ear cuff (wrapping around outer cartilage)",
+        "ferronnière (chain across forehead)",
+        "diadem (ornamental head band)",
+        "tiara (jeweled, ornamental head band)",
+        "{rare head jewelry}"
+      ]
+    },
+    {
+      "name": "rare head jewelry",
+      "explanation": "Rare jewellery worn on the head.",
+      "entries": [
+        "nose ring",
+        "nose jewelry",
+        "wreath made of a precious metal",
+        "{crown}"
+      ]
+    },
+    {
+      "name": "crown",
+      "explanation": "Crown types.",
+      "entries": [
+        "crown",
+        "circlet (metal band worn as crown)",
+        "coronet (small, ornamental crown)",
+        "radiant crown (curved band with points presenting rays)",
+        "eastern crown (surmounted with sharp spikes)",
+        "camp crown (surmounted with palisade stakes)",
+        "mural crown (representing wall and towers)",
+        "naval crown (surmounted with ship prows)",
+        "imperial crown (used in coronations)",
+        "arched crown (with bands over the head)",
+        "celestial crown (surmounted with spikes topped by stars)",
+        "astral crown (lateral points topped by stars surrounded by wings)"
+      ]
+    },
+    {
+      "name": "neck jewelry",
+      "explanation": "Common jewellery worn around the neck.",
+      "entries": [
+        "garland (decorative cord hung round neck)",
+        "beads",
+        "chain",
+        "jewellery chain",
+        "necklace",
+        "choker (tight necklace)",
+        "collar (massive necklace)",
+        "pendant (loose-hanging jewellery)",
+        "medallion (coin-shaped pendant)",
+        "locket (for storing for example a curl of hair)",
+        "{rare neck jewelry}"
+      ]
+    },
+    {
+      "name": "rare neck jewelry",
+      "explanation": "Rare jewellery worn around the neck.",
+      "entries": [
+        "string necktie (cord secured with ornamental clasp)",
+        "necklet (decoration worn around neck)",
+        "livery collar (chain of office)",
+        "neck ring",
+        "torc (rigid neck ring)"
+      ]
+    },
+    {
+      "name": "chest jewelry",
+      "explanation": "Common jewellery worn on the chest.",
+      "entries": [
+        "pin",
+        "brooch (jewelry attached to garment)",
+        "fibula (ornamental clasp)",
+        "{rare chest jewelry}"
+      ]
+    },
+    {
+      "name": "rare chest jewelry",
+      "explanation": "Rare jewellery worn on the chest.",
+      "entries": [
+        "gorgerine (metal discs worn on the chest)",
+        "ornamental breastplate",
+        "scarab (beetle-shaped amulet)"
+      ]
+    },
+    {
+      "name": "arm jewelry",
+      "explanation": "Common jewellery worn around arms.",
+      "entries": [
+        "charm bracelet (trinkets worn on wrist)",
+        "beaded bracelet (loose beads on a string)",
+        "link bracelet (linked ornaments)",
+        "bracelet",
+        "bangles",
+        "{rare arm jewelry}"
+      ]
+    },
+    {
+      "name": "rare arm jewelry",
+      "explanation": "Rare jewellery worn around arms.",
+      "entries": [
+        "arm band",
+        "arm ring",
+        "armlet (upper arm bracelet)"
+      ]
+    },
+    {
+      "name": "hand jewelry",
+      "explanation": "Common jewellery worn on hands.",
+      "entries": [
+        "ring",
+        "plain ring",
+        "sovereign ring (thick and large)",
+        "signet ring (for imprinting a wax seal)",
+        "giardinetti ring (multiple small stones)",
+        "cameo ring (with a carved image)",
+        "{rare hand jewelry}"
+      ]
+    },
+    {
+      "name": "rare hand jewelry",
+      "explanation": "Rare jewellery worn on hands.",
+      "entries": [
+        "slave bracelet (bracelet chained to a ring)",
+        "pair of rings joined by a chain",
+        "thumb ring",
+        "pinky ring (for little finger)",
+        "multi-finger ring",
+        "rosary ring (rotated on finger to keep track of prayers)",
+        "puzzle ring (interlocking rings forming a single band)",
+        "poison ring (with a compartment under the bezel)",
+        "key ring (with a key mounted on the bezel)",
+        "finger armor ring (jointed cover for whole finger)"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare jewelry types.",
+      "entries": [
+        "{hair jewelry}",
+        "{waist jewelry}",
+        "{leg jewelry}",
+        "{foot jewelry}",
+        "{household ornament}"
+      ]
+    },
+    {
+      "name": "hair jewelry",
+      "explanation": "Common jewellery worn in the hair.",
+      "entries": [
+        "hair ribbon",
+        "hair band",
+        "hairpin",
+        "hair stick (for holding a hair bun)",
+        "hair clip",
+        "{rare hair jewelry}"
+      ]
+    },
+    {
+      "name": "rare hair jewelry",
+      "explanation": "Rare jewellery worn in the hair.",
+      "entries": [
+        "ornamental comb",
+        "hatpin (for holding headgear in place)",
+        "aigrette (plume-shaped hair ornament)"
+      ]
+    },
+    {
+      "name": "waist jewelry",
+      "explanation": "Common jewellery worn around the waist.",
+      "entries": [
+        "ornamental belt buckle",
+        "waist chain",
+        "chatelaine (decorative waist chains)",
+        "{rare waist jewelry}"
+      ]
+    },
+    {
+      "name": "rare waist jewelry",
+      "explanation": "Rare jewellery worn around the waist.",
+      "entries": [
+        "belly chain",
+        "belly ring",
+        "pierced belly chain (for navel piercing)"
+      ]
+    },
+    {
+      "name": "leg jewelry",
+      "explanation": "Common jewellery worn on legs.",
+      "entries": [
+        "ankle beads",
+        "ankle chain",
+        "ankle bracelet",
+        "anklet",
+        "{rare leg jewelry}"
+      ]
+    },
+    {
+      "name": "rare leg jewelry",
+      "explanation": "Rare jewellery worn on legs.",
+      "entries": [
+        "ornamental leg armour"
+      ]
+    },
+    {
+      "name": "foot jewelry",
+      "explanation": "Common jewellery worn on feet.",
+      "entries": [
+        "toe ring",
+        "a matched pair of toe rings",
+        "{rare foot jewelry}"
+      ]
+    },
+    {
+      "name": "rare foot jewelry",
+      "explanation": "Rare jewellery worn on feet.",
+      "entries": [
+        "pair of toe rings joined with a chain",
+        "big toe ring"
+      ]
+    },
+    {
+      "name": "household ornament",
+      "explanation": "Decoration not worn on person.",
+      "entries": [
+        "straw wreath",
+        "twig wreath",
+        "evergreen wreath",
+        "{lib:plant} leaf wreath",
+        "harvest wreath",
+        "fruit wreath",
+        "flower wreath"
+      ]
+    },
+    {
+      "name": "rare household ornament",
+      "explanation": "Rare decoration not worn on person.",
+      "entries": [
+        "standard",
+        "flag",
+        "weather wane"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary jewelry once rumoured to have existed.",
+      "entries": [
+        "{lib:material} amulet (defensive charm)",
+        "{lib:material} periapt (charm worn on a necklace)",
+        "{lib:material} talisman (magical charm)",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary adornment once rumoured to have existed.",
+      "entries": [
+        "cursed {lib:jewelry}",
+        "blessed {lib:jewelry}"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary adornment for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "{lib:personRace}-made {common}",
+        "{lib:monsterHumanoid}-made {common}",
+        "insect",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary adornment for fantasy worlds.",
+      "entries": [
+        "living {common}",
+        "sentient {common}",
+        "talking {common}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Adornment for modern worlds.",
+      "entries": [
+        "{common}",
+        "{lib:material#plastic} {common}",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare adornment for modern worlds.",
+      "entries": [
+        "{quality} {common}"
+      ]
+    },
+    {
+      "name": "quality",
+      "explanation": "Quality of the design adornment.",
+      "entries": [
+        "fake",
+        "pirated",
+        "quality brand",
+        "designer brand",
+        "expensive brand",
+        "luxury brand",
+        "fashion",
+        "high-end fashion",
+        "tailor-made",
+        "haute couture (exclusive custom fitted)"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary adornment for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "{lib:metal#modern} {modern}",
+        "fluorescent {modern}",
+        "self-illuminating {modern}",
+        "color-changing",
+        "holographic {modern}",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary adornment for science fiction worlds.",
+      "entries": [
+        "cybernetic {modern}",
+        "bioengineered {modern}"
+      ]
+    }
+  ]
 }

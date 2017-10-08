@@ -1,0 +1,550 @@
+{
+  "name": "Food Generator",
+  "resultPattern": "{appearance} {recipe} with {ingredients} ({finishing})",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Food for resource tables. Subtable classification is based on everyday usage, not scientific taxonomy.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "",
+  "see": "aroma, drink",
+  "date": "2017-10-04",
+  "authors": "Esko Vesala",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "category": "item",
+  "tags": "#food, #tavern, #resource",
+  "tables": [
+    {
+      "name": "appearance",
+      "explanation": "The appearance of the food.",
+      "entries": [
+        "{scent}",
+        "{strength} {scent}",
+        "{taste}",
+        "{strength} {taste}",
+        "{structure}"
+      ]
+    },
+    {
+      "name": "recipe",
+      "explanation": "The form in which the food is served.",
+      "entries": [
+        "soup",
+        "porridge",
+        "salad",
+        "snack",
+        "bread",
+        "flatbread",
+        "roll",
+        "sausage",
+        "pie",
+        "pastry",
+        "pancake",
+        "pudding",
+        "purée",
+        "gratin",
+        "omelette",
+        "casserole",
+        "stew",
+        "dish"
+      ]
+    },
+    {
+      "name": "ingredients",
+      "explanation": "The ingredients of the recipe.",
+      "entries": [
+        "{foodstuff}",
+        "{foodstuff} and {foodstuff}",
+        "{foodstuff}, {foodstuff} and {foodstuff}"
+      ]
+    },
+    {
+      "name": "foodstuff",
+      "explanation": "Raw materials for food.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common foodstuffs.",
+      "entries": [
+        "{lib:plant#mushroom}",
+        "{lib:plant#vegetable}",
+        "{lib:plant#root}",
+        "{lib:plant#bulb}",
+        "{lib:plant#legume}",
+        "{lib:plant#grain}",
+        "{lib:plant#nut}",
+        "{lib:plant#fruit}",
+        "{lib:plant#berry}",
+        "{lib:plant#herb}",
+        "{seafood}",
+        "{fish}",
+        "{egg}",
+        "{dairy product}",
+        "{meat}"
+      ]
+    },
+    {
+      "name": "seafood",
+      "explanation": "Edible seafood.",
+      "entries": [
+        "clam",
+        "mussel",
+        "oyster",
+        "crab",
+        "crayfish",
+        "lobster",
+        "shrimp",
+        "prawn",
+        "squid",
+        "octopus"
+      ]
+    },
+    {
+      "name": "fish",
+      "explanation": "Edible fish.",
+      "entries": [
+        "carp",
+        "trout",
+        "sturgeon",
+        "salmon",
+        "pike"
+      ]
+    },
+    {
+      "name": "egg",
+      "explanation": "Edible eggs.",
+      "entries": [
+        "{poultry} egg"
+      ]
+    },
+    {
+      "name": "poultry",
+      "explanation": "Egg-producing domesticated birds.",
+      "entries": [
+        "chicken",
+        "goose",
+        "duck",
+        "quail",
+        "partridge"
+      ]
+    },
+    {
+      "name": "dairy product",
+      "explanation": "Dairy products for food.",
+      "entries": [
+        "{cheese}"
+      ]
+    },
+    {
+      "name": "cheese",
+      "explanation": "Variations of cheese descriptions.",
+      "entries": [
+        "{cheese type} made of {cheese milk}",
+        "{cheese color} {cheese type} made of {cheese milk}",
+        "{cheese type} made of {cheese milk}, {cheese finishing}",
+        "{cheese color} {cheese type} made of {cheese milk}, {cheese finishing}"
+      ]
+    },
+    {
+      "name": "cheese type",
+      "explanation": "Cheese types.",
+      "entries": [
+        "soft cheese",
+        "semi-soft cheese",
+        "semi-hard cheese with {cheese holes}",
+        "medium-hard cheese with {cheese holes}",
+        "hard cheese with {cheese holes}",
+        "blue cheese",
+        "brined cheese",
+        "ricotta cheese",
+        "cottage cheese",
+        "string cheese",
+        "smoked cheese",
+        "fried cheese"
+      ]
+    },
+    {
+      "name": "cheese milk",
+      "explanation": "Cheese milks.",
+      "entries": [
+        "cow milk",
+        "semi-skinned cow milk",
+        "goat milk",
+        "sheep milk",
+        "mixture of cow and sheep milk",
+        "mixed milks",
+        "mixture of sheep and goat milk",
+        "cheese whey",
+        "leftover curd",
+        "cream",
+        "double cream",
+        "aged soft cheese and butter",
+        "donkey milk",
+        "moose milk"
+      ]
+    },
+    {
+      "name": "cheese color",
+      "explanation": "Cheese colors.",
+      "entries": [
+        "blue-veined",
+        "veined with a russet coloring",
+        "bluish",
+        "greenish",
+        "brownish",
+        "orange-tinted",
+        "mottled green",
+        "marbled",
+        "golden-colored",
+        "yellow",
+        "light yellow",
+        "pale yellow",
+        "pale",
+        "light-colored",
+        "pale ivory",
+        "off-white",
+        "white"
+      ]
+    },
+    {
+      "name": "cheese finishing",
+      "explanation": "Cheese finishings.",
+      "entries": [
+        "with {cheese rind}",
+        "dipped in {flavoring}",
+        "marbled with {flavoring}",
+        "blended with {flavoring}",
+        "mixed with {lib:plant#spice}",
+        "aged for {dice:3d6} months",
+        "prepared using a vegetable rennet",
+        "with a {lib:aroma} tang",
+        "coated in wax",
+        "mould-ripened",
+        "given a light dusting of charcoal",
+        "stored in liquid",
+        "aged underground",
+        "containing live insect larvae"
+      ]
+    },
+    {
+      "name": "cheese holes",
+      "explanation": "Cheese holes.",
+      "entries": [
+        "very few holes",
+        "tiny holes",
+        "small holes",
+        "irregular holes",
+        "plenty of holes",
+        "large holes"
+      ]
+    },
+    {
+      "name": "cheese rind",
+      "explanation": "Cheese rinds.",
+      "entries": [
+        "an edible rind",
+        "a mouldy rind",
+        "a thin rind",
+        "a rind of toasted hops",
+        "a rind resembling granite"
+      ]
+    },
+    {
+      "name": "meat",
+      "explanation": "Edible meats.",
+      "entries": [
+        "{meat type}",
+        "{animal type} {meat type}",
+        "{meat preparation} {animal type} {meat type}"
+      ]
+    },
+    {
+      "name": "animal type",
+      "explanation": "Types of edible animals.",
+      "entries": [
+        "{domesticated animal}",
+        "{game animal}"
+      ]
+    },
+    {
+      "name": "domesticated animal",
+      "explanation": "Edible domesticated animals.",
+      "entries": [
+        "{poultry}",
+        "pork (pig)",
+        "beef (cow)",
+        "mutton (lamb)",
+        "horse",
+        "dog"
+      ]
+    },
+    {
+      "name": "game animal",
+      "explanation": "Edible wild animals.",
+      "entries": [
+        "rabbit",
+        "hare",
+        "grouse",
+        "boar",
+        "deer",
+        "moose",
+        "bear"
+      ]
+    },
+    {
+      "name": "meat type",
+      "explanation": "Types of meat.",
+      "entries": [
+        "steak",
+        "meatballs",
+        "liver"
+      ]
+    },
+    {
+      "name": "meat preparation",
+      "explanation": "Ways to prepare meat for food.",
+      "entries": [
+        "grilled",
+        "broiled",
+        "pan-fried",
+        "cooked"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare foodstuffs.",
+      "entries": [
+        "ginseng",
+        "{lib:plant#spice}"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary foodstuffs once rumoured to have existed.",
+      "entries": [
+        "manna",
+        "ambrosia"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary foodstuffs for fantasy worlds.",
+      "entries": [
+        "{mythological}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Foodstuffs for modern worlds.",
+      "entries": [
+        "{common}",
+        "potato",
+        "corn",
+        "tomato",
+        "rice"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary foodstuffs for science fiction worlds.",
+      "entries": [
+        "{modern}"
+      ]
+    },
+    {
+      "name": "scent",
+      "explanation": "Food scents.",
+      "entries": [
+        "foul-smelling",
+        "smelly",
+        "nut-scented",
+        "rich-scented",
+        "pleasantly smelling",
+        "sweet-scented"
+      ]
+    },
+    {
+      "name": "taste",
+      "explanation": "Food tastes.",
+      "entries": [
+        "{bad taste}",
+        "{neutral taste}",
+        "{strong taste}",
+        "{good taste}",
+        "{strength} {herb} flavored",
+        "{strength} flavored with {lib:plant#spice}"
+      ]
+    },
+    {
+      "name": "bad taste",
+      "explanation": "Foul tastes.",
+      "entries": [
+        "putrid",
+        "decaying",
+        "rotten",
+        "vile",
+        "horrid",
+        "foul-tasting",
+        "disgusting",
+        "bitter",
+        "acrid",
+        "oversalted"
+      ]
+    },
+    {
+      "name": "neutral taste",
+      "explanation": "Neutral tastes.",
+      "entries": [
+        "sour",
+        "salty",
+        "peppery",
+        "astringent",
+        "buttery",
+        "meaty",
+        "rich"
+      ]
+    },
+    {
+      "name": "strong taste",
+      "explanation": "Pleasant tastes.",
+      "entries": [
+        "acrid",
+        "pungent",
+        "sharp",
+        "stinging",
+        "poignant",
+        "biting",
+        "burning",
+        "perky",
+        "spicy",
+        "piquant",
+        "highly seasoned",
+        "tangy"
+      ]
+    },
+    {
+      "name": "good taste",
+      "explanation": "Pleasant tastes.",
+      "entries": [
+        "tasty",
+        "appetizing",
+        "flavorful",
+        "pungent",
+        "spicy",
+        "nutty flavored",
+        "aromatic",
+        "mellow",
+        "sweet",
+        "delectable",
+        "delicious"
+      ]
+    },
+    {
+      "name": "strength",
+      "explanation": "How strongly the scent or flavor feels?",
+      "entries": [
+        "subtly",
+        "mildly",
+        "slightly",
+        "somewhat",
+        "moderately",
+        "distinctly",
+        "sharply",
+        "strongly",
+        "very strongly",
+        "intolerably"
+      ]
+    },
+    {
+      "name": "flavoring",
+      "explanation": "Food flavorings.",
+      "entries": [
+        "honey mead",
+        "cider",
+        "ale",
+        "wine"
+      ]
+    },
+    {
+      "name": "structure",
+      "explanation": "Food structures.",
+      "entries": [
+        "almost runny",
+        "moist",
+        "creamy",
+        "creamy-granular",
+        "granular",
+        "crumbly",
+        "smooth",
+        "semi-firm",
+        "firm",
+        "dense"
+      ]
+    },
+    {
+      "name": "finishing",
+      "explanation": "Food finishings.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "served with {side dish}"
+        },
+        "wrapped in {wrapping}"
+      ]
+    },
+    {
+      "name": "side dish",
+      "explanation": "Side dishes served with the main course.",
+      "entries": [
+        "{condiment} gravy",
+        "{condiment} sauce",
+        "{condiment} dressing",
+        "{condiment} paste",
+        "{condiment} dip",
+        "{condiment} spread"
+      ]
+    },
+    {
+      "name": "condiment",
+      "explanation": "Types of condiments.",
+      "entries": [
+        "{berry}",
+        "{herb}",
+        "{lib:plant#spice}",
+        "{fish}",
+        "{meat}",
+        "brown",
+        "white",
+        "hot",
+        "butter",
+        "sweet"
+      ]
+    },
+    {
+      "name": "common spice",
+      "explanation": "Common spices.",
+      "entries": [
+        "salt",
+        "horseradish",
+        "aniseed"
+      ]
+    },
+    {
+      "name": "wrapping",
+      "explanation": "Food wrappings.",
+      "entries": [
+        "crust",
+        "{vegetable} leaves"
+      ]
+    }
+  ]
+}

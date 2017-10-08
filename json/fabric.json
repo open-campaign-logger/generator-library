@@ -1,23 +1,401 @@
 {
-	"name": "Fabric Generator",
-	"resultPattern": "{fabric}",
-	"tables": [
-		{
-			"name": "fabric",
-			"entries": [
-		    	"cotton",
-        		"damask",
-        		"flax",
-        		"fur",
-        		"hemp",
-        		"leather",
-        		"linen",
-        		"ramie",
-        		"silk",
-        		"tafetta",
-        		"velvet",
-        		"wool"
-			]
-		}
-	]
+  "name": "fabric table",
+  "resultPattern": "{fabric}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Fabrics for clothing and treasure tables.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "",
+  "see": "material",
+  "date": "2017-10-06",
+  "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "category": "item",
+  "tags": "#material, #resource, #clothing",
+  "tables": [
+    {
+      "name": "fabric",
+      "explanation": "Fabric types.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common fabric types.",
+      "entries": [
+        "{animal}",
+        "{plant}"
+      ]
+    },
+    {
+      "name": "animal",
+      "explanation": "Animal-based fabrics.",
+      "entries": [
+        "{fur}",
+        "{leather}",
+        "{wool}"
+      ]
+    },
+    {
+      "name": "fur",
+      "explanation": "Variations of fur.",
+      "entries": [
+        "rabbit fur",
+        "otter fur",
+        "beaver fur",
+        "fox fur",
+        "wolf pelt",
+        "bearskin",
+        "{precious fur}"
+      ]
+    },
+    {
+      "name": "precious fur",
+      "explanation": "Variations of fur.",
+      "entries": [
+        "marten fur",
+        "sable fur",
+        "mink fur"
+      ]
+    },
+    {
+      "name": "leather",
+      "explanation": "Variations of common leather.",
+      "entries": [
+        "{leather type}",
+        "{leather type} dyed {lib:color}",
+        "full sauvage (finely dyed) {lib:color} {leather type}",
+        "{leather finishing} {leather type}",
+        "{leather finishing} {leather type} dyed {lib:color}",
+        "full sauvage (finely dyed) {lib:color} {leather finishing} {leather type}"
+      ]
+    },
+    {
+      "name": "leather type",
+      "explanation": "Common leather types.",
+      "entries": [
+        "rawhide (untanned leather)",
+        "shagreen (rough untanned leather)",
+        "deerskin leather",
+        "pigskin leather",
+        "goatskin leather (soft but tough)",
+        "sheepskin leather (soft and thin)",
+        "shearling leather (tanned sheep skin with short wool)",
+        "oxskin leather",
+        "chamois leather (soft and porous)",
+        "buckskin leather (suede-like)",
+        "horse leather",
+        "cordovan (high-quality horse leather)",
+        "{rare leather}"
+      ]
+    },
+    {
+      "name": "soft leather",
+      "explanation": "Soft leather types.",
+      "entries": [
+        "lambskin leather (very soft leather from young sheep)",
+        "kidskin leather (very soft leather from young goats)",
+        "calfskin leather (soft and fine leather from young cows)",
+        "slink leather (soft skin of unborn calves)"
+      ]
+    },
+    {
+      "name": "rare leather",
+      "explanation": "Rare leather types.",
+      "entries": [
+        "sealskin leather",
+        "snakeskin leather",
+        "lizardskin leather",
+        "{fishskin}"
+      ]
+    },
+    {
+      "name": "fishskin",
+      "explanation": "Variations of fishskin leather.",
+      "entries": [
+        "salmon skin (strong, fine scales)",
+        "cod skin (fine scales)",
+        "perch skin (large, soft scales)",
+        "sturgeon leather",
+        "eelskin (smooth and shiny)"
+      ]
+    },
+    {
+      "name": "leather finishing",
+      "explanation": "Types of leather finish.",
+      "entries": [
+        "cuir bouilli (boiled hard)"
+      ]
+    },
+    {
+      "name": "wool",
+      "explanation": "Variations of wool.",
+      "entries": [
+        "{wool quality} {wool type}",
+        "{wool type}",
+        "wool"
+      ]
+    },
+    {
+      "name": "wool quality",
+      "explanation": "Fineness of wool.",
+      "entries": [
+        "low quality",
+        "britch (coarse and kempy)",
+        "top-not (coarse and rough)",
+        "choice (medium strong)",
+        "fine (very dense)"
+      ]
+    },
+    {
+      "name": "wool type",
+      "explanation": "Wool types by source.",
+      "entries": [
+        "sheep wool",
+        "weaner fleece (from young sheep)",
+        "lambswool (soft)",
+        "goat wool"
+      ]
+    },
+    {
+      "name": "plant",
+      "explanation": "Plant-based fabrics.",
+      "entries": [
+        "jute (coarse and strong)",
+        "cotton",
+        "hemp",
+        "linen (from the flax plant)",
+        "cotton damask",
+        "wool damask",
+        "linen damask"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare fabric types.",
+      "entries": [
+        "tafetta",
+        "velvet",
+        "linen lace",
+        "silk",
+        "silk damask",
+        "silk lace",
+        "silk gauze (thin and translucent)",
+        "wild silk (from non-cultivated silk worms)",
+        "sea silk (produced from seashell filaments)"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary fabrics once rumoured to have existed.",
+      "entries": [
+        "fairy silk",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary fabrics once rumoured to have existed.",
+      "entries": [
+        "{mythological}",
+        "fabric spun from the thread of the Fates"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary fabrics for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "hair",
+        "spider silk",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary fabrics for fantasy worlds.",
+      "entries": [
+        "{fantasy}",
+        "insect wings",
+        "copper lace",
+        "silver lace",
+        "gold lace",
+        "dragon scale"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Fabrics for modern worlds.",
+      "entries": [
+        "{common}",
+        "denim",
+        "chino",
+        "{modern organic}",
+        "{modern leather}",
+        "{exotic leather}",
+        "{exotic plant}",
+        "{exotic animal}",
+        "{mixed synthetic}",
+        "{semisynthetic}",
+        "{synthetic}",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "modern organic",
+      "explanation": "Mixed organic fabrics.",
+      "entries": [
+        "ramie (plant fibre) and wool",
+        "cork leather (imitation leather for cork tree bark)",
+        "ocean leather (manufactured from kelp)"
+      ]
+    },
+    {
+      "name": "modern leather",
+      "explanation": "Modern (often cheaper to manufacture) leather types.",
+      "entries": [
+        "composition leather (hide trimmings bonded to a fabric layer)",
+        "bonded (layered with fiber backer)",
+        "bicast leather (with polyurethane finishing)",
+        "nubuck leather (suede-like, sanded surface)",
+        "suede (soft, vulnerable leather)",
+        "napa leather (soft)",
+        "patent leather (with a shiny coating)",
+        "pull-up aniline leather (slightly dyed high-quality leather with wax coating)",
+        "semi aniline leather (slightly dyed leather with a protective layer added)",
+        "full aniline leather (slightly dyed high-quality leather)"
+      ]
+    },
+    {
+      "name": "exotic leather",
+      "explanation": "Exotic leather types.",
+      "entries": [
+        "bison leather",
+        "kangaroo leather (thin but strong)",
+        "ostrich leather (with distinct quill follicles)",
+        "alligator skin",
+        "shark skin"
+      ]
+    },
+    {
+      "name": "exotic plant",
+      "explanation": "Exotic plant-based fabrics.",
+      "entries": [
+        "bamboo fiber",
+        "ramie (plant fiber)",
+        "coir (coconut fiber)",
+        "piña (pineapple fiber)",
+        "banana fiber"
+      ]
+    },
+    {
+      "name": "exotic animal",
+      "explanation": "Exotic animal-based fabrics.",
+      "entries": [
+        "camel hair",
+        "merino wool",
+        "cashmere wool (fine and soft)",
+        "pashmina (fine cashmere wool)",
+        "mohair (goat) wool",
+        "angora (fluffy rabbit) wool",
+        "chiengora (dog wool)",
+        "alpaca fleece (soft and luxurious)",
+        "llama wool",
+        "vicuña wool",
+        "yak wool",
+        "nutria fur",
+        "qiviut (musk ox wool)"
+      ]
+    },
+    {
+      "name": "mixed synthetic",
+      "explanation": "Mixed synthetic fabrics.",
+      "entries": [
+        "polyester and cotton",
+        "cotton and modal",
+        "spandex and modal"
+      ]
+    },
+    {
+      "name": "semisynthetic",
+      "explanation": "Semisynthetic fabrics.",
+      "entries": [
+        "modal (spinned cellulose fiber)",
+        "rayon (manufactured cellulose fiber)",
+        "azlon (synthetic textile from natural materials)"
+      ]
+    },
+    {
+      "name": "synthetic",
+      "explanation": "Synthetic fabrics.",
+      "entries": [
+        "nylon (imitation silk)",
+        "acrylic (imitation wool)",
+        "polyester",
+        "faux fur",
+        "spandex",
+        "{microfiber}"
+      ]
+    },
+    {
+      "name": "imitation leather",
+      "explanation": "Imitation leather types.",
+      "entries": [
+        "imitation leather",
+        "artificial leather",
+        "leatherette (fabric base covered with plastic)",
+        "PU leather (polyurethane)",
+        "pleather (plastic leather)",
+        "faux leather",
+        "vegan leather"
+      ]
+    },
+    {
+      "name": "microfiber",
+      "explanation": "Microfiber-based fabrics.",
+      "entries": [
+        "microsuede (suede-style microfiber)",
+        "alcantara (suede-like microfiber)",
+        "ultrasuede (ultra-microfiber textile)"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare fabrics for modern worlds.",
+      "entries": [
+        "{modern}",
+        "asbestos cloth",
+        "plastic fiber",
+        "carbon fiber",
+        "kevlar"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary fabrics for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "glass fiber",
+        "metallic fiber",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary fabrics for science fiction worlds.",
+      "entries": [
+        "{futuristic}",
+        "basalt fiber",
+        "self-mending fabric"
+      ]
+    }
+  ]
 }

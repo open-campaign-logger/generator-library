@@ -1,0 +1,142 @@
+{
+  "name": "magician table",
+  "resultPattern": "{magician}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Variations of magicians.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "Mythological, fantasy and futuristic subtables.",
+  "see": "magic, magical_technique, magical_instrument, spellcasting",
+  "date": "2017-10-06",
+  "authors": "Esko Vesala",
+  "sources": "SummitLighthouse.org, Wikipedia.org",
+  "genre": "universal",
+  "category": "magic",
+  "tags": "#person, #magic",
+  "tables": [
+    {
+      "name": "magician",
+      "explanation": "Magician types.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common magicians.",
+      "entries": [
+        "folk healer",
+        "healer",
+        "shaman",
+        "druid",
+        "seer",
+        "conjurer",
+        "wisewoman",
+        "white witch",
+        "witch",
+        "warlock (male witch)",
+        "alchemist"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare magicians.",
+      "entries": [
+        "sorcerer",
+        "wizard",
+        "oracle",
+        "haruspex (diviner reading entrails)"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary magicians once rumoured to have existed.",
+      "entries": [
+        "kabbalist",
+        "magus",
+        "gnostic",
+        "dervish",
+        "divinely inspired prophet",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary magicians once rumoured to have existed.",
+      "entries": [
+        "{mythological}",
+        "incarnation of a divinity"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary magicians for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "gifted (innate magician)",
+        "channeler (harnesses a supernatural force)",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary magicians for fantasy worlds.",
+      "entries": [
+        "chaos mage (using random magic)",
+        "wild mage (using uncontrolled magic)",
+        "spellsinger"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Magicians for modern worlds.",
+      "entries": [
+        "{common}",
+        "neopagan magician",
+        "astrologist",
+        "new age magician",
+        "wicca (modern witch)",
+        "rosicrucianist (modern alchemist)",
+        "theosophist ('scientific' spiritualist)",
+        "tantrist (channeling sexual energy into magic)",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare magicians for modern worlds.",
+      "entries": [
+        "{modern}",
+        "chaote (chaos magician)",
+        "ariosophist (follower of Aryan occult wisdom)",
+        "Thule Society magician",
+        "orgone technician (controls esoteric orgone energy)",
+        "ascended master"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary magicians for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "cybermage (augmented with technology)",
+        "technomage (using magic via machines)",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary magicians for science fiction worlds.",
+      "entries": [
+        "{futuristic}",
+        "force adept (using energy field created by life)"
+      ]
+    }
+  ]
+}

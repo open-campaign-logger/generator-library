@@ -1,0 +1,137 @@
+{
+  "name": "modifier table",
+  "resultPattern": "{modifier}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Strengthening intensifiers and weakening mitigators for adjectives in descriptions.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "Does not include 'quite', as its meaning can vary.",
+  "to do": "Genre-specific modifiers?",
+  "see": "",
+  "date": "2017-10-06",
+  "authors": "Esko Vesala",
+  "sources": "BritishCouncil.org, EF.com.",
+  "genre": "universal",
+  "category": "utility",
+  "tags": "#language",
+  "tables": [
+    {
+      "name": "modifier",
+      "explanation": "Basic modifiers.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common modifiers.",
+      "entries": [
+        "{weak}",
+        "{neutral}",
+        "{intermediate}",
+        "{strong}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare modifiers.",
+      "entries": [
+        "{zero}",
+        "{absolute}"
+      ]
+    },
+    {
+      "name": "zero",
+      "explanation": "Nullifying mitigators.",
+      "entries": [
+        "nothing like",
+        "not at all",
+        "not even nearly",
+        "a great deal less than"
+      ]
+    },
+    {
+      "name": "weak",
+      "explanation": "Weak mitigators.",
+      "entries": [
+        "not especially",
+        "not particularly",
+        "just a little bit",
+        "a little bit",
+        "just a bit",
+        "a bit",
+        "a little",
+        "slightly",
+        "fairly",
+        "rather",
+        "pretty",
+        "somewhat"
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Neutral modifiers.",
+      "entries": [
+        " ",
+        "kind of",
+        "no less than",
+        "nothing less than",
+        "nothing more than",
+        "nothing short of",
+        "clearly",
+        "positevely",
+        "undoubtedly",
+        "unquestionably"
+      ]
+    },
+    {
+      "name": "intermediate",
+      "explanation": "intermediate intensifiers.",
+      "entries": [
+        "very",
+        "really",
+        "highly",
+        "downright",
+        "truly"
+      ]
+    },
+    {
+      "name": "strong",
+      "explanation": "Strong intensifiers.",
+      "entries": [
+        "remarkably",
+        "significantly",
+        "especially",
+        "exceedingly",
+        "exceptionally",
+        "extremely",
+        "seriously",
+        "particularly",
+        "uncommonly",
+        "unusually",
+        "terribly",
+        "amazingly",
+        "incredibly",
+        "insanely"
+      ]
+    },
+    {
+      "name": "absolute",
+      "explanation": "Absolute intensifiers.",
+      "entries": [
+        "completely",
+        "entirely",
+        "totally",
+        "utterly",
+        "perfectly",
+        "absolutely",
+        "ultimately"
+      ]
+    }
+  ]
+}

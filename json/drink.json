@@ -1,0 +1,222 @@
+{
+  "name": "Drink Generator",
+  "resultPattern": "{appearance} {beverage}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Drink for resource tables. Subtable classification is based on everyday usage, not scientific taxonomy.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "More content.",
+  "see": "food",
+  "date": "2017-10-04",
+  "authors": "Esko Vesala.",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "category": "item",
+  "tags": "#food, #drink, #tavern",
+  "tables": [
+    {
+      "name": "appearance",
+      "explanation": "The appearance of the food.",
+      "entries": [
+        "{scent}",
+        "{strength} {scent}",
+        "{taste}",
+        "{strength} {taste}",
+        "{structure}"
+      ]
+    },
+    {
+      "name": "beverage",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common beverages.",
+      "entries": [
+        "{water}",
+        "{juice}",
+        "{alcohol}"
+      ]
+    },
+    {
+      "name": "water",
+      "explanation": "Water-based drinks.",
+      "entries": [
+        "spring water",
+        "well water"
+      ]
+    },
+    {
+      "name": "juice",
+      "explanation": "Juice-based drinks.",
+      "entries": [
+        "{fruit} juice"
+      ]
+    },
+    {
+      "name": "fruit",
+      "explanation": "Juice fruits.",
+      "entries": [
+        "apple",
+        "grape"
+      ]
+    },
+    {
+      "name": "alcohol",
+      "explanation": "Alcoholic beverages.",
+      "entries": [
+        "{mead}",
+        "{cider}",
+        "{ale}",
+        "{wine}"
+      ]
+    },
+    {
+      "name": "mead",
+      "explanation": "Mead-based drinks.",
+      "entries": [
+        "mead"
+      ]
+    },
+    {
+      "name": "cider",
+      "explanation": "Cider-based drinks.",
+      "entries": [
+        "cider"
+      ]
+    },
+    {
+      "name": "ale",
+      "explanation": "Ale-based drinks.",
+      "entries": [
+        "ale"
+      ]
+    },
+    {
+      "name": "wine",
+      "explanation": "Wine-based drinks.",
+      "entries": [
+        "red wine",
+        "white wine",
+        "rosé wine",
+        "sparkling wine"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare beverages.",
+      "entries": [
+        "exotic juice"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary beverages once rumoured to have existed.",
+      "entries": [
+        "nectar (drink of the gods)"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary beverages for fantasy worlds.",
+      "entries": [
+        "{mythological}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Beverages for modern worlds.",
+      "entries": [
+        "{common}",
+        "coffee",
+        "tea",
+        "lemonade"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary beverages for science fiction worlds.",
+      "entries": [
+        "{modern}"
+      ]
+    },
+    {
+      "name": "scent",
+      "explanation": "Beverage scents.",
+      "entries": [
+        "foul-smelling",
+        "smelly",
+        "nut-scented",
+        "rich-scented",
+        "pleasantly smelling",
+        "sweet-scented"
+      ]
+    },
+    {
+      "name": "taste",
+      "explanation": "Beverage tastes. (Utilizing the still unreleased subtable call feature.)",
+      "entries": [
+        "foul-tasting",
+        "sharp-tasting",
+        "strong",
+        "buttery",
+        "rich",
+        "mild",
+        "pungent",
+        "salty",
+        "sour",
+        "bitter",
+        "tasty",
+        "spicy",
+        "nutty flavored",
+        "mellow",
+        "tangy",
+        "sweet",
+        "delicious",
+        "{strength} {lib:food#herb} flavored",
+        "{strength} flavored with {lib:plant#spice}"
+      ]
+    },
+    {
+      "name": "bad taste",
+      "explanation": "How strongly the scent or flavor feels?",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "strength",
+      "explanation": "How strongly the scent or flavor feels?",
+      "entries": [
+        "subtly",
+        "mildly",
+        "slightly",
+        "somewhat",
+        "moderately",
+        "distinctly",
+        "sharply",
+        "strongly",
+        "very strongly",
+        "intolerably"
+      ]
+    },
+    {
+      "name": "structure",
+      "explanation": "How is the structure like?",
+      "entries": [
+        "watery",
+        "bubbly",
+        "thick"
+      ]
+    }
+  ]
+}

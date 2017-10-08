@@ -1,51 +1,336 @@
 {
-	"name": "Adjective, Place Generator",
-	"resultPattern": "{adjPlace}",
-	"tables": [
-		{
-			"name": "adjPlace",
-			"entries": [
-			    "abandoned",
-			    "accursed",
-			    "aged",
-        		"ancestral",
-        		"ancient",
-		    	"brilliant",
-        		"crumbling",
-        		"cursed",
-        		"decaying",
-        		"desolate",
-        		"diseased",
-        		"eerie",
-        		"enchanted",
-		        "ethereal",
-        		"fallen",
-        		"flaming",
-        		"flooded",
-        		"forboding",
-        		"frozen",
-        		"ghostly",
-        		"glorious",
-        		"great",
-        		"hallowed",
-        		"haunted",
-        		"holy",
-        		"horrific",
-        		"hidden",
-        		"labyrnthine",
-        		"lowly",
-        		"magical",
-        		"melancholic",
-        		"menacing",
-        		"monster-ridden",
-        		"perilous",
-        		"ruined",
-        		"shadowy",
-        		"spectral",
-        		"sunken",
-        		"thundering",
-        		"treasure-filled"
-			]
-		}
-	]
+  "name": "adjective: place",
+  "resultPattern": "{adjective}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Adjectives for describing locations.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "Adjectives have been grouped by the associated mood.",
+  "bugs": "",
+  "to do": "More moods: poor, vile.",
+  "see": "adjThing",
+  "date": "2017-10-07",
+  "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "category": "location",
+  "tags": "#location, #atmosphere, #mood, #adjective",
+  "tables": [
+    {
+      "name": "adjective",
+      "explanation": "Moods for adjectives, by scarcity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common mood types.",
+      "entries": [
+        "{negative}",
+        "{neutral}",
+        "{positive}"
+      ]
+    },
+    {
+      "name": "negative",
+      "explanation": "Negative moods.",
+      "entries": [
+        "{threatening}",
+        "{corrupted}",
+        "{gloomy}",
+        "{weird}"
+      ]
+    },
+    {
+      "name": "threatening",
+      "explanation": "Threatening adjectives.",
+      "entries": [
+        "ghastly",
+        "ghostly",
+        "haunted",
+        "horrific",
+        "menacing",
+        "monster-ridden",
+        "perilous",
+        "treacherous"
+      ]
+    },
+    {
+      "name": "corrupted",
+      "explanation": "corrupted adjectives.",
+      "entries": [
+        "collapsed",
+        "corrupt",
+        "crumbling",
+        "decaying",
+        "defiled",
+        "deserted",
+        "destroyed",
+        "diseased",
+        "fallen",
+        "flooded",
+        "ruined",
+        "ruinous",
+        "sunken",
+        "tainted"
+      ]
+    },
+    {
+      "name": "gloomy",
+      "explanation": "Gloomy adjectives.",
+      "entries": [
+        "abandoned",
+        "accursed",
+        "cursed",
+        "desolate",
+        "forgotten",
+        "forsaken",
+        "gloomy",
+        "isolated",
+        "lorn",
+        "melancholic",
+        "unfrequented"
+      ]
+    },
+    {
+      "name": "weird",
+      "explanation": "Weird adjectives.",
+      "entries": [
+        "bizarre",
+        "eerie",
+        "foreboding",
+        "grotesque",
+        "shadowy",
+        "spectral",
+        "uncanny",
+        "unnatural",
+        "weird"
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Neutral moods.",
+      "entries": [
+        "{modest}",
+        "{mysterious}"
+      ]
+    },
+    {
+      "name": "modest",
+      "explanation": "Modest adjectives.",
+      "entries": [
+        "humble",
+        "lowly",
+        "meek",
+        "modest",
+        "mundane",
+        "simple",
+        "unassuming"
+      ]
+    },
+    {
+      "name": "mysterious",
+      "explanation": "Mysterious adjectives.",
+      "entries": [
+        "cryptic",
+        "enigmatic",
+        "hidden",
+        "inscrutable",
+        "labyrinthine",
+        "secretive",
+        "unseen",
+        "vanished",
+        "veiled"
+      ]
+    },
+    {
+      "name": "positive",
+      "explanation": "Positive moods.",
+      "entries": [
+        "{peaceful}",
+        "{magnificent}"
+      ]
+    },
+    {
+      "name": "peaceful",
+      "explanation": "Peaceful adjectives.",
+      "entries": [
+        "calm",
+        "halcyon",
+        "harmonious",
+        "peaceful",
+        "quiet",
+        "tranquil",
+        "undisturbed",
+        "untroubled"
+      ]
+    },
+    {
+      "name": "magnificent",
+      "explanation": "Magnificent adjectives.",
+      "entries": [
+        "brilliant",
+        "glorious",
+        "grand",
+        "grandiose",
+        "great",
+        "impressive",
+        "lofty",
+        "magnificent",
+        "sublime",
+        "towering"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare moods.",
+      "entries": [
+        "{age}",
+        "{temperature}",
+        "{weather}",
+        "{otherworldliness}"
+      ]
+    },
+    {
+      "name": "age",
+      "explanation": "Age-related moods.",
+      "entries": [
+        "{old}",
+        "{new}"
+      ]
+    },
+    {
+      "name": "old",
+      "explanation": "Old adjectives.",
+      "entries": [
+        "age-old",
+        "aged",
+        "ancestral",
+        "ancient",
+        "archaic",
+        "primordial",
+        "timeworn",
+        "venerable"
+      ]
+    },
+    {
+      "name": "new",
+      "explanation": "New adjectives.",
+      "entries": [
+        "recent",
+        "unblemished",
+        "uncorrupt",
+        "undefiled",
+        "unspoiled",
+        "untainted",
+        "untouched",
+        "untrodden",
+        "virginal"
+      ]
+    },
+    {
+      "name": "temperature",
+      "explanation": "Temperature-related moods.",
+      "entries": [
+        "{cold}",
+        "{hot}"
+      ]
+    },
+    {
+      "name": "cold",
+      "explanation": "Cold adjectives.",
+      "entries": [
+        "cold",
+        "chilly",
+        "freezing",
+        "frigid",
+        "frost-bound",
+        "frosty",
+        "frozen",
+        "glacial",
+        "icy",
+        "wintry"
+      ]
+    },
+    {
+      "name": "hot",
+      "explanation": "Hot adjectives.",
+      "entries": [
+        "blazing",
+        "burning",
+        "fiery",
+        "flaming",
+        "glowing",
+        "shimmering",
+        "sunlit"
+      ]
+    },
+    {
+      "name": "weather",
+      "explanation": "Weather-related moods.",
+      "entries": [
+        "{stormy}"
+      ]
+    },
+    {
+      "name": "stormy",
+      "explanation": "Stormy adjectives.",
+      "entries": [
+        "storm-beaten",
+        "stormful",
+        "tempestuous",
+        "thundering",
+        "thundery",
+        "turbulent",
+        "weather-beaten",
+        "windswept"
+      ]
+    },
+    {
+      "name": "otherworldliness",
+      "explanation": "Otherworldliness-related moods.",
+      "entries": [
+        "{bleak}",
+        "{wondrous}"
+      ]
+    },
+    {
+      "name": "bleak",
+      "explanation": "Bleak adjectives.",
+      "entries": [
+        "bleak",
+        "derelict",
+        "desolate",
+        "dreary",
+        "forsaken",
+        "gaunt",
+        "grim"
+      ]
+    },
+    {
+      "name": "wondrous",
+      "explanation": "Wondrous adjectives.",
+      "entries": [
+        "enchanted",
+        "ethereal",
+        "glittering",
+        "hallowed",
+        "holy",
+        "luminous",
+        "magical",
+        "phantasmal",
+        "radiant",
+        "shining",
+        "treasure-filled",
+        "unearthly",
+        "wondrous"
+      ]
+    }
+  ]
 }

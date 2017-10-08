@@ -1,0 +1,200 @@
+{
+  "name": "temperature table",
+  "resultPattern": "{temperature}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Temperatures for environment and material tables.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "Mythological, fantasy and modern subtables.",
+  "see": "energy, liquid, material",
+  "date": "2017-10-06",
+  "authors": "Esko Vesala.",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "category": "utility",
+  "tags": "#description, #environment, #quality",
+  "tables": [
+    {
+      "name": "temperature",
+      "explanation": "Variations of warmth.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common temperatures for generic worlds.",
+      "entries": [
+        "{cold}",
+        "{cool}",
+        "{neutral}",
+        "{lukewarm}",
+        "{warm}",
+        "{hot}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare temperatures for generic worlds.",
+      "entries": [
+        "{frozen}",
+        "{boiling}"
+      ]
+    },
+    {
+      "name": "frozen",
+      "explanation": "Frozen temperatures.",
+      "entries": [
+        "frozen",
+        "freezing cold",
+        "freezing"
+      ]
+    },
+    {
+      "name": "cold",
+      "explanation": "Cold temperatures.",
+      "entries": [
+        "cold",
+        "frosty cold",
+        "frigid",
+        "icy",
+        "{lib:modifier#intermediate} cold",
+        "{lib:modifier#strong} cold"
+      ]
+    },
+    {
+      "name": "cool",
+      "explanation": "Cold temperatures.",
+      "entries": [
+        "cool",
+        "{lib:modifier#weak} cold"
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Neutral temperatures.",
+      "entries": [
+        " ",
+        "room-temperature"
+      ]
+    },
+    {
+      "name": "lukewarm",
+      "explanation": "Mild temperatures.",
+      "entries": [
+        "lukewarm",
+        "mild"
+      ]
+    },
+    {
+      "name": "warm",
+      "explanation": "Warm temperatures.",
+      "entries": [
+        "warm",
+        "heated",
+        "{lib:modifier#weak} hot"
+      ]
+    },
+    {
+      "name": "hot",
+      "explanation": "Hot temperatures.",
+      "entries": [
+        "hot",
+        "{lib:modifier#intermediate} hot",
+        "{lib:modifier#strong} hot"
+      ]
+    },
+    {
+      "name": "boiling",
+      "explanation": "Boiling temperatures.",
+      "entries": [
+        "boiling",
+        "broiling",
+        "burning hot",
+        "fiery hot",
+        "scalding",
+        "schorching",
+        "sizzling"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary temperatures once rumoured to have existed.",
+      "entries": [
+        "burning as dragon's breath",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary temperatures once rumoured to have existed.",
+      "entries": [
+        "burning as hellfire"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary temperatures for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "as hot as magical flame",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary temperatures for fantasy worlds.",
+      "entries": [
+        "as hot as the paraelemental plane of ice",
+        "as hot as the elemental plane of fire"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Temperatures for modern worlds.",
+      "entries": [
+        "{common}",
+        "the temperature of an incandescent light bulb (2000 °C)",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare temperatures for modern worlds.",
+      "entries": [
+        "superheated (hotter than normal boiling point)"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary temperatures for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "the temperature of the cosmic microwave background (−270.424 °C)",
+        "Sun's surface temperature (5500 °C)",
+        "the temperature of a lightning bolt (28,000 °C)"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary temperatures for science fiction worlds.",
+      "entries": [
+        "absolute zero",
+        "the temperature of Sun's core (16 million °C)",
+        "the temperature produced by a thermonuclear weapon (350 million °C)",
+        "the temperatures procuded by a high frequency electromagnetic wave generator (2 billion °C)",
+        "the temperature of the core of a dying high-mass star (3 billion °C)",
+        "the temperature of a merging binary neutron star system (350 billion °C)",
+        "the temperature of a heavy ion collision (1 trillion °C)",
+        "the temperature of a proton vs nucleus collision (10 trillion °C)",
+        "the temperature of the Big Bang (1.4E32 °C)"
+      ]
+    }
+  ]
+}

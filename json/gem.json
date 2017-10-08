@@ -1,51 +1,96 @@
 {
-	"name": "Gem Generator",
-	"resultPattern": "{gem}",
-	"tables": [
-		{
-			"name": "gem",
-			"entries": [
-		    	"agate",
-        		"alexandrite",
-        		"amber",
-        		"amethyst",
-        		"aquamarine",
-        		"azurite",
-        		"black pearl",
-        		"bloodstone",
-        		"carnelian",
-        		"chalcedony",
-        		"chrysoberyl",
-        		"chrysoprase",
-        		"citrine",
-        		"coral",
-        		"diamond",
-        		"emerald",
-        		"garnet",
-        		"hematite",
-        		"jacinth",
-        		"jade",
-        		"jasper",
-        		"jet",
-        		"lapis lazuli",
-        		"malachite",
-        		"moonstone",
-        		"obsidian",
-        		"opal",
-        		"pearl",
-        		"peridot",
-        		"quartz",
-        		"rhodochrosite",
-        		"ruby",
-        		"sapphire",
-        		"sardonyx",
-        		"spinel",
-        		"tiger eye",
-        		"topaz",
-        		"tourmaline",
-        		"turquoise",
-        		"zircon"
-			]
-		}
-	]
+  "name": "gem table",
+  "resultPattern": "{gem}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Gems for resource and treasure tables.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "More content, better organization.",
+  "see": "material",
+  "date": "2017-10-04",
+  "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "sources": "Wikipedia.org.",
+  "genre": "universal",
+  "category": "item",
+  "tags": "#treasure, #material, #resource",
+  "tables": [
+    {
+      "name": "gem",
+      "explanation": "Gem types.",
+      "entries": [
+        "{mineral gemstone}",
+        "{organic gemstone}"
+      ]
+    },
+    {
+      "name": "mineral gemstone",
+      "explanation": "Common mineral gemstones.",
+      "entries": [
+        "malachite",
+        "agate",
+        "alexandrite",
+        "amethyst",
+        "aquamarine",
+        "azurite",
+        "bloodstone",
+        "carnelian",
+        "chalcedony",
+        "chrysoberyl",
+        "chrysoprase",
+        "citrine",
+        "emerald",
+        "garnet",
+        "hematite",
+        "jacinth",
+        "jade",
+        "jasper",
+        "lapis lazuli",
+        "moonstone",
+        "obsidian",
+        "opal",
+        "peridot",
+        "quartz",
+        "rhodochrosite",
+        "ruby",
+        "sapphire",
+        "sardonyx",
+        "spinel",
+        "tiger eye",
+        "topaz",
+        "tourmaline",
+        "turquoise",
+        "zircon",
+        "{rare mineral gemstone}"
+      ]
+    },
+    {
+      "name": "rare mineral gemstone",
+      "explanation": "Rare mineral gemstones.",
+      "entries": [
+        "diamond"
+      ]
+    },
+    {
+      "name": "organic gemstone",
+      "explanation": "Organic gemstones.",
+      "entries": [
+        "amber",
+        "mother of pearl",
+        "jet",
+        "ivory",
+        "pearl",
+        "coral",
+        "{rare organic gemstone}"
+      ]
+    },
+    {
+      "name": "rare organic gemstone",
+      "explanation": "Rare organic gemstones.",
+      "entries": [
+        "black pearl"
+      ]
+    }
+  ]
 }

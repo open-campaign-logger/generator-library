@@ -1,0 +1,208 @@
+{
+  "name": "magic table",
+  "resultPattern": "{magic}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Variations of magic.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "Mythological, fantasy and futuristic subtables.",
+  "see": "energy, magical_technique, magical_instrument, spellcasting",
+  "date": "2017-10-06",
+  "authors": "Esko Vesala",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "category": "magic",
+  "tags": "#magic, #spell, #power",
+  "tables": [
+    {
+      "name": "magic",
+      "explanation": "Magic types.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common magics.",
+      "entries": [
+        "{divination}",
+        "folk magic",
+        "hedge magic",
+        "low magic",
+        "natural magic (dealing with natural forces)",
+        "moon magic (rituals during certain phases of the moon)",
+        "alchemy",
+        "white magic (for selfless purposes)",
+        "gray magic (for neutral purposes)",
+        "black magic (for selfish purposes)",
+        "witchcraft",
+        "sorcery",
+        "nigromancy (black magic)",
+        "necromancy (dealing with the dead)"
+      ]
+    },
+    {
+      "name": "divination",
+      "explanation": "Divination types.",
+      "entries": [
+        "omen reading",
+        "dowsing (divination using a forked stick)",
+        "rhabdomancy (divination using dropped twigs)",
+        "runecasting",
+        "astrology (divination from stars)",
+        "numerology (divination from numbers)",
+        "cartomancy (divination from cards)",
+        "tarotology (divination from tarot cards)",
+        "oneiromancy (divination from dreams)",
+        "sortilege (casting of lots)",
+        "catoptromancy (divination by gazing into a mirror)",
+        "scrying (divination by gazing into a crystal)",
+        "geomancy (divination from markings left by thrown rocks)",
+        "hydromancy (divination from water ripples)",
+        "scyphomancy (divination from a liquid-filled cup)",
+        "lecanomancy (divination using a dish of water)",
+        "aeromancy (divination wind currents)",
+        "nephomancy (divination from cloud formations)",
+        "pyromancy (divination from shapes seen in fire)",
+        "chiromancy (palm reading)",
+        "macharomancy (divination by spinning a dagger)",
+        "gastromancy (divination from noises produced by the stomach)",
+        "scapulimancy (divination from bones)",
+        "augury (divination from birds' flight patterns)",
+        "alectryomancy (divination from rooster behavior)",
+        "bibliomancy (divination from randomly opened books)",
+        "belomancy (divination by shooting arrows)"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare magics.",
+      "entries": [
+        "ritual magic",
+        "ceremonial magic (using complex rituals)",
+        "high magic",
+        "seiðr (viking sorcery)",
+        "thaumaturgy (wonderworking)",
+        "chaos magic",
+        "demonology (dealing with demons)",
+        "angelology (dealing with angels)",
+        "goetia (dealing with evil entities)",
+        "theurgy (dealing with divinities)"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary magics once rumoured to have existed.",
+      "entries": [
+        "runic magic",
+        "goety (conjuration of demons)",
+        "theurgy (invocation of divinities)",
+        "maleficium (malevolent sorcery)",
+        "juju (West-African witchcraft)"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary magics once rumoured to have existed.",
+      "entries": [
+        "{mythological}",
+        "anima mundi (intrinsic connection between all living things)",
+        "hermeticism (teachings of pagan prophet Hermes Trismegistus)"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary magics for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "channeling (harnessing supernatural powers)",
+        "essence (harnessing the world's inherent magical energy)",
+        "mentalism (harnessing personal energy)",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary magics for fantasy worlds.",
+      "entries": [
+        "{fantasy}",
+        "living magic (spells are self-conscious entities)"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Magics for modern worlds.",
+      "entries": [
+        "{common}",
+        "esoteric Christianity",
+        "spiritism",
+        "neopagan magic",
+        "new age magic",
+        "wicca (modern witchcraft)",
+        "rosicrucianisn (modern alchemy)",
+        "theosophy (occult philosophy)",
+        "thelema (esoteric philosophy)",
+        "lesser magic (mental manipulation)",
+        "greater magic (focusing emotional energy)",
+        "qi (flow of vital energy)",
+        "hermetic kabbalism",
+        "voodoo",
+        "enochian magic (commanding spirits)",
+        "magick (will-based magic)",
+        "sex magic (focusing the energy of arousal)",
+        "tantrism (channeling sexual energy into magic)",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare magics for modern worlds.",
+      "entries": [
+        "satanic magic",
+        "neoshamanism",
+        "neo-druidism",
+        "Aryan occultism",
+        "ariosophy (Aryan occult wisdom)",
+        "hermetic order of golden dawn",
+        "Jungian magic",
+        "orgone technology (controls esoteric orgone energy)",
+        "stregheria (Italian-American witchcraft)",
+        "obeah (West-Indian sorcery)",
+        "brujeria (Mexican witchcraft)",
+        "quimbande (Afro-Brazilian religion)",
+        "macumba (Brazilian animistic religion)",
+        "santeria (Caribbean worship of saints)",
+        "hoodoo (African-American spirituality)",
+        "vodou (Haitian syncretic religion)",
+        "vodú (Cuban syncretic religion)",
+        "vodun (West-African spirituality)",
+        "vudú (Dominican syncretic religion)",
+        "ya sang (Thai black magic)",
+        "huna (New Age movement based on Hawaiian spirituality)"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary magics for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "technomancy (affecting technology)",
+        "magitech"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Imaginary magics for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "mystechnology (mystical technology)"
+      ]
+    }
+  ]
+}

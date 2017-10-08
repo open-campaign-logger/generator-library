@@ -1,0 +1,61 @@
+{
+  "name": "magical technique table",
+  "resultPattern": "{magic}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Magical techniques for magic tables.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "Mythological, fantasy, modern and futuristic subtables?",
+  "see": "energy, magic, magical_instrument, spellcasting",
+  "date": "2017-10-06",
+  "authors": "Esko Vesala",
+  "sources": "powerlisting.wikia.com, Wikipedia.org.",
+  "genre": "universal",
+  "category": "magic",
+  "tags": "#magic, #spell",
+  "tables": [
+    {
+      "name": "magical technique",
+      "explanation": "Types of magical techniques.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common magical techniques.",
+      "entries": [
+        "legerdemain",
+        "illusionism (creating illusions)",
+        "malediction (cursing)",
+        "banishing (eliminating forces)",
+        "purification",
+        "consecration",
+        "incantation",
+        "enchanting (attaching spells to objects)",
+        "invocation (calling entities)",
+        "conjuration (invoking spirits)",
+        "summoning",
+        "exorcism (evicting entities)",
+        "evocation (obtaining obedience)",
+        "divination (obtaining information)",
+        "transmutation (changing properties)",
+        "transfiguration (changing form)"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare magical techniques.",
+      "entries": [
+        "astral travel",
+        "eucharism (infusing with divine properties)"
+      ]
+    }
+  ]
+}

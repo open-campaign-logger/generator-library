@@ -1,0 +1,246 @@
+{
+  "name": "liquid table",
+  "resultPattern": "{liquid}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Liquids for resource tables.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "",
+  "see": "drink, material, metal, purity, temperature",
+  "date": "2017-10-04",
+  "authors": "Esko Vesala",
+  "sources": "MyVocabulary.com, Wikipedia.org.",
+  "genre": "universal",
+  "category": "item",
+  "tags": "#material",
+  "tables": [
+    {
+      "name": "liquid",
+      "explanation": "Liquid types.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common liquids.",
+      "entries": [
+        "{sewage}",
+        "{water}",
+        "{lib:drink}"
+      ]
+    },
+    {
+      "name": "sewage",
+      "explanation": "Sewer liquids.",
+      "entries": [
+        "liquid excrement",
+        "urine",
+        "sewer water",
+        "waste water",
+        "{lib:purity#impure} water",
+        "{lib:purity#unclean} water"
+      ]
+    },
+    {
+      "name": "water",
+      "explanation": "Water types.",
+      "entries": [
+        "{water type}",
+        "{lib:purity} {water type}",
+        "{lib:temperature} {water type}",
+        "{lib:temperature} {lib:purity} {water type}"
+      ]
+    },
+    {
+      "name": "water type",
+      "explanation": "Water types.",
+      "entries": [
+        "swamp water",
+        "sea water",
+        "salt water",
+        "fresh water",
+        "lake water",
+        "river water",
+        "spring water",
+        "groundwater",
+        "well water",
+        "rain water",
+        "fountain water",
+        "melted snow",
+        "melted ice",
+        "soft water",
+        "hard water (mineral-rich)",
+        "sulphuric water",
+        "magmatic water",
+        "scented water",
+        "holy water"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare liquids.",
+      "entries": [
+        "blood",
+        "tears",
+        "mercury"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary liquids once rumoured to have existed.",
+      "entries": [
+        "yellow bile (aggressive bodily humour)",
+        "black bile (melancholic bodily humour)",
+        "phlegm (apathetic bodily humour)",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary liquids once rumoured to have existed.",
+      "entries": [
+        "universal solvent",
+        "universal medicine",
+        "elixir of life",
+        "nectar (drink of the gods)",
+        "soma (divine drink of immortality)",
+        "ichor (ethereal blood of the immortals)",
+        "eitr (poisonous liquid from the time of creation)"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary liquids for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "{fantasy liquid descriptor} {fantasy beginning}{fantasy ending} {fantasy liquid type}",
+        "{fantasy liquid type} of {fantasy beginning}{fantasy ending}"
+      ]
+    },
+    {
+      "name": "fantasy liquid descriptor",
+      "explanation": "Name beginnings for imaginary liquids for fantasy worlds.",
+      "entries": [
+        {
+          "m": 10,
+          "v": " "
+        },
+        "alchemical ",
+        "enchanted ",
+        "thaumaturgic ",
+        "witches' ",
+        "wondrous ",
+        "occult ",
+        "hermetic ",
+        "arcane ",
+        "esoteric ",
+        "mystical ",
+        "magical ",
+        "chimeric ",
+        "bewitching ",
+        "elemental "
+      ]
+    },
+    {
+      "name": "fantasy beginning",
+      "explanation": "Name beginning for imaginary liquids for fantasy worlds.",
+      "entries": [
+        "dawn",
+        "night",
+        "moon",
+        "goblin",
+        "elf",
+        "fairy"
+      ]
+    },
+    {
+      "name": "fantasy ending",
+      "explanation": "Name endings for imaginary liquids for fantasy worlds.",
+      "entries": [
+        "cure",
+        "guard",
+        "ban",
+        "woe",
+        "harm",
+        "bane"
+      ]
+    },
+    {
+      "name": "fantasy liquid type",
+      "explanation": "Types of imaginary liquids for fantasy worlds.",
+      "entries": [
+        "water",
+        "drink",
+        "tonic",
+        "mixture",
+        "potion",
+        "elixir",
+        "draught",
+        "brew",
+        "mead",
+        "liquor",
+        "remedy",
+        "philter",
+        "oil",
+        "phial"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Liquids for modern worlds.",
+      "entries": [
+        "{common}",
+        "{modern water}",
+        "oil",
+        "gasoline",
+        "{modern rare}"
+      ]
+    },
+    {
+      "name": "modern water",
+      "explanation": "Water types for modern worlds.",
+      "entries": [
+        "tap water",
+        "bottled water",
+        "sparkling water",
+        "mineral water",
+        "demineralized water",
+        "distilled water",
+        "purified water",
+        "carbonated water",
+        "aerated water",
+        "fluoridated water",
+        "electrolysed water",
+        "deionized water",
+        "ionized water",
+        "sterile water",
+        "ultrapure water",
+        "contaminated water",
+        "radioactive water",
+        "bromine water"
+      ]
+    },
+    {
+      "name": "modern rare",
+      "explanation": "Rare liquids for modern worlds.",
+      "entries": [
+        "bromine"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary liquids for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "super-dense water (molecular uniformity)"
+      ]
+    }
+  ]
+}

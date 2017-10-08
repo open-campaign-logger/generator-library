@@ -1,0 +1,392 @@
+{
+  "name": "direction table",
+  "resultPattern": "{direction}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Directions from different mapping systems.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "The Greek subtables contains Greek letters, Unicode characters required.",
+  "bugs": "",
+  "to do": "",
+  "see": "adjDirection",
+  "date": "2017-10-07",
+  "authors": "Esko Vesala",
+  "sources": "wiki.Lspace.org, Wikipedia.org",
+  "genre": "universal",
+  "category": "utility",
+  "tags": "#location, #mapping",
+  "tables": [
+    {
+      "name": "direction",
+      "explanation": "Direction types by scarcity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common compass direction types.",
+      "entries": [
+        "{cardinal}",
+        "{intercardinal}",
+        "{principal winds}"
+      ]
+    },
+    {
+      "name": "cardinal",
+      "entries": [
+        "North",
+        "East",
+        "South",
+        "West"
+      ]
+    },
+    {
+      "name": "intercardinal",
+      "entries": [
+        "Northeast",
+        "Southeast",
+        "Southwest",
+        "Northwest"
+      ]
+    },
+    {
+      "name": "principal winds",
+      "entries": [
+        "North",
+        "Northeasth",
+        "East",
+        "Southeast",
+        "South",
+        "Southwest",
+        "West",
+        "Northwest"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare compass direction systems.",
+      "note": "A table name cannot begin with a number!",
+      "entries": [
+        "{sixteen winds}",
+        "{thirtytwo winds}"
+      ]
+    },
+    {
+      "name": "sixteen winds",
+      "explanation": "Principal winds and the half-winds.",
+      "entries": [
+        "North (N)",
+        "North-Northeast (NNE)",
+        "Northeast (NE)",
+        "East-Northeast (ENE)",
+        "East (E)",
+        "East-Southeast (ESE)",
+        "Southeast (SE)",
+        "South-Southeast (SSE)",
+        "South (S)",
+        "South-Southwest (SSW)",
+        "Southwest (SW)",
+        "West-Southwest (WSW)",
+        "West (W)",
+        "West-Northwest (WNW)",
+        "Northwest (NW)",
+        "North-Northwest (NNW)"
+      ]
+    },
+    {
+      "name": "thirtytwo winds",
+      "explanation": "Principal winds, half-winds and quarter winds.",
+      "entries": [
+        "North (N)",
+        "North by East (NbE)",
+        "North-Northeast (NNE)",
+        "Northeast by North (NEbN)",
+        "Northeast (NE)",
+        "Northeast by East (NEbE)",
+        "East-Northeast (ENE)",
+        "East by North (EbN)",
+        "East (E)",
+        "East by South (EbS)",
+        "East-Southeast (ESE)",
+        "Southeast by East (SEbE)",
+        "Southeast (SE)",
+        "Southeast by South (SEbS)",
+        "South-Southeast (SSE)",
+        "South by East (SbE)",
+        "South (S)",
+        "South by West (SbW)",
+        "South-Southwest (SSW)",
+        "Southwest by South (SWbS)",
+        "Southwest (SW)",
+        "Southwest by West (SWbW)",
+        "West-Southwest (WSW)",
+        "West by South (WbS)",
+        "West (W)",
+        "West by North (WbN)",
+        "West-Northwest (WNW)",
+        "Northwest by West (NWbW)",
+        "Northwest (NW)",
+        "Northwest by North (NWbN)",
+        "North-Northwest (NNW)",
+        "North by West (NbW)"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Direction systems from history.",
+      "entries": [
+        "{Charlemagne}",
+        "{Mediterranean}",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "Charlemagne",
+      "explanation": "Frankish 12 winds as invented by Charlemagne.",
+      "entries": [
+        "Nordroni [N]",
+        "Nordostroni [NNE]",
+        "Ostnordroni [NE]",
+        "Ostroni [E]",
+        "Ostsundroni [SE]",
+        "Sundostroni [SSE]",
+        "Sundroni [S]",
+        "Sundvuestroni [SSW]",
+        "Vuestsundroni [SW]",
+        "Vuestroni [W]",
+        "Vuestnordroni [NW]",
+        "Nordvuestroni [NNW]"
+      ]
+    },
+    {
+      "name": "Mediterranean",
+      "explanation": "Medieval mariner's 8 winds in the Mediterranean Sea.",
+      "entries": [
+        "Tramontana (N)",
+        "Greco (NE)",
+        "Levante (E)",
+        "Scirocco (SE)",
+        "Ostro (S)",
+        "Libeccio (SW)",
+        "Ponente (W)",
+        "Maestro (NW)"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare direction systems from history.",
+      "entries": [
+        "{Biblical}",
+        "{Greek}",
+        "{Roman}"
+      ]
+    },
+    {
+      "name": "Biblical",
+      "explanation": "The ancient Greek directional systems.",
+      "entries": [
+        "kedem [E]",
+        "negev [S]",
+        "yam [W]",
+        "saphon [N]"
+      ]
+    },
+    {
+      "name": "Greek",
+      "explanation": "The ancient Greek directional systems.",
+      "entries": [
+        "{Homer}",
+        "{Aristotle}",
+        "{Timosthenes}"
+      ]
+    },
+    {
+      "name": "Homer",
+      "explanation": "The ancient 4 Greek compass winds, as used by Homer.",
+      "entries": [
+        "Boreas [N]",
+        "Eurus [NE]",
+        "Notos [S]",
+        "Zephyrus [NW]"
+      ]
+    },
+    {
+      "name": "Aristotle",
+      "explanation": "The ancient 10 Greek compass winds, as used by Aristotle.",
+      "entries": [
+        "Aparctias (ἀπαρκτίας) [N]",
+        "Meses (μέσης) [NNE]",
+        "Caecias (καικίας) [NE]",
+        "Apeliotes (ἀπηλιώτης) [E]",
+        "Eurus (εὖρος) [SE]",
+        "Notos (νότος) [S]",
+        "Lips (λίψ) [SW]",
+        "Zephyrus (ζέφυρος) [W]",
+        "Argestes (ἀργέστης) [NW]",
+        "Thrascias (θρασκίας) [NNW]"
+      ]
+    },
+    {
+      "name": "Timosthenes",
+      "explanation": "The ancient Greco-Roman 12 classical compass winds, as used by Timosthenes of Rhodes.",
+      "entries": [
+        "Aparctias (ἀπαρκτίας) [N]",
+        "Boreas (βoρέας) [NNE]",
+        "Caecias (καικίας) [NE]",
+        "Apeliotes (ἀπηλιώτης) [E]",
+        "Eurus (εὖρος) [SE]",
+        "Phoenicias (φοινικίας) [SSE]",
+        "Notos (νότος) [S]",
+        "Leuconotos [SSW]",
+        "Lips (λίψ) [SW]",
+        "Zephyrus (ζέφυρος) [W]",
+        "Argestes (ἀργέστης) [NW]",
+        "Thrascias (θρασκίας) [NNW]"
+      ]
+    },
+    {
+      "name": "Roman",
+      "explanation": "The ancient Roman directional systems.",
+      "entries": [
+        "{Vitruvius}",
+        "{Seneca}",
+        "{Pliny}",
+        "{Aulus Gellius}"
+      ]
+    },
+    {
+      "name": "Vitruvius",
+      "explanation": "The ancient Roman 24 compass winds, as used by Vitruvius.",
+      "entries": [
+        "Septentrio [N]",
+        "Gallicus [NbE]",
+        "Supernas [NNE]",
+        "Aquilo [NE]",
+        "Boreas [EbNE]",
+        "Carbas [EbN]",
+        "Solanus [E]",
+        "Ornithiae [EbS]",
+        "Eurocircias [ESE]",
+        "Eurus [SE]",
+        "Vulturnus [SSE]",
+        "Leuconotos [SbE]",
+        "Auster [S]",
+        "Altanus [SbW]",
+        "Libonotus [SSW]",
+        "Africus [SW]",
+        "Subvesperus [WSW]",
+        "Argestes [WbS]",
+        "Favonius [W]",
+        "Etesiae [WbN]",
+        "Circius [WNW]",
+        "Caurus [NW]",
+        "Corus [NNW]",
+        "Thrascias [NbW]"
+      ]
+    },
+    {
+      "name": "Seneca",
+      "explanation": "The ancient Roman 12 compass winds, as used by Seneca.",
+      "entries": [
+        "Septentrio [N]",
+        "Aquilo [NNE]",
+        "Caecias [NE]",
+        "Subsolanus [E]",
+        "Vulturnus [SE]",
+        "Euronotus [SSE]",
+        "Auster [S]",
+        "Libonotus [SSW]",
+        "Africus [SW]",
+        "Favonius [W]",
+        "Corus [NW]",
+        "Thrascias [NNW]"
+      ]
+    },
+    {
+      "name": "Pliny",
+      "explanation": "The ancient Roman 8 compass winds, as used by Pliny the Elder.",
+      "entries": [
+        "Septentrio [N]",
+        "Aquilo [NNE]",
+        "Subsolanus [E]",
+        "Vulturnus [SE]",
+        "Auster [S]",
+        "Africus [SW]",
+        "Favonius [W]",
+        "Corus [NW]"
+      ]
+    },
+    {
+      "name": "Aulus Gellius",
+      "explanation": "The ancient Roman 8 compass winds, as used by Aulus Gellius.",
+      "entries": [
+        "Septentrio [N]",
+        "Aquilo [NE]",
+        "Eurus [E]",
+        "Vulturnus [SE]",
+        "Auster [S]",
+        "Africus [SW]",
+        "Favonius [W]",
+        "Caurus [NW]"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Direction systems for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "hubwards (towards the center of the world)",
+        "turnwise (following the rotation of the world)",
+        "rimwards (towards the edge of the world)",
+        "widdershins (against the rotation of the world)"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Direction systems for modern worlds.",
+      "entries": [
+        "{common}",
+        "magnetic {common}"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Direction systems for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "{common} in the {coordinate system} celestial coordinate system",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "coordinate system",
+      "explanation": "Common direction systems for science fiction worlds.",
+      "entries": [
+        "horizontal",
+        "equatorial",
+        "ecliptic"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare direction systems for science fiction worlds.",
+      "entries": [
+        "{common} in the {rare coordinate system} coordinate system"
+      ]
+    },
+    {
+      "name": "rare coordinate system",
+      "explanation": "Rare direction systems for science fiction worlds.",
+      "entries": [
+        "galactic (based on the plane of the local galaxy)",
+        "supergalactic (based on the plane of the local galaxy group)"
+      ]
+    }
+  ]
+}

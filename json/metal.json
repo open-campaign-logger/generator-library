@@ -1,23 +1,230 @@
 {
-	"name": "Metal Generator",
-	"resultPattern": "{metal}",
-	"tables": [
-		{
-			"name": "metal",
-			"entries": [
-		    	"adamantite",
-		    	"brass",
-        		"copper",
-        		"electrum",
-        		"gold",
-        		"iron",
-        		"lead",
-        		"mithral",
-        		"pewter",
-        		"platinum",
-        		"silver",
-        		"steel"
-			]
-		}
-	]
+  "name": "metal table",
+  "resultPattern": "{metal}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Metals for resource and material tables.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "",
+  "see": "material, stone",
+  "date": "2017-10-04",
+  "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "sources": "TvTropes.org, Wikipedia.org.",
+  "genre": "universal",
+  "category": "item",
+  "tags": "#material, #resource",
+  "tables": [
+    {
+      "name": "metal",
+      "explanation": "Metal types.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{base}"
+        },
+        {
+          "m": 5,
+          "v": "{alloy}"
+        },
+        "{precious}"
+      ]
+    },
+    {
+      "name": "base",
+      "explanation": "Common metals, easily corrored or oxidized.",
+      "entries": [
+        "tin",
+        "lead",
+        "iron",
+        "zinc",
+        "copper",
+        "{ferrous}"
+      ]
+    },
+    {
+      "name": "ferrous",
+      "explanation": "Common metals containing iron. Usually magnetic.",
+      "entries": [
+        "meteoric iron",
+        "cast iron",
+        "wrought iron"
+      ]
+    },
+    {
+      "name": "alloy",
+      "explanation": "Combinations of different metals.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{base alloy}"
+        },
+        "{precious alloy}"
+      ]
+    },
+    {
+      "name": "base alloy",
+      "explanation": "Alloys of base metals.",
+      "entries": [
+        "brass",
+        "bronze",
+        "pewter",
+        "steel",
+        "stainless steel",
+        "alloy steel",
+        "damascus steel"
+      ]
+    },
+    {
+      "name": "precious alloy",
+      "explanation": "Alloys of precious metals.",
+      "entries": [
+        "sterling silver",
+        "electrum",
+        "white gold",
+        "grey gold",
+        "red gold",
+        "rose gold",
+        "pink gold",
+        "purple gold",
+        "blue gold",
+        "crown gold"
+      ]
+    },
+    {
+      "name": "precious",
+      "explanation": "Valuable common metals.",
+      "entries": [
+        "silver",
+        "gold",
+        "{precious alloy}"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary metals once rumoured to have existed.",
+      "entries": [
+        "hard mercury",
+        "adamant",
+        "orichalcum"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary metals for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "cold iron",
+        "star iron",
+        "hell iron",
+        "absolute iron",
+        "fine steel",
+        "red steel",
+        "brightsteel",
+        "elven steel",
+        "soulsteel",
+        "infernal brass",
+        "dwarven copper",
+        "dwarven metal",
+        "black orichalcum",
+        "darkstone",
+        "solid quicksilver",
+        "philosophic mercury",
+        "alchemical silver",
+        "moonsilver",
+        "astral silver",
+        "true silver",
+        "black gold",
+        "greater gold",
+        "grey adamant",
+        "adamantite",
+        "primal metal"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Metals discovered in the modern time period.",
+      "entries": [
+        "aluminium",
+        "nickel",
+        "magnesium",
+        "tungsten",
+        "molybdenum",
+        "tantalum",
+        "cobalt",
+        "bismuth",
+        "cadmium",
+        "titanium",
+        "zirconium",
+        "antimony",
+        "manganese",
+        "beryllium",
+        "chromium",
+        "germanium",
+        "vanadium",
+        "gallium",
+        "hafnium",
+        "indium",
+        "iridium",
+        "niobium",
+        "rhodium",
+        "rhenium",
+        "tellurium",
+        "thallium",
+        "platinum",
+        "palladium",
+        "{noble}",
+        "{heavy}"
+      ]
+    },
+    {
+      "name": "noble",
+      "explanation": "Common metals that are resistant to corrosion or oxidation. Excludes metals from modern and futuristic subtables. Overlaps with the precious subtable.",
+      "entries": [
+        "silver",
+        "gold",
+        "platinum"
+      ]
+    },
+    {
+      "name": "heavy",
+      "explanation": "Dense metals for modern worlds. Usually toxic.",
+      "entries": [
+        "lead",
+        "mercury",
+        "arsenic",
+        "cobalt",
+        "cadmium",
+        "bismuth",
+        "radium",
+        "curium",
+        "uranium",
+        "plutonium"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary metals for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "plasteel",
+        "glassteel",
+        "red mercury",
+        "alien metal",
+        "metal X",
+        "unaffordium",
+        "unobtainium",
+        "{futuristic alloy}"
+      ]
+    },
+    {
+      "name": "futuristic alloy",
+      "explanation": "Imaginary alloys for science fiction metals.",
+      "entries": [
+        "duralloy",
+        "wishalloy"
+      ]
+    }
+  ]
 }

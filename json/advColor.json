@@ -1,35 +1,186 @@
 {
-	"name": "Adverb, Color Generator",
-	"resultPattern": "{advColor}",
-	"tables": [
-		{
-			"name": "advColor",
-			"entries": [
-			    "bright",
-		        "dappled",
-		        "dark",
-		        "deep",
-		        "dusty",
-		        "fluorescent",
-		        "glowing",
-		        "iridescent",
-		        "light",
-		        "medium",
-		        "mellow",
-		        "muted",
-		        "opalescent",
-		        "pale",
-		        "pure",
-		        "rich",
-		        "smokey",
-		        "sober",
-		        "soft",
-		        "translucent",
-		        "vibrant",
-		        "vivid",
-		        "warm",
-		        "watery"
-			]
-		}
-	]
+  "name": "adverb: color",
+  "resultPattern": "{adverb}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Adverbs for colors.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2017-10-08",
+  "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "category": "utility",
+  "tags": "#color, #description",
+  "tables": [
+    {
+      "name": "adverb",
+      "explanation": "Adverb types by scarcity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common adverbs for colors.",
+      "entries": [
+        "{brightness}",
+        "{intensity}",
+        "{temperature}"
+      ]
+    },
+    {
+      "name": "brightness",
+      "explanation": "Color adverb types by brightness.",
+      "entries": [
+        "{shadowy}",
+        "{medium}",
+        "{bright}"
+      ]
+    },
+    {
+      "name": "shadowy",
+      "explanation": "Shadowy adverbs for colors.",
+      "entries": [
+        "cloudy",
+        "deep",
+        "foggy",
+        "gloomy",
+        "leaden",
+        "muddy",
+        "shadowy"
+      ]
+    },
+    {
+      "name": "medium",
+      "explanation": "Medium adverbs for colors.",
+      "entries": [
+        "bland",
+        "flat",
+        "intermediate",
+        "medium",
+        "moderate",
+        "neutral"
+      ]
+    },
+    {
+      "name": "bright",
+      "explanation": "Bright adverbs for colors.",
+      "entries": [
+        "bright",
+        "fluorescent",
+        "glowing",
+        "iridescent",
+        "opalescent"
+      ]
+    },
+    {
+      "name": "intensity",
+      "explanation": "Color adverb types by intensity.",
+      "entries": [
+        "{vibrant}",
+        "{muted}"
+      ]
+    },
+    {
+      "name": "vibrant",
+      "explanation": "Dark adverbs.",
+      "entries": [
+        "lively",
+        "pure",
+        "rich",
+        "vibrant",
+        "vigorous",
+        "vivid"
+      ]
+    },
+    {
+      "name": "muted",
+      "explanation": "Light adverbs.",
+      "entries": [
+        "dim",
+        "discolored",
+        "dull",
+        "dusty",
+        "faint",
+        "hazy",
+        "light",
+        "mellow",
+        "muted",
+        "pale",
+        "smokey",
+        "soft",
+        "sober",
+        "subdued",
+        "watery"
+      ]
+    },
+    {
+      "name": "temperature",
+      "explanation": "Color adverb types by temperature.",
+      "entries": [
+        "{cold}",
+        "{warm}"
+      ]
+    },
+    {
+      "name": "cold",
+      "explanation": "Cold adverbs for colors.",
+      "entries": [
+        "bleak",
+        "cold",
+        "icy"
+      ]
+    },
+    {
+      "name": "warm",
+      "explanation": "Warm adverbs for colors.",
+      "entries": [
+        "ardent",
+        "fierce",
+        "fiery",
+        "intense",
+        "strong",
+        "warm"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare adverbs for colors.",
+      "entries": [
+        "{transparent}",
+        "{uneven}"
+      ]
+    },
+    {
+      "name": "transparent",
+      "explanation": "Transparent adverbs for colors.",
+      "entries": [
+        "glassy",
+        "semiopaque",
+        "semitransparent",
+        "translucent",
+        "translucid"
+      ]
+    },
+    {
+      "name": "uneven",
+      "explanation": "Uneven adverbs for colors.",
+      "entries": [
+        "dappled",
+        "flecked",
+        "mingled",
+        "motley",
+        "speckled"
+      ]
+    }
+  ]
 }

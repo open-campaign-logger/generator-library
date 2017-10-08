@@ -1,0 +1,559 @@
+{
+  "name": "title of Slavic noble",
+  "resultPattern": "{Slavic noble} ({var:gender} ruling over {var:realm}, addressed as {var:form of address}) \r\n{var:footnote}",
+  "variables": {
+    "gender": "",
+    "realm": "area reigned over (kingdom, county, etc.)",
+    "form of address": "how to address the noble when speaking",
+    "footnote": ""
+  },
+  "explanation": "Noble titles from Slavic-style cultures",
+  "structure": "Subtable calls set variables that are used in the resultPattern.",
+  "note": "The names for ranks are not universal, and 'gentry' and 'minor nobility' have often been used interchangeably. These have been separated in 2 different classes to underline the differences between the titles in those ranks.",
+  "bugs": "",
+  "to do": "Handling articles in realm results.",
+  "see": "title_noble_European, title_noble_Germanic",
+  "date": "2017-10-04",
+  "authors": "Esko Vesala.",
+  "sources": "Wikipedia.org",
+  "genre": "historical",
+  "category": "name",
+  "tags": "#person, #noble, #slavic",
+  "tables": [
+    {
+      "name": "Slavic noble",
+      "explanation": "Slavic noble titles categorized by rank.",
+      "entries": [
+        {
+          "v": "{gentry}",
+          "set": {
+            "realm": "house"
+          }
+        },
+        {
+          "v": "{minor nobility}",
+          "set": {
+            "realm": "barony"
+          }
+        },
+        {
+          "v": "{major nobility}",
+          "set": {
+            "realm": "county"
+          }
+        },
+        {
+          "v": "{princely}",
+          "set": {
+            "realm": "principality",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "{royal}",
+          "set": {
+            "realm": "kingdom",
+            "form of address": "Royal Highness"
+          }
+        },
+        {
+          "v": "{imperial}",
+          "set": {
+            "realm": "empire",
+            "form of address": "Imperial Majesty"
+          }
+        }
+      ]
+    },
+    {
+      "name": "gentry",
+      "explanation": "Gentry titles.",
+      "entries": [
+        {
+          "v": "{female gentry}",
+          "set": {
+            "gender": "female"
+          }
+        },
+        {
+          "v": "{male gentry}",
+          "set": {
+            "gender": "male"
+          }
+        }
+      ]
+    },
+    {
+      "name": "female gentry",
+      "explanation": "Female gentry titles.",
+      "entries": [
+        {
+          "v": "Gospozha",
+          "set": {
+            "realm": "house",
+            "form of address": "Madam"
+          }
+        },
+        {
+          "v": "Dama",
+          "set": {
+            "realm": "house",
+            "form of address": "Madam"
+          }
+        },
+        {
+          "v": "Baroneta",
+          "set": {
+            "realm": "house",
+            "form of address": "Madam"
+          }
+        }
+      ]
+    },
+    {
+      "name": "male gentry",
+      "explanation": "Male gentry titles.",
+      "entries": [
+        {
+          "v": "Gospodin",
+          "set": {
+            "realm": "house",
+            "form of address": "Mister"
+          }
+        },
+        {
+          "v": "Rytsar",
+          "set": {
+            "realm": "some land",
+            "form of address": "Sir"
+          }
+        },
+        {
+          "v": "Baronet",
+          "set": {
+            "realm": "baronetcy",
+            "form of address": "Sir"
+          }
+        }
+      ]
+    },
+    {
+      "name": "minor nobility",
+      "explanation": "Minor nobility titles.",
+      "entries": [
+        {
+          "v": "{female minor nobility}",
+          "set": {
+            "gender": "female"
+          }
+        },
+        {
+          "v": "{male minor nobility}",
+          "set": {
+            "gender": "male"
+          }
+        }
+      ]
+    },
+    {
+      "name": "female minor nobility",
+      "explanation": "Female minor nobility titles.",
+      "entries": [
+        {
+          "v": "Baronessa",
+          "set": {
+            "realm": "barony",
+            "form of address": "Lady"
+          }
+        },
+        {
+          "v": "Vikontessa",
+          "set": {
+            "realm": "viscounty",
+            "form of address": "Lady"
+          }
+        }
+      ]
+    },
+    {
+      "name": "male minor nobility",
+      "explanation": "Male minor nobility titles.",
+      "entries": [
+        {
+          "v": "Baron",
+          "set": {
+            "realm": "barony",
+            "form of address": "Lord"
+          }
+        },
+        {
+          "v": "Vikont",
+          "set": {
+            "realm": "viscounty",
+            "form of address": "Lord"
+          }
+        }
+      ]
+    },
+    {
+      "name": "major nobility",
+      "explanation": "Major nobility titles.",
+      "entries": [
+        {
+          "v": "{female major nobility}",
+          "set": {
+            "gender": "female"
+          }
+        },
+        {
+          "v": "{male major nobility}",
+          "set": {
+            "gender": "male"
+          }
+        }
+      ]
+    },
+    {
+      "name": "female major nobility",
+      "explanation": "Female major nobility titles.",
+      "entries": [
+        {
+          "v": "Grafinya",
+          "set": {
+            "realm": "county",
+            "form of address": "Lady"
+          }
+        },
+        {
+          "v": "Boyarina",
+          "set": {
+            "realm": "county",
+            "form of address": "Lady"
+          }
+        },
+        {
+          "v": "Markiza",
+          "set": {
+            "realm": "marquisate (border area)",
+            "form of address": "Lady"
+          }
+        }
+      ]
+    },
+    {
+      "name": "male major nobility",
+      "explanation": "Male major nobility titles.",
+      "entries": [
+        {
+          "v": "Graf",
+          "set": {
+            "realm": "county",
+            "form of address": "Lord"
+          }
+        },
+        {
+          "v": "Boyar",
+          "set": {
+            "realm": "county",
+            "form of address": "Lord"
+          }
+        },
+        {
+          "v": "Markiz",
+          "set": {
+            "realm": "marquisate (border area)",
+            "form of address": "Lord"
+          }
+        }
+      ]
+    },
+    {
+      "name": "princely",
+      "explanation": "Princely titles.",
+      "entries": [
+        {
+          "v": "{female princely}",
+          "set": {
+            "gender": "female"
+          }
+        },
+        {
+          "v": "{male princely}",
+          "set": {
+            "gender": "male"
+          }
+        }
+      ]
+    },
+    {
+      "name": "female princely",
+      "explanation": "Female princely titles.",
+      "entries": [
+        {
+          "v": "Vitse-koroléva",
+          "set": {
+            "realm": "viceroyalty",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Kneginja ('Princess')",
+          "set": {
+            "realm": "duchy",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Kniahynia ('Princess')",
+          "set": {
+            "realm": "duchy",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Knyaginya ('Princess')",
+          "set": {
+            "realm": "duchy",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Kniagina ('Princess')",
+          "set": {
+            "realm": "duchy",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Tsarevna ('Princess')",
+          "set": {
+            "realm": "duchy",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Kurfyurstina",
+          "set": {
+            "realm": "duchy",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Gertsoginya",
+          "set": {
+            "realm": "duchy",
+            "form of address": "Grace"
+          }
+        }
+      ]
+    },
+    {
+      "name": "male princely",
+      "explanation": "Male princely titles.",
+      "entries": [
+        {
+          "v": "Vitse-koról",
+          "set": {
+            "realm": "viceroyalty",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Knyaz ('Prince')",
+          "set": {
+            "realm": "duchy",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Kniaz ('Prince')",
+          "set": {
+            "realm": "duchy",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Knjaz ('Prince')",
+          "set": {
+            "realm": "duchy",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Knez ('Prince')",
+          "set": {
+            "realm": "duchy",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Tsarevich ('Prince')",
+          "set": {
+            "realm": "duchy",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Kurfyurst",
+          "set": {
+            "realm": "duchy",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Gertsog",
+          "set": {
+            "realm": "duchy",
+            "form of address": "Grace"
+          }
+        }
+      ]
+    },
+    {
+      "name": "royal",
+      "explanation": "Royals reigning over kingdoms, etc.",
+      "entries": [
+        {
+          "v": "{female royal}",
+          "set": {
+            "gender": "female"
+          }
+        },
+        {
+          "v": "{male royal}",
+          "set": {
+            "gender": "male"
+          }
+        }
+      ]
+    },
+    {
+      "name": "female royal",
+      "explanation": "Female royal titles.",
+      "entries": [
+        {
+          "v": "Ertsgertsoginya",
+          "set": {
+            "realm": "archduchy",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Velikaya Kniagina",
+          "set": {
+            "realm": "grand duchy",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Koroléva ('Queen')",
+          "set": {
+            "realm": "kingdom",
+            "form of address": "Royal Highness"
+          }
+        },
+        {
+          "v": "Tsarina",
+          "set": {
+            "realm": "kingdom",
+            "form of address": "Royal Highness"
+          }
+        },
+        {
+          "v": "Tsaritsa",
+          "set": {
+            "realm": "kingdom",
+            "form of address": "Royal Highness"
+          }
+        }
+      ]
+    },
+    {
+      "name": "male royal",
+      "explanation": "Male royal titles.",
+      "entries": [
+        {
+          "v": "Ertsgertsog",
+          "set": {
+            "realm": "archduchy",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Velikiy Knyaz",
+          "set": {
+            "realm": "grand duchy",
+            "form of address": "Grace"
+          }
+        },
+        {
+          "v": "Koról ('King')",
+          "set": {
+            "realm": "kingdom",
+            "form of address": "Royal Highness"
+          }
+        },
+        {
+          "v": "Tsar",
+          "set": {
+            "realm": "kingdom",
+            "form of address": "Royal Highness"
+          }
+        },
+        {
+          "v": "Tzar",
+          "set": {
+            "realm": "kingdom",
+            "form of address": "Royal Highness"
+          }
+        },
+        {
+          "v": "Csar",
+          "set": {
+            "realm": "kingdom",
+            "form of address": "Royal Highness"
+          }
+        },
+        {
+          "v": "Czar",
+          "set": {
+            "realm": "kingdom",
+            "form of address": "Royal Highness"
+          }
+        }
+      ]
+    },
+    {
+      "name": "imperial",
+      "explanation": "Monarchs reigning over an empire.",
+      "entries": [
+        {
+          "v": "{female imperial}",
+          "set": {
+            "gender": "female"
+          }
+        },
+        {
+          "v": "{male imperial}",
+          "set": {
+            "gender": "male"
+          }
+        }
+      ]
+    },
+    {
+      "name": "female imperial",
+      "explanation": "Female imperial titles.",
+      "entries": [
+        "Imperatritsa"
+      ]
+    },
+    {
+      "name": "male imperial",
+      "explanation": "Male imperial titles.",
+      "entries": [
+        "Imperator"
+      ]
+    }
+  ]
+}

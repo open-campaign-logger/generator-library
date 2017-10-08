@@ -1,0 +1,235 @@
+{
+  "name": "material table",
+  "resultPattern": "{material}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Materials for resource and construction tables.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "",
+  "see": "metal, stone, temperature",
+  "date": "2017-10-06",
+  "authors": "Esko Vesala",
+  "sources": "Conservation-Wiki.com, Wikipedia.org.",
+  "genre": "universal",
+  "category": "item",
+  "tags": "#material, #resource",
+  "tables": [
+    {
+      "name": "material",
+      "explanation": "Material types.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common materials.",
+      "entries": [
+        "{inorganic}",
+        "{organic}"
+      ]
+    },
+    {
+      "name": "inorganic",
+      "explanation": "Common inorganic materials.",
+      "entries": [
+        "{stone}",
+        "{mineral}",
+        "{ceramic}",
+        "{glass}",
+        "{metal}"
+      ]
+    },
+    {
+      "name": "stone",
+      "explanation": "Common stone materials.",
+      "entries": [
+        "{lib:stone}"
+      ]
+    },
+    {
+      "name": "mineral",
+      "explanation": "Common mineral materials.",
+      "entries": [
+        "coal",
+        "chalcedony",
+        "phosphorite",
+        "lodestone",
+        "quartz",
+        "milky quartz",
+        "smoky quartz",
+        "blue quartz",
+        "rose quartz",
+        "rock crystal",
+        "crystal",
+        "alabaster",
+        "obsidian",
+        "{gem}"
+      ]
+    },
+    {
+      "name": "ceramic",
+      "explanation": "Common ceramic materials.",
+      "entries": [
+        "clay",
+        "brick",
+        "terracotta",
+        "earthenware",
+        "stoneware",
+        "porcelain"
+      ]
+    },
+    {
+      "name": "glass",
+      "explanation": "Common glass materials.",
+      "entries": [
+        "volcanic glass",
+        "glass",
+        "colored glass",
+        "mirror glass"
+      ]
+    },
+    {
+      "name": "metal",
+      "explanation": "Common metal materials.",
+      "entries": [
+        "{lib:metal}"
+      ]
+    },
+    {
+      "name": "organic",
+      "explanation": "Common organic materials.",
+      "entries": [
+        "{basketry}",
+        "{wood}",
+        "{leather}",
+        "{horn}",
+        "{bone}",
+        "{textile}",
+        "{rare organic}"
+      ]
+    },
+    {
+      "name": "rare organic",
+      "explanation": "Rare organic materials.",
+      "entries": [
+        "shell",
+        "hair"
+      ]
+    },
+    {
+      "name": "basketry",
+      "explanation": "Common basketry materials.",
+      "entries": [
+        "basketry"
+      ]
+    },
+    {
+      "name": "wood",
+      "explanation": "Common wood materials.",
+      "entries": [
+        "birch",
+        "aspen",
+        "oak",
+        "bog-wood (from trees buried in peat bogs)"
+      ]
+    },
+    {
+      "name": "leather",
+      "explanation": "Common leather materials.",
+      "entries": [
+        "leather"
+      ]
+    },
+    {
+      "name": "horn",
+      "explanation": "Common horn materials.",
+      "entries": [
+        "horn"
+      ]
+    },
+    {
+      "name": "bone",
+      "explanation": "Common bone materials.",
+      "entries": [
+        "bone",
+        "tooth",
+        "ivory"
+      ]
+    },
+    {
+      "name": "textile",
+      "explanation": "Common textile materials.",
+      "entries": [
+        "{lib:fabric}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare materials. (Utilizing the still unreleased subtable call feature.)",
+      "entries": [
+        "{rare organic}"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary materials once rumoured to have existed.",
+      "entries": [
+        "quintessence (fifth element)",
+        "pneuma (breath of life)",
+        "vital spark (life energy)",
+        "soul"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary materials for fantasy worlds.",
+      "entries": [
+        "{mythological}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Materials for modern worlds.",
+      "entries": [
+        "{common}",
+        "{plastic}",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "plastic",
+      "explanation": "Plastic types.",
+      "entries": [
+        "plastic",
+        "polymer",
+        "polycarbonate",
+        "PVC",
+        "synthetic rubber"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Materials for modern worlds.",
+      "entries": [
+        "dry water (silica-coated water droplets)"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary materials for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "neutronium",
+        "dark matter",
+        "antimatter"
+      ]
+    }
+  ]
+}

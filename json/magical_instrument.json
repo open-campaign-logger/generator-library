@@ -1,0 +1,289 @@
+{
+  "name": "magical instrument table",
+  "resultPattern": "{magical instrument}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Magical tools for magic users.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "Mythological, fantasy and futuristic subtables.",
+  "see": "magic, magical_technique, spellcasting",
+  "date": "2017-10-06",
+  "authors": "Esko Vesala",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "category": "item",
+  "tags": "#magic, #spell, #equipment",
+  "tables": [
+    {
+      "name": "magical instrument",
+      "explanation": "Magical instrument types.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common magical instruments.",
+      "entries": [
+        "{tool}",
+        "{jewellery}",
+        "{symbol}",
+        "{lib:musical instrument}",
+        "{weapon}",
+        "{vessel}",
+        "{material}",
+        "{clothing}",
+        "{text}",
+        "{familiar}"
+      ]
+    },
+    {
+      "name": "tool",
+      "explanation": "Magical tools.",
+      "entries": [
+        "bundle of herbs",
+        "wand",
+        "rod",
+        "staff",
+        "mirror",
+        "quill",
+        "doll",
+        "knotted rope",
+        "string of beads",
+        "censer",
+        "scepter",
+        "baton",
+        "disc",
+        "orb",
+        "scourge",
+        "crystal ball",
+        "witch ball (hollow glass sphere)",
+        "witch's ladder (knotted cord charm)",
+        "burin (engraving tool)"
+      ]
+    },
+    {
+      "name": "rare tool",
+      "explanation": "Rare magical tools.",
+      "entries": [
+        "key",
+        "hammer",
+        "hourglass"
+      ]
+    },
+    {
+      "name": "jewellery",
+      "explanation": "Magical jewelry.",
+      "entries": [
+        "charm",
+        "charmstone",
+        "amulet (protective charm)",
+        "talisman (magical charm)",
+        "lamen (magical pendant)",
+        "magic ring",
+        "magical {lib:jewelry}"
+      ]
+    },
+    {
+      "name": "symbol",
+      "explanation": "Magical symbols.",
+      "entries": [
+        "rune",
+        "pentacle (amulet with the symbol of an entity)",
+        "pentagram (five-pointed star)",
+        "hexagram (six-pointed star)",
+        "heptagram (seven-pointed star)",
+        "sigil (occult sign presenting an entity)",
+        "magical circle",
+        "kamea (magic square grid)",
+        "mandala (symbol presenting the universe)"
+      ]
+    },
+    {
+      "name": "musical instrument",
+      "explanation": "Magical musical instruments.",
+      "entries": [
+        "flute",
+        ""
+      ]
+    },
+    {
+      "name": "weapon",
+      "explanation": "Magical weapons.",
+      "entries": [
+        "dagger",
+        "athame (black-handled ceremonial blade)",
+        "boline (white-handled, curved ritual knife)",
+        "sickle",
+        "mace",
+        "sword",
+        "staff",
+        "spear"
+      ]
+    },
+    {
+      "name": "vessel",
+      "explanation": "Magical vessels.",
+      "entries": [
+        "cup",
+        "chalice (ceremonial footed cup)",
+        "goblet",
+        "cauldron"
+      ]
+    },
+    {
+      "name": "material",
+      "explanation": "Magical materials.",
+      "entries": [
+        "incense",
+        "ointment",
+        "salve",
+        "oil",
+        "holy anointing oil",
+        "holy water"
+      ]
+    },
+    {
+      "name": "clothing",
+      "explanation": "Magical clothing.",
+      "entries": [
+        "pointed hat",
+        "cloak",
+        "cingulum (colored cord belt)"
+      ]
+    },
+    {
+      "name": "text",
+      "explanation": "Magical texts.",
+      "entries": [
+        "grimoire (spellbook)",
+        "scroll",
+        "papyrus",
+        "clay tablet",
+        "lead tablet",
+        "stone tablet"
+      ]
+    },
+    {
+      "name": "familiar",
+      "explanation": "Magical pets.",
+      "entries": [
+        "toad",
+        "rat",
+        "ferret",
+        "bird",
+        "cat",
+        "dog",
+        "hare",
+        "pig",
+        "wasp",
+        "butterfly",
+        "gargoyle",
+        "homonculus",
+        "golem",
+        "automaton",
+        "simulacrum (artificial imitation of a person)",
+        "tulpa (manifestation of a thoughtform)"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare magical instruments.",
+      "entries": [
+        "periapt (charm worn on a necklace)",
+        "phylactery (leather amulet containing sacred texts)",
+        "scarab (beetle-shaped seal)",
+        "veve (symbol drawn by pouring powder)"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary magical instruments once rumoured to have existed.",
+      "entries": [
+        "elf-arrow (flint arrowhead shot by a fairy)",
+        "thunderstone (stone fallen from the sky)",
+        "anachitis (stone for calling spirits from water)",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary magical instruments once rumoured to have existed.",
+      "entries": [
+        "{mythological}",
+        "filius philosophorum ('the philosophers' child')",
+        "philosopher's stone (lapis philosophorum)",
+        "{unique mythological}"
+      ]
+    },
+    {
+      "name": "unique mythological",
+      "explanation": "Unique relics believed to have magical properties.",
+      "entries": [
+        "Veil of Veronica (wiped Christ's face on Via Dolorosa)",
+        "Shroud of Turin (covered Christ in burial)",
+        "Holy Grail (Christ's vessel on last supper)",
+        "Ark of the Covenant (containing the Biblical Ten Commandments)"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary magical instruments for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "goggles",
+        "lich hand",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary magical instruments for fantasy worlds.",
+      "entries": [
+        "{fantasy}",
+        "one ring of power"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Magical instruments for modern worlds.",
+      "entries": [
+        "{common}",
+        "Abramelin oil (blended from aromatic plants)",
+        "macerated Abramelin oil (blended from aromatic plants)",
+        "Abramelin oil made with essential oils",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare magical instruments for modern worlds.",
+      "entries": [
+        "{modern}",
+        "doubly consecrated Abramelin oil (blended from aromatic plants)"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary magical instruments for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "cybernetic implant",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary magical instruments for science fiction worlds.",
+      "entries": [
+        "spaceship"
+      ]
+    }
+  ]
+}

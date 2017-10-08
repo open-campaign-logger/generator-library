@@ -1,0 +1,150 @@
+{
+  "name": "aroma table",
+  "resultPattern": "{aroma}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Aromas and smells. Can also be used for generating tastes.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "Improve organization, add content.",
+  "see": "",
+  "date": "2017-10-04",
+  "authors": "Esko Vesala.",
+  "sources": "Wikipedia.org.",
+  "genre": "universal",
+  "category": "utility",
+  "tags": "#sense, #smell",
+  "tables": [
+    {
+      "name": "aroma",
+      "explanation": "Aroma types.",
+      "entries": [
+        "{rotting}",
+        "{stingy}",
+        "{dark}",
+        "{sharp}",
+        "{alcohol}",
+        "{woody}",
+        "{spicy}",
+        "{fruity}",
+        "{flowery}",
+        "{sweet}"
+      ]
+    },
+    {
+      "name": "rotting",
+      "explanation": "Rotten aromas.",
+      "entries": [
+        "rotting flesh",
+        "fecal",
+        "fishy"
+      ]
+    },
+    {
+      "name": "stingy",
+      "explanation": "Stingy aromas.",
+      "entries": [
+        "sulphuric",
+        "acidic",
+        "urine",
+        "sweaty"
+      ]
+    },
+    {
+      "name": "dark",
+      "explanation": "Dark aromas.",
+      "entries": [
+        "blood",
+        "mushroom-like",
+        "metallic",
+        "tart",
+        "sour",
+        "musky"
+      ]
+    },
+    {
+      "name": "sharp",
+      "explanation": "Sharp aromas.",
+      "entries": [
+        "anise",
+        "spearmint",
+        "camphor",
+        "menthol",
+        "minty"
+      ]
+    },
+    {
+      "name": "alcohol",
+      "explanation": "Alcohol-like aromas.",
+      "entries": [
+        "rum-like",
+        "wine"
+      ]
+    },
+    {
+      "name": "woody",
+      "explanation": "Woody aromas.",
+      "entries": [
+        "woody",
+        "fresh bark",
+        "pine",
+        "wintergreen",
+        "cork",
+        "garlic",
+        "leek"
+      ]
+    },
+    {
+      "name": "spicy",
+      "explanation": "Woody aromas.",
+      "entries": [
+        "vanilla",
+        "caraway",
+        "almond",
+        "clove",
+        "cinnamon",
+        "thyme"
+      ]
+    },
+    {
+      "name": "fruity",
+      "explanation": "Fruit-like aromas.",
+      "entries": [
+        "fruity",
+        "apple",
+        "pear",
+        "grape",
+        "lemon",
+        "strawberry",
+        "cherry"
+      ]
+    },
+    {
+      "name": "flowery",
+      "explanation": "Flower-like aromas.",
+      "entries": [
+        "floral",
+        "rose",
+        "sweet rose",
+        "lavender",
+        "lilac"
+      ]
+    },
+    {
+      "name": "sweet",
+      "explanation": "Sweet aromas.",
+      "entries": [
+        "sweet",
+        "sugary",
+        "grassy",
+        "fresh-cut grass",
+        "nutty",
+        "fresh bread",
+        "creamy",
+        "buttery",
+        "suryp"
+      ]
+    }
+  ]
+}

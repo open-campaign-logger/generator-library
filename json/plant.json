@@ -1,0 +1,486 @@
+{
+  "name": "plant table",
+  "resultPattern": "{plant}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Plant names. Land-based plants are divided by their historical (not modern) taxonomy. Additional subtables present uncategorised plants for some non-standard biotypes.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "Expanding special biotopes (such as water plants).",
+  "see": "",
+  "date": "2017-10-06",
+  "authors": "Esko Vesala",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "category": "world",
+  "tags": "#nature, #plant, #resource",
+  "tables": [
+    {
+      "name": "plant",
+      "explanation": "Common plant types known in most worlds.",
+      "entries": [
+        "{fungus}",
+        "{moss}",
+        "{fern}",
+        "{grass}",
+        "{root}",
+        "{bulb}",
+        "{vegetable}",
+        "{flowering plant}",
+        "{shrub}",
+        "{tree}"
+      ]
+    },
+    {
+      "name": "fungus",
+      "explanation": "Common fungi (which were once classified as plants).",
+      "entries": [
+        "slime mold",
+        "mold",
+        "toadstool",
+        "{mushroom}"
+      ]
+    },
+    {
+      "name": "mushroom",
+      "explanation": "Edible mushrooms.",
+      "entries": [
+        "some type of mushroom",
+        "chanterelle mushroom",
+        "champignon mushroom",
+        "penny bun mushroom",
+        "milkcap mushroom",
+        "morel mushroom",
+        "truffle"
+      ]
+    },
+    {
+      "name": "moss",
+      "explanation": "Common lower plants (algae and mosses).",
+      "entries": [
+        "lichen",
+        "moss",
+        "club moss",
+        "spike moss",
+        "quillwort",
+        "liverwort",
+        "hornwort"
+      ]
+    },
+    {
+      "name": "fern",
+      "explanation": "Common ferns.",
+      "entries": [
+        "flowering fern",
+        "royal fern",
+        "bristle fern",
+        "whisk fern",
+        "horsetail",
+        "moonwort",
+        "adder's tongue"
+      ]
+    },
+    {
+      "name": "grass",
+      "explanation": "Common grass plants.",
+      "entries": [
+        "grass",
+        "heather",
+        "sedge",
+        "three-awn",
+        "fescue",
+        "rush",
+        "reed",
+        "{legume}",
+        "{grain}",
+        "{herb}"
+      ]
+    },
+    {
+      "name": "legume",
+      "explanation": "Edible legumes.",
+      "entries": [
+        "bean",
+        "green bean",
+        "kidney bean",
+        "pea",
+        "chickpea",
+        "cowpea",
+        "lentil"
+      ]
+    },
+    {
+      "name": "grain",
+      "explanation": "Common grain or cereal plants.",
+      "entries": [
+        "rye",
+        "barley",
+        "oat",
+        "wheat",
+        "buckwheat",
+        "durum",
+        "spelt",
+        "millet"
+      ]
+    },
+    {
+      "name": "herb",
+      "explanation": "Culinary herbs.",
+      "entries": [
+        "mugwort",
+        "woodruff",
+        "fennel",
+        "parsley",
+        "rosemary",
+        "thyme",
+        "basil",
+        "dill",
+        "garlic",
+        "caraway",
+        "coriander",
+        "cress",
+        "hyssop",
+        "mint",
+        "mustard",
+        "lavender",
+        "rue",
+        "sage",
+        "marjoram"
+      ]
+    },
+    {
+      "name": "root",
+      "explanation": "Edible roots.",
+      "entries": [
+        "rutabaga",
+        "turnip",
+        "beetroot",
+        "parsnip",
+        "radish",
+        "carrot",
+        "onion",
+        "shallot",
+        "garlic",
+        "celery",
+        "leek"
+      ]
+    },
+    {
+      "name": "bulb",
+      "explanation": "Edible bulbs.",
+      "entries": [
+        "onion",
+        "shallot",
+        "garlic"
+      ]
+    },
+    {
+      "name": "vegetable",
+      "explanation": "Edible vegetables.",
+      "entries": [
+        "cabbage",
+        "cauliflower",
+        "lettuce",
+        "spinach",
+        "cucumber",
+        "artichoke",
+        "pumpkin",
+        "gourd",
+        "eggplant"
+      ]
+    },
+    {
+      "name": "flowering plant",
+      "explanation": "Common flowering plants.",
+      "entries": [
+        "figwort",
+        "lungwort",
+        "cowslip",
+        "bindweed",
+        "myrtle",
+        "mint",
+        "parsley",
+        "spurge",
+        "laurel",
+        "amaranth",
+        "{flower}"
+      ]
+    },
+    {
+      "name": "flower",
+      "explanation": "Common flowers.",
+      "entries": [
+        "coltsfoot",
+        "daisy",
+        "buttercup",
+        "primrose",
+        "bellflower",
+        "sunflower",
+        "iris",
+        "rose",
+        "nightshade",
+        "orchid"
+      ]
+    },
+    {
+      "name": "shrub",
+      "explanation": "Common shrubs.",
+      "entries": [
+        "buckthorn",
+        "dogwood",
+        "elder",
+        "privet",
+        "sallow",
+        "spindle",
+        "nettle",
+        "rhubarb",
+        "{berry} shrub"
+      ]
+    },
+    {
+      "name": "berry",
+      "explanation": "Edible berries.",
+      "entries": [
+        "bilberry",
+        "lingonberry",
+        "strawberry",
+        "juniper berry",
+        "blackberry",
+        "cloudberry",
+        "cranberry",
+        "raspberry",
+        "gooseberry",
+        "wineberry"
+      ]
+    },
+    {
+      "name": "tree",
+      "explanation": "Common trees.",
+      "entries": [
+        "{coniferous tree}",
+        "{deciduous tree}",
+        "{fruit} tree"
+      ]
+    },
+    {
+      "name": "coniferous tree",
+      "explanation": "Common coniferous (evergreen) trees.",
+      "entries": [
+        "fir",
+        "spruce",
+        "pine",
+        "juniper",
+        "yew",
+        "larch",
+        "cypress",
+        "hemlock",
+        "cedar"
+      ]
+    },
+    {
+      "name": "deciduous tree",
+      "explanation": "Common deciduous (losing their leaves seasonally) trees.",
+      "entries": [
+        "alder",
+        "ash",
+        "beech",
+        "birch",
+        "boxtree",
+        "elm",
+        "hawthorn",
+        "hazel",
+        "hickory",
+        "holly",
+        "linden",
+        "maple",
+        "oak",
+        "poplar",
+        "rowan",
+        "willow",
+        "chestnut",
+        "horse-chestnut"
+      ]
+    },
+    {
+      "name": "fruit",
+      "explanation": "Edible fruits.",
+      "entries": [
+        "apple",
+        "plum",
+        "cherry",
+        "grape",
+        "pear",
+        "lemon",
+        "lime"
+      ]
+    },
+    {
+      "name": "nut",
+      "explanation": "Culinary nuts.",
+      "entries": [
+        "chestnut",
+        "hazelnut",
+        "walnut",
+        "almond"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare plants types.",
+      "entries": [
+        "{spice}"
+      ]
+    },
+    {
+      "name": "spice",
+      "explanation": "Exotic herbs not readily available in pseudo-medieval Europe.",
+      "entries": [
+        "black pepper",
+        "sugar",
+        "cassia",
+        "cumin",
+        "nutmeg",
+        "ginger",
+        "cloves",
+        "cinnamon",
+        "saffron"
+      ]
+    },
+    {
+      "name": "desert",
+      "explanation": "Common plant types for desert environments.",
+      "entries": [
+        "cactus"
+      ]
+    },
+    {
+      "name": "freshwater",
+      "explanation": "Common plant types for freshwater environments.",
+      "entries": [
+        "water lily",
+        "watercress"
+      ]
+    },
+    {
+      "name": "seawater",
+      "explanation": "Common plant types for seawater environments.",
+      "entries": [
+        "seaweed",
+        "stonewort",
+        "sea sponge",
+        "coral"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary plants once rumoured to have existed.",
+      "entries": [
+        "moly (a magical herb with black root and white blossoms)",
+        "raskovnik (a difficult to identity herb that can open locks)",
+        "luck tree (hanging wreaths or ribbons on it can bring good luck)",
+        "wish tree (may cause wishes to become true)",
+        "witch tree (helps in spellcasting)",
+        "oracle tree (helps in divination)",
+        "sacred tree",
+        "lotus tree (bears fruits causing pleasant drowsiness)",
+        "talking tree",
+        "barnacle tree (fruits are barnacles that grow into barnacle geese)",
+        "vegetable lamb (a tree growing sheep as its fruit)",
+        "mandrake (emits a deadly scream when uprooted)",
+        "magic bean (beanstalk can grow up to cloud kingdoms)",
+        "vampire vine (capable of draining blood)",
+        "upas tree (so poisonous that it destroys all animal life within miles)",
+        "man-eating tree (animated vine-like stems capture prey)",
+        "serpent tree (a man-eating tree with serpent stems)"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary plants once rumoured to have existed.",
+      "entries": [
+        "tree of life (bestowing immortality)",
+        "tree of knowledge (bestowing understanding)",
+        "skytree (reaching to the layers of the sky)",
+        "dawn tree (world tree associated with the sun)",
+        "world tree (connecting mythological realms)"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary plants for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "{fantasy beginning}{fantasy middle}{fantasy ending}"
+      ]
+    },
+    {
+      "name": "fantasy beginning",
+      "explanation": "Name beginnings for imaginary plants for fantasy worlds.",
+      "entries": [
+        " ",
+        "poisonous ",
+        "lingering ",
+        "deadly ",
+        "{lib:color#plant} "
+      ]
+    },
+    {
+      "name": "fantasy middle",
+      "explanation": "Name stems for imaginary plants for fantasy worlds.",
+      "entries": [
+        "dawn",
+        "night",
+        "moon",
+        "goblin",
+        "elf",
+        "fairy"
+      ]
+    },
+    {
+      "name": "fantasy ending",
+      "explanation": "Name endings for imaginary plants for fantasy worlds.",
+      "entries": [
+        "wort",
+        "bane",
+        "root",
+        "vine",
+        "shade",
+        "flower"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Plants met only in modern worlds.",
+      "entries": [
+        "{common}",
+        "{spice}",
+        "magnolia"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary plants for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "sentient plant"
+      ]
+    },
+    {
+      "name": "edible",
+      "explanation": "Common edible plant types known in most worlds.",
+      "entries": [
+        "{mushroom}",
+        "{legume}",
+        "{herb}",
+        "{grain}",
+        "{root}",
+        "{bulb}",
+        "{vegetable}",
+        "{berry}",
+        "{nut}",
+        "{fruit}"
+      ]
+    }
+  ]
+}
