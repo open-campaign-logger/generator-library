@@ -8,13 +8,13 @@
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "Adjectives have been grouped by the associated mood.",
   "bugs": "",
-  "to do": "More moods: poor, vile. ",
-  "see": "adjPlace_wia",
+  "to do": "More moods: poor, vile.",
+  "see": "adjThing",
   "date": "2017-10-07",
   "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
-  "category": "utility",
+  "category": "location",
   "tags": "#location, #atmosphere, #mood, #adjective",
   "tables": [
     {
@@ -42,6 +42,7 @@
       "explanation": "Negative moods.",
       "entries": [
         "{threatening}",
+        "{corrupted}",
         "{gloomy}",
         "{weird}"
       ]
@@ -172,7 +173,7 @@
     },
     {
       "name": "magnificent",
-      "explanation": "Cheerful adjectives.",
+      "explanation": "Magnificent adjectives.",
       "entries": [
         "brilliant",
         "glorious",
@@ -181,7 +182,6 @@
         "great",
         "impressive",
         "lofty",
-        "palatial",
         "magnificent",
         "sublime",
         "towering"
@@ -264,8 +264,8 @@
       "entries": [
         "blazing",
         "burning",
-        "flaming",
         "fiery",
+        "flaming",
         "glowing",
         "shimmering",
         "sunlit"

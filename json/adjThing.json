@@ -1,38 +1,297 @@
 {
-	"name": "Adjective, Thing Generator",
-	"resultPattern": "{adjThing}",
-	"tables": [
-		{
-			"name": "adjThing",
-			"entries": [
-		    	"accursed",
-		        "ancestral",
-		        "ancient",
-		        "animated", 
-		    	"blinding",
-        		"broken",
-        		"{lib:color}",
-        		"dancing",
-        		"enchanted",
-		        "ethereal",
-        		"fiery",
-        		"flaming",
-        		"frosted",
-        		"gilded",
-        		"glamered",
-        		"holy",
-        		"infamous",
-        		"lost",
-        		"magical",
-        		"powerful",
-        		"royal",
-        		"shadowy",
-        		"shining",
-        		"smoking",
-        		"thundering",
-        		"unholy",
-        		"vicious"
-			]
-		}
-	]
+  "name": "adjective: object",
+  "resultPattern": "{adjective}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Adjectives for describing objects.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "Adjectives have been grouped by the associated mood.",
+  "bugs": "",
+  "to do": "More moods, better named.",
+  "see": "adjPlace",
+  "date": "2017-10-07",
+  "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "category": "item",
+  "tags": "#equipment, #atmosphere, #mood, #adjective",
+  "tables": [
+    {
+      "name": "adjective",
+      "explanation": "Moods for adjectives, by scarcity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common mood types.",
+      "entries": [
+        "{negative}",
+        "{neutral}",
+        "{positive}"
+      ]
+    },
+    {
+      "name": "negative",
+      "explanation": "Negative moods.",
+      "entries": [
+        "{threatening}",
+        "{corrupted}",
+        "{broken}",
+        "{weird}"
+      ]
+    },
+    {
+      "name": "threatening",
+      "explanation": "Threatening adjectives.",
+      "entries": [
+        "accursed",
+        "ghastly",
+        "horrific",
+        "vicious"
+      ]
+    },
+    {
+      "name": "corrupted",
+      "explanation": "corrupted adjectives.",
+      "entries": [
+        "corrupt",
+        "defiled",
+        "impure",
+        "tainted",
+        "unholy"
+      ]
+    },
+    {
+      "name": "broken",
+      "explanation": "Broken adjectives.",
+      "entries": [
+        "broken"
+      ]
+    },
+    {
+      "name": "weird",
+      "explanation": "Weird adjectives.",
+      "entries": [
+        "bizarre",
+        "eerie",
+        "grotesque",
+        "spectral",
+        "unnatural",
+        "weird"
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Neutral moods.",
+      "entries": [
+        "{lib:color}",
+        "{modest}",
+        "{moving}",
+        "{mysterious}",
+        "{sound}"
+      ]
+    },
+    {
+      "name": "modest",
+      "explanation": "Modest adjectives.",
+      "entries": [
+        "humble",
+        "lowly",
+        "meek",
+        "modest",
+        "mundane",
+        "simple",
+        "unassuming"
+      ]
+    },
+    {
+      "name": "moving",
+      "explanation": "Movement-related adjectives.",
+      "entries": [
+        "animated",
+        "dancing"
+      ]
+    },
+    {
+      "name": "mysterious",
+      "explanation": "Mysterious adjectives.",
+      "entries": [
+        "lost",
+        "shadowy"
+      ]
+    },
+    {
+      "name": "positive",
+      "explanation": "Positive moods.",
+      "entries": [
+        "{magnificent}"
+      ]
+    },
+    {
+      "name": "magnificent",
+      "explanation": "Magnificent adjectives.",
+      "entries": [
+        "brilliant",
+        "impressive",
+        "magnificent",
+        "powerful",
+        "royal",
+        "sublime"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare moods.",
+      "entries": [
+        "{age}",
+        "{fame}",
+        "{magical}",
+        "{sound}",
+        "{temperature}",
+        "{otherworldliness}"
+      ]
+    },
+    {
+      "name": "age",
+      "explanation": "Age-related moods.",
+      "entries": [
+        "{old}",
+        "{new}"
+      ]
+    },
+    {
+      "name": "old",
+      "explanation": "Old adjectives.",
+      "entries": [
+        "age-old",
+        "aged",
+        "ancestral",
+        "ancient",
+        "archaic",
+        "primordial",
+        "timeworn",
+        "venerable"
+      ]
+    },
+    {
+      "name": "new",
+      "explanation": "New adjectives.",
+      "entries": [
+        "unblemished",
+        "uncorrupt",
+        "undefiled",
+        "unspoiled",
+        "untainted",
+        "untouched",
+        "virginal"
+      ]
+    },
+    {
+      "name": "fame",
+      "explanation": "Fame-related moods.",
+      "entries": [
+        "acclaimed",
+        "celebrated",
+        "fabled",
+        "famed",
+        "ill-famed",
+        "Illustrious",
+        "infamous",
+        "notorious",
+        "renowned",
+        "revered",
+        "storied"
+      ]
+    },
+    {
+      "name": "magical",
+      "explanation": "New adjectives.",
+      "entries": [
+        "bewitched",
+        "charmed",
+        "enchanted",
+        "ensorcelled",
+        "ethereal",
+        "glamoured",
+        "haunted",
+        "holy",
+        "magical",
+        "necromantic",
+        "runic",
+        "spell-imbued",
+        "spellbound",
+        "thaumaturgic",
+        "wizardly"
+      ]
+    },
+    {
+      "name": "sound",
+      "explanation": "Sound-related moods.",
+      "entries": [
+        "bellowing",
+        "cacophonous",
+        "clamoring",
+        "crying",
+        "resonant",
+        "roaring",
+        "thundering"
+      ]
+    },
+    {
+      "name": "temperature",
+      "explanation": "Temperature-related moods.",
+      "entries": [
+        "{cold}",
+        "{hot}"
+      ]
+    },
+    {
+      "name": "cold",
+      "explanation": "Cold adjectives.",
+      "entries": [
+        "cold",
+        "freezing",
+        "frigid",
+        "frosty",
+        "frozen",
+        "icy"
+      ]
+    },
+    {
+      "name": "hot",
+      "explanation": "Hot adjectives.",
+      "entries": [
+        "blazing",
+        "burning",
+        "fiery",
+        "flaming",
+        "glowing",
+        "shimmering",
+        "smoking"
+      ]
+    },
+    {
+      "name": "otherworldliness",
+      "explanation": "Otherworldliness-related moods.",
+      "entries": [
+        "{wondrous}"
+      ]
+    },
+    {
+      "name": "wondrous",
+      "explanation": "Wondrous adjectives.",
+      "entries": [
+        "blinding",
+        "gilded",
+        "shining"
+      ]
+    }
+  ]
 }
