@@ -50,10 +50,12 @@
       "name": "shadowy",
       "explanation": "Shadowy adverbs for colors.",
       "entries": [
+        "blurred",
         "cloudy",
         "deep",
         "foggy",
         "gloomy",
+        "hazy",
         "leaden",
         "muddy",
         "shadowy"
@@ -115,6 +117,7 @@
         "light",
         "mellow",
         "muted",
+        "opaque",
         "pale",
         "smokey",
         "soft",
@@ -165,10 +168,12 @@
       "explanation": "Transparent adverbs for colors.",
       "entries": [
         "glassy",
+        "glazed",
         "semiopaque",
         "semitransparent",
         "translucent",
-        "translucid"
+        "translucid",
+        "vitreous"
       ]
     },
     {
@@ -179,7 +184,9 @@
         "flecked",
         "mingled",
         "motley",
-        "speckled"
+        "patched",
+        "speckled",
+        "spotted"
       ]
     }
   ]
