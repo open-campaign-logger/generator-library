@@ -174,7 +174,16 @@
       "name": "rare",
       "explanation": "Rare materials. (Utilizing the still unreleased subtable call feature.)",
       "entries": [
+        "{primitive}",
         "{rare organic}"
+      ]
+    },
+    {
+      "name": "primitive",
+      "explanation": "Primitive materials.",
+      "entries": [
+        "flint",
+        "{bone}"
       ]
     },
     {

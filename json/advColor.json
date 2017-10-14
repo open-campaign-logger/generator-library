@@ -19,7 +19,7 @@
   "tables": [
     {
       "name": "adverb",
-      "explanation": "Adverb types by scarcity.",
+      "explanation": "Adverb rarity.",
       "entries": [
         {
           "m": 10,

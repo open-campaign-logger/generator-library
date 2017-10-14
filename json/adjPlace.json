@@ -19,7 +19,7 @@
   "tables": [
     {
       "name": "adjective",
-      "explanation": "Moods for adjectives, by scarcity.",
+      "explanation": "Adjectival mood rarity.",
       "entries": [
         {
           "m": 10,

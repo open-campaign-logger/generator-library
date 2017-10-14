@@ -18,17 +18,29 @@
   "tables": [
     {
       "name": "metal",
-      "explanation": "Metal types.",
+      "explanation": "Metal rarity.",
       "entries": [
         {
           "m": 10,
-          "v": "{base}"
+          "v": "{common}"
         },
-        {
-          "m": 5,
-          "v": "{alloy}"
-        },
-        "{precious}"
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common metals.",
+      "entries": [
+        "{base}",
+        "{alloy}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare metals.",
+      "entries": [
+        "{precious}",
+        "{ancient}"
       ]
     },
     {
@@ -99,6 +111,14 @@
         "silver",
         "gold",
         "{precious alloy}"
+      ]
+    },
+    {
+      "name": "ancient",
+      "explanation": "Metals from ancient cultures.",
+      "entries": [
+        "copper",
+        "bronze"
       ]
     },
     {

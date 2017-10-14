@@ -19,7 +19,7 @@
   "tables": [
     {
       "name": "direction",
-      "explanation": "Direction types by scarcity.",
+      "explanation": "Direction rarity.",
       "entries": [
         {
           "m": 10,
