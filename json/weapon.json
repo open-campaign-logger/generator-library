@@ -39,11 +39,20 @@
     },
     {
       "name": "hand to hand",
-      "explanation": "hand-to-hand weapon types.",
+      "explanation": "Hand-to-hand weapon types.",
       "entries": [
+        "cestus (leather strip gloves fitted with spikes)",
         "knuckledusters",
         "knuckle knives",
-        "punch dagger (short blade protruding from fist)"
+        "punch dagger (short blade protruding from fist)",
+        "{rare hand-to-hand}"
+      ]
+    },
+    {
+      "name": "rare hand to hand",
+      "explanation": "Rare hand-to-hand weapon types.",
+      "entries": [
+        "tiger claw (4 claw-like blades affixed to a crossbar)"
       ]
     },
     {
@@ -69,9 +78,10 @@
       "name": "club",
       "explanation": "Clubs.",
       "entries": [
-        "cudgel (slender, round wooden rod)",
         "truncheon",
-        "baton",
+        "cudgel (slender, round wooden rod)",
+        "shillelagh (wooden walking stick with a large knob at the top)",
+        "baton (short, round wooden club)",
         "club (short wooden stick)",
         "mace",
         "maul",
@@ -144,6 +154,7 @@
       "explanation": "Edged melee weapon types.",
       "entries": [
         "{knife}",
+        "{dagger}",
         "{sickle}",
         "{axe}",
         "{sword}",
@@ -152,19 +163,49 @@
     },
     {
       "name": "knife",
-      "explanation": "Knives.",
+      "explanation": "Knives (single-edged).",
       "entries": [
-        "knife",
-        "{dagger}"
+        "knife (single-edged small blade)",
+        "hunting knife (small knife used for skinning game and cutting meat)",
+        "{dagger}",
+        "{rare knife}"
+      ]
+    },
+    {
+      "name": "rare knife",
+      "explanation": "Rare knives (single-edged).",
+      "entries": [
+        "kukri (knife with an inwardly curved blade)",
+        "karambit (small curved knife resembling a claw)",
+        "kris (asymmetrical dagger with a wavy blade)"
       ]
     },
     {
       "name": "dagger",
-      "explanation": "Daggers.",
+      "explanation": "Daggers (double-edged knives).",
       "entries": [
-        "dagger",
+        "dagger (knife with two sharp edges and a sharp point)",
+        "misericorde (long, narrow dagger, used for delivering a mercy stroke)",
+        "hunting dagger (double-edged stabbing knife for killing game)",
+        "parrying dagger (left-hand dagger with a wide guard)",
         "rondel dagger (slim dagger with a round handguard)",
-        "dirk (long thrusting dagger)"
+        "knightly dagger (cross-hilt knife resembling a small sword)",
+        "baselard (long cutting dagger)",
+        "poignard (long, lightweight thrusting knife)",
+        "stiletto (dagger with a long, slender blade and needle-like point)",
+        "cinquedea (wide, heavy blade tapering into a rounded point)",
+        "dirk (long thrusting dagger)",
+        "{parrying dagger}"
+      ]
+    },
+    {
+      "name": "parrying dagger",
+      "explanation": "Off-hand daggers for defense.",
+      "entries": [
+        "parrying dagger (left-hand dagger with a wide guard)",
+        "main-gauche (large left-hand parrying dagger with a heavy blade)",
+        "swordbreaker (dagger with large, deep serrations on one edge)",
+        "trident dagger (blade divided lengthwise into 3 folding parts)"
       ]
     },
     {
@@ -191,6 +232,7 @@
         "smallsword (used for parrying)",
         "cutting rapier (rapier with a cutting edge)",
         "shortsword",
+        "seax (1-handed sword with a large, single-edged blade)",
         "knightly sword (straight, double-edged blade)",
         "falchion (1-handed, single-edged sword)",
         "cutlass (short, broad sabre with a slightly curved blade)",
@@ -199,8 +241,9 @@
         "rapier (slender thrusting sword)",
         "backsword (wide-bladed straight sword with a single sharp edge)",
         "broadsword (two-edged straight blade with a basket-shaped hand guard)",
-        "bastard sword",
-        "claymore (two-handed sword with forward-sloping cross hilt)",
+        "bastard sword (sword that can be used with 1 or 2 hands)",
+        "claymore (2-handed sword with forward-sloping cross hilt)",
+        "estoc (2-handed sword with a straight, edgeless but sharp blade)",
         "longsword (2 handed sword with a long, straight blade)",
         "{rare sword}"
       ]
@@ -313,7 +356,7 @@
       "name": "throwing knife",
       "explanation": "Thrown knives.",
       "entries": [
-        "throwing knife",
+        "throwing knife (weighted for effective throwing)",
         "throwing dagger"
       ]
     },
@@ -549,11 +592,34 @@
       "name": "modern",
       "explanation": "Weapons for modern worlds.",
       "entries": [
-        "{modern club}",
-        "{modern flexible}",
-        "{modern knife}",
-        "{firearm}",
+        "{modern hand to hand}",
+        "{modern melee}",
+        "{modern ranged}",
         "{rare modern}"
+      ]
+    },
+    {
+      "name": "modern hand to hand",
+      "explanation": "Hand-to-hand weapons for modern worlds.",
+      "entries": [
+        "brass knuckles (piece of metal shaped to be worn around the knuckles)",
+        "sap glove (gloves with metal sewn over knuckles)"
+      ]
+    },
+    {
+      "name": "modern melee",
+      "explanation": "Melee weapons for modern worlds.",
+      "entries": [
+        "{modern blunt}",
+        "{modern flexible}",
+        "{modern edged}"
+      ]
+    },
+    {
+      "name": "modern blunt",
+      "explanation": "Blunt weapons for modern worlds.",
+      "entries": [
+        "{modern club}"
       ]
     },
     {
@@ -561,11 +627,14 @@
       "explanation": "Clubs for modern worlds.",
       "entries": [
         "large metal flashlight",
+        "slapjack (hard weight inside a cloth sack)",
         "sap (flat, leather-covered lead rod with a spring handle)",
         "blackjack (short club with leather-wrapped lead weight)",
+        "nightstick (baton with a short side handle)",
+        "stun baton (capable of administrating an electric shock)",
+        "telescopic baton",
         "baseball bat",
-        "crowbar",
-        "telescopic baton"
+        "crowbar"
       ]
     },
     {
@@ -576,28 +645,41 @@
       ]
     },
     {
+      "name": "modern edged",
+      "explanation": "Edged weapons for modern worlds.",
+      "entries": [
+        "{modern knife}"
+      ]
+    },
+    {
       "name": "modern knife",
       "explanation": "Knives for modern worlds.",
       "entries": [
         "shiv (crude, homemade knife)",
-        "multitool knife",
+        "utility knife (small blade designed for handicraft)",
+        "box cutter (small, sliding, straight-edged blade inside a handle)",
+        "multi-tool knife (hand tool with multiple blades and tools)",
+        "razor (blade folding into the handle)",
+        "penknife (small, foldable blade suitable for sharpening pens)",
+        "pocket knife (small, foldable knife)",
+        "lock-blade knife (foldable knife, blade locking to the open position)",
+        "switchblade (sliding blade contained in the handle)",
+        "butterfly knife (two rotating handles)",
+        "folding knife",
+        "boot knife (small, fixed-blade knife carried in a boot)",
+        "neck knife (small knife carried on a chain worn around the neck)",
         "steak knife",
         "carving knife",
-        "pocket knife",
-        "hunting knife",
         "butcher's knife",
         "chef's knife",
         "cleaver",
-        "folding knife",
-        "switchblade",
-        "butterfly knife (two rotating handles)",
+        "hacking knife (strong knife with a single-sided straight edge)",
         "bowie knife",
-        "survival knife",
-        "throwing knife",
+        "survival knife (hollow handle with storage space)",
         "fighting knife",
+        "warrior knife (large, curved fighting knife with a serrated back)",
         "combat knife",
-        "bayonet",
-        "machete",
+        "machete (broad-bladed large knife)",
         "{rare modern knife}"
       ]
     },
@@ -605,8 +687,20 @@
       "name": "rare modern knife",
       "explanation": "Knives for modern worlds.",
       "entries": [
+        "ceramic knife",
+        "bayonet",
+        "ballpoint pen knife (pocket knife disguised as a pen)",
         "swordcane",
+        "sliding knife (the blade retracts into the handle)",
+        "gravity knife (blade contained in the handle, opened by gravity)",
         "ballistic knife (spring-propelled detachable blade)"
+      ]
+    },
+    {
+      "name": "modern ranged",
+      "explanation": "Ranged weapons for modern worlds.",
+      "entries": [
+        "{firearm}"
       ]
     },
     {
@@ -670,6 +764,7 @@
       "explanation": "Imaginary weapons for science fiction worlds.",
       "entries": [
         "{modern}",
+        "{futuristic melee}",
         "{railgun}",
         "{particle}",
         "{energy}",
@@ -677,22 +772,30 @@
       ]
     },
     {
+      "name": "futuristic melee",
+      "explanation": "Futuristic melee weapons for science fiction worlds.",
+      "entries": [
+        "diamond knife (very sharp edge made from diamond)",
+        "shocknife (composite knife capable of generating an electronic shock)"
+      ]
+    },
+    {
       "name": "railgun",
-      "explanation": "Railguns for modern worlds.",
+      "explanation": "Railguns for science fiction worlds.",
       "entries": [
         "railgun"
       ]
     },
     {
       "name": "particle",
-      "explanation": "Particle weapons for modern worlds.",
+      "explanation": "Particle weapons for science fiction worlds.",
       "entries": [
         "particle weapon"
       ]
     },
     {
       "name": "energy",
-      "explanation": "Energy weapons for modern worlds.",
+      "explanation": "Energy weapons for science fiction worlds.",
       "entries": [
         "energy weapon"
       ]

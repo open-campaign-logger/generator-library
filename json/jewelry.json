@@ -18,7 +18,7 @@
   "tables": [
     {
       "name": "jewelry",
-      "explanation": "Jewelry by scarcity.",
+      "explanation": "Jewelry rarity.",
       "entries": [
         "{common}",
         "{rare}"
@@ -159,21 +159,31 @@
       "name": "hand jewelry",
       "explanation": "Common jewellery worn on hands.",
       "entries": [
+        "{ring}",
+        "hand bracelet",
+        "hand harness (chain wrapped around the hand)",
+        "hand chain",
+        "handflower (ring chained to a bracelet)",
+        "{rare hand jewelry}"
+      ]
+    },
+    {
+      "name": "ring",
+      "explanation": "Common rings.",
+      "entries": [
         "ring",
         "plain ring",
         "sovereign ring (thick and large)",
         "signet ring (for imprinting a wax seal)",
         "giardinetti ring (multiple small stones)",
         "cameo ring (with a carved image)",
-        "{rare hand jewelry}"
+        "{rare ring}"
       ]
     },
     {
-      "name": "rare hand jewelry",
-      "explanation": "Rare jewellery worn on hands.",
+      "name": "rare ring",
+      "explanation": "Rare rings.",
       "entries": [
-        "slave bracelet (bracelet chained to a ring)",
-        "pair of rings joined by a chain",
         "thumb ring",
         "pinky ring (for little finger)",
         "multi-finger ring",
@@ -181,7 +191,15 @@
         "puzzle ring (interlocking rings forming a single band)",
         "poison ring (with a compartment under the bezel)",
         "key ring (with a key mounted on the bezel)",
-        "finger armor ring (jointed cover for whole finger)"
+        "pair of rings joined by a chain"
+      ]
+    },
+    {
+      "name": "rare hand jewelry",
+      "explanation": "Rare jewellery worn on hands.",
+      "entries": [
+        "slave bracelet (bracelet chained to a ring)",
+        "finger armor (jointed cover for whole finger)"
       ]
     },
     {
