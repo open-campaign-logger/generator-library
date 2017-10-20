@@ -14,7 +14,7 @@
   "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
   "sources": "",
   "genre": "universal",
-  "category": "",
+  "category": "item",
   "tags": "",
   "tables": [
     {
@@ -176,8 +176,7 @@
       "explanation": "Rare knives (single-edged).",
       "entries": [
         "kukri (knife with an inwardly curved blade)",
-        "karambit (small curved knife resembling a claw)",
-        "kris (asymmetrical dagger with a wavy blade)"
+        "karambit (small curved knife resembling a claw)"
       ]
     },
     {
@@ -195,7 +194,8 @@
         "stiletto (dagger with a long, slender blade and needle-like point)",
         "cinquedea (wide, heavy blade tapering into a rounded point)",
         "dirk (long thrusting dagger)",
-        "{parrying dagger}"
+        "{parrying dagger}",
+        "{rare dagger}"
       ]
     },
     {
@@ -206,6 +206,13 @@
         "main-gauche (large left-hand parrying dagger with a heavy blade)",
         "swordbreaker (dagger with large, deep serrations on one edge)",
         "trident dagger (blade divided lengthwise into 3 folding parts)"
+      ]
+    },
+    {
+      "name": "rare dagger",
+      "explanation": "Rare daggers.",
+      "entries": [
+        "kris (asymmetrical dagger with a wavy blade)"
       ]
     },
     {
@@ -255,7 +262,19 @@
         "flamberge (1-handed sword with an undulating blade)",
         "flambard (2-handed sword with an undulating blade)",
         "Zweihänder (large 2-handed sword)",
-        "greatsword"
+        "greatsword",
+        "{exotic sword}"
+      ]
+    },
+    {
+      "name": "exotic sword",
+      "explanation": "Exotic swords.",
+      "entries": [
+        "sickle-sword (curved sword sharpened on the outer edge)",
+        "butterfly sword (short, single-edged sword wielded in pairs)",
+        "hook sword",
+        "kalis (double-edged sword with a wavy section in the blade)",
+        "zulfiqar (sword with a scissors-like split blade)"
       ]
     },
     {
@@ -268,6 +287,7 @@
         "trident (three-pronged spear)",
         "war pick",
         "pike",
+        "swordstaff (a blade at the end of a staff)",
         "lance"
       ]
     },
@@ -332,7 +352,8 @@
       "name": "throwing dart",
       "explanation": "Thrown spear weapons.",
       "entries": [
-        "throwing dart"
+        "throwing dart",
+        "gypsy arrow (arrow-like dart thrown using a string)"
       ]
     },
     {
@@ -341,7 +362,8 @@
       "entries": [
         "throwing spear",
         "javelin",
-        "trident (three-pronged spear)"
+        "trident (three-pronged spear)",
+        "spear-thrower (a shaft for slinging short spears)"
       ]
     },
     {
@@ -362,7 +384,7 @@
     },
     {
       "name": "throwing axe",
-      "explanation": "Slings.",
+      "explanation": "throwing axes.",
       "entries": [
         "handaxe"
       ]
@@ -371,22 +393,10 @@
       "name": "sling",
       "explanation": "Slings types.",
       "entries": [
-        "{hand sling}",
-        "{staff sling}"
-      ]
-    },
-    {
-      "name": "hand sling",
-      "explanation": "Slings types.",
-      "entries": [
-        "hand sling"
-      ]
-    },
-    {
-      "name": "staff sling",
-      "explanation": "Slings types.",
-      "entries": [
-        "staff sling"
+        "hand sling",
+        "shepherd's sling",
+        "kestros (a sling for throwing darts)",
+        "staff sling (a staff with a sling at one end)"
       ]
     },
     {
