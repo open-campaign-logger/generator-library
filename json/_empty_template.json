@@ -14,8 +14,9 @@
   "authors": "",
   "sources": "",
   "genre": "",
-  "category": "",
-  "tags": "",
+  "categories": [
+    ""
+  ],
   "tables": [
     {
       "name": "XXX",

@@ -13,7 +13,9 @@
   "authors": "Esko Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
-  "category": "magic",
+  "categories": [
+    "magic"
+  ],
   "tags": "#magic, #spell, #power",
   "tables": [
     {

@@ -13,7 +13,9 @@
   "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
-  "category": "item",
+  "categories": [
+    "item"
+  ],
   "tags": "#material, #resource, #clothing",
   "tables": [
     {

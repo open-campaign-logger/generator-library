@@ -14,7 +14,9 @@
   "authors": "Esko Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
-  "category": "item",
+  "categories": [
+    "item"
+  ],
   "tags": "#music, #treasure",
   "tables": [
     {

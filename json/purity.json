@@ -13,7 +13,9 @@
   "authors": "Esko Vesala",
   "sources": "Thesaurus.com",
   "genre": "universal",
-  "category": "utility",
+  "categories": [
+    "utility"
+  ],
   "tags": "#description, #environment, #quality",
   "tables": [
     {

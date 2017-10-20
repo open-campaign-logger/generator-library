@@ -13,7 +13,9 @@
   "authors": "Esko Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
-  "category": "world",
+  "categories": [
+    "world"
+  ],
   "tags": "#nature, #plant, #resource",
   "tables": [
     {

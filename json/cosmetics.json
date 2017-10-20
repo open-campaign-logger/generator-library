@@ -14,7 +14,9 @@
   "authors": "Esko Vesala",
   "sources": "http://www.briskpost.com/2013/11/solah-shringar-hindu-mithology-16.html, Wikipedia.org",
   "genre": "universal",
-  "category": "character",
+  "categories": [
+    "character"
+  ],
   "tags": "#appearance",
   "tables": [
     {

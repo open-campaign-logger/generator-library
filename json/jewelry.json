@@ -13,8 +13,10 @@
   "authors": "Authors: Johnn Four, Jochen Linnemann, Esko Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
-  "category": "#person, #treasure",
-  "tags": "item",
+  "categories": [
+    "item"
+  ],
+  "tags": "#person, #treasure",
   "tables": [
     {
       "name": "jewelry",

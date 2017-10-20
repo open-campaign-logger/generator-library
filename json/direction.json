@@ -14,7 +14,9 @@
   "authors": "Esko Vesala",
   "sources": "wiki.Lspace.org, Wikipedia.org",
   "genre": "universal",
-  "category": "utility",
+  "categories": [
+    "utility"
+  ],
   "tags": "#location, #mapping",
   "tables": [
     {

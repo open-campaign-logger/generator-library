@@ -10,11 +10,13 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2017-10-14",
+  "date": "2017-10-20",
   "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
   "sources": "",
   "genre": "universal",
-  "category": "item",
+  "categories": [
+    "item"
+  ],
   "tags": "",
   "tables": [
     {

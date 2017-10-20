@@ -13,7 +13,9 @@
   "authors": "Esko Vesala",
   "sources": "SummitLighthouse.org, Wikipedia.org",
   "genre": "universal",
-  "category": "magic",
+  "categories": [
+    "magic"
+  ],
   "tags": "#person, #magic",
   "tables": [
     {

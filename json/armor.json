@@ -14,7 +14,9 @@
   "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
-  "category": "item",
+  "categories": [
+    "item"
+  ],
   "tags": "#armor, #equipment, #treasure",
   "tables": [
     {

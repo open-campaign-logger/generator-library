@@ -14,7 +14,9 @@
   "authors": "Esko Vesala",
   "sources": "http://www.baby2see.com/names/1880s.html",
   "genre": "historical",
-  "category": "name",
+  "categories": [
+    "name"
+  ],
   "tags": "#historical, #western, #1800s, #usa",
   "tables": [
     {

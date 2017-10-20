@@ -13,7 +13,9 @@
   "authors": "Esko Vesala.",
   "sources": "Craftsy.com, Wikipedia.org.",
   "genre": "universal",
-  "category": "utility",
+  "categories": [
+    "utility"
+  ],
   "tags": "#sense, #sight, #color",
   "tables": [
     {

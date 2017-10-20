@@ -14,7 +14,9 @@
   "authors": "Esko Vesala",
   "sources": " http://www.buckbd.com/genea/1850fnfl.txt,  http://www.buckbd.com/genea/1850fnml.txt,  http://www.buckbd.com/genea/1850freq.txt",
   "genre": "historical",
-  "category": "name",
+  "categories": [
+    "name"
+  ],
   "tags": "#historical, #western, #1800s, #usa",
   "tables": [
     {
