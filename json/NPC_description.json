@@ -1,0 +1,691 @@
+{
+  "name": "NPC Description Generator",
+  "resultPattern": "{form}{gender}{culture}{wealth}{attitude} \r\n  {description} \r\n{var:footnote}",
+  "variables": {
+    "activity": "",
+    "age": "",
+    "attitude": "",
+    "behavior": "",
+    "clothing": "",
+    "culture": "",
+    "doing": "",
+    "footnote": "",
+    "form": "",
+    "gender": "",
+    "mood": "",
+    "moodexpression": "",
+    "occupation": "",
+    "species": "",
+    "speciesmentioned": "",
+    "style": "",
+    "subject": "",
+    "substantive": "",
+    "wealth": ""
+  },
+  "explanation": "First impression of a Non-Player Character.",
+  "structure": "Produces generic entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, any non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "Most table calls do not return a direct result, but variables that can then be reused in the resultPattern. This generator has been initially created as a single file. When external subtable call support is added to Campaign Logger, it would make sense to split the generator into multiple files for easier maintenance and better reuse options.",
+  "bugs": "",
+  "to do": "Most of it... Starting from genre? ",
+  "see": "",
+  "date": "2017-10-01",
+  "authors": "Esko Vesala",
+  "sources": "Wikipedia.org",
+  "genre": "fantasy",
+  "category": "character",
+  "tags": "#npc, #person, #appearance",
+  "tables": [
+    {
+      "name": "description",
+      "explanation": "Short description of the character. Note that species returns a direct result (so that 'human', the default, can return an empty string.)",
+      "entries": [
+        "{var:age} {var:gender} {var:speciesmentioned} is {var:attitude} and {wearing} {var:clothingadjective} {clothing}. The {var:substantive} is {var:activity}. {now} {var:subject} is {var:attitude} and {var:mood}, {var:moodexpression}. ",
+        "{var:age} {var:gender} {var:speciesmentioned} {wearing} {var:clothingadjective} {clothing}. The {var:substantive} is {var:activity}. {now} {var:subject} is {var:mood}, {var:moodexpression}. {var:subject} has a {var:speciesadjective} sense of humor."
+      ]
+    },
+    {
+      "name": "form",
+      "explanation": "Form of the character.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{humanoid}",
+          "set": {
+            "form": "humanoid"
+          }
+        }
+      ]
+    },
+    {
+      "name": "humanoid",
+      "explanation": "Humanoid species (or races). The 'speciesmentioned' variable is used so that human (the expected norm) can be left without a mention, while other species are mentioned.",
+      "entries": [
+        {
+          "m": 50,
+          "v": "",
+          "set": {
+            "species": "human",
+            "speciesmentioned": "",
+            "speciesadjective": "human"
+          }
+        },
+        {
+          "m": 20,
+          "v": "",
+          "set": {
+            "species": "elf",
+            "speciesmentioned": "elf",
+            "speciesadjective": "elven"
+          }
+        },
+        {
+          "m": 20,
+          "v": "",
+          "set": {
+            "species": "dwarf",
+            "speciesmentioned": "dwarf",
+            "speciesadjective": "dwarven"
+          }
+        },
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "species": "gnome",
+            "speciesmentioned": "gnome",
+            "speciesadjective": "gnomish"
+          }
+        }
+      ]
+    },
+    {
+      "name": "gender",
+      "explanation": "Gender of the character.",
+      "entries": [
+        {
+          "m": 49,
+          "v": "{female age}",
+          "set": {
+            "gender": "female",
+            "subject": "she",
+            "object": "her",
+            "dependentpossessive": "her",
+            "independentpossessive": "hers",
+            "reflexive": "herself"
+          }
+        },
+        {
+          "m": 49,
+          "v": "{male age}",
+          "set": {
+            "gender": "male",
+            "subject": "he",
+            "object": "him",
+            "dependentpossessive": "his",
+            "independentpossessive": "his",
+            "reflexive": "himself"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rare gender",
+      "explanation": "Rare genders not generated unless specifically called.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{neuter age}",
+          "set": {
+            "gender": "neuter",
+            "subject": "it",
+            "object": "it",
+            "dependentpossessive": "its",
+            "independentpossessive": "its",
+            "reflexive": "itself"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{hermafrodite age}",
+          "set": {
+            "gender": "hermafrodite",
+            "subject": "they",
+            "object": "them",
+            "dependentpossessive": "their",
+            "independentpossessive": "theirs",
+            "reflexive": "themselves"
+          }
+        }
+      ]
+    },
+    {
+      "name": "neuter age",
+      "explanation": "Age for neuter characters (golems, automatons, homonculi, contructs, androids, etc).",
+      "entries": [
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "age": "teenage",
+            "substantive": "teenager"
+          }
+        },
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "age": "young",
+            "substantive": "youngster"
+          }
+        },
+        {
+          "m": 30,
+          "v": "",
+          "set": {
+            "age": "adult",
+            "substantive": "person"
+          }
+        },
+        {
+          "m": 20,
+          "v": "",
+          "set": {
+            "age": "middle aged",
+            "substantive": "person"
+          }
+        },
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "age": "old",
+            "substantive": "old one"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "age": "ancient",
+            "substantive": "ancient one"
+          }
+        }
+      ]
+    },
+    {
+      "name": "female age",
+      "explanation": "Age for female characters.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "age": "teenage",
+            "substantive": "teenager"
+          }
+        },
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "age": "young",
+            "substantive": "youngster"
+          }
+        },
+        {
+          "m": 30,
+          "v": "",
+          "set": {
+            "age": "adult",
+            "substantive": "person"
+          }
+        },
+        {
+          "m": 20,
+          "v": "",
+          "set": {
+            "age": "middle aged",
+            "substantive": "person"
+          }
+        },
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "age": "old",
+            "substantive": "old one"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "age": "ancient",
+            "substantive": "ancient one"
+          }
+        }
+      ]
+    },
+    {
+      "name": "male age",
+      "explanation": "Age for male characters.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "age": "teenage",
+            "substantive": "teenager"
+          }
+        },
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "age": "young",
+            "substantive": "youngster"
+          }
+        },
+        {
+          "m": 30,
+          "v": "",
+          "set": {
+            "age": "adult",
+            "substantive": "person"
+          }
+        },
+        {
+          "m": 20,
+          "v": "",
+          "set": {
+            "age": "middle aged",
+            "substantive": "person"
+          }
+        },
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "age": "old",
+            "substantive": "old one"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "age": "ancient",
+            "substantive": "ancient one"
+          }
+        }
+      ]
+    },
+    {
+      "name": "hermafrodite age",
+      "explanation": "Age for hermafrodite characters.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "age": "teenage",
+            "substantive": "teenager"
+          }
+        },
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "age": "young",
+            "substantive": "youngster"
+          }
+        },
+        {
+          "m": 30,
+          "v": "",
+          "set": {
+            "age": "adult",
+            "substantive": "person"
+          }
+        },
+        {
+          "m": 20,
+          "v": "",
+          "set": {
+            "age": "middle aged",
+            "substantive": "person"
+          }
+        },
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "age": "old",
+            "substantive": "old one"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "age": "ancient",
+            "substantive": "ancient one"
+          }
+        }
+      ]
+    },
+    {
+      "name": "culture",
+      "explanation": "What the character is wearing?",
+      "entries": [
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "culture": "Western"
+          }
+        },
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "culture": "Northern"
+          }
+        },
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "culture": "Eastern"
+          }
+        },
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "culture": "Southern"
+          }
+        }
+      ]
+    },
+    {
+      "name": "wealth",
+      "explanation": "Wealth distribution.",
+      "entries": [
+        {
+          "m": 5,
+          "v": "{poor clothing}",
+          "set": {
+            "wealth": "poor"
+          }
+        },
+        {
+          "m": 50,
+          "v": "{lower class clothing}",
+          "set": {
+            "wealth": "lower class"
+          }
+        },
+        {
+          "m": 30,
+          "v": "{middle class clothing}",
+          "set": {
+            "wealth": "middle class"
+          }
+        },
+        {
+          "m": 10,
+          "v": "{upper class clothing}",
+          "set": {
+            "wealth": "upper class"
+          }
+        },
+        {
+          "m": 5,
+          "v": "{rich clothing}",
+          "set": {
+            "wealth": "rich"
+          }
+        }
+      ]
+    },
+    {
+      "name": "poor clothing",
+      "explanation": "Clothing for poor characters.",
+      "entries": [
+        {
+          "m": 5,
+          "v": "",
+          "set": {
+            "clothing": "rags"
+          }
+        },
+        {
+          "m": 5,
+          "v": "",
+          "set": {
+            "clothing": "ill-fitting garments"
+          }
+        },
+        {
+          "m": 5,
+          "v": "",
+          "set": {
+            "clothingadjective": "dirty"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lower class clothing",
+      "explanation": "Clothing for lower class characters.",
+      "entries": [
+        {
+          "m": 5,
+          "v": "",
+          "set": {
+            "clothingadjective": "modest"
+          }
+        }
+      ]
+    },
+    {
+      "name": "middle class clothing",
+      "explanation": "Clothing for middle class characters.",
+      "entries": [
+        {
+          "m": 5,
+          "v": "",
+          "set": {
+            "clothingadjective": "ordinary"
+          }
+        }
+      ]
+    },
+    {
+      "name": "upper class clothing",
+      "explanation": "Clothing for upper class characters.",
+      "entries": [
+        {
+          "m": 5,
+          "v": "",
+          "set": {
+            "clothingadjective": "fashionable"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rich clothing",
+      "explanation": "Clothing for rich characters.",
+      "entries": [
+        {
+          "m": 5,
+          "v": "",
+          "set": {
+            "clothingadjective": "luxurious"
+          }
+        }
+      ]
+    },
+    {
+      "name": "attitude",
+      "explanation": "What is the character's attitude towards others?",
+      "entries": [
+        {
+          "m": 30,
+          "v": "",
+          "set": {
+            "attitude": "hostile"
+          }
+        },
+        {
+          "m": 40,
+          "v": "",
+          "set": {
+            "attitude": "neutral"
+          }
+        },
+        {
+          "m": 30,
+          "v": "",
+          "set": {
+            "attitude": "friendly"
+          }
+        }
+      ]
+    },
+    {
+      "name": "activity",
+      "explanation": "What the character's activity level?  Returns only variables.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{passive activity}",
+          "set": {
+            "activity": "passive"
+          }
+        },
+        {
+          "m": 10,
+          "v": "{active activity}",
+          "set": {
+            "activity": "active"
+          }
+        }
+      ]
+    },
+    {
+      "name": "passive activity",
+      "explanation": "Passive activities. Returns only variables.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "activity": "sleeping"
+          }
+        },
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "activity": "sitting"
+          }
+        },
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "activity": "standing"
+          }
+        }
+      ]
+    },
+    {
+      "name": "active activity",
+      "explanation": "Active activities. Returns only variables.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "activity": "walking"
+          }
+        },
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "activity": "running"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mood",
+      "explanation": "How the character is feeling?",
+      "entries": [
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "mood": "sad",
+            "moodexpression": "crying"
+          }
+        },
+        {
+          "m": 20,
+          "v": "",
+          "set": {
+            "mood": "passive",
+            "moodexpression": "deep in thoughts"
+          }
+        },
+        {
+          "m": 10,
+          "v": "",
+          "set": {
+            "mood": "happy",
+            "moodexpression": "laughing"
+          }
+        }
+      ]
+    },
+    {
+      "name": "wearing",
+      "explanation": "Synonyms for wearing clothes.",
+      "entries": [
+        "wearing",
+        "dressed in",
+        "clad in",
+        "clothed in",
+        "donning",
+        "outfitted in"
+      ]
+    },
+    {
+      "name": "clothing",
+      "explanation": "Synonyms for clothes.",
+      "entries": [
+        "clothing",
+        "garb",
+        "apparel",
+        "outfit",
+        "attire",
+        "gear",
+        "guise",
+        "wardrobe"
+      ]
+    },
+    {
+      "name": "now",
+      "explanation": "Synonyms for 'now'.",
+      "entries": [
+        "now",
+        "currently",
+        "at this time"
+      ]
+    }
+  ]
+}
