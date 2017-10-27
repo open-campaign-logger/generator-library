@@ -1,69 +1,197 @@
 {
-	"name": "Magic Item Generator",
-	"resultPattern": "{magicitem}",
-	"tables": [
-		{
-			"name": "magicitem",
-			"entries": [
-		    	"bag",
-        		"banner",
-        		"bead",
-        		"belt",
-        		"boots",
-        		"bottle",
-        		"bowl",
-        		"bracelet",
-        		"bracers",
-        		"brazier",
-        		"brooch",
-        		"broom",
-        		"candle",
-        		"cap",
-        		"cape",
-        		"censer",
-        		"chain",
-        		"circlet",
-        		"cloak",
-        		"codex",
-        		"cube",
-        		"deck",
-        		"dust",
-        		"figurine",
-        		"flask",
-        		"gauntlets",
-        		"gem",
-        		"gloves",
-        		"hat",
-        		"headband",
-        		"helm",
-        		"horn",
-        		"jewel",
-        		"key",
-        		"libram",
-        		"lyre",
-        		"mantle",
-        		"manual",
-        		"medallion",
-        		"necklace",
-        		"pendant",
-        		"periapt",
-        		"pipes",
-        		"potion",
-        		"quiver",
-        		"relic",
-        		"ring",
-        		"robe",
-        		"rod",
-        		"rope",
-        		"scarab",
-        		"seashell",
-        		"scroll",
-        		"slippers",
-        		"stone",
-        		"talisman",
-        		"tome",
-        		"wand"
-			]
-		}
-	]
+  "name": "magic item table",
+  "resultPattern": "{magic item}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Magic items and other magical paraphernalia.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "These are not magician's tools for casting magic, but magic items that are usable by anyone.",
+  "bugs": "",
+  "to do": "",
+  "see": "magic, magical_instrument, magical_technique, magician",
+  "date": "2017-10-14",
+  "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    "item"
+  ],
+  "tags": "#magic, #treasure",
+  "tables": [
+    {
+      "name": "magic item",
+      "explanation": "Magic item rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common magic item types.",
+      "entries": [
+        "{clothing}",
+        "{drink}",
+        "{storage}",
+        "{text}",
+        "{object}",
+        "{valuable}",
+        "{lib:weapon}",
+        "{lib:jewelry}",
+        "{lib:magical_instrument}",
+        "{lib:musical_instrument}",
+        "{lib:armor}"
+      ]
+    },
+    {
+      "name": "clothing",
+      "explanation": "Magical clothes.",
+      "entries": [
+        "belt",
+        "boots",
+        "cap",
+        "cape",
+        "cloak",
+        "mantle",
+        "gloves",
+        "hat",
+        "headband",
+        "slippers",
+        "robe"
+      ]
+    },
+    {
+      "name": "drink",
+      "explanation": "Magical drinkables.",
+      "entries": [
+        "potion",
+        "bottle",
+        "flask"
+      ]
+    },
+    {
+      "name": "storage",
+      "explanation": "Magical storage items.",
+      "entries": [
+        "bowl",
+        "bag"
+      ]
+    },
+    {
+      "name": "text",
+      "explanation": "Magical texts",
+      "entries": [
+        "codex",
+        "libram",
+        "manual",
+        "scroll",
+        "tome"
+      ]
+    },
+    {
+      "name": "object",
+      "explanation": "Magical objects.",
+      "entries": [
+        "banner",
+        "helm",
+        "bead",
+        "brazier",
+        "candle",
+        "censer",
+        "chain",
+        "circlet",
+        "cube",
+        "deck",
+        "dust",
+        "key",
+        "rope",
+        "seashell",
+        "stone"
+      ]
+    },
+    {
+      "name": "valuable",
+      "explanation": "Magical valuables.",
+      "entries": [
+        "figurine",
+        "gem",
+        "relic",
+        "jewel"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare magic item types.",
+      "entries": [
+        "pipe"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary magic items once rumoured to have existed.",
+      "entries": [
+        "XXX",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary magic items once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary magic items for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "XXX",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary magic items for fantasy worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Magic items for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare magic items for modern worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary magic items for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary magic items for science fiction worlds.",
+      "entries": [
+        "XXX"
+      ]
+    }
+  ]
 }
