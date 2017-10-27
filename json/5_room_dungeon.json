@@ -1,0 +1,383 @@
+{
+  "name": "5 Room Dungeon",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Five room dungeons.",
+  "structure": "Produces dungeon descriptions based on the 'Five Room Dungeon' formula.",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2017-10-28",
+  "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula.",
+  "sources": "RolePlayingTips.com",
+  "genre": "",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{b|Room 1}: {room 1} \r\n\r\n{b|Room 2}: {room 2} \r\n\r\n{b|Room 3}: {room 3} \r\n\r\n{b|Room 4}: {room 4} \r\n{roleplaying opportunity} \r\n\r\n{b|Room 5}: {room 5} \r\n\r\n\r\n "
+      ]
+    },
+    {
+      "name": "room 1",
+      "explanation": "There needs to be a reason why your dungeon hasn't been plundered before or why the PCs are the heroes for the job. A guardian or challenge at the entrance is a good justification why the location remains intact. Also, a guardian sets up early action to capture player interest and energize a session.",
+      "entries": [
+        "{entrance}"
+      ]
+    },
+    {
+      "name": "entrance",
+      "explanation": "Entrance to the dungeon. Add mood and theme!",
+      "entries": [
+        "The entrance is trapped with {trap}.",
+        "The entrance is cleverly hidden.",
+        "The entrance requires a {special key}.",
+        "The entrance is guarded by {guardian} that keeps intruders out.",
+        "A {guardian} is not indigenous to the dungeon but has made its lair in room one.",
+        "A {hazard} prevents entering and requires special skills and equipment to bypass."
+      ]
+    },
+    {
+      "name": "special key",
+      "explanation": "The key required to open the dungeon",
+      "entries": [
+        "ceremony",
+        "command word",
+        "physical object"
+      ]
+    },
+    {
+      "name": "guardian",
+      "explanation": "Keeps intruders out.",
+      "entries": [
+        "golem",
+        "robot",
+        "electric fence"
+      ]
+    },
+    {
+      "name": "hazard",
+      "explanation": "Prevents adventurers from entering.",
+      "entries": [
+        "radiation leak",
+        "security clearance",
+        "wall of fire"
+      ]
+    },
+    {
+      "name": "room 2",
+      "explanation": "The PCs are victorious over the challenge of the first room and are now presented with a trial that cannot be solved with steel. This keeps problem solvers in your group happy and breaks the action up for good pacing. Make Room Two a puzzle, skill-based, or roleplaying encounter, if possible. Room Two should shine the limelight on different PCs than Room One, change gameplay up, and offer variety between the challenge at the entrance and the challenge at the end. Note, if Room One was this type of encounter, then feel free to make Room Two combat-oriented. Room Two should allow for multiple solutions to prevent the game from stalling. Add clues to room 1!",
+      "entries": [
+        "{puzzle}",
+        "{information gathering}",
+        "{roleplaying challenge}"
+      ]
+    },
+    {
+      "name": "puzzle",
+      "explanation": "A trial that cannot be solved with steel.",
+      "entries": [
+        "{magic puzzle}",
+        "A dirt floor crawls with poisonous snakes that will slither out of the way to avoid open flame. (A few might follow at a distance and strike later on.)"
+      ]
+    },
+    {
+      "name": "information gathering",
+      "explanation": "A trial that cannot be solved with steel.",
+      "entries": [
+        "A buzzer panel for all the apartments, but the person the PCs are looking for has listed themselves under a different name, which can be figured out through previous clues you've dropped."
+      ]
+    },
+    {
+      "name": "magic puzzle",
+      "explanation": "A trial that cannot be solved with steel.",
+      "entries": [
+        "A chessboard tile floor with special squares."
+      ]
+    },
+    {
+      "name": "roleplaying challenge",
+      "explanation": "A trial that cannot be solved with steel.",
+      "entries": [
+        "An AI blocks access to the rest of the complex and must be befriended, not fought.",
+        "A concierge at the front desk must be bluffed or coerced without him raising the alarm.",
+        "The adventurers must convince a bouncer to let them in without confiscating their weapons."
+      ]
+    },
+    {
+      "name": "room 3",
+      "explanation": "The purpose of this room is to build tension. Do this using a trick, trap, or setback. For example, after defeating a tough monster, and players think they've finally found the treasure and achieved their goal, they learn they've been tricked and the room is a false crypt. Depending on your game system, use this room to cater to any player or character types not yet served by the first two areas. Alternatively, give your group a double-dose of gameplay that they enjoy the most, such as more combat or roleplaying. Another potential payoff for Room Three is to weaken the PCs as build-up to a dramatic struggle in Room Four. It might contain a tough combat encounter, take down a key defense, exhaust an important resource, or make the party susceptible to a certain type of attack. For example, if Room Four contains a mummy whose secret weakness is fire, then make Room Three a troll lair (or another creature susceptible to fire) so the PCs might be tempted to burn off a lot of their fire magic, oil, and\nother flammable resources. This would turn a plain old troll battle into a gotcha once the PCs hit Room Four and realize the are out of fire resources.\nDon't forget to dress Room Three up with your theme elements.",
+      "entries": [
+        "{trick}",
+        "{trap}",
+        "{setback}",
+        "{complication}",
+        "{combat encounter}"
+      ]
+    },
+    {
+      "name": "trick",
+      "explanation": "A trial that cannot be solved with steel.",
+      "entries": [
+        "The PCs rescue a number of {captives}. However, the victims are {captive complication}."
+      ]
+    },
+    {
+      "name": "captives",
+      "explanation": "A trial that cannot be solved with steel.",
+      "entries": [
+        "prisoners",
+        "hostages",
+        "minions"
+      ]
+    },
+    {
+      "name": "captive complication",
+      "explanation": "Trick or problem caused by captives.",
+      "entries": [
+        "enemies in disguise",
+        "booby-trapped",
+        "plead to be escorted back to safety immediately"
+      ]
+    },
+    {
+      "name": "trap",
+      "explanation": "A trial that cannot be solved with steel.",
+      "entries": [
+        "trap"
+      ]
+    },
+    {
+      "name": "setback",
+      "explanation": "A trial that cannot be solved with steel.",
+      "entries": [
+        "A collapsed structure blocks part of the area. The debris is dangerous and blocks {blocked area}.",
+        "{one way exit} leading back to room 1."
+      ]
+    },
+    {
+      "name": "blocked area",
+      "explanation": "A trial that cannot be solved with steel.",
+      "entries": [
+        "nothing of importance",
+        "another trap",
+        "{threat}"
+      ]
+    },
+    {
+      "name": "threat",
+      "explanation": "A trial that cannot be solved with steel.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "one way exit",
+      "explanation": "A trial that cannot be solved with steel.",
+      "entries": [
+        "teleport trap",
+        "one-way door",
+        "2000 foor water slide trap"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "A trial that cannot be solved with steel.",
+      "entries": [
+        "The artifact required to defeat the villain, but it is {artifact complication}. Clues reveal that a solution lies ahead.",
+        "Believing the object of the quest now lays within easy reach, an NPC companion turns traitor and betrays the PCs."
+      ]
+    },
+    {
+      "name": "artifact complication",
+      "explanation": "A trial that cannot be solved with steel.",
+      "entries": [
+        "broken",
+        "cursed",
+        "missing parts"
+      ]
+    },
+    {
+      "name": "combat encounter",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "A lair of trolls."
+      ]
+    },
+    {
+      "name": "room 4",
+      "explanation": "This room is The Big Show. It's the final combat or conflict encounter of the dungeon. Use all the tactics you can summon to make this encounter memorable and entertaining. As always, generate interesting terrain that will impact the battle!",
+      "entries": [
+        "{climax}",
+        "{big battle}",
+        "{conflict}"
+      ]
+    },
+    {
+      "name": "climax",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "Previous rooms have contained warning signals or an alarm, so the bad guy has had time to prepare.",
+        "The bay guys tries to settle things in an unusual way, through {unusual proposal}.",
+        "The bad guy reveals The Big Reward and threatens to {reward threat}.",
+        "The bad guy has a secret weakness that the PCs figure out how to exploit."
+      ]
+    },
+    {
+      "name": "unusual proposal",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "a wager",
+        "a duel"
+      ]
+    },
+    {
+      "name": "reward threat",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "break it",
+        "put it out of the PCs' reach so they'll never collect it"
+      ]
+    },
+    {
+      "name": "big battle",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "The bad guy has unexpected {capabilities}.",
+        "The lair is trapped. The bad guy {trap ability}."
+      ]
+    },
+    {
+      "name": "capabilities",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "powers",
+        "abilities",
+        "equipment"
+      ]
+    },
+    {
+      "name": "trap ability",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "knows what to avoid",
+        "knows where to avoid,",
+        "has the ability to set off the traps at opportune moments"
+      ]
+    },
+    {
+      "name": "conflict",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "A variety of PC skills and talents are required to successfully complete the encounter."
+      ]
+    },
+    {
+      "name": "roleplaying opportunity",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "The bad guy needs to stall for time to {reason to stall}.",
+        "Combat ends with the bad guy bleeding to death and a few short words can be exchanged.",
+        "There are helpless {captives} to roleplay with once the threat is dealt with."
+      ]
+    },
+    {
+      "name": "reason to stall",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "let PC buffs wear out",
+        "wait for help to arrive",
+        "stir himself into a rage."
+      ]
+    },
+    {
+      "name": "room 5",
+      "explanation": "Here's your opportunity to change the players' bragging to 'we came, we saw, we slipped on a banana peel.' Room Five doesn't always represent a complication or point of failure for the PCs, but it can. Room Five doesn't always need to be a physical location either - it can be a twist revealed in Room Four. Room Five is where your creativity can shine and is often what will make the dungeon different and memorable from the other crawls in your campaigns. In addition, if you haven't supplied the reward yet for conquering the dungeon, here is a good place to put the object of the quest, chests of loot, or the valuable information the PCs need to save the kingdom. As accounting tasks take over from recent, thrilling, combat tasks, this would also be a good time to make a campaign or world revelation, or a plot twist.",
+      "entries": [
+        "{reward}",
+        "{surprise}",
+        "{revelation}",
+        "{plot twist}"
+      ]
+    },
+    {
+      "name": "reward",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "A {bonus treasure} is discovered that leads to another adventure."
+      ]
+    },
+    {
+      "name": "bonus treasure",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "piece of a magic item",
+        "map fragment"
+      ]
+    },
+    {
+      "name": "surprise",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "Another guardian awaits in the treasure container.",
+        "A trap that resurrects or renews the challenge from Room Four."
+      ]
+    },
+    {
+      "name": "revelation",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "The location of the next 5 Room Dungeon is uncovered, along with sufficient motivation to accept the quest.",
+        "The true identity of the bad guy is revealed.",
+        "New clues and information pertaining to a major plot arc are embedded in the treasure, {information hiding place}.",
+        "The bad guy turns out to be a PC's father",
+        "The true, gruesome meaning behind a national holiday is discovered.",
+        "The source of an alien race's hostility towards others is uncovered, transforming them from villains to sympathetic characters in the story.",
+        "The true meaning of the prophecy or poem that lead the PCs to the dungeon is finally understood, and it's not what the PCs thought."
+      ]
+    },
+    {
+      "name": "information hiding place",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "sewn into a valuable carpet",
+        "drawn in painting",
+        "written on a slip of paper stuffed into a scroll tube",
+        "encoded on a data chip"
+      ]
+    },
+    {
+      "name": "plot twist",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "A rival enters and tries to steal the reward while the PCs are weakened after the big challenge of Room Four.",
+        "The object of the quest final reward isn't what it seems or has a complication. i.e. The kidnapped king doesn't want to return.",
+        "The quest was a trick. By killing the dungeon's bad guy the PCs have actually helped the campaign {enemy}. The bad guy was actually {bad guy true form}."
+      ]
+    },
+    {
+      "name": "enemy",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "villain",
+        "rival"
+      ]
+    },
+    {
+      "name": "bad guy true form",
+      "explanation": "A trial that can be solved with steel.",
+      "entries": [
+        "a good guy under a curse",
+        "a good guy transformed",
+        "a good guy placed into difficult circumstances"
+      ]
+    }
+  ]
+}
