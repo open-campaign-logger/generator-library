@@ -1,0 +1,739 @@
+{
+  "name": "clothing: generic",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Generic clothes and apparel suitable for various worlds.",
+  "structure": "Produces entries suitable for various types of genres and worlds.",
+  "note": "",
+  "bugs": "",
+  "to do": "More cultures and time periods. What's the best approach for them?",
+  "see": "adornment",
+  "date": "2017-10-27",
+  "authors": "Esko Vesala.",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "categories": [
+    "item"
+  ],
+  "tags": "#clothes, #person, #appearance",
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{b|Female}: {female}",
+        "{b|Male}: {male}",
+        "{b|Unisex}: {unisex}"
+      ]
+    },
+    {
+      "name": "female",
+      "explanation": "Female variations for resultPattern output.",
+      "entries": [
+        "{dress}",
+        "{uniform}",
+        "{female top} and {female bottom}",
+        "{female headwear}, {female top} and {female bottom}"
+      ]
+    },
+    {
+      "name": "male",
+      "explanation": "Male variations for resultPattern output.",
+      "entries": [
+        "{suit}",
+        "{uniform}",
+        "{male top} and {male bottom}",
+        "{male headwear}, {male top} and {male bottom}"
+      ]
+    },
+    {
+      "name": "unisex",
+      "explanation": "Unisex variations for resultPattern output.",
+      "entries": [
+        "{uniform}",
+        "{unisex top} and {unisex bottom}"
+      ]
+    },
+    {
+      "name": "clothing",
+      "explanation": "Clothing by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common clothing types.",
+      "entries": [
+        "{female}",
+        "{male}",
+        "{unisex}"
+      ]
+    },
+    {
+      "name": "female",
+      "explanation": "Common female clothing types.",
+      "entries": [
+        "{female nightwear}",
+        "{female underwear}",
+        "{female headwear}",
+        "{female neckwear}",
+        "{female top}",
+        "{female handwear}",
+        "{female bottom}",
+        "{dress}",
+        "{female outerwear}",
+        "{female footwear}",
+        "{female swimwear}"
+      ]
+    },
+    {
+      "name": "female nightwear",
+      "explanation": "Sleeping garments for women.",
+      "entries": [
+        "pajamas",
+        "short-sleeve pajamas",
+        "sleepshirt",
+        "nightgown",
+        "sleeveless nightgown",
+        "hip-length sleeveless nightgown",
+        "floor-length sleeveless nightgown",
+        "hip-length nightgown with sleeves",
+        "nightgown with sleeves",
+        "floor-length nightgown with sleeves",
+        "negligee (long, see-through dressing gown)",
+        "babydoll nightgown"
+      ]
+    },
+    {
+      "name": "female underwear",
+      "explanation": "Female underwear.",
+      "entries": [
+        "corset",
+        "bustier",
+        "camisole"
+      ]
+    },
+    {
+      "name": "female headwear",
+      "explanation": "Female headwear.",
+      "entries": [
+        "hat",
+        "pillbox hat"
+      ]
+    },
+    {
+      "name": "female neckwear",
+      "explanation": "Female neckwear.",
+      "entries": [
+        "scarf",
+        "neckerchief"
+      ]
+    },
+    {
+      "name": "female top",
+      "explanation": "Female upper body clothing.",
+      "entries": [
+        "blouse",
+        "tube top"
+      ]
+    },
+    {
+      "name": "female handwear",
+      "explanation": "Female handwear.",
+      "entries": [
+        "gloves"
+      ]
+    },
+    {
+      "name": "female bottom",
+      "explanation": "Female lower body clothing.",
+      "entries": [
+        "skirt",
+        "shorts",
+        "leggings"
+      ]
+    },
+    {
+      "name": "dress",
+      "explanation": "Dresses for females.",
+      "entries": [
+        "dress",
+        "overalls"
+      ]
+    },
+    {
+      "name": "female outerwear",
+      "explanation": "Female outerwear.",
+      "entries": [
+        "sleeved blanket",
+        "overcoat"
+      ]
+    },
+    {
+      "name": "female footwear",
+      "explanation": "Female footwear.",
+      "entries": [
+        "shoes",
+        "slingback shoes (secured by a strap behind the heel)",
+        "high-heeled shoes",
+        "stiletto heels"
+      ]
+    },
+    {
+      "name": "female swimwear",
+      "explanation": "Female swimwear.",
+      "entries": [
+        "swimsuit"
+      ]
+    },
+    {
+      "name": "male",
+      "explanation": "Common male clothing types.",
+      "entries": [
+        "{male nightwear}",
+        "{male underwear}",
+        "{male headwear}",
+        "{male neckwear}",
+        "{male top}",
+        "{male handwear}",
+        "{male bottom}",
+        "{suit}",
+        "{male outerwear}",
+        "{male footwear}",
+        "{male swimwear}"
+      ]
+    },
+    {
+      "name": "male nightwear",
+      "explanation": "Sleeping garments for men.",
+      "entries": [
+        "pajamas",
+        "short-sleeve pajamas"
+      ]
+    },
+    {
+      "name": "male underwear",
+      "explanation": "Male underwear.",
+      "entries": [
+        "underpants",
+        "longjohns"
+      ]
+    },
+    {
+      "name": "male headwear",
+      "explanation": "Male headwear.",
+      "entries": [
+        "beanie",
+        "cap",
+        "flat cap",
+        "beret",
+        "fedora",
+        "bowler hat",
+        "hat"
+      ]
+    },
+    {
+      "name": "male neckwear",
+      "explanation": "Male neckwear.",
+      "entries": [
+        "scarf",
+        "long scarf"
+      ]
+    },
+    {
+      "name": "male top",
+      "explanation": "Male upper body clothing.",
+      "entries": [
+        "shirt",
+        "collared shirt",
+        "buttoned shirt"
+      ]
+    },
+    {
+      "name": "male handwear",
+      "explanation": "Male handwear.",
+      "entries": [
+        "mittens",
+        "gloves"
+      ]
+    },
+    {
+      "name": "male bottom",
+      "explanation": "Male lower body clothing.",
+      "entries": [
+        "trousers",
+        "pants"
+      ]
+    },
+    {
+      "name": "suit",
+      "explanation": "Suits for males.",
+      "entries": [
+        "overalls",
+        "onesie",
+        "suit",
+        "lounge suit",
+        "business suit",
+        "three-piece suit"
+      ]
+    },
+    {
+      "name": "male outerwear",
+      "explanation": "Male outerwear.",
+      "entries": [
+        "robe",
+        "jacket",
+        "leather jacket",
+        "hoodie",
+        "blazer",
+        "short overcoat",
+        "long overcoat",
+        "parka",
+        "trenchcoat"
+      ]
+    },
+    {
+      "name": "male footwear",
+      "explanation": "Male footwear.",
+      "entries": [
+        "shoes",
+        "boots",
+        "sandals"
+      ]
+    },
+    {
+      "name": "male swimwear",
+      "explanation": "Male swimwear.",
+      "entries": [
+        "swimming trunks"
+      ]
+    },
+    {
+      "name": "unisex",
+      "explanation": "Common unisex clothing types.",
+      "entries": [
+        "{unisex nightwear}",
+        "{unisex underwear}",
+        "{unisex headwear}",
+        "{unisex neckwear}",
+        "{unisex top}",
+        "{unisex handwear}",
+        "{unisex bottom}",
+        "{unisex footwear}",
+        "{uniform}",
+        "{unisex outerwear}",
+        "{unisex swimwear}"
+      ]
+    },
+    {
+      "name": "unisex nightwear",
+      "explanation": "Sleeping garments for all genders.",
+      "entries": [
+        "pajamas",
+        "short-sleeve pajamas"
+      ]
+    },
+    {
+      "name": "unisex underwear",
+      "explanation": "Unisex underwear.",
+      "entries": [
+        "underpants"
+      ]
+    },
+    {
+      "name": "unisex headwear",
+      "explanation": "Unisex headwear.",
+      "entries": [
+        "hat"
+      ]
+    },
+    {
+      "name": "unisex neckwear",
+      "explanation": "Unisex neckwear.",
+      "entries": [
+        "scarf"
+      ]
+    },
+    {
+      "name": "unisex top",
+      "explanation": "Unisex upper body clothing.",
+      "entries": [
+        "collared shirt"
+      ]
+    },
+    {
+      "name": "unisex handwear",
+      "explanation": "Unisex handwear.",
+      "entries": [
+        "gloves"
+      ]
+    },
+    {
+      "name": "unisex bottom",
+      "explanation": "Unisex lower body clothing.",
+      "entries": [
+        "trousers"
+      ]
+    },
+    {
+      "name": "unisex footwear",
+      "explanation": "Unisex footwear.",
+      "entries": [
+        "shoes",
+        "boots"
+      ]
+    },
+    {
+      "name": "uniform",
+      "explanation": "Unisex uniforms.",
+      "entries": [
+        "uniform"
+      ]
+    },
+    {
+      "name": "unisex outerwear",
+      "explanation": "Unisex outerwear.",
+      "entries": [
+        "overcoat"
+      ]
+    },
+    {
+      "name": "unisex swimwear",
+      "explanation": "Unisex swimwear.",
+      "entries": [
+        "swimming suit"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare clothes.",
+      "entries": [
+        "{child}",
+        "{lib:adornment}"
+      ]
+    },
+    {
+      "name": "child",
+      "explanation": "Common children's clothing types.",
+      "entries": [
+        "{child nightwear}",
+        "{child underwear}",
+        "{child headwear}",
+        "{child neckwear}",
+        "{child top}",
+        "{child handwear}",
+        "{child bottom}",
+        "{child suit}",
+        "{child footwear}",
+        "{child outerwear}",
+        "{child swimwear}"
+      ]
+    },
+    {
+      "name": "child nightwear",
+      "explanation": "Sleeping garments for children.",
+      "entries": [
+        "pajamas",
+        "short-sleeve pajamas",
+        "sleepshirt",
+        "nightgown",
+        "sleeveless nightgown",
+        "hip-length sleeveless nightgown",
+        "floor-length sleeveless nightgown",
+        "hip-length nightgown with sleeves",
+        "nightgown with sleeves",
+        "floor-length nightgown with sleeves",
+        "negligee (long, see-through dressing gown)",
+        "babydoll nightgown"
+      ]
+    },
+    {
+      "name": "child underwear",
+      "explanation": "Underwear for children.",
+      "entries": [
+        "underpants"
+      ]
+    },
+    {
+      "name": "child headwear",
+      "explanation": "Headwear for children.",
+      "entries": [
+        "hat"
+      ]
+    },
+    {
+      "name": "child neckwear",
+      "explanation": "Neckwear for children.",
+      "entries": [
+        "scarf"
+      ]
+    },
+    {
+      "name": "child top",
+      "explanation": "Upper body clothing for children.",
+      "entries": [
+        "blouse"
+      ]
+    },
+    {
+      "name": "child handwear",
+      "explanation": "Handwear for children.",
+      "entries": [
+        "gloves"
+      ]
+    },
+    {
+      "name": "child bottom",
+      "explanation": "Lower body clothing for children.",
+      "entries": [
+        "skirt"
+      ]
+    },
+    {
+      "name": "child suit",
+      "explanation": "Whole body suits for children.",
+      "entries": [
+        "dress"
+      ]
+    },
+    {
+      "name": "child outerwear",
+      "explanation": "Outerwear for children.",
+      "entries": [
+        "overcoat"
+      ]
+    },
+    {
+      "name": "child footwear",
+      "explanation": "Footwear for children.",
+      "entries": [
+        "shoes"
+      ]
+    },
+    {
+      "name": "child swimwear",
+      "explanation": "Swimwear for children.",
+      "entries": [
+        "swimsuit"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Clothes once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Clothes for fantasy worlds.",
+      "entries": [
+        "{fantasy female}",
+        "{fantasy male}",
+        "{fantasy unisex}"
+      ]
+    },
+    {
+      "name": "fantasy female",
+      "explanation": "Female clothes for fantasy worlds.",
+      "entries": [
+        "{female}",
+        "bodice (upper garment covering the body from the neck to the waist)"
+      ]
+    },
+    {
+      "name": "fantasy male",
+      "explanation": "Male clothes for fantasy worlds.",
+      "entries": [
+        "{male}",
+        "tunic"
+      ]
+    },
+    {
+      "name": "fantasy unisex",
+      "explanation": "Unisex clothes for fantasy worlds.",
+      "entries": [
+        "{unisex}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Clothes for modern worlds.",
+      "entries": [
+        "{common}",
+        "{modern female}",
+        "{modern male}",
+        "{modern unisex}"
+      ]
+    },
+    {
+      "name": "modern female",
+      "explanation": "Female clothes for modern worlds.",
+      "entries": [
+        "{female}",
+        "{modern female underwear}",
+        "{modern unisex}"
+      ]
+    },
+    {
+      "name": "modern female underwear",
+      "explanation": "Female underwear for modern worlds.",
+      "entries": [
+        "panties",
+        "bra"
+      ]
+    },
+    {
+      "name": "modern male",
+      "explanation": "Male clothes for modern worlds.",
+      "entries": [
+        "{male}",
+        "{modern male underwear}",
+        "{modern unisex}"
+      ]
+    },
+    {
+      "name": "modern male underwear",
+      "explanation": "Male underwear for modern worlds.",
+      "entries": [
+        "union suit (one-piece long underwear)",
+        "long underwear (two-piece underwear with long lengs and sleeves)"
+      ]
+    },
+    {
+      "name": "modern unisex",
+      "explanation": "unisex clothes for modern worlds.",
+      "entries": [
+        "{unisex}",
+        "{modern unisex underwear}"
+      ]
+    },
+    {
+      "name": "modern unisex underwear",
+      "explanation": "Unisex underwear for modern worlds.",
+      "entries": [
+        "union suit (one-piece long underwear)"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary clothes for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "{futuristic female}",
+        "{futuristic male}",
+        "{futuristic unisex}"
+      ]
+    },
+    {
+      "name": "futuristic female",
+      "explanation": "Female clothes for futuristic worlds.",
+      "entries": [
+        "{modern female}",
+        "{futuristic female underwear}",
+        "{futuristic unisex}"
+      ]
+    },
+    {
+      "name": "futuristic female underwear",
+      "explanation": "Female underwear for futuristic worlds.",
+      "entries": [
+        "{modern unisex underwear}"
+      ]
+    },
+    {
+      "name": "futuristic male",
+      "explanation": "Male clothes for futuristic worlds.",
+      "entries": [
+        "{modern male}",
+        "{futuristic male underwear}",
+        "{futuristic unisex}"
+      ]
+    },
+    {
+      "name": "futuristic male underwear",
+      "explanation": "Male underwear for futuristic worlds.",
+      "entries": [
+        "{modern unisex underwear}"
+      ]
+    },
+    {
+      "name": "futuristic unisex",
+      "explanation": "unisex clothes for futuristic worlds.",
+      "entries": [
+        "{modern unisex}",
+        "{futuristic unisex underwear}"
+      ]
+    },
+    {
+      "name": "futuristic unisex underwear",
+      "explanation": "Unisex underwear for futuristic worlds.",
+      "entries": [
+        "{modern unisex underwear}"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special clothing types.",
+      "entries": [
+        "{nightwear}",
+        "{swimwear}",
+        "{infant}",
+        "{pet}"
+      ]
+    },
+    {
+      "name": "nightwear",
+      "explanation": "Sleeping garments.",
+      "entries": [
+        "{female nightwear}",
+        "{male nightwear}"
+      ]
+    },
+    {
+      "name": "swimwear",
+      "explanation": "Swimming garments.",
+      "entries": [
+        "{female swimwear}",
+        "{male swimwear}"
+      ]
+    },
+    {
+      "name": "infant",
+      "explanation": "Babies' clothing.",
+      "entries": [
+        "swaddling bands (tight blanket wrapping)",
+        "blanket sleeper (warm sleeping garment)",
+        "diaper",
+        "footed pajamas",
+        "infant bodysuit",
+        "playsuit (one-piece garment for small children)",
+        "pram suit (cold-weather outerwear enclosing the entire body)"
+      ]
+    },
+    {
+      "name": "pet",
+      "explanation": "Clothes for pets (dogs & cats).",
+      "entries": [
+        "pet collar",
+        "pet hair clip",
+        "pet bandana",
+        "pet harness",
+        "pet raincoat",
+        "paw protectors",
+        "pet belly wrap",
+        "pet diapers",
+        "pet vest",
+        "pet jacket",
+        "pet parka"
+      ]
+    }
+  ]
+}
