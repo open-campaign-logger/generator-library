@@ -1,25 +1,495 @@
 {
-	"name": "Armor Generator",
-	"resultPattern": "{armor}",
-	"tables": [
-		{
-			"name": "armor",
-			"entries": [
-		    	"breastplate",
-        		"suit of chain mail armor",
-        		"chain shirt",
-        		"suit of half plate armor",
-        		"helmet",
-        		"suit of hide armor",
-        		"suit of leather armor",
-        		"suit of padded armor",
-        		"suit of plate mail armor ",
-        		"suit of ring mail armor",
-        		"suit of scale mail armor",
-        		"shield",
-        		"suit of splint mail armor",
-        		"suit of studded leather armor"
-			]
-		}
-	]
+  "name": "armor table",
+  "resultPattern": "{armor}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Suits and pieces of armor.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2017-10-10",
+  "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "categories": [
+    "item"
+  ],
+  "tags": "#armor, #equipment, #treasure",
+  "tables": [
+    {
+      "name": "armor",
+      "explanation": "Generic armor types.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common armor materials.",
+      "entries": [
+        "{shield}",
+        "{cloth}",
+        "{leather}",
+        "{metal}"
+      ]
+    },
+    {
+      "name": "shield",
+      "explanation": "Shields.",
+      "entries": [
+        "buckler (small shield gripped in the fist)",
+        "roundel shield (round wood shield, covered with leather)",
+        "roundel shield (round wood shield, stuck full of nails)",
+        "roundel shield (round wood shield, covered plates of metal)",
+        "targe shield (round, concave shield)",
+        "heater shield (triangular shape)",
+        "kite shield (large, rounded at the top and with a point at the bottom)",
+        "{rare shield}"
+      ]
+    },
+    {
+      "name": "rare shield",
+      "explanation": "Rare shields.",
+      "entries": [
+        "lantern shield (small circular shield combined with a lantern)",
+        "pavise (large convex shield for archers, protecting the entire body)"
+      ]
+    },
+    {
+      "name": "cloth",
+      "explanation": "Cloth armor types.",
+      "entries": [
+        "gambeson (padded jacket)",
+        "aketon (padded jacket with arming points for attaching plate pieces)",
+        "padded armor"
+      ]
+    },
+    {
+      "name": "leather",
+      "explanation": "Leather armor types.",
+      "entries": [
+        "{leather armor piece}",
+        "studded leather armour",
+        "lamellar leather armor (rectancular leather pieces laced into horizontal rows)",
+        "cuirbouilli armor (hardened leather)"
+      ]
+    },
+    {
+      "name": "leather armor piece",
+      "explanation": "Leather armor pieces.",
+      "entries": [
+        "bracer (archer's leather armguard)",
+        "splinted leather cuisse (thigh armor)",
+        "brigandine leather cuisse (thigh armor)"
+      ]
+    },
+    {
+      "name": "metal",
+      "explanation": "Metal armor types.",
+      "entries": [
+        "{helmet}",
+        "{metal armor piece}",
+        "{mail}",
+        "{mail and plate}",
+        "{coat of plates}",
+        "{lamellar}",
+        "{scale}",
+        "{brigandine}",
+        "{splint}",
+        "{laminar}",
+        "{plate}"
+      ]
+    },
+    {
+      "name": "helmet",
+      "explanation": "Helmets.",
+      "entries": [
+        "{plate metal} skull cap",
+        "ridge helmet (bowl made of two parts, united by a longitudinal ridge)",
+        "nasal helmet (with a metal strip as a noseguard)",
+        "spangenhelm (conical helmet made from plates connected by metal strips) with cheek flaps",
+        "spangenhelm (conical helmet made from plates connected by metal strips)",
+        "spectacle helmet (helmet with a frame around the eyes)",
+        "kettle hat (brimmed metal hat)",
+        "{plate helmet}"
+      ]
+    },
+    {
+      "name": "metal armor piece",
+      "explanation": "Metal armor pieces.",
+      "entries": [
+        "{plate metal} manica (segmented armguard fastened to leather straps)",
+        "breastplate"
+      ]
+    },
+    {
+      "name": "mail",
+      "explanation": "Mail armor types.",
+      "entries": [
+        "{mail armor piece}",
+        "byrnie (waist-lenth mail shirt)",
+        "haubergeon (mid-thight length mail shirt)",
+        "hauberk (knee-length, sleeved mail shirt)",
+        "jazeraint (mail armor between layers of fabric)"
+      ]
+    },
+    {
+      "name": "mail armor piece",
+      "explanation": "Mail armor pieces.",
+      "entries": [
+        "mail coif (hood of mail)",
+        "aventail (curtain of mail for attaching to the helmet)",
+        "pixane (mail collar covering the shoulders, breast and upper back)",
+        "miton (mail mitten)",
+        "chausse (mail leggings)"
+      ]
+    },
+    {
+      "name": "mail and plate",
+      "explanation": "Mail and plate armors.",
+      "entries": [
+        "mail and plate armor (mail with embedded plates)"
+      ]
+    },
+    {
+      "name": "coat of plates",
+      "explanation": "Coats of plate armors.",
+      "entries": [
+        "jack of plates (small overlapping plates sewn between layers of fabric)",
+        "coat of plates (overlapping metal plates riveted inside a leather garment)"
+      ]
+    },
+    {
+      "name": "lamellar",
+      "explanation": "Lamellar armor types.",
+      "entries": [
+        "{plate metal} lamellar armor (rectancular plates laced into horizontal rows)"
+      ]
+    },
+    {
+      "name": "scale",
+      "explanation": "Scale armor types.",
+      "entries": [
+        "scale armor (overlapping rows of armor scales riveted to leather backing)"
+      ]
+    },
+    {
+      "name": "brigandine",
+      "explanation": "Brigandine armors.",
+      "entries": [
+        "cloth brigandine (garment with steel plates riveted to the fabric)",
+        "canvas brigandine (garment with steel plates riveted to the fabric)",
+        "leather brigandine (garment with steel plates riveted to the fabric)"
+      ]
+    },
+    {
+      "name": "splint",
+      "explanation": "Splint armors.",
+      "entries": [
+        "splint armor (strips of metal attached to leather foundation)"
+      ]
+    },
+    {
+      "name": "laminar",
+      "explanation": "Laminar armors.",
+      "entries": [
+        "laminar armor (overlapping horizontal plates)"
+      ]
+    },
+    {
+      "name": "plate",
+      "explanation": "Plate armor types.",
+      "entries": [
+        "{plate piece}",
+        "{suit of plate}"
+      ]
+    },
+    {
+      "name": "plate piece",
+      "explanation": "Plate piece types.",
+      "entries": [
+        "{plate helmet}",
+        "{plate neck piece}",
+        "{plate body piece}",
+        "{plate arm piece}",
+        "{plate hand piece}",
+        "{plate leg piece}",
+        "{plate foot piece}"
+      ]
+    },
+    {
+      "name": "plate helmet",
+      "explanation": "Plate armor helmets.",
+      "entries": [
+        "bascinet (open face military helmet)",
+        "bascinet (open face military helmet) with a visor",
+        "sallet (helmet with curved sides protecting the chin and neck)",
+        "burgonet (helmet with a peak above the face opening)",
+        "close helmet (fully enclosing helmet with a pivoting visor)",
+        "armet (fully enclosing helmet following the contours of the neck and throat)",
+        "barbute (visorless helmet with a T shaped opening for eyes and mouth)",
+        "enclosed helmet (flat topped helmet covering the entire head)",
+        "great helm (cylinder-shaped helmet completely covering the head)",
+        "frog-mouth helm (closed helmet with a frog mouth shaped eye slit)"
+      ]
+    },
+    {
+      "name": "plate neck piece",
+      "explanation": "Plate armor neck pieces.",
+      "entries": [
+        "{plate metal} gorget (plate collar protecting the throat)",
+        "{plate metal} bevor (plate armor protecting the neck and chin)",
+        "falling buffe (plate lames protecting the throat and lower face)"
+      ]
+    },
+    {
+      "name": "plate body piece",
+      "explanation": "Plate armor body pieces.",
+      "entries": [
+        "{plate metal} cuirass (chest plate)",
+        "{plate metal} muscle cuirass (chest plate mimicing idealized muscle structure)",
+        "{plate metal} ornamented cuirass (chest plate)",
+        "besague (circular plate piece protecting the armpit)",
+        "plackart (plate armour covering the belly)",
+        "faulds (overlapping horizontal metal lames protecting the waist)",
+        "culet (overlapping horizontal metal lames protecting the buttocks)"
+      ]
+    },
+    {
+      "name": "plate arm piece",
+      "explanation": "Plate arm pieces.",
+      "entries": [
+        "spaulder (plate bands joined by leather strips, covering the shoulder)",
+        "pauldron (shoulder guard)",
+        "gardbrace (plate armour covering the front of the shoulder)",
+        "rerebrace (plate piece protecting the arm above the elbow)",
+        "vambrace (forearm guard)",
+        "couter (elbow guard)"
+      ]
+    },
+    {
+      "name": "plate hand piece",
+      "explanation": "Plate hand pieces.",
+      "entries": [
+        "demi-gauntlet (plate glove protecting only the back of the hand)",
+        "gauntlet (plate armour glove)"
+      ]
+    },
+    {
+      "name": "plate leg piece",
+      "explanation": "Plate leg pieces.",
+      "entries": [
+        "{plate metal} cuisse (thigh armor)",
+        "{plate metal} tassets (plate pieces protecting the upper thighs)",
+        "poleyn (knee guard)",
+        "schynbald (plate piece protecting the front and outside of the shin)",
+        "demi-greave (shin armor)",
+        "closed greave (shin and calf armor)"
+      ]
+    },
+    {
+      "name": "plate foot piece",
+      "explanation": "Plate leg pieces.",
+      "entries": [
+        "solleret (shoe made of plate lames)",
+        "sabaton (broad-toed shoe made of plate lames)"
+      ]
+    },
+    {
+      "name": "plate metal",
+      "explanation": "Plate armor metals.",
+      "entries": [
+        "bronze",
+        "iron",
+        "steel"
+      ]
+    },
+    {
+      "name": "suit of plate",
+      "explanation": "Suits of plate armor.",
+      "entries": [
+        "half plate armour",
+        "Almain rivet armour (low quality plate armour with breast and back plates)",
+        "Kasten-brust armour (with a box-shaped breastplate)",
+        "gothic plate armour",
+        "Maximilian armour (decorated steel plate armor)",
+        "parade armour (decorated suit of plate)"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare generic armor types.",
+      "entries": [
+        "{hide}",
+        "{bone}",
+        "{wood}"
+      ]
+    },
+    {
+      "name": "hide",
+      "explanation": "Hide armor types.",
+      "entries": [
+        "hide armor (thick furs and pelts)",
+        "lamellar hide armor (rectancular hide pieces laced into horizontal rows)"
+      ]
+    },
+    {
+      "name": "bone",
+      "explanation": "Bone armor types.",
+      "entries": [
+        "lamellar bone armour",
+        "lamellar tusk armour",
+        "bone splint armour"
+      ]
+    },
+    {
+      "name": "wood",
+      "explanation": "Wooden armor types.",
+      "entries": [
+        "lamellar wood armour",
+        "wooden splint armour"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Imaginary armor types once rumoured to have existed.",
+      "entries": [
+        "cold iron {metal}",
+        "dwarven {metal}",
+        "elven {metal}",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary armor types once rumoured to have existed.",
+      "entries": [
+        "Huliðshjálmr (concealing helmet of the dwarves)",
+        "{unique mythological}"
+      ]
+    },
+    {
+      "name": "unique mythological",
+      "explanation": "Unique imaginary armor types once rumoured to have existed.",
+      "entries": [
+        "Green armour (of Arthurian legend, protects from physical injuries)",
+        "Beowulf's armour (mailshirt made by Wayland the Smith)",
+        "Sigurd's armour (golden mail coat from Fafnir's hoard)",
+        "Dubán (the black shield of Cú Chulainn)",
+        "Iron crown of Lombardy (made from nails used for the crucifixion)"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Imaginary armor types for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "horned helmet",
+        "winged helmet",
+        "banded mail (splint mail reinforced with leather bands)",
+        "ring mail",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare imaginary armor types for fantasy worlds.",
+      "entries": [
+        "dragon scale armor"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Armor types for modern worlds.",
+      "entries": [
+        "{modern head protection}",
+        "{modern hand protection}",
+        "{modern leg protection}",
+        "{ballistic fabric}",
+        "{trauma plate}",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "modern head protection",
+      "explanation": "Head protectors for modern worlds.",
+      "entries": [
+        "helmet"
+      ]
+    },
+    {
+      "name": "modern chest protection",
+      "explanation": "Chest protectors for modern worlds.",
+      "entries": [
+        "bullet-proof vest"
+      ]
+    },
+    {
+      "name": "modern hand protection",
+      "explanation": "Hand protectors for modern worlds.",
+      "entries": [
+        "shoulder pad",
+        "elbow pad"
+      ]
+    },
+    {
+      "name": "modern leg protection",
+      "explanation": "Leg protectors for modern worlds.",
+      "entries": [
+        "shin guard",
+        "knee pad"
+      ]
+    },
+    {
+      "name": "ballistic fabric",
+      "explanation": "Ballistic fabrics for modern worlds.",
+      "entries": [
+        "ballistic nylon vest",
+        "aramid vest"
+      ]
+    },
+    {
+      "name": "trauma plate",
+      "explanation": "Trauma plates for modern worlds.",
+      "entries": [
+        "soft trauma vest (layers of aramid fabrics)",
+        "UHMWPE (Ultra-high-molecular-weight polyethylene) vest",
+        "metal trauma plate vest",
+        "ceramic plate vest",
+        "fiberglass laminate vest"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare armor types for modern worlds.",
+      "entries": [
+        "composite body armor"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary armor types for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "{liquid armor}",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "liquid armor",
+      "explanation": "Liquid armor types.",
+      "entries": [
+        "smart fluid armor (soaked in fluid that solidifies on impact)",
+        "STF armor (soaked in shear thickening fluid that solidifies with strain)",
+        "MRF armor (soaked in magnetorheological fluid that solidifies when magnetized)"
+      ]
+    }
+  ]
 }
