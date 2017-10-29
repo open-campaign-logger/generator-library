@@ -1,22 +1,56 @@
 {
   "name": "5 Room Dungeon",
-  "resultPattern": "{motif}{symbol}{location}{goal}{macguffin}{treasure}{enemy}{guardian}{minion}{captive}{helper}{hindrance}{danger}{trap}\r\n {adventure name} \r\n\r\n {dungeon description} \r\n{var:footnote}",
+  "resultPattern": "{difficulty}{motif}{symbol}{location}{goal}{macguffin}{treasure}{enemy}{guardian}{minion}{captive}{ally}{hindrance}{danger}{trap}\r\n\n{adventure description} \r\n\r\n",
   "variables": {
     "adventure name": "",
+    "difficulty": "",
+    "difficultyexplanation": "",
     "motif": "",
     "symbol": "",
     "location": "",
+    "locationdescription": "",
+    "environment": "",
     "goal": "",
+    "herald": "",
+    "mentor": "",
     "macguffin": "",
+    "artifact": "",
     "treasure": "",
     "enemy": "",
+    "enemies": "",
+    "enemygroup": "",
+    "enemyadjective": "",
+    "entrance": "",
+    "lock": "",
+    "key": "",
     "guardian": "",
+    "guardians": "",
+    "guardiangroup": "",
+    "guardianadjective": "",
+    "monster": "",
+    "monsters": "",
+    "monstergroup": "",
+    "monsteradjective": "",
     "minion": "",
+    "minions": "",
+    "miniongroup": "",
+    "minionadjective": "",
     "captive": "",
-    "helper": "",
+    "captives": "",
+    "captivegroup": "",
+    "captiveadjective": "",
+    "ally": "",
+    "allies": "",
+    "allygroup": "",
+    "allyadjective": "",
+    "tempter": "",
+    "traitor": "",
+    "rival": "",
     "hindrance": "",
+    "setback": "",
     "danger": "",
     "trap": "",
+    "trial": "",
     "footnote": ""
   },
   "explanation": "Five room dungeons.",
@@ -34,6 +68,27 @@
   ],
   "tables": [
     {
+      "name": "adventure description",
+      "explanation": "The adventure described in WordPress format.",
+      "entries": [
+        "<H2>{adventure name}</H2> \n        <B>Difficulty</B>: {var:difficulty} <P>(This mini adventure is best suited for {var:difficultyexplanation}.) <P>{arrival} {var:locationdescription}.\r\n\n\n                     <H3>Room 1</H3> {room 1} \n        <H3>Room 2</H3> {room 2} \n        <H3>Room 3</H3> {room 3} \n        <H3>Room 4</H3> {room 4} \n        {roleplaying opportunity} \n        <H3>Room 5</H3> {room 5} \n        <P>{var:footnote}"
+      ]
+    },
+    {
+      "name": "adventure description for WordPress",
+      "explanation": "The adventure described in WordPress format.",
+      "entries": [
+        "<H2>{adventure name}</H2> \n        <B>Difficulty</B>: {var:difficulty} <P>(This mini adventure is best suited for {var:difficultyexplanation}.) \n             <H3>Room 1</H3> {room 1} \n        <H3>Room 2</H3> {room 2} \n        <H3>Room 3</H3> {room 3} \n        <H3>Room 4</H3> {room 4} \n        {roleplaying opportunity} \n        <H3>Room 5</H3> {room 5} \n        <P>{var:footnote}"
+      ]
+    },
+    {
+      "name": "adventure description for campaign logger",
+      "explanation": "The adventure described in Campaign Logger format.",
+      "entries": [
+        "{adventure name} \r\n\r\n{b|Level}: {var:difficulty} (This mini adventure is best suited for {var:difficultyexplanation}.) \r\n\r\n{b|Room 1}: {room 1} \r\n\r\n{b|Room 2}: {room 2} \r\n\r\n{b|Room 3}: {room 3} \r\n\r\n{b|Room 4}: {room 4} \r\n{roleplaying opportunity} \r\n\r\n{b|Room 5}: {room 5} \r\n\r\n\r\n{var:footnote}\r\n "
+      ]
+    },
+    {
       "name": "adventure name",
       "explanation": "Variations for the name of the adventure based on set variables.",
       "entries": [
@@ -43,6 +98,52 @@
         "{var:macguffin} of the {enemy adjective} {var:enemy}",
         "{treasure adjective} {var:treasure} of the {location adjective} {var:location}",
         "{minion adjective} {var:minion} of the {enemy adjective} {var:enemy}"
+      ]
+    },
+    {
+      "name": "difficulty",
+      "explanation": "The difficulty level of the adventure.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "difficulty": "apprentice",
+            "difficultyexplanation": "inexperienced adventurers"
+          }
+        },
+        {
+          "m": 2,
+          "v": "",
+          "set": {
+            "difficulty": "journeyman",
+            "difficultyexplanation": "adventurers with some experience"
+          }
+        },
+        {
+          "m": 3,
+          "v": "",
+          "set": {
+            "difficulty": "master",
+            "difficultyexplanation": "experienced adventurers"
+          }
+        },
+        {
+          "m": 2,
+          "v": "",
+          "set": {
+            "difficulty": "hero",
+            "difficultyexplanation": "highly experienced adventurers"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "difficulty": "legend",
+            "difficultyexplanation": "only the most experienced of adventurers"
+          }
+        }
       ]
     },
     {
@@ -94,9 +195,54 @@
           "m": 1,
           "v": "",
           "set": {
+            "symbol": "scourge"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "symbol": "adventure"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "symbol": "expedition"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
             "symbol": "blade"
           }
         }
+      ]
+    },
+    {
+      "name": "arrival",
+      "explanation": "Introductory words about adventurers discovering the location.",
+      "entries": [
+        "The {adventurer} has heard about",
+        "The {adventurer} has heard a rumour about",
+        "The {adventurer} sees from a distance",
+        "The {adventurer} arrives at",
+        "The {adventurer} stumbles upon"
+      ]
+    },
+    {
+      "name": "adventurer",
+      "explanation": "Alternative expressions for the PC party.",
+      "entries": [
+        "adventurer party",
+        "adventuring party",
+        "party",
+        "troupe",
+        "travelling band",
+        "group of travelers",
+        "group of heroes"
       ]
     },
     {
@@ -107,287 +253,369 @@
           "m": 1,
           "v": "",
           "set": {
-            "location": "temple"
+            "location": "temple",
+            "locationdescription": "a temple hiding dark secrets",
+            "environment": "city"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "tomb"
+            "location": "tomb",
+            "locationdescription": "a tomb where {var:enemy} dwells",
+            "environment": "graveyard"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "vault"
+            "location": "vault",
+            "locationdescription": "a vault that is rumoured to contain {var:treasure}",
+            "environment": "underground"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "cave"
+            "location": "cave",
+            "locationdescription": "a cave located deep in the bowels of nearly impassable mountains",
+            "environment": "mountain"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "grotto"
+            "location": "grotto",
+            "locationdescription": "a grotto formed by an underground water passage",
+            "environment": "coast"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "labyrinth"
+            "location": "labyrinth",
+            "locationdescription": "a labyrinth built in a bygone age",
+            "environment": "temple"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "house"
+            "location": "house",
+            "locationdescription": "a house where {var:enemy} hides",
+            "environment": "city"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "manor"
+            "location": "manor",
+            "locationdescription": "a country manor where strange occurrences are said to happen",
+            "environment": "country"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "tower"
+            "location": "tower",
+            "locationdescription": "a lone, imposing tower",
+            "environment": "castle"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "swamp"
+            "location": "swamp",
+            "locationdescription": "an almost impassable, fetid swamp",
+            "environment": "wilderness"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "forest"
+            "location": "forest",
+            "locationdescription": "a dense forest hiding dark secrets under its canopy",
+            "environment": "wilderness"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "monument"
+            "location": "monument",
+            "locationdescription": "a colossal monument built in ancient times",
+            "environment": "city"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "vale"
+            "location": "vale",
+            "locationdescription": "a remote vale hidden between impassable mountains",
+            "environment": "mountain"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "dolmen"
+            "location": "dolmen",
+            "locationdescription": "an ancient underground tomb guarded by standing stones",
+            "environment": "wilderness"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "grave"
+            "location": "grave",
+            "locationdescription": "the final resting place of {var:enemy}",
+            "environment": "graveyard"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "dungeon"
+            "location": "dungeon",
+            "locationdescription": "a notorious dungeon complex",
+            "environment": "underground"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "ship"
+            "location": "ship",
+            "locationdescription": "a ship sailing to a far-off lands",
+            "environment": "sea"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "keep"
+            "location": "keep",
+            "locationdescription": "a lone keep built on the borderlands",
+            "environment": "castle"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "town"
+            "location": "town",
+            "locationdescription": "a town whose inhabitants are in a dire need of help",
+            "environment": "city"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "fortress"
+            "location": "fortress",
+            "locationdescription": "a fortress built to guard an ancient kingdom from its already forgotten enemies",
+            "environment": "castle"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "mountain"
+            "location": "mountain",
+            "locationdescription": "a high mountain where few dare venture",
+            "environment": "mountain"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "wilderness"
+            "location": "wilderness",
+            "locationdescription": "a remote wilderness where strange creatures roam",
+            "environment": "wilderness"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "hall"
+            "location": "hall",
+            "locationdescription": "a hall built inside the city walls, where few have entered and even fewer returned",
+            "environment": "city"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "mine"
+            "location": "mine",
+            "locationdescription": "a deserted mine that has been stripped off valuable ore",
+            "environment": "underground"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "eyrie"
+            "location": "eyrie",
+            "locationdescription": "an eyrie built on a high mountaintop",
+            "environment": "mountain"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "maze"
+            "location": "maze",
+            "locationdescription": "a complex maze structure built for an unknown purpose",
+            "environment": "country"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "cove"
+            "location": "cove",
+            "locationdescription": "a cove on the coastline",
+            "environment": "coast"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "chamber"
+            "location": "chamber",
+            "locationdescription": "a mysterious chamber where bypassers suspect something strange is going on",
+            "environment": "city"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "cavern"
+            "location": "cavern",
+            "locationdescription": "an underground cavern",
+            "environment": "underground"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "donjon"
+            "location": "donjon",
+            "locationdescription": "a donjon that was once built to protect a nearby town",
+            "environment": "castle"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "pit"
+            "location": "pit",
+            "locationdescription": "a deep underground pit from where strange emanations have been heard",
+            "environment": "underground"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "grove"
+            "location": "grove",
+            "locationdescription": "a grove of trees planted a long time ago",
+            "environment": "wilderness"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "undercity"
+            "location": "undercity",
+            "locationdescription": "a shadowy undercity where life is cheap",
+            "environment": "city"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "retreat"
+            "location": "retreat",
+            "locationdescription": "a remote dwelling",
+            "environment": "wilderness"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "castle"
+            "location": "castle",
+            "locationdescription": "a foreboding castle",
+            "environment": "castle"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "prison"
+            "location": "prison",
+            "locationdescription": "an old prison building",
+            "environment": "city"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "land"
+            "location": "land",
+            "locationdescription": "a plot of land in the wilderness",
+            "environment": "wilderness"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "isle"
+            "location": "isle",
+            "locationdescription": "a remote isle in the sea",
+            "environment": "sea"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "lair"
+            "location": "lair",
+            "locationdescription": "a lair where {var:enemy} dwells",
+            "environment": "mountain"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "wasteland"
+            "location": "wasteland",
+            "locationdescription": "an uninhabited wasteland in the wilderness",
+            "environment": "wilderness"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "sewer"
+            "location": "sewer",
+            "locationdescription": "a sewer complex built under the city",
+            "environment": "city"
           }
         }
       ]
@@ -760,6 +988,27 @@
           "m": 1,
           "v": "",
           "set": {
+            "enemy": "cannibal king"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "demon lord"
+          }
+        },
+        {
+          "m": 1,
+          "v": "ogre",
+          "set": {
+            "enemy": ""
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
             "enemy": "beast"
           }
         }
@@ -786,21 +1035,46 @@
           "m": 1,
           "v": "",
           "set": {
-            "guardian": "golem"
+            "guardian": "golem",
+            "guardians": "golems",
+            "guardiangroup": "company of golems",
+            "guardianadjective": "animated"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "guardian": "living statue"
+            "guardian": "living statue",
+            "guardians": "living statues",
+            "guardiangroup": "column of living statues",
+            "guardianadjective": "magically animated"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "guardian": "construct"
+            "guardian": "construct",
+            "guardians": "constructs",
+            "guardiangroup": "accumulation of constructs",
+            "guardianadjective": "mechanical"
+          }
+        }
+      ]
+    },
+    {
+      "name": "monster",
+      "explanation": "Monster hiding in the dungeon.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "monster": "monster",
+            "monsters": "monsters",
+            "monstergroup": "group of monters",
+            "monsteradjective": "hideous"
           }
         }
       ]
@@ -813,70 +1087,105 @@
           "m": 1,
           "v": "",
           "set": {
-            "minion": "automaton"
+            "minion": "automaton",
+            "minions": "automata",
+            "miniongroup": "assembly of automata",
+            "minionadjective": "mechanical"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "minion": "manbeast"
+            "minion": "manbeast",
+            "minions": "manbeasts",
+            "miniongroup": "horde of manbeasts",
+            "minionadjective": "ravenous"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "minion": "beastman"
+            "minion": "beastman",
+            "minions": "beastmen",
+            "miniongroup": "horde of beastmen",
+            "minionadjective": "inhuman"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "minion": "frogmen"
+            "minion": "frogmen",
+            "minions": "frogmen",
+            "miniongroup": "group of frogmen",
+            "minionadjective": "slime-covered"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "minion": "servitor"
+            "minion": "servitor",
+            "minions": "servitors",
+            "miniongroup": "congregation of servitors",
+            "minionadjective": "mindless"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "minion": "slave"
+            "minion": "devotee",
+            "minions": "devotees",
+            "miniongroup": "congregation of devotees",
+            "minionadjective": "faithful"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "minion": "thrall"
+            "minion": "slave",
+            "minions": "slaves",
+            "miniongroup": "slave gang"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "minion": "guard"
+            "minion": "thrall",
+            "minions": "thralls",
+            "miniongroup": "gang of thralls"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "minion": "worshipper"
+            "minion": "guard",
+            "minions": "guards",
+            "miniongroup": "troops of guards"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "minion": "imp"
+            "minion": "worshipper",
+            "minions": "worshippers",
+            "miniongroup": "sect of worshippers"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "minion": "imp",
+            "minions": "imps",
+            "miniongroup": "gathering of imps"
           }
         }
       ]
@@ -886,17 +1195,8 @@
       "explanation": "",
       "entries": [
         "cursed",
-        "fiendish"
-      ]
-    },
-    {
-      "name": "minion group",
-      "explanation": "",
-      "entries": [
-        "horde",
-        "army",
-        "pack",
-        "tribe"
+        "fiendish",
+        "carnivorous"
       ]
     },
     {
@@ -907,13 +1207,33 @@
           "m": 1,
           "v": "",
           "set": {
-            "captive": "captive"
+            "captive": "captive",
+            "captives": "captives",
+            "captivegroup": "group of captives"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "captive": "prisoner",
+            "captives": "prisoners",
+            "captivegroup": "group of prisoners"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "captive": "hostage",
+            "captives": "hostages",
+            "captivegroup": "group of hostages"
           }
         }
       ]
     },
     {
-      "name": "helper",
+      "name": "ally",
       "explanation": "",
       "entries": [
         {
@@ -962,13 +1282,6 @@
             "trap": "spike trap"
           }
         }
-      ]
-    },
-    {
-      "name": "dungeon description",
-      "explanation": "The dungeon description written out.",
-      "entries": [
-        "{b|Room 1}: {room 1} \r\n\r\n{b|Room 2}: {room 2} \r\n\r\n{b|Room 3}: {room 3} \r\n\r\n{b|Room 4}: {room 4} \r\n{roleplaying opportunity} \r\n\r\n{b|Room 5}: {room 5} \r\n\r\n\r\n "
       ]
     },
     {
@@ -1030,7 +1343,7 @@
       "name": "information gathering",
       "explanation": "",
       "entries": [
-        "A buzzer panel for all the apartments, but the person the PCs are looking for has listed themselves under a different name, which can be figured out through previous clues you've dropped."
+        "A buzzer panel for all the apartments, but the person the adventurers are looking for has listed themselves under a different name, which can be figured out through previous clues."
       ]
     },
     {
@@ -1064,16 +1377,7 @@
       "name": "trick room",
       "explanation": "",
       "entries": [
-        "The PCs rescue a number of {captives}. However, the victims are {captive complication}."
-      ]
-    },
-    {
-      "name": "captives",
-      "explanation": "",
-      "entries": [
-        "prisoners",
-        "hostages",
-        "minions"
+        "The adventurers rescue a {var:captivegroup}. However, the {var:captives} are {captive complication}."
       ]
     },
     {
@@ -1223,16 +1527,16 @@
       "entries": [
         "The {var:enemy} needs to stall for time to {reason to stall}.",
         "Combat ends with the {var:enemy} bleeding to death and a few short words can be exchanged.",
-        "There are helpless {captives} to roleplay with once the threat is dealt with."
+        "There is a helpless {var:captive} {var:captivegroup} to roleplay with once the threat is dealt with."
       ]
     },
     {
       "name": "reason to stall",
       "explanation": "",
       "entries": [
-        "let PC buffs wear out",
+        "let adventurer's buffs wear out",
         "wait for help to arrive",
-        "stir himself into a rage."
+        "stir himself into a rage"
       ]
     },
     {
@@ -1264,7 +1568,7 @@
       "name": "surprise",
       "explanation": "",
       "entries": [
-        "Another guardian awaits in the treasure container.",
+        "{var:monster} awaits in the treasure container.",
         "A trap that resurrects or renews the challenge from Room Four."
       ]
     },
