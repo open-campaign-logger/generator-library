@@ -1,26 +1,972 @@
 {
   "name": "5 Room Dungeon",
-  "resultPattern": "{result}",
+  "resultPattern": "{motif}{symbol}{location}{goal}{macguffin}{treasure}{enemy}{guardian}{minion}{captive}{helper}{hindrance}{danger}{trap}\r\n {adventure name} \r\n\r\n {dungeon description} \r\n{var:footnote}",
   "variables": {
+    "adventure name": "",
+    "motif": "",
+    "symbol": "",
+    "location": "",
+    "goal": "",
+    "macguffin": "",
+    "treasure": "",
+    "enemy": "",
+    "guardian": "",
+    "minion": "",
+    "captive": "",
+    "helper": "",
+    "hindrance": "",
+    "danger": "",
+    "trap": "",
     "footnote": ""
   },
   "explanation": "Five room dungeons.",
   "structure": "Produces dungeon descriptions based on the 'Five Room Dungeon' formula.",
   "note": "",
   "bugs": "",
-  "to do": "",
+  "to do": "Support for external motif files (requires global variables)",
   "see": "",
-  "date": "2017-10-28",
+  "date": "2017-10-29",
   "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula.",
   "sources": "RolePlayingTips.com",
-  "genre": "",
+  "genre": "universal",
   "categories": [
-    ""
+    "plot"
   ],
   "tables": [
     {
-      "name": "result",
-      "explanation": "Variations for resultPattern output.",
+      "name": "adventure name",
+      "explanation": "Variations for the name of the adventure based on set variables.",
+      "entries": [
+        "{var:symbol} of the {enemy adjective} {var:enemy}",
+        "{location adjective} {var:location} of the {enemy adjective} {var:enemy}",
+        "{var:goal} the {enemy adjective} {var:enemy}",
+        "{var:macguffin} of the {enemy adjective} {var:enemy}",
+        "{treasure adjective} {var:treasure} of the {location adjective} {var:location}",
+        "{minion adjective} {var:minion} of the {enemy adjective} {var:enemy}"
+      ]
+    },
+    {
+      "name": "motif",
+      "explanation": "Theme of the adventure.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "dungeon"
+          }
+        }
+      ]
+    },
+    {
+      "name": "symbol",
+      "explanation": "Symbolic word that can used in the adventure title.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "symbol": "throne"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "symbol": "shadow"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "symbol": "blood"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "symbol": "lure"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "symbol": "blade"
+          }
+        }
+      ]
+    },
+    {
+      "name": "location",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "temple"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "tomb"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "vault"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "cave"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "grotto"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "labyrinth"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "house"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "manor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "tower"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "swamp"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "forest"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "monument"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "vale"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "dolmen"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "grave"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "dungeon"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "ship"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "keep"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "town"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "fortress"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "mountain"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "wilderness"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "hall"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "mine"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "eyrie"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "maze"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "cove"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "chamber"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "cavern"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "donjon"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "pit"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "grove"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "undercity"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "retreat"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "castle"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "prison"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "land"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "isle"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "lair"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "wasteland"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "sewer"
+          }
+        }
+      ]
+    },
+    {
+      "name": "location adjective",
+      "explanation": "",
+      "entries": [
+        "forgotten",
+        "lost",
+        "ancient",
+        "forbidden",
+        "cursed",
+        "foreboding",
+        "hidden",
+        "unknown",
+        "hellish",
+        "demon-infested",
+        "haunted"
+      ]
+    },
+    {
+      "name": "goal",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goal": "against"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goal": "conquer"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goal": "bring me the head of"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goal": "escape"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goal": "duel"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goal": "capture"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goal": "challenge"
+          }
+        }
+      ]
+    },
+    {
+      "name": "macguffin",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "macguffin": "scepter"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "macguffin": "crown"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "macguffin": "gauntlet"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "macguffin": "libram"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "macguffin": "blade"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "macguffin": "urn"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "macguffin": "gem"
+          }
+        }
+      ]
+    },
+    {
+      "name": "macguffin adjective",
+      "explanation": "",
+      "entries": [
+        "cursed",
+        "rune-carved"
+      ]
+    },
+    {
+      "name": "treasure",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "treasure": "hoard"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "treasure": "tome"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "treasure": "secret"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "treasure": "scroll"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "treasure": "treasure"
+          }
+        }
+      ]
+    },
+    {
+      "name": "treasure adjective",
+      "explanation": "",
+      "entries": [
+        "peerless",
+        "ancient",
+        "hidden"
+      ]
+    },
+    {
+      "name": "enemy",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "snake cultist"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "oracle"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "high priest"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "monster"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "madman"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "wizard"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "necromancer"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "phantom"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "serpent"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "slave lord"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "old one"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "dragon"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "wyrm"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "abomination"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "wight"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "lich"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "horde"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "tribe"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "general"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "inquisitor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "mistress"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "colossus"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "giant"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "traitor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "faceless evil"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "enemy": "beast"
+          }
+        }
+      ]
+    },
+    {
+      "name": "enemy adjective",
+      "explanation": "",
+      "entries": [
+        "fiendish",
+        "dark",
+        "mysterious",
+        "ancient",
+        "vile",
+        "horned",
+        "elemental"
+      ]
+    },
+    {
+      "name": "guardian",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "guardian": "golem"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "guardian": "living statue"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "guardian": "construct"
+          }
+        }
+      ]
+    },
+    {
+      "name": "minion",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "minion": "automaton"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "minion": "manbeast"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "minion": "beastman"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "minion": "frogmen"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "minion": "servitor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "minion": "slave"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "minion": "thrall"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "minion": "guard"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "minion": "worshipper"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "minion": "imp"
+          }
+        }
+      ]
+    },
+    {
+      "name": "minion adjective",
+      "explanation": "",
+      "entries": [
+        "cursed",
+        "fiendish"
+      ]
+    },
+    {
+      "name": "minion group",
+      "explanation": "",
+      "entries": [
+        "horde",
+        "army",
+        "pack",
+        "tribe"
+      ]
+    },
+    {
+      "name": "captive",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "captive": "captive"
+          }
+        }
+      ]
+    },
+    {
+      "name": "helper",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "helper": "helper"
+          }
+        }
+      ]
+    },
+    {
+      "name": "hindrance",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "hindrance": "hindrance"
+          }
+        }
+      ]
+    },
+    {
+      "name": "danger",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "danger": "danger"
+          }
+        }
+      ]
+    },
+    {
+      "name": "trap",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "spike trap"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dungeon description",
+      "explanation": "The dungeon description written out.",
       "entries": [
         "{b|Room 1}: {room 1} \r\n\r\n{b|Room 2}: {room 2} \r\n\r\n{b|Room 3}: {room 3} \r\n\r\n{b|Room 4}: {room 4} \r\n{roleplaying opportunity} \r\n\r\n{b|Room 5}: {room 5} \r\n\r\n\r\n "
       ]
@@ -36,16 +982,16 @@
       "name": "entrance",
       "explanation": "Entrance to the dungeon. Add mood and theme!",
       "entries": [
-        "The entrance is trapped with {trap}.",
+        "The entrance is trapped with {var:trap}.",
         "The entrance is cleverly hidden.",
-        "The entrance requires a {special key}.",
-        "The entrance is guarded by {guardian} that keeps intruders out.",
-        "A {guardian} is not indigenous to the dungeon but has made its lair in room one.",
+        "The entrance requires a {key}.",
+        "The entrance is guarded by {var:guardian} that keeps intruders out.",
+        "A {var:guardian} is not indigenous to the dungeon but has made its lair in room one.",
         "A {hazard} prevents entering and requires special skills and equipment to bypass."
       ]
     },
     {
-      "name": "special key",
+      "name": "key",
       "explanation": "The key required to open the dungeon",
       "entries": [
         "ceremony",
@@ -54,21 +1000,13 @@
       ]
     },
     {
-      "name": "guardian",
-      "explanation": "Keeps intruders out.",
-      "entries": [
-        "golem",
-        "robot",
-        "electric fence"
-      ]
-    },
-    {
       "name": "hazard",
       "explanation": "Prevents adventurers from entering.",
       "entries": [
         "radiation leak",
         "security clearance",
-        "wall of fire"
+        "wall of fire",
+        "electric fence"
       ]
     },
     {
@@ -90,21 +1028,21 @@
     },
     {
       "name": "information gathering",
-      "explanation": "A trial that cannot be solved with steel.",
+      "explanation": "",
       "entries": [
         "A buzzer panel for all the apartments, but the person the PCs are looking for has listed themselves under a different name, which can be figured out through previous clues you've dropped."
       ]
     },
     {
       "name": "magic puzzle",
-      "explanation": "A trial that cannot be solved with steel.",
+      "explanation": "",
       "entries": [
         "A chessboard tile floor with special squares."
       ]
     },
     {
       "name": "roleplaying challenge",
-      "explanation": "A trial that cannot be solved with steel.",
+      "explanation": "",
       "entries": [
         "An AI blocks access to the rest of the complex and must be befriended, not fought.",
         "A concierge at the front desk must be bluffed or coerced without him raising the alarm.",
@@ -115,23 +1053,23 @@
       "name": "room 3",
       "explanation": "The purpose of this room is to build tension. Do this using a trick, trap, or setback. For example, after defeating a tough monster, and players think they've finally found the treasure and achieved their goal, they learn they've been tricked and the room is a false crypt. Depending on your game system, use this room to cater to any player or character types not yet served by the first two areas. Alternatively, give your group a double-dose of gameplay that they enjoy the most, such as more combat or roleplaying. Another potential payoff for Room Three is to weaken the PCs as build-up to a dramatic struggle in Room Four. It might contain a tough combat encounter, take down a key defense, exhaust an important resource, or make the party susceptible to a certain type of attack. For example, if Room Four contains a mummy whose secret weakness is fire, then make Room Three a troll lair (or another creature susceptible to fire) so the PCs might be tempted to burn off a lot of their fire magic, oil, and\nother flammable resources. This would turn a plain old troll battle into a gotcha once the PCs hit Room Four and realize the are out of fire resources.\nDon't forget to dress Room Three up with your theme elements.",
       "entries": [
-        "{trick}",
-        "{trap}",
-        "{setback}",
-        "{complication}",
+        "{trick room}",
+        "{trapped room}",
+        "{setback room}",
+        "{complication room}",
         "{combat encounter}"
       ]
     },
     {
-      "name": "trick",
-      "explanation": "A trial that cannot be solved with steel.",
+      "name": "trick room",
+      "explanation": "",
       "entries": [
         "The PCs rescue a number of {captives}. However, the victims are {captive complication}."
       ]
     },
     {
       "name": "captives",
-      "explanation": "A trial that cannot be solved with steel.",
+      "explanation": "",
       "entries": [
         "prisoners",
         "hostages",
@@ -140,7 +1078,7 @@
     },
     {
       "name": "captive complication",
-      "explanation": "Trick or problem caused by captives.",
+      "explanation": "",
       "entries": [
         "enemies in disguise",
         "booby-trapped",
@@ -148,15 +1086,15 @@
       ]
     },
     {
-      "name": "trap",
-      "explanation": "A trial that cannot be solved with steel.",
+      "name": "trapped room",
+      "explanation": "",
       "entries": [
-        "trap"
+        "There is a {var:trap} in the room."
       ]
     },
     {
-      "name": "setback",
-      "explanation": "A trial that cannot be solved with steel.",
+      "name": "setback room",
+      "explanation": "",
       "entries": [
         "A collapsed structure blocks part of the area. The debris is dangerous and blocks {blocked area}.",
         "{one way exit} leading back to room 1."
@@ -164,7 +1102,7 @@
     },
     {
       "name": "blocked area",
-      "explanation": "A trial that cannot be solved with steel.",
+      "explanation": "",
       "entries": [
         "nothing of importance",
         "another trap",
@@ -173,14 +1111,14 @@
     },
     {
       "name": "threat",
-      "explanation": "A trial that cannot be solved with steel.",
+      "explanation": "",
       "entries": [
-        "XXX"
+        "threat"
       ]
     },
     {
       "name": "one way exit",
-      "explanation": "A trial that cannot be solved with steel.",
+      "explanation": "",
       "entries": [
         "teleport trap",
         "one-way door",
@@ -188,16 +1126,16 @@
       ]
     },
     {
-      "name": "complication",
-      "explanation": "A trial that cannot be solved with steel.",
+      "name": "complication room",
+      "explanation": "",
       "entries": [
-        "The artifact required to defeat the villain, but it is {artifact complication}. Clues reveal that a solution lies ahead.",
+        "The artifact required to defeat the {var:enemy}, but it is {artifact complication}. Clues reveal that a solution lies ahead.",
         "Believing the object of the quest now lays within easy reach, an NPC companion turns traitor and betrays the PCs."
       ]
     },
     {
       "name": "artifact complication",
-      "explanation": "A trial that cannot be solved with steel.",
+      "explanation": "",
       "entries": [
         "broken",
         "cursed",
@@ -222,17 +1160,17 @@
     },
     {
       "name": "climax",
-      "explanation": "A trial that can be solved with steel.",
+      "explanation": "",
       "entries": [
-        "Previous rooms have contained warning signals or an alarm, so the bad guy has had time to prepare.",
-        "The bay guys tries to settle things in an unusual way, through {unusual proposal}.",
-        "The bad guy reveals The Big Reward and threatens to {reward threat}.",
-        "The bad guy has a secret weakness that the PCs figure out how to exploit."
+        "Previous rooms have contained warning signals or an alarm, so the {var:enemy} has had time to prepare.",
+        "The {var:enemy} tries to settle things in an unusual way, through {unusual proposal}.",
+        "The {var:enemy} reveals The Big Reward and threatens to {reward threat}.",
+        "The {var:enemy} has a secret weakness that the PCs figure out how to exploit."
       ]
     },
     {
       "name": "unusual proposal",
-      "explanation": "A trial that can be solved with steel.",
+      "explanation": "",
       "entries": [
         "a wager",
         "a duel"
@@ -240,7 +1178,7 @@
     },
     {
       "name": "reward threat",
-      "explanation": "A trial that can be solved with steel.",
+      "explanation": "",
       "entries": [
         "break it",
         "put it out of the PCs' reach so they'll never collect it"
@@ -248,15 +1186,15 @@
     },
     {
       "name": "big battle",
-      "explanation": "A trial that can be solved with steel.",
+      "explanation": "",
       "entries": [
-        "The bad guy has unexpected {capabilities}.",
-        "The lair is trapped. The bad guy {trap ability}."
+        "The {var:enemy} has unexpected {capabilities}.",
+        "The lair is trapped. The {var:enemy} {trap ability}."
       ]
     },
     {
       "name": "capabilities",
-      "explanation": "A trial that can be solved with steel.",
+      "explanation": "",
       "entries": [
         "powers",
         "abilities",
@@ -265,7 +1203,7 @@
     },
     {
       "name": "trap ability",
-      "explanation": "A trial that can be solved with steel.",
+      "explanation": "",
       "entries": [
         "knows what to avoid",
         "knows where to avoid,",
@@ -274,23 +1212,23 @@
     },
     {
       "name": "conflict",
-      "explanation": "A trial that can be solved with steel.",
+      "explanation": "",
       "entries": [
         "A variety of PC skills and talents are required to successfully complete the encounter."
       ]
     },
     {
       "name": "roleplaying opportunity",
-      "explanation": "A trial that can be solved with steel.",
+      "explanation": "",
       "entries": [
-        "The bad guy needs to stall for time to {reason to stall}.",
-        "Combat ends with the bad guy bleeding to death and a few short words can be exchanged.",
+        "The {var:enemy} needs to stall for time to {reason to stall}.",
+        "Combat ends with the {var:enemy} bleeding to death and a few short words can be exchanged.",
         "There are helpless {captives} to roleplay with once the threat is dealt with."
       ]
     },
     {
       "name": "reason to stall",
-      "explanation": "A trial that can be solved with steel.",
+      "explanation": "",
       "entries": [
         "let PC buffs wear out",
         "wait for help to arrive",
@@ -309,14 +1247,14 @@
     },
     {
       "name": "reward",
-      "explanation": "A trial that can be solved with steel.",
+      "explanation": "",
       "entries": [
         "A {bonus treasure} is discovered that leads to another adventure."
       ]
     },
     {
       "name": "bonus treasure",
-      "explanation": "A trial that can be solved with steel.",
+      "explanation": "",
       "entries": [
         "piece of a magic item",
         "map fragment"
@@ -324,7 +1262,7 @@
     },
     {
       "name": "surprise",
-      "explanation": "A trial that can be solved with steel.",
+      "explanation": "",
       "entries": [
         "Another guardian awaits in the treasure container.",
         "A trap that resurrects or renews the challenge from Room Four."
@@ -332,12 +1270,12 @@
     },
     {
       "name": "revelation",
-      "explanation": "A trial that can be solved with steel.",
+      "explanation": "",
       "entries": [
         "The location of the next 5 Room Dungeon is uncovered, along with sufficient motivation to accept the quest.",
-        "The true identity of the bad guy is revealed.",
+        "The true identity of the {var:enemy} is revealed.",
         "New clues and information pertaining to a major plot arc are embedded in the treasure, {information hiding place}.",
-        "The bad guy turns out to be a PC's father",
+        "The {var:enemy} turns out to be a PC's father",
         "The true, gruesome meaning behind a national holiday is discovered.",
         "The source of an alien race's hostility towards others is uncovered, transforming them from villains to sympathetic characters in the story.",
         "The true meaning of the prophecy or poem that lead the PCs to the dungeon is finally understood, and it's not what the PCs thought."
@@ -345,7 +1283,7 @@
     },
     {
       "name": "information hiding place",
-      "explanation": "A trial that can be solved with steel.",
+      "explanation": "",
       "entries": [
         "sewn into a valuable carpet",
         "drawn in painting",
@@ -355,16 +1293,16 @@
     },
     {
       "name": "plot twist",
-      "explanation": "A trial that can be solved with steel.",
+      "explanation": "",
       "entries": [
         "A rival enters and tries to steal the reward while the PCs are weakened after the big challenge of Room Four.",
         "The object of the quest final reward isn't what it seems or has a complication. i.e. The kidnapped king doesn't want to return.",
-        "The quest was a trick. By killing the dungeon's bad guy the PCs have actually helped the campaign {enemy}. The bad guy was actually {bad guy true form}."
+        "The quest was a trick. By killing the {var:enemy} the PCs have actually helped the campaign {enemy type}. The {var:enemy} was actually {bad guy true form}."
       ]
     },
     {
-      "name": "enemy",
-      "explanation": "A trial that can be solved with steel.",
+      "name": "enemy type",
+      "explanation": "",
       "entries": [
         "villain",
         "rival"
@@ -372,7 +1310,7 @@
     },
     {
       "name": "bad guy true form",
-      "explanation": "A trial that can be solved with steel.",
+      "explanation": "",
       "entries": [
         "a good guy under a curse",
         "a good guy transformed",
