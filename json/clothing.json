@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "More cultures and time periods. What's the best approach for them?",
   "see": "adornment",
-  "date": "2017-10-27",
+  "date": "2017-10-31",
   "authors": "Esko Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -240,6 +240,13 @@
       ]
     },
     {
+      "name": "medieval male headwear",
+      "explanation": "Medieval male headwear.",
+      "entries": [
+        "chaperon (a round headdress of stuffed cloth)"
+      ]
+    },
+    {
       "name": "male neckwear",
       "explanation": "Male neckwear.",
       "entries": [
@@ -352,6 +359,15 @@
       "explanation": "Unisex headwear.",
       "entries": [
         "hat"
+      ]
+    },
+    {
+      "name": "medieval unisex headwear",
+      "explanation": "Medieval unisex headwear.",
+      "entries": [
+        "hood",
+        "liripipe (a long-tailed hood)",
+        "gugel (a hood with a trailing point)"
       ]
     },
     {
