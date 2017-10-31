@@ -1,6 +1,6 @@
 {
   "name": "5 Room Dungeon",
-  "resultPattern": "{difficulty}{milieu}{goal}\r\n  {macguffin}{treasure}{enemy}{guardian}{monster}{minion}{captive}{ally}{hindrance}{danger}{trap}\r\n{adventure description} \r\n\r\n",
+  "resultPattern": "{difficulty}{milieu}{goal}\r\n  {macguffin}{treasure}{guardian}{monster}{minion}{captive}{ally}{hindrance}{danger}{trap}\r\n{adventure description} \r\n\r\n",
   "variables": {
     "difficulty": "",
     "difficultydescription": "",
@@ -87,7 +87,7 @@
       "name": "adventure description",
       "explanation": "The adventure described in WordPress format.",
       "entries": [
-        "<H2>{adventure name}</H2> <B>Difficulty</B>: {var:difficulty} <P>(This mini adventure is best suited for {var:difficultydescription}.) <P>{arriving} {var:locationdescription}. Here the {adventurer} {encountering} a hostile {var:enemy} and a {var:miniongroup}. <H3>Entrance</H3> {room 1} <H3>Trial</H3> {room 2} <H3>Build-Up</H3> {room 3} <H3>Turning Point</H3> {room 4} {roleplaying opportunity}  <H3>Finale</H3> {room 5}  <P>{var:footnote}"
+        "<H2>{adventure name}</H2> <B>Difficulty</B>: {var:difficulty} <P>(This mini adventure is best suited for {var:difficultydescription}.) <P>{arriving} {var:locationdescription}. Here the {adventurer} {encountering} {enemy introduction} {var:enemy} and a {var:miniongroup}. <H3>Entrance</H3> {room 1} <H3>Trial</H3> {room 2} <H3>Build-Up</H3> {room 3} <H3>Turning Point</H3> {room 4} {roleplaying opportunity}  <H3>Finale</H3> {room 5}  <P>{var:footnote}"
       ]
     },
     {
@@ -131,7 +131,18 @@
       "name": "encountering",
       "explanation": "Introductory words about adventurers facing the enemy.",
       "entries": [
-        "will have to face"
+        "will have to face",
+        "comes face to face with",
+        "clashes with"
+      ]
+    },
+    {
+      "name": "enemy introduction",
+      "explanation": "Introductory words about the enemy.",
+      "entries": [
+        "a hostile",
+        "an evil",
+        "a relentless enemy: "
       ]
     },
     {
