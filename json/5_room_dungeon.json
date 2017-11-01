@@ -1,7 +1,8 @@
 {
   "name": "5 Room Dungeon",
-  "resultPattern": "{difficulty}{milieu}{goal}\r\n  {macguffin}{treasure}{guardian}{monster}{minion}{captive}{ally}{hindrance}{danger}{trap}\r\n{adventure description} \r\n\r\n",
+  "resultPattern": "{difficulty}{milieu}{goal}{var:para}  {macguffin}{treasure}{guardian}{monster}{minion}{captive}{ally}{hindrance}{danger}{trap}{var:para} {adventure description} {var:para}",
   "variables": {
+    "para": "<P>",
     "difficulty": "",
     "difficultydescription": "",
     "milieu": "",
@@ -13,6 +14,9 @@
     "goal": "",
     "goaldescription": "",
     "symbol": "",
+    "roompurpose": "",
+    "roomdescription": "",
+    "roomcontents": "",
     "herald": "",
     "mentor": "",
     "macguffin": "",
@@ -87,7 +91,7 @@
       "name": "adventure description",
       "explanation": "The adventure described in WordPress format.",
       "entries": [
-        "<H2>{adventure name}</H2> <B>Difficulty</B>: {var:difficulty} <P>(This mini adventure is best suited for {var:difficultydescription}.) <P>{arriving} {var:locationdescription}. Here the {adventurer} {encountering} {enemy introduction} {var:enemy} and a {var:miniongroup}. <H3>Entrance</H3> {room 1} <H3>Trial</H3> {room 2} <H3>Build-Up</H3> {room 3} <H3>Turning Point</H3> {room 4} {roleplaying opportunity}  <H3>Finale</H3> {room 5}  <P>{var:footnote}"
+        "<H2>{adventure name}</H2> <B>Difficulty</B>: {var:difficulty}{var:para} (This mini adventure is best suited for {var:difficultydescription}.){var:para} {arriving} {var:locationdescription}. Here the {adventurer} {encountering} {enemy introduction} {var:enemy} and a {var:miniongroup}. <H3>Entrance</H3> {room 1} <H3>Trial</H3> {room 2} <H3>Build-Up</H3> {room 3} <H3>Turning Point</H3> {room 4} {roleplaying opportunity}  <H3>Finale</H3> {room 5}  {var:para}{var:footnote}"
       ]
     },
     {
@@ -1801,21 +1805,21 @@
       "entries": [
         {
           "m": 1,
-          "v": "{puzzle}",
+          "v": "{room description}{var:para} {puzzle}",
           "set": {
             "roomtwo": "puzzle"
           }
         },
         {
           "m": 1,
-          "v": "{information gathering}",
+          "v": "{room description}{var:para} {information gathering}",
           "set": {
             "roomtwo": "information gathering"
           }
         },
         {
           "m": 1,
-          "v": "{roleplaying challenge}",
+          "v": "{room description}{var:para} {roleplaying challenge}",
           "set": {
             "roomtwo": "roleplaying challenge"
           }
@@ -1859,35 +1863,35 @@
       "entries": [
         {
           "m": 1,
-          "v": "{trick room}",
+          "v": "{room description}{var:para} {trick room}",
           "set": {
             "roomthree": "trick room"
           }
         },
         {
           "m": 1,
-          "v": "{trapped room}",
+          "v": "{room description}{var:para} {trapped room}",
           "set": {
             "roomthree": "trapped room"
           }
         },
         {
           "m": 1,
-          "v": "{setback room}",
+          "v": "{room description}{var:para} {setback room}",
           "set": {
             "roomthree": "setback room"
           }
         },
         {
           "m": 1,
-          "v": "{complication room}",
+          "v": "{room description}{var:para} {complication room}",
           "set": {
             "roomthree": "complication room"
           }
         },
         {
           "m": 1,
-          "v": "{combat encounter}",
+          "v": "{room description}{var:para} {combat encounter}",
           "set": {
             "roomthree": "combat encounter"
           }
@@ -1955,7 +1959,7 @@
       "explanation": "",
       "entries": [
         "The artifact required to defeat the {var:enemy}, but it is {artifact complication}. Clues reveal that a solution lies ahead.",
-        "Believing the object of the quest now lays within easy reach, an NPC companion turns traitor and betrays the PCs."
+        "Believing the object of the quest now lays within easy reach, a  companion turns traitor and betrays the {adventurer}."
       ]
     },
     {
@@ -1971,7 +1975,7 @@
       "name": "combat encounter",
       "explanation": "A trial that can be solved with steel.",
       "entries": [
-        "A lair of trolls."
+        "This is a lair of {var:monsters}."
       ]
     },
     {
@@ -1980,21 +1984,21 @@
       "entries": [
         {
           "m": 1,
-          "v": "{climax}",
+          "v": "{room description}{var:para} {climax}",
           "set": {
             "roomfour": "climax"
           }
         },
         {
           "m": 1,
-          "v": "{big battle}",
+          "v": "{room description}{var:para} {big battle}",
           "set": {
             "roomfour": "big battle"
           }
         },
         {
           "m": 1,
-          "v": "{conflict}",
+          "v": "{room description}{var:para} {conflict}",
           "set": {
             "roomfour": "conflict"
           }
@@ -2008,7 +2012,7 @@
         "Previous rooms have contained warning signals or an alarm, so the {var:enemy} has had time to prepare.",
         "The {var:enemy} tries to settle things in an unusual way, through {unusual proposal}.",
         "The {var:enemy} reveals The Big Reward and threatens to {reward threat}.",
-        "The {var:enemy} has a secret weakness that the PCs figure out how to exploit."
+        "The {var:enemy} has a secret weakness that the {adventurer} figure out how to exploit."
       ]
     },
     {
@@ -2024,7 +2028,7 @@
       "explanation": "",
       "entries": [
         "break it",
-        "put it out of the PCs' reach so they'll never collect it"
+        "put it out of the reach of the {adventurer} so they'll never collect it"
       ]
     },
     {
@@ -2057,7 +2061,7 @@
       "name": "conflict",
       "explanation": "",
       "entries": [
-        "A variety of PC skills and talents are required to successfully complete the encounter."
+        "A variety of skills and talents are required to successfully complete the encounter."
       ]
     },
     {
@@ -2084,28 +2088,28 @@
       "entries": [
         {
           "m": 1,
-          "v": "{reward}",
+          "v": "{room description}{var:para} {reward}",
           "set": {
             "roomfive": "reward"
           }
         },
         {
           "m": 1,
-          "v": "{surprise}",
+          "v": "{room description}{var:para} {surprise}",
           "set": {
             "roomfive": "surprise"
           }
         },
         {
           "m": 1,
-          "v": "{revelation}",
+          "v": "{room description}{var:para} {revelation}",
           "set": {
             "roomfive": "revelation"
           }
         },
         {
           "m": 1,
-          "v": "{plot twist}",
+          "v": "{room description}{var:para} {plot twist}",
           "set": {
             "roomfive": "plot twist"
           }
@@ -2142,10 +2146,10 @@
         "The location of the next 5 Room Dungeon is uncovered, along with sufficient motivation to accept the quest.",
         "The true identity of the {var:enemy} is revealed.",
         "New clues and information pertaining to a major plot arc are embedded in the treasure, {information hiding place}.",
-        "The {var:enemy} turns out to be a PC's father",
+        "The {var:enemy} turns out to be a father of one of the {adventurer}.",
         "The true, gruesome meaning behind a national holiday is discovered.",
         "The source of an alien race's hostility towards others is uncovered, transforming them from villains to sympathetic characters in the story.",
-        "The true meaning of the prophecy or poem that lead the PCs to the dungeon is finally understood, and it's not what the PCs thought."
+        "The true meaning of the prophecy or poem that lead the {adventurer} to the dungeon is finally understood, and it's not what the {adventurer} thought."
       ]
     },
     {
@@ -2162,9 +2166,9 @@
       "name": "plot twist",
       "explanation": "",
       "entries": [
-        "A rival enters and tries to steal the reward while the PCs are weakened after the big challenge of Room Four.",
+        "A rival enters and tries to steal the reward while the {adventurer} is weakened after the big challenge of the previous room.",
         "The object of the quest final reward isn't what it seems or has a complication. i.e. The kidnapped king doesn't want to return.",
-        "The quest was a trick. By killing the {var:enemy} the PCs have actually helped the campaign {enemy type}. The {var:enemy} was actually {bad guy true form}."
+        "The quest was a trick. By killing the {var:enemy} the {adventurer} has actually helped the campaign {enemy type}. The {var:enemy} was actually {bad guy true form}."
       ]
     },
     {
@@ -2182,6 +2186,271 @@
         "a good guy under a curse",
         "a good guy transformed",
         "a good guy placed into difficult circumstances"
+      ]
+    },
+    {
+      "name": "room description",
+      "explanation": "Details of the dungeon room",
+      "entries": [
+        "{room purpose}The room {var:roomdescription}. {var:roomcontents}{var:para}"
+      ]
+    },
+    {
+      "name": "room purpose",
+      "explanation": "Previous usage of the room",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "observatory",
+            "roomdescription": "has been used as a some kind of observatory.",
+            "roomcontents": "There are astrological books and a telescope strewn around."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "torture chamber",
+            "roomdescription": "has been used as a torture chamber.",
+            "roomcontents": "The is a torture rack in the middle of ther room and iron maiden in a corner."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "jail",
+            "roomdescription": "looks like a jail",
+            "roomcontents": "There are shackles fastened to one wall."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "observatory",
+            "roomdescription": "has been used as a some kind of observatory",
+            "roomcontents": "There are astrological books and a telescope strewn around."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "wardrobe",
+            "roomdescription": "looks like a wardrobe",
+            "roomcontents": "There are various types of clothes hanging from racks."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "library",
+            "roomdescription": "is a library",
+            "roomcontents": "Several bookcases are filled with tomes and librams of various kinds."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "giant astrolabe",
+            "roomdescription": "appears like a giant astrolabe",
+            "roomcontents": "There are astrological books and equipment strewn around."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "burial chamber",
+            "roomdescription": "is a burial chamber",
+            "roomcontents": "There is a sarcophagus in the middle of the room."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "temple",
+            "roomdescription": "looks like a temple",
+            "roomcontents": "In the front of a room there is an altar."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "laboratory",
+            "roomdescription": "must be a laboratory",
+            "roomcontents": "On a table there are alembics and other alchemical paraphernalia."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "arena",
+            "roomdescription": "is furnished as an arena",
+            "roomcontents": "In the center there is an open area and benches around the walls."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "armory",
+            "roomdescription": "serves as an armory",
+            "roomcontents": "There are various parts of armour in various states of repair lying on the floor."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "treasure room",
+            "roomdescription": "has served as a treasure room",
+            "roomcontents": "There are several chests on the floor."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "barracks",
+            "roomdescription": "functions as a barracks",
+            "roomcontents": "There are sparse beds around the walls."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "feast hall",
+            "roomdescription": "is a feast hall",
+            "roomcontents": "A long table fills the center of the room."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "bath",
+            "roomdescription": "has been furnished into a bath",
+            "roomcontents": "In the middle of the room there is a basin."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "bed chamber",
+            "roomdescription": "is a bed chamber",
+            "roomcontents": "A large bed lies next to the wall."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "bottlery",
+            "roomdescription": "has apparently served as a bottlery",
+            "roomcontents": "There are large casks in one corner and empty bottles in another."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "smithy",
+            "roomdescription": "serves as a smith's workshop",
+            "roomcontents": "There is a forge in the middle of the room."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "furnace",
+            "roomdescription": "is equipped with a furnace",
+            "roomcontents": "Metalworking tools and base metal ingots are strewn on the floor."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "gallery",
+            "roomdescription": "has been transformed into a gallery",
+            "roomcontents": "There a number of paintings hanging on the walls."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "throne room",
+            "roomdescription": "serves as a throne room",
+            "roomcontents": "There is a throne in the far end of the room."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "scriptorium",
+            "roomdescription": "is a scriptorium where books and manuscripts are copied",
+            "roomcontents": "Stacks of books are piled on a writing desk."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "storage room",
+            "roomdescription": "has served as a storage room",
+            "roomcontents": "Chests and cases filled with household items in various states of disrepair."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "study",
+            "roomdescription": "looks like a study",
+            "roomcontents": "Next to a bookcase there is a writing desk."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "stall",
+            "roomdescription": "has been modified to function as a some kind of stall",
+            "roomcontents": "There are piles of hay in a corner."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "cistern",
+            "roomdescription": "holds plenty of water and apparently has served as a cistern",
+            "roomcontents": "The floor is completely underwater."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "cathedral",
+            "roomdescription": "is some sort of a cathedral",
+            "roomcontents": "Burned out candles are lined along the walls."
+          }
+        }
       ]
     }
   ]
