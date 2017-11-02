@@ -1,8 +1,14 @@
 {
   "name": "5 Room Dungeon",
-  "resultPattern": "{difficulty}{milieu}{goal}{var:para}  {macguffin}{treasure}{guardian}{monster}{minion}{captive}{ally}{hindrance}{danger}{trap}{var:para} {adventure description} {var:para}",
+  "resultPattern": "{HTML formatting}{difficulty}{milieu}{goal}{var:para}  {macguffin}{treasure}{guardian}{monster}{minion}{captive}{ally}{hindrance}{danger}{trap}{var:para} {adventure description} {var:para}",
   "variables": {
-    "para": "<P>",
+    "starttitle": "",
+    "endtitle": "",
+    "startheading": "",
+    "endheading": "",
+    "startbold": "",
+    "endbold": "",
+    "para": "",
     "difficulty": "",
     "difficultydescription": "",
     "milieu": "",
@@ -45,6 +51,12 @@
     "monstergroup": "",
     "monsteradjective": "",
     "monsterdescription": "",
+    "animal": "",
+    "animals": "",
+    "animalgroup": "",
+    "animalaction": "",
+    "animaladjective": "",
+    "animaldescription": "",
     "herald": "",
     "heralds": "",
     "heraldgroup": "",
@@ -88,11 +100,11 @@
     "entrance": "",
     "lock": "",
     "key": "",
-    "roomone": "",
-    "roomtwo": "",
-    "roomthree": "",
-    "roomfour": "",
-    "roomfive": "",
+    "room 1": "",
+    "room 2": "",
+    "room 3": "",
+    "room 4": "",
+    "room 5": "",
     "roompurpose": "",
     "roomdescription": "",
     "roomcontents": "",
@@ -130,24 +142,48 @@
   ],
   "tables": [
     {
+      "name": "HTML formatting",
+      "explanation": "Set variables for formatting the output as HTML",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "starttitle": "<H3>",
+            "endtitle": "</H3>",
+            "startheading": "<H3>",
+            "endheading": "</H3>",
+            "startbold": "<B>",
+            "endbold": "</B>",
+            "para": "<P>"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CL formatting",
+      "explanation": "Set variables for formatting the output for Campaign Logger",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "starttitle": "{b|",
+            "endtitle": "}\r\n\r\n",
+            "startheading": "\r\n\r\n{b|",
+            "endheading": "}",
+            "startbold": "{b|",
+            "endbold": "}",
+            "para": "\r\n"
+          }
+        }
+      ]
+    },
+    {
       "name": "adventure description",
       "explanation": "The adventure described in WordPress format.",
       "entries": [
-        "<H2>{adventure name}</H2> <B>Difficulty</B>: {var:difficulty}{var:para} (This mini adventure is best suited for {var:difficultydescription}.){var:para} {arriving} {var:locationdescription}. Here the {adventurer} {encountering} {enemy introduction} {var:enemy} and a {var:miniongroup}. <H3>Entrance</H3> {room 1} <H3>Trial</H3> {room 2} <H3>Build-Up</H3> {room 3} <H3>Turning Point</H3> {room 4} {roleplaying opportunity}  <H3>Finale</H3> {room 5}  {var:para}{var:footnote}"
-      ]
-    },
-    {
-      "name": "adventure description for WordPress",
-      "explanation": "The adventure described in WordPress format.",
-      "entries": [
-        "<H2>{adventure name}</H2> \n        <B>Difficulty</B>: {var:difficulty} <P>(This mini adventure is best suited for {var:difficultydescription}.) \n             <H3>Room 1</H3> {room 1} \n        <H3>Room 2</H3> {room 2} \n        <H3>Room 3</H3> {room 3} \n        <H3>Room 4</H3> {room 4} \n        {roleplaying opportunity} \n        <H3>Room 5</H3> {room 5} \n        <P>{var:footnote}"
-      ]
-    },
-    {
-      "name": "adventure description for campaign logger",
-      "explanation": "The adventure described in Campaign Logger format.",
-      "entries": [
-        "{adventure name} \r\n\r\n{b|Level}: {var:difficulty} (This mini adventure is best suited for {var:difficultydescription}.) \r\n\r\n{b|Room 1}: {room 1} \r\n\r\n{b|Room 2}: {room 2} \r\n\r\n{b|Room 3}: {room 3} \r\n\r\n{b|Room 4}: {room 4} \r\n{roleplaying opportunity} \r\n\r\n{b|Room 5}: {room 5} \r\n\r\n\r\n{var:footnote}\r\n "
+        "{var:starttitle}{adventure name}{var:endtitle} {var:startbold}Difficulty{var:endbold}: {var:difficulty}{var:para} (This mini adventure is best suited for {var:difficultydescription}.){var:para} {arriving} {var:locationdescription}. Here the {adventurer} {encountering} {enemy introduction} {var:enemy} and a {var:miniongroup}. {var:startheading}Entrance{var:endheading} {room 1} {var:startheading}Trial{var:endheading} {room 2} {var:startheading}Build-Up{var:endheading} {room 3} {var:startheading}Turning Point{var:endheading} {room 4} {roleplaying opportunity}  {var:startheading}Finale{var:endheading} {room 5}  {var:para}{var:footnote}"
       ]
     },
     {
@@ -1636,10 +1672,24 @@
           "m": 1,
           "v": "",
           "set": {
-            "monster": "monster",
-            "monsters": "monsters",
-            "monstergroup": "group of monters",
-            "monsteradjective": "hideous"
+            "monster": "troll",
+            "monsters": "trolls",
+            "monstergroup": "group of trolls",
+            "monsteraction": "looking for something to eat",
+            "monsteradjective": "hideous",
+            "monsterdescription": "A huge troll is sniffing the air and looks like if it was searching for something."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "monster": "troglodyte",
+            "monsters": "troglodytes",
+            "monstergroup": "tribe of troglodytes",
+            "monsteraction": "sharpening a stone axe",
+            "monsteradjective": "primitive",
+            "monsterdescription": "A primitive-looking troglodyte is inspecting a stone axe."
           }
         }
       ]
@@ -2088,7 +2138,7 @@
     },
     {
       "name": "corrosive trap",
-      "explanation": "Traps causing corrosive damage (acids, etc).",
+      "explanation": "Traps causing corrosive damage (acids, alkalines, etc).",
       "entries": [
         {
           "m": 1,
@@ -2096,6 +2146,15 @@
           "set": {
             "trap": "acid trap",
             "trapaction": "a jet of acidid liquid shoots out, corroding everything nearby",
+            "trapdescription": "an almost invisible wire attached to a pressurised container"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "alkaline trap",
+            "trapaction": "a jet of alkaline liquid shoots out, corroding everything nearby",
             "trapdescription": "an almost invisible wire attached to a pressurised container"
           }
         }
@@ -2247,7 +2306,7 @@
           "m": 1,
           "v": "{entrance}",
           "set": {
-            "roomone": "entrance"
+            "room 1": "entrance"
           }
         }
       ]
@@ -2258,6 +2317,7 @@
       "entries": [
         "{trap} The entrance is trapped with {var:trap}. (A successful inspection would reveal {var:trapdescription}. If the {adventurer} fails to detect and defuse the trap, {var:trapaction}). ",
         "The entrance is cleverly hidden.",
+        "The entrance is hidden by an overcrop of rock.",
         "The entrance requires a {key}.",
         "The entrance is guarded by {var:guardian} that keeps intruders out.",
         "A {var:guardian} is not indigenous to the dungeon but has made its lair in room one.",
@@ -2291,21 +2351,21 @@
           "m": 1,
           "v": "{room description}{var:para} {puzzle}",
           "set": {
-            "roomtwo": "puzzle"
+            "room 2": "puzzle"
           }
         },
         {
           "m": 1,
           "v": "{room description}{var:para} {information gathering}",
           "set": {
-            "roomtwo": "information gathering"
+            "room 2": "information gathering"
           }
         },
         {
           "m": 1,
           "v": "{room description}{var:para} {roleplaying challenge}",
           "set": {
-            "roomtwo": "roleplaying challenge"
+            "room 2": "roleplaying challenge"
           }
         }
       ]
@@ -2329,16 +2389,16 @@
       "name": "magic puzzle",
       "explanation": "",
       "entries": [
-        "A chessboard tile floor with special squares."
+        "{trap} The floor is covered from wall to wall with chessboard tiles. Stepping on wrong squares triggers a {var:trap}."
       ]
     },
     {
       "name": "roleplaying challenge",
       "explanation": "",
       "entries": [
-        "An AI blocks access to the rest of the complex and must be befriended, not fought.",
-        "A concierge at the front desk must be bluffed or coerced without him raising the alarm.",
-        "The adventurers must convince a bouncer to let them in without confiscating their weapons."
+        "A guardian spirit blocks access to the rest of the complex and must be befriended, not fought.",
+        "A {var:minion} standing on guard can be bluffed or coerced without raising the alarm.",
+        "The adventurers must convince a {var:minion} to let them in."
       ]
     },
     {
@@ -2349,35 +2409,35 @@
           "m": 1,
           "v": "{room description}{var:para} {trick room}",
           "set": {
-            "roomthree": "trick room"
+            "room 3": "trick room"
           }
         },
         {
           "m": 1,
           "v": "{room description}{var:para} {trapped room}",
           "set": {
-            "roomthree": "trapped room"
+            "room 3": "trapped room"
           }
         },
         {
           "m": 1,
           "v": "{room description}{var:para} {setback room}",
           "set": {
-            "roomthree": "setback room"
+            "room 3": "setback room"
           }
         },
         {
           "m": 1,
           "v": "{room description}{var:para} {complication room}",
           "set": {
-            "roomthree": "complication room"
+            "room 3": "complication room"
           }
         },
         {
           "m": 1,
           "v": "{room description}{var:para} {combat encounter}",
           "set": {
-            "roomthree": "combat encounter"
+            "room 3": "combat encounter"
           }
         }
       ]
@@ -2459,7 +2519,7 @@
       "name": "combat encounter",
       "explanation": "A trial that can be solved with steel.",
       "entries": [
-        "This is a lair of {var:monsters}."
+        "This is a lair of {var:monstergroup}."
       ]
     },
     {
@@ -2470,21 +2530,21 @@
           "m": 1,
           "v": "{room description}{var:para} {climax}",
           "set": {
-            "roomfour": "climax"
+            "room 4": "climax"
           }
         },
         {
           "m": 1,
           "v": "{room description}{var:para} {big battle}",
           "set": {
-            "roomfour": "big battle"
+            "room 4": "big battle"
           }
         },
         {
           "m": 1,
           "v": "{room description}{var:para} {conflict}",
           "set": {
-            "roomfour": "conflict"
+            "room 4": "conflict"
           }
         }
       ]
@@ -2574,28 +2634,28 @@
           "m": 1,
           "v": "{room description}{var:para} {reward}",
           "set": {
-            "roomfive": "reward"
+            "room 5": "reward"
           }
         },
         {
           "m": 1,
           "v": "{room description}{var:para} {surprise}",
           "set": {
-            "roomfive": "surprise"
+            "room 5": "surprise"
           }
         },
         {
           "m": 1,
           "v": "{room description}{var:para} {revelation}",
           "set": {
-            "roomfive": "revelation"
+            "room 5": "revelation"
           }
         },
         {
           "m": 1,
           "v": "{room description}{var:para} {plot twist}",
           "set": {
-            "roomfive": "plot twist"
+            "room 5": "plot twist"
           }
         }
       ]
@@ -2619,7 +2679,7 @@
       "name": "surprise",
       "explanation": "",
       "entries": [
-        "{var:monster} awaits in the treasure container.",
+        "A {var:monster} is hiding in the treasure container.",
         "A trap that resurrects or renews the challenge from Room Four."
       ]
     },
@@ -2680,7 +2740,133 @@
       "name": "room description",
       "explanation": "Details of the dungeon room",
       "entries": [
-        "{room purpose}The room {var:roomdescription}. {var:roomcontents}{var:para}"
+        "{room size}{room shape} This is a {var:roomsize}, {var:roomshape}. {room purpose}The room {var:roomdescription}. {var:roomcontents}{var:para}",
+        "{room size}{room shape} The room is a {var:roomsize}, {var:roomshape}. {room purpose}{animal} The room {var:roomdescription}. {var:roomcontents} {var:animaldescription}{var:para}",
+        "{room size}{room shape} You arrive in a {var:roomsize}, {var:roomshape}. {room purpose} The room {var:roomdescription}. {var:roomcontents} Some {plant} grows here.{var:para}"
+      ]
+    },
+    {
+      "name": "room size",
+      "explanation": "The size of the area.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomsize": "miniscule"
+          }
+        },
+        {
+          "m": 3,
+          "v": "",
+          "set": {
+            "roomsize": "small"
+          }
+        },
+        {
+          "m": 5,
+          "v": "",
+          "set": {
+            "roomsize": "medium-sized"
+          }
+        },
+        {
+          "m": 4,
+          "v": "",
+          "set": {
+            "roomsize": "wide"
+          }
+        },
+        {
+          "m": 4,
+          "v": "",
+          "set": {
+            "roomsize": "long"
+          }
+        },
+        {
+          "m": 3,
+          "v": "",
+          "set": {
+            "roomsize": "large"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomsize": "enormous"
+          }
+        }
+      ]
+    },
+    {
+      "name": "room shape",
+      "explanation": "The shape of the area.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "domed hall"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "long and narrow corridor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "short corridor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "irregularly shaped space"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "square area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "rectangular space"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "triangle-shaped area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "round area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "area in a shape of a cross"
+          }
+        }
       ]
     },
     {
@@ -2692,7 +2878,7 @@
           "v": "",
           "set": {
             "roompurpose": "observatory",
-            "roomdescription": "has been used as a some kind of observatory.",
+            "roomdescription": "has been used as a some kind of observatory",
             "roomcontents": "There are astrological books and a telescope strewn around."
           }
         },
@@ -2701,8 +2887,8 @@
           "v": "",
           "set": {
             "roompurpose": "torture chamber",
-            "roomdescription": "has been used as a torture chamber.",
-            "roomcontents": "The is a torture rack in the middle of ther room and iron maiden in a corner."
+            "roomdescription": "has been used as a torture chamber",
+            "roomcontents": "The is a torture rack in the middle of the room and an iron maiden in a corner."
           }
         },
         {
@@ -2939,6 +3125,57 @@
             "roomcontents": "Burned out candles are lined along the walls."
           }
         }
+      ]
+    },
+    {
+      "name": "animal",
+      "explanation": "Animals encountered in dungeons to add some color.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "animal": "bat",
+            "animals": "bats",
+            "animalgroup": "colony of bats",
+            "animalaction": "flying around",
+            "animaladjective": "leather-winged",
+            "animaldescription": "Dark, bat-shaped forms fly all around."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "animal": "frog",
+            "animals": "frogs",
+            "animalgroup": "several frogs",
+            "animalaction": "hopping around",
+            "animaladjective": "slimy-looking",
+            "animaldescription": "A frog is croaking here, undisturbed by your presence."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "animal": "fly",
+            "animals": "flies",
+            "animalgroup": "business of flies",
+            "animalaction": "buzzing nervously",
+            "animaladjective": "biting",
+            "animaldescription": "A thick swarm of flies fills the air. They start to crawl oll over your skin, biting nastily."
+          }
+        }
+      ]
+    },
+    {
+      "name": "plant",
+      "explanation": "Plants growing in the dungeon room, adding some colour.",
+      "entries": [
+        "{lib:plant#fungus}",
+        "{lib:plant#moss}",
+        "slime"
       ]
     }
   ]
