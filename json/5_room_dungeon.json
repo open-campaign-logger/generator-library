@@ -36,16 +36,16 @@
     "miniongroup": "",
     "minionadjective": "",
     "miniondescription": "",
-    "captive": "",
-    "captives": "",
-    "captivegroup": "",
-    "captiveadjective": "",
-    "captivedescription": "",
     "guardian": "",
     "guardians": "",
     "guardiangroup": "",
     "guardianadjective": "",
     "guardiandescription": "",
+    "captive": "",
+    "captives": "",
+    "captivegroup": "",
+    "captiveadjective": "",
+    "captivedescription": "",
     "monster": "",
     "monsters": "",
     "monstergroup": "",
@@ -108,6 +108,7 @@
     "roompurpose": "",
     "roomdescription": "",
     "roomcontents": "",
+    "encounter": "",
     "danger": "",
     "dangeraction": "",
     "dangerdescription": "",
@@ -2526,13 +2527,6 @@
       ]
     },
     {
-      "name": "combat encounter",
-      "explanation": "A trial that can be solved with steel.",
-      "entries": [
-        "This is a lair of {var:monstergroup}."
-      ]
-    },
-    {
       "name": "room 4",
       "explanation": "This room is The Big Show. It's the final combat or conflict encounter of the dungeon. Use all the tactics you can summon to make this encounter memorable and entertaining. As always, generate interesting terrain that will impact the battle!",
       "entries": [
@@ -3435,6 +3429,197 @@
         "{lib:plant#fungus}",
         "{lib:plant#moss}",
         "slime"
+      ]
+    },
+    {
+      "name": "encounter",
+      "explanation": "Types of encounters in the dungeon rooms.",
+      "entries": [
+        "{combat encounter}",
+        "{betrayal encounter}",
+        "{trap encounter}",
+        "{danger encounter}",
+        "{setback encounter}",
+        "{hindrance encounter}",
+        "{trick encounter}",
+        "{trial encounter}",
+        "{competition encounter}",
+        "{distraction encounter}",
+        "{sidetrack encounter}",
+        "{flavor encounter}",
+        "{rescue encounter}",
+        "{resource encounter}",
+        "{information encounter}",
+        "{help encounter}"
+      ]
+    },
+    {
+      "name": "combat encounter",
+      "explanation": "Encounters with hostile creatures (guardian, minion, monster, beast, rival, etc.)",
+      "entries": [
+        "This is a lair of {var:monstergroup}.",
+        "guardian",
+        "minion",
+        "monster",
+        "beast",
+        "rival"
+      ]
+    },
+    {
+      "name": "betrayal encounter",
+      "explanation": "Encounters where the adventurers are betrayed (traitor, shapeshifter, tempter, trickster, etc).",
+      "entries": [
+        "traitor",
+        "shapeshifter",
+        "tempter",
+        "trickster"
+      ]
+    },
+    {
+      "name": "trap encounter",
+      "explanation": "Encounters with traps.",
+      "entries": [
+        "trap"
+      ]
+    },
+    {
+      "name": "danger encounter",
+      "explanation": "Encounters that put the adventurers in danger (hazard, etc.)",
+      "entries": [
+        "hazard"
+      ]
+    },
+    {
+      "name": "setback encounter",
+      "explanation": "Encounters that cause the adventurers to lose progress (traitor, shapeshifter, rival, etc).",
+      "entries": [
+        "traitor",
+        "shapeshifter",
+        "rival"
+      ]
+    },
+    {
+      "name": "hindrance encounter",
+      "explanation": "Encounters that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
+      "entries": [
+        "rival",
+        "trickster",
+        "lock",
+        "door"
+      ]
+    },
+    {
+      "name": "trick encounter",
+      "explanation": "Encounters that require a clever approach.",
+      "entries": [
+        "rival",
+        "mentor",
+        "trickster",
+        "trick"
+      ]
+    },
+    {
+      "name": "trial encounter",
+      "explanation": "Encounters where the adventurers must prove themselves (rival, mentor, trickster, etc).",
+      "entries": [
+        "rival",
+        "mentor",
+        "trickster"
+      ]
+    },
+    {
+      "name": "competition encounter",
+      "explanation": "Encounters where adventurers have to compete with someone (rival, mentor, etc.)",
+      "entries": [
+        "rival",
+        "mentor",
+        "shapeshifter",
+        "trickster"
+      ]
+    },
+    {
+      "name": "distraction encounter",
+      "explanation": "Encounters that lead astray (shapeshifter, trickster, tempter, traitor, red herring, smoke screen, etc.)",
+      "entries": [
+        "shapeshifter",
+        "trickster",
+        "tempter",
+        "traitor",
+        "red herring",
+        "smoke screen"
+      ]
+    },
+    {
+      "name": "sidetrack encounter",
+      "explanation": "Encounters providing temporary diversion (tricster, tempter, sense of wonder, comic relief, etc.)",
+      "entries": [
+        "trickster",
+        "tempter",
+        "wonder",
+        "humour"
+      ]
+    },
+    {
+      "name": "flavor encounter",
+      "explanation": "Encounters that create color and flavor, may bring roleplaying opportunities (plant, animal, tempter, traitor, item, wonder, etc.)",
+      "entries": [
+        "plant",
+        "animal",
+        "tempter",
+        "traitor",
+        "item",
+        "wonder"
+      ]
+    },
+    {
+      "name": "rescue encounter",
+      "explanation": "Encounters where a prisoner (captive, mentor, ally, shapeshifter, tempter, traitor, trickster, animal, monster, minion, rival, etc.) can be rescued and perhaps befriended.",
+      "entries": [
+        "captive",
+        "mentor",
+        "ally",
+        "shapeshifter",
+        "tempter",
+        "traitor",
+        "trickster",
+        "animal",
+        "monster",
+        "minion",
+        "rival"
+      ]
+    },
+    {
+      "name": "resource encounter",
+      "explanation": "Encounters that offer new resources (artifact, key, tool, treasure, plant, animal, information, red herring, etc.)",
+      "entries": [
+        "artifact",
+        "key",
+        "tool",
+        "treasure",
+        "plant",
+        "animal",
+        "information",
+        "red herring"
+      ]
+    },
+    {
+      "name": "information encounter",
+      "explanation": "Encounters that offer information (mentor, trickster, clue, shapeshifter, traitor, red herring, etc.)",
+      "entries": [
+        "mentor",
+        "trickster",
+        "clue",
+        "shapeshifter",
+        "traitor",
+        "red herring"
+      ]
+    },
+    {
+      "name": "help encounter",
+      "explanation": "Encounters that offer help (mentor, ally, etc.)",
+      "entries": [
+        "mentor",
+        "ally"
       ]
     }
   ]
