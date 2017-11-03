@@ -188,11 +188,15 @@
       "name": "adventure name",
       "explanation": "Variations for the name of the adventure based on set variables.",
       "entries": [
-        "{var:symbol} of the {enemy adjective} {var:enemy}",
+        "The {var:symbol} of the {enemy adjective} {var:enemy}",
         "{location adjective} {var:location} of the {enemy adjective} {var:enemy}",
         "{var:goaldescription} the {enemy adjective} {var:enemy}",
         "{var:macguffin} of the {enemy adjective} {var:enemy}",
         "{treasure adjective} {var:treasure} of the {location adjective} {var:location}",
+        "In search of a {var:treasure}",
+        "In search of the {var:treasure} of the {enemy adjective} {var:enemy}",
+        "Quest for the {var:treasure}",
+        "{synonym#death} of the {enemy adjective} {var:enemy}",
         "{minion adjective} {var:minion} of the {enemy adjective} {var:enemy}"
       ]
     },
@@ -1445,6 +1449,14 @@
           "set": {
             "goaldescription": "capture",
             "symbol": "shackles"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goaldescription": "siege",
+            "symbol": "downfall"
           }
         },
         {
@@ -2901,7 +2913,7 @@
           "set": {
             "roompurpose": "storage room",
             "roomdescription": "has served as a storage room",
-            "roomcontents": "Chests and cases filled with household items in various states of disrepair."
+            "roomcontents": "Chests and cases are filled with household items in various states of disrepair."
           }
         },
         {
@@ -2997,7 +3009,7 @@
           "set": {
             "roompurpose": "storage room",
             "roomdescription": "has served as a storage room",
-            "roomcontents": "Chests and cases filled with household items in various states of disrepair."
+            "roomcontents": "Chests and cases are filled with household items in various states of disrepair."
           }
         },
         {
@@ -3147,7 +3159,7 @@
           "set": {
             "roompurpose": "storage room",
             "roomdescription": "has served as a storage room",
-            "roomcontents": "Chests and cases filled with household items in various states of disrepair."
+            "roomcontents": "Chests and cases are filled with household items in various states of disrepair."
           }
         },
         {
@@ -3408,8 +3420,8 @@
       "name": "room extras",
       "explanation": "A chance for extra features in the room.",
       "entries": [
-        "{var:para}{animal}{var:animaldescription}. Some {plant} grows here. ",
-        "{var:para}{animal}{var:animaldescription}. ",
+        "{var:para}{animal}{var:animaldescription} Some {plant} grows here. ",
+        "{var:para}{animal}{var:animaldescription} ",
         "{var:para}Some {plant} grows here. ",
         " ",
         " ",

@@ -1,0 +1,147 @@
+{
+  "name": "synonym",
+  "resultPattern": "{synonym}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Produces dramatic synonyms to avoid repetition of some often used words.",
+  "structure": "",
+  "note": "Intended usage: {synonym#word}. Please retain the alphabetical order of the subtables.",
+  "bugs": "",
+  "to do": "Expansion.",
+  "see": "",
+  "date": "2017-11-03",
+  "authors": "Esko Vesala.",
+  "sources": "Thesaurus.com",
+  "genre": "universal",
+  "categories": [
+    "utility"
+  ],
+  "tables": [
+    {
+      "name": "adventure",
+      "explanation": "Synonyms for adventuring (for something).",
+      "entries": [
+        "adventure",
+        "crusade",
+        "hunt",
+        "mission",
+        "pursuit",
+        "quest"
+      ]
+    },
+    {
+      "name": "adventurer",
+      "explanation": "Synonyms for an adventurer.",
+      "entries": [
+        "adventurer",
+        "champion",
+        "daredevil",
+        "crusader",
+        "hero",
+        "traveler"
+      ]
+    },
+    {
+      "name": "death",
+      "explanation": "Synonyms for death (of something).",
+      "entries": [
+        "bane",
+        "death",
+        "demise",
+        "obliteration",
+        "ruination"
+      ]
+    },
+    {
+      "name": "find",
+      "explanation": "Synonyms for finding (something).",
+      "entries": [
+        "find",
+        "locate",
+        "recover",
+        "rescue",
+        "save",
+        "salvage"
+      ]
+    },
+    {
+      "name": "group",
+      "explanation": "Synonyms for a group.",
+      "entries": [
+        "band",
+        "company",
+        "group",
+        "league",
+        "party",
+        "team"
+      ]
+    },
+    {
+      "name": "kill",
+      "explanation": "Synonyms for killing.",
+      "entries": [
+        "annihilate",
+        "destroy",
+        "eliminate",
+        "finish",
+        "kill",
+        "liquidate",
+        "massacre",
+        "neutralize",
+        "obliterate",
+        "slaughter",
+        "slay"
+      ]
+    },
+    {
+      "name": "monster",
+      "explanation": "Synonyms for a monster.",
+      "entries": [
+        "beast",
+        "creature",
+        "fiend",
+        "horror",
+        "monster",
+        "monstrosity"
+      ]
+    },
+    {
+      "name": "travel",
+      "explanation": "Synonyms for travel (to somewhere).",
+      "entries": [
+        "expedition",
+        "journey",
+        "march",
+        "odyssey",
+        "passage",
+        "travel",
+        "trek",
+        "venture",
+        "voyage"
+      ]
+    },
+    {
+      "name": "treasure",
+      "explanation": "Synonyms for treasure.",
+      "entries": [
+        "fortune",
+        "hoard",
+        "riches",
+        "treasure",
+        "wealth"
+      ]
+    },
+    {
+      "name": "wrath",
+      "explanation": "Synonyms for hate (of somebody).",
+      "entries": [
+        "fury",
+        "hatred",
+        "madness",
+        "rage",
+        "wrath"
+      ]
+    }
+  ]
+}
