@@ -11,17 +11,21 @@
     "para": "",
     "difficulty": "",
     "difficultydescription": "",
+    "goal": "",
+    "goaldescription": "",
+    "symbol": "",
     "milieu": "",
     "milieudescription": "",
     "location": "",
     "locationdescription": "",
     "motif": "",
     "motifdescription": "",
-    "goal": "",
-    "goaldescription": "",
-    "symbol": "",
     "macguffin": "",
     "macguffindescription": "",
+    "key": "",
+    "keydescription": "",
+    "tool": "",
+    "tooldescription": "",
     "artifact": "",
     "artifactdescription": "",
     "treasure": "",
@@ -29,86 +33,128 @@
     "enemy": "",
     "enemies": "",
     "enemygroup": "",
+    "enemyaction": "",
     "enemyadjective": "",
     "enemydescription": "",
     "minion": "",
     "minions": "",
     "miniongroup": "",
+    "minionaction": "",
     "minionadjective": "",
     "miniondescription": "",
     "guardian": "",
     "guardians": "",
     "guardiangroup": "",
+    "guardianaction": "",
     "guardianadjective": "",
     "guardiandescription": "",
-    "captive": "",
-    "captives": "",
-    "captivegroup": "",
-    "captiveadjective": "",
-    "captivedescription": "",
     "monster": "",
     "monsters": "",
     "monstergroup": "",
+    "monsteraction": "",
     "monsteradjective": "",
     "monsterdescription": "",
+    "beast": "",
+    "beasts": "",
+    "beastgroup": "",
+    "beastaction": "",
+    "beastadjective": "",
+    "beastdescription": "",
+    "traitor": "",
+    "traitors": "",
+    "traitorgroup": "",
+    "traitoraction": "",
+    "traitoradjective": "",
+    "traitordescription": "",
+    "shapeshifter": "",
+    "shapeshifters": "",
+    "shapeshiftergroup": "",
+    "shapeshifteraction": "",
+    "shapeshifteradjective": "",
+    "shapeshifterdescription": "",
+    "tempter": "",
+    "tempters": "",
+    "temptergroup": "",
+    "tempteraction": "",
+    "tempteradjective": "",
+    "tempterdescription": "",
+    "rival": "",
+    "rivals": "",
+    "rivalgroup": "",
+    "rivalaction": "",
+    "rivaladjective": "",
+    "rivaldescription": "",
+    "trickster": "",
+    "tricksters": "",
+    "trickstergroup": "",
+    "tricksteraction": "",
+    "tricksteradjective": "",
+    "tricksterdescription": "",
+    "inhabitant": "",
+    "inhabitants": "",
+    "inhabitantgroup": "",
+    "inhabitantaction": "",
+    "inhabitantadjective": "",
+    "inhabitantdescription": "",
     "animal": "",
     "animals": "",
     "animalgroup": "",
     "animalaction": "",
     "animaladjective": "",
     "animaldescription": "",
+    "captive": "",
+    "captives": "",
+    "captivegroup": "",
+    "captiveaction": "",
+    "captiveadjective": "",
+    "captivedescription": "",
     "herald": "",
     "heralds": "",
     "heraldgroup": "",
+    "heraldaction": "",
     "heraldadjective": "",
     "heralddescription": "",
     "mentor": "",
     "mentors": "",
     "mentorgroup": "",
+    "mentoraction": "",
     "mentoradjective": "",
     "mentordescription": "",
     "ally": "",
     "allies": "",
     "allygroup": "",
+    "allyaction": "",
     "allyadjective": "",
     "allydescription": "",
-    "trickster": "",
-    "tricksters": "",
-    "trickstergroup": "",
-    "tricksteradjective": "",
-    "tricksterdescription": "",
-    "shapeshifter": "",
-    "shapeshifters": "",
-    "shapeshiftergroup": "",
-    "shapeshifteradjective": "",
-    "shapeshifterdescription": "",
-    "tempter": "",
-    "tempters": "",
-    "temptergroup": "",
-    "tempteradjective": "",
-    "tempterdescription": "",
-    "traitor": "",
-    "traitors": "",
-    "traitorgroup": "",
-    "traitoradjective": "",
-    "traitordescription": "",
-    "rival": "",
-    "rivals": "",
-    "rivalgroup": "",
-    "rivaladjective": "",
-    "rivaldescription": "",
     "entrance": "",
-    "lock": "",
-    "key": "",
     "room 1": "",
     "room 2": "",
     "room 3": "",
     "room 4": "",
     "room 5": "",
+    "room": "",
+    "roomsize": "",
     "roompurpose": "",
+    "roomshape": "",
+    "roomtype": "",
     "roomdescription": "",
     "roomcontents": "",
+    "roomevent": "",
+    "groundfeature": "",
+    "wallfeature": "",
+    "ceilingfeature": "",
+    "air": "",
+    "smell": "",
+    "sound": "",
+    "mineral": "",
+    "plant": "",
     "encounter": "",
+    "door": "",
+    "doorfeature": "",
+    "lock": "",
+    "lockfeature": "",
+    "corridor": "",
+    "corridorfeature": "",
     "danger": "",
     "dangeraction": "",
     "dangerdescription": "",
@@ -2349,7 +2395,7 @@
       "explanation": "Prevents adventurers from entering.",
       "entries": [
         "poisonous cloud",
-        "forcefield",
+        "field of force",
         "wall of fire",
         "spike wall"
       ]
@@ -2393,7 +2439,7 @@
       "name": "information gathering",
       "explanation": "",
       "entries": [
-        "A buzzer panel for all the apartments, but the person the adventurers are looking for has listed themselves under a different name, which can be figured out through previous clues."
+        "There is no obvious way to proceed, and the correct approach must be figured out via clues."
       ]
     },
     {
@@ -2457,15 +2503,15 @@
       "name": "trick room",
       "explanation": "",
       "entries": [
-        "The adventurers rescue a {var:captivegroup}. However, the {var:captives} are {captive complication}."
+        "The adventurers rescue a {var:captivegroup}. However, the {var:captives} {captive complication}."
       ]
     },
     {
       "name": "captive complication",
       "explanation": "",
       "entries": [
-        "enemies in disguise",
-        "booby-trapped",
+        "are enemies in disguise",
+        "are booby-trapped",
         "plead to be escorted back to safety immediately"
       ]
     },
@@ -2557,10 +2603,10 @@
       "name": "climax",
       "explanation": "",
       "entries": [
-        "Previous rooms have contained warning signals or an alarm, so the {var:enemy} has had time to prepare.",
-        "The {var:enemy} tries to settle things in an unusual way, through {unusual proposal}.",
-        "The {var:enemy} reveals The Big Reward and threatens to {reward threat}.",
-        "The {var:enemy} has a secret weakness that the {adventurer} figure out how to exploit."
+        "The {var:enemy} is here, ready to face the {adventurer}. Previous rooms have contained warning signals or an alarm, so the {var:enemy} has had time to prepare.",
+        "The {var:enemy} is here, and seems to be surprised by the arrival of the {adventurer}. The {var:enemy} tries to settle things in an unusual way, through {unusual proposal}.",
+        "The {var:enemy} is here and reveals the {var:treasure} to the {adventurer}, threatening to {reward threat}.",
+        "The {var:enemy} is here, but has a weakness that the {adventurer} must figure out how to exploit."
       ]
     },
     {
@@ -2583,8 +2629,8 @@
       "name": "big battle",
       "explanation": "",
       "entries": [
-        "The {var:enemy} has unexpected {capabilities}.",
-        "The lair is trapped. The {var:enemy} {trap ability}."
+        "The {var:enemy} is here and has unexpected {capabilities}.",
+        "The {var:enemy} is here, but the area is trapped. The {var:enemy} {trap ability}."
       ]
     },
     {
@@ -2600,8 +2646,8 @@
       "name": "trap ability",
       "explanation": "",
       "entries": [
-        "knows what to avoid",
-        "knows where to avoid,",
+        "knows what to avoid in order to not trigger the traps",
+        "knows what areas to avoid in order to not trigger the traps",
         "has the ability to set off the traps at opportune moments"
       ]
     },
@@ -2694,8 +2740,8 @@
         "The location of the next adventure is uncovered, along with sufficient motivation to accept the quest.",
         "The true identity of the {var:enemy} is revealed.",
         "New clues and information pertaining to a major plot arc are embedded in the treasure, {information hiding place}.",
-        "The {var:enemy} turns out to be a father of one of the {adventurer}.",
-        "The true, gruesome meaning behind a national holiday is discovered.",
+        "The {var:enemy} is found to have a stronger, more fearsome master.",
+        "The grand scheme of the {var:enemy} is discovered.",
         "The source of an alien race's hostility towards others is uncovered, transforming them from villains to sympathetic characters in the story.",
         "The true meaning of the prophecy or poem that lead the {adventurer} to the dungeon is finally understood, and it's not what the {adventurer} thought."
       ]
@@ -2744,16 +2790,15 @@
       "name": "room init",
       "explanation": "Initializing the room parameters.",
       "entries": [
-        "{room size}{room shape}{room description}{room extras}"
+        "{room size}{room shape}{room type}{room description}{room extras}"
       ]
     },
     {
       "name": "room description",
       "explanation": "Details of the dungeon room",
       "entries": [
-        "This is a {var:roomsize}, {var:roomshape}. The space {var:roomdescription}. ",
-        "The room is a {var:roomsize}, {var:roomshape}. The room {var:roomdescription}. {var:roomcontents}",
-        "The area is a {var:roomsize}, {var:roomshape}. The area  {var:roomdescription}. {var:roomcontents}"
+        "This is a {var:roomsize}, {var:roomshape} {var:roomtype}. The space {var:roomdescription}. ",
+        "The space is a {var:roomsize}, {var:roomshape} {var:roomtype}. The area {var:roomdescription}. {var:roomcontents} "
       ]
     },
     {
@@ -2802,59 +2847,212 @@
       "explanation": "The shape of the area.",
       "entries": [
         {
-          "m": 1,
+          "m": 5,
           "v": "",
           "set": {
-            "roomshape": "domed hall"
+            "roomshape": "square"
+          }
+        },
+        {
+          "m": 5,
+          "v": "",
+          "set": {
+            "roomshape": "rectangular"
+          }
+        },
+        {
+          "m": 5,
+          "v": "",
+          "set": {
+            "roomshape": "elongated"
+          }
+        },
+        {
+          "m": 4,
+          "v": "",
+          "set": {
+            "roomshape": "squarish"
+          }
+        },
+        {
+          "m": 3,
+          "v": "",
+          "set": {
+            "roomshape": "long and narrow"
+          }
+        },
+        {
+          "m": 3,
+          "v": "",
+          "set": {
+            "roomshape": "irregularly shaped"
+          }
+        },
+        {
+          "m": 2,
+          "v": "",
+          "set": {
+            "roomshape": "round"
+          }
+        },
+        {
+          "m": 2,
+          "v": "",
+          "set": {
+            "roomshape": "oval"
+          }
+        },
+        {
+          "m": 2,
+          "v": "",
+          "set": {
+            "roomshape": "pear-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "roomshape": "long and narrow hall"
+            "roomshape": "semicircle-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "roomshape": "irregularly shaped space"
+            "roomshape": "somewhat triangle-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "roomshape": "square area"
+            "roomshape": "kite-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "roomshape": "rectangular space"
+            "roomshape": "dart-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "roomshape": "triangle-shaped area"
+            "roomshape": "rhomboid-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "roomshape": "round area"
+            "roomshape": "trapezoid-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "roomshape": "area in a shape of a cross"
+            "roomshape": "cross-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "pentagon-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "star-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "octagon-shaped"
+          }
+        }
+      ]
+    },
+    {
+      "name": "room type",
+      "explanation": "Types or room.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "room"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "chamber"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "hall"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "hallway"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "enclosure"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "site"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "spot"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "space"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "place"
           }
         }
       ]
