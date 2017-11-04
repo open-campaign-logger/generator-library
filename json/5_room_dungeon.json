@@ -1,6 +1,6 @@
 {
   "name": "5 Room Dungeon",
-  "resultPattern": "{HTML formatting}{difficulty}{milieu}{goal} {macguffin}{treasure}{guardian}{monster}{minion}{captive}{ally}{hindrance}{danger}{trap} {adventure description}",
+  "resultPattern": "{HTML formatting}{difficulty}{milieu}{goal} {macguffin}{artifact}{treasure}{minion}{herald}{guardian}{monster}{beast}{traitor}{tempter}{shapeshifter}{trickster}{rival}{inhabitant}{captive}{mentor}{ally}{hindrance}{danger}{trap} {adventure description}",
   "variables": {
     "starttitle": "",
     "endtitle": "",
@@ -30,6 +30,8 @@
     "artifactdescription": "",
     "treasure": "",
     "treasuredescription": "",
+    "actor": "",
+    "attitude": "",
     "enemy": "",
     "enemies": "",
     "enemygroup": "",
@@ -243,7 +245,7 @@
         "In search of a {var:treasure}",
         "In search of the {var:treasure} of the {enemy adjective} {var:enemy}",
         "Quest for the {var:treasure}",
-        "{synonym#death} of the {enemy adjective} {var:enemy}",
+        "{lib:synonym#death} of the {enemy adjective} {var:enemy}",
         "{minion adjective} {var:minion} of the {enemy adjective} {var:enemy}"
       ]
     },
@@ -337,6 +339,19 @@
     },
     {
       "name": "enemy",
+      "explanation": "Help table for randomizing the enemy level. Usually the enemy is defined via the difficulty table.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{enemy level}",
+          "set": {
+            "actor": "enemy"
+          }
+        }
+      ]
+    },
+    {
+      "name": "enemy level",
       "explanation": "Enemies for adventurers of different experience levels.",
       "entries": [
         "{apprentice enemy}",
@@ -370,7 +385,7 @@
           "m": 1,
           "v": "",
           "set": {
-            "enemy": "snake cultist",
+            "enemy": "cultist",
             "enemyadjective": "fanatical"
           }
         },
@@ -386,8 +401,8 @@
           "m": 1,
           "v": "",
           "set": {
-            "enemy": "beast",
-            "enemyadjective": "fiendish"
+            "enemy": "lycanthrope",
+            "enemyadjective": "shapeshifting"
           }
         }
       ]
@@ -494,7 +509,7 @@
           "m": 1,
           "v": "",
           "set": {
-            "enemy": "monster",
+            "enemy": "monstrosity",
             "enemyadjective": "inhuman"
           }
         },
@@ -1686,8 +1701,24 @@
       ]
     },
     {
+      "name": "herald",
+      "explanation": "A character that foreshadows the adventure",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "herald": "child",
+            "heralds": "children",
+            "heraldgroup": "group of children",
+            "heraldadjective": "small"
+          }
+        }
+      ]
+    },
+    {
       "name": "guardian",
-      "explanation": "",
+      "explanation": "The enemy's guardian watching the entrance.",
       "entries": [
         {
           "m": 1,
@@ -1722,38 +1753,8 @@
       ]
     },
     {
-      "name": "monster",
-      "explanation": "Monster hiding in the dungeon.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "monster": "troll",
-            "monsters": "trolls",
-            "monstergroup": "group of trolls",
-            "monsteraction": "looking for something to eat",
-            "monsteradjective": "hideous",
-            "monsterdescription": "A huge troll is sniffing the air and looks like if it was searching for something."
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "monster": "troglodyte",
-            "monsters": "troglodytes",
-            "monstergroup": "tribe of troglodytes",
-            "monsteraction": "sharpening a stone axe",
-            "monsteradjective": "primitive",
-            "monsterdescription": "A primitive-looking troglodyte is inspecting a stone axe."
-          }
-        }
-      ]
-    },
-    {
       "name": "minion",
-      "explanation": "",
+      "explanation": "Servitor of the enemy.",
       "entries": [
         {
           "m": 1,
@@ -1872,6 +1873,117 @@
       ]
     },
     {
+      "name": "monster",
+      "explanation": "Monsters hiding in the dungeon.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "monster": "troll",
+            "monsters": "trolls",
+            "monstergroup": "group of trolls",
+            "monsteraction": "looking for something to eat",
+            "monsteradjective": "hideous",
+            "monsterdescription": "A huge troll is sniffing the air and looks like if it was searching for something."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "monster": "troglodyte",
+            "monsters": "troglodytes",
+            "monstergroup": "tribe of troglodytes",
+            "monsteraction": "sharpening a stone axe",
+            "monsteradjective": "primitive",
+            "monsterdescription": "A primitive-looking troglodyte is inspecting a stone axe."
+          }
+        }
+      ]
+    },
+    {
+      "name": "beast",
+      "explanation": "A nonsentient predator stalking in the dungeon.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "beast": "wolf",
+            "beasts": "wolves",
+            "beastgroup": "wolfpack",
+            "beastadjective": "mangy"
+          }
+        }
+      ]
+    },
+    {
+      "name": "traitor",
+      "explanation": "Characters that betray trust.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "traitor": "informant"
+          }
+        }
+      ]
+    },
+    {
+      "name": "shapeshifter",
+      "explanation": "Characters that appear to be something else.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "shapeshifter": "skinchanger"
+          }
+        }
+      ]
+    },
+    {
+      "name": "tempter",
+      "explanation": "Characters that attempt to tempt the adventurers to give up their principles.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "tempter": "enchanter"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rival",
+      "explanation": "Characters that compete with the adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "rival": "knight"
+          }
+        }
+      ]
+    },
+    {
+      "name": "inhabitant",
+      "explanation": "Neutral persons that live in the area.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "inhabitant": "gnome"
+          }
+        }
+      ]
+    },
+    {
       "name": "captive",
       "explanation": "",
       "entries": [
@@ -1905,14 +2017,40 @@
       ]
     },
     {
-      "name": "ally",
-      "explanation": "",
+      "name": "trickster",
+      "explanation": "Characters that may trick the adventurers.",
       "entries": [
         {
           "m": 1,
           "v": "",
           "set": {
-            "helper": "helper"
+            "trickster": "jester"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mentor",
+      "explanation": "Characters that can teach something.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "mentor": "sage"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ally",
+      "explanation": "Characters that can help the adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "ally": "friend"
           }
         }
       ]
@@ -2382,12 +2520,89 @@
       ]
     },
     {
+      "name": "door",
+      "explanation": "Doors barring the way.",
+      "entries": [
+        "thick oak door",
+        "metal door"
+      ]
+    },
+    {
+      "name": "lock",
+      "explanation": "The key required to open the dungeon",
+      "entries": [
+        "heavy iron padlock",
+        "sigil requiring some kind of a ceremony to open",
+        "magical seal requiring a command word"
+      ]
+    },
+    {
       "name": "key",
       "explanation": "The key required to open the dungeon",
       "entries": [
         "ceremony",
         "command word",
         "key"
+      ]
+    },
+    {
+      "name": "tool",
+      "explanation": "Useful tools.",
+      "entries": [
+        "shovel",
+        "rope",
+        "10 foot pole"
+      ]
+    },
+    {
+      "name": "trick",
+      "explanation": "Tricks to deceive the adventurers.",
+      "entries": [
+        "trick"
+      ]
+    },
+    {
+      "name": "clue",
+      "explanation": "Information helpful for solving the adventure.",
+      "entries": [
+        "instructions for a ceremony",
+        "plans of the {var:enemy}",
+        "hiding place of the {var:treasure}"
+      ]
+    },
+    {
+      "name": "red herring",
+      "explanation": "Clues leading to a wrong direction.",
+      "entries": [
+        "red herring"
+      ]
+    },
+    {
+      "name": "smoke screen",
+      "explanation": "Coverups for something more important.",
+      "entries": [
+        "smoke screen"
+      ]
+    },
+    {
+      "name": "wonder",
+      "explanation": "Awe-inspiring sights evoking sense of wonder.",
+      "entries": [
+        "something wonderful is seen or experienced"
+      ]
+    },
+    {
+      "name": "humor",
+      "explanation": "Humorous happenstances.",
+      "entries": [
+        "something funny happens"
+      ]
+    },
+    {
+      "name": "flavor",
+      "explanation": "Insignificant events that bring flavor to the setting.",
+      "entries": [
+        "Flavor: something insignificant but flavorful is experienced"
       ]
     },
     {
@@ -2559,8 +2774,35 @@
       "name": "complication room",
       "explanation": "",
       "entries": [
-        "The artifact required to defeat the {var:enemy}, but it is {artifact complication}. Clues reveal that a solution lies ahead.",
+        "The {artifact} required to defeat the {var:enemy}, but it is {artifact complication}. Clues reveal that a solution lies ahead.",
         "Believing the object of the quest now lays within easy reach, a  companion turns traitor and betrays the {adventurer}."
+      ]
+    },
+    {
+      "name": "artifact",
+      "explanation": "Artifacts useful for solving the adventure.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "artifact": "spellbook"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "artifact": "amulet"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "artifact": "magical weapon"
+          }
+        }
       ]
     },
     {
@@ -2969,6 +3211,13 @@
           "m": 1,
           "v": "",
           "set": {
+            "roomshape": "hexagon-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
             "roomshape": "star-shaped"
           }
         },
@@ -2977,6 +3226,13 @@
           "v": "",
           "set": {
             "roomshape": "octagon-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "irregular polygon shaped"
           }
         }
       ]
@@ -3024,14 +3280,14 @@
           "m": 1,
           "v": "",
           "set": {
-            "roomtype": "site"
+            "roomtype": "spot"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "roomtype": "spot"
+            "roomtype": "location"
           }
         },
         {
@@ -3636,7 +3892,7 @@
         "{combat encounter}",
         "{betrayal encounter}",
         "{trap encounter}",
-        "{danger encounter}",
+        "{hazard encounter}",
         "{setback encounter}",
         "{hindrance encounter}",
         "{trick encounter}",
@@ -3655,169 +3911,471 @@
       "name": "combat encounter",
       "explanation": "Encounters with hostile creatures (guardian, minion, monster, beast, rival, etc.)",
       "entries": [
-        "This is a lair of {var:monstergroup}.",
-        "guardian",
-        "minion",
-        "monster",
-        "beast",
-        "rival"
+        "Combat: This is a {hostile actor} lair.",
+        "Combat: A {hostile actor} is waiting here, ready to attack."
       ]
     },
     {
       "name": "betrayal encounter",
       "explanation": "Encounters where the adventurers are betrayed (traitor, shapeshifter, tempter, trickster, etc).",
       "entries": [
-        "traitor",
-        "shapeshifter",
-        "tempter",
-        "trickster"
+        "Help: {deceptive actor} needs help."
       ]
     },
     {
       "name": "trap encounter",
       "explanation": "Encounters with traps.",
       "entries": [
-        "trap"
+        "{trap} A {var:trap} has been set here. (A successful inspection would reveal {var:trapdescription}. If the {adventurer} fails to detect and defuse the trap, {var:trapaction}). "
       ]
     },
     {
-      "name": "danger encounter",
+      "name": "hazard encounter",
       "explanation": "Encounters that put the adventurers in danger (hazard, etc.)",
       "entries": [
-        "hazard"
+        "Hazard: Here is a {hazard}."
       ]
     },
     {
       "name": "setback encounter",
       "explanation": "Encounters that cause the adventurers to lose progress (traitor, shapeshifter, rival, etc).",
       "entries": [
-        "traitor",
-        "shapeshifter",
-        "rival"
+        "Setback: {competitive actor} causes you to lose progress."
       ]
     },
     {
       "name": "hindrance encounter",
       "explanation": "Encounters that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
       "entries": [
-        "rival",
-        "trickster",
-        "lock",
-        "door"
+        "hindrance: {competitive actor} slows down your progress.",
+        "Lock: Problem with a {lock}",
+        "Door: Problem with a {door}."
       ]
     },
     {
       "name": "trick encounter",
       "explanation": "Encounters that require a clever approach.",
       "entries": [
-        "rival",
-        "mentor",
-        "trickster",
-        "trick"
+        "Trick: {deceptive actor} attempts to trick the {adventurer}.",
+        "Trick: {trick}"
       ]
     },
     {
       "name": "trial encounter",
       "explanation": "Encounters where the adventurers must prove themselves (rival, mentor, trickster, etc).",
       "entries": [
-        "rival",
-        "mentor",
-        "trickster"
+        "{friendly actor} requires the adventurers to prove their mettle."
       ]
     },
     {
       "name": "competition encounter",
       "explanation": "Encounters where adventurers have to compete with someone (rival, mentor, etc.)",
       "entries": [
-        "rival",
-        "mentor",
-        "shapeshifter",
-        "trickster"
+        "{competitive actor} presents a challenge to the adventurers.",
+        "{deceptive actor} challenges the adventurers."
       ]
     },
     {
       "name": "distraction encounter",
       "explanation": "Encounters that lead astray (shapeshifter, trickster, tempter, traitor, red herring, smoke screen, etc.)",
       "entries": [
-        "shapeshifter",
-        "trickster",
-        "tempter",
-        "traitor",
-        "red herring",
-        "smoke screen"
+        "{deceptive actor} leads the adventurers astray.",
+        "Red herring: {red herring}",
+        "Smoke screen: {smoke screen}"
       ]
     },
     {
       "name": "sidetrack encounter",
       "explanation": "Encounters providing temporary diversion (tricster, tempter, sense of wonder, comic relief, etc.)",
       "entries": [
-        "trickster",
-        "tempter",
-        "wonder",
-        "humour"
+        "{deceptive actor} causes a temporary diversion for the adventurers.",
+        "Wonder: {wonder}",
+        "Humor: {humor}"
       ]
     },
     {
       "name": "flavor encounter",
       "explanation": "Encounters that create color and flavor, may bring roleplaying opportunities (plant, animal, tempter, traitor, item, wonder, etc.)",
       "entries": [
-        "plant",
-        "animal",
-        "tempter",
-        "traitor",
-        "item",
-        "wonder"
+        "Flavor: {flavor}",
+        "Flavor: {plant}",
+        "Flavor: {animal}",
+        "Flavor: {item}",
+        "Flavor: {wonder}"
       ]
     },
     {
       "name": "rescue encounter",
       "explanation": "Encounters where a prisoner (captive, mentor, ally, shapeshifter, tempter, traitor, trickster, animal, monster, minion, rival, etc.) can be rescued and perhaps befriended.",
       "entries": [
-        "captive",
-        "mentor",
-        "ally",
-        "shapeshifter",
-        "tempter",
-        "traitor",
-        "trickster",
-        "animal",
-        "monster",
-        "minion",
-        "rival"
+        "{helpless actor} needs to be rescued."
       ]
     },
     {
       "name": "resource encounter",
       "explanation": "Encounters that offer new resources (artifact, key, tool, treasure, plant, animal, information, red herring, etc.)",
       "entries": [
-        "artifact",
-        "key",
-        "tool",
-        "treasure",
-        "plant",
-        "animal",
-        "information",
-        "red herring"
+        "Artifact: The {var:artifact} can be found here.",
+        "Key: {key}",
+        "Tool: {tool}",
+        "Treasure: {var:treasure}",
+        "Plant: {plant}",
+        "Animal: {animal}",
+        "Information: {information}",
+        "Red herring: {red herring}"
       ]
     },
     {
       "name": "information encounter",
       "explanation": "Encounters that offer information (mentor, trickster, clue, shapeshifter, traitor, red herring, etc.)",
       "entries": [
-        "mentor",
-        "trickster",
-        "clue",
-        "shapeshifter",
-        "traitor",
-        "red herring"
+        "{friendly actor} gives useful information.",
+        "{deceptive actor} gives wrong information.",
+        "Clue: {clue}",
+        "Red herring: {red herring}"
       ]
     },
     {
       "name": "help encounter",
       "explanation": "Encounters that offer help (mentor, ally, etc.)",
       "entries": [
-        "mentor",
-        "ally"
+        "{friendly actor} offers to help."
+      ]
+    },
+    {
+      "name": "actor",
+      "explanation": "Help table for generating a completely random actor. Usually the 'actor' subtables are called directly by the encounter tables to make the actor fit the encounter.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{hostile actor}",
+          "set": {
+            "attitude": "hostile"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{deceptive actor}",
+          "set": {
+            "attitude": "deceptive"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{competitive actor}",
+          "set": {
+            "attitude": "competitive"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{neutral actor}",
+          "set": {
+            "attitude": "neutral"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{friendly actor}",
+          "set": {
+            "attitude": "friendly"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{nonsentient actor}",
+          "set": {
+            "attitude": "nonsentient"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{helpless actor}",
+          "set": {
+            "attitude": "helpless"
+          }
+        }
+      ]
+    },
+    {
+      "name": "hostile actor",
+      "explanation": "Actors who are opposed to the adventurers.",
+      "entries": [
+        {
+          "explanation": "The enemy has been set when initializing and is not randomized.",
+          "m": 1,
+          "v": "{var:enemy}",
+          "set": {
+            "actor": "enemy"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:minion}",
+          "set": {
+            "actor": "minion"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:guardian}",
+          "set": {
+            "actor": "guardian"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:monster}",
+          "set": {
+            "actor": "monster"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:beast}",
+          "set": {
+            "actor": "beast"
+          }
+        }
+      ]
+    },
+    {
+      "name": "deceptive actor",
+      "explanation": "Actors who may not be what they appear to be.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{var:traitor}",
+          "set": {
+            "actor": "traitor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:shapeshifter}",
+          "set": {
+            "actor": "shapeshifter"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:tempter}",
+          "set": {
+            "actor": "tempter"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:trickster}",
+          "set": {
+            "actor": "trickster"
+          }
+        }
+      ]
+    },
+    {
+      "name": "competitive actor",
+      "explanation": "Actors who compete with the adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{var:tempter}",
+          "set": {
+            "actor": "tempter"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:rival}",
+          "set": {
+            "actor": "rival"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:trickster}",
+          "set": {
+            "actor": "trickster"
+          }
+        }
+      ]
+    },
+    {
+      "name": "neutral actor",
+      "explanation": "Actors who initially have a neutral attitude.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{var:inhabitant}",
+          "set": {
+            "actor": "inhabitant"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:animal}",
+          "set": {
+            "actor": "animal"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:captive}",
+          "set": {
+            "actor": "captive"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:herald}",
+          "set": {
+            "actor": "herald"
+          }
+        }
+      ]
+    },
+    {
+      "name": "friendly actor",
+      "explanation": "Actors who are friendly towards the adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{var:tempter}",
+          "set": {
+            "actor": "tempter"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:trickster}",
+          "set": {
+            "actor": "trickster"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:mentor}",
+          "set": {
+            "actor": "mentor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:ally}",
+          "set": {
+            "actor": "ally"
+          }
+        }
+      ]
+    },
+    {
+      "name": "nonsentient actor",
+      "explanation": "Actors who have animal-like intelligence.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{var:beast}",
+          "set": {
+            "actor": "beast"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:animal}",
+          "set": {
+            "actor": "animal"
+          }
+        }
+      ]
+    },
+    {
+      "name": "helpless actor",
+      "explanation": "Actors who may need help from the adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{var:minion}",
+          "set": {
+            "actor": "minion"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:monster}",
+          "set": {
+            "actor": "monster"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:animal}",
+          "set": {
+            "actor": "animal"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:traitor}",
+          "set": {
+            "actor": "traitor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:shapeshifter}",
+          "set": {
+            "actor": "shapeshifter"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:tempter}",
+          "set": {
+            "actor": "tempter"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:rival}",
+          "set": {
+            "actor": "rival"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:trickster}",
+          "set": {
+            "actor": "trickster"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:inhabitant}",
+          "set": {
+            "actor": "inhabitant"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:captive}",
+          "set": {
+            "actor": "captive"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:mentor}",
+          "set": {
+            "actor": "mentor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{var:ally}",
+          "set": {
+            "actor": "ally"
+          }
+        }
       ]
     }
   ]
