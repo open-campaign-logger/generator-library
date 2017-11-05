@@ -150,6 +150,7 @@
     "sound": "",
     "mineral": "",
     "plant": "",
+    "scene": "",
     "encounter": "",
     "door": "",
     "doorfeature": "",
@@ -182,7 +183,7 @@
   "bugs": "",
   "to do": "Support for external motif files (requires global variables)",
   "see": "",
-  "date": "2017-11-03",
+  "date": "2017-11-05",
   "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula.",
   "sources": "RolePlayingTips.com",
   "genre": "universal",
@@ -3886,25 +3887,160 @@
       ]
     },
     {
-      "name": "encounter",
-      "explanation": "Types of encounters in the dungeon rooms.",
+      "name": "scene",
+      "explanation": "Help table for generating a completely random encounter. Usually the encounter subtables are called directly.",
       "entries": [
-        "{combat encounter}",
-        "{betrayal encounter}",
-        "{trap encounter}",
-        "{hazard encounter}",
-        "{setback encounter}",
-        "{hindrance encounter}",
-        "{trick encounter}",
-        "{trial encounter}",
-        "{competition encounter}",
-        "{distraction encounter}",
-        "{sidetrack encounter}",
-        "{flavor encounter}",
-        "{rescue encounter}",
-        "{resource encounter}",
-        "{information encounter}",
-        "{help encounter}"
+        {
+          "m": 1,
+          "v": "{action scene}",
+          "set": {
+            "scene": "action"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{development scene}",
+          "set": {
+            "scene": "development"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{mood scene}",
+          "set": {
+            "scene": "mood"
+          }
+        }
+      ]
+    },
+    {
+      "name": "action scene",
+      "explanation": "Encounters involving action (battle, chase, cliffhanger, etc).",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{combat encounter}",
+          "set": {
+            "encounter": "combat"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{trap encounter}",
+          "set": {
+            "encounter": "trap"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{hazard encounter}",
+          "set": {
+            "encounter": "hazard"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{trial encounter}",
+          "set": {
+            "encounter": "trial"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{competition encounter}",
+          "set": {
+            "encounter": "competition"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{rescue encounter}",
+          "set": {
+            "encounter": "rescue"
+          }
+        }
+      ]
+    },
+    {
+      "name": "development scene",
+      "explanation": "Encounters that advance the storyline (clues, twists, character development, etc).",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{betrayal encounter}",
+          "set": {
+            "encounter": "betrayal"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{setback encounter}",
+          "set": {
+            "encounter": "setback"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{hindrance encounter}",
+          "set": {
+            "encounter": "hindrance"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{trick encounter}",
+          "set": {
+            "encounter": "trick"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{information encounter}",
+          "set": {
+            "encounter": "information"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{help encounter}",
+          "set": {
+            "encounter": "help"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mood scene",
+      "explanation": "Encounters for atmosphere and roleplaying.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{distraction encounter}",
+          "set": {
+            "encounter": "distraction"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{sidetrack encounter}",
+          "set": {
+            "encounter": "sidetrack"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{flavor encounter}",
+          "set": {
+            "encounter": "flavor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{resource encounter}",
+          "set": {
+            "encounter": "resource"
+          }
+        }
       ]
     },
     {
