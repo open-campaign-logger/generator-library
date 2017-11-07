@@ -1,6 +1,6 @@
 {
   "name": "5 Room Dungeon",
-  "resultPattern": "{HTML formatting}{difficulty}{milieu}{goal} {macguffin}{artifact}{treasure}{minion}{herald}{guardian}{monster}{beast}{traitor}{tempter}{shapeshifter}{trickster}{rival}{inhabitant}{captive}{mentor}{ally}{hindrance}{danger}{trap} {adventure description}",
+  "resultPattern": "{HTML formatting}{difficulty}{milieu}{goal} {macguffin}{artifact}{treasure}{minion}{herald}{guardian}{monster}{beast}{traitor}{tempter}{shapeshifter}{trickster}{rival}{inhabitant}{captive}{mentor}{ally}{hindrance}{danger}{trap}{adventure description}",
   "variables": {
     "starttitle": "",
     "endtitle": "",
@@ -9,6 +9,7 @@
     "startbold": "",
     "endbold": "",
     "para": "",
+    "duration": "",
     "difficulty": "",
     "difficultydescription": "",
     "goal": "",
@@ -150,6 +151,7 @@
     "sound": "",
     "mineral": "",
     "plant": "",
+    "hook": "",
     "scene": "",
     "encounter": "",
     "door": "",
@@ -183,8 +185,8 @@
   "bugs": "",
   "to do": "Support for external motif files (requires global variables)",
   "see": "",
-  "date": "2017-11-05",
-  "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula.",
+  "date": "2017-11-07",
+  "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "RolePlayingTips.com",
   "genre": "universal",
   "categories": [
@@ -231,7 +233,7 @@
       "name": "adventure description",
       "explanation": "The adventure described in WordPress format.",
       "entries": [
-        "{var:starttitle}{adventure name}{var:endtitle} {var:startbold}Difficulty{var:endbold}: {var:difficulty}{var:para} (This mini adventure is best suited for {var:difficultydescription}.){var:para} {arriving} {var:locationdescription}. Here the {adventurer} {encountering} {enemy introduction} {var:enemy} and a {var:miniongroup}. {var:startheading}Entrance{var:endheading} {room 1} {var:startheading}Trial{var:endheading} {room 2} {var:startheading}Build-Up{var:endheading} {room 3} {var:startheading}Turning Point{var:endheading} {room 4} {roleplaying opportunity}  {var:startheading}Finale{var:endheading} {room 5}  {var:para}{var:footnote}"
+        "{var:starttitle}{adventure name}{var:endtitle} {var:startbold}Difficulty{var:endbold}: {var:difficulty}{var:para} (This mini adventure is best suited for {var:difficultydescription}). {var:para} {arriving} {var:locationdescription}. Here the {adventurer} {encountering} {enemy introduction} {var:enemy} and a {var:miniongroup}. {var:startheading}Structure{var:endheading} {structure} {var:para}The duration of the adventure is estimated to be approximately {var:duration} minutes. {var:startheading}Alternative Structure{var:endheading} {var:startheading}Entrance{var:endheading} {room 1} {var:startheading}Trial{var:endheading} {room 2} {var:startheading}Build-Up{var:endheading} {room 3} {var:startheading}Finale{var:endheading} {room 4} {roleplaying opportunity}  {var:startheading}Resolution{var:endheading} {room 5}  {var:para}{var:footnote}"
       ]
     },
     {
@@ -2559,7 +2561,7 @@
       "name": "trick",
       "explanation": "Tricks to deceive the adventurers.",
       "entries": [
-        "trick"
+        "A trick is played on the {adventurer}. "
       ]
     },
     {
@@ -3033,12 +3035,12 @@
       "name": "room init",
       "explanation": "Initializing the room parameters.",
       "entries": [
-        "{room size}{room shape}{room type}{room description}{room extras}"
+        "{room size}{room shape}{room type}{var:para}{room description}{room extras}"
       ]
     },
     {
       "name": "room description",
-      "explanation": "Details of the dungeon room",
+      "explanation": "Details of the dungeon room.",
       "entries": [
         "This is a {var:roomsize}, {var:roomshape} {var:roomtype}. The space {var:roomdescription}. ",
         "The space is a {var:roomsize}, {var:roomshape} {var:roomtype}. The area {var:roomdescription}. {var:roomcontents} "
@@ -3887,6 +3889,124 @@
       ]
     },
     {
+      "name": "structure",
+      "explanation": "Structure of the adventure.",
+      "entries": [
+        "{duration}"
+      ]
+    },
+    {
+      "name": "duration",
+      "explanation": "The approximate duration of the game night.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{ca 90 minute adventure}",
+          "set": {
+            "duration": "90"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{ca 120 minute adventure}",
+          "set": {
+            "duration": "120"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{ca 150 minute adventure}",
+          "set": {
+            "duration": "150"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ca 90 minute adventure",
+      "explanation": "An adventure structure taking about 1.5 hours to play.",
+      "entries": [
+        "{room init}{action hook}{room init}{development scene} {var:startheading}Finale{var:endheading} {room init}{action finale} {var:startheading}Resolution{var:endheading} {room init}{resolution}",
+        "{room init}{development hook}{room init}{action scene} {var:startheading}Finale{var:endheading} {room init}{development finale} {var:startheading}Resolution{var:endheading} {room init}{resolution}"
+      ]
+    },
+    {
+      "name": "ca 120 minute adventure",
+      "explanation": "An adventure structure taking about 2 hours to play.",
+      "entries": [
+        "{room init}{development hook}{room init}{action hook}{room init}{development scene} {var:startheading}Finale{var:endheading}  {room init}{action finale}{room init}{resolution}",
+        "{room init}{action hook}{room init}{development scene}{room init}{action scene} {var:startheading}Finale{var:endheading} {room init}{development finale} {var:startheading}Resolution{var:endheading}  {room init}{resolution}"
+      ]
+    },
+    {
+      "name": "ca 150 minute adventure",
+      "explanation": "An adventure structure taking about 2.5 hours to play.",
+      "entries": [
+        "{room init}{action hook}{room init}{development scene}{room init}{action scene} {var:startheading}Finale{var:endheading}  {room init}{development finale} {var:startheading}Resolution{var:endheading}  {room init}{resolution}",
+        "{room init}{development hook}{room init}{action scene}{room init}{development scene}{room init}{action scene} {var:startheading}Finale{var:endheading} {room init}{development finale} {var:startheading}Resolution{var:endheading} {room init}{resolution}"
+      ]
+    },
+    {
+      "name": "hook",
+      "explanation": "How the protagonists get involved in the adventure.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{action hook}",
+          "set": {
+            "hook": "action"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{development hook}",
+          "set": {
+            "hook": "development"
+          }
+        }
+      ]
+    },
+    {
+      "name": "action hook",
+      "explanation": "Action hooks to involve the protagonists.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "kidnapped",
+          "set": {
+            "encounter": "kidnapped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{action scene}",
+          "set": {
+            "scene": "action"
+          }
+        }
+      ]
+    },
+    {
+      "name": "development hook",
+      "explanation": "Development hooks to involve the protagonists.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "memory loss",
+          "set": {
+            "encounter": "memory loss"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{development scene}",
+          "set": {
+            "scene": "development"
+          }
+        }
+      ]
+    },
+    {
       "name": "scene",
       "explanation": "Help table for generating a completely random encounter. Usually the encounter subtables are called directly.",
       "entries": [
@@ -3919,42 +4039,42 @@
       "entries": [
         {
           "m": 1,
-          "v": "{combat encounter}",
+          "v": "{var:startheading}{var:encounter}{var:endheading}{combat encounter}",
           "set": {
             "encounter": "combat"
           }
         },
         {
           "m": 1,
-          "v": "{trap encounter}",
+          "v": "{var:startheading}{var:encounter}{var:endheading}{trap encounter}",
           "set": {
             "encounter": "trap"
           }
         },
         {
           "m": 1,
-          "v": "{hazard encounter}",
+          "v": "{var:startheading}{var:encounter}{var:endheading}{hazard encounter}",
           "set": {
             "encounter": "hazard"
           }
         },
         {
           "m": 1,
-          "v": "{trial encounter}",
+          "v": "{var:startheading}{var:encounter}{var:endheading}{trial encounter}",
           "set": {
             "encounter": "trial"
           }
         },
         {
           "m": 1,
-          "v": "{competition encounter}",
+          "v": "{var:startheading}{var:encounter}{var:endheading}{competition encounter}",
           "set": {
             "encounter": "competition"
           }
         },
         {
           "m": 1,
-          "v": "{rescue encounter}",
+          "v": "{var:startheading}{var:encounter}{var:endheading}{rescue encounter}",
           "set": {
             "encounter": "rescue"
           }
@@ -3967,42 +4087,42 @@
       "entries": [
         {
           "m": 1,
-          "v": "{betrayal encounter}",
+          "v": "{var:startheading}{var:encounter}{var:endheading}{betrayal encounter}",
           "set": {
             "encounter": "betrayal"
           }
         },
         {
           "m": 1,
-          "v": "{setback encounter}",
+          "v": "{var:startheading}{var:encounter}{var:endheading}{setback encounter}",
           "set": {
             "encounter": "setback"
           }
         },
         {
           "m": 1,
-          "v": "{hindrance encounter}",
+          "v": "{var:startheading}{var:encounter}{var:endheading}{hindrance encounter}",
           "set": {
             "encounter": "hindrance"
           }
         },
         {
           "m": 1,
-          "v": "{trick encounter}",
+          "v": "{var:startheading}{var:encounter}{var:endheading}{trick encounter}",
           "set": {
             "encounter": "trick"
           }
         },
         {
           "m": 1,
-          "v": "{information encounter}",
+          "v": "{var:startheading}{var:encounter}{var:endheading}{information encounter}",
           "set": {
             "encounter": "information"
           }
         },
         {
           "m": 1,
-          "v": "{help encounter}",
+          "v": "{var:startheading}{var:encounter}{var:endheading}{help encounter}",
           "set": {
             "encounter": "help"
           }
@@ -4015,32 +4135,87 @@
       "entries": [
         {
           "m": 1,
-          "v": "{distraction encounter}",
+          "v": "{var:startheading}{var:encounter}{var:endheading}{distraction encounter}",
           "set": {
             "encounter": "distraction"
           }
         },
         {
           "m": 1,
-          "v": "{sidetrack encounter}",
+          "v": "{var:startheading}{var:encounter}{var:endheading}{sidetrack encounter}",
           "set": {
             "encounter": "sidetrack"
           }
         },
         {
           "m": 1,
-          "v": "{flavor encounter}",
+          "v": "{var:startheading}{var:encounter}{var:endheading}{flavor encounter}",
           "set": {
             "encounter": "flavor"
           }
         },
         {
           "m": 1,
-          "v": "{resource encounter}",
+          "v": "{var:startheading}{var:encounter}{var:endheading}{resource encounter}",
           "set": {
             "encounter": "resource"
           }
         }
+      ]
+    },
+    {
+      "name": "finale",
+      "explanation": ".",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{action finale}",
+          "set": {
+            "finale": "action"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{development finale}",
+          "set": {
+            "finale": "development"
+          }
+        }
+      ]
+    },
+    {
+      "name": "action finale",
+      "explanation": "{var:startheading}Action Finale{var:endheading}Action hooks to involve the protagonists.",
+      "entries": [
+        "Final battle"
+      ]
+    },
+    {
+      "name": "development finale",
+      "explanation": "{var:startheading}Development Finale{var:endheading}Development hooks to involve the protagonists.",
+      "entries": [
+        "Final revelation"
+      ]
+    },
+    {
+      "name": "resolution",
+      "explanation": ".",
+      "entries": [
+        "Happy ending",
+        "Villain is killed",
+        "Villain surrenders",
+        "Villain escapes",
+        "Heroes captured",
+        "Heroes escape",
+        "Cliffhanger",
+        "Greater threat"
+      ]
+    },
+    {
+      "name": "hook encounter",
+      "explanation": "Encounters solely for starting the adventure.",
+      "entries": [
+        "Hook: XXX"
       ]
     },
     {
@@ -4092,15 +4267,15 @@
       "name": "trick encounter",
       "explanation": "Encounters that require a clever approach.",
       "entries": [
-        "Trick: {deceptive actor} attempts to trick the {adventurer}.",
-        "Trick: {trick}"
+        "A {deceptive actor} attempts to trick the {adventurer}.",
+        "{trick}"
       ]
     },
     {
       "name": "trial encounter",
       "explanation": "Encounters where the adventurers must prove themselves (rival, mentor, trickster, etc).",
       "entries": [
-        "{friendly actor} requires the adventurers to prove their mettle."
+        "A {friendly actor} requires the adventurers to prove their mettle."
       ]
     },
     {
@@ -4176,6 +4351,20 @@
       "explanation": "Encounters that offer help (mentor, ally, etc.)",
       "entries": [
         "{friendly actor} offers to help."
+      ]
+    },
+    {
+      "name": "finale encounter",
+      "explanation": "Encounters solely for the adventure climax.",
+      "entries": [
+        "Finale: XXX"
+      ]
+    },
+    {
+      "name": "resolution encounter",
+      "explanation": "Encounters solely for the adventure resolution.",
+      "entries": [
+        "Resolution: XXX"
       ]
     },
     {
