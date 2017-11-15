@@ -1,0 +1,150 @@
+{
+  "name": "superstition",
+  "resultPattern": "{result}",
+  "explanation": "Generates random superstitions for creating local color.",
+  "structure": "The result table contains different basic formats for the superstition, based on common elements.",
+  "note": "I took the liberty of replacing 'thrown' from the effect list with 'near', as the original sometimes produced strange combinations. For similarr reasons, replaced 'the temperature' with 'the sky' and 'color' with 'heard'.",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2017-11-15",
+  "authors": "Esko Vesala, adapting the 'Superstition Generator' from Johnn Four's Role Playing Tips #356.",
+  "sources": "Role Playing Tips #356",
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "When {trigger} is {feature}, it means that {effect}. ",
+        "Sometimes, when {trigger} is {feature}, {effect}. ",
+        "If {trigger} is {feature}, then {effect}. "
+      ]
+    },
+    {
+      "name": "trigger",
+      "explanation": ".",
+      "entries": [
+        "{weather}",
+        "{symbol}",
+        "{animal}",
+        "{event}",
+        "{item}",
+        "{person}"
+      ]
+    },
+    {
+      "name": "weather",
+      "explanation": ".",
+      "entries": [
+        "the wind",
+        "light",
+        "the sky",
+        "a storm",
+        "a rainbow",
+        "rare weather"
+      ]
+    },
+    {
+      "name": "symbol",
+      "explanation": ".",
+      "entries": [
+        "a word",
+        "a letter",
+        "a number",
+        "a phrase",
+        "a gesture",
+        "a sound"
+      ]
+    },
+    {
+      "name": "animal",
+      "explanation": ".",
+      "entries": [
+        "a wild animal",
+        "a domestic animal",
+        "a pest",
+        "a bird",
+        "a unique animal",
+        "a pet"
+      ]
+    },
+    {
+      "name": "event",
+      "explanation": ".",
+      "entries": [
+        "a regular event",
+        "a religious event",
+        "a social event",
+        "an accident",
+        "a harmless event",
+        "a crime"
+      ]
+    },
+    {
+      "name": "item",
+      "explanation": ".",
+      "entries": [
+        "a weapon",
+        "a tool",
+        "money",
+        "spice",
+        "a vehicle",
+        "a luxury item"
+      ]
+    },
+    {
+      "name": "person",
+      "explanation": ".",
+      "entries": [
+        "a man",
+        "a woman",
+        "an old person",
+        "a young person",
+        "a healthy person",
+        "a sick person",
+        "a dead body",
+        "a virgin",
+        "a pregnant woman",
+        "a familiar person",
+        "a foreign person",
+        "someone rich",
+        "someone poor"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": ".",
+      "entries": [
+        "heard",
+        "seen",
+        "passed",
+        "touched",
+        "near",
+        "lost"
+      ]
+    },
+    {
+      "name": "effect",
+      "explanation": ".",
+      "entries": [
+        "good luck will come",
+        "bad luck will come",
+        "safety will be found",
+        "a wedding is coming",
+        "a contract will be made",
+        "a contract will be broken",
+        "a birth will take place",
+        "death will visit",
+        "love will be found",
+        "love will be lost",
+        "money will come",
+        "an accident will happen",
+        "people will be at risk"
+      ]
+    }
+  ]
+}
