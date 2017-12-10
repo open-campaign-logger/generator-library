@@ -1,0 +1,105 @@
+{
+  "name": "spell name",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Random spell name generation.",
+  "structure": "",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "energy, magic, magical_technique, magical_instrument, spell_intention, spell_target, spellcasting",
+  "date": "2017-12-10",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{attitude}"
+      ]
+    },
+    {
+      "name": "attitude",
+      "explanation": "Attitude of the spell.",
+      "entries": [
+        "{negative}",
+        "{neutral}",
+        "{positive}"
+      ]
+    },
+    {
+      "name": "negative",
+      "explanation": "Negative spell name structures.",
+      "entries": [
+        "{negative spell} of {lib:spell_intention#negative}",
+        "{lib:spell_intention#negative} {negative spell}",
+        "{lib:spell_intention#negative} {lib:spell_target}"
+      ]
+    },
+    {
+      "name": "negative spell",
+      "explanation": "Negative spell names.",
+      "entries": [
+        "bewitchment",
+        "witchery",
+        "hex",
+        "curse"
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Neutral spell name structures.",
+      "entries": [
+        "{neutral spell} of {lib:spell_intention#neutral}",
+        "{lib:spell_intention#neutral} {neutral spell}",
+        "{lib:spell_intention#neutral} {lib:spell_target}"
+      ]
+    },
+    {
+      "name": "neutral spell",
+      "explanation": "Neutral spell names.",
+      "entries": [
+        "spell",
+        "magic",
+        "sorcery",
+        "rune",
+        "illusion",
+        "conjuration",
+        "invocation",
+        "incantation"
+      ]
+    },
+    {
+      "name": "positive",
+      "explanation": "Positive spell name structures.",
+      "entries": [
+        "{positive spell} of {lib:spell_intention#positive}",
+        "{lib:spell_intention#positive} {positive spell}",
+        "{lib:spell_intention#positive} {lib:spell_target}"
+      ]
+    },
+    {
+      "name": "positive spell",
+      "explanation": "Positive spell names.",
+      "entries": [
+        "charm",
+        "enchantment",
+        "glamour"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special spell names.",
+      "entries": [
+        "XXX"
+      ]
+    }
+  ]
+}

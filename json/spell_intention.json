@@ -1,0 +1,96 @@
+{
+  "name": "spell intention",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Random spell intention generation.",
+  "structure": "",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "energy, magic, magical_technique, magical_instrument, spell_name, spell_target, spellcasting",
+  "date": "2017-12-10",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{intention}"
+      ]
+    },
+    {
+      "name": "intention",
+      "explanation": "Spell intention types.",
+      "entries": [
+        "{negative}",
+        "{neutral}",
+        "{positive}"
+      ]
+    },
+    {
+      "name": "negative",
+      "explanation": "Negative spell intention types.",
+      "entries": [
+        "{destruction}"
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Neutral spell intention types.",
+      "entries": [
+        "{transformation}"
+      ]
+    },
+    {
+      "name": "positive",
+      "explanation": "Positive spell intention types.",
+      "entries": [
+        "{restoration}"
+      ]
+    },
+    {
+      "name": "destruction",
+      "explanation": "Destructive intentions.",
+      "entries": [
+        "destruction"
+      ]
+    },
+    {
+      "name": "movement",
+      "explanation": "Movement intentions.",
+      "entries": [
+        "moving",
+        "shifting"
+      ]
+    },
+    {
+      "name": "restoration",
+      "explanation": "Restorative intentions.",
+      "entries": [
+        "renewal"
+      ]
+    },
+    {
+      "name": "transformation",
+      "explanation": "Transformative intentions.",
+      "entries": [
+        "opening",
+        "unlocking"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special spell intention types.",
+      "entries": [
+        "XXX"
+      ]
+    }
+  ]
+}
