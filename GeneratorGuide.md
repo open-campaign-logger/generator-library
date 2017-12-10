@@ -264,7 +264,7 @@ The following optional properties can be used:
 
   Using these common categories helps to organize the tables in a standard way, but any genre definition can be used.
 
-* **category**: The category property specifies a class in which the file belongs to. This can  help in organizing the generator files. Select one from the following:
+* **categories**: The categories property specifies a class in which the file belongs to. This is used for organizing the generator files in the Campaign Logger user interface. Select one from the following:
 
   * *character* - PC and NPC generation  
   * *encounter* - events and random encounters

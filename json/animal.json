@@ -1,0 +1,565 @@
+{
+  "name": "animal",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Animals from mammals to insects.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "Different regions (tropical, polar, etc.)",
+  "to do": "Better term for 'coast'?",
+  "see": "",
+  "date": "2017-10-26",
+  "authors": "",
+  "sources": "Wikipedia.org",
+  "genre": "",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{animal}",
+        "{animal}"
+      ]
+    },
+    {
+      "name": "animal",
+      "explanation": "Animal types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common animal types.",
+      "entries": [
+        "{invertebrate}",
+        "{vertebrate}"
+      ]
+    },
+    {
+      "name": "invertebrate",
+      "explanation": "Invertebrates.",
+      "entries": [
+        "{insect}",
+        "{mollusc}",
+        "{crustacean}",
+        "{arachnid}"
+      ]
+    },
+    {
+      "name": "insect",
+      "explanation": "Insect types.",
+      "entries": [
+        "{crawling insect}",
+        "{flying insect}"
+      ]
+    },
+    {
+      "name": "crawling insect",
+      "explanation": "Insects that move by crawling.",
+      "entries": [
+        "ant",
+        "beetle"
+      ]
+    },
+    {
+      "name": "flying insect",
+      "explanation": "Insects that move flying.",
+      "entries": [
+        "beetle",
+        "gnat",
+        "mosquito",
+        "wasp",
+        "bee",
+        "{butterfly}"
+      ]
+    },
+    {
+      "name": "butterfly",
+      "explanation": "Butterflies.",
+      "entries": [
+        "butterfly",
+        "moth"
+      ]
+    },
+    {
+      "name": "mollusc",
+      "explanation": "Mollusc types.",
+      "entries": [
+        "snail"
+      ]
+    },
+    {
+      "name": "crustacean",
+      "explanation": "Crustacean types.",
+      "entries": [
+        "crab"
+      ]
+    },
+    {
+      "name": "arachnid",
+      "explanation": "Arachnid types.",
+      "entries": [
+        "spider",
+        "scorpion"
+      ]
+    },
+    {
+      "name": "vertebrate",
+      "explanation": "Vertebratea.",
+      "entries": [
+        "{fish}",
+        "{amphibian}",
+        "{reptile}",
+        "{bird}",
+        "{mammal}"
+      ]
+    },
+    {
+      "name": "fish",
+      "explanation": "Fish types.",
+      "entries": [
+        "perch",
+        "pike",
+        "salmon"
+      ]
+    },
+    {
+      "name": "amphibian",
+      "explanation": "Amphibians.",
+      "entries": [
+        "{pet amphibian}",
+        "salamander",
+        "newt",
+        "frog",
+        "toad"
+      ]
+    },
+    {
+      "name": "pet amphibian",
+      "explanation": "Amphibian pets.",
+      "entries": [
+        "pet newt",
+        "pet frog",
+        "pet toad"
+      ]
+    },
+    {
+      "name": "reptile",
+      "explanation": "Reptile types.",
+      "entries": [
+        "{pet reptile}",
+        "{lizard}",
+        "{turtle}",
+        "{snake}"
+      ]
+    },
+    {
+      "name": "lizard",
+      "explanation": "Lizards.",
+      "entries": [
+        "lizard"
+      ]
+    },
+    {
+      "name": "turtle",
+      "explanation": "Turtles and tortoises.",
+      "entries": [
+        "turtle",
+        "tortoise"
+      ]
+    },
+    {
+      "name": "snake",
+      "explanation": "Snakes.",
+      "entries": [
+        "snake",
+        "viper"
+      ]
+    },
+    {
+      "name": "pet reptile",
+      "explanation": "Reptiles kept as pets.",
+      "entries": [
+        "pet lizard",
+        "pet turtle",
+        "pet snake"
+      ]
+    },
+    {
+      "name": "bird",
+      "explanation": "Bird types.",
+      "entries": [
+        "{flightless bird}",
+        "{flying bird}"
+      ]
+    },
+    {
+      "name": "flightless bird",
+      "explanation": "Birds incapable of flight.",
+      "entries": [
+        "kiwi",
+        "emu",
+        "ostrich"
+      ]
+    },
+    {
+      "name": "flying bird",
+      "explanation": "Birds capable of flight.",
+      "entries": [
+        "{pet bird}",
+        "{domesticated bird}",
+        "{small bird}",
+        "{coastal bird}",
+        "{waterfowl}",
+        "{predatory bird}",
+        "nightjar",
+        "woodpecker",
+        "gull",
+        "crane"
+      ]
+    },
+    {
+      "name": "pet bird",
+      "explanation": "Birds kept as pets.",
+      "entries": [
+        "canary bird"
+      ]
+    },
+    {
+      "name": "domesticated bird",
+      "explanation": "Birds that live with people.",
+      "entries": [
+        "chicken",
+        "goose",
+        "duck"
+      ]
+    },
+    {
+      "name": "small bird",
+      "explanation": "Small-sized birds.",
+      "entries": [
+        "sparrow",
+        "swallow",
+        "nightingale"
+      ]
+    },
+    {
+      "name": "coastal birds",
+      "explanation": "Birds that live by water.",
+      "entries": [
+        "stork"
+      ]
+    },
+    {
+      "name": "waterfowl",
+      "explanation": "Birds that live in water.",
+      "entries": [
+        "swan",
+        "stork"
+      ]
+    },
+    {
+      "name": "predatory bird",
+      "explanation": "Birds that hunt.",
+      "entries": [
+        "owl",
+        "hawk",
+        "falcon",
+        "eagle"
+      ]
+    },
+    {
+      "name": "mammal",
+      "explanation": "Mammal types.",
+      "entries": [
+        "{water mammal}",
+        "{coast mammal}",
+        "{land mammal}",
+        "{flying mammal}"
+      ]
+    },
+    {
+      "name": "water mammal",
+      "explanation": "Mammals living in water.",
+      "entries": [
+        "{whale}"
+      ]
+    },
+    {
+      "name": "whale",
+      "explanation": "Whales.",
+      "entries": [
+        "dolphin",
+        "killer whale",
+        "bluewhale"
+      ]
+    },
+    {
+      "name": "coast mammal",
+      "explanation": "Mammals living by water.",
+      "entries": [
+        "beaver"
+      ]
+    },
+    {
+      "name": "land mammal",
+      "explanation": "Mammals living on land.",
+      "entries": [
+        "{pet mammal}",
+        "{domesticated mammal}",
+        "{urban mammal}",
+        "{small mammal}",
+        "{large mammal}",
+        "{scavenger}",
+        "{predator}"
+      ]
+    },
+    {
+      "name": "pet mammal",
+      "explanation": "Mammals kept as pets.",
+      "entries": [
+        "pet mouse",
+        "pet rat",
+        "pet rabbit",
+        "pet ferret",
+        "cat",
+        "piglet",
+        "lapdog",
+        "pony"
+      ]
+    },
+    {
+      "name": "domesticated mammal",
+      "explanation": "Land mammals living with people.",
+      "entries": [
+        "{mount}",
+        "cat",
+        "dog",
+        "sheep",
+        "goat",
+        "cow"
+      ]
+    },
+    {
+      "name": "mount",
+      "explanation": "Land mammals living in cities.",
+      "entries": [
+        "donkey",
+        "mule",
+        "pony",
+        "horse"
+      ]
+    },
+    {
+      "name": "urban mammal",
+      "explanation": "Land mammals living in cities.",
+      "entries": [
+        "{pet}",
+        "{domesticated}"
+      ]
+    },
+    {
+      "name": "small mammal",
+      "explanation": "Small-sized land mammals.",
+      "entries": [
+        "mouse",
+        "squirrel",
+        "beaver",
+        "badger"
+      ]
+    },
+    {
+      "name": "large mammal",
+      "explanation": "Big-sized land mammals.",
+      "entries": [
+        "deer",
+        "elk"
+      ]
+    },
+    {
+      "name": "scavenger",
+      "explanation": "Land mammals eating primarily carrions.",
+      "entries": [
+        "rat",
+        "fox"
+      ]
+    },
+    {
+      "name": "predator",
+      "explanation": "Predatory mammals living on land.",
+      "entries": [
+        "fox",
+        "wolf",
+        "bear"
+      ]
+    },
+    {
+      "name": "flying mammal",
+      "explanation": "Mammals capable of gliding or flight.",
+      "entries": [
+        "flying squirrel",
+        "{bat}"
+      ]
+    },
+    {
+      "name": "bat",
+      "explanation": "Bats.",
+      "entries": [
+        "bat",
+        "vampire bat"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare animal types.",
+      "entries": [
+        "{coral}"
+      ]
+    },
+    {
+      "name": "coral",
+      "explanation": "Coral types.",
+      "entries": [
+        "coral"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Animals once rumoured to have existed.",
+      "entries": [
+        "unicorn",
+        "dragon",
+        "afanc (beaver-like lake monster)"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Animals for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "{ooze}",
+        "talking {mammal}",
+        "{vertebrate} spirit"
+      ]
+    },
+    {
+      "name": "ooze",
+      "explanation": "Amoeboid ooze and jelly creatures.",
+      "entries": [
+        "ooze",
+        "jelly"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Animals for modern worlds.",
+      "entries": [
+        "{pet}",
+        "{domesticated}",
+        "{common}"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Animals for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "genetically engineered {vertebrate}",
+        "technologically augmented {vertebrate}",
+        "robotic {vertebrate}",
+        "human-{vertebrate} hybrid",
+        "uplifted {mammal} (raised to sapience through genetic engineering)"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special animal types.",
+      "entries": [
+        "{extinct}",
+        "{pet}",
+        "{domesticated}",
+        "{water}",
+        "{coast}",
+        "{land}",
+        "{flying}"
+      ]
+    },
+    {
+      "name": "extinct",
+      "explanation": "Extinct animals.",
+      "entries": [
+        "dinosaur",
+        "mammoth"
+      ]
+    },
+    {
+      "name": "pet",
+      "explanation": "Animals kept as pets.",
+      "entries": [
+        "{pet amphibian}",
+        "{pet reptile}",
+        "{pet bird}",
+        "{pet mammal}"
+      ]
+    },
+    {
+      "name": "domesticated",
+      "explanation": "Animals living with people.",
+      "entries": [
+        "{domesticated bird}",
+        "{domesticated mammal}"
+      ]
+    },
+    {
+      "name": "water",
+      "explanation": "Water animals.",
+      "entries": [
+        "{coral}",
+        "{crustacean}",
+        "{fish}",
+        "{amphibian}",
+        "{whale}"
+      ]
+    },
+    {
+      "name": "coast",
+      "explanation": "Animals living by water.",
+      "entries": [
+        "{crustacean}",
+        "{amphibian}",
+        "{coast mammal}"
+      ]
+    },
+    {
+      "name": "land",
+      "explanation": "Land animals.",
+      "entries": [
+        "{crawling insect}",
+        "{mollusc}",
+        "{arachnid}",
+        "{reptile}",
+        "{bird}",
+        "{land mammal}"
+      ]
+    },
+    {
+      "name": "flying",
+      "explanation": "Flying animals.",
+      "entries": [
+        "{flying insect}",
+        "{flying bird}",
+        "{bat}"
+      ]
+    }
+  ]
+}

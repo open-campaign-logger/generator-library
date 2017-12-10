@@ -1,0 +1,311 @@
+{
+  "name": "synonym",
+  "resultPattern": "{synonym}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Produces dramatic synonyms to avoid repetition of some often used words.",
+  "structure": "",
+  "note": "Intended usage: {synonym#word}. Please retain the alphabetical order of the subtables!",
+  "bugs": "",
+  "to do": "Expansion.",
+  "see": "",
+  "date": "2017-12-10",
+  "authors": "Esko Vesala.",
+  "sources": "Thesaurus.com, TvTropes.org, Wikipedia.org",
+  "genre": "universal",
+  "categories": [
+    "utility"
+  ],
+  "tables": [
+    {
+      "name": "adventure",
+      "explanation": "Synonyms for adventuring (for something).",
+      "entries": [
+        "adventure",
+        "crusade",
+        "hunt",
+        "mission",
+        "pursuit",
+        "quest"
+      ]
+    },
+    {
+      "name": "adventurer",
+      "explanation": "Synonyms for an adventurer.",
+      "entries": [
+        "adventurer",
+        "champion",
+        "daredevil",
+        "crusader",
+        "hero",
+        "traveler"
+      ]
+    },
+    {
+      "name": "castle",
+      "explanation": "Synonyms for a castle.",
+      "entries": [
+        "castle",
+        "citadel",
+        "bastion",
+        "keep",
+        "stronghold",
+        "donjon",
+        "garrison",
+        "fortress",
+        "fort",
+        "fortification"
+      ]
+    },
+    {
+      "name": "corpse",
+      "explanation": "Synonyms for a dead corpse (singular).",
+      "entries": [
+        "corpse",
+        "dead body",
+        "lifeless body",
+        "cadaver",
+        "carcass",
+        "carrion"
+      ]
+    },
+    {
+      "name": "darkness",
+      "explanation": "Synonyms for darkness.",
+      "entries": [
+        "darkness",
+        "dark",
+        "twilight",
+        "blackness",
+        "gloom",
+        "shadow",
+        "shade"
+      ]
+    },
+    {
+      "name": "death",
+      "explanation": "Synonyms for death (of something).",
+      "entries": [
+        "bane",
+        "death",
+        "demise",
+        "obliteration",
+        "ruination"
+      ]
+    },
+    {
+      "name": "destiny",
+      "explanation": "Synonyms for fate and destiny.",
+      "entries": [
+        "destiny",
+        "fate",
+        "predestination",
+        "divine decree",
+        "foreordination"
+      ]
+    },
+    {
+      "name": "doom",
+      "explanation": "Synonyms for doom (of something).",
+      "entries": [
+        "doom",
+        "end",
+        "downfall",
+        "destruction",
+        "ruination",
+        "undoing",
+        "annihilation"
+      ]
+    },
+    {
+      "name": "fighter",
+      "explanation": "Synonyms for a fighter.",
+      "entries": [
+        "{lib:fighter}"
+      ]
+    },
+    {
+      "name": "find",
+      "explanation": "Synonyms for finding (something).",
+      "entries": [
+        "find",
+        "locate",
+        "recover",
+        "rescue",
+        "save",
+        "salvage"
+      ]
+    },
+    {
+      "name": "fire",
+      "explanation": "Synonyms for fire (singular noun).",
+      "entries": [
+        "fire",
+        "flame",
+        "flare",
+        "blaze",
+        "inferno",
+        "wildfire"
+      ]
+    },
+    {
+      "name": "forest",
+      "explanation": "Synonyms for a forest.",
+      "entries": [
+        "forest",
+        "woods",
+        "woodland",
+        "wildwood",
+        "wilderness",
+        "jungle",
+        "timberland",
+        "weald",
+        "thicket"
+      ]
+    },
+    {
+      "name": "group",
+      "explanation": "Synonyms for a group.",
+      "entries": [
+        "band",
+        "company",
+        "group",
+        "league",
+        "party",
+        "team"
+      ]
+    },
+    {
+      "name": "journey",
+      "explanation": "Synonyms for a journey (to somewhere).",
+      "entries": [
+        "{travel}"
+      ]
+    },
+    {
+      "name": "jungle",
+      "explanation": "Synonyms for a jungle.",
+      "entries": [
+        "{forest}"
+      ]
+    },
+    {
+      "name": "kill",
+      "explanation": "Synonyms for killing.",
+      "entries": [
+        "annihilate",
+        "destroy",
+        "eliminate",
+        "finish",
+        "kill",
+        "liquidate",
+        "massacre",
+        "neutralize",
+        "obliterate",
+        "slaughter",
+        "slay"
+      ]
+    },
+    {
+      "name": "magician",
+      "explanation": "Synonyms for a magician.",
+      "entries": [
+        "{lib:magician}"
+      ]
+    },
+    {
+      "name": "monster",
+      "explanation": "Synonyms for a monster.",
+      "entries": [
+        "beast",
+        "creature",
+        "fiend",
+        "horror",
+        "monster",
+        "monstrosity"
+      ]
+    },
+    {
+      "name": "priest",
+      "explanation": "Synonyms for a priest (of a religion).",
+      "entries": [
+        "priest",
+        "cleric",
+        "preacher",
+        "pulpiter"
+      ]
+    },
+    {
+      "name": "sorcerer",
+      "explanation": "Synonyms for a sorcerer.",
+      "entries": [
+        "{lib:magician}"
+      ]
+    },
+    {
+      "name": "travel",
+      "explanation": "Synonyms for travel (to somewhere).",
+      "entries": [
+        "expedition",
+        "journey",
+        "march",
+        "odyssey",
+        "passage",
+        "travel",
+        "trek",
+        "venture",
+        "voyage"
+      ]
+    },
+    {
+      "name": "treasure",
+      "explanation": "Synonyms for treasure.",
+      "entries": [
+        "fortune",
+        "hoard",
+        "riches",
+        "treasure",
+        "wealth"
+      ]
+    },
+    {
+      "name": "undead",
+      "explanation": "Synonyms for undead (singular noun).",
+      "entries": [
+        "undead",
+        "revenant",
+        "wight",
+        "soulless",
+        "living dead",
+        "animate dead",
+        "reanimated dead"
+      ]
+    },
+    {
+      "name": "warrior",
+      "explanation": "Synonyms for a warrior.",
+      "entries": [
+        "{lib:fighter}"
+      ]
+    },
+    {
+      "name": "wizard",
+      "explanation": "Synonyms for a wizard.",
+      "entries": [
+        "{lib:magician}"
+      ]
+    },
+    {
+      "name": "wrath",
+      "explanation": "Synonyms for hate (of somebody).",
+      "entries": [
+        "fury",
+        "hatred",
+        "madness",
+        "rage",
+        "wrath"
+      ]
+    }
+  ]
+}

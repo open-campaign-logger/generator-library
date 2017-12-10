@@ -1,5 +1,5 @@
 {
-  "name": "material table",
+  "name": "material",
   "resultPattern": "{material}",
   "variables": {
     "footnote": ""
@@ -72,7 +72,7 @@
         "crystal",
         "alabaster",
         "obsidian",
-        "{gem}"
+        "{lib:gem}"
       ]
     },
     {
