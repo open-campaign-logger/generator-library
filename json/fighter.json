@@ -1,0 +1,223 @@
+{
+  "name": "fighter",
+  "resultPattern": "{fighter}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Variations of fighters.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "Mythological, fantasy and futuristic subtables.",
+  "see": "magician",
+  "date": "2017-12-10",
+  "authors": "Esko Vesala",
+  "sources": "DanDWiki.com, Thesaurus.com, Wikia.com, Wikipedia.org",
+  "genre": "universal",
+  "categories": [
+    "character"
+  ],
+  "tags": "#person",
+  "tables": [
+    {
+      "name": "fighter",
+      "explanation": "Fighter types.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common fighters.",
+      "entries": [
+        "{ranged}",
+        "fighter",
+        "warrior",
+        "soldier",
+        "man-at-arms",
+        "mercenary"
+      ]
+    },
+    {
+      "name": "ranged",
+      "explanation": "Common fighters with ranged arms.",
+      "entries": [
+        "spear thrower",
+        "archer",
+        "crossbow fighter"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare fighters.",
+      "entries": [
+        "{unarmed}",
+        "soldier-at-arms",
+        "scout",
+        "guard",
+        "champion"
+      ]
+    },
+    {
+      "name": "unarmed",
+      "explanation": "Unarmed fighters.",
+      "entries": [
+        "thug",
+        "brawler",
+        "bruiser",
+        "pugilist"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Fighters once rumoured to have existed.",
+      "entries": [
+        "amazon",
+        "myrmidon",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary fighters once rumoured to have existed.",
+      "entries": [
+        "valkyria"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Fighters for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "duelist",
+        "barbarian",
+        "berserker",
+        "gladiator",
+        "guardian",
+        "knight",
+        "cavalier",
+        "paladin",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare fighters for fantasy worlds.",
+      "entries": [
+        "crusader",
+        "dragoon (relocates riding, but dismounts to fight)",
+        "beast rider",
+        "vanguard",
+        "hoplite",
+        "blade dancer",
+        "blade master",
+        "weapon master",
+        "tunnel fighter",
+        "monster hunter",
+        "paragon",
+        "divine warrior",
+        "{siege engineer}",
+        "{oriental}",
+        "{blackpowder}"
+      ]
+    },
+    {
+      "name": "blackpowder",
+      "explanation": "Fighters using blackpowder weapons.",
+      "entries": [
+        "arquebusier",
+        "musketeer",
+        "fusilier"
+      ]
+    },
+    {
+      "name": "siege engineer",
+      "explanation": "Siege engine operators for fantasy worlds.",
+      "entries": [
+        "cannoneer",
+        "catapult engineer"
+      ]
+    },
+    {
+      "name": "oriental",
+      "explanation": "Oriental fighters for fantasy worlds.",
+      "entries": [
+        "warrior monk",
+        "samurai",
+        "ronin",
+        "ninja"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Fighters for modern worlds.",
+      "entries": [
+        "{common}",
+        "soldier",
+        "combatant",
+        "serviceman",
+        "trooper",
+        "paratrooper",
+        "marine",
+        "commando",
+        "sharpshooter",
+        "veteran",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare fighters for modern worlds.",
+      "entries": [
+        "partisan",
+        "guerrilla",
+        "militant",
+        "sniper",
+        "officer",
+        "{modern unarmed}",
+        "{modern inexperienced}"
+      ]
+    },
+    {
+      "name": "modern unarmed",
+      "explanation": "Unarmed fighters for modern worlds.",
+      "entries": [
+        "boxer",
+        "martial artist"
+      ]
+    },
+    {
+      "name": "modern inexperienced",
+      "explanation": "Inexperienced fighters for modern worlds.",
+      "entries": [
+        "volunteer",
+        "draftee",
+        "selectee",
+        "conscript"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary fighters for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "mecha pilot",
+        "augmented warrior",
+        "cyborg warrior",
+        "robotic warrior",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary fighters for science fiction worlds.",
+      "entries": [
+        "{futuristic}",
+        "psychic warrior"
+      ]
+    }
+  ]
+}

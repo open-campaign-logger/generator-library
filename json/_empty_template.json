@@ -1,6 +1,6 @@
 {
   "name": "Generator Template",
-  "resultPattern": "{XXX}",
+  "resultPattern": "{result}",
   "variables": {
     "footnote": ""
   },
@@ -18,6 +18,14 @@
     ""
   ],
   "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{XXX}",
+        "{XXX}"
+      ]
+    },
     {
       "name": "XXX",
       "explanation": "XXX",
@@ -45,32 +53,16 @@
     },
     {
       "name": "mythological",
-      "explanation": "Imaginary XXX once rumoured to have existed.",
-      "entries": [
-        "XXX",
-        "{rare mythological}"
-      ]
-    },
-    {
-      "name": "rare mythological",
-      "explanation": "Rare imaginary XXX once rumoured to have existed.",
+      "explanation": "XXX once rumoured to have existed.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary XXX for fantasy worlds.",
+      "explanation": "XXX for fantasy worlds.",
       "entries": [
         "{mythological}",
-        "XXX",
-        "{rare fantasy}"
-      ]
-    },
-    {
-      "name": "rare fantasy",
-      "explanation": "Rare imaginary XXX for fantasy worlds.",
-      "entries": [
         "XXX"
       ]
     },
@@ -79,29 +71,20 @@
       "explanation": "XXX for modern worlds.",
       "entries": [
         "{common}",
-        "XXX",
-        "{rare modern}"
-      ]
-    },
-    {
-      "name": "rare modern",
-      "explanation": "Rare XXX for modern worlds.",
-      "entries": [
         "XXX"
       ]
     },
     {
       "name": "futuristic",
-      "explanation": "Imaginary XXX for science fiction worlds.",
+      "explanation": "XXX for science fiction worlds.",
       "entries": [
         "{modern}",
-        "XXX",
-        "{rare futuristic}"
+        "XXX"
       ]
     },
     {
-      "name": "rare futuristic",
-      "explanation": "Rare imaginary XXX for science fiction worlds.",
+      "name": "special",
+      "explanation": "Special XXX types.",
       "entries": [
         "XXX"
       ]

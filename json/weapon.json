@@ -1,5 +1,5 @@
 {
-  "name": "weapon table",
+  "name": "weapon",
   "resultPattern": "{weapon}",
   "variables": {
     "footnote": ""
