@@ -9,7 +9,7 @@
   "note": "",
   "to do": "Fantasy colors.",
   "see": "adjColor",
-  "date": "2017-10-06",
+  "date": "2017-12-10",
   "authors": "Esko Vesala.",
   "sources": "Craftsy.com, Wikipedia.org.",
   "genre": "universal",
@@ -50,6 +50,26 @@
       ]
     },
     {
+      "name": "word",
+      "explanation": "One-word descriptions of colors.",
+      "entries": [
+        "{black word}",
+        "{grey word}",
+        "{brown word}",
+        "{green word}",
+        "{cyan word}",
+        "{blue word}",
+        "{violet word}",
+        "{purple word}",
+        "{magenta word}",
+        "{red word}",
+        "{rose word}",
+        "{orange word}",
+        "{yellow word}",
+        "{white word}"
+      ]
+    },
+    {
       "name": "black",
       "explanation": "Black hues.",
       "entries": [
@@ -66,6 +86,18 @@
         "marengo (black with a grey tinge)",
         "noir (greyish black)",
         "light black (grey black)"
+      ]
+    },
+    {
+      "name": "black word",
+      "explanation": "Black hues in one word.",
+      "entries": [
+        "black",
+        "jet",
+        "ebony",
+        "charcoal",
+        "onyx",
+        "noir"
       ]
     },
     {
@@ -91,6 +123,18 @@
       ]
     },
     {
+      "name": "grey word",
+      "explanation": "Gray hues in one word.",
+      "entries": [
+        "grey",
+        "taupe",
+        "sage",
+        "cinereous",
+        "silver",
+        "ash"
+      ]
+    },
+    {
       "name": "brown",
       "explanation": "Brown hues.",
       "entries": [
@@ -108,6 +152,20 @@
         "sandy brown",
         "tan (pale brown)",
         "buff (pale yellow brown)"
+      ]
+    },
+    {
+      "name": "brown word",
+      "explanation": "Brown hues in one word.",
+      "entries": [
+        "brown",
+        "umber",
+        "sepia",
+        "russet",
+        "chestnut",
+        "sandy",
+        "tan",
+        "buff"
       ]
     },
     {
@@ -138,8 +196,20 @@
         "olive (dark yellowish green)",
         "yellow green",
         "green-yellow",
-        "spring gree (cyan green)",
+        "spring green (cyan green)",
         "viridian (bluish green)"
+      ]
+    },
+    {
+      "name": "green word",
+      "explanation": "Green hues in one word.",
+      "entries": [
+        "green",
+        "chartreuse",
+        "emerald",
+        "jade",
+        "olive",
+        "viridian"
       ]
     },
     {
@@ -159,6 +229,18 @@
         "cerulean (dark blue-green)",
         "aquamarine (can with bluish tint)",
         "teal blue"
+      ]
+    },
+    {
+      "name": "cyan word",
+      "explanation": "Greenish-blue hues in one word.",
+      "entries": [
+        "cyan",
+        "verdigris",
+        "teal",
+        "aqua",
+        "cerulean",
+        "aquamarine"
       ]
     },
     {
@@ -182,6 +264,19 @@
         "deep indigo (blue violet)",
         "indigo (purple blue)",
         "light indigo (pale purple blue)"
+      ]
+    },
+    {
+      "name": "blue word",
+      "explanation": "Blue hues in one word.",
+      "entries": [
+        "blue",
+        "turquoise",
+        "glaucous",
+        "ultramarine",
+        "azure",
+        "periwinkle",
+        "indigo"
       ]
     },
     {
@@ -215,6 +310,18 @@
       ]
     },
     {
+      "name": "violet word",
+      "explanation": "Violet hues in one word.",
+      "entries": [
+        "violet",
+        "puce",
+        "prune",
+        "blush",
+        "lavender",
+        "mauve"
+      ]
+    },
+    {
       "name": "purple",
       "explanation": "Purple hues.",
       "entries": [
@@ -234,6 +341,18 @@
       ]
     },
     {
+      "name": "purple word",
+      "explanation": "Purple hues in one word.",
+      "entries": [
+        "purple",
+        "plum",
+        "amethyst",
+        "fuchsia",
+        "thistle",
+        "aubergine"
+      ]
+    },
+    {
       "name": "magenta",
       "explanation": "Magenta hues.",
       "entries": [
@@ -247,6 +366,14 @@
         "amaranth pink",
         "bright amaranth pink",
         "sky magenta (color of twilight sky)"
+      ]
+    },
+    {
+      "name": "magenta word",
+      "explanation": "Magenta hues in one word.",
+      "entries": [
+        "magenta",
+        "amaranth"
       ]
     },
     {
@@ -282,6 +409,24 @@
       ]
     },
     {
+      "name": "red word",
+      "explanation": "Red hues in one word.",
+      "entries": [
+        "red",
+        "magenta",
+        "maroon",
+        "terracotta",
+        "crimson",
+        "carmine",
+        "ruby",
+        "rubine",
+        "flame",
+        "scarlet",
+        "cinnabar",
+        "vermilion"
+      ]
+    },
+    {
       "name": "rose",
       "explanation": "Rose red hues.",
       "entries": [
@@ -301,6 +446,14 @@
       ]
     },
     {
+      "name": "rose word",
+      "explanation": "Rose red hues in one word.",
+      "entries": [
+        "rose",
+        "fuchsia"
+      ]
+    },
+    {
       "name": "orange",
       "explanation": "Orange hues.",
       "entries": [
@@ -314,6 +467,17 @@
         "carrot orange",
         "marigold (yellow orange)",
         "amber (orange yellow)"
+      ]
+    },
+    {
+      "name": "orange word",
+      "explanation": "Orange hues in one word.",
+      "entries": [
+        "orange",
+        "vermilion",
+        "cinnabar",
+        "marigold",
+        "amber"
       ]
     },
     {
@@ -334,6 +498,23 @@
         "light yellow",
         "lime (green yellow)",
         "chartreuse (yellow green)"
+      ]
+    },
+    {
+      "name": "yellow word",
+      "explanation": "Yellow hues in one word.",
+      "entries": [
+        "yellow",
+        "marigold",
+        "amber",
+        "ochre",
+        "buff",
+        "golden",
+        "saffron",
+        "mustard",
+        "sienna",
+        "lime",
+        "chartreuse"
       ]
     },
     {
@@ -358,6 +539,24 @@
         "chalky white",
         "milky white",
         "bright white"
+      ]
+    },
+    {
+      "name": "white word",
+      "explanation": "White hues in one word.",
+      "entries": [
+        "white",
+        "off-white",
+        "platimum",
+        "beige",
+        "ecru",
+        "smoke",
+        "cream",
+        "pale",
+        "ivory",
+        "fawn",
+        "chalky",
+        "milky"
       ]
     },
     {
@@ -802,6 +1001,13 @@
       "explanation": "Handling the US spelling of grey.",
       "entries": [
         "{grey}"
+      ]
+    },
+    {
+      "name": "gray word",
+      "explanation": "Handling the US spelling of grey.",
+      "entries": [
+        "{grey word}"
       ]
     }
   ]
