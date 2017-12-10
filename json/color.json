@@ -70,6 +70,32 @@
       ]
     },
     {
+      "name": "toned",
+      "explanation": "Common color tones.",
+      "entries": [
+        "{tone} {word}"
+      ]
+    },
+    {
+      "name": "tone",
+      "explanation": "Color tones for random combinations with basic colors.",
+      "entries": [
+        "dark",
+        "dim",
+        "deep",
+        "rich",
+        "middle",
+        "medium",
+        "smoky",
+        "misty",
+        "warm",
+        "bright",
+        "light",
+        "cool",
+        "pale"
+      ]
+    },
+    {
       "name": "black",
       "explanation": "Black hues.",
       "entries": [
@@ -150,6 +176,7 @@
         "chestnut brown",
         "wood brown",
         "sandy brown",
+        "tawny (light brown)",
         "tan (pale brown)",
         "buff (pale yellow brown)"
       ]
@@ -164,6 +191,7 @@
         "russet",
         "chestnut",
         "sandy",
+        "tawny",
         "tan",
         "buff"
       ]
@@ -182,9 +210,13 @@
         "laurel green (greyish green)",
         "dark moss green",
         "moss green",
+        "dark moss green",
+        "myrtle green",
         "pine green",
         "fern green",
         "forest green",
+        "sap green",
+        "shamrock green",
         "leaf green",
         "hunter green",
         "sea green",
@@ -192,6 +224,7 @@
         "malachite green",
         "jade green",
         "bright green",
+        "mint green",
         "light green",
         "olive (dark yellowish green)",
         "yellow green",
@@ -383,16 +416,21 @@
         "magenta (purple red)",
         "dark red",
         "wine red (dark red with a hint of blue)",
+        "oxblood red",
         "blood red",
         "maroon (dark brownish red)",
         "terracotta (brownish red)",
+        "carnelian (reddish brown)",
+        "rufous (rusty brownish-red)",
+        "rusty red",
         "crimson (slightly purplish red)",
         "rich carmine (very deep red)",
         "carmine (deep red)",
         "cardinal red (vivid crimson)",
-        "rusty red",
         "brick red",
         "bright red",
+        "gules (bright heraldic red)",
+        "coquelicot (bright red with orange tint)",
         "imperial red",
         "deep ruby",
         "ruby red",
@@ -416,8 +454,12 @@
         "magenta",
         "maroon",
         "terracotta",
+        "carnelian",
+        "rufous",
         "crimson",
         "carmine",
+        "gules",
+        "coquelicot",
         "ruby",
         "rubine",
         "flame",
@@ -462,6 +504,7 @@
         "brown orange",
         "burnt orange",
         "dark orange",
+        "fulvous (dull orange)",
         "bright orange",
         "light orange",
         "carrot orange",
@@ -476,6 +519,7 @@
         "orange",
         "vermilion",
         "cinnabar",
+        "fulvous",
         "marigold",
         "amber"
       ]
