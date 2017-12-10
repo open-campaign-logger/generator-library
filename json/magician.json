@@ -8,13 +8,13 @@
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
   "to do": "Mythological, fantasy and futuristic subtables.",
-  "see": "magic, magical_technique, magical_instrument, spellcasting",
+  "see": "fighter, magic, magical_technique, magical_instrument, spellcasting",
   "date": "2017-10-06",
   "authors": "Esko Vesala",
   "sources": "SummitLighthouse.org, Wikipedia.org",
   "genre": "universal",
   "categories": [
-    "magic"
+    "magic, person"
   ],
   "tags": "#person, #magic",
   "tables": [
