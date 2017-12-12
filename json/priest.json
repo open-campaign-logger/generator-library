@@ -1,0 +1,207 @@
+{
+  "name": "priest",
+  "resultPattern": "{priest}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Variations of priests.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
+  "note": "",
+  "to do": "Different religions and monastic orders. Mythological, fantasy and futuristic subtables.",
+  "see": "fighter, magician",
+  "date": "2017-12-12",
+  "authors": "Esko Vesala",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "categories": [
+    "character"
+  ],
+  "tags": "#person, #religion",
+  "tables": [
+    {
+      "name": "priest",
+      "explanation": "Priest types.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common priests.",
+      "entries": [
+        "priest",
+        "cleric",
+        "preacher",
+        "pulpiter",
+        "acolyte",
+        "chaplain",
+        "pastor",
+        "minister",
+        "parson",
+        "reverend",
+        "prelate",
+        "ecclesiastic",
+        "{inexperienced}",
+        "{experienced}",
+        "{monk}",
+        "{nun}"
+      ]
+    },
+    {
+      "name": "inexperienced",
+      "explanation": "Inexperienced priests.",
+      "entries": [
+        "novice",
+        "initiate",
+        "neophyte"
+      ]
+    },
+    {
+      "name": "experienced",
+      "explanation": "Experienced priests.",
+      "entries": [
+        "elder",
+        "patriarch",
+        "matriarch"
+      ]
+    },
+    {
+      "name": "monk",
+      "explanation": "Male monastics.",
+      "entries": [
+        "monk",
+        "abbot",
+        "cenobite",
+        "anchorite",
+        "hesychast",
+        "hermit",
+        "solitary monk"
+      ]
+    },
+    {
+      "name": "nun",
+      "explanation": "Female monastics.",
+      "entries": [
+        "nun",
+        "sister",
+        "abbess"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare priests.",
+      "entries": [
+        "chosen",
+        "prophet",
+        "godtalker",
+        "{male}",
+        "{female}",
+        "{jewish}",
+        "{highranking}"
+      ]
+    },
+    {
+      "name": "male",
+      "explanation": "Male priests.",
+      "entries": [
+        "clergyman"
+      ]
+    },
+    {
+      "name": "female",
+      "explanation": "Female priests.",
+      "entries": [
+        "clergywoman",
+        "abbess",
+        "matron",
+        "matriarch"
+      ]
+    },
+    {
+      "name": "jewish",
+      "explanation": "Priests of the Jewish faith.",
+      "entries": [
+        "rabbi",
+        "maggid",
+        "kohen"
+      ]
+    },
+    {
+      "name": "highranking",
+      "explanation": "High-ranking priests.",
+      "entries": [
+        "bishop",
+        "archbishop",
+        "cardinal",
+        "hierarch"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Priests once rumoured to have existed.",
+      "entries": [
+        "XXX",
+        "{rare mythological}"
+      ]
+    },
+    {
+      "name": "rare mythological",
+      "explanation": "Rare imaginary priests once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Priests for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "XXX",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare priests for fantasy worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Priests for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare priests for modern worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Imaginary priests for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary priests for science fiction worlds.",
+      "entries": [
+        "XXX"
+      ]
+    }
+  ]
+}

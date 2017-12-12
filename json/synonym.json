@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "Expansion.",
   "see": "",
-  "date": "2017-12-10",
+  "date": "2017-12-12",
   "authors": "Esko Vesala.",
   "sources": "Thesaurus.com, TvTropes.org, Wikipedia.org",
   "genre": "universal",
@@ -230,10 +230,7 @@
       "name": "priest",
       "explanation": "Synonyms for a priest (of a religion).",
       "entries": [
-        "priest",
-        "cleric",
-        "preacher",
-        "pulpiter"
+        "{lib:priest}"
       ]
     },
     {
