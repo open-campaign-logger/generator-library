@@ -40,7 +40,7 @@
       "entries": [
         "{negative spell} of {lib:spell_intention#negative}",
         "{lib:spell_intention#negative} {negative spell}",
-        "{lib:spell_intention#negative} {lib:spell_target}"
+        "{lib:spell_target} {lib:spell_intention#negative}"
       ]
     },
     {
@@ -59,7 +59,7 @@
       "entries": [
         "{neutral spell} of {lib:spell_intention#neutral}",
         "{lib:spell_intention#neutral} {neutral spell}",
-        "{lib:spell_intention#neutral} {lib:spell_target}"
+        "{lib:spell_target} {lib:spell_intention#neutral}"
       ]
     },
     {
@@ -82,7 +82,7 @@
       "entries": [
         "{positive spell} of {lib:spell_intention#positive}",
         "{lib:spell_intention#positive} {positive spell}",
-        "{lib:spell_intention#positive} {lib:spell_target}"
+        "{lib:spell_target} {lib:spell_intention#positive}"
       ]
     },
     {
