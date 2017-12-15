@@ -1,0 +1,185 @@
+{
+    "name": "Random Quest Generator",
+    "resultPattern": "A {race} {title} seeks heroes to {action} a {noun} called \"The {adjective} {var:noun} of {number} {condition}.\"",
+    "explanation": "This generator is based on the Fri, Oct 20th musing e-mail of Johnn Four (https://roleplayingtips.com/) 'The Mad Lib d12 Random Quest Generator'. It was shared by Tony and adapted by Jochen Linnemann.",
+    "howToUse": "Use {lib:_generator_RandomQuest} in your resultPattern.",
+    "tables": [{
+            "name": "race",
+            "entries": [
+                "human",
+                "rlf",
+                "dwarf",
+                "halfling",
+                "orc",
+                "drow",
+                "giant",
+                "faerie",
+                "gnome",
+                "goblin",
+                "merfolk",
+                "dragon"
+            ]
+        },
+        {
+            "name": "title",
+            "entries": [
+                "master/mistress",
+                "matron/patron/elder",
+                "lord/lady",
+                "duke/duchess",
+                "earl/countess",
+                "marquess/marchioness",
+                "viscount/viscountess",
+                "high priestess/magi",
+                "baron/baroness",
+                "prince/princess",
+                "queen/king",
+                "emperor/empress"
+            ]
+        },
+        {
+            "name": "action",
+            "entries": [
+                "find",
+                "retrieve",
+                "destroy/kill",
+                "steal",
+                "craft",
+                "enchant",
+                "disenchant",
+                "banish",
+                "repair/heal",
+                "investigate",
+                "deliver",
+                "guard"
+            ]
+        },
+        {
+            "name": "noun",
+            "entries": [{
+                    "v": "horse",
+                    "set": {
+                        "noun": "Horse"
+                    }
+                },
+                {
+                    "v": "wizard",
+                    "set": {
+                        "noun": "Wizard"
+                    }
+                },
+                {
+                    "v": "sage",
+                    "set": {
+                        "noun": "Sage"
+                    }
+                },
+                {
+                    "v": "hermit",
+                    "set": {
+                        "noun": "Hermit"
+                    }
+                },
+                {
+                    "v": "tomb",
+                    "set": {
+                        "noun": "Tomb"
+                    }
+                },
+                {
+                    "v": "ghost",
+                    "set": {
+                        "noun": "Ghost"
+                    }
+                },
+                {
+                    "v": "shield",
+                    "set": {
+                        "noun": "Shield"
+                    }
+                },
+                {
+                    "v": "sword",
+                    "set": {
+                        "noun": "Sword"
+                    }
+                },
+                {
+                    "v": "amulet",
+                    "set": {
+                        "noun": "Amulet"
+                    }
+                },
+                {
+                    "v": "chalice",
+                    "set": {
+                        "noun": "Chalice"
+                    }
+                },
+                {
+                    "v": "staff",
+                    "set": {
+                        "noun": "Staff"
+                    }
+                },
+                {
+                    "v": "crown",
+                    "set": {
+                        "noun": "Crown"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "adjective",
+            "entries": [
+                "Defiant",
+                "Feisty",
+                "Gray",
+                "Hallowed",
+                "Honorable",
+                "Dishonorable",
+                "Sacred",
+                "Noble",
+                "Lost",
+                "Frosty",
+                "Androgynous",
+                "Evil"
+            ]
+        },
+        {
+            "name": "number",
+            "entries": [
+                "Two",
+                "Three",
+                "Four",
+                "Five",
+                "Six",
+                "Seven",
+                "Eight",
+                "Nine",
+                "Ten",
+                "Eleven",
+                "Twelve",
+                "Thirteen"
+            ]
+        },
+        {
+            "name": "condition",
+            "entries": [
+                "Blindnesses",
+                "Deafenings",
+                "Exhaustions",
+                "Frightenings",
+                "Incapacitations",
+                "Invisibilities",
+                "Paralysises",
+                "Petrifications",
+                "Poisonings",
+                "Restraints",
+                "Stunnings",
+                "Unconsciousnesses"
+            ]
+        }
+    ]
+}
