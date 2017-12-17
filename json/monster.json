@@ -1,0 +1,117 @@
+{
+  "name": "monster",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "monster table",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "Categorize monsters by type.",
+  "see": "",
+  "date": "2017-12-15",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{monster}"
+      ]
+    },
+    {
+      "name": "monster",
+      "explanation": "Monsters by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common monster types.",
+      "entries": [
+        "{fantasy}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare monster types.",
+      "entries": [
+        "{mythological}"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Monsters once rumoured to have existed.",
+      "entries": [
+        "manticore",
+        "gorgon",
+        "catoblepas"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Monsters for fantasy worlds.",
+      "entries": [
+        "{mythological}",
+        "{lib:monsterAberration}",
+        "{lib:monsterConstruct}",
+        "{lib:monsterElemental}",
+        "{lib:monsterEpic}",
+        "{lib:monsterGiant}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Monsters for modern worlds.",
+      "entries": [
+        "{common}",
+        "yeti",
+        "sasquatch",
+        "chupacabra"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Monsters for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "alien"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special monster types.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives describing the monster.",
+      "entries": [
+        "firebreathing",
+        "venomous",
+        "long-dead",
+        "vengeful",
+        "cursed",
+        "bloodthirsty",
+        "demonic",
+        "undead",
+        "savage",
+        "reanimated",
+        "artificial"
+      ]
+    }
+  ]
+}

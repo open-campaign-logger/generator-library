@@ -1,0 +1,147 @@
+{
+  "name": "villain",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "villain table",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "Categorize villains by type.",
+  "see": "",
+  "date": "2017-12-16",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{villain}",
+        "{adjective} {villain}",
+        "{villain} {complication}",
+        "{adjective} {villain} {complication}"
+      ]
+    },
+    {
+      "name": "villain",
+      "explanation": "Villain types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common villain types.",
+      "entries": [
+        "scoundrel",
+        "thug",
+        "villain",
+        "blackguard",
+        "miscreant"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare villain types.",
+      "entries": [
+        "enchantress",
+        "diabolist",
+        "necromancer"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Villains once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Villains for fantasy worlds.",
+      "entries": [
+        "bandit"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Villains for modern worlds.",
+      "entries": [
+        "{common}",
+        "drug trafficker",
+        "corrupt politician",
+        "mafioso"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Villains for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special villain types.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives describing the villain.",
+      "entries": [
+        "ancient",
+        "hateful",
+        "spiteful",
+        "sadistic",
+        "charismatic",
+        "scheming"
+      ]
+    },
+    {
+      "name": "strategy",
+      "explanation": "The villain's chosen approach.",
+      "entries": [
+        "survivalist",
+        "loner",
+        "maniac",
+        "strategist",
+        "manipulator",
+        "leader",
+        "mentor"
+      ]
+    },
+    {
+      "name": "goal",
+      "explanation": "The villain's goal.",
+      "entries": [
+        "gain wealth",
+        "gain power",
+        "achieve infamy",
+        "cause suffering",
+        "serve evil",
+        "dominate the world"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Complications for the villain.",
+      "entries": [
+        "who is slowly going insane",
+        "who knows that death is near"
+      ]
+    }
+  ]
+}

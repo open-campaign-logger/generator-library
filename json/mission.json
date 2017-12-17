@@ -1,0 +1,100 @@
+{
+  "name": "mission",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "mission generator",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "Categorize quests by type.",
+  "see": "",
+  "date": "2017-12-15",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{task}"
+      ]
+    },
+    {
+      "name": "task",
+      "explanation": "Task types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common task types.",
+      "entries": [
+        "{obtain}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare task types.",
+      "entries": [
+        "{destroy}"
+      ]
+    },
+    {
+      "name": "obtain",
+      "explanation": "Missions to get something.",
+      "entries": [
+        "obtain {adjective} {item} from {lib:location}"
+      ]
+    },
+    {
+      "name": "destroy",
+      "explanation": "Missions to obliterate something.",
+      "entries": [
+        "destroy {adjective} {item} in {lib:location}"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special quest types.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives describing the quest item.",
+      "entries": [
+        "rare",
+        "fabled",
+        "sacred",
+        "holy"
+      ]
+    },
+    {
+      "name": "item",
+      "explanation": "Target item of the quest.",
+      "entries": [
+        "{lib:weapon}",
+        "{lib:magicitem}"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Complications for the quest.",
+      "entries": [
+        "The mission giver is not the rightful owner of the item."
+      ]
+    }
+  ]
+}

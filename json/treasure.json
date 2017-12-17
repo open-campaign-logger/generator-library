@@ -1,0 +1,115 @@
+{
+  "name": "treasure",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "treasure table",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "Categorize treasures by type.",
+  "see": "",
+  "date": "2017-12-15",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{treasure}"
+      ]
+    },
+    {
+      "name": "treasure",
+      "explanation": "Treasure types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common treasure types.",
+      "entries": [
+        "{lib:jewelry}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare treasure types.",
+      "entries": [
+        "magical {lib:magicitem}"
+      ]
+    },
+    {
+      "name": "mythological",
+      "explanation": "Treasure once rumoured to have existed.",
+      "entries": [
+        "golden fleece",
+        "unicorn horn"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Treasure for fantasy worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Treasure for modern worlds.",
+      "entries": [
+        "{common}",
+        "stock",
+        "bonds",
+        "prototype of a new invention"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Treasure for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "crypto currency",
+        "decryption key"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special treasure types.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives describing the treasure.",
+      "entries": [
+        "fabulously valuable",
+        "enchanted",
+        "ancient",
+        "fabled"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Complications for the treasure.",
+      "entries": [
+        "cursed",
+        "fake",
+        "already gone",
+        "being looted by hostile adventurers"
+      ]
+    }
+  ]
+}
