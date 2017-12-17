@@ -185,10 +185,10 @@
   "explanation": "Five room dungeons.",
   "structure": "Produces dungeon descriptions based on the 'Five Room Dungeon' formula.",
   "note": "",
-  "bugs": "The external synonym table call does not yet work.",
+  "bugs": "",
   "to do": "Support for external motif files (requires global variables). More encounters!",
-  "see": "",
-  "date": "2017-12-03",
+  "see": "hook_line_and_sinker_adventure",
+  "date": "2017-12-17",
   "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "RolePlayingTips.com",
   "genre": "universal",
@@ -709,9 +709,9 @@
         },
         {
           "m": 1,
-          "v": "{fortified location}",
+          "v": "{outpost location}",
           "set": {
-            "milieu": "fortified",
+            "milieu": "outpost",
             "milieudescription": ""
           }
         },
@@ -760,6 +760,14 @@
           "v": "{desert location}",
           "set": {
             "milieu": "desert",
+            "milieudescription": ""
+          }
+        },
+        {
+          "m": 1,
+          "v": "{hill location}",
+          "set": {
+            "milieu": "hill",
             "milieudescription": ""
           }
         },
@@ -1008,9 +1016,17 @@
       ]
     },
     {
-      "name": "fortified location",
-      "explanation": "Locations in castles and other fortifications.",
+      "name": "outpost location",
+      "explanation": "Outpost locations such as camps and fortifications.",
       "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "camp",
+            "locationdescription": "a temporary camp"
+          }
+        },
         {
           "m": 1,
           "v": "",
@@ -1165,6 +1181,36 @@
           "set": {
             "location": "oasis",
             "locationdescription": "an oasis in the middle of the desert"
+          }
+        }
+      ]
+    },
+    {
+      "name": "hill location",
+      "explanation": "Locations in the hills.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "dell",
+            "locationdescription": "secluded hollow between hills"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "hillside",
+            "locationdescription": "side of a hill"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "hilltop",
+            "locationdescription": "top of a hill"
           }
         }
       ]
