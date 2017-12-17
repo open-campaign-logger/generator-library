@@ -119,6 +119,23 @@
       ]
     },
     {
+      "name": "evil",
+      "explanation": "Synonyms for evil (adjective).",
+      "entries": [
+        "evil",
+        "sinister",
+        "corrupt",
+        "depraved",
+        "vile",
+        "maleficent",
+        "malevolent",
+        "malicious",
+        "fiendish",
+        "demonic",
+        "diabolical"
+      ]
+    },
+    {
       "name": "fighter",
       "explanation": "Synonyms for a fighter.",
       "entries": [
@@ -177,6 +194,19 @@
       ]
     },
     {
+      "name": "horror",
+      "explanation": "Synonyms for horror (the emotion).",
+      "entries": [
+        "horror",
+        "fear",
+        "fearfulness",
+        "fright",
+        "dread",
+        "terror",
+        "abhorrence"
+      ]
+    },
+    {
       "name": "journey",
       "explanation": "Synonyms for a journey (to somewhere).",
       "entries": [
@@ -215,6 +245,23 @@
       ]
     },
     {
+      "name": "minion",
+      "explanation": "Synonyms for an underling.",
+      "entries": [
+        "minion",
+        "henchman",
+        "aide",
+        "follower",
+        "disciple",
+        "underling",
+        "retainer",
+        "lackey",
+        "servant",
+        "vassal",
+        "thrall"
+      ]
+    },
+    {
       "name": "monster",
       "explanation": "Synonyms for a monster.",
       "entries": [
@@ -231,6 +278,40 @@
       "explanation": "Synonyms for a priest (of a religion).",
       "entries": [
         "{lib:priest}"
+      ]
+    },
+    {
+      "name": "ruler",
+      "explanation": "Synonyms for a ruler (of an area).",
+      "entries": [
+        "ruler",
+        "sovereign",
+        "lord",
+        "overlord",
+        "potentate",
+        "autocrat",
+        "majesty",
+        "monarch",
+        "imperator",
+        "emperor"
+      ]
+    },
+    {
+      "name": "says",
+      "explanation": "Synonyms for saying (present third person singular).",
+      "entries": [
+        "says",
+        "remarks",
+        "states",
+        "tells",
+        "communicates",
+        "announces",
+        "pronounces",
+        "claims",
+        "declares",
+        "discloses",
+        "mentions",
+        "utters"
       ]
     },
     {
