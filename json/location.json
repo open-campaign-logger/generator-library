@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "Add themes to categorize adjectives and other elements.",
   "see": "5_room_dungeon, hook_line_and_sinker_adventure",
-  "date": "2017-12-17",
+  "date": "2017-12-18",
   "authors": "Esko Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -47,6 +47,14 @@
       "name": "common",
       "explanation": "Common milieu types.",
       "entries": [
+        {
+          "m": 1,
+          "v": "{indoor location}",
+          "set": {
+            "milieu": "indoor",
+            "milieudescription": "indoors"
+          }
+        },
         {
           "m": 1,
           "v": "{urban location}",
@@ -92,7 +100,7 @@
           "v": "{forest location}",
           "set": {
             "milieu": "forest",
-            "milieudescription": ""
+            "milieudescription": "forested area"
           }
         },
         {
@@ -100,7 +108,7 @@
           "v": "{hill location}",
           "set": {
             "milieu": "hill",
-            "milieudescription": ""
+            "milieudescription": "hilly area"
           }
         },
         {
@@ -108,7 +116,7 @@
           "v": "{mountain location}",
           "set": {
             "milieu": "mountain",
-            "milieudescription": ""
+            "milieudescription": "mountainous area"
           }
         },
         {
@@ -116,7 +124,7 @@
           "v": "{river location}",
           "set": {
             "milieu": "river",
-            "milieudescription": ""
+            "milieudescription": "river"
           }
         },
         {
@@ -124,7 +132,7 @@
           "v": "{lake location}",
           "set": {
             "milieu": "lake",
-            "milieudescription": ""
+            "milieudescription": "lake"
           }
         },
         {
@@ -132,7 +140,7 @@
           "v": "{wetlands location}",
           "set": {
             "milieu": "wetlands",
-            "milieudescription": ""
+            "milieudescription": "wetlands"
           }
         },
         {
@@ -140,7 +148,7 @@
           "v": "{coastal location}",
           "set": {
             "milieu": "coastal",
-            "milieudescription": ""
+            "milieudescription": "coastal area"
           }
         }
       ]
@@ -154,7 +162,7 @@
           "v": "{naval location}",
           "set": {
             "milieu": "naval",
-            "milieudescription": ""
+            "milieudescription": "sea"
           }
         },
         {
@@ -162,7 +170,7 @@
           "v": "{tundra location}",
           "set": {
             "milieu": "tundra",
-            "milieudescription": ""
+            "milieudescription": "tundra"
           }
         },
         {
@@ -170,7 +178,7 @@
           "v": "{rainforest location}",
           "set": {
             "milieu": "rainforest",
-            "milieudescription": ""
+            "milieudescription": "rainforest"
           }
         },
         {
@@ -178,7 +186,7 @@
           "v": "{savanna location}",
           "set": {
             "milieu": "savanna",
-            "milieudescription": ""
+            "milieudescription": "savanna"
           }
         },
         {
@@ -186,7 +194,7 @@
           "v": "{desert location}",
           "set": {
             "milieu": "desert",
-            "milieudescription": ""
+            "milieudescription": "desert"
           }
         },
         {
@@ -194,7 +202,7 @@
           "v": "{underground location}",
           "set": {
             "milieu": "underground",
-            "milieudescription": ""
+            "milieudescription": "underground area"
           }
         }
       ]
@@ -208,7 +216,7 @@
           "v": "{volcanic location}",
           "set": {
             "milieu": "volcanic",
-            "milieudescription": ""
+            "milieudescription": "volcanic area"
           }
         },
         {
@@ -216,7 +224,7 @@
           "v": "{glacial location}",
           "set": {
             "milieu": "glacial",
-            "milieudescription": ""
+            "milieudescription": "glacial area"
           }
         },
         {
@@ -224,7 +232,7 @@
           "v": "{underwater location}",
           "set": {
             "milieu": "underwater",
-            "milieudescription": ""
+            "milieudescription": "underwater"
           }
         },
         {
@@ -232,7 +240,7 @@
           "v": "{air location}",
           "set": {
             "milieu": "air",
-            "milieudescription": ""
+            "milieudescription": "air"
           }
         },
         {
@@ -240,7 +248,7 @@
           "v": "{space location}",
           "set": {
             "milieu": "space",
-            "milieudescription": ""
+            "milieudescription": "space"
           }
         },
         {
@@ -248,7 +256,29 @@
           "v": "{planar location}",
           "set": {
             "milieu": "planar",
-            "milieudescription": ""
+            "milieudescription": "extraplanar area"
+          }
+        }
+      ]
+    },
+    {
+      "name": "indoor location",
+      "explanation": "Locations inside buildings.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "hall",
+            "locationdescription": "a hall built inside the city walls, where few have entered and even fewer returned"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "chamber",
+            "locationdescription": "a mysterious chamber where bypassers suspect something strange is going on"
           }
         }
       ]
