@@ -1,0 +1,229 @@
+{
+  "name": "Hook, Line and Sinker Adventure generator",
+  "resultPattern": "{CL formatting}{result}",
+  "variables": {
+    "starttitle": "",
+    "endtitle": "",
+    "startheading": "",
+    "endheading": "",
+    "startbold": "",
+    "endbold": "",
+    "para": "",
+    "adventure": "",
+    "footnote": ""
+  },
+  "explanation": "Produces mini adventure templates based on the Hook, Line and Sinker formula.",
+  "structure": "",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "5_room_dungeon",
+  "date": "2017-12-16",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    "plot"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{adventure}"
+      ]
+    },
+    {
+      "name": "adventure",
+      "explanation": "XXX",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common XXX.",
+      "entries": [
+        "{dungeon adventure}",
+        "{rescue mission}",
+        "{murder mystery}",
+        "{monster in the village}",
+        "{recon mission}",
+        "{imprisoned}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare XXX.",
+      "entries": [
+        "{mission}"
+      ]
+    },
+    {
+      "name": "dungeon adventure",
+      "explanation": "Dungeon raid template.",
+      "entries": [
+        {
+          "v": "{title}{hook} The adventures hear about a {lib:placeAdventure} of a {lib:monster#adjective} {lib:monster} that hides a  {lib:treasure#adjective} {lib:treasure}. {line} The place is nowadays inhabited by a {lib:monster#adjective} {lib:monsterHumanoid}. {sinker} The treasure is actually {lib:treasure#complication}.",
+          "set": {
+            "adventure": "Dungeon Adventure"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rescue mission",
+      "explanation": "Rescue mission template.",
+      "entries": [
+        {
+          "v": "{title}{hook} A {lib:personCraft} asks the adventurers to rescue a {lib:weapon} that has been stolen by a {lib:monsterHumanoid}. {line} The thief is accompanied by a band of {lib:monster#adjective} {lib:monsterHumanoid}s. {sinker} The mission giver is not the rightful owner of the 'stolen' item.",
+          "set": {
+            "adventure": "Rescue Mission"
+          }
+        }
+      ]
+    },
+    {
+      "name": "murder mystery",
+      "explanation": "Murder mystery template.",
+      "entries": [
+        {
+          "v": "{title}{hook} The adventurers are staying overnight in a _____ with a group of _____. In the morning one of the other guests is found dead. {line} On the death scene, a _____ is found. The clue points to several potential culprits. {sinker} Investigation shows that the victim was actually _____ because _____. ",
+          "set": {
+            "adventure": "Murder Mystery"
+          }
+        }
+      ]
+    },
+    {
+      "name": "monster in the village",
+      "explanation": "Monster in the village adventure template.",
+      "entries": [
+        {
+          "v": "{title}{hook} A _____ village is suffering from a series of unexplained _____ attacks towards _____. {line} Closer inspection of the attack locations reveals _____, pointing to _____. {sinker} The victims have a common factor: _____, and the reason for the attacks has been _____ by _____. ",
+          "set": {
+            "adventure": "Monster in the Village"
+          }
+        }
+      ]
+    },
+    {
+      "name": "recon mission",
+      "explanation": "Recon mission template.",
+      "entries": [
+        {
+          "v": "{title}{hook} In a _____ village signs of hostile _____ activity nearby have been detected. {line} A hidden _____ is found nearby, hiding _____ ready for invasion. {sinker} The invasion force has arrived because _____. They intend to _____ with _____.",
+          "set": {
+            "adventure": "Recon Mission"
+          }
+        }
+      ]
+    },
+    {
+      "name": "imprisoned",
+      "explanation": "Imprisoned adventure template.",
+      "entries": [
+        {
+          "v": "{title}{hook} The adventurers wake up captive in {lib:location#dungeon}. They are guarded by a {lib:monsterGiant}. {line} They have been captured by {lib:villain#adjective} {lib:villain} who wants {lib:villain#goal}. {sinker} The demand is not really important to the capturer, who actually wants _____.",
+          "set": {
+            "adventure": "Imprisoned"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mission",
+      "explanation": "Mission template.",
+      "entries": [
+        {
+          "v": "{title}{hook} A {lib:personCraft} asks the adventurers to {lib:mission}. {line} XXX {sinker} {lib:mission#complication}.",
+          "set": {
+            "adventure": "Mission"
+          }
+        }
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special results.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "mission template",
+      "explanation": "XXX mission template.",
+      "entries": [
+        "{hook} {line} {sinker} "
+      ]
+    },
+    {
+      "name": "title",
+      "explanation": "The headline of the adventure.",
+      "entries": [
+        "{var:para}{var:starttitle}{var:adventure}{var:endtitle}"
+      ]
+    },
+    {
+      "name": "hook",
+      "explanation": "Start of the Hook paragraph.",
+      "entries": [
+        "{var:para}{var:startbold}Hook{var:endbold}: "
+      ]
+    },
+    {
+      "name": "line",
+      "explanation": "Start of the Line paragraph.",
+      "entries": [
+        "{var:para}{var:startbold}Line{var:endbold}:  "
+      ]
+    },
+    {
+      "name": "sinker",
+      "explanation": "Start of the Sinker paragraph.",
+      "entries": [
+        "{var:para}{var:startbold}Sinker{var:endbold}: "
+      ]
+    },
+    {
+      "name": "HTML formatting",
+      "explanation": "Set variables for formatting the output as HTML",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "<H2>",
+            "endtitle": "</H2>",
+            "startheading": "<H3>",
+            "endheading": "</H3>",
+            "startbold": "<B>",
+            "endbold": "</B>",
+            "para": "<P>"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CL formatting",
+      "explanation": "Set variables for formatting the output for Campaign Logger",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "{b|",
+            "endtitle": "}\r\n",
+            "startheading": "\r\n{b|",
+            "endheading": "}",
+            "startbold": "{b|",
+            "endbold": "}",
+            "para": "\r\n"
+          }
+        }
+      ]
+    }
+  ]
+}
