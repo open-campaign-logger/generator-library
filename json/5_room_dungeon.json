@@ -188,7 +188,7 @@
   "bugs": "",
   "to do": "Support for external motif files (requires global variables). More encounters!",
   "see": "hook_line_and_sinker_adventure",
-  "date": "2017-12-17",
+  "date": "2017-12-18",
   "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "RolePlayingTips.com",
   "genre": "universal",
@@ -681,14 +681,33 @@
     },
     {
       "name": "milieu",
-      "explanation": "The general environment of the adventure location.",
+      "explanation": "The general environment of the location types by rarity.",
       "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common milieu types.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{indoor location}",
+          "set": {
+            "milieu": "indoor",
+            "milieudescription": "indoors"
+          }
+        },
         {
           "m": 1,
           "v": "{urban location}",
           "set": {
             "milieu": "urban",
-            "milieudescription": ""
+            "milieudescription": "urban area"
           }
         },
         {
@@ -696,7 +715,7 @@
           "v": "{suburban location}",
           "set": {
             "milieu": "suburban",
-            "milieudescription": ""
+            "milieudescription": "suburban area"
           }
         },
         {
@@ -704,7 +723,7 @@
           "v": "{rural location}",
           "set": {
             "milieu": "rural",
-            "milieudescription": ""
+            "milieudescription": "rural area"
           }
         },
         {
@@ -712,7 +731,7 @@
           "v": "{outpost location}",
           "set": {
             "milieu": "outpost",
-            "milieudescription": ""
+            "milieudescription": "far reaches of civilization"
           }
         },
         {
@@ -720,15 +739,7 @@
           "v": "{grassland location}",
           "set": {
             "milieu": "grassland",
-            "milieudescription": ""
-          }
-        },
-        {
-          "m": 1,
-          "v": "{tundra location}",
-          "set": {
-            "milieu": "tundra",
-            "milieudescription": ""
+            "milieudescription": "plains"
           }
         },
         {
@@ -736,31 +747,7 @@
           "v": "{forest location}",
           "set": {
             "milieu": "forest",
-            "milieudescription": ""
-          }
-        },
-        {
-          "m": 1,
-          "v": "{rainforest location}",
-          "set": {
-            "milieu": "rainforest",
-            "milieudescription": ""
-          }
-        },
-        {
-          "m": 1,
-          "v": "{savanna location}",
-          "set": {
-            "milieu": "savanna",
-            "milieudescription": ""
-          }
-        },
-        {
-          "m": 1,
-          "v": "{desert location}",
-          "set": {
-            "milieu": "desert",
-            "milieudescription": ""
+            "milieudescription": "forested area"
           }
         },
         {
@@ -768,7 +755,7 @@
           "v": "{hill location}",
           "set": {
             "milieu": "hill",
-            "milieudescription": ""
+            "milieudescription": "hilly area"
           }
         },
         {
@@ -776,7 +763,7 @@
           "v": "{mountain location}",
           "set": {
             "milieu": "mountain",
-            "milieudescription": ""
+            "milieudescription": "mountainous area"
           }
         },
         {
@@ -784,7 +771,7 @@
           "v": "{river location}",
           "set": {
             "milieu": "river",
-            "milieudescription": ""
+            "milieudescription": "river"
           }
         },
         {
@@ -792,7 +779,7 @@
           "v": "{lake location}",
           "set": {
             "milieu": "lake",
-            "milieudescription": ""
+            "milieudescription": "lake"
           }
         },
         {
@@ -800,7 +787,7 @@
           "v": "{wetlands location}",
           "set": {
             "milieu": "wetlands",
-            "milieudescription": ""
+            "milieudescription": "wetlands"
           }
         },
         {
@@ -808,31 +795,53 @@
           "v": "{coastal location}",
           "set": {
             "milieu": "coastal",
-            "milieudescription": ""
+            "milieudescription": "coastal area"
           }
-        },
+        }
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare milieu types.",
+      "entries": [
         {
           "m": 1,
           "v": "{naval location}",
           "set": {
             "milieu": "naval",
-            "milieudescription": ""
+            "milieudescription": "sea"
           }
         },
         {
           "m": 1,
-          "v": "{glacial location}",
+          "v": "{tundra location}",
           "set": {
-            "milieu": "glacial",
-            "milieudescription": ""
+            "milieu": "tundra",
+            "milieudescription": "tundra"
           }
         },
         {
           "m": 1,
-          "v": "{underwater location}",
+          "v": "{rainforest location}",
           "set": {
-            "milieu": "underwater",
-            "milieudescription": ""
+            "milieu": "rainforest",
+            "milieudescription": "rainforest"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{savanna location}",
+          "set": {
+            "milieu": "savanna",
+            "milieudescription": "savanna"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{desert location}",
+          "set": {
+            "milieu": "desert",
+            "milieudescription": "desert"
           }
         },
         {
@@ -840,15 +849,37 @@
           "v": "{underground location}",
           "set": {
             "milieu": "underground",
-            "milieudescription": ""
+            "milieudescription": "underground area"
           }
-        },
+        }
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special milieu types (not produced by random).",
+      "entries": [
         {
           "m": 1,
           "v": "{volcanic location}",
           "set": {
             "milieu": "volcanic",
-            "milieudescription": ""
+            "milieudescription": "volcanic area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{glacial location}",
+          "set": {
+            "milieu": "glacial",
+            "milieudescription": "glacial area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{underwater location}",
+          "set": {
+            "milieu": "underwater",
+            "milieudescription": "underwater"
           }
         },
         {
@@ -856,7 +887,7 @@
           "v": "{air location}",
           "set": {
             "milieu": "air",
-            "milieudescription": ""
+            "milieudescription": "air"
           }
         },
         {
@@ -864,7 +895,7 @@
           "v": "{space location}",
           "set": {
             "milieu": "space",
-            "milieudescription": ""
+            "milieudescription": "space"
           }
         },
         {
@@ -872,7 +903,29 @@
           "v": "{planar location}",
           "set": {
             "milieu": "planar",
-            "milieudescription": ""
+            "milieudescription": "extraplanar area"
+          }
+        }
+      ]
+    },
+    {
+      "name": "indoor location",
+      "explanation": "Locations inside buildings.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "hall",
+            "locationdescription": "a hall built inside the city walls, where few have entered and even fewer returned"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "chamber",
+            "locationdescription": "a mysterious chamber where bypassers suspect something strange is going on"
           }
         }
       ]
@@ -903,22 +956,6 @@
           "set": {
             "location": "temple",
             "locationdescription": "a temple hiding dark secrets"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "hall",
-            "locationdescription": "a hall built inside the city walls, where few have entered and even fewer returned"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "chamber",
-            "locationdescription": "a mysterious chamber where bypassers suspect something strange is going on"
           }
         },
         {
