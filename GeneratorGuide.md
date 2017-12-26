@@ -157,21 +157,35 @@ To add an indented footnote on the next line after an oracle's statement, you co
 
 Not all tables used in the *resultPattern* definition must be located in the same file. You can call another table in three different ways, depending on where the external table is located.
 
+
+### Public Library Calls
+
 The Campaign Logger server has a standard library of help tables that can be called from any table by adding the *lib:* string in front of the table name:
 
     {lib:generatorName}
 
+For public library calls, the generator name used in the call is the name of the JSON file.
+
+
+### Local Generator Calls
 
 Help tables installed on your own Campaign Logger setup using the *Manage Custom Generators* option can be called from any table by adding the *gen:* string in front of the table name:
 
     {gen:generatorName}
 
+For local generator calls, the generator name used in the call is the _name_ property of the generator.
+
+
+### Private Library Calls
 
 Help tables installed on the *Private Library* section of the *Manage Custom Generators* option can be called from any table by adding the *private:* string in front of the table name:
 
     {private:generatorName}
 
-The generator name used in the call is the name of the JSON file.
+For private library calls, the generator name used in the call is the _name_ property of the generator.
+
+
+### Subtable Calls
 
 The external table call can also specify a subtable within the called generator. To do that, insert a hash mark (#) after the file name, and then the name of the subtable.
 
