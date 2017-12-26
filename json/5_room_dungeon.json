@@ -188,7 +188,7 @@
   "bugs": "",
   "to do": "Support for external motif files (requires global variables). More encounters!",
   "see": "hook_line_and_sinker_adventure",
-  "date": "2017-12-18",
+  "date": "2017-12-26",
   "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "RolePlayingTips.com",
   "genre": "universal",
@@ -962,6 +962,22 @@
           "m": 1,
           "v": "",
           "set": {
+            "location": "hall",
+            "locationdescription": "a hall built inside the city walls, where few have entered and even fewer returned"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "chamber",
+            "locationdescription": "a mysterious chamber where bypassers suspect something strange is going on"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
             "location": "monument",
             "locationdescription": "a colossal monument built in ancient times"
           }
@@ -995,30 +1011,6 @@
             "location": "prison",
             "locationdescription": "an old prison building in a sparsely populated area"
           }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "tomb",
-            "locationdescription": "a tomb where dwells something that is not quite dead"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "grave",
-            "locationdescription": "a disturbed burial site"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "labyrinth",
-            "locationdescription": "a labyrinth built in a bygone age"
-          }
         }
       ]
     },
@@ -1026,6 +1018,14 @@
       "name": "rural location",
       "explanation": "Locations in the countryside.",
       "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "village",
+            "locationdescription": "a country villge"
+          }
+        },
         {
           "m": 1,
           "v": "",
@@ -1054,7 +1054,7 @@
     },
     {
       "name": "outpost location",
-      "explanation": "Outpost locations such as camps and fortifications.",
+      "explanation": "Locations in outposts, such as camps and fortifications.",
       "entries": [
         {
           "m": 1,
@@ -1068,16 +1068,8 @@
           "m": 1,
           "v": "",
           "set": {
-            "location": "castle",
-            "locationdescription": "a foreboding castle"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "fortress",
-            "locationdescription": "a fortress built to guard an ancient kingdom from its already forgotten enemies"
+            "location": "encampment",
+            "locationdescription": "an encampment"
           }
         },
         {
@@ -1092,6 +1084,14 @@
           "m": 1,
           "v": "",
           "set": {
+            "location": "tower",
+            "locationdescription": "a lone, imposing tower"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
             "location": "keep",
             "locationdescription": "a lone keep built to guard the surrounding lands"
           }
@@ -1100,8 +1100,40 @@
           "m": 1,
           "v": "",
           "set": {
-            "location": "tower",
-            "locationdescription": "a lone, imposing tower"
+            "location": "stronghold",
+            "locationdescription": "a small fortress"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "fortification",
+            "locationdescription": "a makeshift fortress"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "fort",
+            "locationdescription": "a temporary fortress built from logs"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "fortress",
+            "locationdescription": "a fortress built to guard an ancient kingdom from its already forgotten enemies"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "castle",
+            "locationdescription": "a foreboding castle"
           }
         }
       ]
@@ -1155,6 +1187,14 @@
             "location": "wasteland",
             "locationdescription": "an uninhabited wasteland in the wilderness"
           }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "plain of dwarf shrubs",
+            "locationdescription": "treeless landscape with only small shrubs, moss and lichen growing on the ground"
+          }
         }
       ]
     },
@@ -1188,6 +1228,14 @@
           "m": 1,
           "v": "",
           "set": {
+            "location": "rainforest floor",
+            "locationdescription": "sparse soil shadowed by a thick canopy of trees and other vegetation"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
             "location": "jungle",
             "locationdescription": "a dense jungle teeming with life"
           }
@@ -1198,6 +1246,22 @@
       "name": "savanna location",
       "explanation": "Locations in the tropical grasslands.",
       "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "grass plain",
+            "locationdescription": "a grassy plain with sparse trees"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "outcrop of rocks",
+            "locationdescription": "an isolated hill of jumbled rocks"
+          }
+        },
         {
           "m": 1,
           "v": "",
@@ -1216,8 +1280,16 @@
           "m": 1,
           "v": "",
           "set": {
+            "location": "sand dunes",
+            "locationdescription": "hills formed from sand"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
             "location": "oasis",
-            "locationdescription": "an oasis in the middle of the desert"
+            "locationdescription": "a watering hole in the middle of the desert"
           }
         }
       ]
@@ -1293,6 +1365,14 @@
             "location": "ford",
             "locationdescription": "a ford in a stream"
           }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "river delta",
+            "locationdescription": "slow-moving stream entering a larger body of water"
+          }
         }
       ]
     },
@@ -1300,6 +1380,14 @@
       "name": "lake location",
       "explanation": "Locations on still freshwater (lakes, ponds, etc).",
       "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "lakeshore",
+            "locationdescription": "the shore of a lake"
+          }
+        },
         {
           "m": 1,
           "v": "",
@@ -1381,6 +1469,22 @@
             "location": "ship",
             "locationdescription": "a ship sailing to a far-off lands"
           }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "island",
+            "locationdescription": "a small island in the middle of a sea"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "open sea",
+            "locationdescription": "sea with no land on sight"
+          }
         }
       ]
     },
@@ -1388,6 +1492,38 @@
       "name": "glacial location",
       "explanation": "Locations on snow and ice covered areas.",
       "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "ice field",
+            "locationdescription": "floating sheets of ice"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "iceberg",
+            "locationdescription": "a floating mountain of ice"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "glacier",
+            "locationdescription": "ice-covered, sparse wilderness"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "snow mountain",
+            "locationdescription": "snow-covered mountainside"
+          }
+        },
         {
           "m": 1,
           "v": "",
@@ -1406,8 +1542,16 @@
           "m": 1,
           "v": "",
           "set": {
-            "location": "coral reef",
-            "locationdescription": "a colorful coral reef in the depths of the ocean"
+            "location": "underwater",
+            "locationdescription": "the depths of the ocean"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "sea bottom",
+            "locationdescription": "bottom of the sea"
           }
         }
       ]
@@ -1444,6 +1588,38 @@
           "m": 1,
           "v": "",
           "set": {
+            "location": "tomb",
+            "locationdescription": "a tomb where dwells something that is not quite dead"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "crypt",
+            "locationdescription": "an underground burial chamber"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "grave",
+            "locationdescription": "a disturbed burial site"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "labyrinth",
+            "locationdescription": "a labyrinth built in a bygone age"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
             "location": "vault",
             "locationdescription": "a vault that is rumoured to contain {var:treasure}"
           }
@@ -1453,7 +1629,7 @@
           "v": "",
           "set": {
             "location": "dungeon",
-            "locationdescription": "a notorious dungeon complex"
+            "locationdescription": "an underground dungeon complex"
           }
         },
         {
@@ -1482,7 +1658,55 @@
           "m": 1,
           "v": "",
           "set": {
-            "location": "crater",
+            "location": "hardened lava field",
+            "locationdescription": "an uneven field of cooled down and hardened lava"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "hot spring",
+            "locationdescription": "a spring filled with steamy, hot water"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "geyser",
+            "locationdescription": "a spring that intermittently discharges hot water and steam"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "caldera",
+            "locationdescription": "a circular depression surrounded by steep cliffs"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "shield volcano",
+            "locationdescription": "a mountain with multiple vents emiting flowing lava"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "active volcano",
+            "locationdescription": "a smoke-bellowing mountain"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "volcano crater",
             "locationdescription": "a crater on top of a smoke-bellowing mountain"
           }
         }
@@ -1496,8 +1720,16 @@
           "m": 1,
           "v": "",
           "set": {
-            "location": "cloud castle",
-            "locationdescription": "a castle built in the clouds"
+            "location": "up in the sky",
+            "locationdescription": "high above the ground"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "cloudscape",
+            "locationdescription": "a thick blanket of clouds"
           }
         }
       ]
@@ -1506,6 +1738,14 @@
       "name": "space location",
       "explanation": "Locations in outer space.",
       "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "empty space",
+            "locationdescription": "the cold emptiness of space"
+          }
+        },
         {
           "m": 1,
           "v": "",
@@ -1520,6 +1760,14 @@
       "name": "planar location",
       "explanation": "Locations in other planes of existence.",
       "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "astral plane",
+            "locationdescription": "a swirling etheral mass of vivid colors"
+          }
+        },
         {
           "m": 1,
           "v": "",
