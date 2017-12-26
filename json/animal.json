@@ -4,13 +4,13 @@
   "variables": {
     "footnote": ""
   },
-  "explanation": "Animals from mammals to insects.",
+  "explanation": "Animals from insects to mammals.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "bugs": "Different regions (tropical, polar, etc.)",
   "to do": "Better term for 'coast'?",
   "see": "",
-  "date": "2017-10-26",
+  "date": "2017-12-26",
   "authors": "",
   "sources": "Wikipedia.org",
   "genre": "",
@@ -456,8 +456,11 @@
       "name": "ooze",
       "explanation": "Amoeboid ooze and jelly creatures.",
       "entries": [
+        "giant amoeba",
+        "blob",
         "ooze",
-        "jelly"
+        "jelly",
+        "slime mold"
       ]
     },
     {
@@ -518,6 +521,13 @@
       "entries": [
         "{domesticated bird}",
         "{domesticated mammal}"
+      ]
+    },
+    {
+      "name": "urban",
+      "explanation": "Animals living in cities and towns.",
+      "entries": [
+        "{urban mammal}"
       ]
     },
     {
