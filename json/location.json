@@ -1,20 +1,18 @@
 {
   "name": "location",
-  "resultPattern": "{milieu}{result}",
+  "resultPattern": "{result}",
   "variables": {
     "milieu": "",
     "milieudescription": "",
-    "location": "",
-    "locationdescription": "",
     "footnote": ""
   },
   "explanation": "location table",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
-  "note": "The location name not displayed directly but stored in a variable for later reuse.",
+  "note": "",
   "bugs": "",
   "to do": "Add themes to categorize adjectives and other elements.",
-  "see": "5_room_dungeon, hook_line_and_sinker_adventure",
-  "date": "2017-12-18",
+  "see": "5_room_dungeon, encounter, hook_line_and_sinker_adventure",
+  "date": "2017-12-26",
   "authors": "Esko Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -26,15 +24,15 @@
       "name": "result",
       "explanation": "Variations for resultPattern output.",
       "entries": [
-        "{var:location}",
-        "{adjective} {var:location}",
-        "{var:location} that is {complication}",
-        "{adjective} {var:location} that is {complication}"
+        "{location}",
+        "{adjective} {location}",
+        "{location}, {complication}",
+        "{adjective} {location}, {complication}"
       ]
     },
     {
-      "name": "milieu",
-      "explanation": "The general environment of the location types by rarity.",
+      "name": "location",
+      "explanation": "Location types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -45,11 +43,20 @@
     },
     {
       "name": "common",
-      "explanation": "Common milieu types.",
+      "explanation": "Common location types.",
+      "entries": [
+        "{city}",
+        "{countryside}",
+        "{wilderness}"
+      ]
+    },
+    {
+      "name": "city",
+      "explanation": "City location types.",
       "entries": [
         {
           "m": 1,
-          "v": "{indoor location}",
+          "v": "{indoor}",
           "set": {
             "milieu": "indoor",
             "milieudescription": "indoors"
@@ -57,7 +64,7 @@
         },
         {
           "m": 1,
-          "v": "{urban location}",
+          "v": "{urban}",
           "set": {
             "milieu": "urban",
             "milieudescription": "urban area"
@@ -65,15 +72,29 @@
         },
         {
           "m": 1,
-          "v": "{suburban location}",
+          "v": "{suburban}",
           "set": {
             "milieu": "suburban",
             "milieudescription": "suburban area"
           }
+        }
+      ]
+    },
+    {
+      "name": "countryside",
+      "explanation": "Countryside location types.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{village}",
+          "set": {
+            "milieu": "village",
+            "milieudescription": "village area"
+          }
         },
         {
           "m": 1,
-          "v": "{rural location}",
+          "v": "{rural}",
           "set": {
             "milieu": "rural",
             "milieudescription": "rural area"
@@ -81,15 +102,29 @@
         },
         {
           "m": 1,
-          "v": "{outpost location}",
+          "v": "{outpost}",
           "set": {
             "milieu": "outpost",
             "milieudescription": "far reaches of civilization"
           }
-        },
+        }
+      ]
+    },
+    {
+      "name": "wilderness",
+      "explanation": "Wilderness location types.",
+      "entries": [
+        "{land}",
+        "{water}"
+      ]
+    },
+    {
+      "name": "land",
+      "explanation": "Land location types.",
+      "entries": [
         {
           "m": 1,
-          "v": "{grassland location}",
+          "v": "{grassland}",
           "set": {
             "milieu": "grassland",
             "milieudescription": "plains"
@@ -97,7 +132,7 @@
         },
         {
           "m": 1,
-          "v": "{forest location}",
+          "v": "{forest}",
           "set": {
             "milieu": "forest",
             "milieudescription": "forested area"
@@ -105,7 +140,7 @@
         },
         {
           "m": 1,
-          "v": "{hill location}",
+          "v": "{hill}",
           "set": {
             "milieu": "hill",
             "milieudescription": "hilly area"
@@ -113,31 +148,21 @@
         },
         {
           "m": 1,
-          "v": "{mountain location}",
+          "v": "{mountain}",
           "set": {
             "milieu": "mountain",
             "milieudescription": "mountainous area"
           }
-        },
+        }
+      ]
+    },
+    {
+      "name": "water",
+      "explanation": "Water location types.",
+      "entries": [
         {
           "m": 1,
-          "v": "{river location}",
-          "set": {
-            "milieu": "river",
-            "milieudescription": "river"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{lake location}",
-          "set": {
-            "milieu": "lake",
-            "milieudescription": "lake"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{wetlands location}",
+          "v": "{wetlands}",
           "set": {
             "milieu": "wetlands",
             "milieudescription": "wetlands"
@@ -145,53 +170,97 @@
         },
         {
           "m": 1,
-          "v": "{coastal location}",
+          "v": "{river}",
           "set": {
-            "milieu": "coastal",
+            "milieu": "river",
+            "milieudescription": "river"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{lake}",
+          "set": {
+            "milieu": "lake",
+            "milieudescription": "lake"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{coast}",
+          "set": {
+            "milieu": "coast",
             "milieudescription": "coastal area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{sea}",
+          "set": {
+            "milieu": "sea",
+            "milieudescription": "sea"
           }
         }
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare milieu types.",
+      "explanation": "Rare location types.",
       "entries": [
         {
           "m": 1,
-          "v": "{naval location}",
+          "v": "{underground}",
           "set": {
-            "milieu": "naval",
-            "milieudescription": "sea"
+            "milieu": "underground",
+            "milieudescription": "underground area"
           }
         },
         {
           "m": 1,
-          "v": "{tundra location}",
+          "v": "{volcanic}",
+          "set": {
+            "milieu": "volcanic",
+            "milieudescription": "volcanic area"
+          }
+        }
+      ]
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic location types.",
+      "entries": [
+        "{polar}",
+        "{tropical}"
+      ]
+    },
+    {
+      "name": "polar",
+      "explanation": "Polar location types.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{tundra}",
           "set": {
             "milieu": "tundra",
-            "milieudescription": "tundra"
+            "milieudescription": "tundra terrain"
           }
         },
         {
           "m": 1,
-          "v": "{rainforest location}",
+          "v": "{glacial}",
           "set": {
-            "milieu": "rainforest",
-            "milieudescription": "rainforest"
+            "milieu": "glacial",
+            "milieudescription": "glacial area"
           }
-        },
+        }
+      ]
+    },
+    {
+      "name": "tropical",
+      "explanation": "Tropical location types.",
+      "entries": [
         {
           "m": 1,
-          "v": "{savanna location}",
-          "set": {
-            "milieu": "savanna",
-            "milieudescription": "savanna"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{desert location}",
+          "v": "{desert}",
           "set": {
             "milieu": "desert",
             "milieudescription": "desert"
@@ -199,37 +268,29 @@
         },
         {
           "m": 1,
-          "v": "{underground location}",
+          "v": "{savanna}",
           "set": {
-            "milieu": "underground",
-            "milieudescription": "underground area"
+            "milieu": "savanna",
+            "milieudescription": "savanna"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{rainforest}",
+          "set": {
+            "milieu": "rainforest",
+            "milieudescription": "rainforest"
           }
         }
       ]
     },
     {
       "name": "special",
-      "explanation": "Special milieu types (not produced by random).",
+      "explanation": "Special location types (not produced by random).",
       "entries": [
         {
           "m": 1,
-          "v": "{volcanic location}",
-          "set": {
-            "milieu": "volcanic",
-            "milieudescription": "volcanic area"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{glacial location}",
-          "set": {
-            "milieu": "glacial",
-            "milieudescription": "glacial area"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{underwater location}",
+          "v": "{underwater}",
           "set": {
             "milieu": "underwater",
             "milieudescription": "underwater"
@@ -237,7 +298,15 @@
         },
         {
           "m": 1,
-          "v": "{air location}",
+          "v": "{earth}",
+          "set": {
+            "milieu": "earth",
+            "milieudescription": "in the ground"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{air}",
           "set": {
             "milieu": "air",
             "milieudescription": "air"
@@ -245,7 +314,7 @@
         },
         {
           "m": 1,
-          "v": "{space location}",
+          "v": "{space}",
           "set": {
             "milieu": "space",
             "milieudescription": "space"
@@ -253,7 +322,7 @@
         },
         {
           "m": 1,
-          "v": "{planar location}",
+          "v": "{planar}",
           "set": {
             "milieu": "planar",
             "milieudescription": "extraplanar area"
@@ -262,978 +331,990 @@
       ]
     },
     {
-      "name": "indoor location",
+      "name": "indoors",
+      "explanation": "Indoors location structure.",
+      "entries": [
+        "{indoors site}",
+        "{indoors site} with {indoors feature}"
+      ]
+    },
+    {
+      "name": "indoors site",
       "explanation": "Locations inside buildings.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "hall",
-            "locationdescription": "a hall built inside the city walls, where few have entered and even fewer returned"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "chamber",
-            "locationdescription": "a mysterious chamber where bypassers suspect something strange is going on"
-          }
-        }
+        "storage room",
+        "hallway",
+        "hall",
+        "chamber",
+        "bedchamber",
+        "library",
+        "scriptorium",
+        "kitchen"
       ]
     },
     {
-      "name": "urban location",
-      "explanation": "Locations in a city.",
+      "name": "indoors feature",
+      "explanation": "Features for locations inside buildings.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "town",
-            "locationdescription": "a town whose inhabitants are in a dire need of help"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "house",
-            "locationdescription": "a house where something evil hides"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "temple",
-            "locationdescription": "a temple hiding dark secrets"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "hall",
-            "locationdescription": "a hall built inside the city walls, where few have entered and even fewer returned"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "chamber",
-            "locationdescription": "a mysterious chamber where bypassers suspect something strange is going on"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "monument",
-            "locationdescription": "a colossal monument built in ancient times"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "undercity",
-            "locationdescription": "a shadowy undercity where life is cheap"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "sewer",
-            "locationdescription": "a sewer complex built under the city"
-          }
-        }
+        "staircase",
+        "fireplace"
       ]
     },
     {
-      "name": "suburban location",
+      "name": "urban",
+      "explanation": "City location structure.",
+      "entries": [
+        "{urban site}",
+        "{urban site} with {urban feature}"
+      ]
+    },
+    {
+      "name": "urban site",
+      "explanation": "Locations in a city or a town.",
+      "entries": [
+        "house",
+        "inn",
+        "tavern",
+        "shop",
+        "marketplace",
+        "temple",
+        "monument",
+        "clock tower",
+        "undercity",
+        "sewer"
+      ]
+    },
+    {
+      "name": "urban feature",
+      "explanation": "Features for locations in a city.",
+      "entries": [
+        "well",
+        "fountain",
+        "statue",
+        "lamp post",
+        "notice board",
+        "sewer entrance",
+        "stacks of crates"
+      ]
+    },
+    {
+      "name": "suburban",
+      "explanation": "City outskirts location structure.",
+      "entries": [
+        "{suburban site}",
+        "{suburban site} with {suburban feature}"
+      ]
+    },
+    {
+      "name": "suburban site",
       "explanation": "Locations in the outskirts of a city.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "prison",
-            "locationdescription": "an old prison building in a sparsely populated area"
-          }
-        }
+        "hovel",
+        "prison"
       ]
     },
     {
-      "name": "rural location",
+      "name": "suburban feature",
+      "explanation": "Features for locations in the outskirts of a city.",
+      "entries": [
+        "stable",
+        "park"
+      ]
+    },
+    {
+      "name": "village",
+      "explanation": "Village location structure.",
+      "entries": [
+        "{village site}",
+        "{village site} with {village feature}"
+      ]
+    },
+    {
+      "name": "village site",
+      "explanation": "Locations in a village or a hamlet.",
+      "entries": [
+        "house",
+        "shed",
+        "stable",
+        "inn",
+        "village green"
+      ]
+    },
+    {
+      "name": "village feature",
+      "explanation": "Features in a village.",
+      "entries": [
+        "well",
+        "stone wall",
+        "small altar",
+        "pond",
+        "tall rock",
+        "old tree",
+        "oddly shaped tree",
+        "cemetary"
+      ]
+    },
+    {
+      "name": "rural",
+      "explanation": "Countryside location structure.",
+      "entries": [
+        "{rural site}",
+        "{rural site} with {rural feature}"
+      ]
+    },
+    {
+      "name": "rural site",
       "explanation": "Locations in the countryside.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "village",
-            "locationdescription": "a country villge"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "manor",
-            "locationdescription": "a country manor where strange occurrences are said to happen"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "grove",
-            "locationdescription": "a grove of trees planted a long time ago"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "maze",
-            "locationdescription": "a complex maze structure built for an unknown purpose"
-          }
-        }
+        "manor",
+        "hedge maze",
+        "field",
+        "pasture",
+        "grove",
+        "orchard",
+        "garden",
+        "beehives",
+        "farm",
+        "aqueduct"
       ]
     },
     {
-      "name": "outpost location",
+      "name": "rural feature",
+      "explanation": "Features for locations in the countryside.",
+      "entries": [
+        "slippery mud",
+        "ditch",
+        "small lake",
+        "old statue",
+        "flower bushes",
+        "berry bushes",
+        "thorn bushes",
+        "stream",
+        "hillock",
+        "mound",
+        "gravestone"
+      ]
+    },
+    {
+      "name": "outpost",
+      "explanation": "Outpost location structure.",
+      "entries": [
+        "{outpost site}",
+        "{outpost site} with {outpost feature}"
+      ]
+    },
+    {
+      "name": "outpost site",
       "explanation": "Locations in outposts, such as camps and fortifications.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "camp",
-            "locationdescription": "a temporary camp"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "encampment",
-            "locationdescription": "an encampment"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "donjon",
-            "locationdescription": "a donjon that was once built to protect a nearby town"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "tower",
-            "locationdescription": "a lone, imposing tower"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "keep",
-            "locationdescription": "a lone keep built to guard the surrounding lands"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "stronghold",
-            "locationdescription": "a small fortress"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "fortification",
-            "locationdescription": "a makeshift fortress"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "fort",
-            "locationdescription": "a temporary fortress built from logs"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "fortress",
-            "locationdescription": "a fortress built to guard an ancient kingdom from its already forgotten enemies"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "castle",
-            "locationdescription": "a foreboding castle"
-          }
-        }
+        "camp",
+        "encampment",
+        "donjon",
+        "tower",
+        "keep",
+        "stronghold",
+        "fortification",
+        "fort",
+        "fortress",
+        "castle"
       ]
     },
     {
-      "name": "grassland location",
+      "name": "outpost feature",
+      "explanation": "Features for locations in outposts.",
+      "entries": [
+        "barricade",
+        "palisade",
+        "dry ditch",
+        "moat",
+        "earth wall",
+        "stone wall",
+        "iron gate",
+        "secret gate",
+        "watch tower",
+        "target range"
+      ]
+    },
+    {
+      "name": "grassland",
+      "explanation": "Grasslands location structure.",
+      "entries": [
+        "{grassland site}",
+        "{grassland site} with {grassland feature}"
+      ]
+    },
+    {
+      "name": "grassland site",
       "explanation": "Locations on grasslands.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "moor",
-            "locationdescription": "a sparse moor"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "land",
-            "locationdescription": "a plot of land in the wilderness"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "dolmen",
-            "locationdescription": "an ancient underground tomb guarded by standing stones"
-          }
-        }
+        "grassland",
+        "moor",
+        "plain"
       ]
     },
     {
-      "name": "tundra location",
+      "name": "grassland feature",
+      "explanation": "Features for locations on grasslands.",
+      "entries": [
+        "very tall grass",
+        "dolmen"
+      ]
+    },
+    {
+      "name": "tundra",
+      "explanation": "Low temperature wilderness location structure.",
+      "entries": [
+        "{tundra site}",
+        "{tundra site} with {tundra feature}"
+      ]
+    },
+    {
+      "name": "tundra site",
       "explanation": "Locations in low temperature wilderness.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "wilderness",
-            "locationdescription": "a remote wilderness where strange creatures roam"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "wasteland",
-            "locationdescription": "an uninhabited wasteland in the wilderness"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "plain of dwarf shrubs",
-            "locationdescription": "treeless landscape with only small shrubs, moss and lichen growing on the ground"
-          }
-        }
+        "wilderness",
+        "wasteland",
+        "plain of dwarf shrubs"
       ]
     },
     {
-      "name": "forest location",
+      "name": "tundra feature",
+      "explanation": "Features for locations in low temperature wilderness.",
+      "entries": [
+        "twisted, small trees",
+        "small bushes",
+        "dwarf shrubs"
+      ]
+    },
+    {
+      "name": "forest",
+      "explanation": "Woods location structure.",
+      "entries": [
+        "{forest site}",
+        "{forest site} with {forest feature}"
+      ]
+    },
+    {
+      "name": "forest site",
       "explanation": "Locations in the woods.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "forest",
-            "locationdescription": "a dense forest hiding dark secrets under its canopy"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "mound",
-            "locationdescription": "a mound in the middle of a dark forest"
-          }
-        }
+        "forest",
+        "woods",
+        "forest path",
+        "forest clearing",
+        "cottage"
       ]
     },
     {
-      "name": "rainforest location",
+      "name": "forest feature",
+      "explanation": "Features for locations in the woods.",
+      "entries": [
+        "spring",
+        "high pile of felled timber",
+        "mushroom ring",
+        "burial mound"
+      ]
+    },
+    {
+      "name": "rainforest",
+      "explanation": "Tropical forest location structure.",
+      "entries": [
+        "{rainforest site}",
+        "{rainforest site} with {rainforest feature}"
+      ]
+    },
+    {
+      "name": "rainforest site",
       "explanation": "Locations in the tropical forests.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "rainforest floor",
-            "locationdescription": "sparse soil shadowed by a thick canopy of trees and other vegetation"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "jungle",
-            "locationdescription": "a dense jungle teeming with life"
-          }
-        }
+        "rainforest",
+        "jungle"
       ]
     },
     {
-      "name": "savanna location",
+      "name": "rainforest feature",
+      "explanation": "Features for locations in the tropical forests.",
+      "entries": [
+        "thick bushes",
+        "hanging lianas"
+      ]
+    },
+    {
+      "name": "savanna",
+      "explanation": "Tropical grasslands location structure.",
+      "entries": [
+        "{savanna site}",
+        "{savanna site} with {savanna feature}"
+      ]
+    },
+    {
+      "name": "savanna site",
       "explanation": "Locations in the tropical grasslands.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "grass plain",
-            "locationdescription": "a grassy plain with sparse trees"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "outcrop of rocks",
-            "locationdescription": "an isolated hill of jumbled rocks"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "termite nest",
-            "locationdescription": "a tall ground formation apparently build by termites"
-          }
-        }
+        "grass plain",
+        "watering hole"
       ]
     },
     {
-      "name": "desert location",
+      "name": "savanna feature",
+      "explanation": "Features for locations in the tropical grasslands.",
+      "entries": [
+        "small patch of trees",
+        "a lone tree",
+        "outcrop of rocks",
+        "termite nest"
+      ]
+    },
+    {
+      "name": "desert",
+      "explanation": "Desert location structure.",
+      "entries": [
+        "{desert site}",
+        "{desert site} with {desert feature}"
+      ]
+    },
+    {
+      "name": "desert site",
       "explanation": "Locations in the desert.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "sand dunes",
-            "locationdescription": "hills formed from sand"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "oasis",
-            "locationdescription": "a watering hole in the middle of the desert"
-          }
-        }
+        "sand dunes",
+        "oasis"
       ]
     },
     {
-      "name": "hill location",
+      "name": "desert feature",
+      "explanation": "Features for locations in the desert.",
+      "entries": [
+        "shifting sand",
+        "mirages",
+        "razor-sharp rocks",
+        "animal skeleton"
+      ]
+    },
+    {
+      "name": "hill",
+      "explanation": "Hilly location structure.",
+      "entries": [
+        "{hill site}",
+        "{hill site} with {hill feature}"
+      ]
+    },
+    {
+      "name": "hill site",
       "explanation": "Locations in the hills.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "dell",
-            "locationdescription": "secluded hollow between hills"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "hillside",
-            "locationdescription": "side of a hill"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "hilltop",
-            "locationdescription": "top of a hill"
-          }
-        }
+        "dell",
+        "hillside",
+        "hilltop"
       ]
     },
     {
-      "name": "mountain location",
+      "name": "hill feature",
+      "explanation": "Features for locations in the hills.",
+      "entries": [
+        "bushes",
+        "steep slope"
+      ]
+    },
+    {
+      "name": "mountain",
+      "explanation": "Mountainous location structure.",
+      "entries": [
+        "{mountain site}",
+        "{mountain site} with {mountain feature}"
+      ]
+    },
+    {
+      "name": "mountain site",
       "explanation": "Locations in the mountains.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "mountain",
-            "locationdescription": "a high mountain where few dare venture"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "eyrie",
-            "locationdescription": "an eyrie built on a high mountaintop"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "vale",
-            "locationdescription": "a remote vale hidden between impassable mountains"
-          }
-        }
+        "mountain",
+        "eyrie",
+        "canyon",
+        "vale"
       ]
     },
     {
-      "name": "river location",
+      "name": "mountain feature",
+      "explanation": "Features for locations in the mountains.",
+      "entries": [
+        "steep cliff",
+        "precariously balanced boulder",
+        "waterfall"
+      ]
+    },
+    {
+      "name": "river",
+      "explanation": "Running freshwater location structure.",
+      "entries": [
+        "{river site}",
+        "{river site} with {river feature}"
+      ]
+    },
+    {
+      "name": "river site",
       "explanation": "Locations on running freshwater (rivers, streams, etc).",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "ford",
-            "locationdescription": "a ford in a stream"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "river delta",
-            "locationdescription": "slow-moving stream entering a larger body of water"
-          }
-        }
+        "river",
+        "stream",
+        "river delta"
       ]
     },
     {
-      "name": "lake location",
+      "name": "river feature",
+      "explanation": "Features for locations on running freshwater.",
+      "entries": [
+        "shallows",
+        "ford",
+        "bridge",
+        "rapids",
+        "waterfall",
+        "canal lock"
+      ]
+    },
+    {
+      "name": "lake",
+      "explanation": "Still freshwater location structure.",
+      "entries": [
+        "{lake site}",
+        "{lake site} with {lake feature}"
+      ]
+    },
+    {
+      "name": "lake site",
       "explanation": "Locations on still freshwater (lakes, ponds, etc).",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "lakeshore",
-            "locationdescription": "the shore of a lake"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "isle",
-            "locationdescription": "an isle in the middle of a lake"
-          }
-        }
+        "lakeshore",
+        "lake surface",
+        "isle"
       ]
     },
     {
-      "name": "wetlands location",
+      "name": "lake feature",
+      "explanation": "Features for locations on still freshwater.",
+      "entries": [
+        "batch of reeds",
+        "raft of felled timber"
+      ]
+    },
+    {
+      "name": "wetlands",
+      "explanation": "Swampland location structure.",
+      "entries": [
+        "{wetlands site}",
+        "{wetlands site} with {wetlands feature}"
+      ]
+    },
+    {
+      "name": "wetlands site",
       "explanation": "Locations on bogs, swamps, etc.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "mire",
-            "locationdescription": "an unhospitable mire"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "swamp",
-            "locationdescription": "an almost impassable, fetid swamp"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "bog",
-            "locationdescription": "a reeking bog"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "fen",
-            "locationdescription": "a seldom-ventured fen"
-          }
-        }
+        "mire",
+        "marsh",
+        "swamp",
+        "bog",
+        "fen"
       ]
     },
     {
-      "name": "coastal location",
+      "name": "wetlands feature",
+      "explanation": "Features for locations on bogs, swamps, etc.",
+      "entries": [
+        "moss-covered trees",
+        "moss-covered pond",
+        "patch of wild berries",
+        "quicksand",
+        "enormous lily pads"
+      ]
+    },
+    {
+      "name": "coast",
+      "explanation": "Coastal location structure.",
+      "entries": [
+        "{coast site}",
+        "{coast site} with {coast feature}"
+      ]
+    },
+    {
+      "name": "coast site",
       "explanation": "Locations on the coast.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "grotto",
-            "locationdescription": "a grotto formed by an underground water passage"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "cove",
-            "locationdescription": "a cove on the coastline"
-          }
-        }
+        "mudflats",
+        "tidal island",
+        "cove",
+        "grotto"
       ]
     },
     {
-      "name": "naval location",
-      "explanation": "Locations on the sea.",
+      "name": "coast feature",
+      "explanation": "Features for locations on the coast.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "ship",
-            "locationdescription": "a ship sailing to a far-off lands"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "island",
-            "locationdescription": "a small island in the middle of a sea"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "open sea",
-            "locationdescription": "sea with no land on sight"
-          }
-        }
+        "flotsam",
+        "jetsam"
       ]
     },
     {
-      "name": "glacial location",
+      "name": "sea",
+      "explanation": "Naval location structure.",
+      "entries": [
+        "{sea site}",
+        "{sea site} with {sea feature}"
+      ]
+    },
+    {
+      "name": "sea site",
+      "explanation": "Locations at sea.",
+      "entries": [
+        "ship",
+        "open sea",
+        "island"
+      ]
+    },
+    {
+      "name": "sea feature",
+      "explanation": "Features for locations at sea.",
+      "entries": [
+        "reef",
+        "floating cargo"
+      ]
+    },
+    {
+      "name": "glacial",
+      "explanation": "Snow and ice covered location structure.",
+      "entries": [
+        "{glacial site}",
+        "{glacial site} with {glacial feature}"
+      ]
+    },
+    {
+      "name": "glacial site",
       "explanation": "Locations on snow and ice covered areas.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "ice field",
-            "locationdescription": "floating sheets of ice"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "iceberg",
-            "locationdescription": "a floating mountain of ice"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "glacier",
-            "locationdescription": "ice-covered, sparse wilderness"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "snow mountain",
-            "locationdescription": "snow-covered mountainside"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "ice formation",
-            "locationdescription": "a strange-looking ice formation in the cold, snow-covered wilderness"
-          }
-        }
+        "ice field",
+        "iceberg",
+        "glacier",
+        "snow mountain"
       ]
     },
     {
-      "name": "underwater location",
+      "name": "glacial feature",
+      "explanation": "Features for glacial locations.",
+      "entries": [
+        "ice formation",
+        "crevasse"
+      ]
+    },
+    {
+      "name": "underwater",
+      "explanation": "Underwater location structure.",
+      "entries": [
+        "{underwater site}",
+        "{underwater site} with {underwater feature}"
+      ]
+    },
+    {
+      "name": "underwater site",
       "explanation": "Locations under the water surface.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "underwater",
-            "locationdescription": "the depths of the ocean"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "sea bottom",
-            "locationdescription": "bottom of the sea"
-          }
-        }
+        "underwater",
+        "sea bottom"
       ]
     },
     {
-      "name": "underground location",
+      "name": "underwater feature",
+      "explanation": "Features for locations under the water surface.",
+      "entries": [
+        "underwater reef"
+      ]
+    },
+    {
+      "name": "underground",
+      "explanation": " Underground location structure.",
+      "entries": [
+        "{underground site}",
+        "{underground site} with {underground feature}"
+      ]
+    },
+    {
+      "name": "underground site",
       "explanation": "Locations under the earth's surface.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "cave",
-            "locationdescription": "a deep, unexplored cave"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "cavern",
-            "locationdescription": "an underground cavern"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "lair",
-            "locationdescription": "a lair where dwells something hostile"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "tomb",
-            "locationdescription": "a tomb where dwells something that is not quite dead"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "crypt",
-            "locationdescription": "an underground burial chamber"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "grave",
-            "locationdescription": "a disturbed burial site"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "labyrinth",
-            "locationdescription": "a labyrinth built in a bygone age"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "vault",
-            "locationdescription": "a vault that is rumoured to contain {var:treasure}"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "dungeon",
-            "locationdescription": "an underground dungeon complex"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "mine",
-            "locationdescription": "a deserted mine that has been stripped off valuable ore"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "pit",
-            "locationdescription": "a deep underground pit from where strange emanations have been heard"
-          }
-        }
+        "cave",
+        "cavern",
+        "pit",
+        "mine",
+        "lair",
+        "tomb",
+        "crypt",
+        "grave",
+        "labyrinth",
+        "vault",
+        "dungeon"
       ]
     },
     {
-      "name": "volcanic location",
+      "name": "underground feature",
+      "explanation": "Features for locations under the earth's surface.",
+      "entries": [
+        "unreadable stone tablet",
+        "stone pillar",
+        "crystal formations",
+        "mirror crystals"
+      ]
+    },
+    {
+      "name": "volcanic",
+      "explanation": "Volcanic location structure.",
+      "entries": [
+        "{volcanic site}",
+        "{volcanic site} with {volcanic feature}"
+      ]
+    },
+    {
+      "name": "volcanic site",
       "explanation": "Volcanic locations.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "hardened lava field",
-            "locationdescription": "an uneven field of cooled down and hardened lava"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "hot spring",
-            "locationdescription": "a spring filled with steamy, hot water"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "geyser",
-            "locationdescription": "a spring that intermittently discharges hot water and steam"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "caldera",
-            "locationdescription": "a circular depression surrounded by steep cliffs"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "shield volcano",
-            "locationdescription": "a mountain with multiple vents emiting flowing lava"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "active volcano",
-            "locationdescription": "a smoke-bellowing mountain"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "volcano crater",
-            "locationdescription": "a crater on top of a smoke-bellowing mountain"
-          }
-        }
+        "hardened lava field",
+        "hot spring",
+        "geyser",
+        "caldera",
+        "shield volcano",
+        "dormant volcano",
+        "active volcano",
+        "volcano crater"
       ]
     },
     {
-      "name": "air location",
+      "name": "volcanic feature",
+      "explanation": "Features for volcanic locations.",
+      "entries": [
+        "hardened lava formation",
+        "quicksand-like ash drifts",
+        "lava pits",
+        "flowing lava",
+        "poisonous gases in the air",
+        "volatile gases in the air",
+        "flammable gas pockets",
+        "trembling ground"
+      ]
+    },
+    {
+      "name": "earth",
+      "explanation": "Soil location structure.",
+      "entries": [
+        "{earth site}",
+        "{earth site} with {earth feature}"
+      ]
+    },
+    {
+      "name": "earth site",
+      "explanation": "Locations in the ground.",
+      "entries": [
+        "in the soil",
+        "in the earth"
+      ]
+    },
+    {
+      "name": "earth feature",
+      "explanation": "Features for locations in the ground.",
+      "entries": [
+        "a groundwater vein",
+        "large rocks"
+      ]
+    },
+    {
+      "name": "air",
+      "explanation": "Airborne location structure.",
+      "entries": [
+        "{air site}",
+        "{air site} with {air feature}"
+      ]
+    },
+    {
+      "name": "air site",
       "explanation": "Locations in the sky.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "up in the sky",
-            "locationdescription": "high above the ground"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "cloudscape",
-            "locationdescription": "a thick blanket of clouds"
-          }
-        }
+        "airship",
+        "up in the sky",
+        "cloudscape"
       ]
     },
     {
-      "name": "space location",
+      "name": "air feature",
+      "explanation": "Features for locations in the sky.",
+      "entries": [
+        "thick clouds",
+        "moist rain clouds",
+        "blinding sunlight"
+      ]
+    },
+    {
+      "name": "space",
+      "explanation": "Outer space location structure.",
+      "entries": [
+        "{space site}",
+        "{space site} with {space feature}"
+      ]
+    },
+    {
+      "name": "space site",
       "explanation": "Locations in outer space.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "empty space",
-            "locationdescription": "the cold emptiness of space"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "asteroid",
-            "locationdescription": "a mountain-sized rock hurling through empty space"
-          }
-        }
+        "empty space",
+        "asteroid"
       ]
     },
     {
-      "name": "planar location",
+      "name": "space feature",
+      "explanation": "Features for locations in outer space.",
+      "entries": [
+        "meteor"
+      ]
+    },
+    {
+      "name": "planar",
+      "explanation": "Extraplanar location structure.",
+      "entries": [
+        "{planar site}",
+        "{planar site} with {planar feature}"
+      ]
+    },
+    {
+      "name": "planar site",
       "explanation": "Locations in other planes of existence.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "astral plane",
-            "locationdescription": "a swirling etheral mass of vivid colors"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "ethereal construction",
-            "locationdescription": "an ethereal construction in the astral plane"
-          }
-        }
+        "astral plane",
+        "ethereal plane"
+      ]
+    },
+    {
+      "name": "planar feature",
+      "explanation": "Features for locations in other planes.",
+      "entries": [
+        "ethereal vortex",
+        "extraplanar portal"
       ]
     },
     {
       "name": "mythological",
+      "explanation": "Mythic location structure.",
+      "entries": [
+        "{mythological site}",
+        "{mythological site} with {mythological feature}"
+      ]
+    },
+    {
+      "name": "mythological site",
       "explanation": "Locations once rumoured to have existed.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "lost civilization",
-            "locationdescription": "a lost civilization engulfed by the sea aeons ago"
-          }
-        }
+        "lost civilization"
+      ]
+    },
+    {
+      "name": "mythological feature",
+      "explanation": "Features for locations once rumoured to have existed.",
+      "entries": [
+        "ancient monument"
       ]
     },
     {
       "name": "fantasy",
+      "explanation": "Fantastic location structure.",
+      "entries": [
+        "{fantasy site}",
+        "{fantasy site} with {fantasy feature}"
+      ]
+    },
+    {
+      "name": "fantasy site",
       "explanation": "Locations for fantasy worlds.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "cloud castle",
-            "locationdescription": "a castle built in the clouds"
-          }
-        }
+        "floating island",
+        "cloud castle"
+      ]
+    },
+    {
+      "name": "fantasy feature",
+      "explanation": "Features for locations for fantasy worlds.",
+      "entries": [
+        "dimensional portal"
       ]
     },
     {
       "name": "modern",
+      "explanation": "Modern world location structure.",
+      "entries": [
+        "{modern site}",
+        "{modern site} with {modern feature}"
+      ]
+    },
+    {
+      "name": "modern site",
       "explanation": "Locations for modern worlds.",
       "entries": [
         "{common}",
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "parking lot",
-            "locationdescription": "a field reserved for parking cars"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "mall",
-            "locationdescription": "a shopping center"
-          }
-        }
+        "parking lot",
+        "mall"
+      ]
+    },
+    {
+      "name": "modern feature",
+      "explanation": "Features for modern world locations.",
+      "entries": [
+        "parking meter",
+        "billboard",
+        "conveyor belt",
+        "moving machinery"
       ]
     },
     {
       "name": "futuristic",
+      "explanation": "Science fiction location structure.",
+      "entries": [
+        "{futuristic site}",
+        "{futuristic site} with {futuristic feature}"
+      ]
+    },
+    {
+      "name": "futuristic site",
       "explanation": "Locations for science fiction worlds.",
       "entries": [
         "{modern}",
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "space station",
-            "locationdescription": "a permanent base in space"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "space ship",
-            "locationdescription": "an interplanetary vehicle"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "generation ship",
-            "locationdescription": "an interplanetary vehicle where an entire colony lives for generations"
-          }
-        }
+        "space station",
+        "space ship",
+        "generation ship"
+      ]
+    },
+    {
+      "name": "futuristic feature",
+      "explanation": "Features for locations for science fiction worlds.",
+      "entries": [
+        "airlock",
+        "comm station"
       ]
     },
     {
       "name": "adjective",
       "explanation": "Adjectives describing the location.",
       "entries": [
+        "dilapidated",
+        "decayed",
+        "ruined",
+        "burned down",
+        "ramshackle",
         "ancient",
-        "fabled",
-        "unexplored",
         "enemy-infested"
       ]
     },
     {
       "name": "complication",
-      "explanation": "Complications for the location.",
+      "explanation": "Complication types by rarity.",
       "entries": [
-        "haunted",
+        {
+          "m": 10,
+          "v": "{common complication}"
+        },
+        "{rare complication}"
+      ]
+    },
+    {
+      "name": "common complication",
+      "explanation": "Common complications for the location.",
+      "entries": [
+        "{lighting}",
+        "{hazard}",
+        "{bystander}",
+        "{enemy}"
+      ]
+    },
+    {
+      "name": "lighting",
+      "explanation": "Complications caused by light or darkness.",
+      "entries": [
+        "covered in darkness",
+        "covered by fog that prevents seeing far",
+        "filled with smoke that makes it difficult to see",
+        "brightly lit"
+      ]
+    },
+    {
+      "name": "hazard",
+      "explanation": "Complications caused by natural hazards.",
+      "entries": [
+        "catching fire",
+        "blazing on fire",
+        "flooded by rising water",
+        "covered by waist-high water",
+        "ravaged by an earthquake"
+      ]
+    },
+    {
+      "name": "bystander",
+      "explanation": "Complications caused by bystanders.",
+      "entries": [
+        "toddler moving in the area",
+        "innocents captured in the area"
+      ]
+    },
+    {
+      "name": "enemy",
+      "explanation": "Complications caused by enemies.",
+      "entries": [
         "being invaded",
-        "patrolled by the enemy",
-        "magically dead",
+        "besieged by the enemy",
+        "patrolled by the enemy"
+      ]
+    },
+    {
+      "name": "rare complication",
+      "explanation": "Rare complications for the location.",
+      "entries": [
+        "{contamination}"
+      ]
+    },
+    {
+      "name": "contamination",
+      "explanation": "Complications caused by contamination.",
+      "entries": [
         "contaminated by a disease",
-        "tainted with chaos magic",
+        "poisonous gases in the air"
+      ]
+    },
+    {
+      "name": "special complication",
+      "explanation": "Special complications for the location.",
+      "entries": [
+        "{supernatural}",
+        "{magic}",
+        "{scifi}"
+      ]
+    },
+    {
+      "name": "supernatural",
+      "explanation": "Supernatural complications for the location.",
+      "entries": [
+        "cursed",
+        "haunted",
         "defiled by infernal forces"
+      ]
+    },
+    {
+      "name": "magic",
+      "explanation": "Magical complications for the location.",
+      "entries": [
+        "magically dead",
+        "tainted with chaos magic",
+        "abounding with wild magic",
+        "reality rift",
+        "portal to another area within the location"
+      ]
+    },
+    {
+      "name": "scifi",
+      "explanation": "Technological complications for the location.",
+      "entries": [
+        "zero gravity field",
+        "reversed gravity field"
       ]
     }
   ]
