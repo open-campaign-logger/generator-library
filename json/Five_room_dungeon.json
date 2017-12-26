@@ -1,5 +1,5 @@
 {
-  "name": "5 Room Dungeon",
+  "name": "Five Room Dungeon",
   "resultPattern": "{HTML formatting}{difficulty}{milieu}{goal} {macguffin}{artifact}{treasure}{minion}{herald}{guardian}{monster}{beast}{traitor}{tempter}{shapeshifter}{trickster}{rival}{inhabitant}{captive}{mentor}{ally}{hindrance}{danger}{trap}{adventure description}",
   "variables": {
     "starttitle": "",
