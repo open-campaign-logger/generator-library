@@ -1,8 +1,8 @@
 [//]: # (User Guide document for the Generator functionality of the Campaign Logger gamemastering tool.)
 
-[//]: # (Author: Esko Vesala.)
+[//]: # (Authors: Esko Vesala, Peter Sotos.)
 
-[//]: # (Date: 2017-10-06.)
+[//]: # (Date: 2017-12-26.)
 
 
 # Generator Guide
@@ -33,6 +33,8 @@ It is recommended to write generator tables using a text editor with JSON suppor
 * https://github.com/jdorn/json-editor
 * https://github.com/rsuter/VisualJsonEditor (Windows only)
 * https://atom.io/ (JSON plugins must be installed separately)
+
+The generator JSON file names can contain spaces and other special characters supported by the file system.
 
 
 ## Crash Course
@@ -96,7 +98,7 @@ And if there are several tables in the *tables* property, there must be commas b
 
 Each of the tables has the following properties:
 
-* **name**: As already seen, the *name* property gives the table a name that can be used for calling that table and outputting the result.
+* **name**: As already seen, the *name* property gives the table a name that can be used for calling that table and outputting the result. The table name can contain spaces.
 
 * **entries**: The *entries* property contains a list of the results that this table can produce. Each entry must be enclosed in quotation marks. There must be commas between each entry. (But not after the last entry.)
 
@@ -113,13 +115,24 @@ Each entry must be enclosed within quotes, and separated by commas (again, no co
 Entries can be strings from a single character to an entire paragraph of text.
 
 
-### That's it!
+### That's It!
 
 That is all you need for creating basic tables that produce randomly picked results from lists.
 
 Your next step could be experimenting with more complex *resultPattern* definitions that include several table calls. Something like:
 
     "resultPattern": "In a {location}, you encounter {monster} that is guarding {treasure}.",
+
+
+## Using Your Custom Generators
+
+To install a new generator to Campaign Logger, click the *Options* button (the cogwheel icon) and select the *Manage Custom Generators* option. From the Generators drop down menu, select the *Add new generator...* option and click the *OK* button.
+
+Now select and copy the new generator text to the clipboard (Ctrl+C), select the default text from the New Generator window (Ctrl+A), and replace the default generator content by pasting the copied generator text into the text box (Ctrl+V). Click the *Save* button.
+
+In the Campaign Logger user interface, there is a button underneath the *Log Entry* section called *Show Generators*. Clicking on this button will show your custom generators.
+
+The Generators display can have several tabs. The *Uncategorized* tab shows the generators that do not have the Categories property defined. Other generators are listed under different tabs, according to their Categories value.
 
 
 # Advanced Topics
@@ -140,22 +153,36 @@ To add an indented footnote on the next line after an oracle's statement, you co
     "resultPattern": "{oracle statement} \r\n\t 1) This may not come true.",
 
 
-## External Subtables
+## Calling External Tables
 
-Not all tables used in the *resultPattern* definition must be located in the same file.
+Not all tables used in the *resultPattern* definition must be located in the same file. You can call another table in three different ways, depending on where the external table is located.
 
-Campaign Logger comes with a standard set of help tables that can be called from any table by add the *lib:* string in front of the table name:
+The Campaign Logger server has a standard library of help tables that can be called from any table by adding the *lib:* string in front of the table name:
 
-    {lib:generatorName#tableName}
+    {lib:generatorName}
 
-    {private:tableName}
 
-    {gen:generatorName#tableName}
+Help tables installed on your own Campaign Logger setup using the *Manage Custom Generators* option can be called from any table by adding the *gen:* string in front of the table name:
+
+    {gen:generatorName}
+
+
+Help tables installed on the *Private Library* section of the *Manage Custom Generators* option can be called from any table by adding the *private:* string in front of the table name:
+
+    {private:generatorName}
+
+The generator name used in the call is the name of the JSON file.
+
+The external table call can also specify a subtable within the called generator. To do that, insert a hash mark (#) after the file name, and then the name of the subtable.
+
+    {lib:generatorName#subtable name}
+
+Note that there are no spaces in front of after the *#* character. The subtable name can contain spaces.
 
 
 ## Weighing Values
 
-If you want some table entries to be more common than others, you can specify a *multiplicity* property to it.
+If you want some table entries to be more common than others, you can specify the *multiplicity* property (m) to it.
 
 This example defines an entry that appears thee times more likely than unweighed values:
 
@@ -163,6 +190,8 @@ This example defines an entry that appears thee times more likely than unweighed
           "m": 3,
           "v": "three times as common entry"
         },
+
+The "m" property causes this entry to appear three times as often as an ordinary entry. The "v" property contains the output produced by that entry.
 
 
 ## Variables
@@ -197,13 +226,13 @@ Complex generators (as opposed to simpler tables) use a standard structure to ma
 
 This mandatory property specifies the name that shown in the list of available generators in the Campaign Logger user interface.
 
+Table names can include spaces. They must begin with a non-numeric character. So, instead of *4 seasons*, name the table *four seasons*, for example.
+
 Complex tables (typically producing more than a single phrase of output) are named 'generators'. The generator names are capitalized (as in "Weather Generator") to make them stand out better in table listings.
 
 Simple tables that output just a few words are named 'tables' and not capitalized (as in "weather table").
 
 The above mentioned "Weather Generator" could produce a detailed weather report, maybe even several sentences long. A simple "weather table" could just print out "heavy rain" or "clear skies", for example.
-
-**Note**: Table names must begin with a non-numeric character. So, instead of *4 seasons*, name the table *four seasons*, for example.
 
 
 ### resultPattern
@@ -255,29 +284,29 @@ The following optional properties can be used:
 
 * **genre**: If the table is intended for only certain genres, it can be specified here. This presents one way to scan for suitable tables. Commonly used genres are the following:
 
-  * *fantasy* - imaginary realms of myth and magic
-  * *futuristic* - science fiction worlds in
-  * *historical* - some period of real-world history
-  * *modern* - contemporary settings resembling the real world
-  * *mythological* - mundane world with hidden, mythic secrets
-  * *universal* - not specific to a genre
+  * *fantasy* (imaginary realms of myth and magic)
+  * *futuristic* (science fiction worlds in)
+  * *historical* (some period of real-world history)
+  * *modern* (contemporary settings resembling the real world)
+  * *mythological* (mundane world with hidden, mythic secrets)
+  * *universal* (not specific to a genre)
 
   Using these common categories helps to organize the tables in a standard way, but any genre definition can be used.
 
-* **categories**: The categories property specifies a class in which the file belongs to. This is used for organizing the generator files in the Campaign Logger user interface. Select one from the following:
+* **categories**: The categories property specifies a class in which the file belongs to. This is used for organizing the generator files in the Campaign Logger user interface. It is recommended to select one of the following values:
 
-  * *character* - PC and NPC generation  
-  * *encounter* - events and random encounters
-  * *item* - equipment and treasure generation
-  * *magic* - spells and magic items
-  * *meta* - metadata, such as templates and examples
-  * *monster* - beast and creature generation
-  * *name* - person, item and location names
-  * *story* - plot and adventure generation
-  * *utility* - help tables for use by other tables
-  * *world* - locations, cultures and history
+  * *character* (PC and NPC generation)
+  * *encounter* (events and random encounters)
+  * *item* (equipment and treasure generation)
+  * *magic* (spells and magic items)
+  * *meta* (metadata, such as templates and examples)
+  * *monster* (beast and creature generation)
+  * *name* (person, item and location names)
+  * *story* (plot and adventure generation)
+  * *utility* (help tables for use by other tables)
+  * *world* (locations, cultures and history)
 
-  While it is possible to specify also other categories, it is recommended to pick from the above list. This makes it easier to organize all tables in a uniform way.
+  The categories property can contain freeform text, so it is possible to specify also other categories. But using a value from the above list makes it easier to organize tables by different contributors in a uniform way.
 
 * **tags**: Tags are a more freeform way to organize the generator files. They make it easier to find content that is related to a keyword. Tags should be preceded by the hash symbol (#) and separated by commas.  You can specify as many tags as you like.
 
@@ -349,17 +378,20 @@ After these generic tables, genre-specific tables should follow. These subtables
 
 #### common
 
+"name": "common",
+"explanation": "Common X.",
+
 
 #### rare
 
-    "name": "mythological",
-    "explanation": "Imaginary X once rumoured to have existed.",
+"name": "rare",
+"explanation": "Rare X.",
 
 
-#### rare mythological
+#### mythological
 
-    "name": "rare mythological",
-    "explanation": "Rare imaginary X once rumored to have existed.",
+"name": "mythological",
+"explanation": "Imaginary X once rumoured to have existed.",
 
 
 #### fantasy
@@ -367,21 +399,11 @@ After these generic tables, genre-specific tables should follow. These subtables
     "name": "fantasy",
     "explanation": "Imaginary X for fantasy worlds.",
 
-#### rare fantasy
-
-    "name": "rare fantasy",
-    "explanation": "Rare imaginary X for fantasy worlds.",
 
 #### modern
 
     "name": "modern",
     "explanation": "X for modern worlds.",
-
-
-#### rare modern
-
-    "name": "rare modern",
-    "explanation": "Rare X for modern worlds.",
 
 
 #### futuristic
@@ -390,16 +412,13 @@ After these generic tables, genre-specific tables should follow. These subtables
     "explanation": "Imaginary X for science fiction worlds.",
 
 
-#### rare futuristic
-
-    "name": "rare futuristic",
-    "explanation": "Rare imaginary X for science fiction worlds.",
-
-
 ### Special Subtables
 
 The end of the file is a good location for subtables that are not called from other tables in the same file, but by external calls from other files.
 
-An example of this kind case could be the color table that contains the "black and white" subtable in end. That table produces only black, grey and white results and could be called for example to describe items in a black & white photograph.
+    "name": "special",
+    "explanation": "Special XXX types.",
+
+An example of this kind case could be the color table that contains the "black and white" subtable in end. That table produces only shades of black, grey and white and could be called for example to describe items in a black & white photograph.
 
 It is perfectly OK if there is overlap between the results produced by different tables.
