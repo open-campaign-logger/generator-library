@@ -2,7 +2,7 @@
 
 [//]: # (Authors: Esko Vesala, Peter Sotos.)
 
-[//]: # (Date: 2017-12-26.)
+[//]: # (Date: 2017-12-27.)
 
 
 # Generator Guide
@@ -114,6 +114,8 @@ Each entry must be enclosed within quotes, and separated by commas (again, no co
 
 Entries can be strings from a single character to an entire paragraph of text.
 
+If you need an empty table entry, use a space (" "), as a completely empty null entry ("") can cause the generator to output empty results.
+
 
 ### That's It!
 
@@ -218,6 +220,17 @@ Variables are specified as a list of value pairs - the key (name of the variable
       "variable 1": "1",
       "variable 2": "another value"
     },
+
+**Note**: Variable names cannot begin with a number. Otherwise they can contain alphanumeric characters (a - z, A - Z, 0 - 9), as well as underscore (\_) and space ( ) characters.
+
+
+## Random Number Generation
+
+The *dice:* function allows you to simulate dice rolls - even for dice for which there is no physical die available. The following dice call would produce results between 13 and 31:
+
+    {dice:3d7+10}
+
+Note that only one modifier (such as the *+10* in the above example) is supported. The modifier can only be a plus (+) or minus (-) operation, not for example multiplier (\*) or another die roll.
 
 
 ## Template
@@ -436,3 +449,20 @@ The end of the file is a good location for subtables that are not called from ot
 An example of this kind case could be the color table that contains the "black and white" subtable in end. That table produces only shades of black, grey and white and could be called for example to describe items in a black & white photograph.
 
 It is perfectly OK if there is overlap between the results produced by different tables.
+
+
+## Debugging Tips
+
+* You can check the workings of a certain part of the generator by modifying the *resultPattern* string to execute a specific subtable call.
+
+
+## Troubleshooting
+
+* **A table call is not working.**
+
+  Check that the table *name* property is correctly formed. A table name cannot begin with a number.
+
+
+* **My generator is producing empty output seemingly at random.**
+
+  Check that there are no completely empty null ("") entries in any of the tables.
