@@ -12,7 +12,7 @@
   "bugs": "",
   "to do": "Add themes to categorize statuses and other elements.",
   "see": "5_room_dungeon, hook_line_and_sinker_adventure, location",
-  "date": "2017-12-26",
+  "date": "2017-12-27",
   "authors": "Esko Vesala",
   "sources": "",
   "genre": "universal",
@@ -335,7 +335,8 @@
       "explanation": "Indoor encounter structure.",
       "entries": [
         "{indoors encounter}",
-        "{indoors encounter} {indoors goal}"
+        "{indoors encounter} {indoors goal}",
+        "{indoors event}"
       ]
     },
     {
@@ -354,11 +355,19 @@
       ]
     },
     {
+      "name": "indoors event",
+      "explanation": "Events indoors.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "urban",
       "explanation": "City encounter structure.",
       "entries": [
         "{urban encounter}",
-        "{urban encounter} {urban goal}"
+        "{urban encounter} {urban goal}",
+        "{urban event}"
       ]
     },
     {
@@ -377,11 +386,19 @@
       ]
     },
     {
+      "name": "urban event",
+      "explanation": "Events in a city.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "suburban",
       "explanation": "City outskirts encounter structure.",
       "entries": [
         "{suburban encounter}",
-        "{suburban encounter} {suburban goal}"
+        "{suburban encounter} {suburban goal}",
+        "{suburban event}"
       ]
     },
     {
@@ -400,11 +417,19 @@
       ]
     },
     {
+      "name": "suburban event",
+      "explanation": "Events in the outskirts of a city.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "village",
       "explanation": "Village encounter structure.",
       "entries": [
         "{village encounter}",
-        "{village encounter} {village goal}"
+        "{village encounter} {village goal}",
+        "{village event}"
       ]
     },
     {
@@ -422,11 +447,19 @@
       ]
     },
     {
+      "name": "village event",
+      "explanation": "Events in a village.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "rural",
       "explanation": "Countryside encounter structure.",
       "entries": [
         "{rural encounter}",
-        "{rural encounter} {rural goal}"
+        "{rural encounter} {rural goal}",
+        "{rural event}"
       ]
     },
     {
@@ -444,11 +477,19 @@
       ]
     },
     {
+      "name": "rural event",
+      "explanation": "Events in the countryside.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "outpost",
       "explanation": "Outpost encounter structure.",
       "entries": [
         "{outpost encounter}",
-        "{outpost encounter} {outpost goal}"
+        "{outpost encounter} {outpost goal}",
+        "{outpost event}"
       ]
     },
     {
@@ -466,11 +507,19 @@
       ]
     },
     {
+      "name": "outpost event",
+      "explanation": "Events in outposts.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "grassland",
       "explanation": "Grasslands encounter structure.",
       "entries": [
         "{grassland encounter}",
-        "{grassland encounter} {grassland goal}"
+        "{grassland encounter} {grassland goal}",
+        "{grassland event}"
       ]
     },
     {
@@ -488,23 +537,38 @@
       ]
     },
     {
+      "name": "grassland event",
+      "explanation": "Events on grasslands.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "tundra",
       "explanation": "Low temperature wilderness encounter structure.",
       "entries": [
         "{tundra encounter}",
-        "{tundra encounter} {tundra goal}"
+        "{tundra encounter} {tundra goal}",
+        "{tundra event}"
       ]
     },
     {
       "name": "tundra encounter",
-      "explanation": "Encounters in low temperature wilderness.",
+      "explanation": "Encounters in a low temperature wilderness.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "tundra goal",
-      "explanation": "Goals for encounters in low temperature wilderness.",
+      "explanation": "Goals for encounters in a low temperature wilderness.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "tundra event",
+      "explanation": "Events in a low temperature wilderness.",
       "entries": [
         "XXX"
       ]
@@ -514,7 +578,8 @@
       "explanation": "Woods encounter structure.",
       "entries": [
         "{forest encounter}",
-        "{forest encounter} {forest goal}"
+        "{forest encounter} {forest goal}",
+        "{forest event}"
       ]
     },
     {
@@ -532,23 +597,38 @@
       ]
     },
     {
+      "name": "forest event",
+      "explanation": "Events in the woods.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "rainforest",
       "explanation": "Tropical forest encounter structure.",
       "entries": [
         "{rainforest encounter}",
-        "{rainforest encounter} {rainforest goal}"
+        "{rainforest encounter} {rainforest goal}",
+        "{rainforest event}"
       ]
     },
     {
       "name": "rainforest encounter",
-      "explanation": "Encounters in the tropical forests.",
+      "explanation": "Encounters in a tropical forest.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "rainforest goal",
-      "explanation": "Goals for encounters in the tropical forests.",
+      "explanation": "Goals for encounters in a tropical forest.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "rainforest event",
+      "explanation": "Events in a tropical forest.",
       "entries": [
         "XXX"
       ]
@@ -558,19 +638,27 @@
       "explanation": "Tropical grasslands encounter structure.",
       "entries": [
         "{savanna encounter}",
-        "{savanna encounter} {savanna goal}"
+        "{savanna encounter} {savanna goal}",
+        "{savanna event}"
       ]
     },
     {
       "name": "savanna encounter",
-      "explanation": "Encounters in the tropical grasslands.",
+      "explanation": "Encounters on the tropical grasslands.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "savanna goal",
-      "explanation": "Goals for encounters in the tropical grasslands.",
+      "explanation": "Goals for encounters on the tropical grasslands.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "savanna event",
+      "explanation": "Events on the tropical grasslands.",
       "entries": [
         "XXX"
       ]
@@ -580,7 +668,8 @@
       "explanation": "Desert encounter structure.",
       "entries": [
         "{desert encounter}",
-        "{desert encounter} {desert goal}"
+        "{desert encounter} {desert goal}",
+        "{desert event}"
       ]
     },
     {
@@ -598,11 +687,19 @@
       ]
     },
     {
+      "name": "desert event",
+      "explanation": "Events in the desert.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "hill",
       "explanation": "Hilly encounter structure.",
       "entries": [
         "{hill encounter}",
-        "{hill encounter} {hill goal}"
+        "{hill encounter} {hill goal}",
+        "{hill event}"
       ]
     },
     {
@@ -620,23 +717,38 @@
       ]
     },
     {
+      "name": "hill event",
+      "explanation": "Events in the hills.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "mountain",
       "explanation": "Mountainous encounter structure.",
       "entries": [
         "{mountain encounter}",
-        "{mountain encounter} {mountain goal}"
+        "{mountain encounter} {mountain goal}",
+        "{mountain event}"
       ]
     },
     {
       "name": "mountain encounter",
-      "explanation": "Encounters in the mountains.",
+      "explanation": "Encounters on the mountains.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "mountain goal",
-      "explanation": "Goals for encounters in the mountains.",
+      "explanation": "Goals for encounters on the mountains.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "mountain event",
+      "explanation": "Events on the mountains.",
       "entries": [
         "XXX"
       ]
@@ -646,7 +758,8 @@
       "explanation": "Running freshwater encounter structure.",
       "entries": [
         "{river encounter}",
-        "{river encounter} {river goal}"
+        "{river encounter} {river goal}",
+        "{river event}"
       ]
     },
     {
@@ -664,11 +777,19 @@
       ]
     },
     {
+      "name": "river event",
+      "explanation": "Events on running freshwater.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "lake",
       "explanation": "Still freshwater encounter structure.",
       "entries": [
         "{lake encounter}",
-        "{lake encounter} {lake goal}"
+        "{lake encounter} {lake goal}",
+        "{lake event}"
       ]
     },
     {
@@ -686,11 +807,19 @@
       ]
     },
     {
+      "name": "lake event",
+      "explanation": "Events on still freshwater.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "wetlands",
       "explanation": "Swampland encounter structure.",
       "entries": [
         "{wetlands encounter}",
-        "{wetlands encounter} {wetlands goal}"
+        "{wetlands encounter} {wetlands goal}",
+        "{wetlands event}"
       ]
     },
     {
@@ -708,11 +837,19 @@
       ]
     },
     {
+      "name": "wetlands event",
+      "explanation": "Events on bogs, swamps, etc.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "coast",
       "explanation": "Coastal encounter structure.",
       "entries": [
         "{coast encounter}",
-        "{coast encounter} {coast goal}"
+        "{coast encounter} {coast goal}",
+        "{coast event}"
       ]
     },
     {
@@ -730,18 +867,26 @@
       ]
     },
     {
+      "name": "coast event",
+      "explanation": "Events on the coast.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "sea",
       "explanation": "Naval encounter structure.",
       "entries": [
         "{sea encounter}",
-        "{sea encounter} {sea goal}"
+        "{sea encounter} {sea goal}",
+        "{sea event}"
       ]
     },
     {
       "name": "sea encounter",
       "explanation": "Encounters at sea.",
       "entries": [
-        "ship"
+        "{lib:monster#aquatic}"
       ]
     },
     {
@@ -752,11 +897,19 @@
       ]
     },
     {
+      "name": "sea event",
+      "explanation": "Events at sea.",
+      "entries": [
+        "A ship can be seen on the horizon."
+      ]
+    },
+    {
       "name": "glacial",
       "explanation": "Snow and ice covered encounter structure.",
       "entries": [
         "{glacial encounter}",
-        "{glacial encounter} {glacial goal}"
+        "{glacial encounter} {glacial goal}",
+        "{glacial event}"
       ]
     },
     {
@@ -774,11 +927,19 @@
       ]
     },
     {
+      "name": "glacial event",
+      "explanation": "Events for glacial encounters.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "underwater",
       "explanation": "Underwater encounter structure.",
       "entries": [
         "{underwater encounter}",
-        "{underwater encounter} {underwater goal}"
+        "{underwater encounter} {underwater goal}",
+        "{underwater event}"
       ]
     },
     {
@@ -796,11 +957,19 @@
       ]
     },
     {
+      "name": "underwater event",
+      "explanation": "Events under the water surface.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "underground",
       "explanation": " Underground encounter structure.",
       "entries": [
         "{underground encounter}",
-        "{underground encounter} {underground goal}"
+        "{underground encounter} {underground goal}",
+        "{underground event}"
       ]
     },
     {
@@ -818,11 +987,19 @@
       ]
     },
     {
+      "name": "underground event",
+      "explanation": "Events under the earth's surface.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "volcanic",
       "explanation": "Volcanic encounter structure.",
       "entries": [
         "{volcanic encounter}",
-        "{volcanic encounter} {volcanic goal}"
+        "{volcanic encounter} {volcanic goal}",
+        "{volcanic event}"
       ]
     },
     {
@@ -840,11 +1017,19 @@
       ]
     },
     {
+      "name": "volcanic event",
+      "explanation": "Events for volcanic encounters.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "earth",
       "explanation": "Soil encounter structure.",
       "entries": [
         "{earth encounter}",
-        "{earth encounter} {earth goal}"
+        "{earth encounter} {earth goal}",
+        "{earth event}"
       ]
     },
     {
@@ -862,11 +1047,19 @@
       ]
     },
     {
+      "name": "earth event",
+      "explanation": "Events in the ground.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "air",
       "explanation": "Airborne encounter structure.",
       "entries": [
         "{air encounter}",
-        "{air encounter} {air goal}"
+        "{air encounter} {air goal}",
+        "{air event}"
       ]
     },
     {
@@ -884,11 +1077,19 @@
       ]
     },
     {
+      "name": "air event",
+      "explanation": "Events in the sky.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "space",
       "explanation": "Outer space encounter structure.",
       "entries": [
         "{space encounter}",
-        "{space encounter} {space goal}"
+        "{space encounter} {space goal}",
+        "{space event}"
       ]
     },
     {
@@ -906,11 +1107,19 @@
       ]
     },
     {
+      "name": "space event",
+      "explanation": "Events in outer space.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "planar",
       "explanation": "Extraplanar encounter structure.",
       "entries": [
         "{planar encounter}",
-        "{planar encounter} {planar goal}"
+        "{planar encounter} {planar goal}",
+        "{planar event}"
       ]
     },
     {
@@ -928,11 +1137,19 @@
       ]
     },
     {
+      "name": "planar event",
+      "explanation": "Events in other planes.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "myth",
       "explanation": "Mythic encounter structure.",
       "entries": [
         "{myth encounter}",
-        "{myth encounter} {myth goal}"
+        "{myth encounter} {myth goal}",
+        "{myth event}"
       ]
     },
     {
@@ -950,11 +1167,19 @@
       ]
     },
     {
+      "name": "myth event",
+      "explanation": "Events once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "fantasy",
       "explanation": "Fantastic encounter structure.",
       "entries": [
         "{fantasy encounter}",
-        "{fantasy encounter} {fantasy goal}"
+        "{fantasy encounter} {fantasy goal}",
+        "{fantasy event}"
       ]
     },
     {
@@ -972,11 +1197,19 @@
       ]
     },
     {
+      "name": "fantasy event",
+      "explanation": "Events for encounters in fantasy worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "modern",
       "explanation": "Modern world encounter structure.",
       "entries": [
         "{modern encounter}",
-        "{modern encounter} {modern goal}"
+        "{modern encounter} {modern goal}",
+        "{modern event}"
       ]
     },
     {
@@ -995,11 +1228,19 @@
       ]
     },
     {
+      "name": "modern event",
+      "explanation": "Events for modern world enconters.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "futuristic",
       "explanation": "Science fiction encounter structure.",
       "entries": [
         "{futuristic encounter}",
-        "{futuristic encounter} {futuristic goal}"
+        "{futuristic encounter} {futuristic goal}",
+        "{futuristic event}"
       ]
     },
     {
@@ -1013,6 +1254,13 @@
     {
       "name": "futuristic goal",
       "explanation": "Goals for encounters for science fiction worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic event",
+      "explanation": "Events for science fiction worlds.",
       "entries": [
         "XXX"
       ]
