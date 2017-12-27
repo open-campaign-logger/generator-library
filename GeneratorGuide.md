@@ -4,9 +4,19 @@
 
 [//]: # (Date: 2017-12-27.)
 
+
+# Generator Guide
+
+This document explains how to create random table generators for the *Campaign Logger*  gamemastering utility.
+
+For documentation on other Campaign Logger topics, please refer to the Campaign Logger site at https://campaign-logger.com/.
+
+## Table of Contents
+
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Generator Guide](#generator-guide)
+	- [Table of Contents](#table-of-contents)
 	- [JSON](#json)
 	- [Crash Course](#crash-course)
 		- [All Those Brackets](#all-those-brackets)
@@ -47,14 +57,6 @@
 	- [Troubleshooting](#troubleshooting)
 
 <!-- /TOC -->
-
-
-# Generator Guide
-
-This document explains how to create random table generators for the *Campaign Logger*  gamemastering utility.
-
-For documentation on other Campaign Logger topics, please refer to the Campaign Logger site at https://campaign-logger.com/.
-
 
 ## JSON
 
