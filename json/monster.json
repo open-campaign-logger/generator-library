@@ -9,13 +9,13 @@
   "note": "",
   "bugs": "",
   "to do": "Categorize monsters by type.",
-  "see": "",
-  "date": "2017-12-15",
+  "see": "animal, attack, citizen, encounter, nonhuman",
+  "date": "2017-12-27",
   "authors": "Esko Vesala.",
-  "sources": "",
+  "sources": "DanDWiki.com, Wikia.com, Wikipedia.org",
   "genre": "fantasy",
   "categories": [
-    ""
+    "monster"
   ],
   "tables": [
     {
@@ -24,7 +24,8 @@
       "entries": [
         "{monster}",
         "{adjective} {monster}",
-        "{lib:ability} {monster}"
+        "{lib:creature_template} {monster}",
+        "{monster} with {lib:attack} attack"
       ]
     },
     {
@@ -42,35 +43,187 @@
       "name": "common",
       "explanation": "Common monster types.",
       "entries": [
-        "{fantasy}"
+        "{vermin}",
+        "{humanoid}"
+      ]
+    },
+    {
+      "name": "vermin",
+      "explanation": "Monstrous insects, worms, etc.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "humanoid",
+      "explanation": "Monsters with the approximate shape of a human.",
+      "entries": [
+        "{crossbreed}",
+        "{troll}",
+        "{giant}"
+      ]
+    },
+    {
+      "name": "crossbreed",
+      "explanation": "Crossbred monsters.",
+      "entries": [
+        "half-ogre"
+      ]
+    },
+    {
+      "name": "troll",
+      "explanation": "Trollkin.",
+      "entries": [
+        "troll",
+        "cave troll"
+      ]
+    },
+    {
+      "name": "giant",
+      "explanation": "Giantkin.",
+      "entries": [
+        "ogre",
+        "giant",
+        "ettin",
+        "hill giant",
+        "frost giant",
+        "Firbolg",
+        "Fomorian giant",
+        "storm giant",
+        "cloud giant",
+        "{lib:monsterGiant}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare monster types.",
       "entries": [
-        "{myth}"
+        "{aquatic}"
+      ]
+    },
+    {
+      "name": "aquatic",
+      "explanation": "Aquatic monster types.",
+      "entries": [
+        "merrow"
       ]
     },
     {
       "name": "myth",
       "explanation": "Monsters once rumoured to have existed.",
       "entries": [
+        "{mythic beast}",
+        "{fey}",
+        "{undead}",
+        "{dragon}"
+      ]
+    },
+    {
+      "name": "mythic beast",
+      "explanation": "Mythological animals.",
+      "entries": [
+        "catoblepas",
         "manticore",
-        "gorgon",
-        "catoblepas"
+        "gorgon"
+      ]
+    },
+    {
+      "name": "fey",
+      "explanation": "Faeries and other feyfolk.",
+      "entries": [
+        "fairy",
+        "sprite",
+        "sylph",
+        "fey",
+        "hag"
+      ]
+    },
+    {
+      "name": "undead",
+      "explanation": "Dead creatures animated to unlife.",
+      "entries": [
+        "skeleton",
+        "revenant",
+        "wight",
+        "lich"
+      ]
+    },
+    {
+      "name": "dragon",
+      "explanation": "Dragonkin.",
+      "entries": [
+        "linnorm",
+        "wyvern",
+        "dragon",
+        "wyrm"
       ]
     },
     {
       "name": "fantasy",
-      "explanation": "Monsters for fantasy worlds.",
+      "explanation": "Monsters for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
-        "{lib:monsterAberration}",
-        "{lib:monsterConstruct}",
-        "{lib:monsterElemental}",
-        "{lib:monsterEpic}",
-        "{lib:monsterGiant}"
+        "{ooze}",
+        "{magical beast}",
+        "{monstrous humanoid}",
+        "{aberration}",
+        "{construct}",
+        "{elemental}",
+        "{outsider}",
+        "{lib:monsterEpic}"
+      ]
+    },
+    {
+      "name": "ooze",
+      "explanation": "Amorphous ooze and jelly creatures.",
+      "entries": [
+        "giant amoeba",
+        "blob",
+        "ooze",
+        "jelly",
+        "slime mold"
+      ]
+    },
+    {
+      "name": "magical beast",
+      "explanation": "Magic-imbued animals.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "monstrous humanoid",
+      "explanation": "Humanoid creature with monstrous features.",
+      "entries": [
+        "orc"
+      ]
+    },
+    {
+      "name": "aberration",
+      "explanation": "Bizarre creatures.",
+      "entries": [
+        "{lib:monsterAberration}"
+      ]
+    },
+    {
+      "name": "construct",
+      "explanation": "Artificial creatures.",
+      "entries": [
+        "{lib:monsterConstruct}"
+      ]
+    },
+    {
+      "name": "elemental",
+      "explanation": "Elemental creatures.",
+      "entries": [
+        "{lib:monsterElemental}"
+      ]
+    },
+    {
+      "name": "outsider",
+      "explanation": "Extraplanar creatures from other states of existence.",
+      "entries": [
+        "XXX"
       ]
     },
     {
@@ -78,6 +231,13 @@
       "explanation": "Monsters for modern worlds.",
       "entries": [
         "{common}",
+        "{cryptid}"
+      ]
+    },
+    {
+      "name": "cryptid",
+      "explanation": "Creatures of cryptozoology.",
+      "entries": [
         "yeti",
         "sasquatch",
         "chupacabra"
