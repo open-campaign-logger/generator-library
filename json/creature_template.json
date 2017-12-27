@@ -1,0 +1,136 @@
+{
+  "name": "creature template",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Creature templates.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "Expand the list of templates and categories.",
+  "see": "encounter, monster",
+  "date": "2017-12-27",
+  "authors": "Esko Vesala.",
+  "sources": "D20PFSRD.com",
+  "genre": "fantasy",
+  "categories": [
+    "monster"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{template}"
+      ]
+    },
+    {
+      "name": "template",
+      "explanation": "Template types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common templates.",
+      "entries": [
+        "{behavior}",
+        "{size}"
+      ]
+    },
+    {
+      "name": "behavior",
+      "explanation": "Size-related templates.",
+      "entries": [
+        "monstrous"
+      ]
+    },
+    {
+      "name": "size",
+      "explanation": "Size-related templates.",
+      "entries": [
+        "giant"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare templates.",
+      "entries": [
+        "{aquatic}"
+      ]
+    },
+    {
+      "name": "aquatic",
+      "explanation": "Aquatic templates.",
+      "entries": [
+        "amphibious",
+        "aquatic"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Templates once rumoured to have existed.",
+      "entries": [
+        "{supernatural}",
+        "{magical}",
+        "firebreathing"
+      ]
+    },
+    {
+      "name": "supernatural",
+      "explanation": "Supernatural templates.",
+      "entries": [
+        "cursed",
+        "long-dead",
+        "reanimated",
+        "undead",
+        "vampiric",
+        "demonic"
+      ]
+    },
+    {
+      "name": "magical",
+      "explanation": "Magic-based templates.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Templates for fantasy worlds (with no basis on myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Templates for modern worlds.",
+      "entries": [
+        "{common}",
+        "genetically engineered"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Templates for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "artificial"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special template types.",
+      "entries": [
+        "XXX"
+      ]
+    }
+  ]
+}

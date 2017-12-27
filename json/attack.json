@@ -1,0 +1,131 @@
+{
+  "name": "attack",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Creature attack types.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "encounter, monster",
+  "date": "2017-12-27",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    "monster"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{attack}"
+      ]
+    },
+    {
+      "name": "attack",
+      "explanation": "Attack types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common attacks.",
+      "entries": [
+        "{unarmed}",
+        "{armed}"
+      ]
+    },
+    {
+      "name": "unarmed",
+      "explanation": "Unarmed attack styles.",
+      "entries": [
+        "slam",
+        "bite",
+        "claw",
+        "gore",
+        "touch"
+      ]
+    },
+    {
+      "name": "armed",
+      "explanation": "Armed attack styles.",
+      "entries": [
+        "melee weapon",
+        "ranged weapon"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare attacks.",
+      "entries": [
+        "{special attack}"
+      ]
+    },
+    {
+      "name": "special attack",
+      "explanation": "Creature special attacks.",
+      "entries": [
+        "temporary ability damage",
+        "permanent ability drain",
+        "breath weapon",
+        "shapechanging",
+        "constrict",
+        "cursed wound",
+        "disease",
+        "energy drain",
+        "fear",
+        "gaze",
+        "grabbing",
+        "paralysis",
+        "poison"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Attacks once rumoured to have existed.",
+      "entries": [
+        "stoning gaze"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Attacks for fantasy worlds (no basis on myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Attacks for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Attacks for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special attack types.",
+      "entries": [
+        "XXX"
+      ]
+    }
+  ]
+}

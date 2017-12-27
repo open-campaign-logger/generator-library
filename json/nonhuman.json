@@ -1,0 +1,210 @@
+{
+  "name": "nonhuman",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Sentient non-humans.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "Categorize nonhumans by type.",
+  "see": "animal, citizen, encounter, monster",
+  "date": "2017-12-27",
+  "authors": "Esko Vesala.",
+  "sources": "Wikia.com, Wikipedia.org",
+  "genre": "fantasy",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{nonhuman}",
+        "{adjective} {nonhuman}",
+        "{lib:ability} {nonhuman}"
+      ]
+    },
+    {
+      "name": "nonhuman",
+      "explanation": "Nonhumans by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common nonhuman types.",
+      "entries": [
+        "{humanoid}"
+      ]
+    },
+    {
+      "name": "humanoid",
+      "explanation": "Human-shaped creatures with developed societies.",
+      "entries": [
+        "{crossbreed}",
+        "{dwarf}",
+        "{elf}",
+        "{gnome}",
+        "{goblinoid}"
+      ]
+    },
+    {
+      "name": "crossbreed",
+      "explanation": "Crossbred nonhumans.",
+      "entries": [
+        "half-elf"
+      ]
+    },
+    {
+      "name": "dwarf",
+      "explanation": "Dwarvenkind.",
+      "entries": [
+        "dwarf"
+      ]
+    },
+    {
+      "name": "elf",
+      "explanation": "Elvenkind.",
+      "entries": [
+        "elf"
+      ]
+    },
+    {
+      "name": "gnome",
+      "explanation": "Gnomekind.",
+      "entries": [
+        "gnome",
+        "forest gnome"
+      ]
+    },
+    {
+      "name": "goblinoid",
+      "explanation": "Goblinkin.",
+      "entries": [
+        "goblin",
+        "hobgoblin",
+        "bugbear"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare nonhuman types.",
+      "entries": [
+        "{reptilian}",
+        "{aquatic}"
+      ]
+    },
+    {
+      "name": "reptilian",
+      "explanation": "Reptilekin.",
+      "entries": [
+        "serpent people"
+      ]
+    },
+    {
+      "name": "aquatic",
+      "explanation": "Aquatic nonhuman types.",
+      "entries": [
+        "merman"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Nonhumans once rumoured to have existed.",
+      "entries": [
+        "Atlantean",
+        "Lemurian"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Nonhumans for fantasy worlds (with no basis in myths).",
+      "entries": [
+        "halfling"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Nonhumans for modern worlds.",
+      "entries": [
+        "{cryptid}",
+        "{ufology}"
+      ]
+    },
+    {
+      "name": "cryptid",
+      "explanation": "Nonhumans of cryptozoology.",
+      "entries": [
+        "sasquatch"
+      ]
+    },
+    {
+      "name": "ufology",
+      "explanation": "Nonhumans of ufology.",
+      "entries": [
+        "man in black",
+        "grey alien"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Nonhumans for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "{robotic}",
+        "{alien}"
+      ]
+    },
+    {
+      "name": "robotic",
+      "explanation": "Robotic nonhumans.",
+      "entries": [
+        "robot",
+        "cyborg",
+        "android",
+        "synthoid"
+      ]
+    },
+    {
+      "name": "alien",
+      "explanation": "Alien nonhumans.",
+      "entries": [
+        "alien humanoid"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special nonhuman types.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives describing the nonhuman.",
+      "entries": [
+        "{psychology}"
+      ]
+    },
+    {
+      "name": "psychology",
+      "explanation": "Psychology of the nonhuman.",
+      "entries": [
+        "aggressive",
+        "hostile",
+        "deceptive",
+        "bored",
+        "curious",
+        "friendly"
+      ]
+    }
+  ]
+}
