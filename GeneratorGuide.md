@@ -113,7 +113,7 @@ However, the spacing and indentation of the brackets does not matter. The table 
 
 ### name
 
-The *name* property defines the name that is shown the Campaign Logger user interface. The name can consist of several words.
+The *name* property defines the name that is shown the Campaign Logger user interface. The name can contain alphanumeric characters (a - z, A - Z, 0 - 9), as well as underscore (\_) and space ( ) characters. It is recommended not to start the name with a number, as calling the table from another table will then not work.
 
 
 ### resultPattern
@@ -144,7 +144,7 @@ And if there are several tables in the *tables* property, there must be commas b
 
 Each of the tables has the following properties:
 
-* **name**: As already seen, the *name* property gives the table a name that can be used for calling that table and outputting the result. The table name can contain spaces.
+* **name**: As already seen, the *name* property gives the table a name that can be used for calling that table and outputting the result. Again, the name can contain alphanumeric characters (a - z, A - Z, 0 - 9), as well as underscore (\_) and space ( ) characters. It is recommended not to start the name with a number, as calling the table from another table will then not work.
 
 * **entries**: The *entries* property contains a list of the results that this table can produce. Each entry must be enclosed in quotation marks. There must be commas between each entry. (But not after the last entry.)
 
@@ -158,7 +158,7 @@ Each entry must be enclosed within quotes, and separated by commas (again, no co
       "Aorgareth",
       "Zambrastil"
 
-Entries can be strings from a single character to an entire paragraph of text.
+Entries can be strings ranging from a single character to an entire paragraph of text, as long as the text is included between quotation marks.
 
 If you need an empty table entry, use a space (" "), as a completely empty null entry ("") can cause the generator to output empty results.
 
@@ -506,7 +506,7 @@ It is perfectly OK if there is overlap between the results produced by different
 
 * **A table call is not working.**
 
-  Check that the table *name* property is correctly formed. A table name cannot begin with a number.
+  Check that the table *name* property is correctly formed. The name of a called table cannot begin with a number. Otherwise the name can contain alphanumeric characters (a - z, A - Z, 0 - 9), as well as underscore (\_) and space ( ) characters.
 
 
 * **My generator is producing empty output seemingly at random.**
