@@ -7,7 +7,7 @@
   "explanation": "Variations of priests.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
-  "to do": "Different religions and monastic orders. Mythological, fantasy and futuristic subtables.",
+  "to do": "Different religions and monastic orders. myth, fantasy and futuristic subtables.",
   "see": "fighter, magician",
   "date": "2017-12-12",
   "authors": "Esko Vesala",
@@ -141,15 +141,15 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Priests once rumoured to have existed.",
       "entries": [
         "XXX",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary priests once rumoured to have existed.",
       "entries": [
         "XXX"
@@ -159,7 +159,7 @@
       "name": "fantasy",
       "explanation": "Priests for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "XXX",
         "{rare fantasy}"
       ]

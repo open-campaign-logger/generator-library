@@ -7,7 +7,7 @@
   "explanation": "Temperatures for environment and material tables.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
-  "to do": "Mythological, fantasy and modern subtables.",
+  "to do": "myth, fantasy and modern subtables.",
   "see": "energy, liquid, material",
   "date": "2017-10-06",
   "authors": "Esko Vesala.",
@@ -126,15 +126,15 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary temperatures once rumoured to have existed.",
       "entries": [
         "burning as dragon's breath",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary temperatures once rumoured to have existed.",
       "entries": [
         "burning as hellfire"
@@ -144,7 +144,7 @@
       "name": "fantasy",
       "explanation": "Imaginary temperatures for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "as hot as magical flame",
         "{rare fantasy}"
       ]

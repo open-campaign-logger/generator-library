@@ -189,7 +189,7 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary materials once rumoured to have existed.",
       "entries": [
         "quintessence (fifth element)",
@@ -202,7 +202,7 @@
       "name": "fantasy",
       "explanation": "Imaginary materials for fantasy worlds.",
       "entries": [
-        "{mythological}"
+        "{myth}"
       ]
     },
     {

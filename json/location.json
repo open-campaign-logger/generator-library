@@ -1096,22 +1096,22 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Mythic location structure.",
       "entries": [
-        "{mythological site}",
-        "{mythological site} with {mythological feature}"
+        "{myth site}",
+        "{myth site} with {myth feature}"
       ]
     },
     {
-      "name": "mythological site",
+      "name": "myth site",
       "explanation": "Locations once rumoured to have existed.",
       "entries": [
         "lost civilization"
       ]
     },
     {
-      "name": "mythological feature",
+      "name": "myth feature",
       "explanation": "Features for locations once rumoured to have existed.",
       "entries": [
         "ancient monument"

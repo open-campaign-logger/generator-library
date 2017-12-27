@@ -330,7 +330,7 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary foodstuffs once rumoured to have existed.",
       "entries": [
         "manna",
@@ -341,7 +341,7 @@
       "name": "fantasy",
       "explanation": "Imaginary foodstuffs for fantasy worlds.",
       "entries": [
-        "{mythological}"
+        "{myth}"
       ]
     },
     {

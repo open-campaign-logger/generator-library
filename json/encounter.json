@@ -928,22 +928,22 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Mythic encounter structure.",
       "entries": [
-        "{mythological encounter}",
-        "{mythological encounter} {mythological goal}"
+        "{myth encounter}",
+        "{myth encounter} {myth goal}"
       ]
     },
     {
-      "name": "mythological encounter",
+      "name": "myth encounter",
       "explanation": "Encounters once rumoured to have existed.",
       "entries": [
         "XXX"
       ]
     },
     {
-      "name": "mythological goal",
+      "name": "myth goal",
       "explanation": "Goals for encounters once rumoured to have existed.",
       "entries": [
         "XXX"

@@ -313,17 +313,17 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary jewelry once rumoured to have existed.",
       "entries": [
         "{lib:material} amulet (defensive charm)",
         "{lib:material} periapt (charm worn on a necklace)",
         "{lib:material} talisman (magical charm)",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary adornment once rumoured to have existed.",
       "entries": [
         "cursed {lib:jewelry}",
@@ -334,7 +334,7 @@
       "name": "fantasy",
       "explanation": "Imaginary adornment for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "{lib:personRace}-made {common}",
         "{lib:monsterHumanoid}-made {common}",
         "insect",

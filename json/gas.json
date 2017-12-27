@@ -63,7 +63,7 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary gases once rumoured to have existed.",
       "entries": [
         "miasma",
@@ -75,7 +75,7 @@
       "name": "fantasy",
       "explanation": "Imaginary gases for fantasy worlds.",
       "entries": [
-        "{mythological}"
+        "{myth}"
       ]
     },
     {

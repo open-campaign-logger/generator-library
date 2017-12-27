@@ -121,7 +121,7 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary beverages once rumoured to have existed.",
       "entries": [
         "nectar (drink of the gods)"
@@ -131,7 +131,7 @@
       "name": "fantasy",
       "explanation": "Imaginary beverages for fantasy worlds.",
       "entries": [
-        "{mythological}"
+        "{myth}"
       ]
     },
     {

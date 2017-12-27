@@ -375,7 +375,7 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary plants once rumoured to have existed.",
       "entries": [
         "moly (a magical herb with black root and white blossoms)",
@@ -398,21 +398,21 @@
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary plants once rumoured to have existed.",
       "entries": [
         "tree of life (bestowing immortality)",
         "tree of knowledge (bestowing understanding)",
         "skytree (reaching to the layers of the sky)",
         "dawn tree (world tree associated with the sun)",
-        "world tree (connecting mythological realms)"
+        "world tree (connecting myth realms)"
       ]
     },
     {
       "name": "fantasy",
       "explanation": "Imaginary plants for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "{fantasy beginning}{fantasy middle}{fantasy ending}"
       ]
     },

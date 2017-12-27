@@ -38,7 +38,7 @@
 		- [Recommended Subtable Organization](#recommended-subtable-organization)
 			- [common](#common)
 			- [rare](#rare)
-			- [mythological](#mythological)
+			- [myth](#myth)
 			- [fantasy](#fantasy)
 			- [modern](#modern)
 			- [futuristic](#futuristic)
@@ -359,7 +359,7 @@ The following optional properties can be used:
   * *futuristic* (science fiction worlds in)
   * *historical* (some period of real-world history)
   * *modern* (contemporary settings resembling the real world)
-  * *mythological* (mundane world with hidden, mythic secrets)
+  * *myth* (mundane world with hidden, mythic secrets)
   * *universal* (not specific to a genre)
 
   Using these common categories helps to organize the tables in a standard way, but any genre definition can be used.
@@ -459,9 +459,9 @@ After these generic tables, genre-specific tables should follow. These subtables
 "explanation": "Rare X.",
 
 
-#### mythological
+#### myth
 
-"name": "mythological",
+"name": "myth",
 "explanation": "Imaginary X once rumoured to have existed.",
 
 

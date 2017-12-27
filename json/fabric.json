@@ -196,18 +196,18 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary fabrics once rumoured to have existed.",
       "entries": [
         "fairy silk",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary fabrics once rumoured to have existed.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "fabric spun from the thread of the Fates"
       ]
     },
@@ -215,7 +215,7 @@
       "name": "fantasy",
       "explanation": "Imaginary fabrics for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "hair",
         "spider silk",
         "{rare fantasy}"

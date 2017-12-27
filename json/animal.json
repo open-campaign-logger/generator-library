@@ -434,7 +434,7 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Animals once rumoured to have existed.",
       "entries": [
         "unicorn",
@@ -446,7 +446,7 @@
       "name": "fantasy",
       "explanation": "Animals for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "{ooze}",
         "talking {mammal}",
         "{vertebrate} spirit"

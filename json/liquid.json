@@ -95,17 +95,17 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary liquids once rumoured to have existed.",
       "entries": [
         "yellow bile (aggressive bodily humour)",
         "black bile (melancholic bodily humour)",
         "phlegm (apathetic bodily humour)",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary liquids once rumoured to have existed.",
       "entries": [
         "universal solvent",
@@ -121,7 +121,7 @@
       "name": "fantasy",
       "explanation": "Imaginary liquids for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "{fantasy liquid descriptor} {fantasy beginning}{fantasy ending} {fantasy liquid type}",
         "{fantasy liquid type} of {fantasy beginning}{fantasy ending}"
       ]

@@ -124,7 +124,7 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary metals once rumoured to have existed.",
       "entries": [
         "hard mercury",
@@ -136,7 +136,7 @@
       "name": "fantasy",
       "explanation": "Imaginary metals for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "cold iron",
         "star iron",
         "hell iron",

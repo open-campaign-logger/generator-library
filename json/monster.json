@@ -22,7 +22,9 @@
       "name": "result",
       "explanation": "Variations for resultPattern output.",
       "entries": [
-        "{monster}"
+        "{monster}",
+        "{adjective} {monster}",
+        "{lib:ability} {monster}"
       ]
     },
     {
@@ -47,11 +49,11 @@
       "name": "rare",
       "explanation": "Rare monster types.",
       "entries": [
-        "{mythological}"
+        "{myth}"
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Monsters once rumoured to have existed.",
       "entries": [
         "manticore",
@@ -63,7 +65,7 @@
       "name": "fantasy",
       "explanation": "Monsters for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "{lib:monsterAberration}",
         "{lib:monsterConstruct}",
         "{lib:monsterElemental}",
@@ -100,17 +102,16 @@
       "name": "adjective",
       "explanation": "Adjectives describing the monster.",
       "entries": [
-        "firebreathing",
-        "venomous",
-        "long-dead",
+        "{psychology}"
+      ]
+    },
+    {
+      "name": "psychology",
+      "explanation": "Psychology of the monster.",
+      "entries": [
         "vengeful",
-        "cursed",
         "bloodthirsty",
-        "demonic",
-        "undead",
-        "savage",
-        "reanimated",
-        "artificial"
+        "savage"
       ]
     }
   ]

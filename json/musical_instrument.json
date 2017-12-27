@@ -8,7 +8,7 @@
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "bugs": "",
-  "to do": "Mythological, fantasy and futuristic instruments.",
+  "to do": "myth, fantasy and futuristic instruments.",
   "see": "magical_instrument",
   "date": "2017-10-06",
   "authors": "Esko Vesala.",
@@ -131,26 +131,26 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary musical instruments once rumoured to have existed.",
       "entries": [
         "sistrum (rattle scaring away evil forces)",
         "death whistle (skull-shaped whistle producing a ghastly sound)",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary musical instruments once rumoured to have existed.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "carved unicorn horn",
         "angelic horn (blown by the angelic host)",
-        "{unique mythological}"
+        "{unique myth}"
       ]
     },
     {
-      "name": "unique mythological",
+      "name": "unique myth",
       "explanation": "Unique imaginary musical instruments once rumoured to have existed.",
       "entries": [
         "Triton's conch shell (can calm or raise the waves)",
@@ -162,7 +162,7 @@
       "name": "fantasy",
       "explanation": "Imaginary musical instruments for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "harp playing by itself",
         "{rare fantasy}"
       ]

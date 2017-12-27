@@ -358,25 +358,25 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary armor types once rumoured to have existed.",
       "entries": [
         "cold iron {metal}",
         "dwarven {metal}",
         "elven {metal}",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary armor types once rumoured to have existed.",
       "entries": [
         "Huliðshjálmr (concealing helmet of the dwarves)",
-        "{unique mythological}"
+        "{unique myth}"
       ]
     },
     {
-      "name": "unique mythological",
+      "name": "unique myth",
       "explanation": "Unique imaginary armor types once rumoured to have existed.",
       "entries": [
         "Green armour (of Arthurian legend, protects from physical injuries)",
@@ -390,7 +390,7 @@
       "name": "fantasy",
       "explanation": "Imaginary armor types for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "horned helmet",
         "winged helmet",
         "banded mail (splint mail reinforced with leather bands)",

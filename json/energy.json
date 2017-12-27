@@ -46,7 +46,7 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary energies once rumoured to have existed.",
       "entries": [
         "earth energy",
@@ -70,7 +70,7 @@
       "name": "fantasy",
       "explanation": "Imaginary energies for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "magic",
         "orgone (esoteric energy)",
         "odic force (vital energy)",

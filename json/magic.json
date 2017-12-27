@@ -7,9 +7,9 @@
   "explanation": "Variations of magic.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
-  "to do": "Mythological, fantasy and futuristic subtables.",
-  "see": "energy, magical_technique, magical_instrument, spellcasting",
-  "date": "2017-10-06",
+  "to do": "myth, fantasy and futuristic subtables.",
+  "see": "energy, magical_technique, magical_instrument, spell_name, spellcasting",
+  "date": "2017-12-10",
   "authors": "Esko Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -99,7 +99,7 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary magics once rumoured to have existed.",
       "entries": [
         "runic magic",
@@ -110,10 +110,10 @@
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary magics once rumoured to have existed.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "anima mundi (intrinsic connection between all living things)",
         "hermeticism (teachings of pagan prophet Hermes Trismegistus)"
       ]
@@ -122,7 +122,7 @@
       "name": "fantasy",
       "explanation": "Imaginary magics for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "channeling (harnessing supernatural powers)",
         "essence (harnessing the world's inherent magical energy)",
         "mentalism (harnessing personal energy)",

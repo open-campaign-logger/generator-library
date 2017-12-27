@@ -479,15 +479,15 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary weapons once rumoured to have existed.",
       "entries": [
         "cold iron sword (averts faery folk)",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary weapons once rumoured to have existed.",
       "entries": [
         "flaming {sword}",
@@ -495,7 +495,7 @@
       ]
     },
     {
-      "name": "unique mythological",
+      "name": "unique myth",
       "explanation": "Unique imaginary weapons once rumoured to have existed.",
       "entries": [
         "{Arthurian mythology}",
@@ -587,7 +587,7 @@
       "name": "fantasy",
       "explanation": "Imaginary weapons for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "sledgehammer",
         "spike maul",
         "{rare fantasy}"

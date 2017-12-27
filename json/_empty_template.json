@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "20XX-XX-XX",
+  "date": "2017-XX-XX",
   "authors": "",
   "sources": "",
   "genre": "",
@@ -28,7 +28,7 @@
     },
     {
       "name": "XXX",
-      "explanation": "XXX",
+      "explanation": "XXX types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -52,7 +52,7 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "XXX once rumoured to have existed.",
       "entries": [
         "XXX"
@@ -62,7 +62,7 @@
       "name": "fantasy",
       "explanation": "XXX for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "XXX"
       ]
     },

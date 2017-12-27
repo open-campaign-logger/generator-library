@@ -54,15 +54,15 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary stone types once rumoured to have existed.",
       "entries": [
         "lodestone",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary stone types once rumoured to have existed.",
       "entries": [
         "piece of the Symplegade (clashing rocks destroying boats)"
@@ -72,7 +72,7 @@
       "name": "fantasy",
       "explanation": "Imaginary stone types for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "weirdstone (containing captured magical essence)",
         "wyrdstone (containing magical energy)",
         "{rare fantasy}"

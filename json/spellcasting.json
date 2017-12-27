@@ -55,20 +55,20 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary spellcasting methods once rumoured to have existed.",
       "entries": [
         "{rare}",
         "spellbinding (binding spells to objects)",
         "spell tattooing (binding spells to tattoos)",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Imaginary spellcasting methods once rumoured to have existed.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "englightenment (achieving oneness with divinity)"
       ]
     },
@@ -76,7 +76,7 @@
       "name": "fantasy",
       "explanation": "Imaginary spellcasting methods for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "spellsinging",
         "playing a magical musical instrument",
         "{rare fantasy}"
