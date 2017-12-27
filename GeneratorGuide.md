@@ -4,6 +4,50 @@
 
 [//]: # (Date: 2017-12-27.)
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Generator Guide](#generator-guide)
+	- [JSON](#json)
+	- [Crash Course](#crash-course)
+		- [All Those Brackets](#all-those-brackets)
+		- [name](#name)
+		- [resultPattern](#resultpattern)
+		- [tables](#tables)
+		- [That's It!](#thats-it)
+	- [Using Your Custom Generators](#using-your-custom-generators)
+- [Advanced Topics](#advanced-topics)
+	- [Formatting the output](#formatting-the-output)
+	- [Calling External Tables](#calling-external-tables)
+		- [Public Library Calls](#public-library-calls)
+		- [Local Generator Calls](#local-generator-calls)
+		- [Private Library Calls](#private-library-calls)
+		- [Subtable Calls](#subtable-calls)
+	- [Weighing Values](#weighing-values)
+	- [Variables](#variables)
+	- [Random Number Generation](#random-number-generation)
+	- [Template](#template)
+- [Recommended Practices](#recommended-practices)
+	- [A Closer Look at Table Properties](#a-closer-look-at-table-properties)
+		- [name](#name)
+		- [resultPattern](#resultpattern)
+		- [Metadata Properties](#metadata-properties)
+		- [Table Properties in Detail](#table-properties-in-detail)
+			- [Name](#name)
+			- [Explanation](#explanation)
+			- [Entries](#entries)
+		- [Recommended Subtable Organization](#recommended-subtable-organization)
+			- [common](#common)
+			- [rare](#rare)
+			- [mythological](#mythological)
+			- [fantasy](#fantasy)
+			- [modern](#modern)
+			- [futuristic](#futuristic)
+		- [Special Subtables](#special-subtables)
+	- [Debugging Tips](#debugging-tips)
+	- [Troubleshooting](#troubleshooting)
+
+<!-- /TOC -->
+
 
 # Generator Guide
 
