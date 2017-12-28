@@ -1,0 +1,241 @@
+{
+  "name": "equipment",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "equipment table",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "More equipment types.",
+  "see": "gem, jewelry, treasure",
+  "date": "2017-12-28",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{equipment}",
+        "{equipment} (which is {condition})",
+        "{adjective} {equipment}",
+        "{adjective} {equipment} (which is {condition})",
+        "{complication} {equipment}",
+        "{complication} {equipment} (which is {condition})",
+        "{adjective}, {complication} {equipment} (which is {condition})"
+      ]
+    },
+    {
+      "name": "equipment",
+      "explanation": "Equipment types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common equipment types.",
+      "entries": [
+        "{carrying}",
+        "{tool}",
+        "{lighting}",
+        "{camping}",
+        "{marking}",
+        "{medical}",
+        "{riding}",
+        "{climbing}",
+        "{miscellaneous}"
+      ]
+    },
+    {
+      "name": "carrying",
+      "explanation": "Carrying equipment.",
+      "entries": [
+        "waterskin",
+        "belt pouch",
+        "sack",
+        "backpack"
+      ]
+    },
+    {
+      "name": "tool",
+      "explanation": "Tools.",
+      "entries": [
+        "crowbar"
+      ]
+    },
+    {
+      "name": "lighting",
+      "explanation": "Sources of illumination.",
+      "entries": [
+        "flint and steel",
+        "candle",
+        "torch",
+        "lantern",
+        "lantern oil"
+      ]
+    },
+    {
+      "name": "camping",
+      "explanation": "Camping equipment.",
+      "entries": [
+        "blanket",
+        "bedroll",
+        "tent"
+      ]
+    },
+    {
+      "name": "marking",
+      "explanation": "Marking equipment.",
+      "entries": [
+        "chalk"
+      ]
+    },
+    {
+      "name": "medical",
+      "explanation": "Medical equipment.",
+      "entries": [
+        "antitoxin"
+      ]
+    },
+    {
+      "name": "riding",
+      "explanation": "Riding equipment.",
+      "entries": [
+        "{lib:animal#mount}",
+        "saddle"
+      ]
+    },
+    {
+      "name": "climbing",
+      "explanation": "Climbing equipment.",
+      "entries": [
+        "pitons",
+        "rope",
+        "grappling hook"
+      ]
+    },
+    {
+      "name": "miscellaneous",
+      "explanation": "Miscellaneous equipment.",
+      "entries": [
+        "pole",
+        "mirror"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare equipment types.",
+      "entries": [
+        "{illicit}",
+        "{religion}",
+        "{laboratory}"
+      ]
+    },
+    {
+      "name": "illicit",
+      "explanation": "Criminal equipment.",
+      "entries": [
+        "lockpick"
+      ]
+    },
+    {
+      "name": "religion",
+      "explanation": "Religious equipment.",
+      "entries": [
+        "vial of holy water",
+        "holy symbol"
+      ]
+    },
+    {
+      "name": "laboratory",
+      "explanation": "Timing equipment.",
+      "entries": [
+        "hourglass",
+        "alembic"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Equipment once rumoured to have existed.",
+      "entries": [
+        "{magic}"
+      ]
+    },
+    {
+      "name": "magic",
+      "explanation": "Magical equipment.",
+      "entries": [
+        "{lib:magical_instrument}",
+        "spellbook"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Equipment for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Equipment for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Equipment for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special equipment types.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives describing the equipment.",
+      "entries": [
+        "cheaply made",
+        "old-fashioned",
+        "customized"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Complications for the equipment.",
+      "entries": [
+        "unreliable",
+        "easily breaking"
+      ]
+    },
+    {
+      "name": "condition",
+      "explanation": "Condition of the equipment.",
+      "entries": [
+        "broken",
+        "needing repair",
+        "worn but usable",
+        "in excellent condition"
+      ]
+    }
+  ]
+}
