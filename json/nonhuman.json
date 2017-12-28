@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "Categorize nonhumans by type.",
   "see": "animal, citizen, encounter, monster",
-  "date": "2017-12-27",
+  "date": "2017-12-28",
   "authors": "Esko Vesala.",
   "sources": "Wikia.com, Wikipedia.org",
   "genre": "fantasy",
@@ -98,8 +98,16 @@
       "name": "rare",
       "explanation": "Rare nonhuman types.",
       "entries": [
+        "{arachnoid}",
         "{reptilian}",
         "{aquatic}"
+      ]
+    },
+    {
+      "name": "arachnoid",
+      "explanation": "Arachnid nonhumans.",
+      "entries": [
+        "scorpion folk"
       ]
     },
     {
@@ -126,7 +134,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Nonhumans for fantasy worlds (with no basis in myths).",
+      "explanation": "Nonhumans for fantasy worlds (with no basis in myth).",
       "entries": [
         "halfling"
       ]

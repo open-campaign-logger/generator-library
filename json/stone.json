@@ -70,7 +70,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary stone types for fantasy worlds.",
+      "explanation": "Fantasy stone types (with no basis in myth).",
       "entries": [
         "{myth}",
         "weirdstone (containing captured magical essence)",
@@ -80,7 +80,7 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary stone types for fantasy worlds.",
+      "explanation": "Rare fantasy stone types (with no basis in myth).",
       "entries": [
         "{fantasy}",
         "hellstone",

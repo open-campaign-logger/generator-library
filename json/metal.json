@@ -127,6 +127,7 @@
       "name": "myth",
       "explanation": "Imaginary metals once rumoured to have existed.",
       "entries": [
+        "cold iron",
         "hard mercury",
         "adamant",
         "orichalcum"
@@ -134,14 +135,12 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary metals for fantasy worlds.",
+      "explanation": "Fantasy metals (with no basis in myth).",
       "entries": [
         "{myth}",
-        "cold iron",
         "star iron",
         "hell iron",
         "absolute iron",
-        "fine steel",
         "red steel",
         "brightsteel",
         "elven steel",

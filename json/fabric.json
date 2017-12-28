@@ -213,7 +213,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary fabrics for fantasy worlds.",
+      "explanation": "Imaginary fabrics for fantasy (with no basis in myth).",
       "entries": [
         "{myth}",
         "hair",
@@ -223,7 +223,7 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary fabrics for fantasy worlds.",
+      "explanation": "Rare fabrics for fantasy (with no basis in myth).",
       "entries": [
         "{fantasy}",
         "insect wings",

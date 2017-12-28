@@ -78,7 +78,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary magicians for fantasy worlds.",
+      "explanation": "Imaginary fantasy magicians (with no basis in myth).",
       "entries": [
         "{myth}",
         "gifted (innate magician)",
@@ -88,7 +88,7 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary magicians for fantasy worlds.",
+      "explanation": "Rare fantasy magicians (with no basis in myth).",
       "entries": [
         "chaos mage (using random magic)",
         "wild mage (using uncontrolled magic)",

@@ -9,7 +9,7 @@
   "note": "",
   "to do": "",
   "see": "gem",
-  "date": "2017-10-04",
+  "date": "2017-12-28",
   "authors": "Authors: Johnn Four, Jochen Linnemann, Esko Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -278,7 +278,7 @@
       "explanation": "Common jewellery worn on feet.",
       "entries": [
         "toe ring",
-        "a matched pair of toe rings",
+        "matched pair of toe rings",
         "{rare foot jewelry}"
       ]
     },
@@ -332,7 +332,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary adornment for fantasy worlds.",
+      "explanation": "Imaginary fantasy adornment (with no basis in myth).",
       "entries": [
         "{myth}",
         "{lib:personRace}-made {common}",
@@ -343,7 +343,7 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary adornment for fantasy worlds.",
+      "explanation": "Rare fantasy adornment (with no basis in myth).",
       "entries": [
         "living {common}",
         "sentient {common}",

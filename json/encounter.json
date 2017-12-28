@@ -11,8 +11,8 @@
   "note": "",
   "bugs": "",
   "to do": "Add themes to categorize statuses and other elements.",
-  "see": "5_room_dungeon, hook_line_and_sinker_adventure, location",
-  "date": "2017-12-27",
+  "see": "animal, citizen, Five_room_dungeon, hook_line_and_sinker_adventure, location, monster",
+  "date": "2017-12-28",
   "authors": "Esko Vesala",
   "sources": "",
   "genre": "universal",
@@ -1184,21 +1184,21 @@
     },
     {
       "name": "fantasy encounter",
-      "explanation": "Encounters for fantasy worlds.",
+      "explanation": "Encounters for fantasy worlds (with no basis in myth).",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "fantasy goal",
-      "explanation": "Goals for encounters for fantasy worlds.",
+      "explanation": "Goals for fantasy worlds (with no basis in myth).",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "fantasy event",
-      "explanation": "Events for encounters in fantasy worlds.",
+      "explanation": "Events for fantasy worlds (with no basis in myth).",
       "entries": [
         "XXX"
       ]

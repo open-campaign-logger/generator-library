@@ -120,7 +120,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary magics for fantasy worlds.",
+      "explanation": "Fantasy magics (with no basis in myth).",
       "entries": [
         "{myth}",
         "channeling (harnessing supernatural powers)",
@@ -131,7 +131,7 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary magics for fantasy worlds.",
+      "explanation": "Rare fantasy magics (with no basis in myth).",
       "entries": [
         "{fantasy}",
         "living magic (spells are self-conscious entities)"

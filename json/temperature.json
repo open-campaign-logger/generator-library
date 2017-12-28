@@ -142,7 +142,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary temperatures for fantasy worlds.",
+      "explanation": "Fantasy temperatures (with no basis in myth).",
       "entries": [
         "{myth}",
         "as hot as magical flame",
@@ -151,9 +151,9 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary temperatures for fantasy worlds.",
+      "explanation": "Rare fantasy temperatures (with no basis in myth).",
       "entries": [
-        "as hot as the paraelemental plane of ice",
+        "as cold as the paraelemental plane of ice",
         "as hot as the elemental plane of fire"
       ]
     },

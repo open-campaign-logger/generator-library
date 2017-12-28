@@ -160,7 +160,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary musical instruments for fantasy worlds.",
+      "explanation": "Fantasy musical instruments (with no basis in myth).",
       "entries": [
         "{myth}",
         "harp playing by itself",
@@ -169,7 +169,7 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary musical instruments for fantasy worlds.",
+      "explanation": "Rare fantasy instruments (with no basis in myth).",
       "entries": [
         "{fantasy}",
         "silent bagpipe"

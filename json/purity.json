@@ -166,7 +166,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary purity for fantasy worlds.",
+      "explanation": "Imaginary purity for fantasy (with no basis in myth).",
       "entries": [
         "{myth}",
         "{fantastic impurity}",
@@ -176,21 +176,21 @@
     },
     {
       "name": "fantastic impurity",
-      "explanation": "Imaginary impurity for fantasy worlds.",
+      "explanation": "Impurity for fantasy (with no basis in myth).",
       "entries": [
         "abyssally {impure}"
       ]
     },
     {
       "name": "fantastic purity",
-      "explanation": "Imaginary purity for fantasy worlds.",
+      "explanation": "Purity for fantasy (with no basis in myth).",
       "entries": [
         "unearthly {pure}"
       ]
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary purity for fantasy worlds.",
+      "explanation": "Rare purity for fantasy (with no basis in myth).",
       "entries": [
         "{fantasy}",
         "unnaturally {pure}"

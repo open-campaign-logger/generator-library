@@ -237,7 +237,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary magical instruments for fantasy worlds.",
+      "explanation": "Magical instruments for fantasy (with no basis in myth).",
       "entries": [
         "{myth}",
         "goggles",
@@ -247,7 +247,7 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary magical instruments for fantasy worlds.",
+      "explanation": "Rare fantasy magical instruments (no basis in myth).",
       "entries": [
         "{fantasy}",
         "one ring of power"

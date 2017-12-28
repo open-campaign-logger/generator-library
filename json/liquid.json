@@ -119,7 +119,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary liquids for fantasy worlds.",
+      "explanation": "Imaginary liquids for fantasy (with no basis in myth).",
       "entries": [
         "{myth}",
         "{fantasy liquid descriptor} {fantasy beginning}{fantasy ending} {fantasy liquid type}",
@@ -128,7 +128,7 @@
     },
     {
       "name": "fantasy liquid descriptor",
-      "explanation": "Name beginnings for imaginary liquids for fantasy worlds.",
+      "explanation": "Descriptors for fantasy liquids (with no basis in myth).",
       "entries": [
         {
           "m": 10,
@@ -152,7 +152,7 @@
     },
     {
       "name": "fantasy beginning",
-      "explanation": "Name beginning for imaginary liquids for fantasy worlds.",
+      "explanation": "Beginning for fantasy liquids (with no basis in myth).",
       "entries": [
         "dawn",
         "night",
@@ -164,7 +164,7 @@
     },
     {
       "name": "fantasy ending",
-      "explanation": "Name endings for imaginary liquids for fantasy worlds.",
+      "explanation": "Endings for fantasy liquids (with no basis in myth).",
       "entries": [
         "cure",
         "guard",
@@ -176,7 +176,7 @@
     },
     {
       "name": "fantasy liquid type",
-      "explanation": "Types of imaginary liquids for fantasy worlds.",
+      "explanation": "Types of fantasy liquids (with no basis in myth).",
       "entries": [
         "water",
         "drink",

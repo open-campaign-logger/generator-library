@@ -12,7 +12,7 @@
   "bugs": "",
   "to do": "Add themes to categorize adjectives and other elements.",
   "see": "5_room_dungeon, encounter, hook_line_and_sinker_adventure",
-  "date": "2017-12-26",
+  "date": "2017-12-28",
   "authors": "Esko Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -602,7 +602,8 @@
         "woods",
         "forest path",
         "forest clearing",
-        "cottage"
+        "cottage",
+        "logging camp"
       ]
     },
     {
@@ -1127,7 +1128,7 @@
     },
     {
       "name": "fantasy site",
-      "explanation": "Locations for fantasy worlds.",
+      "explanation": "Locations for fantasy (with no basis in myth).",
       "entries": [
         "floating island",
         "cloud castle"
@@ -1135,7 +1136,7 @@
     },
     {
       "name": "fantasy feature",
-      "explanation": "Features for locations for fantasy worlds.",
+      "explanation": "Features for fantasy locations (with no basis in myth).",
       "entries": [
         "dimensional portal"
       ]

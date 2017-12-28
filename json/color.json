@@ -614,7 +614,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary colors for fantasy worlds.",
+      "explanation": "Imaginary colors for fantasy (with no basis in myth).",
       "entries": [
         "goblin green",
         "{rare fantasy}"
@@ -622,7 +622,7 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary colors for fantasy worlds.",
+      "explanation": "Rare colors for fantasy (with no basis in myth).",
       "entries": [
         "{fantasy}",
         "color out of space (alien hue)"

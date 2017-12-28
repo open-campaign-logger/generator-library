@@ -239,7 +239,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary cosmetics for fantasy worlds.",
+      "explanation": "Imaginary cosmetics for fantasy (with no basis in myth).",
       "entries": [
         "{myth}",
         "living body paint (slowly changing)",
@@ -248,7 +248,7 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary cosmetics for fantasy worlds.",
+      "explanation": "Rare cosmetics for fantasy (with no basis in myth).",
       "entries": [
         "living tattoos (slowly changing)"
       ]

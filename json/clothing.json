@@ -549,7 +549,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Clothes for fantasy worlds.",
+      "explanation": "Clothes for fantasy worlds (with no basis in myth).",
       "entries": [
         "{fantasy female}",
         "{fantasy male}",
@@ -558,7 +558,7 @@
     },
     {
       "name": "fantasy female",
-      "explanation": "Female clothes for fantasy worlds.",
+      "explanation": "Female clothes for fantasy (with no basis in myth).",
       "entries": [
         "{female}",
         "bodice (upper garment covering the body from the neck to the waist)"
@@ -566,7 +566,7 @@
     },
     {
       "name": "fantasy male",
-      "explanation": "Male clothes for fantasy worlds.",
+      "explanation": "Male clothes for fantasy (with no basis in myth).",
       "entries": [
         "{male}",
         "tunic"
@@ -574,7 +574,7 @@
     },
     {
       "name": "fantasy unisex",
-      "explanation": "Unisex clothes for fantasy worlds.",
+      "explanation": "Unisex clothes for fantasy (with no basis in myth).",
       "entries": [
         "{unisex}"
       ]

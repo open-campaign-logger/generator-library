@@ -74,7 +74,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary spellcasting methods for fantasy worlds.",
+      "explanation": "Fantasy spellcasting methods (with no basis in myth).",
       "entries": [
         "{myth}",
         "spellsinging",
@@ -84,7 +84,7 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "Imaginary spellcasting methods for fantasy worlds.",
+      "explanation": "Rare fantasy casting methods (with no basis in myth).",
       "entries": [
         "{fantasy}",
         "creating art with magical equipment"

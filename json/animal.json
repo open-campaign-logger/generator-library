@@ -10,7 +10,7 @@
   "bugs": "Different regions (tropical, polar, etc.)",
   "to do": "Better term for 'coast'?",
   "see": "",
-  "date": "2017-12-26",
+  "date": "2017-12-28",
   "authors": "",
   "sources": "Wikipedia.org",
   "genre": "",
@@ -444,23 +444,11 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Animals for fantasy worlds.",
+      "explanation": "Animals for fantasy world (with no basis in myth).",
       "entries": [
         "{myth}",
-        "{ooze}",
         "talking {mammal}",
         "{vertebrate} spirit"
-      ]
-    },
-    {
-      "name": "ooze",
-      "explanation": "Amoeboid ooze and jelly creatures.",
-      "entries": [
-        "giant amoeba",
-        "blob",
-        "ooze",
-        "jelly",
-        "slime mold"
       ]
     },
     {
