@@ -39,6 +39,26 @@
       ]
     },
     {
+      "name": "medieval female",
+      "explanation": "Medieval female variations for resultPattern output.",
+      "entries": [
+        "{medieval dress}",
+        "{medieval uniform}",
+        "{medieval female top} and {medieval female bottom}",
+        "{medieval female headwear}, {medieval female top} and {medieval female bottom}"
+      ]
+    },
+    {
+      "name": "modern female",
+      "explanation": "Modern female variations for resultPattern output.",
+      "entries": [
+        "{modern dress}",
+        "{modern uniform}",
+        "{modern female top} and {modern female bottom}",
+        "{modern female headwear}, {modern female top} and {modern female bottom}"
+      ]
+    },
+    {
       "name": "male",
       "explanation": "Male variations for resultPattern output.",
       "entries": [
@@ -46,6 +66,26 @@
         "{uniform}",
         "{male top} and {male bottom}",
         "{male headwear}, {male top} and {male bottom}"
+      ]
+    },
+    {
+      "name": "medieval male",
+      "explanation": "Medieval male variations for resultPattern output.",
+      "entries": [
+        "{medieval suit}",
+        "{medieval uniform}",
+        "{medieval male top} and {medieval male bottom}",
+        "{medieval male headwear}, {medieval male top} and {medieval male bottom}"
+      ]
+    },
+    {
+      "name": "modern male",
+      "explanation": "Modern male variations for resultPattern output.",
+      "entries": [
+        "{modern suit}",
+        "{modern uniform}",
+        "{modern male top} and {modern male bottom}",
+        "{modern male headwear}, {modern male top} and {modern male bottom}"
       ]
     },
     {
@@ -57,8 +97,24 @@
       ]
     },
     {
+      "name": "medieval unisex",
+      "explanation": "Medieval unisex variations for resultPattern output.",
+      "entries": [
+        "{medieval uniform}",
+        "{medieval unisex top} and {medieval unisex bottom}"
+      ]
+    },
+    {
+      "name": "modern unisex",
+      "explanation": "Unisex variations for resultPattern output.",
+      "entries": [
+        "{modern uniform}",
+        "{modern unisex top} and {modern unisex bottom}"
+      ]
+    },
+    {
       "name": "clothing",
-      "explanation": "Clothing by rarity.",
+      "explanation": "Clothing types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -94,11 +150,43 @@
       ]
     },
     {
+      "name": "medieval female",
+      "explanation": "Common medieval female clothing types.",
+      "entries": [
+        "{medieval female nightwear}",
+        "{medieval female underwear}",
+        "{medieval female headwear}",
+        "{medieval female neckwear}",
+        "{medieval female top}",
+        "{medieval female handwear}",
+        "{medieval female bottom}",
+        "{medieval dress}",
+        "{medieval female outerwear}",
+        "{medieval female footwear}",
+        "{medieval female swimwear}"
+      ]
+    },
+    {
+      "name": "modern female",
+      "explanation": "Common modern female clothing types.",
+      "entries": [
+        "{modern female nightwear}",
+        "{modern female underwear}",
+        "{modern female headwear}",
+        "{modern female neckwear}",
+        "{modern female top}",
+        "{modern female handwear}",
+        "{modern female bottom}",
+        "{modern dress}",
+        "{modern female outerwear}",
+        "{modern female footwear}",
+        "{modern female swimwear}"
+      ]
+    },
+    {
       "name": "female nightwear",
       "explanation": "Sleeping garments for women.",
       "entries": [
-        "pajamas",
-        "short-sleeve pajamas",
         "sleepshirt",
         "nightgown",
         "sleeveless nightgown",
@@ -106,7 +194,23 @@
         "floor-length sleeveless nightgown",
         "hip-length nightgown with sleeves",
         "nightgown with sleeves",
-        "floor-length nightgown with sleeves",
+        "floor-length nightgown with sleeves"
+      ]
+    },
+    {
+      "name": "medieval female nightwear",
+      "explanation": "Medieval sleeping garments for women.",
+      "entries": [
+        "{female nightwear}"
+      ]
+    },
+    {
+      "name": "modern female nightwear",
+      "explanation": "Modern sleeping garments for women.",
+      "entries": [
+        "{female nightwear}",
+        "pajamas",
+        "short-sleeve pajamas",
         "negligee (long, see-through dressing gown)",
         "babydoll nightgown"
       ]
@@ -121,10 +225,40 @@
       ]
     },
     {
+      "name": "medieval female underwear",
+      "explanation": "Medieval female underwear.",
+      "entries": [
+        "{female underwear}"
+      ]
+    },
+    {
+      "name": "modern female underwear",
+      "explanation": "Modern female underwear.",
+      "entries": [
+        "{female underwear}",
+        "panties",
+        "bra"
+      ]
+    },
+    {
       "name": "female headwear",
       "explanation": "Female headwear.",
       "entries": [
-        "hat",
+        "hat"
+      ]
+    },
+    {
+      "name": "medieval female headwear",
+      "explanation": "Medieval female headwear.",
+      "entries": [
+        "{female headwear}"
+      ]
+    },
+    {
+      "name": "modern female headwear",
+      "explanation": "Modern female headwear.",
+      "entries": [
+        "{female headwear}",
         "pillbox hat"
       ]
     },
@@ -132,7 +266,21 @@
       "name": "female neckwear",
       "explanation": "Female neckwear.",
       "entries": [
-        "scarf",
+        "scarf"
+      ]
+    },
+    {
+      "name": "medieval female neckwear",
+      "explanation": "Medieval female neckwear.",
+      "entries": [
+        "{female neckwear}"
+      ]
+    },
+    {
+      "name": "modern female neckwear",
+      "explanation": "Modern female neckwear.",
+      "entries": [
+        "{female neckwear}",
         "neckerchief"
       ]
     },
@@ -140,7 +288,21 @@
       "name": "female top",
       "explanation": "Female upper body clothing.",
       "entries": [
-        "blouse",
+        "blouse"
+      ]
+    },
+    {
+      "name": "medieval female top",
+      "explanation": "Medieval female upper body clothing.",
+      "entries": [
+        "{female top}"
+      ]
+    },
+    {
+      "name": "modern female top",
+      "explanation": "Modern female upper body clothing.",
+      "entries": [
+        "{female top}",
         "tube top"
       ]
     },
@@ -148,14 +310,43 @@
       "name": "female handwear",
       "explanation": "Female handwear.",
       "entries": [
-        "gloves"
+        "gloves",
+        "leather gloves"
+      ]
+    },
+    {
+      "name": "medieval female handwear",
+      "explanation": "Medieval female handwear.",
+      "entries": [
+        "{female handwear}"
+      ]
+    },
+    {
+      "name": "modern female handwear",
+      "explanation": "Modern female handwear.",
+      "entries": [
+        "{female handwear}"
       ]
     },
     {
       "name": "female bottom",
       "explanation": "Female lower body clothing.",
       "entries": [
-        "skirt",
+        "skirt"
+      ]
+    },
+    {
+      "name": "medieval female bottom",
+      "explanation": "Medieval female lower body clothing.",
+      "entries": [
+        "{female bottom}"
+      ]
+    },
+    {
+      "name": "modern female bottom",
+      "explanation": "Modern female lower body clothing.",
+      "entries": [
+        "{female bottom}",
         "shorts",
         "leggings"
       ]
@@ -188,15 +379,45 @@
       "name": "female outerwear",
       "explanation": "Female outerwear.",
       "entries": [
-        "sleeved blanket",
         "overcoat"
+      ]
+    },
+    {
+      "name": "medieval female outerwear",
+      "explanation": "Medieval female outerwear.",
+      "entries": [
+        "{female outerwear}",
+        "sleeved blanket"
+      ]
+    },
+    {
+      "name": "modern female outerwear",
+      "explanation": "Modern female outerwear.",
+      "entries": [
+        "{female outerwear}",
+        "sleeved blanket"
       ]
     },
     {
       "name": "female footwear",
       "explanation": "Female footwear.",
       "entries": [
-        "shoes",
+        "shoes"
+      ]
+    },
+    {
+      "name": "medieval female footwear",
+      "explanation": "Medieval female footwear.",
+      "entries": [
+        "{female footwear}",
+        "clogs"
+      ]
+    },
+    {
+      "name": "modern female footwear",
+      "explanation": "Modern female footwear.",
+      "entries": [
+        "{female footwear}",
         "slingback shoes (secured by a strap behind the heel)",
         "high-heeled shoes",
         "stiletto heels"
@@ -206,7 +427,23 @@
       "name": "female swimwear",
       "explanation": "Female swimwear.",
       "entries": [
-        "swimsuit"
+        "nothing"
+      ]
+    },
+    {
+      "name": "medieval female swimwear",
+      "explanation": "Mediveal female swimwear.",
+      "entries": [
+        "{female swimwear}"
+      ]
+    },
+    {
+      "name": "modern female swimwear",
+      "explanation": "Modern female swimwear.",
+      "entries": [
+        "{female swimwear}",
+        "swimsuit",
+        "bikini suit"
       ]
     },
     {
@@ -227,9 +464,58 @@
       ]
     },
     {
+      "name": "medieval male",
+      "explanation": "Common medieval male clothing types.",
+      "entries": [
+        "{medieval male nightwear}",
+        "{medieval male underwear}",
+        "{medieval male headwear}",
+        "{medieval male neckwear}",
+        "{medieval male top}",
+        "{medieval male handwear}",
+        "{medieval male bottom}",
+        "{medieval suit}",
+        "{medieval male outerwear}",
+        "{medieval male footwear}",
+        "{medieval male swimwear}"
+      ]
+    },
+    {
+      "name": "modern male",
+      "explanation": "Common modern male clothing types.",
+      "entries": [
+        "{modern male nightwear}",
+        "{modern male underwear}",
+        "{modern male headwear}",
+        "{modern male neckwear}",
+        "{modern male top}",
+        "{modern male handwear}",
+        "{modern male bottom}",
+        "{modern suit}",
+        "{modern male outerwear}",
+        "{modern male footwear}",
+        "{modern male swimwear}"
+      ]
+    },
+    {
       "name": "male nightwear",
       "explanation": "Sleeping garments for men.",
       "entries": [
+        "nothing"
+      ]
+    },
+    {
+      "name": "medieval male nightwear",
+      "explanation": "Medieval sleeping garments for men.",
+      "entries": [
+        "{male nightwear}"
+      ]
+    },
+    {
+      "name": "modern male nightwear",
+      "explanation": "Modern sleeping garments for men.",
+      "entries": [
+        "{male nightwear}",
         "pajamas",
         "short-sleeve pajamas"
       ]
@@ -255,6 +541,8 @@
       "explanation": "Modern medieval male underwear.",
       "entries": [
         "{male underwear}",
+        "union suit (one-piece long underwear)",
+        "long underwear (two-piece underwear with long lengs and sleeves)",
         "boxer shorts"
       ]
     },
@@ -262,8 +550,6 @@
       "name": "male headwear",
       "explanation": "Male headwear.",
       "entries": [
-        "cap",
-        "flat cap",
         "hat"
       ]
     },
@@ -280,6 +566,8 @@
       "explanation": "Modern male headwear.",
       "entries": [
         "{male headwear}",
+        "cap",
+        "flat cap",
         "beanie",
         "beret",
         "fedora",
@@ -290,7 +578,21 @@
       "name": "male neckwear",
       "explanation": "Male neckwear.",
       "entries": [
-        "scarf",
+        "scarf"
+      ]
+    },
+    {
+      "name": "medieval male neckwear",
+      "explanation": "Medieval male neckwear.",
+      "entries": [
+        "{male neckwear}"
+      ]
+    },
+    {
+      "name": "modern male neckwear",
+      "explanation": "Modern male neckwear.",
+      "entries": [
+        "{male neckwear}",
         "long scarf"
       ]
     },
@@ -305,7 +607,8 @@
       "name": "medieval male top",
       "explanation": "Medieval male upper body clothing.",
       "entries": [
-        "{male top}"
+        "{male top}",
+        "tunic"
       ]
     },
     {
@@ -321,8 +624,25 @@
       "name": "male handwear",
       "explanation": "Male handwear.",
       "entries": [
+        "gloves",
+        "leather gloves"
+      ]
+    },
+    {
+      "name": "medieval male handwear",
+      "explanation": "Medieval male handwear.",
+      "entries": [
+        "{male handwear}",
+        "{lib:fabric#medieval} gloves"
+      ]
+    },
+    {
+      "name": "modern male handwear",
+      "explanation": "Modern male handwear.",
+      "entries": [
+        "{male handwear}",
         "mittens",
-        "gloves"
+        "{lib:fabric#modern} gloves"
       ]
     },
     {
@@ -362,9 +682,23 @@
       "name": "suit",
       "explanation": "Suits for males.",
       "entries": [
+        "suit"
+      ]
+    },
+    {
+      "name": "medieval suit",
+      "explanation": "Medieval suits for males.",
+      "entries": [
+        "{suit}"
+      ]
+    },
+    {
+      "name": "modern suit",
+      "explanation": "Modern suits for males.",
+      "entries": [
+        "{suit}",
         "overalls",
         "onesie",
-        "suit",
         "lounge suit",
         "business suit",
         "three-piece suit"
@@ -418,8 +752,6 @@
       "name": "male footwear",
       "explanation": "Male footwear.",
       "entries": [
-        "sandals",
-        "shoes",
         "{boots}"
       ]
     },
@@ -438,9 +770,41 @@
       ]
     },
     {
+      "name": "medieval male footwear",
+      "explanation": "Medieval male footwear.",
+      "entries": [
+        "{male footwear}"
+      ]
+    },
+    {
+      "name": "modern male footwear",
+      "explanation": "Modern male footwear.",
+      "entries": [
+        "{male footwear}",
+        "sandals",
+        "running shoes",
+        "shoes"
+      ]
+    },
+    {
       "name": "male swimwear",
       "explanation": "Male swimwear.",
       "entries": [
+        "nothing"
+      ]
+    },
+    {
+      "name": "medieval male swimwear",
+      "explanation": "Medieval male swimwear.",
+      "entries": [
+        "{male swimwear}"
+      ]
+    },
+    {
+      "name": "modern male swimwear",
+      "explanation": "Modern male swimwear.",
+      "entries": [
+        "{male swimwear}",
         "swimming trunks"
       ]
     },
@@ -462,9 +826,58 @@
       ]
     },
     {
+      "name": "medieval unisex",
+      "explanation": "Common medieval unisex clothing types.",
+      "entries": [
+        "{medieval unisex nightwear}",
+        "{medieval unisex underwear}",
+        "{medieval unisex headwear}",
+        "{medieval unisex neckwear}",
+        "{medieval unisex top}",
+        "{medieval unisex handwear}",
+        "{medieval unisex bottom}",
+        "{medieval unisex footwear}",
+        "{medieval uniform}",
+        "{medieval unisex outerwear}",
+        "{medieval unisex swimwear}"
+      ]
+    },
+    {
+      "name": "modern unisex",
+      "explanation": "Common modern unisex clothing types.",
+      "entries": [
+        "{modern unisex nightwear}",
+        "{modern unisex underwear}",
+        "{modern unisex headwear}",
+        "{modern unisex neckwear}",
+        "{modern unisex top}",
+        "{modern unisex handwear}",
+        "{modern unisex bottom}",
+        "{modern unisex footwear}",
+        "{modern uniform}",
+        "{modern unisex outerwear}",
+        "{modern unisex swimwear}"
+      ]
+    },
+    {
       "name": "unisex nightwear",
       "explanation": "Sleeping garments for all genders.",
       "entries": [
+        "nothing"
+      ]
+    },
+    {
+      "name": "medieval unisex nightwear",
+      "explanation": "Medieval sleeping garments for all genders.",
+      "entries": [
+        "{unisex nightwear}"
+      ]
+    },
+    {
+      "name": "modern unisex nightwear",
+      "explanation": "Modern sleeping garments for all genders.",
+      "entries": [
+        "{unisex nightwear}",
         "pajamas",
         "short-sleeve pajamas"
       ]
@@ -473,14 +886,29 @@
       "name": "unisex underwear",
       "explanation": "Unisex underwear.",
       "entries": [
-        "underpants"
+        "nothing"
+      ]
+    },
+    {
+      "name": "medieval unisex underwear",
+      "explanation": "Medieval unisex underwear.",
+      "entries": [
+        "{unisex underwear}"
+      ]
+    },
+    {
+      "name": "modern unisex underwear",
+      "explanation": "Modern unisex underwear.",
+      "entries": [
+        "{unisex underwear}",
+        "underpants",
+        "union suit (one-piece long underwear)"
       ]
     },
     {
       "name": "unisex headwear",
       "explanation": "Unisex headwear.",
       "entries": [
-        "bandana",
         "hat"
       ]
     },
@@ -488,9 +916,18 @@
       "name": "medieval unisex headwear",
       "explanation": "Medieval unisex headwear.",
       "entries": [
+        "{unisex headwear}",
         "hood",
         "liripipe (a long-tailed hood)",
         "gugel (a hood with a trailing point)"
+      ]
+    },
+    {
+      "name": "modern unisex headwear",
+      "explanation": "Modern unisex headwear.",
+      "entries": [
+        "{unisex headwear}",
+        "bandana"
       ]
     },
     {
@@ -501,9 +938,45 @@
       ]
     },
     {
+      "name": "medieval unisex neckwear",
+      "explanation": "Medieval unisex neckwear.",
+      "entries": [
+        "{unisex neckwear}"
+      ]
+    },
+    {
+      "name": "modern unisex neckwear",
+      "explanation": "Modern unisex neckwear.",
+      "entries": [
+        "{unisex neckwear}"
+      ]
+    },
+    {
       "name": "unisex top",
       "explanation": "Unisex upper body clothing.",
       "entries": [
+        "shirt"
+      ]
+    },
+    {
+      "name": "medieval unisex top",
+      "explanation": "Medieval unisex upper body clothing.",
+      "entries": [
+        "{unisex top}"
+      ]
+    },
+    {
+      "name": "modern unisex top",
+      "explanation": "Modern unisex upper body clothing.",
+      "entries": [
+        "{unisex top}"
+      ]
+    },
+    {
+      "name": "unisex top",
+      "explanation": "Unisex upper body clothing.",
+      "entries": [
+        "{unisex top}",
         "collared shirt"
       ]
     },
@@ -511,7 +984,25 @@
       "name": "unisex handwear",
       "explanation": "Unisex handwear.",
       "entries": [
-        "gloves"
+        "gloves",
+        "leather gloves"
+      ]
+    },
+    {
+      "name": "medieval unisex handwear",
+      "explanation": "Medieval unisex handwear.",
+      "entries": [
+        "{unisex handwear}",
+        "{lib:fabric#medieval} gloves"
+      ]
+    },
+    {
+      "name": "modern unisex handwear",
+      "explanation": "Modern unisex handwear.",
+      "entries": [
+        "{unisex handwear}",
+        "mittens",
+        "{lib:fabric#modern} gloves"
       ]
     },
     {
@@ -522,11 +1013,39 @@
       ]
     },
     {
+      "name": "medieval unisex bottom",
+      "explanation": "Medieval unisex lower body clothing.",
+      "entries": [
+        "{unisex bottom}"
+      ]
+    },
+    {
+      "name": "modern unisex bottom",
+      "explanation": "Modern unisex lower body clothing.",
+      "entries": [
+        "{unisex bottom}"
+      ]
+    },
+    {
       "name": "unisex footwear",
       "explanation": "Unisex footwear.",
       "entries": [
-        "shoes",
-        "boots"
+        "{boots}"
+      ]
+    },
+    {
+      "name": "medieval unisex footwear",
+      "explanation": "Medieval unisex footwear.",
+      "entries": [
+        "{unisex footwear}"
+      ]
+    },
+    {
+      "name": "modern unisex footwear",
+      "explanation": "Modern unisex footwear.",
+      "entries": [
+        "{unisex footwear}",
+        "leather shoes"
       ]
     },
     {
@@ -537,9 +1056,39 @@
       ]
     },
     {
+      "name": "medieval uniform",
+      "explanation": "Medieval unisex uniforms.",
+      "entries": [
+        "{uniform}"
+      ]
+    },
+    {
+      "name": "modern uniform",
+      "explanation": "Modern unisex uniforms.",
+      "entries": [
+        "{uniform}"
+      ]
+    },
+    {
       "name": "unisex outerwear",
       "explanation": "Unisex outerwear.",
       "entries": [
+        "coat"
+      ]
+    },
+    {
+      "name": "medieval unisex outerwear",
+      "explanation": "Medieval unisex outerwear.",
+      "entries": [
+        "{unisex outerwear}",
+        "surcoat"
+      ]
+    },
+    {
+      "name": "modern unisex outerwear",
+      "explanation": "Modern unisex outerwear.",
+      "entries": [
+        "{unisex outerwear}",
         "overcoat"
       ]
     },
@@ -547,6 +1096,21 @@
       "name": "unisex swimwear",
       "explanation": "Unisex swimwear.",
       "entries": [
+        "nothing"
+      ]
+    },
+    {
+      "name": "medieval unisex swimwear",
+      "explanation": "Medieval unisex swimwear.",
+      "entries": [
+        "{unisex swimwear}"
+      ]
+    },
+    {
+      "name": "modern unisex swimwear",
+      "explanation": "Modern unisex swimwear.",
+      "entries": [
+        "{unisex swimwear}",
         "swimming suit"
       ]
     },
@@ -576,21 +1140,67 @@
       ]
     },
     {
+      "name": "medieval child",
+      "explanation": "Common medieval children's clothing types.",
+      "entries": [
+        "{medieval child nightwear}",
+        "{medieval child underwear}",
+        "{medieval child headwear}",
+        "{medieval child neckwear}",
+        "{medieval child top}",
+        "{medieval child handwear}",
+        "{medieval child bottom}",
+        "{medieval child suit}",
+        "{medieval child footwear}",
+        "{medieval child outerwear}",
+        "{medieval child swimwear}"
+      ]
+    },
+    {
+      "name": "modern child",
+      "explanation": "Common modern children's clothing types.",
+      "entries": [
+        "{modern child nightwear}",
+        "{modern child underwear}",
+        "{modern child headwear}",
+        "{modern child neckwear}",
+        "{modern child top}",
+        "{modern child handwear}",
+        "{modern child bottom}",
+        "{modern child suit}",
+        "{modern child footwear}",
+        "{modern child outerwear}",
+        "{modern child swimwear}"
+      ]
+    },
+    {
       "name": "child nightwear",
       "explanation": "Sleeping garments for children.",
       "entries": [
+        "sleepshirt",
+        "nightgown"
+      ]
+    },
+    {
+      "name": "medieval child nightwear",
+      "explanation": "Medieval sleeping garments for children.",
+      "entries": [
+        "{child nightwear}"
+      ]
+    },
+    {
+      "name": "modern child nightwear",
+      "explanation": "Modern sleeping garments for children.",
+      "entries": [
+        "{child nightwear}",
         "pajamas",
         "short-sleeve pajamas",
-        "sleepshirt",
-        "nightgown",
         "sleeveless nightgown",
         "hip-length sleeveless nightgown",
         "floor-length sleeveless nightgown",
         "hip-length nightgown with sleeves",
         "nightgown with sleeves",
-        "floor-length nightgown with sleeves",
-        "negligee (long, see-through dressing gown)",
-        "babydoll nightgown"
+        "floor-length nightgown with sleeves"
       ]
     },
     {
@@ -601,10 +1211,38 @@
       ]
     },
     {
+      "name": "medieval child underwear",
+      "explanation": "Medieval underwear for children.",
+      "entries": [
+        "{child underwear}"
+      ]
+    },
+    {
+      "name": "modern child underwear",
+      "explanation": "Modern underwear for children.",
+      "entries": [
+        "{child underwear}"
+      ]
+    },
+    {
       "name": "child headwear",
       "explanation": "Headwear for children.",
       "entries": [
         "hat"
+      ]
+    },
+    {
+      "name": "medieval child headwear",
+      "explanation": "Medieval headwear for children.",
+      "entries": [
+        "{child headwear}"
+      ]
+    },
+    {
+      "name": "modern child headwear",
+      "explanation": "Modern headwear for children.",
+      "entries": [
+        "{child headwear}"
       ]
     },
     {
@@ -615,10 +1253,38 @@
       ]
     },
     {
+      "name": "medieval child neckwear",
+      "explanation": "Medieval neckwear for children.",
+      "entries": [
+        "{child neckwear}"
+      ]
+    },
+    {
+      "name": "modern child neckwear",
+      "explanation": "Modern neckwear for children.",
+      "entries": [
+        "{child neckwear}"
+      ]
+    },
+    {
       "name": "child top",
       "explanation": "Upper body clothing for children.",
       "entries": [
         "blouse"
+      ]
+    },
+    {
+      "name": "medieval child top",
+      "explanation": "Medieval upper body clothing for children.",
+      "entries": [
+        "{child top}"
+      ]
+    },
+    {
+      "name": "modern child top",
+      "explanation": "Modern upper body clothing for children.",
+      "entries": [
+        "{child top}"
       ]
     },
     {
@@ -629,10 +1295,39 @@
       ]
     },
     {
+      "name": "medieval child handwear",
+      "explanation": "Medieval handwear for children.",
+      "entries": [
+        "{child handwear}"
+      ]
+    },
+    {
+      "name": "modern child handwear",
+      "explanation": "Modern handwear for children.",
+      "entries": [
+        "{child handwear}",
+        "mittens"
+      ]
+    },
+    {
       "name": "child bottom",
       "explanation": "Lower body clothing for children.",
       "entries": [
         "skirt"
+      ]
+    },
+    {
+      "name": "medieval child bottom",
+      "explanation": "Medieval lower body clothing for children.",
+      "entries": [
+        "{child bottom}"
+      ]
+    },
+    {
+      "name": "modern child bottom",
+      "explanation": "Modern lower body clothing for children.",
+      "entries": [
+        "{child bottom}"
       ]
     },
     {
@@ -643,9 +1338,39 @@
       ]
     },
     {
+      "name": "medieval child suit",
+      "explanation": "Medieval whole body suits for children.",
+      "entries": [
+        "{child suit}"
+      ]
+    },
+    {
+      "name": "modern child suit",
+      "explanation": "Modern whole body suits for children.",
+      "entries": [
+        "{child suit}"
+      ]
+    },
+    {
       "name": "child outerwear",
       "explanation": "Outerwear for children.",
       "entries": [
+        "coat"
+      ]
+    },
+    {
+      "name": "medieval child outerwear",
+      "explanation": "Medieval outerwear for children.",
+      "entries": [
+        "{child outerwear}",
+        "surcoat"
+      ]
+    },
+    {
+      "name": "modern child outerwear",
+      "explanation": "Modern outerwear for children.",
+      "entries": [
+        "{child outerwear}",
         "overcoat"
       ]
     },
@@ -657,9 +1382,39 @@
       ]
     },
     {
+      "name": "medieval child footwear",
+      "explanation": "Medieval footwear for children.",
+      "entries": [
+        "{child footwear}",
+        "clogs"
+      ]
+    },
+    {
+      "name": "modern child footwear",
+      "explanation": "Modern footwear for children.",
+      "entries": [
+        "{child footwear}"
+      ]
+    },
+    {
       "name": "child swimwear",
       "explanation": "Swimwear for children.",
       "entries": [
+        "nothing"
+      ]
+    },
+    {
+      "name": "medieval child swimwear",
+      "explanation": "Medieval swimwear for children.",
+      "entries": [
+        "{child swimwear}"
+      ]
+    },
+    {
+      "name": "modern child swimwear",
+      "explanation": "Modern swimwear for children.",
+      "entries": [
+        "{child swimwear}",
         "swimsuit"
       ]
     },
@@ -692,8 +1447,7 @@
       "name": "fantasy male",
       "explanation": "Male clothes for fantasy (with no basis in myth).",
       "entries": [
-        "{male}",
-        "tunic"
+        "{male}"
       ]
     },
     {
@@ -704,6 +1458,16 @@
       ]
     },
     {
+      "name": "medieval",
+      "explanation": "Clothes for medieval worlds.",
+      "entries": [
+        "{common}",
+        "{medieval female}",
+        "{medieval male}",
+        "{medieval unisex}"
+      ]
+    },
+    {
       "name": "modern",
       "explanation": "Clothes for modern worlds.",
       "entries": [
@@ -711,55 +1475,6 @@
         "{modern female}",
         "{modern male}",
         "{modern unisex}"
-      ]
-    },
-    {
-      "name": "modern female",
-      "explanation": "Female clothes for modern worlds.",
-      "entries": [
-        "{female}",
-        "{modern female underwear}",
-        "{modern unisex}"
-      ]
-    },
-    {
-      "name": "modern female underwear",
-      "explanation": "Female underwear for modern worlds.",
-      "entries": [
-        "panties",
-        "bra"
-      ]
-    },
-    {
-      "name": "modern male",
-      "explanation": "Male clothes for modern worlds.",
-      "entries": [
-        "{male}",
-        "{modern male underwear}",
-        "{modern unisex}"
-      ]
-    },
-    {
-      "name": "modern male underwear",
-      "explanation": "Male underwear for modern worlds.",
-      "entries": [
-        "union suit (one-piece long underwear)",
-        "long underwear (two-piece underwear with long lengs and sleeves)"
-      ]
-    },
-    {
-      "name": "modern unisex",
-      "explanation": "unisex clothes for modern worlds.",
-      "entries": [
-        "{unisex}",
-        "{modern unisex underwear}"
-      ]
-    },
-    {
-      "name": "modern unisex underwear",
-      "explanation": "Unisex underwear for modern worlds.",
-      "entries": [
-        "union suit (one-piece long underwear)"
       ]
     },
     {
@@ -881,7 +1596,21 @@
       "explanation": "Babies' clothing.",
       "entries": [
         "swaddling bands (tight blanket wrapping)",
-        "blanket sleeper (warm sleeping garment)",
+        "blanket sleeper (warm sleeping garment)"
+      ]
+    },
+    {
+      "name": "medieval infant",
+      "explanation": "Medieval babies' clothing.",
+      "entries": [
+        "{infant}"
+      ]
+    },
+    {
+      "name": "modern infant",
+      "explanation": "Modern babies' clothing.",
+      "entries": [
+        "{infant}",
         "diaper",
         "footed pajamas",
         "infant bodysuit",
@@ -893,7 +1622,21 @@
       "name": "pet",
       "explanation": "Clothes for pets (dogs & cats).",
       "entries": [
-        "pet collar",
+        "pet collar"
+      ]
+    },
+    {
+      "name": "medieval pet",
+      "explanation": "Clothes for pets (dogs & cats).",
+      "entries": [
+        "{pet}"
+      ]
+    },
+    {
+      "name": "modern pet",
+      "explanation": "Clothes for pets (dogs & cats).",
+      "entries": [
+        "{pet}",
         "pet hair clip",
         "pet bandana",
         "pet harness",
