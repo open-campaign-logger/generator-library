@@ -56,7 +56,7 @@
       "entries": [
         {
           "m": 1,
-          "v": "{indoor}",
+          "v": "{indoors}",
           "set": {
             "milieu": "indoor",
             "milieudescription": "indoors"
@@ -785,8 +785,8 @@
       "name": "lake site",
       "explanation": "Locations on still freshwater (lakes, ponds, etc).",
       "entries": [
+        "lake",
         "lakeshore",
-        "lake surface",
         "isle"
       ]
     },
@@ -1209,7 +1209,7 @@
     },
     {
       "name": "complication",
-      "explanation": "Complication types by rarity.",
+      "explanation": "Location complication types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -1253,8 +1253,8 @@
       "name": "bystander",
       "explanation": "Complications caused by bystanders.",
       "entries": [
-        "toddler moving in the area",
-        "innocents captured in the area"
+        "with a toddler moving in the area",
+        "with innocents captured in the area"
       ]
     },
     {
@@ -1278,7 +1278,7 @@
       "explanation": "Complications caused by contamination.",
       "entries": [
         "contaminated by a disease",
-        "poisonous gases in the air"
+        "with poisonous gases in the air"
       ]
     },
     {
@@ -1306,16 +1306,16 @@
         "magically dead",
         "tainted with chaos magic",
         "abounding with wild magic",
-        "reality rift",
-        "portal to another area within the location"
+        "with a reality rift present",
+        "with a portal to another area within the location"
       ]
     },
     {
       "name": "scifi",
       "explanation": "Technological complications for the location.",
       "entries": [
-        "zero gravity field",
-        "reversed gravity field"
+        "with a zero gravity field",
+        "with a reversed gravity field"
       ]
     }
   ]

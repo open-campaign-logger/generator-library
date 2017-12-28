@@ -227,7 +227,7 @@
         "blended with {flavoring}",
         "mixed with {lib:plant#spice}",
         "aged for {dice:3d6} months",
-        "prepared using a vegetable rennet",
+        "prepared using a {lib:plant#vegetable} rennet",
         "with a {lib:aroma} tang",
         "coated in wax",
         "mould-ripened",
@@ -382,7 +382,7 @@
         "{neutral taste}",
         "{strong taste}",
         "{good taste}",
-        "{strength} {herb} flavored",
+        "{strength} {lib:plant#herb} flavored",
         "{strength} flavored with {lib:plant#spice}"
       ]
     },
@@ -519,8 +519,8 @@
       "name": "condiment",
       "explanation": "Types of condiments.",
       "entries": [
-        "{berry}",
-        "{herb}",
+        "{lib:plant#berry}",
+        "{lib:plant#herb}",
         "{lib:plant#spice}",
         "{fish}",
         "{meat}",
@@ -545,7 +545,7 @@
       "explanation": "Food wrappings.",
       "entries": [
         "crust",
-        "{vegetable} leaves"
+        "{lib:plant#vegetable} leaves"
       ]
     }
   ]

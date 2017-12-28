@@ -10,9 +10,9 @@
   "bugs": "",
   "to do": "",
   "see": "encounter, monster",
-  "date": "2017-12-27",
+  "date": "2017-12-28",
   "authors": "Esko Vesala.",
-  "sources": "",
+  "sources": "D20srd.org",
   "genre": "fantasy",
   "categories": [
     "monster"
@@ -40,33 +40,43 @@
       "name": "common",
       "explanation": "Common attacks.",
       "entries": [
-        "{unarmed}",
-        "{armed}"
+        "{natural}"
       ]
     },
     {
-      "name": "unarmed",
-      "explanation": "Unarmed attack styles.",
+      "name": "natural",
+      "explanation": "Natural attack styles.",
       "entries": [
         "slam",
         "bite",
         "claw",
-        "gore",
-        "touch"
-      ]
-    },
-    {
-      "name": "armed",
-      "explanation": "Armed attack styles.",
-      "entries": [
-        "melee weapon",
-        "ranged weapon"
+        "grab"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare attacks.",
       "entries": [
+        "gore",
+        "choke",
+        "poison",
+        "disease",
+        "paralysis"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Attacks once rumoured to have existed.",
+      "entries": [
+        "{lib:weapon#myth}"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Attacks for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{lib:weapon#fantasy}",
         "{special attack}"
       ]
     },
@@ -74,34 +84,36 @@
       "name": "special attack",
       "explanation": "Creature special attacks.",
       "entries": [
-        "temporary ability damage",
-        "permanent ability drain",
-        "breath weapon",
-        "shapechanging",
+        "{touch}",
+        "{breath}",
         "constrict",
-        "cursed wound",
-        "disease",
-        "energy drain",
         "fear",
-        "gaze",
-        "grabbing",
-        "paralysis",
-        "poison"
+        "{gaze}",
+        "cursed wound",
+        "energy drain",
+        "temporary ability damage",
+        "permanent ability drain"
       ]
     },
     {
-      "name": "myth",
-      "explanation": "Attacks once rumoured to have existed.",
+      "name": "touch",
+      "explanation": "Touch attacks.",
+      "entries": [
+        "nerve touch"
+      ]
+    },
+    {
+      "name": "breath",
+      "explanation": "Breath attacks.",
+      "entries": [
+        "breath of fire"
+      ]
+    },
+    {
+      "name": "gaze",
+      "explanation": "Gaze attacks.",
       "entries": [
         "stoning gaze"
-      ]
-    },
-    {
-      "name": "fantasy",
-      "explanation": "Attacks for fantasy worlds (no basis on myth).",
-      "entries": [
-        "{myth}",
-        "XXX"
       ]
     },
     {
@@ -109,7 +121,7 @@
       "explanation": "Attacks for modern worlds.",
       "entries": [
         "{common}",
-        "XXX"
+        "{lib:weapon#modern}"
       ]
     },
     {
@@ -117,14 +129,23 @@
       "explanation": "Attacks for science fiction worlds.",
       "entries": [
         "{modern}",
-        "XXX"
+        "{lib:weapon#futuristic}"
       ]
     },
     {
       "name": "special",
       "explanation": "Special attack types.",
       "entries": [
-        "XXX"
+        "shapechanging",
+        "{armed}"
+      ]
+    },
+    {
+      "name": "armed",
+      "explanation": "Armed attack styles.",
+      "entries": [
+        "{lib:weapon}",
+        "{lib:weapon} and {lib:weapon}"
       ]
     }
   ]

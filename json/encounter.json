@@ -11,7 +11,7 @@
   "note": "",
   "bugs": "",
   "to do": "Add themes to categorize statuses and other elements.",
-  "see": "animal, citizen, Five_room_dungeon, hook_line_and_sinker_adventure, location, monster",
+  "see": "activity, animal, citizen, Five_room_dungeon, hook_line_and_sinker_adventure, location, monster",
   "date": "2017-12-28",
   "authors": "Esko Vesala",
   "sources": "",
@@ -358,7 +358,7 @@
       "name": "indoors event",
       "explanation": "Events indoors.",
       "entries": [
-        "XXX"
+        "gambling"
       ]
     },
     {
@@ -1380,7 +1380,7 @@
     },
     {
       "name": "complication",
-      "explanation": "Complication types by rarity.",
+      "explanation": "Encounter complication types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -1393,41 +1393,21 @@
       "name": "common complication",
       "explanation": "Common complications for the encounter.",
       "entries": [
-        "wounded",
-        "insane"
+        "XXX"
       ]
     },
     {
       "name": "rare complication",
       "explanation": "Rare complications for the encounter.",
       "entries": [
-        "chained",
-        "trapped",
-        "entangled"
+        "XXX"
       ]
     },
     {
       "name": "special complication",
       "explanation": "Special complications for the encounter.",
       "entries": [
-        "{supernatural}",
-        "{magic}"
-      ]
-    },
-    {
-      "name": "supernatural",
-      "explanation": "Supernatural complications for the encounter.",
-      "entries": [
-        "cursed",
-        "actually a ghost"
-      ]
-    },
-    {
-      "name": "magic",
-      "explanation": "Magic-related complications for the encounter.",
-      "entries": [
-        "magically charmed",
-        "magically controlled"
+        "XXX"
       ]
     }
   ]

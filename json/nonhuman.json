@@ -9,7 +9,7 @@
   "note": "",
   "bugs": "",
   "to do": "Categorize nonhumans by type.",
-  "see": "animal, citizen, encounter, monster",
+  "see": "activity, animal, citizen, encounter, monster",
   "date": "2017-12-28",
   "authors": "Esko Vesala.",
   "sources": "Wikia.com, Wikipedia.org",
@@ -23,8 +23,11 @@
       "explanation": "Variations for resultPattern output.",
       "entries": [
         "{nonhuman}",
+        "{nonhuman} {lib:activity}",
         "{adjective} {nonhuman}",
-        "{lib:ability} {nonhuman}"
+        "{adjective} {nonhuman} {lib:activity}",
+        "{lib:ability} {nonhuman}",
+        "{lib:ability} {nonhuman} {lib:activity}"
       ]
     },
     {

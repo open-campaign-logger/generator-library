@@ -8,8 +8,8 @@
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "bugs": "Different regions (tropical, polar, etc.)",
-  "to do": "Better term for 'coast'?",
-  "see": "",
+  "to do": "",
+  "see": "activity, citizen, encounter, monster, nonhuman, plant",
   "date": "2017-12-28",
   "authors": "",
   "sources": "Wikipedia.org",
@@ -23,7 +23,9 @@
       "explanation": "Variations for resultPattern output.",
       "entries": [
         "{animal}",
-        "{animal}"
+        "{adjective} {animal}",
+        "{animal} {lib:activity#animal}",
+        "{adjective} {animal} {lib:activity#animal}"
       ]
     },
     {
@@ -557,6 +559,13 @@
         "{flying insect}",
         "{flying bird}",
         "{bat}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives for animals.",
+      "entries": [
+        "young"
       ]
     }
   ]

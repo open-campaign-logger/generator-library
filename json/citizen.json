@@ -9,8 +9,8 @@
   "note": "",
   "bugs": "",
   "to do": "Categorize citizens by type.",
-  "see": "animal, encounter, monster, nonhuman",
-  "date": "2017-12-27",
+  "see": "activity, animal, encounter, monster, nonhuman",
+  "date": "2017-12-28",
   "authors": "Esko Vesala.",
   "sources": "Wikia.com, Wikipedia.org",
   "genre": "fantasy",
@@ -23,7 +23,9 @@
       "explanation": "Variations for resultPattern output.",
       "entries": [
         "{citizen}",
-        "{adjective} {citizen}"
+        "{adjective} {citizen}",
+        "{citizen} {lib:activity}",
+        "{adjective} {citizen} {lib:activity}"
       ]
     },
     {
@@ -167,7 +169,7 @@
     },
     {
       "name": "adjective",
-      "explanation": "Adjectives describing the citizen.",
+      "explanation": "Adjectives describing citizens.",
       "entries": [
         "{psychology}"
       ]

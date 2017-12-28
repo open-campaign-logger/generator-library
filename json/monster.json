@@ -10,9 +10,9 @@
   "bugs": "",
   "to do": "Categorize monsters by type.",
   "see": "animal, attack, citizen, encounter, nonhuman",
-  "date": "2017-12-27",
+  "date": "2017-12-28",
   "authors": "Esko Vesala.",
-  "sources": "DanDWiki.com, Wikia.com, Wikipedia.org",
+  "sources": "D20SRD.org, DanDWiki.com, Wikia.com, Wikipedia.org",
   "genre": "fantasy",
   "categories": [
     "monster"
@@ -23,9 +23,15 @@
       "explanation": "Variations for resultPattern output.",
       "entries": [
         "{monster}",
+        "{health} {monster}",
         "{adjective} {monster}",
+        "{health} {adjective} {monster}",
         "{lib:creature_template} {monster}",
-        "{monster} with {lib:attack} attack"
+        "{health} {lib:creature_template} {monster}",
+        "{monster} with {lib:attack} attack",
+        "{health} {monster} with {lib:attack} attack",
+        "{monster} {complication}",
+        "{health} {monster} {complication}"
       ]
     },
     {
@@ -51,7 +57,8 @@
       "name": "vermin",
       "explanation": "Monstrous insects, worms, etc.",
       "entries": [
-        "XXX"
+        "monster bug",
+        "monster rat"
       ]
     },
     {
@@ -86,12 +93,14 @@
         "giant",
         "ettin",
         "hill giant",
+        "stone giant",
         "frost giant",
+        "fire giant",
         "Firbolg",
         "Fomorian giant",
+        "cyclops",
         "storm giant",
-        "cloud giant",
-        "{lib:monsterGiant}"
+        "cloud giant"
       ]
     },
     {
@@ -105,26 +114,53 @@
       "name": "aquatic",
       "explanation": "Aquatic monster types.",
       "entries": [
-        "merrow"
+        "merrow",
+        "hydra",
+        "kraken"
       ]
     },
     {
       "name": "myth",
       "explanation": "Monsters once rumoured to have existed.",
       "entries": [
+        "medusa",
+        "{halfhuman}",
         "{mythic beast}",
         "{fey}",
+        "{lycanthrope}",
+        "{spirit}",
         "{undead}",
-        "{dragon}"
+        "{dragon}",
+        "{demonic}",
+        "{infernal}",
+        "{celestial}"
+      ]
+    },
+    {
+      "name": "halfhuman",
+      "explanation": "Composites of human and animal.",
+      "entries": [
+        "centaur",
+        "naga"
       ]
     },
     {
       "name": "mythic beast",
       "explanation": "Mythological animals.",
       "entries": [
+        "gargoyle",
         "catoblepas",
-        "manticore",
-        "gorgon"
+        "gorgon",
+        "{chimerical}"
+      ]
+    },
+    {
+      "name": "chimerical",
+      "explanation": "Composites of several animals.",
+      "entries": [
+        "cockatrice",
+        "chimera",
+        "manticore"
       ]
     },
     {
@@ -139,13 +175,66 @@
       ]
     },
     {
+      "name": "lycanthrope",
+      "explanation": "Shapeshifters.",
+      "entries": [
+        "werewolf",
+        "werebear"
+      ]
+    },
+    {
+      "name": "spirit",
+      "explanation": "Dead creatures animated to unlife.",
+      "entries": [
+        "banshee",
+        "{incorporeal}",
+        "{djinni}"
+      ]
+    },
+    {
+      "name": "incorporeal",
+      "explanation": "Spirits of the dead.",
+      "entries": [
+        "ghost",
+        "phantom",
+        "wraith"
+      ]
+    },
+    {
+      "name": "djinni",
+      "explanation": "Djinnis and their kin.",
+      "entries": [
+        "efreeti",
+        "mephit",
+        "marid",
+        "djinni"
+      ]
+    },
+    {
       "name": "undead",
       "explanation": "Dead creatures animated to unlife.",
       "entries": [
+        "{incorporeal}",
+        "{corporeal}"
+      ]
+    },
+    {
+      "name": "corporeal",
+      "explanation": "Dead creatures animated to unlife.",
+      "entries": [
         "skeleton",
+        "mummy",
         "revenant",
         "wight",
-        "lich"
+        "lich",
+        "{vampire}"
+      ]
+    },
+    {
+      "name": "vampire",
+      "explanation": "Vampiric undead.",
+      "entries": [
+        "vampire"
       ]
     },
     {
@@ -155,7 +244,31 @@
         "linnorm",
         "wyvern",
         "dragon",
-        "wyrm"
+        "wyrm",
+        "tarasque"
+      ]
+    },
+    {
+      "name": "demonic",
+      "explanation": "Demons.",
+      "entries": [
+        "demon"
+      ]
+    },
+    {
+      "name": "infernal",
+      "explanation": "Denizens of the hells.",
+      "entries": [
+        "devil"
+      ]
+    },
+    {
+      "name": "celestial",
+      "explanation": "Denizens of the heavens.",
+      "entries": [
+        "angel",
+        "archangel",
+        "archon"
       ]
     },
     {
@@ -169,8 +282,7 @@
         "{aberration}",
         "{construct}",
         "{elemental}",
-        "{outsider}",
-        "{lib:monsterEpic}"
+        "{outsider}"
       ]
     },
     {
@@ -202,21 +314,75 @@
       "name": "aberration",
       "explanation": "Bizarre creatures.",
       "entries": [
-        "{lib:monsterAberration}"
+        "mimic",
+        "will-o'-wisp"
       ]
     },
     {
       "name": "construct",
       "explanation": "Artificial creatures.",
       "entries": [
-        "{lib:monsterConstruct}"
+        "homunculus",
+        "{golem}",
+        "{animated}"
+      ]
+    },
+    {
+      "name": "golem",
+      "explanation": "Golems.",
+      "entries": [
+        "clay golem",
+        "flesh golem",
+        "stone golem",
+        "iron golem"
+      ]
+    },
+    {
+      "name": "animated",
+      "explanation": "Animated items.",
+      "entries": [
+        "animated scarecrow",
+        "animated {lib:armor#metal}",
+        "animated {lib:weapon#melee}"
       ]
     },
     {
       "name": "elemental",
       "explanation": "Elemental creatures.",
       "entries": [
-        "{lib:monsterElemental}"
+        "{air elemental}",
+        "{water elemental}",
+        "{earth elemental}",
+        "{fire elemental}"
+      ]
+    },
+    {
+      "name": "air elemental",
+      "explanation": "Elemental creatures of air.",
+      "entries": [
+        "air elemental"
+      ]
+    },
+    {
+      "name": "water elemental",
+      "explanation": "Elemental creatures of water.",
+      "entries": [
+        "water elemental"
+      ]
+    },
+    {
+      "name": "earth elemental",
+      "explanation": "Elemental creatures of earth.",
+      "entries": [
+        "earth elemental"
+      ]
+    },
+    {
+      "name": "fire elemental",
+      "explanation": "Elemental creatures of fire.",
+      "entries": [
+        "salamander",
+        "fire elemental"
       ]
     },
     {
@@ -248,7 +414,15 @@
       "explanation": "Monsters for science fiction worlds.",
       "entries": [
         "{modern}",
-        "alien"
+        "{alien}"
+      ]
+    },
+    {
+      "name": "alien",
+      "explanation": "Extraterrestrial aliens.",
+      "entries": [
+        "alien",
+        "grey alien"
       ]
     },
     {
@@ -272,6 +446,72 @@
         "vengeful",
         "bloodthirsty",
         "savage"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Monster complication types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common complication}"
+        },
+        "{rare complication}"
+      ]
+    },
+    {
+      "name": "common complication",
+      "explanation": "Common complications for monsters.",
+      "entries": [
+        "{wounded}"
+      ]
+    },
+    {
+      "name": "wounded",
+      "explanation": "Injury statuses of monsters.",
+      "entries": [
+        "wounded",
+        "injured",
+        "impaired"
+      ]
+    },
+    {
+      "name": "rare complication",
+      "explanation": "Rare complications for monsters.",
+      "entries": [
+        "{immobile}",
+        "{insane}"
+      ]
+    },
+    {
+      "name": "immobile",
+      "explanation": "Immobile statuses for monsters.",
+      "entries": [
+        "entangled",
+        "chained",
+        "trapped"
+      ]
+    },
+    {
+      "name": "insane",
+      "explanation": "Insanity statuses of monsters.",
+      "entries": [
+        "insane"
+      ]
+    },
+    {
+      "name": "special complication",
+      "explanation": "Special complications for monsters.",
+      "entries": [
+        "{magic}"
+      ]
+    },
+    {
+      "name": "magic",
+      "explanation": "Magic-related complications for monsters.",
+      "entries": [
+        "magically charmed",
+        "magically controlled"
       ]
     }
   ]
