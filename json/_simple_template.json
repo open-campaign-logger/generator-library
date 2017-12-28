@@ -1,0 +1,62 @@
+{
+  "name": "simple template",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "XXX",
+  "structure": "Simple template for help tables.",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2017-XX-XX",
+  "authors": "",
+  "sources": "",
+  "genre": "",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{XXX}",
+        "{XXX}"
+      ]
+    },
+    {
+      "name": "XXX",
+      "explanation": "XXX",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common XXX.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare XXX.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special XXX types.",
+      "entries": [
+        "XXX"
+      ]
+    }
+  ]
+}
