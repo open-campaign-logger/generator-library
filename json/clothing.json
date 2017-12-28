@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "More cultures and time periods. What's the best approach for them?",
   "see": "adornment",
-  "date": "2017-10-31",
+  "date": "2017-12-28",
   "authors": "Esko Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -165,6 +165,22 @@
       "explanation": "Dresses for females.",
       "entries": [
         "dress",
+        "simple gown",
+        "extravagant gown"
+      ]
+    },
+    {
+      "name": "medieval dress",
+      "explanation": "Medieval dresses for females.",
+      "entries": [
+        "{dress}"
+      ]
+    },
+    {
+      "name": "modern dress",
+      "explanation": "Modern dresses for females.",
+      "entries": [
+        "{dress}",
         "overalls"
       ]
     },
@@ -227,15 +243,27 @@
       ]
     },
     {
+      "name": "medieval male underwear",
+      "explanation": "Medieval male underwear.",
+      "entries": [
+        "{male underwear}",
+        "braies"
+      ]
+    },
+    {
+      "name": "modern male underwear",
+      "explanation": "Modern medieval male underwear.",
+      "entries": [
+        "{male underwear}",
+        "boxer shorts"
+      ]
+    },
+    {
       "name": "male headwear",
       "explanation": "Male headwear.",
       "entries": [
-        "beanie",
         "cap",
         "flat cap",
-        "beret",
-        "fedora",
-        "bowler hat",
         "hat"
       ]
     },
@@ -243,7 +271,19 @@
       "name": "medieval male headwear",
       "explanation": "Medieval male headwear.",
       "entries": [
+        "{male headwear}",
         "chaperon (a round headdress of stuffed cloth)"
+      ]
+    },
+    {
+      "name": "modern male headwear",
+      "explanation": "Modern male headwear.",
+      "entries": [
+        "{male headwear}",
+        "beanie",
+        "beret",
+        "fedora",
+        "bowler hat"
       ]
     },
     {
@@ -258,7 +298,21 @@
       "name": "male top",
       "explanation": "Male upper body clothing.",
       "entries": [
-        "shirt",
+        "shirt"
+      ]
+    },
+    {
+      "name": "medieval male top",
+      "explanation": "Medieval male upper body clothing.",
+      "entries": [
+        "{male top}"
+      ]
+    },
+    {
+      "name": "modern male top",
+      "explanation": "Modern male upper body clothing.",
+      "entries": [
+        "{male top}",
         "collared shirt",
         "buttoned shirt"
       ]
@@ -275,8 +329,33 @@
       "name": "male bottom",
       "explanation": "Male lower body clothing.",
       "entries": [
-        "trousers",
         "pants"
+      ]
+    },
+    {
+      "name": "medieval male bottom",
+      "explanation": "Medieval male lower body clothing.",
+      "entries": [
+        "{male bottom}",
+        "drawstring pants",
+        "hose (tight-fitting footed pants)",
+        "trunk hose (short padded, tight-fitting pants)",
+        "bombasted hose (short pants with lined and stuffed thighs)",
+        "cannions (tight-fitting pants ending above the knee)",
+        "slops (loose pants reaching below the knee)",
+        "pansied slops (loose short pants, strips of cloth over inner lining)",
+        "breeches (separate coverings for each leg, stopping below the knee)",
+        "trews (tartan trousers trimmed with leather)",
+        "cuffed pants"
+      ]
+    },
+    {
+      "name": "modern male bottom",
+      "explanation": "Modern male lower body clothing.",
+      "entries": [
+        "{male bottom}",
+        "trousers",
+        "jeans"
       ]
     },
     {
@@ -295,7 +374,35 @@
       "name": "male outerwear",
       "explanation": "Male outerwear.",
       "entries": [
-        "robe",
+        "light coat",
+        "coat",
+        "long coat",
+        "heavy coat",
+        "leather coat",
+        "padded leather coat",
+        "fur coat"
+      ]
+    },
+    {
+      "name": "medieval male outerwear",
+      "explanation": "Medieval male outerwear.",
+      "entries": [
+        "{male outerwear}",
+        "cloak ({lib:fabric#medieval})",
+        "hooded cloak ({lib:fabric#medieval})",
+        "short cape ({lib:fabric#medieval})",
+        "long cape ({lib:fabric#medieval})",
+        "long, hooded cape ({lib:fabric#medieval})",
+        "robe ({lib:fabric#medieval})",
+        "hooded robe ({lib:fabric#medieval})",
+        "doublet (snug-fitting jacket)"
+      ]
+    },
+    {
+      "name": "modern male outerwear",
+      "explanation": "Modern male outerwear.",
+      "entries": [
+        "{male outerwear}",
         "jacket",
         "leather jacket",
         "hoodie",
@@ -303,16 +410,31 @@
         "short overcoat",
         "long overcoat",
         "parka",
-        "trenchcoat"
+        "trenchcoat",
+        "overcoat"
       ]
     },
     {
       "name": "male footwear",
       "explanation": "Male footwear.",
       "entries": [
+        "sandals",
         "shoes",
-        "boots",
-        "sandals"
+        "{boots}"
+      ]
+    },
+    {
+      "name": "boots",
+      "explanation": "Boots.",
+      "entries": [
+        "short cloth boots",
+        "knee-length cloth boots",
+        "short, soft leather boots",
+        "knee-length, soft leather boots",
+        "thigh-length, soft leather boots",
+        "short, hard leather boots",
+        "knee-length, hard leather boots",
+        "reinforced boots"
       ]
     },
     {
@@ -358,6 +480,7 @@
       "name": "unisex headwear",
       "explanation": "Unisex headwear.",
       "entries": [
+        "bandana",
         "hat"
       ]
     },
@@ -561,7 +684,8 @@
       "explanation": "Female clothes for fantasy (with no basis in myth).",
       "entries": [
         "{female}",
-        "bodice (upper garment covering the body from the neck to the waist)"
+        "simple bodice (covering the body from the neck to the waist)",
+        "fancy bodice (covering the body from the neck to the waist)"
       ]
     },
     {
@@ -699,10 +823,31 @@
       "name": "special",
       "explanation": "Special clothing types.",
       "entries": [
+        "{accessory}",
         "{nightwear}",
         "{swimwear}",
+        "{protective}",
         "{infant}",
         "{pet}"
+      ]
+    },
+    {
+      "name": "accessory",
+      "explanation": "Garment accessories.",
+      "entries": [
+        "{belt}"
+      ]
+    },
+    {
+      "name": "belt",
+      "explanation": "Belts.",
+      "entries": [
+        "rope belt",
+        "cloth belt without buckle",
+        "cloth belt with buckle",
+        "leather belt without buckle",
+        "leather belt with buckle",
+        "girdle"
       ]
     },
     {
@@ -719,6 +864,16 @@
       "entries": [
         "{female swimwear}",
         "{male swimwear}"
+      ]
+    },
+    {
+      "name": "protective",
+      "explanation": "Protective garments.",
+      "entries": [
+        "short cloth apron",
+        "full length cloth apron",
+        "full length leather apron",
+        "eye patch"
       ]
     },
     {

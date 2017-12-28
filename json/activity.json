@@ -141,13 +141,13 @@
       "name": "discussion",
       "explanation": "Subjects of discussion.",
       "entries": [
-        "{discussion subject} personality",
+        "{discussion object}",
         "{discussion subject} finances",
         "{discussion subject} dreams",
         "{discussion subject} plans for the future",
         "{discussion subject} love life",
         "{discussion subject} work",
-        "{discussion subject} recent experience near that {lib:location}",
+        "{discussion subject} recent experience near that {lib:location#simple}",
         "rumors about {discussion object}",
         "arguments for and against {discussion object}",
         "news about {discussion object}"
@@ -183,7 +183,7 @@
         "their friend",
         "their acquaintance",
         "a local celebrity",
-        "{discussion scope} events",
+        "recent {discussion scope} events",
         "{discussion scope} politics"
       ]
     },

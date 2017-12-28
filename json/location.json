@@ -31,6 +31,14 @@
       ]
     },
     {
+      "name": "simple",
+      "explanation": "Variations without the complication element.",
+      "entries": [
+        "{location}",
+        "{adjective} {location}"
+      ]
+    },
+    {
       "name": "location",
       "explanation": "Location types by rarity.",
       "entries": [

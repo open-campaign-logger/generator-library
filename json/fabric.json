@@ -398,6 +398,21 @@
         "basalt fiber",
         "self-mending fabric"
       ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special fabric tables.",
+      "entries": [
+        "{medieval}"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Medieval fabrics.",
+      "entries": [
+        "{wool}",
+        "{plant}"
+      ]
     }
   ]
 }
