@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "More cultures and time periods. What's the best approach for them?",
   "see": "adornment",
-  "date": "2017-12-28",
+  "date": "2017-12-29",
   "authors": "Esko Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -26,90 +26,6 @@
         "{b|Female}: {female}",
         "{b|Male}: {male}",
         "{b|Unisex}: {unisex}"
-      ]
-    },
-    {
-      "name": "female",
-      "explanation": "Female variations for resultPattern output.",
-      "entries": [
-        "{dress}",
-        "{uniform}",
-        "{female top} and {female bottom}",
-        "{female headwear}, {female top} and {female bottom}"
-      ]
-    },
-    {
-      "name": "medieval female",
-      "explanation": "Medieval female variations for resultPattern output.",
-      "entries": [
-        "{medieval dress}",
-        "{medieval uniform}",
-        "{medieval female top} and {medieval female bottom}",
-        "{medieval female headwear}, {medieval female top} and {medieval female bottom}"
-      ]
-    },
-    {
-      "name": "modern female",
-      "explanation": "Modern female variations for resultPattern output.",
-      "entries": [
-        "{modern dress}",
-        "{modern uniform}",
-        "{modern female top} and {modern female bottom}",
-        "{modern female headwear}, {modern female top} and {modern female bottom}"
-      ]
-    },
-    {
-      "name": "male",
-      "explanation": "Male variations for resultPattern output.",
-      "entries": [
-        "{suit}",
-        "{uniform}",
-        "{male top} and {male bottom}",
-        "{male headwear}, {male top} and {male bottom}"
-      ]
-    },
-    {
-      "name": "medieval male",
-      "explanation": "Medieval male variations for resultPattern output.",
-      "entries": [
-        "{medieval suit}",
-        "{medieval uniform}",
-        "{medieval male top} and {medieval male bottom}",
-        "{medieval male headwear}, {medieval male top} and {medieval male bottom}"
-      ]
-    },
-    {
-      "name": "modern male",
-      "explanation": "Modern male variations for resultPattern output.",
-      "entries": [
-        "{modern suit}",
-        "{modern uniform}",
-        "{modern male top} and {modern male bottom}",
-        "{modern male headwear}, {modern male top} and {modern male bottom}"
-      ]
-    },
-    {
-      "name": "unisex",
-      "explanation": "Unisex variations for resultPattern output.",
-      "entries": [
-        "{uniform}",
-        "{unisex top} and {unisex bottom}"
-      ]
-    },
-    {
-      "name": "medieval unisex",
-      "explanation": "Medieval unisex variations for resultPattern output.",
-      "entries": [
-        "{medieval uniform}",
-        "{medieval unisex top} and {medieval unisex bottom}"
-      ]
-    },
-    {
-      "name": "modern unisex",
-      "explanation": "Unisex variations for resultPattern output.",
-      "entries": [
-        "{modern uniform}",
-        "{modern unisex top} and {modern unisex bottom}"
       ]
     },
     {
@@ -1532,6 +1448,141 @@
       "explanation": "Unisex underwear for futuristic worlds.",
       "entries": [
         "{modern unisex underwear}"
+      ]
+    },
+    {
+      "name": "outfit",
+      "explanation": "Random genmeric outfit.",
+      "entries": [
+        "{female outfit}",
+        "{male outfit}",
+        "{unisex outfit}",
+        "{child outfit}"
+      ]
+    },
+    {
+      "name": "medieval outfit",
+      "explanation": "Random medieval outfit.",
+      "entries": [
+        "{medieval female outfit}",
+        "{medieval male outfit}",
+        "{medieval unisex outfit}",
+        "{medieval child outfit}"
+      ]
+    },
+    {
+      "name": "modern outfit",
+      "explanation": "Random modern outfit.",
+      "entries": [
+        "{modern female outfit}",
+        "{modern male outfit}",
+        "{modern unisex outfit}",
+        "{modern child outfit}"
+      ]
+    },
+    {
+      "name": "female outfit",
+      "explanation": "Random generic female outfit.",
+      "entries": [
+        "{dress}",
+        "{uniform}",
+        "{female top} and {female bottom}",
+        "{female headwear}, {female top} and {female bottom}"
+      ]
+    },
+    {
+      "name": "medieval female outfit",
+      "explanation": "Random medieval female outfit.",
+      "entries": [
+        "{medieval dress}",
+        "{medieval uniform}",
+        "{medieval female top} and {medieval female bottom}",
+        "{medieval female headwear}, {medieval female top} and {medieval female bottom}"
+      ]
+    },
+    {
+      "name": "modern female outfit",
+      "explanation": "Random modern female outfit.",
+      "entries": [
+        "{modern dress}",
+        "{modern uniform}",
+        "{modern female top} and {modern female bottom}",
+        "{modern female headwear}, {modern female top} and {modern female bottom}"
+      ]
+    },
+    {
+      "name": "male outfit",
+      "explanation": "Random generic male outfit.",
+      "entries": [
+        "{suit}",
+        "{uniform}",
+        "{male top} and {male bottom}",
+        "{male headwear}, {male top} and {male bottom}"
+      ]
+    },
+    {
+      "name": "medieval male outfit",
+      "explanation": "Random medieval male outfit.",
+      "entries": [
+        "{medieval suit}",
+        "{medieval uniform}",
+        "{medieval male top} and {medieval male bottom}",
+        "{medieval male headwear}, {medieval male top} and {medieval male bottom}"
+      ]
+    },
+    {
+      "name": "modern male outfit",
+      "explanation": "Random modern male outfit.",
+      "entries": [
+        "{modern suit}",
+        "{modern uniform}",
+        "{modern male top} and {modern male bottom}",
+        "{modern male headwear}, {modern male top} and {modern male bottom}"
+      ]
+    },
+    {
+      "name": "unisex outfit",
+      "explanation": "Random generic unisex outfit.",
+      "entries": [
+        "{uniform}",
+        "{unisex top} and {unisex bottom}"
+      ]
+    },
+    {
+      "name": "medieval unisex outfit",
+      "explanation": "Random medieval unisex outfit.",
+      "entries": [
+        "{medieval uniform}",
+        "{medieval unisex top} and {medieval unisex bottom}"
+      ]
+    },
+    {
+      "name": "modern unisex outfit",
+      "explanation": "Random modern unisex outfit.",
+      "entries": [
+        "{modern uniform}",
+        "{modern unisex top} and {modern unisex bottom}"
+      ]
+    },
+    {
+      "name": "child outfit",
+      "explanation": "Random generic child outfit.",
+      "entries": [
+        "{child top} and {child bottom}"
+      ]
+    },
+    {
+      "name": "medieval child outfit",
+      "explanation": "Random medieval child outfit.",
+      "entries": [
+        "{medieval child top} and {medieval child bottom}"
+      ]
+    },
+    {
+      "name": "modern child outfit",
+      "explanation": "Random modern child outfit.",
+      "entries": [
+        "{modern child top} and {modern child bottom}"
       ]
     },
     {
