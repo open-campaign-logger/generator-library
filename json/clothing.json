@@ -160,7 +160,18 @@
       "name": "female headwear",
       "explanation": "Female headwear.",
       "entries": [
-        "hat"
+        "{hat}"
+      ]
+    },
+    {
+      "name": "hat",
+      "explanation": "Hats.",
+      "entries": [
+        "straw hat",
+        "cloth hat",
+        "wool hat",
+        "short brimmed cloth hat",
+        "large brimmed cloth hat"
       ]
     },
     {
@@ -226,8 +237,17 @@
       "name": "female handwear",
       "explanation": "Female handwear.",
       "entries": [
-        "gloves",
-        "leather gloves"
+        "{gloves}"
+      ]
+    },
+    {
+      "name": "gloves",
+      "explanation": "Gloves.",
+      "entries": [
+        "cloth gloves",
+        "wool gloves",
+        "leather gloves",
+        "padded leather gloves"
       ]
     },
     {
@@ -241,7 +261,9 @@
       "name": "modern female handwear",
       "explanation": "Modern female handwear.",
       "entries": [
-        "{female handwear}"
+        "{female handwear}",
+        "short silk gloves",
+        "long silk gloves"
       ]
     },
     {
@@ -466,7 +488,7 @@
       "name": "male headwear",
       "explanation": "Male headwear.",
       "entries": [
-        "hat"
+        "{hat}"
       ]
     },
     {
@@ -474,7 +496,8 @@
       "explanation": "Medieval male headwear.",
       "entries": [
         "{male headwear}",
-        "chaperon (a round headdress of stuffed cloth)"
+        "chaperon (a round headdress of stuffed cloth)",
+        "jester cap"
       ]
     },
     {
@@ -486,8 +509,11 @@
         "flat cap",
         "beanie",
         "beret",
+        "stetson",
+        "leather stetson",
         "fedora",
-        "bowler hat"
+        "bowler hat",
+        "top hat"
       ]
     },
     {
@@ -524,7 +550,9 @@
       "explanation": "Medieval male upper body clothing.",
       "entries": [
         "{male top}",
-        "tunic"
+        "tunic",
+        "doublet (snug-fitting jacket)",
+        "jerkin (short, sleeveless jacket)"
       ]
     },
     {
@@ -540,8 +568,7 @@
       "name": "male handwear",
       "explanation": "Male handwear.",
       "entries": [
-        "gloves",
-        "leather gloves"
+        "{gloves}"
       ]
     },
     {
@@ -557,8 +584,9 @@
       "explanation": "Modern male handwear.",
       "entries": [
         "{male handwear}",
-        "mittens",
-        "{lib:fabric#modern} gloves"
+        "{lib:fabric#modern} gloves",
+        "gloves without fingertips",
+        "mittens"
       ]
     },
     {
@@ -644,8 +672,7 @@
         "long cape ({lib:fabric#medieval})",
         "long, hooded cape ({lib:fabric#medieval})",
         "robe ({lib:fabric#medieval})",
-        "hooded robe ({lib:fabric#medieval})",
-        "doublet (snug-fitting jacket)"
+        "hooded robe ({lib:fabric#medieval})"
       ]
     },
     {
@@ -668,7 +695,8 @@
       "name": "male footwear",
       "explanation": "Male footwear.",
       "entries": [
-        "{boots}"
+        "{boots}",
+        "{rare shoes}"
       ]
     },
     {
@@ -683,6 +711,15 @@
         "short, hard leather boots",
         "knee-length, hard leather boots",
         "reinforced boots"
+      ]
+    },
+    {
+      "name": "rare shoes",
+      "explanation": "Rare boots.",
+      "entries": [
+        "cleats (for slippery surfaces)",
+        "dagger boots",
+        "snow shoes"
       ]
     },
     {
@@ -825,7 +862,7 @@
       "name": "unisex headwear",
       "explanation": "Unisex headwear.",
       "entries": [
-        "hat"
+        "{hat}"
       ]
     },
     {
@@ -900,8 +937,7 @@
       "name": "unisex handwear",
       "explanation": "Unisex handwear.",
       "entries": [
-        "gloves",
-        "leather gloves"
+        "{gloves}"
       ]
     },
     {
@@ -1144,7 +1180,7 @@
       "name": "child headwear",
       "explanation": "Headwear for children.",
       "entries": [
-        "hat"
+        "{hat}"
       ]
     },
     {
@@ -1207,7 +1243,7 @@
       "name": "child handwear",
       "explanation": "Handwear for children.",
       "entries": [
-        "gloves"
+        "{gloves}"
       ]
     },
     {

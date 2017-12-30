@@ -47,14 +47,31 @@
       "explanation": "Common equipment types.",
       "entries": [
         "{carrying}",
+        "{storage}",
         "{tool}",
+        "{weapon care}",
         "{lighting}",
         "{camping}",
+        "{hunting}",
+        "{fishing}",
         "{marking}",
         "{medical}",
+        "{animal care}",
         "{riding}",
         "{climbing}",
-        "{miscellaneous}"
+        "{transportation}",
+        "{miscellaneous}",
+        "{lib:musical_instrument}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare equipment types.",
+      "entries": [
+        "{reconnaissance}",
+        "{thieving}",
+        "{religious}",
+        "{laboratory}"
       ]
     },
     {
@@ -62,16 +79,68 @@
       "explanation": "Carrying equipment.",
       "entries": [
         "waterskin",
+        "pouch",
         "belt pouch",
         "sack",
-        "backpack"
+        "rucksack",
+        "backpack",
+        "backpack frame"
+      ]
+    },
+    {
+      "name": "storage",
+      "explanation": "Storage equipment.",
+      "entries": [
+        "barrel"
       ]
     },
     {
       "name": "tool",
       "explanation": "Tools.",
       "entries": [
-        "crowbar"
+        "crowbar",
+        "{woodworking}",
+        "{metalworking}",
+        "{stoneworking}"
+      ]
+    },
+    {
+      "name": "woodworking",
+      "explanation": "Woodworking tools.",
+      "entries": [
+        "wood file",
+        "wood drill",
+        "wood chisel",
+        "saw",
+        "hammer",
+        "nails",
+        "{axe}"
+      ]
+    },
+    {
+      "name": "axe",
+      "explanation": "Axes.",
+      "entries": [
+        "axe",
+        "hatchet",
+        "mallet",
+        "woodman's axe"
+      ]
+    },
+    {
+      "name": "metalworking",
+      "explanation": "Metalworking tools.",
+      "entries": [
+        "metal file",
+        "metal drill",
+        "hacksaw"
+      ]
+    },
+    {
+      "name": "stoneworking",
+      "explanation": "Woodworking tools.",
+      "entries": [
+        "stone chisel"
       ]
     },
     {
@@ -91,6 +160,8 @@
       "entries": [
         "blanket",
         "bedroll",
+        "tarpaulin",
+        "hammock",
         "tent"
       ]
     },
@@ -105,7 +176,59 @@
       "name": "medical",
       "explanation": "Medical equipment.",
       "entries": [
-        "antitoxin"
+        "bandages",
+        "crutches",
+        "healing potion",
+        "antitoxin",
+        "antivenom"
+      ]
+    },
+    {
+      "name": "animal care",
+      "explanation": "Animal care equipment.",
+      "entries": [
+        "animal collar",
+        "leash",
+        "bird cage (wicker)",
+        "animal cage (brass)"
+      ]
+    },
+    {
+      "name": "fishing",
+      "explanation": "Fishing equipment.",
+      "entries": [
+        "fishing rod",
+        "fishing line",
+        "fishing hook",
+        "fishing tackle",
+        "fishing lures",
+        "hook, line and sinker (for fishing)",
+        "fishing spear",
+        "fishing net",
+        "lobster trap",
+        "eel trap"
+      ]
+    },
+    {
+      "name": "hunting",
+      "explanation": "Hunting equipment.",
+      "entries": [
+        "bird whistle",
+        "dog whistle",
+        "hunting knife",
+        "skinning blade",
+        "bird snare",
+        "rabbit trap",
+        "boar trap",
+        "bear trap"
+      ]
+    },
+    {
+      "name": "reconnaissance",
+      "explanation": "Surveillance equipment.",
+      "entries": [
+        "mirror",
+        "field glass"
       ]
     },
     {
@@ -121,36 +244,54 @@
       "explanation": "Climbing equipment.",
       "entries": [
         "pitons",
-        "rope",
-        "grappling hook"
+        "hemp rope",
+        "silk rope",
+        "grappling hook",
+        "climbing irons",
+        "rope ladder"
+      ]
+    },
+    {
+      "name": "transportation",
+      "explanation": "Transportation equipment.",
+      "entries": [
+        "cart",
+        "wagon",
+        "{winter transportation}"
+      ]
+    },
+    {
+      "name": "winter transportation",
+      "explanation": "Transportation equipment for winter.",
+      "entries": [
+        "snow shoes",
+        "skis",
+        "sleigh"
       ]
     },
     {
       "name": "miscellaneous",
       "explanation": "Miscellaneous equipment.",
       "entries": [
-        "pole",
-        "mirror"
+        "pole"
       ]
     },
     {
-      "name": "rare",
-      "explanation": "Rare equipment types.",
+      "name": "thieving",
+      "explanation": "Illicit equipment.",
       "entries": [
-        "{illicit}",
-        "{religion}",
-        "{laboratory}"
+        "weighed dice",
+        "marked cards",
+        "lockpick set",
+        "keymaking set",
+        "cutpurse blade",
+        "caltrops",
+        "weaponblack",
+        "garotte"
       ]
     },
     {
-      "name": "illicit",
-      "explanation": "Criminal equipment.",
-      "entries": [
-        "lockpick"
-      ]
-    },
-    {
-      "name": "religion",
+      "name": "religious",
       "explanation": "Religious equipment.",
       "entries": [
         "vial of holy water",
@@ -166,14 +307,30 @@
       ]
     },
     {
-      "name": "myth",
-      "explanation": "Equipment once rumoured to have existed.",
+      "name": "weapon care",
+      "explanation": "Equipment for weapon care.",
       "entries": [
-        "{magic}"
+        "practice target"
       ]
     },
     {
-      "name": "magic",
+      "name": "myth",
+      "explanation": "Equipment once rumoured to have existed.",
+      "entries": [
+        "{magical}",
+        "{alchemical}"
+      ]
+    },
+    {
+      "name": "alchemical",
+      "explanation": "Alchemical equipment.",
+      "entries": [
+        "invisible ink",
+        "sleeping gas (in breakable vial)"
+      ]
+    },
+    {
+      "name": "magical",
       "explanation": "Magical equipment.",
       "entries": [
         "{lib:magical_instrument}",
@@ -184,6 +341,7 @@
       "name": "fantasy",
       "explanation": "Equipment for fantasy worlds (with no basis in myth).",
       "entries": [
+        "{myth}",
         "XXX"
       ]
     },
