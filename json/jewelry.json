@@ -1,6 +1,6 @@
 {
   "name": "jewelry table",
-  "resultPattern": "{jewelry}",
+  "resultPattern": "{result}",
   "variables": {
     "footnote": ""
   },
@@ -9,9 +9,9 @@
   "note": "",
   "to do": "",
   "see": "gem",
-  "date": "2017-12-28",
+  "date": "2017-12-30",
   "authors": "Authors: Johnn Four, Jochen Linnemann, Esko Vesala.",
-  "sources": "Wikipedia.org",
+  "sources": "EngagementRings.LoveToKnow.com, Wikipedia.org",
   "genre": "universal",
   "categories": [
     "item"
@@ -19,10 +19,21 @@
   "tags": "#person, #treasure",
   "tables": [
     {
-      "name": "jewelry",
-      "explanation": "Jewelry rarity.",
+      "name": "result",
+      "explanation": "Alternate resultPattern formats.",
       "entries": [
-        "{common}",
+        "{jewelry}",
+        "{jewelry} with {lib:number#one digit} {lib:gem}s fastened with {setting}"
+      ]
+    },
+    {
+      "name": "jewelry",
+      "explanation": "Jewelry types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
         "{rare}"
       ]
     },
@@ -35,6 +46,16 @@
         "{chest jewelry}",
         "{arm jewelry}",
         "{hand jewelry}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare jewelry types.",
+      "entries": [
+        "{hair jewelry}",
+        "{waist jewelry}",
+        "{leg jewelry}",
+        "{foot jewelry}"
       ]
     },
     {
@@ -202,17 +223,6 @@
       "entries": [
         "slave bracelet (bracelet chained to a ring)",
         "finger armor (jointed cover for whole finger)"
-      ]
-    },
-    {
-      "name": "rare",
-      "explanation": "Rare jewelry types.",
-      "entries": [
-        "{hair jewelry}",
-        "{waist jewelry}",
-        "{leg jewelry}",
-        "{foot jewelry}",
-        "{household ornament}"
       ]
     },
     {
@@ -401,6 +411,25 @@
       "entries": [
         "cybernetic {modern}",
         "bioengineered {modern}"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special jewelry types.",
+      "entries": [
+        "{household ornament}"
+      ]
+    },
+    {
+      "name": "setting",
+      "explanation": "Setting type for gems.",
+      "entries": [
+        "prong setting (metal claws holding the gem)",
+        "bar setting (elongated metal bars holding the gem)",
+        "invisible setting (fastened without visible prongs or bars)",
+        "bezel setting (metal band wrapped around the gem)",
+        "channel setting (inserted in a channel in the jewelry)",
+        "flush setting (the gem rests in a hole, blending with the surface)"
       ]
     }
   ]

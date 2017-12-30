@@ -1,6 +1,6 @@
 {
   "name": "gem table",
-  "resultPattern": "{gem}",
+  "resultPattern": "{result}",
   "variables": {
     "footnote": ""
   },
@@ -9,9 +9,9 @@
   "note": "",
   "to do": "More content, better organization.",
   "see": "material",
-  "date": "2017-10-04",
+  "date": "2017-12-30",
   "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
-  "sources": "Wikipedia.org.",
+  "sources": "GemSociety.org, Wikipedia.org.",
   "genre": "universal",
   "categories": [
     "item"
@@ -19,10 +19,35 @@
   "tags": "#treasure, #material, #resource",
   "tables": [
     {
-      "name": "gem",
+      "name": "result",
       "explanation": "Gem types.",
       "entries": [
-        "{mineral gemstone}",
+        "{size} {gem}",
+        "{size}, {cut} {gem}"
+      ]
+    },
+    {
+      "name": "gem",
+      "explanation": "Gem types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common gem types.",
+      "entries": [
+        "{mineral gemstone}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare gem types.",
+      "entries": [
         "{organic gemstone}"
       ]
     },
@@ -78,10 +103,10 @@
       "name": "organic gemstone",
       "explanation": "Organic gemstones.",
       "entries": [
-        "amber",
+        "amber piece",
         "mother of pearl",
         "jet",
-        "ivory",
+        "ivory piece",
         "pearl",
         "coral",
         "{rare organic gemstone}"
@@ -92,6 +117,192 @@
       "explanation": "Rare organic gemstones.",
       "entries": [
         "black pearl"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables for gems.",
+      "entries": [
+        "{size}",
+        "{cut}"
+      ]
+    },
+    {
+      "name": "size",
+      "explanation": "The size of the gemstone.",
+      "entries": [
+        "tiny",
+        "small",
+        "medium-sized",
+        "large"
+      ]
+    },
+    {
+      "name": "cut",
+      "explanation": "The cut of the gemstone.",
+      "entries": [
+        "{rough}",
+        "{tumbled}",
+        "{cabochon}",
+        "{faceted}",
+        "{carved}"
+      ]
+    },
+    {
+      "name": "rough",
+      "explanation": "Rough cut.",
+      "entries": [
+        "{rough shape}",
+        "{rough polish}, {rough shape}"
+      ]
+    },
+    {
+      "name": "rough polish",
+      "explanation": "Brightness of rough-cut gems.",
+      "entries": [
+        "dull",
+        "dim"
+      ]
+    },
+    {
+      "name": "rough shape",
+      "explanation": "Rough cut shapes.",
+      "entries": [
+        "uncut",
+        "roughly cut"
+      ]
+    },
+    {
+      "name": "tumbled",
+      "explanation": "Tumbled cut.",
+      "entries": [
+        "{tumbled shape}",
+        "{tumbled polish}, {tumbled shape}"
+      ]
+    },
+    {
+      "name": "tumbled polish",
+      "explanation": "Brightness of tumbled gems.",
+      "entries": [
+        "dull",
+        "dim"
+      ]
+    },
+    {
+      "name": "tumbled shape",
+      "explanation": "Shapes of tumbled gems.",
+      "entries": [
+        "irregularly shaped",
+        "rounded"
+      ]
+    },
+    {
+      "name": "cabochon",
+      "explanation": "Smooth and rounded cut.",
+      "entries": [
+        "{cabochon shape}",
+        "{cabochon polish}, {cabochon shape}"
+      ]
+    },
+    {
+      "name": "cabochon polish",
+      "explanation": "Brightness of cabochon-cut gems.",
+      "entries": [
+        "dull",
+        "dim",
+        "bright"
+      ]
+    },
+    {
+      "name": "cabochon shape",
+      "explanation": "Shapes of cabochon-cut gems.",
+      "entries": [
+        "round",
+        "oval",
+        "rectangle",
+        "square",
+        "cross-shaped",
+        "teardrop-shaped"
+      ]
+    },
+    {
+      "name": "faceted",
+      "explanation": "Geometrically arranged, flat surfaces.",
+      "entries": [
+        "{faceted shape}, {faceted cut}",
+        "{faceted polish}, {faceted shape} {faceted cut}"
+      ]
+    },
+    {
+      "name": "faceted polish",
+      "explanation": "Brightness of faceted-cut gems.",
+      "entries": [
+        "dull",
+        "bright",
+        "brilliant",
+        "fiery"
+      ]
+    },
+    {
+      "name": "faceted shape",
+      "explanation": "Shapes of faceted-cut gemstones.",
+      "entries": [
+        "round",
+        "oval",
+        "square",
+        "square step cut",
+        "square cushion cut (gently curved sides)",
+        "square emerald cut (corners cut)",
+        "rectangle",
+        "rectangle step cut",
+        "rectangle cushion cut (gently curved sides)",
+        "rectangle emerald cut (corners cut)",
+        "marquis-shaped (long shape with curved sides)",
+        "shield cut (vertically asymmetric)",
+        "triangle-shaped",
+        "hexagon-shaped",
+        "octagon-shaped",
+        "pear-shaped",
+        "heart-shaped",
+        "princess-shaped",
+        "rose cut (faceted top and flat bottom)"
+      ]
+    },
+    {
+      "name": "faceted cut",
+      "explanation": "Faceted cuts.",
+      "entries": [
+        "point-cut",
+        "table-cut",
+        "single-cut",
+        "mazarin-cut",
+        "peruzzi-cut"
+      ]
+    },
+    {
+      "name": "carved",
+      "explanation": "Smooth and rounded cut.",
+      "entries": [
+        "{carved shape}",
+        "{carved polish}, {carved shape}"
+      ]
+    },
+    {
+      "name": "carved polish",
+      "explanation": "Brightness of carved gems.",
+      "entries": [
+        "dull",
+        "dim",
+        "matte"
+      ]
+    },
+    {
+      "name": "carved shape",
+      "explanation": "Shapes of carved gems.",
+      "entries": [
+        "cameo-carved",
+        "intaglio (carved relief shape)",
+        "reverse intaglio carved (relief on the back of the gem)"
       ]
     }
   ]
