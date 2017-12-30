@@ -1,0 +1,1385 @@
+{
+  "name": "number",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Random number of items or creatures.",
+  "structure": "The entries should fit in an expression like 'There are ___ items here.' Note that due to the singular form, 'one' is a special case that is included in the 'special' subtable.",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2017-12-30",
+  "authors": "Esko Vesala.",
+  "sources": "Sizes.com, Wikipedia.org",
+  "genre": "universal",
+  "categories": [
+    "utility"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{number}"
+      ]
+    },
+    {
+      "name": "number",
+      "explanation": "A randomized number.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common number types.",
+      "entries": [
+        "{one digit}",
+        "{two digits}",
+        ""
+      ]
+    },
+    {
+      "name": "one digit",
+      "explanation": "One-digit numbers. Note that the singular 'one' is not included.",
+      "entries": [
+        "{two}",
+        "{three}",
+        "{four}",
+        "{five}",
+        "{six}",
+        "{seven}",
+        "{eight}",
+        "{nine}"
+      ]
+    },
+    {
+      "name": "two digits",
+      "explanation": "Two-digit numbers.",
+      "entries": [
+        "{ten}",
+        "{eleven}",
+        "{twelve}",
+        "{thirteen}",
+        "{fourteen}",
+        "{fifteen}",
+        "{sixteen}",
+        "{seventeen}",
+        "{eighteen}",
+        "{nineteen}",
+        "{twenty}",
+        "{twentyone}",
+        "{twentytwo}",
+        "{twentythree}",
+        "{twentyfour}",
+        "{twentyfive}",
+        "{twentysix}",
+        "{twentyseven}",
+        "{twentyeight}",
+        "{twentynine}",
+        "{thirty}",
+        "{forty}",
+        "{fifty}",
+        "{sixty}",
+        "{seventy}",
+        "{eighty}",
+        "{ninety}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare number types.",
+      "entries": [
+        "{three digits}",
+        "{four digits}",
+        "{five digits}",
+        "{six digits}",
+        "{seven digits}"
+      ]
+    },
+    {
+      "name": "three digits",
+      "explanation": "Three-digit numbers.",
+      "entries": [
+        "{hundred}",
+        "{hundred and ten}",
+        "{hundred and twenty}",
+        "{hundred and thirty}",
+        "{hundred and forty}",
+        "{gross}",
+        "{hundred and fifty}",
+        "{hundred and sixty}",
+        "{hundred and seventy}",
+        "{hundred and eighty}",
+        "{hundred and ninety}",
+        "{two hundred}",
+        "{three hundred}",
+        "{four hundred}",
+        "{five hundred}",
+        "{six hundred}",
+        "{seven hundred}",
+        "{eight hundred}",
+        "{nine hundred}"
+      ]
+    },
+    {
+      "name": "four digits",
+      "explanation": "Four-digit numbers.",
+      "entries": [
+        "{thousand}",
+        "{one thousand one hundred}",
+        "{one thousand two hundred}",
+        "{one thousand three hundred}",
+        "{one thousand four hundred}",
+        "{one thousand five hundred}",
+        "{one thousand six hundred}",
+        "{one thousand seven hundred}",
+        "{great gross}",
+        "{one thousand eight hundred}",
+        "{one thousand nine hundred}",
+        "{two thousand}",
+        "{three thousand}",
+        "{four thousand}",
+        "{five thousand}",
+        "{six thousand}",
+        "{seven thousand}",
+        "{eight thousand}",
+        "{nine thousand}"
+      ]
+    },
+    {
+      "name": "five digits",
+      "explanation": "Five-digit numbers.",
+      "entries": [
+        "{ten thousand}",
+        "{twenty thousand}",
+        "{thirty thousand}",
+        "{forty thousand}",
+        "{fifty thousand}",
+        "{sixty thousand}",
+        "{seventy thousand}",
+        "{eighty thousand}",
+        "{ninety thousand}"
+      ]
+    },
+    {
+      "name": "six digits",
+      "explanation": "Six-digit numbers.",
+      "entries": [
+        "{hundred thousand}",
+        "{two hundred thousand}",
+        "{three hundred thousand}",
+        "{four hundred thousand}",
+        "{five hundred thousand}",
+        "{six hundred thousand}",
+        "{seven hundred thousand}",
+        "{eight hundred thousand}",
+        "{nine hundred thousand}"
+      ]
+    },
+    {
+      "name": "seven digits",
+      "explanation": "Seven-digit numbers.",
+      "entries": [
+        "{million}",
+        "{millions}"
+      ]
+    },
+    {
+      "name": "two",
+      "explanation": "2 items.",
+      "entries": [
+        "2",
+        "two",
+        "twin",
+        "dual",
+        "double",
+        "duplicate",
+        "a pair of",
+        "a couple of"
+      ]
+    },
+    {
+      "name": "three",
+      "explanation": "3 items.",
+      "entries": [
+        "3",
+        "three",
+        "trine",
+        "triple",
+        "triplet",
+        "threefold",
+        "a trio of",
+        "a triad of",
+        "a trinity of"
+      ]
+    },
+    {
+      "name": "four",
+      "explanation": "4 items.",
+      "entries": [
+        "4",
+        "four",
+        "quadruple",
+        "a tetrad of",
+        "a quartet of",
+        "a quadruplet of"
+      ]
+    },
+    {
+      "name": "five",
+      "explanation": "5 items.",
+      "entries": [
+        "5",
+        "five",
+        "quintuplet",
+        "a pentad of",
+        "a quintet of"
+      ]
+    },
+    {
+      "name": "six",
+      "explanation": "6 items.",
+      "entries": [
+        "6",
+        "six",
+        "a hexad of",
+        "a sestet of",
+        "a sextet of",
+        "half a dozen"
+      ]
+    },
+    {
+      "name": "seven",
+      "explanation": "7 items.",
+      "entries": [
+        "7",
+        "seven",
+        "a heptad of",
+        "a septet of"
+      ]
+    },
+    {
+      "name": "eight",
+      "explanation": "8 items.",
+      "entries": [
+        "8",
+        "eight",
+        "an octad of",
+        "an octet of"
+      ]
+    },
+    {
+      "name": "nine",
+      "explanation": "9 items.",
+      "entries": [
+        "9",
+        "nine",
+        "an ennead of",
+        "a nonet (9) of"
+      ]
+    },
+    {
+      "name": "ten",
+      "explanation": "10 items.",
+      "entries": [
+        "10",
+        "ten",
+        "a decade of",
+        "a dectet (10) of"
+      ]
+    },
+    {
+      "name": "eleven",
+      "explanation": "11 items.",
+      "entries": [
+        "11",
+        "eleven",
+        "an ounze of",
+        "an undectet (11) of",
+        "a banker's dozen of"
+      ]
+    },
+    {
+      "name": "twelve",
+      "explanation": "12 items.",
+      "entries": [
+        "12",
+        "twelve",
+        "a dozen",
+        "a duodectet (12) of"
+      ]
+    },
+    {
+      "name": "thirteen",
+      "explanation": "13 items.",
+      "entries": [
+        "13",
+        "thirteen",
+        "a long dozen of",
+        "a baker's dozen of",
+        "a devil's dozen of",
+        "a tredectet (13) of"
+      ]
+    },
+    {
+      "name": "fourteen",
+      "explanation": "14 items.",
+      "entries": [
+        "14",
+        "fourteen",
+        "a quattuordectet (14) of"
+      ]
+    },
+    {
+      "name": "fifteen",
+      "explanation": "15 items.",
+      "entries": [
+        "15",
+        "fifteen",
+        "a quindectet (15) of"
+      ]
+    },
+    {
+      "name": "sixteen",
+      "explanation": "16 items.",
+      "entries": [
+        "16",
+        "sixteen",
+        "a sexdectet (16) of"
+      ]
+    },
+    {
+      "name": "seventeen",
+      "explanation": "17 items.",
+      "entries": [
+        "17",
+        "seventeen",
+        "a septendectet (17) of"
+      ]
+    },
+    {
+      "name": "eighteen",
+      "explanation": "18 items.",
+      "entries": [
+        "18",
+        "eighteen",
+        "an octodectet (18) of"
+      ]
+    },
+    {
+      "name": "nineteen",
+      "explanation": "19 items.",
+      "entries": [
+        "19",
+        "nineteen",
+        "a novemdectet (19) of"
+      ]
+    },
+    {
+      "name": "twenty",
+      "explanation": "20 items.",
+      "entries": [
+        "20",
+        "twenty",
+        "a score of",
+        "a vigetet (20) of"
+      ]
+    },
+    {
+      "name": "twentyone",
+      "explanation": "21 items.",
+      "entries": [
+        "21",
+        "twentyone",
+        "a long score of",
+        "an unvigetet (21) of"
+      ]
+    },
+    {
+      "name": "twentytwo",
+      "explanation": "22 items.",
+      "entries": [
+        "22",
+        "twentytwo",
+        "a duovigetet (22) of"
+      ]
+    },
+    {
+      "name": "twentythree",
+      "explanation": "23 items.",
+      "entries": [
+        "23",
+        "twentythree",
+        "a trevigetet (23) of"
+      ]
+    },
+    {
+      "name": "twentyfour",
+      "explanation": "24 items.",
+      "entries": [
+        "24",
+        "twentyfour",
+        "a quattuorvigetet (24) of",
+        "two dozens of"
+      ]
+    },
+    {
+      "name": "twentyfive",
+      "explanation": "25 items.",
+      "entries": [
+        "25",
+        "twentyfive",
+        "a quinvigetet (25) of"
+      ]
+    },
+    {
+      "name": "twentysix",
+      "explanation": "26 items.",
+      "entries": [
+        "26",
+        "twentysix",
+        "a sexvigetet (26) of"
+      ]
+    },
+    {
+      "name": "twentyseven",
+      "explanation": "27 items.",
+      "entries": [
+        "27",
+        "twentyseven",
+        "a septenvigetet (27) of"
+      ]
+    },
+    {
+      "name": "twentyeight",
+      "explanation": "28 items.",
+      "entries": [
+        "28",
+        "twentyeight",
+        "an octovigetet (28) of"
+      ]
+    },
+    {
+      "name": "twentynine",
+      "explanation": "29 items.",
+      "entries": [
+        "29",
+        "twentynine",
+        "a novemvigetet (29) of"
+      ]
+    },
+    {
+      "name": "thirty",
+      "explanation": "30 items.",
+      "entries": [
+        "30",
+        "thirty",
+        "score and a half",
+        "a trigetet (30) of"
+      ]
+    },
+    {
+      "name": "forty",
+      "explanation": "40 items.",
+      "entries": [
+        "40",
+        "forty",
+        "two-score of",
+        "a quadragetet (40) of",
+        "dozens of"
+      ]
+    },
+    {
+      "name": "fifty",
+      "explanation": "50 items.",
+      "entries": [
+        "50",
+        "fifty",
+        "two-score and ten of",
+        "a quinquagetet (50) of",
+        "dozens of"
+      ]
+    },
+    {
+      "name": "sixty",
+      "explanation": "60 items.",
+      "entries": [
+        "60",
+        "sixty",
+        "three-score of",
+        "a sexagetet (60) of",
+        "over fifty",
+        "dozens of"
+      ]
+    },
+    {
+      "name": "seventy",
+      "explanation": "70 items.",
+      "entries": [
+        "70",
+        "seventy",
+        "three-score and ten of",
+        "a septuagetet (70) of",
+        "over fifty",
+        "dozens of"
+      ]
+    },
+    {
+      "name": "eighty",
+      "explanation": "80 items.",
+      "entries": [
+        "80",
+        "eighty",
+        "four-score of",
+        "an octogetet (80) of",
+        "dozens of",
+        "close to a hundred"
+      ]
+    },
+    {
+      "name": "ninety",
+      "explanation": "90 items.",
+      "entries": [
+        "90",
+        "ninety",
+        "four-score and ten of",
+        "an nonagetet (90) of",
+        "dozens of",
+        "close to a hundred"
+      ]
+    },
+    {
+      "name": "hundred",
+      "explanation": "100 items.",
+      "entries": [
+        "100",
+        "a hundred",
+        "a short hundred of",
+        "five-score of",
+        "a centet (100) of",
+        "a century of",
+        "about hundred",
+        "a ton of"
+      ]
+    },
+    {
+      "name": "hundred and ten",
+      "explanation": "110 items.",
+      "entries": [
+        "110",
+        "hundred and ten",
+        "over a hundred"
+      ]
+    },
+    {
+      "name": "hundred and twenty",
+      "explanation": "120 items.",
+      "entries": [
+        "120",
+        "hundred and twenty",
+        "a small gross of",
+        "ten dozens of",
+        "a great hundred of",
+        "a long hundred of",
+        "a great hundred of",
+        "a six-score of",
+        "over a hundred"
+      ]
+    },
+    {
+      "name": "hundred and thirty",
+      "explanation": "130 items.",
+      "entries": [
+        "130",
+        "hundred and thirty",
+        "over a hundred"
+      ]
+    },
+    {
+      "name": "hundred and forty",
+      "explanation": "140 items.",
+      "entries": [
+        "140",
+        "hundred and forty",
+        "a seven-score of",
+        "close to 150"
+      ]
+    },
+    {
+      "name": "gross",
+      "explanation": "144 items.",
+      "entries": [
+        "144",
+        "gross",
+        "dozen dozens of",
+        "a square dozen of",
+        "close to 150"
+      ]
+    },
+    {
+      "name": "hundred and fifty",
+      "explanation": "150 items.",
+      "entries": [
+        "150",
+        "hundred and fifty",
+        "one and a half hundred",
+        "about 150"
+      ]
+    },
+    {
+      "name": "hundred and sixty",
+      "explanation": "160 items.",
+      "entries": [
+        "160",
+        "hundred and sixty",
+        "a eight-score of",
+        "over 150"
+      ]
+    },
+    {
+      "name": "hundred and seventy",
+      "explanation": "170 items.",
+      "entries": [
+        "170",
+        "hundred and seventy",
+        "over 150"
+      ]
+    },
+    {
+      "name": "hundred and eighty",
+      "explanation": "180 items.",
+      "entries": [
+        "180",
+        "hundred and eighty",
+        "a nine-score of",
+        "close to 200"
+      ]
+    },
+    {
+      "name": "hundred and ninety",
+      "explanation": "190 items.",
+      "entries": [
+        "190",
+        "hundred and ninety",
+        "close to 200"
+      ]
+    },
+    {
+      "name": "two hundred",
+      "explanation": "200 items.",
+      "entries": [
+        "200",
+        "two hundred",
+        "a ten-score of",
+        "about 200"
+      ]
+    },
+    {
+      "name": "three hundred",
+      "explanation": "300 items.",
+      "entries": [
+        "300",
+        "three hundred",
+        "a fifteen-score of",
+        "about 300",
+        "hundreds of"
+      ]
+    },
+    {
+      "name": "four hundred",
+      "explanation": "400 items.",
+      "entries": [
+        "400",
+        "four hundred",
+        "a twenty-score of",
+        "about 300",
+        "hundreds of"
+      ]
+    },
+    {
+      "name": "five hundred",
+      "explanation": "500 items.",
+      "entries": [
+        "500",
+        "five hundred",
+        "half thousand",
+        "hundreds of"
+      ]
+    },
+    {
+      "name": "six hundred",
+      "explanation": "600 items.",
+      "entries": [
+        "600",
+        "six hundred",
+        "hundreds of"
+      ]
+    },
+    {
+      "name": "seven hundred",
+      "explanation": "700 items.",
+      "entries": [
+        "700",
+        "seven hundred",
+        "hundreds of"
+      ]
+    },
+    {
+      "name": "eight hundred",
+      "explanation": "800 items.",
+      "entries": [
+        "800",
+        "eight hundred",
+        "hundreds of",
+        "close to a thousand"
+      ]
+    },
+    {
+      "name": "nine hundred",
+      "explanation": "900 items.",
+      "entries": [
+        "900",
+        "nine hundred",
+        "hundreds of",
+        "close to a thousand"
+      ]
+    },
+    {
+      "name": "thousand",
+      "explanation": "1000 items.",
+      "entries": [
+        "1000",
+        "a thousand",
+        "a chiliad of",
+        "a millennium of"
+      ]
+    },
+    {
+      "name": "one thousand one hundred",
+      "explanation": "1100 items.",
+      "entries": [
+        "1100",
+        "eleven hundred",
+        "one thousand one hundred",
+        "over a thousand"
+      ]
+    },
+    {
+      "name": "one thousand two hundred",
+      "explanation": "1200 items.",
+      "entries": [
+        "1200",
+        "twelve hundred",
+        "a long thousand of",
+        "10 long hundreds",
+        "over a thousand"
+      ]
+    },
+    {
+      "name": "one thousand three hundred",
+      "explanation": "1300 items.",
+      "entries": [
+        "1300",
+        "thirteen hundred",
+        "over a thousand"
+      ]
+    },
+    {
+      "name": "one thousand four hundred",
+      "explanation": "1400 items.",
+      "entries": [
+        "1400",
+        "fourteen hundred",
+        "over a thousand"
+      ]
+    },
+    {
+      "name": "one thousand five hundred",
+      "explanation": "1500 items.",
+      "entries": [
+        "1500",
+        "fifteen hundred",
+        "one and a half thousand"
+      ]
+    },
+    {
+      "name": "one thousand six hundred",
+      "explanation": "1600 items.",
+      "entries": [
+        "1600",
+        "sixteen hundred",
+        "over one and a half thousand"
+      ]
+    },
+    {
+      "name": "one thousand seven hundred",
+      "explanation": "1700 items.",
+      "entries": [
+        "1700",
+        "seventeen hundred",
+        "over one and a half thousand"
+      ]
+    },
+    {
+      "name": "great gross",
+      "explanation": "1728 items.",
+      "entries": [
+        "1728",
+        "a long gross of",
+        "a great gross of",
+        "dozen grosses of",
+        "a cubic dozen of",
+        "over one and a half thousand"
+      ]
+    },
+    {
+      "name": "one thousand eight hundred",
+      "explanation": "1800 items.",
+      "entries": [
+        "1800",
+        "eighteen hundred",
+        "close to two thousand"
+      ]
+    },
+    {
+      "name": "one thousand nine hundred",
+      "explanation": "1900 items.",
+      "entries": [
+        "1900",
+        "nineteen hundred",
+        "close to two thousand"
+      ]
+    },
+    {
+      "name": "two thousand",
+      "explanation": "2000 items.",
+      "entries": [
+        "2000",
+        "two thousand"
+      ]
+    },
+    {
+      "name": "three thousand",
+      "explanation": "3000 items.",
+      "entries": [
+        "3000",
+        "three thousand",
+        "thousands"
+      ]
+    },
+    {
+      "name": "four thousand",
+      "explanation": "4000 items.",
+      "entries": [
+        "4000",
+        "four thousand",
+        "thousands"
+      ]
+    },
+    {
+      "name": "five thousand",
+      "explanation": "5000 items.",
+      "entries": [
+        "5000",
+        "five thousand",
+        "thousands of"
+      ]
+    },
+    {
+      "name": "six thousand",
+      "explanation": "6000 items.",
+      "entries": [
+        "6000",
+        "six thousand",
+        "thousands of"
+      ]
+    },
+    {
+      "name": "seven thousand",
+      "explanation": "7000 items.",
+      "entries": [
+        "7000",
+        "seven thousand",
+        "thousands of"
+      ]
+    },
+    {
+      "name": "eight thousand",
+      "explanation": "8000 items.",
+      "entries": [
+        "8000",
+        "eight thousand",
+        "thousands of",
+        "close to ten thousand"
+      ]
+    },
+    {
+      "name": "nine thousand",
+      "explanation": "9000 items.",
+      "entries": [
+        "9000",
+        "nine thousand",
+        "thousands of",
+        "close to ten thousand"
+      ]
+    },
+    {
+      "name": "ten thousand",
+      "explanation": "10,000 items.",
+      "entries": [
+        "10,000",
+        "ten thousand",
+        "a myriad of",
+        "thousands of"
+      ]
+    },
+    {
+      "name": "twenty thousand",
+      "explanation": "20,000 items.",
+      "entries": [
+        "20,000",
+        "twenty thousand"
+      ]
+    },
+    {
+      "name": "thirty thousand",
+      "explanation": "30,000 items.",
+      "entries": [
+        "30,000",
+        "thirty thousand"
+      ]
+    },
+    {
+      "name": "forty thousand",
+      "explanation": "40,000 items.",
+      "entries": [
+        "40,000",
+        "forty thousand"
+      ]
+    },
+    {
+      "name": "fifty thousand",
+      "explanation": "50,000 items.",
+      "entries": [
+        "50,000",
+        "fifty thousand"
+      ]
+    },
+    {
+      "name": "sixty thousand",
+      "explanation": "60,000 items.",
+      "entries": [
+        "60,000",
+        "sixty thousand"
+      ]
+    },
+    {
+      "name": "seventy thousand",
+      "explanation": "70,000 items.",
+      "entries": [
+        "70,000",
+        "seventy thousand"
+      ]
+    },
+    {
+      "name": "eighty thousand",
+      "explanation": "80,000 items.",
+      "entries": [
+        "80,000",
+        "eighty thousand"
+      ]
+    },
+    {
+      "name": "ninety thousand",
+      "explanation": "90,000 items.",
+      "entries": [
+        "90,000",
+        "ninety thousand"
+      ]
+    },
+    {
+      "name": "hundred thousand",
+      "explanation": "100,000 items.",
+      "entries": [
+        "100,000",
+        "hundred thousand"
+      ]
+    },
+    {
+      "name": "two hundred thousand",
+      "explanation": "200,000 items.",
+      "entries": [
+        "200,000",
+        "two hundred thousand"
+      ]
+    },
+    {
+      "name": "three hundred thousand",
+      "explanation": "300,000 items.",
+      "entries": [
+        "300,000",
+        "three hundred thousand"
+      ]
+    },
+    {
+      "name": "four hundred thousand",
+      "explanation": "400,000 items.",
+      "entries": [
+        "400,000",
+        "four hundred thousand"
+      ]
+    },
+    {
+      "name": "five hundred thousand",
+      "explanation": "500,000 items.",
+      "entries": [
+        "500,000",
+        "five hundred thousand"
+      ]
+    },
+    {
+      "name": "six hundred thousand",
+      "explanation": "600,000 items.",
+      "entries": [
+        "600,000",
+        "six hundred thousand"
+      ]
+    },
+    {
+      "name": "seven hundred thousand",
+      "explanation": "700,000 items.",
+      "entries": [
+        "700,000",
+        "seven hundred thousand"
+      ]
+    },
+    {
+      "name": "eight hundred thousand",
+      "explanation": "800,000 items.",
+      "entries": [
+        "800,000",
+        "eight hundred thousand",
+        "close to a million"
+      ]
+    },
+    {
+      "name": "nine hundred thousand",
+      "explanation": "900,000 items.",
+      "entries": [
+        "900,000",
+        "nine hundred thousand",
+        "close to a million"
+      ]
+    },
+    {
+      "name": "million",
+      "explanation": "1,000,000 items.",
+      "entries": [
+        "1,000,000",
+        "million"
+      ]
+    },
+    {
+      "name": "millions",
+      "explanation": "Several million items.",
+      "entries": [
+        "millions",
+        "many millions",
+        "several millions",
+        "multiple milions",
+        "millions and millions"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special number types.",
+      "entries": [
+        "{negative}",
+        "{zero}",
+        "{small number}",
+        "{fraction}",
+        "{one}",
+        "{few}",
+        "{many}",
+        "{very many}",
+        "{big number}",
+        "{countless}",
+        "{uncountable}",
+        "{infinite}"
+      ]
+    },
+    {
+      "name": "negative",
+      "explanation": "Negative numbers.",
+      "entries": [
+        "negative numbers of",
+        "less than zero",
+        "a subzero number of"
+      ]
+    },
+    {
+      "name": "zero",
+      "explanation": "Nothing.",
+      "entries": [
+        "no",
+        "nil",
+        "null",
+        "zero",
+        "aught",
+        "ought",
+        "naught",
+        "nought",
+        "not any",
+        "not at all",
+        "definitely no"
+      ]
+    },
+    {
+      "name": "small number",
+      "explanation": "Amounts close to zero.",
+      "entries": [
+        "a small number of",
+        "a meager number of",
+        "a measly number of",
+        "a paltry number of",
+        "a minute number of",
+        "a trifling number of",
+        "a miniscule number of",
+        "a negligible number of",
+        "an infinitesimal number of",
+        "an inconsequential number of"
+      ]
+    },
+    {
+      "name": "fraction",
+      "explanation": "Between zero and one items.",
+      "entries": [
+        "smithereens of",
+        "fractions of",
+        "fragments of",
+        "morsels of",
+        "traces of",
+        "crumbs of",
+        "pieces of",
+        "scraps of",
+        "shreds of",
+        "bits of"
+      ]
+    },
+    {
+      "name": "one",
+      "explanation": "1 item.",
+      "entries": [
+        "1",
+        "one",
+        "a lone",
+        "a lonely",
+        "a single",
+        "an individual"
+      ]
+    },
+    {
+      "name": "few",
+      "explanation": "Not many.",
+      "entries": [
+        "few",
+        "some",
+        "scant",
+        "not many",
+        "iotas of",
+        "smidgens of"
+      ]
+    },
+    {
+      "name": "many",
+      "explanation": "A number of items.",
+      "entries": [
+        "many",
+        "various",
+        "several",
+        "multiple",
+        "numerous",
+        "quite a few",
+        "a number of",
+        "a copious number of",
+        "a considerable number of"
+      ]
+    },
+    {
+      "name": "very many",
+      "explanation": "A large number of items.",
+      "entries": [
+        "a large number of",
+        "a vast number of",
+        "a massive number of",
+        "an immense number of",
+        "an enormous number of",
+        "an exuberant number of",
+        "tremendous numbers of",
+        "gigantic numbers of"
+      ]
+    },
+    {
+      "name": "big number",
+      "explanation": "Numbers bigger than millions.",
+      "entries": [
+        "{american big number}",
+        "{european big number}",
+        "googol (10E100)",
+        "googolplex (10Egoogol)",
+        "googolduplex (10Egoogolplex)"
+      ]
+    },
+    {
+      "name": "american big number",
+      "explanation": "Numbers bigger than millions (US nomenclature).",
+      "entries": [
+        "billion (10E9)",
+        "trillion (10E12)",
+        "quadrillion (10E15)",
+        "quintillion (10E18)",
+        "sextillion (10E21)",
+        "septillion (10E24)",
+        "octillion (10E27)",
+        "nonillion (10E30)",
+        "decillion (10E33)",
+        "undecillion (10E36)",
+        "duodecillion (10E39)",
+        "tredecillion (10E42)",
+        "quattordecillion (10E45)",
+        "quindecillion (10E48)",
+        "sexdecillion (10E51)",
+        "septendecillion (10E54)",
+        "octodecillion (10E57)",
+        "novemdecillion (10E60)",
+        "vigintillion (10E63)",
+        "centillion (10E303)"
+      ]
+    },
+    {
+      "name": "european big number",
+      "explanation": "Numbers bigger than millions (non-US nomenclature).",
+      "entries": [
+        "milliard (10E9)",
+        "billion (10E12)",
+        "billiard (10E15)",
+        "trillion (10E18)",
+        "trilliard (10E21)",
+        "quadrillion (10E24)",
+        "quadrilliard (10E27)",
+        "quintillion (10E30)",
+        "quintilliard (10E33)",
+        "sextillion (10E36)",
+        "sextilliard (10E39)",
+        "septillion (10E42)",
+        "septilliard (10E45)",
+        "octillion (10E48)",
+        "octilliard (10E51)",
+        "nonillion (10E54)",
+        "nonilliard (10E57)",
+        "decillion (10E60)",
+        "decilliard (10E63)",
+        "undecillion (10E66)",
+        "undecilliard (10E69)",
+        "duodecillion (10E72)",
+        "duodecilliard (10E75)",
+        "tredecillion (10E78)",
+        "tredecilliard (10E81)",
+        "quattordecillion (10E84)",
+        "quattordecilliard (10E87)",
+        "quindecillion (10E90)",
+        "quindecilliard (10E93)",
+        "sexdecillion (10E96)",
+        "sexdecilliard (10E99)",
+        "septendecillion (10E102)",
+        "septendecilliard (10E105)",
+        "octodecillion (10E108)",
+        "octodecilliard (10E111)",
+        "novemdecillion (10E114)",
+        "novemdecilliard (10E117)",
+        "vigintillion (10E120)",
+        "vigintilliard (10E123)",
+        "quinquavigintilliard (10E153)",
+        "trigintilliard (10E183)",
+        "quinquatrigintilliard (10E213",
+        "quadragintilliard (10E243)",
+        "quinquaquadragintilliard (10E273)",
+        "quinquagintilliard (10E303)",
+        "unquinquagintillion (10E306)",
+        "unquinquagintilliard (10E309)",
+        "duoquinquagintillion (10E312)",
+        "quinquaquinquagintilliard (10E333)",
+        "sesquinquagintillion (10E336)",
+        "sexagintilliard (10E363)",
+        "unsexagintillion (10E366)",
+        "quinquasexagintilliard (10E393)",
+        "septuagintilliard (10E423)",
+        "quinquaseptuagintilliard (10E453)",
+        "octogintilliard (10E483)",
+        "quinquaoctogintilliard (10E513)",
+        "nonagintilliard (10E543)",
+        "quinquanonagintilliard (10E573)",
+        "centillion (10E600)",
+        "centilliard (10E603)",
+        "quinquagintacentilliard (10E903)",
+        "quingentilliard (10E1000)",
+        "ducentilliard (10E1203)",
+        "quinquagintaducentilliard (10E1503)",
+        "trecentilliard (10E1803)",
+        "quinquagintatrecentilliard (10E2103)",
+        "quadringentilliard (10E2403)",
+        "quinquagintaquadringentilliard (10E2703)",
+        "quingentilliard (10E3003)"
+      ]
+    },
+    {
+      "name": "countless",
+      "explanation": "Numerous items.",
+      "entries": [
+        "countless",
+        "innumerable",
+        "an enormous number of",
+        "enormous numbers of",
+        "voluminous numbers of",
+        "a plentiful number of",
+        "a profuse number of",
+        "a manifold number of",
+        "a multitudinous number of",
+        "a numberless amount of",
+        "a legion of",
+        "untold numbers of",
+        "uncounted numbers of",
+        "countless numbers of"
+      ]
+    },
+    {
+      "name": "uncountable",
+      "explanation": "Uncountable number of items.",
+      "entries": [
+        "innumerous",
+        "a measureless number of",
+        "an unreckonable number of",
+        "uncountable numbers of",
+        "incalculable numbers of",
+        "immeasurable numbers of"
+      ]
+    },
+    {
+      "name": "infinite",
+      "explanation": "Infinite amount.",
+      "entries": [
+        "no end of",
+        "a limitless number of",
+        "a near infinite number of",
+        "an infinite number of"
+      ]
+    }
+  ]
+}
