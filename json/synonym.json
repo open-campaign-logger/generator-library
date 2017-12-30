@@ -274,6 +274,19 @@
       ]
     },
     {
+      "name": "number",
+      "explanation": "Synonyms for 'number'.",
+      "entries": [
+        "sum",
+        "count",
+        "total",
+        "tally",
+        "number",
+        "measure",
+        "quantity"
+      ]
+    },
+    {
       "name": "priest",
       "explanation": "Synonyms for a priest (of a religion).",
       "entries": [
