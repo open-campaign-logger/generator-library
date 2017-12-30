@@ -160,8 +160,6 @@ Each entry must be enclosed within quotes, and separated by commas (again, no co
 
 Entries can be strings ranging from a single character to an entire paragraph of text, as long as the text is included between quotation marks.
 
-If you need an empty table entry, use a space (" "), as a completely empty null entry ("") can cause the generator to output empty results.
-
 
 ### That's It!
 
@@ -507,8 +505,3 @@ It is perfectly OK if there is overlap between the results produced by different
 * **A table call is not working.**
 
   Check that the table *name* property is correctly formed. The name of a called table cannot begin with a number. Otherwise the name can contain alphanumeric characters (a - z, A - Z, 0 - 9), as well as underscore (\_) and space ( ) characters. Note that for example a dash (-) is not allowed.
-
-
-* **My generator is producing empty output seemingly at random.**
-
-  Check that there are no completely empty null ("") entries in any of the tables.
