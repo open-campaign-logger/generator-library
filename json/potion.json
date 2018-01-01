@@ -1,0 +1,203 @@
+{
+  "name": "potion",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Potion table.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "liquid",
+  "date": "2017-12-31",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    "item"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{brief}",
+        "{detailed}"
+      ]
+    },
+    {
+      "name": "brief",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{potion} of '{beginning} {ending}'"
+      ]
+    },
+    {
+      "name": "detailed",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{beginning} {ending}' {potion}",
+        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{descriptor} {beginning} {ending}' {potion}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Potion descriptors.",
+      "entries": [
+        "alchemical",
+        "enchanted",
+        "thaumaturgic",
+        "witches'",
+        "wondrous",
+        "occult",
+        "hermetic",
+        "arcane",
+        "esoteric",
+        "mystical",
+        "magical",
+        "chimeric",
+        "bewitching",
+        "elemental"
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginning of the potion name.",
+      "entries": [
+        "dawn",
+        "night",
+        "moon",
+        "{lib:monster#brief}",
+        "{lib:nonhuman#brief}"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Ending of the potion name.",
+      "entries": [
+        "cure",
+        "guard",
+        "ban",
+        "woe",
+        "harm",
+        "bane"
+      ]
+    },
+    {
+      "name": "potion",
+      "explanation": "Potion types.",
+      "entries": [
+        "draught",
+        "brew",
+        "broth",
+        "water",
+        "liquid",
+        "fluid",
+        "drink",
+        "tonic",
+        "extract",
+        "distillation",
+        "droplets",
+        "{elixir}",
+        "{mixture}",
+        "{remedy}",
+        "{alcohol}",
+        "{secretion}",
+        "{decoction}"
+      ]
+    },
+    {
+      "name": "elixir",
+      "explanation": "Elixirs.",
+      "entries": [
+        "potion",
+        "elixir"
+      ]
+    },
+    {
+      "name": "mixture",
+      "explanation": "Mixtures of several substances.",
+      "entries": [
+        "mixture",
+        "admixture",
+        "commixture",
+        "concoction",
+        "solution",
+        "blend",
+        "compound",
+        "amalgam",
+        "amalgamation"
+      ]
+    },
+    {
+      "name": "remedy",
+      "explanation": "Remedies and cures.",
+      "entries": [
+        "remedy",
+        "cure",
+        "medicine"
+      ]
+    },
+    {
+      "name": "alcohol",
+      "explanation": "Alcohol-based potions.",
+      "entries": [
+        "mead",
+        "liquor"
+      ]
+    },
+    {
+      "name": "secretion",
+      "explanation": "Secreted potions.",
+      "entries": [
+        "secretion",
+        "tears",
+        "milk",
+        "saliva",
+        "bile"
+      ]
+    },
+    {
+      "name": "decoction",
+      "explanation": "Thick potions.",
+      "entries": [
+        "decoction",
+        "soup",
+        "oil"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special potion tables.",
+      "entries": [
+        "{container}"
+      ]
+    },
+    {
+      "name": "container",
+      "explanation": "Potion containers.",
+      "entries": [
+        "{lib:material#container} {vessel}",
+        "{vessel}"
+      ]
+    },
+    {
+      "name": "vessel",
+      "explanation": "Potion containers.",
+      "entries": [
+        "vessel",
+        "philter",
+        "phial",
+        "vial",
+        "flagon",
+        "flacon",
+        "flask",
+        "flasket",
+        "bottle",
+        "jar",
+        "urn"
+      ]
+    }
+  ]
+}
