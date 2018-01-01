@@ -9,8 +9,8 @@
   "note": "",
   "bugs": "",
   "to do": "More equipment types.",
-  "see": "gem, jewelry, treasure",
-  "date": "2017-12-28",
+  "see": "business, gem, jewelry, treasure",
+  "date": "2017-12-31",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "universal",
@@ -46,8 +46,10 @@
       "name": "common",
       "explanation": "Common equipment types.",
       "entries": [
+        "{provisions}",
+        "{cooking}",
         "{carrying}",
-        "{storage}",
+        "{container}",
         "{tool}",
         "{weapon care}",
         "{lighting}",
@@ -69,9 +71,37 @@
       "explanation": "Rare equipment types.",
       "entries": [
         "{reconnaissance}",
-        "{thieving}",
-        "{religious}",
-        "{laboratory}"
+        "{religious}"
+      ]
+    },
+    {
+      "name": "provisions",
+      "explanation": "Food for the trail.",
+      "entries": [
+        "rations",
+        "salted fish",
+        "pickled eggs",
+        "flour"
+      ]
+    },
+    {
+      "name": "cooking",
+      "explanation": "Food preparation.",
+      "entries": [
+        "pot",
+        "kettle",
+        "funnel",
+        "mortar abd pestle"
+      ]
+    },
+    {
+      "name": "tableware",
+      "explanation": "Eating equipment.",
+      "entries": [
+        "{lib:material#container} plate",
+        "{lib:material#container} jug",
+        "{lib:material#container} cup",
+        "{lib:material#container} goblet"
       ]
     },
     {
@@ -79,25 +109,45 @@
       "explanation": "Carrying equipment.",
       "entries": [
         "waterskin",
-        "pouch",
+        "small pouch",
+        "large pouch",
         "belt pouch",
-        "sack",
+        "small cloth sack",
+        "large cloth sack",
         "rucksack",
-        "backpack",
+        "quiver",
+        "satchel",
+        "small leather bag",
+        "medium leather bag",
+        "large leather bag",
+        "cloth backpack",
+        "leather backpack",
         "backpack frame"
       ]
     },
     {
-      "name": "storage",
+      "name": "container",
       "explanation": "Storage equipment.",
       "entries": [
-        "barrel"
+        "wooden bucket",
+        "iron bucket",
+        "cask",
+        "wooden barrel",
+        "small wooden box",
+        "medium wooden box",
+        "large wooden box",
+        "small iron box",
+        "medium iron box",
+        "large iron box",
+        "small wooden chest",
+        "large wooden chest"
       ]
     },
     {
       "name": "tool",
       "explanation": "Tools.",
       "entries": [
+        "shovel",
         "crowbar",
         "{woodworking}",
         "{metalworking}",
@@ -255,18 +305,71 @@
       "name": "transportation",
       "explanation": "Transportation equipment.",
       "entries": [
-        "cart",
-        "wagon",
-        "{winter transportation}"
+        "{land vehicle}",
+        "{snow vehicle}",
+        "{water vehicle}"
       ]
     },
     {
-      "name": "winter transportation",
+      "name": "land vehicle",
+      "explanation": "Land-based vehicles.",
+      "entries": [
+        "{horsedrawn}"
+      ]
+    },
+    {
+      "name": "horsedrawn",
+      "explanation": "Horse-drawn carriages.",
+      "entries": [
+        "cart",
+        "chariot (1 horse, 1 passenger)",
+        "double chariot (2 horses, 1 passenger)",
+        "wagon",
+        "carriage",
+        "stagecoach"
+      ]
+    },
+    {
+      "name": "snow vehicle",
       "explanation": "Transportation equipment for winter.",
       "entries": [
         "snow shoes",
         "skis",
         "sleigh"
+      ]
+    },
+    {
+      "name": "water vehicle",
+      "explanation": "Land-based vehicles.",
+      "entries": [
+        "{boat}",
+        "{ship}"
+      ]
+    },
+    {
+      "name": "boat",
+      "explanation": "Boats.",
+      "entries": [
+        "raft",
+        "canoe",
+        "rowboat",
+        "boat",
+        "river boat",
+        "sailing boat",
+        "galley",
+        "keelboat",
+        "catamaran",
+        "barge"
+      ]
+    },
+    {
+      "name": "ship",
+      "explanation": "Ships.",
+      "entries": [
+        "yacht",
+        "longship",
+        "galley",
+        "sailing ship"
       ]
     },
     {
@@ -299,14 +402,6 @@
       ]
     },
     {
-      "name": "laboratory",
-      "explanation": "Timing equipment.",
-      "entries": [
-        "hourglass",
-        "alembic"
-      ]
-    },
-    {
       "name": "weapon care",
       "explanation": "Equipment for weapon care.",
       "entries": [
@@ -314,11 +409,31 @@
       ]
     },
     {
+      "name": "medieval",
+      "explanation": "Equipment for medieval worlds (no fantasy elements).",
+      "entries": [
+        "{myth}",
+        "{laboratory}"
+      ]
+    },
+    {
+      "name": "laboratory",
+      "explanation": "Laboratory equipment.",
+      "entries": [
+        "{lib:material#container} vial",
+        "{lib:material#container} bottle",
+        "{lib:material#container} bowl",
+        "balance with weights",
+        "hourglass",
+        "alembic"
+      ]
+    },
+    {
       "name": "myth",
       "explanation": "Equipment once rumoured to have existed.",
       "entries": [
-        "{magical}",
-        "{alchemical}"
+        "{alchemical}",
+        "{magical}"
       ]
     },
     {
@@ -341,8 +456,8 @@
       "name": "fantasy",
       "explanation": "Equipment for fantasy worlds (with no basis in myth).",
       "entries": [
-        "{myth}",
-        "XXX"
+        "{medieval}",
+        "{myth}"
       ]
     },
     {
@@ -365,7 +480,9 @@
       "name": "special",
       "explanation": "Special equipment types.",
       "entries": [
-        "XXX"
+        "{adjective}",
+        "{complication}",
+        "{condition}"
       ]
     },
     {
