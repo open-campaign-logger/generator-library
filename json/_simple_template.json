@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2017-XX-XX",
+  "date": "2018-XX-XX",
   "authors": "",
   "sources": "",
   "genre": "",
@@ -20,10 +20,24 @@
   "tables": [
     {
       "name": "result",
-      "explanation": "Variations for resultPattern output.",
+      "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{XXX}",
-        "{XXX}"
+        "{brief}",
+        "{detailed}"
+      ]
+    },
+    {
+      "name": "brief",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "detailed",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{XXX} {XXX}"
       ]
     },
     {

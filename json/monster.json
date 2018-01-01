@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "Categorize monsters by type.",
   "see": "animal, attack, citizen, encounter, nonhuman",
-  "date": "2017-12-28",
+  "date": "2017-12-31",
   "authors": "Esko Vesala.",
   "sources": "D20SRD.org, DanDWiki.com, Wikia.com, Wikipedia.org",
   "genre": "fantasy",
@@ -20,9 +20,23 @@
   "tables": [
     {
       "name": "result",
-      "explanation": "Variations for resultPattern output.",
+      "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{monster}",
+        "{brief}",
+        "{detailed}"
+      ]
+    },
+    {
+      "name": "brief",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{monster}"
+      ]
+    },
+    {
+      "name": "detailed",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
         "{health} {monster}",
         "{adjective} {monster}",
         "{health} {adjective} {monster}",
@@ -33,6 +47,11 @@
         "{monster} {complication}",
         "{health} {monster} {complication}"
       ]
+    },
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": []
     },
     {
       "name": "monster",

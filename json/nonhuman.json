@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "Categorize nonhumans by type.",
   "see": "activity, animal, citizen, encounter, monster",
-  "date": "2017-12-28",
+  "date": "2017-12-31",
   "authors": "Esko Vesala.",
   "sources": "Wikia.com, Wikipedia.org",
   "genre": "fantasy",
@@ -20,14 +20,28 @@
   "tables": [
     {
       "name": "result",
-      "explanation": "Variations for resultPattern output.",
+      "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{nonhuman}",
+        "{brief}",
+        "{detailed}"
+      ]
+    },
+    {
+      "name": "brief",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{nonhuman}"
+      ]
+    },
+    {
+      "name": "detailed",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
         "{nonhuman} {lib:activity}",
         "{adjective} {nonhuman}",
         "{adjective} {nonhuman} {lib:activity}",
-        "{lib:ability} {nonhuman}",
-        "{lib:ability} {nonhuman} {lib:activity}"
+        "{lib:creature_template} {nonhuman}",
+        "{lib:creature_template} {nonhuman} {lib:activity}"
       ]
     },
     {
