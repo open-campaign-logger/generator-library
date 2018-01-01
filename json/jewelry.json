@@ -7,7 +7,7 @@
   "explanation": "Jewelry for person appearance and treasure tables.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
-  "to do": "",
+  "to do": "Implement the explanations as footnotes instead of additional text in parenthesis.",
   "see": "gem",
   "date": "2017-12-30",
   "authors": "Authors: Johnn Four, Jochen Linnemann, Esko Vesala.",
@@ -20,9 +20,23 @@
   "tables": [
     {
       "name": "result",
-      "explanation": "Alternate resultPattern formats.",
+      "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{jewelry}",
+        "{brief}",
+        "{detailed}"
+      ]
+    },
+    {
+      "name": "brief",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{jewelry}"
+      ]
+    },
+    {
+      "name": "detailed",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
         "{jewelry} with {lib:number#one digit} {lib:gem}s fastened with {setting}"
       ]
     },
@@ -345,8 +359,8 @@
       "explanation": "Imaginary fantasy adornment (with no basis in myth).",
       "entries": [
         "{myth}",
-        "{lib:personRace}-made {common}",
-        "{lib:monsterHumanoid}-made {common}",
+        "{lib:nonhuman}-made {common}",
+        "{lib:monster#humanoid}-made {common}",
         "insect",
         "{rare fantasy}"
       ]
