@@ -9,7 +9,7 @@
   "note": "",
   "to do": "",
   "see": "material, stone",
-  "date": "2017-10-04",
+  "date": "2017-12-31",
   "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
   "sources": "TvTropes.org, Wikipedia.org.",
   "genre": "universal",
@@ -84,9 +84,6 @@
         "brass",
         "bronze",
         "pewter",
-        "steel",
-        "stainless steel",
-        "alloy steel",
         "damascus steel"
       ]
     },
@@ -167,6 +164,9 @@
       "name": "modern",
       "explanation": "Metals discovered in the modern time period.",
       "entries": [
+        "steel",
+        "stainless steel",
+        "alloy steel",
         "aluminium",
         "nickel",
         "magnesium",
