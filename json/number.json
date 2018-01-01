@@ -8,9 +8,9 @@
   "structure": "The entries should fit in an expression like 'There are ___ items here.' Note that due to the singular form, 'one' is a special case that is included in the 'special' subtable.",
   "note": "",
   "bugs": "",
-  "to do": "",
+  "to do": "Add full range of US big numbers.",
   "see": "",
-  "date": "2017-12-30",
+  "date": "2018-01-01",
   "authors": "Esko Vesala.",
   "sources": "Sizes.com, Wikipedia.org",
   "genre": "universal",
@@ -41,8 +41,18 @@
       "explanation": "Common number types.",
       "entries": [
         "{one digit}",
-        "{two digits}",
-        ""
+        "{two digits}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare number types.",
+      "entries": [
+        "{three digits}",
+        "{four digits}",
+        "{five digits}",
+        "{six digits}",
+        "{seven digits}"
       ]
     },
     {
@@ -90,17 +100,6 @@
         "{seventy}",
         "{eighty}",
         "{ninety}"
-      ]
-    },
-    {
-      "name": "rare",
-      "explanation": "Rare number types.",
-      "entries": [
-        "{three digits}",
-        "{four digits}",
-        "{five digits}",
-        "{six digits}",
-        "{seven digits}"
       ]
     },
     {
@@ -719,7 +718,7 @@
       "entries": [
         "600",
         "six hundred",
-        "hundreds of"
+        "several hundreds of"
       ]
     },
     {
@@ -728,7 +727,7 @@
       "entries": [
         "700",
         "seven hundred",
-        "hundreds of"
+        "several hundreds of"
       ]
     },
     {
@@ -737,7 +736,7 @@
       "entries": [
         "800",
         "eight hundred",
-        "hundreds of",
+        "several hundreds of",
         "close to a thousand"
       ]
     },
@@ -747,7 +746,7 @@
       "entries": [
         "900",
         "nine hundred",
-        "hundreds of",
+        "several hundreds of",
         "close to a thousand"
       ]
     },
@@ -936,7 +935,7 @@
       "entries": [
         "10,000",
         "ten thousand",
-        "a myriad of",
+        "myriad of",
         "thousands of"
       ]
     },
@@ -1091,8 +1090,9 @@
       "explanation": "Several million items.",
       "entries": [
         "millions",
-        "many millions",
+        "a couple of millions",
         "several millions",
+        "many millions",
         "multiple milions",
         "millions and millions"
       ]
