@@ -9,7 +9,7 @@
   "note": "",
   "to do": "",
   "see": "metal, stone, temperature",
-  "date": "2017-10-06",
+  "date": "2017-12-31",
   "authors": "Esko Vesala",
   "sources": "Conservation-Wiki.com, Wikipedia.org.",
   "genre": "universal",
@@ -93,8 +93,8 @@
       "entries": [
         "volcanic glass",
         "glass",
-        "colored glass",
-        "mirror glass"
+        "{lib:color#prime} glass",
+        "crystal"
       ]
     },
     {
@@ -211,7 +211,8 @@
       "entries": [
         "{common}",
         "{plastic}",
-        "{rare modern}"
+        "{rare modern}",
+        "mirror glass"
       ]
     },
     {
@@ -240,6 +241,52 @@
         "neutronium",
         "dark matter",
         "antimatter"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special material tables..",
+      "entries": [
+        "{container}"
+      ]
+    },
+    {
+      "name": "container",
+      "explanation": "Container materials.",
+      "entries": [
+        "{pottery}",
+        "{glass}",
+        "{lib:metal}"
+      ]
+    },
+    {
+      "name": "pottery",
+      "explanation": "Pottery materials.",
+      "entries": [
+        "{earthenware}",
+        "{stoneware}",
+        "porcelain"
+      ]
+    },
+    {
+      "name": "earthenware",
+      "explanation": "Earthenware materials.",
+      "entries": [
+        "earthenware",
+        "clay",
+        "terracotta",
+        "faience",
+        "ceramic",
+        "crockery"
+      ]
+    },
+    {
+      "name": "stoneware",
+      "explanation": "Stoneware materials.",
+      "entries": [
+        "unglazed stoneware",
+        "glazed stoneware",
+        "fine stoneware"
       ]
     }
   ]
