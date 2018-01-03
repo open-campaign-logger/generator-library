@@ -37,9 +37,9 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{beginning} {ending}' {potion} with {lib:aroma#smell}",
-        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{descriptor} {beginning} {ending}' {potion} with {lib:aroma#smell}",
-        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{descriptor} {beginning} {ending}' {potion} with {lib:aroma#smell}"
+        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{beginning} {ending}' {potion}  {lib:aroma#smell}",
+        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{descriptor} {beginning} {ending}' {potion}  {lib:aroma#smell}",
+        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{descriptor} {beginning} {ending}' {potion}  {lib:aroma#smell}"
       ]
     },
     {

@@ -82,7 +82,7 @@
       "explanation": "Dark aromas.",
       "entries": [
         "blood",
-        "mushrooms",
+        "mushroom",
         "metal filings"
       ]
     },
@@ -227,11 +227,11 @@
       "name": "smelling",
       "explanation": "How strongly something smells.",
       "entries": [
-        "a {lib:synonym#slight} {lib:synonym#smell} of ",
-        "its {lib:synonym#slight} {lib:synonym#smell} {lib:synonym#including}  {lib:synonym#hint}",
-        "a {lib:synonym#medium} {lib:synonym#smell} of ",
-        "its {lib:synonym#medium} {lib:synonym#smell} {lib:synonym#including}  {lib:synonym#factor} of",
-        "a {lib:synonym#strong} {lib:synonym#smell} of ",
+        "with a {lib:synonym#slight} {lib:synonym#smell} of ",
+        "with its {lib:synonym#slight} {lib:synonym#smell} {lib:synonym#including}  {lib:synonym#hint}",
+        "with a {lib:synonym#medium} {lib:synonym#smell} of ",
+        "with its {lib:synonym#medium} {lib:synonym#smell} {lib:synonym#including}  {lib:synonym#factor} of",
+        "with a {lib:synonym#strong} {lib:synonym#smell} of ",
         "smelling like"
       ]
     },
