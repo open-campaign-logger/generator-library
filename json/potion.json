@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "liquid",
-  "date": "2017-12-31",
+  "date": "2018-01-03",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "fantasy",
@@ -22,19 +22,19 @@
       "name": "result",
       "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{brief}",
-        "{detailed}"
+        "{summary}",
+        "{detail}"
       ]
     },
     {
-      "name": "brief",
+      "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
         "{potion} of '{beginning} {ending}'"
       ]
     },
     {
-      "name": "detailed",
+      "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
         "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{beginning} {ending}' {potion}",
@@ -68,8 +68,8 @@
         "dawn",
         "night",
         "moon",
-        "{lib:monster#brief}",
-        "{lib:nonhuman#brief}"
+        "{lib:monster#summary}",
+        "{lib:nonhuman#summary}"
       ]
     },
     {

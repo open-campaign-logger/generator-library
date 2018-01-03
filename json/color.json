@@ -1,6 +1,6 @@
 {
   "name": "color table",
-  "resultPattern": "{color}",
+  "resultPattern": "{result}",
   "variables": {
     "footnote": ""
   },
@@ -9,7 +9,7 @@
   "note": "",
   "to do": "Fantasy colors.",
   "see": "adjColor",
-  "date": "2017-12-10",
+  "date": "2018-01-03",
   "authors": "Esko Vesala.",
   "sources": "Craftsy.com, Wikipedia.org.",
   "genre": "universal",
@@ -18,6 +18,29 @@
   ],
   "tags": "#sense, #sight, #color",
   "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{word}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{color}",
+        "{toned}"
+      ]
+    },
     {
       "name": "color",
       "explanation": "Color types.",
@@ -81,6 +104,7 @@
       "explanation": "Color tones for random combinations with basic colors.",
       "entries": [
         "dark",
+        "dull",
         "dim",
         "deep",
         "rich",

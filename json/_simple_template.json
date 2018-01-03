@@ -22,19 +22,19 @@
       "name": "result",
       "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{brief}",
-        "{detailed}"
+        "{summary}",
+        "{detail}"
       ]
     },
     {
-      "name": "brief",
+      "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
         "XXX"
       ]
     },
     {
-      "name": "detailed",
+      "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
         "{XXX} {XXX}"
