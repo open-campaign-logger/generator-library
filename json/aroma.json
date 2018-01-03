@@ -1,23 +1,46 @@
 {
   "name": "aroma table",
-  "resultPattern": "{aroma}",
+  "resultPattern": "{result}",
   "variables": {
     "footnote": ""
   },
-  "explanation": "Aromas and smells. Can also be used for generating tastes.",
+  "explanation": "Aromas and smells. Can also be used for tastes.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
   "to do": "Improve organization, add content.",
   "see": "",
-  "date": "2017-10-04",
+  "date": "2018-01-03",
   "authors": "Esko Vesala.",
   "sources": "Wikipedia.org.",
   "genre": "universal",
   "categories": [
     "utility"
   ],
-  "tags": "#sense, #smell",
+  "tags": "#sense, #smell, #taste",
   "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{aroma}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective} {aroma}",
+        "{aroma} {lib:synonym#and} {aroma}"
+      ]
+    },
     {
       "name": "aroma",
       "explanation": "Aroma types.",
@@ -39,18 +62,19 @@
       "explanation": "Rotten aromas.",
       "entries": [
         "rotting flesh",
-        "fecal",
-        "fishy"
+        "rotting fish",
+        "sour milk",
+        "feces"
       ]
     },
     {
       "name": "stingy",
       "explanation": "Stingy aromas.",
       "entries": [
-        "sulphuric",
-        "acidic",
+        "sulphur",
+        "acid",
         "urine",
-        "sweaty"
+        "sweat"
       ]
     },
     {
@@ -58,11 +82,8 @@
       "explanation": "Dark aromas.",
       "entries": [
         "blood",
-        "mushroom-like",
-        "metallic",
-        "tart",
-        "sour",
-        "musky"
+        "mushrooms",
+        "metal filings"
       ]
     },
     {
@@ -73,25 +94,29 @@
         "spearmint",
         "camphor",
         "menthol",
-        "minty"
+        "mint"
       ]
     },
     {
       "name": "alcohol",
       "explanation": "Alcohol-like aromas.",
       "entries": [
-        "rum-like",
-        "wine"
+        "alcohol",
+        "whiskey",
+        "rum",
+        "wine",
+        "beer",
+        "ale"
       ]
     },
     {
       "name": "woody",
       "explanation": "Woody aromas.",
       "entries": [
-        "woody",
+        "sawdust",
         "fresh bark",
         "pine",
-        "wintergreen",
+        "wintergreens",
         "cork",
         "garlic",
         "leek"
@@ -113,22 +138,22 @@
       "name": "fruity",
       "explanation": "Fruit-like aromas.",
       "entries": [
-        "fruity",
-        "apple",
-        "pear",
-        "grape",
-        "lemon",
-        "strawberry",
-        "cherry"
+        "fruit",
+        "apples",
+        "pears",
+        "grapes",
+        "lemons",
+        "strawberries",
+        "cherries"
       ]
     },
     {
       "name": "flowery",
       "explanation": "Flower-like aromas.",
       "entries": [
-        "floral",
-        "rose",
-        "sweet rose",
+        "flowers",
+        "roses",
+        "especially sweet roses",
         "lavender",
         "lilac"
       ]
@@ -137,15 +162,96 @@
       "name": "sweet",
       "explanation": "Sweet aromas.",
       "entries": [
+        "sweets",
+        "sugar",
+        "grass",
+        "fresh-cut grass",
+        "nuts",
+        "fresh bread",
+        "cream",
+        "butter",
+        "suryp"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special aroma tables.",
+      "entries": [
+        "{adjective}",
+        "{smelling}",
+        "{tasting}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Aromas in adjective form.",
+      "entries": [
+        "rotting",
+        "fecal",
+        "fishy",
+        "stingy",
+        "sulphuric",
+        "acidic",
+        "sweaty",
+        "mushroom-like",
+        "metallic",
+        "tart",
+        "sour",
+        "musky",
+        "dark",
+        "sharp",
+        "minty",
+        "rum-like",
+        "woody",
+        "spicy",
+        "fruity",
+        "flowery",
+        "floral",
         "sweet",
         "sugary",
         "grassy",
-        "fresh-cut grass",
         "nutty",
-        "fresh bread",
         "creamy",
         "buttery",
-        "suryp"
+        "surypy"
+      ]
+    },
+    {
+      "name": "smell",
+      "explanation": "The smell of something.",
+      "entries": [
+        "{smelling} {aroma}"
+      ]
+    },
+    {
+      "name": "smelling",
+      "explanation": "How strongly something smells.",
+      "entries": [
+        "a {lib:synonym#slight} {lib:synonym#smell} of ",
+        "its {lib:synonym#slight} {lib:synonym#smell} {lib:synonym#including}  {lib:synonym#hint}",
+        "a {lib:synonym#medium} {lib:synonym#smell} of ",
+        "its {lib:synonym#medium} {lib:synonym#smell} {lib:synonym#including}  {lib:synonym#factor} of",
+        "a {lib:synonym#strong} {lib:synonym#smell} of ",
+        "smelling like"
+      ]
+    },
+    {
+      "name": "taste",
+      "explanation": "The taste of something.",
+      "entries": [
+        "{tasting} {aroma}"
+      ]
+    },
+    {
+      "name": "tasting",
+      "explanation": "How strongly something tastes.",
+      "entries": [
+        "a {lib:synonym#slight} {lib:synonym#taste} of ",
+        "its {lib:synonym#slight} {lib:synonym#taste} {lib:synonym#including} {lib:synonym#hint}",
+        "a {lib:synonym#medium} {lib:synonym#taste} of ",
+        "its {lib:synonym#medium} {lib:synonym#taste} {lib:synonym#including} {lib:synonym#factor} of",
+        "a {lib:synonym#strong} {lib:synonym#taste} of ",
+        "tasting like"
       ]
     }
   ]
