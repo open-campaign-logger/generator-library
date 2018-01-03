@@ -43,6 +43,23 @@
       ]
     },
     {
+      "name": "and",
+      "explanation": "Synonyms for 'and'.",
+      "entries": [
+        "&",
+        "and",
+        "with",
+        "plus",
+        "accompanying",
+        "as well as",
+        "along with",
+        "together with",
+        "supplemented by",
+        "conjointly with",
+        "in conjunction with"
+      ]
+    },
+    {
       "name": "castle",
       "explanation": "Synonyms for a castle.",
       "entries": [
@@ -136,6 +153,19 @@
       ]
     },
     {
+      "name": "factor",
+      "explanation": "Synonyms for 'factor' (element, component).",
+      "entries": [
+        "a part",
+        "a factor",
+        "an aspect",
+        "a feature",
+        "an element",
+        "a component",
+        "an ingredient"
+      ]
+    },
+    {
       "name": "fighter",
       "explanation": "Synonyms for a fighter.",
       "entries": [
@@ -194,6 +224,29 @@
       ]
     },
     {
+      "name": "hint",
+      "explanation": "Synonyms for 'notion' (small amount).",
+      "entries": [
+        "a bit of",
+        "a hint of",
+        "a drop of",
+        "a vein of",
+        "traces of",
+        "an iota of",
+        "a shade of",
+        "a tinge of",
+        "a pinch of",
+        "a little of",
+        "a notion of",
+        "a strain of",
+        "an inkling of",
+        "a suspicion of",
+        "a sprinkling of",
+        "an undertone of",
+        "a suggestion of"
+      ]
+    },
+    {
       "name": "horror",
       "explanation": "Synonyms for horror (the emotion).",
       "entries": [
@@ -204,6 +257,19 @@
         "dread",
         "terror",
         "abhorrence"
+      ]
+    },
+    {
+      "name": "including",
+      "explanation": "Synonyms for 'including' (something).",
+      "entries": [
+        "including",
+        "containing",
+        "blending in",
+        "integrating",
+        "encompassing",
+        "incorporating",
+        "accommodating"
       ]
     },
     {
@@ -242,6 +308,22 @@
       "explanation": "Synonyms for a magician.",
       "entries": [
         "{lib:magician}"
+      ]
+    },
+    {
+      "name": "medium",
+      "explanation": "Synonyms for 'medium' qualities.",
+      "entries": [
+        "fair",
+        "medium",
+        "modest",
+        "average",
+        "moderate",
+        "mediocre",
+        "passable",
+        "bearable",
+        "tolerable",
+        "not excessive"
       ]
     },
     {
@@ -328,10 +410,77 @@
       ]
     },
     {
+      "name": "slight",
+      "explanation": "Synonyms for 'faint' qualities.",
+      "entries": [
+        "mild",
+        "weak",
+        "faint",
+        "frail",
+        "slight",
+        "meager",
+        "measly",
+        "feeble",
+        "scanty",
+        "paltry",
+        "trifling"
+      ]
+    },
+    {
+      "name": "smell",
+      "explanation": "Neutral synonyms for 'smell' (good or bad odour).",
+      "entries": [
+        "odor",
+        "tang",
+        "smell",
+        "scent",
+        "aroma",
+        "whiff",
+        "flatus",
+        "bouquet",
+        "fragrance",
+        "redolence"
+      ]
+    },
+    {
       "name": "sorcerer",
       "explanation": "Synonyms for a sorcerer.",
       "entries": [
         "{lib:magician}"
+      ]
+    },
+    {
+      "name": "strong",
+      "explanation": "Synonyms for 'strong' qualities.",
+      "entries": [
+        "firm",
+        "solid",
+        "stark",
+        "strong",
+        "robust",
+        "potent",
+        "powerful",
+        "forceful",
+        "puissant",
+        "vigorous",
+        "stalwart",
+        "dominant"
+      ]
+    },
+    {
+      "name": "taste",
+      "explanation": "Synonyms for 'taste' (good or bad).",
+      "entries": [
+        "zest",
+        "taste",
+        "savor",
+        "spice",
+        "flavor",
+        "flavoring",
+        "condiment",
+        "aftertaste",
+        "savoriness",
+        "palatableness"
       ]
     },
     {
