@@ -9,8 +9,8 @@
   "note": "",
   "bugs": "",
   "to do": "",
-  "see": "energy, magic, magical_technique, magical_instrument, spell_name, spell_target, spellcasting",
-  "date": "2017-12-10",
+  "see": "energy, magic, magical_technique, magical_instrument, potion, spell_name, spell_target, spellcasting",
+  "date": "2018-01-03",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "fantasy",
@@ -52,7 +52,8 @@
       "name": "positive",
       "explanation": "Positive spell intention types.",
       "entries": [
-        "{restoration}"
+        "{restoration}",
+        "{healing}"
       ]
     },
     {
@@ -60,6 +61,19 @@
       "explanation": "Destructive intentions.",
       "entries": [
         "destruction"
+      ]
+    },
+    {
+      "name": "healing",
+      "explanation": "Healing intentions.",
+      "entries": [
+        "invigoration",
+        "vitalization",
+        "healing",
+        "curation",
+        "alleviation",
+        "rejuvenation",
+        "vivification"
       ]
     },
     {
@@ -74,6 +88,7 @@
       "name": "restoration",
       "explanation": "Restorative intentions.",
       "entries": [
+        "restoration",
         "renewal"
       ]
     },

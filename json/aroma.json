@@ -228,9 +228,9 @@
       "explanation": "How strongly something smells.",
       "entries": [
         "with a {lib:synonym#slight} {lib:synonym#smell} of ",
-        "with its {lib:synonym#slight} {lib:synonym#smell} {lib:synonym#including}  {lib:synonym#hint}",
+        "with its {lib:synonym#slight} {lib:synonym#smell} {lib:synonym#including} {lib:synonym#hint}",
         "with a {lib:synonym#medium} {lib:synonym#smell} of ",
-        "with its {lib:synonym#medium} {lib:synonym#smell} {lib:synonym#including}  {lib:synonym#factor} of",
+        "with its {lib:synonym#medium} {lib:synonym#smell} {lib:synonym#including} {lib:synonym#factor} of",
         "with a {lib:synonym#strong} {lib:synonym#smell} of ",
         "smelling like"
       ]
@@ -246,11 +246,11 @@
       "name": "tasting",
       "explanation": "How strongly something tastes.",
       "entries": [
-        "a {lib:synonym#slight} {lib:synonym#taste} of ",
-        "its {lib:synonym#slight} {lib:synonym#taste} {lib:synonym#including} {lib:synonym#hint}",
-        "a {lib:synonym#medium} {lib:synonym#taste} of ",
-        "its {lib:synonym#medium} {lib:synonym#taste} {lib:synonym#including} {lib:synonym#factor} of",
-        "a {lib:synonym#strong} {lib:synonym#taste} of ",
+        "with a {lib:synonym#slight} {lib:synonym#taste} of ",
+        "with its {lib:synonym#slight} {lib:synonym#taste} {lib:synonym#including} {lib:synonym#hint}",
+        "with a {lib:synonym#medium} {lib:synonym#taste} of ",
+        "with its {lib:synonym#medium} {lib:synonym#taste} {lib:synonym#including} {lib:synonym#factor} of",
+        "with a {lib:synonym#strong} {lib:synonym#taste} of ",
         "tasting like"
       ]
     }

@@ -1,6 +1,6 @@
 {
   "name": "magic table",
-  "resultPattern": "{magic}",
+  "resultPattern": "{result}",
   "variables": {
     "footnote": ""
   },
@@ -9,7 +9,7 @@
   "note": "",
   "to do": "myth, fantasy and futuristic subtables.",
   "see": "energy, magical_technique, magical_instrument, spell_name, spellcasting",
-  "date": "2017-12-10",
+  "date": "2018-01-03",
   "authors": "Esko Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -18,6 +18,28 @@
   ],
   "tags": "#magic, #spell, #power",
   "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{magic}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective} {magic}"
+      ]
+    },
     {
       "name": "magic",
       "explanation": "Magic types.",
@@ -204,6 +226,55 @@
       "entries": [
         "{modern}",
         "mystechnology (mystical technology)"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special magic tables.",
+      "entries": [
+        "{descriptor}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Magical adjectives.",
+      "entries": [
+        "{negative}",
+        "{neutral}",
+        "{positive}"
+      ]
+    },
+    {
+      "name": "negative",
+      "explanation": "Negative adjectives.",
+      "entries": [
+        "occult",
+        "witches'",
+        "bewitching",
+        "diabolical"
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Neutral adjectives.",
+      "entries": [
+        "alchemical",
+        "hermetic",
+        "arcane",
+        "esoteric",
+        "mystical",
+        "magical",
+        "chimeric",
+        "elemental"
+      ]
+    },
+    {
+      "name": "positive",
+      "explanation": "Positive adjectives.",
+      "entries": [
+        "enchanted",
+        "thaumaturgic",
+        "wondrous"
       ]
     }
   ]

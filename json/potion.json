@@ -9,7 +9,7 @@
   "note": "",
   "bugs": "",
   "to do": "",
-  "see": "liquid",
+  "see": "liquid, spell_intention",
   "date": "2018-01-03",
   "authors": "Esko Vesala.",
   "sources": "",
@@ -30,82 +30,99 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{potion} of '{beginning} {ending}'"
+        "{potion}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{beginning} {ending}' {potion}  {lib:aroma#smell}",
-        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{descriptor} {beginning} {ending}' {potion}  {lib:aroma#smell}",
-        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{descriptor} {beginning} {ending}' {potion}  {lib:aroma#smell}"
-      ]
-    },
-    {
-      "name": "descriptor",
-      "explanation": "Potion descriptors.",
-      "entries": [
-        "alchemical",
-        "enchanted",
-        "thaumaturgic",
-        "witches'",
-        "wondrous",
-        "occult",
-        "hermetic",
-        "arcane",
-        "esoteric",
-        "mystical",
-        "magical",
-        "chimeric",
-        "bewitching",
-        "elemental"
-      ]
-    },
-    {
-      "name": "beginning",
-      "explanation": "Beginning of the potion name.",
-      "entries": [
-        "dawn",
-        "night",
-        "moon",
-        "{lib:monster#summary}",
-        "{lib:nonhuman#summary}"
-      ]
-    },
-    {
-      "name": "ending",
-      "explanation": "Ending of the potion name.",
-      "entries": [
-        "cure",
-        "guard",
-        "ban",
-        "woe",
-        "harm",
-        "bane"
+        "{container} of {lib:color#word} colored, {lib:liquid#texture} '{potion}' {form}",
+        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{potion}' {form} {lib:aroma#smell}",
+        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{potion}' {form} {lib:aroma#smell}"
       ]
     },
     {
       "name": "potion",
-      "explanation": "Potion types.",
+      "explanation": "Potion concept.",
+      "entries": [
+        "{negative}",
+        "{neutral}",
+        "{positive}"
+      ]
+    },
+    {
+      "name": "negative",
+      "explanation": "Negative purpose.",
+      "entries": [
+        "{lib:spell_intention#negative} {negative form}",
+        "{lib:magic#negative} {lib:spell_intention#negative} {negative form}"
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Neutral purpose.",
+      "entries": [
+        "{lib:spell_intention#neutral} {neutral form}",
+        "{lib:magic#neutral} {lib:spell_intention#neutral} {neutral form}"
+      ]
+    },
+    {
+      "name": "positive",
+      "explanation": "Positive purpose.",
+      "entries": [
+        "{lib:spell_intention#positive} {positive form}",
+        "{lib:magic#positive} {lib:spell_intention#positive} {positive form}"
+      ]
+    },
+    {
+      "name": "form",
+      "explanation": "Potion forms.",
+      "entries": [
+        "{negative form}",
+        "{neutral form}",
+        "{positive form}"
+      ]
+    },
+    {
+      "name": "negative form",
+      "explanation": "Negative potion forms.",
+      "entries": [
+        "{alcohol}",
+        "{secretion}"
+      ]
+    },
+    {
+      "name": "alcohol",
+      "explanation": "Alcohol-based potions.",
       "entries": [
         "draught",
         "brew",
-        "broth",
-        "water",
-        "liquid",
-        "fluid",
-        "drink",
-        "tonic",
-        "extract",
-        "distillation",
-        "droplets",
+        "mead",
+        "liquor"
+      ]
+    },
+    {
+      "name": "secretion",
+      "explanation": "Secreted potions.",
+      "entries": [
+        "secretion",
+        "tears",
+        "milk",
+        "saliva",
+        "bile"
+      ]
+    },
+    {
+      "name": "neutral form",
+      "explanation": "Neutral potion forms.",
+      "entries": [
         "{elixir}",
         "{mixture}",
-        "{remedy}",
-        "{alcohol}",
-        "{secretion}",
-        "{decoction}"
+        "{decoction}",
+        "{oil}",
+        "{fluid}",
+        "{miscellaneous}"
       ]
     },
     {
@@ -132,52 +149,118 @@
       ]
     },
     {
-      "name": "remedy",
-      "explanation": "Remedies and cures.",
-      "entries": [
-        "remedy",
-        "cure",
-        "medicine"
-      ]
-    },
-    {
-      "name": "alcohol",
-      "explanation": "Alcohol-based potions.",
-      "entries": [
-        "mead",
-        "liquor"
-      ]
-    },
-    {
-      "name": "secretion",
-      "explanation": "Secreted potions.",
-      "entries": [
-        "secretion",
-        "tears",
-        "milk",
-        "saliva",
-        "bile"
-      ]
-    },
-    {
       "name": "decoction",
       "explanation": "Thick potions.",
       "entries": [
         "decoction",
-        "soup",
-        "oil"
+        "broth",
+        "soup"
+      ]
+    },
+    {
+      "name": "oil",
+      "explanation": "Oily potions.",
+      "entries": [
+        "oil",
+        "balm",
+        "salve",
+        "cream",
+        "lotion",
+        "unguent",
+        "ointment"
+      ]
+    },
+    {
+      "name": "fluid",
+      "explanation": "Thin potions.",
+      "entries": [
+        "liquid",
+        "fluid",
+        "drink",
+        "water"
+      ]
+    },
+    {
+      "name": "miscellaneous",
+      "explanation": "Miscellaneous potion forms.",
+      "entries": [
+        "extract",
+        "distillation",
+        "droplets"
+      ]
+    },
+    {
+      "name": "positive form",
+      "explanation": "Positive potion forms.",
+      "entries": [
+        "{remedy}",
+        "{antidote}"
+      ]
+    },
+    {
+      "name": "remedy",
+      "explanation": "Healing and curative potions.",
+      "entries": [
+        "remedy",
+        "cure",
+        "medicine",
+        "tonic"
+      ]
+    },
+    {
+      "name": "antidote",
+      "explanation": "Antidote potions.",
+      "entries": [
+        "serum",
+        "antivenin",
+        "counteractant"
       ]
     },
     {
       "name": "special",
       "explanation": "Special potion tables.",
       "entries": [
+        "{random}",
         "{container}"
       ]
     },
     {
+      "name": "random",
+      "explanation": "Random potion names.",
+      "entries": [
+        "{form} of '{beginning} {ending}'",
+        "{lib:magic#adjective} {form} of '{beginning} {ending}'",
+        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{beginning} {ending}' {form} {lib:aroma#smell}",
+        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{lib:magic#adjective} {beginning} {ending}' {form} {lib:aroma#smell}",
+        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{lib:magic#adjective} {beginning} {ending}' {form} {lib:aroma#smell}"
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginning of the potion name.",
+      "entries": [
+        "dawn",
+        "night",
+        "moon",
+        "{lib:monster#summary}",
+        "{lib:nonhuman#summary}"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Ending of the potion name.",
+      "entries": [
+        "cure",
+        "guard",
+        "ban",
+        "woe",
+        "harm",
+        "bane"
+      ]
+    },
+    {
       "name": "container",
-      "explanation": "Potion containers.",
+      "explanation": "Potion container descriptions.",
       "entries": [
         "{lib:material#container} {vessel}",
         "{vessel}"
