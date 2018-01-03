@@ -22,12 +22,16 @@
       "name": "adventure",
       "explanation": "Synonyms for adventuring (for something).",
       "entries": [
-        "adventure",
-        "crusade",
-        "hunt",
+        "task",
+        "quest",
+        "foray",
+        "venture",
         "mission",
         "pursuit",
-        "quest"
+        "adventure",
+        "operation",
+        "assignment",
+        "undertaking"
       ]
     },
     {
@@ -54,9 +58,41 @@
         "as well as",
         "along with",
         "together with",
+        "in addition to",
         "supplemented by",
         "conjointly with",
         "in conjunction with"
+      ]
+    },
+    {
+      "name": "area",
+      "explanation": "Synonyms for an area (an outdoors location).",
+      "entries": [
+        "area",
+        "spot",
+        "place",
+        "space",
+        "locale",
+        "locality",
+        "location",
+        "vicinity"
+      ]
+    },
+    {
+      "name": "big",
+      "explanation": "Synonyms for 'huge' (size).",
+      "entries": [
+        "big",
+        "huge",
+        "immense",
+        "massive",
+        "enormous",
+        "gigantic",
+        "colossal",
+        "enormous",
+        "gargantuan",
+        "monumental",
+        "tremendous"
       ]
     },
     {
@@ -376,6 +412,29 @@
       ]
     },
     {
+      "name": "region",
+      "explanation": "Synonyms for a territory (larage outdoors area).",
+      "entries": [
+        "area",
+        "region",
+        "expanse",
+        "district"
+      ]
+    },
+    {
+      "name": "room",
+      "explanation": "Synonyms for a room (an enclosed area).",
+      "entries": [
+        "room",
+        "area",
+        "hall",
+        "place",
+        "chamber",
+        "location",
+        "enclosure"
+      ]
+    },
+    {
       "name": "ruler",
       "explanation": "Synonyms for a ruler (of an area).",
       "entries": [
@@ -424,6 +483,20 @@
         "scanty",
         "paltry",
         "trifling"
+      ]
+    },
+    {
+      "name": "small",
+      "explanation": "Synonyms for 'little' (size).",
+      "entries": [
+        "tiny",
+        "small",
+        "little",
+        "minute",
+        "petite",
+        "miniscule",
+        "diminutive",
+        "small-scale"
       ]
     },
     {
@@ -527,6 +600,20 @@
       "explanation": "Synonyms for a warrior.",
       "entries": [
         "{lib:fighter}"
+      ]
+    },
+    {
+      "name": "with",
+      "explanation": "Synonyms for 'with'.",
+      "entries": [
+        "with",
+        "accompanying",
+        "along with",
+        "coupled with",
+        "together with",
+        "supplemented by",
+        "conjointly with",
+        "in conjunction with"
       ]
     },
     {
