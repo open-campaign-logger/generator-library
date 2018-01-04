@@ -33,7 +33,7 @@
     "artifactdescription": "",
     "treasure": "",
     "treasuredescription": "",
-    "actor": "",
+    "actant": "",
     "attitude": "",
     "enemy": "",
     "enemies": "",
@@ -187,7 +187,7 @@
   "note": "",
   "bugs": "",
   "to do": "Support for external motif files (requires global variables). More encounters!",
-  "see": "hook_line_and_sinker_adventure",
+  "see": "Dungeon_adventure, hook_line_and_sinker_adventure",
   "date": "2018-01-04",
   "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "Dream Park: The Roleplaying Game, RolePlayingTips.com",
@@ -399,7 +399,7 @@
           "m": 1,
           "v": "{enemy level}",
           "set": {
-            "actor": "enemy"
+            "actant": "enemy"
           }
         }
       ]
@@ -4812,15 +4812,15 @@
       "name": "combat encounter",
       "explanation": "Encounters with hostile creatures (guardian, minion, monster, beast, rival, etc.)",
       "entries": [
-        "This is the lair of a {hostile actor}.",
-        "A {hostile actor} is waiting here, ready to attack."
+        "This is the lair of a {hostile actant}.",
+        "A {hostile actant} is waiting here, ready to attack."
       ]
     },
     {
       "name": "betrayal encounter",
       "explanation": "Encounters where the adventurers are betrayed (traitor, shapeshifter, tempter, trickster, etc).",
       "entries": [
-        "A {deceptive actor} needs help."
+        "A {deceptive actant} needs help."
       ]
     },
     {
@@ -4841,14 +4841,14 @@
       "name": "setback encounter",
       "explanation": "Encounters that cause the adventurers to lose progress (traitor, shapeshifter, rival, etc).",
       "entries": [
-        "A {competitive actor} causes them to lose progress."
+        "A {competitive actant} causes them to lose progress."
       ]
     },
     {
       "name": "hindrance encounter",
       "explanation": "Encounters that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
       "entries": [
-        "A {competitive actor} slows down the progress.",
+        "A {competitive actant} slows down the progress.",
         "Problem with a {lock}",
         "Problem with a {door}."
       ]
@@ -4857,7 +4857,7 @@
       "name": "trick encounter",
       "explanation": "Encounters that require a clever approach.",
       "entries": [
-        "A {deceptive actor} attempts to trick the {adventurer}.",
+        "A {deceptive actant} attempts to trick the {adventurer}.",
         "{trick}"
       ]
     },
@@ -4865,22 +4865,22 @@
       "name": "trial encounter",
       "explanation": "Encounters where the adventurers must prove themselves (rival, mentor, trickster, etc).",
       "entries": [
-        "A {friendly actor} requires the adventurers to prove their mettle."
+        "A {friendly actant} requires the adventurers to prove their mettle."
       ]
     },
     {
       "name": "competition encounter",
       "explanation": "Encounters where adventurers have to compete with someone (rival, mentor, etc.)",
       "entries": [
-        "A {competitive actor} presents a challenge to the adventurers.",
-        "A {deceptive actor} challenges the adventurers."
+        "A {competitive actant} presents a challenge to the adventurers.",
+        "A {deceptive actant} challenges the adventurers."
       ]
     },
     {
       "name": "distraction encounter",
       "explanation": "Encounters that lead astray (shapeshifter, trickster, tempter, traitor, red herring, smoke screen, etc.)",
       "entries": [
-        "A {deceptive actor} leads the adventurers astray.",
+        "A {deceptive actant} leads the adventurers astray.",
         "{red herring}",
         "{smoke screen}"
       ]
@@ -4889,7 +4889,7 @@
       "name": "sidetrack encounter",
       "explanation": "Encounters providing temporary diversion (tricster, tempter, sense of wonder, comic relief, etc.)",
       "entries": [
-        "A {deceptive actor} causes a temporary diversion for the adventurers.",
+        "A {deceptive actant} causes a temporary diversion for the adventurers.",
         "{wonder}",
         "{humor}"
       ]
@@ -4909,7 +4909,7 @@
       "name": "rescue encounter",
       "explanation": "Encounters where a prisoner (captive, mentor, ally, shapeshifter, tempter, traitor, trickster, animal, monster, minion, rival, etc.) can be rescued and perhaps befriended.",
       "entries": [
-        "A {helpless actor} needs to be rescued."
+        "A {helpless actant} needs to be rescued."
       ]
     },
     {
@@ -4930,8 +4930,8 @@
       "name": "information encounter",
       "explanation": "Encounters that offer information (mentor, trickster, clue, shapeshifter, traitor, red herring, etc.)",
       "entries": [
-        "A {friendly actor} gives useful information.",
-        "A {deceptive actor} gives wrong information.",
+        "A {friendly actant} gives useful information.",
+        "A {deceptive actant} gives wrong information.",
         "{clue}",
         "{red herring}"
       ]
@@ -4940,7 +4940,7 @@
       "name": "help encounter",
       "explanation": "Encounters that offer help (mentor, ally, etc.)",
       "entries": [
-        "A {friendly actor} offers to help."
+        "A {friendly actant} offers to help."
       ]
     },
     {
@@ -4958,57 +4958,57 @@
       ]
     },
     {
-      "**************************************************": "ACTOR"
+      "**************************************************": "ACTANTS"
     },
     {
-      "name": "actor",
-      "explanation": "Help table for generating a completely random actor. Usually the 'actor' subtables are called directly by the encounter tables to make the actor fit the encounter.",
+      "name": "actant",
+      "explanation": "Help table for generating a completely random actant. Usually the 'actant' subtables are called directly by the encounter tables to make the actant fit the encounter.",
       "entries": [
         {
           "m": 1,
-          "v": "{hostile actor}",
+          "v": "{hostile actant}",
           "set": {
             "attitude": "hostile"
           }
         },
         {
           "m": 1,
-          "v": "{deceptive actor}",
+          "v": "{deceptive actant}",
           "set": {
             "attitude": "deceptive"
           }
         },
         {
           "m": 1,
-          "v": "{competitive actor}",
+          "v": "{competitive actant}",
           "set": {
             "attitude": "competitive"
           }
         },
         {
           "m": 1,
-          "v": "{neutral actor}",
+          "v": "{neutral actant}",
           "set": {
             "attitude": "neutral"
           }
         },
         {
           "m": 1,
-          "v": "{friendly actor}",
+          "v": "{friendly actant}",
           "set": {
             "attitude": "friendly"
           }
         },
         {
           "m": 1,
-          "v": "{nonsentient actor}",
+          "v": "{nonsentient actant}",
           "set": {
             "attitude": "nonsentient"
           }
         },
         {
           "m": 1,
-          "v": "{helpless actor}",
+          "v": "{helpless actant}",
           "set": {
             "attitude": "helpless"
           }
@@ -5016,282 +5016,282 @@
       ]
     },
     {
-      "name": "hostile actor",
-      "explanation": "Actors who are opposed to the adventurers.",
+      "name": "hostile actant",
+      "explanation": "Actants who are opposed to the adventurers.",
       "entries": [
         {
           "explanation": "The enemy has been set when initializing and is not randomized.",
           "m": 1,
           "v": "{var:enemy}",
           "set": {
-            "actor": "enemy"
+            "actant": "enemy"
           }
         },
         {
           "m": 1,
           "v": "{var:minion}",
           "set": {
-            "actor": "minion"
+            "actant": "minion"
           }
         },
         {
           "m": 1,
           "v": "{var:guardian}",
           "set": {
-            "actor": "guardian"
+            "actant": "guardian"
           }
         },
         {
           "m": 1,
           "v": "{var:monster}",
           "set": {
-            "actor": "monster"
+            "actant": "monster"
           }
         },
         {
           "m": 1,
           "v": "{var:beast}",
           "set": {
-            "actor": "beast"
+            "actant": "beast"
           }
         }
       ]
     },
     {
-      "name": "deceptive actor",
-      "explanation": "Actors who may not be what they appear to be.",
+      "name": "deceptive actant",
+      "explanation": "Actants who may not be what they appear to be.",
       "entries": [
         {
           "m": 1,
           "v": "{var:traitor}",
           "set": {
-            "actor": "traitor"
+            "actant": "traitor"
           }
         },
         {
           "m": 1,
           "v": "{var:shapeshifter}",
           "set": {
-            "actor": "shapeshifter"
+            "actant": "shapeshifter"
           }
         },
         {
           "m": 1,
           "v": "{var:tempter}",
           "set": {
-            "actor": "tempter"
+            "actant": "tempter"
           }
         },
         {
           "m": 1,
           "v": "{var:trickster}",
           "set": {
-            "actor": "trickster"
+            "actant": "trickster"
           }
         }
       ]
     },
     {
-      "name": "competitive actor",
-      "explanation": "Actors who compete with the adventurers.",
+      "name": "competitive actant",
+      "explanation": "Actants who compete with the adventurers.",
       "entries": [
         {
           "m": 1,
           "v": "{var:tempter}",
           "set": {
-            "actor": "tempter"
+            "actant": "tempter"
           }
         },
         {
           "m": 1,
           "v": "{var:rival}",
           "set": {
-            "actor": "rival"
+            "actant": "rival"
           }
         },
         {
           "m": 1,
           "v": "{var:trickster}",
           "set": {
-            "actor": "trickster"
+            "actant": "trickster"
           }
         }
       ]
     },
     {
-      "name": "neutral actor",
-      "explanation": "Actors who initially have a neutral attitude.",
+      "name": "neutral actant",
+      "explanation": "Actants who initially have a neutral attitude.",
       "entries": [
         {
           "m": 1,
           "v": "{var:inhabitant}",
           "set": {
-            "actor": "inhabitant"
+            "actant": "inhabitant"
           }
         },
         {
           "m": 1,
           "v": "{var:animal}",
           "set": {
-            "actor": "animal"
+            "actant": "animal"
           }
         },
         {
           "m": 1,
           "v": "{var:captive}",
           "set": {
-            "actor": "captive"
+            "actant": "captive"
           }
         },
         {
           "m": 1,
           "v": "{var:herald}",
           "set": {
-            "actor": "herald"
+            "actant": "herald"
           }
         }
       ]
     },
     {
-      "name": "friendly actor",
-      "explanation": "Actors who are friendly towards the adventurers.",
+      "name": "friendly actant",
+      "explanation": "Actants who are friendly towards the adventurers.",
       "entries": [
         {
           "m": 1,
           "v": "{var:tempter}",
           "set": {
-            "actor": "tempter"
+            "actant": "tempter"
           }
         },
         {
           "m": 1,
           "v": "{var:trickster}",
           "set": {
-            "actor": "trickster"
+            "actant": "trickster"
           }
         },
         {
           "m": 1,
           "v": "{var:mentor}",
           "set": {
-            "actor": "mentor"
+            "actant": "mentor"
           }
         },
         {
           "m": 1,
           "v": "{var:ally}",
           "set": {
-            "actor": "ally"
+            "actant": "ally"
           }
         }
       ]
     },
     {
-      "name": "nonsentient actor",
-      "explanation": "Actors who have animal-like intelligence.",
+      "name": "nonsentient actant",
+      "explanation": "Actants who have animal-like intelligence.",
       "entries": [
         {
           "m": 1,
           "v": "{var:beast}",
           "set": {
-            "actor": "beast"
+            "actant": "beast"
           }
         },
         {
           "m": 1,
           "v": "{var:animal}",
           "set": {
-            "actor": "animal"
+            "actant": "animal"
           }
         }
       ]
     },
     {
-      "name": "helpless actor",
-      "explanation": "Actors who may need help from the adventurers.",
+      "name": "helpless actant",
+      "explanation": "Actants who may need help from the adventurers.",
       "entries": [
         {
           "m": 1,
           "v": "{var:minion}",
           "set": {
-            "actor": "minion"
+            "actant": "minion"
           }
         },
         {
           "m": 1,
           "v": "{var:monster}",
           "set": {
-            "actor": "monster"
+            "actant": "monster"
           }
         },
         {
           "m": 1,
           "v": "{var:animal}",
           "set": {
-            "actor": "animal"
+            "actant": "animal"
           }
         },
         {
           "m": 1,
           "v": "{var:traitor}",
           "set": {
-            "actor": "traitor"
+            "actant": "traitor"
           }
         },
         {
           "m": 1,
           "v": "{var:shapeshifter}",
           "set": {
-            "actor": "shapeshifter"
+            "actant": "shapeshifter"
           }
         },
         {
           "m": 1,
           "v": "{var:tempter}",
           "set": {
-            "actor": "tempter"
+            "actant": "tempter"
           }
         },
         {
           "m": 1,
           "v": "{var:rival}",
           "set": {
-            "actor": "rival"
+            "actant": "rival"
           }
         },
         {
           "m": 1,
           "v": "{var:trickster}",
           "set": {
-            "actor": "trickster"
+            "actant": "trickster"
           }
         },
         {
           "m": 1,
           "v": "{var:inhabitant}",
           "set": {
-            "actor": "inhabitant"
+            "actant": "inhabitant"
           }
         },
         {
           "m": 1,
           "v": "{var:captive}",
           "set": {
-            "actor": "captive"
+            "actant": "captive"
           }
         },
         {
           "m": 1,
           "v": "{var:mentor}",
           "set": {
-            "actor": "mentor"
+            "actant": "mentor"
           }
         },
         {
           "m": 1,
           "v": "{var:ally}",
           "set": {
-            "actor": "ally"
+            "actant": "ally"
           }
         }
       ]
