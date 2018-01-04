@@ -30,7 +30,7 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "XXX"
+        "{XXX}"
       ]
     },
     {
@@ -66,6 +66,9 @@
       ]
     },
     {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
       "name": "myth",
       "explanation": "XXX once rumoured to have existed.",
       "entries": [
@@ -95,6 +98,9 @@
         "{modern}",
         "XXX"
       ]
+    },
+    {
+      "**************************************************": "SPECIAL CASES"
     },
     {
       "name": "special",

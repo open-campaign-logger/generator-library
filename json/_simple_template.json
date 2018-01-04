@@ -30,7 +30,7 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "XXX"
+        "{XXX}"
       ]
     },
     {
@@ -64,6 +64,9 @@
       "entries": [
         "XXX"
       ]
+    },
+    {
+      "**************************************************": "SPECIAL CASES"
     },
     {
       "name": "special",
