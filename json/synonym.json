@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "Expansion.",
   "see": "",
-  "date": "2017-12-12",
+  "date": "2018-01-04",
   "authors": "Esko Vesala.",
   "sources": "Thesaurus.com, TvTropes.org, Wikipedia.org",
   "genre": "universal",
@@ -580,6 +580,19 @@
         "riches",
         "treasure",
         "wealth"
+      ]
+    },
+    {
+      "name": "troupe",
+      "explanation": "Alternative expressions for the PC party. Note: The values should match verbs in the third person singular form (like 'is')!",
+      "entries": [
+        "adventurer party",
+        "adventuring party",
+        "party",
+        "troupe",
+        "travelling band",
+        "group of travelers",
+        "group of heroes"
       ]
     },
     {
