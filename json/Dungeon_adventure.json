@@ -1,6 +1,6 @@
 {
   "name": "Dungeon adventure",
-  "resultPattern": "{HTML formatting}{difficulty}{milieu}{goal} {macguffin}{artifact}{treasure}{danger}{trap}{adventure description}",
+  "resultPattern": "{HTML formatting}{difficulty}{milieu}{goal} {macguffin}{artifact}{treasure}{danger}{adventure description}",
   "variables": {
     "starttitle": "",
     "endtitle": "",
@@ -12,136 +12,136 @@
     "duration": "",
     "difficulty": "",
     "difficultydescription": "",
-    "goal": "",
+    "goal": "goal",
     "goaldescription": "",
-    "target": "",
+    "target": "target",
     "targetdescription": "",
-    "symbol": "",
-    "milieu": "",
+    "symbol": "symbol",
+    "milieu": "milieu",
     "milieudescription": "",
-    "location": "",
+    "location": "location",
     "locationdescription": "",
-    "motif": "",
+    "motif": "motif",
     "motifdescription": "",
-    "macguffin": "",
+    "macguffin": "macguffin",
     "macguffindescription": "",
-    "key": "",
+    "key": "key",
     "keydescription": "",
-    "tool": "",
+    "tool": "tool",
     "tooldescription": "",
-    "artifact": "",
+    "artifact": "artifact",
     "artifactdescription": "",
-    "treasure": "",
+    "treasure": "treasure",
     "treasuredescription": "",
-    "actant": "",
+    "actant": "actant",
     "attitude": "",
-    "villain": "",
-    "villains": "",
-    "villaingroup": "",
+    "villain": "villain",
+    "villains": "villains",
+    "villaingroup": "band of villains",
     "villainaction": "",
-    "villainadjective": "",
+    "villainadjective": "dastardly",
     "villaindescription": "",
-    "minion": "",
-    "minions": "",
-    "miniongroup": "",
+    "minion": "minion",
+    "minions": "minions",
+    "miniongroup": "group of minions",
     "minionaction": "",
-    "minionadjective": "",
+    "minionadjective": "evil",
     "miniondescription": "",
-    "guardian": "",
-    "guardians": "",
+    "guardian": "guardian",
+    "guardians": "guardians",
     "guardiangroup": "",
     "guardianaction": "",
     "guardianadjective": "",
     "guardiandescription": "",
-    "monster": "",
-    "monsters": "",
-    "monstergroup": "",
+    "monster": "monster",
+    "monsters": "monsters",
+    "monstergroup": "horde of monsters",
     "monsteraction": "",
     "monsteradjective": "",
     "monsterdescription": "",
-    "beast": "",
-    "beasts": "",
-    "beastgroup": "",
+    "beast": "beast",
+    "beasts": "beasts",
+    "beastgroup": "pack of beasts",
     "beastaction": "",
     "beastadjective": "",
     "beastdescription": "",
-    "traitor": "",
-    "traitors": "",
+    "traitor": "traitor",
+    "traitors": "traitors",
     "traitorgroup": "",
     "traitoraction": "",
     "traitoradjective": "",
     "traitordescription": "",
-    "shapeshifter": "",
-    "shapeshifters": "",
+    "shapeshifter": "shapeshifter",
+    "shapeshifters": "shapeshifters",
     "shapeshiftergroup": "",
     "shapeshifteraction": "",
     "shapeshifteradjective": "",
     "shapeshifterdescription": "",
-    "tempter": "",
-    "tempters": "",
+    "tempter": "tempter",
+    "tempters": "tempters",
     "temptergroup": "",
     "tempteraction": "",
     "tempteradjective": "",
     "tempterdescription": "",
-    "rival": "",
-    "rivals": "",
+    "rival": "rival",
+    "rivals": "rivals",
     "rivalgroup": "",
     "rivalaction": "",
     "rivaladjective": "",
     "rivaldescription": "",
-    "trickster": "",
-    "tricksters": "",
+    "trickster": "trickster",
+    "tricksters": "trickster",
     "trickstergroup": "",
     "tricksteraction": "",
     "tricksteradjective": "",
     "tricksterdescription": "",
-    "inhabitant": "",
-    "inhabitants": "",
+    "inhabitant": "inhabitant",
+    "inhabitants": "inhabitants",
     "inhabitantgroup": "",
     "inhabitantaction": "",
     "inhabitantadjective": "",
     "inhabitantdescription": "",
-    "animal": "",
-    "animals": "",
+    "animal": "animal",
+    "animals": "animals",
     "animalgroup": "",
     "animalaction": "",
     "animaladjective": "",
     "animaldescription": "",
-    "captive": "",
-    "captives": "",
+    "captive": "captive",
+    "captives": "captives",
     "captivegroup": "",
     "captiveaction": "",
     "captiveadjective": "",
     "captivedescription": "",
-    "herald": "",
-    "heralds": "",
+    "herald": "herald",
+    "heralds": "heralds",
     "heraldgroup": "",
     "heraldaction": "",
     "heraldadjective": "",
     "heralddescription": "",
-    "mentor": "",
-    "mentors": "",
+    "mentor": "mentor",
+    "mentors": "mentors",
     "mentorgroup": "",
     "mentoraction": "",
     "mentoradjective": "",
     "mentordescription": "",
-    "ally": "",
-    "allies": "",
+    "ally": "ally",
+    "allies": "allies",
     "allygroup": "",
     "allyaction": "",
     "allyadjective": "",
     "allydescription": "",
-    "entrance": "",
-    "room 1": "",
-    "room 2": "",
-    "room 3": "",
-    "room 4": "",
-    "room 5": "",
-    "room": "",
-    "roomsize": "",
+    "entrance": "entrance",
+    "room 1": "room 1",
+    "room 2": "room 2",
+    "room 3": "room 3",
+    "room 4": "room 4",
+    "room 5": "room 5",
+    "room": "room",
+    "roomsize": "medium",
     "roompurpose": "",
-    "roomshape": "",
-    "roomtype": "",
+    "roomshape": "rectangular",
+    "roomtype": "chamber",
     "roomdescription": "",
     "roomcontents": "",
     "roomevent": "",
@@ -157,28 +157,28 @@
     "scene": "",
     "encounter": "",
     "resolution": "",
-    "door": "",
+    "door": "door",
     "doorfeature": "",
-    "lock": "",
+    "lock": "lock",
     "lockfeature": "",
-    "corridor": "",
+    "corridor": "corridor",
     "corridorfeature": "",
-    "danger": "",
+    "danger": "danger",
     "dangeraction": "",
     "dangerdescription": "",
-    "trial": "",
+    "trial": "trial",
     "trialaction": "",
     "trialdescription": "",
-    "hindrance": "",
+    "hindrance": "hindrance",
     "hindranceaction": "",
     "hindrancedescription": "",
-    "setback": "",
+    "setback": "setback",
     "setbackaction": "",
     "setbackdescription": "",
-    "trap": "",
+    "trap": "trap",
     "trapaction": "",
     "trapdescription": "",
-    "damage": "",
+    "damage": "damage",
     "damagetype": "",
     "footnote": ""
   },
@@ -190,51 +190,12 @@
   "see": "Five_room_dungeon, hook_line_and_sinker_adventure",
   "date": "2018-01-04",
   "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
-  "sources": "Dream Park: The Roleplaying Game, RolePlayingTips.com",
+  "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon, RolePlayingTips.com",
   "genre": "universal",
   "categories": [
     "story"
   ],
   "tables": [
-    {
-      "name": "HTML formatting",
-      "explanation": "Set variables for formatting the output as HTML",
-      "entries": [
-        {
-          "v": "",
-          "set": {
-            "starttitle": "<H2>",
-            "endtitle": "</H2>",
-            "startheading": "<H3>",
-            "endheading": "</H3>",
-            "startbold": "<B>",
-            "endbold": "</B>",
-            "para": "<P>"
-          }
-        }
-      ]
-    },
-    {
-      "name": "CL formatting",
-      "explanation": "Set variables for formatting the output for Campaign Logger",
-      "entries": [
-        {
-          "v": "",
-          "set": {
-            "starttitle": "{b|",
-            "endtitle": "}\r\n\r\n",
-            "startheading": "\r\n\r\n{b|",
-            "endheading": "}",
-            "startbold": "{b|",
-            "endbold": "}",
-            "para": "\r\n"
-          }
-        }
-      ]
-    },
-    {
-      "***********************************************": "INTRO"
-    },
     {
       "name": "adventure description",
       "explanation": "The adventure described from start to finish.",
@@ -276,18 +237,18 @@
       "name": "introduction",
       "explanation": "How the adventurers start the adventure.",
       "entries": [
-        "{arrival} {var:locationdescription}. Here the {adventurer} {encountering} {villain introduction} {var:villain} and a band of minions. Will the {adventurer} be able to {var:goal} {var:target}? "
+        "{arrival} {var:locationdescription}. Here the {lib:synonym#troupe} {encountering} {villain introduction} {var:villain} and a band of minions. Will the {lib:synonym#troupe} be able to {var:goal} {var:target}? "
       ]
     },
     {
       "name": "arrival",
       "explanation": "Introductory words about adventurers discovering the location.",
       "entries": [
-        "The {adventurer} has heard about",
-        "The {adventurer} has heard a rumour about",
-        "The {adventurer} sees from a distance",
-        "The {adventurer} arrives at",
-        "The {adventurer} stumbles upon"
+        "The {lib:synonym#troupe} has heard about",
+        "The {lib:synonym#troupe} has heard a rumour about",
+        "The {lib:synonym#troupe} sees from a distance",
+        "The {lib:synonym#troupe} arrives at",
+        "The {lib:synonym#troupe} stumbles upon"
       ]
     },
     {
@@ -306,19 +267,6 @@
         "a hostile",
         "an evil",
         "a relentless villain: a "
-      ]
-    },
-    {
-      "name": "adventurer",
-      "explanation": "Alternative expressions for the PC party. Note: The values should match verbs in the third person singular form (like 'is')!",
-      "entries": [
-        "adventurer party",
-        "adventuring party",
-        "party",
-        "troupe",
-        "travelling band",
-        "group of travelers",
-        "group of heroes"
       ]
     },
     {
@@ -2121,418 +2069,6 @@
       ]
     },
     {
-      "name": "trap",
-      "explanation": "",
-      "entries": [
-        {
-          "m": 1,
-          "v": "{nonlethal trap}",
-          "set": {
-            "damagetype": "nonlethal"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{blunt trap}",
-          "set": {
-            "damagetype": "blunt"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{slashing trap}",
-          "set": {
-            "damagetype": "slash"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{piercing trap}",
-          "set": {
-            "damagetype": "piercing"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{poison trap}",
-          "set": {
-            "damagetype": "poison"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{disease trap}",
-          "set": {
-            "damagetype": "disease"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{necrotic trap}",
-          "set": {
-            "damagetype": "necrotic"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{corrosive trap}",
-          "set": {
-            "damagetype": "corrosive"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{cold trap}",
-          "set": {
-            "damagetype": "cold"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{fire trap}",
-          "set": {
-            "damagetype": "fire"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{explosion trap}",
-          "set": {
-            "damagetype": "explosion"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{lightning trap}",
-          "set": {
-            "damagetype": "lightning"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{force trap}",
-          "set": {
-            "damagetype": "radiant"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{psychic trap}",
-          "set": {
-            "damagetype": "psychic"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{magic trap}",
-          "set": {
-            "damagetype": "magic"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{radiant trap}",
-          "set": {
-            "damagetype": "radiant"
-          }
-        }
-      ]
-    },
-    {
-      "name": "nonlethal trap",
-      "explanation": "Traps causing nonlethal damage.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "smoke trap",
-            "trapaction": "a cloud of harmless smoke bellows out, making it hard to see anything in the area",
-            "trapdescription": "a fragile vial containing some smoky substance"
-          }
-        }
-      ]
-    },
-    {
-      "name": "blunt trap",
-      "explanation": "Traps causing blunt damage.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "boulder trap",
-            "trapaction": "a huge boulder falls down, hitting everyone near",
-            "trapdescription": "an enormous rock is precariously balanced above"
-          }
-        }
-      ]
-    },
-    {
-      "name": "slashing trap",
-      "explanation": "Traps causing cut damage.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "scythe trap",
-            "trapaction": "a scythe slashes out, cutting everyone near",
-            "trapdescription": "a hidden, springloaded scythe blade"
-          }
-        }
-      ]
-    },
-    {
-      "name": "piercing trap",
-      "explanation": "Traps causing piercing damage.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "arrow trap",
-            "trapaction": "a hidden arrow is shot",
-            "trapdescription": "a hidden spring with an arrow ready to shoot"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "spike trap",
-            "trapaction": "the ground gives in, dropping anyone on top in a pit with long spikes waiting in the bottom",
-            "trapdescription": "a covered pit with sharp spikes in the bottom"
-          }
-        }
-      ]
-    },
-    {
-      "name": "poison trap",
-      "explanation": "Traps causing poison damage.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "poison arrow trap",
-            "trapaction": "a hidden, poisoned arrow is shot",
-            "trapdescription": "a hidden spring with an arrow ready to shoot"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "poisoned spike trap",
-            "trapaction": "the ground gives in, dropping anyone on top in a pit with long, poisoned spikes waiting in the bottom",
-            "trapdescription": "a covered pit with sharp spikes in the bottom"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "poison cloud trap",
-            "trapaction": "a poisonous cloud of smoke bellows out",
-            "trapdescription": "a fragile vial containing some smoky substance"
-          }
-        }
-      ]
-    },
-    {
-      "name": "disease trap",
-      "explanation": "Traps causing disease damage.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "miasma trap",
-            "trapaction": "a cloud of sickening smoke bellows out, making everyone near ill",
-            "trapdescription": "a fragile vial containing some smoky substance"
-          }
-        }
-      ]
-    },
-    {
-      "name": "necrotic trap",
-      "explanation": "Traps causing  damage.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "necrotic trap",
-            "trapaction": "a splash of sickening liquid shoots out, causing everyone near to age rapidly",
-            "trapdescription": "an almost invisible wire attached to a pressurised container"
-          }
-        }
-      ]
-    },
-    {
-      "name": "corrosive trap",
-      "explanation": "Traps causing corrosive damage (acids, alkalines, etc).",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "acid trap",
-            "trapaction": "a jet of acidid liquid shoots out, corroding everything nearby",
-            "trapdescription": "an almost invisible wire attached to a pressurised container"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "alkaline trap",
-            "trapaction": "a jet of alkaline liquid shoots out, corroding everything nearby",
-            "trapdescription": "an almost invisible wire attached to a pressurised container"
-          }
-        }
-      ]
-    },
-    {
-      "name": "cold trap",
-      "explanation": "Traps causing cold damage.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "cold trap",
-            "trapaction": "a magical ray of cold shoots out, freezing everything nearby",
-            "trapdescription": "a hidden magic wand"
-          }
-        }
-      ]
-    },
-    {
-      "name": "fire trap",
-      "explanation": "Traps causing fire damage.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "fire trap",
-            "trapaction": "a jet of flames shoots out, setting everything nearby on fire",
-            "trapdescription": "an almost invisible wire attached to a glass vial containing some liquid"
-          }
-        }
-      ]
-    },
-    {
-      "name": "explosion trap",
-      "explanation": "Traps causing explosion (thundering) damage.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "exploding trap",
-            "trapaction": "there is a sudden explosion with an abrupt flash of light and a thundering sound",
-            "trapdescription": "an almost invisible wire attached to a metallic shell"
-          }
-        }
-      ]
-    },
-    {
-      "name": "lightning trap",
-      "explanation": "Traps causing lightning (electric) damage.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "lightning trap",
-            "trapaction": "a flash of lightning bolts out, damaging everyone near",
-            "trapdescription": "a hidden magic wand"
-          }
-        }
-      ]
-    },
-    {
-      "name": "force trap",
-      "explanation": "Traps causing  damage.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "force trap",
-            "trapaction": "an invisible force shoots out, damaging everyone nearby",
-            "trapdescription": "a shimmering orb"
-          }
-        }
-      ]
-    },
-    {
-      "name": "psychic trap",
-      "explanation": "Traps causing psychic damage.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "sanity trap",
-            "trapaction": "a wave of mental energy shoots out, resulting in symptoms of insanity in everyone nearby",
-            "trapdescription": "a hidden sigil"
-          }
-        }
-      ]
-    },
-    {
-      "name": "magic trap",
-      "explanation": "Traps causing magical damage.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "spell trap",
-            "trapaction": "a spell is silently cast",
-            "trapdescription": "a parchment with magical runes insribed on it"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "curse trap",
-            "trapaction": "a curse is silently cast",
-            "trapdescription": "a magical sigil"
-          }
-        }
-      ]
-    },
-    {
-      "name": "radiant trap",
-      "explanation": "Traps causing radiant (divine) damage.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "unholy trap",
-            "trapaction": "a demonic presence is felt, tempting everyone nearby to evil acts",
-            "trapdescription": "a hidden unholy symbol"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "trap": "holy trap",
-            "trapaction": "a divine presence is felt, causing everyone not of pure heart to falter",
-            "trapdescription": "a hidden holy symbol"
-          }
-        }
-      ]
-    },
-    {
       "**************************************************": "CLASSIC 5RD"
     },
     {
@@ -2552,13 +2088,13 @@
       "name": "entrance",
       "explanation": "Entrance to the dungeon. Add mood and theme!",
       "entries": [
-        "{trap} The entrance is trapped with {var:trap}. (A successful inspection would reveal {var:trapdescription}. If the {adventurer} fails to detect and defuse the trap, {var:trapaction}). ",
+        "The entrance is trapped: {lib:trap#detail}. ",
         "The entrance is cleverly hidden.",
         "The entrance is hidden by an overcrop of rock.",
         "The entrance requires a {key}.",
-        "The entrance is guarded by {var:guardian} that keeps intruders out.",
-        "A {var:guardian} is not indigenous to the dungeon but has made its lair in room one.",
-        "A {hazard} prevents entering and requires special skills and equipment to bypass."
+        "The entrance is guarded by {lib:actant#guardian} that keeps intruders out.",
+        "A {lib:actant#guardian} is not indigenous to the dungeon but has made its lair in room one.",
+        "A hazard prevents entering and requires special skills and equipment to bypass: {lib:hazard#detail}. "
       ]
     },
     {
@@ -2600,7 +2136,7 @@
       "name": "trick",
       "explanation": "Tricks to deceive the adventurers.",
       "entries": [
-        "A trick is played on the {adventurer}. "
+        "A trick is played on the {lib:synonym#troupe}. "
       ]
     },
     {
@@ -2645,16 +2181,6 @@
       "explanation": "Insignificant events that bring flavor to the setting.",
       "entries": [
         "Something insignificant but flavorful is experienced. "
-      ]
-    },
-    {
-      "name": "hazard",
-      "explanation": "Prevents adventurers from entering.",
-      "entries": [
-        "poisonous cloud",
-        "field of force",
-        "wall of fire",
-        "spike wall"
       ]
     },
     {
@@ -2776,7 +2302,7 @@
       "name": "trapped room",
       "explanation": "",
       "entries": [
-        "There is a {var:trap} in the room."
+        "There is a {var:trap} in the room: {lib:trap#detail}. "
       ]
     },
     {
@@ -2817,7 +2343,7 @@
       "explanation": "",
       "entries": [
         "The {artifact} required to defeat the {var:villain}, but it is {artifact complication}. Clues reveal that a solution lies ahead.",
-        "Believing the object of the quest now lays within easy reach, a  companion turns traitor and betrays the {adventurer}."
+        "Believing the object of the quest now lays within easy reach, a  companion turns traitor and betrays the {lib:synonym#troupe}."
       ]
     },
     {
@@ -2887,10 +2413,10 @@
       "name": "climax",
       "explanation": "",
       "entries": [
-        "The {var:villain} is here, ready to face the {adventurer}. Previous rooms have contained warning signals or an alarm, so the {var:villain} has had time to prepare.",
-        "The {var:villain} is here, and seems to be surprised by the arrival of the {adventurer}. The {var:villain} tries to settle things in an unusual way, through {unusual proposal}.",
-        "The {var:villain} is here and reveals the {var:treasure} to the {adventurer}, threatening to {reward threat}.",
-        "The {var:villain} is here, but has a weakness that the {adventurer} must figure out how to exploit."
+        "The villain is here, ready to face the {lib:synonym#troupe}. Previous rooms have contained warning signals or an alarm, so the {var:villain} has had time to prepare.",
+        "The villain is here, and seems to be surprised by the arrival of the {lib:synonym#troupe}. The villain tries to settle things in an unusual way, through {unusual proposal}.",
+        "The villain is here and reveals the treasure to the {lib:synonym#troupe}, threatening to {reward threat}.",
+        "The villain is here, but has a weakness that the {lib:synonym#troupe} must figure out how to exploit."
       ]
     },
     {
@@ -2906,15 +2432,15 @@
       "explanation": "",
       "entries": [
         "break it",
-        "put it out of the reach of the {adventurer} so they'll never collect it"
+        "put it out of the reach of the {lib:synonym#troupe} so they'll never collect it"
       ]
     },
     {
       "name": "big battle",
       "explanation": "",
       "entries": [
-        "The {var:villain} is here and has unexpected {capabilities}.",
-        "The {var:villain} is here, but the {lib:synonym#room} is trapped. The {var:villain} {trap ability}."
+        "The villain is here and has unexpected {capabilities}.",
+        "The villain is here, but the {lib:synonym#room} is trapped. The villain {trap ability}."
       ]
     },
     {
@@ -3013,7 +2539,7 @@
       "name": "surprise",
       "explanation": "",
       "entries": [
-        "A {var:monster} is hiding in the treasure container.",
+        "A {var:monster} is hiding in the treasure container: {lib:monster#detail}",
         "A trap that resurrects or renews the challenge from Room Four."
       ]
     },
@@ -3027,7 +2553,7 @@
         "The {var:villain} is found to have a stronger, more fearsome master.",
         "The grand scheme of the {var:villain} is discovered.",
         "The source of an alien race's hostility towards others is uncovered, transforming them from villains to sympathetic characters in the story.",
-        "The true meaning of the prophecy or poem that lead the {adventurer} to the dungeon is finally understood, and it's not what the {adventurer} thought."
+        "The true meaning of the prophecy or poem that lead the {lib:synonym#troupe} to the dungeon is finally understood, and it's not what the {lib:synonym#troupe} thought."
       ]
     },
     {
@@ -3044,9 +2570,9 @@
       "name": "plot twist",
       "explanation": "",
       "entries": [
-        "A rival enters and tries to steal the reward while the {adventurer} is weakened after the big challenge of the previous room.",
+        "A rival enters and tries to steal the reward while the {lib:synonym#troupe} is weakened after the big challenge of the previous room.",
         "The object of the quest final reward isn't what it seems or has a complication. i.e. The kidnapped king doesn't want to return.",
-        "The quest was a trick. By killing the {var:villain} the {adventurer} has actually helped the {longterm villain}. The {var:villain} was actually {bad guy true form}."
+        "The quest was a trick. By killing the villain the {lib:synonym#troupe} has actually helped the {longterm villain}. The {var:villain} was actually {bad guy true form}."
       ]
     },
     {
@@ -3995,602 +3521,91 @@
       "name": "ca 90 minute adventure",
       "explanation": "An adventure structure taking about 1.5 hours to play.",
       "entries": [
-        "{action hook} {development scene} {action finale} {resolution} ",
-        "{development hook} {action scene} {development finale} {resolution} "
+        "{lib:scene#action hook} {lib:scene#development scene} {lib:scene#action finale} {lib:scene#resolution} ",
+        "{lib:scene#development hook} {lib:scene#action scene} {lib:scene#development finale} {lib:scene#resolution} "
       ]
     },
     {
       "name": "ca 120 minute adventure",
       "explanation": "An adventure structure taking about 2 hours to play.",
       "entries": [
-        "{action hook} {development scene} {action scene} {development finale} {resolution}",
-        "{development hook} {action scene} {development scene} {action finale} {resolution}"
+        "{lib:scene#action hook} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development finale} {lib:scene#resolution}",
+        "{lib:scene#development hook} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action finale} {lib:scene#resolution}"
       ]
     },
     {
       "name": "ca 150 minute adventure",
       "explanation": "An adventure structure taking about 2.5 hours to play.",
       "entries": [
-        "{action hook} {development scene} {action scene} {development scene} {action finale} {resolution}",
-        "{development hook} {action scene} {development scene} {action scene} {development finale} {resolution}"
+        "{lib:scene#action hook} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action finale} {lib:scene#resolution}",
+        "{lib:scene#development hook} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development finale} {lib:scene#resolution}"
       ]
     },
     {
       "name": "ca 180 minute adventure",
       "explanation": "An adventure structure taking about 3 hours to play.",
       "entries": [
-        "{action hook} {development scene} {action scene} {development scene} {action scene} {development finale} {resolution}",
-        "{development hook} {action scene} {development scene} {action scene} {development scene} {action finale} {resolution}"
+        "{lib:scene#action hook} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development finale} {lib:scene#resolution}",
+        "{lib:scene#development hook} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action finale} {lib:scene#resolution}"
       ]
     },
     {
       "name": "ca 210 minute adventure",
       "explanation": "An adventure structure taking about 3.5 hours to play.",
       "entries": [
-        "{action hook} {development scene} {action scene} {development scene} {action scene} {development scene} {action finale} {resolution}",
-        "{development hook} {action scene} {development scene} {action scene} {development scene} {action scene} {development finale} {resolution}"
+        "{lib:scene#action hook} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action finale} {lib:scene#resolution}",
+        "{lib:scene#development hook} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development finale} {lib:scene#resolution}"
       ]
     },
     {
       "name": "ca 240 minute adventure",
       "explanation": "An adventure structure taking about 4 hours to play.",
       "entries": [
-        "{action hook} {development scene} {action scene} {development scene} {action scene} {development scene} {action scene} {development finale} {resolution}",
-        "{development hook} {action scene} {development scene} {action scene} {development scene} {action scene} {development scene} {action finale} {resolution}"
+        "{lib:scene#action hook} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development finale} {lib:scene#resolution}",
+        "{lib:scene#development hook} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action finale} {lib:scene#resolution}"
       ]
     },
     {
       "**************************************************": "SCENES"
     },
     {
-      "name": "hook",
-      "explanation": "How the protagonists get involved in the adventure.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "{action hook}",
-          "set": {
-            "hook": "action"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{development hook}",
-          "set": {
-            "hook": "development"
-          }
-        }
-      ]
+      "**************************************************": "FORMATTING"
     },
     {
-      "name": "action hook",
-      "explanation": "Action hook initialization.",
-      "entries": [
-        "{var:startheading}Action Hook: {action hook type} {room init}"
-      ]
-    },
-    {
-      "name": "action hook type",
-      "explanation": "Action hooks to involve the protagonists.",
+      "name": "HTML formatting",
+      "explanation": "Set variables for formatting the output as HTML",
       "entries": [
         {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} The {adventurer} has been taken as prisoners. ",
+          "v": "",
           "set": {
-            "encounter": "kidnapped"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{action scene type}",
-          "set": {
-            "scene": "action"
+            "starttitle": "<H2>",
+            "endtitle": "</H2>",
+            "startheading": "<H3>",
+            "endheading": "</H3>",
+            "startbold": "<B>",
+            "endbold": "</B>",
+            "para": "<P>"
           }
         }
       ]
     },
     {
-      "name": "development hook",
-      "explanation": "Action hook initialization.",
-      "entries": [
-        "{var:startheading}Development Hook: {development hook type} {room init}"
-      ]
-    },
-    {
-      "name": "development hook type",
-      "explanation": "Development hooks to involve the protagonists.",
+      "name": "CL formatting",
+      "explanation": "Set variables for formatting the output for Campaign Logger",
       "entries": [
         {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} The {adventurer} has no recollection of how they have ended up here.",
+          "v": "",
           "set": {
-            "encounter": "memory loss"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{development scene type}",
-          "set": {
-            "scene": "development"
+            "starttitle": "{b|",
+            "endtitle": "}\r\n\r\n",
+            "startheading": "\r\n\r\n{b|",
+            "endheading": "}",
+            "startbold": "{b|",
+            "endbold": "}",
+            "para": "\r\n"
           }
         }
       ]
-    },
-    {
-      "name": "scene",
-      "explanation": "Help table for generating a completely random encounter. Usually the encounter subtables are called directly.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "{action scene}",
-          "set": {
-            "scene": "action"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{development scene}",
-          "set": {
-            "scene": "development"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{mood scene}",
-          "set": {
-            "scene": "mood"
-          }
-        }
-      ]
-    },
-    {
-      "name": "action scene",
-      "explanation": "Action scene initialization.",
-      "entries": [
-        "{var:startheading}Action Scene: {action scene type} {room init}"
-      ]
-    },
-    {
-      "name": "action scene type",
-      "explanation": "Scenes involving action (battle, chase, cliffhanger, etc).",
-      "entries": [
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} {combat encounter}",
-          "set": {
-            "encounter": "combat"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} {trap encounter}",
-          "set": {
-            "encounter": "trap"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} {hazard encounter}",
-          "set": {
-            "encounter": "hazard"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} {trial encounter}",
-          "set": {
-            "encounter": "trial"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} {competition encounter}",
-          "set": {
-            "encounter": "competition"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} {rescue encounter}",
-          "set": {
-            "encounter": "rescue"
-          }
-        }
-      ]
-    },
-    {
-      "name": "development scene",
-      "explanation": "Development scene initialization.",
-      "entries": [
-        "{var:startheading}Development Scene: {development scene type} {room init}"
-      ]
-    },
-    {
-      "name": "development scene type",
-      "explanation": "Scenes that advance the storyline (clues, twists, character development, etc).",
-      "entries": [
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} {betrayal encounter}",
-          "set": {
-            "encounter": "betrayal"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} {setback encounter}",
-          "set": {
-            "encounter": "setback"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} {hindrance encounter}",
-          "set": {
-            "encounter": "hindrance"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} {trick encounter}",
-          "set": {
-            "encounter": "trick"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} {information encounter}",
-          "set": {
-            "encounter": "information"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} {help encounter}",
-          "set": {
-            "encounter": "help"
-          }
-        }
-      ]
-    },
-    {
-      "name": "mood scene",
-      "explanation": "Mood scene initialization.",
-      "entries": [
-        "{var:startheading}Mood Scene: {mood scene type} {room init}"
-      ]
-    },
-    {
-      "name": "mood scene type",
-      "explanation": "Encounters for atmosphere and roleplaying.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} {distraction encounter}",
-          "set": {
-            "encounter": "distraction"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} {sidetrack encounter}",
-          "set": {
-            "encounter": "sidetrack"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} {flavor encounter}",
-          "set": {
-            "encounter": "flavor"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} {resource encounter}",
-          "set": {
-            "encounter": "resource"
-          }
-        }
-      ]
-    },
-    {
-      "name": "finale",
-      "explanation": "Finale initialization.",
-      "entries": [
-        "{var:startheading}Finale: {finale type}{var:endheading} {room init}"
-      ]
-    },
-    {
-      "name": "finale type",
-      "explanation": ".",
-      "entries": [
-        {
-          "m": 1,
-          "v": "{action finale}",
-          "set": {
-            "finale": "action"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{development finale}",
-          "set": {
-            "finale": "development"
-          }
-        }
-      ]
-    },
-    {
-      "name": "action finale",
-      "explanation": "Action finale initialization.",
-      "entries": [
-        "{var:startheading}Action Finale: {action finale type} {room init}"
-      ]
-    },
-    {
-      "name": "action finale type",
-      "explanation": "Action finales to finish the storyline.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} A great battle againts the {var:villain} and the {var:minions} ensues. The result will determine the final fate of everyone involved! ",
-          "set": {
-            "encounter": "final battle"
-          }
-        }
-      ]
-    },
-    {
-      "name": "development finale",
-      "explanation": "Development finale initialization.",
-      "entries": [
-        "{var:startheading}Development Finale: {development finale type} {room init}"
-      ]
-    },
-    {
-      "name": "development finale type",
-      "explanation": "Development finales to finish the storyline.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} The truth about the {var:target} is finally revealed! ",
-          "set": {
-            "encounter": "final revelation"
-          }
-        }
-      ]
-    },
-    {
-      "name": "resolution",
-      "explanation": "Resolution initialization",
-      "entries": [
-        "{var:startheading}Resolution: {resolution type} {room init}"
-      ]
-    },
-    {
-      "name": "resolution type",
-      "explanation": "Ending that ties everything together and possibly paves ground for continuing the story.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} Everything turns out fine. ",
-          "set": {
-            "encounter": "happy ending"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} The {var:villain} is dead and cannot threaten anyone anymore. ",
-          "set": {
-            "encounter": "villain dies"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} The {var:villain} gives up and surrenders to the {adventurer}.",
-          "set": {
-            "encounter": "villain surrenders"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} The {var:villain} manages to flee from the {adventurer}. ",
-          "set": {
-            "encounter": "villain escapes"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} The {var:villain} manages to capture the {adventurer}. Will they ever be able to escape? That is a different story... ",
-          "set": {
-            "encounter": "heroes captured"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} The {var:villain} attempts to capture the {adventurer}, but they still have a slim chance of escape! ",
-          "set": {
-            "encounter": "heroes escape"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} A shocking turn takes the {adventurer} by surprise. What will they do? That is a different story... ",
-          "set": {
-            "encounter": "cliffhanger"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{var:encounter}{var:endheading} A menace much greater than anyone anticipated is revealed! ",
-          "set": {
-            "encounter": "greater threat"
-          }
-        }
-      ]
-    },
-    {
-      "**************************************************": "ENCOUNTERS"
-    },
-    {
-      "name": "hook encounter",
-      "explanation": "Encounters solely for starting the adventure.",
-      "entries": [
-        "Hook: XXX"
-      ]
-    },
-    {
-      "name": "combat encounter",
-      "explanation": "Encounters with hostile creatures (guardian, minion, monster, beast, rival, etc.)",
-      "entries": [
-        "This is the lair of a {lib:actant#hostile}.",
-        "A {lib:actant#hostile} is waiting here, ready to attack."
-      ]
-    },
-    {
-      "name": "betrayal encounter",
-      "explanation": "Encounters where the adventurers are betrayed (traitor, shapeshifter, tempter, trickster, etc).",
-      "entries": [
-        "A {lib:actant#deceptive} needs help."
-      ]
-    },
-    {
-      "name": "trap encounter",
-      "explanation": "Encounters with traps.",
-      "entries": [
-        "{trap} A {var:trap} has been set here. (A successful inspection would reveal {var:trapdescription}. If the {adventurer} fails to detect and defuse the trap, {var:trapaction}). "
-      ]
-    },
-    {
-      "name": "hazard encounter",
-      "explanation": "Encounters that put the adventurers in danger (hazard, etc.)",
-      "entries": [
-        "Here is a {hazard}."
-      ]
-    },
-    {
-      "name": "setback encounter",
-      "explanation": "Encounters that cause the adventurers to lose progress (traitor, shapeshifter, rival, etc).",
-      "entries": [
-        "A {lib:actant#competitive} causes them to lose progress."
-      ]
-    },
-    {
-      "name": "hindrance encounter",
-      "explanation": "Encounters that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
-      "entries": [
-        "A {lib:actant#competitive} slows down the progress.",
-        "Problem with a {lock}",
-        "Problem with a {door}."
-      ]
-    },
-    {
-      "name": "trick encounter",
-      "explanation": "Encounters that require a clever approach.",
-      "entries": [
-        "A {lib:actant#deceptive} attempts to trick the {adventurer}.",
-        "{trick}"
-      ]
-    },
-    {
-      "name": "trial encounter",
-      "explanation": "Encounters where the adventurers must prove themselves (rival, mentor, trickster, etc).",
-      "entries": [
-        "A {lib:actant#friendly} requires the adventurers to prove their mettle."
-      ]
-    },
-    {
-      "name": "competition encounter",
-      "explanation": "Encounters where adventurers have to compete with someone (rival, mentor, etc.)",
-      "entries": [
-        "A {lib:actant#competitive} presents a challenge to the adventurers.",
-        "A {lib:actant#deceptive} challenges the adventurers."
-      ]
-    },
-    {
-      "name": "distraction encounter",
-      "explanation": "Encounters that lead astray (shapeshifter, trickster, tempter, traitor, red herring, smoke screen, etc.)",
-      "entries": [
-        "A {lib:actant#deceptive} leads the adventurers astray.",
-        "{red herring}",
-        "{smoke screen}"
-      ]
-    },
-    {
-      "name": "sidetrack encounter",
-      "explanation": "Encounters providing temporary diversion (tricster, tempter, sense of wonder, comic relief, etc.)",
-      "entries": [
-        "A {lib:actant#deceptive} causes a temporary diversion for the adventurers.",
-        "{wonder}",
-        "{humor}"
-      ]
-    },
-    {
-      "name": "flavor encounter",
-      "explanation": "Encounters that create color and flavor, may bring roleplaying opportunities (plant, animal, tempter, traitor, item, wonder, etc.)",
-      "entries": [
-        "{flavor}",
-        "{plant}",
-        "{animal}",
-        "{item}",
-        "{wonder}"
-      ]
-    },
-    {
-      "name": "rescue encounter",
-      "explanation": "Encounters where a prisoner (captive, mentor, ally, shapeshifter, tempter, traitor, trickster, animal, monster, minion, rival, etc.) can be rescued and perhaps befriended.",
-      "entries": [
-        "A {lib:actant#helpless} needs to be rescued."
-      ]
-    },
-    {
-      "name": "resource encounter",
-      "explanation": "Encounters that offer new resources (artifact, key, tool, treasure, plant, animal, information, red herring, etc.)",
-      "entries": [
-        "The {var:artifact} can be found here.",
-        "{key}",
-        "{tool}",
-        "{var:treasure}",
-        "{plant}",
-        "{animal}",
-        "{information}",
-        "{red herring}"
-      ]
-    },
-    {
-      "name": "information encounter",
-      "explanation": "Encounters that offer information (mentor, trickster, clue, shapeshifter, traitor, red herring, etc.)",
-      "entries": [
-        "A {lib:actant#friendly} gives useful information.",
-        "A {lib:actant#deceptive} gives wrong information.",
-        "{clue}",
-        "{red herring}"
-      ]
-    },
-    {
-      "name": "help encounter",
-      "explanation": "Encounters that offer help (mentor, ally, etc.)",
-      "entries": [
-        "A {lib:actant#friendly} offers to help."
-      ]
-    },
-    {
-      "name": "finale encounter",
-      "explanation": "Encounters solely for the adventure climax.",
-      "entries": [
-        "Finale: XXX"
-      ]
-    },
-    {
-      "name": "resolution encounter",
-      "explanation": "Encounters solely for the adventure resolution.",
-      "entries": [
-        "Resolution: XXX"
-      ]
-    },
-    {
-      "**************************************************": "ACTANTS"
     }
   ]
 }
