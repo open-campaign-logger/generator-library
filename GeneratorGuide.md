@@ -2,7 +2,7 @@
 
 [//]: # (Authors: Esko Vesala, Peter Sotos.)
 
-[//]: # (Date: 2017-12-28.)
+[//]: # (Date: 2018-01-04.)
 
 
 # Generator Guide
@@ -512,7 +512,13 @@ An example of this kind of a separator is included in the generator template fil
 
 # Debugging Tips
 
-* You can check the workings of a certain part of the generator by modifying the *resultPattern* string to execute a specific subtable call.
+You can check the workings of a certain part of the generator by modifying the *resultPattern* string to execute a specific subtable call.
+
+For example if you wanted to check how well the new subtable you just added works, you can temporarily change the resultPattern value into the name of that subtable:
+
+		"resultPattern": "{my new subtable}",
+
+Now the generator will produce results only from the specified subtable.  
 
 
 # Troubleshooting
