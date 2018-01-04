@@ -1,0 +1,729 @@
+{
+  "name": "scene",
+  "resultPattern": "{HTML formatting}{result}",
+  "variables": {
+    "starttitle": "<H2>",
+    "endtitle": "</H2>",
+    "startheading": "<H3>",
+    "endheading": "</H3>",
+    "startbold": "<B>",
+    "endbold": "</B>",
+    "para": "<P>",
+    "encounter": "",
+    "artifact": "artifact",
+    "treasure": "treasure",
+    "footnote": ""
+  },
+  "explanation": "Scenes for adventure generation.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
+  "bugs": "",
+  "to do": "",
+  "see": "actant, Five_room_dungeon, hero, villain",
+  "date": "2018-01-04",
+  "authors": "Esko Vesala.",
+  "sources": "Five_room_dungeon",
+  "genre": "universal",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{scene}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{scene}"
+      ]
+    },
+    {
+      "name": "scene",
+      "explanation": "Scene types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common scenes.",
+      "entries": [
+        "{action scene}",
+        "{development scene}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare scenes.",
+      "entries": [
+        "{hook}",
+        "{finale}",
+        "{resolution}"
+      ]
+    },
+    {
+      "**************************************************": "HOOK"
+    },
+    {
+      "name": "hook",
+      "explanation": "How the protagonists get involved in the adventure.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{action hook}",
+          "set": {
+            "hook": "action"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{development hook}",
+          "set": {
+            "hook": "development"
+          }
+        }
+      ]
+    },
+    {
+      "name": "action hook",
+      "explanation": "Action hook initialization.",
+      "entries": [
+        "{var:startheading}Action Hook: {action hook type} {room init}"
+      ]
+    },
+    {
+      "name": "action hook type",
+      "explanation": "Action hooks to involve the protagonists.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "Kidnapped{var:endheading} The {lib:synonym#troupe} has been taken as prisoners. ",
+          "set": {
+            "encounter": "kidnapped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{action scene type}",
+          "set": {
+            "scene": "action"
+          }
+        }
+      ]
+    },
+    {
+      "name": "development hook",
+      "explanation": "Action hook initialization.",
+      "entries": [
+        "{var:startheading}Development Hook: {development hook type} {room init}"
+      ]
+    },
+    {
+      "name": "development hook type",
+      "explanation": "Development hooks to involve the protagonists.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "Memory loss{var:endheading} The {lib:synonym#troupe} has no recollection of how they have ended up here.",
+          "set": {
+            "encounter": "memory loss"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{development scene type}",
+          "set": {
+            "scene": "development"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "SCENES"
+    },
+    {
+      "name": "scene",
+      "explanation": "Help table for generating a completely random encounter. Usually the encounter subtables are called directly.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{action scene}",
+          "set": {
+            "scene": "action"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{development scene}",
+          "set": {
+            "scene": "development"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{mood scene}",
+          "set": {
+            "scene": "mood"
+          }
+        }
+      ]
+    },
+    {
+      "name": "action scene",
+      "explanation": "Action scene initialization.",
+      "entries": [
+        "{var:startheading}Action Scene: {action scene type} {room init}"
+      ]
+    },
+    {
+      "name": "action scene type",
+      "explanation": "Scenes involving action (battle, chase, cliffhanger, etc).",
+      "entries": [
+        {
+          "m": 1,
+          "v": "Combat{var:endheading} {combat encounter}",
+          "set": {
+            "encounter": "combat"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Trap{var:endheading} {trap encounter}",
+          "set": {
+            "encounter": "trap"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Hazard{var:endheading} {hazard encounter}",
+          "set": {
+            "encounter": "hazard"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Trial{var:endheading} {trial encounter}",
+          "set": {
+            "encounter": "trial"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Competition{var:endheading} {competition encounter}",
+          "set": {
+            "encounter": "competition"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Rescue{var:endheading} {rescue encounter}",
+          "set": {
+            "encounter": "rescue"
+          }
+        }
+      ]
+    },
+    {
+      "name": "development scene",
+      "explanation": "Development scene initialization.",
+      "entries": [
+        "{var:startheading}Development Scene: {development scene type} {room init}"
+      ]
+    },
+    {
+      "name": "development scene type",
+      "explanation": "Scenes that advance the storyline (clues, twists, character development, etc).",
+      "entries": [
+        {
+          "m": 1,
+          "v": "Betrayal{var:endheading} {betrayal encounter}",
+          "set": {
+            "encounter": "betrayal"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Setback{var:endheading} {setback encounter}",
+          "set": {
+            "encounter": "setback"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Hindrance{var:endheading} {hindrance encounter}",
+          "set": {
+            "encounter": "hindrance"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Trick{var:endheading} {trick encounter}",
+          "set": {
+            "encounter": "trick"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Information{var:endheading} {information encounter}",
+          "set": {
+            "encounter": "information"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Help{var:endheading} {help encounter}",
+          "set": {
+            "encounter": "help"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mood scene",
+      "explanation": "Mood scene initialization.",
+      "entries": [
+        "{var:startheading}Mood Scene: {mood scene type} {room init}"
+      ]
+    },
+    {
+      "name": "mood scene type",
+      "explanation": "Encounters for atmosphere and roleplaying.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "Distraction{var:endheading} {distraction encounter}",
+          "set": {
+            "encounter": "distraction"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Sidetrack{var:endheading} {sidetrack encounter}",
+          "set": {
+            "encounter": "sidetrack"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Flavor{var:endheading} {flavor encounter}",
+          "set": {
+            "encounter": "flavor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Resource{var:endheading} {resource encounter}",
+          "set": {
+            "encounter": "resource"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "FINALE"
+    },
+    {
+      "name": "finale",
+      "explanation": "Finale initialization.",
+      "entries": [
+        "{var:startheading}Finale: {finale type}{var:endheading} {room init}"
+      ]
+    },
+    {
+      "name": "finale type",
+      "explanation": ".",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{action finale}",
+          "set": {
+            "finale": "action"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{development finale}",
+          "set": {
+            "finale": "development"
+          }
+        }
+      ]
+    },
+    {
+      "name": "action finale",
+      "explanation": "Action finale initialization.",
+      "entries": [
+        "{var:startheading}Action Finale: {action finale type} {room init}"
+      ]
+    },
+    {
+      "name": "action finale type",
+      "explanation": "Action finales to finish the storyline.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "Final Battle{var:endheading} A great battle againts the villain and the minions ensues. The result will determine the final fate of everyone involved! ",
+          "set": {
+            "encounter": "final battle"
+          }
+        }
+      ]
+    },
+    {
+      "name": "development finale",
+      "explanation": "Development finale initialization.",
+      "entries": [
+        "{var:startheading}Development Finale: {development finale type} {room init}"
+      ]
+    },
+    {
+      "name": "development finale type",
+      "explanation": "Development finales to finish the storyline.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "Final Revelation{var:endheading} The truth about the adventure's goal is finally revealed! ",
+          "set": {
+            "encounter": "final revelation"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "RESOLUTION"
+    },
+    {
+      "name": "resolution",
+      "explanation": "Resolution initialization",
+      "entries": [
+        "{var:startheading}Resolution: {resolution type} {room init}"
+      ]
+    },
+    {
+      "name": "resolution type",
+      "explanation": "Ending that ties everything together and possibly paves ground for continuing the story.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "Happy Ending{var:endheading} Everything turns out fine. ",
+          "set": {
+            "encounter": "happy ending"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Villain Dies{var:endheading} The villain is dead and cannot threaten anyone anymore. ",
+          "set": {
+            "encounter": "villain dies"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Villain Surrenders{var:endheading} The villain gives up and surrenders to the {lib:synonym#troupe}.",
+          "set": {
+            "encounter": "villain surrenders"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Villain Escapes{var:endheading} The villain manages to flee from the {lib:synonym#troupe}. ",
+          "set": {
+            "encounter": "villain escapes"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Heroes Captured{var:endheading} The villain manages to capture the {lib:synonym#troupe}. Will they ever be able to escape? That is a different story... ",
+          "set": {
+            "encounter": "heroes captured"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Heroes Escape{var:endheading} The villain attempts to capture the {lib:synonym#troupe}, but they still have a slim chance of escape! ",
+          "set": {
+            "encounter": "heroes escape"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Cliffhanger{var:endheading} A shocking turn takes the {lib:synonym#troupe} by surprise. What will they do? That is a different story... ",
+          "set": {
+            "encounter": "cliffhanger"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Greater Threat{var:endheading} A menace much greater than anyone anticipated is revealed! ",
+          "set": {
+            "encounter": "greater threat"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Scenes once rumoured to have existed.",
+      "entries": [
+        "{scene}"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Scenes for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{scene}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Scenes for modern worlds.",
+      "entries": [
+        "{common}",
+        "{scene}"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Scenes for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "{scene}"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special scene types.",
+      "entries": [
+        "{formatting}"
+      ]
+    },
+    {
+      "**************************************************": "ENCOUNTERS"
+    },
+    {
+      "name": "hook encounter",
+      "explanation": "Encounters solely for starting the adventure.",
+      "entries": [
+        "Hook: XXX"
+      ]
+    },
+    {
+      "name": "combat encounter",
+      "explanation": "Encounters with hostile creatures (guardian, minion, monster, beast, rival, etc.)",
+      "entries": [
+        "This is the lair of a {lib:actant#hostile}.",
+        "A {lib:actant#hostile} is waiting here, ready to attack."
+      ]
+    },
+    {
+      "name": "betrayal encounter",
+      "explanation": "Encounters where the adventurers are betrayed (traitor, shapeshifter, tempter, trickster, etc).",
+      "entries": [
+        "A {lib:actant#deceptive} needs help."
+      ]
+    },
+    {
+      "name": "trap encounter",
+      "explanation": "Encounters with traps.",
+      "entries": [
+        "A trap has been set here: {lib:trap#detail}. "
+      ]
+    },
+    {
+      "name": "hazard encounter",
+      "explanation": "Encounters that put the adventurers in danger (hazard, etc.)",
+      "entries": [
+        "Hazard: {lib:hazard#detail}."
+      ]
+    },
+    {
+      "name": "setback encounter",
+      "explanation": "Encounters that cause the adventurers to lose progress (traitor, shapeshifter, rival, etc).",
+      "entries": [
+        "A {lib:actant#competitive} causes them to lose progress."
+      ]
+    },
+    {
+      "name": "hindrance encounter",
+      "explanation": "Encounters that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
+      "entries": [
+        "A {lib:actant#competitive} slows down the progress.",
+        "Problem with a {lock}",
+        "Problem with a {door}."
+      ]
+    },
+    {
+      "name": "trick encounter",
+      "explanation": "Encounters that require a clever approach.",
+      "entries": [
+        "A {lib:actant#deceptive} attempts to trick the {lib:synonym#troupe}.",
+        "{trick}"
+      ]
+    },
+    {
+      "name": "trial encounter",
+      "explanation": "Encounters where the adventurers must prove themselves (rival, mentor, trickster, etc).",
+      "entries": [
+        "A {lib:actant#friendly} requires the {lib:synonym#troupe} to prove their mettle."
+      ]
+    },
+    {
+      "name": "competition encounter",
+      "explanation": "Encounters where adventurers have to compete with someone (rival, mentor, etc.)",
+      "entries": [
+        "A {lib:actant#competitive} presents a challenge to the {lib:synonym#troupe}.",
+        "A {lib:actant#deceptive} challenges the {lib:synonym#troupe}."
+      ]
+    },
+    {
+      "name": "distraction encounter",
+      "explanation": "Encounters that lead astray (shapeshifter, trickster, tempter, traitor, red herring, smoke screen, etc.)",
+      "entries": [
+        "A {lib:actant#deceptive} leads the {lib:synonym#troupe} astray.",
+        "{red herring}",
+        "{smoke screen}"
+      ]
+    },
+    {
+      "name": "sidetrack encounter",
+      "explanation": "Encounters providing temporary diversion (tricster, tempter, sense of wonder, comic relief, etc.)",
+      "entries": [
+        "A {lib:actant#deceptive} causes a temporary diversion for the {lib:synonym#troupe}.",
+        "{wonder}",
+        "{humor}"
+      ]
+    },
+    {
+      "name": "flavor encounter",
+      "explanation": "Encounters that create color and flavor, may bring roleplaying opportunities (plant, animal, tempter, traitor, item, wonder, etc.)",
+      "entries": [
+        "{flavor}",
+        "{plant}",
+        "{animal}",
+        "{item}",
+        "{wonder}"
+      ]
+    },
+    {
+      "name": "rescue encounter",
+      "explanation": "Encounters where a prisoner (captive, mentor, ally, shapeshifter, tempter, traitor, trickster, animal, monster, minion, rival, etc.) can be rescued and perhaps befriended.",
+      "entries": [
+        "A {lib:actant#helpless} needs to be rescued."
+      ]
+    },
+    {
+      "name": "resource encounter",
+      "explanation": "Encounters that offer new resources (artifact, key, tool, treasure, plant, animal, information, red herring, etc.)",
+      "entries": [
+        "The {var:artifact} can be found here.",
+        "{key}",
+        "{tool}",
+        "{var:treasure}",
+        "{plant}",
+        "{animal}",
+        "{information}",
+        "{red herring}"
+      ]
+    },
+    {
+      "name": "information encounter",
+      "explanation": "Encounters that offer information (mentor, trickster, clue, shapeshifter, traitor, red herring, etc.)",
+      "entries": [
+        "A {lib:actant#friendly} gives useful information.",
+        "A {lib:actant#deceptive} gives wrong information.",
+        "{clue}",
+        "{red herring}"
+      ]
+    },
+    {
+      "name": "help encounter",
+      "explanation": "Encounters that offer help (mentor, ally, etc.)",
+      "entries": [
+        "A {lib:actant#friendly} offers to help."
+      ]
+    },
+    {
+      "name": "finale encounter",
+      "explanation": "Encounters solely for the adventure climax.",
+      "entries": [
+        "Finale: XXX"
+      ]
+    },
+    {
+      "name": "resolution encounter",
+      "explanation": "Encounters solely for the adventure resolution.",
+      "entries": [
+        "Resolution: XXX"
+      ]
+    },
+    {
+      "**************************************************": "FORMATTING"
+    },
+    {
+      "name": "formatting",
+      "explanation": "Formatting types (Campaign Logger or Wordpress).",
+      "entries": [
+        "{CL formatting}",
+        "{HTML formatting}"
+      ]
+    },
+    {
+      "name": "HTML formatting",
+      "explanation": "Set variables for formatting the output as HTML",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "<H2>",
+            "endtitle": "</H2>",
+            "startheading": "<H3>",
+            "endheading": "</H3>",
+            "startbold": "<B>",
+            "endbold": "</B>",
+            "para": "<P>"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CL formatting",
+      "explanation": "Set variables for formatting the output for Campaign Logger",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "{b|",
+            "endtitle": "}\r\n\r\n",
+            "startheading": "\r\n\r\n{b|",
+            "endheading": "}",
+            "startbold": "{b|",
+            "endbold": "}",
+            "para": "\r\n"
+          }
+        }
+      ]
+    }
+  ]
+}
