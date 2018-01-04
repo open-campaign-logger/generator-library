@@ -9,8 +9,8 @@
   "note": "",
   "bugs": "",
   "to do": "",
-  "see": "liquid, spell_intention",
-  "date": "2018-01-03",
+  "see": "container, liquid, spell_intention",
+  "date": "2018-01-04",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "fantasy",
@@ -37,9 +37,9 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{container} of {lib:color#word} colored, {lib:liquid#texture} '{potion}' {form}",
-        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{potion}' {form} {lib:aroma#smell}",
-        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{potion}' {form} {lib:aroma#smell}"
+        "{lib:container#vial} of {lib:color#word} colored, {lib:liquid#texture} '{potion}' {form}",
+        "{lib:container#vial} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{potion}' {form} {lib:aroma#smell}",
+        "{lib:container#vial} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{potion}' {form} {lib:aroma#smell}"
       ]
     },
     {
@@ -220,8 +220,7 @@
       "name": "special",
       "explanation": "Special potion tables.",
       "entries": [
-        "{random}",
-        "{container}"
+        "{random}"
       ]
     },
     {
@@ -230,9 +229,9 @@
       "entries": [
         "{form} of '{beginning} {ending}'",
         "{lib:magic#adjective} {form} of '{beginning} {ending}'",
-        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{beginning} {ending}' {form} {lib:aroma#smell}",
-        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{lib:magic#adjective} {beginning} {ending}' {form} {lib:aroma#smell}",
-        "{container} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{lib:magic#adjective} {beginning} {ending}' {form} {lib:aroma#smell}"
+        "{lib:container#vial} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{beginning} {ending}' {form} {lib:aroma#smell}",
+        "{lib:container#vial} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{lib:magic#adjective} {beginning} {ending}' {form} {lib:aroma#smell}",
+        "{lib:container#vial} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{lib:magic#adjective} {beginning} {ending}' {form} {lib:aroma#smell}"
       ]
     },
     {
@@ -256,31 +255,6 @@
         "woe",
         "harm",
         "bane"
-      ]
-    },
-    {
-      "name": "container",
-      "explanation": "Potion container descriptions.",
-      "entries": [
-        "{lib:material#container} {vessel}",
-        "{vessel}"
-      ]
-    },
-    {
-      "name": "vessel",
-      "explanation": "Potion containers.",
-      "entries": [
-        "vessel",
-        "philter",
-        "phial",
-        "vial",
-        "flagon",
-        "flacon",
-        "flask",
-        "flasket",
-        "bottle",
-        "jar",
-        "urn"
       ]
     }
   ]
