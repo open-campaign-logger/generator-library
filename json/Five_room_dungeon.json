@@ -188,12 +188,12 @@
   "bugs": "",
   "to do": "Support for external motif files (requires global variables). More encounters!",
   "see": "hook_line_and_sinker_adventure",
-  "date": "2017-12-26",
+  "date": "2018-01-04",
   "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
-  "sources": "RolePlayingTips.com",
+  "sources": "Dream Park: The Roleplaying Game, RolePlayingTips.com",
   "genre": "universal",
   "categories": [
-    "plot"
+    "story"
   ],
   "tables": [
     {
@@ -231,6 +231,9 @@
           }
         }
       ]
+    },
+    {
+      "***********************************************": "INTRO"
     },
     {
       "name": "adventure description",
@@ -322,7 +325,7 @@
       "name": "duration notice",
       "explanation": "A paragraph about the estimated duration of the adventure, based on the number of scenes.",
       "entries": [
-        "{var:para}[The duration of the adventure is estimated to be approximately {var:duration} minutes.] "
+        "{var:para}[The duration of the {lib:synonym#adventure} is estimated to be roughly {var:duration} minutes.] "
       ]
     },
     {
@@ -336,8 +339,11 @@
       "name": "difficulty notice",
       "explanation": "A paragraph describing the difficulty of the adventure.",
       "entries": [
-        "{var:startbold}Difficulty{var:endbold}: {var:difficulty}{var:para} (This mini adventure is best suited for {var:difficultydescription}). {var:para}"
+        "{var:startbold}Difficulty{var:endbold}: {var:difficulty}{var:para} (This {lib:synonym#small} {lib:synonym#adventure} is best suited for {var:difficultydescription}). {var:para}"
       ]
+    },
+    {
+      "**************************************************": "ENEMIES"
     },
     {
       "name": "difficulty",
@@ -678,6 +684,21 @@
           }
         }
       ]
+    },
+    {
+      "name": "enemy adjective",
+      "explanation": "",
+      "entries": [
+        "dark",
+        "mysterious",
+        "ancient",
+        "vile",
+        "horned",
+        "elemental"
+      ]
+    },
+    {
+      "**************************************************": "MILIEU"
     },
     {
       "name": "milieu",
@@ -1809,6 +1830,9 @@
       ]
     },
     {
+      "**************************************************": "GOAL"
+    },
+    {
       "name": "goal",
       "explanation": "The aim of the adventure.",
       "entries": [
@@ -1959,8 +1983,11 @@
       ]
     },
     {
+      "**************************************************": "MACGUFFIN"
+    },
+    {
       "name": "macguffin",
-      "explanation": "",
+      "explanation": "The object that draws the characters into the adventure.",
       "entries": [
         {
           "m": 1,
@@ -2022,6 +2049,9 @@
       ]
     },
     {
+      "**************************************************": "TREASURE"
+    },
+    {
       "name": "treasure",
       "explanation": "",
       "entries": [
@@ -2072,16 +2102,7 @@
       ]
     },
     {
-      "name": "enemy adjective",
-      "explanation": "",
-      "entries": [
-        "dark",
-        "mysterious",
-        "ancient",
-        "vile",
-        "horned",
-        "elemental"
-      ]
+      "**************************************************": "NPCs"
     },
     {
       "name": "herald",
@@ -2450,6 +2471,9 @@
           }
         }
       ]
+    },
+    {
+      "**************************************************": "ENVIRONMENT"
     },
     {
       "name": "danger",
@@ -2877,6 +2901,9 @@
       ]
     },
     {
+      "**************************************************": "CLASSIC 5RD"
+    },
+    {
       "name": "room 1",
       "explanation": "There needs to be a reason why your dungeon hasn't been plundered before or why the PCs are the heroes for the job. A guardian or challenge at the entrance is a good justification why the location remains intact. Also, a guardian sets up early action to capture player interest and energize a session.",
       "entries": [
@@ -3124,7 +3151,7 @@
       "name": "setback room",
       "explanation": "",
       "entries": [
-        "A collapsed structure blocks part of the area. The debris is dangerous and blocks {blocked area}.",
+        "A collapsed structure blocks part of the {lib:synonym#room}. The debris is dangerous and blocks {blocked area}.",
         "{one way exit} leading back to room 1."
       ]
     },
@@ -3255,7 +3282,7 @@
       "explanation": "",
       "entries": [
         "The {var:enemy} is here and has unexpected {capabilities}.",
-        "The {var:enemy} is here, but the area is trapped. The {var:enemy} {trap ability}."
+        "The {var:enemy} is here, but the {lib:synonym#room} is trapped. The {var:enemy} {trap ability}."
       ]
     },
     {
@@ -3412,6 +3439,9 @@
       ]
     },
     {
+      "**************************************************": "ROOMS"
+    },
+    {
       "name": "room init",
       "explanation": "Initializing the room parameters.",
       "entries": [
@@ -3422,8 +3452,8 @@
       "name": "room description",
       "explanation": "Details of the dungeon room.",
       "entries": [
-        "This is a {var:roomsize}, {var:roomshape} {var:roomtype}. The space {var:roomdescription}. ",
-        "The space is a {var:roomsize}, {var:roomshape} {var:roomtype}. The area {var:roomdescription}. {var:roomcontents} "
+        "This is a {var:roomsize}, {var:roomshape} {var:roomtype}. The {lib:synonym#room} {var:roomdescription}. ",
+        "The {lib:synonym#room} is a {var:roomsize}, {var:roomshape} {var:roomtype}. The {lib:synonym#room} {var:roomdescription}. {var:roomcontents} "
       ]
     },
     {
@@ -4206,6 +4236,9 @@
       ]
     },
     {
+      "**************************************************": "ANIMALS"
+    },
+    {
       "name": "animal",
       "explanation": "Animals encountered in dungeons to add some color.",
       "entries": [
@@ -4267,6 +4300,9 @@
         "{lib:plant#moss}",
         "slime"
       ]
+    },
+    {
+      "***********************************************": "ADVENTURE STRUCTURE"
     },
     {
       "name": "adventure structure",
@@ -4370,6 +4406,9 @@
         "{action hook} {development scene} {action scene} {development scene} {action scene} {development scene} {action scene} {development finale} {resolution}",
         "{development hook} {action scene} {development scene} {action scene} {development scene} {action scene} {development scene} {action finale} {resolution}"
       ]
+    },
+    {
+      "**************************************************": "SCENES"
     },
     {
       "name": "hook",
@@ -4760,6 +4799,9 @@
       ]
     },
     {
+      "**************************************************": "ENCOUNTERS"
+    },
+    {
       "name": "hook encounter",
       "explanation": "Encounters solely for starting the adventure.",
       "entries": [
@@ -4799,14 +4841,14 @@
       "name": "setback encounter",
       "explanation": "Encounters that cause the adventurers to lose progress (traitor, shapeshifter, rival, etc).",
       "entries": [
-        "A {competitive actor} causes you to lose progress."
+        "A {competitive actor} causes them to lose progress."
       ]
     },
     {
       "name": "hindrance encounter",
       "explanation": "Encounters that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
       "entries": [
-        "A {competitive actor} slows down your progress.",
+        "A {competitive actor} slows down the progress.",
         "Problem with a {lock}",
         "Problem with a {door}."
       ]
@@ -4914,6 +4956,9 @@
       "entries": [
         "Resolution: XXX"
       ]
+    },
+    {
+      "**************************************************": "ACTOR"
     },
     {
       "name": "actor",
