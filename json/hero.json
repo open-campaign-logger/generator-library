@@ -1,0 +1,137 @@
+{
+  "name": "hero",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Randomized heroes.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "Categorize heroes by type.",
+  "see": "Dungeon_adventure, villain",
+  "date": "2018-01-04",
+  "authors": "Esko Vesala.",
+  "sources": "StoryboardThat.com",
+  "genre": "fantasy",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{hero}",
+        "{adjective} {hero}",
+        "{hero} {complication}",
+        "{adjective} {hero} {complication}"
+      ]
+    },
+    {
+      "name": "hero",
+      "explanation": "Hero types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common hero types.",
+      "entries": [
+        "antihero",
+        "misfit",
+        "tragic",
+        "peasant",
+        "everyman",
+        "warrior",
+        "protector",
+        "master",
+        "teacher",
+        "leader",
+        "prodigy",
+        "romantic hero"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare hero types.",
+      "entries": [
+        "epic hero",
+        "perfect hero"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Heroes once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Heroes for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "adventurer"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Heroes for modern worlds.",
+      "entries": [
+        "{common}",
+        "investigator"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Heroes for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "superhero"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special hero types.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives describing the hero.",
+      "entries": [
+        "brave",
+        "fearless",
+        "wise",
+        "honest"
+      ]
+    },
+    {
+      "name": "strategy",
+      "explanation": "The hero's chosen approach.",
+      "entries": [
+        "lone hero"
+      ]
+    },
+    {
+      "name": "goal",
+      "explanation": "The hero's goal.",
+      "entries": [
+        "conquer evil"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Complications for the hero.",
+      "entries": [
+        "who knows that death is near"
+      ]
+    }
+  ]
+}
