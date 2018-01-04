@@ -1,0 +1,848 @@
+{
+  "name": "actant",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Structural roles in stories (e.g. the hero and the villain.)",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
+  "bugs": "",
+  "to do": "",
+  "see": "Dungeon_adventure",
+  "date": "2018-01-04",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    "story"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{actant}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective} {actant}"
+      ]
+    },
+    {
+      "name": "actant",
+      "explanation": "Actant relationships by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Help table for generating a completely random actant. Usually the 'actant' subtables are called directly by the encounter tables to make the actant fit the encounter.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{hostile}",
+          "set": {
+            "attitude": "hostile"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{deceptive}",
+          "set": {
+            "attitude": "deceptive"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{competitive}",
+          "set": {
+            "attitude": "competitive"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{neutral}",
+          "set": {
+            "attitude": "neutral"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{friendly}",
+          "set": {
+            "attitude": "friendly"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{helpless}",
+          "set": {
+            "attitude": "helpless"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare actants.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{nonsentient}",
+          "set": {
+            "attitude": "nonsentient"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "RELATIONSHIPS"
+    },
+    {
+      "name": "hostile",
+      "explanation": "Actants who are opposed to the adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{minion}",
+          "set": {
+            "actant": "minion"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{guardian}",
+          "set": {
+            "actant": "guardian"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{monster}",
+          "set": {
+            "actant": "monster"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{beast}",
+          "set": {
+            "actant": "beast"
+          }
+        }
+      ]
+    },
+    {
+      "name": "deceptive",
+      "explanation": "Actants who may not be what they appear to be.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{traitor}",
+          "set": {
+            "actant": "traitor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{shapeshifter}",
+          "set": {
+            "actant": "shapeshifter"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{tempter}",
+          "set": {
+            "actant": "tempter"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{trickster}",
+          "set": {
+            "actant": "trickster"
+          }
+        }
+      ]
+    },
+    {
+      "name": "competitive",
+      "explanation": "Actants who compete with the adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{tempter}",
+          "set": {
+            "actant": "tempter"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{rival}",
+          "set": {
+            "actant": "rival"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{trickster}",
+          "set": {
+            "actant": "trickster"
+          }
+        }
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Actants who initially have a neutral attitude.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{inhabitant}",
+          "set": {
+            "actant": "inhabitant"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{animal}",
+          "set": {
+            "actant": "animal"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{captive}",
+          "set": {
+            "actant": "captive"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{herald}",
+          "set": {
+            "actant": "herald"
+          }
+        }
+      ]
+    },
+    {
+      "name": "friendly",
+      "explanation": "Actants who are friendly towards the adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{tempter}",
+          "set": {
+            "actant": "tempter"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{trickster}",
+          "set": {
+            "actant": "trickster"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{mentor}",
+          "set": {
+            "actant": "mentor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{ally}",
+          "set": {
+            "actant": "ally"
+          }
+        }
+      ]
+    },
+    {
+      "name": "nonsentient",
+      "explanation": "Actants who have animal-like intelligence.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{beast}",
+          "set": {
+            "actant": "beast"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{animal}",
+          "set": {
+            "actant": "animal"
+          }
+        }
+      ]
+    },
+    {
+      "name": "helpless",
+      "explanation": "Actants who may need help from the adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{minion}",
+          "set": {
+            "actant": "minion"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{monster}",
+          "set": {
+            "actant": "monster"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{animal}",
+          "set": {
+            "actant": "animal"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{traitor}",
+          "set": {
+            "actant": "traitor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{shapeshifter}",
+          "set": {
+            "actant": "shapeshifter"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{tempter}",
+          "set": {
+            "actant": "tempter"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{rival}",
+          "set": {
+            "actant": "rival"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{trickster}",
+          "set": {
+            "actant": "trickster"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{inhabitant}",
+          "set": {
+            "actant": "inhabitant"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{captive}",
+          "set": {
+            "actant": "captive"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{mentor}",
+          "set": {
+            "actant": "mentor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{ally}",
+          "set": {
+            "actant": "ally"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "ACTANTS"
+    },
+    {
+      "name": "herald",
+      "explanation": "A character that foreshadows the adventure",
+      "entries": [
+        {
+          "m": 1,
+          "v": "child",
+          "set": {
+            "herald": "child",
+            "heralds": "children",
+            "heraldgroup": "group of children",
+            "heraldadjective": "small"
+          }
+        }
+      ]
+    },
+    {
+      "name": "guardian",
+      "explanation": "The villain's guardian watching the entrance.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "golem",
+          "set": {
+            "guardian": "golem",
+            "guardians": "golems",
+            "guardiangroup": "company of golems",
+            "guardianadjective": "magically created"
+          }
+        },
+        {
+          "m": 1,
+          "v": "living statue",
+          "set": {
+            "guardian": "living statue",
+            "guardians": "living statues",
+            "guardiangroup": "column of living statues",
+            "guardianadjective": "magically animated"
+          }
+        },
+        {
+          "m": 1,
+          "v": "construct",
+          "set": {
+            "guardian": "construct",
+            "guardians": "constructs",
+            "guardiangroup": "accumulation of constructs",
+            "guardianadjective": "mechanical"
+          }
+        }
+      ]
+    },
+    {
+      "name": "minion",
+      "explanation": "Servitor of the villain.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "automaton",
+          "set": {
+            "minion": "automaton",
+            "minions": "automata",
+            "miniongroup": "assembly of automata",
+            "minionadjective": "mechanical"
+          }
+        },
+        {
+          "m": 1,
+          "v": "manbeast",
+          "set": {
+            "minion": "manbeast",
+            "minions": "manbeasts",
+            "miniongroup": "horde of manbeasts",
+            "minionadjective": "ravenous"
+          }
+        },
+        {
+          "m": 1,
+          "v": "beastman",
+          "set": {
+            "minion": "beastman",
+            "minions": "beastmen",
+            "miniongroup": "horde of beastmen",
+            "minionadjective": "inhuman"
+          }
+        },
+        {
+          "m": 1,
+          "v": "frogman",
+          "set": {
+            "minion": "frogman",
+            "minions": "frogmen",
+            "miniongroup": "group of frogmen",
+            "minionadjective": "slime-covered"
+          }
+        },
+        {
+          "m": 1,
+          "v": "servitor",
+          "set": {
+            "minion": "servitor",
+            "minions": "servitors",
+            "miniongroup": "congregation of servitors",
+            "minionadjective": "mindless"
+          }
+        },
+        {
+          "m": 1,
+          "v": "devotee",
+          "set": {
+            "minion": "devotee",
+            "minions": "devotees",
+            "miniongroup": "congregation of devotees",
+            "minionadjective": "faithful"
+          }
+        },
+        {
+          "m": 1,
+          "v": "slave",
+          "set": {
+            "minion": "slave",
+            "minions": "slaves",
+            "miniongroup": "slave gang"
+          }
+        },
+        {
+          "m": 1,
+          "v": "thrall",
+          "set": {
+            "minion": "thrall",
+            "minions": "thralls",
+            "miniongroup": "gang of thralls"
+          }
+        },
+        {
+          "m": 1,
+          "v": "guard",
+          "set": {
+            "minion": "guard",
+            "minions": "guards",
+            "miniongroup": "troop of guards"
+          }
+        },
+        {
+          "m": 1,
+          "v": "worshipper",
+          "set": {
+            "minion": "worshipper",
+            "minions": "worshippers",
+            "miniongroup": "sect of worshippers"
+          }
+        },
+        {
+          "m": 1,
+          "v": "imp",
+          "set": {
+            "minion": "imp",
+            "minions": "imps",
+            "miniongroup": "gathering of imps"
+          }
+        }
+      ]
+    },
+    {
+      "name": "minion adjective",
+      "explanation": "",
+      "entries": [
+        "cursed",
+        "fiendish",
+        "carnivorous"
+      ]
+    },
+    {
+      "name": "monster",
+      "explanation": "Monsters hiding in the dungeon.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "troll",
+          "set": {
+            "monster": "troll",
+            "monsters": "trolls",
+            "monstergroup": "group of trolls",
+            "monsteraction": "looking for something to eat",
+            "monsteradjective": "hideous",
+            "monsterdescription": "A huge troll is sniffing the air and looks like if it was searching for something."
+          }
+        },
+        {
+          "m": 1,
+          "v": "troglodyte",
+          "set": {
+            "monster": "troglodyte",
+            "monsters": "troglodytes",
+            "monstergroup": "tribe of troglodytes",
+            "monsteraction": "sharpening a stone axe",
+            "monsteradjective": "primitive",
+            "monsterdescription": "A primitive-looking troglodyte is inspecting a stone axe."
+          }
+        }
+      ]
+    },
+    {
+      "name": "beast",
+      "explanation": "A nonsentient predator stalking in the dungeon.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "wolf",
+          "set": {
+            "beast": "wolf",
+            "beasts": "wolves",
+            "beastgroup": "wolfpack",
+            "beastadjective": "mangy"
+          }
+        }
+      ]
+    },
+    {
+      "name": "traitor",
+      "explanation": "Characters that betray trust.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "informant",
+          "set": {
+            "traitor": "informant"
+          }
+        }
+      ]
+    },
+    {
+      "name": "shapeshifter",
+      "explanation": "Characters that appear to be something else.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "skinchanger",
+          "set": {
+            "shapeshifter": "skinchanger"
+          }
+        }
+      ]
+    },
+    {
+      "name": "tempter",
+      "explanation": "Characters that attempt to tempt the adventurers to give up their principles.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "sorceress",
+          "set": {
+            "tempter": "sorceress"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rival",
+      "explanation": "Characters that compete with the adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "knight",
+          "set": {
+            "rival": "knight"
+          }
+        }
+      ]
+    },
+    {
+      "name": "inhabitant",
+      "explanation": "Neutral persons that live in the area.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "gnome",
+          "set": {
+            "inhabitant": "gnome"
+          }
+        }
+      ]
+    },
+    {
+      "name": "captive",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "captive",
+          "set": {
+            "captive": "captive",
+            "captives": "captives",
+            "captivegroup": "group of captives"
+          }
+        },
+        {
+          "m": 1,
+          "v": "prisoner",
+          "set": {
+            "captive": "prisoner",
+            "captives": "prisoners",
+            "captivegroup": "group of prisoners"
+          }
+        },
+        {
+          "m": 1,
+          "v": "hostage",
+          "set": {
+            "captive": "hostage",
+            "captives": "hostages",
+            "captivegroup": "group of hostages"
+          }
+        }
+      ]
+    },
+    {
+      "name": "trickster",
+      "explanation": "Characters that may trick the adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "jester",
+          "set": {
+            "trickster": "jester"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mentor",
+      "explanation": "Characters that can teach something.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "sage",
+          "set": {
+            "mentor": "sage"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ally",
+      "explanation": "Characters that can help the adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "friendly {minion}",
+          "set": {
+            "ally": "friendly {var:minion}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "hindrance",
+      "explanation": "Characters that can hinder the adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "hindrance",
+          "set": {
+            "hindrance": "hindrance"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Actants once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Actants for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Actants for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Actants for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL CASES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special actants.",
+      "entries": [
+        "{hero}",
+        "{villain}"
+      ]
+    },
+    {
+      "name": "hero",
+      "explanation": "Hero actants. In RPG context, these are the players.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{lib:hero}",
+          "set": {
+            "actant": "hero"
+          }
+        }
+      ]
+    },
+    {
+      "name": "villain",
+      "explanation": "Villain actants. Usually the enemy has been set when setting up the adventure and is not randomized.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{lib:villain}",
+          "set": {
+            "actant": "villain"
+          }
+        }
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives for actants.",
+      "entries": [
+        "strong",
+        "tenacious",
+        "skillful",
+        "wise",
+        "lucky",
+        "strong-willed",
+        "cunning",
+        "devious"
+      ]
+    }
+  ]
+}
