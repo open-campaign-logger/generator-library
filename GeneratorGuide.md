@@ -35,7 +35,7 @@ For documentation on other Campaign Logger topics, please refer to the Campaign 
 	- [Weighing Values](#weighing-values)
 	- [Variables](#variables)
 	- [Random Number Generation](#random-number-generation)
-	- [Template](#template)
+	- [Templates](#templates)
 - [Recommended Practices](#recommended-practices)
 	- [A Closer Look at Table Properties](#a-closer-look-at-table-properties)
 		- [name](#name)
@@ -45,16 +45,17 @@ For documentation on other Campaign Logger topics, please refer to the Campaign 
 			- [Name](#name)
 			- [Explanation](#explanation)
 			- [Entries](#entries)
-		- [Recommended Subtable Organization](#recommended-subtable-organization)
-			- [common](#common)
-			- [rare](#rare)
-			- [myth](#myth)
-			- [fantasy](#fantasy)
-			- [modern](#modern)
-			- [futuristic](#futuristic)
-		- [Special Subtables](#special-subtables)
-	- [Debugging Tips](#debugging-tips)
-	- [Troubleshooting](#troubleshooting)
+	- [Recommended Subtable Organization](#recommended-subtable-organization)
+		- [common](#common)
+		- [rare](#rare)
+		- [myth](#myth)
+		- [fantasy](#fantasy)
+		- [modern](#modern)
+		- [futuristic](#futuristic)
+	- [Special Subtables](#special-subtables)
+- [Pro Tips](#pro-tips)
+- [Debugging Tips](#debugging-tips)
+- [Troubleshooting](#troubleshooting)
 
 <!-- /TOC -->
 
@@ -277,11 +278,15 @@ The *dice:* function allows you to simulate dice rolls - even for dice for which
 Note that only one modifier (such as the *+10* in the above example) is supported. The modifier can only be a plus (+) or minus (-) operation, not for example multiplier (\*) or another die roll.
 
 
-## Template
+## Templates
 
-The *_empty_template* table contains a structure for creating complex generators that are compatible with different genres. Table names and comment fields requiring customization are marked with *XXX*.
+The *_empty_template.json* file (note the initial underscore character) in the generator repository contains a ready-made structure for creating complex generators that can be used with different types of genres (such as fantasy and modern worlds).
 
-The template follows the recommended practices explained in the following section.
+Also available is a simplified template for short help tables: *_simple_template.json*.
+
+Both templates have locations that need to be filled in for each new table, such as the table names and comment fields that require customization. These locations are marked with *XXX*.
+
+The templates follow the recommended practices explained in the following section.
 
 
 # Recommended Practices
@@ -436,7 +441,7 @@ There is a comma between each entry:
 *Note*: The final entry in the list does not have a comma after it.
 
 
-### Recommended Subtable Organization
+## Recommended Subtable Organization
 
 It is a recommended practice to make any generators intended to be shared with other users as generic as possible, so that they are suitable for many different game worlds.
 
@@ -447,43 +452,43 @@ Typically there should be at least generic tables named *common* and *rare*, for
 After these generic tables, genre-specific tables should follow. These subtables should be reached only if specifically called with a *{lib:Generator#subtable}* call.
 
 
-#### common
+### common
 
 "name": "common",
 "explanation": "Common X.",
 
 
-#### rare
+### rare
 
 "name": "rare",
 "explanation": "Rare X.",
 
 
-#### myth
+### myth
 
 "name": "myth",
 "explanation": "Imaginary X once rumoured to have existed.",
 
 
-#### fantasy
+### fantasy
 
     "name": "fantasy",
     "explanation": "Imaginary X for fantasy worlds (with no basis in myth).",
 
 
-#### modern
+### modern
 
     "name": "modern",
     "explanation": "X for modern worlds.",
 
 
-#### futuristic
+### futuristic
 
     "name": "futuristic",
     "explanation": "Imaginary X for science fiction worlds.",
 
 
-### Special Subtables
+## Special Subtables
 
 The end of the file is a good location for subtables that are not called from other tables in the same file, but by external calls from other files.
 
@@ -495,12 +500,22 @@ An example of this kind case could be the color table that contains the "black a
 It is perfectly OK if there is overlap between the results produced by different tables.
 
 
-## Debugging Tips
+# Pro Tips
+
+The JSON format does not support proper comments, but it is possible to add a comment to each table using the *explanation* property. Sometimes it would be useful to add comments also between tables, for example to separate different groups of tables. This can be done adding an element like this between tables:
+
+		{
+			"******************************************": "SPECIAL CASES"
+		},
+
+An example of this kind of a separator is included in the generator template files.
+
+# Debugging Tips
 
 * You can check the workings of a certain part of the generator by modifying the *resultPattern* string to execute a specific subtable call.
 
 
-## Troubleshooting
+# Troubleshooting
 
 * **A table call is not working.**
 
