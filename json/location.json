@@ -110,6 +110,14 @@
         },
         {
           "m": 1,
+          "v": "{road}",
+          "set": {
+            "milieu": "road",
+            "milieudescription": "road"
+          }
+        },
+        {
+          "m": 1,
           "v": "{outpost}",
           "set": {
             "milieu": "outpost",
@@ -206,6 +214,14 @@
           "set": {
             "milieu": "sea",
             "milieudescription": "sea"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{island}",
+          "set": {
+            "milieu": "island",
+            "milieudescription": "island"
           }
         }
       ]
@@ -381,13 +397,24 @@
       "explanation": "Locations in a city or a town.",
       "entries": [
         "house",
+        "building with a {lib:business#common}",
         "inn",
         "tavern",
         "shop",
+        "thoroughfare",
+        "alley",
+        "backstreet",
+        "street corner",
+        "street",
+        "avenue",
+        "boulevard",
+        "terrace",
         "marketplace",
         "temple",
+        "cathedral",
         "monument",
         "clock tower",
+        "city gate",
         "undercity",
         "sewer"
       ]
@@ -398,6 +425,8 @@
       "entries": [
         "well",
         "fountain",
+        "canal",
+        "shrine",
         "statue",
         "lamp post",
         "notice board",
@@ -418,6 +447,8 @@
       "explanation": "Locations in the outskirts of a city.",
       "entries": [
         "hovel",
+        "house",
+        "barracks",
         "prison"
       ]
     },
@@ -501,6 +532,30 @@
         "hillock",
         "mound",
         "gravestone"
+      ]
+    },
+    {
+      "name": "road",
+      "explanation": "Road structure.",
+      "entries": [
+        "{road site}",
+        "{road site} with {road feature}"
+      ]
+    },
+    {
+      "name": "road site",
+      "explanation": "Locations on the road.",
+      "entries": [
+        "trail",
+        "path",
+        "road"
+      ]
+    },
+    {
+      "name": "road feature",
+      "explanation": "Features for locations on the road.",
+      "entries": [
+        "roadside tavern"
       ]
     },
     {
@@ -610,6 +665,7 @@
         "woods",
         "forest path",
         "forest clearing",
+        "glade",
         "cottage",
         "logging camp"
       ]
@@ -713,6 +769,7 @@
       "explanation": "Locations in the hills.",
       "entries": [
         "dell",
+        "foothills",
         "hillside",
         "hilltop"
       ]
@@ -737,10 +794,21 @@
       "name": "mountain site",
       "explanation": "Locations in the mountains.",
       "entries": [
-        "mountain",
-        "eyrie",
+        "vale",
+        "pass",
+        "gorge",
+        "gully",
+        "ravine",
         "canyon",
-        "vale"
+        "precipice",
+        "butte",
+        "mesa",
+        "plateau",
+        "mountain",
+        "mountain crest",
+        "mountain peak",
+        "mountain summit",
+        "eyrie"
       ]
     },
     {
@@ -764,8 +832,22 @@
       "name": "river site",
       "explanation": "Locations on running freshwater (rivers, streams, etc).",
       "entries": [
+        "rivulet",
+        "runnel",
+        "rill",
+        "brooklet",
+        "brook",
+        "creek",
         "river",
+        "riverbend",
+        "inlet",
+        "streamlet",
         "stream",
+        "rapids",
+        "waterfall",
+        "tributary",
+        "estuary",
+        "firth",
         "river delta"
       ]
     },
@@ -822,7 +904,11 @@
         "marsh",
         "swamp",
         "bog",
-        "fen"
+        "fen",
+        "morass",
+        "slough",
+        "mire",
+        "bayou"
       ]
     },
     {
@@ -832,6 +918,7 @@
         "moss-covered trees",
         "moss-covered pond",
         "patch of wild berries",
+        "quagmire",
         "quicksand",
         "enormous lily pads"
       ]
@@ -841,7 +928,9 @@
       "explanation": "Coastal location structure.",
       "entries": [
         "{coast site}",
-        "{coast site} with {coast feature}"
+        "{coast site} with {coast feature}",
+        "{coast site}, {coast hazard}",
+        "{coast site} with {coast feature}, {coast hazard}."
       ]
     },
     {
@@ -851,15 +940,29 @@
         "mudflats",
         "tidal island",
         "cove",
-        "grotto"
+        "grotto",
+        "bay",
+        "fjord",
+        "gulf"
       ]
     },
     {
       "name": "coast feature",
       "explanation": "Features for locations on the coast.",
       "entries": [
-        "flotsam",
-        "jetsam"
+        "flotsam (floating cargo from a shipwreck)",
+        "jetsam (intentionally discarded cargo)",
+        "dry dock",
+        "ship graveyard",
+        "riptide"
+      ]
+    },
+    {
+      "name": "coast hazard",
+      "explanation": "Natural hazards by the sea.",
+      "entries": [
+        "the area is flooded by rising water",
+        "the area is covered by waist-high water"
       ]
     },
     {
@@ -876,7 +979,7 @@
       "entries": [
         "ship",
         "open sea",
-        "island"
+        "ocean"
       ]
     },
     {
@@ -884,7 +987,35 @@
       "explanation": "Features for locations at sea.",
       "entries": [
         "reef",
-        "floating cargo"
+        "shipwreck",
+        "floating cargo",
+        "rogue waves",
+        "whirlpool",
+        "maelstrom"
+      ]
+    },
+    {
+      "name": "island",
+      "explanation": "Island location structure.",
+      "entries": [
+        "{island site}",
+        "{island site} with {island feature}"
+      ]
+    },
+    {
+      "name": "island site",
+      "explanation": "Locations at islands.",
+      "entries": [
+        "island",
+        "isle",
+        "beach"
+      ]
+    },
+    {
+      "name": "island feature",
+      "explanation": "Features for locations at islands.",
+      "entries": [
+        "stranded cargo"
       ]
     },
     {
@@ -896,12 +1027,14 @@
       ]
     },
     {
+      "explanation": "Locations on arctic, snow and ice covered areas.",
       "name": "glacial site",
-      "explanation": "Locations on snow and ice covered areas.",
       "entries": [
         "ice field",
+        "ice floe (floating sea ice)",
         "iceberg",
         "glacier",
+        "crevasse",
         "snow mountain"
       ]
     },
@@ -910,6 +1043,7 @@
       "explanation": "Features for glacial locations.",
       "entries": [
         "ice formation",
+        "thin ice",
         "crevasse"
       ]
     },
@@ -926,6 +1060,8 @@
       "explanation": "Locations under the water surface.",
       "entries": [
         "underwater",
+        "undersea depths",
+        "deep sea",
         "sea bottom"
       ]
     },
@@ -933,7 +1069,10 @@
       "name": "underwater feature",
       "explanation": "Features for locations under the water surface.",
       "entries": [
-        "underwater reef"
+        "underwater reef",
+        "sunken ship",
+        "lagan (sunken cargo tied to a floating marker)",
+        "derelict (cargo sunken to the seafloor)"
       ]
     },
     {
@@ -1210,9 +1349,43 @@
         "decayed",
         "ruined",
         "burned down",
+        "collapsing",
+        "crumbling",
+        "decaying",
         "ramshackle",
+        "damaged",
+        "deserted",
+        "abandoned",
+        "overgrown",
+        "crooked",
+        "ominous",
+        "lonely",
+        "empty",
+        "small",
+        "nondescript",
+        "tranquil",
+        "quiet - perhaps too quiet -",
+        "windy",
+        "rustic",
+        "unclean",
+        "dirty",
+        "filthy",
+        "foul",
+        "defiled",
+        "infested",
+        "hidden",
+        "shadowy",
+        "sinister",
         "ancient",
-        "enemy-infested"
+        "large",
+        "enormous",
+        "magnificent",
+        "extravagant",
+        "guarded",
+        "fortified",
+        "perilous",
+        "treacherous",
+        "booby-trapped"
       ]
     },
     {
@@ -1230,10 +1403,19 @@
       "name": "common complication",
       "explanation": "Common complications for the location.",
       "entries": [
+        "{weather}",
         "{lighting}",
         "{hazard}",
+        "{animal}",
         "{bystander}",
         "{enemy}"
+      ]
+    },
+    {
+      "name": "weather",
+      "explanation": "Complications caused by weather.",
+      "entries": [
+        "violent wind makes movement difficult"
       ]
     },
     {
@@ -1252,9 +1434,14 @@
       "entries": [
         "catching fire",
         "blazing on fire",
-        "flooded by rising water",
-        "covered by waist-high water",
         "ravaged by an earthquake"
+      ]
+    },
+    {
+      "name": "animal",
+      "explanation": "Complications caused by animals.",
+      "entries": [
+        "an enormous flock of birds has taken over the area"
       ]
     },
     {
@@ -1269,6 +1456,7 @@
       "name": "enemy",
       "explanation": "Complications caused by enemies.",
       "entries": [
+        "acting as a hideout for the enemy",
         "being invaded",
         "besieged by the enemy",
         "patrolled by the enemy"
