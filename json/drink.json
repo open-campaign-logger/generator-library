@@ -1,15 +1,15 @@
 {
-  "name": "Drink Generator",
-  "resultPattern": "{appearance} {beverage}",
+  "name": "drink",
+  "resultPattern": "{result}",
   "variables": {
     "footnote": ""
   },
-  "explanation": "Drink for resource tables. Subtable classification is based on everyday usage, not scientific taxonomy.",
+  "explanation": "Drinks for resource tables.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
-  "note": "",
+  "note": " Subtable classification is based on everyday usage, not scientific taxonomy.",
   "to do": "More content.",
   "see": "food",
-  "date": "2017-10-04",
+  "date": "2018-01-05",
   "authors": "Esko Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -19,14 +19,25 @@
   "tags": "#food, #drink, #tavern",
   "tables": [
     {
-      "name": "appearance",
-      "explanation": "The appearance of the food.",
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{scent}",
-        "{strength} {scent}",
-        "{taste}",
-        "{strength} {taste}",
-        "{structure}"
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{beverage}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{appearance} {beverage}"
       ]
     },
     {
@@ -152,6 +163,20 @@
       ]
     },
     {
+      "**************************************************": "APPEARANCE"
+    },
+    {
+      "name": "appearance",
+      "explanation": "The appearance of the food.",
+      "entries": [
+        "{scent}",
+        "{strength} {scent}",
+        "{taste}",
+        "{strength} {taste}",
+        "{structure}"
+      ]
+    },
+    {
       "name": "scent",
       "explanation": "Beverage scents.",
       "entries": [
@@ -159,7 +184,7 @@
         "smelly",
         "nut-scented",
         "rich-scented",
-        "pleasantly smelling",
+        "pleasant-smelling",
         "sweet-scented"
       ]
     },
@@ -205,9 +230,8 @@
         "somewhat",
         "moderately",
         "distinctly",
-        "sharply",
-        "strongly",
-        "very strongly",
+        "quite",
+        "very",
         "intolerably"
       ]
     },
