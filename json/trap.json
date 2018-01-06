@@ -172,7 +172,7 @@
           "set": {
             "trap": "boulder trap",
             "trapaction": "a huge boulder falls down, hitting everyone near",
-            "trapdescription": "an enormous rock is precariously balanced above"
+            "trapdescription": "an enormous rock precariously balanced above"
           }
         }
       ]

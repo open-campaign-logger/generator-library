@@ -121,7 +121,7 @@
       "entries": [
         {
           "m": 1,
-          "v": "{minion}",
+          "v": "{lib:minion}",
           "set": {
             "actant": "minion"
           }
@@ -304,7 +304,7 @@
       "entries": [
         {
           "m": 1,
-          "v": "{minion}",
+          "v": "{lib:minion}",
           "set": {
             "actant": "minion"
           }
@@ -596,6 +596,27 @@
           "v": "jester",
           "set": {
             "trickster": "jester"
+          }
+        },
+        {
+          "m": 1,
+          "v": "vagabond",
+          "set": {
+            "trickster": "vagabond"
+          }
+        },
+        {
+          "m": 1,
+          "v": "tramp",
+          "set": {
+            "trickster": "tramp"
+          }
+        },
+        {
+          "m": 1,
+          "v": "rogue",
+          "set": {
+            "trickster": "rogue"
           }
         }
       ]

@@ -2,6 +2,7 @@
   "name": "treasure",
   "resultPattern": "{result}",
   "variables": {
+    "treasure": "",
     "footnote": ""
   },
   "explanation": "treasure table",
@@ -55,7 +56,7 @@
       "name": "common",
       "explanation": "Common treasure types.",
       "entries": [
-        "{miscellany}"
+        "{miscellany}{var:treasure}"
       ]
     },
     {
@@ -152,6 +153,7 @@
       "explanation": "Special treasure subtables.",
       "entries": [
         "{adjective}",
+        "{bonus}",
         "{complication}"
       ]
     },
@@ -173,6 +175,14 @@
         "fabled",
         "ancient",
         "enchanted"
+      ]
+    },
+    {
+      "name": "bonus",
+      "explanation": "Extra treasure for the keen-eyed.",
+      "entries": [
+        "piece of a magic item",
+        "map fragment"
       ]
     },
     {

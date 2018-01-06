@@ -503,8 +503,16 @@
         "sadistic",
         "charismatic",
         "scheming",
+        "hostile",
+        "evil",
+        "relentless",
         "{rare adjective}"
       ]
+    },
+    {
+      "name": "villain introduction",
+      "explanation": "Introductory words about the villain.",
+      "entries": []
     },
     {
       "name": "rare adjective",

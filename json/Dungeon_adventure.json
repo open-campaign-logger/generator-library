@@ -19,11 +19,11 @@
     "symbol": "symbol",
     "milieu": "milieu",
     "milieudescription": "",
-    "location": "location",
+    "location": "hideaway",
     "locationdescription": "",
     "motif": "motif",
     "motifdescription": "",
-    "macguffin": "macguffin",
+    "macguffin": "secret",
     "macguffindescription": "",
     "key": "key",
     "keydescription": "",
@@ -205,7 +205,7 @@
       "name": "init",
       "explanation": "Initializing the dungeon parameters.",
       "entries": [
-        "{motif}{goal} {macguffin}{artifact}{treasure}{danger}"
+        "{motif}{goal} {artifact}{danger}"
       ]
     },
     {
@@ -241,7 +241,7 @@
       "name": "adventure description",
       "explanation": "The adventure described from start to finish.",
       "entries": [
-        "{adventure title} {motif notice} {villain} {difficulty notice} {introduction} {adventure structure} {duration notice} {footnote}"
+        "{adventure title} {motif notice} {villain} {difficulty notice}  {macguffin notice} {treasure notice} {introduction} {adventure structure} {duration notice} {footnote}"
       ]
     },
     {
@@ -278,31 +278,45 @@
       ]
     },
     {
+      "name": "motif notice",
+      "explanation": "Description of the general theme of the adventure.",
+      "entries": [
+        "{var:para}{var:startbold}Motif{var:endbold}: {var:motif}. {var:motifdescription}"
+      ]
+    },
+    {
       "name": "villain",
       "explanation": "Introductory words about the villain.",
       "entries": [
-        "{var:para}Villain: {difficulty}"
+        "{var:para}{var:startbold}Villain{var:endbold}: {difficulty}. "
       ]
     },
     {
       "name": "difficulty notice",
       "explanation": "A paragraph describing the difficulty of the adventure.",
       "entries": [
-        "{var:startbold}Difficulty{var:endbold}: {var:difficulty} (This {lib:synonym#small} {lib:synonym#adventure} is best suited for {var:difficultydescription}). {var:para}"
+        "{var:para}{var:startbold}Difficulty{var:endbold}: {var:difficulty}.  This {lib:synonym#small} {lib:synonym#adventure} is best suited for {var:difficultydescription}. "
       ]
     },
     {
-      "name": "motif notice",
-      "explanation": "Description of the general theme of the adventure.",
+      "name": "macguffin notice",
+      "explanation": "Description of the macguffin of the adventure.",
       "entries": [
-        "{var:para}{var:startbold}Motif: {var:motif}{var:endbold} {var:motifdescription}"
+        "{var:para}{var:startbold}Macguffin:{var:endbold} {lib:macguffin}. "
+      ]
+    },
+    {
+      "name": "treasure notice",
+      "explanation": "Description of the treasure of the adventure.",
+      "entries": [
+        "{var:para}{var:startbold}Treasure:{var:endbold} {lib:treasure}"
       ]
     },
     {
       "name": "introduction",
       "explanation": "How the adventurers start the adventure.",
       "entries": [
-        "Here the {lib:synonym#troupe} {encountering} {villain introduction} {var:villain} and a band of {var:minions}. Will the {lib:synonym#troupe} be able to {var:goal} {var:target}? "
+        "{var:para}Here the {lib:synonym#troupe} {encountering} a {lib:villain#adjective} {var:villain} and a band of {var:minions}. Will the {lib:synonym#troupe} be able to {var:goal} {var:target}? "
       ]
     },
     {
@@ -312,15 +326,6 @@
         "will have to face",
         "comes face to face with",
         "clashes with"
-      ]
-    },
-    {
-      "name": "villain introduction",
-      "explanation": "Introductory words about the villain.",
-      "entries": [
-        "a hostile",
-        "an evil",
-        "a relentless villain: a "
       ]
     },
     {
@@ -853,7 +858,7 @@
       "entries": [
         "The villain is here, ready to face the {lib:synonym#troupe}. Previous rooms have contained warning signals or an alarm, so the {var:villain} has had time to prepare.",
         "The villain is here, and seems to be surprised by the arrival of the {lib:synonym#troupe}. The villain tries to settle things in an unusual way, through {unusual proposal}.",
-        "The villain is here and reveals the treasure to the {lib:synonym#troupe}, threatening to {reward threat}.",
+        "The villain is here and reveals the {var:treasure} to the {lib:synonym#troupe}, threatening to {reward threat}.",
         "The villain is here, but has a weakness that the {lib:synonym#troupe} must figure out how to exploit."
       ]
     },
@@ -962,15 +967,7 @@
       "name": "reward",
       "explanation": "",
       "entries": [
-        "A {bonus treasure} is discovered that leads to another adventure."
-      ]
-    },
-    {
-      "name": "bonus treasure",
-      "explanation": "",
-      "entries": [
-        "piece of a magic item",
-        "map fragment"
+        "A {lib:treasure#bonus} is discovered that leads to another adventure."
       ]
     },
     {
