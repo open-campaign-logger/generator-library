@@ -9,10 +9,10 @@
   "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
   "bugs": "",
   "to do": "",
-  "see": "Dungeon_adventure",
-  "date": "2018-01-04",
+  "see": "Dungeon_adventure, hero, villain",
+  "date": "2018-01-06",
   "authors": "Esko Vesala.",
-  "sources": "",
+  "sources": "Five_room_dungeon",
   "genre": "fantasy",
   "categories": [
     "story"
@@ -444,126 +444,6 @@
       ]
     },
     {
-      "name": "minion",
-      "explanation": "Servitor of the villain.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "automaton",
-          "set": {
-            "minion": "automaton",
-            "minions": "automata",
-            "miniongroup": "assembly of automata",
-            "minionadjective": "mechanical"
-          }
-        },
-        {
-          "m": 1,
-          "v": "manbeast",
-          "set": {
-            "minion": "manbeast",
-            "minions": "manbeasts",
-            "miniongroup": "horde of manbeasts",
-            "minionadjective": "ravenous"
-          }
-        },
-        {
-          "m": 1,
-          "v": "beastman",
-          "set": {
-            "minion": "beastman",
-            "minions": "beastmen",
-            "miniongroup": "horde of beastmen",
-            "minionadjective": "inhuman"
-          }
-        },
-        {
-          "m": 1,
-          "v": "frogman",
-          "set": {
-            "minion": "frogman",
-            "minions": "frogmen",
-            "miniongroup": "group of frogmen",
-            "minionadjective": "slime-covered"
-          }
-        },
-        {
-          "m": 1,
-          "v": "servitor",
-          "set": {
-            "minion": "servitor",
-            "minions": "servitors",
-            "miniongroup": "congregation of servitors",
-            "minionadjective": "mindless"
-          }
-        },
-        {
-          "m": 1,
-          "v": "devotee",
-          "set": {
-            "minion": "devotee",
-            "minions": "devotees",
-            "miniongroup": "congregation of devotees",
-            "minionadjective": "faithful"
-          }
-        },
-        {
-          "m": 1,
-          "v": "slave",
-          "set": {
-            "minion": "slave",
-            "minions": "slaves",
-            "miniongroup": "slave gang"
-          }
-        },
-        {
-          "m": 1,
-          "v": "thrall",
-          "set": {
-            "minion": "thrall",
-            "minions": "thralls",
-            "miniongroup": "gang of thralls"
-          }
-        },
-        {
-          "m": 1,
-          "v": "guard",
-          "set": {
-            "minion": "guard",
-            "minions": "guards",
-            "miniongroup": "troop of guards"
-          }
-        },
-        {
-          "m": 1,
-          "v": "worshipper",
-          "set": {
-            "minion": "worshipper",
-            "minions": "worshippers",
-            "miniongroup": "sect of worshippers"
-          }
-        },
-        {
-          "m": 1,
-          "v": "imp",
-          "set": {
-            "minion": "imp",
-            "minions": "imps",
-            "miniongroup": "gathering of imps"
-          }
-        }
-      ]
-    },
-    {
-      "name": "minion adjective",
-      "explanation": "",
-      "entries": [
-        "cursed",
-        "fiendish",
-        "carnivorous"
-      ]
-    },
-    {
       "name": "monster",
       "explanation": "Monsters hiding in the dungeon.",
       "entries": [
@@ -739,9 +619,9 @@
       "entries": [
         {
           "m": 1,
-          "v": "friendly {minion}",
+          "v": "friendly {lib:minion}",
           "set": {
-            "ally": "friendly {var:minion}"
+            "ally": "friendly minion"
           }
         }
       ]

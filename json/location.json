@@ -6,15 +6,15 @@
     "milieudescription": "",
     "footnote": ""
   },
-  "explanation": "location table",
+  "explanation": "Location table.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "bugs": "",
   "to do": "Add themes to categorize adjectives and other elements.",
   "see": "5_room_dungeon, encounter, hook_line_and_sinker_adventure",
-  "date": "2017-12-28",
+  "date": "2018-01-05",
   "authors": "Esko Vesala",
-  "sources": "Wikipedia.org",
+  "sources": "encounter, Wikipedia.org",
   "genre": "universal",
   "categories": [
     "world"
@@ -22,20 +22,26 @@
   "tables": [
     {
       "name": "result",
-      "explanation": "Variations for resultPattern output.",
+      "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{location}",
-        "{adjective} {location}",
-        "{location}, {complication}",
-        "{adjective} {location}, {complication}"
+        "{summary}",
+        "{detail}"
       ]
     },
     {
-      "name": "simple",
-      "explanation": "Variations without the complication element.",
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
       "entries": [
         "{location}",
         "{adjective} {location}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{location}, {complication}",
+        "{adjective} {location}, {complication}"
       ]
     },
     {
@@ -66,7 +72,7 @@
           "m": 1,
           "v": "{indoors}",
           "set": {
-            "milieu": "indoor",
+            "milieu": "indoors",
             "milieudescription": "indoors"
           }
         },
@@ -218,6 +224,14 @@
         },
         {
           "m": 1,
+          "v": "{ship}",
+          "set": {
+            "milieu": "ship",
+            "milieudescription": "ship"
+          }
+        },
+        {
+          "m": 1,
           "v": "{island}",
           "set": {
             "milieu": "island",
@@ -353,6 +367,9 @@
           }
         }
       ]
+    },
+    {
+      "**************************************************": "LOCATIONS"
     },
     {
       "name": "indoors",
@@ -977,7 +994,6 @@
       "name": "sea site",
       "explanation": "Locations at sea.",
       "entries": [
-        "ship",
         "open sea",
         "ocean"
       ]
@@ -992,6 +1008,28 @@
         "rogue waves",
         "whirlpool",
         "maelstrom"
+      ]
+    },
+    {
+      "name": "ship",
+      "explanation": "Ship location structure.",
+      "entries": [
+        "{ship site}",
+        "{ship site} with {ship feature}"
+      ]
+    },
+    {
+      "name": "ship site",
+      "explanation": "Locations at sea.",
+      "entries": [
+        "ship"
+      ]
+    },
+    {
+      "name": "ship feature",
+      "explanation": "Features for locations at sea.",
+      "entries": [
+        "XXX"
       ]
     },
     {
@@ -1373,10 +1411,8 @@
         "foul",
         "defiled",
         "infested",
-        "hidden",
         "shadowy",
         "sinister",
-        "ancient",
         "large",
         "enormous",
         "magnificent",
@@ -1385,7 +1421,22 @@
         "fortified",
         "perilous",
         "treacherous",
-        "booby-trapped"
+        "booby-trapped",
+        "{rare adjective}"
+      ]
+    },
+    {
+      "name": "rare adjective",
+      "explanation": "A lurid descriptor for the location.",
+      "entries": [
+        "forgotten",
+        "lost",
+        "ancient",
+        "forbidden",
+        "foreboding",
+        "hidden",
+        "unknown",
+        "hellish"
       ]
     },
     {
@@ -1492,6 +1543,7 @@
       "entries": [
         "cursed",
         "haunted",
+        "demon-infested",
         "defiled by infernal forces"
       ]
     },

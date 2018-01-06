@@ -1,0 +1,326 @@
+{
+  "name": "minion",
+  "resultPattern": "{HTML formatting}{init}{result}",
+  "variables": {
+    "starttitle": "<H2>",
+    "endtitle": "</H2>",
+    "startheading": "<H3>",
+    "endheading": "</H3>",
+    "startbold": "<B>",
+    "endbold": "</B>",
+    "para": "<P>",
+    "difficulty": "",
+    "difficultydescription": "",
+    "actant": "minion",
+    "attitude": "",
+    "minion": "minion",
+    "minions": "minions",
+    "miniongroup": "army of minions",
+    "minionaction": "",
+    "minionadjective": "",
+    "miniondescription": "faithful",
+    "footnote": ""
+  },
+  "explanation": "Randomized minions.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
+  "bugs": "",
+  "to do": "Categorize minions by type.",
+  "see": "actant, Dungeon_adventure, hero, scene, villain",
+  "date": "2018-01-06",
+  "authors": "Esko Vesala.",
+  "sources": "Wikia.com",
+  "genre": "fantasy",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the minion parameters.",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "actant": "minion"
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{minion}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective} {minion}",
+        "{minion} {var:para}{complication}",
+        "{adjective} {minion} {var:para}{complication}"
+      ]
+    },
+    {
+      "name": "minion",
+      "explanation": "Minion types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common minion types.",
+      "entries": [
+        "{human}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare minion types.",
+      "entries": [
+        "{nonhuman}"
+      ]
+    },
+    {
+      "**************************************************": "MINIONS"
+    },
+    {
+      "name": "human",
+      "explanation": "Human minions of the villain.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "servitor",
+          "set": {
+            "minion": "servitor",
+            "minions": "servitors",
+            "miniongroup": "congregation of servitors",
+            "minionadjective": "mindless"
+          }
+        },
+        {
+          "m": 1,
+          "v": "devotee",
+          "set": {
+            "minion": "devotee",
+            "minions": "devotees",
+            "miniongroup": "congregation of devotees",
+            "minionadjective": "faithful"
+          }
+        },
+        {
+          "m": 1,
+          "v": "slave",
+          "set": {
+            "minion": "slave",
+            "minions": "slaves",
+            "miniongroup": "slave gang"
+          }
+        },
+        {
+          "m": 1,
+          "v": "thrall",
+          "set": {
+            "minion": "thrall",
+            "minions": "thralls",
+            "miniongroup": "gang of thralls"
+          }
+        },
+        {
+          "m": 1,
+          "v": "guard",
+          "set": {
+            "minion": "guard",
+            "minions": "guards",
+            "miniongroup": "troop of guards"
+          }
+        },
+        {
+          "m": 1,
+          "v": "worshipper",
+          "set": {
+            "minion": "worshipper",
+            "minions": "worshippers",
+            "miniongroup": "sect of worshippers"
+          }
+        }
+      ]
+    },
+    {
+      "name": "nonhuman",
+      "explanation": "Nonhuman minions of the villain.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "automaton",
+          "set": {
+            "minion": "automaton",
+            "minions": "automata",
+            "miniongroup": "assembly of automata",
+            "minionadjective": "mechanical"
+          }
+        },
+        {
+          "m": 1,
+          "v": "manbeast",
+          "set": {
+            "minion": "manbeast",
+            "minions": "manbeasts",
+            "miniongroup": "horde of manbeasts",
+            "minionadjective": "ravenous"
+          }
+        },
+        {
+          "m": 1,
+          "v": "beastman",
+          "set": {
+            "minion": "beastman",
+            "minions": "beastmen",
+            "miniongroup": "horde of beastmen",
+            "minionadjective": "inhuman"
+          }
+        },
+        {
+          "m": 1,
+          "v": "frogman",
+          "set": {
+            "minion": "frogman",
+            "minions": "frogmen",
+            "miniongroup": "group of frogmen",
+            "minionadjective": "slime-covered"
+          }
+        },
+        {
+          "m": 1,
+          "v": "imp",
+          "set": {
+            "minion": "imp",
+            "minions": "imps",
+            "miniongroup": "gathering of imps"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Minions once rumoured to have existed.",
+      "entries": [
+        "redcap",
+        "unseelie faery"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Minions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Minions for modern worlds.",
+      "entries": [
+        "{common}",
+        "hired thug",
+        "brawler",
+        "gangster"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Minions for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "FORMATTING"
+    },
+    {
+      "name": "HTML formatting",
+      "explanation": "Set variables for formatting the output as HTML",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "<H2>",
+            "endtitle": "</H2>",
+            "startheading": "<H3>",
+            "endheading": "</H3>",
+            "startbold": "<B>",
+            "endbold": "</B>",
+            "para": "<P>"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CL formatting",
+      "explanation": "Set variables for formatting the output for Campaign Logger",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "{b|",
+            "endtitle": "}\r\n\r\n",
+            "startheading": "\r\n\r\n{b|",
+            "endheading": "}",
+            "startbold": "{b|",
+            "endbold": "}",
+            "para": "\r\n"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special minion types.",
+      "entries": [
+        "{adjective}",
+        "{strategy}",
+        "{complication}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives describing the minions.",
+      "entries": [
+        "bumbling",
+        "faithful",
+        "cursed",
+        "fiendish",
+        "carnivorous"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Complications for the minions.",
+      "entries": [
+        "A mutiny is rising among the minions."
+      ]
+    }
+  ]
+}

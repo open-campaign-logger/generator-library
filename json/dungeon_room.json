@@ -1,0 +1,1097 @@
+{
+  "name": "dungeon room",
+  "resultPattern": "{HTML formatting}{init}",
+  "variables": {
+    "starttitle": "",
+    "endtitle": "",
+    "startheading": "",
+    "endheading": "",
+    "startbold": "",
+    "endbold": "",
+    "para": "",
+    "room": "room",
+    "roomsize": "medium",
+    "roompurpose": "",
+    "roomshape": "rectangular",
+    "roomtype": "chamber",
+    "roomdescription": "",
+    "roomcontents": "",
+    "roomevent": "",
+    "groundfeature": "",
+    "wallfeature": "",
+    "ceilingfeature": "",
+    "air": "",
+    "smell": "",
+    "sound": "",
+    "mineral": "",
+    "animal": "animal",
+    "animals": "animals",
+    "animalgroup": "",
+    "animalaction": "",
+    "animaladjective": "",
+    "animaldescription": "",
+    "plant": "plant",
+    "plants": "plants",
+    "plantgroup": "bush of plants",
+    "plantaction": "",
+    "plantadjective": "",
+    "plantdescription": "",
+    "door": "door",
+    "doorfeature": "",
+    "lock": "lock",
+    "lockfeature": "",
+    "corridor": "corridor",
+    "corridorfeature": "",
+    "danger": "danger",
+    "dangeraction": "",
+    "dangerdescription": "",
+    "trial": "trial",
+    "trialaction": "",
+    "trialdescription": "",
+    "hindrance": "hindrance",
+    "hindranceaction": "",
+    "hindrancedescription": "",
+    "setback": "setback",
+    "setbackaction": "",
+    "setbackdescription": "",
+    "trap": "trap",
+    "trapaction": "",
+    "trapdescription": "",
+    "damage": "damage",
+    "damagetype": "",
+    "footnote": ""
+  },
+  "explanation": "Random dungeon rooms.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
+  "bugs": "",
+  "to do": "",
+  "see": "Dungeon_adventure, Five_room_dungeon",
+  "date": "2018-01-06",
+  "authors": "Esko Vesala",
+  "sources": "Five_room_dungeon",
+  "genre": "fantasy",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the room parameters.",
+      "entries": [
+        "{size}{shape}{type} {var:para}{result}"
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "This is a {room}. The {lib:synonym#room} {var:roomdescription}. "
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. {var:para}{var:roomcontents} ",
+        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. {var:para}{flavor}",
+        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. {var:para}{complication}"
+      ]
+    },
+    {
+      "name": "room",
+      "explanation": "Dungeon room description types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare} "
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common room description types.",
+      "entries": [
+        "{var:roomsize}, {var:roomshape} {var:roomtype}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare room description types.",
+      "entries": [
+        "{adjective}, {var:roomsize}, {var:roomshape} {var:roomtype}"
+      ]
+    },
+    {
+      "**************************************************": "ROOM SIZES"
+    },
+    {
+      "name": "size",
+      "explanation": "The size of the area.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{tiny room purpose}",
+          "set": {
+            "roomsize": "tiny"
+          }
+        },
+        {
+          "m": 3,
+          "v": "{small room purpose}",
+          "set": {
+            "roomsize": "small"
+          }
+        },
+        {
+          "m": 5,
+          "v": "{medium room purpose}",
+          "set": {
+            "roomsize": "medium-sized"
+          }
+        },
+        {
+          "m": 3,
+          "v": "{big room purpose}",
+          "set": {
+            "roomsize": "big"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{huge room purpose}",
+          "set": {
+            "roomsize": "huge"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "ROOM SHAPES"
+    },
+    {
+      "name": "shape",
+      "explanation": "The shape of the area.",
+      "entries": [
+        {
+          "m": 5,
+          "v": "",
+          "set": {
+            "roomshape": "square"
+          }
+        },
+        {
+          "m": 5,
+          "v": "",
+          "set": {
+            "roomshape": "rectangular"
+          }
+        },
+        {
+          "m": 5,
+          "v": "",
+          "set": {
+            "roomshape": "elongated"
+          }
+        },
+        {
+          "m": 4,
+          "v": "",
+          "set": {
+            "roomshape": "squarish"
+          }
+        },
+        {
+          "m": 3,
+          "v": "",
+          "set": {
+            "roomshape": "long and narrow"
+          }
+        },
+        {
+          "m": 3,
+          "v": "",
+          "set": {
+            "roomshape": "irregularly shaped"
+          }
+        },
+        {
+          "m": 2,
+          "v": "",
+          "set": {
+            "roomshape": "round"
+          }
+        },
+        {
+          "m": 2,
+          "v": "",
+          "set": {
+            "roomshape": "oval"
+          }
+        },
+        {
+          "m": 2,
+          "v": "",
+          "set": {
+            "roomshape": "pear-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "semicircle-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "somewhat triangle-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "kite-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "dart-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "rhomboid-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "trapezoid-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "cross-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "pentagon-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "hexagon-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "star-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "octagon-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomshape": "irregular polygon shaped"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "ROOM TYPES"
+    },
+    {
+      "name": "type",
+      "explanation": "Types of rooms.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "room"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "chamber"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "hall"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "hallway"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "enclosure"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "spot"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "location"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "space"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roomtype": "place"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "ROOM PURPOSES"
+    },
+    {
+      "name": "room purpose",
+      "explanation": "Help table for generating a completely random room purpose. Usually the 'room purpose' subtables are called directly by 'size' to make the room purpose fit the room size.",
+      "entries": [
+        "{tiny room purpose}",
+        "{small room purpose}",
+        "{medium room purpose}",
+        "{big room purpose}",
+        "{huge room purpose}"
+      ]
+    },
+    {
+      "name": "tiny room purpose",
+      "explanation": "The previous usage of a tiny room.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "jail cell",
+            "roomdescription": "looks like a jail cell",
+            "roomcontents": "There are shackles fastened to one wall."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "wardrobe",
+            "roomdescription": "looks like a wardrobe",
+            "roomcontents": "There are various types of clothes hanging from racks."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "bath",
+            "roomdescription": "has been furnished into a bath",
+            "roomcontents": "In the middle of the room there is a basin."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "storage room",
+            "roomdescription": "has served as a storage room",
+            "roomcontents": "Chests and cases are filled with household items in various states of disrepair."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "stall",
+            "roomdescription": "has been modified to function as a some kind of stall",
+            "roomcontents": "There are piles of hay in a corner."
+          }
+        }
+      ]
+    },
+    {
+      "name": "small room purpose",
+      "explanation": "The previous usage of a small room.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "jail",
+            "roomdescription": "looks like a jail",
+            "roomcontents": "There are shackles fastened to one wall."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "wardrobe",
+            "roomdescription": "looks like a wardrobe",
+            "roomcontents": "There are various types of clothes hanging from racks."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "burial chamber",
+            "roomdescription": "is a burial chamber",
+            "roomcontents": "There is a sarcophagus in the middle of the room."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "treasure room",
+            "roomdescription": "has served as a treasure room",
+            "roomcontents": "There are several chests on the floor."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "bath",
+            "roomdescription": "has been furnished into a bath",
+            "roomcontents": "In the middle of the room there is a basin."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "bed chamber",
+            "roomdescription": "is a bed chamber",
+            "roomcontents": "A large bed lies next to the wall."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "bottlery",
+            "roomdescription": "has apparently served as a bottlery",
+            "roomcontents": "There are large casks in one corner and empty bottles in another."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "furnace",
+            "roomdescription": "is equipped with a furnace",
+            "roomcontents": "Metalworking tools and base metal ingots are strewn on the floor."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "storage room",
+            "roomdescription": "has served as a storage room",
+            "roomcontents": "Chests and cases are filled with household items in various states of disrepair."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "stable",
+            "roomdescription": "has been modified to function as a some kind of a stable",
+            "roomcontents": "There are several piles of hay in the corners."
+          }
+        }
+      ]
+    },
+    {
+      "name": "medium room purpose",
+      "explanation": "The previous usage of a medium room",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "observatory",
+            "roomdescription": "has been used as a some kind of observatory",
+            "roomcontents": "There are astrological books and a telescope strewn around."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "torture chamber",
+            "roomdescription": "has been used as a torture chamber",
+            "roomcontents": "The is a torture rack in the middle of the room and an iron maiden in a corner."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "library",
+            "roomdescription": "is a library",
+            "roomcontents": "Several bookcases are filled with tomes and librams of various kinds."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "giant astrolabe",
+            "roomdescription": "appears like a giant astrolabe",
+            "roomcontents": "There are astrological books and equipment strewn around."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "burial chamber",
+            "roomdescription": "is a burial chamber",
+            "roomcontents": "There are several sarcophagi in the room."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "laboratory",
+            "roomdescription": "must be a laboratory",
+            "roomcontents": "On a table there are alembics and other alchemical paraphernalia."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "armory",
+            "roomdescription": "serves as an armory",
+            "roomcontents": "There are various parts of armour in various states of repair lying on the floor."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "treasury",
+            "roomdescription": "has served as a treasury",
+            "roomcontents": "There are several chests on the floor."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "barracks",
+            "roomdescription": "functions as a barracks",
+            "roomcontents": "There are sparse beds around the walls."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "feast hall",
+            "roomdescription": "is a feast hall",
+            "roomcontents": "A long table fills the center of the room."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "bed chamber",
+            "roomdescription": "is a bed chamber",
+            "roomcontents": "A large bed lies next to the wall."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "bottlery",
+            "roomdescription": "has apparently served as a bottlery",
+            "roomcontents": "There are large casks in one corner and empty bottles in another."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "smithy",
+            "roomdescription": "serves as a smith's workshop",
+            "roomcontents": "There is a forge in the middle of the room."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "scriptorium",
+            "roomdescription": "is a scriptorium where books and manuscripts are copied",
+            "roomcontents": "Stacks of books are piled on a writing desk."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "storage room",
+            "roomdescription": "has served as a storage room",
+            "roomcontents": "Chests and cases are filled with household items in various states of disrepair."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "study",
+            "roomdescription": "looks like a study",
+            "roomcontents": "Next to a bookcase there is a writing desk."
+          }
+        }
+      ]
+    },
+    {
+      "name": "big room purpose",
+      "explanation": "The previous usage of a big room.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "observatory",
+            "roomdescription": "has been used as a some kind of observatory",
+            "roomcontents": "There are astrological books and a telescope strewn around."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "torture chamber",
+            "roomdescription": "has been used as a torture chamber",
+            "roomcontents": "The is a torture rack in the middle of the room and an iron maiden in a corner."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "library",
+            "roomdescription": "is a library",
+            "roomcontents": "Several bookcases are filled with tomes and librams of various kinds."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "giant astrolabe",
+            "roomdescription": "appears like a giant astrolabe",
+            "roomcontents": "There are astrological books and equipment strewn around."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "temple",
+            "roomdescription": "looks like a temple",
+            "roomcontents": "In the front of a room there is an altar."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "armory",
+            "roomdescription": "serves as an armory",
+            "roomcontents": "There are various parts of armour in various states of repair lying on the floor."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "barracks",
+            "roomdescription": "functions as a barracks",
+            "roomcontents": "There are sparse beds around the walls."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "feast hall",
+            "roomdescription": "is a feast hall",
+            "roomcontents": "A long table fills the center of the room."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "gallery",
+            "roomdescription": "has been transformed into a gallery",
+            "roomcontents": "There a number of paintings hanging on the walls."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "throne room",
+            "roomdescription": "serves as a throne room",
+            "roomcontents": "There is a throne in the far end of the room."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "scriptorium",
+            "roomdescription": "is a scriptorium where books and manuscripts are copied",
+            "roomcontents": "Stacks of books are piled on a writing desk."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "study",
+            "roomdescription": "looks like a study",
+            "roomcontents": "Next to a bookcase there is a writing desk."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "cistern",
+            "roomdescription": "holds plenty of water and apparently has served as a cistern",
+            "roomcontents": "The floor is completely underwater."
+          }
+        }
+      ]
+    },
+    {
+      "name": "huge room purpose",
+      "explanation": "The previous usage of a huge room.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "temple",
+            "roomdescription": "looks like a temple",
+            "roomcontents": "In the front of a room there is an altar."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "arena",
+            "roomdescription": "is furnished as an arena",
+            "roomcontents": "In the center there is an open area and benches around the walls."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "barracks",
+            "roomdescription": "functions as a barracks",
+            "roomcontents": "There are sparse beds around the walls."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "feast hall",
+            "roomdescription": "is a feast hall",
+            "roomcontents": "A long table fills the center of the room."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "gallery",
+            "roomdescription": "has been transformed into a gallery",
+            "roomcontents": "There a number of paintings hanging on the walls."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "throne room",
+            "roomdescription": "serves as a throne room",
+            "roomcontents": "There is a throne in the far end of the room."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "cistern",
+            "roomdescription": "holds plenty of water and apparently has served as a cistern",
+            "roomcontents": "The floor is completely underwater."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "roompurpose": "cathedral",
+            "roomdescription": "is some sort of a cathedral",
+            "roomcontents": "Burned out candles are lined along the walls."
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Rooms once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Rooms for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Rooms for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Rooms for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "FORMATTING"
+    },
+    {
+      "name": "HTML formatting",
+      "explanation": "Set variables for formatting the output as HTML",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "<H2>",
+            "endtitle": "</H2>",
+            "startheading": "<H3>",
+            "endheading": "</H3>",
+            "startbold": "<B>",
+            "endbold": "</B>",
+            "para": "<P>"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CL formatting",
+      "explanation": "Set variables for formatting the output for Campaign Logger",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "{b|",
+            "endtitle": "}\r\n\r\n",
+            "startheading": "\r\n\r\n{b|",
+            "endheading": "}",
+            "startbold": "{b|",
+            "endbold": "}",
+            "para": "\r\n"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL CASES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special room tables.",
+      "entries": [
+        "{adjective}",
+        "{flavor}",
+        "{complication}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives for dungeon rooms.",
+      "entries": [
+        "bleak",
+        "murky",
+        "gloomy",
+        "dismal",
+        "dreary",
+        "dreadful",
+        "forlorn",
+        "foreboding"
+      ]
+    },
+    {
+      "**************************************************": "FLAVORS"
+    },
+    {
+      "name": "flavor",
+      "explanation": "Extra atmospheric details for dungeon rooms.",
+      "entries": [
+        "{animal}{var:animaldescription}. ",
+        "Some {plant} grows here. "
+      ]
+    },
+    {
+      "name": "animal",
+      "explanation": "Animals encountered in dungeons to add some color.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "animal": "bat",
+            "animals": "bats",
+            "animalgroup": "colony of bats",
+            "animalaction": "flying around",
+            "animaladjective": "leather-winged",
+            "animaldescription": "Dark, bat-shaped forms fly all around."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "animal": "frog",
+            "animals": "frogs",
+            "animalgroup": "several frogs",
+            "animalaction": "hopping around",
+            "animaladjective": "slimy-looking",
+            "animaldescription": "A frog is croaking here, undisturbed by your presence."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "animal": "fly",
+            "animals": "flies",
+            "animalgroup": "business of flies",
+            "animalaction": "buzzing nervously",
+            "animaladjective": "biting",
+            "animaldescription": "A thick swarm of flies fills the air. They start to crawl oll over your skin, biting nastily."
+          }
+        }
+      ]
+    },
+    {
+      "name": "plant",
+      "explanation": "Plants growing in the dungeon room, adding some colour.",
+      "entries": [
+        "{lib:plant#fungus}",
+        "{lib:plant#moss}",
+        "slime"
+      ]
+    },
+    {
+      "**************************************************": "ROOM COMPLICATIONS"
+    },
+    {
+      "name": "complication",
+      "explanation": "Additional challenges in the room.",
+      "entries": [
+        "The air is heavy and breathing soon becomes difficult."
+      ]
+    }
+  ]
+}

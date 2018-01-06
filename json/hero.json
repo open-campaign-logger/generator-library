@@ -1,7 +1,22 @@
 {
   "name": "hero",
-  "resultPattern": "{result}",
+  "resultPattern": "{HTML formatting}{init}{result}",
   "variables": {
+    "starttitle": "<H2>",
+    "endtitle": "</H2>",
+    "startheading": "<H3>",
+    "endheading": "</H3>",
+    "startbold": "<B>",
+    "endbold": "</B>",
+    "para": "<P>",
+    "actant": "hero",
+    "attitude": "",
+    "hero": "hero",
+    "heroes": "heroes",
+    "herogroup": "troupe of heroes",
+    "heroaction": "",
+    "heroadjective": "brave",
+    "herodescription": "",
     "footnote": ""
   },
   "explanation": "Randomized heroes.",
@@ -9,20 +24,46 @@
   "note": "",
   "bugs": "",
   "to do": "Categorize heroes by type.",
-  "see": "Dungeon_adventure, villain",
-  "date": "2018-01-04",
+  "see": "actant, Dungeon_adventure, minion, scene, villain",
+  "date": "2018-01-06",
   "authors": "Esko Vesala.",
   "sources": "StoryboardThat.com",
   "genre": "fantasy",
   "categories": [
-    ""
+    "character"
   ],
   "tables": [
     {
-      "name": "result",
-      "explanation": "Variations for resultPattern output.",
+      "name": "init",
+      "explanation": "Initializing the hero parameters.",
       "entries": [
-        "{hero}",
+        {
+          "v": "",
+          "set": {
+            "actant": "hero"
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{hero}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
         "{adjective} {hero}",
         "{hero} {complication}",
         "{adjective} {hero} {complication}"
@@ -45,7 +86,7 @@
       "entries": [
         "antihero",
         "misfit",
-        "tragic",
+        "tragic hero",
         "peasant",
         "everyman",
         "warrior",
@@ -66,10 +107,13 @@
       ]
     },
     {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
       "name": "myth",
       "explanation": "Heroes once rumoured to have existed.",
       "entries": [
-        "XXX"
+        "demigod"
       ]
     },
     {
@@ -96,10 +140,55 @@
       ]
     },
     {
+      "**************************************************": "FORMATTING"
+    },
+    {
+      "name": "HTML formatting",
+      "explanation": "Set variables for formatting the output as HTML",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "<H2>",
+            "endtitle": "</H2>",
+            "startheading": "<H3>",
+            "endheading": "</H3>",
+            "startbold": "<B>",
+            "endbold": "</B>",
+            "para": "<P>"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CL formatting",
+      "explanation": "Set variables for formatting the output for Campaign Logger",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "{b|",
+            "endtitle": "}\r\n\r\n",
+            "startheading": "\r\n\r\n{b|",
+            "endheading": "}",
+            "startbold": "{b|",
+            "endbold": "}",
+            "para": "\r\n"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
       "name": "special",
       "explanation": "Special hero types.",
       "entries": [
-        "XXX"
+        "{adjective}",
+        "{substantive}",
+        "{strategy}",
+        "{goal}"
       ]
     },
     {
@@ -113,24 +202,36 @@
       ]
     },
     {
+      "name": "substantive",
+      "explanation": "Adjectives describing the hero.",
+      "entries": [
+        "hero",
+        "adventurer",
+        "champion"
+      ]
+    },
+    {
       "name": "strategy",
       "explanation": "The hero's chosen approach.",
       "entries": [
-        "lone hero"
+        "lone hero",
+        "party member"
       ]
     },
     {
       "name": "goal",
       "explanation": "The hero's goal.",
       "entries": [
-        "conquer evil"
+        "conquer evil",
+        "prove their worth"
       ]
     },
     {
       "name": "complication",
       "explanation": "Complications for the hero.",
       "entries": [
-        "who knows that death is near"
+        "who knows that death is near",
+        "whose reputation has been marred by false accusations"
       ]
     }
   ]

@@ -1,19 +1,20 @@
 {
-  "name": "treasure",
+  "name": "macguffin",
   "resultPattern": "{result}",
   "variables": {
+    "macguffin": "",
     "footnote": ""
   },
-  "explanation": "treasure table",
+  "explanation": "Random macguffins (objects that draw the characters into the adventure).",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
   "bugs": "",
-  "to do": "Categorize treasures by type.",
-  "see": "equipment, gem, jewelry",
+  "to do": "",
+  "see": "",
   "date": "2018-01-06",
   "authors": "Esko Vesala.",
-  "sources": "",
-  "genre": "fantasy",
+  "sources": "Five_room_dungeon",
+  "genre": "universal",
   "categories": [
     "item"
   ],
@@ -30,19 +31,19 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{treasure}"
+        "{macguffin}{var:macguffin}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {treasure}"
+        "{adjective} {macguffin}{var:macguffin}"
       ]
     },
     {
-      "name": "treasure",
-      "explanation": "Treasure types by rarity.",
+      "name": "macguffin",
+      "explanation": "Macguffin types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -53,56 +54,96 @@
     },
     {
       "name": "common",
-      "explanation": "Common treasure types.",
+      "explanation": "Common macguffin.",
       "entries": [
-        "{miscellany}"
+        "{information}",
+        "{container}",
+        "{weapon}"
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare treasure types.",
+      "explanation": "Rare macguffin.",
       "entries": [
-        "{lib:jewelry}",
-        "magical {lib:magicitem}"
+        "{armor}",
+        "{treasure}"
       ]
     },
     {
-      "name": "miscellany",
-      "explanation": "Miscellaneous fantasy treasure (placeholder).",
+      "name": "armor",
+      "explanation": "Armor macguffins.",
       "entries": [
         {
           "m": 1,
           "v": "",
           "set": {
-            "treasure": "hoard"
+            "macguffin": "gauntlet"
+          }
+        }
+      ]
+    },
+    {
+      "name": "container",
+      "explanation": "Container macguffins.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "macguffin": "urn"
+          }
+        }
+      ]
+    },
+    {
+      "name": "information",
+      "explanation": "Information macguffins.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "macguffin": "libram"
+          }
+        }
+      ]
+    },
+    {
+      "name": "treasure",
+      "explanation": "Treasure macguffins.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "macguffin": "scepter"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "treasure": "tome"
+            "macguffin": "crown"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "treasure": "secret"
+            "macguffin": "gem"
           }
-        },
+        }
+      ]
+    },
+    {
+      "name": "weapon",
+      "explanation": "Weapon macguffins.",
+      "entries": [
         {
           "m": 1,
           "v": "",
           "set": {
-            "treasure": "scroll"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "treasure": "treasure"
+            "macguffin": "blade"
           }
         }
       ]
@@ -112,36 +153,33 @@
     },
     {
       "name": "myth",
-      "explanation": "Treasure once rumoured to have existed.",
+      "explanation": "Macguffins once rumoured to have existed.",
       "entries": [
-        "golden fleece",
-        "unicorn horn"
+        "XXX"
       ]
     },
     {
       "name": "fantasy",
-      "explanation": "Treasure for fantasy worlds (with no basis in myth).",
+      "explanation": "Macguffins for fantasy worlds (with no basis in myth).",
       "entries": [
-        "magic item"
+        "{myth}",
+        "XXX"
       ]
     },
     {
       "name": "modern",
-      "explanation": "Treasure for modern worlds.",
+      "explanation": "Macguffins for modern worlds.",
       "entries": [
         "{common}",
-        "stock",
-        "bonds",
-        "prototype of a new invention"
+        "XXX"
       ]
     },
     {
       "name": "futuristic",
-      "explanation": "Treasure for science fiction worlds.",
+      "explanation": "Macguffins for science fiction worlds.",
       "entries": [
         "{modern}",
-        "crypto currency",
-        "decryption key"
+        "XXX"
       ]
     },
     {
@@ -149,40 +187,18 @@
     },
     {
       "name": "special",
-      "explanation": "Special treasure subtables.",
+      "explanation": "Special macguffin types.",
       "entries": [
-        "{adjective}",
-        "{complication}"
+        "{adjective}"
       ]
     },
     {
       "name": "adjective",
-      "explanation": "Adjectives describing the treasure.",
+      "explanation": "Macguffin adjectives.",
       "entries": [
-        "hidden",
-        "lost",
-        "fabulously valuable",
-        "peerless",
-        "{rare adjective}"
-      ]
-    },
-    {
-      "name": "rare adjective",
-      "explanation": "",
-      "entries": [
-        "fabled",
-        "ancient",
-        "enchanted"
-      ]
-    },
-    {
-      "name": "complication",
-      "explanation": "Complications for the treasure.",
-      "entries": [
+        "mysterious",
         "cursed",
-        "fake",
-        "already gone",
-        "being looted by hostile adventurers"
+        "rune-carved"
       ]
     }
   ]
