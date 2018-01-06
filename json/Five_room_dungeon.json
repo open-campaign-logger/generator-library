@@ -107,6 +107,12 @@
     "animalaction": "",
     "animaladjective": "",
     "animaldescription": "",
+    "plant": "",
+    "plants": "",
+    "plantgroup": "",
+    "plantaction": "",
+    "plantadjective": "",
+    "plantdescription": "",
     "captive": "",
     "captives": "",
     "captivegroup": "",
@@ -152,7 +158,6 @@
     "smell": "",
     "sound": "",
     "mineral": "",
-    "plant": "",
     "hook": "",
     "scene": "",
     "encounter": "",
@@ -184,11 +189,11 @@
   },
   "explanation": "Five room dungeons.",
   "structure": "Produces dungeon descriptions based on the 'Five Room Dungeon' formula.",
-  "note": "",
+  "note": "Forked into the Five_room_dungeon generator on 2018-01-04.",
   "bugs": "",
   "to do": "Support for external motif files (requires global variables). More encounters!",
   "see": "Dungeon_adventure, hook_line_and_sinker_adventure",
-  "date": "2018-01-04",
+  "date": "2018-01-06",
   "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "Dream Park: The Roleplaying Game, RolePlayingTips.com",
   "genre": "universal",
@@ -375,9 +380,9 @@
         },
         {
           "m": 2,
-          "v": "{hero enemy}",
+          "v": "{adept enemy}",
           "set": {
-            "difficulty": "hero",
+            "difficulty": "adept",
             "difficultydescription": "highly experienced adventurers"
           }
         },
@@ -411,7 +416,7 @@
         "{apprentice enemy}",
         "{journeyman enemy}",
         "{master enemy}",
-        "{hero enemy}",
+        "{adept enemy}",
         "{legend enemy}"
       ]
     },
@@ -594,7 +599,7 @@
       ]
     },
     {
-      "name": "hero enemy",
+      "name": "adept enemy",
       "explanation": "Enemies suitable to face heroic adventurers.",
       "entries": [
         {
