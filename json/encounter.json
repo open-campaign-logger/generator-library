@@ -6,18 +6,18 @@
     "milieudescription": "",
     "footnote": ""
   },
-  "explanation": "encounter table",
+  "explanation": "Encounter table.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "bugs": "",
   "to do": "Add themes to categorize statuses and other elements.",
   "see": "activity, animal, citizen, Five_room_dungeon, hook_line_and_sinker_adventure, location, monster",
-  "date": "2017-12-28",
+  "date": "2018-01-06",
   "authors": "Esko Vesala",
   "sources": "",
   "genre": "universal",
   "categories": [
-    "world"
+    "encounter"
   ],
   "tables": [
     {
@@ -331,6 +331,9 @@
       ]
     },
     {
+      "**************************************************": "LOCATIONS"
+    },
+    {
       "name": "indoors",
       "explanation": "Indoor encounter structure.",
       "entries": [
@@ -540,7 +543,9 @@
       "name": "grassland event",
       "explanation": "Events on grasslands.",
       "entries": [
-        "XXX"
+        "dust storm",
+        "whirlwind",
+        "tornado"
       ]
     },
     {
@@ -676,21 +681,22 @@
       "name": "desert encounter",
       "explanation": "Encounters in the desert.",
       "entries": [
-        "XXX"
+        "a mount apparently lost by a caravan"
       ]
     },
     {
       "name": "desert goal",
       "explanation": "Goals for encounters in the desert.",
       "entries": [
-        "XXX"
+        "searching for shade",
+        "looking for something to drink"
       ]
     },
     {
       "name": "desert event",
       "explanation": "Events in the desert.",
       "entries": [
-        "XXX"
+        "sand storm"
       ]
     },
     {
@@ -750,7 +756,7 @@
       "name": "mountain event",
       "explanation": "Events on the mountains.",
       "entries": [
-        "XXX"
+        "avalanche"
       ]
     },
     {
@@ -900,7 +906,8 @@
       "name": "sea event",
       "explanation": "Events at sea.",
       "entries": [
-        "A ship can be seen on the horizon."
+        "a ship can be seen on the horizon",
+        "tornadic watersprout"
       ]
     },
     {
@@ -916,7 +923,7 @@
       "name": "glacial encounter",
       "explanation": "Encounters on snow and ice covered areas.",
       "entries": [
-        "XXX"
+        "polar bear"
       ]
     },
     {
@@ -930,7 +937,7 @@
       "name": "glacial event",
       "explanation": "Events for glacial encounters.",
       "entries": [
-        "XXX"
+        "blizzard"
       ]
     },
     {

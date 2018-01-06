@@ -44,15 +44,14 @@
         "{artisan}",
         "{drinking}",
         "{eating}",
-        "{accommodation}",
-        "{docks}"
+        "{accommodation}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare business types.",
       "entries": [
-        "XXX"
+        "{docks}"
       ]
     },
     {
@@ -106,7 +105,7 @@
       "name": "docks",
       "explanation": "Docks.",
       "entries": [
-        "dock",
+        "docks",
         "shipyard"
       ]
     },

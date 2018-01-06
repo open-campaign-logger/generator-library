@@ -521,14 +521,24 @@
       ]
     },
     {
-      "name": "water",
-      "explanation": "Water animals.",
+      "name": "land",
+      "explanation": "Land animals.",
       "entries": [
-        "{coral}",
-        "{crustacean}",
-        "{fish}",
-        "{amphibian}",
-        "{whale}"
+        "{crawling insect}",
+        "{mollusc}",
+        "{arachnid}",
+        "{reptile}",
+        "{bird}",
+        "{land mammal}"
+      ]
+    },
+    {
+      "name": "desert",
+      "explanation": "Desert animals.",
+      "entries": [
+        "lizard",
+        "snake",
+        "camel"
       ]
     },
     {
@@ -541,15 +551,14 @@
       ]
     },
     {
-      "name": "land",
-      "explanation": "Land animals.",
+      "name": "water",
+      "explanation": "Water animals.",
       "entries": [
-        "{crawling insect}",
-        "{mollusc}",
-        "{arachnid}",
-        "{reptile}",
-        "{bird}",
-        "{land mammal}"
+        "{coral}",
+        "{crustacean}",
+        "{fish}",
+        "{amphibian}",
+        "{whale}"
       ]
     },
     {
@@ -565,7 +574,9 @@
       "name": "adjective",
       "explanation": "Adjectives for animals.",
       "entries": [
-        "young"
+        "young",
+        "hungry",
+        "curious"
       ]
     }
   ]

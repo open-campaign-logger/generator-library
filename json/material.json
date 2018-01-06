@@ -9,7 +9,7 @@
   "note": "",
   "to do": "",
   "see": "metal, stone, temperature",
-  "date": "2017-12-31",
+  "date": "2018-01-04",
   "authors": "Esko Vesala",
   "sources": "Conservation-Wiki.com, Wikipedia.org.",
   "genre": "universal",
@@ -247,7 +247,23 @@
       "name": "special",
       "explanation": "Special material tables..",
       "entries": [
+        "{box}",
         "{container}"
+      ]
+    },
+    {
+      "name": "barrel",
+      "explanation": "Box materials.",
+      "entries": [
+        "wood",
+        "metal"
+      ]
+    },
+    {
+      "name": "box",
+      "explanation": "Box materials.",
+      "entries": [
+        "wood"
       ]
     },
     {

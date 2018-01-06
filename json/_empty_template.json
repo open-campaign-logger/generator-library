@@ -100,11 +100,11 @@
       ]
     },
     {
-      "**************************************************": "SPECIAL CASES"
+      "**************************************************": "SPECIAL TABLES"
     },
     {
       "name": "special",
-      "explanation": "Special XXX types.",
+      "explanation": "Special XXX tables.",
       "entries": [
         "XXX"
       ]
