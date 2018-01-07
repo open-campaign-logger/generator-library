@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "Add full range of US big numbers.",
   "see": "",
-  "date": "2018-01-01",
+  "date": "2018-01-07",
   "authors": "Esko Vesala.",
   "sources": "Sizes.com, Wikipedia.org",
   "genre": "universal",
@@ -41,6 +41,7 @@
       "explanation": "Common number types.",
       "entries": [
         "{one digit}",
+        "{twenty}",
         "{two digits}"
       ]
     },
@@ -214,6 +215,9 @@
         "{million}",
         "{millions}"
       ]
+    },
+    {
+      "**************************************************": "NUMBERS"
     },
     {
       "name": "two",
@@ -1121,6 +1125,9 @@
         "multiple milions",
         "millions and millions"
       ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
     },
     {
       "name": "special",
