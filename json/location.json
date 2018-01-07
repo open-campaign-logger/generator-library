@@ -146,10 +146,18 @@
       "entries": [
         {
           "m": 1,
+          "v": "{barren}",
+          "set": {
+            "milieu": "barren",
+            "milieudescription": "barren lowlands"
+          }
+        },
+        {
+          "m": 1,
           "v": "{grassland}",
           "set": {
             "milieu": "grassland",
-            "milieudescription": "plains"
+            "milieudescription": "grass plains"
           }
         },
         {
@@ -616,6 +624,31 @@
       ]
     },
     {
+      "name": "barren",
+      "explanation": "Barren location structure.",
+      "entries": [
+        "{barren site}",
+        "{barren site} with {barren feature}"
+      ]
+    },
+    {
+      "name": "barren site",
+      "explanation": "Locations on arid lowlands.",
+      "entries": [
+        "barren lowland",
+        "stretch of arid land",
+        "rocky terrain"
+      ]
+    },
+    {
+      "name": "barren feature",
+      "explanation": "Features for arid lowlands.",
+      "entries": [
+        "rough, sharp edged rocks",
+        "high pile of rocks"
+      ]
+    },
+    {
       "name": "grassland",
       "explanation": "Grasslands location structure.",
       "entries": [
@@ -1020,16 +1053,19 @@
     },
     {
       "name": "ship site",
-      "explanation": "Locations at sea.",
+      "explanation": "Locations onboard a ship.",
       "entries": [
-        "ship"
+        "cargo hold",
+        "captain's cabin",
+        "mast",
+        "crow's nest"
       ]
     },
     {
       "name": "ship feature",
-      "explanation": "Features for locations at sea.",
+      "explanation": "Features for locations onboard a ship.",
       "entries": [
-        "XXX"
+        "a large bird following the ship"
       ]
     },
     {
