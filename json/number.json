@@ -70,6 +70,31 @@
       ]
     },
     {
+      "name": "twenty",
+      "explanation": "One-digit numbers. Note that the singular 'one' is not included.",
+      "entries": [
+        "{two}",
+        "{three}",
+        "{four}",
+        "{five}",
+        "{six}",
+        "{seven}",
+        "{eight}",
+        "{nine}",
+        "{ten}",
+        "{eleven}",
+        "{twelve}",
+        "{thirteen}",
+        "{fourteen}",
+        "{fifteen}",
+        "{sixteen}",
+        "{seventeen}",
+        "{eighteen}",
+        "{nineteen}",
+        "{twenty}"
+      ]
+    },
+    {
       "name": "two digits",
       "explanation": "Two-digit numbers.",
       "entries": [
