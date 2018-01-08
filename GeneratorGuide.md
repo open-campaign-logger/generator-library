@@ -291,24 +291,24 @@ To add an indented footnote on the next line after an oracle's statement, you co
     "resultPattern": "{oracle statement} \r\n\t 1) This may not come true.",
 
 
-### Tables
+### Table Formatting
 
 Generator output can be formatted as table by using the following syntax:
 
 		|| one || two || three\n
-		|| a   || b   || c     
+		|| a   || b   || c
 
 This will produce the following output
 
 one | two | three
 --- | --- | -----
-a   | b   | c    
+a   | b   | c
 
 Note that the vertical bars (`|`) must be separated from table cell contents by at least one space (` `). Lines must start immediately with vertical bars (with no space in front), and lines must end without vertical bars.
 
  To clarify:
 
-		||<space>one<space>||<space>two<space>||<space>three\n||<space>a<space>||<space>b<space>||<space>c<space>
+		||<space>one<space>||<space>two<space>||<space>three\n||<space>a<space>||<space>b<space>||<space>c
 
 
 ## Templates
