@@ -485,23 +485,24 @@
       "name": "random",
       "explanation": "Randomized plants (names generated from components).",
       "entries": [
-        "{random beginning}{random middle}{random ending}"
+        "{beginning}{ending}",
+        "{descriptor}{beginning}{ending}"
       ]
     },
     {
-      "name": "random beginning",
-      "explanation": "Beginnings for randomized plant names.",
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized plant names.",
       "entries": [
         "",
-        "poisonous ",
         "lingering ",
+        "poisonous ",
         "deadly ",
         "{lib:color#plant} "
       ]
     },
     {
-      "name": "random middle",
-      "explanation": "Name stems for randomized plant names.",
+      "name": "beginning",
+      "explanation": "Beginnings for randomized plant names.",
       "entries": [
         "night",
         "dawn",
@@ -515,19 +516,29 @@
         "silver",
         "gold",
         "{lib:nonhuman#summary}",
-        "{lib:color#summary}"
+        "{lib:color#prime}"
       ]
     },
     {
-      "name": "random ending",
-      "explanation": "Endings for randomize plant names.",
+      "name": "ending",
+      "explanation": "Endings for randomized plant names.",
       "entries": [
         "wort",
+        "weed",
+        "grass",
         "root",
+        "seed",
         "vine",
+        "creeper",
         "leaf",
+        "herb",
+        "nut",
+        "clove",
+        "spore",
+        "spice",
         "shade",
         "petal",
+        "bloom",
         "flower"
       ]
     },
