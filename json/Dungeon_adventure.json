@@ -302,7 +302,7 @@
       "name": "macguffin notice",
       "explanation": "Description of the macguffin of the adventure.",
       "entries": [
-        "{var:para}{var:startbold}Macguffin:{var:endbold} {lib:macguffin}. "
+        "{var:para}{var:startbold}Macguffin:{var:endbold} A mysterious {lib:macguffin}. "
       ]
     },
     {
@@ -573,13 +573,6 @@
         "shovel",
         "rope",
         "10 foot pole"
-      ]
-    },
-    {
-      "name": "trick",
-      "explanation": "Tricks to deceive the adventurers.",
-      "entries": [
-        "A trick is played on the {lib:synonym#troupe}. "
       ]
     },
     {

@@ -9,7 +9,7 @@
   "note": "",
   "to do": "Fantasy colors.",
   "see": "adjColor",
-  "date": "2018-01-03",
+  "date": "2018-01-08",
   "authors": "Esko Vesala.",
   "sources": "Craftsy.com, Wikipedia.org.",
   "genre": "universal",
@@ -115,7 +115,7 @@
         "warm",
         "bright",
         "light",
-        "cool",
+        "cold",
         "pale"
       ]
     },
@@ -166,7 +166,7 @@
         "slate grey (with a slight azure tinge)",
         "sage (grey green)",
         "cinereous (grey tinged with coppery brown)",
-        "cool grey",
+        "cold grey",
         "silver grey",
         "ash grey",
         "lightgrey"
@@ -819,14 +819,14 @@
       "entries": [
         {
           "m": 10,
-          "v": "{green}"
+          "v": "{green word}"
         },
         {
           "m": 2,
-          "v": "{brown}"
+          "v": "{brown word}"
         },
-        "{yellow}",
-        "{white}"
+        "{yellow word}",
+        "{white word}"
       ]
     },
     {

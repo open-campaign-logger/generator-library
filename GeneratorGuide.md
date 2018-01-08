@@ -2,7 +2,7 @@
 
 [//]: # (Authors: Esko Vesala, Peter Sotos.)
 
-[//]: # (Date: 2018-01-04.)
+[//]: # (Date: 2018-01-08.)
 
 
 # Generator Guide
@@ -300,7 +300,7 @@ Complex generators (as opposed to simpler tables) use a standard structure to ma
 
 This mandatory property specifies the name that shown in the list of available generators in the Campaign Logger user interface.
 
-Table names can include spaces. They must begin with a non-numeric character. So, instead of ~~4 seasons~~, name the table `four seasons`, for example.
+Table names can include spaces. They must begin with a non-numeric character. So, instead of ~~4 seasons~~, name the table as *four seasons*, for example.
 
 Complex tables (typically producing more than a single phrase of output) are named 'generators'. It is a recommended practice to capitalized generator names (for example "Weather Generator") to make them stand out better in table listings.
 

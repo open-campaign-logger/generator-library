@@ -219,7 +219,7 @@
       "explanation": "Birds capable of flight.",
       "entries": [
         "{pet bird}",
-        "{domesticated bird}",
+        "{domestic bird}",
         "{small bird}",
         "{coastal bird}",
         "{waterfowl}",
@@ -238,7 +238,7 @@
       ]
     },
     {
-      "name": "domesticated bird",
+      "name": "domestic bird",
       "explanation": "Birds that live with people.",
       "entries": [
         "chicken",
@@ -318,7 +318,7 @@
       "explanation": "Mammals living on land.",
       "entries": [
         "{pet mammal}",
-        "{domesticated mammal}",
+        "{domestic mammal}",
         "{urban mammal}",
         "{small mammal}",
         "{large mammal}",
@@ -341,7 +341,7 @@
       ]
     },
     {
-      "name": "domesticated mammal",
+      "name": "domestic mammal",
       "explanation": "Land mammals living with people.",
       "entries": [
         "{mount}",
@@ -367,7 +367,7 @@
       "explanation": "Land mammals living in cities.",
       "entries": [
         "{pet}",
-        "{domesticated}"
+        "{domestic}"
       ]
     },
     {
@@ -458,7 +458,7 @@
       "explanation": "Animals for modern worlds.",
       "entries": [
         "{pet}",
-        "{domesticated}",
+        "{domestic}",
         "{common}"
       ]
     },
@@ -480,7 +480,7 @@
       "entries": [
         "{extinct}",
         "{pet}",
-        "{domesticated}",
+        "{domestic}",
         "{water}",
         "{coast}",
         "{land}",
@@ -506,11 +506,11 @@
       ]
     },
     {
-      "name": "domesticated",
+      "name": "domestic",
       "explanation": "Animals living with people.",
       "entries": [
-        "{domesticated bird}",
-        "{domesticated mammal}"
+        "{domestic bird}",
+        "{domestic mammal}"
       ]
     },
     {

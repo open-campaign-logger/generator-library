@@ -11,7 +11,7 @@
   "bugs": "",
   "to do": "Categorize treasures by type.",
   "see": "equipment, gem, jewelry",
-  "date": "2018-01-06",
+  "date": "2018-01-08",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "fantasy",
@@ -31,14 +31,14 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{treasure}"
+        "{treasure}{var:treasure}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {treasure}"
+        "{adjective} {treasure}{var:treasure}"
       ]
     },
     {

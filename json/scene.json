@@ -513,13 +513,6 @@
       ]
     },
     {
-      "name": "special",
-      "explanation": "Special scene types.",
-      "entries": [
-        "{formatting}"
-      ]
-    },
-    {
       "**************************************************": "BEATS"
     },
     {
@@ -548,7 +541,7 @@
       "name": "trap beat",
       "explanation": "Beats with traps.",
       "entries": [
-        "A trap has been set here: {lib:trap#detail}. "
+        "A trap has been set here: {lib:trap#detail} "
       ]
     },
     {
@@ -730,6 +723,23 @@
             "para": "\r\n"
           }
         }
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special scene types.",
+      "entries": [
+        "{trick}"
+      ]
+    },
+    {
+      "name": "trick",
+      "explanation": "Tricks to deceive the adventurers.",
+      "entries": [
+        "A trick is played on the {lib:synonym#troupe}. "
       ]
     }
   ]

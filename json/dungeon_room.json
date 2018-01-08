@@ -1028,7 +1028,7 @@
       "name": "flavor",
       "explanation": "Extra atmospheric details for dungeon rooms.",
       "entries": [
-        "{animal}{var:animaldescription}. ",
+        "{animal}{var:animaldescription} ",
         "Some {plant} grows here. "
       ]
     },
