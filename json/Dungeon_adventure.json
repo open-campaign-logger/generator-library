@@ -288,7 +288,7 @@
       "name": "villain",
       "explanation": "Introductory words about the villain.",
       "entries": [
-        "{var:para}{var:startbold}Villain{var:endbold}: {difficulty}. "
+        "{var:para}{var:startbold}Villain{var:endbold}: A {difficulty} with a {var:miniongroup}. "
       ]
     },
     {
@@ -302,7 +302,7 @@
       "name": "macguffin notice",
       "explanation": "Description of the macguffin of the adventure.",
       "entries": [
-        "{var:para}{var:startbold}Macguffin:{var:endbold} A mysterious {lib:macguffin}. "
+        "{var:para}{var:startbold}Macguffin:{var:endbold} A {lib:macguffin}. "
       ]
     },
     {
@@ -316,7 +316,7 @@
       "name": "introduction",
       "explanation": "How the adventurers start the adventure.",
       "entries": [
-        "|| {var:para}Here the {lib:synonym#troupe} {encountering} a {lib:villain#adjective} {var:villain} and a band of {var:minions}. Will the {lib:synonym#troupe} be able to {var:goal} {var:target}? "
+        "{var:para}Here the {lib:synonym#troupe} {encountering} a {lib:villain#adjective} {var:villain} and a band of {var:minions}. Will the {lib:synonym#troupe} be able to {var:goal} {var:target}? "
       ]
     },
     {
@@ -1191,7 +1191,7 @@
           "m": 1,
           "v": "{lib:villain#apprentice}",
           "set": {
-            "difficulty": "apprentice",
+            "difficulty": "Apprentice",
             "difficultydescription": "inexperienced adventurers"
           }
         },
@@ -1199,7 +1199,7 @@
           "m": 2,
           "v": "{lib:villain#journeyman}",
           "set": {
-            "difficulty": "journeyman",
+            "difficulty": "Journeyman",
             "difficultydescription": "adventurers with some experience"
           }
         },
@@ -1207,7 +1207,7 @@
           "m": 3,
           "v": "{lib:villain#master}",
           "set": {
-            "difficulty": "master",
+            "difficulty": "Master",
             "difficultydescription": "experienced adventurers"
           }
         }
@@ -1221,7 +1221,7 @@
           "m": 2,
           "v": "{lib:villain#adept}",
           "set": {
-            "difficulty": "adept",
+            "difficulty": "Adept",
             "difficultydescription": "highly experienced adventurers"
           }
         },
@@ -1229,7 +1229,7 @@
           "m": 1,
           "v": "{lib:villain#legend}",
           "set": {
-            "difficulty": "legend",
+            "difficulty": "Legend",
             "difficultydescription": "only the most experienced of adventurers"
           }
         }
@@ -1276,8 +1276,80 @@
           "m": 1,
           "v": "",
           "set": {
-            "motif": "dungeon",
-            "motifdescription": "An underground structure needs to be explored."
+            "motif": "Vermin-infested pit",
+            "motifdescription": "An abandoned structure overrun by unclean infestations of vermin - and something even more dangerous."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Temple of evil",
+            "motifdescription": "A shrine of dark forces, featuring ghastly altars and worshippers of malevolent entities."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Classic dungeon",
+            "motifdescription": "An underground structure guarded by vicious monsters and traps, brimming with treasure."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Fallen city",
+            "motifdescription": "An ancient cataclysm toppled a forgotten city into a deep underground cavern."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Tomb of the undead",
+            "motifdescription": "Something has awakened the cadavers resting in an ancient catacomb."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Abode of a lost race",
+            "motifdescription": "Last remains of a long-dead civilization have entrenched themselves deep underground."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Submerged kingdom",
+            "motifdescription": "An age-old savage empire finally fell when it was overrun by a deluge. Its flooded remains now await explorers deep below ground."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Underground expanse",
+            "motifdescription": "Something horrific lives deep underground beneath the daylit world, and now it has crawled its way up here."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Spawning grounds of chaos",
+            "motifdescription": "Magical energies emanating from deep underground have corrupted underground denizens into horrific beasts."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Infernal portal",
+            "motifdescription": "A gateway to nether realms has opened, vomiting out hellish denizens of the underworld to occupy the site."
           }
         }
       ]
