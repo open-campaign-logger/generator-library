@@ -160,7 +160,7 @@
     "mineral": "",
     "hook": "",
     "scene": "",
-    "encounter": "",
+    "beat": "",
     "resolution": "",
     "door": "",
     "doorfeature": "",
@@ -191,7 +191,7 @@
   "structure": "Produces dungeon descriptions based on the 'Five Room Dungeon' formula.",
   "note": "Forked into the Five_room_dungeon generator on 2018-01-04.",
   "bugs": "",
-  "to do": "Support for external motif files (requires global variables). More encounters!",
+  "to do": "Support for external motif files (requires global variables). More beats!",
   "see": "Dungeon_adventure, hook_line_and_sinker_adventure",
   "date": "2018-01-06",
   "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
@@ -2380,19 +2380,6 @@
       ]
     },
     {
-      "name": "inhabitant",
-      "explanation": "Neutral persons that live in the area.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "inhabitant": "gnome"
-          }
-        }
-      ]
-    },
-    {
       "name": "captive",
       "explanation": "",
       "entries": [
@@ -2434,6 +2421,19 @@
           "v": "",
           "set": {
             "trickster": "jester"
+          }
+        }
+      ]
+    },
+    {
+      "name": "inhabitant",
+      "explanation": "Neutral persons that live in the area.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "inhabitant": "gnome"
           }
         }
       ]
@@ -2957,7 +2957,8 @@
       "entries": [
         "ceremony",
         "command word",
-        "key"
+        "rusty iron key",
+        "small silver key"
       ]
     },
     {
@@ -3032,7 +3033,7 @@
     },
     {
       "name": "room 2",
-      "explanation": "The PCs are victorious over the challenge of the first room and are now presented with a trial that cannot be solved with steel. This keeps problem solvers in your group happy and breaks the action up for good pacing. Make Room Two a puzzle, skill-based, or roleplaying encounter, if possible. Room Two should shine the limelight on different PCs than Room One, change gameplay up, and offer variety between the challenge at the entrance and the challenge at the end. Note, if Room One was this type of encounter, then feel free to make Room Two combat-oriented. Room Two should allow for multiple solutions to prevent the game from stalling. Add clues to room 1!",
+      "explanation": "The PCs are victorious over the challenge of the first room and are now presented with a trial that cannot be solved with steel. This keeps problem solvers in your group happy and breaks the action up for good pacing. Make Room Two a puzzle, skill-based, or roleplaying beat, if possible. Room Two should shine the limelight on different PCs than Room One, change gameplay up, and offer variety between the challenge at the entrance and the challenge at the end. Note, if Room One was this type of beat, then feel free to make Room Two combat-oriented. Room Two should allow for multiple solutions to prevent the game from stalling. Add clues to room 1!",
       "entries": [
         {
           "m": 1,
@@ -3090,7 +3091,7 @@
     },
     {
       "name": "room 3",
-      "explanation": "The purpose of this room is to build tension. Do this using a trick, trap, or setback. For example, after defeating a tough monster, and players think they've finally found the treasure and achieved their goal, they learn they've been tricked and the room is a false crypt. Depending on your game system, use this room to cater to any player or character types not yet served by the first two areas. Alternatively, give your group a double-dose of gameplay that they enjoy the most, such as more combat or roleplaying. Another potential payoff for Room Three is to weaken the PCs as build-up to a dramatic struggle in Room Four. It might contain a tough combat encounter, take down a key defense, exhaust an important resource, or make the party susceptible to a certain type of attack. For example, if Room Four contains a mummy whose secret weakness is fire, then make Room Three a troll lair (or another creature susceptible to fire) so the PCs might be tempted to burn off a lot of their fire magic, oil, and other flammable resources. This would turn a plain old troll battle into a gotcha once the PCs hit Room Four and realize the are out of fire resources. Don't forget to dress Room Three up with your theme elements!",
+      "explanation": "The purpose of this room is to build tension. Do this using a trick, trap, or setback. For example, after defeating a tough monster, and players think they've finally found the treasure and achieved their goal, they learn they've been tricked and the room is a false crypt. Depending on your game system, use this room to cater to any player or character types not yet served by the first two areas. Alternatively, give your group a double-dose of gameplay that they enjoy the most, such as more combat or roleplaying. Another potential payoff for Room Three is to weaken the PCs as build-up to a dramatic struggle in Room Four. It might contain a tough combat beat, take down a key defense, exhaust an important resource, or make the party susceptible to a certain type of attack. For example, if Room Four contains a mummy whose secret weakness is fire, then make Room Three a troll lair (or another creature susceptible to fire) so the PCs might be tempted to burn off a lot of their fire magic, oil, and other flammable resources. This would turn a plain old troll battle into a gotcha once the PCs hit Room Four and realize the are out of fire resources. Don't forget to dress Room Three up with your theme elements!",
       "entries": [
         {
           "m": 1,
@@ -3122,9 +3123,9 @@
         },
         {
           "m": 1,
-          "v": "{room init}{var:para} {combat encounter}",
+          "v": "{room init}{var:para} {combat beat}",
           "set": {
-            "room 3": "combat encounter"
+            "room 3": "combat beat"
           }
         }
       ]
@@ -3231,7 +3232,7 @@
     },
     {
       "name": "room 4",
-      "explanation": "This room is The Big Show. It's the final combat or conflict encounter of the dungeon. Use all the tactics you can summon to make this encounter memorable and entertaining. As always, generate interesting terrain that will impact the battle!",
+      "explanation": "This room is The Big Show. It's the final combat or conflict beat of the dungeon. Use all the tactics you can summon to make this beat memorable and entertaining. As always, generate interesting terrain that will impact the battle!",
       "entries": [
         {
           "m": 1,
@@ -3312,7 +3313,7 @@
       "name": "conflict",
       "explanation": "",
       "entries": [
-        "A variety of skills and talents are required to successfully complete the encounter."
+        "A variety of skills and talents are required to successfully complete the beat."
       ]
     },
     {
@@ -4245,7 +4246,7 @@
     },
     {
       "name": "animal",
-      "explanation": "Animals encountered in dungeons to add some color.",
+      "explanation": "Animals encontered in dungeons to add some color.",
       "entries": [
         {
           "m": 1,
@@ -4448,9 +4449,9 @@
       "entries": [
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} The {adventurer} has been taken as prisoners. ",
+          "v": "{var:beat}{var:endheading} The {adventurer} has been taken as prisoners. ",
           "set": {
-            "encounter": "kidnapped"
+            "beat": "kidnapped"
           }
         },
         {
@@ -4475,9 +4476,9 @@
       "entries": [
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} The {adventurer} has no recollection of how they have ended up here.",
+          "v": "{var:beat}{var:endheading} The {adventurer} has no recollection of how they have ended up here.",
           "set": {
-            "encounter": "memory loss"
+            "beat": "memory loss"
           }
         },
         {
@@ -4491,7 +4492,7 @@
     },
     {
       "name": "scene",
-      "explanation": "Help table for generating a completely random encounter. Usually the encounter subtables are called directly.",
+      "explanation": "Help table for generating a completely random beat. Usually the beat subtables are called directly.",
       "entries": [
         {
           "m": 1,
@@ -4529,44 +4530,44 @@
       "entries": [
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {combat encounter}",
+          "v": "{var:beat}{var:endheading} {combat beat}",
           "set": {
-            "encounter": "combat"
+            "beat": "combat"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {trap encounter}",
+          "v": "{var:beat}{var:endheading} {trap beat}",
           "set": {
-            "encounter": "trap"
+            "beat": "trap"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {hazard encounter}",
+          "v": "{var:beat}{var:endheading} {hazard beat}",
           "set": {
-            "encounter": "hazard"
+            "beat": "hazard"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {trial encounter}",
+          "v": "{var:beat}{var:endheading} {trial beat}",
           "set": {
-            "encounter": "trial"
+            "beat": "trial"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {competition encounter}",
+          "v": "{var:beat}{var:endheading} {competition beat}",
           "set": {
-            "encounter": "competition"
+            "beat": "competition"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {rescue encounter}",
+          "v": "{var:beat}{var:endheading} {rescue beat}",
           "set": {
-            "encounter": "rescue"
+            "beat": "rescue"
           }
         }
       ]
@@ -4584,44 +4585,44 @@
       "entries": [
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {betrayal encounter}",
+          "v": "{var:beat}{var:endheading} {betrayal beat}",
           "set": {
-            "encounter": "betrayal"
+            "beat": "betrayal"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {setback encounter}",
+          "v": "{var:beat}{var:endheading} {setback beat}",
           "set": {
-            "encounter": "setback"
+            "beat": "setback"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {hindrance encounter}",
+          "v": "{var:beat}{var:endheading} {hindrance beat}",
           "set": {
-            "encounter": "hindrance"
+            "beat": "hindrance"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {trick encounter}",
+          "v": "{var:beat}{var:endheading} {trick beat}",
           "set": {
-            "encounter": "trick"
+            "beat": "trick"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {information encounter}",
+          "v": "{var:beat}{var:endheading} {information beat}",
           "set": {
-            "encounter": "information"
+            "beat": "information"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {help encounter}",
+          "v": "{var:beat}{var:endheading} {help beat}",
           "set": {
-            "encounter": "help"
+            "beat": "help"
           }
         }
       ]
@@ -4635,34 +4636,34 @@
     },
     {
       "name": "mood scene type",
-      "explanation": "Encounters for atmosphere and roleplaying.",
+      "explanation": "Beats for atmosphere and roleplaying.",
       "entries": [
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {distraction encounter}",
+          "v": "{var:beat}{var:endheading} {distraction beat}",
           "set": {
-            "encounter": "distraction"
+            "beat": "distraction"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {sidetrack encounter}",
+          "v": "{var:beat}{var:endheading} {sidetrack beat}",
           "set": {
-            "encounter": "sidetrack"
+            "beat": "sidetrack"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {flavor encounter}",
+          "v": "{var:beat}{var:endheading} {flavor beat}",
           "set": {
-            "encounter": "flavor"
+            "beat": "flavor"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {resource encounter}",
+          "v": "{var:beat}{var:endheading} {resource beat}",
           "set": {
-            "encounter": "resource"
+            "beat": "resource"
           }
         }
       ]
@@ -4707,9 +4708,9 @@
       "entries": [
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} A great battle againts the {var:enemy} and the {var:minions} ensues. The result will determine the final fate of everyone involved! ",
+          "v": "{var:beat}{var:endheading} A great battle againts the {var:enemy} and the {var:minions} ensues. The result will determine the final fate of everyone involved! ",
           "set": {
-            "encounter": "final battle"
+            "beat": "final battle"
           }
         }
       ]
@@ -4727,9 +4728,9 @@
       "entries": [
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} The truth about the {var:target} is finally revealed! ",
+          "v": "{var:beat}{var:endheading} The truth about the {var:target} is finally revealed! ",
           "set": {
-            "encounter": "final revelation"
+            "beat": "final revelation"
           }
         }
       ]
@@ -4747,111 +4748,111 @@
       "entries": [
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} Everything turns out fine. ",
+          "v": "{var:beat}{var:endheading} Everything turns out fine. ",
           "set": {
-            "encounter": "happy ending"
+            "beat": "happy ending"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} The {var:enemy} is dead and cannot threaten anyone anymore. ",
+          "v": "{var:beat}{var:endheading} The {var:enemy} is dead and cannot threaten anyone anymore. ",
           "set": {
-            "encounter": "villain dies"
+            "beat": "villain dies"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} The {var:enemy} gives up and surrenders to the {adventurer}.",
+          "v": "{var:beat}{var:endheading} The {var:enemy} gives up and surrenders to the {adventurer}.",
           "set": {
-            "encounter": "villain surrenders"
+            "beat": "villain surrenders"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} The {var:enemy} manages to flee from the {adventurer}. ",
+          "v": "{var:beat}{var:endheading} The {var:enemy} manages to flee from the {adventurer}. ",
           "set": {
-            "encounter": "villain escapes"
+            "beat": "villain escapes"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} The {var:enemy} manages to capture the {adventurer}. Will they ever be able to escape? That is a different story... ",
+          "v": "{var:beat}{var:endheading} The {var:enemy} manages to capture the {adventurer}. Will they ever be able to escape? That is a different story... ",
           "set": {
-            "encounter": "heroes captured"
+            "beat": "heroes captured"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} The {var:enemy} attempts to capture the {adventurer}, but they still have a slim chance of escape! ",
+          "v": "{var:beat}{var:endheading} The {var:enemy} attempts to capture the {adventurer}, but they still have a slim chance of escape! ",
           "set": {
-            "encounter": "heroes escape"
+            "beat": "heroes escape"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} A shocking turn takes the {adventurer} by surprise. What will they do? That is a different story... ",
+          "v": "{var:beat}{var:endheading} A shocking turn takes the {adventurer} by surprise. What will they do? That is a different story... ",
           "set": {
-            "encounter": "cliffhanger"
+            "beat": "cliffhanger"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} A menace much greater than anyone anticipated is revealed! ",
+          "v": "{var:beat}{var:endheading} A menace much greater than anyone anticipated is revealed! ",
           "set": {
-            "encounter": "greater threat"
+            "beat": "greater threat"
           }
         }
       ]
     },
     {
-      "**************************************************": "ENCOUNTERS"
+      "**************************************************": "BEATS"
     },
     {
-      "name": "hook encounter",
-      "explanation": "Encounters solely for starting the adventure.",
+      "name": "hook beat",
+      "explanation": "Beats solely for starting the adventure.",
       "entries": [
         "Hook: XXX"
       ]
     },
     {
-      "name": "combat encounter",
-      "explanation": "Encounters with hostile creatures (guardian, minion, monster, beast, rival, etc.)",
+      "name": "combat beat",
+      "explanation": "Beats with hostile creatures (guardian, minion, monster, beast, rival, etc.)",
       "entries": [
         "This is the lair of a {hostile actant}.",
         "A {hostile actant} is waiting here, ready to attack."
       ]
     },
     {
-      "name": "betrayal encounter",
-      "explanation": "Encounters where the adventurers are betrayed (traitor, shapeshifter, tempter, trickster, etc).",
+      "name": "betrayal beat",
+      "explanation": "Beats where the adventurers are betrayed (traitor, shapeshifter, tempter, trickster, etc).",
       "entries": [
         "A {deceptive actant} needs help."
       ]
     },
     {
-      "name": "trap encounter",
-      "explanation": "Encounters with traps.",
+      "name": "trap beat",
+      "explanation": "Beats with traps.",
       "entries": [
         "{trap} A {var:trap} has been set here. (A successful inspection would reveal {var:trapdescription}. If the {adventurer} fails to detect and defuse the trap, {var:trapaction}). "
       ]
     },
     {
-      "name": "hazard encounter",
-      "explanation": "Encounters that put the adventurers in danger (hazard, etc.)",
+      "name": "hazard beat",
+      "explanation": "Beats that put the adventurers in danger (hazard, etc.)",
       "entries": [
         "Here is a {hazard}."
       ]
     },
     {
-      "name": "setback encounter",
-      "explanation": "Encounters that cause the adventurers to lose progress (traitor, shapeshifter, rival, etc).",
+      "name": "setback beat",
+      "explanation": "Beats that cause the adventurers to lose progress (traitor, shapeshifter, rival, etc).",
       "entries": [
         "A {competitive actant} causes them to lose progress."
       ]
     },
     {
-      "name": "hindrance encounter",
-      "explanation": "Encounters that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
+      "name": "hindrance beat",
+      "explanation": "Beats that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
       "entries": [
         "A {competitive actant} slows down the progress.",
         "Problem with a {lock}",
@@ -4859,31 +4860,31 @@
       ]
     },
     {
-      "name": "trick encounter",
-      "explanation": "Encounters that require a clever approach.",
+      "name": "trick beat",
+      "explanation": "Beats that require a clever approach.",
       "entries": [
         "A {deceptive actant} attempts to trick the {adventurer}.",
         "{trick}"
       ]
     },
     {
-      "name": "trial encounter",
-      "explanation": "Encounters where the adventurers must prove themselves (rival, mentor, trickster, etc).",
+      "name": "trial beat",
+      "explanation": "Beats where the adventurers must prove themselves (rival, mentor, trickster, etc).",
       "entries": [
         "A {friendly actant} requires the adventurers to prove their mettle."
       ]
     },
     {
-      "name": "competition encounter",
-      "explanation": "Encounters where adventurers have to compete with someone (rival, mentor, etc.)",
+      "name": "competition beat",
+      "explanation": "Beats where adventurers have to compete with someone (rival, mentor, etc.)",
       "entries": [
         "A {competitive actant} presents a challenge to the adventurers.",
         "A {deceptive actant} challenges the adventurers."
       ]
     },
     {
-      "name": "distraction encounter",
-      "explanation": "Encounters that lead astray (shapeshifter, trickster, tempter, traitor, red herring, smoke screen, etc.)",
+      "name": "distraction beat",
+      "explanation": "Beats that lead astray (shapeshifter, trickster, tempter, traitor, red herring, smoke screen, etc.)",
       "entries": [
         "A {deceptive actant} leads the adventurers astray.",
         "{red herring}",
@@ -4891,8 +4892,8 @@
       ]
     },
     {
-      "name": "sidetrack encounter",
-      "explanation": "Encounters providing temporary diversion (tricster, tempter, sense of wonder, comic relief, etc.)",
+      "name": "sidetrack beat",
+      "explanation": "Beats providing temporary diversion (tricster, tempter, sense of wonder, comic relief, etc.)",
       "entries": [
         "A {deceptive actant} causes a temporary diversion for the adventurers.",
         "{wonder}",
@@ -4900,8 +4901,8 @@
       ]
     },
     {
-      "name": "flavor encounter",
-      "explanation": "Encounters that create color and flavor, may bring roleplaying opportunities (plant, animal, tempter, traitor, item, wonder, etc.)",
+      "name": "flavor beat",
+      "explanation": "Beats that create color and flavor, may bring roleplaying opportunities (plant, animal, tempter, traitor, item, wonder, etc.)",
       "entries": [
         "{flavor}",
         "{plant}",
@@ -4911,15 +4912,15 @@
       ]
     },
     {
-      "name": "rescue encounter",
-      "explanation": "Encounters where a prisoner (captive, mentor, ally, shapeshifter, tempter, traitor, trickster, animal, monster, minion, rival, etc.) can be rescued and perhaps befriended.",
+      "name": "rescue beat",
+      "explanation": "Beats where a prisoner (captive, mentor, ally, shapeshifter, tempter, traitor, trickster, animal, monster, minion, rival, etc.) can be rescued and perhaps befriended.",
       "entries": [
         "A {helpless actant} needs to be rescued."
       ]
     },
     {
-      "name": "resource encounter",
-      "explanation": "Encounters that offer new resources (artifact, key, tool, treasure, plant, animal, information, red herring, etc.)",
+      "name": "resource beat",
+      "explanation": "Beats that offer new resources (artifact, key, tool, treasure, plant, animal, information, red herring, etc.)",
       "entries": [
         "The {var:artifact} can be found here.",
         "{key}",
@@ -4932,8 +4933,8 @@
       ]
     },
     {
-      "name": "information encounter",
-      "explanation": "Encounters that offer information (mentor, trickster, clue, shapeshifter, traitor, red herring, etc.)",
+      "name": "information beat",
+      "explanation": "Beats that offer information (mentor, trickster, clue, shapeshifter, traitor, red herring, etc.)",
       "entries": [
         "A {friendly actant} gives useful information.",
         "A {deceptive actant} gives wrong information.",
@@ -4942,22 +4943,22 @@
       ]
     },
     {
-      "name": "help encounter",
-      "explanation": "Encounters that offer help (mentor, ally, etc.)",
+      "name": "help beat",
+      "explanation": "Beats that offer help (mentor, ally, etc.)",
       "entries": [
         "A {friendly actant} offers to help."
       ]
     },
     {
-      "name": "finale encounter",
-      "explanation": "Encounters solely for the adventure climax.",
+      "name": "finale beat",
+      "explanation": "Beats solely for the adventure climax.",
       "entries": [
         "Finale: XXX"
       ]
     },
     {
-      "name": "resolution encounter",
-      "explanation": "Encounters solely for the adventure resolution.",
+      "name": "resolution beat",
+      "explanation": "Beats solely for the adventure resolution.",
       "entries": [
         "Resolution: XXX"
       ]
@@ -4967,7 +4968,7 @@
     },
     {
       "name": "actant",
-      "explanation": "Help table for generating a completely random actant. Usually the 'actant' subtables are called directly by the encounter tables to make the actant fit the encounter.",
+      "explanation": "Help table for generating a completely random actant. Usually the 'actant' subtables are called directly by the beat tables to make the actant fit the beat.",
       "entries": [
         {
           "m": 1,
