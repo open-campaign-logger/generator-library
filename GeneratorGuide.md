@@ -102,7 +102,7 @@ Let's have a look at a simple table that just picks a fantastic-sounding place n
     	]
     }
 
-(For a longer version of this table, see the *nameLocation* table in the Campaign Logger generator library.)
+(For a longer version of this table, see the `nameLocation.json` table in the Campaign Logger generator library.)
 
 
 ### All Those Brackets
@@ -112,16 +112,16 @@ Note how the generator starts and ends with curly brackets. The JSON format uses
 However, the spacing and indentation of the brackets does not matter. The table would work even if it was written as a single line. It is just customary to use a more spacious layout that makes the text easier to read.
 
 
-### name
+### `name`
 
-The *name* property defines the name that is shown the Campaign Logger user interface. The name can contain alphanumeric characters (a - z, A - Z, 0 - 9), as well as underscore (\_) and space ( ) characters. Note that for example a dash (-) is not allowed. It is recommended not to start the name with a number, as calling the table from another table will then not work.
+The `name` property defines the name that is shown the Campaign Logger user interface. The name can contain alphanumeric characters (`a` - `z`, `A` - `Z`, `0` - `9`), as well as underscore (`_`) and space (` `) characters. Note that for example a dash (~~-~~) is not allowed. It is recommended not to start the name with a number, as calling the table from another table will then not work.
 
 
-### resultPattern
+### `resultPattern`
 
-The *resultPattern* property defines what the generator outputs. If a table *name* is included within {curly brackets}, that table is called (rolled on) and the random result is displayed on the place of the table name.
+The `resultPattern` property defines what the generator outputs. If a table `name` is included within `{`curly brackets`}`, that table is called (rolled on) and the random result is displayed on the place of the table name.
 
-The *resultPattern* string can also contain static text, like this:
+The `resultPattern` string can also contain static text, like this:
 
     "resultPattern": "You are in {nameLocation}.",
 
@@ -130,26 +130,24 @@ This could result in:
 > You are in Zambrastil.
 
 
-### tables
+### `tables`
 
-The *tables* property contains one or more tables that the generator may call.
-
-The *tables* property consists of a list of tables, and the JSON syntax dictates that lists must begin and end with square brackets:
+The `tables` property contains one or more tables that the generator may call. This is a list of tables (even for one table), and the JSON syntax dictates that lists must begin and end with square brackets:
 
     "tables": [
         ]
 
 But that is not all: every table in the list must begin and end with curly brackets.
 
-And if there are several tables in the *tables* property, there must be commas between the curly brackets that surround each table. (But not after the last one.)
+And if there are several tables in the `tables` property, there must be commas between the curly brackets that surround each table. (But not after the last one.)
 
 Each of the tables has the following properties:
 
-* **name**: As already seen, the *name* property gives the table a name that can be used for calling that table and outputting the result. Again, the name can contain alphanumeric characters (a - z, A - Z, 0 - 9), as well as underscore (\_) and space ( ) characters. Note that for example a dash (-) is not allowed. It is recommended not to start the name with a number, as calling the table from another table will then not work.
+* **`name`**: As already seen, the `name` property gives the table a name that can be used for calling that table and outputting the result. Again, the name can contain alphanumeric characters (`a` - `z`, `A` - `Z`, `0` - `9`), as well as underscore (`_`) and space (` `) characters. Note that for example a dash (`-`) is not allowed. It is recommended not to start the name with a number, as calling the table from another table will then not work.
 
-* **entries**: The *entries* property contains a list of the results that this table can produce. Each entry must be enclosed in quotation marks. There must be commas between each entry. (But not after the last entry.)
+* **`entries`**: The `entries` property contains a list of the results that this table can produce. Each entry must be enclosed in quotation marks. There must be commas between each entry. (But not after the last entry.)
 
-And because the *entries* property is a list of individual entries, JSON again requires that the list of entries must be surrounded with square brackets:
+And because the `entries` property is also a list of individual entries, JSON again requires that the list of entries must be surrounded with square brackets:
 
     "entries": [
     ]
@@ -166,20 +164,20 @@ Entries can be strings ranging from a single character to an entire paragraph of
 
 That is all you need for creating basic tables that produce randomly picked results from lists.
 
-Your next step could be experimenting with more complex *resultPattern* definitions that include several table calls. Something like:
+Your next step could be experimenting with more complex `resultPattern` definitions that include several table calls. Something like:
 
     "resultPattern": "In a {location}, you encounter {monster} that is guarding {treasure}.",
 
 
 ## Using Your Custom Generators
 
-To install a new generator to Campaign Logger, click the *Options* button (the cogwheel icon) and select the *Manage Custom Generators* option. From the Generators drop down menu, select the *Add new generator...* option and click the *OK* button.
+To install a new generator to Campaign Logger, click the **Options** button (the cogwheel icon) and select the **Manage Custom Generators** option. From the Generators drop down menu, select the **Add new generator...** option and click the **OK** button.
 
-Now select and copy the new generator text to the clipboard (Ctrl+C), select the default text from the New Generator window (Ctrl+A), and replace the default generator content by pasting the copied generator text into the text box (Ctrl+V). Click the *Save* button.
+Now select and copy the new generator text to the clipboard (**Ctrl+C**), select the default text from the New Generator window (**Ctrl+A**), and replace the default generator content by pasting the copied generator text into the text box (**Ctrl+V**). Click the **Save** button.
 
-In the Campaign Logger user interface, there is a button underneath the *Log Entry* section called *Show Generators*. Clicking on this button will show your custom generators.
+In the Campaign Logger user interface, there is a button underneath the *Log Entry* section called **Show Generators**. Clicking on this button will show your custom generators.
 
-The Generators display can have several tabs. The *Uncategorized* tab shows the generators that do not have the Categories property defined. Other generators are listed under different tabs, according to their Categories value.
+The Generators display can have several tabs. The *Uncategorized* tab shows the generators that do not have their `Categories` property defined. Other generators are listed under different tabs, according to their `Categories` value.
 
 
 # Advanced Topics
@@ -191,23 +189,23 @@ The Campaign Logger generator engine offers also several advanced tools for crea
 
 It's possible to add the following formatting controls to table output:
 
-* **\r** - return
-* **\n** - newline
-* **\t** - tabulator
+* **`\r`** - return
+* **`\n`** - newline
+* **`\t`** - tabulator
 
-To add an indented footnote on the next line after an oracle's statement, you could use a *resultPattern* like this:
+To add an indented footnote on the next line after an oracle's statement, you could use a `resultPattern` like this:
 
     "resultPattern": "{oracle statement} \r\n\t 1) This may not come true.",
 
 
 ## Calling External Tables
 
-Not all tables used in the *resultPattern* definition must be located in the same file. You can call another table in three different ways, depending on where the external table is located.
+Not all tables used in the `resultPattern` definition must be located in the same file. You can call another table in three different ways, depending on where the external table is located.
 
 
 ### Public Library Calls
 
-The Campaign Logger server has a standard library of help tables that can be called from any table by adding the *lib:* string in front of the table name:
+The Campaign Logger server has a standard library of help tables that can be called from any table by adding the `lib:` string in front of the table name:
 
     {lib:generatorName}
 
@@ -216,20 +214,20 @@ For public library calls, the generator name used in the call is the name of the
 
 ### Local Generator Calls
 
-Help tables installed on your own Campaign Logger setup using the *Manage Custom Generators* option can be called from any table by adding the *gen:* string in front of the table name:
+Help tables installed on your own Campaign Logger setup using the **Manage Custom Generators** option can be called from any table by adding the `gen:` string in front of the table name:
 
     {gen:generatorName}
 
-For local generator calls, the generator name used in the call is the _name_ property of the generator.
+For local generator calls, the generator name used in the call is the `name` property of the generator.
 
 
 ### Private Library Calls
 
-Help tables installed on the *Private Library* section of the *Manage Custom Generators* option can be called from any table by adding the *private:* string in front of the table name:
+Help tables installed on the *Private Library* section of the **Manage Custom Generators** option can be called from any table by adding the `private:` string in front of the table name:
 
     {private:generatorName}
 
-For private library calls, the generator name used in the call is the _name_ property of the generator.
+For private library calls, the generator name used in the call is the `name` property of the generator.
 
 
 ### Subtable Calls
@@ -238,12 +236,12 @@ The external table call can also specify a subtable within the called generator.
 
     {lib:generatorName#subtable name}
 
-Note that there are no spaces in front of after the *#* character. The subtable name can contain spaces.
+Note that there are no spaces in front of after the `#` character. The subtable name can contain spaces.
 
 
 ## Weighing Values
 
-If you want some table entries to be more common than others, you can specify the *multiplicity* property (m) to it.
+If you want some table entries to be more common than others, you can specify the *multiplicity* property (`m`) to it.
 
 This example defines an entry that appears thee times more likely than unweighed values:
 
@@ -257,7 +255,7 @@ The "m" property causes this entry to appear three times as often as an ordinary
 
 ## Variables
 
-Variables can be a powerful feature when designing advanced generators. They can be defined using the optional *variables* property.
+Variables can be a powerful feature when designing advanced generators. They can be defined using the optional `variables` property.
 
 Variables are specified as a list of value pairs - the key (name of the variable) and its default value:
 
@@ -266,25 +264,25 @@ Variables are specified as a list of value pairs - the key (name of the variable
       "variable 2": "another value"
     },
 
-**Note**: Variable names cannot begin with a number. Otherwise they can contain alphanumeric characters (a - z, A - Z, 0 - 9), as well as underscore (\_) and space ( ) characters. Note that for example a dash (-) is not allowed.
+**Note**: Variable names cannot begin with a number. Otherwise they can contain alphanumeric characters (`a` - `z`, `A` - `Z`, `0` - `9`), as well as underscore (`_`) and space (` `) characters. Note that for example a dash (`-`) is not allowed.
 
 
 ## Random Number Generation
 
-The *dice:* function allows you to simulate dice rolls - even for dice for which there is no physical die available. The following dice call would produce results between 13 and 31:
+The `dice:` function allows you to simulate dice rolls - even for dice for which there is no physical die available. The following dice call would produce results between 13 and 31:
 
     {dice:3d7+10}
 
-Note that only one modifier (such as the *+10* in the above example) is supported. The modifier can only be a plus (+) or minus (-) operation, not for example multiplier (\*) or another die roll.
+Note that only one modifier (such as the `+10` in the above example) is supported. The modifier can only be a plus (`+`) or minus (`-`) operation, not for example multiplier (~~*~~) or another die roll.
 
 
 ## Templates
 
-The *_empty_template.json* file (note the initial underscore character) in the generator repository contains a ready-made structure for creating complex generators that can be used with different types of genres (such as fantasy and modern worlds).
+The `_empty_template.json` file (note the initial underscore character) in the generator repository contains a ready-made structure for creating complex generators that can be used with different types of genres (such as fantasy and modern worlds).
 
-Also available is a simplified template for short help tables: *_simple_template.json*.
+Also available is a simplified template for short help tables: `_simple_template.json`.
 
-Both templates have locations that need to be filled in for each new table, such as the table names and comment fields that require customization. These locations are marked with *XXX*.
+Both templates have locations that need to be filled in for each new table, such as the table names and comment fields that require customization. These locations are marked with `XXX`.
 
 The templates follow the recommended practices explained in the following section.
 
@@ -298,28 +296,28 @@ Complex generators (as opposed to simpler tables) use a standard structure to ma
 
 ## A Closer Look at Table Properties
 
-### name
+### `name`
 
 This mandatory property specifies the name that shown in the list of available generators in the Campaign Logger user interface.
 
-Table names can include spaces. They must begin with a non-numeric character. So, instead of *4 seasons*, name the table *four seasons*, for example.
+Table names can include spaces. They must begin with a non-numeric character. So, instead of ~~4 seasons~~, name the table `four seasons`, for example.
 
-Complex tables (typically producing more than a single phrase of output) are named 'generators'. The generator names are capitalized (as in "Weather Generator") to make them stand out better in table listings.
+Complex tables (typically producing more than a single phrase of output) are named 'generators'. It is a recommended practice to capitalized generator names (for example "Weather Generator") to make them stand out better in table listings.
 
-Simple tables that output just a few words are named 'tables' and not capitalized (as in "weather table").
+Simple tables that output just a few words are not capitalized (as in "weather").
 
-The above mentioned "Weather Generator" could produce a detailed weather report, maybe even several sentences long. A simple "weather table" could just print out "heavy rain" or "clear skies", for example.
+The above mentioned "Weather Generator" could produce a detailed weather report, maybe even several sentences long. A simple "weather table could just print out "heavy rain" or "clear skies", for example.
 
 
 ### resultPattern
 
-A simple resultPattern can contain just a single call to a subtable:
+A simple `resultPattern` can contain just a single call to a subtable:
 
     "resultPattern": "{color}",
 
-This would call the color subtable (which in turn could be a more complex beast and call several different tables multiple times). Still, the  output from that single table call would be returned as the result of rolling on this table.
+This would call the `color` subtable (which in turn could be a more complex beast and call several different tables multiple times). Still, the  output from that single table call would be returned as the result of rolling on this table.
 
-A more complex generator could have several calls in the result pattern, as in the Food Generator:
+A more complex generator could have several calls in the result pattern, as in the *food* table:
 
     "resultPattern": "{appearance} {recipe} with {ingredients} ({finishing})",
 
@@ -334,67 +332,67 @@ The metadata properties do not affect the functionality of the table, but they p
 
 Any of the metadata properties can be omitted. Still, using them is recommended, as they make sharing tables easier and can be useful reminders even for yourself.
 
-Include whichever optional properties that are relevant for the file. All of the optional properties are included in the *_empty_template* sample file for reference.
+Include whichever optional properties that are relevant for the file. All of the optional properties are included in the `_empty_template` sample file for reference.
 
 The following optional properties can be used:
 
-* **explanation**: A one-sentence explanation of the table: what kind of results can be expected.
+* **`explanation`**: A one-sentence explanation of the table: what kind of results can be expected.
 
-* **structure**: A brief explanation of the structure of the file and the conventions used. This is useful especially for complex generators whose logic can be difficult to decipher. The *_empty_template* sample file contains a basic example of a structure property. You can modify it to your liking.
+* **`structure`**: A brief explanation of the structure of the file and the conventions used. This is useful especially for complex generators whose logic can be difficult to decipher. The `_empty_template.json` sample file contains a basic example of a structure property. You can modify it to your liking.
 
-* **note**: Notes and instructions for other users, especially for those who plan to update the table. The note should make the logic easier to understand. for example explain some strange seeming details of the implementation. As an example, the modification table contains the following note:
+* **`note`**: Notes and instructions for other users, especially for those who plan to update the table. The note should make the logic easier to understand. for example explain some strange seeming details of the implementation. As an example, the modification table contains the following note:
 
       Note: Does not include 'quite', as its meaning can vary.
 
-* **bugs**: If there are known problems with the table, they can be listed  here. This helps you (or whoever next works on the table) to notice the pitfalls, and maybe even fix them.
+* **`bugs`**: If there are known problems with the table, they can be listed  here. This helps you (or whoever next works on the table) to notice the pitfalls, and maybe even fix them.
 
-* **to do**: Information to you and other table authors about still missing functionality and ideas for expansion.
+* **`to do`**: Information to you and other table authors about still missing functionality and ideas for expansion.
 
-* **see**: If there are related generator files that could be helpful, they can be mentioned here.
+* **`see`**: If there are related generator files that could be helpful, they can be mentioned here.
 
-* **date**: The date of the last update, preferably using the international notation of year-month-day (for example *2017-09-27*). This helps in sorting the tables and also lets others to see if the file is likely to still be in active development.
+* **`date`**: The date of the last update, preferably using the international notation of year-month-day (for example *2017-09-27*). This helps in sorting the tables and also lets others to see if the file is likely to still be in active development.
 
-* **authors**: Persons who have contributed to the file, listed in chronological order (the newest contributor last). Listing all of the authors is not only polite, it also helps other users who may want to give feedback or ask for assistance.
+* **`authors`**: Persons who have contributed to the file, listed in chronological order (the newest contributor last). Listing all of the authors is not only polite, it also helps other users who may want to give feedback or ask for assistance.
 
-* **sources**: This property is for listing the references and other information sources that have been helpful when creating the file. This helps others to expand the file and find more information about the subject.
+* **`sources`**: This property is for listing the references and other information sources that have been helpful when creating the file. This helps others to expand the file and find more information about the subject.
 
-* **genre**: If the table is intended for only certain genres, it can be specified here. This presents one way to scan for suitable tables. Commonly used genres are the following:
+* **`genre`**: If the table is intended for only certain genres, it can be specified here. This presents one way to scan for suitable tables. Commonly used genres are the following:
 
-  * *fantasy* (imaginary realms of myth and magic)
-  * *futuristic* (science fiction worlds in)
-  * *historical* (some period of real-world history)
-  * *modern* (contemporary settings resembling the real world)
-  * *myth* (mundane world with hidden, mythic secrets)
-  * *universal* (not specific to a genre)
+  * **fantasy** (imaginary realms of myth and magic)
+  * **futuristic** (science fiction worlds in)
+  * **historical** (some period of real-world history)
+  * **modern** (contemporary settings resembling the real world)
+  * **myth** (mundane world with hidden, mythic secrets)
+  * **universal** (not specific to a genre)
 
   Using these common categories helps to organize the tables in a standard way, but any genre definition can be used.
 
-* **categories**: The categories property specifies a class in which the file belongs to. This is used for organizing the generator files in the Campaign Logger user interface. It is recommended to select one of the following values:
+* **`categories`**: The categories property specifies a class in which the file belongs to. This is used for organizing the generator files in the Campaign Logger user interface. It is recommended to select one of the following values:
 
-  * *character* (PC and NPC generation)
-  * *encounter* (events and random encounters)
-  * *item* (equipment and treasure generation)
-  * *magic* (spells and magic items)
-  * *meta* (metadata, such as templates and examples)
-  * *monster* (beast and creature generation)
-  * *name* (person, item and location names)
-  * *story* (plot and adventure generation)
-  * *utility* (help tables for use by other tables)
-  * *world* (locations, cultures and history)
+  * **character** (PC and NPC generation)
+  * **encounter** (events and random encounters)
+  * **item** (equipment and treasure generation)
+  * **magic** (spells and magic items)
+  * **meta** (metadata, such as templates and examples)
+  * **monster** (beast and creature generation)
+  * **name** (person, item and location names)
+  * **story** (plot and adventure generation)
+  * **utility** (help tables for use by other tables)
+  * **world** (locations, cultures and history)
 
   The categories property can contain freeform text, so it is possible to specify also other categories. But using a value from the above list makes it easier to organize tables by different contributors in a uniform way.
 
-* **tags**: Tags are a more freeform way to organize the generator files. They make it easier to find content that is related to a keyword. Tags should be preceded by the hash symbol (#) and separated by commas.  You can specify as many tags as you like.
+* **`tags`**: Tags are a more freeform way to organize the generator files. They make it easier to find content that is related to a keyword. Tags should be preceded by the hash symbol (`#`) and separated by commas.  You can specify as many tags as you like.
 
   Examples of tags could be for example the following:
 
       "tags": "#sea, #caribbean, #pirates"
 
-If some of the metadata properties are not relevant, they can of course be omitted. (For example if there are no relevant references for the "see" property.)
+If some of the metadata properties are not relevant, they can of course be omitted. (For example if there are no relevant references for the `see` property.)
 
 It is also possible to define additional properties in the JSON files. However, it is recommended to stick to the properties defined above. This way it is easier to automatically categorize the tables, for example.
 
-Also tables can use these metadata properties, such as an *explanation* to add notes specific to a particular subtable. These metadata properties are completely optional.
+Also tables can use these metadata properties, such as an `explanation` to add notes specific to a particular subtable. These metadata properties are completely optional.
 
 This example from the direction table contains a note explaining why the called subtables are named as they are:
 
@@ -409,24 +407,24 @@ This example from the direction table contains a note explaining why the called 
     },
 
 
-**Note**: If a metadata property is not necessary for a file, either leave that property out, or leave its value field empty. For example, if your table has no bugs, do not fill the *bugs* property with "none known". Just leave it empty. Keeping unnecessary fields empty makes it easier to automatically find tables that need debugging, for example.
+**Note**: If a metadata property is not necessary for a file, either leave that property out, or leave its value field empty. For example, if your table has no bugs, please _do not_ fill the *`bugs`* property with "none known". Just leave it empty. Keeping unnecessary fields empty makes it easier to automatically find tables that need debugging, for example.
 
 
 ### Table Properties in Detail
 
-#### Name
+#### `name`
 
     "name": "",
 
 
-#### Explanation
+#### `explanation`
 
     "explanation": "",
 
 
-#### Entries
+#### `entries`
 
-The *entries* property contains a list of the items in the table. The whole of the list is enclosed in square brackets.
+The `entries` property contains a list of the items in the table. The whole of the list is enclosed in square brackets.
 
 Individual entries are written in quotes. Entries can be character strings from a single letter to an entire paragraph of text.
 
@@ -445,11 +443,11 @@ There is a comma between each entry:
 
 It is a recommended practice to make any generators intended to be shared with other users as generic as possible, so that they are suitable for many different game worlds.
 
-Therefore each generator should begin with generic tables whose results would work with a fantasy campaign as well as a science fiction setting. These are the subtables that the *resultPattern* should call by default.
+Therefore each generator should begin with generic tables whose results would work with a fantasy campaign as well as a science fiction setting. These are the subtables that the `resultPattern` should call by default.
 
-Typically there should be at least generic tables named *common* and *rare*, for producing usual and unusual results for just about any setting.
+Typically there should be at least generic tables named `common` and `rare`, for producing usual and unusual results for just about any setting.
 
-After these generic tables, genre-specific tables should follow. These subtables should be reached only if specifically called with a *{lib:Generator#subtable}* call.
+After these generic tables, genre-specific tables should follow. These subtables should be reached only if specifically called with a `{lib:Generator#subtable}` call.
 
 
 ### common
@@ -495,14 +493,14 @@ The end of the file is a good location for subtables that are not called from ot
     "name": "special",
     "explanation": "Special XXX types.",
 
-An example of this kind case could be the color table that contains the "black and white" subtable in end. That table produces only shades of black, grey and white and could be called for example to describe items in a black & white photograph.
+An example of this kind case could be the *color* table that contains the "black and white" subtable in end. That table produces only shades of black, grey and white and could be called for example to describe items in a black & white photograph.
 
 It is perfectly OK if there is overlap between the results produced by different tables.
 
 
 # Pro Tips
 
-The JSON format does not support proper comments, but it is possible to add a comment to each table using the *explanation* property. Sometimes it would be useful to add comments also between tables, for example to separate different groups of tables. This can be done adding an element like this between tables:
+The JSON format does not support proper comments, but it is possible to add a comment to each table using the `explanation` property. Sometimes it would be useful to add comments also between tables, for example to separate different groups of tables. This can be done adding an element like this between tables:
 
 		{
 			"******************************************": "SPECIAL CASES"
@@ -510,11 +508,12 @@ The JSON format does not support proper comments, but it is possible to add a co
 
 An example of this kind of a separator is included in the generator template files.
 
+
 # Debugging Tips
 
-You can check the workings of a certain part of the generator by modifying the *resultPattern* string to execute a specific subtable call.
+You can check the workings of a certain part of the generator by modifying the `resultPattern` string to execute a specific subtable call.
 
-For example if you wanted to check how well the new subtable you just added works, you can temporarily change the resultPattern value into the name of that subtable:
+For example if you wanted to check how well the new subtable you just added works, you can temporarily change the `resultPattern` value into the name of that subtable:
 
 		"resultPattern": "{my new subtable}",
 
@@ -525,4 +524,4 @@ Now the generator will produce results only from the specified subtable.
 
 * **A table call is not working.**
 
-  Check that the table *name* property is correctly formed. The name of a called table cannot begin with a number. Otherwise the name can contain alphanumeric characters (a - z, A - Z, 0 - 9), as well as underscore (\_) and space ( ) characters. Note that for example a dash (-) is not allowed.
+  Check that the table `name` property is correctly formed. The name of a called table cannot begin with a number. Otherwise the name can contain alphanumeric characters (`a` - `z`, `A` - `Z`, `0` - `9`), as well as underscore (`_`) and space (` `) characters. Note that for example a dash (~~-~~) is not allowed.

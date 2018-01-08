@@ -57,3 +57,12 @@ typings/
 # dotenv environment variables file
 .env
 
+# Campaign Logger files
+*.pdf
+.gitignore
+Welcome to your new FTP-Home, Esko!.txt
+json/_encounterSeed_generator.json
+json/_goblinName_generator.json
+json/_heroOfTheRealm_generator.json
+json/_rumorTown_generator.json
+json/external.json
