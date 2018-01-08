@@ -31,14 +31,14 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{treasure}{var:treasure}"
+        "{treasure}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {treasure}{var:treasure}"
+        "{adjective} {treasure}"
       ]
     },
     {

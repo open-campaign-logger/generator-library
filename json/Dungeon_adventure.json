@@ -193,7 +193,7 @@
   "bugs": "",
   "to do": "More external table calls to add variety.",
   "see": "dungeon_room, Five_room_dungeon, hook_line_and_sinker_adventure",
-  "date": "2018-01-04",
+  "date": "2018-01-08",
   "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon, RolePlayingTips.com",
   "genre": "universal",
@@ -1349,7 +1349,7 @@
           "v": "",
           "set": {
             "motif": "Infernal portal",
-            "motifdescription": "A gateway to nether realms has opened, vomiting out hellish denizens of the underworld to occupy the site."
+            "motifdescription": "A gateway to nether realms has opened, vomiting out hellish denizens of the underworld to occupy their new abode."
           }
         }
       ]

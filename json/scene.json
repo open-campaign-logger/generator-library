@@ -160,7 +160,8 @@
     },
     {
       "name": "scene",
-      "explanation": "Help table for generating a completely random beat. Usually the beat subtables are called directly.",
+      "explanation": "Help table for generating a completely random beat.",
+      "note": "Usually the beat subtables are called directly.",
       "entries": [
         {
           "m": 1,
@@ -532,7 +533,7 @@
     },
     {
       "name": "betrayal beat",
-      "explanation": "Beats where the adventurers are betrayed (traitor, shapeshifter, tempter, trickster, etc).",
+      "explanation": "Beats where the adventurers are betrayed (by a traitor, shapeshifter, tempter, trickster, etc).",
       "entries": [
         "A {lib:actant#deceptive} needs help."
       ]

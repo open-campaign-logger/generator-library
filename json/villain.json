@@ -27,7 +27,7 @@
   "bugs": "",
   "to do": "Categorize villains by type.",
   "see": "actant, Dungeon_adventure, hero, minion, scene",
-  "date": "2018-01-06",
+  "date": "2018-01-08",
   "authors": "Esko Vesala.",
   "sources": "Wikia.com",
   "genre": "fantasy",
@@ -498,28 +498,30 @@
       "name": "adjective",
       "explanation": "Adjectives describing the villain.",
       "entries": [
+        "dark",
+        "mysterious",
+        "relentless",
         "hateful",
         "spiteful",
         "sadistic",
-        "charismatic",
         "scheming",
         "hostile",
         "evil",
-        "relentless",
         "{rare adjective}"
       ]
     },
     {
       "name": "villain introduction",
       "explanation": "Introductory words about the villain.",
-      "entries": []
+      "entries": [
+        ""
+      ]
     },
     {
       "name": "rare adjective",
       "explanation": "",
       "entries": [
-        "dark",
-        "mysterious",
+        "charismatic",
         "ancient",
         "vile",
         "horned",

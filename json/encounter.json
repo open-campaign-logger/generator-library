@@ -124,10 +124,18 @@
       "entries": [
         {
           "m": 1,
+          "v": "{barren}",
+          "set": {
+            "milieu": "barren",
+            "milieudescription": "on barren lowlands"
+          }
+        },
+        {
+          "m": 1,
           "v": "{grassland}",
           "set": {
             "milieu": "grassland",
-            "milieudescription": "plains"
+            "milieudescription": "on grasslands"
           }
         },
         {
@@ -135,7 +143,7 @@
           "v": "{forest}",
           "set": {
             "milieu": "forest",
-            "milieudescription": "forested area"
+            "milieudescription": "in a forested area"
           }
         },
         {
@@ -143,7 +151,7 @@
           "v": "{hill}",
           "set": {
             "milieu": "hill",
-            "milieudescription": "hilly area"
+            "milieudescription": "in a hilly area"
           }
         },
         {
@@ -151,7 +159,7 @@
           "v": "{mountain}",
           "set": {
             "milieu": "mountain",
-            "milieudescription": "mountainous area"
+            "milieudescription": "in a mountainous area"
           }
         }
       ]
@@ -165,7 +173,7 @@
           "v": "{wetlands}",
           "set": {
             "milieu": "wetlands",
-            "milieudescription": "wetlands"
+            "milieudescription": "on wetlands"
           }
         },
         {
@@ -173,7 +181,7 @@
           "v": "{river}",
           "set": {
             "milieu": "river",
-            "milieudescription": "river"
+            "milieudescription": "by a river"
           }
         },
         {
@@ -181,7 +189,7 @@
           "v": "{lake}",
           "set": {
             "milieu": "lake",
-            "milieudescription": "lake"
+            "milieudescription": "by a lake"
           }
         },
         {
@@ -189,7 +197,7 @@
           "v": "{coast}",
           "set": {
             "milieu": "coast",
-            "milieudescription": "coastal area"
+            "milieudescription": "near the coast"
           }
         },
         {
@@ -197,7 +205,15 @@
           "v": "{sea}",
           "set": {
             "milieu": "sea",
-            "milieudescription": "sea"
+            "milieudescription": "at the sea"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{ship}",
+          "set": {
+            "milieu": "ship",
+            "milieudescription": "onboard a ship"
           }
         }
       ]
@@ -365,16 +381,16 @@
       ]
     },
     {
-      "name": "urban",
-      "explanation": "City encounter structure.",
+      "name": "city",
+      "explanation": "Urban encounter structure.",
       "entries": [
-        "{urban encounter}",
-        "{urban encounter} {urban goal}",
-        "{urban event}"
+        "{city encounter}",
+        "{city encounter} {city goal}",
+        "{city event}"
       ]
     },
     {
-      "name": "urban encounter",
+      "name": "city encounter",
       "explanation": "Encounters in a city or a town.",
       "entries": [
         "{lib:animal#pet}",
@@ -382,17 +398,21 @@
       ]
     },
     {
-      "name": "urban goal",
-      "explanation": "Goals for encounters in a city.",
+      "name": "city goal",
+      "explanation": "Goals for encounters in an urban environment.",
       "entries": [
-        "XXX"
+        "tries to enter a tavern"
       ]
     },
     {
-      "name": "urban event",
-      "explanation": "Events in a city.",
+      "name": "city event",
+      "explanation": "Events in cities and towns.",
       "entries": [
-        "XXX"
+        "someone empties a chamber pot from a window without checking the street below first",
+        "a peddler's cart is overturned",
+        "a minstrel offers to make songs about the passersby, for a price",
+        "a con artist is arranging a cups and balls game",
+        "a bar fight moves to the streets"
       ]
     },
     {
@@ -416,14 +436,14 @@
       "name": "suburban goal",
       "explanation": "Goals for encounters in the outskirts of a city.",
       "entries": [
-        "XXX"
+        "is looking for the fastest way to get out of the inhabited area"
       ]
     },
     {
       "name": "suburban event",
       "explanation": "Events in the outskirts of a city.",
       "entries": [
-        "XXX"
+        "a cart has been overturned and piles of produce block the way"
       ]
     },
     {
@@ -439,14 +459,14 @@
       "name": "village encounter",
       "explanation": "Encounters in a village or a hamlet.",
       "entries": [
-        "{lib:animal#domesticated}"
+        "{lib:animal#domestic}"
       ]
     },
     {
       "name": "village goal",
       "explanation": "Goals in a village.",
       "entries": [
-        "XXX"
+        "wants to find the fastest way to the next nearest village"
       ]
     },
     {
@@ -469,7 +489,7 @@
       "name": "rural encounter",
       "explanation": "Encounters in the countryside.",
       "entries": [
-        "{lib:animal#domesticated}"
+        "{lib:animal#domestic mammal}"
       ]
     },
     {
@@ -483,7 +503,9 @@
       "name": "rural event",
       "explanation": "Events in the countryside.",
       "entries": [
-        "XXX"
+        "farmers argue over livestock",
+        "a {lib:animal#domestic mammal} is panicked and starts a stampede",
+        "a {lib:animal#domestic mammal} herd crosses the road"
       ]
     },
     {
@@ -499,7 +521,7 @@
       "name": "outpost encounter",
       "explanation": "Encounters in outposts, such as camps and fortifications.",
       "entries": [
-        "{lib:animal#domesticated}"
+        "{lib:animal#domestic}"
       ]
     },
     {
@@ -543,9 +565,39 @@
       "name": "grassland event",
       "explanation": "Events on grasslands.",
       "entries": [
-        "dust storm",
         "whirlwind",
         "tornado"
+      ]
+    },
+    {
+      "name": "barren",
+      "explanation": "Barren encounter structure.",
+      "entries": [
+        "{barren encounter}",
+        "{barren encounter} {barren goal}",
+        "{barren event}"
+      ]
+    },
+    {
+      "name": "barren encounter",
+      "explanation": "Encounters on arid lowlands.",
+      "entries": [
+        "poisonous snake",
+        "a lizard"
+      ]
+    },
+    {
+      "name": "barren goal",
+      "explanation": "Goals for encounters on arid lowlands.",
+      "entries": [
+        "looking for a shelter"
+      ]
+    },
+    {
+      "name": "barren event",
+      "explanation": "Events on arid lowlands.",
+      "entries": [
+        "dust storm"
       ]
     },
     {
@@ -651,21 +703,21 @@
       "name": "savanna encounter",
       "explanation": "Encounters on the tropical grasslands.",
       "entries": [
-        "XXX"
+        "hunter"
       ]
     },
     {
       "name": "savanna goal",
       "explanation": "Goals for encounters on the tropical grasslands.",
       "entries": [
-        "XXX"
+        "looking for somewhere to cool down"
       ]
     },
     {
       "name": "savanna event",
       "explanation": "Events on the tropical grasslands.",
       "entries": [
-        "XXX"
+        "a predator is dining on an animal carcass"
       ]
     },
     {
@@ -719,7 +771,7 @@
       "name": "hill goal",
       "explanation": "Goals for encounters in the hills.",
       "entries": [
-        "XXX"
+        "tries to climb to the top of the hill"
       ]
     },
     {
@@ -907,7 +959,39 @@
       "explanation": "Events at sea.",
       "entries": [
         "a ship can be seen on the horizon",
-        "tornadic watersprout"
+        "a tornadic watersprout is spotted on the horizon"
+      ]
+    },
+    {
+      "name": "ship",
+      "explanation": "Ship encounter structure.",
+      "entries": [
+        "{ship encounter}",
+        "{ship encounter} {ship goal}",
+        "{ship event}"
+      ]
+    },
+    {
+      "name": "ship encounter",
+      "explanation": "Encounters onboard a ship.",
+      "entries": [
+        "the bosun",
+        "the captain of the ship"
+      ]
+    },
+    {
+      "name": "ship goal",
+      "explanation": "Goals for encounters onboard a ship.",
+      "entries": [
+        "for some reason attempts to jump overboard"
+      ]
+    },
+    {
+      "name": "ship event",
+      "explanation": "Events onboard a ship.",
+      "entries": [
+        "some of the rations seem to have disappeared",
+        "a stowaway is discovered"
       ]
     },
     {
