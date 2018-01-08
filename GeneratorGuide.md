@@ -166,7 +166,7 @@ That is all you need for creating basic tables that produce randomly picked resu
 
 Your next step could be experimenting with more complex `resultPattern` definitions that include several table calls. Something like:
 
-    "resultPattern": "In a {location}, you encounter {monster} that is guarding {treasure}.",
+    "resultPattern": "In the {location}, you encounter a {monster} that is guarding a {treasure}.",
 
 
 ## Using Your Custom Generators
@@ -185,22 +185,22 @@ The Generators display can have several tabs. The *Uncategorized* tab shows the 
 The Campaign Logger generator engine offers also several advanced tools for creating more complex generators.
 
 
-## Formatting the output
+## Subtables
 
-It's possible to add the following formatting controls to table output:
+As seen in the in *Crash Course* section above, a table can call another table located in the same file:
 
-* **`\r`** - return
-* **`\n`** - newline
-* **`\t`** - tabulator
+  "resultPattern": "{location}",
 
-To add an indented footnote on the next line after an oracle's statement, you could use a `resultPattern` like this:
+		"resultPattern": "In the {location}, you encounter a  {monster} that is guarding {treasure}.",
 
-    "resultPattern": "{oracle statement} \r\n\t 1) This may not come true.",
+A string inside the {curly braces} is the `name` property of a table in the same JSON file, and the table call string will be replaced in the generator output by the result of that subtable call. For example:
+
+*In the dungeon, you encounter a dragon that is guarding a vast hoard of gold.*
 
 
-## Calling External Tables
+## External Tables
 
-Not all tables used in the `resultPattern` definition must be located in the same file. You can call another table in three different ways, depending on where the external table is located.
+Not all tables that are called by your table must be located in the same file. You can call another table in three different ways, depending on where the external table is located.
 
 
 ### Public Library Calls
@@ -230,7 +230,7 @@ Help tables installed on the *Private Library* section of the **Manage Custom Ge
 For private library calls, the generator name used in the call is the `name` property of the generator.
 
 
-### Subtable Calls
+### External Subtable Calls
 
 The external table call can also specify a subtable within the called generator. To do that, insert a hash mark (#) after the file name, and then the name of the subtable.
 
@@ -274,6 +274,44 @@ The `dice:` function allows you to simulate dice rolls - even for dice for which
     {dice:3d7+10}
 
 Note that only one modifier (such as the `+10` in the above example) is supported. The modifier can only be a plus (`+`) or minus (`-`) operation, not for example multiplier (~~*~~) or another die roll.
+
+
+## Formatting the output
+
+### Linebreaks and Tabulation
+
+It's possible to add the following formatting controls to table output:
+
+* **`\r`** - return
+* **`\n`** - newline
+* **`\t`** - tabulator
+
+To add an indented footnote on the next line after an oracle's statement, you could use a `resultPattern` like this:
+
+    "resultPattern": "{oracle statement} \r\n\t 1) This may not come true.",
+
+
+### Tables
+
+Generator output can be formatted as table by using the following syntax:
+
+		|| one || two || three
+		|| a   || b   || c     
+
+This will produce the following output
+
+one | two | three
+--- | --- | -----
+a   | b   | c    
+
+Note that the vertical bars (`|`) must be separated from table cell contents by at least one space (` `). Lines end without vertical bars.
+
+Table rows are created by continuing the table from the next line, created with an ordinary line break in the table data. (In other words, just press the **Enter** key where the next table line should start.)
+
+ To clarify:
+
+		||<space>one<space>||<space>two<space>||<space>three <enter>
+		|| a || b || c
 
 
 ## Templates
