@@ -304,7 +304,7 @@ one | two | three
 --- | --- | -----
 a   | b   | c
 
-Note that the vertical bars (`|`) must be separated from table cell contents by at least one space (` `). Lines must start immediately with vertical bars (with no space in front), and lines must end without vertical bars.
+Note that the pairs of vertical bars (`||`) must be separated from table cell contents by at least one space (` `). Lines must start immediately with vertical bars (with no space in front), and lines must end without vertical bars.
 
  To clarify:
 
