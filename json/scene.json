@@ -9,7 +9,7 @@
     "startbold": "<B>",
     "endbold": "</B>",
     "para": "<P>",
-    "encounter": "",
+    "beat": "",
     "artifact": "artifact",
     "treasure": "treasure",
     "footnote": ""
@@ -20,9 +20,9 @@
   "bugs": "",
   "to do": "",
   "see": "actant, Five_room_dungeon, hero, villain",
-  "date": "2018-01-06",
+  "date": "2018-01-08",
   "authors": "Esko Vesala.",
-  "sources": "Five_room_dungeon",
+  "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon",
   "genre": "universal",
   "categories": [
     ""
@@ -116,7 +116,7 @@
           "m": 1,
           "v": "Kidnapped{var:endheading} The {lib:synonym#troupe} has been taken as prisoners. ",
           "set": {
-            "encounter": "kidnapped"
+            "beat": "kidnapped"
           }
         },
         {
@@ -143,7 +143,7 @@
           "m": 1,
           "v": "Memory loss{var:endheading} The {lib:synonym#troupe} has no recollection of how they have ended up here.",
           "set": {
-            "encounter": "memory loss"
+            "beat": "memory loss"
           }
         },
         {
@@ -160,7 +160,7 @@
     },
     {
       "name": "scene",
-      "explanation": "Help table for generating a completely random encounter. Usually the encounter subtables are called directly.",
+      "explanation": "Help table for generating a completely random beat. Usually the beat subtables are called directly.",
       "entries": [
         {
           "m": 1,
@@ -198,44 +198,44 @@
       "entries": [
         {
           "m": 1,
-          "v": "Combat{var:endheading} {combat encounter}",
+          "v": "Combat{var:endheading} {combat beat}",
           "set": {
-            "encounter": "combat"
+            "beat": "combat"
           }
         },
         {
           "m": 1,
-          "v": "Trap{var:endheading} {trap encounter}",
+          "v": "Trap{var:endheading} {trap beat}",
           "set": {
-            "encounter": "trap"
+            "beat": "trap"
           }
         },
         {
           "m": 1,
-          "v": "Hazard{var:endheading} {hazard encounter}",
+          "v": "Hazard{var:endheading} {hazard beat}",
           "set": {
-            "encounter": "hazard"
+            "beat": "hazard"
           }
         },
         {
           "m": 1,
-          "v": "Trial{var:endheading} {trial encounter}",
+          "v": "Trial{var:endheading} {trial beat}",
           "set": {
-            "encounter": "trial"
+            "beat": "trial"
           }
         },
         {
           "m": 1,
-          "v": "Competition{var:endheading} {competition encounter}",
+          "v": "Competition{var:endheading} {competition beat}",
           "set": {
-            "encounter": "competition"
+            "beat": "competition"
           }
         },
         {
           "m": 1,
-          "v": "Rescue{var:endheading} {rescue encounter}",
+          "v": "Rescue{var:endheading} {rescue beat}",
           "set": {
-            "encounter": "rescue"
+            "beat": "rescue"
           }
         }
       ]
@@ -253,44 +253,44 @@
       "entries": [
         {
           "m": 1,
-          "v": "Betrayal{var:endheading} {betrayal encounter}",
+          "v": "Betrayal{var:endheading} {betrayal beat}",
           "set": {
-            "encounter": "betrayal"
+            "beat": "betrayal"
           }
         },
         {
           "m": 1,
-          "v": "Setback{var:endheading} {setback encounter}",
+          "v": "Setback{var:endheading} {setback beat}",
           "set": {
-            "encounter": "setback"
+            "beat": "setback"
           }
         },
         {
           "m": 1,
-          "v": "Hindrance{var:endheading} {hindrance encounter}",
+          "v": "Hindrance{var:endheading} {hindrance beat}",
           "set": {
-            "encounter": "hindrance"
+            "beat": "hindrance"
           }
         },
         {
           "m": 1,
-          "v": "Trick{var:endheading} {trick encounter}",
+          "v": "Trick{var:endheading} {trick beat}",
           "set": {
-            "encounter": "trick"
+            "beat": "trick"
           }
         },
         {
           "m": 1,
-          "v": "Information{var:endheading} {information encounter}",
+          "v": "Information{var:endheading} {information beat}",
           "set": {
-            "encounter": "information"
+            "beat": "information"
           }
         },
         {
           "m": 1,
-          "v": "Help{var:endheading} {help encounter}",
+          "v": "Help{var:endheading} {help beat}",
           "set": {
-            "encounter": "help"
+            "beat": "help"
           }
         }
       ]
@@ -304,34 +304,34 @@
     },
     {
       "name": "mood scene type",
-      "explanation": "Encounters for atmosphere and roleplaying.",
+      "explanation": "beats for atmosphere and roleplaying.",
       "entries": [
         {
           "m": 1,
-          "v": "Distraction{var:endheading} {distraction encounter}",
+          "v": "Distraction{var:endheading} {distraction beat}",
           "set": {
-            "encounter": "distraction"
+            "beat": "distraction"
           }
         },
         {
           "m": 1,
-          "v": "Sidetrack{var:endheading} {sidetrack encounter}",
+          "v": "Sidetrack{var:endheading} {sidetrack beat}",
           "set": {
-            "encounter": "sidetrack"
+            "beat": "sidetrack"
           }
         },
         {
           "m": 1,
-          "v": "Flavor{var:endheading} {flavor encounter}",
+          "v": "Flavor{var:endheading} {flavor beat}",
           "set": {
-            "encounter": "flavor"
+            "beat": "flavor"
           }
         },
         {
           "m": 1,
-          "v": "Resource{var:endheading} {resource encounter}",
+          "v": "Resource{var:endheading} {resource beat}",
           "set": {
-            "encounter": "resource"
+            "beat": "resource"
           }
         }
       ]
@@ -381,7 +381,7 @@
           "m": 1,
           "v": "Final Battle{var:endheading} A great battle againts the villain and the minions ensues. The result will determine the final fate of everyone involved! ",
           "set": {
-            "encounter": "final battle"
+            "beat": "final battle"
           }
         }
       ]
@@ -401,7 +401,7 @@
           "m": 1,
           "v": "Final Revelation{var:endheading} The truth about the adventure's goal is finally revealed! ",
           "set": {
-            "encounter": "final revelation"
+            "beat": "final revelation"
           }
         }
       ]
@@ -424,56 +424,56 @@
           "m": 1,
           "v": "Happy Ending{var:endheading} Everything turns out fine. ",
           "set": {
-            "encounter": "happy ending"
+            "beat": "happy ending"
           }
         },
         {
           "m": 1,
           "v": "Villain Dies{var:endheading} The villain is dead and cannot threaten anyone anymore. ",
           "set": {
-            "encounter": "villain dies"
+            "beat": "villain dies"
           }
         },
         {
           "m": 1,
           "v": "Villain Surrenders{var:endheading} The villain gives up and surrenders to the {lib:synonym#troupe}.",
           "set": {
-            "encounter": "villain surrenders"
+            "beat": "villain surrenders"
           }
         },
         {
           "m": 1,
           "v": "Villain Escapes{var:endheading} The villain manages to flee from the {lib:synonym#troupe}. ",
           "set": {
-            "encounter": "villain escapes"
+            "beat": "villain escapes"
           }
         },
         {
           "m": 1,
           "v": "Heroes Captured{var:endheading} The villain manages to capture the {lib:synonym#troupe}. Will they ever be able to escape? That is a different story... ",
           "set": {
-            "encounter": "heroes captured"
+            "beat": "heroes captured"
           }
         },
         {
           "m": 1,
           "v": "Heroes Escape{var:endheading} The villain attempts to capture the {lib:synonym#troupe}, but they still have a slim chance of escape! ",
           "set": {
-            "encounter": "heroes escape"
+            "beat": "heroes escape"
           }
         },
         {
           "m": 1,
           "v": "Cliffhanger{var:endheading} A shocking turn takes the {lib:synonym#troupe} by surprise. What will they do? That is a different story... ",
           "set": {
-            "encounter": "cliffhanger"
+            "beat": "cliffhanger"
           }
         },
         {
           "m": 1,
           "v": "Greater Threat{var:endheading} A menace much greater than anyone anticipated is revealed! ",
           "set": {
-            "encounter": "greater threat"
+            "beat": "greater threat"
           }
         }
       ]
@@ -520,54 +520,54 @@
       ]
     },
     {
-      "**************************************************": "ENCOUNTERS"
+      "**************************************************": "BEATS"
     },
     {
-      "name": "hook encounter",
-      "explanation": "Encounters solely for starting the adventure.",
+      "name": "hook beat",
+      "explanation": "Beats solely for starting the adventure.",
       "entries": [
         "Hook: XXX"
       ]
     },
     {
-      "name": "combat encounter",
-      "explanation": "Encounters with hostile creatures (guardian, minion, monster, beast, rival, etc.)",
+      "name": "combat beat",
+      "explanation": "Beats with hostile creatures (guardian, minion, monster, beast, rival, etc.)",
       "entries": [
         "This is the lair of a {lib:actant#hostile}.",
         "A {lib:actant#hostile} is waiting here, ready to attack."
       ]
     },
     {
-      "name": "betrayal encounter",
-      "explanation": "Encounters where the adventurers are betrayed (traitor, shapeshifter, tempter, trickster, etc).",
+      "name": "betrayal beat",
+      "explanation": "Beats where the adventurers are betrayed (traitor, shapeshifter, tempter, trickster, etc).",
       "entries": [
         "A {lib:actant#deceptive} needs help."
       ]
     },
     {
-      "name": "trap encounter",
-      "explanation": "Encounters with traps.",
+      "name": "trap beat",
+      "explanation": "Beats with traps.",
       "entries": [
         "A trap has been set here: {lib:trap#detail}. "
       ]
     },
     {
-      "name": "hazard encounter",
-      "explanation": "Encounters that put the adventurers in danger (hazard, etc.)",
+      "name": "hazard beat",
+      "explanation": "Beats that put the adventurers in danger (hazard, etc.)",
       "entries": [
         "Hazard: {lib:hazard#detail}."
       ]
     },
     {
-      "name": "setback encounter",
-      "explanation": "Encounters that cause the adventurers to lose progress (traitor, shapeshifter, rival, etc).",
+      "name": "setback beat",
+      "explanation": "Beats that cause the adventurers to lose progress (traitor, shapeshifter, rival, etc).",
       "entries": [
         "A {lib:actant#competitive} causes the {lib:synonym#troupe} to lose progress."
       ]
     },
     {
-      "name": "hindrance encounter",
-      "explanation": "Encounters that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
+      "name": "hindrance beat",
+      "explanation": "Beats that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
       "entries": [
         "A {lib:actant#competitive} slows down the progress.",
         "Problem with a {lock}",
@@ -575,31 +575,31 @@
       ]
     },
     {
-      "name": "trick encounter",
-      "explanation": "Encounters that require a clever approach.",
+      "name": "trick beat",
+      "explanation": "Beats that require a clever approach.",
       "entries": [
         "A {lib:actant#deceptive} attempts to trick the {lib:synonym#troupe}.",
         "{trick}"
       ]
     },
     {
-      "name": "trial encounter",
-      "explanation": "Encounters where the adventurers must prove themselves (rival, mentor, trickster, etc).",
+      "name": "trial beat",
+      "explanation": "Beats where the adventurers must prove themselves (rival, mentor, trickster, etc).",
       "entries": [
         "A {lib:actant#friendly} requires the {lib:synonym#troupe} to prove their mettle."
       ]
     },
     {
-      "name": "competition encounter",
-      "explanation": "Encounters where adventurers have to compete with someone (rival, mentor, etc.)",
+      "name": "competition beat",
+      "explanation": "Beats where adventurers have to compete with someone (rival, mentor, etc.)",
       "entries": [
         "A {lib:actant#competitive} presents a challenge to the {lib:synonym#troupe}.",
         "A {lib:actant#deceptive} challenges the {lib:synonym#troupe}."
       ]
     },
     {
-      "name": "distraction encounter",
-      "explanation": "Encounters that lead astray (shapeshifter, trickster, tempter, traitor, red herring, smoke screen, etc.)",
+      "name": "distraction beat",
+      "explanation": "Beats that lead astray (shapeshifter, trickster, tempter, traitor, red herring, smoke screen, etc.)",
       "entries": [
         "A {lib:actant#deceptive} leads the {lib:synonym#troupe} astray.",
         "{red herring}",
@@ -607,8 +607,8 @@
       ]
     },
     {
-      "name": "sidetrack encounter",
-      "explanation": "Encounters providing temporary diversion (tricster, tempter, sense of wonder, comic relief, etc.)",
+      "name": "sidetrack beat",
+      "explanation": "Beats providing temporary diversion (tricster, tempter, sense of wonder, comic relief, etc.)",
       "entries": [
         "A {lib:actant#deceptive} causes a temporary diversion for the {lib:synonym#troupe}.",
         "{wonder}",
@@ -616,8 +616,8 @@
       ]
     },
     {
-      "name": "flavor encounter",
-      "explanation": "Encounters that create color and flavor, may bring roleplaying opportunities (plant, animal, tempter, traitor, item, wonder, etc.)",
+      "name": "flavor beat",
+      "explanation": "Beats that create color and flavor, may bring roleplaying opportunities (plant, animal, tempter, traitor, item, wonder, etc.)",
       "entries": [
         "{flavor}",
         "{plant}",
@@ -627,15 +627,15 @@
       ]
     },
     {
-      "name": "rescue encounter",
-      "explanation": "Encounters where a prisoner (captive, mentor, ally, shapeshifter, tempter, traitor, trickster, animal, monster, minion, rival, etc.) can be rescued and perhaps befriended.",
+      "name": "rescue beat",
+      "explanation": "Beats where a prisoner (captive, mentor, ally, shapeshifter, tempter, traitor, trickster, animal, monster, minion, rival, etc.) can be rescued and perhaps befriended.",
       "entries": [
         "A {lib:actant#helpless} needs to be rescued."
       ]
     },
     {
-      "name": "resource encounter",
-      "explanation": "Encounters that offer new resources (artifact, key, tool, treasure, plant, animal, information, red herring, etc.)",
+      "name": "resource beat",
+      "explanation": "Beats that offer new resources (artifact, key, tool, treasure, plant, animal, information, red herring, etc.)",
       "entries": [
         "The {var:artifact} can be found here.",
         "{key}",
@@ -648,8 +648,8 @@
       ]
     },
     {
-      "name": "information encounter",
-      "explanation": "Encounters that offer information (mentor, trickster, clue, shapeshifter, traitor, red herring, etc.)",
+      "name": "information beat",
+      "explanation": "Beats that offer information (mentor, trickster, clue, shapeshifter, traitor, red herring, etc.)",
       "entries": [
         "A {lib:actant#friendly} gives useful information.",
         "A {lib:actant#deceptive} gives wrong information.",
@@ -665,22 +665,22 @@
       ]
     },
     {
-      "name": "help encounter",
-      "explanation": "Encounters that offer help (mentor, ally, etc.)",
+      "name": "help beat",
+      "explanation": "Beats that offer help (mentor, ally, etc.)",
       "entries": [
         "A {lib:actant#friendly} offers to help."
       ]
     },
     {
-      "name": "finale encounter",
-      "explanation": "Encounters solely for the adventure climax.",
+      "name": "finale beat",
+      "explanation": "Beats solely for the adventure climax.",
       "entries": [
         "Finale: XXX"
       ]
     },
     {
-      "name": "resolution encounter",
-      "explanation": "Encounters solely for the adventure resolution.",
+      "name": "resolution beat",
+      "explanation": "Beats solely for the adventure resolution.",
       "entries": [
         "Resolution: XXX"
       ]
