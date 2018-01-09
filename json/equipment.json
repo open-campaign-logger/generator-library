@@ -26,9 +26,9 @@
         "{equipment} (which is {condition})",
         "{adjective} {equipment}",
         "{adjective} {equipment} (which is {condition})",
-        "{complication} {equipment}",
-        "{complication} {equipment} (which is {condition})",
-        "{adjective}, {complication} {equipment} (which is {condition})"
+        "{lib:complication#item} {equipment}",
+        "{lib:complication#item} {equipment} (which is {condition})",
+        "{adjective}, {lib:complication#item} {equipment} (which is {condition})"
       ]
     },
     {
@@ -390,6 +390,8 @@
         "cutpurse blade",
         "caltrops",
         "weaponblack",
+        "hidden sheath for a knife",
+        "dagger boots",
         "garotte"
       ]
     },
@@ -481,7 +483,6 @@
       "explanation": "Special equipment types.",
       "entries": [
         "{adjective}",
-        "{complication}",
         "{condition}"
       ]
     },
@@ -492,14 +493,6 @@
         "cheaply made",
         "old-fashioned",
         "customized"
-      ]
-    },
-    {
-      "name": "complication",
-      "explanation": "Complications for the equipment.",
-      "entries": [
-        "unreliable",
-        "easily breaking"
       ]
     },
     {

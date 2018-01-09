@@ -227,7 +227,7 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adventure description} {var:para}Complication: {complication}"
+        "{adventure description}"
       ]
     },
     {
@@ -241,7 +241,7 @@
       "name": "adventure description",
       "explanation": "The adventure described from start to finish.",
       "entries": [
-        "{adventure title} {motif notice} {villain} {difficulty notice}  {macguffin notice} {treasure notice} {introduction} {adventure structure} {duration notice} {footnote}"
+        "{adventure title} {motif note} {villain} {difficulty note} {macguffin note} {treasure note} {complication note} {introduction} {adventure structure} {duration note} {footnote}"
       ]
     },
     {
@@ -278,7 +278,7 @@
       ]
     },
     {
-      "name": "motif notice",
+      "name": "motif note",
       "explanation": "Description of the general theme of the adventure.",
       "entries": [
         "{var:para}{var:startbold}Motif{var:endbold}: {var:motif}. {var:motifdescription}"
@@ -292,24 +292,31 @@
       ]
     },
     {
-      "name": "difficulty notice",
+      "name": "difficulty note",
       "explanation": "A paragraph describing the difficulty of the adventure.",
       "entries": [
         "{var:para}{var:startbold}Difficulty{var:endbold}: {var:difficulty}.  This {lib:synonym#small} {lib:synonym#adventure} is best suited for {var:difficultydescription}. "
       ]
     },
     {
-      "name": "macguffin notice",
+      "name": "macguffin note",
       "explanation": "Description of the macguffin of the adventure.",
       "entries": [
         "{var:para}{var:startbold}Macguffin:{var:endbold} A {lib:macguffin}. "
       ]
     },
     {
-      "name": "treasure notice",
+      "name": "treasure note",
       "explanation": "Description of the treasure of the adventure.",
       "entries": [
-        "{var:para}{var:startbold}Treasure:{var:endbold} {lib:treasure}. "
+        "{var:para}{var:startbold}Treasure:{var:endbold} A {lib:treasure}. "
+      ]
+    },
+    {
+      "name": "complication note",
+      "explanation": "An optional complication for the adventure.",
+      "entries": [
+        "{var:para}{var:startbold}Complication{var:endbold}: {lib:complication#dungeon}"
       ]
     },
     {
@@ -329,7 +336,7 @@
       ]
     },
     {
-      "name": "duration notice",
+      "name": "duration note",
       "explanation": "A paragraph about the estimated duration of the adventure, based on the number of scenes.",
       "entries": [
         "{var:para}[The duration of the {lib:synonym#adventure} is estimated to be roughly {var:duration} minutes.] "
@@ -722,16 +729,7 @@
       "name": "trick room",
       "explanation": "",
       "entries": [
-        "The adventurers rescue a {var:captivegroup}. However, the {var:captives} {captive complication}."
-      ]
-    },
-    {
-      "name": "captive complication",
-      "explanation": "",
-      "entries": [
-        "are enemies in disguise",
-        "are booby-trapped",
-        "plead to be escorted back to safety immediately"
+        "The adventurers rescue a {var:captivegroup}. However, the {var:captives} {lib:complication#captive}."
       ]
     },
     {
@@ -778,7 +776,7 @@
       "name": "complication room",
       "explanation": "",
       "entries": [
-        "The {artifact} required to defeat the {var:villain}, but it is {artifact complication}. Clues reveal that a solution lies ahead.",
+        "The {artifact} required to defeat the {var:villain}, but it is {lib:complication#item}. Clues reveal that a solution lies ahead.",
         "Believing the object of the quest now lays within easy reach, a  companion turns traitor and betrays the {lib:synonym#troupe}."
       ]
     },
@@ -807,15 +805,6 @@
             "artifact": "magical weapon"
           }
         }
-      ]
-    },
-    {
-      "name": "artifact complication",
-      "explanation": "",
-      "entries": [
-        "broken",
-        "cursed",
-        "missing parts"
       ]
     },
     {
@@ -1243,8 +1232,7 @@
       "explanation": "Special room tables.",
       "entries": [
         "{adjective}",
-        "{motif}",
-        "{complication}"
+        "{motif}"
       ]
     },
     {
@@ -1352,14 +1340,6 @@
             "motifdescription": "A gateway to nether realms has opened, vomiting out hellish denizens of the underworld to occupy their new abode."
           }
         }
-      ]
-    },
-    {
-      "name": "complication",
-      "explanation": "Complications for the dungeon.",
-      "entries": [
-        "The dungeon is about to collapse.",
-        "Rising water levels are slowly flooding the dungeon."
       ]
     }
   ]

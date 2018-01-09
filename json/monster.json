@@ -9,8 +9,8 @@
   "note": "",
   "bugs": "",
   "to do": "Categorize monsters by type.",
-  "see": "animal, attack, citizen, encounter, nonhuman",
-  "date": "2018-01-03",
+  "see": "animal, attack, citizen, complication, encounter, nonhuman",
+  "date": "2018-01-09",
   "authors": "Esko Vesala.",
   "sources": "D20SRD.org, DanDWiki.com, Wikia.com, Wikipedia.org",
   "genre": "fantasy",
@@ -44,8 +44,8 @@
         "{health} {lib:creature_template} {monster}",
         "{monster} with {lib:attack} attack",
         "{health} {monster} with {lib:attack} attack",
-        "{monster} {complication}",
-        "{health} {monster} {complication}"
+        "{monster} {lib:complication#creature}",
+        "{health} {monster} {lib:complication#creature}"
       ]
     },
     {
@@ -134,8 +134,11 @@
       "explanation": "Aquatic monster types.",
       "entries": [
         "merrow",
+        "siren",
         "hydra",
-        "kraken"
+        "water elemental",
+        "kraken",
+        "leviathan"
       ]
     },
     {
@@ -445,10 +448,14 @@
       ]
     },
     {
+      "**************************************************": "SPECIAL CASES"
+    },
+    {
       "name": "special",
-      "explanation": "Special monster types.",
+      "explanation": "Special monster tables.",
       "entries": [
-        "XXX"
+        "{adjective}",
+        "{psychology}"
       ]
     },
     {
@@ -465,72 +472,6 @@
         "vengeful",
         "bloodthirsty",
         "savage"
-      ]
-    },
-    {
-      "name": "complication",
-      "explanation": "Monster complication types by rarity.",
-      "entries": [
-        {
-          "m": 10,
-          "v": "{common complication}"
-        },
-        "{rare complication}"
-      ]
-    },
-    {
-      "name": "common complication",
-      "explanation": "Common complications for monsters.",
-      "entries": [
-        "{wounded}"
-      ]
-    },
-    {
-      "name": "wounded",
-      "explanation": "Injury statuses of monsters.",
-      "entries": [
-        "wounded",
-        "injured",
-        "impaired"
-      ]
-    },
-    {
-      "name": "rare complication",
-      "explanation": "Rare complications for monsters.",
-      "entries": [
-        "{immobile}",
-        "{insane}"
-      ]
-    },
-    {
-      "name": "immobile",
-      "explanation": "Immobile statuses for monsters.",
-      "entries": [
-        "entangled",
-        "chained",
-        "trapped"
-      ]
-    },
-    {
-      "name": "insane",
-      "explanation": "Insanity statuses of monsters.",
-      "entries": [
-        "insane"
-      ]
-    },
-    {
-      "name": "special complication",
-      "explanation": "Special complications for monsters.",
-      "entries": [
-        "{magic}"
-      ]
-    },
-    {
-      "name": "magic",
-      "explanation": "Magic-related complications for monsters.",
-      "entries": [
-        "magically charmed",
-        "magically controlled"
       ]
     }
   ]

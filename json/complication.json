@@ -1,0 +1,234 @@
+{
+  "name": "complication",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Complications for various situations.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "Forked from Dungeon_adventure on 2018-01-09. ",
+  "format": "'X is/are {complication}'. No full stop in the end.",
+  "bugs": "",
+  "to do": "",
+  "see": "Dungeon_adventure",
+  "date": "2018-01-09",
+  "authors": "Esko Vesala.",
+  "sources": "Dungeon_adventure",
+  "genre": "universal",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{complication}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{complication}"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Complication types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common complications.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare complications.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Complications once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Complications for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Complications for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Complications for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special complication tables.",
+      "entries": [
+        "{captive}",
+        "{creature}",
+        "{dungeon}",
+        "{item}",
+        "{room}"
+      ]
+    },
+    {
+      "name": "captive",
+      "explanation": "Complications for captives.",
+      "entries": [
+        "enemies in disguise",
+        "booby-trapped",
+        "pleading to be escorted back to safety immediately"
+      ]
+    },
+    {
+      "name": "creature",
+      "explanation": "Creature complication types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common complication}"
+        },
+        "{rare complication}"
+      ]
+    },
+    {
+      "name": "common creature",
+      "explanation": "Common complications for monsters.",
+      "entries": [
+        "{wounded}"
+      ]
+    },
+    {
+      "name": "wounded",
+      "explanation": "Injury statuses of monsters.",
+      "entries": [
+        "wounded",
+        "injured",
+        "impaired"
+      ]
+    },
+    {
+      "name": "rare complication",
+      "explanation": "Rare complications for monsters.",
+      "entries": [
+        "{immobile}",
+        "{insane}"
+      ]
+    },
+    {
+      "name": "immobile",
+      "explanation": "Immobile statuses for monsters.",
+      "entries": [
+        "entangled",
+        "chained",
+        "trapped"
+      ]
+    },
+    {
+      "name": "insane",
+      "explanation": "Insanity statuses of monsters.",
+      "entries": [
+        "insane"
+      ]
+    },
+    {
+      "name": "special complication",
+      "explanation": "Special complications for monsters.",
+      "entries": [
+        "{magic}"
+      ]
+    },
+    {
+      "name": "magic",
+      "explanation": "Magic-related complications for monsters.",
+      "entries": [
+        "magically charmed",
+        "magically controlled"
+      ]
+    },
+    {
+      "name": "dungeon",
+      "explanation": "Complications for dungeons.",
+      "entries": [
+        "The structure is about to collapse.",
+        "Rising water levels are slowly flooding the area.",
+        "Locals consider the area sacred and try their best to prevent anyone from desecrating the place."
+      ]
+    },
+    {
+      "name": "item",
+      "explanation": "Complications for items.",
+      "entries": [
+        "easily breaking",
+        "broken",
+        "missing parts",
+        "unreliable",
+        "{rare item}"
+      ]
+    },
+    {
+      "name": "milieu",
+      "explanation": "Complications for environments.",
+      "entries": [
+        "being ravaged by earthquake tremors"
+      ]
+    },
+    {
+      "name": "rare item",
+      "explanation": "Rare complications for items.",
+      "entries": [
+        "cursed"
+      ]
+    },
+    {
+      "name": "room",
+      "explanation": "Complications for (dungeon) rooms.",
+      "entries": [
+        "The air turns heavy and breathing soon becomes difficult."
+      ]
+    }
+  ]
+}

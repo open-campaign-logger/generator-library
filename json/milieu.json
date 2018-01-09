@@ -48,7 +48,7 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{milieu}{var:milieu} {var:para}{complication}"
+        "{milieu}{var:milieu} {var:para}{lib:complication#milieu}"
       ]
     },
     {
@@ -1194,14 +1194,7 @@
       "name": "special",
       "explanation": "Special milieu tables.",
       "entries": [
-        "{complication}"
-      ]
-    },
-    {
-      "name": "complication",
-      "explanation": "Milieu complications.",
-      "entries": [
-        "Earthquake tremors are shaking up the area."
+        ""
       ]
     }
   ]

@@ -103,7 +103,7 @@
       "entries": [
         "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. {var:para}{var:roomcontents} ",
         "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. {var:para}{flavor}",
-        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. {var:para}{complication}"
+        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. {var:para}{lib:complication#room}"
       ]
     },
     {
@@ -114,7 +114,7 @@
           "m": 10,
           "v": "{common}"
         },
-        "{rare} "
+        "{rare}"
       ]
     },
     {
@@ -1003,8 +1003,7 @@
       "explanation": "Special room tables.",
       "entries": [
         "{adjective}",
-        "{flavor}",
-        "{complication}"
+        "{flavor}"
       ]
     },
     {
@@ -1081,16 +1080,6 @@
         "{lib:plant#fungus}",
         "{lib:plant#moss}",
         "slime"
-      ]
-    },
-    {
-      "**************************************************": "ROOM COMPLICATIONS"
-    },
-    {
-      "name": "complication",
-      "explanation": "Additional challenges in the room.",
-      "entries": [
-        "The air is heavy and breathing soon becomes difficult."
       ]
     }
   ]
