@@ -2,7 +2,7 @@
 
 [//]: # (Authors: Esko Vesala, Peter Sotos.)
 
-[//]: # (Date: 2018-01-08.)
+[//]: # (Date: 2018-01-09.)
 
 
 # Generator Guide
@@ -20,31 +20,34 @@ For documentation on other Campaign Logger topics, please refer to the Campaign 
 	- [JSON](#json)
 	- [Crash Course](#crash-course)
 		- [All Those Brackets](#all-those-brackets)
-		- [name](#name)
-		- [resultPattern](#resultpattern)
-		- [tables](#tables)
+		- [`name`](#name)
+		- [`resultPattern`](#resultpattern)
+		- [`tables`](#tables)
 		- [That's It!](#thats-it)
 	- [Using Your Custom Generators](#using-your-custom-generators)
 - [Advanced Topics](#advanced-topics)
-	- [Formatting the output](#formatting-the-output)
-	- [Calling External Tables](#calling-external-tables)
+	- [Subtables](#subtables)
+	- [External Tables](#external-tables)
 		- [Public Library Calls](#public-library-calls)
 		- [Local Generator Calls](#local-generator-calls)
 		- [Private Library Calls](#private-library-calls)
-		- [Subtable Calls](#subtable-calls)
+		- [External Subtable Calls](#external-subtable-calls)
 	- [Weighing Values](#weighing-values)
 	- [Variables](#variables)
 	- [Random Number Generation](#random-number-generation)
+	- [Formatting the output](#formatting-the-output)
+		- [Linebreaks and Tabulation](#linebreaks-and-tabulation)
+		- [Table Formatting](#table-formatting)
 	- [Templates](#templates)
 - [Recommended Practices](#recommended-practices)
 	- [A Closer Look at Table Properties](#a-closer-look-at-table-properties)
-		- [name](#name)
+		- [`name`](#name)
 		- [resultPattern](#resultpattern)
 		- [Metadata Properties](#metadata-properties)
 		- [Table Properties in Detail](#table-properties-in-detail)
-			- [Name](#name)
-			- [Explanation](#explanation)
-			- [Entries](#entries)
+			- [`name`](#name)
+			- [`explanation`](#explanation)
+			- [`entries`](#entries)
 	- [Recommended Subtable Organization](#recommended-subtable-organization)
 		- [common](#common)
 		- [rare](#rare)
@@ -377,7 +380,12 @@ The following optional properties can be used:
 
 * **`note`**: Notes and instructions for other users, especially for those who plan to update the table. The note should make the logic easier to understand. for example explain some strange seeming details of the implementation. As an example, the modification table contains the following note:
 
-      Note: Does not include 'quite', as its meaning can vary.
+      "Note": "Does not include 'quite', as its meaning can vary.",
+
+* **`format`**: Help tables that are called by different tables must have their content worded in a format that is compatible with the calls. The property can be used to add about a note about this - for example if the entries should match singular or plural forms, or both. This example is from the complication table:
+
+		"format": "'X is/are {complication}'. No full stop in the end.",
+
 
 * **`bugs`**: If there are known problems with the table, they can be listed  here. This helps you (or whoever next works on the table) to notice the pitfalls, and maybe even fix them.
 
