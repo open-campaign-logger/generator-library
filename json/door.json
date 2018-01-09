@@ -1,0 +1,230 @@
+{
+  "name": "door",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Random door table.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "door size",
+  "see": "Dungeon_adventure",
+  "date": "2018-01-09",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{state} {door}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{state}, {material} {door} with {handle}",
+        "{state}, {shape} {material} {door} with {handle}",
+        "{state}, {material} {door} with {feature}",
+        "{state}, {shape} {material} {door} with {feature}"
+      ]
+    },
+    {
+      "name": "door",
+      "explanation": "Door types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common doors.",
+      "entries": [
+        "door",
+        "double doors",
+        "large door with an inset door",
+        "large double doors with an inset door",
+        "hidden door {hiding place}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare doors.",
+      "entries": [
+        "rotating door",
+        "sliding door",
+        "rising door",
+        "flap door (hinges on top)"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Doors once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Doors for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Doors for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Doors for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special door tables.",
+      "entries": [
+        "{feature}",
+        "{handle}",
+        "{hiding place}",
+        "{material}",
+        "{shape}",
+        "{state}"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Door complications.",
+      "format": "with {complication}",
+      "entries": [
+        "the doorknob falling off when touched",
+        "a warped frame that will not allow proper shutting"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Door features.",
+      "format": "with {feature}",
+      "entries": [
+        "a knocker",
+        "a peephole",
+        "rune carvings",
+        "a door trap: {lib:trap#door}"
+      ]
+    },
+    {
+      "name": "handle",
+      "explanation": "Door handles.",
+      "entries": [
+        "no handle",
+        "a ring handle",
+        "a knob",
+        "a bar handle",
+        "a lever as a handle"
+      ]
+    },
+    {
+      "name": "hiding place",
+      "explanation": "Door handles.",
+      "format": "hidden door {hiding place}",
+      "entries": [
+        "behind curtains",
+        "behind drapes",
+        "behind a tapestry"
+      ]
+    },
+    {
+      "name": "material",
+      "explanation": "Door materials.",
+      "entries": [
+        "{lib:material#wood}",
+        "{lib:material#wood}",
+        "iron",
+        "steel",
+        "{rare material}"
+      ]
+    },
+    {
+      "name": "rare material",
+      "explanation": "Rare door materials.",
+      "entries": [
+        "{lib:stone}",
+        "brass",
+        "bronze",
+        "{lib:material#glass}"
+      ]
+    },
+    {
+      "name": "shape",
+      "explanation": "Door shapes.",
+      "entries": [
+        "rectangular",
+        "square",
+        "{rare shape}"
+      ]
+    },
+    {
+      "name": "rare shape",
+      "explanation": "Rare door shapes.",
+      "entries": [
+        "oblong",
+        "round",
+        "triangular"
+      ]
+    },
+    {
+      "name": "state",
+      "explanation": "Door states.",
+      "entries": [
+        "open",
+        "closed but unlocked",
+        "locked",
+        "locked with a padlock",
+        "stuck",
+        "barred",
+        "spiked shut",
+        "{rare state}"
+      ]
+    },
+    {
+      "name": "rare state",
+      "explanation": "Rare door states.",
+      "entries": [
+        "false"
+      ]
+    }
+  ]
+}

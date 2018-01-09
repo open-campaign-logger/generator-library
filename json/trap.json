@@ -514,7 +514,16 @@
       "name": "special",
       "explanation": "Special trap types.",
       "entries": [
-        "XXX"
+        "{door}"
+      ]
+    },
+    {
+      "name": "door",
+      "explanation": "Door traps.",
+      "entries": [
+        "a poison needle hidden in the door handle",
+        "a vat of acid balanced on top of the door",
+        "a guillotine blade"
       ]
     }
   ]
