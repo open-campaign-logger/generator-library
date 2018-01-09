@@ -313,6 +313,7 @@ Note that the pairs of vertical bars (`||`) must be separated from table cell co
 
 		||<space>one<space>||<space>two<space>||<space>three\n||<space>a<space>||<space>b<space>||<space>c
 
+**Tip**: If you create a table with only one cell, that will produce a box around the output. Just start the output with the `|| `string. This could be used for example to highlight readout sections in an adventure generator.
 
 ## Templates
 
@@ -347,7 +348,7 @@ Simple tables that output just a few words are not capitalized (as in "weather")
 The above mentioned "Weather Generator" could produce a detailed weather report, maybe even several sentences long. A simple "weather table could just print out "heavy rain" or "clear skies", for example.
 
 
-### resultPattern
+### `resultPattern`
 
 A simple `resultPattern` can contain just a single call to a subtable:
 
@@ -370,7 +371,7 @@ The metadata properties do not affect the functionality of the table, but they p
 
 Any of the metadata properties can be omitted. Still, using them is recommended, as they make sharing tables easier and can be useful reminders even for yourself.
 
-Include whichever optional properties that are relevant for the file. All of the optional properties are included in the `_empty_template` sample file for reference.
+Include whichever optional properties that are relevant for the file. All of the optional properties are included in the `_empty_template.json` sample file for reference.
 
 The following optional properties can be used:
 
@@ -378,11 +379,11 @@ The following optional properties can be used:
 
 * **`structure`**: A brief explanation of the structure of the file and the conventions used. This is useful especially for complex generators whose logic can be difficult to decipher. The `_empty_template.json` sample file contains a basic example of a structure property. You can modify it to your liking.
 
-* **`note`**: Notes and instructions for other users, especially for those who plan to update the table. The note should make the logic easier to understand. for example explain some strange seeming details of the implementation. As an example, the modification table contains the following note:
+* **`note`**: Notes and instructions for other users, especially for those who plan to update the table. The note should make the logic easier to understand. for example explain some strange seeming details of the implementation. As an example, the `modifier.json` generator contains the following note:
 
-      "Note": "Does not include 'quite', as its meaning can vary.",
+      "note": "Does not include 'quite', as its meaning can vary.",
 
-* **`format`**: Help tables that are called by different tables must have their content worded in a format that is compatible with the calls. The property can be used to add about a note about this - for example if the entries should match singular or plural forms, or both. This example is from the complication table:
+* **`format`**: Help tables that are called by different tables must have their content worded in a format that is compatible with the calls. The property can be used to add about a note about this - for example if the entries should match singular or plural forms, or both. This example is from the `complication.json` table:
 
 		"format": "'X is/are {complication}'. No full stop in the end.",
 
