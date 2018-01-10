@@ -76,15 +76,15 @@
       "name": "door",
       "explanation": "Door locks.",
       "entries": [
-        "door lock (requiring {lib:key})"
+        "lock (requiring a {lib:key})"
       ]
     },
     {
       "name": "padlock",
       "explanation": "Padlocks.",
       "entries": [
-        "padlock (requiring {lib:key})",
-        "heavy iron padlock (requiring {lib:key})"
+        "padlock (requiring a {lib:key})",
+        "heavy iron padlock (requiring a {lib:key})"
       ]
     },
     {
