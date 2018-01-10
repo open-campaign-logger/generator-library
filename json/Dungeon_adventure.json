@@ -548,32 +548,6 @@
       ]
     },
     {
-      "name": "door",
-      "explanation": "Doors barring the way.",
-      "entries": [
-        "thick oak door",
-        "metal door"
-      ]
-    },
-    {
-      "name": "lock",
-      "explanation": "The key required to open the dungeon",
-      "entries": [
-        "heavy iron padlock",
-        "sigil requiring some kind of a ceremony to open",
-        "magical seal requiring a command word"
-      ]
-    },
-    {
-      "name": "key",
-      "explanation": "The key required to open the dungeon",
-      "entries": [
-        "ceremony",
-        "command word",
-        "key"
-      ]
-    },
-    {
       "name": "tool",
       "explanation": "Useful tools.",
       "entries": [

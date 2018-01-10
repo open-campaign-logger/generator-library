@@ -1,0 +1,180 @@
+{
+  "name": "lock",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Random locks.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "door, key",
+  "date": "2018-01-10",
+  "authors": "Esko Vesala",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "item",
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{lock}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{lock}"
+      ]
+    },
+    {
+      "name": "lock",
+      "explanation": "Lock types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common locks.",
+      "entries": [
+        "{door}",
+        "{padlock}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare locks.",
+      "entries": [
+        "{knot} (requiring {lib:key#knot})",
+        "{mechanism}"
+      ]
+    },
+    {
+      "**************************************************": "LOCKS"
+    },
+    {
+      "name": "door",
+      "explanation": "Door locks.",
+      "entries": [
+        "door lock (requiring {lib:key})"
+      ]
+    },
+    {
+      "name": "padlock",
+      "explanation": "Padlocks.",
+      "entries": [
+        "padlock (requiring {lib:key})",
+        "heavy iron padlock (requiring {lib:key})"
+      ]
+    },
+    {
+      "name": "mechanism",
+      "explanation": "Pressure plate locks.",
+      "entries": [
+        "complex locking mechanism [containing a hard-to-reach pressure plate (requiring {lib:key#pressure})]",
+        "complex locking mechanism [requires solving a puzzle]"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Locks once rumoured to have existed.",
+      "entries": [
+        "spirit guardian (requiring {lib:key#magic})"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Locks for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth} (requiring {lib:key#magic})",
+        "{magic} (requiring {lib:key#magic})"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Locks for modern worlds.",
+      "entries": [
+        "{common}",
+        "{rare modern}",
+        "combination lock"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare locks for modern worlds.",
+      "entries": [
+        "touch pad",
+        "camera"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Locks for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "remote scanner"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special lock tables.",
+      "entries": [
+        "{magic}",
+        "{primitive}"
+      ]
+    },
+    {
+      "name": "magic",
+      "explanation": "Magical locks.",
+      "entries": [
+        "locking spell",
+        "sigil",
+        "magical seal",
+        "magic mouth"
+      ]
+    },
+    {
+      "name": "plate",
+      "explanation": "Pressure plate locks.",
+      "entries": [
+        "complex locking mechanism [containgin a hard to reach pressure plate (requiring {lib:key#pressure})]"
+      ]
+    },
+    {
+      "name": "knot",
+      "explanation": "Knot-based locks.",
+      "entries": [
+        "closed with vines",
+        "closed with ropes",
+        "closed with cords",
+        "closed with leather straps"
+      ]
+    }
+  ]
+}

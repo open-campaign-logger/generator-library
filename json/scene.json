@@ -148,6 +148,13 @@
         },
         {
           "m": 1,
+          "v": "Discovery{var:endheading} The {lib:synonym#troupe} makes a remarkable discovery: a {lib:macguffin#detail}.",
+          "set": {
+            "beat": "memory loss"
+          }
+        },
+        {
+          "m": 1,
           "v": "{development scene type}",
           "set": {
             "scene": "development"
@@ -564,8 +571,8 @@
       "explanation": "Beats that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
       "entries": [
         "A {lib:actant#competitive} slows down the progress.",
-        "Problem with a {lock}",
-        "Problem with a {door}."
+        "Problem with a {lib:dungeon_room#lock}.",
+        "Problem with a {lib:dungeon_room#door}."
       ]
     },
     {

@@ -40,6 +40,8 @@
     "doorfeature": "",
     "lock": "lock",
     "lockfeature": "",
+    "key": "key",
+    "keydescription": "small silver key",
     "corridor": "corridor",
     "corridorfeature": "",
     "danger": "danger",
@@ -607,7 +609,7 @@
           "v": "",
           "set": {
             "roompurpose": "giant astrolabe",
-            "roomdescription": "appears like a giant astrolabe",
+            "roomdescription": "appears to be like a giant astrolabe",
             "roomcontents": "There are astrological books and equipment strewn around."
           }
         },
@@ -757,7 +759,7 @@
           "v": "",
           "set": {
             "roompurpose": "giant astrolabe",
-            "roomdescription": "appears like a giant astrolabe",
+            "roomdescription": "appears to be like a giant astrolabe",
             "roomcontents": "There are astrological books and equipment strewn around."
           }
         },
