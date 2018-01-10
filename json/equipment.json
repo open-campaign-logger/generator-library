@@ -23,12 +23,12 @@
       "explanation": "Variations for resultPattern output.",
       "entries": [
         "{equipment}",
-        "{equipment} (which is {condition})",
+        "{equipment} (which is {lib:condition})",
         "{adjective} {equipment}",
-        "{adjective} {equipment} (which is {condition})",
+        "{adjective} {equipment} (which is {lib:condition})",
         "{lib:complication#item} {equipment}",
-        "{lib:complication#item} {equipment} (which is {condition})",
-        "{adjective}, {lib:complication#item} {equipment} (which is {condition})"
+        "{lib:complication#item} {equipment} (which is {lib:condition})",
+        "{adjective}, {lib:complication#item} {equipment} (which is {lib:condition})"
       ]
     },
     {
@@ -479,11 +479,13 @@
       ]
     },
     {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
       "name": "special",
       "explanation": "Special equipment types.",
       "entries": [
-        "{adjective}",
-        "{condition}"
+        "{adjective}"
       ]
     },
     {
@@ -493,16 +495,6 @@
         "cheaply made",
         "old-fashioned",
         "customized"
-      ]
-    },
-    {
-      "name": "condition",
-      "explanation": "Condition of the equipment.",
-      "entries": [
-        "broken",
-        "needing repair",
-        "worn but usable",
-        "in excellent condition"
       ]
     }
   ]

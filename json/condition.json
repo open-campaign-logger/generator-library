@@ -90,6 +90,8 @@
       "name": "positive",
       "explanation": "Positive conditions.",
       "entries": [
+        "{clean}",
+        "{fine}",
         "{strong}"
       ]
     },
@@ -100,9 +102,20 @@
       "name": "broken",
       "explanation": "Broken item conditions.",
       "entries": [
+        "needing repair",
         "broken",
         "destroyed",
         "shattered"
+      ]
+    },
+    {
+      "name": "clean",
+      "explanation": "Clean conditions.",
+      "entries": [
+        "clean",
+        "spotless",
+        "speckless",
+        "unblemished"
       ]
     },
     {
@@ -123,7 +136,23 @@
         "messy",
         "spattered",
         "smudged",
+        "dirt-covered",
         "dirty"
+      ]
+    },
+    {
+      "name": "fine",
+      "explanation": "Fine item conditions.",
+      "entries": [
+        "well cared-for",
+        "well kept",
+        "in fine condition",
+        "pristine",
+        "untouched",
+        "in admirable condition",
+        "in excellent condition",
+        "in exemplary condition",
+        "in superb condition"
       ]
     },
     {
@@ -152,9 +181,12 @@
       "name": "used",
       "explanation": "Used item conditions.",
       "entries": [
+        "worn but usable",
         "worn",
         "beat-up",
-        "worn-out"
+        "worn-out",
+        "tarnished",
+        "patinated"
       ]
     },
     {

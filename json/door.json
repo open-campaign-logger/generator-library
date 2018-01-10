@@ -31,17 +31,21 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{state} {door}"
+        "{door} [{state}]"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{state}, {material} {door} with {handle}",
-        "{state}, {shape} {material} {door} with {handle}",
-        "{state}, {material} {door} with {feature}",
-        "{state}, {shape} {material} {door} with {feature}"
+        "{material} {door} with {handle} [{state}]",
+        "{material} {door} with {handle} [{state}], appears to be {lib:condition}",
+        "{shape} {material} {door} with {handle} [{state}]",
+        "{shape} {material} {door} with {handle} [{state}], appears to be {lib:condition}",
+        "{material} {door} with {feature} [{state}]",
+        "{material} {door} with {feature} [{state}], appears to be {lib:condition}",
+        "{shape} {material} {door} with {feature} [{state}]",
+        "{material} {door} with {handle} [{state}], appears to be {lib:condition} "
       ]
     },
     {
@@ -73,7 +77,7 @@
         "rotating door",
         "sliding door",
         "rising door",
-        "flap door (hinges on top)"
+        "flap door (with hinges on top)"
       ]
     },
     {
@@ -83,7 +87,7 @@
       "name": "myth",
       "explanation": "Doors once rumoured to have existed.",
       "entries": [
-        "XXX"
+        "portal"
       ]
     },
     {
@@ -91,7 +95,8 @@
       "explanation": "Doors for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
-        "XXX"
+        "{primitive}",
+        "{magic}"
       ]
     },
     {
@@ -99,7 +104,7 @@
       "explanation": "Doors for modern worlds.",
       "entries": [
         "{common}",
-        "XXX"
+        "revolving door"
       ]
     },
     {
@@ -107,7 +112,7 @@
       "explanation": "Doors for science fiction worlds.",
       "entries": [
         "{modern}",
-        "XXX"
+        "teleportation device"
       ]
     },
     {
@@ -117,12 +122,36 @@
       "name": "special",
       "explanation": "Special door tables.",
       "entries": [
+        "{barring}",
+        "{closed}",
         "{feature}",
         "{handle}",
         "{hiding place}",
+        "{locked}",
         "{material}",
+        "{open}",
+        "{primitive}",
         "{shape}",
         "{state}"
+      ]
+    },
+    {
+      "name": "barring",
+      "explanation": "Closed door states.",
+      "entries": [
+        "wooden latch",
+        "metal bar"
+      ]
+    },
+    {
+      "name": "closed",
+      "explanation": "Closed door states.",
+      "entries": [
+        "closed but unlocked",
+        "stuck",
+        "barred from this side with a {barring}",
+        "barred from the other side (with a {barring})",
+        "spiked shut"
       ]
     },
     {
@@ -135,6 +164,13 @@
       ]
     },
     {
+      "name": "false",
+      "explanation": "False door states.",
+      "entries": [
+        "false door"
+      ]
+    },
+    {
       "name": "feature",
       "explanation": "Door features.",
       "format": "with {feature}",
@@ -142,7 +178,7 @@
         "a knocker",
         "a peephole",
         "rune carvings",
-        "a door trap: {lib:trap#door}"
+        "a door trap ({lib:trap#door})"
       ]
     },
     {
@@ -158,7 +194,7 @@
     },
     {
       "name": "hiding place",
-      "explanation": "Door handles.",
+      "explanation": "Hiding places for doors.",
       "format": "hidden door {hiding place}",
       "entries": [
         "behind curtains",
@@ -167,11 +203,26 @@
       ]
     },
     {
+      "name": "locked",
+      "explanation": "Locked door states.",
+      "entries": [
+        "locked with a {lib:lock#door}",
+        "locked with a {lib:lock#padlock}"
+      ]
+    },
+    {
+      "name": "magic",
+      "explanation": "Magic doors.",
+      "entries": [
+        "teleportation spell"
+      ]
+    },
+    {
       "name": "material",
       "explanation": "Door materials.",
       "entries": [
         "{lib:material#wood}",
-        "{lib:material#wood}",
+        "{lib:material#wood} reinforced with iron",
         "iron",
         "steel",
         "{rare material}"
@@ -185,6 +236,13 @@
         "brass",
         "bronze",
         "{lib:material#glass}"
+      ]
+    },
+    {
+      "name": "primitive",
+      "explanation": "Primitive doors.",
+      "entries": [
+        "boulder blocking the throughway"
       ]
     },
     {
@@ -209,21 +267,26 @@
       "name": "state",
       "explanation": "Door states.",
       "entries": [
-        "open",
-        "closed but unlocked",
-        "locked",
-        "locked with a padlock",
-        "stuck",
-        "barred",
-        "spiked shut",
+        "{open}",
+        "{closed}",
+        "{locked}",
         "{rare state}"
+      ]
+    },
+    {
+      "name": "open",
+      "explanation": "Open door states.",
+      "entries": [
+        "wide open",
+        "open",
+        "ajar"
       ]
     },
     {
       "name": "rare state",
       "explanation": "Rare door states.",
       "entries": [
-        "false"
+        "{false}"
       ]
     }
   ]
