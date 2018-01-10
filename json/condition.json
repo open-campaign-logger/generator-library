@@ -1,0 +1,310 @@
+{
+  "name": "condition",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Random condition of an item.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "door, key",
+  "date": "2018-01-10",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "item"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{condition}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{condition}"
+      ]
+    },
+    {
+      "name": "condition",
+      "explanation": "Condition types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common conditions.",
+      "entries": [
+        "{negative}",
+        "{positive}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare conditions.",
+      "entries": [
+        "{neutral}"
+      ]
+    },
+    {
+      "**************************************************": "CONDITION TYPES"
+    },
+    {
+      "name": "negative",
+      "explanation": "Negative conditions.",
+      "entries": [
+        "{weak}",
+        "{neglected}",
+        "{dirty}"
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Neutral conditions.",
+      "entries": [
+        "{used}"
+      ]
+    },
+    {
+      "name": "positive",
+      "explanation": "Positive conditions.",
+      "entries": [
+        "{strong}"
+      ]
+    },
+    {
+      "**************************************************": "CONDITIONS"
+    },
+    {
+      "name": "broken",
+      "explanation": "Broken item conditions.",
+      "entries": [
+        "broken",
+        "destroyed",
+        "shattered"
+      ]
+    },
+    {
+      "name": "damaged",
+      "explanation": "Damaged item conditions.",
+      "entries": [
+        "damaged",
+        "cracked",
+        "fractured"
+      ]
+    },
+    {
+      "name": "dirty",
+      "explanation": "Dirty item conditions.",
+      "entries": [
+        "filthy",
+        "grimy",
+        "messy",
+        "spattered",
+        "smudged",
+        "dirty"
+      ]
+    },
+    {
+      "name": "neglected",
+      "explanation": "Neglected item conditions.",
+      "entries": [
+        "neglected",
+        "untended",
+        "uncared-for"
+      ]
+    },
+    {
+      "name": "strong",
+      "explanation": "Strong item conditions.",
+      "entries": [
+        "sturdy",
+        "solid",
+        "firm",
+        "robust",
+        "strong",
+        "well-made",
+        "built to last"
+      ]
+    },
+    {
+      "name": "used",
+      "explanation": "Used item conditions.",
+      "entries": [
+        "worn",
+        "beat-up",
+        "worn-out"
+      ]
+    },
+    {
+      "name": "weak",
+      "explanation": "Weak item conditions.",
+      "entries": [
+        "feeble",
+        "flimsy",
+        "frail",
+        "decrepit",
+        "deteriorated",
+        "ramshackle",
+        "battered"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Conditions once rumoured to have existed.",
+      "entries": [
+        "{myth negative}",
+        "{myth neutral}",
+        "{myth positive}"
+      ]
+    },
+    {
+      "name": "myth negative",
+      "explanation": "Negative mythic conditions.",
+      "entries": [
+        "cursed"
+      ]
+    },
+    {
+      "name": "myth neutral",
+      "explanation": "Neutral mythic conditions.",
+      "entries": [
+        "haunted"
+      ]
+    },
+    {
+      "name": "myth positive",
+      "explanation": "Positive mythic conditions.",
+      "entries": [
+        "blessed"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Conditions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{fantasy negative}",
+        "{fantasy neutral}",
+        "{fantasy positive}"
+      ]
+    },
+    {
+      "name": "fantasy negative",
+      "explanation": "Negative fantasy conditions.",
+      "entries": [
+        "mana-drained"
+      ]
+    },
+    {
+      "name": "fantasy neutral",
+      "explanation": "Neutral fantasy conditions.",
+      "entries": [
+        "attuned to an element"
+      ]
+    },
+    {
+      "name": "fantasy positive",
+      "explanation": "Positive fantasy conditions.",
+      "entries": [
+        "mana-charged"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Conditions for modern worlds.",
+      "entries": [
+        "{common}",
+        "{modern negative}",
+        "{modern neutral}",
+        "{modern positive}"
+      ]
+    },
+    {
+      "name": "modern negative",
+      "explanation": "Negative modern conditions.",
+      "entries": [
+        "fixed with tape"
+      ]
+    },
+    {
+      "name": "modern neutral",
+      "explanation": "Neutral modern conditions.",
+      "entries": [
+        "standard-issue"
+      ]
+    },
+    {
+      "name": "modern positive",
+      "explanation": "Positive modern conditions.",
+      "entries": [
+        "customized"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Conditions for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "{futuristic negative}",
+        "{futuristic neutral}",
+        "{futuristic positive}"
+      ]
+    },
+    {
+      "name": "futuristic negative",
+      "explanation": "Negative futuristic conditions.",
+      "entries": [
+        "molecularly disarrayed"
+      ]
+    },
+    {
+      "name": "futuristic neutral",
+      "explanation": "Neutral futuristic conditions.",
+      "entries": [
+        "molecularly normal"
+      ]
+    },
+    {
+      "name": "futuristic positive",
+      "explanation": "Positive futuristic conditions.",
+      "entries": [
+        "molecularly aligned"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special condition tables.",
+      "entries": [
+        "XXX"
+      ]
+    }
+  ]
+}
