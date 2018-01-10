@@ -538,6 +538,34 @@
           "set": {
             "rival": "knight"
           }
+        },
+        {
+          "m": 1,
+          "v": "adventurer",
+          "set": {
+            "rival": "adventurer"
+          }
+        },
+        {
+          "m": 1,
+          "v": "paladin",
+          "set": {
+            "rival": "paladin"
+          }
+        },
+        {
+          "m": 1,
+          "v": "cavalier",
+          "set": {
+            "rival": "cavalier"
+          }
+        },
+        {
+          "m": 1,
+          "v": "mercenary",
+          "set": {
+            "rival": "mercenary"
+          }
         }
       ]
     },
@@ -550,6 +578,20 @@
           "v": "gnome",
           "set": {
             "inhabitant": "gnome"
+          }
+        },
+        {
+          "m": 1,
+          "v": "dwarf",
+          "set": {
+            "inhabitant": "dwarf"
+          }
+        },
+        {
+          "m": 1,
+          "v": "hermit",
+          "set": {
+            "inhabitant": "hermit"
           }
         }
       ]

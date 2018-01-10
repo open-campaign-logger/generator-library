@@ -136,8 +136,19 @@
       "name": "wood",
       "explanation": "Common wood materials.",
       "entries": [
+        "fir",
+        "spruce",
+        "pine",
+        "ash",
         "birch",
+        "beech",
         "aspen",
+        "cedar",
+        "poplar",
+        "hickory",
+        "sycamore",
+        "maple",
+        "elm",
         "oak",
         "bog-wood (from trees buried in peat bogs)"
       ]

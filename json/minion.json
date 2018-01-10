@@ -308,10 +308,10 @@
       "name": "adjective",
       "explanation": "Adjectives describing the minions.",
       "entries": [
-        "bumbling",
         "faithful",
         "cursed",
         "fiendish",
+        "spellbound",
         "carnivorous"
       ]
     },
@@ -319,7 +319,8 @@
       "name": "complication",
       "explanation": "Complications for the minions.",
       "entries": [
-        "A mutiny is rising among the minions."
+        "A mutiny is rising among the minions.",
+        "The minions have been alarmed and are actively patrolling to find the intruders."
       ]
     }
   ]
