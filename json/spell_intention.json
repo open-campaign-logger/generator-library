@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "energy, magic, magical_technique, magical_instrument, potion, spell_name, spell_target, spellcasting",
-  "date": "2018-01-03",
+  "date": "2018-01-10",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "fantasy",
@@ -20,19 +20,55 @@
   "tables": [
     {
       "name": "result",
-      "explanation": "Variations for resultPattern output.",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{intention}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
       "entries": [
         "{intention}"
       ]
     },
     {
       "name": "intention",
-      "explanation": "Spell intention types.",
+      "explanation": "Spell intention types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common spell intentions.",
       "entries": [
         "{negative}",
         "{neutral}",
         "{positive}"
       ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare spell intentions.",
+      "entries": [
+        "{meta}"
+      ]
+    },
+    {
+      "**************************************************": "INTENTION TYPES"
     },
     {
       "name": "negative",
@@ -45,22 +81,48 @@
       "name": "neutral",
       "explanation": "Neutral spell intention types.",
       "entries": [
-        "{transformation}"
+        "{transformation}",
+        "{control}",
+        "{holding}"
       ]
     },
     {
       "name": "positive",
       "explanation": "Positive spell intention types.",
       "entries": [
+        "{defense}",
+        "{purification}",
         "{restoration}",
         "{healing}"
+      ]
+    },
+    {
+      "**************************************************": "INTENTIONS"
+    },
+    {
+      "name": "control",
+      "explanation": "Controlling intentions.",
+      "entries": [
+        "control",
+        "command"
+      ]
+    },
+    {
+      "name": "defense",
+      "explanation": "Defensive intentions.",
+      "entries": [
+        "defense",
+        "protection",
+        "shielding"
       ]
     },
     {
       "name": "destruction",
       "explanation": "Destructive intentions.",
       "entries": [
-        "destruction"
+        "destruction",
+        "obliteration",
+        "decaying"
       ]
     },
     {
@@ -72,8 +134,16 @@
         "healing",
         "curation",
         "alleviation",
-        "rejuvenation",
         "vivification"
+      ]
+    },
+    {
+      "name": "holding",
+      "explanation": "Holding intentions.",
+      "entries": [
+        "holding",
+        "immobilizing",
+        "fixation"
       ]
     },
     {
@@ -81,13 +151,22 @@
       "explanation": "Movement intentions.",
       "entries": [
         "moving",
-        "shifting"
+        "shifting",
+        "transporting"
+      ]
+    },
+    {
+      "name": "purification",
+      "explanation": "Purifying intentions.",
+      "entries": [
+        "purifying"
       ]
     },
     {
       "name": "restoration",
       "explanation": "Restorative intentions.",
       "entries": [
+        "rejuvenation",
         "restoration",
         "renewal"
       ]
@@ -101,10 +180,20 @@
       ]
     },
     {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
       "name": "special",
-      "explanation": "Special spell intention types.",
+      "explanation": "Special spell intention tables.",
       "entries": [
-        "XXX"
+        "{meta}"
+      ]
+    },
+    {
+      "name": "meta",
+      "explanation": "Meta intentions.",
+      "entries": [
+        "meta"
       ]
     }
   ]

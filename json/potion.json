@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "container, liquid, spell_intention",
-  "date": "2018-01-04",
+  "date": "2018-01-10",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "fantasy",
@@ -37,9 +37,9 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{lib:container#vial} of {lib:color#word} colored, {lib:liquid#texture} '{potion}' {form}",
-        "{lib:container#vial} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{potion}' {form} {lib:aroma#smell}",
-        "{lib:container#vial} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{potion}' {form} {lib:aroma#smell}"
+        "{lib:container#vial} of {lib:color#word} colored, {lib:liquid#texture} '{potion}'",
+        "{lib:container#vial} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{potion}' {lib:aroma#smell}",
+        "{lib:container#vial} of {lib:color#tone} {lib:color#word} colored, {lib:liquid#texture} '{potion}' {lib:aroma#smell}"
       ]
     },
     {
@@ -204,7 +204,8 @@
         "remedy",
         "cure",
         "medicine",
-        "tonic"
+        "tonic",
+        "philter"
       ]
     },
     {
