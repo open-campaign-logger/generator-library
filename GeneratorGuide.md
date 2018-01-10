@@ -42,25 +42,29 @@ For documentation on other Campaign Logger topics, please refer to the Campaign 
 - [Recommended Practices](#recommended-practices)
 	- [A Closer Look at Table Properties](#a-closer-look-at-table-properties)
 		- [`name`](#name)
-		- [resultPattern](#resultpattern)
+		- [`resultPattern`](#resultpattern)
 		- [Metadata Properties](#metadata-properties)
 		- [Table Properties in Detail](#table-properties-in-detail)
 			- [`name`](#name)
 			- [`explanation`](#explanation)
 			- [`entries`](#entries)
-	- [Recommended Subtable Organization](#recommended-subtable-organization)
+- [Recommended Subtable Organization](#recommended-subtable-organization)
+	- [Generic Subtables](#generic-subtables)
 		- [common](#common)
 		- [rare](#rare)
+	- [World-Specific Subtables](#world-specific-subtables)
 		- [myth](#myth)
 		- [fantasy](#fantasy)
 		- [modern](#modern)
 		- [futuristic](#futuristic)
 	- [Special Subtables](#special-subtables)
+		- [Ideas for Special Subtables](#ideas-for-special-subtables)
 - [Pro Tips](#pro-tips)
 - [Debugging Tips](#debugging-tips)
 - [Troubleshooting](#troubleshooting)
 
 <!-- /TOC -->
+
 
 ## JSON
 
@@ -483,63 +487,66 @@ There is a comma between each entry:
 *Note*: The final entry in the list does not have a comma after it.
 
 
-## Recommended Subtable Organization
+# Recommended Subtable Organization
 
-It is a recommended practice to make any generators intended to be shared with other users as generic as possible, so that they are suitable for many different game worlds.
+It is a recommended practice to make any generators intended to be shared with other users as generic as possible, so that they are suitable for many different worlds.
 
 Therefore each generator should begin with generic tables whose results would work with a fantasy campaign as well as a science fiction setting. These are the subtables that the `resultPattern` should call by default.
 
 Typically there should be at least generic tables named `common` and `rare`, for producing usual and unusual results for just about any setting.
 
-After these generic tables, genre-specific tables should follow. These subtables should be reached only if specifically called with a `{lib:Generator#subtable}` call.
 
+## Generic Subtables
 
 ### common
 
-"name": "common",
-"explanation": "Common X.",
+The `common` subtable is intended for common and generic variants of the table's subject - stuff that would be well-known in just about any kind of world.
 
 
 ### rare
 
-"name": "rare",
-"explanation": "Rare X.",
+The `rare` subtable should contain rarer variants of the table's subject - but still those that could exist in almost any world.
+
+
+## World-Specific Subtables
+
+After the generic `common` and `rare` tables, genre-specific tables should follow. These world-specific subtables should be reached only if specifically called with a `{lib:Generator#subtable}` type call.
 
 
 ### myth
 
-"name": "myth",
-"explanation": "Imaginary X once rumoured to have existed.",
+The `myth` subtable is the right place for variants based on actual myths or beliefs. They are great for modern or historical worlds that contain some supernatural or mythic elements, but not far out fantasy fare.
 
 
 ### fantasy
 
-    "name": "fantasy",
-    "explanation": "Imaginary X for fantasy worlds (with no basis in myth).",
+The `fantasy` subtable is the right place for variants that typically exist only in worlds of high or epic fantasy (i.e. are not based on actual myths or beliefs). Fantasy tables can contain call of for example the following subtables in the `special` subtable: *magic* and *primitive*.
 
 
 ### modern
 
-    "name": "modern",
-    "explanation": "X for modern worlds.",
+The `modern` subtable is intended for variants that are met only in worlds depicting modern or near history.
 
 
 ### futuristic
 
-    "name": "futuristic",
-    "explanation": "Imaginary X for science fiction worlds.",
+The `futuristic` subtable is the place for variants that belong in the world of science fiction or science fantasy - i.e. variants that do not exist yet.
 
 
 ## Special Subtables
 
-The end of the file is a good location for subtables that are not called from other tables in the same file, but by external calls from other files.
-
-    "name": "special",
-    "explanation": "Special XXX types.",
+The end of the file is a good location for subtables that are may be called by not only the tables in the same file, but also by external calls from other files.
 
 An example of this kind case could be the *color* table that contains the "black and white" subtable in end. That table produces only shades of black, grey and white and could be called for example to describe items in a black & white photograph.
 
 It is perfectly OK if there is overlap between the results produced by different tables.
+
+### Ideas for Special Subtables
+
+To make your generator usable for many different situations, consider including some of the following special tables in the end of your generator:
+
+* **magic** (magical variants)
+* **primitive** (prehistoric variants)
 
 
 # Pro Tips
