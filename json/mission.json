@@ -93,7 +93,7 @@
       "name": "complication",
       "explanation": "Complications for the quest.",
       "entries": [
-        "The mission giver is not the rightful owner of the item."
+        "The mission giver is not the rightful owner of the target item."
       ]
     }
   ]

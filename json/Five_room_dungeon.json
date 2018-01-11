@@ -3651,7 +3651,7 @@
           "m": 1,
           "v": "",
           "set": {
-            "roomshape": "irregular polygon shaped"
+            "roomshape": "irregular, polygon-shaped"
           }
         }
       ]
@@ -3926,7 +3926,7 @@
           "v": "",
           "set": {
             "roompurpose": "giant astrolabe",
-            "roomdescription": "appears like a giant astrolabe",
+            "roomdescription": "appears to be like a giant astrolabe",
             "roomcontents": "There are astrological books and equipment strewn around."
           }
         },
@@ -4076,7 +4076,7 @@
           "v": "",
           "set": {
             "roompurpose": "giant astrolabe",
-            "roomdescription": "appears like a giant astrolabe",
+            "roomdescription": "appears to be like a giant astrolabe",
             "roomcontents": "There are astrological books and equipment strewn around."
           }
         },
