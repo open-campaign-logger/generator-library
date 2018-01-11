@@ -57,9 +57,14 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {friend}",
+        "{friend} who {lib:habit}",
+        "{personality} {friend} who {lib:habit}",
+        "{personality} {friend}",
+        "{personality} {friend} {complication}",
         "{friend} {complication}",
-        "{adjective} {friend} {complication}"
+        "{friend} who wants to {goal}",
+        "{friend} {complication}, and wants to {goal}",
+        "{personality} {friend} who wants to {goal}"
       ]
     },
     {
@@ -405,8 +410,7 @@
       "name": "special",
       "explanation": "Special friend types.",
       "entries": [
-        "{introduction}",
-        "{adjective}",
+        "{personality}",
         "{substantive}",
         "{strategy}",
         "{goal}",
@@ -414,37 +418,21 @@
       ]
     },
     {
-      "name": "introduction",
-      "explanation": "Introductory words about the friend.",
-      "entries": [
-        ""
-      ]
-    },
-    {
-      "name": "adjective",
-      "explanation": "Adjectives describing the friend.",
+      "name": "personality",
+      "explanation": "The personality of the friend.",
       "entries": [
         "lazy",
         "happy-go-lucky",
         "serious",
         "industrious",
-        "{rare adjective}"
+        "{rare personality}"
       ]
     },
     {
-      "name": "rare adjective",
-      "explanation": "Rare adjectives describing the friend.",
+      "name": "rare personality",
+      "explanation": "Rare personalities for friends.",
       "entries": [
         "charismatic"
-      ]
-    },
-    {
-      "name": "substantive",
-      "explanation": "Substantives describing the friend.",
-      "entries": [
-        "scoundrel",
-        "thug",
-        "friend"
       ]
     },
     {
@@ -462,8 +450,10 @@
       "name": "goal",
       "explanation": "The friend's goal.",
       "entries": [
-        "gain wealth",
+        "gain as much wealth as possible",
         "become the best in their own area of expertise",
+        "experience adventures",
+        "live a secured life",
         "be happy",
         "live a happy life",
         "raise good children"
@@ -473,6 +463,7 @@
       "name": "complication",
       "explanation": "Complications for the friend.",
       "entries": [
+        "whose reputation has been marred by false accusations",
         "who knows that death is near"
       ]
     }
