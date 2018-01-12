@@ -88,8 +88,8 @@
       "name": "result",
       "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{summary}",
-        "{detail}"
+        "{summary} {var:para}{extra}",
+        "{detail} {var:para}{extra}"
       ]
     },
     {
@@ -104,8 +104,8 @@
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
         "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. {var:para}{var:roomcontents} ",
-        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. {var:para}{flavor}",
-        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. {var:para}{lib:complication#room}"
+        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. ",
+        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. "
       ]
     },
     {
@@ -1005,6 +1005,7 @@
       "explanation": "Special room tables.",
       "entries": [
         "{adjective}",
+        "{extra}",
         "{flavor}"
       ]
     },
@@ -1020,6 +1021,17 @@
         "dreadful",
         "forlorn",
         "foreboding"
+      ]
+    },
+    {
+      "name": "extra",
+      "explanation": "Extras for dungeon rooms.",
+      "entries": [
+        "",
+        "{flavor}",
+        "{lib:complication#room}",
+        "{lib:hazard}",
+        "{lib:trap}"
       ]
     },
     {
