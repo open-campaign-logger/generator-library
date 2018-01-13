@@ -27,8 +27,6 @@
     "macguffindescription": "object of unknown purpose",
     "key": "key",
     "keydescription": "small silver key",
-    "tool": "shovel",
-    "tooldescription": "worn shovel",
     "artifact": "amulet",
     "artifactdescription": "broken amulet",
     "treasure": "hoard",
@@ -188,12 +186,12 @@
     "footnote": ""
   },
   "explanation": "Dungeon adventure.",
-  "structure": "Produces dungeon descriptions based on the 'Five Room Dungeon' formula.",
+  "structure": "Produces dungeon descriptions based on the 'Five Room Dungeon' concept and Hollywood scriptwriting formulas.",
   "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
   "bugs": "",
   "to do": "More external table calls to add variety.",
   "see": "dungeon_room, Five_room_dungeon, hook_line_and_sinker_adventure",
-  "date": "2018-01-08",
+  "date": "2018-01-13",
   "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon, RolePlayingTips.com",
   "genre": "universal",
@@ -241,7 +239,7 @@
       "name": "adventure description",
       "explanation": "The adventure described from start to finish.",
       "entries": [
-        "{adventure title} {motif note} {villain} {difficulty note} {macguffin note} {treasure note} {complication note} {introduction} {adventure structure} {duration note} {footnote}"
+        "{adventure title} {motif note} {villain note} {goal note} {macguffin note} {treasure note} {complication note} {difficulty note} {introduction} {adventure structure} {duration note} {footnote}"
       ]
     },
     {
@@ -285,31 +283,31 @@
       ]
     },
     {
-      "name": "villain",
+      "name": "villain note",
       "explanation": "Introductory words about the villain.",
       "entries": [
-        "{var:para}{var:startbold}Villain{var:endbold}: A {difficulty} with a {var:miniongroup}. "
+        "{var:para}{var:startbold}Villain{var:endbold}: An evil {difficulty} with a {var:miniongroup}."
       ]
     },
     {
-      "name": "difficulty note",
-      "explanation": "A paragraph describing the difficulty of the adventure.",
+      "name": "goal note",
+      "explanation": "Introductory words about the goal and target.",
       "entries": [
-        "{var:para}{var:startbold}Difficulty{var:endbold}: {var:difficulty}.  This {lib:synonym#small} {lib:synonym#adventure} is best suited for {var:difficultydescription}. "
+        "{var:para}{var:startbold}Goal{var:endbold}: The {lib:synonym#troupe} must {var:goal} {var:target}."
       ]
     },
     {
       "name": "macguffin note",
       "explanation": "Description of the macguffin of the adventure.",
       "entries": [
-        "{var:para}{var:startbold}Macguffin:{var:endbold} A {lib:macguffin}. "
+        "{var:para}{var:startbold}Macguffin:{var:endbold} The adventure starts when the {lib:synonym#troupe} finds out about a {lib:macguffin#detail}."
       ]
     },
     {
       "name": "treasure note",
       "explanation": "Description of the treasure of the adventure.",
       "entries": [
-        "{var:para}{var:startbold}Treasure:{var:endbold} A {lib:treasure}. "
+        "{var:para}{var:startbold}Treasure:{var:endbold} Some {lib:treasure#adjective} {lib:treasure} is said to be hidden in the dungeon - but little do they know that it is {lib:treasure#complication}..."
       ]
     },
     {
@@ -317,6 +315,13 @@
       "explanation": "An optional complication for the adventure.",
       "entries": [
         "{var:para}{var:startbold}Complication{var:endbold}: {lib:complication#dungeon}"
+      ]
+    },
+    {
+      "name": "difficulty note",
+      "explanation": "A paragraph describing the difficulty of the adventure.",
+      "entries": [
+        "{var:para}{var:startbold}Difficulty{var:endbold}: {var:difficulty}.  This {lib:synonym#small} {lib:synonym#adventure} is best suited for {var:difficultydescription}. "
       ]
     },
     {
@@ -541,63 +546,10 @@
         "The entrance is trapped: {lib:trap#detail}. ",
         "The entrance is cleverly hidden.",
         "The entrance is hidden by an overcrop of rock.",
-        "The entrance requires a {key}.",
+        "The entrance requires a {lib:key} that is {key location}.",
         "The entrance is guarded by {lib:actant#guardian} that keeps intruders out.",
-        "A {lib:actant#guardian} is not indigenous to the dungeon but has made its lair in room one.",
-        "A hazard prevents entering and requires special skills and equipment to bypass: {lib:hazard#detail}. "
-      ]
-    },
-    {
-      "name": "tool",
-      "explanation": "Useful tools.",
-      "entries": [
-        "shovel",
-        "rope",
-        "10 foot pole"
-      ]
-    },
-    {
-      "name": "clue",
-      "explanation": "Information helpful for solving the adventure.",
-      "entries": [
-        "instructions for a ceremony",
-        "plans of the {var:villain}",
-        "hiding place of the {var:treasure}"
-      ]
-    },
-    {
-      "name": "red herring",
-      "explanation": "Clues leading to a wrong direction.",
-      "entries": [
-        "A false clue can be found here. "
-      ]
-    },
-    {
-      "name": "smoke screen",
-      "explanation": "Coverups for something more important.",
-      "entries": [
-        "A smoke screen covers an important detail. "
-      ]
-    },
-    {
-      "name": "wonder",
-      "explanation": "Awe-inspiring sights evoking sense of wonder.",
-      "entries": [
-        "Something wonderful is seen or experienced. "
-      ]
-    },
-    {
-      "name": "humor",
-      "explanation": "Humorous happenstances.",
-      "entries": [
-        "Something funny happens. "
-      ]
-    },
-    {
-      "name": "flavor",
-      "explanation": "Insignificant events that bring flavor to the setting.",
-      "entries": [
-        "Something insignificant but flavorful is experienced. "
+        "A {lib:actant#guardian} is not indigenous to the dungeon but has made its lair by the entrance.",
+        "A hazard prevents entering and requires special skills and equipment to bypass: {lib:hazard#detail}"
       ]
     },
     {
@@ -606,21 +558,21 @@
       "entries": [
         {
           "m": 1,
-          "v": "{lib:dungeon_room}{var:para} {puzzle}",
+          "v": "{lib:dungeon_room} {var:para}{puzzle}",
           "set": {
             "room 2": "puzzle"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room}{var:para} {information gathering}",
+          "v": "{lib:dungeon_room} {var:para}{information gathering}",
           "set": {
             "room 2": "information gathering"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room}{var:para} {roleplaying challenge}",
+          "v": "{lib:dungeon_room} {var:para}{roleplaying challenge}",
           "set": {
             "room 2": "roleplaying challenge"
           }
@@ -639,14 +591,14 @@
       "name": "information gathering",
       "explanation": "",
       "entries": [
-        "There is no obvious way to proceed, and the correct approach must be figured out via clues."
+        "All the visible exits turn out to be blocked, and there is no obvious way to proceed. The correct approach must be figured out via clues."
       ]
     },
     {
       "name": "magic puzzle",
       "explanation": "",
       "entries": [
-        "{trap} The floor is covered from wall to wall with chessboard tiles. Stepping on wrong squares triggers a {var:trap}."
+        "The floor is covered from wall to wall with chessboard tiles. Stepping on wrong squares triggers a {lib:trap}."
       ]
     },
     {
@@ -664,35 +616,35 @@
       "entries": [
         {
           "m": 1,
-          "v": "{lib:dungeon_room}{var:para} {trick room}",
+          "v": "{lib:dungeon_room} {var:para}{trick room}",
           "set": {
             "room 3": "trick room"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room}{var:para} {trapped room}",
+          "v": "{lib:dungeon_room} {var:para}{trapped room}",
           "set": {
             "room 3": "trapped room"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room}{var:para} {setback room}",
+          "v": "{lib:dungeon_room} {var:para}{setback room}",
           "set": {
             "room 3": "setback room"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room}{var:para} {complication room}",
+          "v": "{lib:dungeon_room} {var:para}{complication room}",
           "set": {
             "room 3": "complication room"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room}{var:para} {combat beat}",
+          "v": "{lib:dungeon_room} {var:para}{lib:scene#combat beat}",
           "set": {
             "room 3": "combat beat"
           }
@@ -703,7 +655,7 @@
       "name": "trick room",
       "explanation": "",
       "entries": [
-        "The adventurers rescue a {var:captivegroup}. However, the {var:captives} {lib:complication#captive}."
+        "Here the adventurers can rescue a {var:captivegroup}. However, the {var:captives} {lib:complication#captive}."
       ]
     },
     {
@@ -787,21 +739,21 @@
       "entries": [
         {
           "m": 1,
-          "v": "{lib:dungeon_room}{var:para} {climax}",
+          "v": "{lib:dungeon_room} {var:para}{climax}",
           "set": {
             "room 4": "climax"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room}{var:para} {big battle}",
+          "v": "{lib:dungeon_room} {var:para}{big battle}",
           "set": {
             "room 4": "big battle"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room}{var:para} {conflict}",
+          "v": "{lib:dungeon_room} {var:para}{conflict}",
           "set": {
             "room 4": "conflict"
           }
@@ -872,7 +824,7 @@
       "explanation": "",
       "entries": [
         "The {var:villain} needs to stall for time to {reason to stall}.",
-        "Combat ends with the {var:villain} bleeding to death and a few short words can be exchanged.",
+        "A victorious combat ends with the {var:villain} bleeding to death and a few short words can be exchanged.",
         "There is a helpless {var:captivegroup} to roleplay with once the threat is dealt with."
       ]
     },
@@ -891,28 +843,28 @@
       "entries": [
         {
           "m": 1,
-          "v": "{lib:dungeon_room}{var:para} {reward}",
+          "v": "{lib:dungeon_room} {var:para}{reward}",
           "set": {
             "room 5": "reward"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room}{var:para} {surprise}",
+          "v": "{lib:dungeon_room} {var:para}{surprise}",
           "set": {
             "room 5": "surprise"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room}{var:para} {revelation}",
+          "v": "{lib:dungeon_room} {var:para}{revelation}",
           "set": {
             "room 5": "revelation"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room}{var:para} {plot twist}",
+          "v": "{lib:dungeon_room} {var:para}{plot twist}",
           "set": {
             "room 5": "plot twist"
           }
@@ -930,7 +882,7 @@
       "name": "surprise",
       "explanation": "",
       "entries": [
-        "A {var:monster} is hiding in the treasure container: {lib:monster#detail}",
+        "A {var:monster} is hiding in the treasure container: {lib:monster#detail}.",
         "A trap that resurrects or renews the challenge from Room Four."
       ]
     },
@@ -1206,6 +1158,7 @@
       "explanation": "Special room tables.",
       "entries": [
         "{adjective}",
+        "{key location}",
         "{motif}"
       ]
     },
@@ -1228,6 +1181,16 @@
         "foreboding",
         "underground",
         "subterranean"
+      ]
+    },
+    {
+      "name": "key location",
+      "explanation": "Hiding place of the key.",
+      "format": "-- that is X",
+      "entries": [
+        "carried by a nearby {lib:minion#summary}",
+        "clumsily hidden nearby",
+        "buried nearby (with still visible signs of digging)"
       ]
     },
     {
@@ -1295,7 +1258,7 @@
           "v": "",
           "set": {
             "motif": "Underground expanse",
-            "motifdescription": "Something horrific lives deep underground beneath the daylit world, and now it has crawled its way up here."
+            "motifdescription": "Something horrific lives deep underground beneath the daylit world, and now it has crawled its way closer to the surface."
           }
         },
         {

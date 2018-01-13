@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, hero, villain",
-  "date": "2018-01-06",
+  "date": "2018-01-13",
   "authors": "Esko Vesala.",
   "sources": "Five_room_dungeon",
   "genre": "fantasy",
@@ -223,7 +223,7 @@
         },
         {
           "m": 1,
-          "v": "{animal}",
+          "v": "{lib:animal}",
           "set": {
             "actant": "animal"
           }
@@ -291,7 +291,7 @@
         },
         {
           "m": 1,
-          "v": "{animal}",
+          "v": "{lib:animal}",
           "set": {
             "actant": "animal"
           }
@@ -318,7 +318,7 @@
         },
         {
           "m": 1,
-          "v": "{animal}",
+          "v": "{lib:animal}",
           "set": {
             "actant": "animal"
           }

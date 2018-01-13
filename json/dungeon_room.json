@@ -1,5 +1,5 @@
 {
-  "name": "dungeon room",
+  "name": "dungeon_room",
   "resultPattern": "{HTML formatting}{init}",
   "variables": {
     "starttitle": "",
@@ -69,7 +69,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, Five_room_dungeon",
-  "date": "2018-01-06",
+  "date": "2018-01-13",
   "authors": "Esko Vesala",
   "sources": "Five_room_dungeon",
   "genre": "fantasy",
@@ -96,16 +96,29 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "This is a {room}. The {lib:synonym#room} {var:roomdescription}. "
+        "This is a {room}. The {lib:synonym#room} {var:roomdescription}. {exits}."
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. {var:para}{var:roomcontents} ",
-        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. ",
-        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. "
+        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. {contents} {exits}.",
+        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. {exits}."
+      ]
+    },
+    {
+      "name": "contents",
+      "explanation": "Listing the contents of the room.",
+      "entries": [
+        "{var:para}{var:roomcontents}"
+      ]
+    },
+    {
+      "name": "exits",
+      "explanation": "Listing the exits from the room.",
+      "entries": [
+        "{var:para}{var:startbold}Exits{var:endbold}: {doors}"
       ]
     },
     {
@@ -121,16 +134,24 @@
     },
     {
       "name": "common",
-      "explanation": "Common room description types.",
+      "explanation": "Common room types.",
       "entries": [
-        "{var:roomsize}, {var:roomshape} {var:roomtype}"
+        "{description}"
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare room description types.",
+      "explanation": "Rare room types.",
       "entries": [
-        "{adjective}, {var:roomsize}, {var:roomshape} {var:roomtype}"
+        "{adjective}, {description}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Room description formats.",
+      "entries": [
+        "{var:roomsize}, {var:roomshape} {var:roomtype}",
+        "{var:roomsize}, {var:roomshape} {var:roomtype} with {wall material} walls and {floor material} floor"
       ]
     },
     {
@@ -959,6 +980,97 @@
       ]
     },
     {
+      "**************************************************": "MATERIALS"
+    },
+    {
+      "name": "ceiling material",
+      "explanation": "Ceiling materials.",
+      "entries": [
+        "{stone}",
+        "masonry",
+        "plastered masonry"
+      ]
+    },
+    {
+      "name": "floor material",
+      "explanation": "Floor materials.",
+      "entries": [
+        "{stone}",
+        "{rubble}",
+        "{dirt}",
+        "{mud}",
+        "{constructed}"
+      ]
+    },
+    {
+      "name": "stone",
+      "explanation": "Stone floors.",
+      "entries": [
+        "rough stone",
+        "smooth stone",
+        "hewn stone"
+      ]
+    },
+    {
+      "name": "rubble",
+      "explanation": "Rubble floors.",
+      "entries": [
+        "debris",
+        "rocks",
+        "light rubble",
+        "dense rubble",
+        "sand"
+      ]
+    },
+    {
+      "name": "dirt",
+      "explanation": "Dirt floors.",
+      "entries": [
+        "dirt"
+      ]
+    },
+    {
+      "name": "mud",
+      "explanation": "Mud floors.",
+      "entries": [
+        "mud",
+        "silt",
+        "waste"
+      ]
+    },
+    {
+      "name": "constructed",
+      "explanation": "Constructed floors.",
+      "entries": [
+        "flagstone",
+        "uneven flagstone",
+        "cobblestone",
+        "mosaic stone"
+      ]
+    },
+    {
+      "name": "wall material",
+      "explanation": "Wall materials.",
+      "entries": [
+        "{stone}",
+        "brick",
+        "masonry",
+        "reinforced masonry",
+        "plastered masonry",
+        "{rare wall material}"
+      ]
+    },
+    {
+      "name": "rare wall material",
+      "explanation": "Rare wall materials.",
+      "entries": [
+        "wooden",
+        "tile",
+        "iron",
+        "magically augmented masonry"
+      ]
+    },
+    {
       "**************************************************": "FORMATTING"
     },
     {
@@ -1005,8 +1117,7 @@
       "explanation": "Special room tables.",
       "entries": [
         "{adjective}",
-        "{extra}",
-        "{flavor}"
+        "{extra}"
       ]
     },
     {
@@ -1024,76 +1135,65 @@
       ]
     },
     {
+      "**************************************************": "DOORS"
+    },
+    {
+      "name": "doors",
+      "explanation": "Doors exiting from the room.",
+      "entries": [
+        "On the left wall: {lib:door}",
+        "On the left wall: {lib:door}. On the opposite wall: {lib:door}",
+        "On the opposite wall: {lib:door}",
+        "On the left wall: {lib:door}. On the right wall: {lib:door}",
+        "On the opposite wall: {lib:door}. On the right wall: {lib:door}",
+        "On the right wall: {lib:door}",
+        "On the left wall: {lib:door}. On the opposite wall: {lib:door}. On the right wall: {lib:door}"
+      ]
+    },
+    {
+      "**************************************************": "EXTRAS"
+    },
+    {
       "name": "extra",
       "explanation": "Extras for dungeon rooms.",
       "entries": [
         "",
-        "{flavor}",
-        "{lib:complication#room}",
-        "{lib:hazard}",
-        "{lib:trap}"
+        "{var:para}{var:startbold}Flavoring{var:endbold}: {flavoring}",
+        "{var:para}{var:startbold}Complication{var:endbold}: {lib:complication#room}",
+        "{var:para}{var:startbold}Feature{var:endbold}: {lib:dungeon_feature}"
       ]
     },
     {
-      "**************************************************": "FLAVORS"
-    },
-    {
-      "name": "flavor",
-      "explanation": "Extra atmospheric details for dungeon rooms.",
+      "name": "flavoring",
+      "explanation": "Insignificant events that bring flavor to the setting.",
       "entries": [
-        "{animal}{var:animaldescription} ",
-        "Some {plant} grows here. "
+        "{animal}",
+        "{plant}",
+        "{wonder}"
       ]
     },
     {
       "name": "animal",
       "explanation": "Animals encountered in dungeons to add some color.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "animal": "bat",
-            "animals": "bats",
-            "animalgroup": "colony of bats",
-            "animalaction": "flying around",
-            "animaladjective": "leather-winged",
-            "animaldescription": "Dark, bat-shaped forms fly all around."
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "animal": "frog",
-            "animals": "frogs",
-            "animalgroup": "several frogs",
-            "animalaction": "hopping around",
-            "animaladjective": "slimy-looking",
-            "animaldescription": "A frog is croaking here, undisturbed by your presence."
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "animal": "fly",
-            "animals": "flies",
-            "animalgroup": "business of flies",
-            "animalaction": "buzzing nervously",
-            "animaladjective": "biting",
-            "animaldescription": "A thick swarm of flies fills the air. They start to crawl oll over your skin, biting nastily."
-          }
-        }
+        "Dark, bat-shaped forms fly all around.",
+        "A thick swarm of buzzing flies fills the air."
       ]
     },
     {
       "name": "plant",
       "explanation": "Plants growing in the dungeon room, adding some colour.",
       "entries": [
-        "{lib:plant#fungus}",
-        "{lib:plant#moss}",
-        "slime"
+        "Some {lib:plant#fungus} grows here.",
+        "Some {lib:plant#moss} grows here.",
+        "A growth of slime covers an area of the room."
+      ]
+    },
+    {
+      "name": "wonder",
+      "explanation": "Awe-inspiring sights evoking sense of wonder.",
+      "entries": [
+        "[Something wonderful is seen or experienced.] "
       ]
     }
   ]

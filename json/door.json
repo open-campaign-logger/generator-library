@@ -11,7 +11,7 @@
   "bugs": "",
   "to do": "door size",
   "see": "Dungeon_adventure",
-  "date": "2018-01-09",
+  "date": "2018-01-13",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "universal",
@@ -39,13 +39,13 @@
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
         "{material} {door} with {handle} [{state}]",
-        "{material} {door} with {handle} [{state}], appears to be {lib:condition#strong}",
+        "{material} {door} with {handle} [{state}] and appearing to be {lib:condition#strong}",
         "{shape} {material} {door} with {handle} [{state}]",
-        "{shape} {material} {door} with {handle} [{state}], appears to be {lib:condition#strong}",
+        "{shape} {material} {door} with {handle} [{state}] and appearing to be {lib:condition#strong}",
         "{material} {door} with {feature} [{state}]",
-        "{material} {door} with {feature} [{state}], appears to be {lib:condition#strong}",
+        "{material} {door} with {feature} [{state}] and appearing to be {lib:condition#strong}",
         "{shape} {material} {door} with {feature} [{state}]",
-        "{material} {door} with {handle} [{state}], appears to be {lib:condition#strong} "
+        "{material} {door} with {handle} [{state}] and appearing to be {lib:condition#strong}"
       ]
     },
     {
@@ -67,7 +67,7 @@
         "double doors",
         "door with an inset door",
         "double doors with an inset door",
-        "hidden door {hiding place}"
+        "hidden door [{hiding place}]"
       ]
     },
     {
@@ -195,7 +195,7 @@
     {
       "name": "hiding place",
       "explanation": "Hiding places for doors.",
-      "format": "hidden door {hiding place}",
+      "format": "hidden door [{hiding place}]",
       "entries": [
         "behind curtains",
         "behind drapes",
@@ -222,7 +222,7 @@
       "explanation": "Door materials.",
       "entries": [
         "{lib:material#wood}",
-        "{lib:material#wood} reinforced with iron",
+        "iron-reinforced {lib:material#wood}",
         "iron",
         "steel",
         "{rare material}"
@@ -235,6 +235,7 @@
         "{lib:stone}",
         "brass",
         "bronze",
+        "bone",
         "{lib:material#glass}"
       ]
     },

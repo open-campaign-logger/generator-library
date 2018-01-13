@@ -11,7 +11,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-01-09",
+  "date": "2018-01-13",
   "authors": "Esko Vesala.",
   "sources": "Dungeon_adventure",
   "genre": "universal",
@@ -56,14 +56,14 @@
       "name": "common",
       "explanation": "Common complications.",
       "entries": [
-        "XXX"
+        "{item}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare complications.",
       "entries": [
-        "XXX"
+        "{room}"
       ]
     },
     {
@@ -118,9 +118,9 @@
       "name": "captive",
       "explanation": "Complications for captives.",
       "entries": [
-        "enemies in disguise",
-        "booby-trapped",
-        "pleading to be escorted back to safety immediately"
+        "are enemies in disguise",
+        "are booby-trapped",
+        "are pleading to be escorted back to safety immediately"
       ]
     },
     {
@@ -204,7 +204,7 @@
       "entries": [
         "easily breaking",
         "broken",
-        "missing parts",
+        "parts of",
         "unreliable",
         "{rare item}"
       ]
@@ -227,7 +227,11 @@
       "name": "room",
       "explanation": "Complications for (dungeon) rooms.",
       "entries": [
-        "The air turns heavy and breathing soon becomes difficult."
+        "The air here is heavy and breathing soon becomes difficult.",
+        "Noxious fumes make everyone breathing them cough and sneeze.",
+        "Gusts of wind threaten to put out torches and lanterns.",
+        "Loud echoes in the room make communication difficult.",
+        "In some areas the ceiling is so low that it slows down movement."
       ]
     }
   ]

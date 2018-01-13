@@ -5,13 +5,13 @@
     "macguffin": "",
     "footnote": ""
   },
-  "explanation": "Random macguffins (objects that draw the characters into the adventure).",
+  "explanation": "Random plot devices (objects that draw the characters into the adventure).",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-01-06",
+  "date": "2018-01-13",
   "authors": "Esko Vesala.",
   "sources": "Five_room_dungeon",
   "genre": "universal",
@@ -31,14 +31,14 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{macguffin}{var:macguffin}"
+        "{macguffin}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {macguffin}{var:macguffin}"
+        "{adjective} {macguffin} that {power}"
       ]
     },
     {
@@ -56,96 +56,84 @@
       "name": "common",
       "explanation": "Common macguffin.",
       "entries": [
-        "{information}",
-        "{container}",
-        "{weapon}"
+        {
+          "m": 1,
+          "v": "{information}",
+          "set": {
+            "macguffin": "information"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{container}",
+          "set": {
+            "macguffin": "container"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{weapon}",
+          "set": {
+            "macguffin": "weapon"
+          }
+        }
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare macguffin.",
       "entries": [
-        "{armor}",
-        "{treasure}"
+        {
+          "m": 1,
+          "v": "{armor}",
+          "set": {
+            "macguffin": "armor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{treasure}",
+          "set": {
+            "macguffin": "treasure"
+          }
+        }
       ]
     },
     {
       "name": "armor",
       "explanation": "Armor macguffins.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "macguffin": "gauntlet"
-          }
-        }
+        "gauntlet"
       ]
     },
     {
       "name": "container",
       "explanation": "Container macguffins.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "macguffin": "urn"
-          }
-        }
+        "urn"
       ]
     },
     {
       "name": "information",
       "explanation": "Information macguffins.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "macguffin": "libram"
-          }
-        }
+        "libram"
       ]
     },
     {
       "name": "treasure",
       "explanation": "Treasure macguffins.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "macguffin": "scepter"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "macguffin": "crown"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "macguffin": "gem"
-          }
-        }
+        "scepter",
+        "crown",
+        "gem"
       ]
     },
     {
       "name": "weapon",
       "explanation": "Weapon macguffins.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "macguffin": "blade"
-          }
-        }
+        "blade"
       ]
     },
     {
@@ -183,13 +171,14 @@
       ]
     },
     {
-      "**************************************************": "SPECIAL CASES"
+      "**************************************************": "SPECIAL TABLES"
     },
     {
       "name": "special",
       "explanation": "Special macguffin types.",
       "entries": [
-        "{adjective}"
+        "{adjective}",
+        "{power}"
       ]
     },
     {
@@ -199,6 +188,20 @@
         "mysterious",
         "cursed",
         "rune-carved"
+      ]
+    },
+    {
+      "name": "power",
+      "explanation": "Macguffin powers.",
+      "format": "-- that X",
+      "entries": [
+        "is of unknown purpose",
+        "appears valuable",
+        "seems to be strangely important to some people",
+        "is chased by an unknown faction",
+        "is desired by the villain",
+        "seems to contain a clue about something important",
+        "seems to contain some strange power"
       ]
     }
   ]

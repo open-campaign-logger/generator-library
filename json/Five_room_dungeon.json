@@ -193,7 +193,7 @@
   "bugs": "",
   "to do": "Support for external motif files (requires global variables). More beats!",
   "see": "Dungeon_adventure, hook_line_and_sinker_adventure",
-  "date": "2018-01-06",
+  "date": "2018-01-13",
   "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "Dream Park: The Roleplaying Game, RolePlayingTips.com",
   "genre": "universal",
@@ -3015,7 +3015,7 @@
       ]
     },
     {
-      "name": "flavor",
+      "name": "flavoring",
       "explanation": "Insignificant events that bring flavor to the setting.",
       "entries": [
         "Something insignificant but flavorful is experienced. "
@@ -3321,7 +3321,7 @@
       "explanation": "",
       "entries": [
         "The {var:enemy} needs to stall for time to {reason to stall}.",
-        "Combat ends with the {var:enemy} bleeding to death and a few short words can be exchanged.",
+        "A victorious combat ends with the {var:enemy} bleeding to death and a few short words can be exchanged.",
         "There is a helpless {var:captivegroup} to roleplay with once the threat is dealt with."
       ]
     },
@@ -4904,7 +4904,7 @@
       "name": "flavor beat",
       "explanation": "Beats that create color and flavor, may bring roleplaying opportunities (plant, animal, tempter, traitor, item, wonder, etc.)",
       "entries": [
-        "{flavor}",
+        "{flavoring}",
         "{plant}",
         "{animal}",
         "{item}",

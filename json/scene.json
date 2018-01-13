@@ -10,6 +10,7 @@
     "endbold": "</B>",
     "para": "<P>",
     "beat": "",
+    "villain": "",
     "artifact": "artifact",
     "treasure": "treasure",
     "footnote": ""
@@ -20,7 +21,7 @@
   "bugs": "",
   "to do": "",
   "see": "actant, Five_room_dungeon, hero, villain",
-  "date": "2018-01-08",
+  "date": "2018-01-13",
   "authors": "Esko Vesala.",
   "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon",
   "genre": "universal",
@@ -79,7 +80,7 @@
       ]
     },
     {
-      "**************************************************": "HOOK"
+      "**************************************************": "HOOKS"
     },
     {
       "name": "hook",
@@ -114,9 +115,23 @@
       "entries": [
         {
           "m": 1,
-          "v": "Kidnapped{var:endheading} The {lib:synonym#troupe} has been taken as prisoners. ",
+          "v": "Kidnapped{var:endheading} The {lib:synonym#troupe} has been taken as prisoners. It's time to find the way to freedom - and avenge! ",
           "set": {
             "beat": "kidnapped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Friend kidnapped{var:endheading} A friend of one of the characters (their {lib:friend#summary}) has been taken as a prisoner by the villain. The {lib:synonym#troupe} is off to the rescue! ",
+          "set": {
+            "beat": "friend kidnapped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Attack{var:endheading} Someone has launched an attack that threatens what is dear to {lib:synonym#troupe}. The villain must be tracked to the hideaway and dealt with. ",
+          "set": {
+            "beat": "attack"
           }
         },
         {
@@ -141,14 +156,21 @@
       "entries": [
         {
           "m": 1,
-          "v": "Memory loss{var:endheading} The {lib:synonym#troupe} has no recollection of how they have ended up here.",
+          "v": "Memory loss{var:endheading} The {lib:synonym#troupe} has no recollection of how they have ended up in the present location. What is going on and who is behind this? ",
           "set": {
             "beat": "memory loss"
           }
         },
         {
           "m": 1,
-          "v": "Discovery{var:endheading} The {lib:synonym#troupe} makes a remarkable discovery: a {lib:macguffin#detail}.",
+          "v": "Discovery{var:endheading} The {lib:synonym#troupe} makes a remarkable discovery: a {lib:macguffin#detail}. [The discovery is in some way linked to this adventure's villain or treasure.]",
+          "set": {
+            "beat": "memory loss"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Revelation{var:endheading} A surprising finding changes the lives of the {lib:synonym#troupe}. ",
           "set": {
             "beat": "memory loss"
           }
@@ -421,7 +443,7 @@
       "name": "resolution",
       "explanation": "Resolution initialization",
       "entries": [
-        "{var:startheading}Resolution: {resolution type} {var:para}{lib:dungeon_room}"
+        "{var:startheading}Resolution: {resolution type} {var:para}{lib:dungeon_room}."
       ]
     },
     {
@@ -444,7 +466,7 @@
         },
         {
           "m": 1,
-          "v": "Villain Surrenders{var:endheading} The villain gives up and surrenders to the {lib:synonym#troupe}.",
+          "v": "Villain Surrenders{var:endheading} After a tough fight, the villain is ready to give up and surrender to the {lib:synonym#troupe}.",
           "set": {
             "beat": "villain surrenders"
           }
@@ -612,7 +634,6 @@
       "explanation": "Beats providing temporary diversion (tricster, tempter, sense of wonder, comic relief, etc.)",
       "entries": [
         "A {lib:actant#deceptive} causes a temporary diversion for the {lib:synonym#troupe}.",
-        "{wonder}",
         "{humor}"
       ]
     },
@@ -620,18 +641,15 @@
       "name": "flavor beat",
       "explanation": "Beats that create color and flavor, may bring roleplaying opportunities (plant, animal, tempter, traitor, item, wonder, etc.)",
       "entries": [
-        "{flavor}",
-        "{plant}",
-        "{animal}",
-        "{item}",
-        "{wonder}"
+        "{lib:dungon_room#flavoring}",
+        "There is a {lib:equipment} here."
       ]
     },
     {
       "name": "rescue beat",
       "explanation": "Beats where a prisoner (captive, mentor, ally, shapeshifter, tempter, traitor, trickster, animal, monster, minion, rival, etc.) can be rescued and perhaps befriended.",
       "entries": [
-        "A {lib:actant#helpless} needs to be rescued."
+        "A {lib:actant#helpless} awaits to be rescued from {predicament}."
       ]
     },
     {
@@ -652,17 +670,10 @@
       "name": "information beat",
       "explanation": "Beats that offer information (mentor, trickster, clue, shapeshifter, traitor, red herring, etc.)",
       "entries": [
-        "A {lib:actant#friendly} gives useful information.",
-        "A {lib:actant#deceptive} gives wrong information.",
+        "A {lib:actant#friendly} gives useful information about {clue subject}.",
+        "A {lib:actant#deceptive} gives wrong information about {clue subject}.",
         "{clue}",
         "{red herring}"
-      ]
-    },
-    {
-      "name": "clue",
-      "explanation": "Hints and tips.",
-      "entries": [
-        "A clue can be found here."
       ]
     },
     {
@@ -740,14 +751,66 @@
       "name": "special",
       "explanation": "Special scene types.",
       "entries": [
+        "{clue}",
+        "{predicament}",
+        "{red herring}",
+        "{smoke screen}",
         "{trick}"
+      ]
+    },
+    {
+      "name": "clue",
+      "explanation": "Information helpful for solving the adventure.",
+      "entries": [
+        "A clue about {clue subject} can be found here."
+      ]
+    },
+    {
+      "name": "clue subject",
+      "explanation": "Information helpful for solving the adventure.",
+      "entries": [
+        "instructions for a ceremony",
+        "the plans of the {var:villain}",
+        "a weakness of the villain",
+        "the hiding place of the {var:treasure}"
+      ]
+    },
+    {
+      "name": "predicament",
+      "explanation": "Tough situations for helpless actants.",
+      "format": "needs to be rescued from X.",
+      "entries": [
+        "an aggressive {lib:minion#summary}",
+        "a nest of vipers",
+        "spreading fire from a campfire"
+      ]
+    },
+    {
+      "name": "red herring",
+      "explanation": "False information leading investigators astray.",
+      "entries": [
+        "A [false] clue about {clue subject} can be found here."
+      ]
+    },
+    {
+      "name": "smoke screen",
+      "explanation": "Coverups for something more important.",
+      "entries": [
+        "A smoke screen covers an important detail. "
+      ]
+    },
+    {
+      "name": "smoke screen",
+      "explanation": "Something that hides the truth.",
+      "entries": [
+        "[A proverbial smoke screen hides a clue.] "
       ]
     },
     {
       "name": "trick",
       "explanation": "Tricks to deceive the adventurers.",
       "entries": [
-        "A trick is played on the {lib:synonym#troupe}. "
+        "[A trick is played on the {lib:synonym#troupe}]. "
       ]
     }
   ]

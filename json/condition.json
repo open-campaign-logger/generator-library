@@ -11,7 +11,7 @@
   "bugs": "",
   "to do": "",
   "see": "door, key",
-  "date": "2018-01-10",
+  "date": "2018-01-13",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "universal",
@@ -169,7 +169,6 @@
       "explanation": "Strong item conditions.",
       "entries": [
         "sturdy",
-        "solid",
         "firm",
         "robust",
         "strong",
