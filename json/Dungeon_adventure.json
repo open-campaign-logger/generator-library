@@ -190,7 +190,7 @@
   "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
   "bugs": "",
   "to do": "More external table calls to add variety.",
-  "see": "dungeon_room, Five_room_dungeon, hook_line_and_sinker_adventure",
+  "see": "dungeon_entrance, dungeon_corridor, dungeon_room, Five_room_dungeon, hook_line_and_sinker_adventure",
   "date": "2018-01-13",
   "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon, RolePlayingTips.com",
@@ -239,14 +239,14 @@
       "name": "adventure description",
       "explanation": "The adventure described from start to finish.",
       "entries": [
-        "{adventure title} {motif note} {villain note} {goal note} {macguffin note} {treasure note} {complication note} {difficulty note} {introduction} {adventure structure} {duration note} {footnote}"
+        "{adventure title} {motif note} {villain note} {goal note} {macguffin note} {treasure note} {complication note} {difficulty note} {introduction} {adventure structure} {duration note}"
       ]
     },
     {
       "name": "five room dungeon",
       "explanation": "This is an older model is based more strictly on the 'Five Room Dungeon' formula.",
       "entries": [
-        "{var:startheading}Five Room Dungeon{var:endheading} {var:startheading}Entrance{var:endheading} {room 1} {var:startheading}Trial{var:endheading} {room 2} {var:startheading}Build-Up{var:endheading} {room 3} {var:startheading}Finale{var:endheading} {room 4} {roleplaying opportunity} {var:startheading}Resolution{var:endheading} {room 5}  {var:para}{var:footnote}"
+        "{var:startheading}Five Room Dungeon{var:endheading} {var:startheading}Entrance{var:endheading} {room 1} {var:startheading}Trial{var:endheading} {room 2} {var:startheading}Build-Up{var:endheading} {room 3} {var:startheading}Finale{var:endheading} {room 4} {roleplaying opportunity} {var:startheading}Resolution{var:endheading} {room 5}"
       ]
     },
     {
@@ -532,7 +532,7 @@
       "entries": [
         {
           "m": 1,
-          "v": "{entrance}",
+          "v": "{lib:dungeon_entrance}{entrance}. ",
           "set": {
             "room 1": "entrance"
           }

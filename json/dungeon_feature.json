@@ -46,7 +46,7 @@
       "explanation": "Feature types by rarity.",
       "entries": [
         {
-          "m": 10,
+          "m": 5,
           "v": "{common}"
         },
         "{rare}"
@@ -60,15 +60,25 @@
         "On the wall: {wall}.",
         "On the ceiling: {ceiling}.",
         "Pieces of {litter} litter the area.",
-        "There an abandoned {object} here."
+        "There is an abandoned {object} here.",
+        "The area has {room}.",
+        "There is {fixture} in the area."
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare features.",
       "entries": [
-        "{room}",
-        "{fixture}"
+        "On the floor: {floor} and {floor}.",
+        "On the floor: {floor}. On the wall: {wall}.",
+        "On the walls: {wall} and {wall}.",
+        "On the wall: {wall}. On the ceiling: {ceiling}.",
+        "On the floor: {floor}. On the ceiling: {ceiling}.",
+        "On the floor: {floor} and {floor}. On the wall: {wall}.",
+        "On the floor: {floor}. On the walls: {wall} and {wall}.",
+        "On the floor: {floor} and {floor}. On the ceiling: {ceiling}.",
+        "On the walls: {wall} and {wall}. On the ceiling {ceiling}.",
+        "On the floor: {floor}. On the wall: {wall}. On the ceiling: {ceiling}."
       ]
     },
     {
@@ -78,15 +88,15 @@
       "name": "ceiling",
       "explanation": "Ceiling features.",
       "entries": [
-        "murder hole",
-        "hanging cage"
+        "a murder hole",
+        "a hanging cage"
       ]
     },
     {
       "name": "fixture",
       "explanation": "Fixture features.",
       "entries": [
-        "forge",
+        "a forge",
         "{altar}",
         "{fountain}",
         "{statue}"
@@ -97,9 +107,9 @@
       "explanation": "Floor features.",
       "format": "singular",
       "entries": [
-        "firepit",
-        "blood stain",
-        "magic circle"
+        "a firepit",
+        "a blood stain",
+        "a magic circle"
       ]
     },
     {
@@ -117,24 +127,24 @@
       "name": "object",
       "explanation": "Object features.",
       "entries": [
-        "barrel",
-        "brazier",
-        "cage",
-        "crate",
-        "bench",
-        "bookcase",
-        "cauldron",
-        "chest",
-        "gong"
+        "a barrel",
+        "a brazier",
+        "a cage",
+        "a crate",
+        "a bench",
+        "a bookcase",
+        "a cauldron",
+        "a chest",
+        "a gong"
       ]
     },
     {
       "name": "room",
       "explanation": "Room features.",
       "entries": [
-        "alcove",
-        "fireplace",
-        "oven"
+        "an alcove",
+        "a fireplace",
+        "an oven"
       ]
     },
     {
@@ -142,12 +152,12 @@
       "explanation": "Wall features.",
       "entries": [
         "claw marks",
-        "engraving",
+        "an engraving",
         "magical glyphs",
         "blood stains",
         "arrow slits",
-        "peephole",
-        "balcony"
+        "a peephole",
+        "a balcony"
       ]
     },
     {

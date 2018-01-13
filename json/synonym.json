@@ -124,6 +124,22 @@
       ]
     },
     {
+      "name": "corridor",
+      "explanation": "Synonyms for passageways.",
+      "entries": [
+        "corridor",
+        "hall",
+        "hallway",
+        "passage",
+        "passageway",
+        "entry",
+        "entryway",
+        "entrance",
+        "entranceway",
+        "way in"
+      ]
+    },
+    {
       "name": "darkness",
       "explanation": "Synonyms for darkness.",
       "entries": [

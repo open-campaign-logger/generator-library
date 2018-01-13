@@ -108,9 +108,11 @@
       "explanation": "Special complication tables.",
       "entries": [
         "{captive}",
+        "{corridor}",
         "{creature}",
         "{dungeon}",
         "{item}",
+        "{milieu}",
         "{room}"
       ]
     },
@@ -121,6 +123,15 @@
         "are enemies in disguise",
         "are booby-trapped",
         "are pleading to be escorted back to safety immediately"
+      ]
+    },
+    {
+      "name": "corridor",
+      "explanation": "Complications for (dungeon) corridors.",
+      "entries": [
+        "In some areas the ceiling is so low that it slows down movement.",
+        "The passages slopes downwards in an almost undetectable manner.",
+        "The passages slopes downwards so sharply that it makes balancing difficult."
       ]
     },
     {
@@ -194,8 +205,7 @@
       "explanation": "Complications for dungeons.",
       "entries": [
         "The structure is about to collapse.",
-        "Rising water levels are slowly flooding the area.",
-        "Locals consider the area sacred and try their best to prevent anyone from desecrating the place."
+        "Rising water levels are slowly flooding the area."
       ]
     },
     {
@@ -210,17 +220,17 @@
       ]
     },
     {
-      "name": "milieu",
-      "explanation": "Complications for environments.",
-      "entries": [
-        "being ravaged by earthquake tremors"
-      ]
-    },
-    {
       "name": "rare item",
       "explanation": "Rare complications for items.",
       "entries": [
         "cursed"
+      ]
+    },
+    {
+      "name": "milieu",
+      "explanation": "Complications for environments.",
+      "entries": [
+        "being ravaged by earthquake tremors"
       ]
     },
     {

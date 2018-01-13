@@ -106,7 +106,7 @@
       "name": "action hook",
       "explanation": "Action hook initialization.",
       "entries": [
-        "{var:startheading}Action Hook: {action hook type} {var:para}{lib:dungeon_room}"
+        "{var:startheading}Action Hook: {action hook type} {var:para}{lib:dungeon_entrance}"
       ]
     },
     {
@@ -147,7 +147,7 @@
       "name": "development hook",
       "explanation": "Action hook initialization.",
       "entries": [
-        "{var:startheading}Development Hook: {development hook type} {var:para}{lib:dungeon_room}"
+        "{var:startheading}Development Hook: {development hook type} {var:para}{lib:dungeon_entrance}"
       ]
     },
     {
@@ -443,7 +443,7 @@
       "name": "resolution",
       "explanation": "Resolution initialization",
       "entries": [
-        "{var:startheading}Resolution: {resolution type} {var:para}{lib:dungeon_room}."
+        "{var:startheading}Resolution: {resolution type} {var:para}{lib:dungeon_room}"
       ]
     },
     {

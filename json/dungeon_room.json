@@ -68,7 +68,7 @@
   "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
   "bugs": "",
   "to do": "",
-  "see": "Dungeon_adventure, Five_room_dungeon",
+  "see": "Dungeon_adventure, dungeon_corridor, Five_room_dungeon",
   "date": "2018-01-13",
   "authors": "Esko Vesala",
   "sources": "Five_room_dungeon",
@@ -143,7 +143,7 @@
       "name": "rare",
       "explanation": "Rare room types.",
       "entries": [
-        "{adjective}, {description}"
+        "{description}"
       ]
     },
     {
@@ -151,7 +151,9 @@
       "explanation": "Room description formats.",
       "entries": [
         "{var:roomsize}, {var:roomshape} {var:roomtype}",
-        "{var:roomsize}, {var:roomshape} {var:roomtype} with {wall material} walls and {floor material} floor"
+        "{adjective}, {var:roomsize}, {var:roomshape} {var:roomtype}",
+        "{var:roomsize}, {var:roomshape} {var:roomtype} with {wall material} walls and {floor material} floor",
+        "{adjective}, {var:roomsize}, {var:roomshape} {var:roomtype} with {wall material} walls and {floor material} floor"
       ]
     },
     {
@@ -386,13 +388,6 @@
           "m": 1,
           "v": "",
           "set": {
-            "roomtype": "hallway"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
             "roomtype": "enclosure"
           }
         },
@@ -596,7 +591,7 @@
     },
     {
       "name": "medium room purpose",
-      "explanation": "The previous usage of a medium room",
+      "explanation": "The previous usage of a medium room.",
       "entries": [
         {
           "m": 1,
@@ -1016,9 +1011,9 @@
       "explanation": "Rubble floors.",
       "entries": [
         "debris",
-        "rocks",
-        "light rubble",
-        "dense rubble",
+        "rocky",
+        "pebble",
+        "rubble",
         "sand"
       ]
     },
@@ -1117,6 +1112,8 @@
       "explanation": "Special room tables.",
       "entries": [
         "{adjective}",
+        "{corridor}",
+        "{doors}",
         "{extra}"
       ]
     },
@@ -1135,19 +1132,12 @@
       ]
     },
     {
-      "**************************************************": "DOORS"
-    },
-    {
       "name": "doors",
       "explanation": "Doors exiting from the room.",
       "entries": [
-        "On the left wall: {lib:door}",
-        "On the left wall: {lib:door}. On the opposite wall: {lib:door}",
-        "On the opposite wall: {lib:door}",
-        "On the left wall: {lib:door}. On the right wall: {lib:door}",
-        "On the opposite wall: {lib:door}. On the right wall: {lib:door}",
-        "On the right wall: {lib:door}",
-        "On the left wall: {lib:door}. On the opposite wall: {lib:door}. On the right wall: {lib:door}"
+        "There is one visible exit: {lib:door}",
+        "There are two visible exits. {var:para}1) {lib:door}, {var:para}2) {lib:door}",
+        "There are three visible exits. {var:para}1) {lib:door}, {var:para}2) {lib:door}, {var:para}3) {lib:door}"
       ]
     },
     {
@@ -1158,9 +1148,9 @@
       "explanation": "Extras for dungeon rooms.",
       "entries": [
         "",
-        "{var:para}{var:startbold}Flavoring{var:endbold}: {flavoring}",
-        "{var:para}{var:startbold}Complication{var:endbold}: {lib:complication#room}",
-        "{var:para}{var:startbold}Feature{var:endbold}: {lib:dungeon_feature}"
+        "{var:startbold}Flavoring{var:endbold}: {flavoring}",
+        "{var:startbold}Complication{var:endbold}: {lib:complication#room}",
+        "{var:startbold}Feature{var:endbold}: {lib:dungeon_feature}"
       ]
     },
     {
