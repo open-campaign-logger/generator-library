@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "Expansion.",
   "see": "",
-  "date": "2018-01-04",
+  "date": "2018-01-14",
   "authors": "Esko Vesala.",
   "sources": "Thesaurus.com, TvTropes.org, Wikipedia.org",
   "genre": "universal",
@@ -164,6 +164,20 @@
       ]
     },
     {
+      "name": "demon",
+      "explanation": "Synonyms for demons and devils.",
+      "entries": [
+        "devil",
+        "fiend",
+        "demon",
+        "daemon",
+        "archfiend",
+        "evil one",
+        "adversary",
+        "antagonist"
+      ]
+    },
+    {
       "name": "destiny",
       "explanation": "Synonyms for fate and destiny.",
       "entries": [
@@ -261,6 +275,23 @@
         "timberland",
         "weald",
         "thicket"
+      ]
+    },
+    {
+      "name": "ghost",
+      "explanation": "Synonyms for a spirit or phantom.",
+      "entries": [
+        "ghost",
+        "spirit",
+        "wraith",
+        "phantom",
+        "phantasm",
+        "shade",
+        "spook",
+        "shadow",
+        "specter",
+        "apparition",
+        "revenant"
       ]
     },
     {
