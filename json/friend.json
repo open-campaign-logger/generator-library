@@ -18,7 +18,7 @@
   "bugs": "",
   "to do": "Categorize friends by type.",
   "see": "actant, Dungeon_adventure, hero, scene",
-  "date": "2018-01-11",
+  "date": "2018-01-14",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "universal",
@@ -63,7 +63,7 @@
         "{personality} {friend} {complication}",
         "{friend} {complication}",
         "{friend} who wants to {goal}",
-        "{friend} {complication}, and wants to {goal}",
+        "{friend} {complication}, and who wants to {goal}",
         "{personality} {friend} who wants to {goal}"
       ]
     },
@@ -157,8 +157,7 @@
         "{sibling}",
         "{spouse}",
         "{child}",
-        "{extended family}",
-        "{rare family}"
+        "{extended family}"
       ]
     },
     {
@@ -212,7 +211,8 @@
       "name": "rare spouse",
       "explanation": "Rare spouses.",
       "entries": [
-        "ex-spouse"
+        "ex-spouse",
+        "lover"
       ]
     },
     {
@@ -220,7 +220,6 @@
       "explanation": "Children.",
       "entries": [
         "child",
-        "baby",
         "{rare child}"
       ]
     },
@@ -269,13 +268,6 @@
       ]
     },
     {
-      "name": "rare family",
-      "explanation": "Rare family members.",
-      "entries": [
-        "lover"
-      ]
-    },
-    {
       "**************************************************": "RELATIVES"
     },
     {
@@ -315,7 +307,7 @@
       "explanation": "Good, long-time friends.",
       "entries": [
         "childhood friend",
-        "buddy",
+        "close friend",
         "confidant"
       ]
     },
@@ -404,11 +396,11 @@
       ]
     },
     {
-      "**************************************************": "SPECIAL CASES"
+      "**************************************************": "SPECIAL TABLES"
     },
     {
       "name": "special",
-      "explanation": "Special friend types.",
+      "explanation": "Special friend tables.",
       "entries": [
         "{personality}",
         "{substantive}",
@@ -422,9 +414,12 @@
       "explanation": "The personality of the friend.",
       "entries": [
         "lazy",
+        "stubborn",
         "happy-go-lucky",
         "serious",
+        "joker",
         "industrious",
+        "generous",
         "{rare personality}"
       ]
     },
@@ -464,7 +459,11 @@
       "explanation": "Complications for the friend.",
       "entries": [
         "whose reputation has been marred by false accusations",
-        "who knows that death is near"
+        "who knows that death is near",
+        "who seems to be hiding a big secret",
+        "who is unable to trust others",
+        "who has a drinking problem",
+        "who does not trust their own capabilities"
       ]
     }
   ]

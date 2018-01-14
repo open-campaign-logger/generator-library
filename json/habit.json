@@ -11,7 +11,7 @@
   "bugs": "",
   "to do": "",
   "see": "friend",
-  "date": "2018-01-11",
+  "date": "2018-01-14",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "universal",
@@ -57,7 +57,6 @@
       "explanation": "Common habits.",
       "entries": [
         "{negative}",
-        "{neutral}",
         "{positive}"
       ]
     },
@@ -65,7 +64,7 @@
       "name": "rare",
       "explanation": "Rare habits.",
       "entries": [
-        "{special}"
+        "{neutral}"
       ]
     },
     {
@@ -144,14 +143,6 @@
         "is a great listener",
         "know so much about surprising subjects",
         "lives a regular life"
-      ]
-    },
-    {
-      "name": "special",
-      "explanation": "Special habits.",
-      "format": "-- who X",
-      "entries": [
-        "XXX"
       ]
     },
     {
