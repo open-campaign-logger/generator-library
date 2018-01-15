@@ -69,7 +69,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_corridor, dungeon_room, Five_room_dungeon",
-  "date": "2018-01-13",
+  "date": "2018-01-15",
   "authors": "Esko Vesala",
   "sources": "",
   "genre": "fantasy",
@@ -223,14 +223,14 @@
       "name": "mountain",
       "explanation": "Entrances in the mountains.",
       "entries": [
-        "|| In the rocky mountainside there is"
+        "In the rocky mountainside there is"
       ]
     },
     {
       "name": "jungle",
       "explanation": "Entrances in the jungle.",
       "entries": [
-        "|| In the depths of the green hell, the jungle finally reveals its secret. Behind the thick vines, you at last see the ancient temple - and the entrance: "
+        "In the depths of the green hell, the jungle finally reveals its secret. Behind the thick vines, you at last see the ancient temple - and the entrance: "
       ]
     },
     {

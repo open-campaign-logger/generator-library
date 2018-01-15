@@ -68,7 +68,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_entrance, dungeon_room, Five_room_dungeon",
-  "date": "2018-01-13",
+  "date": "2018-01-15",
   "authors": "Esko Vesala",
   "sources": "",
   "genre": "fantasy",
@@ -80,7 +80,7 @@
       "name": "init",
       "explanation": "Initializing the corridor parameters.",
       "entries": [
-        "{size}{shape}{type} {var:para}{result}"
+        "{size}{shape}{type}{result}"
       ]
     },
     {
@@ -95,29 +95,28 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "This is a {corridor}. The {lib:synonym#corridor} is {description}. {exits}."
+        "a {corridor} {exits}."
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "The {lib:synonym#corridor} is a {corridor}. {exits}.",
-        "The {lib:synonym#corridor} is a {corridor}. {contents} {exits}."
+        "a {corridor} {exits}. In the passage a {contents} can be seen."
       ]
     },
     {
       "name": "contents",
       "explanation": "Listing the contents of the corridor.",
       "entries": [
-        ""
+        "chest"
       ]
     },
     {
       "name": "exits",
       "explanation": "Listing the exits from the corridor.",
       "entries": [
-        "{var:para}{var:startbold}Exits{var:endbold}: {doors}"
+        "with the following exits: {doors}"
       ]
     },
     {

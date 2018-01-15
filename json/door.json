@@ -2,6 +2,13 @@
   "name": "door",
   "resultPattern": "{result}",
   "variables": {
+    "starttitle": "<H2>",
+    "endtitle": "</H2>",
+    "startheading": "<H3>",
+    "endheading": "</H3>",
+    "startbold": "<B>",
+    "endbold": "</B>",
+    "para": "<P>",
     "footnote": ""
   },
   "explanation": "Random door table.",
@@ -11,7 +18,7 @@
   "bugs": "",
   "to do": "door size",
   "see": "Dungeon_adventure",
-  "date": "2018-01-13",
+  "date": "2018-01-15",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "universal",
@@ -56,7 +63,7 @@
           "m": 10,
           "v": "{common}"
         },
-        "{rare}"
+        "{rare}. Beyond the entryway, there is a {lib:dungeon_corridor}."
       ]
     },
     {
@@ -222,7 +229,7 @@
       "explanation": "Door materials.",
       "entries": [
         "{lib:material#wood}",
-        "iron-reinforced {lib:material#wood}",
+        "iron-reinforced wooden",
         "iron",
         "steel",
         "{rare material}"
