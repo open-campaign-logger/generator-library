@@ -1,5 +1,5 @@
 {
-  "name": "dungeon_entrance",
+  "name": "dungeon_vault",
   "resultPattern": "{HTML formatting}{init}",
   "variables": {
     "starttitle": "",
@@ -9,14 +9,14 @@
     "startbold": "",
     "endbold": "",
     "para": "",
-    "entrance": "door",
-    "entrancesize": "medium",
-    "entrancepurpose": "",
-    "entranceshape": "rectangular",
-    "entrancetype": "chamber",
-    "entrancedescription": "",
-    "entrancecontents": "",
-    "entranceevent": "",
+    "vault": "main chamber",
+    "vaultsize": "medium",
+    "vaultpurpose": "throne room",
+    "vaultshape": "rectangular",
+    "vaulttype": "chamber",
+    "vaultdescription": "",
+    "vaultcontents": "",
+    "vaultevent": "",
     "groundfeature": "",
     "wallfeature": "",
     "ceilingfeature": "",
@@ -63,14 +63,14 @@
     "damagetype": "",
     "footnote": ""
   },
-  "explanation": "Random dungeon entrances.",
+  "explanation": "Random dungeon vaults.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "bugs": "",
   "to do": "",
-  "see": "Dungeon_adventure, dungeon_corridor, dungeon_room, dungeon_vault, Five_room_dungeon",
+  "see": "Dungeon_adventure, dungeon_corridor, dungeon_entrance, dungeon_room, Five_room_dungeon",
   "date": "2018-01-16",
-  "authors": "Esko Vesala",
+  "authors": "Esko Vesala.",
   "sources": "",
   "genre": "fantasy",
   "categories": [
@@ -79,7 +79,7 @@
   "tables": [
     {
       "name": "init",
-      "explanation": "Initializing the entrance parameters.",
+      "explanation": "Initializing the vault parameters.",
       "entries": [
         "{result}"
       ]
@@ -96,19 +96,19 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{milieu} {entrance}."
+        "{adjective} {vault}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{milieu} {entrance}. {var:para}{extra}"
+        "{adjective} {vault}. {var:para}{extra}"
       ]
     },
     {
-      "name": "entrance",
-      "explanation": "Dungeon entrance types by rarity.",
+      "name": "vault",
+      "explanation": "Dungeon vault types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -119,46 +119,46 @@
     },
     {
       "name": "common",
-      "explanation": "Common entrance types.",
+      "explanation": "Common vault types.",
       "entries": [
         {
           "m": 1,
-          "v": "{door}",
+          "v": "{chamber}",
           "set": {
-            "entrance": "door"
+            "vault": "chamber"
           }
         }
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare entrance types.",
+      "explanation": "Rare vault types.",
       "entries": [
         {
           "m": 1,
-          "v": "{trapdoor}",
+          "v": "{open}",
           "set": {
-            "entrance": "trapdoor"
+            "vault": "open"
           }
         }
       ]
     },
     {
-      "**************************************************": "ENTRANCES",
-      "format": "-- there is X"
+      "**************************************************": "VAULTS"
     },
     {
-      "name": "door",
-      "explanation": "Door entrances.",
+      "name": "chamber",
+      "explanation": "Chamber vaults.",
       "entries": [
-        "a gigantic stone slab decorated with runic symbols"
+        "throne room",
+        "treasure room"
       ]
     },
     {
-      "name": "trapdoor",
-      "explanation": "Trapdoor entrances.",
+      "name": "open",
+      "explanation": "Open space vaults.",
       "entries": [
-        "a trapdoor half-buried in the ground"
+        "enormous cavern"
       ]
     },
     {
@@ -166,14 +166,14 @@
     },
     {
       "name": "myth",
-      "explanation": "Entrances once rumoured to have existed.",
+      "explanation": "Vaults once rumoured to have existed.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "fantasy",
-      "explanation": "Entrances for fantasy worlds (with no basis in myth).",
+      "explanation": "Vaults for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
         "XXX"
@@ -181,7 +181,7 @@
     },
     {
       "name": "modern",
-      "explanation": "Entrances for modern worlds.",
+      "explanation": "Vaults for modern worlds.",
       "entries": [
         "{common}",
         "XXX"
@@ -189,48 +189,10 @@
     },
     {
       "name": "futuristic",
-      "explanation": "Entrances for science fiction worlds.",
+      "explanation": "Vaults for science fiction worlds.",
       "entries": [
         "{modern}",
         "XXX"
-      ]
-    },
-    {
-      "**************************************************": "MILIEUS"
-    },
-    {
-      "name": "milieu",
-      "explanation": "The common theme of the dungeon.",
-      "note": "The vertical bars are for creating a box around the output.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "{mountain}",
-          "set": {
-            "entrance": "door"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{jungle}",
-          "set": {
-            "entrance": "door"
-          }
-        }
-      ]
-    },
-    {
-      "name": "mountain",
-      "explanation": "Entrances in the mountains.",
-      "entries": [
-        "In the rocky mountainside there is"
-      ]
-    },
-    {
-      "name": "jungle",
-      "explanation": "Entrances in the jungle.",
-      "entries": [
-        "In the depths of the green hell, the jungle finally reveals its secret. Behind the thick vines, you at last see the ancient temple - and the entrance: "
       ]
     },
     {
@@ -277,43 +239,31 @@
     },
     {
       "name": "special",
-      "explanation": "Special entrance tables.",
+      "explanation": "Special vault tables.",
       "entries": [
         "{adjective}",
-        "{extra}",
-        "{complication}",
-        "{feature}"
+        "{extra}"
       ]
     },
     {
       "name": "adjective",
-      "explanation": "Adjectives for dungeon entrances.",
+      "explanation": "Adjectives for dungeon vaults.",
       "entries": [
-        "bleak",
-        "murky",
-        "gloomy",
-        "dismal",
-        "dreary",
-        "dreadful",
-        "forlorn",
-        "foreboding"
+        "awe-inspiring"
       ]
     },
     {
-      "**************************************************": "EXTRAS"
-    },
-    {
       "name": "extra",
-      "explanation": "Extras for dungeon entrances.",
+      "explanation": "Extra features for dungeon vaults.",
       "entries": [
-        "{var:startbold}Complication{var:endbold}: {complication}"
+        "{complication}"
       ]
     },
     {
       "name": "complication",
-      "explanation": "Entrance complications.",
+      "explanation": "Vault complications.",
       "entries": [
-        "Locals consider the area sacred and try their best to prevent anyone from desecrating the place."
+        "The entrances close, locking everyone in until they are able to find a hidden exit."
       ]
     }
   ]

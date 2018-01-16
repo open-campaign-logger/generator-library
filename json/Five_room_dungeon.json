@@ -193,7 +193,7 @@
   "bugs": "",
   "to do": "Support for external motif files (requires global variables). More beats!",
   "see": "Dungeon_adventure, hook_line_and_sinker_adventure",
-  "date": "2018-01-13",
+  "date": "2018-01-16",
   "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "Dream Park: The Roleplaying Game, RolePlayingTips.com",
   "genre": "universal",
@@ -4855,8 +4855,8 @@
       "explanation": "Beats that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
       "entries": [
         "A {competitive actant} slows down the progress.",
-        "Problem with a {lock}",
-        "Problem with a {door}."
+        "Problem with a {lib:lock}",
+        "Problem with a {lib:door}."
       ]
     },
     {

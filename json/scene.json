@@ -21,7 +21,7 @@
   "bugs": "",
   "to do": "",
   "see": "actant, Five_room_dungeon, hero, villain",
-  "date": "2018-01-13",
+  "date": "2018-01-16",
   "authors": "Esko Vesala.",
   "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon",
   "genre": "universal",
@@ -129,6 +129,13 @@
         },
         {
           "m": 1,
+          "v": "Death of a friend{var:endheading} A friend of one of the characters (their {lib:friend#summary}) has died because the actions of the villain or the minions. It's the {lib:synonym#troupe}'s task to avenge the lost friend!",
+          "set": {
+            "beat": "friend kidnapped"
+          }
+        },
+        {
+          "m": 1,
           "v": "Attack{var:endheading} Someone has launched an attack that threatens what is dear to {lib:synonym#troupe}. The villain must be tracked to the hideaway and dealt with. ",
           "set": {
             "beat": "attack"
@@ -170,7 +177,21 @@
         },
         {
           "m": 1,
-          "v": "Revelation{var:endheading} A surprising finding changes the lives of the {lib:synonym#troupe}. ",
+          "v": "Revelation{var:endheading} A surprising finding about their past changes the lives of the {lib:synonym#troupe}. The revealed information points to the adventure starting location as a source of additional information.",
+          "set": {
+            "beat": "memory loss"
+          }
+        },
+        {
+          "m": 1,
+          "v": "False accusation{var:endheading} The {lib:synonym#troupe} has been framed to be guilty of a crime they did not commit. They must flee from the accusations and catch the true culprit.",
+          "set": {
+            "beat": "memory loss"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Looming threat{var:endheading} The villain is planning an evil deed and the {lib:synonym#troupe} must counter the plans before it is too late.",
           "set": {
             "beat": "memory loss"
           }
@@ -400,7 +421,7 @@
       "name": "action finale",
       "explanation": "Action finale initialization.",
       "entries": [
-        "{var:startheading}Action Finale: {action finale type} {var:para}{lib:dungeon_room}"
+        "{var:startheading}Action Finale: {action finale type} {var:para}{var:para}The adventure culminates in an action scene in {lib:dungeon_vault}"
       ]
     },
     {
@@ -420,7 +441,7 @@
       "name": "development finale",
       "explanation": "Development finale initialization.",
       "entries": [
-        "{var:startheading}Development Finale: {development finale type} {var:para}{lib:dungeon_room}"
+        "{var:startheading}Development Finale: {development finale type} {var:para}{var:para}The adventure culminates in a development scene in {lib:dungeon_vault}"
       ]
     },
     {
@@ -593,8 +614,8 @@
       "explanation": "Beats that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
       "entries": [
         "A {lib:actant#competitive} slows down the progress.",
-        "Problem with a {lib:dungeon_room#lock}.",
-        "Problem with a {lib:dungeon_room#door}."
+        "Problem with a {lib:lock}.",
+        "Problem with a {lib:door}."
       ]
     },
     {

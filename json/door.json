@@ -18,7 +18,7 @@
   "bugs": "",
   "to do": "door size",
   "see": "Dungeon_adventure",
-  "date": "2018-01-15",
+  "date": "2018-01-16",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "universal",
@@ -63,7 +63,7 @@
           "m": 10,
           "v": "{common}"
         },
-        "{rare}. Beyond the entryway, there is a {lib:dungeon_corridor}."
+        "{rare}"
       ]
     },
     {
@@ -131,6 +131,7 @@
       "entries": [
         "{barring}",
         "{closed}",
+        "{corridor}",
         "{feature}",
         "{handle}",
         "{hiding place}",
@@ -159,6 +160,13 @@
         "barred from this side with a {barring}",
         "barred from the other side (with a {barring})",
         "spiked shut"
+      ]
+    },
+    {
+      "name": "corridor",
+      "explanation": "Corridors beyond doors.",
+      "entries": [
+        "Beyond the entryway, there is a {lib:dungeon_corridor}."
       ]
     },
     {
