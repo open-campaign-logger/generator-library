@@ -21,7 +21,7 @@
   "bugs": "",
   "to do": "",
   "see": "actant, Five_room_dungeon, hero, villain",
-  "date": "2018-01-16",
+  "date": "2018-01-17",
   "authors": "Esko Vesala.",
   "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon",
   "genre": "universal",
@@ -106,7 +106,7 @@
       "name": "action hook",
       "explanation": "Action hook initialization.",
       "entries": [
-        "{var:startheading}Action Hook: {action hook type} {var:para}{lib:dungeon_entrance}"
+        "{var:startheading}Action Hook: {action hook type} {var:para}{var:para}{lib:dungeon_entrance}"
       ]
     },
     {
@@ -249,30 +249,30 @@
       "entries": [
         {
           "m": 1,
+          "v": "Ambush{var:endheading} {ambush beat}",
+          "set": {
+            "beat": "ambush"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Battle{var:endheading} {battle beat}",
+          "set": {
+            "beat": "battle"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Chase{var:endheading} {chase beat}",
+          "set": {
+            "beat": "chase"
+          }
+        },
+        {
+          "m": 1,
           "v": "Combat{var:endheading} {combat beat}",
           "set": {
             "beat": "combat"
-          }
-        },
-        {
-          "m": 1,
-          "v": "Trap{var:endheading} {trap beat}",
-          "set": {
-            "beat": "trap"
-          }
-        },
-        {
-          "m": 1,
-          "v": "Hazard{var:endheading} {hazard beat}",
-          "set": {
-            "beat": "hazard"
-          }
-        },
-        {
-          "m": 1,
-          "v": "Trial{var:endheading} {trial beat}",
-          "set": {
-            "beat": "trial"
           }
         },
         {
@@ -284,9 +284,86 @@
         },
         {
           "m": 1,
+          "v": "Confrontation{var:endheading} {confrontation beat}",
+          "set": {
+            "beat": "confrontation"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Contest{var:endheading} {contest beat}",
+          "set": {
+            "beat": "contest"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Duel{var:endheading} {duel beat}",
+          "set": {
+            "beat": "duel"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Fight{var:endheading} {fight beat}",
+          "set": {
+            "beat": "fight"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Hazard{var:endheading} {hazard beat}",
+          "set": {
+            "beat": "hazard"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Monster{var:endheading} {monster beat}",
+          "set": {
+            "beat": "monster"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Pursuit{var:endheading} {pursuit beat}",
+          "set": {
+            "beat": "pursuit"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Race{var:endheading} {race beat}",
+          "set": {
+            "beat": "race"
+          }
+        },
+        {
+          "m": 1,
           "v": "Rescue{var:endheading} {rescue beat}",
           "set": {
             "beat": "rescue"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Skirmish{var:endheading} {skirmish beat}",
+          "set": {
+            "beat": "skirmish"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Trap{var:endheading} {trap beat}",
+          "set": {
+            "beat": "trap"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Trial{var:endheading} {trial beat}",
+          "set": {
+            "beat": "trial"
           }
         }
       ]
@@ -567,10 +644,32 @@
       "**************************************************": "BEATS"
     },
     {
-      "name": "hook beat",
-      "explanation": "Beats solely for starting the adventure.",
+      "name": "ambush beat",
+      "explanation": "Beats for surprise battles with the enemy's troops.",
       "entries": [
-        "Hook: XXX"
+        "The {lib:synonym#troupe} spot enemy troops that are oblivious to their presence.",
+        "Enemy troops ambush the {lib:synonym#troupe}."
+      ]
+    },
+    {
+      "name": "battle beat",
+      "explanation": "Beats for battles with the enemy's troops.",
+      "entries": [
+        "The villain's forces arrive to battle the {lib:synonym#troupe} in full force."
+      ]
+    },
+    {
+      "name": "betrayal beat",
+      "explanation": "Beats where the adventurers are betrayed (by a traitor, shapeshifter, tempter, trickster, etc).",
+      "entries": [
+        "A {lib:actant#deceptive} needs help."
+      ]
+    },
+    {
+      "name": "chase beat",
+      "explanation": "Beats for chasing the minions.",
+      "entries": [
+        "A group of {lib:minion#summary}s spots the {lib:synonym#troupe} and attempts to flee and warn their master."
       ]
     },
     {
@@ -582,63 +681,26 @@
       ]
     },
     {
-      "name": "betrayal beat",
-      "explanation": "Beats where the adventurers are betrayed (by a traitor, shapeshifter, tempter, trickster, etc).",
-      "entries": [
-        "A {lib:actant#deceptive} needs help."
-      ]
-    },
-    {
-      "name": "trap beat",
-      "explanation": "Beats with traps.",
-      "entries": [
-        "A trap has been set here: {lib:trap#detail} "
-      ]
-    },
-    {
-      "name": "hazard beat",
-      "explanation": "Beats that put the adventurers in danger (hazard, etc.)",
-      "entries": [
-        "Hazard: {lib:hazard#detail}."
-      ]
-    },
-    {
-      "name": "setback beat",
-      "explanation": "Beats that cause the adventurers to lose progress (traitor, shapeshifter, rival, etc).",
-      "entries": [
-        "A {lib:actant#competitive} causes the {lib:synonym#troupe} to lose progress."
-      ]
-    },
-    {
-      "name": "hindrance beat",
-      "explanation": "Beats that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
-      "entries": [
-        "A {lib:actant#competitive} slows down the progress.",
-        "Problem with a {lib:lock}.",
-        "Problem with a {lib:door}."
-      ]
-    },
-    {
-      "name": "trick beat",
-      "explanation": "Beats that require a clever approach.",
-      "entries": [
-        "A {lib:actant#deceptive} attempts to trick the {lib:synonym#troupe}.",
-        "{trick}"
-      ]
-    },
-    {
-      "name": "trial beat",
-      "explanation": "Beats where the adventurers must prove themselves (rival, mentor, trickster, etc).",
-      "entries": [
-        "A {lib:actant#friendly} requires the {lib:synonym#troupe} to prove their mettle."
-      ]
-    },
-    {
       "name": "competition beat",
-      "explanation": "Beats where adventurers have to compete with someone (rival, mentor, etc.)",
+      "explanation": "Beats where the heroes have to compete with someone (rival, mentor, etc.)",
       "entries": [
         "A {lib:actant#competitive} presents a challenge to the {lib:synonym#troupe}.",
         "A {lib:actant#deceptive} challenges the {lib:synonym#troupe}."
+      ]
+    },
+    {
+      "name": "confrontation beat",
+      "explanation": "Beats where the heroes confront the enemy in a non-physial fight.",
+      "entries": [
+        "A {lib:minion#summary} sent by the villain issues a warning to the {lib:synonym#troupe}.",
+        "The villain sends a threat to intimidate the {lib:synonym#troupe}."
+      ]
+    },
+    {
+      "name": "contest beat",
+      "explanation": "Beats where the heroes enter a ritualized contest.",
+      "entries": [
+        "A {lib:minion#summary} challenges the {lib:synonym#troupe} to a {contest}."
       ]
     },
     {
@@ -651,11 +713,17 @@
       ]
     },
     {
-      "name": "sidetrack beat",
-      "explanation": "Beats providing temporary diversion (tricster, tempter, sense of wonder, comic relief, etc.)",
+      "name": "duel beat",
+      "explanation": "Beats where a hero fights the enemy one-on-one.",
       "entries": [
-        "A {lib:actant#deceptive} causes a temporary diversion for the {lib:synonym#troupe}.",
-        "{humor}"
+        "The villain's representative challenges a champion of the {lib:synonym#troupe} to one-on-one armed combat on equal terms. The loser must agree to something that the winner wants."
+      ]
+    },
+    {
+      "name": "fight beat",
+      "explanation": "Beats where the heroes must confront the enemy in a ritual fight.",
+      "entries": [
+        "A {lib:minion#summary} champion challenges one of the {lib:synonym#troupe} to a ritual, unarmed fight."
       ]
     },
     {
@@ -664,6 +732,60 @@
       "entries": [
         "{lib:dungon_room#flavoring}",
         "There is a {lib:equipment} here."
+      ]
+    },
+    {
+      "name": "hazard beat",
+      "explanation": "Beats that put the adventurers in danger (hazard, etc.)",
+      "entries": [
+        "Hazard: {lib:hazard#detail}."
+      ]
+    },
+    {
+      "name": "help beat",
+      "explanation": "Beats that offer help (mentor, ally, etc.)",
+      "entries": [
+        "A {lib:actant#friendly} offers to help."
+      ]
+    },
+    {
+      "name": "hindrance beat",
+      "explanation": "Beats that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
+      "entries": [
+        "A {lib:actant#competitive} slows down the progress.",
+        "Problem with a {lib:lock}.",
+        "Problem with a {lib:door}."
+      ]
+    },
+    {
+      "name": "information beat",
+      "explanation": "Beats that offer information (mentor, trickster, clue, shapeshifter, traitor, red herring, etc.)",
+      "entries": [
+        "A {lib:actant#friendly} gives useful information about {clue subject}.",
+        "A {lib:actant#deceptive} gives wrong information about {clue subject}.",
+        "{clue}",
+        "{red herring}"
+      ]
+    },
+    {
+      "name": "monster beat",
+      "explanation": "Beats where the heroes face a monstrosity.",
+      "entries": [
+        "The {lib:synonym#troupe} encounters a hostile {lib:monster}."
+      ]
+    },
+    {
+      "name": "pursuit beat",
+      "explanation": "Beats where the heroes are escaping the enemy.",
+      "entries": [
+        "A far superior force of {lib:minion#summary}s spots the {lib:synonym#troupe} and starts a chase."
+      ]
+    },
+    {
+      "name": "race beat",
+      "explanation": "Beats where the heroes race the opposition.",
+      "entries": [
+        "A {lib:minion#summary} tries to reach the goal before the {lib:synonym#troupe}."
       ]
     },
     {
@@ -681,41 +803,53 @@
         "{key}",
         "{tool}",
         "{var:treasure}",
-        "{plant}",
         "{animal}",
         "{information}",
         "{red herring}"
       ]
     },
     {
-      "name": "information beat",
-      "explanation": "Beats that offer information (mentor, trickster, clue, shapeshifter, traitor, red herring, etc.)",
+      "name": "setback beat",
+      "explanation": "Beats that cause the adventurers to lose progress (traitor, shapeshifter, rival, etc).",
       "entries": [
-        "A {lib:actant#friendly} gives useful information about {clue subject}.",
-        "A {lib:actant#deceptive} gives wrong information about {clue subject}.",
-        "{clue}",
-        "{red herring}"
+        "A {lib:actant#competitive} causes the {lib:synonym#troupe} to lose progress."
       ]
     },
     {
-      "name": "help beat",
-      "explanation": "Beats that offer help (mentor, ally, etc.)",
+      "name": "sidetrack beat",
+      "explanation": "Beats providing temporary diversion (tricster, tempter, sense of wonder, comic relief, etc.)",
       "entries": [
-        "A {lib:actant#friendly} offers to help."
+        "A {lib:actant#deceptive} causes a temporary diversion for the {lib:synonym#troupe}.",
+        "{humor}"
       ]
     },
     {
-      "name": "finale beat",
-      "explanation": "Beats solely for the adventure climax.",
+      "name": "skirmish beat",
+      "explanation": "Beats where the heroes enter a small battle.",
       "entries": [
-        "Finale: XXX"
+        "The {lib:synonym#troupe} encounters underpowered troops of the enemy. If the enemy is about to lose, they attempt to flee."
       ]
     },
     {
-      "name": "resolution beat",
-      "explanation": "Beats solely for the adventure resolution.",
+      "name": "trap beat",
+      "explanation": "Beats with traps.",
       "entries": [
-        "Resolution: XXX"
+        "A trap has been set here: {lib:trap#detail} "
+      ]
+    },
+    {
+      "name": "trial beat",
+      "explanation": "Beats where the adventurers must prove themselves (rival, mentor, trickster, etc).",
+      "entries": [
+        "A {lib:actant#friendly} requires the {lib:synonym#troupe} to prove their mettle."
+      ]
+    },
+    {
+      "name": "trick beat",
+      "explanation": "Beats that require a clever approach.",
+      "entries": [
+        "A {lib:actant#deceptive} attempts to trick the {lib:synonym#troupe}.",
+        "{trick}"
       ]
     },
     {
@@ -773,6 +907,7 @@
       "explanation": "Special scene types.",
       "entries": [
         "{clue}",
+        "{contest}",
         "{predicament}",
         "{red herring}",
         "{smoke screen}",
@@ -794,6 +929,15 @@
         "the plans of the {var:villain}",
         "a weakness of the villain",
         "the hiding place of the {var:treasure}"
+      ]
+    },
+    {
+      "name": "contest",
+      "explanation": "Contests.",
+      "entries": [
+        "riddle contest",
+        "test of strength",
+        "battle fo wits"
       ]
     },
     {
