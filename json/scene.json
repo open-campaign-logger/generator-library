@@ -20,8 +20,8 @@
   "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
   "bugs": "",
   "to do": "",
-  "see": "actant, Five_room_dungeon, hero, villain",
-  "date": "2018-01-17",
+  "see": "actant, clue, Five_room_dungeon, hero, villain",
+  "date": "2018-01-18",
   "authors": "Esko Vesala.",
   "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon",
   "genre": "universal",
@@ -388,9 +388,9 @@
         },
         {
           "m": 1,
-          "v": "Setback{var:endheading} {setback beat}",
+          "v": "Help{var:endheading} {help beat}",
           "set": {
-            "beat": "setback"
+            "beat": "help"
           }
         },
         {
@@ -402,13 +402,6 @@
         },
         {
           "m": 1,
-          "v": "Trick{var:endheading} {trick beat}",
-          "set": {
-            "beat": "trick"
-          }
-        },
-        {
-          "m": 1,
           "v": "Information{var:endheading} {information beat}",
           "set": {
             "beat": "information"
@@ -416,9 +409,23 @@
         },
         {
           "m": 1,
-          "v": "Help{var:endheading} {help beat}",
+          "v": "Setback{var:endheading} {setback beat}",
           "set": {
-            "beat": "help"
+            "beat": "setback"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Trick{var:endheading} {trick beat}",
+          "set": {
+            "beat": "trick"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Warning{var:endheading} {warning beat}",
+          "set": {
+            "beat": "warning"
           }
         }
       ]
@@ -443,13 +450,6 @@
         },
         {
           "m": 1,
-          "v": "Sidetrack{var:endheading} {sidetrack beat}",
-          "set": {
-            "beat": "sidetrack"
-          }
-        },
-        {
-          "m": 1,
           "v": "Flavor{var:endheading} {flavor beat}",
           "set": {
             "beat": "flavor"
@@ -460,6 +460,13 @@
           "v": "Resource{var:endheading} {resource beat}",
           "set": {
             "beat": "resource"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Sidetrack{var:endheading} {sidetrack beat}",
+          "set": {
+            "beat": "sidetrack"
           }
         }
       ]
@@ -763,7 +770,7 @@
       "entries": [
         "A {lib:actant#friendly} gives useful information about {clue subject}.",
         "A {lib:actant#deceptive} gives wrong information about {clue subject}.",
-        "{clue}",
+        "A {lib:clue} can be found here.",
         "{red herring}"
       ]
     },
@@ -853,6 +860,14 @@
       ]
     },
     {
+      "name": "warning beat",
+      "explanation": "The heroes receive a warning of things to come.",
+      "entries": [
+        "{lib:actant#ally} approaches the {lib:synonym#troupe} to tell them details about the danger that is looming ahead.",
+        "A {lib:clue} hints about the dangers that lie ahead."
+      ]
+    },
+    {
       "**************************************************": "FORMATTING"
     },
     {
@@ -906,29 +921,11 @@
       "name": "special",
       "explanation": "Special scene types.",
       "entries": [
-        "{clue}",
         "{contest}",
         "{predicament}",
         "{red herring}",
         "{smoke screen}",
         "{trick}"
-      ]
-    },
-    {
-      "name": "clue",
-      "explanation": "Information helpful for solving the adventure.",
-      "entries": [
-        "A clue about {clue subject} can be found here."
-      ]
-    },
-    {
-      "name": "clue subject",
-      "explanation": "Information helpful for solving the adventure.",
-      "entries": [
-        "instructions for a ceremony",
-        "the plans of the {var:villain}",
-        "a weakness of the villain",
-        "the hiding place of the {var:treasure}"
       ]
     },
     {
