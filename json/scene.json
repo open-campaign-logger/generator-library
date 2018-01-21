@@ -768,8 +768,8 @@
       "name": "information beat",
       "explanation": "Beats that offer information (mentor, trickster, clue, shapeshifter, traitor, red herring, etc.)",
       "entries": [
-        "A {lib:actant#friendly} gives useful information about {clue subject}.",
-        "A {lib:actant#deceptive} gives wrong information about {clue subject}.",
+        "A {lib:actant#friendly} gives useful information about {lib:clue#subject}.",
+        "A {lib:actant#deceptive} gives wrong information about {lib:clue#subject}.",
         "A {lib:clue} can be found here.",
         "{red herring}"
       ]
@@ -951,7 +951,7 @@
       "name": "red herring",
       "explanation": "False information leading investigators astray.",
       "entries": [
-        "A [false] clue about {clue subject} can be found here."
+        "A [false] clue about {lib:clue#subject} can be found here."
       ]
     },
     {

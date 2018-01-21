@@ -69,7 +69,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_corridor, dungeon_vault, Five_room_dungeon",
-  "date": "2018-01-16",
+  "date": "2018-01-21",
   "authors": "Esko Vesala",
   "sources": "Five_room_dungeon",
   "genre": "fantasy",
@@ -88,7 +88,7 @@
       "name": "result",
       "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{summary} {var:para}{extra}",
+        "{summary}",
         "{detail} {var:para}{extra}"
       ]
     },
