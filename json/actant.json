@@ -623,7 +623,7 @@
         "actantdescription": "The ally is looking at the group approvingly."
       },
       "entries": [
-        "friendly {lib:minion#summary}"
+        "{lib:ally#summary}"
       ]
     },
     {

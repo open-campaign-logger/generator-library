@@ -1,0 +1,320 @@
+{
+  "name": "ally",
+  "resultPattern": "{HTML formatting}{init}{result}",
+  "variables": {
+    "starttitle": "<H2>",
+    "endtitle": "</H2>",
+    "startheading": "<H3>",
+    "endheading": "</H3>",
+    "startbold": "<B>",
+    "endbold": "</B>",
+    "para": "<P>",
+    "difficulty": "",
+    "difficultydescription": "",
+    "actant": "ally",
+    "actants": "allies",
+    "actantgroup": "group",
+    "actantaction": "constantly alert",
+    "actantadjective": "trustworthy",
+    "actantdescription": "The ally is looking at the group approvingly.",
+    "attitude": "friendly",
+    "ally": "ally",
+    "allies": "allies",
+    "allygroup": "group",
+    "allyaction": "comstantly alert",
+    "allyadjective": "trustworthy",
+    "allydescription": "The ally is looking at the group approvingly.",
+    "footnote": ""
+  },
+  "explanation": "Randomized allies.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
+  "bugs": "",
+  "to do": "Categorize allies by type.",
+  "see": "actant, Dungeon_adventure, hero, minion, scene, villain",
+  "date": "2018-01-21",
+  "authors": "Esko Vesala.",
+  "sources": "Wikia.com",
+  "genre": "fantasy",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the ally parameters.",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "actant": "ally"
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{ally}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective} {ally}",
+        "{ally} {complication}",
+        "{adjective} {ally} {complication}"
+      ]
+    },
+    {
+      "name": "ally",
+      "explanation": "Ally levels by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common ally levels.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{apprentice}",
+          "set": {
+            "difficulty": "apprentice",
+            "difficultydescription": "inexperienced adventurers"
+          }
+        },
+        {
+          "m": 2,
+          "v": "{journeyman}",
+          "set": {
+            "difficulty": "journeyman",
+            "difficultydescription": "adventurers with some experience"
+          }
+        },
+        {
+          "m": 3,
+          "v": "{master}",
+          "set": {
+            "difficulty": "master",
+            "difficultydescription": "experienced adventurers"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare ally levels.",
+      "entries": [
+        {
+          "m": 2,
+          "v": "{adept}",
+          "set": {
+            "difficulty": "adept",
+            "difficultydescription": "highly experienced adventurers"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{legend}",
+          "set": {
+            "difficulty": "legend",
+            "difficultydescription": "only the most experienced of adventurers"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "ALLIES"
+    },
+    {
+      "name": "apprentice",
+      "explanation": "Allies suitable for apprentice adventurers.",
+      "entries": [
+        "{lib:title_noble_European#gentry}",
+        "friendly {lib:minion#summary}",
+        "innkeeper"
+      ]
+    },
+    {
+      "name": "journeyman",
+      "explanation": "Allies suitable for journeyman adventurers.",
+      "entries": [
+        "{lib:title_noble_European#minor nobility}",
+        "magician"
+      ]
+    },
+    {
+      "name": "master",
+      "explanation": "Allies suitable for master adventurers.",
+      "entries": [
+        "{lib:title_noble_European#major nobility}"
+      ]
+    },
+    {
+      "name": "adept",
+      "explanation": "Allies suitable for adept adventurers.",
+      "entries": [
+        "{lib:title_noble_European#princely}",
+        "famous hero"
+      ]
+    },
+    {
+      "name": "legend",
+      "explanation": "Allies suitable for legendary adventurers.",
+      "entries": [
+        "{lib:title_noble_European#royal}",
+        "legendary hero",
+        "demigod",
+        "deity"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Allies once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Allies for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Allies for modern worlds.",
+      "entries": [
+        "{common}",
+        "police officer",
+        "reporter"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Allies for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "space pilot"
+      ]
+    },
+    {
+      "**************************************************": "FORMATTING"
+    },
+    {
+      "name": "HTML formatting",
+      "explanation": "Set variables for formatting the output as HTML",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "<H2>",
+            "endtitle": "</H2>",
+            "startheading": "<H3>",
+            "endheading": "</H3>",
+            "startbold": "<B>",
+            "endbold": "</B>",
+            "para": "<P>"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CL formatting",
+      "explanation": "Set variables for formatting the output for Campaign Logger",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "{b|",
+            "endtitle": "}\r\n\r\n",
+            "startheading": "\r\n\r\n{b|",
+            "endheading": "}",
+            "startbold": "{b|",
+            "endbold": "}",
+            "para": "\r\n"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special ally tables.",
+      "entries": [
+        "{adjective}",
+        "{substantive}",
+        "{strategy}",
+        "{goal}",
+        "{complication}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives describing the ally.",
+      "entries": [
+        "trustworthy",
+        "{rare adjective}"
+      ]
+    },
+    {
+      "name": "rare adjective",
+      "explanation": "",
+      "entries": [
+        "charismatic"
+      ]
+    },
+    {
+      "name": "substantive",
+      "explanation": "Substantives describing the ally.",
+      "entries": [
+        "scoundrel"
+      ]
+    },
+    {
+      "name": "strategy",
+      "explanation": "The ally's chosen approach.",
+      "entries": [
+        "survivalist",
+        "leader",
+        "mentor"
+      ]
+    },
+    {
+      "name": "goal",
+      "explanation": "The ally's goal.",
+      "entries": [
+        "fight for the cause of good"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Complications for the ally.",
+      "entries": [
+        "who knows that death is near"
+      ]
+    }
+  ]
+}
