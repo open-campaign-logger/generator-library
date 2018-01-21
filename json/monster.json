@@ -2,6 +2,13 @@
   "name": "monster",
   "resultPattern": "{result}",
   "variables": {
+    "actant": "monster",
+    "actants": "monsters",
+    "actantgroup": "pack",
+    "actantaction": "on the prowl",
+    "actantadjective": "hideous",
+    "actantdescription": "The monster seems to be looking for soemthing to eat.",
+    "attitude": "",
     "footnote": ""
   },
   "explanation": "monster table",
@@ -10,7 +17,7 @@
   "bugs": "",
   "to do": "Categorize monsters by type.",
   "see": "animal, attack, citizen, complication, encounter, nonhuman",
-  "date": "2018-01-09",
+  "date": "2018-01-21",
   "authors": "Esko Vesala.",
   "sources": "D20SRD.org, DanDWiki.com, Wikia.com, Wikipedia.org",
   "genre": "fantasy",

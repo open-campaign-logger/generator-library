@@ -2,6 +2,13 @@
   "name": "plant table",
   "resultPattern": "{result}",
   "variables": {
+    "actant": "plant",
+    "actants": "plants",
+    "actantgroup": "patch",
+    "actantaction": "rooted",
+    "actantadjective": "plain",
+    "actantdescription": "The plant seems oblivious to their surroundings.",
+    "attitude": "passive",
     "footnote": ""
   },
   "explanation": "Plant names. Land-based plants are divided by their historical (not modern) taxonomy. Additional subtables present uncategorised plants for some non-standard biotypes.",
@@ -9,7 +16,7 @@
   "note": "",
   "to do": "Expanding special biotopes (such as water plants).",
   "see": "",
-  "date": "2018-01-08",
+  "date": "2018-01-21",
   "authors": "Esko Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",

@@ -2,6 +2,13 @@
   "name": "nonhuman",
   "resultPattern": "{result}",
   "variables": {
+    "actant": "nonhuman",
+    "actants": "nonhumans",
+    "actantgroup": "group",
+    "actantaction": "taking care of their own business",
+    "actantadjective": "strange",
+    "actantdescription": "The nonhuman looks cautious.",
+    "attitude": "neutral",
     "footnote": ""
   },
   "explanation": "Sentient non-humans.",
@@ -10,7 +17,7 @@
   "bugs": "",
   "to do": "Categorize nonhumans by type.",
   "see": "activity, animal, citizen, encounter, monster",
-  "date": "2018-01-03",
+  "date": "2018-01-21",
   "authors": "Esko Vesala.",
   "sources": "Wikia.com, Wikipedia.org",
   "genre": "fantasy",

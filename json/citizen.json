@@ -2,6 +2,13 @@
   "name": "citizen",
   "resultPattern": "{result}",
   "variables": {
+    "actant": "citizen",
+    "actants": "citizens",
+    "actantgroup": "group",
+    "actantaction": "minding their own business",
+    "actantadjective": "ordinary",
+    "actantdescription": "The citizen is not paying much attention to their surroundings.",
+    "attitude": "",
     "footnote": ""
   },
   "explanation": "Citizens of the standard (typically human-like) culture.",
@@ -10,7 +17,7 @@
   "bugs": "",
   "to do": "Categorize citizens by type.",
   "see": "activity, animal, encounter, monster, nonhuman",
-  "date": "2017-12-28",
+  "date": "2018-01-21",
   "authors": "Esko Vesala.",
   "sources": "Wikia.com, Wikipedia.org",
   "genre": "fantasy",

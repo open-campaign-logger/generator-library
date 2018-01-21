@@ -2,6 +2,13 @@
   "name": "animal",
   "resultPattern": "{result}",
   "variables": {
+    "actant": "animal",
+    "actants": "animals",
+    "actantgroup": "pack",
+    "actantaction": "searching for food",
+    "actantadjective": "wild",
+    "actantdescription": "The minion looks alert.",
+    "attitude": "neutral",
     "footnote": ""
   },
   "explanation": "Animals from insects to mammals.",
@@ -10,7 +17,7 @@
   "bugs": "Different regions (tropical, polar, etc.)",
   "to do": "",
   "see": "activity, citizen, encounter, monster, nonhuman, plant",
-  "date": "2017-12-28",
+  "date": "2018-01-21",
   "authors": "",
   "sources": "Wikipedia.org",
   "genre": "",

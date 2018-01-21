@@ -2,6 +2,13 @@
   "name": "fighter",
   "resultPattern": "{fighter}",
   "variables": {
+    "actant": "fighter",
+    "actants": "fighters",
+    "actantgroup": "company",
+    "actantaction": "keeping their weapons ready",
+    "actantadjective": "battle-hardened",
+    "actantdescription": "The fighter is inspecting their equipment.",
+    "attitude": "",
     "footnote": ""
   },
   "explanation": "Variations of fighters.",
@@ -9,7 +16,7 @@
   "note": "",
   "to do": "myth, fantasy and futuristic subtables.",
   "see": "magician, priest",
-  "date": "2017-12-12",
+  "date": "2018-01-21",
   "authors": "Esko Vesala",
   "sources": "DanDWiki.com, Thesaurus.com, Wikia.com, Wikipedia.org",
   "genre": "universal",

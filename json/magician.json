@@ -2,6 +2,13 @@
   "name": "magician table",
   "resultPattern": "{magician}",
   "variables": {
+    "actant": "magician",
+    "actants": "magicians",
+    "actantgroup": "school",
+    "actantaction": "flexing their fingers",
+    "actantadjective": "mysterious",
+    "actantdescription": "The magician is lost in their thoughts.",
+    "attitude": "neutral",
     "footnote": ""
   },
   "explanation": "Variations of magicians.",
@@ -9,7 +16,7 @@
   "note": "",
   "to do": "myth, fantasy and futuristic subtables.",
   "see": "fighter, magic, magical_technique, magical_instrument, priest, spellcasting",
-  "date": "2017-12-12",
+  "date": "2018-01-21",
   "authors": "Esko Vesala",
   "sources": "SummitLighthouse.org, Wikipedia.org",
   "genre": "universal",
