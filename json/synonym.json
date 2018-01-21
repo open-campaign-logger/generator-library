@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "Expansion.",
   "see": "",
-  "date": "2018-01-14",
+  "date": "2018-01-21",
   "authors": "Esko Vesala.",
   "sources": "Thesaurus.com, TvTropes.org, Wikipedia.org",
   "genre": "universal",
@@ -650,6 +650,26 @@
         "living dead",
         "animate dead",
         "reanimated dead"
+      ]
+    },
+    {
+      "name": "villain",
+      "explanation": "Synonyms for an enemy.",
+      "entries": [
+        "scoundrel",
+        "culprit",
+        "crook",
+        "felon",
+        "enemy",
+        "villain",
+        "ruffian",
+        "miscreant",
+        "delinquent",
+        "blackguard",
+        "evildoer",
+        "wrongdoer",
+        "perpetrator",
+        "malefactor"
       ]
     },
     {
