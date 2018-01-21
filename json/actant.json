@@ -2,6 +2,13 @@
   "name": "actant",
   "resultPattern": "{result}",
   "variables": {
+    "actant": "person",
+    "actants": "persons",
+    "actantgroup": "group",
+    "actantaction": "wandering aimlessly",
+    "actantadjective": "strange",
+    "actantdescription": "A strange-looking person is acting suspiciously.",
+    "attitude": "wary",
     "footnote": ""
   },
   "explanation": "Structural roles in stories (e.g. the hero and the villain.)",
@@ -10,7 +17,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, hero, villain",
-  "date": "2018-01-13",
+  "date": "2018-01-21",
   "authors": "Esko Vesala.",
   "sources": "Five_room_dungeon",
   "genre": "fantasy",
@@ -394,312 +401,246 @@
     {
       "name": "herald",
       "explanation": "A character that foreshadows the adventure",
+      "set": {
+        "actant": "herald",
+        "actants": "heralds",
+        "actantgroup": "group",
+        "actantaction": "looking for someone who could help",
+        "actantadjective": "news-bearing",
+        "actantdescription": "The herald looks like they have something to tell."
+      },
       "entries": [
-        {
-          "m": 1,
-          "v": "child",
-          "set": {
-            "herald": "child",
-            "heralds": "children",
-            "heraldgroup": "group of children",
-            "heraldadjective": "small"
-          }
-        }
+        "child"
       ]
     },
     {
       "name": "guardian",
       "explanation": "The villain's guardian watching the entrance.",
+      "set": {
+        "actant": "guardian",
+        "actants": "guardians",
+        "actantgroup": "company",
+        "actantaction": "standing on guard",
+        "actanttadjective": "imposing",
+        "actantdescription": "The guardian is keenly watching their surroundings."
+      },
       "entries": [
-        {
-          "m": 1,
-          "v": "golem",
-          "set": {
-            "guardian": "golem",
-            "guardians": "golems",
-            "guardiangroup": "company of golems",
-            "guardianadjective": "magically created"
-          }
-        },
-        {
-          "m": 1,
-          "v": "living statue",
-          "set": {
-            "guardian": "living statue",
-            "guardians": "living statues",
-            "guardiangroup": "column of living statues",
-            "guardianadjective": "magically animated"
-          }
-        },
-        {
-          "m": 1,
-          "v": "construct",
-          "set": {
-            "guardian": "construct",
-            "guardians": "constructs",
-            "guardiangroup": "accumulation of constructs",
-            "guardianadjective": "mechanical"
-          }
-        }
+        "golem",
+        "living statue",
+        "construct"
       ]
     },
     {
       "name": "monster",
       "explanation": "Monsters hiding in the dungeon.",
+      "set": {
+        "actant": "monster",
+        "actants": "monsters",
+        "actantgroup": "pack",
+        "actantaction": "on the prowl",
+        "actantadjective": "hideous",
+        "actantdescription": "The monster seems to be looking for something to eat."
+      },
       "entries": [
-        {
-          "m": 1,
-          "v": "troll",
-          "set": {
-            "monster": "troll",
-            "monsters": "trolls",
-            "monstergroup": "group of trolls",
-            "monsteraction": "looking for something to eat",
-            "monsteradjective": "hideous",
-            "monsterdescription": "A huge troll is sniffing the air and looks like if it was searching for something."
-          }
-        },
-        {
-          "m": 1,
-          "v": "troglodyte",
-          "set": {
-            "monster": "troglodyte",
-            "monsters": "troglodytes",
-            "monstergroup": "tribe of troglodytes",
-            "monsteraction": "sharpening a stone axe",
-            "monsteradjective": "primitive",
-            "monsterdescription": "A primitive-looking troglodyte is inspecting a stone axe."
-          }
-        }
+        "troll",
+        "troglodyte"
       ]
     },
     {
       "name": "beast",
       "explanation": "A nonsentient predator stalking in the dungeon.",
+      "set": {
+        "actant": "beast",
+        "actants": "beasts",
+        "actantgroup": "pack",
+        "actantadjective": "vicious",
+        "actantaction": "turning around restlessly",
+        "actantdescription": "The beast is sniffing the air and seems to be tracking something."
+      },
       "entries": [
-        {
-          "m": 1,
-          "v": "wolf",
-          "set": {
-            "beast": "wolf",
-            "beasts": "wolves",
-            "beastgroup": "wolfpack",
-            "beastadjective": "mangy"
-          }
-        }
+        "wolf"
       ]
     },
     {
       "name": "traitor",
       "explanation": "Characters that betray trust.",
+      "set": {
+        "actant": "traitor",
+        "actants": "traitors",
+        "actantgroup": "group",
+        "actantaction": "keenly eying the group",
+        "actantadjective": "scheming",
+        "actantdescription": "The person seems curious and is asking a lot of questions."
+      },
       "entries": [
-        {
-          "m": 1,
-          "v": "informant",
-          "set": {
-            "traitor": "informant"
-          }
-        }
+        "informant"
       ]
     },
     {
       "name": "shapeshifter",
       "explanation": "Characters that appear to be something else.",
+      "set": {
+        "actant": "shapeshifter",
+        "actants": "shapeshifters",
+        "actantgroup": "group",
+        "actantaction": "adjusting their clothing",
+        "actantadjective": "restless",
+        "actantdescription": "The person seems to be evaluating the group."
+      },
       "entries": [
-        {
-          "m": 1,
-          "v": "skinchanger",
-          "set": {
-            "shapeshifter": "skinchanger"
-          }
-        }
+        "aide",
+        "aide-de-camp",
+        "adjutant",
+        "associate",
+        "apprentice",
+        "colleague",
+        "companion",
+        "deputy",
+        "representative",
+        "accomplice",
+        "ally",
+        "collaborator",
+        "confederate",
+        "follower",
+        "supporter"
       ]
     },
     {
       "name": "tempter",
       "explanation": "Characters that attempt to tempt the adventurers to give up their principles.",
+      "set": {
+        "actant": "tempter",
+        "actants": "tempters",
+        "actantgroup": "group",
+        "actantaction": "smiling",
+        "actantadjective": "alluring",
+        "actantdescription": "The person is casting a long look at one of the group."
+      },
       "entries": [
-        {
-          "m": 1,
-          "v": "sorceress",
-          "set": {
-            "tempter": "sorceress"
-          }
-        }
+        "sorcerer",
+        "enchanter",
+        "witch"
       ]
     },
     {
       "name": "rival",
       "explanation": "Characters that compete with the adventurers.",
+      "set": {
+        "actant": "rival",
+        "actants": "rivals",
+        "actantgroup": "group",
+        "actantaction": "flexing their muscles",
+        "actantadjective": "competitive",
+        "actantdescription": "keenly following the actions of the group."
+      },
       "entries": [
-        {
-          "m": 1,
-          "v": "knight",
-          "set": {
-            "rival": "knight"
-          }
-        },
-        {
-          "m": 1,
-          "v": "adventurer",
-          "set": {
-            "rival": "adventurer"
-          }
-        },
-        {
-          "m": 1,
-          "v": "paladin",
-          "set": {
-            "rival": "paladin"
-          }
-        },
-        {
-          "m": 1,
-          "v": "cavalier",
-          "set": {
-            "rival": "cavalier"
-          }
-        },
-        {
-          "m": 1,
-          "v": "mercenary",
-          "set": {
-            "rival": "mercenary"
-          }
-        }
+        "mercenary",
+        "adventurer",
+        "knight",
+        "paladin",
+        "cavalier"
       ]
     },
     {
       "name": "inhabitant",
       "explanation": "Neutral persons that live in the area.",
+      "set": {
+        "actant": "inhabitant",
+        "actants": "inhabitants",
+        "actantgroup": "group",
+        "actantaction": "taking care of their business",
+        "actantadjective": "native",
+        "actantdescription": "The inhabitant seems undisturbed by the presence of the group."
+      },
       "entries": [
-        {
-          "m": 1,
-          "v": "gnome",
-          "set": {
-            "inhabitant": "gnome"
-          }
-        },
-        {
-          "m": 1,
-          "v": "dwarf",
-          "set": {
-            "inhabitant": "dwarf"
-          }
-        },
-        {
-          "m": 1,
-          "v": "hermit",
-          "set": {
-            "inhabitant": "hermit"
-          }
-        }
+        "gnome",
+        "dwarf",
+        "hermit"
       ]
     },
     {
       "name": "captive",
-      "explanation": "",
+      "explanation": "Captured persons.",
+      "set": {
+        "actant": "captive",
+        "actants": "captives",
+        "actantgroup": "group",
+        "actantaction": "apparently not having any interest in their surroundings",
+        "actantadjective": "helpless",
+        "actantdescription": "The captive seems fearful."
+      },
       "entries": [
-        {
-          "m": 1,
-          "v": "captive",
-          "set": {
-            "captive": "captive",
-            "captives": "captives",
-            "captivegroup": "group of captives"
-          }
-        },
-        {
-          "m": 1,
-          "v": "prisoner",
-          "set": {
-            "captive": "prisoner",
-            "captives": "prisoners",
-            "captivegroup": "group of prisoners"
-          }
-        },
-        {
-          "m": 1,
-          "v": "hostage",
-          "set": {
-            "captive": "hostage",
-            "captives": "hostages",
-            "captivegroup": "group of hostages"
-          }
-        }
+        "captive",
+        "prisoner",
+        "hostage"
       ]
     },
     {
       "name": "trickster",
       "explanation": "Characters that may trick the adventurers.",
+      "set": {
+        "actant": "trickster",
+        "actants": "tricksters",
+        "actantgroup": "ensemble",
+        "actantaction": "smiling to themselves",
+        "actantadjective": "curious",
+        "actantdescription": "The person is constantly fidgeting with something."
+      },
       "entries": [
-        {
-          "m": 1,
-          "v": "jester",
-          "set": {
-            "trickster": "jester"
-          }
-        },
-        {
-          "m": 1,
-          "v": "vagabond",
-          "set": {
-            "trickster": "vagabond"
-          }
-        },
-        {
-          "m": 1,
-          "v": "tramp",
-          "set": {
-            "trickster": "tramp"
-          }
-        },
-        {
-          "m": 1,
-          "v": "rogue",
-          "set": {
-            "trickster": "rogue"
-          }
-        }
+        "jester",
+        "vagabond",
+        "tramp",
+        "rogue",
+        "charlatan"
       ]
     },
     {
       "name": "mentor",
       "explanation": "Characters that can teach something.",
+      "set": {
+        "actant": "mentor",
+        "actants": "mentors",
+        "actantgroup": "school",
+        "actantaction": "studying their surroundings keenly",
+        "actantadjective": "wise",
+        "actantdescription": "The person seems to be constantly making mental notes of something."
+      },
       "entries": [
-        {
-          "m": 1,
-          "v": "sage",
-          "set": {
-            "mentor": "sage"
-          }
-        }
+        "sage",
+        "wizard",
+        "scholar"
       ]
     },
     {
       "name": "ally",
       "explanation": "Characters that can help the adventurers.",
+      "set": {
+        "actant": "ally",
+        "actants": "allies",
+        "actantgroup": "group",
+        "actantaction": "constantly alert",
+        "actantadjective": "trustworthy",
+        "actantdescription": "The ally is looking at the group approvingly."
+      },
       "entries": [
-        {
-          "m": 1,
-          "v": "friendly {lib:minion}",
-          "set": {
-            "ally": "friendly minion"
-          }
-        }
+        "friendly {lib:minion#summary}"
       ]
     },
     {
       "name": "hindrance",
       "explanation": "Characters that can hinder the adventurers.",
+      "set": {
+        "actant": "hindrance",
+        "actants": "hindrances",
+        "actantgroup": "group",
+        "actantaction": "trying to keep up with the others",
+        "actantadjective": "pitiful",
+        "actantdescription": "The person looks stressed and fearful."
+      },
       "entries": [
-        {
-          "m": 1,
-          "v": "hindrance",
-          "set": {
-            "hindrance": "hindrance"
-          }
-        }
+        "child",
+        "boy",
+        "girl"
       ]
     },
     {
@@ -743,34 +684,9 @@
       "name": "special",
       "explanation": "Special actants.",
       "entries": [
+        "{adjective}",
         "{hero}",
         "{villain}"
-      ]
-    },
-    {
-      "name": "hero",
-      "explanation": "Hero actants. In RPG context, these are the players.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "{lib:hero}",
-          "set": {
-            "actant": "hero"
-          }
-        }
-      ]
-    },
-    {
-      "name": "villain",
-      "explanation": "Villain actants. Usually the enemy has been set when setting up the adventure and is not randomized.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "{lib:villain}",
-          "set": {
-            "actant": "villain"
-          }
-        }
       ]
     },
     {
@@ -785,6 +701,37 @@
         "strong-willed",
         "cunning",
         "devious"
+      ]
+    },
+    {
+      "name": "hero",
+      "explanation": "Hero actants. In RPG context, these are the players.",
+      "set": {
+        "actant": "hero",
+        "actants": "heroes",
+        "actantgroup": "team",
+        "actantaction": "keeping their weapons ready",
+        "actantadjective": "noble",
+        "actantdescription": "The hero seems to be constantly on alert."
+      },
+      "entries": [
+        "hero",
+        "{lib:synonym#adventurer}"
+      ]
+    },
+    {
+      "name": "villain",
+      "explanation": "Villain actants. Usually the enemy has been set when setting up the adventure and is not randomized.",
+      "set": {
+        "actant": "villain",
+        "actants": "villains",
+        "actantgroup": "band",
+        "actantaction": "concentrating on something on their mind",
+        "actantadjective": "vicious",
+        "actantdescription": "The villain seems to be preparing for something."
+      },
+      "entries": [
+        "villain"
       ]
     }
   ]
