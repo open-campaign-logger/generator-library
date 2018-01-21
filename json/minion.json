@@ -17,7 +17,7 @@
     "actantaction": "waiting for orders",
     "actantadjective": "faithful",
     "actantdescription": "The minion looks stressed.",
-    "attitude": "",
+    "attitude": "hostile",
     "minion": "minion",
     "minions": "minions",
     "miniongroup": "army",
