@@ -1,6 +1,6 @@
 {
   "name": "Hook, Line and Sinker Adventure generator",
-  "resultPattern": "{CL formatting}{result}",
+  "resultPattern": "{HTML formatting}{result}",
   "variables": {
     "starttitle": "",
     "endtitle": "",
