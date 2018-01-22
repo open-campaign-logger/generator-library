@@ -21,7 +21,7 @@
   "bugs": "",
   "to do": "",
   "see": "actant, clue, Five_room_dungeon, hero, villain",
-  "date": "2018-01-18",
+  "date": "2018-01-22",
   "authors": "Esko Vesala.",
   "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon",
   "genre": "universal",
@@ -154,7 +154,7 @@
       "name": "development hook",
       "explanation": "Action hook initialization.",
       "entries": [
-        "{var:startheading}Development Hook: {development hook type} {var:para}{lib:dungeon_entrance}"
+        "{var:startheading}Development Hook: {development hook type} {var:para}{var:para}{lib:dungeon_entrance}"
       ]
     },
     {
@@ -172,28 +172,28 @@
           "m": 1,
           "v": "Discovery{var:endheading} The {lib:synonym#troupe} makes a remarkable discovery: a {lib:macguffin#detail}. [The discovery is in some way linked to this adventure's villain or treasure.]",
           "set": {
-            "beat": "memory loss"
+            "beat": "discovery"
           }
         },
         {
           "m": 1,
           "v": "Revelation{var:endheading} A surprising finding about their past changes the lives of the {lib:synonym#troupe}. The revealed information points to the adventure starting location as a source of additional information.",
           "set": {
-            "beat": "memory loss"
+            "beat": "revelation"
           }
         },
         {
           "m": 1,
           "v": "False accusation{var:endheading} The {lib:synonym#troupe} has been framed to be guilty of a crime they did not commit. They must flee from the accusations and catch the true culprit.",
           "set": {
-            "beat": "memory loss"
+            "beat": "false accusation"
           }
         },
         {
           "m": 1,
           "v": "Looming threat{var:endheading} The villain is planning an evil deed and the {lib:synonym#troupe} must counter the plans before it is too late.",
           "set": {
-            "beat": "memory loss"
+            "beat": "looming threat"
           }
         },
         {
@@ -505,7 +505,7 @@
       "name": "action finale",
       "explanation": "Action finale initialization.",
       "entries": [
-        "{var:startheading}Action Finale: {action finale type} {var:para}{var:para}The adventure culminates in an action scene in {lib:dungeon_vault}"
+        "{var:startheading}Action Finale: {action finale type} {var:para}{var:para}The adventure culminates in an action scene in a {lib:dungeon_vault}"
       ]
     },
     {
@@ -525,7 +525,7 @@
       "name": "development finale",
       "explanation": "Development finale initialization.",
       "entries": [
-        "{var:startheading}Development Finale: {development finale type} {var:para}{var:para}The adventure culminates in a development scene in {lib:dungeon_vault}"
+        "{var:startheading}Development Finale: {development finale type} {var:para}{var:para}The adventure culminates in a development scene in a {lib:dungeon_vault}"
       ]
     },
     {

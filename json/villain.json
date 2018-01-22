@@ -32,7 +32,7 @@
   "bugs": "",
   "to do": "Categorize villains by type.",
   "see": "actant, ally, Dungeon_adventure, hero, minion, scene",
-  "date": "2018-01-21",
+  "date": "2018-01-22",
   "authors": "Esko Vesala.",
   "sources": "Wikia.com",
   "genre": "fantasy",
@@ -568,7 +568,9 @@
       "explanation": "Complications for the villain.",
       "entries": [
         "who is slowly going insane",
-        "who knows that death is near"
+        "who knows that death is near",
+        "who is the only person that can help the heroes to reach their goal",
+        "turns out to be close to one of the heroes"
       ]
     }
   ]

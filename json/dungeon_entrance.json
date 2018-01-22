@@ -69,7 +69,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_corridor, dungeon_room, dungeon_vault, Five_room_dungeon",
-  "date": "2018-01-16",
+  "date": "2018-01-22",
   "authors": "Esko Vesala",
   "sources": "",
   "genre": "fantasy",
@@ -121,26 +121,19 @@
       "name": "common",
       "explanation": "Common entrance types.",
       "entries": [
-        {
-          "m": 1,
-          "v": "{door}",
-          "set": {
-            "entrance": "door"
-          }
-        }
+        "{opening}",
+        "{door}",
+        "{stairs}",
+        "{trapdoor}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare entrance types.",
       "entries": [
-        {
-          "m": 1,
-          "v": "{trapdoor}",
-          "set": {
-            "entrance": "trapdoor"
-          }
-        }
+        "{barrier}",
+        "{hidden} [requires {key} to open]",
+        "{shaft}"
       ]
     },
     {
@@ -148,17 +141,107 @@
       "format": "-- there is X"
     },
     {
+      "name": "barrier",
+      "explanation": "Barred entrances.",
+      "set": {
+        "entrance": "barrier"
+      },
+      "entries": [
+        "a cave-like entrance blocked by a gigantic boulder",
+        "an enormous collection rubble, hiding behind it an undeground entrance",
+        "a crumbling stone colossus blocks a half-hidden entrance into shadowy darkness",
+        "a small cave with a hard-to-spot, narrow crack in a wall",
+        "an entrance that has been shut with a hastily constructed brick wall"
+      ]
+    },
+    {
       "name": "door",
       "explanation": "Door entrances.",
+      "set": {
+        "entrance": "door"
+      },
       "entries": [
-        "a gigantic stone slab decorated with runic symbols"
+        "half-rotten oak doors covered with mold",
+        "gigantic double doors groaning under their own weight",
+        "a stone door with strong iron hinges",
+        "a colossal stone slab decorated with runic symbols",
+        "a rusty portcullis blocking the way into a foreboding, cavernous entrance",
+        "heavy iron gates",
+        "a beautifully wrought silvery gate adorned with strange symbols"
+      ]
+    },
+    {
+      "name": "hidden",
+      "explanation": "Hidden entrances.",
+      "set": {
+        "entrance": "hidden"
+      },
+      "entries": [
+        "a carafully balanced boulder hides an entrance",
+        "thick vegetation camouflaging an entrance",
+        "thorny bushes have grown over an entrance",
+        "a large tree has grown in front of the entrance",
+        "a camoflaging of plant leaves has been carefully laid over the entrance",
+        "a smooth surface of rock with no apparent way to open a passage",
+        "a gleaming, polished slate of silvery metal with no keyhole or markings",
+        "an outcrop of rocks hides behind them a small hole where it just might be possible to crawl in",
+        "the altar of a small shrine covers an entrance",
+        "a deep well has a side passage leading to an entrance",
+        "in a pool of water, an underwater entrance can be seen dimly",
+        "an opening that can be dimly seen high up a cliff face",
+        "an illusion covering the entrance"
+      ]
+    },
+    {
+      "name": "opening",
+      "explanation": "Hidden entrances.",
+      "set": {
+        "entrance": "opening"
+      },
+      "entries": [
+        "a narrow passageway crawls into shadowy depths",
+        "a rough-hewn passageway into darkness has been carved here",
+        "a round, tunnel-like entrance has been dug among the rubble",
+        "it looks like a colossal worm had forced its way through the earth, leaving behind it a round passageway into uncharted depths",
+        "an unassuming entrance into the depths has been reinforced with thick, wooden pillars"
+      ]
+    },
+    {
+      "name": "shaft",
+      "explanation": "Shaft entrances.",
+      "set": {
+        "entrance": "shaft"
+      },
+      "entries": [
+        "an almost vertical shaft disappearing into the depths",
+        "a spiraling downwards passage",
+        "a deep, round hole in the ground",
+        "an ancient well offers a quick passage deep into the bowels of the earth",
+        "a fissure in the ground offers a narrow entranceway into the underground realms"
+      ]
+    },
+    {
+      "name": "stairs",
+      "explanation": "Stair entrances.",
+      "set": {
+        "entrance": "stairs"
+      },
+      "entries": [
+        "a spiraling staircase descends into a round hole in the ground",
+        "crumbling stone stairs sharply descending into the depths of the earth"
       ]
     },
     {
       "name": "trapdoor",
       "explanation": "Trapdoor entrances.",
+      "set": {
+        "entrance": "trapdoor"
+      },
       "entries": [
-        "a trapdoor half-buried in the ground"
+        "a trapdoor half-buried in the ground",
+        "under a thin layer of sand, a faint trapdoor shape can be seen",
+        "a heavy slab of stone apparently covering a hole in the ground",
+        "an iron grate covers a dark hole in the ground"
       ]
     },
     {
@@ -202,6 +285,7 @@
       "name": "milieu",
       "explanation": "The common theme of the dungeon.",
       "note": "The vertical bars are for creating a box around the output.",
+      "format": "X -- the entrance",
       "entries": [
         {
           "m": 1,
@@ -223,7 +307,8 @@
       "name": "mountain",
       "explanation": "Entrances in the mountains.",
       "entries": [
-        "In the rocky mountainside there is"
+        "In the rocky mountainside there is",
+        "Amidst the hillside rubble the shape of an entrance can be seen: "
       ]
     },
     {
@@ -281,8 +366,7 @@
       "entries": [
         "{adjective}",
         "{extra}",
-        "{complication}",
-        "{feature}"
+        "{key}"
       ]
     },
     {
@@ -300,20 +384,61 @@
       ]
     },
     {
+      "name": "key",
+      "explanation": "Keys for opening the dungeon entrance.",
+      "entries": [
+        "a special key",
+        "a magical phrase to be spoken",
+        "sunlight to hit a specific spot",
+        "a spell-infused {lib:magical_instrument#common}"
+      ]
+    },
+    {
       "**************************************************": "EXTRAS"
     },
     {
       "name": "extra",
       "explanation": "Extras for dungeon entrances.",
       "entries": [
-        "{var:startbold}Complication{var:endbold}: {complication}"
+        "{var:startbold}Entrance complication{var:endbold}: {complication}",
+        "{var:startbold}Entrance feature{var:endbold}: {feature}"
       ]
     },
     {
       "name": "complication",
       "explanation": "Entrance complications.",
       "entries": [
-        "Locals consider the area sacred and try their best to prevent anyone from desecrating the place."
+        "Locals consider the area sacred and try their best to prevent anyone from desecrating the place.",
+        "The entrance is located behind a hedge maze.",
+        "A partially collapsed wall has blocked the entrance and requires long hours of hard work to clear.",
+        "A barricade has been built around the entrance as if to prevent something from entering.",
+        "A barricade has been built around the entrance as if to prevent something from exiting.",
+        "A vicious beast has built its lair in the entrance."
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Entrance features.",
+      "entries": [
+        "The entrance has been forced open, apparently quite recently.",
+        "Several large footprints can be seen around the entrance.",
+        "Claw marks and spatters of dried blood adorn the entrance.",
+        "A rotten animal carcass lies just inside the entrance.",
+        "A shield cut in half lies on the ground outside the entrance.",
+        "Inside the entrance there is uncovered pit trap, and the pierced remains of an earlier visitor can be seen in the bottom of the spike pit.",
+        "A tripwire has been set across the entrance [but there is no actual trap associated with it].",
+        "A hastily dug, shallow grave is visible next to the entrance.",
+        "The entrance is lined with skulls.",
+        "Rows of decapitated heads have been stuck on stakes outside the entrance.",
+        "Spider webs cover the entrance.",
+        "The ground near the entrance is littered with animal droppings.",
+        "A thick trail of slime leads into the entrance.",
+        "The entrance has been overgrown with plantlife.",
+        "A thick layer of soot covers the walls inside the entrance.",
+        "Clear signs of a recent fire mark the entrance.",
+        "A thin wisp of smoke emanates from the entrance.",
+        "Near the entrance there is an easy to spot, hastily dug cache. Buried there are some semiprecious stones in a leather pouch.",
+        "A weathered holy symbol has been fastened above the entrance."
       ]
     }
   ]

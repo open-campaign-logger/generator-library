@@ -17,7 +17,7 @@
   "bugs": "",
   "to do": "Categorize monsters by type.",
   "see": "animal, attack, citizen, complication, encounter, nonhuman",
-  "date": "2018-01-21",
+  "date": "2018-01-22",
   "authors": "Esko Vesala.",
   "sources": "D20SRD.org, DanDWiki.com, Wikia.com, Wikipedia.org",
   "genre": "fantasy",
@@ -49,8 +49,8 @@
         "{health} {adjective} {monster}",
         "{lib:creature_template} {monster}",
         "{health} {lib:creature_template} {monster}",
-        "{monster} with {lib:attack} attack",
-        "{health} {monster} with {lib:attack} attack",
+        "{monster} capable of a {lib:attack} attack",
+        "{health} {monster} capable of a {lib:attack} attack",
         "{monster} {lib:complication#creature}",
         "{health} {monster} {lib:complication#creature}"
       ]

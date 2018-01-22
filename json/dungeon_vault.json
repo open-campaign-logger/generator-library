@@ -69,7 +69,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_corridor, dungeon_entrance, dungeon_room, Five_room_dungeon",
-  "date": "2018-01-16",
+  "date": "2018-01-22",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "fantasy",
@@ -96,7 +96,7 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{adjective} {vault}"
+        "{adjective} {vault}."
       ]
     },
     {
@@ -121,26 +121,14 @@
       "name": "common",
       "explanation": "Common vault types.",
       "entries": [
-        {
-          "m": 1,
-          "v": "{chamber}",
-          "set": {
-            "vault": "chamber"
-          }
-        }
+        "{chamber}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare vault types.",
       "entries": [
-        {
-          "m": 1,
-          "v": "{open}",
-          "set": {
-            "vault": "open"
-          }
-        }
+        "{open}"
       ]
     },
     {
@@ -149,16 +137,31 @@
     {
       "name": "chamber",
       "explanation": "Chamber vaults.",
+      "set": {
+        "vault": "chamber"
+      },
       "entries": [
         "throne room",
+        "mausoleum",
+        "tomb",
+        "crypt",
+        "sepulcher",
+        "treasury",
         "treasure room"
       ]
     },
     {
       "name": "open",
       "explanation": "Open space vaults.",
+      "set": {
+        "vault": "open"
+      },
       "entries": [
-        "enormous cavern"
+        "cavern",
+        "cave",
+        "grotto",
+        "hollow",
+        "subterranean expanse"
       ]
     },
     {
@@ -249,8 +252,26 @@
       "name": "adjective",
       "explanation": "Adjectives for dungeon vaults.",
       "entries": [
-        "awe-inspiring"
+        "concealed",
+        "alien",
+        "weird",
+        "strange-looking",
+        "bizarre",
+        "massive",
+        "exotic",
+        "arcane",
+        "mystical",
+        "hermetic",
+        "cabalistic",
+        "glamorous",
+        "expensively decorated",
+        "outlandish",
+        "awe-inspiring",
+        "unearthly"
       ]
+    },
+    {
+      "**************************************************": "EXTRAS"
     },
     {
       "name": "extra",
@@ -263,7 +284,12 @@
       "name": "complication",
       "explanation": "Vault complications.",
       "entries": [
-        "The entrances close, locking everyone in until they are able to find a hidden exit."
+        "The air is thick with incense, making breathing difficult.",
+        "The entrances close, locking everyone in until they are able to find a hidden exit.",
+        "A fire starts to spread in the area.",
+        "A caged, hungry beast manages to break free.",
+        "The area is filled with death traps.",
+        "A swirling portal is slowly opening, soon offering an escape route for the villain."
       ]
     }
   ]

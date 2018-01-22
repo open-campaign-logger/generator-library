@@ -11,7 +11,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-01-21",
+  "date": "2018-01-22",
   "authors": "Esko Vesala.",
   "sources": "Dungeon_adventure",
   "genre": "universal",
@@ -113,6 +113,7 @@
         "{dungeon}",
         "{item}",
         "{milieu}",
+        "{plot}",
         "{room}"
       ]
     },
@@ -120,9 +121,12 @@
       "name": "captive",
       "explanation": "Complications for captives.",
       "entries": [
+        "are not innocent, but suffering a sentence for their horrific crimes",
+        "are pleading to be escorted back to safety immediately",
+        "are about to be executed",
+        "do not want to be rescued after all",
         "are enemies in disguise",
-        "are booby-trapped",
-        "are pleading to be escorted back to safety immediately"
+        "are booby-trapped"
       ]
     },
     {
@@ -207,20 +211,14 @@
         "The structure is about to collapse.",
         "Rising water levels are slowly flooding the area.",
         "In the area there is a helpless {lib:actant#helpless} that must be protected and rescued.",
-        "An infestation of spiders has produced thick webs in the area.",
         "The otherworldly energies of the area are warped, creating unpredictable side effects each time magic is used.",
         "A competing group of adventurers is trying to reach the goal before the protagonists, and is willing to use also dirty tricks to win.",
         "In addition to the villain and the minions, another hostile force is present in the area.",
-        "There are noxious fumes in the air.",
-        "The air is extremely hot and humid, which makes all physical activities strenuous.",
-        "The area is infested with centipedes and small insects.",
         "A pestilence has contaminated the area, making most of the encountered people plague carriers.",
         "The villain's minions have split into rival factions warring with each other.",
         "The villain's minions are planning a mutiny against their master.",
-        "Most of the dungeon surfaces are slime-covered, which makes floors and objects slippery.",
-        "Air and horizontal surfaces are filled with ash, making everyone suspectible to heavy coughing.",
         "Periodic tremors cause debris to fall from the ceiling.",
-        "The location is filled with debris that makes progress slow."
+        "The location will be destroyed within a time limit, and everyone must exit before the destruction."
       ]
     },
     {
@@ -245,7 +243,31 @@
       "name": "milieu",
       "explanation": "Complications for environments.",
       "entries": [
-        "being ravaged by earthquake tremors"
+        "being ravaged by earthquake tremors",
+        "extreme weather conditions"
+      ]
+    },
+    {
+      "name": "plot",
+      "explanation": "Complications for stories.",
+      "entries": [
+        "someone is mistaken for a wrong person",
+        "the heroes' previous actions have turned the situation worse",
+        "heroes find out something reprehensible about a person in power",
+        "language barrier hinders communication",
+        "someone else has taken credit for the heroes' achievements",
+        "alien culture with unknown customs and habits",
+        "an associate of a previously defeated enemy wants revenge",
+        "there is a strict time limitation",
+        "poisoning requires an antidote to be found",
+        "innocent people are forced to work for evil forces",
+        "a helpless protege must be protected",
+        "the heroes must act against the will of those in power",
+        "the heroes are caught between rivals",
+        "the villain turns out to be working for a good cause",
+        "the public has turned against the heroes",
+        "achieving the goal will destroy something valuable to the heroes",
+        "achieving the goal will release an even greater threat"
       ]
     },
     {
@@ -258,11 +280,18 @@
         "An extremely foul smell makes breathing difficult here.",
         "Gusts of wind threaten to put out torches and lanterns.",
         "Loud echoes in the room make communication difficult.",
+        "An infestation of spiders has produced thick webs in the area.",
         "An oily substance on the floor makes it slippery.",
         "Strange sounds emanate from an unknown source.",
         "In some areas the ceiling is so low that it slows down movement.",
         "The flooring is muddy, which slows down progress and leaves a clear trail for anyone to follow.",
-        "The area is contaminated with a black mold that makes eyes watery and causes skin to itch."
+        "There are noxious fumes in the air.",
+        "The air is extremely hot and humid, which makes all physical activities strenuous.",
+        "The area is infested with centipedes and small insects.",
+        "Most of the surfaces are slime-covered, which makes floors and objects slippery.",
+        "Air and horizontal surfaces are filled with ash, making everyone suspectible to heavy coughing.",
+        "The area is contaminated with a black mold that makes eyes watery and causes skin to itch.",
+        "The area is filled with debris that makes progress slow."
       ]
     }
   ]

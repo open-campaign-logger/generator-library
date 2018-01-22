@@ -9,7 +9,7 @@
   "note": "These are magician's tools for casting magic, not magic items (that are usable by anyone.)",
   "to do": "myth, fantasy and futuristic subtables.",
   "see": "magic, magical_technique, magicitem, spellcasting",
-  "date": "2017-10-06",
+  "date": "2018-01-22",
   "authors": "Esko Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -36,14 +36,27 @@
         "{tool}",
         "{jewellery}",
         "{symbol}",
-        "{lib:musical instrument}",
         "{weapon}",
         "{vessel}",
+        "{text}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare magical instruments.",
+      "entries": [
+        "{lib:musical_instrument}",
         "{material}",
         "{clothing}",
-        "{text}",
-        "{familiar}"
+        "{familiar}",
+        "periapt (charm worn on a necklace)",
+        "phylactery (leather amulet containing sacred texts)",
+        "scarab (beetle-shaped seal)",
+        "veve (symbol drawn by pouring powder)"
       ]
+    },
+    {
+      "***********************************************": "MAGICAL INSTRUMENTS"
     },
     {
       "name": "tool",
@@ -106,14 +119,6 @@
         "magical circle",
         "kamea (magic square grid)",
         "mandala (symbol presenting the universe)"
-      ]
-    },
-    {
-      "name": "musical instrument",
-      "explanation": "Magical musical instruments.",
-      "entries": [
-        "flute",
-        ""
       ]
     },
     {
@@ -196,14 +201,7 @@
       ]
     },
     {
-      "name": "rare",
-      "explanation": "Rare magical instruments.",
-      "entries": [
-        "periapt (charm worn on a necklace)",
-        "phylactery (leather amulet containing sacred texts)",
-        "scarab (beetle-shaped seal)",
-        "veve (symbol drawn by pouring powder)"
-      ]
+      "**************************************************": "WORLD-SPECIFIC"
     },
     {
       "name": "myth",
@@ -287,6 +285,9 @@
       "entries": [
         "spaceship"
       ]
+    },
+    {
+      "**************************************************": "SPECIAL CASES"
     }
   ]
 }

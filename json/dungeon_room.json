@@ -69,7 +69,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_corridor, dungeon_vault, Five_room_dungeon",
-  "date": "2018-01-21",
+  "date": "2018-01-22",
   "authors": "Esko Vesala",
   "sources": "Five_room_dungeon",
   "genre": "fantasy",
@@ -1149,7 +1149,7 @@
       "entries": [
         "",
         "{var:startbold}Flavoring{var:endbold}: {flavoring}",
-        "{var:startbold}Complication{var:endbold}: {lib:complication#room}",
+        "{var:startbold}Room complication{var:endbold}: {lib:complication#room}",
         "{var:startbold}Feature{var:endbold}: {lib:dungeon_feature}"
       ]
     },
@@ -1183,7 +1183,7 @@
       "name": "wonder",
       "explanation": "Awe-inspiring sights evoking sense of wonder.",
       "entries": [
-        "[Something wonderful is seen or experienced.] "
+        "Here is a delicate rock formation that almost looks like it was designed by a supernatural intelligence."
       ]
     }
   ]

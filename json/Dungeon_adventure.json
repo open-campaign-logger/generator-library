@@ -191,7 +191,7 @@
   "bugs": "",
   "to do": "More external table calls to add variety.",
   "see": "dungeon_entrance, dungeon_corridor, dungeon_room, dungeon_vault, Five_room_dungeon, hook_line_and_sinker_adventure",
-  "date": "2018-01-16",
+  "date": "2018-01-22",
   "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon, RolePlayingTips.com",
   "genre": "universal",
@@ -314,7 +314,7 @@
       "name": "complication note",
       "explanation": "An optional complication for the adventure.",
       "entries": [
-        "{var:para}{var:startbold}Complication{var:endbold}: {lib:complication#dungeon}"
+        "{var:para}{var:startbold}Dungeon complication{var:endbold}: {lib:complication#dungeon}"
       ]
     },
     {
