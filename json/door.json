@@ -18,7 +18,7 @@
   "bugs": "",
   "to do": "door size",
   "see": "Dungeon_adventure",
-  "date": "2018-01-16",
+  "date": "2018-01-22",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "universal",
@@ -103,7 +103,10 @@
       "entries": [
         "{myth}",
         "{primitive}",
-        "{magic}"
+        "{magic}",
+        "{lib:material#bone} door",
+        "{lib:material#mineral} door",
+        "{lib:metal#fantasy} door"
       ]
     },
     {
@@ -250,7 +253,6 @@
         "{lib:stone}",
         "brass",
         "bronze",
-        "bone",
         "{lib:material#glass}"
       ]
     },
