@@ -69,7 +69,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_corridor, dungeon_room, dungeon_vault, Five_room_dungeon",
-  "date": "2018-01-22",
+  "date": "2018-01-25",
   "authors": "Esko Vesala",
   "sources": "",
   "genre": "fantasy",
@@ -287,25 +287,16 @@
       "note": "The vertical bars are for creating a box around the output.",
       "format": "X -- the entrance",
       "entries": [
-        {
-          "m": 1,
-          "v": "{mountain}",
-          "set": {
-            "entrance": "door"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{jungle}",
-          "set": {
-            "entrance": "door"
-          }
-        }
+        "{mountain}",
+        "{jungle}"
       ]
     },
     {
       "name": "mountain",
       "explanation": "Entrances in the mountains.",
+      "set": {
+        "milieu": "mountain"
+      },
       "entries": [
         "In the rocky mountainside there is",
         "Amidst the hillside rubble the shape of an entrance can be seen: "
@@ -314,8 +305,12 @@
     {
       "name": "jungle",
       "explanation": "Entrances in the jungle.",
+      "set": {
+        "milieu": "jungle"
+      },
       "entries": [
-        "In the depths of the green hell, the jungle finally reveals its secret. Behind the thick vines, you at last see the ancient temple - and the entrance: "
+        "In the depths of the green hell, the jungle finally reveals its secret. Behind the thick vines, you at last see the ancient temple - and the entrance: ",
+        "Behind overgrown thickets, something seemingly out of place can be seen: "
       ]
     },
     {
