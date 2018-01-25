@@ -149,7 +149,7 @@
       "entries": [
         "a cave-like entrance blocked by a gigantic boulder",
         "an enormous collection rubble, hiding behind it an undeground entrance",
-        "a crumbling stone colossus blocks a half-hidden entrance into shadowy darkness",
+        "a crumbling stone colossus blocks a half-hidden entrance into the shadowy darkness",
         "a small cave with a hard-to-spot, narrow crack in a wall",
         "an entrance that has been shut with a hastily constructed brick wall"
       ]
@@ -199,11 +199,11 @@
         "entrance": "opening"
       },
       "entries": [
-        "a narrow passageway crawls into shadowy depths",
+        "a narrow passageway crawls into the shadow-filled depths",
         "a rough-hewn passageway into darkness has been carved here",
         "a round, tunnel-like entrance has been dug among the rubble",
         "it looks like a colossal worm had forced its way through the earth, leaving behind it a round passageway into uncharted depths",
-        "an unassuming entrance into the depths has been reinforced with thick, wooden pillars"
+        "an unassuming entrance into the depths, reinforced with thick, wooden pillars"
       ]
     },
     {
@@ -227,7 +227,7 @@
         "entrance": "stairs"
       },
       "entries": [
-        "a spiraling staircase descends into a round hole in the ground",
+        "a spiraling staircase descending into a round hole in the ground",
         "crumbling stone stairs sharply descending into the depths of the earth"
       ]
     },
@@ -283,12 +283,122 @@
     },
     {
       "name": "milieu",
-      "explanation": "The common theme of the dungeon.",
-      "note": "The vertical bars are for creating a box around the output.",
-      "format": "X -- the entrance",
+      "explanation": "The environment of the dungeon.",
       "entries": [
+        "{indoors}",
+        "{urban}",
+        "{suburban}",
+        "{rural}",
+        "{outpost}",
+        "{grassland}",
+        "{forest}",
+        "{hill}",
         "{mountain}",
-        "{jungle}"
+        "{river}",
+        "{lake}",
+        "{wetlands}",
+        "{coast}",
+        "{rare milieu}"
+      ]
+    },
+    {
+      "name": "rare milieu",
+      "explanation": "Rare environments.",
+      "entries": [
+        "{sea}",
+        "{tundra}",
+        "{rainforest}",
+        "{savanna}",
+        "{desert}",
+        "{underground}"
+      ]
+    },
+    {
+      "name": "indoors",
+      "explanation": "Indoor entrances.",
+      "set": {
+        "milieu": "indoors"
+      },
+      "entries": [
+        "The basement staircase seems to continue for ever, until it suddenly stops at a strange sight: ",
+        "In the middle of an unassuming wall there is something that does not seem to belong: "
+      ]
+    },
+    {
+      "name": "urban",
+      "explanation": "Entrances in cities.",
+      "set": {
+        "milieu": "urban"
+      },
+      "entries": [
+        "The unnatural smoothess of the forbidden temple's wall is broken by ",
+        "A shunned archway in a remote corner of the ancient city hides a secret: "
+      ]
+    },
+    {
+      "name": "suburban",
+      "explanation": "Entrances in cities.",
+      "set": {
+        "milieu": "suburban"
+      },
+      "entries": [
+        "A lone tower has a peculiar feature: ",
+        "An abandoned stone structure hides a secret: "
+      ]
+    },
+    {
+      "name": "rural",
+      "explanation": "Entrances in countryside.",
+      "set": {
+        "milieu": "rural"
+      },
+      "entries": [
+        "A long, winding road leads to an earthen mound, where ",
+        "The length of an ancient stone wall is broken by a surprising sight: "
+      ]
+    },
+    {
+      "name": "outpost",
+      "explanation": "Entrances by outposts.",
+      "set": {
+        "milieu": "outpost"
+      },
+      "entries": [
+        "A weather-beaten keep has a peculiar aspect: ",
+        "The castle ruins may not be as abandoned as a quick look from afar would warrant: "
+      ]
+    },
+    {
+      "name": "grassland",
+      "explanation": "Entrances on the plains.",
+      "set": {
+        "milieu": "grassland"
+      },
+      "entries": [
+        "An age-old barrow reveals on a closer inspection an entrance: ",
+        "A large mound of earth appears to hide something: "
+      ]
+    },
+    {
+      "name": "forest",
+      "explanation": "Entrances in the woods.",
+      "set": {
+        "milieu": "forest"
+      },
+      "entries": [
+        "A copse of ancient, gnarly trees hides something in their midst: ",
+        "A grove of an almost unpetrable forest surrounds a strange sight: "
+      ]
+    },
+    {
+      "name": "hill",
+      "explanation": "Entrances in the hills.",
+      "set": {
+        "milieu": "hill"
+      },
+      "entries": [
+        "Amidst the hillside rubble the shape of an entrance can be seen: ",
+        "On the side of a gently sloping hill, there is "
       ]
     },
     {
@@ -298,19 +408,118 @@
         "milieu": "mountain"
       },
       "entries": [
-        "In the rocky mountainside there is",
-        "Amidst the hillside rubble the shape of an entrance can be seen: "
+        "In the rocky mountainside there is ",
+        "A steep cliff face offers a surprising sight: "
       ]
     },
     {
-      "name": "jungle",
+      "name": "river",
+      "explanation": "Entrances by the river.",
+      "set": {
+        "milieu": "river"
+      },
+      "entries": [
+        "A riverbank accommodates an entrance: ",
+        "A narrow rivulet seems to lose some of its waters to a surprising receptable: "
+      ]
+    },
+    {
+      "name": "lake",
+      "explanation": "Entrances by the lake.",
+      "set": {
+        "milieu": "lake"
+      },
+      "entries": [
+        "On a small lake in the middle of a lake, there is ",
+        "By the lakeside, a curious structure looms: "
+      ]
+    },
+    {
+      "name": "wetlands",
+      "explanation": "Entrances near swamps.",
+      "set": {
+        "milieu": "wetlands"
+      },
+      "entries": [
+        "The fetid swamp hides an extraordinary structure: ",
+        "In the middle of the fen, there seems the be a drier, elevated area with "
+      ]
+    },
+    {
+      "name": "coast",
+      "explanation": "Entrances near the coast.",
+      "set": {
+        "milieu": "coast"
+      },
+      "entries": [
+        "In the end of long, rocky pier seems to be something strange: ",
+        "The enormous rocks scattered by the seaside hide something in their craggy embrace: "
+      ]
+    },
+    {
+      "name": "sea",
+      "explanation": "Naval entrances.",
+      "set": {
+        "milieu": "sea"
+      },
+      "entries": [
+        "The water surface is broken by a tiny crag, where something strange awaits: ",
+        "A lone pillar rises from the watery depths, and by it can be seen "
+      ]
+    },
+    {
+      "name": "tundra",
+      "explanation": "Entrances on the tundra.",
+      "set": {
+        "milieu": "tundra"
+      },
+      "entries": [
+        "Among sparse, tortured trees looms something unnatural: ",
+        "The wasteland steppe shelters something unexpected: "
+      ]
+    },
+    {
+      "name": "rainforest",
       "explanation": "Entrances in the jungle.",
       "set": {
-        "milieu": "jungle"
+        "milieu": "rainforest"
       },
       "entries": [
         "In the depths of the green hell, the jungle finally reveals its secret. Behind the thick vines, you at last see the ancient temple - and the entrance: ",
         "Behind overgrown thickets, something seemingly out of place can be seen: "
+      ]
+    },
+    {
+      "name": "savanna",
+      "explanation": "Entrances on the savanna.",
+      "set": {
+        "milieu": "savanna"
+      },
+      "entries": [
+        "Grass plains surround an alien-looking structure: ",
+        "The sun-drenched grasslands shelter an eerie secret: "
+      ]
+    },
+    {
+      "name": "desert",
+      "explanation": "Entrances on the desert.",
+      "set": {
+        "milieu": "desert"
+      },
+      "entries": [
+        "Could it be something more than a mirage? Behind the barren dunes looms something strange: ",
+        "Amidst the bleaky vastness of the sandy hills something quite out of place can be seen: "
+      ]
+    },
+    {
+      "name": "underground",
+      "explanation": "Underground entrances.",
+      "set": {
+        "milieu": "underground"
+      },
+      "entries": [
+        "The tortuous cavern guards a strange sight: ",
+        "The undeground passageway continues for the longest of time, until it abruptly ends by "
       ]
     },
     {
