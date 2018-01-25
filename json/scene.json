@@ -21,7 +21,7 @@
   "bugs": "",
   "to do": "",
   "see": "actant, clue, Five_room_dungeon, hero, villain",
-  "date": "2018-01-22",
+  "date": "2018-01-25",
   "authors": "Esko Vesala.",
   "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon",
   "genre": "universal",
@@ -381,6 +381,13 @@
       "entries": [
         {
           "m": 1,
+          "v": "Advantage revealed{var:endheading} {advantage revealed beat}",
+          "set": {
+            "beat": "advantage revealed"
+          }
+        },
+        {
+          "m": 1,
           "v": "Betrayal{var:endheading} {betrayal beat}",
           "set": {
             "beat": "betrayal"
@@ -395,6 +402,13 @@
         },
         {
           "m": 1,
+          "v": "Hidden weakness{var:endheading} {hidden weakness beat}",
+          "set": {
+            "beat": "hidden weakness"
+          }
+        },
+        {
+          "m": 1,
           "v": "Hindrance{var:endheading} {hindrance beat}",
           "set": {
             "beat": "hindrance"
@@ -405,6 +419,13 @@
           "v": "Information{var:endheading} {information beat}",
           "set": {
             "beat": "information"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Revelation{var:endheading} {revelation beat}",
+          "set": {
+            "beat": "revelation"
           }
         },
         {
@@ -651,6 +672,14 @@
       "**************************************************": "BEATS"
     },
     {
+      "name": "advantage revealed beat",
+      "explanation": "Beats that reveal an advantage.",
+      "entries": [
+        "A {lib:actant#mentor} here knows about an advantage that the  {lib:synonym#troupe} could maybe use to advance their plans.",
+        "A {lib:actant#traitor} here knows about a tool that the  {lib:synonym#troupe} could use."
+      ]
+    },
+    {
       "name": "ambush beat",
       "explanation": "Beats for surprise battles with the enemy's troops.",
       "entries": [
@@ -756,6 +785,16 @@
       ]
     },
     {
+      "name": "hidden weakness beat",
+      "explanation": "Beats that reveal a weakness in the enemy.",
+      "entries": [
+        "A {lib:actant#friendly} can be found here. If treated well, they can reveal a secret that can be used against the villain.",
+        "A {lib:actant#mentor} knows about the villain's fear that maybe could be used to gain an advantage.",
+        "Hidden here is a weapon that can be an effective asset against the villain.",
+        "If a {actant#traitor} found here can be befriended, they can tell the {lib:synonym#troupe} about a traitor in the enemy's faction."
+      ]
+    },
+    {
       "name": "hindrance beat",
       "explanation": "Beats that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
       "entries": [
@@ -804,7 +843,7 @@
     },
     {
       "name": "resource beat",
-      "explanation": "Beats that offer new resources (artifact, key, tool, treasure, plant, animal, information, red herring, etc.)",
+      "explanation": "Beats that offer new resources (artifact, key, tool, treasure, plant, animal, information, red herring, etc).",
       "entries": [
         "The {var:artifact} can be found here.",
         "{key}",
@@ -813,6 +852,14 @@
         "{animal}",
         "{information}",
         "{red herring}"
+      ]
+    },
+    {
+      "name": "revelation beat",
+      "explanation": "Beats that reveal the whole story to the proragonists.",
+      "entries": [
+        "If an agreement can be negotiated, {lib:actant#mentor} can reveal {revelation}.",
+        "If convinced of the motivations of the {lib:synonym#troupe}, a {lib:actant#traitor} here may reveal {revelation}."
       ]
     },
     {
@@ -924,6 +971,7 @@
         "{contest}",
         "{predicament}",
         "{red herring}",
+        "{revelation}",
         "{smoke screen}",
         "{trick}"
       ]
@@ -952,6 +1000,15 @@
       "explanation": "False information leading investigators astray.",
       "entries": [
         "A [false] clue about {lib:clue#subject} can be found here."
+      ]
+    },
+    {
+      "name": "revelation",
+      "explanation": "Big secrets.",
+      "entries": [
+        "the identity of the villain",
+        "the motivation of the villain",
+        "the plans of the villain"
       ]
     },
     {
