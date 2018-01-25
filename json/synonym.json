@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "Expansion.",
   "see": "",
-  "date": "2018-01-21",
+  "date": "2018-01-25",
   "authors": "Esko Vesala.",
   "sources": "Thesaurus.com, TvTropes.org, Wikipedia.org",
   "genre": "universal",
@@ -564,6 +564,24 @@
       "explanation": "Synonyms for a sorcerer.",
       "entries": [
         "{lib:magician}"
+      ]
+    },
+    {
+      "name": "strange",
+      "explanation": "Synonyms for 'weird' qualities.",
+      "entries": [
+        "odd",
+        "weird",
+        "strange",
+        "bizarre",
+        "curious",
+        "unusual",
+        "peculiar",
+        "fantastic",
+        "astounding",
+        "unheard of",
+        "exceptional",
+        "extraordinary"
       ]
     },
     {
