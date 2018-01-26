@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "Expansion.",
   "see": "",
-  "date": "2018-01-25",
+  "date": "2018-01-26",
   "authors": "Esko Vesala.",
   "sources": "Thesaurus.com, TvTropes.org, Wikipedia.org",
   "genre": "universal",
@@ -109,6 +109,20 @@
         "fortress",
         "fort",
         "fortification"
+      ]
+    },
+    {
+      "name": "clothing",
+      "explanation": "Synonyms for clothes.",
+      "entries": [
+        "clothing",
+        "garb",
+        "apparel",
+        "outfit",
+        "attire",
+        "gear",
+        "guise",
+        "wardrobe"
       ]
     },
     {
@@ -439,6 +453,15 @@
       ]
     },
     {
+      "name": "now",
+      "explanation": "Synonyms for 'now'.",
+      "entries": [
+        "now",
+        "currently",
+        "at this time"
+      ]
+    },
+    {
       "name": "number",
       "explanation": "Synonyms for 'number'.",
       "entries": [
@@ -695,6 +718,18 @@
       "explanation": "Synonyms for a warrior.",
       "entries": [
         "{lib:fighter}"
+      ]
+    },
+    {
+      "name": "wearing",
+      "explanation": "Synonyms for wearing clothes.",
+      "entries": [
+        "wearing",
+        "dressed in",
+        "clad in",
+        "clothed in",
+        "donning",
+        "outfitted in"
       ]
     },
     {
