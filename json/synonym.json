@@ -1,16 +1,16 @@
 {
   "name": "synonym",
-  "resultPattern": "{synonym}",
+  "resultPattern": "{help}",
   "variables": {
     "footnote": ""
   },
   "explanation": "Produces dramatic synonyms to avoid repetition of some often used words.",
   "structure": "",
-  "note": "Intended usage: {synonym#word}. Please retain the alphabetical order of the subtables!",
+  "note": "Intended usage: lib:synonym#word. Please retain the alphabetical order of the subtables!",
   "bugs": "",
   "to do": "Expansion.",
   "see": "",
-  "date": "2018-01-26",
+  "date": "2018-01-28",
   "authors": "Esko Vesala.",
   "sources": "Thesaurus.com, TvTropes.org, Wikipedia.org",
   "genre": "universal",
@@ -762,6 +762,16 @@
         "madness",
         "rage",
         "wrath"
+      ]
+    },
+    {
+      "**************************************************": "INSTRUCTIONS"
+    },
+    {
+      "name": "help",
+      "explanation": "Usage instructions.",
+      "entries": [
+        "Call lib:synonym#term to get a random synonym for the term. For the list of supported terms, see the 'json/synonym.json' file in the Open Campaign Logger repository."
       ]
     }
   ]
