@@ -11,7 +11,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-01-22",
+  "date": "2018-01-29",
   "authors": "Esko Vesala.",
   "sources": "Dungeon_adventure",
   "genre": "universal",
@@ -139,6 +139,9 @@
       ]
     },
     {
+      "*******************************************": "CREATURE COMPLICATIONS"
+    },
+    {
       "name": "creature",
       "explanation": "Creature complication types by rarity.",
       "entries": [
@@ -151,23 +154,75 @@
     },
     {
       "name": "common creature",
-      "explanation": "Common complications for monsters.",
+      "explanation": "Common complications for creatures.",
       "entries": [
-        "{wounded}"
+        "{handicap}",
+        "{wound}",
+        "{health}",
+        "{perception}",
+        "{hunger}",
+        "{fatigue}"
       ]
     },
     {
-      "name": "wounded",
-      "explanation": "Injury statuses of monsters.",
+      "name": "handicap",
+      "explanation": "Physical handicap complications.",
+      "entries": [
+        "paralyzed",
+        "crippled",
+        "hamstrung",
+        "handicapped",
+        "mutilated"
+      ]
+    },
+    {
+      "name": "wound",
+      "explanation": "Injury statuses.",
       "entries": [
         "wounded",
         "injured",
-        "impaired"
+        "impaired",
+        "maimed"
+      ]
+    },
+    {
+      "name": "health",
+      "explanation": "Health-related complications.",
+      "entries": [
+        "parasite-ridden",
+        "diseased",
+        "ill",
+        "sickly"
+      ]
+    },
+    {
+      "name": "perception",
+      "explanation": "Sense-related complications.",
+      "entries": [
+        "blinded",
+        "deafened"
+      ]
+    },
+    {
+      "name": "hunger",
+      "explanation": "Voracity-related complications.",
+      "entries": [
+        "ravenous",
+        "voracious",
+        "hungry"
+      ]
+    },
+    {
+      "name": "fatigue",
+      "explanation": "Fatigue-related complications.",
+      "entries": [
+        "fatigued",
+        "staggered"
       ]
     },
     {
       "name": "rare complication",
-      "explanation": "Rare complications for monsters.",
+      "explanation": "Rare complications for creatures.",
       "entries": [
         "{immobile}",
         "{insane}"
@@ -175,7 +230,7 @@
     },
     {
       "name": "immobile",
-      "explanation": "Immobile statuses for monsters.",
+      "explanation": "Immobile statuses.",
       "entries": [
         "entangled",
         "chained",
@@ -184,10 +239,14 @@
     },
     {
       "name": "insane",
-      "explanation": "Insanity statuses of monsters.",
+      "explanation": "Insanity statuses.",
       "entries": [
-        "insane"
+        "insane",
+        "deranged"
       ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
     },
     {
       "name": "special complication",

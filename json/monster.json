@@ -1,14 +1,16 @@
 {
   "name": "monster",
   "resultPattern": "{result}",
-  "variables": {
+  "globals": {
     "actant": "monster",
     "actants": "monsters",
     "actantgroup": "pack",
     "actantaction": "on the prowl",
     "actantadjective": "hideous",
     "actantdescription": "The monster seems to be looking for soemthing to eat.",
-    "attitude": "hostile",
+    "attitude": "hostile"
+  },
+  "variables": {
     "footnote": ""
   },
   "explanation": "monster table",
@@ -17,7 +19,7 @@
   "bugs": "",
   "to do": "Categorize monsters by type.",
   "see": "animal, attack, citizen, complication, encounter, nonhuman",
-  "date": "2018-01-22",
+  "date": "2018-01-29",
   "authors": "Esko Vesala.",
   "sources": "D20SRD.org, DanDWiki.com, Wikia.com, Wikipedia.org",
   "genre": "fantasy",
@@ -75,17 +77,18 @@
       "name": "common",
       "explanation": "Common monster types.",
       "entries": [
-        "{vermin}",
         "{humanoid}"
       ]
     },
     {
-      "name": "vermin",
-      "explanation": "Monstrous insects, worms, etc.",
+      "name": "rare",
+      "explanation": "Rare monster types.",
       "entries": [
-        "monster bug",
-        "monster rat"
+        "{vermin}"
       ]
+    },
+    {
+      "**************************************************": "MONSTERS"
     },
     {
       "name": "humanoid",
@@ -130,29 +133,20 @@
       ]
     },
     {
-      "name": "rare",
-      "explanation": "Rare monster types.",
+      "name": "vermin",
+      "explanation": "Monstrous insects, worms, etc.",
       "entries": [
-        "{aquatic}"
+        "monster bug",
+        "monster rat"
       ]
     },
     {
-      "name": "aquatic",
-      "explanation": "Aquatic monster types.",
-      "entries": [
-        "merrow",
-        "siren",
-        "hydra",
-        "water elemental",
-        "kraken",
-        "leviathan"
-      ]
+      "**************************************************": "WORLD-SPECIFIC"
     },
     {
       "name": "myth",
       "explanation": "Monsters once rumoured to have existed.",
       "entries": [
-        "medusa",
         "{halfhuman}",
         "{mythic beast}",
         "{fey}",
@@ -169,7 +163,10 @@
       "name": "halfhuman",
       "explanation": "Composites of human and animal.",
       "entries": [
+        "medusa",
+        "gorgon",
         "centaur",
+        "lamia",
         "naga"
       ]
     },
@@ -179,7 +176,7 @@
       "entries": [
         "gargoyle",
         "catoblepas",
-        "gorgon",
+        "unicorn",
         "{chimerical}"
       ]
     },
@@ -208,7 +205,8 @@
       "explanation": "Shapeshifters.",
       "entries": [
         "werewolf",
-        "werebear"
+        "werebear",
+        "wererat"
       ]
     },
     {
@@ -308,6 +306,9 @@
         "{ooze}",
         "{magical beast}",
         "{monstrous humanoid}",
+        "{avian}",
+        "{reptilian}",
+        "{amphibian}",
         "{aberration}",
         "{construct}",
         "{elemental}",
@@ -337,6 +338,36 @@
       "explanation": "Humanoid creature with monstrous features.",
       "entries": [
         "orc"
+      ]
+    },
+    {
+      "name": "avian",
+      "explanation": "Humanoid creature with bird-like features.",
+      "entries": [
+        "swan maiden",
+        "tengu",
+        "bird people",
+        "avian"
+      ]
+    },
+    {
+      "name": "reptilian",
+      "explanation": "Humanoid creature with reptile-like features.",
+      "entries": [
+        "serpent man",
+        "snakeman",
+        "lizardfolk",
+        "reptilian",
+        "saurian",
+        "draconian",
+        "lemurian"
+      ]
+    },
+    {
+      "name": "amphibian",
+      "explanation": "Humanoid creature with frog-like features.",
+      "entries": [
+        "frog folk"
       ]
     },
     {
@@ -450,8 +481,42 @@
       "name": "alien",
       "explanation": "Extraterrestrial aliens.",
       "entries": [
+        "little green man",
         "alien",
         "grey alien"
+      ]
+    },
+    {
+      "**************************************************": "AQUATIC"
+    },
+    {
+      "name": "sea",
+      "explanation": "Sea monsters.",
+      "entries": [
+        "{aquatic}",
+        "{piscine}"
+      ]
+    },
+    {
+      "name": "aquatic",
+      "explanation": "Aquatic monster types.",
+      "entries": [
+        "hydra",
+        "kraken",
+        "leviathan"
+      ]
+    },
+    {
+      "name": "piscine",
+      "explanation": "Humanoid creature with fish-like features.",
+      "entries": [
+        "merfolk",
+        "merrow",
+        "selkie",
+        "siren",
+        "triton",
+        "undine",
+        "rusalka"
       ]
     },
     {
@@ -461,20 +526,12 @@
       "name": "special",
       "explanation": "Special monster tables.",
       "entries": [
-        "{adjective}",
-        "{psychology}"
+        "{adjective}"
       ]
     },
     {
       "name": "adjective",
       "explanation": "Adjectives describing the monster.",
-      "entries": [
-        "{psychology}"
-      ]
-    },
-    {
-      "name": "psychology",
-      "explanation": "Psychology of the monster.",
       "entries": [
         "vengeful",
         "bloodthirsty",
