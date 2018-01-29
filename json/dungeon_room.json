@@ -2,65 +2,6 @@
   "name": "dungeon_room",
   "resultPattern": "{HTML formatting}{init}",
   "variables": {
-    "starttitle": "",
-    "endtitle": "",
-    "startheading": "",
-    "endheading": "",
-    "startbold": "",
-    "endbold": "",
-    "para": "",
-    "room": "room",
-    "roomsize": "medium",
-    "roompurpose": "",
-    "roomshape": "rectangular",
-    "roomtype": "chamber",
-    "roomdescription": "",
-    "roomcontents": "",
-    "roomevent": "",
-    "groundfeature": "",
-    "wallfeature": "",
-    "ceilingfeature": "",
-    "air": "",
-    "smell": "",
-    "sound": "",
-    "mineral": "",
-    "animal": "animal",
-    "animals": "animals",
-    "animalgroup": "",
-    "animalaction": "",
-    "animaladjective": "",
-    "animaldescription": "",
-    "plant": "plant",
-    "plants": "plants",
-    "plantgroup": "bush of plants",
-    "plantaction": "",
-    "plantadjective": "",
-    "plantdescription": "",
-    "door": "door",
-    "doorfeature": "",
-    "lock": "lock",
-    "lockfeature": "",
-    "key": "key",
-    "keydescription": "small silver key",
-    "corridor": "corridor",
-    "corridorfeature": "",
-    "danger": "danger",
-    "dangeraction": "",
-    "dangerdescription": "",
-    "trial": "trial",
-    "trialaction": "",
-    "trialdescription": "",
-    "hindrance": "hindrance",
-    "hindranceaction": "",
-    "hindrancedescription": "",
-    "setback": "setback",
-    "setbackaction": "",
-    "setbackdescription": "",
-    "trap": "trap",
-    "trapaction": "",
-    "trapdescription": "",
-    "damage": "damage",
-    "damagetype": "",
     "footnote": ""
   },
   "explanation": "Random dungeon rooms.",
@@ -69,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_corridor, dungeon_vault, Five_room_dungeon",
-  "date": "2018-01-22",
+  "date": "2018-01-26",
   "authors": "Esko Vesala",
   "sources": "Five_room_dungeon",
   "genre": "fantasy",
@@ -81,7 +22,7 @@
       "name": "init",
       "explanation": "Initializing the room parameters.",
       "entries": [
-        "{size}{shape}{type} {var:para}{result}"
+        "{size}{shape}{type} {global:para}{result}"
       ]
     },
     {
@@ -89,36 +30,36 @@
       "explanation": "Verbosity of the resultPattern output.",
       "entries": [
         "{summary}",
-        "{detail} {var:para}{extra}"
+        "{detail} {global:para}{extra}"
       ]
     },
     {
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "This is a {room}. The {lib:synonym#room} {var:roomdescription}. {exits}."
+        "This is a {room}. The {lib:synonym#room} {global:roomdescription}. {exits}."
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. {contents} {exits}.",
-        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {var:roomdescription}. {exits}."
+        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {global:roomdescription}. {contents} {exits}.",
+        "The {lib:synonym#room} is a {room}. The {lib:synonym#room} {global:roomdescription}. {exits}."
       ]
     },
     {
       "name": "contents",
       "explanation": "Listing the contents of the room.",
       "entries": [
-        "{var:para}{var:roomcontents}"
+        "{global:para}{global:roomcontents}"
       ]
     },
     {
       "name": "exits",
       "explanation": "Listing the exits from the room.",
       "entries": [
-        "{var:para}{var:startbold}Exits{var:endbold}: {doors}"
+        "{global:para}{global:startbold}Exits{global:endbold}: {doors}"
       ]
     },
     {
@@ -150,10 +91,10 @@
       "name": "description",
       "explanation": "Room description formats.",
       "entries": [
-        "{var:roomsize}, {var:roomshape} {var:roomtype}",
-        "{adjective}, {var:roomsize}, {var:roomshape} {var:roomtype}",
-        "{var:roomsize}, {var:roomshape} {var:roomtype} with {wall material} walls and {floor material} floor",
-        "{adjective}, {var:roomsize}, {var:roomshape} {var:roomtype} with {wall material} walls and {floor material} floor"
+        "{global:roomsize}, {global:roomshape} {global:roomtype}",
+        "{adjective}, {global:roomsize}, {global:roomshape} {global:roomtype}",
+        "{global:roomsize}, {global:roomshape} {global:roomtype} with {wall material} walls and {floor material} floor",
+        "{adjective}, {global:roomsize}, {global:roomshape} {global:roomtype} with {wall material} walls and {floor material} floor"
       ]
     },
     {
@@ -166,35 +107,35 @@
         {
           "m": 1,
           "v": "{tiny room purpose}",
-          "set": {
+          "export": {
             "roomsize": "tiny"
           }
         },
         {
           "m": 3,
           "v": "{small room purpose}",
-          "set": {
+          "export": {
             "roomsize": "small"
           }
         },
         {
           "m": 5,
           "v": "{medium room purpose}",
-          "set": {
+          "export": {
             "roomsize": "medium-sized"
           }
         },
         {
           "m": 3,
           "v": "{big room purpose}",
-          "set": {
+          "export": {
             "roomsize": "big"
           }
         },
         {
           "m": 1,
           "v": "{huge room purpose}",
-          "set": {
+          "export": {
             "roomsize": "huge"
           }
         }
@@ -210,147 +151,147 @@
         {
           "m": 5,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "square"
           }
         },
         {
           "m": 5,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "rectangular"
           }
         },
         {
           "m": 5,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "elongated"
           }
         },
         {
           "m": 4,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "squarish"
           }
         },
         {
           "m": 3,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "long and narrow"
           }
         },
         {
           "m": 3,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "irregularly shaped"
           }
         },
         {
           "m": 2,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "round"
           }
         },
         {
           "m": 2,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "oval"
           }
         },
         {
           "m": 2,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "pear-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "semicircle-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "somewhat triangle-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "kite-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "dart-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "rhomboid-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "trapezoid-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "cross-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "pentagon-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "hexagon-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "star-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "octagon-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomshape": "irregular, polygon-shaped"
           }
         }
@@ -366,63 +307,63 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomtype": "room"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomtype": "chamber"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomtype": "hall"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomtype": "enclosure"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomtype": "spot"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomtype": "location"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomtype": "area"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomtype": "space"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roomtype": "place"
           }
         }
@@ -449,7 +390,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "jail cell",
             "roomdescription": "looks like a jail cell",
             "roomcontents": "There are shackles fastened to one wall."
@@ -458,7 +399,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "wardrobe",
             "roomdescription": "looks like a wardrobe",
             "roomcontents": "There are various types of clothes hanging from racks."
@@ -467,7 +408,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "bath",
             "roomdescription": "has been furnished into a bath",
             "roomcontents": "In the middle of the room there is a basin."
@@ -476,7 +417,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "storage room",
             "roomdescription": "has served as a storage room",
             "roomcontents": "Chests and cases are filled with household items in various states of disrepair."
@@ -485,7 +426,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "stall",
             "roomdescription": "has been modified to function as a some kind of stall",
             "roomcontents": "There are piles of hay in a corner."
@@ -500,7 +441,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "jail",
             "roomdescription": "looks like a jail",
             "roomcontents": "There are shackles fastened to one wall."
@@ -509,7 +450,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "wardrobe",
             "roomdescription": "looks like a wardrobe",
             "roomcontents": "There are various types of clothes hanging from racks."
@@ -518,7 +459,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "burial chamber",
             "roomdescription": "is a burial chamber",
             "roomcontents": "There is a sarcophagus in the middle of the room."
@@ -527,7 +468,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "treasure room",
             "roomdescription": "has served as a treasure room",
             "roomcontents": "There are several chests on the floor."
@@ -536,7 +477,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "bath",
             "roomdescription": "has been furnished into a bath",
             "roomcontents": "In the middle of the room there is a basin."
@@ -545,7 +486,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "bed chamber",
             "roomdescription": "is a bed chamber",
             "roomcontents": "A large bed lies next to the wall."
@@ -554,7 +495,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "bottlery",
             "roomdescription": "has apparently served as a bottlery",
             "roomcontents": "There are large casks in one corner and empty bottles in another."
@@ -563,7 +504,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "furnace",
             "roomdescription": "is equipped with a furnace",
             "roomcontents": "Metalworking tools and base metal ingots are strewn on the floor."
@@ -572,7 +513,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "storage room",
             "roomdescription": "has served as a storage room",
             "roomcontents": "Chests and cases are filled with household items in various states of disrepair."
@@ -581,7 +522,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "stable",
             "roomdescription": "has been modified to function as a some kind of a stable",
             "roomcontents": "There are several piles of hay in the corners."
@@ -596,7 +537,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "observatory",
             "roomdescription": "has been used as a some kind of observatory",
             "roomcontents": "There are astrological books and a telescope strewn around."
@@ -605,7 +546,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "torture chamber",
             "roomdescription": "has been used as a torture chamber",
             "roomcontents": "The is a torture rack in the middle of the room and an iron maiden in a corner."
@@ -614,7 +555,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "library",
             "roomdescription": "is a library",
             "roomcontents": "Several bookcases are filled with tomes and librams of various kinds."
@@ -623,7 +564,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "giant astrolabe",
             "roomdescription": "appears to be like a giant astrolabe",
             "roomcontents": "There are astrological books and equipment strewn around."
@@ -632,7 +573,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "burial chamber",
             "roomdescription": "is a burial chamber",
             "roomcontents": "There are several sarcophagi in the room."
@@ -641,7 +582,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "laboratory",
             "roomdescription": "must be a laboratory",
             "roomcontents": "On a table there are alembics and other alchemical paraphernalia."
@@ -650,7 +591,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "armory",
             "roomdescription": "serves as an armory",
             "roomcontents": "There are various parts of armour in various states of repair lying on the floor."
@@ -659,7 +600,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "treasury",
             "roomdescription": "has served as a treasury",
             "roomcontents": "There are several chests on the floor."
@@ -668,7 +609,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "barracks",
             "roomdescription": "functions as a barracks",
             "roomcontents": "There are sparse beds around the walls."
@@ -677,7 +618,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "feast hall",
             "roomdescription": "is a feast hall",
             "roomcontents": "A long table fills the center of the room."
@@ -686,7 +627,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "bed chamber",
             "roomdescription": "is a bed chamber",
             "roomcontents": "A large bed lies next to the wall."
@@ -695,7 +636,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "bottlery",
             "roomdescription": "has apparently served as a bottlery",
             "roomcontents": "There are large casks in one corner and empty bottles in another."
@@ -704,7 +645,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "smithy",
             "roomdescription": "serves as a smith's workshop",
             "roomcontents": "There is a forge in the middle of the room."
@@ -713,7 +654,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "scriptorium",
             "roomdescription": "is a scriptorium where books and manuscripts are copied",
             "roomcontents": "Stacks of books are piled on a writing desk."
@@ -722,7 +663,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "storage room",
             "roomdescription": "has served as a storage room",
             "roomcontents": "Chests and cases are filled with household items in various states of disrepair."
@@ -731,7 +672,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "study",
             "roomdescription": "looks like a study",
             "roomcontents": "Next to a bookcase there is a writing desk."
@@ -746,7 +687,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "observatory",
             "roomdescription": "has been used as a some kind of observatory",
             "roomcontents": "There are astrological books and a telescope strewn around."
@@ -755,7 +696,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "torture chamber",
             "roomdescription": "has been used as a torture chamber",
             "roomcontents": "The is a torture rack in the middle of the room and an iron maiden in a corner."
@@ -764,7 +705,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "library",
             "roomdescription": "is a library",
             "roomcontents": "Several bookcases are filled with tomes and librams of various kinds."
@@ -773,7 +714,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "giant astrolabe",
             "roomdescription": "appears to be like a giant astrolabe",
             "roomcontents": "There are astrological books and equipment strewn around."
@@ -782,7 +723,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "temple",
             "roomdescription": "looks like a temple",
             "roomcontents": "In the front of a room there is an altar."
@@ -791,7 +732,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "armory",
             "roomdescription": "serves as an armory",
             "roomcontents": "There are various parts of armour in various states of repair lying on the floor."
@@ -800,7 +741,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "barracks",
             "roomdescription": "functions as a barracks",
             "roomcontents": "There are sparse beds around the walls."
@@ -809,7 +750,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "feast hall",
             "roomdescription": "is a feast hall",
             "roomcontents": "A long table fills the center of the room."
@@ -818,7 +759,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "gallery",
             "roomdescription": "has been transformed into a gallery",
             "roomcontents": "There a number of paintings hanging on the walls."
@@ -827,7 +768,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "throne room",
             "roomdescription": "serves as a throne room",
             "roomcontents": "There is a throne in the far end of the room."
@@ -836,7 +777,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "scriptorium",
             "roomdescription": "is a scriptorium where books and manuscripts are copied",
             "roomcontents": "Stacks of books are piled on a writing desk."
@@ -845,7 +786,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "study",
             "roomdescription": "looks like a study",
             "roomcontents": "Next to a bookcase there is a writing desk."
@@ -854,7 +795,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "cistern",
             "roomdescription": "holds plenty of water and apparently has served as a cistern",
             "roomcontents": "The floor is completely underwater."
@@ -869,7 +810,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "temple",
             "roomdescription": "looks like a temple",
             "roomcontents": "In the front of a room there is an altar."
@@ -878,7 +819,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "arena",
             "roomdescription": "is furnished as an arena",
             "roomcontents": "In the center there is an open area and benches around the walls."
@@ -887,7 +828,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "barracks",
             "roomdescription": "functions as a barracks",
             "roomcontents": "There are sparse beds around the walls."
@@ -896,7 +837,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "feast hall",
             "roomdescription": "is a feast hall",
             "roomcontents": "A long table fills the center of the room."
@@ -905,7 +846,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "gallery",
             "roomdescription": "has been transformed into a gallery",
             "roomcontents": "There a number of paintings hanging on the walls."
@@ -914,7 +855,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "throne room",
             "roomdescription": "serves as a throne room",
             "roomcontents": "There is a throne in the far end of the room."
@@ -923,7 +864,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "cistern",
             "roomdescription": "holds plenty of water and apparently has served as a cistern",
             "roomcontents": "The floor is completely underwater."
@@ -932,7 +873,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "roompurpose": "cathedral",
             "roomdescription": "is some sort of a cathedral",
             "roomcontents": "Burned out candles are lined along the walls."
@@ -1074,7 +1015,7 @@
       "entries": [
         {
           "v": "",
-          "set": {
+          "export": {
             "starttitle": "<H2>",
             "endtitle": "</H2>",
             "startheading": "<H3>",
@@ -1092,7 +1033,7 @@
       "entries": [
         {
           "v": "",
-          "set": {
+          "export": {
             "starttitle": "{b|",
             "endtitle": "}\r\n\r\n",
             "startheading": "\r\n\r\n{b|",
@@ -1136,8 +1077,8 @@
       "explanation": "Doors exiting from the room.",
       "entries": [
         "There is one visible exit: {lib:door}",
-        "There are two visible exits. {var:para}1) {lib:door}, {var:para}2) {lib:door}",
-        "There are three visible exits. {var:para}1) {lib:door}, {var:para}2) {lib:door}, {var:para}3) {lib:door}"
+        "There are two visible exits. {global:para}1) {lib:door}, {global:para}2) {lib:door}",
+        "There are three visible exits. {global:para}1) {lib:door}, {global:para}2) {lib:door}, {global:para}3) {lib:door}"
       ]
     },
     {
@@ -1148,9 +1089,9 @@
       "explanation": "Extras for dungeon rooms.",
       "entries": [
         "",
-        "{var:startbold}Flavoring{var:endbold}: {flavoring}",
-        "{var:startbold}Room complication{var:endbold}: {lib:complication#room}",
-        "{var:startbold}Feature{var:endbold}: {lib:dungeon_feature}"
+        "{global:startbold}Flavoring{global:endbold}: {flavoring}",
+        "{global:startbold}Room complication{global:endbold}: {lib:complication#room}",
+        "{global:startbold}Feature{global:endbold}: {lib:dungeon_feature}"
       ]
     },
     {

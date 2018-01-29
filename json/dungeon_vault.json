@@ -2,65 +2,6 @@
   "name": "dungeon_vault",
   "resultPattern": "{HTML formatting}{init}",
   "variables": {
-    "starttitle": "",
-    "endtitle": "",
-    "startheading": "",
-    "endheading": "",
-    "startbold": "",
-    "endbold": "",
-    "para": "",
-    "vault": "main chamber",
-    "vaultsize": "medium",
-    "vaultpurpose": "throne room",
-    "vaultshape": "rectangular",
-    "vaulttype": "chamber",
-    "vaultdescription": "",
-    "vaultcontents": "",
-    "vaultevent": "",
-    "groundfeature": "",
-    "wallfeature": "",
-    "ceilingfeature": "",
-    "air": "",
-    "smell": "",
-    "sound": "",
-    "mineral": "",
-    "animal": "animal",
-    "animals": "animals",
-    "animalgroup": "",
-    "animalaction": "",
-    "animaladjective": "",
-    "animaldescription": "",
-    "plant": "plant",
-    "plants": "plants",
-    "plantgroup": "bush of plants",
-    "plantaction": "",
-    "plantadjective": "",
-    "plantdescription": "",
-    "door": "door",
-    "doorfeature": "",
-    "lock": "lock",
-    "lockfeature": "",
-    "key": "key",
-    "keydescription": "small silver key",
-    "corridor": "corridor",
-    "corridorfeature": "",
-    "danger": "danger",
-    "dangeraction": "",
-    "dangerdescription": "",
-    "trial": "trial",
-    "trialaction": "",
-    "trialdescription": "",
-    "hindrance": "hindrance",
-    "hindranceaction": "",
-    "hindrancedescription": "",
-    "setback": "setback",
-    "setbackaction": "",
-    "setbackdescription": "",
-    "trap": "trap",
-    "trapaction": "",
-    "trapdescription": "",
-    "damage": "damage",
-    "damagetype": "",
     "footnote": ""
   },
   "explanation": "Random dungeon vaults.",
@@ -69,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_corridor, dungeon_entrance, dungeon_room, Five_room_dungeon",
-  "date": "2018-01-22",
+  "date": "2018-01-26",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "fantasy",
@@ -103,7 +44,7 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {vault}. {var:para}{extra}"
+        "{adjective} {vault}. {global:para}{extra}"
       ]
     },
     {
@@ -137,7 +78,7 @@
     {
       "name": "chamber",
       "explanation": "Chamber vaults.",
-      "set": {
+      "export": {
         "vault": "chamber"
       },
       "entries": [
@@ -153,7 +94,7 @@
     {
       "name": "open",
       "explanation": "Open space vaults.",
-      "set": {
+      "export": {
         "vault": "open"
       },
       "entries": [
@@ -207,7 +148,7 @@
       "entries": [
         {
           "v": "",
-          "set": {
+          "export": {
             "starttitle": "<H2>",
             "endtitle": "</H2>",
             "startheading": "<H3>",
@@ -225,7 +166,7 @@
       "entries": [
         {
           "v": "",
-          "set": {
+          "export": {
             "starttitle": "{b|",
             "endtitle": "}\r\n\r\n",
             "startheading": "\r\n\r\n{b|",

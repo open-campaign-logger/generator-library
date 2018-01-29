@@ -1,6 +1,9 @@
 {
   "name": "hazard",
   "resultPattern": "{result}",
+  "globals": {
+    "hazard": ""
+  },
   "variables": {
     "footnote": ""
   },
@@ -10,7 +13,7 @@
   "bugs": "",
   "to do": "More world-specific hazards.",
   "see": "Dungeon_adventure, trap",
-  "date": "2018-01-12",
+  "date": "2018-01-26",
   "authors": "Johnn Four, Esko Vesala.",
   "sources": "Five_room_dungeon",
   "genre": "fantasy",

@@ -1,8 +1,10 @@
 {
   "name": "macguffin",
   "resultPattern": "{result}",
+  "globals": {
+    "macguffin": ""
+  },
   "variables": {
-    "macguffin": "",
     "footnote": ""
   },
   "explanation": "Random plot devices (objects that draw the characters into the adventure).",
@@ -11,7 +13,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-01-13",
+  "date": "2018-01-26",
   "authors": "Esko Vesala.",
   "sources": "Five_room_dungeon",
   "genre": "universal",
@@ -59,21 +61,21 @@
         {
           "m": 1,
           "v": "{information}",
-          "set": {
+          "export": {
             "macguffin": "information"
           }
         },
         {
           "m": 1,
           "v": "{container}",
-          "set": {
+          "export": {
             "macguffin": "container"
           }
         },
         {
           "m": 1,
           "v": "{weapon}",
-          "set": {
+          "export": {
             "macguffin": "weapon"
           }
         }
@@ -86,14 +88,14 @@
         {
           "m": 1,
           "v": "{armor}",
-          "set": {
+          "export": {
             "macguffin": "armor"
           }
         },
         {
           "m": 1,
           "v": "{treasure}",
-          "set": {
+          "export": {
             "macguffin": "treasure"
           }
         }

@@ -1,8 +1,10 @@
 {
   "name": "treasure",
   "resultPattern": "{result}",
+  "globals": {
+    "treasure": "treasure"
+  },
   "variables": {
-    "treasure": "",
     "footnote": ""
   },
   "explanation": "treasure table",
@@ -11,7 +13,7 @@
   "bugs": "",
   "to do": "Categorize treasures by type.",
   "see": "equipment, gem, jewelry",
-  "date": "2018-01-13",
+  "date": "2018-01-28",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "fantasy",
@@ -56,7 +58,7 @@
       "name": "common",
       "explanation": "Common treasure types.",
       "entries": [
-        "{miscellany}{var:treasure}"
+        "{miscellany}{global:treasure}"
       ]
     },
     {
@@ -74,35 +76,35 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "treasure": "hoard"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "treasure": "tome"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "treasure": "secret"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "treasure": "scroll"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "treasure": "treasure"
           }
         }

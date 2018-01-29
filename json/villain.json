@@ -1,29 +1,7 @@
 {
   "name": "villain",
-  "resultPattern": "{HTML formatting}{init}{result}",
+  "resultPattern": "{init}{result}",
   "variables": {
-    "starttitle": "<H2>",
-    "endtitle": "</H2>",
-    "startheading": "<H3>",
-    "endheading": "</H3>",
-    "startbold": "<B>",
-    "endbold": "</B>",
-    "para": "<P>",
-    "difficulty": "",
-    "difficultydescription": "",
-    "actant": "villain",
-    "actants": "villains",
-    "actantgroup": "band",
-    "actantaction": "keenly eying their surroundings",
-    "actantadjective": "dastardly",
-    "actantdescription": "The villain seems to be planning something.",
-    "attitude": "hostile",
-    "villain": "villain",
-    "villains": "villains",
-    "villaingroup": "band of villains",
-    "villainaction": "keenly eying their surroundings",
-    "villainadjective": "dastardly",
-    "villaindescription": "The villain seems to be planning something.",
     "footnote": ""
   },
   "explanation": "Randomized villains.",
@@ -32,7 +10,7 @@
   "bugs": "",
   "to do": "Categorize villains by type.",
   "see": "actant, ally, Dungeon_adventure, hero, minion, scene",
-  "date": "2018-01-22",
+  "date": "2018-01-26",
   "authors": "Esko Vesala.",
   "sources": "Wikia.com",
   "genre": "fantasy",
@@ -46,7 +24,7 @@
       "entries": [
         {
           "v": "",
-          "set": {
+          "export": {
             "actant": "villain"
           }
         }
@@ -94,7 +72,7 @@
         {
           "m": 1,
           "v": "{apprentice}",
-          "set": {
+          "export": {
             "difficulty": "apprentice",
             "difficultydescription": "inexperienced adventurers"
           }
@@ -102,7 +80,7 @@
         {
           "m": 2,
           "v": "{journeyman}",
-          "set": {
+          "export": {
             "difficulty": "journeyman",
             "difficultydescription": "adventurers with some experience"
           }
@@ -110,7 +88,7 @@
         {
           "m": 3,
           "v": "{master}",
-          "set": {
+          "export": {
             "difficulty": "master",
             "difficultydescription": "experienced adventurers"
           }
@@ -124,7 +102,7 @@
         {
           "m": 2,
           "v": "{adept}",
-          "set": {
+          "export": {
             "difficulty": "adept",
             "difficultydescription": "highly experienced adventurers"
           }
@@ -132,7 +110,7 @@
         {
           "m": 1,
           "v": "{legend}",
-          "set": {
+          "export": {
             "difficulty": "legend",
             "difficultydescription": "only the most experienced of adventurers"
           }
@@ -148,40 +126,40 @@
       "entries": [
         {
           "m": 1,
-          "v": "traitor",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "traitor",
             "villainadjective": "scheming"
           }
         },
         {
           "m": 1,
-          "v": "madman",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "madman",
             "villainadjective": "ravening"
           }
         },
         {
           "m": 1,
-          "v": "cultist",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "cultist",
             "villainadjective": "fanatical"
           }
         },
         {
           "m": 1,
-          "v": "dark mistress",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "dark mistress",
             "villainadjective": "alluring"
           }
         },
         {
           "m": 1,
-          "v": "lycanthrope",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "lycanthrope",
             "villainadjective": "shapeshifting"
           }
@@ -194,64 +172,64 @@
       "entries": [
         {
           "m": 1,
-          "v": "slave lord",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "slave lord",
             "villainadjective": "cruel"
           }
         },
         {
           "m": 1,
-          "v": "false prophet",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "false prophet",
             "villainadjective": "mysterious"
           }
         },
         {
           "m": 1,
-          "v": "high priest",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "high priest",
             "villainadjective": "blood-stained"
           }
         },
         {
           "m": 1,
-          "v": "ogre",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "ogre",
             "villainadjective": "ravenous"
           }
         },
         {
           "m": 1,
-          "v": "cannibal king",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "cannibal king",
             "villainadjective": "sharp-toothed"
           }
         },
         {
           "m": 1,
-          "v": "inquisitor",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "inquisitor",
             "villainadjective": "sadistic"
           }
         },
         {
           "m": 1,
-          "v": "serpentman",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "serpentman",
             "villainadjective": "slithering"
           }
         },
         {
           "m": 1,
-          "v": "wight",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "wight",
             "villainadjective": "undead"
           }
@@ -264,40 +242,40 @@
       "entries": [
         {
           "m": 1,
-          "v": "general",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "general",
             "villainadjective": "scheming"
           }
         },
         {
           "m": 1,
-          "v": "monstrosity",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "monstrosity",
             "villainadjective": "inhuman"
           }
         },
         {
           "m": 1,
-          "v": "colossus",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "colossus",
             "villainadjective": "hulking"
           }
         },
         {
           "m": 1,
-          "v": "abomination",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "abomination",
             "villainadjective": "indescribable"
           }
         },
         {
           "m": 1,
-          "v": "faceless evil",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "faceless evil",
             "villainadjective": "hellbound"
           }
@@ -310,40 +288,40 @@
       "entries": [
         {
           "m": 1,
-          "v": "phantom",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "phantom",
             "villainadjective": "spectral"
           }
         },
         {
           "m": 1,
-          "v": "wizard",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "wizard",
             "villainadjective": "dark"
           }
         },
         {
           "m": 1,
-          "v": "necromancer",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "necromancer",
             "villainadjective": "death-tainted"
           }
         },
         {
           "m": 1,
-          "v": "giant",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "giant",
             "villainadjective": "enormous"
           }
         },
         {
           "m": 1,
-          "v": "wyvern",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "wyvern",
             "villainadjective": "leather-winged"
           }
@@ -356,40 +334,40 @@
       "entries": [
         {
           "m": 1,
-          "v": "lich",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "lich",
             "villainadjective": "long-dead"
           }
         },
         {
           "m": 1,
-          "v": "dragon",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "dragon",
             "villainadjective": "scale-armored"
           }
         },
         {
           "m": 1,
-          "v": "wyrm",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "wyrm",
             "villainadjective": "ancient"
           }
         },
         {
           "m": 1,
-          "v": "demon lord",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "demon lord",
             "villainadjective": "hateful"
           }
         },
         {
           "m": 1,
-          "v": "old god",
-          "set": {
+          "v": "",
+          "export": {
             "villain": "old god",
             "villainadjective": "forgotten"
           }
@@ -444,45 +422,6 @@
       "entries": [
         "{modern}",
         "XXX"
-      ]
-    },
-    {
-      "**************************************************": "FORMATTING"
-    },
-    {
-      "name": "HTML formatting",
-      "explanation": "Set variables for formatting the output as HTML",
-      "entries": [
-        {
-          "v": "",
-          "set": {
-            "starttitle": "<H2>",
-            "endtitle": "</H2>",
-            "startheading": "<H3>",
-            "endheading": "</H3>",
-            "startbold": "<B>",
-            "endbold": "</B>",
-            "para": "<P>"
-          }
-        }
-      ]
-    },
-    {
-      "name": "CL formatting",
-      "explanation": "Set variables for formatting the output for Campaign Logger",
-      "entries": [
-        {
-          "v": "",
-          "set": {
-            "starttitle": "{b|",
-            "endtitle": "}\r\n\r\n",
-            "startheading": "\r\n\r\n{b|",
-            "endheading": "}",
-            "startbold": "{b|",
-            "endbold": "}",
-            "para": "\r\n"
-          }
-        }
       ]
     },
     {

@@ -2,64 +2,6 @@
   "name": "dungeon_corridor",
   "resultPattern": "{HTML formatting}{init}",
   "variables": {
-    "starttitle": "",
-    "endtitle": "",
-    "startheading": "",
-    "endheading": "",
-    "startbold": "",
-    "endbold": "",
-    "para": "",
-    "corridor": "corridor",
-    "corridorsize": "medium",
-    "corridorpurpose": "",
-    "corridorshape": "rectangular",
-    "corridortype": "corridor",
-    "corridordescription": "",
-    "corridorcontents": "",
-    "corridorevent": "",
-    "groundfeature": "",
-    "wallfeature": "",
-    "ceilingfeature": "",
-    "air": "",
-    "smell": "",
-    "sound": "",
-    "mineral": "",
-    "animal": "animal",
-    "animals": "animals",
-    "animalgroup": "",
-    "animalaction": "",
-    "animaladjective": "",
-    "animaldescription": "",
-    "plant": "plant",
-    "plants": "plants",
-    "plantgroup": "bush of plants",
-    "plantaction": "",
-    "plantadjective": "",
-    "plantdescription": "",
-    "door": "door",
-    "doorfeature": "",
-    "lock": "lock",
-    "lockfeature": "",
-    "key": "key",
-    "keydescription": "small silver key",
-    "corridorfeature": "",
-    "danger": "danger",
-    "dangeraction": "",
-    "dangerdescription": "",
-    "trial": "trial",
-    "trialaction": "",
-    "trialdescription": "",
-    "hindrance": "hindrance",
-    "hindranceaction": "",
-    "hindrancedescription": "",
-    "setback": "setback",
-    "setbackaction": "",
-    "setbackdescription": "",
-    "trap": "trap",
-    "trapaction": "",
-    "trapdescription": "",
-    "damage": "damage",
-    "damagetype": "",
     "footnote": ""
   },
   "explanation": "Random dungeon passages.",
@@ -68,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_entrance, dungeon_room, dungeon_vault, Five_room_dungeon",
-  "date": "2018-01-16",
+  "date": "2018-01-26",
   "authors": "Esko Vesala",
   "sources": "",
   "genre": "fantasy",
@@ -87,8 +29,8 @@
       "name": "result",
       "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{summary} {var:para}{extra}",
-        "{detail} {var:para}{extra}"
+        "{summary} {global:para}{extra}",
+        "{detail} {global:para}{extra}"
       ]
     },
     {
@@ -148,8 +90,8 @@
       "name": "description",
       "explanation": "Corridor description formats.",
       "entries": [
-        "{var:corridorsize}, {var:corridorshape} {var:corridortype}",
-        "{var:corridorsize}, {var:corridorshape} {var:corridortype} with {wall material} walls and {floor material} floor"
+        "{global:corridorsize}, {global:corridorshape} {global:corridortype}",
+        "{global:corridorsize}, {global:corridorshape} {global:corridortype} with {wall material} walls and {floor material} floor"
       ]
     },
     {
@@ -162,35 +104,35 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "corridorsize": "tiny"
           }
         },
         {
           "m": 3,
           "v": "",
-          "set": {
+          "export": {
             "corridorsize": "small"
           }
         },
         {
           "m": 5,
           "v": "",
-          "set": {
+          "export": {
             "corridorsize": "medium-sized"
           }
         },
         {
           "m": 3,
           "v": "",
-          "set": {
+          "export": {
             "corridorsize": "big"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "corridorsize": "huge"
           }
         }
@@ -206,77 +148,77 @@
         {
           "m": 3,
           "v": "",
-          "set": {
+          "export": {
             "corridorshape": "square"
           }
         },
         {
           "m": 4,
           "v": "",
-          "set": {
+          "export": {
             "corridorshape": "squarish"
           }
         },
         {
           "m": 5,
           "v": "",
-          "set": {
+          "export": {
             "corridorshape": "rectangular"
           }
         },
         {
           "m": 4,
           "v": "",
-          "set": {
+          "export": {
             "corridorshape": "narrow"
           }
         },
         {
           "m": 4,
           "v": "",
-          "set": {
+          "export": {
             "corridorshape": "wide"
           }
         },
         {
           "m": 3,
           "v": "",
-          "set": {
+          "export": {
             "corridorshape": "round"
           }
         },
         {
           "m": 2,
           "v": "",
-          "set": {
+          "export": {
             "corridorshape": "oval"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "corridorshape": "semicircle-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "corridorshape": "somewhat triangle-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "corridorshape": "octagon-shaped"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "corridorshape": "irregularly shaped"
           }
         }
@@ -292,21 +234,21 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "corridortype": "corridor"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "corridortype": "passage"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "corridortype": "hallway"
           }
         }
@@ -446,7 +388,7 @@
       "entries": [
         {
           "v": "",
-          "set": {
+          "export": {
             "starttitle": "<H2>",
             "endtitle": "</H2>",
             "startheading": "<H3>",
@@ -464,7 +406,7 @@
       "entries": [
         {
           "v": "",
-          "set": {
+          "export": {
             "starttitle": "{b|",
             "endtitle": "}\r\n\r\n",
             "startheading": "\r\n\r\n{b|",
@@ -517,7 +459,7 @@
       "entries": [
         "End of the passage: {lib:door}",
         "End of the passage: {lib:door}. Side door: {lib:door}",
-        "End of the passage: {lib:door}. Side doors: {var:para}1) {lib:door}, {var:para}2) {lib:door}"
+        "End of the passage: {lib:door}. Side doors: {global:para}1) {lib:door}, {global:para}2) {lib:door}"
       ]
     },
     {
@@ -528,8 +470,8 @@
       "explanation": "Extras for dungeon corridors.",
       "entries": [
         "",
-        "{var:startbold}Complication{var:endbold}: {lib:complication#corridor}",
-        "{var:startbold}Feature{var:endbold}: {lib:dungeon_feature}"
+        "{global:startbold}Complication{global:endbold}: {lib:complication#corridor}",
+        "{global:startbold}Feature{global:endbold}: {lib:dungeon_feature}"
       ]
     }
   ]

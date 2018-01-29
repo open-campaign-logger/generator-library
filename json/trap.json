@@ -1,11 +1,14 @@
 {
   "name": "trap",
   "resultPattern": "{result}",
-  "variables": {
+  "globals": {
     "trap": "trap",
     "trapdescription": "",
     "trapaction": "",
     "damagetype": "",
+    "footnote": ""
+  },
+  "variables": {
     "footnote": ""
   },
   "explanation": "Random traps.",
@@ -14,7 +17,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, hazard",
-  "date": "2018-01-13",
+  "date": "2018-01-26",
   "authors": "Esko Vesala.",
   "sources": "Five_room_dungeon",
   "genre": "universal",
@@ -34,14 +37,14 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{trap}{var:trap}"
+        "{trap}{global:trap}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{trap}{var:trap} [A successful inspection would reveal {var:trapdescription}. If the {lib:synonym#troupe} fails to detect and defuse the trap, {var:trapaction}]"
+        "{trap}{global:trap} [A successful inspection would reveal {global:trapdescription}. If the {lib:synonym#troupe} fails to detect and defuse the trap, {global:trapaction}]"
       ]
     },
     {
@@ -62,56 +65,56 @@
         {
           "m": 1,
           "v": "{nonlethal trap}",
-          "set": {
+          "export": {
             "damagetype": "nonlethal"
           }
         },
         {
           "m": 1,
           "v": "{blunt trap}",
-          "set": {
+          "export": {
             "damagetype": "blunt"
           }
         },
         {
           "m": 1,
           "v": "{slashing trap}",
-          "set": {
+          "export": {
             "damagetype": "slash"
           }
         },
         {
           "m": 1,
           "v": "{piercing trap}",
-          "set": {
+          "export": {
             "damagetype": "piercing"
           }
         },
         {
           "m": 1,
           "v": "{poison trap}",
-          "set": {
+          "export": {
             "damagetype": "poison"
           }
         },
         {
           "m": 1,
           "v": "{disease trap}",
-          "set": {
+          "export": {
             "damagetype": "disease"
           }
         },
         {
           "m": 1,
           "v": "{corrosive trap}",
-          "set": {
+          "export": {
             "damagetype": "corrosive"
           }
         },
         {
           "m": 1,
           "v": "{explosion trap}",
-          "set": {
+          "export": {
             "damagetype": "explosion"
           }
         }
@@ -124,21 +127,21 @@
         {
           "m": 1,
           "v": "{fire trap}",
-          "set": {
+          "export": {
             "damagetype": "fire"
           }
         },
         {
           "m": 1,
           "v": "{cold trap}",
-          "set": {
+          "export": {
             "damagetype": "cold"
           }
         },
         {
           "m": 1,
           "v": "{lightning trap}",
-          "set": {
+          "export": {
             "damagetype": "lightning"
           }
         }
@@ -154,7 +157,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "smoke trap",
             "trapaction": "a cloud of harmless smoke bellows out, making it hard to see anything in the area",
             "trapdescription": "a fragile vial containing some smoky substance"
@@ -169,7 +172,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "boulder trap",
             "trapaction": "a huge boulder falls down, hitting everyone near",
             "trapdescription": "an enormous rock precariously balanced above"
@@ -184,7 +187,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "scythe trap",
             "trapaction": "a scythe slashes out, cutting everyone near",
             "trapdescription": "a hidden, springloaded scythe blade"
@@ -199,7 +202,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "arrow trap",
             "trapaction": "a hidden arrow is shot",
             "trapdescription": "a hidden spring with an arrow ready to shoot"
@@ -208,7 +211,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "spike trap",
             "trapaction": "the ground gives in, dropping anyone on top in a pit with long spikes waiting in the bottom",
             "trapdescription": "a covered pit with sharp spikes in the bottom"
@@ -223,7 +226,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "poison arrow trap",
             "trapaction": "a hidden, poisoned arrow is shot",
             "trapdescription": "a hidden spring with an arrow ready to shoot"
@@ -232,7 +235,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "poisoned spike trap",
             "trapaction": "the ground gives in, dropping anyone on top in a pit with long, poisoned spikes waiting in the bottom",
             "trapdescription": "a covered pit with sharp spikes in the bottom"
@@ -241,7 +244,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "poison cloud trap",
             "trapaction": "a poisonous cloud of smoke bellows out",
             "trapdescription": "a fragile vial containing some smoky substance"
@@ -256,7 +259,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "miasma trap",
             "trapaction": "a cloud of sickening smoke bellows out, making everyone near ill",
             "trapdescription": "a fragile vial containing some smoky substance"
@@ -271,7 +274,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "necrotic trap",
             "trapaction": "a splash of sickening liquid shoots out, causing everyone near to age rapidly",
             "trapdescription": "an almost invisible wire attached to a pressurised container"
@@ -286,7 +289,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "acid trap",
             "trapaction": "a jet of acidid liquid shoots out, corroding everything nearby",
             "trapdescription": "an almost invisible wire attached to a pressurised container"
@@ -295,7 +298,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "alkaline trap",
             "trapaction": "a jet of alkaline liquid shoots out, corroding everything nearby",
             "trapdescription": "an almost invisible wire attached to a pressurised container"
@@ -310,7 +313,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "cold trap",
             "trapaction": "a magical ray of cold shoots out, freezing everything nearby",
             "trapdescription": "a hidden magic wand"
@@ -325,7 +328,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "fire trap",
             "trapaction": "a jet of flames shoots out, setting everything nearby on fire",
             "trapdescription": "an almost invisible wire attached to a glass vial containing some liquid"
@@ -340,7 +343,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "exploding trap",
             "trapaction": "there is a sudden explosion with an abrupt flash of light and a thundering sound",
             "trapdescription": "an almost invisible wire attached to a metallic shell"
@@ -355,7 +358,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "lightning trap",
             "trapaction": "a flash of lightning bolts out, damaging everyone near",
             "trapdescription": "a hidden magic wand"
@@ -370,7 +373,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "force trap",
             "trapaction": "an invisible force shoots out, damaging everyone nearby",
             "trapdescription": "a shimmering orb"
@@ -385,7 +388,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "sanity trap",
             "trapaction": "a wave of mental energy shoots out, resulting in symptoms of insanity in everyone nearby",
             "trapdescription": "a hidden sigil"
@@ -400,7 +403,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "spell trap",
             "trapaction": "a spell is silently cast",
             "trapdescription": "a parchment with magical runes insribed on it"
@@ -409,7 +412,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "curse trap",
             "trapaction": "a curse is silently cast",
             "trapdescription": "a magical sigil"
@@ -424,7 +427,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "unholy trap",
             "trapaction": "a demonic presence is felt, tempting everyone nearby to evil acts",
             "trapdescription": "a hidden unholy symbol"
@@ -433,7 +436,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "trap": "holy trap",
             "trapaction": "a divine presence is felt, causing everyone not of pure heart to falter",
             "trapdescription": "a hidden holy symbol"
@@ -451,21 +454,21 @@
         {
           "m": 1,
           "v": "{force trap}",
-          "set": {
+          "export": {
             "damagetype": "radiant"
           }
         },
         {
           "m": 1,
           "v": "{magic trap}",
-          "set": {
+          "export": {
             "damagetype": "magic"
           }
         },
         {
           "m": 1,
           "v": "{radiant trap}",
-          "set": {
+          "export": {
             "damagetype": "radiant"
           }
         }
@@ -479,7 +482,7 @@
         {
           "m": 1,
           "v": "{necrotic trap}",
-          "set": {
+          "export": {
             "damagetype": "necrotic"
           }
         }
@@ -501,7 +504,7 @@
         {
           "m": 1,
           "v": "{psychic trap}",
-          "set": {
+          "export": {
             "damagetype": "psychic"
           }
         }
