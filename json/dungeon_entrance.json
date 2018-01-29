@@ -1,0 +1,649 @@
+{
+  "name": "dungeon_entrance",
+  "resultPattern": "{HTML formatting}{init}",
+  "variables": {
+    "starttitle": "",
+    "endtitle": "",
+    "startheading": "",
+    "endheading": "",
+    "startbold": "",
+    "endbold": "",
+    "para": "",
+    "entrance": "door",
+    "entrancesize": "medium",
+    "entrancepurpose": "",
+    "entranceshape": "rectangular",
+    "entrancetype": "chamber",
+    "entrancedescription": "",
+    "entrancecontents": "",
+    "entranceevent": "",
+    "groundfeature": "",
+    "wallfeature": "",
+    "ceilingfeature": "",
+    "air": "",
+    "smell": "",
+    "sound": "",
+    "mineral": "",
+    "animal": "animal",
+    "animals": "animals",
+    "animalgroup": "",
+    "animalaction": "",
+    "animaladjective": "",
+    "animaldescription": "",
+    "plant": "plant",
+    "plants": "plants",
+    "plantgroup": "bush of plants",
+    "plantaction": "",
+    "plantadjective": "",
+    "plantdescription": "",
+    "door": "door",
+    "doorfeature": "",
+    "lock": "lock",
+    "lockfeature": "",
+    "key": "key",
+    "keydescription": "small silver key",
+    "corridor": "corridor",
+    "corridorfeature": "",
+    "danger": "danger",
+    "dangeraction": "",
+    "dangerdescription": "",
+    "trial": "trial",
+    "trialaction": "",
+    "trialdescription": "",
+    "hindrance": "hindrance",
+    "hindranceaction": "",
+    "hindrancedescription": "",
+    "setback": "setback",
+    "setbackaction": "",
+    "setbackdescription": "",
+    "trap": "trap",
+    "trapaction": "",
+    "trapdescription": "",
+    "damage": "damage",
+    "damagetype": "",
+    "footnote": ""
+  },
+  "explanation": "Random dungeon entrances.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "Dungeon_adventure, dungeon_corridor, dungeon_room, dungeon_vault, Five_room_dungeon",
+  "date": "2018-01-25",
+  "authors": "Esko Vesala",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the entrance parameters.",
+      "entries": [
+        "{result}"
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{milieu} {entrance}."
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{milieu} {entrance}. {var:para}{extra}"
+      ]
+    },
+    {
+      "name": "entrance",
+      "explanation": "Dungeon entrance types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common entrance types.",
+      "entries": [
+        "{opening}",
+        "{door}",
+        "{stairs}",
+        "{trapdoor}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare entrance types.",
+      "entries": [
+        "{barrier}",
+        "{hidden} [requires {key} to open]",
+        "{shaft}"
+      ]
+    },
+    {
+      "**************************************************": "ENTRANCES",
+      "format": "-- there is X"
+    },
+    {
+      "name": "barrier",
+      "explanation": "Barred entrances.",
+      "set": {
+        "entrance": "barrier"
+      },
+      "entries": [
+        "a cave-like entrance blocked by a gigantic boulder",
+        "an enormous collection rubble, hiding behind it an undeground entrance",
+        "a crumbling stone colossus blocks a half-hidden entrance into the shadowy darkness",
+        "a small cave with a hard-to-spot, narrow crack in a wall",
+        "an entrance that has been shut with a hastily constructed brick wall"
+      ]
+    },
+    {
+      "name": "door",
+      "explanation": "Door entrances.",
+      "set": {
+        "entrance": "door"
+      },
+      "entries": [
+        "half-rotten oak doors covered with mold",
+        "gigantic double doors groaning under their own weight",
+        "a stone door with strong iron hinges",
+        "a colossal stone slab decorated with runic symbols",
+        "a rusty portcullis blocking the way into a foreboding, cavernous entrance",
+        "heavy iron gates",
+        "a beautifully wrought silvery gate adorned with strange symbols"
+      ]
+    },
+    {
+      "name": "hidden",
+      "explanation": "Hidden entrances.",
+      "set": {
+        "entrance": "hidden"
+      },
+      "entries": [
+        "a carafully balanced boulder hides an entrance",
+        "thick vegetation camouflaging an entrance",
+        "thorny bushes have grown over an entrance",
+        "a large tree has grown in front of the entrance",
+        "a camoflaging of plant leaves has been carefully laid over the entrance",
+        "a smooth surface of rock with no apparent way to open a passage",
+        "a gleaming, polished slate of silvery metal with no keyhole or markings",
+        "an outcrop of rocks hides behind them a small hole where it just might be possible to crawl in",
+        "the altar of a small shrine covers an entrance",
+        "a deep well has a side passage leading to an entrance",
+        "in a pool of water, an underwater entrance can be seen dimly",
+        "an opening that can be dimly seen high up a cliff face",
+        "an illusion covering the entrance"
+      ]
+    },
+    {
+      "name": "opening",
+      "explanation": "Hidden entrances.",
+      "set": {
+        "entrance": "opening"
+      },
+      "entries": [
+        "a narrow passageway crawls into the shadow-filled depths",
+        "a rough-hewn passageway into darkness has been carved here",
+        "a round, tunnel-like entrance has been dug among the rubble",
+        "it looks like a colossal worm had forced its way through the earth, leaving behind it a round passageway into uncharted depths",
+        "an unassuming entrance into the depths, reinforced with thick, wooden pillars"
+      ]
+    },
+    {
+      "name": "shaft",
+      "explanation": "Shaft entrances.",
+      "set": {
+        "entrance": "shaft"
+      },
+      "entries": [
+        "an almost vertical shaft disappearing into the depths",
+        "a spiraling downwards passage",
+        "a deep, round hole in the ground",
+        "an ancient well offers a quick passage deep into the bowels of the earth",
+        "a fissure in the ground offers a narrow entranceway into the underground realms"
+      ]
+    },
+    {
+      "name": "stairs",
+      "explanation": "Stair entrances.",
+      "set": {
+        "entrance": "stairs"
+      },
+      "entries": [
+        "a spiraling staircase descending into a round hole in the ground",
+        "crumbling stone stairs sharply descending into the depths of the earth"
+      ]
+    },
+    {
+      "name": "trapdoor",
+      "explanation": "Trapdoor entrances.",
+      "set": {
+        "entrance": "trapdoor"
+      },
+      "entries": [
+        "a trapdoor half-buried in the ground",
+        "under a thin layer of sand, a faint trapdoor shape can be seen",
+        "a heavy slab of stone apparently covering a hole in the ground",
+        "an iron grate covers a dark hole in the ground"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Entrances once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Entrances for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Entrances for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Entrances for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "MILIEUS"
+    },
+    {
+      "name": "milieu",
+      "explanation": "The environment of the dungeon.",
+      "entries": [
+        "{indoors}",
+        "{urban}",
+        "{suburban}",
+        "{rural}",
+        "{outpost}",
+        "{grassland}",
+        "{forest}",
+        "{hill}",
+        "{mountain}",
+        "{river}",
+        "{lake}",
+        "{wetlands}",
+        "{coast}",
+        "{rare milieu}"
+      ]
+    },
+    {
+      "name": "rare milieu",
+      "explanation": "Rare environments.",
+      "entries": [
+        "{sea}",
+        "{tundra}",
+        "{rainforest}",
+        "{savanna}",
+        "{desert}",
+        "{underground}"
+      ]
+    },
+    {
+      "name": "indoors",
+      "explanation": "Indoor entrances.",
+      "set": {
+        "milieu": "indoors"
+      },
+      "entries": [
+        "The basement staircase seems to continue for ever, until it suddenly stops at a strange sight: ",
+        "In the middle of an unassuming wall there is something that does not seem to belong: "
+      ]
+    },
+    {
+      "name": "urban",
+      "explanation": "Entrances in cities.",
+      "set": {
+        "milieu": "urban"
+      },
+      "entries": [
+        "The unnatural smoothess of the forbidden temple's wall is broken by ",
+        "A shunned archway in a remote corner of the ancient city hides a secret: "
+      ]
+    },
+    {
+      "name": "suburban",
+      "explanation": "Entrances in cities.",
+      "set": {
+        "milieu": "suburban"
+      },
+      "entries": [
+        "A lone tower has a peculiar feature: ",
+        "An abandoned stone structure hides a secret: "
+      ]
+    },
+    {
+      "name": "rural",
+      "explanation": "Entrances in countryside.",
+      "set": {
+        "milieu": "rural"
+      },
+      "entries": [
+        "A long, winding road leads to an earthen mound, where ",
+        "The length of an ancient stone wall is broken by a surprising sight: "
+      ]
+    },
+    {
+      "name": "outpost",
+      "explanation": "Entrances by outposts.",
+      "set": {
+        "milieu": "outpost"
+      },
+      "entries": [
+        "A weather-beaten keep has a peculiar aspect: ",
+        "The castle ruins may not be as abandoned as a quick look from afar would warrant: "
+      ]
+    },
+    {
+      "name": "grassland",
+      "explanation": "Entrances on the plains.",
+      "set": {
+        "milieu": "grassland"
+      },
+      "entries": [
+        "An age-old barrow reveals on a closer inspection an entrance: ",
+        "A large mound of earth appears to hide something: "
+      ]
+    },
+    {
+      "name": "forest",
+      "explanation": "Entrances in the woods.",
+      "set": {
+        "milieu": "forest"
+      },
+      "entries": [
+        "A copse of ancient, gnarly trees hides something in their midst: ",
+        "A grove of an almost unpetrable forest surrounds a strange sight: "
+      ]
+    },
+    {
+      "name": "hill",
+      "explanation": "Entrances in the hills.",
+      "set": {
+        "milieu": "hill"
+      },
+      "entries": [
+        "Amidst the hillside rubble the shape of an entrance can be seen: ",
+        "On the side of a gently sloping hill, there is "
+      ]
+    },
+    {
+      "name": "mountain",
+      "explanation": "Entrances in the mountains.",
+      "set": {
+        "milieu": "mountain"
+      },
+      "entries": [
+        "In the rocky mountainside there is ",
+        "A steep cliff face offers a surprising sight: "
+      ]
+    },
+    {
+      "name": "river",
+      "explanation": "Entrances by the river.",
+      "set": {
+        "milieu": "river"
+      },
+      "entries": [
+        "A riverbank accommodates an entrance: ",
+        "A narrow rivulet seems to lose some of its waters to a surprising receptable: "
+      ]
+    },
+    {
+      "name": "lake",
+      "explanation": "Entrances by the lake.",
+      "set": {
+        "milieu": "lake"
+      },
+      "entries": [
+        "On a small lake in the middle of a lake, there is ",
+        "By the lakeside, a curious structure looms: "
+      ]
+    },
+    {
+      "name": "wetlands",
+      "explanation": "Entrances near swamps.",
+      "set": {
+        "milieu": "wetlands"
+      },
+      "entries": [
+        "The fetid swamp hides an extraordinary structure: ",
+        "In the middle of the fen, there seems the be a drier, elevated area with "
+      ]
+    },
+    {
+      "name": "coast",
+      "explanation": "Entrances near the coast.",
+      "set": {
+        "milieu": "coast"
+      },
+      "entries": [
+        "In the end of long, rocky pier seems to be something strange: ",
+        "The enormous rocks scattered by the seaside hide something in their craggy embrace: "
+      ]
+    },
+    {
+      "name": "sea",
+      "explanation": "Naval entrances.",
+      "set": {
+        "milieu": "sea"
+      },
+      "entries": [
+        "The water surface is broken by a tiny crag, where something strange awaits: ",
+        "A lone pillar rises from the watery depths, and by it can be seen "
+      ]
+    },
+    {
+      "name": "tundra",
+      "explanation": "Entrances on the tundra.",
+      "set": {
+        "milieu": "tundra"
+      },
+      "entries": [
+        "Among sparse, tortured trees looms something unnatural: ",
+        "The wasteland steppe shelters something unexpected: "
+      ]
+    },
+    {
+      "name": "rainforest",
+      "explanation": "Entrances in the jungle.",
+      "set": {
+        "milieu": "rainforest"
+      },
+      "entries": [
+        "In the depths of the green hell, the jungle finally reveals its secret. Behind the thick vines, you at last see the ancient temple - and the entrance: ",
+        "Behind overgrown thickets, something seemingly out of place can be seen: "
+      ]
+    },
+    {
+      "name": "savanna",
+      "explanation": "Entrances on the savanna.",
+      "set": {
+        "milieu": "savanna"
+      },
+      "entries": [
+        "Grass plains surround an alien-looking structure: ",
+        "The sun-drenched grasslands shelter an eerie secret: "
+      ]
+    },
+    {
+      "name": "desert",
+      "explanation": "Entrances on the desert.",
+      "set": {
+        "milieu": "desert"
+      },
+      "entries": [
+        "Could it be something more than a mirage? Behind the barren dunes looms something strange: ",
+        "Amidst the bleaky vastness of the sandy hills something quite out of place can be seen: "
+      ]
+    },
+    {
+      "name": "underground",
+      "explanation": "Underground entrances.",
+      "set": {
+        "milieu": "underground"
+      },
+      "entries": [
+        "The tortuous cavern guards a strange sight: ",
+        "The undeground passageway continues for the longest of time, until it abruptly ends by "
+      ]
+    },
+    {
+      "**************************************************": "FORMATTING"
+    },
+    {
+      "name": "HTML formatting",
+      "explanation": "Set variables for formatting the output as HTML",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "<H2>",
+            "endtitle": "</H2>",
+            "startheading": "<H3>",
+            "endheading": "</H3>",
+            "startbold": "<B>",
+            "endbold": "</B>",
+            "para": "<P>"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CL formatting",
+      "explanation": "Set variables for formatting the output for Campaign Logger",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "{b|",
+            "endtitle": "}\r\n\r\n",
+            "startheading": "\r\n\r\n{b|",
+            "endheading": "}",
+            "startbold": "{b|",
+            "endbold": "}",
+            "para": "\r\n"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL CASES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special entrance tables.",
+      "entries": [
+        "{adjective}",
+        "{extra}",
+        "{key}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives for dungeon entrances.",
+      "entries": [
+        "bleak",
+        "murky",
+        "gloomy",
+        "dismal",
+        "dreary",
+        "dreadful",
+        "forlorn",
+        "foreboding"
+      ]
+    },
+    {
+      "name": "key",
+      "explanation": "Keys for opening the dungeon entrance.",
+      "entries": [
+        "a special key",
+        "a magical phrase to be spoken",
+        "sunlight to hit a specific spot",
+        "a spell-infused {lib:magical_instrument#common}"
+      ]
+    },
+    {
+      "**************************************************": "EXTRAS"
+    },
+    {
+      "name": "extra",
+      "explanation": "Extras for dungeon entrances.",
+      "entries": [
+        "{var:startbold}Entrance complication{var:endbold}: {complication}",
+        "{var:startbold}Entrance feature{var:endbold}: {feature}"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Entrance complications.",
+      "entries": [
+        "Locals consider the area sacred and try their best to prevent anyone from desecrating the place.",
+        "The entrance is located behind a hedge maze.",
+        "A partially collapsed wall has blocked the entrance and requires long hours of hard work to clear.",
+        "A barricade has been built around the entrance as if to prevent something from entering.",
+        "A barricade has been built around the entrance as if to prevent something from exiting.",
+        "A vicious beast has built its lair in the entrance."
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Entrance features.",
+      "entries": [
+        "The entrance has been forced open, apparently quite recently.",
+        "Several large footprints can be seen around the entrance.",
+        "Claw marks and spatters of dried blood adorn the entrance.",
+        "A rotten animal carcass lies just inside the entrance.",
+        "A shield cut in half lies on the ground outside the entrance.",
+        "Inside the entrance there is uncovered pit trap, and the pierced remains of an earlier visitor can be seen in the bottom of the spike pit.",
+        "A tripwire has been set across the entrance [but there is no actual trap associated with it].",
+        "A hastily dug, shallow grave is visible next to the entrance.",
+        "The entrance is lined with skulls.",
+        "Rows of decapitated heads have been stuck on stakes outside the entrance.",
+        "Spider webs cover the entrance.",
+        "The ground near the entrance is littered with animal droppings.",
+        "A thick trail of slime leads into the entrance.",
+        "The entrance has been overgrown with plantlife.",
+        "A thick layer of soot covers the walls inside the entrance.",
+        "Clear signs of a recent fire mark the entrance.",
+        "A thin wisp of smoke emanates from the entrance.",
+        "Near the entrance there is an easy to spot, hastily dug cache. Buried there are some semiprecious stones in a leather pouch.",
+        "A weathered holy symbol has been fastened above the entrance."
+      ]
+    }
+  ]
+}

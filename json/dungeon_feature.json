@@ -1,0 +1,232 @@
+{
+  "name": "dungeon_feature",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Random dungeon features.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "Dungeon_adventure, dungeon_room",
+  "date": "2018-01-13",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{feature}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{feature}"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Feature types by rarity.",
+      "entries": [
+        {
+          "m": 5,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common features.",
+      "entries": [
+        "On the floor: {floor}.",
+        "On the wall: {wall}.",
+        "On the ceiling: {ceiling}.",
+        "Pieces of {litter} litter the area.",
+        "There is an abandoned {object} here.",
+        "The area has {room}.",
+        "There is {fixture} in the area."
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare features.",
+      "entries": [
+        "On the floor: {floor} and {floor}.",
+        "On the floor: {floor}. On the wall: {wall}.",
+        "On the walls: {wall} and {wall}.",
+        "On the wall: {wall}. On the ceiling: {ceiling}.",
+        "On the floor: {floor}. On the ceiling: {ceiling}.",
+        "On the floor: {floor} and {floor}. On the wall: {wall}.",
+        "On the floor: {floor}. On the walls: {wall} and {wall}.",
+        "On the floor: {floor} and {floor}. On the ceiling: {ceiling}.",
+        "On the walls: {wall} and {wall}. On the ceiling {ceiling}.",
+        "On the floor: {floor}. On the wall: {wall}. On the ceiling: {ceiling}."
+      ]
+    },
+    {
+      "**************************************************": "FEATURE TYPES"
+    },
+    {
+      "name": "ceiling",
+      "explanation": "Ceiling features.",
+      "entries": [
+        "a murder hole",
+        "a hanging cage"
+      ]
+    },
+    {
+      "name": "fixture",
+      "explanation": "Fixture features.",
+      "entries": [
+        "a forge",
+        "{altar}",
+        "{fountain}",
+        "{statue}"
+      ]
+    },
+    {
+      "name": "floor",
+      "explanation": "Floor features.",
+      "format": "singular",
+      "entries": [
+        "a firepit",
+        "a blood stain",
+        "a magic circle"
+      ]
+    },
+    {
+      "name": "litter",
+      "explanation": "Litter features.",
+      "format": "plural",
+      "entries": [
+        "{lib:equipment}",
+        "wooden splinters",
+        "scraps",
+        "bones"
+      ]
+    },
+    {
+      "name": "object",
+      "explanation": "Object features.",
+      "entries": [
+        "a barrel",
+        "a brazier",
+        "a cage",
+        "a crate",
+        "a bench",
+        "a bookcase",
+        "a cauldron",
+        "a chest",
+        "a gong"
+      ]
+    },
+    {
+      "name": "room",
+      "explanation": "Room features.",
+      "entries": [
+        "an alcove",
+        "a fireplace",
+        "an oven"
+      ]
+    },
+    {
+      "name": "wall",
+      "explanation": "Wall features.",
+      "entries": [
+        "claw marks",
+        "an engraving",
+        "magical glyphs",
+        "blood stains",
+        "arrow slits",
+        "a peephole",
+        "a balcony"
+      ]
+    },
+    {
+      "**************************************************": "FEATURE TYPES"
+    },
+    {
+      "name": "altar",
+      "explanation": "Altars.",
+      "entries": [
+        "altar"
+      ]
+    },
+    {
+      "name": "fountain",
+      "explanation": "Fountains.",
+      "entries": [
+        "fountain"
+      ]
+    },
+    {
+      "name": "statue",
+      "explanation": "Fountains.",
+      "entries": [
+        "fountain"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Features once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Features for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Features for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Features for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special feature tables.",
+      "entries": [
+        "XXX"
+      ]
+    }
+  ]
+}

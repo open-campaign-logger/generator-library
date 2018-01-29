@@ -1,7 +1,14 @@
 {
   "name": "plant table",
-  "resultPattern": "{plant}",
+  "resultPattern": "{result}",
   "variables": {
+    "actant": "plant",
+    "actants": "plants",
+    "actantgroup": "patch",
+    "actantaction": "rooted",
+    "actantadjective": "plain",
+    "actantdescription": "The plant seems oblivious to their surroundings.",
+    "attitude": "passive",
     "footnote": ""
   },
   "explanation": "Plant names. Land-based plants are divided by their historical (not modern) taxonomy. Additional subtables present uncategorised plants for some non-standard biotypes.",
@@ -9,7 +16,7 @@
   "note": "",
   "to do": "Expanding special biotopes (such as water plants).",
   "see": "",
-  "date": "2017-10-06",
+  "date": "2018-01-21",
   "authors": "Esko Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -19,12 +26,42 @@
   "tags": "#nature, #plant, #resource",
   "tables": [
     {
-      "name": "plant",
-      "explanation": "Common plant types known in most worlds.",
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{fungus}",
-        "{moss}",
-        "{fern}",
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{plant}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{plant}"
+      ]
+    },
+    {
+      "name": "plant",
+      "explanation": "Plant types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common plants.",
+      "entries": [
         "{grass}",
         "{root}",
         "{bulb}",
@@ -33,6 +70,18 @@
         "{shrub}",
         "{tree}"
       ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare plants.",
+      "entries": [
+        "{fungus}",
+        "{moss}",
+        "{fern}"
+      ]
+    },
+    {
+      "**************************************************": "PLANTS"
     },
     {
       "name": "fungus",
@@ -375,7 +424,10 @@
       ]
     },
     {
-      "name": "mythological",
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
       "explanation": "Imaginary plants once rumoured to have existed.",
       "entries": [
         "moly (a magical herb with black root and white blossoms)",
@@ -398,57 +450,22 @@
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary plants once rumoured to have existed.",
       "entries": [
         "tree of life (bestowing immortality)",
         "tree of knowledge (bestowing understanding)",
         "skytree (reaching to the layers of the sky)",
         "dawn tree (world tree associated with the sun)",
-        "world tree (connecting mythological realms)"
+        "world tree (connecting myth realms)"
       ]
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary plants for fantasy worlds.",
+      "explanation": "Fantasy plants (with no basis in myth).",
       "entries": [
-        "{mythological}",
-        "{fantasy beginning}{fantasy middle}{fantasy ending}"
-      ]
-    },
-    {
-      "name": "fantasy beginning",
-      "explanation": "Name beginnings for imaginary plants for fantasy worlds.",
-      "entries": [
-        " ",
-        "poisonous ",
-        "lingering ",
-        "deadly ",
-        "{lib:color#plant} "
-      ]
-    },
-    {
-      "name": "fantasy middle",
-      "explanation": "Name stems for imaginary plants for fantasy worlds.",
-      "entries": [
-        "dawn",
-        "night",
-        "moon",
-        "goblin",
-        "elf",
-        "fairy"
-      ]
-    },
-    {
-      "name": "fantasy ending",
-      "explanation": "Name endings for imaginary plants for fantasy worlds.",
-      "entries": [
-        "wort",
-        "bane",
-        "root",
-        "vine",
-        "shade",
-        "flower"
+        "{myth}",
+        "{random}"
       ]
     },
     {
@@ -466,6 +483,80 @@
       "entries": [
         "{modern}",
         "sentient plant"
+      ]
+    },
+    {
+      "**************************************************": "RANDOM CREATION"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized plants (names generated from components).",
+      "entries": [
+        "{beginning}{ending}",
+        "{descriptor}{beginning}{ending}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized plant names.",
+      "entries": [
+        "",
+        "lingering ",
+        "poisonous ",
+        "deadly ",
+        "{lib:color#plant} "
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized plant names.",
+      "entries": [
+        "night",
+        "dawn",
+        "rain",
+        "moon",
+        "sun",
+        "ash",
+        "goblin",
+        "elf",
+        "fairy",
+        "silver",
+        "gold",
+        "{lib:nonhuman#summary}",
+        "{lib:color#prime}"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized plant names.",
+      "entries": [
+        "wort",
+        "weed",
+        "grass",
+        "root",
+        "seed",
+        "vine",
+        "creeper",
+        "leaf",
+        "herb",
+        "nut",
+        "clove",
+        "spore",
+        "spice",
+        "shade",
+        "petal",
+        "bloom",
+        "flower"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special plant tables.",
+      "entries": [
+        "{edible}"
       ]
     },
     {

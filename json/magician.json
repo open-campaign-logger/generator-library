@@ -2,14 +2,21 @@
   "name": "magician table",
   "resultPattern": "{magician}",
   "variables": {
+    "actant": "magician",
+    "actants": "magicians",
+    "actantgroup": "school",
+    "actantaction": "flexing their fingers",
+    "actantadjective": "mysterious",
+    "actantdescription": "The magician is lost in their thoughts.",
+    "attitude": "neutral",
     "footnote": ""
   },
   "explanation": "Variations of magicians.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
-  "to do": "Mythological, fantasy and futuristic subtables.",
-  "see": "fighter, magic, magical_technique, magical_instrument, spellcasting",
-  "date": "2017-10-06",
+  "to do": "myth, fantasy and futuristic subtables.",
+  "see": "fighter, magic, magical_technique, magical_instrument, priest, spellcasting",
+  "date": "2018-01-21",
   "authors": "Esko Vesala",
   "sources": "SummitLighthouse.org, Wikipedia.org",
   "genre": "universal",
@@ -57,7 +64,7 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary magicians once rumoured to have existed.",
       "entries": [
         "kabbalist",
@@ -65,22 +72,22 @@
         "gnostic",
         "dervish",
         "divinely inspired prophet",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary magicians once rumoured to have existed.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "incarnation of a divinity"
       ]
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary magicians for fantasy worlds.",
+      "explanation": "Imaginary fantasy magicians (with no basis in myth).",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "gifted (innate magician)",
         "channeler (harnesses a supernatural force)",
         "{rare fantasy}"
@@ -88,7 +95,7 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary magicians for fantasy worlds.",
+      "explanation": "Rare fantasy magicians (with no basis in myth).",
       "entries": [
         "chaos mage (using random magic)",
         "wild mage (using uncontrolled magic)",

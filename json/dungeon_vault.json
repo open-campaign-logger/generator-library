@@ -1,0 +1,296 @@
+{
+  "name": "dungeon_vault",
+  "resultPattern": "{HTML formatting}{init}",
+  "variables": {
+    "starttitle": "",
+    "endtitle": "",
+    "startheading": "",
+    "endheading": "",
+    "startbold": "",
+    "endbold": "",
+    "para": "",
+    "vault": "main chamber",
+    "vaultsize": "medium",
+    "vaultpurpose": "throne room",
+    "vaultshape": "rectangular",
+    "vaulttype": "chamber",
+    "vaultdescription": "",
+    "vaultcontents": "",
+    "vaultevent": "",
+    "groundfeature": "",
+    "wallfeature": "",
+    "ceilingfeature": "",
+    "air": "",
+    "smell": "",
+    "sound": "",
+    "mineral": "",
+    "animal": "animal",
+    "animals": "animals",
+    "animalgroup": "",
+    "animalaction": "",
+    "animaladjective": "",
+    "animaldescription": "",
+    "plant": "plant",
+    "plants": "plants",
+    "plantgroup": "bush of plants",
+    "plantaction": "",
+    "plantadjective": "",
+    "plantdescription": "",
+    "door": "door",
+    "doorfeature": "",
+    "lock": "lock",
+    "lockfeature": "",
+    "key": "key",
+    "keydescription": "small silver key",
+    "corridor": "corridor",
+    "corridorfeature": "",
+    "danger": "danger",
+    "dangeraction": "",
+    "dangerdescription": "",
+    "trial": "trial",
+    "trialaction": "",
+    "trialdescription": "",
+    "hindrance": "hindrance",
+    "hindranceaction": "",
+    "hindrancedescription": "",
+    "setback": "setback",
+    "setbackaction": "",
+    "setbackdescription": "",
+    "trap": "trap",
+    "trapaction": "",
+    "trapdescription": "",
+    "damage": "damage",
+    "damagetype": "",
+    "footnote": ""
+  },
+  "explanation": "Random dungeon vaults.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "Dungeon_adventure, dungeon_corridor, dungeon_entrance, dungeon_room, Five_room_dungeon",
+  "date": "2018-01-22",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the vault parameters.",
+      "entries": [
+        "{result}"
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{adjective} {vault}."
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective} {vault}. {var:para}{extra}"
+      ]
+    },
+    {
+      "name": "vault",
+      "explanation": "Dungeon vault types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common vault types.",
+      "entries": [
+        "{chamber}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare vault types.",
+      "entries": [
+        "{open}"
+      ]
+    },
+    {
+      "**************************************************": "VAULTS"
+    },
+    {
+      "name": "chamber",
+      "explanation": "Chamber vaults.",
+      "set": {
+        "vault": "chamber"
+      },
+      "entries": [
+        "throne room",
+        "mausoleum",
+        "tomb",
+        "crypt",
+        "sepulcher",
+        "treasury",
+        "treasure room"
+      ]
+    },
+    {
+      "name": "open",
+      "explanation": "Open space vaults.",
+      "set": {
+        "vault": "open"
+      },
+      "entries": [
+        "cavern",
+        "cave",
+        "grotto",
+        "hollow",
+        "subterranean expanse"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Vaults once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Vaults for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Vaults for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Vaults for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "FORMATTING"
+    },
+    {
+      "name": "HTML formatting",
+      "explanation": "Set variables for formatting the output as HTML",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "<H2>",
+            "endtitle": "</H2>",
+            "startheading": "<H3>",
+            "endheading": "</H3>",
+            "startbold": "<B>",
+            "endbold": "</B>",
+            "para": "<P>"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CL formatting",
+      "explanation": "Set variables for formatting the output for Campaign Logger",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "{b|",
+            "endtitle": "}\r\n\r\n",
+            "startheading": "\r\n\r\n{b|",
+            "endheading": "}",
+            "startbold": "{b|",
+            "endbold": "}",
+            "para": "\r\n"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL CASES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special vault tables.",
+      "entries": [
+        "{adjective}",
+        "{extra}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives for dungeon vaults.",
+      "entries": [
+        "concealed",
+        "alien",
+        "weird",
+        "strange-looking",
+        "bizarre",
+        "massive",
+        "exotic",
+        "arcane",
+        "mystical",
+        "hermetic",
+        "cabalistic",
+        "glamorous",
+        "expensively decorated",
+        "outlandish",
+        "awe-inspiring",
+        "unearthly"
+      ]
+    },
+    {
+      "**************************************************": "EXTRAS"
+    },
+    {
+      "name": "extra",
+      "explanation": "Extra features for dungeon vaults.",
+      "entries": [
+        "{complication}"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Vault complications.",
+      "entries": [
+        "The air is thick with incense, making breathing difficult.",
+        "The entrances close, locking everyone in until they are able to find a hidden exit.",
+        "A fire starts to spread in the area.",
+        "A caged, hungry beast manages to break free.",
+        "The area is filled with death traps.",
+        "A swirling portal is slowly opening, soon offering an escape route for the villain."
+      ]
+    }
+  ]
+}

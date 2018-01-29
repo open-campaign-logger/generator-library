@@ -1,0 +1,243 @@
+{
+  "name": "hero",
+  "resultPattern": "{HTML formatting}{init}{result}",
+  "variables": {
+    "starttitle": "<H2>",
+    "endtitle": "</H2>",
+    "startheading": "<H3>",
+    "endheading": "</H3>",
+    "startbold": "<B>",
+    "endbold": "</B>",
+    "para": "<P>",
+    "actant": "hero",
+    "actants": "heroes",
+    "actantgroup": "troupe",
+    "actantaction": "seems to be preparing for something",
+    "actantadjective": "brave",
+    "actantdescription": "The hero looks burdened by something.",
+    "attitude": "friendly",
+    "hero": "hero",
+    "heroes": "heroes",
+    "herogroup": "troupe",
+    "heroaction": "seems to be preparing for something",
+    "heroadjective": "brave",
+    "herodescription": "The hero looks burdened by something",
+    "footnote": ""
+  },
+  "explanation": "Randomized heroes.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "Categorize heroes by type.",
+  "see": "actant, Dungeon_adventure, minion, scene, villain",
+  "date": "2018-01-21",
+  "authors": "Esko Vesala.",
+  "sources": "StoryboardThat.com",
+  "genre": "fantasy",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the hero parameters.",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "actant": "hero"
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{hero}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective} {hero}",
+        "{hero} {complication}",
+        "{adjective} {hero} {complication}"
+      ]
+    },
+    {
+      "name": "hero",
+      "explanation": "Hero types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common hero types.",
+      "entries": [
+        "antihero",
+        "misfit",
+        "tragic hero",
+        "peasant",
+        "everyman",
+        "warrior",
+        "protector",
+        "master",
+        "teacher",
+        "leader",
+        "prodigy",
+        "romantic hero"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare hero types.",
+      "entries": [
+        "epic hero",
+        "perfect hero"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Heroes once rumoured to have existed.",
+      "entries": [
+        "demigod"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Heroes for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "adventurer"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Heroes for modern worlds.",
+      "entries": [
+        "{common}",
+        "investigator"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Heroes for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "superhero"
+      ]
+    },
+    {
+      "**************************************************": "FORMATTING"
+    },
+    {
+      "name": "HTML formatting",
+      "explanation": "Set variables for formatting the output as HTML",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "<H2>",
+            "endtitle": "</H2>",
+            "startheading": "<H3>",
+            "endheading": "</H3>",
+            "startbold": "<B>",
+            "endbold": "</B>",
+            "para": "<P>"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CL formatting",
+      "explanation": "Set variables for formatting the output for Campaign Logger",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "{b|",
+            "endtitle": "}\r\n\r\n",
+            "startheading": "\r\n\r\n{b|",
+            "endheading": "}",
+            "startbold": "{b|",
+            "endbold": "}",
+            "para": "\r\n"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special hero types.",
+      "entries": [
+        "{adjective}",
+        "{substantive}",
+        "{strategy}",
+        "{goal}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives describing the hero.",
+      "entries": [
+        "brave",
+        "fearless",
+        "wise",
+        "honest"
+      ]
+    },
+    {
+      "name": "substantive",
+      "explanation": "Adjectives describing the hero.",
+      "entries": [
+        "hero",
+        "adventurer",
+        "champion"
+      ]
+    },
+    {
+      "name": "strategy",
+      "explanation": "The hero's chosen approach.",
+      "entries": [
+        "lone hero",
+        "party member"
+      ]
+    },
+    {
+      "name": "goal",
+      "explanation": "The hero's goal.",
+      "entries": [
+        "conquer evil",
+        "prove their worth"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Complications for the hero.",
+      "entries": [
+        "who knows that death is near",
+        "whose reputation has been marred by false accusations"
+      ]
+    }
+  ]
+}

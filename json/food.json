@@ -1,6 +1,6 @@
 {
   "name": "Food Generator",
-  "resultPattern": "{appearance} {recipe} with {ingredients} ({finishing})",
+  "resultPattern": "{result}",
   "variables": {
     "footnote": ""
   },
@@ -18,6 +18,30 @@
   ],
   "tags": "#food, #tavern, #resource",
   "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{recipe} with {ingredients}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{recipe} with {ingredients} ({finishing})",
+        "{appearance} {recipe} with {ingredients}",
+        "{appearance} {recipe} with {ingredients} ({finishing})"
+      ]
+    },
     {
       "name": "appearance",
       "explanation": "The appearance of the food.",
@@ -227,7 +251,7 @@
         "blended with {flavoring}",
         "mixed with {lib:plant#spice}",
         "aged for {dice:3d6} months",
-        "prepared using a vegetable rennet",
+        "prepared using a {lib:plant#vegetable} rennet",
         "with a {lib:aroma} tang",
         "coated in wax",
         "mould-ripened",
@@ -330,7 +354,7 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary foodstuffs once rumoured to have existed.",
       "entries": [
         "manna",
@@ -339,9 +363,9 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary foodstuffs for fantasy worlds.",
+      "explanation": "Foodstuffs for fantasy (with no basis in myth).",
       "entries": [
-        "{mythological}"
+        "{myth}"
       ]
     },
     {
@@ -382,7 +406,7 @@
         "{neutral taste}",
         "{strong taste}",
         "{good taste}",
-        "{strength} {herb} flavored",
+        "{strength} {lib:plant#herb} flavored",
         "{strength} flavored with {lib:plant#spice}"
       ]
     },
@@ -519,8 +543,8 @@
       "name": "condiment",
       "explanation": "Types of condiments.",
       "entries": [
-        "{berry}",
-        "{herb}",
+        "{lib:plant#berry}",
+        "{lib:plant#herb}",
         "{lib:plant#spice}",
         "{fish}",
         "{meat}",
@@ -545,7 +569,7 @@
       "explanation": "Food wrappings.",
       "entries": [
         "crust",
-        "{vegetable} leaves"
+        "{lib:plant#vegetable} leaves"
       ]
     }
   ]

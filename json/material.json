@@ -9,7 +9,7 @@
   "note": "",
   "to do": "",
   "see": "metal, stone, temperature",
-  "date": "2017-10-06",
+  "date": "2018-01-04",
   "authors": "Esko Vesala",
   "sources": "Conservation-Wiki.com, Wikipedia.org.",
   "genre": "universal",
@@ -93,8 +93,8 @@
       "entries": [
         "volcanic glass",
         "glass",
-        "colored glass",
-        "mirror glass"
+        "{lib:color#prime} glass",
+        "crystal"
       ]
     },
     {
@@ -136,8 +136,19 @@
       "name": "wood",
       "explanation": "Common wood materials.",
       "entries": [
+        "fir",
+        "spruce",
+        "pine",
+        "ash",
         "birch",
+        "beech",
         "aspen",
+        "cedar",
+        "poplar",
+        "hickory",
+        "sycamore",
+        "maple",
+        "elm",
         "oak",
         "bog-wood (from trees buried in peat bogs)"
       ]
@@ -189,7 +200,7 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary materials once rumoured to have existed.",
       "entries": [
         "quintessence (fifth element)",
@@ -200,9 +211,9 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary materials for fantasy worlds.",
+      "explanation": "Fantasy materials (with no basis in myth).",
       "entries": [
-        "{mythological}"
+        "{myth}"
       ]
     },
     {
@@ -211,7 +222,8 @@
       "entries": [
         "{common}",
         "{plastic}",
-        "{rare modern}"
+        "{rare modern}",
+        "mirror glass"
       ]
     },
     {
@@ -240,6 +252,68 @@
         "neutronium",
         "dark matter",
         "antimatter"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special material tables..",
+      "entries": [
+        "{box}",
+        "{container}"
+      ]
+    },
+    {
+      "name": "barrel",
+      "explanation": "Box materials.",
+      "entries": [
+        "wood",
+        "metal"
+      ]
+    },
+    {
+      "name": "box",
+      "explanation": "Box materials.",
+      "entries": [
+        "wood"
+      ]
+    },
+    {
+      "name": "container",
+      "explanation": "Container materials.",
+      "entries": [
+        "{pottery}",
+        "{glass}",
+        "{lib:metal}"
+      ]
+    },
+    {
+      "name": "pottery",
+      "explanation": "Pottery materials.",
+      "entries": [
+        "{earthenware}",
+        "{stoneware}",
+        "porcelain"
+      ]
+    },
+    {
+      "name": "earthenware",
+      "explanation": "Earthenware materials.",
+      "entries": [
+        "earthenware",
+        "clay",
+        "terracotta",
+        "faience",
+        "ceramic",
+        "crockery"
+      ]
+    },
+    {
+      "name": "stoneware",
+      "explanation": "Stoneware materials.",
+      "entries": [
+        "unglazed stoneware",
+        "glazed stoneware",
+        "fine stoneware"
       ]
     }
   ]

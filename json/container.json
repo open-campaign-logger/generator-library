@@ -1,0 +1,173 @@
+{
+  "name": "container",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Random containers for items and substances.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "More container types for different worlds.",
+  "see": "potion",
+  "date": "2018-01-04",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "item"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{container}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{lib:material#container} {container}"
+      ]
+    },
+    {
+      "name": "container",
+      "explanation": "Container types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common containers types",
+      "entries": [
+        "{solid}",
+        "{liquid}"
+      ]
+    },
+    {
+      "name": "solid",
+      "explanation": "Containers for solids.",
+      "entries": [
+        "{box}",
+        "{barrel}"
+      ]
+    },
+    {
+      "name": "liquid",
+      "explanation": "Containers for liquids.",
+      "entries": [
+        "{barrel}",
+        "{bottle}",
+        "{vial}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare container types",
+      "entries": [
+        "{gas}"
+      ]
+    },
+    {
+      "name": "gas",
+      "explanation": "Containers for gases.",
+      "entries": [
+        "{bottle}"
+      ]
+    },
+    {
+      "name": "barrel",
+      "explanation": "Barrels.",
+      "entries": [
+        "barrel"
+      ]
+    },
+    {
+      "name": "bottle",
+      "explanation": "Bottles.",
+      "entries": [
+        "bottle"
+      ]
+    },
+    {
+      "name": "box",
+      "explanation": "Boxes.",
+      "entries": [
+        "box"
+      ]
+    },
+    {
+      "name": "vial",
+      "explanation": "Containers for small amounts of liquid.",
+      "entries": [
+        "vessel",
+        "philter",
+        "phial",
+        "vial",
+        "flagon",
+        "flacon",
+        "flask",
+        "flasket",
+        "bottle",
+        "jar",
+        "urn"
+      ]
+    },
+    {
+      "**************************************************": "WORLDS"
+    },
+    {
+      "name": "myth",
+      "explanation": "Containers once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Containers for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Containers for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Containers for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special container types.",
+      "entries": [
+        "XXX"
+      ]
+    }
+  ]
+}

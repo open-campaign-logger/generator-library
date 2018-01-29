@@ -1,0 +1,347 @@
+{
+  "name": "creature_template",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Creature templates.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "Expand the list of templates and categories.",
+  "see": "encounter, item_template, monster",
+  "date": "2018-01-29",
+  "authors": "Esko Vesala.",
+  "sources": "D20PFSRD.com",
+  "genre": "fantasy",
+  "categories": [
+    "monster"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{template}"
+      ]
+    },
+    {
+      "name": "template",
+      "explanation": "Template types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common templates.",
+      "entries": [
+        "{body}",
+        "{behavior}",
+        "{perception}",
+        "{psychology}",
+        "{size}",
+        "{territory}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare templates.",
+      "entries": [
+        "{aligned}",
+        "{mutated}",
+        "{modified}"
+      ]
+    },
+    {
+      "***********************************************": "CREATURE TEMPLATES"
+    },
+    {
+      "name": "aligned",
+      "explanation": "Alignment-related templates.",
+      "entries": [
+        "evil",
+        "chaotic",
+        "neutral",
+        "lawful",
+        "good"
+      ]
+    },
+    {
+      "name": "behavior",
+      "explanation": "Behavior-related templates.",
+      "entries": [
+        "monstrous",
+        "savage",
+        "feral",
+        "rabid",
+        "stealthy"
+      ]
+    },
+    {
+      "name": "body",
+      "explanation": "Body-related templates.",
+      "entries": [
+        "armored",
+        "greater",
+        "resilient",
+        "dire"
+      ]
+    },
+    {
+      "name": "large",
+      "explanation": "Larger than average creatures.",
+      "entries": [
+        "large",
+        "huge",
+        "giant",
+        "gargantuan",
+        "colossal"
+      ]
+    },
+    {
+      "name": "modified",
+      "explanation": "Artificially modified creatures.",
+      "entries": [
+        "augmented",
+        "war"
+      ]
+    },
+    {
+      "name": "mutated",
+      "explanation": "Artificially modified creatures.",
+      "entries": [
+        "mishapen",
+        "grotesque",
+        "deformed",
+        "malformed",
+        "spined",
+        "two-headed"
+      ]
+    },
+    {
+      "name": "perception",
+      "explanation": "Sense-related templates.",
+      "entries": [
+        "blinded",
+        "deafened"
+      ]
+    },
+    {
+      "name": "psychology",
+      "explanation": "Psychology-related templates.",
+      "entries": [
+        "cowardly",
+        "bloodthirsty",
+        "vengeful",
+        "pain-conditioned",
+        "crafty",
+        "cunning",
+        "aware",
+        "awakened",
+        "civilized",
+        "charming"
+      ]
+    },
+    {
+      "name": "small",
+      "explanation": "Smaller than average creatures.",
+      "entries": [
+        "diminutive",
+        "tiny",
+        "small"
+      ]
+    },
+    {
+      "name": "territory",
+      "explanation": "Biotope-related templates.",
+      "entries": [
+        "arctic"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Templates once rumoured to have existed.",
+      "entries": [
+        "{shapechanging}",
+        "{supernatural}",
+        "{dead}",
+        "{magical}",
+        "{demonic}",
+        "{infernal}",
+        "{celestial}"
+      ]
+    },
+    {
+      "name": "shapechanging",
+      "explanation": "Shapeshifter-related templates.",
+      "entries": [
+        "shapeshifter"
+      ]
+    },
+    {
+      "name": "supernatural",
+      "explanation": "Supernatural templates.",
+      "entries": [
+        "accursed",
+        "cursed",
+        "dark",
+        "mythic"
+      ]
+    },
+    {
+      "name": "dead",
+      "explanation": "Death-based templates.",
+      "entries": [
+        "long-dead",
+        "reanimated",
+        "undead",
+        "vampiric",
+        "{incorporeal}"
+      ]
+    },
+    {
+      "name": "incorporeal",
+      "explanation": "spiritform-based templates.",
+      "entries": [
+        "ghost",
+        "spirit"
+      ]
+    },
+    {
+      "name": "magical",
+      "explanation": "Magic-based templates.",
+      "entries": [
+        "magical",
+        "eldritch",
+        "fey"
+      ]
+    },
+    {
+      "name": "demonic",
+      "explanation": "Templates related to demonic origins.",
+      "entries": [
+        "demonic",
+        "foul"
+      ]
+    },
+    {
+      "name": "infernal",
+      "explanation": "Templates related to hellish origins.",
+      "entries": [
+        "half-fiend",
+        "fiendish",
+        "infernal"
+      ]
+    },
+    {
+      "name": "celestial",
+      "explanation": "Templates related to heavenly origins.",
+      "entries": [
+        "celestial",
+        "angelic",
+        "divine"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Templates for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "primordial",
+        "{myth}",
+        "{elemental}",
+        "{planar}"
+      ]
+    },
+    {
+      "name": "elemental",
+      "explanation": "Elementally aligned creatures.",
+      "entries": [
+        "air",
+        "earth",
+        "water",
+        "fire"
+      ]
+    },
+    {
+      "name": "planar",
+      "explanation": "Templates related to the planes of existence.",
+      "entries": [
+        "extraplanar",
+        "ethereal",
+        "astral"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Templates for modern worlds.",
+      "entries": [
+        "{common}",
+        "genetically engineered"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Templates for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "cybernetically augmented",
+        "artificial"
+      ]
+    },
+    {
+      "**************************************************": "ENVIRONMENT"
+    },
+    {
+      "name": "environment",
+      "explanation": "Environment-related template types.",
+      "entries": [
+        "{aquatic}",
+        "{subterranean}"
+      ]
+    },
+    {
+      "name": "aquatic",
+      "explanation": "Aquatic templates.",
+      "entries": [
+        "amphibious",
+        "aquatic",
+        "marine",
+        "sea"
+      ]
+    },
+    {
+      "name": "subterranean",
+      "explanation": "Underground templates.",
+      "entries": [
+        "subterranean",
+        "subterrestrial"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special template types.",
+      "entries": [
+        "{size}"
+      ]
+    },
+    {
+      "name": "size",
+      "explanation": "Size-related templates.",
+      "entries": [
+        "{small}",
+        "{large}"
+      ]
+    }
+  ]
+}

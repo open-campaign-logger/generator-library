@@ -1,0 +1,230 @@
+{
+  "name": "business",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Random business for a shop.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "equipment",
+  "date": "2017-12-31",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{business}"
+      ]
+    },
+    {
+      "name": "business",
+      "explanation": "Business types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common business types.",
+      "entries": [
+        "{retailer}",
+        "{artisan}",
+        "{drinking}",
+        "{eating}",
+        "{accommodation}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare business types.",
+      "entries": [
+        "{docks}"
+      ]
+    },
+    {
+      "name": "artisan",
+      "explanation": "Craftsmen.",
+      "entries": [
+        "tailor",
+        "leatherworker",
+        "woodworker",
+        "potter",
+        "stonecutter",
+        "metalworker",
+        "blacksmith",
+        "jeweler"
+      ]
+    },
+    {
+      "name": "retailer",
+      "explanation": "Shops.",
+      "entries": [
+        "general store"
+      ]
+    },
+    {
+      "name": "drinking",
+      "explanation": "Drink and food establishments.",
+      "entries": [
+        "tavern",
+        "alehouse",
+        "public house"
+      ]
+    },
+    {
+      "name": "eating",
+      "explanation": "Drink and food establishments.",
+      "entries": [
+        "inn",
+        "public house",
+        "bakery"
+      ]
+    },
+    {
+      "name": "accommodation",
+      "explanation": "Lodging houses.",
+      "entries": [
+        "inn",
+        "brothel"
+      ]
+    },
+    {
+      "name": "docks",
+      "explanation": "Docks.",
+      "entries": [
+        "docks",
+        "shipyard"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Businesses for medieval worlds (no fantasy elements).",
+      "entries": [
+        "{common}",
+        "{medieval artisan}",
+        "{animal care}"
+      ]
+    },
+    {
+      "name": "medieval artisan",
+      "explanation": "Medieval artisans.",
+      "entries": [
+        "armory",
+        "bowyer",
+        "fletcher"
+      ]
+    },
+    {
+      "name": "animal care",
+      "explanation": "Animal welfare.",
+      "entries": [
+        "stables"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Businesses once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Businesses for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{common}",
+        "{medieval}",
+        "{myth}",
+        "{fantasy artisan}",
+        "{fantasy retailer}",
+        "{fantasy guildhouse}",
+        "{temple}"
+      ]
+    },
+    {
+      "name": "fantasy artisan",
+      "explanation": "Businesses for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "alchemist"
+      ]
+    },
+    {
+      "name": "fantasy retailer",
+      "explanation": "Businesses for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{retailer}",
+        "adventuring supplier",
+        "potion shop",
+        "magic shop",
+        "arcane shop"
+      ]
+    },
+    {
+      "name": "fantasy guildhouse",
+      "explanation": "Fantasy guild buildings.",
+      "entries": [
+        "thieves' guild"
+      ]
+    },
+    {
+      "name": "temple",
+      "explanation": "Places of worship.",
+      "entries": [
+        "temple"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Businesses for modern worlds.",
+      "entries": [
+        "{common}",
+        "{modern retailer}"
+      ]
+    },
+    {
+      "name": "modern retailer",
+      "explanation": "Modern shops.",
+      "entries": [
+        "grocery store",
+        "videogame retailer",
+        "hobby shop"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Businesses for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "{futuristic retailer}"
+      ]
+    },
+    {
+      "name": "futuristic retailer",
+      "explanation": "Futuristic shops.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special business types.",
+      "entries": [
+        "XXX"
+      ]
+    }
+  ]
+}

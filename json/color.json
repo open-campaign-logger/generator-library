@@ -1,6 +1,6 @@
 {
   "name": "color table",
-  "resultPattern": "{color}",
+  "resultPattern": "{result}",
   "variables": {
     "footnote": ""
   },
@@ -9,7 +9,7 @@
   "note": "",
   "to do": "Fantasy colors.",
   "see": "adjColor",
-  "date": "2017-12-10",
+  "date": "2018-01-08",
   "authors": "Esko Vesala.",
   "sources": "Craftsy.com, Wikipedia.org.",
   "genre": "universal",
@@ -18,6 +18,29 @@
   ],
   "tags": "#sense, #sight, #color",
   "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{word}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{color}",
+        "{toned}"
+      ]
+    },
     {
       "name": "color",
       "explanation": "Color types.",
@@ -81,6 +104,7 @@
       "explanation": "Color tones for random combinations with basic colors.",
       "entries": [
         "dark",
+        "dull",
         "dim",
         "deep",
         "rich",
@@ -91,7 +115,7 @@
         "warm",
         "bright",
         "light",
-        "cool",
+        "cold",
         "pale"
       ]
     },
@@ -142,7 +166,7 @@
         "slate grey (with a slight azure tinge)",
         "sage (grey green)",
         "cinereous (grey tinged with coppery brown)",
-        "cool grey",
+        "cold grey",
         "silver grey",
         "ash grey",
         "lightgrey"
@@ -614,7 +638,7 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary colors for fantasy worlds.",
+      "explanation": "Imaginary colors for fantasy (with no basis in myth).",
       "entries": [
         "goblin green",
         "{rare fantasy}"
@@ -622,7 +646,7 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary colors for fantasy worlds.",
+      "explanation": "Rare colors for fantasy (with no basis in myth).",
       "entries": [
         "{fantasy}",
         "color out of space (alien hue)"
@@ -795,14 +819,14 @@
       "entries": [
         {
           "m": 10,
-          "v": "{green}"
+          "v": "{green word}"
         },
         {
           "m": 2,
-          "v": "{brown}"
+          "v": "{brown word}"
         },
-        "{yellow}",
-        "{white}"
+        "{yellow word}",
+        "{white word}"
       ]
     },
     {

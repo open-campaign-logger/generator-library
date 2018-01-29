@@ -2,16 +2,22 @@
   "name": "NPC Description Generator",
   "resultPattern": "{form}{gender}{culture}{wealth}{attitude} \r\n  {description} \r\n{var:footnote}",
   "variables": {
-    "activity": "",
-    "age": "",
-    "attitude": "",
+    "actant": "person",
+    "actants": "persons",
+    "actantgroup": "group",
+    "actantaction": "minding their own business",
+    "actantadjective": "casual",
+    "actantdescription": "The person is not paying much attention to their surroundings.",
+    "attitude": "neutral",
+    "activity": "passive",
+    "age": "adult",
     "behavior": "",
     "clothing": "",
-    "culture": "",
+    "culture": "Northern",
     "doing": "",
     "footnote": "",
     "form": "",
-    "gender": "",
+    "gender": "neuter",
     "mood": "",
     "moodexpression": "",
     "occupation": "",
@@ -20,15 +26,15 @@
     "style": "",
     "subject": "",
     "substantive": "",
-    "wealth": ""
+    "wealth": "middle class"
   },
   "explanation": "First impression of a Non-Player Character.",
   "structure": "Produces generic entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, any non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "Most table calls do not return a direct result, but variables that can then be reused in the resultPattern. This generator has been initially created as a single file. When external subtable call support is added to Campaign Logger, it would make sense to split the generator into multiple files for easier maintenance and better reuse options.",
-  "bugs": "",
+  "bugs": "Developepment currently on hold, waiting for global variable support.",
   "to do": "Most of it... Starting from genre? ",
   "see": "",
-  "date": "2017-10-01",
+  "date": "2018-01-26",
   "authors": "Esko Vesala",
   "sources": "Wikipedia.org",
   "genre": "fantasy",
@@ -39,8 +45,8 @@
       "name": "description",
       "explanation": "Short description of the character. Note that species returns a direct result (so that 'human', the default, can return an empty string.)",
       "entries": [
-        "{var:age} {var:gender} {var:speciesmentioned} is {var:attitude} and {wearing} {var:clothingadjective} {clothing}. The {var:substantive} is {var:activity}. {now} {var:subject} is {var:attitude} and {var:mood}, {var:moodexpression}. ",
-        "{var:age} {var:gender} {var:speciesmentioned} {wearing} {var:clothingadjective} {clothing}. The {var:substantive} is {var:activity}. {now} {var:subject} is {var:mood}, {var:moodexpression}. {var:subject} has a {var:speciesadjective} sense of humor."
+        "{var:age} {var:gender} {var:speciesmentioned} is {var:attitude} and {lib:synonym#wearing} {var:clothingadjective} {lib:synonym#clothing}. The {var:substantive} is {var:activity}. {lib:synonym#now} {var:subject} is {var:attitude} and {var:mood}, {var:moodexpression}. ",
+        "{var:age} {var:gender} {var:speciesmentioned} {lib:synonym#wearing} {var:clothingadjective} {lib:synonym#clothing}. The {var:substantive} is {var:activity}. {lib:synonym#now} {var:subject} is {var:mood}, {var:moodexpression}. {var:subject} has a {var:speciesadjective} sense of humor."
       ]
     },
     {
@@ -650,41 +656,6 @@
             "moodexpression": "laughing"
           }
         }
-      ]
-    },
-    {
-      "name": "wearing",
-      "explanation": "Synonyms for wearing clothes.",
-      "entries": [
-        "wearing",
-        "dressed in",
-        "clad in",
-        "clothed in",
-        "donning",
-        "outfitted in"
-      ]
-    },
-    {
-      "name": "clothing",
-      "explanation": "Synonyms for clothes.",
-      "entries": [
-        "clothing",
-        "garb",
-        "apparel",
-        "outfit",
-        "attire",
-        "gear",
-        "guise",
-        "wardrobe"
-      ]
-    },
-    {
-      "name": "now",
-      "explanation": "Synonyms for 'now'.",
-      "entries": [
-        "now",
-        "currently",
-        "at this time"
       ]
     }
   ]

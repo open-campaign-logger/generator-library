@@ -2,14 +2,21 @@
   "name": "fighter",
   "resultPattern": "{fighter}",
   "variables": {
+    "actant": "fighter",
+    "actants": "fighters",
+    "actantgroup": "company",
+    "actantaction": "keeping their weapons ready",
+    "actantadjective": "battle-hardened",
+    "actantdescription": "The fighter is inspecting their equipment.",
+    "attitude": "neutral",
     "footnote": ""
   },
   "explanation": "Variations of fighters.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
-  "to do": "Mythological, fantasy and futuristic subtables.",
-  "see": "magician",
-  "date": "2017-12-10",
+  "to do": "myth, fantasy and futuristic subtables.",
+  "see": "magician, priest",
+  "date": "2018-01-21",
   "authors": "Esko Vesala",
   "sources": "DanDWiki.com, Thesaurus.com, Wikia.com, Wikipedia.org",
   "genre": "universal",
@@ -72,16 +79,16 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Fighters once rumoured to have existed.",
       "entries": [
         "amazon",
         "myrmidon",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary fighters once rumoured to have existed.",
       "entries": [
         "valkyria"
@@ -91,7 +98,7 @@
       "name": "fantasy",
       "explanation": "Fighters for fantasy worlds.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "duelist",
         "barbarian",
         "berserker",

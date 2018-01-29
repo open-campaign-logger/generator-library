@@ -1,0 +1,298 @@
+{
+  "name": "complication",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Complications for various situations.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "Forked from Dungeon_adventure on 2018-01-09. ",
+  "format": "'X is/are {complication}'. No full stop in the end.",
+  "bugs": "",
+  "to do": "",
+  "see": "Dungeon_adventure",
+  "date": "2018-01-22",
+  "authors": "Esko Vesala.",
+  "sources": "Dungeon_adventure",
+  "genre": "universal",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{complication}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{complication}"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Complication types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common complications.",
+      "entries": [
+        "{item}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare complications.",
+      "entries": [
+        "{room}"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Complications once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Complications for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Complications for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Complications for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special complication tables.",
+      "entries": [
+        "{captive}",
+        "{corridor}",
+        "{creature}",
+        "{dungeon}",
+        "{item}",
+        "{milieu}",
+        "{plot}",
+        "{room}"
+      ]
+    },
+    {
+      "name": "captive",
+      "explanation": "Complications for captives.",
+      "entries": [
+        "are not innocent, but suffering a sentence for their horrific crimes",
+        "are pleading to be escorted back to safety immediately",
+        "are about to be executed",
+        "do not want to be rescued after all",
+        "are enemies in disguise",
+        "are booby-trapped"
+      ]
+    },
+    {
+      "name": "corridor",
+      "explanation": "Complications for (dungeon) corridors.",
+      "entries": [
+        "In some areas the ceiling is so low that it slows down movement.",
+        "The passages slopes downwards in an almost undetectable manner.",
+        "The passages slopes downwards so sharply that it makes balancing difficult."
+      ]
+    },
+    {
+      "name": "creature",
+      "explanation": "Creature complication types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common complication}"
+        },
+        "{rare complication}"
+      ]
+    },
+    {
+      "name": "common creature",
+      "explanation": "Common complications for monsters.",
+      "entries": [
+        "{wounded}"
+      ]
+    },
+    {
+      "name": "wounded",
+      "explanation": "Injury statuses of monsters.",
+      "entries": [
+        "wounded",
+        "injured",
+        "impaired"
+      ]
+    },
+    {
+      "name": "rare complication",
+      "explanation": "Rare complications for monsters.",
+      "entries": [
+        "{immobile}",
+        "{insane}"
+      ]
+    },
+    {
+      "name": "immobile",
+      "explanation": "Immobile statuses for monsters.",
+      "entries": [
+        "entangled",
+        "chained",
+        "trapped"
+      ]
+    },
+    {
+      "name": "insane",
+      "explanation": "Insanity statuses of monsters.",
+      "entries": [
+        "insane"
+      ]
+    },
+    {
+      "name": "special complication",
+      "explanation": "Special complications for monsters.",
+      "entries": [
+        "{magic}"
+      ]
+    },
+    {
+      "name": "magic",
+      "explanation": "Magic-related complications for monsters.",
+      "entries": [
+        "magically charmed",
+        "magically controlled"
+      ]
+    },
+    {
+      "name": "dungeon",
+      "explanation": "Complications for dungeons.",
+      "entries": [
+        "The structure is about to collapse.",
+        "Rising water levels are slowly flooding the area.",
+        "In the area there is a helpless {lib:actant#helpless} that must be protected and rescued.",
+        "The otherworldly energies of the area are warped, creating unpredictable side effects each time magic is used.",
+        "A competing group of adventurers is trying to reach the goal before the protagonists, and is willing to use also dirty tricks to win.",
+        "In addition to the villain and the minions, another hostile force is present in the area.",
+        "A pestilence has contaminated the area, making most of the encountered people plague carriers.",
+        "The villain's minions have split into rival factions warring with each other.",
+        "The villain's minions are planning a mutiny against their master.",
+        "Periodic tremors cause debris to fall from the ceiling.",
+        "The location will be destroyed within a time limit, and everyone must exit before the destruction."
+      ]
+    },
+    {
+      "name": "item",
+      "explanation": "Complications for items.",
+      "entries": [
+        "easily breaking",
+        "broken",
+        "parts of",
+        "unreliable",
+        "{rare item}"
+      ]
+    },
+    {
+      "name": "rare item",
+      "explanation": "Rare complications for items.",
+      "entries": [
+        "cursed"
+      ]
+    },
+    {
+      "name": "milieu",
+      "explanation": "Complications for environments.",
+      "entries": [
+        "being ravaged by earthquake tremors",
+        "extreme weather conditions"
+      ]
+    },
+    {
+      "name": "plot",
+      "explanation": "Complications for stories.",
+      "entries": [
+        "someone is mistaken for a wrong person",
+        "the heroes' previous actions have turned the situation worse",
+        "heroes find out something reprehensible about a person in power",
+        "language barrier hinders communication",
+        "someone else has taken credit for the heroes' achievements",
+        "alien culture with unknown customs and habits",
+        "an associate of a previously defeated enemy wants revenge",
+        "there is a strict time limitation",
+        "poisoning requires an antidote to be found",
+        "innocent people are forced to work for evil forces",
+        "a helpless protege must be protected",
+        "the heroes must act against the will of those in power",
+        "the heroes are caught between rivals",
+        "the villain turns out to be working for a good cause",
+        "the public has turned against the heroes",
+        "achieving the goal will destroy something valuable to the heroes",
+        "achieving the goal will release an even greater threat"
+      ]
+    },
+    {
+      "name": "room",
+      "explanation": "Complications for (dungeon) rooms.",
+      "entries": [
+        "The air here is heavy and breathing soon becomes difficult.",
+        "The darkness here feels magical and makes light sources feel dimmer.",
+        "Noxious fumes make everyone breathing them cough and sneeze.",
+        "An extremely foul smell makes breathing difficult here.",
+        "Gusts of wind threaten to put out torches and lanterns.",
+        "Loud echoes in the room make communication difficult.",
+        "An infestation of spiders has produced thick webs in the area.",
+        "An oily substance on the floor makes it slippery.",
+        "Strange sounds emanate from an unknown source.",
+        "In some areas the ceiling is so low that it slows down movement.",
+        "The flooring is muddy, which slows down progress and leaves a clear trail for anyone to follow.",
+        "There are noxious fumes in the air.",
+        "The air is extremely hot and humid, which makes all physical activities strenuous.",
+        "The area is infested with centipedes and small insects.",
+        "Most of the surfaces are slime-covered, which makes floors and objects slippery.",
+        "Air and horizontal surfaces are filled with ash, making everyone suspectible to heavy coughing.",
+        "The area is contaminated with a black mold that makes eyes watery and causes skin to itch.",
+        "The area is filled with debris that makes progress slow."
+      ]
+    }
+  ]
+}

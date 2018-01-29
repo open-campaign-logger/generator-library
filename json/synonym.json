@@ -1,16 +1,16 @@
 {
   "name": "synonym",
-  "resultPattern": "{synonym}",
+  "resultPattern": "{help}",
   "variables": {
     "footnote": ""
   },
   "explanation": "Produces dramatic synonyms to avoid repetition of some often used words.",
   "structure": "",
-  "note": "Intended usage: {synonym#word}. Please retain the alphabetical order of the subtables!",
+  "note": "Intended usage: lib:synonym#word. Please retain the alphabetical order of the subtables!",
   "bugs": "",
   "to do": "Expansion.",
   "see": "",
-  "date": "2017-12-10",
+  "date": "2018-01-28",
   "authors": "Esko Vesala.",
   "sources": "Thesaurus.com, TvTropes.org, Wikipedia.org",
   "genre": "universal",
@@ -22,12 +22,16 @@
       "name": "adventure",
       "explanation": "Synonyms for adventuring (for something).",
       "entries": [
-        "adventure",
-        "crusade",
-        "hunt",
+        "task",
+        "quest",
+        "foray",
+        "venture",
         "mission",
         "pursuit",
-        "quest"
+        "adventure",
+        "operation",
+        "assignment",
+        "undertaking"
       ]
     },
     {
@@ -40,6 +44,55 @@
         "crusader",
         "hero",
         "traveler"
+      ]
+    },
+    {
+      "name": "and",
+      "explanation": "Synonyms for 'and'.",
+      "entries": [
+        "&",
+        "and",
+        "with",
+        "plus",
+        "accompanying",
+        "as well as",
+        "along with",
+        "together with",
+        "in addition to",
+        "supplemented by",
+        "conjointly with",
+        "in conjunction with"
+      ]
+    },
+    {
+      "name": "area",
+      "explanation": "Synonyms for an area (an outdoors location).",
+      "entries": [
+        "area",
+        "spot",
+        "place",
+        "space",
+        "locale",
+        "locality",
+        "location",
+        "vicinity"
+      ]
+    },
+    {
+      "name": "big",
+      "explanation": "Synonyms for 'huge' (size).",
+      "entries": [
+        "big",
+        "huge",
+        "immense",
+        "massive",
+        "enormous",
+        "gigantic",
+        "colossal",
+        "enormous",
+        "gargantuan",
+        "monumental",
+        "tremendous"
       ]
     },
     {
@@ -59,6 +112,20 @@
       ]
     },
     {
+      "name": "clothing",
+      "explanation": "Synonyms for clothes.",
+      "entries": [
+        "clothing",
+        "garb",
+        "apparel",
+        "outfit",
+        "attire",
+        "gear",
+        "guise",
+        "wardrobe"
+      ]
+    },
+    {
       "name": "corpse",
       "explanation": "Synonyms for a dead corpse (singular).",
       "entries": [
@@ -68,6 +135,22 @@
         "cadaver",
         "carcass",
         "carrion"
+      ]
+    },
+    {
+      "name": "corridor",
+      "explanation": "Synonyms for passageways.",
+      "entries": [
+        "corridor",
+        "hall",
+        "hallway",
+        "passage",
+        "passageway",
+        "entry",
+        "entryway",
+        "entrance",
+        "entranceway",
+        "way in"
       ]
     },
     {
@@ -95,6 +178,20 @@
       ]
     },
     {
+      "name": "demon",
+      "explanation": "Synonyms for demons and devils.",
+      "entries": [
+        "devil",
+        "fiend",
+        "demon",
+        "daemon",
+        "archfiend",
+        "evil one",
+        "adversary",
+        "antagonist"
+      ]
+    },
+    {
       "name": "destiny",
       "explanation": "Synonyms for fate and destiny.",
       "entries": [
@@ -116,6 +213,36 @@
         "ruination",
         "undoing",
         "annihilation"
+      ]
+    },
+    {
+      "name": "evil",
+      "explanation": "Synonyms for evil (adjective).",
+      "entries": [
+        "evil",
+        "sinister",
+        "corrupt",
+        "depraved",
+        "vile",
+        "maleficent",
+        "malevolent",
+        "malicious",
+        "fiendish",
+        "demonic",
+        "diabolical"
+      ]
+    },
+    {
+      "name": "factor",
+      "explanation": "Synonyms for 'factor' (element, component).",
+      "entries": [
+        "a part",
+        "a factor",
+        "an aspect",
+        "a feature",
+        "an element",
+        "a component",
+        "an ingredient"
       ]
     },
     {
@@ -165,6 +292,23 @@
       ]
     },
     {
+      "name": "ghost",
+      "explanation": "Synonyms for a spirit or phantom.",
+      "entries": [
+        "ghost",
+        "spirit",
+        "wraith",
+        "phantom",
+        "phantasm",
+        "shade",
+        "spook",
+        "shadow",
+        "specter",
+        "apparition",
+        "revenant"
+      ]
+    },
+    {
       "name": "group",
       "explanation": "Synonyms for a group.",
       "entries": [
@@ -174,6 +318,55 @@
         "league",
         "party",
         "team"
+      ]
+    },
+    {
+      "name": "hint",
+      "explanation": "Synonyms for 'notion' (small amount).",
+      "entries": [
+        "a bit of",
+        "a hint of",
+        "a drop of",
+        "a vein of",
+        "traces of",
+        "an iota of",
+        "a shade of",
+        "a tinge of",
+        "a pinch of",
+        "a little of",
+        "a notion of",
+        "a strain of",
+        "an inkling of",
+        "a suspicion of",
+        "a sprinkling of",
+        "an undertone of",
+        "a suggestion of"
+      ]
+    },
+    {
+      "name": "horror",
+      "explanation": "Synonyms for horror (the emotion).",
+      "entries": [
+        "horror",
+        "fear",
+        "fearfulness",
+        "fright",
+        "dread",
+        "terror",
+        "abhorrence"
+      ]
+    },
+    {
+      "name": "including",
+      "explanation": "Synonyms for 'including' (something).",
+      "entries": [
+        "including",
+        "containing",
+        "blending in",
+        "integrating",
+        "encompassing",
+        "incorporating",
+        "accommodating"
       ]
     },
     {
@@ -215,6 +408,39 @@
       ]
     },
     {
+      "name": "medium",
+      "explanation": "Synonyms for 'medium' qualities.",
+      "entries": [
+        "fair",
+        "medium",
+        "modest",
+        "average",
+        "moderate",
+        "mediocre",
+        "passable",
+        "bearable",
+        "tolerable",
+        "not excessive"
+      ]
+    },
+    {
+      "name": "minion",
+      "explanation": "Synonyms for an underling.",
+      "entries": [
+        "minion",
+        "henchman",
+        "aide",
+        "follower",
+        "disciple",
+        "underling",
+        "retainer",
+        "lackey",
+        "servant",
+        "vassal",
+        "thrall"
+      ]
+    },
+    {
       "name": "monster",
       "explanation": "Synonyms for a monster.",
       "entries": [
@@ -227,13 +453,133 @@
       ]
     },
     {
+      "name": "now",
+      "explanation": "Synonyms for 'now'.",
+      "entries": [
+        "now",
+        "currently",
+        "at this time"
+      ]
+    },
+    {
+      "name": "number",
+      "explanation": "Synonyms for 'number'.",
+      "entries": [
+        "sum",
+        "count",
+        "total",
+        "tally",
+        "number",
+        "measure",
+        "quantity"
+      ]
+    },
+    {
       "name": "priest",
       "explanation": "Synonyms for a priest (of a religion).",
       "entries": [
-        "priest",
-        "cleric",
-        "preacher",
-        "pulpiter"
+        "{lib:priest}"
+      ]
+    },
+    {
+      "name": "region",
+      "explanation": "Synonyms for a territory (larage outdoors area).",
+      "entries": [
+        "area",
+        "region",
+        "expanse",
+        "district"
+      ]
+    },
+    {
+      "name": "room",
+      "explanation": "Synonyms for a room (an enclosed area).",
+      "entries": [
+        "room",
+        "area",
+        "hall",
+        "place",
+        "chamber",
+        "location",
+        "enclosure"
+      ]
+    },
+    {
+      "name": "ruler",
+      "explanation": "Synonyms for a ruler (of an area).",
+      "entries": [
+        "ruler",
+        "sovereign",
+        "lord",
+        "overlord",
+        "potentate",
+        "autocrat",
+        "majesty",
+        "monarch",
+        "imperator",
+        "emperor"
+      ]
+    },
+    {
+      "name": "says",
+      "explanation": "Synonyms for saying (present third person singular).",
+      "entries": [
+        "says",
+        "remarks",
+        "states",
+        "tells",
+        "communicates",
+        "announces",
+        "pronounces",
+        "claims",
+        "declares",
+        "discloses",
+        "mentions",
+        "utters"
+      ]
+    },
+    {
+      "name": "slight",
+      "explanation": "Synonyms for 'faint' qualities.",
+      "entries": [
+        "mild",
+        "weak",
+        "faint",
+        "frail",
+        "slight",
+        "meager",
+        "measly",
+        "feeble",
+        "scanty",
+        "paltry",
+        "trifling"
+      ]
+    },
+    {
+      "name": "small",
+      "explanation": "Synonyms for 'little' (size).",
+      "entries": [
+        "tiny",
+        "small",
+        "little",
+        "minute",
+        "small-scale"
+      ]
+    },
+    {
+      "name": "smell",
+      "explanation": "Neutral synonyms for 'smell' (good or bad odour).",
+      "entries": [
+        "odor",
+        "tang",
+        "smell",
+        "scent",
+        "aroma",
+        "whiff",
+        "flatus",
+        "bouquet",
+        "fragrance",
+        "redolence"
       ]
     },
     {
@@ -241,6 +587,58 @@
       "explanation": "Synonyms for a sorcerer.",
       "entries": [
         "{lib:magician}"
+      ]
+    },
+    {
+      "name": "strange",
+      "explanation": "Synonyms for 'weird' qualities.",
+      "entries": [
+        "odd",
+        "weird",
+        "strange",
+        "bizarre",
+        "curious",
+        "unusual",
+        "peculiar",
+        "fantastic",
+        "astounding",
+        "unheard of",
+        "exceptional",
+        "extraordinary"
+      ]
+    },
+    {
+      "name": "strong",
+      "explanation": "Synonyms for 'strong' qualities.",
+      "entries": [
+        "firm",
+        "solid",
+        "stark",
+        "strong",
+        "robust",
+        "potent",
+        "powerful",
+        "forceful",
+        "puissant",
+        "vigorous",
+        "stalwart",
+        "dominant"
+      ]
+    },
+    {
+      "name": "taste",
+      "explanation": "Synonyms for 'taste' (good or bad).",
+      "entries": [
+        "zest",
+        "taste",
+        "savor",
+        "spice",
+        "flavor",
+        "flavoring",
+        "condiment",
+        "aftertaste",
+        "savoriness",
+        "palatableness"
       ]
     },
     {
@@ -270,6 +668,19 @@
       ]
     },
     {
+      "name": "troupe",
+      "explanation": "Alternative expressions for the PC party. Note: The values should match verbs in the third person singular form (like 'is')!",
+      "entries": [
+        "adventurer party",
+        "adventuring party",
+        "party",
+        "troupe",
+        "travelling band",
+        "group of travelers",
+        "group of heroes"
+      ]
+    },
+    {
       "name": "undead",
       "explanation": "Synonyms for undead (singular noun).",
       "entries": [
@@ -283,10 +694,56 @@
       ]
     },
     {
+      "name": "villain",
+      "explanation": "Synonyms for an enemy.",
+      "entries": [
+        "scoundrel",
+        "culprit",
+        "crook",
+        "felon",
+        "enemy",
+        "villain",
+        "ruffian",
+        "miscreant",
+        "delinquent",
+        "blackguard",
+        "evildoer",
+        "wrongdoer",
+        "perpetrator",
+        "malefactor"
+      ]
+    },
+    {
       "name": "warrior",
       "explanation": "Synonyms for a warrior.",
       "entries": [
         "{lib:fighter}"
+      ]
+    },
+    {
+      "name": "wearing",
+      "explanation": "Synonyms for wearing clothes.",
+      "entries": [
+        "wearing",
+        "dressed in",
+        "clad in",
+        "clothed in",
+        "donning",
+        "outfitted in"
+      ]
+    },
+    {
+      "name": "with",
+      "explanation": "Synonyms for 'with'.",
+      "entries": [
+        "with",
+        "accompanying",
+        "along with",
+        "coupled with",
+        "together with",
+        "supplemented by",
+        "conjointly with",
+        "in conjunction with"
       ]
     },
     {
@@ -305,6 +762,16 @@
         "madness",
         "rage",
         "wrath"
+      ]
+    },
+    {
+      "**************************************************": "INSTRUCTIONS"
+    },
+    {
+      "name": "help",
+      "explanation": "Usage instructions.",
+      "entries": [
+        "Call lib:synonym#term to get a random synonym for the term. For the list of supported terms, see the 'json/synonym.json' file in the Open Campaign Logger repository."
       ]
     }
   ]

@@ -7,9 +7,9 @@
   "explanation": "Magical tools for magic users.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "These are magician's tools for casting magic, not magic items (that are usable by anyone.)",
-  "to do": "Mythological, fantasy and futuristic subtables.",
+  "to do": "myth, fantasy and futuristic subtables.",
   "see": "magic, magical_technique, magicitem, spellcasting",
-  "date": "2017-10-06",
+  "date": "2018-01-22",
   "authors": "Esko Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -36,14 +36,27 @@
         "{tool}",
         "{jewellery}",
         "{symbol}",
-        "{lib:musical instrument}",
         "{weapon}",
         "{vessel}",
+        "{text}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare magical instruments.",
+      "entries": [
+        "{lib:musical_instrument}",
         "{material}",
         "{clothing}",
-        "{text}",
-        "{familiar}"
+        "{familiar}",
+        "periapt (charm worn on a necklace)",
+        "phylactery (leather amulet containing sacred texts)",
+        "scarab (beetle-shaped seal)",
+        "veve (symbol drawn by pouring powder)"
       ]
+    },
+    {
+      "***********************************************": "MAGICAL INSTRUMENTS"
     },
     {
       "name": "tool",
@@ -106,14 +119,6 @@
         "magical circle",
         "kamea (magic square grid)",
         "mandala (symbol presenting the universe)"
-      ]
-    },
-    {
-      "name": "musical instrument",
-      "explanation": "Magical musical instruments.",
-      "entries": [
-        "flute",
-        ""
       ]
     },
     {
@@ -196,37 +201,30 @@
       ]
     },
     {
-      "name": "rare",
-      "explanation": "Rare magical instruments.",
-      "entries": [
-        "periapt (charm worn on a necklace)",
-        "phylactery (leather amulet containing sacred texts)",
-        "scarab (beetle-shaped seal)",
-        "veve (symbol drawn by pouring powder)"
-      ]
+      "**************************************************": "WORLD-SPECIFIC"
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary magical instruments once rumoured to have existed.",
       "entries": [
         "elf-arrow (flint arrowhead shot by a fairy)",
         "thunderstone (stone fallen from the sky)",
         "anachitis (stone for calling spirits from water)",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary magical instruments once rumoured to have existed.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "filius philosophorum ('the philosophers' child')",
         "philosopher's stone (lapis philosophorum)",
-        "{unique mythological}"
+        "{unique myth}"
       ]
     },
     {
-      "name": "unique mythological",
+      "name": "unique myth",
       "explanation": "Unique relics believed to have magical properties.",
       "entries": [
         "Veil of Veronica (wiped Christ's face on Via Dolorosa)",
@@ -237,9 +235,9 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary magical instruments for fantasy worlds.",
+      "explanation": "Magical instruments for fantasy (with no basis in myth).",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "goggles",
         "lich hand",
         "{rare fantasy}"
@@ -247,7 +245,7 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary magical instruments for fantasy worlds.",
+      "explanation": "Rare fantasy magical instruments (no basis in myth).",
       "entries": [
         "{fantasy}",
         "one ring of power"
@@ -287,6 +285,9 @@
       "entries": [
         "spaceship"
       ]
+    },
+    {
+      "**************************************************": "SPECIAL CASES"
     }
   ]
 }

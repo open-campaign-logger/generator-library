@@ -1,0 +1,1505 @@
+{
+  "name": "encounter",
+  "resultPattern": "{result}",
+  "variables": {
+    "milieu": "",
+    "milieudescription": "",
+    "footnote": ""
+  },
+  "explanation": "Encounter table.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "Add themes to categorize statuses and other elements.",
+  "see": "activity, animal, citizen, Five_room_dungeon, hook_line_and_sinker_adventure, location, monster",
+  "date": "2018-01-06",
+  "authors": "Esko Vesala",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "encounter"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{encounter}",
+        "{status} {encounter}",
+        "{encounter} ({complication})",
+        "{status} {encounter} ({complication})"
+      ]
+    },
+    {
+      "name": "encounter",
+      "explanation": "Encounter locations by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common encounter locations.",
+      "entries": [
+        "{city}",
+        "{countryside}",
+        "{wilderness}"
+      ]
+    },
+    {
+      "name": "city",
+      "explanation": "City encounter locations.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{indoors}",
+          "set": {
+            "milieu": "indoors",
+            "milieudescription": "indoors"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{urban}",
+          "set": {
+            "milieu": "urban",
+            "milieudescription": "urban area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{suburban}",
+          "set": {
+            "milieu": "suburban",
+            "milieudescription": "suburban area"
+          }
+        }
+      ]
+    },
+    {
+      "name": "countryside",
+      "explanation": "Countryside encounter locations.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{village}",
+          "set": {
+            "milieu": "village",
+            "milieudescription": "village area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{rural}",
+          "set": {
+            "milieu": "rural",
+            "milieudescription": "rural area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{outpost}",
+          "set": {
+            "milieu": "outpost",
+            "milieudescription": "far reaches of civilization"
+          }
+        }
+      ]
+    },
+    {
+      "name": "wilderness",
+      "explanation": "Wilderness encounter locations.",
+      "entries": [
+        "{land}",
+        "{water}"
+      ]
+    },
+    {
+      "name": "land",
+      "explanation": "Land encounter locations.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{barren}",
+          "set": {
+            "milieu": "barren",
+            "milieudescription": "on barren lowlands"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{grassland}",
+          "set": {
+            "milieu": "grassland",
+            "milieudescription": "on grasslands"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{forest}",
+          "set": {
+            "milieu": "forest",
+            "milieudescription": "in a forested area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{hill}",
+          "set": {
+            "milieu": "hill",
+            "milieudescription": "in a hilly area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{mountain}",
+          "set": {
+            "milieu": "mountain",
+            "milieudescription": "in a mountainous area"
+          }
+        }
+      ]
+    },
+    {
+      "name": "water",
+      "explanation": "Water encounter locations.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{wetlands}",
+          "set": {
+            "milieu": "wetlands",
+            "milieudescription": "on wetlands"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{river}",
+          "set": {
+            "milieu": "river",
+            "milieudescription": "by a river"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{lake}",
+          "set": {
+            "milieu": "lake",
+            "milieudescription": "by a lake"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{coast}",
+          "set": {
+            "milieu": "coast",
+            "milieudescription": "near the coast"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{sea}",
+          "set": {
+            "milieu": "sea",
+            "milieudescription": "at the sea"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{ship}",
+          "set": {
+            "milieu": "ship",
+            "milieudescription": "onboard a ship"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare encounter locations.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{underground}",
+          "set": {
+            "milieu": "underground",
+            "milieudescription": "underground area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{volcanic}",
+          "set": {
+            "milieu": "volcanic",
+            "milieudescription": "volcanic area"
+          }
+        }
+      ]
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic encounter locations.",
+      "entries": [
+        "{polar}",
+        "{tropical}"
+      ]
+    },
+    {
+      "name": "polar",
+      "explanation": "Polar encounter locations.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{tundra}",
+          "set": {
+            "milieu": "tundra",
+            "milieudescription": "tundra terrain"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{glacial}",
+          "set": {
+            "milieu": "glacial",
+            "milieudescription": "glacial area"
+          }
+        }
+      ]
+    },
+    {
+      "name": "tropical",
+      "explanation": "Tropical encounter locations.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{desert}",
+          "set": {
+            "milieu": "desert",
+            "milieudescription": "desert"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{savanna}",
+          "set": {
+            "milieu": "savanna",
+            "milieudescription": "savanna"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{rainforest}",
+          "set": {
+            "milieu": "rainforest",
+            "milieudescription": "rainforest"
+          }
+        }
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special encounter locations (not produced by random).",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{underwater}",
+          "set": {
+            "milieu": "underwater",
+            "milieudescription": "underwater"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{earth}",
+          "set": {
+            "milieu": "earth",
+            "milieudescription": "in the ground"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{air}",
+          "set": {
+            "milieu": "air",
+            "milieudescription": "air"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{space}",
+          "set": {
+            "milieu": "space",
+            "milieudescription": "space"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{planar}",
+          "set": {
+            "milieu": "planar",
+            "milieudescription": "extraplanar area"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "LOCATIONS"
+    },
+    {
+      "name": "indoors",
+      "explanation": "Indoor encounter structure.",
+      "entries": [
+        "{indoors encounter}",
+        "{indoors encounter} {indoors goal}",
+        "{indoors event}"
+      ]
+    },
+    {
+      "name": "indoors encounter",
+      "explanation": "Encounters inside buildings.",
+      "entries": [
+        "{lib:animal#pet}",
+        "servant"
+      ]
+    },
+    {
+      "name": "indoors goal",
+      "explanation": "Goals for encounters inside buildings.",
+      "entries": [
+        "trying to get out"
+      ]
+    },
+    {
+      "name": "indoors event",
+      "explanation": "Events indoors.",
+      "entries": [
+        "gambling"
+      ]
+    },
+    {
+      "name": "city",
+      "explanation": "Urban encounter structure.",
+      "entries": [
+        "{city encounter}",
+        "{city encounter} {city goal}",
+        "{city event}"
+      ]
+    },
+    {
+      "name": "city encounter",
+      "explanation": "Encounters in a city or a town.",
+      "entries": [
+        "{lib:animal#pet}",
+        "{lib:animal#urban}"
+      ]
+    },
+    {
+      "name": "city goal",
+      "explanation": "Goals for encounters in an urban environment.",
+      "entries": [
+        "tries to enter a tavern"
+      ]
+    },
+    {
+      "name": "city event",
+      "explanation": "Events in cities and towns.",
+      "entries": [
+        "someone empties a chamber pot from a window without checking the street below first",
+        "a peddler's cart is overturned",
+        "a minstrel offers to make songs about the passersby, for a price",
+        "a con artist is arranging a cups and balls game",
+        "a bar fight moves to the streets"
+      ]
+    },
+    {
+      "name": "suburban",
+      "explanation": "City outskirts encounter structure.",
+      "entries": [
+        "{suburban encounter}",
+        "{suburban encounter} {suburban goal}",
+        "{suburban event}"
+      ]
+    },
+    {
+      "name": "suburban encounter",
+      "explanation": "Encounters in the outskirts of a city.",
+      "entries": [
+        "{lib:animal#pet}",
+        "{lib:animal#urban}"
+      ]
+    },
+    {
+      "name": "suburban goal",
+      "explanation": "Goals for encounters in the outskirts of a city.",
+      "entries": [
+        "is looking for the fastest way to get out of the inhabited area"
+      ]
+    },
+    {
+      "name": "suburban event",
+      "explanation": "Events in the outskirts of a city.",
+      "entries": [
+        "a cart has been overturned and piles of produce block the way"
+      ]
+    },
+    {
+      "name": "village",
+      "explanation": "Village encounter structure.",
+      "entries": [
+        "{village encounter}",
+        "{village encounter} {village goal}",
+        "{village event}"
+      ]
+    },
+    {
+      "name": "village encounter",
+      "explanation": "Encounters in a village or a hamlet.",
+      "entries": [
+        "{lib:animal#domestic}"
+      ]
+    },
+    {
+      "name": "village goal",
+      "explanation": "Goals in a village.",
+      "entries": [
+        "wants to find the fastest way to the next nearest village"
+      ]
+    },
+    {
+      "name": "village event",
+      "explanation": "Events in a village.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "rural",
+      "explanation": "Countryside encounter structure.",
+      "entries": [
+        "{rural encounter}",
+        "{rural encounter} {rural goal}",
+        "{rural event}"
+      ]
+    },
+    {
+      "name": "rural encounter",
+      "explanation": "Encounters in the countryside.",
+      "entries": [
+        "{lib:animal#domestic mammal}"
+      ]
+    },
+    {
+      "name": "rural goal",
+      "explanation": "Goals for encounters in the countryside.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "rural event",
+      "explanation": "Events in the countryside.",
+      "entries": [
+        "farmers argue over livestock",
+        "a {lib:animal#domestic mammal} is panicked and starts a stampede",
+        "a {lib:animal#domestic mammal} herd crosses the road"
+      ]
+    },
+    {
+      "name": "outpost",
+      "explanation": "Outpost encounter structure.",
+      "entries": [
+        "{outpost encounter}",
+        "{outpost encounter} {outpost goal}",
+        "{outpost event}"
+      ]
+    },
+    {
+      "name": "outpost encounter",
+      "explanation": "Encounters in outposts, such as camps and fortifications.",
+      "entries": [
+        "{lib:animal#domestic}"
+      ]
+    },
+    {
+      "name": "outpost goal",
+      "explanation": "Goals for encounters in outposts.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "outpost event",
+      "explanation": "Events in outposts.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "grassland",
+      "explanation": "Grasslands encounter structure.",
+      "entries": [
+        "{grassland encounter}",
+        "{grassland encounter} {grassland goal}",
+        "{grassland event}"
+      ]
+    },
+    {
+      "name": "grassland encounter",
+      "explanation": "Encounters on grasslands.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "grassland goal",
+      "explanation": "Goals for encounters on grasslands.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "grassland event",
+      "explanation": "Events on grasslands.",
+      "entries": [
+        "whirlwind",
+        "tornado"
+      ]
+    },
+    {
+      "name": "barren",
+      "explanation": "Barren encounter structure.",
+      "entries": [
+        "{barren encounter}",
+        "{barren encounter} {barren goal}",
+        "{barren event}"
+      ]
+    },
+    {
+      "name": "barren encounter",
+      "explanation": "Encounters on arid lowlands.",
+      "entries": [
+        "poisonous snake",
+        "a lizard"
+      ]
+    },
+    {
+      "name": "barren goal",
+      "explanation": "Goals for encounters on arid lowlands.",
+      "entries": [
+        "looking for a shelter"
+      ]
+    },
+    {
+      "name": "barren event",
+      "explanation": "Events on arid lowlands.",
+      "entries": [
+        "dust storm"
+      ]
+    },
+    {
+      "name": "tundra",
+      "explanation": "Low temperature wilderness encounter structure.",
+      "entries": [
+        "{tundra encounter}",
+        "{tundra encounter} {tundra goal}",
+        "{tundra event}"
+      ]
+    },
+    {
+      "name": "tundra encounter",
+      "explanation": "Encounters in a low temperature wilderness.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "tundra goal",
+      "explanation": "Goals for encounters in a low temperature wilderness.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "tundra event",
+      "explanation": "Events in a low temperature wilderness.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "forest",
+      "explanation": "Woods encounter structure.",
+      "entries": [
+        "{forest encounter}",
+        "{forest encounter} {forest goal}",
+        "{forest event}"
+      ]
+    },
+    {
+      "name": "forest encounter",
+      "explanation": "Encounters in the woods.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "forest goal",
+      "explanation": "Goals for encounters in the woods.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "forest event",
+      "explanation": "Events in the woods.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "rainforest",
+      "explanation": "Tropical forest encounter structure.",
+      "entries": [
+        "{rainforest encounter}",
+        "{rainforest encounter} {rainforest goal}",
+        "{rainforest event}"
+      ]
+    },
+    {
+      "name": "rainforest encounter",
+      "explanation": "Encounters in a tropical forest.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "rainforest goal",
+      "explanation": "Goals for encounters in a tropical forest.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "rainforest event",
+      "explanation": "Events in a tropical forest.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "savanna",
+      "explanation": "Tropical grasslands encounter structure.",
+      "entries": [
+        "{savanna encounter}",
+        "{savanna encounter} {savanna goal}",
+        "{savanna event}"
+      ]
+    },
+    {
+      "name": "savanna encounter",
+      "explanation": "Encounters on the tropical grasslands.",
+      "entries": [
+        "hunter"
+      ]
+    },
+    {
+      "name": "savanna goal",
+      "explanation": "Goals for encounters on the tropical grasslands.",
+      "entries": [
+        "looking for somewhere to cool down"
+      ]
+    },
+    {
+      "name": "savanna event",
+      "explanation": "Events on the tropical grasslands.",
+      "entries": [
+        "a predator is dining on an animal carcass"
+      ]
+    },
+    {
+      "name": "desert",
+      "explanation": "Desert encounter structure.",
+      "entries": [
+        "{desert encounter}",
+        "{desert encounter} {desert goal}",
+        "{desert event}"
+      ]
+    },
+    {
+      "name": "desert encounter",
+      "explanation": "Encounters in the desert.",
+      "entries": [
+        "a mount apparently lost by a caravan"
+      ]
+    },
+    {
+      "name": "desert goal",
+      "explanation": "Goals for encounters in the desert.",
+      "entries": [
+        "searching for shade",
+        "looking for something to drink"
+      ]
+    },
+    {
+      "name": "desert event",
+      "explanation": "Events in the desert.",
+      "entries": [
+        "sand storm"
+      ]
+    },
+    {
+      "name": "hill",
+      "explanation": "Hilly encounter structure.",
+      "entries": [
+        "{hill encounter}",
+        "{hill encounter} {hill goal}",
+        "{hill event}"
+      ]
+    },
+    {
+      "name": "hill encounter",
+      "explanation": "Encounters in the hills.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "hill goal",
+      "explanation": "Goals for encounters in the hills.",
+      "entries": [
+        "tries to climb to the top of the hill"
+      ]
+    },
+    {
+      "name": "hill event",
+      "explanation": "Events in the hills.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "mountain",
+      "explanation": "Mountainous encounter structure.",
+      "entries": [
+        "{mountain encounter}",
+        "{mountain encounter} {mountain goal}",
+        "{mountain event}"
+      ]
+    },
+    {
+      "name": "mountain encounter",
+      "explanation": "Encounters on the mountains.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "mountain goal",
+      "explanation": "Goals for encounters on the mountains.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "mountain event",
+      "explanation": "Events on the mountains.",
+      "entries": [
+        "avalanche"
+      ]
+    },
+    {
+      "name": "river",
+      "explanation": "Running freshwater encounter structure.",
+      "entries": [
+        "{river encounter}",
+        "{river encounter} {river goal}",
+        "{river event}"
+      ]
+    },
+    {
+      "name": "river encounter",
+      "explanation": "Encounters on running freshwater (rivers, streams, etc).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "river goal",
+      "explanation": "Goals for encounters on running freshwater.",
+      "entries": [
+        "crossing the river"
+      ]
+    },
+    {
+      "name": "river event",
+      "explanation": "Events on running freshwater.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "lake",
+      "explanation": "Still freshwater encounter structure.",
+      "entries": [
+        "{lake encounter}",
+        "{lake encounter} {lake goal}",
+        "{lake event}"
+      ]
+    },
+    {
+      "name": "lake encounter",
+      "explanation": "Encounters on still freshwater (lakes, ponds, etc).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "lake goal",
+      "explanation": "Goals for encounters on still freshwater.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "lake event",
+      "explanation": "Events on still freshwater.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "wetlands",
+      "explanation": "Swampland encounter structure.",
+      "entries": [
+        "{wetlands encounter}",
+        "{wetlands encounter} {wetlands goal}",
+        "{wetlands event}"
+      ]
+    },
+    {
+      "name": "wetlands encounter",
+      "explanation": "Encounters on bogs, swamps, etc.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "wetlands goal",
+      "explanation": "Goals for encounters on bogs, swamps, etc.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "wetlands event",
+      "explanation": "Events on bogs, swamps, etc.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "coast",
+      "explanation": "Coastal encounter structure.",
+      "entries": [
+        "{coast encounter}",
+        "{coast encounter} {coast goal}",
+        "{coast event}"
+      ]
+    },
+    {
+      "name": "coast encounter",
+      "explanation": "Encounters on the coast.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "coast goal",
+      "explanation": "Goals for encounters on the coast.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "coast event",
+      "explanation": "Events on the coast.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "sea",
+      "explanation": "Naval encounter structure.",
+      "entries": [
+        "{sea encounter}",
+        "{sea encounter} {sea goal}",
+        "{sea event}"
+      ]
+    },
+    {
+      "name": "sea encounter",
+      "explanation": "Encounters at sea.",
+      "entries": [
+        "{lib:monster#aquatic}"
+      ]
+    },
+    {
+      "name": "sea goal",
+      "explanation": "Goals for encounters at sea.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "sea event",
+      "explanation": "Events at sea.",
+      "entries": [
+        "a ship can be seen on the horizon",
+        "a tornadic watersprout is spotted on the horizon"
+      ]
+    },
+    {
+      "name": "ship",
+      "explanation": "Ship encounter structure.",
+      "entries": [
+        "{ship encounter}",
+        "{ship encounter} {ship goal}",
+        "{ship event}"
+      ]
+    },
+    {
+      "name": "ship encounter",
+      "explanation": "Encounters onboard a ship.",
+      "entries": [
+        "the bosun",
+        "the captain of the ship"
+      ]
+    },
+    {
+      "name": "ship goal",
+      "explanation": "Goals for encounters onboard a ship.",
+      "entries": [
+        "for some reason attempts to jump overboard"
+      ]
+    },
+    {
+      "name": "ship event",
+      "explanation": "Events onboard a ship.",
+      "entries": [
+        "some of the rations seem to have disappeared",
+        "a stowaway is discovered"
+      ]
+    },
+    {
+      "name": "glacial",
+      "explanation": "Snow and ice covered encounter structure.",
+      "entries": [
+        "{glacial encounter}",
+        "{glacial encounter} {glacial goal}",
+        "{glacial event}"
+      ]
+    },
+    {
+      "name": "glacial encounter",
+      "explanation": "Encounters on snow and ice covered areas.",
+      "entries": [
+        "polar bear"
+      ]
+    },
+    {
+      "name": "glacial goal",
+      "explanation": "Goals for glacial encounters.",
+      "entries": [
+        "trying to stay warm"
+      ]
+    },
+    {
+      "name": "glacial event",
+      "explanation": "Events for glacial encounters.",
+      "entries": [
+        "blizzard"
+      ]
+    },
+    {
+      "name": "underwater",
+      "explanation": "Underwater encounter structure.",
+      "entries": [
+        "{underwater encounter}",
+        "{underwater encounter} {underwater goal}",
+        "{underwater event}"
+      ]
+    },
+    {
+      "name": "underwater encounter",
+      "explanation": "Encounters under the water surface.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "underwater goal",
+      "explanation": "Goals for encounters under the water surface.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "underwater event",
+      "explanation": "Events under the water surface.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "underground",
+      "explanation": " Underground encounter structure.",
+      "entries": [
+        "{underground encounter}",
+        "{underground encounter} {underground goal}",
+        "{underground event}"
+      ]
+    },
+    {
+      "name": "underground encounter",
+      "explanation": "Encounters under the earth's surface.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "underground goal",
+      "explanation": "Goals for encounters under the earth's surface.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "underground event",
+      "explanation": "Events under the earth's surface.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "volcanic",
+      "explanation": "Volcanic encounter structure.",
+      "entries": [
+        "{volcanic encounter}",
+        "{volcanic encounter} {volcanic goal}",
+        "{volcanic event}"
+      ]
+    },
+    {
+      "name": "volcanic encounter",
+      "explanation": "Volcanic encounters.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "volcanic goal",
+      "explanation": "Goals for volcanic encounters.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "volcanic event",
+      "explanation": "Events for volcanic encounters.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "earth",
+      "explanation": "Soil encounter structure.",
+      "entries": [
+        "{earth encounter}",
+        "{earth encounter} {earth goal}",
+        "{earth event}"
+      ]
+    },
+    {
+      "name": "earth encounter",
+      "explanation": "Encounters in the ground.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "earth goal",
+      "explanation": "Goals for encounters in the ground.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "earth event",
+      "explanation": "Events in the ground.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "air",
+      "explanation": "Airborne encounter structure.",
+      "entries": [
+        "{air encounter}",
+        "{air encounter} {air goal}",
+        "{air event}"
+      ]
+    },
+    {
+      "name": "air encounter",
+      "explanation": "Encounters in the sky.",
+      "entries": [
+        "airship"
+      ]
+    },
+    {
+      "name": "air goal",
+      "explanation": "Goals for encounters in the sky.",
+      "entries": [
+        "trying to find a safe landing spot"
+      ]
+    },
+    {
+      "name": "air event",
+      "explanation": "Events in the sky.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "space",
+      "explanation": "Outer space encounter structure.",
+      "entries": [
+        "{space encounter}",
+        "{space encounter} {space goal}",
+        "{space event}"
+      ]
+    },
+    {
+      "name": "space encounter",
+      "explanation": "Encounters in outer space.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "space goal",
+      "explanation": "Goals for encounters in outer space.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "space event",
+      "explanation": "Events in outer space.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "planar",
+      "explanation": "Extraplanar encounter structure.",
+      "entries": [
+        "{planar encounter}",
+        "{planar encounter} {planar goal}",
+        "{planar event}"
+      ]
+    },
+    {
+      "name": "planar encounter",
+      "explanation": "Encounters in other planes of existence.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "planar goal",
+      "explanation": "Goals for encounters in other planes.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "planar event",
+      "explanation": "Events in other planes.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Mythic encounter structure.",
+      "entries": [
+        "{myth encounter}",
+        "{myth encounter} {myth goal}",
+        "{myth event}"
+      ]
+    },
+    {
+      "name": "myth encounter",
+      "explanation": "Encounters once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "myth goal",
+      "explanation": "Goals for encounters once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "myth event",
+      "explanation": "Events once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Fantastic encounter structure.",
+      "entries": [
+        "{fantasy encounter}",
+        "{fantasy encounter} {fantasy goal}",
+        "{fantasy event}"
+      ]
+    },
+    {
+      "name": "fantasy encounter",
+      "explanation": "Encounters for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy goal",
+      "explanation": "Goals for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy event",
+      "explanation": "Events for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Modern world encounter structure.",
+      "entries": [
+        "{modern encounter}",
+        "{modern encounter} {modern goal}",
+        "{modern event}"
+      ]
+    },
+    {
+      "name": "modern encounter",
+      "explanation": "Encounters for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern goal",
+      "explanation": "Goals for modern world encounters.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern event",
+      "explanation": "Events for modern world enconters.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Science fiction encounter structure.",
+      "entries": [
+        "{futuristic encounter}",
+        "{futuristic encounter} {futuristic goal}",
+        "{futuristic event}"
+      ]
+    },
+    {
+      "name": "futuristic encounter",
+      "explanation": "Encounters for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic goal",
+      "explanation": "Goals for encounters for science fiction worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic event",
+      "explanation": "Events for science fiction worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "status",
+      "explanation": "Status of the encountered creature.",
+      "entries": [
+        "{damaged}",
+        "{weakened}",
+        "{docile}",
+        "{stimulated}"
+      ]
+    },
+    {
+      "name": "damaged",
+      "explanation": "Damaged statuses.",
+      "entries": [
+        "dying",
+        "disabled",
+        "bleeding",
+        "blinded",
+        "deafened",
+        "dazzled"
+      ]
+    },
+    {
+      "name": "weakened",
+      "explanation": "Weakened statuses.",
+      "entries": [
+        "paralyzed",
+        "unconscious",
+        "suffering",
+        "helpless",
+        "poisoned",
+        "diseased",
+        "nauseated",
+        "exhausted",
+        "fatigued",
+        "sleeping",
+        "sleepy",
+        "tired",
+        "shaken",
+        "disoriented",
+        "distracted",
+        "confused",
+        "stunned",
+        "frightened",
+        "panicked",
+        "dazed"
+      ]
+    },
+    {
+      "name": "docile",
+      "explanation": "Calm statuses.",
+      "entries": [
+        "bored",
+        "well-rested",
+        "well-fed"
+      ]
+    },
+    {
+      "name": "stimulated",
+      "explanation": "Energized statuses.",
+      "entries": [
+        "hungry",
+        "angry"
+      ]
+    },
+    {
+      "name": "activity",
+      "explanation": "Activity of the encountered creature.",
+      "entries": [
+        "{passive}",
+        "{active}"
+      ]
+    },
+    {
+      "name": "passive",
+      "explanation": "Passive activities.",
+      "entries": [
+        "{resting}",
+        "{watching}"
+      ]
+    },
+    {
+      "name": "active",
+      "explanation": "Active activities.",
+      "entries": [
+        "{searching}"
+      ]
+    },
+    {
+      "name": "resting",
+      "explanation": "Rest-related activities.",
+      "entries": [
+        "sleeping",
+        "dozing off",
+        "resting"
+      ]
+    },
+    {
+      "name": "watching",
+      "explanation": "Watch-related activities.",
+      "entries": [
+        "guarding the area",
+        "following the adventurers"
+      ]
+    },
+    {
+      "name": "searching",
+      "explanation": "Search-related activities.",
+      "entries": [
+        "looking for food",
+        "looking for companionship"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Encounter complication types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common complication}"
+        },
+        "{rare complication}"
+      ]
+    },
+    {
+      "name": "common complication",
+      "explanation": "Common complications for the encounter.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "rare complication",
+      "explanation": "Rare complications for the encounter.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "special complication",
+      "explanation": "Special complications for the encounter.",
+      "entries": [
+        "XXX"
+      ]
+    }
+  ]
+}

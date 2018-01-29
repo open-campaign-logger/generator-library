@@ -1,0 +1,501 @@
+{
+  "name": "equipment",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "equipment table",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "More equipment types.",
+  "see": "business, gem, jewelry, treasure",
+  "date": "2017-12-31",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{equipment}",
+        "{equipment} (which is {lib:condition})",
+        "{adjective} {equipment}",
+        "{adjective} {equipment} (which is {lib:condition})",
+        "{lib:complication#item} {equipment}",
+        "{lib:complication#item} {equipment} (which is {lib:condition})",
+        "{adjective}, {lib:complication#item} {equipment} (which is {lib:condition})"
+      ]
+    },
+    {
+      "name": "equipment",
+      "explanation": "Equipment types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common equipment types.",
+      "entries": [
+        "{provisions}",
+        "{cooking}",
+        "{carrying}",
+        "{container}",
+        "{tool}",
+        "{weapon care}",
+        "{lighting}",
+        "{camping}",
+        "{hunting}",
+        "{fishing}",
+        "{marking}",
+        "{medical}",
+        "{animal care}",
+        "{riding}",
+        "{climbing}",
+        "{transportation}",
+        "{miscellaneous}",
+        "{lib:musical_instrument}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare equipment types.",
+      "entries": [
+        "{reconnaissance}",
+        "{religious}"
+      ]
+    },
+    {
+      "name": "provisions",
+      "explanation": "Food for the trail.",
+      "entries": [
+        "rations",
+        "salted fish",
+        "pickled eggs",
+        "flour"
+      ]
+    },
+    {
+      "name": "cooking",
+      "explanation": "Food preparation.",
+      "entries": [
+        "pot",
+        "kettle",
+        "funnel",
+        "mortar abd pestle"
+      ]
+    },
+    {
+      "name": "tableware",
+      "explanation": "Eating equipment.",
+      "entries": [
+        "{lib:material#container} plate",
+        "{lib:material#container} jug",
+        "{lib:material#container} cup",
+        "{lib:material#container} goblet"
+      ]
+    },
+    {
+      "name": "carrying",
+      "explanation": "Carrying equipment.",
+      "entries": [
+        "waterskin",
+        "small pouch",
+        "large pouch",
+        "belt pouch",
+        "small cloth sack",
+        "large cloth sack",
+        "rucksack",
+        "quiver",
+        "satchel",
+        "small leather bag",
+        "medium leather bag",
+        "large leather bag",
+        "cloth backpack",
+        "leather backpack",
+        "backpack frame"
+      ]
+    },
+    {
+      "name": "container",
+      "explanation": "Storage equipment.",
+      "entries": [
+        "wooden bucket",
+        "iron bucket",
+        "cask",
+        "wooden barrel",
+        "small wooden box",
+        "medium wooden box",
+        "large wooden box",
+        "small iron box",
+        "medium iron box",
+        "large iron box",
+        "small wooden chest",
+        "large wooden chest"
+      ]
+    },
+    {
+      "name": "tool",
+      "explanation": "Tools.",
+      "entries": [
+        "shovel",
+        "crowbar",
+        "{woodworking}",
+        "{metalworking}",
+        "{stoneworking}"
+      ]
+    },
+    {
+      "name": "woodworking",
+      "explanation": "Woodworking tools.",
+      "entries": [
+        "wood file",
+        "wood drill",
+        "wood chisel",
+        "saw",
+        "hammer",
+        "nails",
+        "{axe}"
+      ]
+    },
+    {
+      "name": "axe",
+      "explanation": "Axes.",
+      "entries": [
+        "axe",
+        "hatchet",
+        "mallet",
+        "woodman's axe"
+      ]
+    },
+    {
+      "name": "metalworking",
+      "explanation": "Metalworking tools.",
+      "entries": [
+        "metal file",
+        "metal drill",
+        "hacksaw"
+      ]
+    },
+    {
+      "name": "stoneworking",
+      "explanation": "Woodworking tools.",
+      "entries": [
+        "stone chisel"
+      ]
+    },
+    {
+      "name": "lighting",
+      "explanation": "Sources of illumination.",
+      "entries": [
+        "flint and steel",
+        "candle",
+        "torch",
+        "lantern",
+        "lantern oil"
+      ]
+    },
+    {
+      "name": "camping",
+      "explanation": "Camping equipment.",
+      "entries": [
+        "blanket",
+        "bedroll",
+        "tarpaulin",
+        "hammock",
+        "tent"
+      ]
+    },
+    {
+      "name": "marking",
+      "explanation": "Marking equipment.",
+      "entries": [
+        "chalk"
+      ]
+    },
+    {
+      "name": "medical",
+      "explanation": "Medical equipment.",
+      "entries": [
+        "bandages",
+        "crutches",
+        "healing potion",
+        "antitoxin",
+        "antivenom"
+      ]
+    },
+    {
+      "name": "animal care",
+      "explanation": "Animal care equipment.",
+      "entries": [
+        "animal collar",
+        "leash",
+        "bird cage (wicker)",
+        "animal cage (brass)"
+      ]
+    },
+    {
+      "name": "fishing",
+      "explanation": "Fishing equipment.",
+      "entries": [
+        "fishing rod",
+        "fishing line",
+        "fishing hook",
+        "fishing tackle",
+        "fishing lures",
+        "hook, line and sinker (for fishing)",
+        "fishing spear",
+        "fishing net",
+        "lobster trap",
+        "eel trap"
+      ]
+    },
+    {
+      "name": "hunting",
+      "explanation": "Hunting equipment.",
+      "entries": [
+        "bird whistle",
+        "dog whistle",
+        "hunting knife",
+        "skinning blade",
+        "bird snare",
+        "rabbit trap",
+        "boar trap",
+        "bear trap"
+      ]
+    },
+    {
+      "name": "reconnaissance",
+      "explanation": "Surveillance equipment.",
+      "entries": [
+        "mirror",
+        "field glass"
+      ]
+    },
+    {
+      "name": "riding",
+      "explanation": "Riding equipment.",
+      "entries": [
+        "{lib:animal#mount}",
+        "saddle"
+      ]
+    },
+    {
+      "name": "climbing",
+      "explanation": "Climbing equipment.",
+      "entries": [
+        "pitons",
+        "hemp rope",
+        "silk rope",
+        "grappling hook",
+        "climbing irons",
+        "rope ladder"
+      ]
+    },
+    {
+      "name": "transportation",
+      "explanation": "Transportation equipment.",
+      "entries": [
+        "{land vehicle}",
+        "{snow vehicle}",
+        "{water vehicle}"
+      ]
+    },
+    {
+      "name": "land vehicle",
+      "explanation": "Land-based vehicles.",
+      "entries": [
+        "{horsedrawn}"
+      ]
+    },
+    {
+      "name": "horsedrawn",
+      "explanation": "Horse-drawn carriages.",
+      "entries": [
+        "cart",
+        "chariot (1 horse, 1 passenger)",
+        "double chariot (2 horses, 1 passenger)",
+        "wagon",
+        "carriage",
+        "stagecoach"
+      ]
+    },
+    {
+      "name": "snow vehicle",
+      "explanation": "Transportation equipment for winter.",
+      "entries": [
+        "snow shoes",
+        "skis",
+        "sleigh"
+      ]
+    },
+    {
+      "name": "water vehicle",
+      "explanation": "Land-based vehicles.",
+      "entries": [
+        "{boat}",
+        "{ship}"
+      ]
+    },
+    {
+      "name": "boat",
+      "explanation": "Boats.",
+      "entries": [
+        "raft",
+        "canoe",
+        "rowboat",
+        "boat",
+        "river boat",
+        "sailing boat",
+        "galley",
+        "keelboat",
+        "catamaran",
+        "barge"
+      ]
+    },
+    {
+      "name": "ship",
+      "explanation": "Ships.",
+      "entries": [
+        "yacht",
+        "longship",
+        "galley",
+        "sailing ship"
+      ]
+    },
+    {
+      "name": "miscellaneous",
+      "explanation": "Miscellaneous equipment.",
+      "entries": [
+        "pole"
+      ]
+    },
+    {
+      "name": "thieving",
+      "explanation": "Illicit equipment.",
+      "entries": [
+        "weighed dice",
+        "marked cards",
+        "lockpick set",
+        "keymaking set",
+        "cutpurse blade",
+        "caltrops",
+        "weaponblack",
+        "hidden sheath for a knife",
+        "dagger boots",
+        "garotte"
+      ]
+    },
+    {
+      "name": "religious",
+      "explanation": "Religious equipment.",
+      "entries": [
+        "vial of holy water",
+        "holy symbol"
+      ]
+    },
+    {
+      "name": "weapon care",
+      "explanation": "Equipment for weapon care.",
+      "entries": [
+        "practice target"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Equipment for medieval worlds (no fantasy elements).",
+      "entries": [
+        "{myth}",
+        "{laboratory}"
+      ]
+    },
+    {
+      "name": "laboratory",
+      "explanation": "Laboratory equipment.",
+      "entries": [
+        "{lib:material#container} vial",
+        "{lib:material#container} bottle",
+        "{lib:material#container} bowl",
+        "balance with weights",
+        "hourglass",
+        "alembic"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Equipment once rumoured to have existed.",
+      "entries": [
+        "{alchemical}",
+        "{magical}"
+      ]
+    },
+    {
+      "name": "alchemical",
+      "explanation": "Alchemical equipment.",
+      "entries": [
+        "invisible ink",
+        "sleeping gas (in breakable vial)"
+      ]
+    },
+    {
+      "name": "magical",
+      "explanation": "Magical equipment.",
+      "entries": [
+        "{lib:magical_instrument}",
+        "spellbook"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Equipment for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{medieval}",
+        "{myth}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Equipment for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Equipment for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special equipment types.",
+      "entries": [
+        "{adjective}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives describing the equipment.",
+      "entries": [
+        "cheaply made",
+        "old-fashioned",
+        "customized"
+      ]
+    }
+  ]
+}

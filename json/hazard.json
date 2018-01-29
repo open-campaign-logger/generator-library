@@ -1,0 +1,250 @@
+{
+  "name": "hazard",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Random hazards.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "More world-specific hazards.",
+  "see": "Dungeon_adventure, trap",
+  "date": "2018-01-12",
+  "authors": "Johnn Four, Esko Vesala.",
+  "sources": "Five_room_dungeon",
+  "genre": "fantasy",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{hazard}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{hazard}"
+      ]
+    },
+    {
+      "name": "hazard",
+      "explanation": "Hazard types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common hazards.",
+      "entries": [
+        "{air}",
+        "{floor}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare hazards.",
+      "entries": [
+        "{ceiling}",
+        "{sensory}"
+      ]
+    },
+    {
+      "**************************************************": "HAZARDS"
+    },
+    {
+      "name": "air",
+      "explanation": "Hazards in the air.",
+      "entries": [
+        "A poisonous cloud fills the area. [Damages anyone breathing the gas.]",
+        "A swarm of stinging insects infest the area. [Affects movement.]",
+        "A swarm of biting insects infest the area. [Affects movement.]",
+        "A huge swarm of insects cloud this place. [Affects senses.]",
+        "A thick cloud of {gas} sears nostrils and blocks vision. [Affects offense and senses.]",
+        "Laughing gas [nitrous oxide] permeates this area. [Affects senses.]",
+        "Air is filled with explosive {gaseous explosive}. [Affects offense.]"
+      ]
+    },
+    {
+      "name": "ceiling",
+      "explanation": "Hazards on the wall.",
+      "entries": [
+        "At random, {ceiling dropping} fall from the ceiling. [Affects offense.]"
+      ]
+    },
+    {
+      "name": "floor",
+      "explanation": "Hazards on the floor.",
+      "entries": [
+        "Large pools of mud {dice:1d12} feet deep scatter the area. [Affects movement.]",
+        "Small pools of mud {dice:1d3+1} feet deep dot the area. [Affects movement.]",
+        "Large chunks of broken stone litter the area. [Affects movement.]",
+        "Small chunks of broken stone litter the area. [Affects movement.]",
+        "Debris scattered around makes footing difficult. [Affects movement.]",
+        "Berms of deep snow {dice:1d5+1} feet deep have built up here. [Affects movement.]",
+        "Slimy patches of writhing slugs litter the area. [Affects movement.]",
+        "Snakes cover the area. [Affects movement and offense.]",
+        "Hard shelled nuts cover the floor in places. [Affects movement.]",
+        "Several open graves present open-hole dangers in this place. [Affects movement.]",
+        "Deep snow covers the floor making it hard and slow to walk around. [Affects movement.]",
+        "Weak spots on the floor could drop victims into sinkholes or other locations below. [Affects movement.]",
+        "{dice:1d4} large bear-traps are primed and ready to snap shut on unfortunate victims. [Affects offense.]",
+        "Soft spots on the floor hamper movement and twist ankles. [Affects movement and offense.]",
+        "The floor is slick from {slippery substance}. [Affects movement.]",
+        "The floor is slick with {rare slippery substance}. [Affects movement and offense.]",
+        "Small pools of hot glue dot the floor. The glue dries fast once it cools. [Affects movement and senses.]",
+        "Large pools of hot glue dot the floor. The glue dries fast once it cools. [Affects movement and senses.]"
+      ]
+    },
+    {
+      "name": "general",
+      "explanation": "Hazards affecting the senses.",
+      "entries": [
+        "Random static discharges target the tallest or greatest concentration of metal. [Affects offense.]"
+      ]
+    },
+    {
+      "name": "sensory",
+      "explanation": "Hazards affecting the senses.",
+      "entries": [
+        "A loud roaring makes it difficult to hear. [Affects senses.]",
+        "A piercing horn painfully blocks hearing. [Affects offense and senses.]",
+        "Thunder so loud periodically booms and knocks things flat. [Affects movement, offense and senses.]"
+      ]
+    },
+    {
+      "name": "wall",
+      "explanation": "Hazards on the wall.",
+      "entries": [
+        "A wall is covered by sharp spikes. [Causes additional damage for anyone fumbling near.] "
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Hazards once rumoured to have existed.",
+      "entries": [
+        "Magical darkness obscures part of this area. [Affects senses.]",
+        "Magical darkness obscures the entire area. [Affects senses.]"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Hazards for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "A wall of fire fire blocks the passage. [Causes burn damage to anyone attempting to pass.]"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Hazards for modern worlds.",
+      "entries": [
+        "{common}",
+        "A biohazard contaminates the area. [Anypone entering the area risks virus infection.]"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Hazards for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "A force field blocks the passage."
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL CASES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special hazard types.",
+      "entries": [
+        "{ceiling dropping}",
+        "{gas}",
+        "{gaseous explosive}",
+        "{slippery substance}"
+      ]
+    },
+    {
+      "name": "ceiling dropping",
+      "explanation": "Hazards dropped from the ceiling.",
+      "entries": [
+        "rocks",
+        "debris",
+        "flaming drops of oil",
+        "drops of acid"
+      ]
+    },
+    {
+      "name": "gas",
+      "explanation": "Hazardous gases.",
+      "entries": [
+        "sulphur dioxide",
+        "ammonium",
+        "chlorine",
+        "smoke"
+      ]
+    },
+    {
+      "name": "gasesous explosive",
+      "explanation": "Hazardous gases.",
+      "entries": [
+        "firedamp",
+        "carbon monoxide",
+        "carbon dioxide",
+        "methane",
+        "nitrogen",
+        "high density oxygen",
+        "grain dust"
+      ]
+    },
+    {
+      "name": "slippery substance",
+      "explanation": "Slick substances.",
+      "entries": [
+        "oil",
+        "algae",
+        "slime",
+        "blood",
+        "mucus",
+        "guts",
+        "feces",
+        "ice",
+        "wet polished stone",
+        "organic garbage",
+        "{rare slippery substance}"
+      ]
+    },
+    {
+      "name": "rare slippery substance",
+      "explanation": "Rare slick substances.",
+      "entries": [
+        "burning oil",
+        "acid",
+        "diseased body parts",
+        "mould",
+        "raw sewage"
+      ]
+    }
+  ]
+}

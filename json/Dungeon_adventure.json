@@ -1,0 +1,1283 @@
+{
+  "name": "Dungeon adventure",
+  "resultPattern": "{HTML formatting}{init}{result}",
+  "variables": {
+    "starttitle": "<H2>",
+    "endtitle": "</H2>",
+    "startheading": "<H3>",
+    "endheading": "</H3>",
+    "startbold": "<B>",
+    "endbold": "</B>",
+    "para": "<P>",
+    "duration": "30",
+    "difficulty": "master",
+    "difficultydescription": "experienced adventurers",
+    "goal": "fighting",
+    "goaldescription": "against",
+    "target": "target",
+    "targetdescription": "fearsome enemy",
+    "symbol": "symbol",
+    "milieu": "mountainscape",
+    "milieudescription": "craggy mountains",
+    "location": "hideaway",
+    "locationdescription": "well-guarded hiding place",
+    "motif": "dungeon",
+    "motifdescription": "foreboding dungeon",
+    "macguffin": "statuette",
+    "macguffindescription": "object of unknown purpose",
+    "key": "key",
+    "keydescription": "small silver key",
+    "artifact": "amulet",
+    "artifactdescription": "broken amulet",
+    "treasure": "hoard",
+    "treasuredescription": "peerless hoard",
+    "actant": "character",
+    "attitude": "hostile",
+    "villain": "arch enemy",
+    "villains": "arch enemies",
+    "villaingroup": "band of villains",
+    "villainaction": "laughs maniacally",
+    "villainadjective": "dastardly",
+    "villaindescription": "scheming evildoer",
+    "minion": "minion",
+    "minions": "minions",
+    "miniongroup": "group of minions",
+    "minionaction": "follow theirs orders",
+    "minionadjective": "evil",
+    "miniondescription": "Servants of evil have gathered here.",
+    "guardian": "guardian",
+    "guardians": "guardians",
+    "guardiangroup": "company of guardians",
+    "guardianaction": "stands on the assigned post",
+    "guardianadjective": "vigilant",
+    "guardiandescription": "A suspicious-looking guardian blocks the way.",
+    "monster": "monster",
+    "monsters": "monsters",
+    "monstergroup": "horde of monsters",
+    "monsteraction": "sniffing the air",
+    "monsteradjective": "hideous",
+    "monsterdescription": "A monster seems to have a scent of something.",
+    "beast": "beast",
+    "beasts": "beasts",
+    "beastgroup": "pack of beasts",
+    "beastaction": "stalking the area",
+    "beastadjective": "malformed",
+    "beastdescription": "An unnaturally deformed beast is approaching.",
+    "traitor": "scholar",
+    "traitors": "scholars",
+    "traitorgroup": "team of scholars",
+    "traitoraction": "seems to be listening to you",
+    "traitoradjective": "scheming",
+    "traitordescription": "A scholar seems to take an interest to you.",
+    "shapeshifter": "skinchanger",
+    "shapeshifters": "skinchangers",
+    "shapeshiftergroup": "group of skinchangers",
+    "shapeshifteraction": "seems to be evaluating you",
+    "shapeshifteradjective": "ponderous",
+    "shapeshifterdescription": "The skinghanger is lost in thoughts.",
+    "tempter": "enchantress",
+    "tempters": "enchantresses",
+    "temptergroup": "group of enchantresses",
+    "tempteraction": "is casting a long, ponderous look at you",
+    "tempteradjective": "alluring",
+    "tempterdescription": "A beautiful enchantress smiles by herself.",
+    "rival": "knight",
+    "rivals": "knights",
+    "rivalgroup": "company of knights",
+    "rivalaction": "boasts about his skills",
+    "rivaladjective": "brave",
+    "rivaldescription": "A knight looks at you disapprovingly.",
+    "trickster": "jester",
+    "tricksters": "jesters",
+    "trickstergroup": "band of jesters",
+    "tricksteraction": "juggling",
+    "tricksteradjective": "loud",
+    "tricksterdescription": "A jester practices his routine.",
+    "inhabitant": "gnome",
+    "inhabitants": "gnomes",
+    "inhabitantgroup": "family of gnomes",
+    "inhabitantaction": "playing cards",
+    "inhabitantadjective": "playful",
+    "inhabitantdescription": "Gnomes in conical hats have gathered together.",
+    "animal": "rat",
+    "animals": "rats",
+    "animalgroup": "pack of rats",
+    "animalaction": "tries to hide from you",
+    "animaladjective": "starved",
+    "animaldescription": "A rat-like shape scurries in the shadows.",
+    "plant": "fungus",
+    "plants": "fungi",
+    "plantgroup": "a blot of fungi",
+    "plantaction": "grows on the walls",
+    "plantadjective": "slimy",
+    "plantdescription": "emits a faint odor",
+    "captive": "captive",
+    "captives": "captives",
+    "captivegroup": "group of captives",
+    "captiveaction": "eyes you warily",
+    "captiveadjective": "scared",
+    "captivedescription": "A captive tries in vain to gain freedom.",
+    "herald": "child",
+    "heralds": "children",
+    "heraldgroup": "group of children",
+    "heraldaction": "looks helpless",
+    "heraldadjective": "small",
+    "heralddescription": "A scared child wanders here aimlessly.",
+    "mentor": "sage",
+    "mentors": "sages",
+    "mentorgroup": "school of sages",
+    "mentoraction": "studies a notebook",
+    "mentoradjective": "wizened",
+    "mentordescription": "A sage is studying his environs.",
+    "ally": "friendly minion",
+    "allies": "friendly minions",
+    "allygroup": "group of friendly minions",
+    "allyaction": "tries to make as little noise as possible",
+    "allyadjective": "nice,",
+    "allydescription": "A group of minions seems to be hiding from their kin.",
+    "entrance": "entrance",
+    "room 1": "room 1",
+    "room 2": "room 2",
+    "room 3": "room 3",
+    "room 4": "room 4",
+    "room 5": "room 5",
+    "room": "room",
+    "roomsize": "medium",
+    "roompurpose": "storage",
+    "roomshape": "rectangular",
+    "roomtype": "chamber",
+    "roomdescription": "This room appears to be long since abandoned.",
+    "roomcontents": "a thick layer of dust",
+    "roomevent": "Strange noises can be heard from ahead.",
+    "groundfeature": "a dried up patch of blood",
+    "wallfeature": "an empty torch holder",
+    "ceilingfeature": "a thick layer of cobwebs",
+    "air": "musty",
+    "smell": "dank",
+    "sound": "silent dripping",
+    "mineral": "a pile of rocks",
+    "hook": "hook",
+    "scene": "scene",
+    "beat": "beat",
+    "resolution": "resolution",
+    "door": "door",
+    "doorfeature": "iron hinges",
+    "lock": "lock",
+    "lockfeature": "double-bolted",
+    "corridor": "corridor",
+    "corridorfeature": "strange echoes",
+    "danger": "danger",
+    "dangeraction": "seems to be all too near",
+    "dangerdescription": "Here a nest of snakes writhes feverishly!",
+    "trial": "test of strength",
+    "trialaction": "blocks the passage",
+    "trialdescription": "A heavy looking portcullis blocks the way.",
+    "hindrance": "quagmire",
+    "hindranceaction": "slowly sucks in anyone stepping into it",
+    "hindrancedescription": "A pool of quagmire covers the entire floor here.",
+    "setback": "cave-in",
+    "setbackaction": "makes part of the area inaccessible",
+    "setbackdescription": "A collapsed ceiling blocks a part of the area here.",
+    "trap": "trap",
+    "trapaction": "springs into action",
+    "trapdescription": "A scythe has been fastened high in the ceiling. ",
+    "damage": "damage",
+    "damagetype": "slashing",
+    "footnote": ""
+  },
+  "explanation": "Dungeon adventure.",
+  "structure": "Produces dungeon descriptions based on the 'Five Room Dungeon' concept and Hollywood scriptwriting formulas.",
+  "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
+  "bugs": "",
+  "to do": "More external table calls to add variety.",
+  "see": "dungeon_entrance, dungeon_corridor, dungeon_room, dungeon_vault, Five_room_dungeon, hook_line_and_sinker_adventure",
+  "date": "2018-01-22",
+  "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
+  "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon, RolePlayingTips.com",
+  "genre": "universal",
+  "categories": [
+    "story"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the dungeon parameters.",
+      "entries": [
+        "{motif}{goal} {artifact}{danger}"
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{adventure description}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adventure description}"
+      ]
+    },
+    {
+      "name": "alternative",
+      "explanation": "Alternative structures.",
+      "entries": [
+        "{five room dungeon}"
+      ]
+    },
+    {
+      "name": "adventure description",
+      "explanation": "The adventure described from start to finish.",
+      "entries": [
+        "{adventure title} {motif note} {villain note} {goal note} {macguffin note} {treasure note} {complication note} {difficulty note} {introduction} {adventure structure} {duration note}"
+      ]
+    },
+    {
+      "name": "five room dungeon",
+      "explanation": "This is an older model is based more strictly on the 'Five Room Dungeon' formula.",
+      "entries": [
+        "{var:startheading}Five Room Dungeon{var:endheading} {var:startheading}Entrance{var:endheading} {room 1} {var:startheading}Trial{var:endheading} {room 2} {var:startheading}Build-Up{var:endheading} {room 3} {var:startheading}Finale{var:endheading} {room 4} {roleplaying opportunity} {var:startheading}Resolution{var:endheading} {room 5}"
+      ]
+    },
+    {
+      "**************************************************": "CONTENTS"
+    },
+    {
+      "name": "adventure title",
+      "explanation": "The adventure name as a subheading.",
+      "entries": [
+        "{var:starttitle}{adventure name}{var:endtitle}"
+      ]
+    },
+    {
+      "name": "adventure name",
+      "explanation": "Variations for the name of the adventure based on set variables.",
+      "entries": [
+        "The {var:symbol} of the {lib:villain#adjective} {var:villain}",
+        "{lib:location#adjective} {var:location} of the {lib:villain#adjective} {var:villain}",
+        "{var:goaldescription} the {lib:villain#adjective} {var:villain}",
+        "{var:macguffin} of the {lib:villain#adjective} {var:villain}",
+        "{lib:treasure#adjective} {var:treasure} of the {lib:location#adjective} {var:location}",
+        "In search of a {var:treasure}",
+        "In search of the {var:treasure} of the {lib:villain#adjective} {var:villain}",
+        "Quest for the {var:treasure}",
+        "{lib:synonym#death} of the {lib:villain#adjective} {var:villain}",
+        "{lib:minion#adjective} {var:minion} of the {lib:villain#adjective} {var:villain}"
+      ]
+    },
+    {
+      "name": "motif note",
+      "explanation": "Description of the general theme of the adventure.",
+      "entries": [
+        "{var:para}{var:startbold}Motif{var:endbold}: {var:motif}. {var:motifdescription}"
+      ]
+    },
+    {
+      "name": "villain note",
+      "explanation": "Introductory words about the villain.",
+      "entries": [
+        "{var:para}{var:startbold}Villain{var:endbold}: An evil {difficulty} with a {var:miniongroup}."
+      ]
+    },
+    {
+      "name": "goal note",
+      "explanation": "Introductory words about the goal and target.",
+      "entries": [
+        "{var:para}{var:startbold}Goal{var:endbold}: The {lib:synonym#troupe} must {var:goal} {var:target}."
+      ]
+    },
+    {
+      "name": "macguffin note",
+      "explanation": "Description of the macguffin of the adventure.",
+      "entries": [
+        "{var:para}{var:startbold}Macguffin:{var:endbold} The adventure starts when the {lib:synonym#troupe} finds out about a {lib:macguffin#detail}."
+      ]
+    },
+    {
+      "name": "treasure note",
+      "explanation": "Description of the treasure of the adventure.",
+      "entries": [
+        "{var:para}{var:startbold}Treasure:{var:endbold} Some {lib:treasure#adjective} {lib:treasure} is said to be hidden in the dungeon - but little do they know that it is {lib:treasure#complication}..."
+      ]
+    },
+    {
+      "name": "complication note",
+      "explanation": "An optional complication for the adventure.",
+      "entries": [
+        "{var:para}{var:startbold}Dungeon complication{var:endbold}: {lib:complication#dungeon}"
+      ]
+    },
+    {
+      "name": "difficulty note",
+      "explanation": "A paragraph describing the difficulty of the adventure.",
+      "entries": [
+        "{var:para}{var:startbold}Difficulty{var:endbold}: {var:difficulty}.  This {lib:synonym#small} {lib:synonym#adventure} is best suited for {var:difficultydescription}. "
+      ]
+    },
+    {
+      "name": "introduction",
+      "explanation": "How the adventurers start the adventure.",
+      "entries": [
+        "{var:para}Here the {lib:synonym#troupe} {encountering} a {lib:villain#adjective} {var:villain} and a band of {var:minions}. Will the {lib:synonym#troupe} be able to {var:goal} {var:target}? "
+      ]
+    },
+    {
+      "name": "encountering",
+      "explanation": "Introductory words about adventurers facing the villain.",
+      "entries": [
+        "will have to face",
+        "comes face to face with",
+        "clashes with"
+      ]
+    },
+    {
+      "name": "duration note",
+      "explanation": "A paragraph about the estimated duration of the adventure, based on the number of scenes.",
+      "entries": [
+        "{var:para}[The duration of the {lib:synonym#adventure} is estimated to be roughly {var:duration} minutes.] "
+      ]
+    },
+    {
+      "name": "footnote",
+      "explanation": "A potential footnote (usually empty).",
+      "entries": [
+        "{var:para}{var:footnote}"
+      ]
+    },
+    {
+      "**************************************************": "GOAL"
+    },
+    {
+      "name": "goal",
+      "explanation": "The aim of the adventure.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{fighting}",
+          "set": {
+            "goal": "vanquish",
+            "target": "the villain"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{capturing}",
+          "set": {
+            "goal": "capture",
+            "target": "the villain"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{rescuing}",
+          "set": {
+            "goal": "rescue",
+            "target": "a captive"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{escaping}",
+          "set": {
+            "goal": "escape",
+            "target": "the location"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fighting",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goaldescription": "against",
+            "symbol": "shadow"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goaldescription": "conquer",
+            "symbol": "throne"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goaldescription": "bring me the head of",
+            "symbol": "blood"
+          }
+        }
+      ]
+    },
+    {
+      "name": "capturing",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goaldescription": "duel",
+            "symbol": "scourge"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goaldescription": "capture",
+            "symbol": "shackles"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goaldescription": "siege",
+            "symbol": "downfall"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goaldescription": "challenge",
+            "symbol": "blade"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rescuing",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goaldescription": "rescue",
+            "symbol": "lure"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goaldescription": "save",
+            "symbol": "call"
+          }
+        }
+      ]
+    },
+    {
+      "name": "escaping",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goaldescription": "escape",
+            "symbol": "wrath"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "goaldescription": "flee",
+            "symbol": "revenge"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "ENVIRONMENT"
+    },
+    {
+      "name": "danger",
+      "explanation": "",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "danger": "danger"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "CLASSIC 5RD"
+    },
+    {
+      "name": "room 1",
+      "explanation": "There needs to be a reason why your dungeon hasn't been plundered before or why the PCs are the heroes for the job. A guardian or challenge at the entrance is a good justification why the location remains intact. Also, a guardian sets up early action to capture player interest and energize a session.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{lib:dungeon_entrance}{entrance}. ",
+          "set": {
+            "room 1": "entrance"
+          }
+        }
+      ]
+    },
+    {
+      "name": "entrance",
+      "explanation": "Entrance to the dungeon. Add mood and theme!",
+      "entries": [
+        "The entrance is trapped: {lib:trap#detail}. ",
+        "The entrance is cleverly hidden.",
+        "The entrance is hidden by an overcrop of rock.",
+        "The entrance requires a {lib:key} that is {key location}.",
+        "The entrance is guarded by {lib:actant#guardian} that keeps intruders out.",
+        "A {lib:actant#guardian} is not indigenous to the dungeon but has made its lair by the entrance.",
+        "A hazard prevents entering and requires special skills and equipment to bypass: {lib:hazard#detail}"
+      ]
+    },
+    {
+      "name": "room 2",
+      "explanation": "The PCs are victorious over the challenge of the first room and are now presented with a trial that cannot be solved with steel. This keeps problem solvers in your group happy and breaks the action up for good pacing. Make Room Two a puzzle, skill-based, or roleplaying encounter, if possible. Room Two should shine the limelight on different PCs than Room One, change gameplay up, and offer variety between the challenge at the entrance and the challenge at the end. Note, if Room One was this type of encounter, then feel free to make Room Two combat-oriented. Room Two should allow for multiple solutions to prevent the game from stalling. Add clues to room 1!",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{lib:dungeon_room} {var:para}{puzzle}",
+          "set": {
+            "room 2": "puzzle"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{lib:dungeon_room} {var:para}{information gathering}",
+          "set": {
+            "room 2": "information gathering"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{lib:dungeon_room} {var:para}{roleplaying challenge}",
+          "set": {
+            "room 2": "roleplaying challenge"
+          }
+        }
+      ]
+    },
+    {
+      "name": "puzzle",
+      "explanation": "A trial that cannot be solved with steel.",
+      "entries": [
+        "{magic puzzle}",
+        "A dirt floor crawls with poisonous snakes that will slither out of the way to avoid open flame. (A few might follow at a distance and strike later on.)"
+      ]
+    },
+    {
+      "name": "information gathering",
+      "explanation": "",
+      "entries": [
+        "All the visible exits turn out to be blocked, and there is no obvious way to proceed. The correct approach must be figured out via clues."
+      ]
+    },
+    {
+      "name": "magic puzzle",
+      "explanation": "",
+      "entries": [
+        "The floor is covered from wall to wall with chessboard tiles. Stepping on wrong squares triggers a {lib:trap}."
+      ]
+    },
+    {
+      "name": "roleplaying challenge",
+      "explanation": "",
+      "entries": [
+        "A guardian spirit blocks access to the rest of the complex and must be befriended, not fought.",
+        "A {var:minion} standing on guard can be bluffed or coerced without raising the alarm.",
+        "The adventurers must convince a {var:minion} to let them in."
+      ]
+    },
+    {
+      "name": "room 3",
+      "explanation": "The purpose of this room is to build tension. Do this using a trick, trap, or setback. For example, after defeating a tough monster, and players think they've finally found the treasure and achieved their goal, they learn they've been tricked and the room is a false crypt. Depending on your game system, use this room to cater to any player or character types not yet served by the first two areas. Alternatively, give your group a double-dose of gameplay that they enjoy the most, such as more combat or roleplaying. Another potential payoff for Room Three is to weaken the PCs as build-up to a dramatic struggle in Room Four. It might contain a tough combat encounter, take down a key defense, exhaust an important resource, or make the party susceptible to a certain type of attack. For example, if Room Four contains a mummy whose secret weakness is fire, then make Room Three a troll lair (or another creature susceptible to fire) so the PCs might be tempted to burn off a lot of their fire magic, oil, and other flammable resources. This would turn a plain old troll battle into a gotcha once the PCs hit Room Four and realize the are out of fire resources. Don't forget to dress Room Three up with your theme elements!",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{lib:dungeon_room} {var:para}{trick room}",
+          "set": {
+            "room 3": "trick room"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{lib:dungeon_room} {var:para}{trapped room}",
+          "set": {
+            "room 3": "trapped room"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{lib:dungeon_room} {var:para}{setback room}",
+          "set": {
+            "room 3": "setback room"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{lib:dungeon_room} {var:para}{complication room}",
+          "set": {
+            "room 3": "complication room"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{lib:dungeon_room} {var:para}{lib:scene#combat beat}",
+          "set": {
+            "room 3": "combat beat"
+          }
+        }
+      ]
+    },
+    {
+      "name": "trick room",
+      "explanation": "",
+      "entries": [
+        "Here the adventurers can rescue a {var:captivegroup}. However, the {var:captives} {lib:complication#captive}."
+      ]
+    },
+    {
+      "name": "trapped room",
+      "explanation": "",
+      "entries": [
+        "There is a {var:trap} in the room: {lib:trap#detail}. "
+      ]
+    },
+    {
+      "name": "setback room",
+      "explanation": "",
+      "entries": [
+        "A collapsed structure blocks part of the {lib:synonym#room}. The debris is dangerous and blocks {blocked area}.",
+        "{one way exit} leading back to room 1."
+      ]
+    },
+    {
+      "name": "blocked area",
+      "explanation": "",
+      "entries": [
+        "nothing of importance",
+        "another trap",
+        "{threat}"
+      ]
+    },
+    {
+      "name": "threat",
+      "explanation": "",
+      "entries": [
+        "threat"
+      ]
+    },
+    {
+      "name": "one way exit",
+      "explanation": "",
+      "entries": [
+        "teleport trap",
+        "one-way door",
+        "2000 foor water slide trap"
+      ]
+    },
+    {
+      "name": "complication room",
+      "explanation": "",
+      "entries": [
+        "The {artifact} required to defeat the {var:villain}, but it is {lib:complication#item}. Clues reveal that a solution lies ahead.",
+        "Believing the object of the quest now lays within easy reach, a  companion turns traitor and betrays the {lib:synonym#troupe}."
+      ]
+    },
+    {
+      "name": "artifact",
+      "explanation": "Artifacts useful for solving the adventure.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "artifact": "spellbook"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "artifact": "amulet"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "artifact": "magical weapon"
+          }
+        }
+      ]
+    },
+    {
+      "name": "room 4",
+      "explanation": "This room is The Big Show. It's the final combat or conflict encounter of the dungeon. Use all the tactics you can summon to make this encounter memorable and entertaining. As always, generate interesting terrain that will impact the battle!",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{lib:dungeon_room} {var:para}{climax}",
+          "set": {
+            "room 4": "climax"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{lib:dungeon_room} {var:para}{big battle}",
+          "set": {
+            "room 4": "big battle"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{lib:dungeon_room} {var:para}{conflict}",
+          "set": {
+            "room 4": "conflict"
+          }
+        }
+      ]
+    },
+    {
+      "name": "climax",
+      "explanation": "",
+      "entries": [
+        "The villain is here, ready to face the {lib:synonym#troupe}. Previous rooms have contained warning signals or an alarm, so the {var:villain} has had time to prepare.",
+        "The villain is here, and seems to be surprised by the arrival of the {lib:synonym#troupe}. The villain tries to settle things in an unusual way, through {unusual proposal}.",
+        "The villain is here and reveals the {var:treasure} to the {lib:synonym#troupe}, threatening to {reward threat}.",
+        "The villain is here, but has a weakness that the {lib:synonym#troupe} must figure out how to exploit."
+      ]
+    },
+    {
+      "name": "unusual proposal",
+      "explanation": "",
+      "entries": [
+        "a wager",
+        "a duel"
+      ]
+    },
+    {
+      "name": "reward threat",
+      "explanation": "",
+      "entries": [
+        "break it",
+        "put it out of the reach of the {lib:synonym#troupe} so they'll never collect it"
+      ]
+    },
+    {
+      "name": "big battle",
+      "explanation": "",
+      "entries": [
+        "The villain is here and has unexpected {capabilities}.",
+        "The villain is here, but the {lib:synonym#room} is trapped. The villain {trap ability}."
+      ]
+    },
+    {
+      "name": "capabilities",
+      "explanation": "",
+      "entries": [
+        "powers",
+        "abilities",
+        "equipment"
+      ]
+    },
+    {
+      "name": "trap ability",
+      "explanation": "",
+      "entries": [
+        "knows what to avoid in order to not trigger the traps",
+        "knows what areas to avoid in order to not trigger the traps",
+        "has the ability to set off the traps at opportune moments"
+      ]
+    },
+    {
+      "name": "conflict",
+      "explanation": "",
+      "entries": [
+        "A variety of skills and talents are required to successfully complete the encounter."
+      ]
+    },
+    {
+      "name": "roleplaying opportunity",
+      "explanation": "",
+      "entries": [
+        "The {var:villain} needs to stall for time to {reason to stall}.",
+        "A victorious combat ends with the {var:villain} bleeding to death and a few short words can be exchanged.",
+        "There is a helpless {var:captivegroup} to roleplay with once the threat is dealt with."
+      ]
+    },
+    {
+      "name": "reason to stall",
+      "explanation": "",
+      "entries": [
+        "let adventurer's buffs wear out",
+        "wait for help to arrive",
+        "stir himself into a rage"
+      ]
+    },
+    {
+      "name": "room 5",
+      "explanation": "Here's your opportunity to change the players' bragging to 'we came, we saw, we slipped on a banana peel.' Room Five doesn't always represent a complication or point of failure for the PCs, but it can. Room Five doesn't always need to be a physical location either - it can be a twist revealed in Room Four. Room Five is where your creativity can shine and is often what will make the dungeon different and memorable from the other crawls in your campaigns. In addition, if you haven't supplied the reward yet for conquering the dungeon, here is a good place to put the object of the quest, chests of loot, or the valuable information the PCs need to save the kingdom. As accounting tasks take over from recent, thrilling, combat tasks, this would also be a good time to make a campaign or world revelation, or a plot twist.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{lib:dungeon_room} {var:para}{reward}",
+          "set": {
+            "room 5": "reward"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{lib:dungeon_room} {var:para}{surprise}",
+          "set": {
+            "room 5": "surprise"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{lib:dungeon_room} {var:para}{revelation}",
+          "set": {
+            "room 5": "revelation"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{lib:dungeon_room} {var:para}{plot twist}",
+          "set": {
+            "room 5": "plot twist"
+          }
+        }
+      ]
+    },
+    {
+      "name": "reward",
+      "explanation": "",
+      "entries": [
+        "A {lib:treasure#bonus} is discovered that leads to another adventure."
+      ]
+    },
+    {
+      "name": "surprise",
+      "explanation": "",
+      "entries": [
+        "A {var:monster} is hiding in the treasure container: {lib:monster#detail}.",
+        "A trap that resurrects or renews the challenge from Room Four."
+      ]
+    },
+    {
+      "name": "revelation",
+      "explanation": "",
+      "entries": [
+        "The location of the next adventure is uncovered, along with sufficient motivation to accept the quest.",
+        "The true identity of the {var:villain} is revealed.",
+        "New clues and information pertaining to a major plot arc are embedded in the treasure, {information hiding place}.",
+        "The {var:villain} is found to have a stronger, more fearsome master.",
+        "The grand scheme of the {var:villain} is discovered.",
+        "The source of an alien race's hostility towards others is uncovered, transforming them from villains to sympathetic characters in the story.",
+        "The true meaning of the prophecy or poem that lead the {lib:synonym#troupe} to the dungeon is finally understood, and it's not what the {lib:synonym#troupe} thought."
+      ]
+    },
+    {
+      "name": "information hiding place",
+      "explanation": "",
+      "entries": [
+        "sewn into a valuable carpet",
+        "drawn in painting",
+        "written on a slip of paper stuffed into a scroll tube",
+        "written using a cipher in the margins of a book"
+      ]
+    },
+    {
+      "name": "plot twist",
+      "explanation": "",
+      "entries": [
+        "A rival enters and tries to steal the reward while the {lib:synonym#troupe} is weakened after the big challenge of the previous room.",
+        "The object of the quest final reward isn't what it seems or has a complication. i.e. The kidnapped king doesn't want to return.",
+        "The quest was a trick. By killing the villain the {lib:synonym#troupe} has actually helped the {longterm villain}. The {var:villain} was actually {bad guy true form}."
+      ]
+    },
+    {
+      "name": "longterm villain",
+      "explanation": "",
+      "entries": [
+        "local villain",
+        "local archvillain",
+        "rival of their party",
+        "long-term villain",
+        "arch villain",
+        "forces of opposition"
+      ]
+    },
+    {
+      "name": "bad guy true form",
+      "explanation": "",
+      "entries": [
+        "a good guy under a curse",
+        "a good guy transformed",
+        "a good guy placed into difficult circumstances"
+      ]
+    },
+    {
+      "***********************************************": "ADVENTURE STRUCTURE"
+    },
+    {
+      "name": "adventure structure",
+      "explanation": "The path the adventure takes.",
+      "entries": [
+        "{duration}"
+      ]
+    },
+    {
+      "name": "duration",
+      "explanation": "The approximate duration of the game night.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{ca 90 minute adventure}",
+          "set": {
+            "duration": "90"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{ca 120 minute adventure}",
+          "set": {
+            "duration": "120"
+          }
+        },
+        {
+          "m": 2,
+          "v": "{ca 150 minute adventure}",
+          "set": {
+            "duration": "150"
+          }
+        },
+        {
+          "m": 2,
+          "v": "{ca 180 minute adventure}",
+          "set": {
+            "duration": "180"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{ca 210 minute adventure}",
+          "set": {
+            "duration": "210"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{ca 240 minute adventure}",
+          "set": {
+            "duration": "240"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ca 90 minute adventure",
+      "explanation": "An adventure structure taking about 1.5 hours to play.",
+      "entries": [
+        "{lib:scene#action hook} {lib:scene#development scene} {lib:scene#action finale} {lib:scene#resolution} ",
+        "{lib:scene#development hook} {lib:scene#action scene} {lib:scene#development finale} {lib:scene#resolution} "
+      ]
+    },
+    {
+      "name": "ca 120 minute adventure",
+      "explanation": "An adventure structure taking about 2 hours to play.",
+      "entries": [
+        "{lib:scene#action hook} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development finale} {lib:scene#resolution}",
+        "{lib:scene#development hook} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action finale} {lib:scene#resolution}"
+      ]
+    },
+    {
+      "name": "ca 150 minute adventure",
+      "explanation": "An adventure structure taking about 2.5 hours to play.",
+      "entries": [
+        "{lib:scene#action hook} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action finale} {lib:scene#resolution}",
+        "{lib:scene#development hook} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development finale} {lib:scene#resolution}"
+      ]
+    },
+    {
+      "name": "ca 180 minute adventure",
+      "explanation": "An adventure structure taking about 3 hours to play.",
+      "entries": [
+        "{lib:scene#action hook} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development finale} {lib:scene#resolution}",
+        "{lib:scene#development hook} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action finale} {lib:scene#resolution}"
+      ]
+    },
+    {
+      "name": "ca 210 minute adventure",
+      "explanation": "An adventure structure taking about 3.5 hours to play.",
+      "entries": [
+        "{lib:scene#action hook} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action finale} {lib:scene#resolution}",
+        "{lib:scene#development hook} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development finale} {lib:scene#resolution}"
+      ]
+    },
+    {
+      "name": "ca 240 minute adventure",
+      "explanation": "An adventure structure taking about 4 hours to play.",
+      "entries": [
+        "{lib:scene#action hook} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development finale} {lib:scene#resolution}",
+        "{lib:scene#development hook} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action scene} {lib:scene#development scene} {lib:scene#action finale} {lib:scene#resolution}"
+      ]
+    },
+    {
+      "**************************************************": "FORMATTING"
+    },
+    {
+      "name": "HTML formatting",
+      "explanation": "Set variables for formatting the output as HTML",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "<H2>",
+            "endtitle": "</H2>",
+            "startheading": "<H3>",
+            "endheading": "</H3>",
+            "startbold": "<B>",
+            "endbold": "</B>",
+            "para": "<P>"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CL formatting",
+      "explanation": "Set variables for formatting the output for Campaign Logger",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "starttitle": "{b|",
+            "endtitle": "}\r\n\r\n",
+            "startheading": "\r\n\r\n{b|",
+            "endheading": "}",
+            "startbold": "{b|",
+            "endbold": "}",
+            "para": "\r\n"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "DIFFICULTY"
+    },
+    {
+      "name": "difficulty",
+      "explanation": "Difficulty levels by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common difficulty levels.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{lib:villain#apprentice}",
+          "set": {
+            "difficulty": "Apprentice",
+            "difficultydescription": "inexperienced adventurers"
+          }
+        },
+        {
+          "m": 2,
+          "v": "{lib:villain#journeyman}",
+          "set": {
+            "difficulty": "Journeyman",
+            "difficultydescription": "adventurers with some experience"
+          }
+        },
+        {
+          "m": 3,
+          "v": "{lib:villain#master}",
+          "set": {
+            "difficulty": "Master",
+            "difficultydescription": "experienced adventurers"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare difficulty levels.",
+      "entries": [
+        {
+          "m": 2,
+          "v": "{lib:villain#adept}",
+          "set": {
+            "difficulty": "Adept",
+            "difficultydescription": "highly experienced adventurers"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{lib:villain#legend}",
+          "set": {
+            "difficulty": "Legend",
+            "difficultydescription": "only the most experienced of adventurers"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL CASES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special room tables.",
+      "entries": [
+        "{adjective}",
+        "{key location}",
+        "{motif}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives for the dungeon.",
+      "entries": [
+        "lost",
+        "dark",
+        "cold",
+        "damp",
+        "deep",
+        "bleak",
+        "murky",
+        "gloomy",
+        "dismal",
+        "dreary",
+        "forlorn",
+        "dreadful",
+        "foreboding",
+        "underground",
+        "subterranean"
+      ]
+    },
+    {
+      "name": "key location",
+      "explanation": "Hiding place of the key.",
+      "format": "-- that is X",
+      "entries": [
+        "carried by a nearby {lib:minion#summary}",
+        "clumsily hidden nearby",
+        "buried nearby (with still visible signs of digging)"
+      ]
+    },
+    {
+      "name": "motif",
+      "explanation": "Theme of the dungeon concept.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Vermin-infested pit",
+            "motifdescription": "An abandoned structure overrun by unclean infestations of vermin - and something even more dangerous."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Temple of evil",
+            "motifdescription": "A shrine of dark forces, featuring ghastly altars and worshippers of malevolent entities."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Classic dungeon",
+            "motifdescription": "An underground structure guarded by vicious monsters and traps, brimming with treasure."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Fallen city",
+            "motifdescription": "An ancient cataclysm toppled a forgotten city into a deep underground cavern."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Tomb of the undead",
+            "motifdescription": "Something has awakened the cadavers resting in an ancient catacomb."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Abode of a lost race",
+            "motifdescription": "Last remains of a long-dead civilization have entrenched themselves deep underground."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Submerged kingdom",
+            "motifdescription": "An age-old savage empire finally fell when it was overrun by a deluge. Its flooded remains now await explorers deep below ground."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Underground expanse",
+            "motifdescription": "Something horrific lives deep underground beneath the daylit world, and now it has crawled its way closer to the surface."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Spawning grounds of chaos",
+            "motifdescription": "Magical energies emanating from deep underground have corrupted underground denizens into horrific beasts."
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "motif": "Infernal portal",
+            "motifdescription": "A gateway to nether realms has opened, vomiting out hellish denizens of the underworld to occupy their new abode."
+          }
+        }
+      ]
+    }
+  ]
+}

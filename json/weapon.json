@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2017-10-20",
+  "date": "2017-12-28",
   "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
   "sources": "",
   "genre": "universal",
@@ -47,7 +47,7 @@
         "knuckledusters",
         "knuckle knives",
         "punch dagger (short blade protruding from fist)",
-        "{rare hand-to-hand}"
+        "{rare hand to hand}"
       ]
     },
     {
@@ -435,8 +435,7 @@
       "entries": [
         "{primitive weapon}",
         "{ancient weapon}",
-        "{exotic weapon}",
-        "{equipment}"
+        "{exotic weapon}"
       ]
     },
     {
@@ -464,30 +463,15 @@
       ]
     },
     {
-      "name": "equipment",
-      "explanation": "Equipment for weapons.",
-      "entries": [
-        "{bow equipment}"
-      ]
-    },
-    {
-      "name": "bow equipment",
-      "explanation": "Equipment for bows.",
-      "entries": [
-        "quiver",
-        "bracer (archer's leather armguard)"
-      ]
-    },
-    {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary weapons once rumoured to have existed.",
       "entries": [
         "cold iron sword (averts faery folk)",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary weapons once rumoured to have existed.",
       "entries": [
         "flaming {sword}",
@@ -495,7 +479,7 @@
       ]
     },
     {
-      "name": "unique mythological",
+      "name": "unique myth",
       "explanation": "Unique imaginary weapons once rumoured to have existed.",
       "entries": [
         "{Arthurian mythology}",
@@ -585,9 +569,9 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary weapons for fantasy worlds.",
+      "explanation": "Fantasy weapons (with no basis in myth).",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "sledgehammer",
         "spike maul",
         "{rare fantasy}"
@@ -595,7 +579,7 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary weapons for fantasy worlds.",
+      "explanation": "Rare fantasy weapons (with no basis in myth).",
       "entries": [
         "self-swinging sword"
       ]
@@ -819,6 +803,28 @@
         "monomolecular blade (cuts practically anything)",
         "monofilament whip (slices practically anything)",
         "energy sword (shaft projecting a force field)"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special weapon-related tables.",
+      "entries": [
+        "{equipment}"
+      ]
+    },
+    {
+      "name": "equipment",
+      "explanation": "Equipment for weapons.",
+      "entries": [
+        "{bow equipment}"
+      ]
+    },
+    {
+      "name": "bow equipment",
+      "explanation": "Equipment for bows.",
+      "entries": [
+        "quiver",
+        "bracer (archer's leather armguard)"
       ]
     }
   ]

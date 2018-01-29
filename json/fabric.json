@@ -196,26 +196,26 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary fabrics once rumoured to have existed.",
       "entries": [
         "fairy silk",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary fabrics once rumoured to have existed.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "fabric spun from the thread of the Fates"
       ]
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary fabrics for fantasy worlds.",
+      "explanation": "Imaginary fabrics for fantasy (with no basis in myth).",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "hair",
         "spider silk",
         "{rare fantasy}"
@@ -223,7 +223,7 @@
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary fabrics for fantasy worlds.",
+      "explanation": "Rare fabrics for fantasy (with no basis in myth).",
       "entries": [
         "{fantasy}",
         "insect wings",
@@ -397,6 +397,21 @@
         "{futuristic}",
         "basalt fiber",
         "self-mending fabric"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special fabric tables.",
+      "entries": [
+        "{medieval}"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Medieval fabrics.",
+      "entries": [
+        "{wool}",
+        "{plant}"
       ]
     }
   ]

@@ -1,0 +1,530 @@
+{
+  "name": "trap",
+  "resultPattern": "{result}",
+  "variables": {
+    "trap": "trap",
+    "trapdescription": "",
+    "trapaction": "",
+    "damagetype": "",
+    "footnote": ""
+  },
+  "explanation": "Random traps.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
+  "bugs": "",
+  "to do": "",
+  "see": "Dungeon_adventure, hazard",
+  "date": "2018-01-13",
+  "authors": "Esko Vesala.",
+  "sources": "Five_room_dungeon",
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{trap}{var:trap}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{trap}{var:trap} [A successful inspection would reveal {var:trapdescription}. If the {lib:synonym#troupe} fails to detect and defuse the trap, {var:trapaction}]"
+      ]
+    },
+    {
+      "name": "trap",
+      "explanation": "Trap types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common traps.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{nonlethal trap}",
+          "set": {
+            "damagetype": "nonlethal"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{blunt trap}",
+          "set": {
+            "damagetype": "blunt"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{slashing trap}",
+          "set": {
+            "damagetype": "slash"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{piercing trap}",
+          "set": {
+            "damagetype": "piercing"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{poison trap}",
+          "set": {
+            "damagetype": "poison"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{disease trap}",
+          "set": {
+            "damagetype": "disease"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{corrosive trap}",
+          "set": {
+            "damagetype": "corrosive"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{explosion trap}",
+          "set": {
+            "damagetype": "explosion"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare traps.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{fire trap}",
+          "set": {
+            "damagetype": "fire"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{cold trap}",
+          "set": {
+            "damagetype": "cold"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{lightning trap}",
+          "set": {
+            "damagetype": "lightning"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "TRAP DETAILS"
+    },
+    {
+      "name": "nonlethal trap",
+      "explanation": "Traps causing nonlethal damage.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "smoke trap",
+            "trapaction": "a cloud of harmless smoke bellows out, making it hard to see anything in the area",
+            "trapdescription": "a fragile vial containing some smoky substance"
+          }
+        }
+      ]
+    },
+    {
+      "name": "blunt trap",
+      "explanation": "Traps causing blunt damage.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "boulder trap",
+            "trapaction": "a huge boulder falls down, hitting everyone near",
+            "trapdescription": "an enormous rock precariously balanced above"
+          }
+        }
+      ]
+    },
+    {
+      "name": "slashing trap",
+      "explanation": "Traps causing cut damage.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "scythe trap",
+            "trapaction": "a scythe slashes out, cutting everyone near",
+            "trapdescription": "a hidden, springloaded scythe blade"
+          }
+        }
+      ]
+    },
+    {
+      "name": "piercing trap",
+      "explanation": "Traps causing piercing damage.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "arrow trap",
+            "trapaction": "a hidden arrow is shot",
+            "trapdescription": "a hidden spring with an arrow ready to shoot"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "spike trap",
+            "trapaction": "the ground gives in, dropping anyone on top in a pit with long spikes waiting in the bottom",
+            "trapdescription": "a covered pit with sharp spikes in the bottom"
+          }
+        }
+      ]
+    },
+    {
+      "name": "poison trap",
+      "explanation": "Traps causing poison damage.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "poison arrow trap",
+            "trapaction": "a hidden, poisoned arrow is shot",
+            "trapdescription": "a hidden spring with an arrow ready to shoot"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "poisoned spike trap",
+            "trapaction": "the ground gives in, dropping anyone on top in a pit with long, poisoned spikes waiting in the bottom",
+            "trapdescription": "a covered pit with sharp spikes in the bottom"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "poison cloud trap",
+            "trapaction": "a poisonous cloud of smoke bellows out",
+            "trapdescription": "a fragile vial containing some smoky substance"
+          }
+        }
+      ]
+    },
+    {
+      "name": "disease trap",
+      "explanation": "Traps causing disease damage.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "miasma trap",
+            "trapaction": "a cloud of sickening smoke bellows out, making everyone near ill",
+            "trapdescription": "a fragile vial containing some smoky substance"
+          }
+        }
+      ]
+    },
+    {
+      "name": "necrotic trap",
+      "explanation": "Traps causing  damage.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "necrotic trap",
+            "trapaction": "a splash of sickening liquid shoots out, causing everyone near to age rapidly",
+            "trapdescription": "an almost invisible wire attached to a pressurised container"
+          }
+        }
+      ]
+    },
+    {
+      "name": "corrosive trap",
+      "explanation": "Traps causing corrosive damage (acids, alkalines, etc).",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "acid trap",
+            "trapaction": "a jet of acidid liquid shoots out, corroding everything nearby",
+            "trapdescription": "an almost invisible wire attached to a pressurised container"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "alkaline trap",
+            "trapaction": "a jet of alkaline liquid shoots out, corroding everything nearby",
+            "trapdescription": "an almost invisible wire attached to a pressurised container"
+          }
+        }
+      ]
+    },
+    {
+      "name": "cold trap",
+      "explanation": "Traps causing cold damage.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "cold trap",
+            "trapaction": "a magical ray of cold shoots out, freezing everything nearby",
+            "trapdescription": "a hidden magic wand"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fire trap",
+      "explanation": "Traps causing fire damage.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "fire trap",
+            "trapaction": "a jet of flames shoots out, setting everything nearby on fire",
+            "trapdescription": "an almost invisible wire attached to a glass vial containing some liquid"
+          }
+        }
+      ]
+    },
+    {
+      "name": "explosion trap",
+      "explanation": "Traps causing explosion (thundering) damage.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "exploding trap",
+            "trapaction": "there is a sudden explosion with an abrupt flash of light and a thundering sound",
+            "trapdescription": "an almost invisible wire attached to a metallic shell"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lightning trap",
+      "explanation": "Traps causing lightning (electric) damage.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "lightning trap",
+            "trapaction": "a flash of lightning bolts out, damaging everyone near",
+            "trapdescription": "a hidden magic wand"
+          }
+        }
+      ]
+    },
+    {
+      "name": "force trap",
+      "explanation": "Traps causing  damage.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "force trap",
+            "trapaction": "an invisible force shoots out, damaging everyone nearby",
+            "trapdescription": "a shimmering orb"
+          }
+        }
+      ]
+    },
+    {
+      "name": "psychic trap",
+      "explanation": "Traps causing psychic damage.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "sanity trap",
+            "trapaction": "a wave of mental energy shoots out, resulting in symptoms of insanity in everyone nearby",
+            "trapdescription": "a hidden sigil"
+          }
+        }
+      ]
+    },
+    {
+      "name": "magic trap",
+      "explanation": "Traps causing magical damage.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "spell trap",
+            "trapaction": "a spell is silently cast",
+            "trapdescription": "a parchment with magical runes insribed on it"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "curse trap",
+            "trapaction": "a curse is silently cast",
+            "trapdescription": "a magical sigil"
+          }
+        }
+      ]
+    },
+    {
+      "name": "radiant trap",
+      "explanation": "Traps causing radiant (divine) damage.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "unholy trap",
+            "trapaction": "a demonic presence is felt, tempting everyone nearby to evil acts",
+            "trapdescription": "a hidden unholy symbol"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "trap": "holy trap",
+            "trapaction": "a divine presence is felt, causing everyone not of pure heart to falter",
+            "trapdescription": "a hidden holy symbol"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Traps once rumoured to have existed.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{force trap}",
+          "set": {
+            "damagetype": "radiant"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{magic trap}",
+          "set": {
+            "damagetype": "magic"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{radiant trap}",
+          "set": {
+            "damagetype": "radiant"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Traps for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        {
+          "m": 1,
+          "v": "{necrotic trap}",
+          "set": {
+            "damagetype": "necrotic"
+          }
+        }
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Traps for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Traps for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        {
+          "m": 1,
+          "v": "{psychic trap}",
+          "set": {
+            "damagetype": "psychic"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL CASES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special trap types.",
+      "entries": [
+        "{door}"
+      ]
+    },
+    {
+      "name": "door",
+      "explanation": "Door traps.",
+      "entries": [
+        "a poison needle hidden in the door handle",
+        "a vat of acid balanced on top of the door",
+        "a guillotine blade"
+      ]
+    }
+  ]
+}
