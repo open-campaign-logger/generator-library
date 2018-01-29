@@ -1,21 +1,21 @@
 {
-  "name": "creature_template",
+  "name": "item_template",
   "resultPattern": "{result}",
   "variables": {
     "footnote": ""
   },
-  "explanation": "Creature templates.",
+  "explanation": "Item templates.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "bugs": "",
   "to do": "Expand the list of templates and categories.",
-  "see": "encounter, item_template, monster",
+  "see": "armor, condition, creature_template, equipment, weapon",
   "date": "2018-01-29",
   "authors": "Esko Vesala.",
-  "sources": "D20PFSRD.com",
+  "sources": "",
   "genre": "fantasy",
   "categories": [
-    "monster"
+    "item"
   ],
   "tables": [
     {
@@ -40,29 +40,23 @@
       "name": "common",
       "explanation": "Common templates.",
       "entries": [
-        "{body}",
-        "{behavior}",
-        "{perception}",
-        "{psychology}",
-        "{size}",
-        "{territory}"
+        "{modified}",
+        "{size}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare templates.",
       "entries": [
-        "{aligned}",
-        "{mutated}",
-        "{modified}"
+        "{aligned}"
       ]
     },
     {
-      "***********************************************": "CREATURE TEMPLATES"
+      "***********************************************": "ITEM TEMPLATES"
     },
     {
       "name": "aligned",
-      "explanation": "Alignment-related templates.",
+      "explanation": "Alignment-related items.",
       "entries": [
         "evil",
         "chaotic",
@@ -72,29 +66,8 @@
       ]
     },
     {
-      "name": "behavior",
-      "explanation": "Behavior-related templates.",
-      "entries": [
-        "monstrous",
-        "savage",
-        "feral",
-        "rabid",
-        "stealthy"
-      ]
-    },
-    {
-      "name": "body",
-      "explanation": "Body-related templates.",
-      "entries": [
-        "armored",
-        "greater",
-        "resilient",
-        "dire"
-      ]
-    },
-    {
       "name": "large",
-      "explanation": "Larger than average creatures.",
+      "explanation": "Larger than average items.",
       "entries": [
         "large",
         "huge",
@@ -105,62 +78,18 @@
     },
     {
       "name": "modified",
-      "explanation": "Artificially modified creatures.",
+      "explanation": "Artificially modified items.",
       "entries": [
-        "augmented",
-        "war"
-      ]
-    },
-    {
-      "name": "mutated",
-      "explanation": "Artificially modified creatures.",
-      "entries": [
-        "mishapen",
-        "grotesque",
-        "deformed",
-        "malformed",
-        "spined",
-        "two-headed"
-      ]
-    },
-    {
-      "name": "perception",
-      "explanation": "Sense-related templates.",
-      "entries": [
-        "blinded",
-        "deafened"
-      ]
-    },
-    {
-      "name": "psychology",
-      "explanation": "Psychology-related templates.",
-      "entries": [
-        "cowardly",
-        "bloodthirsty",
-        "vengeful",
-        "pain-conditioned",
-        "crafty",
-        "cunning",
-        "aware",
-        "awakened",
-        "civilized",
-        "charming"
+        "augmented"
       ]
     },
     {
       "name": "small",
-      "explanation": "Smaller than average creatures.",
+      "explanation": "Smaller than average items.",
       "entries": [
         "diminutive",
         "tiny",
         "small"
-      ]
-    },
-    {
-      "name": "territory",
-      "explanation": "Biotope-related templates.",
-      "entries": [
-        "arctic"
       ]
     },
     {
@@ -172,7 +101,7 @@
       "entries": [
         "{shapechanging}",
         "{supernatural}",
-        "{dead}",
+        "{incorporeal}",
         "{magical}",
         "{demonic}",
         "{infernal}",
@@ -197,17 +126,6 @@
       ]
     },
     {
-      "name": "dead",
-      "explanation": "Death-based templates.",
-      "entries": [
-        "long-dead",
-        "reanimated",
-        "undead",
-        "vampiric",
-        "{incorporeal}"
-      ]
-    },
-    {
       "name": "incorporeal",
       "explanation": "spiritform-based templates.",
       "entries": [
@@ -220,6 +138,7 @@
       "explanation": "Magic-based templates.",
       "entries": [
         "magical",
+        "rune-carved",
         "eldritch",
         "fey"
       ]
@@ -228,15 +147,13 @@
       "name": "demonic",
       "explanation": "Templates related to demonic origins.",
       "entries": [
-        "demonic",
-        "foul"
+        "demonic"
       ]
     },
     {
       "name": "infernal",
       "explanation": "Templates related to hellish origins.",
       "entries": [
-        "half-fiend",
         "fiendish",
         "infernal"
       ]
@@ -254,7 +171,6 @@
       "name": "fantasy",
       "explanation": "Templates for fantasy worlds (with no basis in myth).",
       "entries": [
-        "primordial",
         "{myth}",
         "{elemental}",
         "{planar}"
@@ -284,7 +200,7 @@
       "explanation": "Templates for modern worlds.",
       "entries": [
         "{common}",
-        "genetically engineered"
+        "XXX"
       ]
     },
     {
@@ -292,37 +208,7 @@
       "explanation": "Templates for science fiction worlds.",
       "entries": [
         "{modern}",
-        "cybernetically augmented",
-        "artificial"
-      ]
-    },
-    {
-      "**************************************************": "ENVIRONMENT"
-    },
-    {
-      "name": "environment",
-      "explanation": "Environment-related template types.",
-      "entries": [
-        "{aquatic}",
-        "{subterranean}"
-      ]
-    },
-    {
-      "name": "aquatic",
-      "explanation": "Aquatic templates.",
-      "entries": [
-        "amphibious",
-        "aquatic",
-        "marine",
-        "sea"
-      ]
-    },
-    {
-      "name": "subterranean",
-      "explanation": "Underground templates.",
-      "entries": [
-        "subterranean",
-        "subterrestrial"
+        "cybernetically augmented"
       ]
     },
     {
