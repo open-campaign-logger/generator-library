@@ -1,0 +1,1025 @@
+{
+  "name": "scene",
+  "resultPattern": "{HTML formatting}{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Scenes for adventure generation.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
+  "bugs": "",
+  "to do": "",
+  "see": "actant, clue, Five_room_dungeon, hero, villain",
+  "date": "2018-01-26",
+  "authors": "Esko Vesala.",
+  "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon",
+  "genre": "universal",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}{global:air}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{scene}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{scene}"
+      ]
+    },
+    {
+      "name": "scene",
+      "explanation": "Scene types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common scenes.",
+      "entries": [
+        "{action scene}",
+        "{development scene}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare scenes.",
+      "entries": [
+        "{hook}",
+        "{finale}",
+        "{resolution}"
+      ]
+    },
+    {
+      "**************************************************": "HOOKS"
+    },
+    {
+      "name": "hook",
+      "explanation": "How the protagonists get involved in the adventure.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{action hook}",
+          "export": {
+            "hook": "action"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{development hook}",
+          "export": {
+            "hook": "development"
+          }
+        }
+      ]
+    },
+    {
+      "name": "action hook",
+      "explanation": "Action hook initialization.",
+      "entries": [
+        "{global:startheading}Action Hook: {action hook type} {global:para}{global:para}{lib:dungeon_entrance}"
+      ]
+    },
+    {
+      "name": "action hook type",
+      "explanation": "Action hooks to involve the protagonists.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "Kidnapped{global:endheading} The {lib:synonym#troupe} has been taken as prisoners. It's time to find the way to freedom - and avenge! ",
+          "export": {
+            "beat": "kidnapped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Friend kidnapped{global:endheading} A friend of one of the characters (their {lib:friend#summary}) has been taken as a prisoner by the villain. The {lib:synonym#troupe} is off to the rescue! ",
+          "export": {
+            "beat": "friend kidnapped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Death of a friend{global:endheading} A friend of one of the characters (their {lib:friend#summary}) has died because the actions of the villain or the minions. It's the {lib:synonym#troupe}'s task to avenge the lost friend!",
+          "export": {
+            "beat": "friend kidnapped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Attack{global:endheading} Someone has launched an attack that threatens what is dear to {lib:synonym#troupe}. The villain must be tracked to the hideaway and dealt with. ",
+          "export": {
+            "beat": "attack"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{action scene type}",
+          "export": {
+            "scene": "action"
+          }
+        }
+      ]
+    },
+    {
+      "name": "development hook",
+      "explanation": "Action hook initialization.",
+      "entries": [
+        "{global:startheading}Development Hook: {development hook type} {global:para}{global:para}{lib:dungeon_entrance}"
+      ]
+    },
+    {
+      "name": "development hook type",
+      "explanation": "Development hooks to involve the protagonists.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "Memory loss{global:endheading} The {lib:synonym#troupe} has no recollection of how they have ended up in the present location. What is going on and who is behind this? ",
+          "export": {
+            "beat": "memory loss"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Discovery{global:endheading} The {lib:synonym#troupe} makes a remarkable discovery: a {lib:macguffin#detail}. [The discovery is in some way linked to this adventure's villain or treasure.]",
+          "export": {
+            "beat": "discovery"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Revelation{global:endheading} A surprising finding about their past changes the lives of the {lib:synonym#troupe}. The revealed information points to the adventure starting location as a source of additional information.",
+          "export": {
+            "beat": "revelation"
+          }
+        },
+        {
+          "m": 1,
+          "v": "False accusation{global:endheading} The {lib:synonym#troupe} has been framed to be guilty of a crime they did not commit. They must flee from the accusations and catch the true culprit.",
+          "export": {
+            "beat": "false accusation"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Looming threat{global:endheading} The villain is planning an evil deed and the {lib:synonym#troupe} must counter the plans before it is too late.",
+          "export": {
+            "beat": "looming threat"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{development scene type}",
+          "export": {
+            "scene": "development"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "SCENES"
+    },
+    {
+      "name": "scene",
+      "explanation": "Help table for generating a completely random beat.",
+      "note": "Usually the beat subtables are called directly.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{action scene}",
+          "export": {
+            "scene": "action"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{development scene}",
+          "export": {
+            "scene": "development"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{mood scene}",
+          "export": {
+            "scene": "mood"
+          }
+        }
+      ]
+    },
+    {
+      "name": "action scene",
+      "explanation": "Action scene initialization.",
+      "entries": [
+        "{global:startheading}Action Scene: {action scene type} {global:para}{lib:dungeon_room}"
+      ]
+    },
+    {
+      "name": "action scene type",
+      "explanation": "Scenes involving action (battle, chase, cliffhanger, etc).",
+      "entries": [
+        {
+          "m": 1,
+          "v": "Ambush{global:endheading} {ambush beat}",
+          "export": {
+            "beat": "ambush"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Battle{global:endheading} {battle beat}",
+          "export": {
+            "beat": "battle"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Chase{global:endheading} {chase beat}",
+          "export": {
+            "beat": "chase"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Combat{global:endheading} {combat beat}",
+          "export": {
+            "beat": "combat"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Competition{global:endheading} {competition beat}",
+          "export": {
+            "beat": "competition"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Confrontation{global:endheading} {confrontation beat}",
+          "export": {
+            "beat": "confrontation"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Contest{global:endheading} {contest beat}",
+          "export": {
+            "beat": "contest"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Duel{global:endheading} {duel beat}",
+          "export": {
+            "beat": "duel"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Fight{global:endheading} {fight beat}",
+          "export": {
+            "beat": "fight"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Hazard{global:endheading} {hazard beat}",
+          "export": {
+            "beat": "hazard"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Monster{global:endheading} {monster beat}",
+          "export": {
+            "beat": "monster"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Pursuit{global:endheading} {pursuit beat}",
+          "export": {
+            "beat": "pursuit"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Race{global:endheading} {race beat}",
+          "export": {
+            "beat": "race"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Rescue{global:endheading} {rescue beat}",
+          "export": {
+            "beat": "rescue"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Skirmish{global:endheading} {skirmish beat}",
+          "export": {
+            "beat": "skirmish"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Trap{global:endheading} {trap beat}",
+          "export": {
+            "beat": "trap"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Trial{global:endheading} {trial beat}",
+          "export": {
+            "beat": "trial"
+          }
+        }
+      ]
+    },
+    {
+      "name": "development scene",
+      "explanation": "Development scene initialization.",
+      "entries": [
+        "{global:startheading}Development Scene: {development scene type} {global:para}{lib:dungeon_room}"
+      ]
+    },
+    {
+      "name": "development scene type",
+      "explanation": "Scenes that advance the storyline (clues, twists, character development, etc).",
+      "entries": [
+        {
+          "m": 1,
+          "v": "Advantage revealed{global:endheading} {advantage revealed beat}",
+          "export": {
+            "beat": "advantage revealed"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Betrayal{global:endheading} {betrayal beat}",
+          "export": {
+            "beat": "betrayal"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Help{global:endheading} {help beat}",
+          "export": {
+            "beat": "help"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Hidden weakness{global:endheading} {hidden weakness beat}",
+          "export": {
+            "beat": "hidden weakness"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Hindrance{global:endheading} {hindrance beat}",
+          "export": {
+            "beat": "hindrance"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Information{global:endheading} {information beat}",
+          "export": {
+            "beat": "information"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Revelation{global:endheading} {revelation beat}",
+          "export": {
+            "beat": "revelation"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Setback{global:endheading} {setback beat}",
+          "export": {
+            "beat": "setback"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Trick{global:endheading} {trick beat}",
+          "export": {
+            "beat": "trick"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Warning{global:endheading} {warning beat}",
+          "export": {
+            "beat": "warning"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mood scene",
+      "explanation": "Mood scene initialization.",
+      "entries": [
+        "{global:startheading}Mood Scene: {mood scene type} {global:para}{lib:dungeon_room}"
+      ]
+    },
+    {
+      "name": "mood scene type",
+      "explanation": "beats for atmosphere and roleplaying.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "Distraction{global:endheading} {distraction beat}",
+          "export": {
+            "beat": "distraction"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Flavor{global:endheading} {flavor beat}",
+          "export": {
+            "beat": "flavor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Resource{global:endheading} {resource beat}",
+          "export": {
+            "beat": "resource"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Sidetrack{global:endheading} {sidetrack beat}",
+          "export": {
+            "beat": "sidetrack"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "FINALE"
+    },
+    {
+      "name": "finale",
+      "explanation": "Finale initialization.",
+      "entries": [
+        "{global:startheading}Finale: {finale type}{global:endheading} {global:para}{lib:dungeon_room}"
+      ]
+    },
+    {
+      "name": "finale type",
+      "explanation": ".",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{action finale}",
+          "export": {
+            "finale": "action"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{development finale}",
+          "export": {
+            "finale": "development"
+          }
+        }
+      ]
+    },
+    {
+      "name": "action finale",
+      "explanation": "Action finale initialization.",
+      "entries": [
+        "{global:startheading}Action Finale: {action finale type} {global:para}{global:para}The adventure culminates in an action scene in a {lib:dungeon_vault}"
+      ]
+    },
+    {
+      "name": "action finale type",
+      "explanation": "Action finales to finish the storyline.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "Final Battle{global:endheading} A great battle againts the villain and the minions ensues. The result will determine the final fate of everyone involved! ",
+          "export": {
+            "beat": "final battle"
+          }
+        }
+      ]
+    },
+    {
+      "name": "development finale",
+      "explanation": "Development finale initialization.",
+      "entries": [
+        "{global:startheading}Development Finale: {development finale type} {global:para}{global:para}The adventure culminates in a development scene in a {lib:dungeon_vault}"
+      ]
+    },
+    {
+      "name": "development finale type",
+      "explanation": "Development finales to finish the storyline.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "Final Revelation{global:endheading} The truth about the adventure's goal is finally revealed! ",
+          "export": {
+            "beat": "final revelation"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "RESOLUTION"
+    },
+    {
+      "name": "resolution",
+      "explanation": "Resolution initialization",
+      "entries": [
+        "{global:startheading}Resolution: {resolution type} {global:para}{lib:dungeon_room}"
+      ]
+    },
+    {
+      "name": "resolution type",
+      "explanation": "Ending that ties everything together and possibly paves ground for continuing the story.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "Happy Ending{global:endheading} Everything turns out fine. ",
+          "export": {
+            "beat": "happy ending"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Villain Dies{global:endheading} The villain is dead and cannot threaten anyone anymore. ",
+          "export": {
+            "beat": "villain dies"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Villain Surrenders{global:endheading} After a tough fight, the villain is ready to give up and surrender to the {lib:synonym#troupe}.",
+          "export": {
+            "beat": "villain surrenders"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Villain Escapes{global:endheading} The villain manages to flee from the {lib:synonym#troupe}. ",
+          "export": {
+            "beat": "villain escapes"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Heroes Captured{global:endheading} The villain manages to capture the {lib:synonym#troupe}. Will they ever be able to escape? That is a different story... ",
+          "export": {
+            "beat": "heroes captured"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Heroes Escape{global:endheading} The villain attempts to capture the {lib:synonym#troupe}, but they still have a slim chance of escape! ",
+          "export": {
+            "beat": "heroes escape"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Cliffhanger{global:endheading} A shocking turn takes the {lib:synonym#troupe} by surprise. What will they do? That is a different story... ",
+          "export": {
+            "beat": "cliffhanger"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Greater Threat{global:endheading} A menace much greater than anyone anticipated is revealed! ",
+          "export": {
+            "beat": "greater threat"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Scenes once rumoured to have existed.",
+      "entries": [
+        "{scene}"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Scenes for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{scene}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Scenes for modern worlds.",
+      "entries": [
+        "{common}",
+        "{scene}"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Scenes for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "{scene}"
+      ]
+    },
+    {
+      "**************************************************": "BEATS"
+    },
+    {
+      "name": "advantage revealed beat",
+      "explanation": "Beats that reveal an advantage.",
+      "entries": [
+        "A {lib:actant#mentor} here knows about an advantage that the  {lib:synonym#troupe} could maybe use to advance their plans.",
+        "A {lib:actant#traitor} here knows about a tool that the  {lib:synonym#troupe} could use."
+      ]
+    },
+    {
+      "name": "ambush beat",
+      "explanation": "Beats for surprise battles with the enemy's troops.",
+      "entries": [
+        "The {lib:synonym#troupe} spot enemy troops that are oblivious to their presence.",
+        "Enemy troops ambush the {lib:synonym#troupe}."
+      ]
+    },
+    {
+      "name": "battle beat",
+      "explanation": "Beats for battles with the enemy's troops.",
+      "entries": [
+        "The villain's forces arrive to battle the {lib:synonym#troupe} in full force."
+      ]
+    },
+    {
+      "name": "betrayal beat",
+      "explanation": "Beats where the adventurers are betrayed (by a traitor, shapeshifter, tempter, trickster, etc).",
+      "entries": [
+        "A {lib:actant#deceptive} needs help."
+      ]
+    },
+    {
+      "name": "chase beat",
+      "explanation": "Beats for chasing the minions.",
+      "entries": [
+        "A group of {lib:minion#summary}s spots the {lib:synonym#troupe} and attempts to flee and warn their master."
+      ]
+    },
+    {
+      "name": "combat beat",
+      "explanation": "Beats with hostile creatures (guardian, minion, monster, beast, rival, etc.)",
+      "entries": [
+        "This is the lair of a {lib:actant#hostile}.",
+        "A {lib:actant#hostile} is waiting here, ready to attack."
+      ]
+    },
+    {
+      "name": "competition beat",
+      "explanation": "Beats where the heroes have to compete with someone (rival, mentor, etc.)",
+      "entries": [
+        "A {lib:actant#competitive} presents a challenge to the {lib:synonym#troupe}.",
+        "A {lib:actant#deceptive} challenges the {lib:synonym#troupe}."
+      ]
+    },
+    {
+      "name": "confrontation beat",
+      "explanation": "Beats where the heroes confront the enemy in a non-physial fight.",
+      "entries": [
+        "A {lib:minion#summary} sent by the villain issues a warning to the {lib:synonym#troupe}.",
+        "The villain sends a threat to intimidate the {lib:synonym#troupe}."
+      ]
+    },
+    {
+      "name": "contest beat",
+      "explanation": "Beats where the heroes enter a ritualized contest.",
+      "entries": [
+        "A {lib:minion#summary} challenges the {lib:synonym#troupe} to a {contest}."
+      ]
+    },
+    {
+      "name": "distraction beat",
+      "explanation": "Beats that lead astray (shapeshifter, trickster, tempter, traitor, red herring, smoke screen, etc.)",
+      "entries": [
+        "A {lib:actant#deceptive} leads the {lib:synonym#troupe} astray.",
+        "{red herring}",
+        "{smoke screen}"
+      ]
+    },
+    {
+      "name": "duel beat",
+      "explanation": "Beats where a hero fights the enemy one-on-one.",
+      "entries": [
+        "The villain's representative challenges a champion of the {lib:synonym#troupe} to one-on-one armed combat on equal terms. The loser must agree to something that the winner wants."
+      ]
+    },
+    {
+      "name": "fight beat",
+      "explanation": "Beats where the heroes must confront the enemy in a ritual fight.",
+      "entries": [
+        "A {lib:minion#summary} champion challenges one of the {lib:synonym#troupe} to a ritual, unarmed fight."
+      ]
+    },
+    {
+      "name": "flavor beat",
+      "explanation": "Beats that create color and flavor, may bring roleplaying opportunities (plant, animal, tempter, traitor, item, wonder, etc.)",
+      "entries": [
+        "{lib:dungon_room#flavoring}",
+        "There is a {lib:equipment} here."
+      ]
+    },
+    {
+      "name": "hazard beat",
+      "explanation": "Beats that put the adventurers in danger (hazard, etc.)",
+      "entries": [
+        "Hazard: {lib:hazard#detail}."
+      ]
+    },
+    {
+      "name": "help beat",
+      "explanation": "Beats that offer help (mentor, ally, etc.)",
+      "entries": [
+        "A {lib:actant#friendly} offers to help."
+      ]
+    },
+    {
+      "name": "hidden weakness beat",
+      "explanation": "Beats that reveal a weakness in the enemy.",
+      "entries": [
+        "A {lib:actant#friendly} can be found here. If treated well, they can reveal a secret that can be used against the villain.",
+        "A {lib:actant#mentor} knows about the villain's fear that maybe could be used to gain an advantage.",
+        "Hidden here is a weapon that can be an effective asset against the villain.",
+        "If a {actant#traitor} found here can be befriended, they can tell the {lib:synonym#troupe} about a traitor in the enemy's faction."
+      ]
+    },
+    {
+      "name": "hindrance beat",
+      "explanation": "Beats that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
+      "entries": [
+        "A {lib:actant#competitive} slows down the progress.",
+        "Problem with a {lib:lock}.",
+        "Problem with a {lib:door}."
+      ]
+    },
+    {
+      "name": "information beat",
+      "explanation": "Beats that offer information (mentor, trickster, clue, shapeshifter, traitor, red herring, etc.)",
+      "entries": [
+        "A {lib:actant#friendly} gives useful information about {lib:clue#subject}.",
+        "A {lib:actant#deceptive} gives wrong information about {lib:clue#subject}.",
+        "A {lib:clue} can be found here.",
+        "{red herring}"
+      ]
+    },
+    {
+      "name": "monster beat",
+      "explanation": "Beats where the heroes face a monstrosity.",
+      "entries": [
+        "The {lib:synonym#troupe} encounters a hostile {lib:monster}."
+      ]
+    },
+    {
+      "name": "pursuit beat",
+      "explanation": "Beats where the heroes are escaping the enemy.",
+      "entries": [
+        "A far superior force of {lib:minion#summary}s spots the {lib:synonym#troupe} and starts a chase."
+      ]
+    },
+    {
+      "name": "race beat",
+      "explanation": "Beats where the heroes race the opposition.",
+      "entries": [
+        "A {lib:minion#summary} tries to reach the goal before the {lib:synonym#troupe}."
+      ]
+    },
+    {
+      "name": "rescue beat",
+      "explanation": "Beats where a prisoner (captive, mentor, ally, shapeshifter, tempter, traitor, trickster, animal, monster, minion, rival, etc.) can be rescued and perhaps befriended.",
+      "entries": [
+        "A {lib:actant#helpless} awaits to be rescued from {predicament}."
+      ]
+    },
+    {
+      "name": "resource beat",
+      "explanation": "Beats that offer new resources (artifact, key, tool, treasure, plant, animal, information, red herring, etc).",
+      "entries": [
+        "The {global:artifact} can be found here.",
+        "{key}",
+        "{tool}",
+        "{global:treasure}",
+        "{animal}",
+        "{information}",
+        "{red herring}"
+      ]
+    },
+    {
+      "name": "revelation beat",
+      "explanation": "Beats that reveal the whole story to the proragonists.",
+      "entries": [
+        "If an agreement can be negotiated, {lib:actant#mentor} can reveal {revelation}.",
+        "If convinced of the motivations of the {lib:synonym#troupe}, a {lib:actant#traitor} here may reveal {revelation}."
+      ]
+    },
+    {
+      "name": "setback beat",
+      "explanation": "Beats that cause the adventurers to lose progress (traitor, shapeshifter, rival, etc).",
+      "entries": [
+        "A {lib:actant#competitive} causes the {lib:synonym#troupe} to lose progress."
+      ]
+    },
+    {
+      "name": "sidetrack beat",
+      "explanation": "Beats providing temporary diversion (tricster, tempter, sense of wonder, comic relief, etc.)",
+      "entries": [
+        "A {lib:actant#deceptive} causes a temporary diversion for the {lib:synonym#troupe}.",
+        "{humor}"
+      ]
+    },
+    {
+      "name": "skirmish beat",
+      "explanation": "Beats where the heroes enter a small battle.",
+      "entries": [
+        "The {lib:synonym#troupe} encounters underpowered troops of the enemy. If the enemy is about to lose, they attempt to flee."
+      ]
+    },
+    {
+      "name": "trap beat",
+      "explanation": "Beats with traps.",
+      "entries": [
+        "A trap has been set here: {lib:trap#detail} "
+      ]
+    },
+    {
+      "name": "trial beat",
+      "explanation": "Beats where the adventurers must prove themselves (rival, mentor, trickster, etc).",
+      "entries": [
+        "A {lib:actant#friendly} requires the {lib:synonym#troupe} to prove their mettle."
+      ]
+    },
+    {
+      "name": "trick beat",
+      "explanation": "Beats that require a clever approach.",
+      "entries": [
+        "A {lib:actant#deceptive} attempts to trick the {lib:synonym#troupe}.",
+        "{trick}"
+      ]
+    },
+    {
+      "name": "warning beat",
+      "explanation": "The heroes receive a warning of things to come.",
+      "entries": [
+        "{lib:actant#ally} approaches the {lib:synonym#troupe} to tell them details about the danger that is looming ahead.",
+        "A {lib:clue} hints about the dangers that lie ahead."
+      ]
+    },
+    {
+      "**************************************************": "FORMATTING"
+    },
+    {
+      "name": "formatting",
+      "explanation": "Formatting types (Campaign Logger or Wordpress).",
+      "entries": [
+        "{CL formatting}",
+        "{HTML formatting}"
+      ]
+    },
+    {
+      "name": "HTML formatting",
+      "explanation": "Set variables for formatting the output as HTML",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "starttitle": "<H2>",
+            "endtitle": "</H2>",
+            "startheading": "<H3>",
+            "endheading": "</H3>",
+            "startbold": "<B>",
+            "endbold": "</B>",
+            "para": "<P>"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CL formatting",
+      "explanation": "Set variables for formatting the output for Campaign Logger",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "starttitle": "{b|",
+            "endtitle": "}\r\n\r\n",
+            "startheading": "\r\n\r\n{b|",
+            "endheading": "}",
+            "startbold": "{b|",
+            "endbold": "}",
+            "para": "\r\n"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special scene types.",
+      "entries": [
+        "{contest}",
+        "{predicament}",
+        "{red herring}",
+        "{revelation}",
+        "{smoke screen}",
+        "{trick}"
+      ]
+    },
+    {
+      "name": "contest",
+      "explanation": "Contests.",
+      "entries": [
+        "riddle contest",
+        "test of strength",
+        "battle fo wits"
+      ]
+    },
+    {
+      "name": "predicament",
+      "explanation": "Tough situations for helpless actants.",
+      "format": "needs to be rescued from X.",
+      "entries": [
+        "an aggressive {lib:minion#summary}",
+        "a nest of vipers",
+        "spreading fire from a campfire"
+      ]
+    },
+    {
+      "name": "red herring",
+      "explanation": "False information leading investigators astray.",
+      "entries": [
+        "A [false] clue about {lib:clue#subject} can be found here."
+      ]
+    },
+    {
+      "name": "revelation",
+      "explanation": "Big secrets.",
+      "entries": [
+        "the identity of the villain",
+        "the motivation of the villain",
+        "the plans of the villain"
+      ]
+    },
+    {
+      "name": "smoke screen",
+      "explanation": "Coverups for something more important.",
+      "entries": [
+        "A smoke screen covers an important detail. "
+      ]
+    },
+    {
+      "name": "smoke screen",
+      "explanation": "Something that hides the truth.",
+      "entries": [
+        "[A proverbial smoke screen hides a clue.] "
+      ]
+    },
+    {
+      "name": "trick",
+      "explanation": "Tricks to deceive the adventurers.",
+      "entries": [
+        "[A trick is played on the {lib:synonym#troupe}]. "
+      ]
+    }
+  ]
+}

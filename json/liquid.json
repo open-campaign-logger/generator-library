@@ -8,8 +8,8 @@
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
   "to do": "",
-  "see": "drink, material, metal, purity, temperature",
-  "date": "2017-10-04",
+  "see": "drink, material, metal, potion, purity, temperature",
+  "date": "2017-12-31",
   "authors": "Esko Vesala",
   "sources": "MyVocabulary.com, Wikipedia.org.",
   "genre": "universal",
@@ -95,17 +95,17 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary liquids once rumoured to have existed.",
       "entries": [
         "yellow bile (aggressive bodily humour)",
         "black bile (melancholic bodily humour)",
         "phlegm (apathetic bodily humour)",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary liquids once rumoured to have existed.",
       "entries": [
         "universal solvent",
@@ -119,79 +119,10 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary liquids for fantasy worlds.",
+      "explanation": "Imaginary liquids for fantasy (with no basis in myth).",
       "entries": [
-        "{mythological}",
-        "{fantasy liquid descriptor} {fantasy beginning}{fantasy ending} {fantasy liquid type}",
-        "{fantasy liquid type} of {fantasy beginning}{fantasy ending}"
-      ]
-    },
-    {
-      "name": "fantasy liquid descriptor",
-      "explanation": "Name beginnings for imaginary liquids for fantasy worlds.",
-      "entries": [
-        {
-          "m": 10,
-          "v": " "
-        },
-        "alchemical ",
-        "enchanted ",
-        "thaumaturgic ",
-        "witches' ",
-        "wondrous ",
-        "occult ",
-        "hermetic ",
-        "arcane ",
-        "esoteric ",
-        "mystical ",
-        "magical ",
-        "chimeric ",
-        "bewitching ",
-        "elemental "
-      ]
-    },
-    {
-      "name": "fantasy beginning",
-      "explanation": "Name beginning for imaginary liquids for fantasy worlds.",
-      "entries": [
-        "dawn",
-        "night",
-        "moon",
-        "goblin",
-        "elf",
-        "fairy"
-      ]
-    },
-    {
-      "name": "fantasy ending",
-      "explanation": "Name endings for imaginary liquids for fantasy worlds.",
-      "entries": [
-        "cure",
-        "guard",
-        "ban",
-        "woe",
-        "harm",
-        "bane"
-      ]
-    },
-    {
-      "name": "fantasy liquid type",
-      "explanation": "Types of imaginary liquids for fantasy worlds.",
-      "entries": [
-        "water",
-        "drink",
-        "tonic",
-        "mixture",
-        "potion",
-        "elixir",
-        "draught",
-        "brew",
-        "mead",
-        "liquor",
-        "remedy",
-        "philter",
-        "oil",
-        "phial"
+        "{myth}",
+        "{lib:potion#name}"
       ]
     },
     {
@@ -242,6 +173,37 @@
       "entries": [
         "{modern}",
         "super-dense water (molecular uniformity)"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables for liquids.",
+      "entries": [
+        "{texture}"
+      ]
+    },
+    {
+      "name": "texture",
+      "explanation": "Liquid textures.",
+      "entries": [
+        "gelatinous",
+        "coagulated",
+        "gluey",
+        "gooey",
+        "viscous",
+        "viscid",
+        "sticky",
+        "slimy",
+        "syrupy",
+        "rough",
+        "lumpy",
+        "thick",
+        "rich",
+        "smooth",
+        "bubbly",
+        "sparkling",
+        "runny",
+        "watery"
       ]
     }
   ]

@@ -7,11 +7,12 @@
   "explanation": "XXX",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
+  "format": "",
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "20XX-XX-XX",
-  "authors": "",
+  "date": "@timestamp@ XXX",
+  "authors": "@author@. XXX",
   "sources": "",
   "genre": "",
   "categories": [
@@ -20,15 +21,29 @@
   "tables": [
     {
       "name": "result",
-      "explanation": "Variations for resultPattern output.",
+      "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{XXX}",
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
         "{XXX}"
       ]
     },
     {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{XXX} {XXX}"
+      ]
+    },
+    {
       "name": "XXX",
-      "explanation": "XXX",
+      "explanation": "XXX types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -52,7 +67,10 @@
       ]
     },
     {
-      "name": "mythological",
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
       "explanation": "XXX once rumoured to have existed.",
       "entries": [
         "XXX"
@@ -60,9 +78,9 @@
     },
     {
       "name": "fantasy",
-      "explanation": "XXX for fantasy worlds.",
+      "explanation": "XXX for fantasy worlds (with no basis in myth).",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "XXX"
       ]
     },
@@ -83,8 +101,11 @@
       ]
     },
     {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
       "name": "special",
-      "explanation": "Special XXX types.",
+      "explanation": "Special XXX tables.",
       "entries": [
         "XXX"
       ]

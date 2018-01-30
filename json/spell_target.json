@@ -1,0 +1,79 @@
+{
+  "name": "spell target",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Random spell target generation.",
+  "structure": "",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "energy, magic, magical_technique, magical_instrument, spell_name, spell_intention, spellcasting",
+  "date": "2017-12-10",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{realm}"
+      ]
+    },
+    {
+      "name": "realm",
+      "explanation": "Spell realm types.",
+      "entries": [
+        "{elemental}"
+      ]
+    },
+    {
+      "name": "elemental",
+      "explanation": "Elemental realms.",
+      "entries": [
+        "{air}",
+        "{earth}",
+        "{water}",
+        "{fire}"
+      ]
+    },
+    {
+      "name": "air",
+      "explanation": "Air targets.",
+      "entries": [
+        "air",
+        "wind",
+        "scent"
+      ]
+    },
+    {
+      "name": "earth",
+      "explanation": "Earth targets.",
+      "entries": [
+        "stone",
+        "earth",
+        "pit"
+      ]
+    },
+    {
+      "name": "water",
+      "explanation": "Water targets.",
+      "entries": [
+        "water",
+        "drought"
+      ]
+    },
+    {
+      "name": "fire",
+      "explanation": "Fire targets.",
+      "entries": [
+        "fire"
+      ]
+    }
+  ]
+}

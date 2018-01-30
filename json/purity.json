@@ -127,12 +127,12 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary purity once rumoured to have existed.",
       "entries": [
         "{mythic impurity}",
         "{mythic purity}",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
@@ -156,19 +156,19 @@
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary purity once rumoured to have existed.",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "infernally {impure}",
         "divinely {pure}"
       ]
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary purity for fantasy worlds.",
+      "explanation": "Imaginary purity for fantasy (with no basis in myth).",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "{fantastic impurity}",
         "{fantastic purity}",
         "{rare fantasy}"
@@ -176,21 +176,21 @@
     },
     {
       "name": "fantastic impurity",
-      "explanation": "Imaginary impurity for fantasy worlds.",
+      "explanation": "Impurity for fantasy (with no basis in myth).",
       "entries": [
         "abyssally {impure}"
       ]
     },
     {
       "name": "fantastic purity",
-      "explanation": "Imaginary purity for fantasy worlds.",
+      "explanation": "Purity for fantasy (with no basis in myth).",
       "entries": [
         "unearthly {pure}"
       ]
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary purity for fantasy worlds.",
+      "explanation": "Rare purity for fantasy (with no basis in myth).",
       "entries": [
         "{fantasy}",
         "unnaturally {pure}"

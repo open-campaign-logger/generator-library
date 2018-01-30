@@ -1,0 +1,542 @@
+{
+  "name": "monster",
+  "resultPattern": "{result}",
+  "globals": {
+    "actant": "monster",
+    "actants": "monsters",
+    "actantgroup": "pack",
+    "actantaction": "on the prowl",
+    "actantadjective": "hideous",
+    "actantdescription": "The monster seems to be looking for soemthing to eat.",
+    "attitude": "hostile"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "monster table",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "Categorize monsters by type.",
+  "see": "animal, attack, citizen, complication, encounter, nonhuman",
+  "date": "2018-01-29",
+  "authors": "Esko Vesala.",
+  "sources": "D20SRD.org, DanDWiki.com, Wikia.com, Wikipedia.org",
+  "genre": "fantasy",
+  "categories": [
+    "monster"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{monster}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{health} {monster}",
+        "{adjective} {monster}",
+        "{health} {adjective} {monster}",
+        "{lib:creature_template} {monster}",
+        "{health} {lib:creature_template} {monster}",
+        "{monster} capable of a {lib:attack} attack",
+        "{health} {monster} capable of a {lib:attack} attack",
+        "{monster} {lib:complication#creature}",
+        "{health} {monster} {lib:complication#creature}"
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": []
+    },
+    {
+      "name": "monster",
+      "explanation": "Monsters by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common monster types.",
+      "entries": [
+        "{humanoid}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare monster types.",
+      "entries": [
+        "{vermin}"
+      ]
+    },
+    {
+      "**************************************************": "MONSTERS"
+    },
+    {
+      "name": "humanoid",
+      "explanation": "Monsters with the approximate shape of a human.",
+      "entries": [
+        "{crossbreed}",
+        "{troll}",
+        "{giant}"
+      ]
+    },
+    {
+      "name": "crossbreed",
+      "explanation": "Crossbred monsters.",
+      "entries": [
+        "half-ogre"
+      ]
+    },
+    {
+      "name": "troll",
+      "explanation": "Trollkin.",
+      "entries": [
+        "troll",
+        "cave troll"
+      ]
+    },
+    {
+      "name": "giant",
+      "explanation": "Giantkin.",
+      "entries": [
+        "ogre",
+        "giant",
+        "ettin",
+        "hill giant",
+        "stone giant",
+        "frost giant",
+        "fire giant",
+        "Firbolg",
+        "Fomorian giant",
+        "cyclops",
+        "storm giant",
+        "cloud giant"
+      ]
+    },
+    {
+      "name": "vermin",
+      "explanation": "Monstrous insects, worms, etc.",
+      "entries": [
+        "monster bug",
+        "monster rat"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Monsters once rumoured to have existed.",
+      "entries": [
+        "{halfhuman}",
+        "{mythic beast}",
+        "{fey}",
+        "{lycanthrope}",
+        "{spirit}",
+        "{undead}",
+        "{dragon}",
+        "{demonic}",
+        "{infernal}",
+        "{celestial}"
+      ]
+    },
+    {
+      "name": "halfhuman",
+      "explanation": "Composites of human and animal.",
+      "entries": [
+        "medusa",
+        "gorgon",
+        "centaur",
+        "lamia",
+        "naga"
+      ]
+    },
+    {
+      "name": "mythic beast",
+      "explanation": "Mythological animals.",
+      "entries": [
+        "gargoyle",
+        "catoblepas",
+        "unicorn",
+        "{chimerical}"
+      ]
+    },
+    {
+      "name": "chimerical",
+      "explanation": "Composites of several animals.",
+      "entries": [
+        "cockatrice",
+        "chimera",
+        "manticore"
+      ]
+    },
+    {
+      "name": "fey",
+      "explanation": "Faeries and other feyfolk.",
+      "entries": [
+        "fairy",
+        "sprite",
+        "sylph",
+        "fey",
+        "hag"
+      ]
+    },
+    {
+      "name": "lycanthrope",
+      "explanation": "Shapeshifters.",
+      "entries": [
+        "werewolf",
+        "werebear",
+        "wererat"
+      ]
+    },
+    {
+      "name": "spirit",
+      "explanation": "Dead creatures animated to unlife.",
+      "entries": [
+        "banshee",
+        "{incorporeal}",
+        "{djinni}"
+      ]
+    },
+    {
+      "name": "incorporeal",
+      "explanation": "Spirits of the dead.",
+      "entries": [
+        "ghost",
+        "phantom",
+        "wraith"
+      ]
+    },
+    {
+      "name": "djinni",
+      "explanation": "Djinnis and their kin.",
+      "entries": [
+        "efreeti",
+        "mephit",
+        "marid",
+        "djinni"
+      ]
+    },
+    {
+      "name": "undead",
+      "explanation": "Dead creatures animated to unlife.",
+      "entries": [
+        "{incorporeal}",
+        "{corporeal}"
+      ]
+    },
+    {
+      "name": "corporeal",
+      "explanation": "Dead creatures animated to unlife.",
+      "entries": [
+        "skeleton",
+        "mummy",
+        "revenant",
+        "wight",
+        "lich",
+        "{vampire}"
+      ]
+    },
+    {
+      "name": "vampire",
+      "explanation": "Vampiric undead.",
+      "entries": [
+        "vampire"
+      ]
+    },
+    {
+      "name": "dragon",
+      "explanation": "Dragonkin.",
+      "entries": [
+        "linnorm",
+        "wyvern",
+        "dragon",
+        "wyrm",
+        "tarasque"
+      ]
+    },
+    {
+      "name": "demonic",
+      "explanation": "Demons.",
+      "entries": [
+        "demon"
+      ]
+    },
+    {
+      "name": "infernal",
+      "explanation": "Denizens of the hells.",
+      "entries": [
+        "devil"
+      ]
+    },
+    {
+      "name": "celestial",
+      "explanation": "Denizens of the heavens.",
+      "entries": [
+        "angel",
+        "archangel",
+        "archon"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Monsters for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{ooze}",
+        "{magical beast}",
+        "{monstrous humanoid}",
+        "{avian}",
+        "{reptilian}",
+        "{amphibian}",
+        "{aberration}",
+        "{construct}",
+        "{elemental}",
+        "{outsider}"
+      ]
+    },
+    {
+      "name": "ooze",
+      "explanation": "Amorphous ooze and jelly creatures.",
+      "entries": [
+        "giant amoeba",
+        "blob",
+        "ooze",
+        "jelly",
+        "slime mold"
+      ]
+    },
+    {
+      "name": "magical beast",
+      "explanation": "Magic-imbued animals.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "monstrous humanoid",
+      "explanation": "Humanoid creature with monstrous features.",
+      "entries": [
+        "orc"
+      ]
+    },
+    {
+      "name": "avian",
+      "explanation": "Humanoid creature with bird-like features.",
+      "entries": [
+        "swan maiden",
+        "tengu",
+        "bird people",
+        "avian"
+      ]
+    },
+    {
+      "name": "reptilian",
+      "explanation": "Humanoid creature with reptile-like features.",
+      "entries": [
+        "serpent man",
+        "snakeman",
+        "lizardfolk",
+        "reptilian",
+        "saurian",
+        "draconian",
+        "lemurian"
+      ]
+    },
+    {
+      "name": "amphibian",
+      "explanation": "Humanoid creature with frog-like features.",
+      "entries": [
+        "frog folk"
+      ]
+    },
+    {
+      "name": "aberration",
+      "explanation": "Bizarre creatures.",
+      "entries": [
+        "mimic",
+        "will-o'-wisp"
+      ]
+    },
+    {
+      "name": "construct",
+      "explanation": "Artificial creatures.",
+      "entries": [
+        "homunculus",
+        "{golem}",
+        "{animated}"
+      ]
+    },
+    {
+      "name": "golem",
+      "explanation": "Golems.",
+      "entries": [
+        "clay golem",
+        "flesh golem",
+        "stone golem",
+        "iron golem"
+      ]
+    },
+    {
+      "name": "animated",
+      "explanation": "Animated items.",
+      "entries": [
+        "animated scarecrow",
+        "animated {lib:armor#metal}",
+        "animated {lib:weapon#melee}"
+      ]
+    },
+    {
+      "name": "elemental",
+      "explanation": "Elemental creatures.",
+      "entries": [
+        "{air elemental}",
+        "{water elemental}",
+        "{earth elemental}",
+        "{fire elemental}"
+      ]
+    },
+    {
+      "name": "air elemental",
+      "explanation": "Elemental creatures of air.",
+      "entries": [
+        "air elemental"
+      ]
+    },
+    {
+      "name": "water elemental",
+      "explanation": "Elemental creatures of water.",
+      "entries": [
+        "water elemental"
+      ]
+    },
+    {
+      "name": "earth elemental",
+      "explanation": "Elemental creatures of earth.",
+      "entries": [
+        "earth elemental"
+      ]
+    },
+    {
+      "name": "fire elemental",
+      "explanation": "Elemental creatures of fire.",
+      "entries": [
+        "salamander",
+        "fire elemental"
+      ]
+    },
+    {
+      "name": "outsider",
+      "explanation": "Extraplanar creatures from other states of existence.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Monsters for modern worlds.",
+      "entries": [
+        "{common}",
+        "{cryptid}"
+      ]
+    },
+    {
+      "name": "cryptid",
+      "explanation": "Creatures of cryptozoology.",
+      "entries": [
+        "yeti",
+        "sasquatch",
+        "chupacabra"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Monsters for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "{alien}"
+      ]
+    },
+    {
+      "name": "alien",
+      "explanation": "Extraterrestrial aliens.",
+      "entries": [
+        "little green man",
+        "alien",
+        "grey alien"
+      ]
+    },
+    {
+      "**************************************************": "AQUATIC"
+    },
+    {
+      "name": "sea",
+      "explanation": "Sea monsters.",
+      "entries": [
+        "{aquatic}",
+        "{piscine}"
+      ]
+    },
+    {
+      "name": "aquatic",
+      "explanation": "Aquatic monster types.",
+      "entries": [
+        "hydra",
+        "kraken",
+        "leviathan"
+      ]
+    },
+    {
+      "name": "piscine",
+      "explanation": "Humanoid creature with fish-like features.",
+      "entries": [
+        "merfolk",
+        "merrow",
+        "selkie",
+        "siren",
+        "triton",
+        "undine",
+        "rusalka"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL CASES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special monster tables.",
+      "entries": [
+        "{adjective}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives describing the monster.",
+      "entries": [
+        "vengeful",
+        "bloodthirsty",
+        "savage"
+      ]
+    }
+  ]
+}

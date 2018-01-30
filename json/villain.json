@@ -1,0 +1,516 @@
+{
+  "name": "villain",
+  "resultPattern": "{init}{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Randomized villains.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
+  "bugs": "",
+  "to do": "Categorize villains by type.",
+  "see": "actant, ally, Dungeon_adventure, hero, minion, scene",
+  "date": "2018-01-26",
+  "authors": "Esko Vesala.",
+  "sources": "Wikia.com",
+  "genre": "fantasy",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the villain parameters.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "actant": "villain"
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{villain}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective} {villain}",
+        "{villain} {complication}",
+        "{adjective} {villain} {complication}"
+      ]
+    },
+    {
+      "name": "villain",
+      "explanation": "Villain levels by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common villain levels.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{apprentice}",
+          "export": {
+            "difficulty": "apprentice",
+            "difficultydescription": "inexperienced adventurers"
+          }
+        },
+        {
+          "m": 2,
+          "v": "{journeyman}",
+          "export": {
+            "difficulty": "journeyman",
+            "difficultydescription": "adventurers with some experience"
+          }
+        },
+        {
+          "m": 3,
+          "v": "{master}",
+          "export": {
+            "difficulty": "master",
+            "difficultydescription": "experienced adventurers"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare villain levels.",
+      "entries": [
+        {
+          "m": 2,
+          "v": "{adept}",
+          "export": {
+            "difficulty": "adept",
+            "difficultydescription": "highly experienced adventurers"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{legend}",
+          "export": {
+            "difficulty": "legend",
+            "difficultydescription": "only the most experienced of adventurers"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "VILLAINS"
+    },
+    {
+      "name": "apprentice",
+      "explanation": "Enemies suitable to face apprentice adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "traitor",
+            "villainadjective": "scheming"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "madman",
+            "villainadjective": "ravening"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "cultist",
+            "villainadjective": "fanatical"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "dark mistress",
+            "villainadjective": "alluring"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "lycanthrope",
+            "villainadjective": "shapeshifting"
+          }
+        }
+      ]
+    },
+    {
+      "name": "journeyman",
+      "explanation": "Enemies suitable to face journeyman adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "slave lord",
+            "villainadjective": "cruel"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "false prophet",
+            "villainadjective": "mysterious"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "high priest",
+            "villainadjective": "blood-stained"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "ogre",
+            "villainadjective": "ravenous"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "cannibal king",
+            "villainadjective": "sharp-toothed"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "inquisitor",
+            "villainadjective": "sadistic"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "serpentman",
+            "villainadjective": "slithering"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "wight",
+            "villainadjective": "undead"
+          }
+        }
+      ]
+    },
+    {
+      "name": "master",
+      "explanation": "Enemies suitable to face master adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "general",
+            "villainadjective": "scheming"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "monstrosity",
+            "villainadjective": "inhuman"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "colossus",
+            "villainadjective": "hulking"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "abomination",
+            "villainadjective": "indescribable"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "faceless evil",
+            "villainadjective": "hellbound"
+          }
+        }
+      ]
+    },
+    {
+      "name": "adept",
+      "explanation": "Enemies suitable to face adept adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "phantom",
+            "villainadjective": "spectral"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "wizard",
+            "villainadjective": "dark"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "necromancer",
+            "villainadjective": "death-tainted"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "giant",
+            "villainadjective": "enormous"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "wyvern",
+            "villainadjective": "leather-winged"
+          }
+        }
+      ]
+    },
+    {
+      "name": "legend",
+      "explanation": "Enemies suitable to face legendary adventurers.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "lich",
+            "villainadjective": "long-dead"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "dragon",
+            "villainadjective": "scale-armored"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "wyrm",
+            "villainadjective": "ancient"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "demon lord",
+            "villainadjective": "hateful"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "villain": "old god",
+            "villainadjective": "forgotten"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Villains once rumoured to have existed.",
+      "entries": [
+        "hag",
+        "witch",
+        "Black Annis",
+        "Jenny Greenteeth",
+        "Baobhan Sith",
+        "kallikantzaros",
+        "döppelganger",
+        "adult changeling",
+        "lamia",
+        "vampire",
+        "vengeful ghost"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Villains for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "bandit",
+        "enchantress",
+        "diabolist",
+        "necromancer"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Villains for modern worlds.",
+      "entries": [
+        "{common}",
+        "drug trafficker",
+        "human trafficker",
+        "corrupt politician",
+        "mafioso",
+        "crime boss"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Villains for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL CASES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special villain types.",
+      "entries": [
+        "{adjective}",
+        "{substantive}",
+        "{strategy}",
+        "{goal}",
+        "{complication}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives describing the villain.",
+      "entries": [
+        "dark",
+        "mysterious",
+        "relentless",
+        "hateful",
+        "spiteful",
+        "sadistic",
+        "scheming",
+        "hostile",
+        "malevolent",
+        "evil",
+        "{rare adjective}"
+      ]
+    },
+    {
+      "name": "rare adjective",
+      "explanation": "",
+      "entries": [
+        "charismatic",
+        "ancient",
+        "vile",
+        "horned",
+        "elemental"
+      ]
+    },
+    {
+      "name": "substantive",
+      "explanation": "Substantives describing the villain.",
+      "entries": [
+        "scoundrel",
+        "thug",
+        "villain",
+        "blackguard",
+        "miscreant"
+      ]
+    },
+    {
+      "name": "strategy",
+      "explanation": "The villain's chosen approach.",
+      "entries": [
+        "survivalist",
+        "loner",
+        "maniac",
+        "strategist",
+        "manipulator",
+        "leader",
+        "mentor"
+      ]
+    },
+    {
+      "name": "goal",
+      "explanation": "The villain's goal.",
+      "entries": [
+        "gain wealth",
+        "gain power",
+        "achieve infamy",
+        "cause suffering",
+        "serve evil",
+        "dominate the world"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Complications for the villain.",
+      "entries": [
+        "who is slowly going insane",
+        "who knows that death is near",
+        "who is the only person that can help the heroes to reach their goal",
+        "turns out to be close to one of the heroes"
+      ]
+    }
+  ]
+}

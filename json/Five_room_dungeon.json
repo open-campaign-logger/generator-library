@@ -1,5 +1,5 @@
 {
-  "name": "5 Room Dungeon",
+  "name": "Five Room Dungeon",
   "resultPattern": "{HTML formatting}{difficulty}{milieu}{goal} {macguffin}{artifact}{treasure}{minion}{herald}{guardian}{monster}{beast}{traitor}{tempter}{shapeshifter}{trickster}{rival}{inhabitant}{captive}{mentor}{ally}{hindrance}{danger}{trap}{adventure description}",
   "variables": {
     "starttitle": "",
@@ -33,7 +33,7 @@
     "artifactdescription": "",
     "treasure": "",
     "treasuredescription": "",
-    "actor": "",
+    "actant": "",
     "attitude": "",
     "enemy": "",
     "enemies": "",
@@ -107,6 +107,12 @@
     "animalaction": "",
     "animaladjective": "",
     "animaldescription": "",
+    "plant": "",
+    "plants": "",
+    "plantgroup": "",
+    "plantaction": "",
+    "plantadjective": "",
+    "plantdescription": "",
     "captive": "",
     "captives": "",
     "captivegroup": "",
@@ -152,10 +158,9 @@
     "smell": "",
     "sound": "",
     "mineral": "",
-    "plant": "",
     "hook": "",
     "scene": "",
-    "encounter": "",
+    "beat": "",
     "resolution": "",
     "door": "",
     "doorfeature": "",
@@ -184,16 +189,16 @@
   },
   "explanation": "Five room dungeons.",
   "structure": "Produces dungeon descriptions based on the 'Five Room Dungeon' formula.",
-  "note": "",
-  "bugs": "The external synonym table call does not yet work.",
-  "to do": "Support for external motif files (requires global variables). More encounters!",
-  "see": "",
-  "date": "2017-12-03",
+  "note": "Forked into the Five_room_dungeon generator on 2018-01-04.",
+  "bugs": "",
+  "to do": "Support for external motif files (requires global variables). More beats!",
+  "see": "Dungeon_adventure, hook_line_and_sinker_adventure",
+  "date": "2018-01-16",
   "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
-  "sources": "RolePlayingTips.com",
+  "sources": "Dream Park: The Roleplaying Game, RolePlayingTips.com",
   "genre": "universal",
   "categories": [
-    "plot"
+    "story"
   ],
   "tables": [
     {
@@ -231,6 +236,9 @@
           }
         }
       ]
+    },
+    {
+      "***********************************************": "INTRO"
     },
     {
       "name": "adventure description",
@@ -322,7 +330,7 @@
       "name": "duration notice",
       "explanation": "A paragraph about the estimated duration of the adventure, based on the number of scenes.",
       "entries": [
-        "{var:para}[The duration of the adventure is estimated to be approximately {var:duration} minutes.] "
+        "{var:para}[The duration of the {lib:synonym#adventure} is estimated to be roughly {var:duration} minutes.] "
       ]
     },
     {
@@ -336,8 +344,11 @@
       "name": "difficulty notice",
       "explanation": "A paragraph describing the difficulty of the adventure.",
       "entries": [
-        "{var:startbold}Difficulty{var:endbold}: {var:difficulty}{var:para} (This mini adventure is best suited for {var:difficultydescription}). {var:para}"
+        "{var:startbold}Difficulty{var:endbold}: {var:difficulty}{var:para} (This {lib:synonym#small} {lib:synonym#adventure} is best suited for {var:difficultydescription}). {var:para}"
       ]
+    },
+    {
+      "**************************************************": "ENEMIES"
     },
     {
       "name": "difficulty",
@@ -369,9 +380,9 @@
         },
         {
           "m": 2,
-          "v": "{hero enemy}",
+          "v": "{adept enemy}",
           "set": {
-            "difficulty": "hero",
+            "difficulty": "adept",
             "difficultydescription": "highly experienced adventurers"
           }
         },
@@ -393,7 +404,7 @@
           "m": 1,
           "v": "{enemy level}",
           "set": {
-            "actor": "enemy"
+            "actant": "enemy"
           }
         }
       ]
@@ -405,7 +416,7 @@
         "{apprentice enemy}",
         "{journeyman enemy}",
         "{master enemy}",
-        "{hero enemy}",
+        "{adept enemy}",
         "{legend enemy}"
       ]
     },
@@ -588,7 +599,7 @@
       ]
     },
     {
-      "name": "hero enemy",
+      "name": "adept enemy",
       "explanation": "Enemies suitable to face heroic adventurers.",
       "entries": [
         {
@@ -680,15 +691,49 @@
       ]
     },
     {
-      "name": "milieu",
-      "explanation": "The general environment of the adventure location.",
+      "name": "enemy adjective",
+      "explanation": "",
       "entries": [
+        "dark",
+        "mysterious",
+        "ancient",
+        "vile",
+        "horned",
+        "elemental"
+      ]
+    },
+    {
+      "**************************************************": "MILIEU"
+    },
+    {
+      "name": "milieu",
+      "explanation": "The general environment of the location types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common milieu types.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{indoor location}",
+          "set": {
+            "milieu": "indoor",
+            "milieudescription": "indoors"
+          }
+        },
         {
           "m": 1,
           "v": "{urban location}",
           "set": {
             "milieu": "urban",
-            "milieudescription": ""
+            "milieudescription": "urban area"
           }
         },
         {
@@ -696,7 +741,7 @@
           "v": "{suburban location}",
           "set": {
             "milieu": "suburban",
-            "milieudescription": ""
+            "milieudescription": "suburban area"
           }
         },
         {
@@ -704,15 +749,15 @@
           "v": "{rural location}",
           "set": {
             "milieu": "rural",
-            "milieudescription": ""
+            "milieudescription": "rural area"
           }
         },
         {
           "m": 1,
-          "v": "{fortified location}",
+          "v": "{outpost location}",
           "set": {
-            "milieu": "fortified",
-            "milieudescription": ""
+            "milieu": "outpost",
+            "milieudescription": "far reaches of civilization"
           }
         },
         {
@@ -720,15 +765,7 @@
           "v": "{grassland location}",
           "set": {
             "milieu": "grassland",
-            "milieudescription": ""
-          }
-        },
-        {
-          "m": 1,
-          "v": "{tundra location}",
-          "set": {
-            "milieu": "tundra",
-            "milieudescription": ""
+            "milieudescription": "plains"
           }
         },
         {
@@ -736,31 +773,15 @@
           "v": "{forest location}",
           "set": {
             "milieu": "forest",
-            "milieudescription": ""
+            "milieudescription": "forested area"
           }
         },
         {
           "m": 1,
-          "v": "{rainforest location}",
+          "v": "{hill location}",
           "set": {
-            "milieu": "rainforest",
-            "milieudescription": ""
-          }
-        },
-        {
-          "m": 1,
-          "v": "{savanna location}",
-          "set": {
-            "milieu": "savanna",
-            "milieudescription": ""
-          }
-        },
-        {
-          "m": 1,
-          "v": "{desert location}",
-          "set": {
-            "milieu": "desert",
-            "milieudescription": ""
+            "milieu": "hill",
+            "milieudescription": "hilly area"
           }
         },
         {
@@ -768,7 +789,7 @@
           "v": "{mountain location}",
           "set": {
             "milieu": "mountain",
-            "milieudescription": ""
+            "milieudescription": "mountainous area"
           }
         },
         {
@@ -776,7 +797,7 @@
           "v": "{river location}",
           "set": {
             "milieu": "river",
-            "milieudescription": ""
+            "milieudescription": "river"
           }
         },
         {
@@ -784,7 +805,7 @@
           "v": "{lake location}",
           "set": {
             "milieu": "lake",
-            "milieudescription": ""
+            "milieudescription": "lake"
           }
         },
         {
@@ -792,7 +813,7 @@
           "v": "{wetlands location}",
           "set": {
             "milieu": "wetlands",
-            "milieudescription": ""
+            "milieudescription": "wetlands"
           }
         },
         {
@@ -800,31 +821,53 @@
           "v": "{coastal location}",
           "set": {
             "milieu": "coastal",
-            "milieudescription": ""
+            "milieudescription": "coastal area"
           }
-        },
+        }
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare milieu types.",
+      "entries": [
         {
           "m": 1,
           "v": "{naval location}",
           "set": {
             "milieu": "naval",
-            "milieudescription": ""
+            "milieudescription": "sea"
           }
         },
         {
           "m": 1,
-          "v": "{glacial location}",
+          "v": "{tundra location}",
           "set": {
-            "milieu": "glacial",
-            "milieudescription": ""
+            "milieu": "tundra",
+            "milieudescription": "tundra"
           }
         },
         {
           "m": 1,
-          "v": "{underwater location}",
+          "v": "{rainforest location}",
           "set": {
-            "milieu": "underwater",
-            "milieudescription": ""
+            "milieu": "rainforest",
+            "milieudescription": "rainforest"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{savanna location}",
+          "set": {
+            "milieu": "savanna",
+            "milieudescription": "savanna"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{desert location}",
+          "set": {
+            "milieu": "desert",
+            "milieudescription": "desert"
           }
         },
         {
@@ -832,15 +875,37 @@
           "v": "{underground location}",
           "set": {
             "milieu": "underground",
-            "milieudescription": ""
+            "milieudescription": "underground area"
           }
-        },
+        }
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special milieu types (not produced by random).",
+      "entries": [
         {
           "m": 1,
           "v": "{volcanic location}",
           "set": {
             "milieu": "volcanic",
-            "milieudescription": ""
+            "milieudescription": "volcanic area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{glacial location}",
+          "set": {
+            "milieu": "glacial",
+            "milieudescription": "glacial area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{underwater location}",
+          "set": {
+            "milieu": "underwater",
+            "milieudescription": "underwater"
           }
         },
         {
@@ -848,7 +913,7 @@
           "v": "{air location}",
           "set": {
             "milieu": "air",
-            "milieudescription": ""
+            "milieudescription": "air"
           }
         },
         {
@@ -856,7 +921,7 @@
           "v": "{space location}",
           "set": {
             "milieu": "space",
-            "milieudescription": ""
+            "milieudescription": "space"
           }
         },
         {
@@ -864,7 +929,29 @@
           "v": "{planar location}",
           "set": {
             "milieu": "planar",
-            "milieudescription": ""
+            "milieudescription": "extraplanar area"
+          }
+        }
+      ]
+    },
+    {
+      "name": "indoor location",
+      "explanation": "Locations inside buildings.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "hall",
+            "locationdescription": "a hall built inside the city walls, where few have entered and even fewer returned"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "chamber",
+            "locationdescription": "a mysterious chamber where bypassers suspect something strange is going on"
           }
         }
       ]
@@ -950,30 +1037,6 @@
             "location": "prison",
             "locationdescription": "an old prison building in a sparsely populated area"
           }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "tomb",
-            "locationdescription": "a tomb where dwells something that is not quite dead"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "grave",
-            "locationdescription": "a disturbed burial site"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "location": "labyrinth",
-            "locationdescription": "a labyrinth built in a bygone age"
-          }
         }
       ]
     },
@@ -981,6 +1044,14 @@
       "name": "rural location",
       "explanation": "Locations in the countryside.",
       "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "village",
+            "locationdescription": "a country villge"
+          }
+        },
         {
           "m": 1,
           "v": "",
@@ -1008,23 +1079,23 @@
       ]
     },
     {
-      "name": "fortified location",
-      "explanation": "Locations in castles and other fortifications.",
+      "name": "outpost location",
+      "explanation": "Locations in outposts, such as camps and fortifications.",
       "entries": [
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "castle",
-            "locationdescription": "a foreboding castle"
+            "location": "camp",
+            "locationdescription": "a temporary camp"
           }
         },
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "fortress",
-            "locationdescription": "a fortress built to guard an ancient kingdom from its already forgotten enemies"
+            "location": "encampment",
+            "locationdescription": "an encampment"
           }
         },
         {
@@ -1039,6 +1110,14 @@
           "m": 1,
           "v": "",
           "set": {
+            "location": "tower",
+            "locationdescription": "a lone, imposing tower"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
             "location": "keep",
             "locationdescription": "a lone keep built to guard the surrounding lands"
           }
@@ -1047,8 +1126,40 @@
           "m": 1,
           "v": "",
           "set": {
-            "location": "tower",
-            "locationdescription": "a lone, imposing tower"
+            "location": "stronghold",
+            "locationdescription": "a small fortress"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "fortification",
+            "locationdescription": "a makeshift fortress"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "fort",
+            "locationdescription": "a temporary fortress built from logs"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "fortress",
+            "locationdescription": "a fortress built to guard an ancient kingdom from its already forgotten enemies"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "castle",
+            "locationdescription": "a foreboding castle"
           }
         }
       ]
@@ -1102,6 +1213,14 @@
             "location": "wasteland",
             "locationdescription": "an uninhabited wasteland in the wilderness"
           }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "plain of dwarf shrubs",
+            "locationdescription": "treeless landscape with only small shrubs, moss and lichen growing on the ground"
+          }
         }
       ]
     },
@@ -1135,6 +1254,14 @@
           "m": 1,
           "v": "",
           "set": {
+            "location": "rainforest floor",
+            "locationdescription": "sparse soil shadowed by a thick canopy of trees and other vegetation"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
             "location": "jungle",
             "locationdescription": "a dense jungle teeming with life"
           }
@@ -1145,6 +1272,22 @@
       "name": "savanna location",
       "explanation": "Locations in the tropical grasslands.",
       "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "grass plain",
+            "locationdescription": "a grassy plain with sparse trees"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "outcrop of rocks",
+            "locationdescription": "an isolated hill of jumbled rocks"
+          }
+        },
         {
           "m": 1,
           "v": "",
@@ -1163,8 +1306,46 @@
           "m": 1,
           "v": "",
           "set": {
+            "location": "sand dunes",
+            "locationdescription": "hills formed from sand"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
             "location": "oasis",
-            "locationdescription": "an oasis in the middle of the desert"
+            "locationdescription": "a watering hole in the middle of the desert"
+          }
+        }
+      ]
+    },
+    {
+      "name": "hill location",
+      "explanation": "Locations in the hills.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "dell",
+            "locationdescription": "secluded hollow between hills"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "hillside",
+            "locationdescription": "side of a hill"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "hilltop",
+            "locationdescription": "top of a hill"
           }
         }
       ]
@@ -1210,6 +1391,14 @@
             "location": "ford",
             "locationdescription": "a ford in a stream"
           }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "river delta",
+            "locationdescription": "slow-moving stream entering a larger body of water"
+          }
         }
       ]
     },
@@ -1217,6 +1406,14 @@
       "name": "lake location",
       "explanation": "Locations on still freshwater (lakes, ponds, etc).",
       "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "lakeshore",
+            "locationdescription": "the shore of a lake"
+          }
+        },
         {
           "m": 1,
           "v": "",
@@ -1298,6 +1495,22 @@
             "location": "ship",
             "locationdescription": "a ship sailing to a far-off lands"
           }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "island",
+            "locationdescription": "a small island in the middle of a sea"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "open sea",
+            "locationdescription": "sea with no land on sight"
+          }
         }
       ]
     },
@@ -1305,6 +1518,38 @@
       "name": "glacial location",
       "explanation": "Locations on snow and ice covered areas.",
       "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "ice field",
+            "locationdescription": "floating sheets of ice"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "iceberg",
+            "locationdescription": "a floating mountain of ice"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "glacier",
+            "locationdescription": "ice-covered, sparse wilderness"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "snow mountain",
+            "locationdescription": "snow-covered mountainside"
+          }
+        },
         {
           "m": 1,
           "v": "",
@@ -1323,8 +1568,16 @@
           "m": 1,
           "v": "",
           "set": {
-            "location": "coral reef",
-            "locationdescription": "a colorful coral reef in the depths of the ocean"
+            "location": "underwater",
+            "locationdescription": "the depths of the ocean"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "sea bottom",
+            "locationdescription": "bottom of the sea"
           }
         }
       ]
@@ -1361,6 +1614,38 @@
           "m": 1,
           "v": "",
           "set": {
+            "location": "tomb",
+            "locationdescription": "a tomb where dwells something that is not quite dead"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "crypt",
+            "locationdescription": "an underground burial chamber"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "grave",
+            "locationdescription": "a disturbed burial site"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "labyrinth",
+            "locationdescription": "a labyrinth built in a bygone age"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
             "location": "vault",
             "locationdescription": "a vault that is rumoured to contain {var:treasure}"
           }
@@ -1370,7 +1655,7 @@
           "v": "",
           "set": {
             "location": "dungeon",
-            "locationdescription": "a notorious dungeon complex"
+            "locationdescription": "an underground dungeon complex"
           }
         },
         {
@@ -1399,7 +1684,55 @@
           "m": 1,
           "v": "",
           "set": {
-            "location": "crater",
+            "location": "hardened lava field",
+            "locationdescription": "an uneven field of cooled down and hardened lava"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "hot spring",
+            "locationdescription": "a spring filled with steamy, hot water"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "geyser",
+            "locationdescription": "a spring that intermittently discharges hot water and steam"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "caldera",
+            "locationdescription": "a circular depression surrounded by steep cliffs"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "shield volcano",
+            "locationdescription": "a mountain with multiple vents emiting flowing lava"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "active volcano",
+            "locationdescription": "a smoke-bellowing mountain"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "volcano crater",
             "locationdescription": "a crater on top of a smoke-bellowing mountain"
           }
         }
@@ -1413,8 +1746,16 @@
           "m": 1,
           "v": "",
           "set": {
-            "location": "cloud castle",
-            "locationdescription": "a castle built in the clouds"
+            "location": "up in the sky",
+            "locationdescription": "high above the ground"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "cloudscape",
+            "locationdescription": "a thick blanket of clouds"
           }
         }
       ]
@@ -1423,6 +1764,14 @@
       "name": "space location",
       "explanation": "Locations in outer space.",
       "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "empty space",
+            "locationdescription": "the cold emptiness of space"
+          }
+        },
         {
           "m": 1,
           "v": "",
@@ -1437,6 +1786,14 @@
       "name": "planar location",
       "explanation": "Locations in other planes of existence.",
       "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "location": "astral plane",
+            "locationdescription": "a swirling etheral mass of vivid colors"
+          }
+        },
         {
           "m": 1,
           "v": "",
@@ -1476,6 +1833,9 @@
         "demon-infested",
         "haunted"
       ]
+    },
+    {
+      "**************************************************": "GOAL"
     },
     {
       "name": "goal",
@@ -1628,8 +1988,11 @@
       ]
     },
     {
+      "**************************************************": "MACGUFFIN"
+    },
+    {
       "name": "macguffin",
-      "explanation": "",
+      "explanation": "The object that draws the characters into the adventure.",
       "entries": [
         {
           "m": 1,
@@ -1691,6 +2054,9 @@
       ]
     },
     {
+      "**************************************************": "TREASURE"
+    },
+    {
       "name": "treasure",
       "explanation": "",
       "entries": [
@@ -1741,16 +2107,7 @@
       ]
     },
     {
-      "name": "enemy adjective",
-      "explanation": "",
-      "entries": [
-        "dark",
-        "mysterious",
-        "ancient",
-        "vile",
-        "horned",
-        "elemental"
-      ]
+      "**************************************************": "NPCs"
     },
     {
       "name": "herald",
@@ -2023,19 +2380,6 @@
       ]
     },
     {
-      "name": "inhabitant",
-      "explanation": "Neutral persons that live in the area.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "inhabitant": "gnome"
-          }
-        }
-      ]
-    },
-    {
       "name": "captive",
       "explanation": "",
       "entries": [
@@ -2082,6 +2426,19 @@
       ]
     },
     {
+      "name": "inhabitant",
+      "explanation": "Neutral persons that live in the area.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "set": {
+            "inhabitant": "gnome"
+          }
+        }
+      ]
+    },
+    {
       "name": "mentor",
       "explanation": "Characters that can teach something.",
       "entries": [
@@ -2119,6 +2476,9 @@
           }
         }
       ]
+    },
+    {
+      "**************************************************": "ENVIRONMENT"
     },
     {
       "name": "danger",
@@ -2276,7 +2636,7 @@
           "set": {
             "trap": "boulder trap",
             "trapaction": "a huge boulder falls down, hitting everyone near",
-            "trapdescription": "an enormous rock is precariously balanced above"
+            "trapdescription": "an enormous rock precariously balanced above"
           }
         }
       ]
@@ -2546,6 +2906,9 @@
       ]
     },
     {
+      "**************************************************": "CLASSIC 5RD"
+    },
+    {
       "name": "room 1",
       "explanation": "There needs to be a reason why your dungeon hasn't been plundered before or why the PCs are the heroes for the job. A guardian or challenge at the entrance is a good justification why the location remains intact. Also, a guardian sets up early action to capture player interest and energize a session.",
       "entries": [
@@ -2594,7 +2957,8 @@
       "entries": [
         "ceremony",
         "command word",
-        "key"
+        "rusty iron key",
+        "small silver key"
       ]
     },
     {
@@ -2651,7 +3015,7 @@
       ]
     },
     {
-      "name": "flavor",
+      "name": "flavoring",
       "explanation": "Insignificant events that bring flavor to the setting.",
       "entries": [
         "Something insignificant but flavorful is experienced. "
@@ -2669,7 +3033,7 @@
     },
     {
       "name": "room 2",
-      "explanation": "The PCs are victorious over the challenge of the first room and are now presented with a trial that cannot be solved with steel. This keeps problem solvers in your group happy and breaks the action up for good pacing. Make Room Two a puzzle, skill-based, or roleplaying encounter, if possible. Room Two should shine the limelight on different PCs than Room One, change gameplay up, and offer variety between the challenge at the entrance and the challenge at the end. Note, if Room One was this type of encounter, then feel free to make Room Two combat-oriented. Room Two should allow for multiple solutions to prevent the game from stalling. Add clues to room 1!",
+      "explanation": "The PCs are victorious over the challenge of the first room and are now presented with a trial that cannot be solved with steel. This keeps problem solvers in your group happy and breaks the action up for good pacing. Make Room Two a puzzle, skill-based, or roleplaying beat, if possible. Room Two should shine the limelight on different PCs than Room One, change gameplay up, and offer variety between the challenge at the entrance and the challenge at the end. Note, if Room One was this type of beat, then feel free to make Room Two combat-oriented. Room Two should allow for multiple solutions to prevent the game from stalling. Add clues to room 1!",
       "entries": [
         {
           "m": 1,
@@ -2727,7 +3091,7 @@
     },
     {
       "name": "room 3",
-      "explanation": "The purpose of this room is to build tension. Do this using a trick, trap, or setback. For example, after defeating a tough monster, and players think they've finally found the treasure and achieved their goal, they learn they've been tricked and the room is a false crypt. Depending on your game system, use this room to cater to any player or character types not yet served by the first two areas. Alternatively, give your group a double-dose of gameplay that they enjoy the most, such as more combat or roleplaying. Another potential payoff for Room Three is to weaken the PCs as build-up to a dramatic struggle in Room Four. It might contain a tough combat encounter, take down a key defense, exhaust an important resource, or make the party susceptible to a certain type of attack. For example, if Room Four contains a mummy whose secret weakness is fire, then make Room Three a troll lair (or another creature susceptible to fire) so the PCs might be tempted to burn off a lot of their fire magic, oil, and other flammable resources. This would turn a plain old troll battle into a gotcha once the PCs hit Room Four and realize the are out of fire resources. Don't forget to dress Room Three up with your theme elements!",
+      "explanation": "The purpose of this room is to build tension. Do this using a trick, trap, or setback. For example, after defeating a tough monster, and players think they've finally found the treasure and achieved their goal, they learn they've been tricked and the room is a false crypt. Depending on your game system, use this room to cater to any player or character types not yet served by the first two areas. Alternatively, give your group a double-dose of gameplay that they enjoy the most, such as more combat or roleplaying. Another potential payoff for Room Three is to weaken the PCs as build-up to a dramatic struggle in Room Four. It might contain a tough combat beat, take down a key defense, exhaust an important resource, or make the party susceptible to a certain type of attack. For example, if Room Four contains a mummy whose secret weakness is fire, then make Room Three a troll lair (or another creature susceptible to fire) so the PCs might be tempted to burn off a lot of their fire magic, oil, and other flammable resources. This would turn a plain old troll battle into a gotcha once the PCs hit Room Four and realize the are out of fire resources. Don't forget to dress Room Three up with your theme elements!",
       "entries": [
         {
           "m": 1,
@@ -2759,9 +3123,9 @@
         },
         {
           "m": 1,
-          "v": "{room init}{var:para} {combat encounter}",
+          "v": "{room init}{var:para} {combat beat}",
           "set": {
-            "room 3": "combat encounter"
+            "room 3": "combat beat"
           }
         }
       ]
@@ -2793,7 +3157,7 @@
       "name": "setback room",
       "explanation": "",
       "entries": [
-        "A collapsed structure blocks part of the area. The debris is dangerous and blocks {blocked area}.",
+        "A collapsed structure blocks part of the {lib:synonym#room}. The debris is dangerous and blocks {blocked area}.",
         "{one way exit} leading back to room 1."
       ]
     },
@@ -2868,7 +3232,7 @@
     },
     {
       "name": "room 4",
-      "explanation": "This room is The Big Show. It's the final combat or conflict encounter of the dungeon. Use all the tactics you can summon to make this encounter memorable and entertaining. As always, generate interesting terrain that will impact the battle!",
+      "explanation": "This room is The Big Show. It's the final combat or conflict beat of the dungeon. Use all the tactics you can summon to make this beat memorable and entertaining. As always, generate interesting terrain that will impact the battle!",
       "entries": [
         {
           "m": 1,
@@ -2924,7 +3288,7 @@
       "explanation": "",
       "entries": [
         "The {var:enemy} is here and has unexpected {capabilities}.",
-        "The {var:enemy} is here, but the area is trapped. The {var:enemy} {trap ability}."
+        "The {var:enemy} is here, but the {lib:synonym#room} is trapped. The {var:enemy} {trap ability}."
       ]
     },
     {
@@ -2949,7 +3313,7 @@
       "name": "conflict",
       "explanation": "",
       "entries": [
-        "A variety of skills and talents are required to successfully complete the encounter."
+        "A variety of skills and talents are required to successfully complete the beat."
       ]
     },
     {
@@ -2957,7 +3321,7 @@
       "explanation": "",
       "entries": [
         "The {var:enemy} needs to stall for time to {reason to stall}.",
-        "Combat ends with the {var:enemy} bleeding to death and a few short words can be exchanged.",
+        "A victorious combat ends with the {var:enemy} bleeding to death and a few short words can be exchanged.",
         "There is a helpless {var:captivegroup} to roleplay with once the threat is dealt with."
       ]
     },
@@ -3081,6 +3445,9 @@
       ]
     },
     {
+      "**************************************************": "ROOMS"
+    },
+    {
       "name": "room init",
       "explanation": "Initializing the room parameters.",
       "entries": [
@@ -3091,8 +3458,8 @@
       "name": "room description",
       "explanation": "Details of the dungeon room.",
       "entries": [
-        "This is a {var:roomsize}, {var:roomshape} {var:roomtype}. The space {var:roomdescription}. ",
-        "The space is a {var:roomsize}, {var:roomshape} {var:roomtype}. The area {var:roomdescription}. {var:roomcontents} "
+        "This is a {var:roomsize}, {var:roomshape} {var:roomtype}. The {lib:synonym#room} {var:roomdescription}. ",
+        "The {lib:synonym#room} is a {var:roomsize}, {var:roomshape} {var:roomtype}. The {lib:synonym#room} {var:roomdescription}. {var:roomcontents} "
       ]
     },
     {
@@ -3284,7 +3651,7 @@
           "m": 1,
           "v": "",
           "set": {
-            "roomshape": "irregular polygon shaped"
+            "roomshape": "irregular, polygon-shaped"
           }
         }
       ]
@@ -3559,7 +3926,7 @@
           "v": "",
           "set": {
             "roompurpose": "giant astrolabe",
-            "roomdescription": "appears like a giant astrolabe",
+            "roomdescription": "appears to be like a giant astrolabe",
             "roomcontents": "There are astrological books and equipment strewn around."
           }
         },
@@ -3709,7 +4076,7 @@
           "v": "",
           "set": {
             "roompurpose": "giant astrolabe",
-            "roomdescription": "appears like a giant astrolabe",
+            "roomdescription": "appears to be like a giant astrolabe",
             "roomcontents": "There are astrological books and equipment strewn around."
           }
         },
@@ -3875,8 +4242,11 @@
       ]
     },
     {
+      "**************************************************": "ANIMALS"
+    },
+    {
       "name": "animal",
-      "explanation": "Animals encountered in dungeons to add some color.",
+      "explanation": "Animals encontered in dungeons to add some color.",
       "entries": [
         {
           "m": 1,
@@ -3936,6 +4306,9 @@
         "{lib:plant#moss}",
         "slime"
       ]
+    },
+    {
+      "***********************************************": "ADVENTURE STRUCTURE"
     },
     {
       "name": "adventure structure",
@@ -4041,6 +4414,9 @@
       ]
     },
     {
+      "**************************************************": "SCENES"
+    },
+    {
       "name": "hook",
       "explanation": "How the protagonists get involved in the adventure.",
       "entries": [
@@ -4073,9 +4449,9 @@
       "entries": [
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} The {adventurer} has been taken as prisoners. ",
+          "v": "{var:beat}{var:endheading} The {adventurer} has been taken as prisoners. ",
           "set": {
-            "encounter": "kidnapped"
+            "beat": "kidnapped"
           }
         },
         {
@@ -4100,9 +4476,9 @@
       "entries": [
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} The {adventurer} has no recollection of how they have ended up here.",
+          "v": "{var:beat}{var:endheading} The {adventurer} has no recollection of how they have ended up here.",
           "set": {
-            "encounter": "memory loss"
+            "beat": "memory loss"
           }
         },
         {
@@ -4116,7 +4492,7 @@
     },
     {
       "name": "scene",
-      "explanation": "Help table for generating a completely random encounter. Usually the encounter subtables are called directly.",
+      "explanation": "Help table for generating a completely random beat. Usually the beat subtables are called directly.",
       "entries": [
         {
           "m": 1,
@@ -4154,44 +4530,44 @@
       "entries": [
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {combat encounter}",
+          "v": "{var:beat}{var:endheading} {combat beat}",
           "set": {
-            "encounter": "combat"
+            "beat": "combat"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {trap encounter}",
+          "v": "{var:beat}{var:endheading} {trap beat}",
           "set": {
-            "encounter": "trap"
+            "beat": "trap"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {hazard encounter}",
+          "v": "{var:beat}{var:endheading} {hazard beat}",
           "set": {
-            "encounter": "hazard"
+            "beat": "hazard"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {trial encounter}",
+          "v": "{var:beat}{var:endheading} {trial beat}",
           "set": {
-            "encounter": "trial"
+            "beat": "trial"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {competition encounter}",
+          "v": "{var:beat}{var:endheading} {competition beat}",
           "set": {
-            "encounter": "competition"
+            "beat": "competition"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {rescue encounter}",
+          "v": "{var:beat}{var:endheading} {rescue beat}",
           "set": {
-            "encounter": "rescue"
+            "beat": "rescue"
           }
         }
       ]
@@ -4209,44 +4585,44 @@
       "entries": [
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {betrayal encounter}",
+          "v": "{var:beat}{var:endheading} {betrayal beat}",
           "set": {
-            "encounter": "betrayal"
+            "beat": "betrayal"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {setback encounter}",
+          "v": "{var:beat}{var:endheading} {setback beat}",
           "set": {
-            "encounter": "setback"
+            "beat": "setback"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {hindrance encounter}",
+          "v": "{var:beat}{var:endheading} {hindrance beat}",
           "set": {
-            "encounter": "hindrance"
+            "beat": "hindrance"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {trick encounter}",
+          "v": "{var:beat}{var:endheading} {trick beat}",
           "set": {
-            "encounter": "trick"
+            "beat": "trick"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {information encounter}",
+          "v": "{var:beat}{var:endheading} {information beat}",
           "set": {
-            "encounter": "information"
+            "beat": "information"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {help encounter}",
+          "v": "{var:beat}{var:endheading} {help beat}",
           "set": {
-            "encounter": "help"
+            "beat": "help"
           }
         }
       ]
@@ -4260,34 +4636,34 @@
     },
     {
       "name": "mood scene type",
-      "explanation": "Encounters for atmosphere and roleplaying.",
+      "explanation": "Beats for atmosphere and roleplaying.",
       "entries": [
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {distraction encounter}",
+          "v": "{var:beat}{var:endheading} {distraction beat}",
           "set": {
-            "encounter": "distraction"
+            "beat": "distraction"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {sidetrack encounter}",
+          "v": "{var:beat}{var:endheading} {sidetrack beat}",
           "set": {
-            "encounter": "sidetrack"
+            "beat": "sidetrack"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {flavor encounter}",
+          "v": "{var:beat}{var:endheading} {flavor beat}",
           "set": {
-            "encounter": "flavor"
+            "beat": "flavor"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} {resource encounter}",
+          "v": "{var:beat}{var:endheading} {resource beat}",
           "set": {
-            "encounter": "resource"
+            "beat": "resource"
           }
         }
       ]
@@ -4332,9 +4708,9 @@
       "entries": [
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} A great battle againts the {var:enemy} and the {var:minions} ensues. The result will determine the final fate of everyone involved! ",
+          "v": "{var:beat}{var:endheading} A great battle againts the {var:enemy} and the {var:minions} ensues. The result will determine the final fate of everyone involved! ",
           "set": {
-            "encounter": "final battle"
+            "beat": "final battle"
           }
         }
       ]
@@ -4352,9 +4728,9 @@
       "entries": [
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} The truth about the {var:target} is finally revealed! ",
+          "v": "{var:beat}{var:endheading} The truth about the {var:target} is finally revealed! ",
           "set": {
-            "encounter": "final revelation"
+            "beat": "final revelation"
           }
         }
       ]
@@ -4372,160 +4748,163 @@
       "entries": [
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} Everything turns out fine. ",
+          "v": "{var:beat}{var:endheading} Everything turns out fine. ",
           "set": {
-            "encounter": "happy ending"
+            "beat": "happy ending"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} The {var:enemy} is dead and cannot threaten anyone anymore. ",
+          "v": "{var:beat}{var:endheading} The {var:enemy} is dead and cannot threaten anyone anymore. ",
           "set": {
-            "encounter": "villain dies"
+            "beat": "villain dies"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} The {var:enemy} gives up and surrenders to the {adventurer}.",
+          "v": "{var:beat}{var:endheading} The {var:enemy} gives up and surrenders to the {adventurer}.",
           "set": {
-            "encounter": "villain surrenders"
+            "beat": "villain surrenders"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} The {var:enemy} manages to flee from the {adventurer}. ",
+          "v": "{var:beat}{var:endheading} The {var:enemy} manages to flee from the {adventurer}. ",
           "set": {
-            "encounter": "villain escapes"
+            "beat": "villain escapes"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} The {var:enemy} manages to capture the {adventurer}. Will they ever be able to escape? That is a different story... ",
+          "v": "{var:beat}{var:endheading} The {var:enemy} manages to capture the {adventurer}. Will they ever be able to escape? That is a different story... ",
           "set": {
-            "encounter": "heroes captured"
+            "beat": "heroes captured"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} The {var:enemy} attempts to capture the {adventurer}, but they still have a slim chance of escape! ",
+          "v": "{var:beat}{var:endheading} The {var:enemy} attempts to capture the {adventurer}, but they still have a slim chance of escape! ",
           "set": {
-            "encounter": "heroes escape"
+            "beat": "heroes escape"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} A shocking turn takes the {adventurer} by surprise. What will they do? That is a different story... ",
+          "v": "{var:beat}{var:endheading} A shocking turn takes the {adventurer} by surprise. What will they do? That is a different story... ",
           "set": {
-            "encounter": "cliffhanger"
+            "beat": "cliffhanger"
           }
         },
         {
           "m": 1,
-          "v": "{var:encounter}{var:endheading} A menace much greater than anyone anticipated is revealed! ",
+          "v": "{var:beat}{var:endheading} A menace much greater than anyone anticipated is revealed! ",
           "set": {
-            "encounter": "greater threat"
+            "beat": "greater threat"
           }
         }
       ]
     },
     {
-      "name": "hook encounter",
-      "explanation": "Encounters solely for starting the adventure.",
+      "**************************************************": "BEATS"
+    },
+    {
+      "name": "hook beat",
+      "explanation": "Beats solely for starting the adventure.",
       "entries": [
         "Hook: XXX"
       ]
     },
     {
-      "name": "combat encounter",
-      "explanation": "Encounters with hostile creatures (guardian, minion, monster, beast, rival, etc.)",
+      "name": "combat beat",
+      "explanation": "Beats with hostile creatures (guardian, minion, monster, beast, rival, etc.)",
       "entries": [
-        "This is the lair of a {hostile actor}.",
-        "A {hostile actor} is waiting here, ready to attack."
+        "This is the lair of a {hostile actant}.",
+        "A {hostile actant} is waiting here, ready to attack."
       ]
     },
     {
-      "name": "betrayal encounter",
-      "explanation": "Encounters where the adventurers are betrayed (traitor, shapeshifter, tempter, trickster, etc).",
+      "name": "betrayal beat",
+      "explanation": "Beats where the adventurers are betrayed (traitor, shapeshifter, tempter, trickster, etc).",
       "entries": [
-        "A {deceptive actor} needs help."
+        "A {deceptive actant} needs help."
       ]
     },
     {
-      "name": "trap encounter",
-      "explanation": "Encounters with traps.",
+      "name": "trap beat",
+      "explanation": "Beats with traps.",
       "entries": [
         "{trap} A {var:trap} has been set here. (A successful inspection would reveal {var:trapdescription}. If the {adventurer} fails to detect and defuse the trap, {var:trapaction}). "
       ]
     },
     {
-      "name": "hazard encounter",
-      "explanation": "Encounters that put the adventurers in danger (hazard, etc.)",
+      "name": "hazard beat",
+      "explanation": "Beats that put the adventurers in danger (hazard, etc.)",
       "entries": [
         "Here is a {hazard}."
       ]
     },
     {
-      "name": "setback encounter",
-      "explanation": "Encounters that cause the adventurers to lose progress (traitor, shapeshifter, rival, etc).",
+      "name": "setback beat",
+      "explanation": "Beats that cause the adventurers to lose progress (traitor, shapeshifter, rival, etc).",
       "entries": [
-        "A {competitive actor} causes you to lose progress."
+        "A {competitive actant} causes them to lose progress."
       ]
     },
     {
-      "name": "hindrance encounter",
-      "explanation": "Encounters that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
+      "name": "hindrance beat",
+      "explanation": "Beats that slow down, use resources, or otherwise hinder the adventurers (rival, trickster, lock, door, etc).",
       "entries": [
-        "A {competitive actor} slows down your progress.",
-        "Problem with a {lock}",
-        "Problem with a {door}."
+        "A {competitive actant} slows down the progress.",
+        "Problem with a {lib:lock}",
+        "Problem with a {lib:door}."
       ]
     },
     {
-      "name": "trick encounter",
-      "explanation": "Encounters that require a clever approach.",
+      "name": "trick beat",
+      "explanation": "Beats that require a clever approach.",
       "entries": [
-        "A {deceptive actor} attempts to trick the {adventurer}.",
+        "A {deceptive actant} attempts to trick the {adventurer}.",
         "{trick}"
       ]
     },
     {
-      "name": "trial encounter",
-      "explanation": "Encounters where the adventurers must prove themselves (rival, mentor, trickster, etc).",
+      "name": "trial beat",
+      "explanation": "Beats where the adventurers must prove themselves (rival, mentor, trickster, etc).",
       "entries": [
-        "A {friendly actor} requires the adventurers to prove their mettle."
+        "A {friendly actant} requires the adventurers to prove their mettle."
       ]
     },
     {
-      "name": "competition encounter",
-      "explanation": "Encounters where adventurers have to compete with someone (rival, mentor, etc.)",
+      "name": "competition beat",
+      "explanation": "Beats where adventurers have to compete with someone (rival, mentor, etc.)",
       "entries": [
-        "A {competitive actor} presents a challenge to the adventurers.",
-        "A {deceptive actor} challenges the adventurers."
+        "A {competitive actant} presents a challenge to the adventurers.",
+        "A {deceptive actant} challenges the adventurers."
       ]
     },
     {
-      "name": "distraction encounter",
-      "explanation": "Encounters that lead astray (shapeshifter, trickster, tempter, traitor, red herring, smoke screen, etc.)",
+      "name": "distraction beat",
+      "explanation": "Beats that lead astray (shapeshifter, trickster, tempter, traitor, red herring, smoke screen, etc.)",
       "entries": [
-        "A {deceptive actor} leads the adventurers astray.",
+        "A {deceptive actant} leads the adventurers astray.",
         "{red herring}",
         "{smoke screen}"
       ]
     },
     {
-      "name": "sidetrack encounter",
-      "explanation": "Encounters providing temporary diversion (tricster, tempter, sense of wonder, comic relief, etc.)",
+      "name": "sidetrack beat",
+      "explanation": "Beats providing temporary diversion (tricster, tempter, sense of wonder, comic relief, etc.)",
       "entries": [
-        "A {deceptive actor} causes a temporary diversion for the adventurers.",
+        "A {deceptive actant} causes a temporary diversion for the adventurers.",
         "{wonder}",
         "{humor}"
       ]
     },
     {
-      "name": "flavor encounter",
-      "explanation": "Encounters that create color and flavor, may bring roleplaying opportunities (plant, animal, tempter, traitor, item, wonder, etc.)",
+      "name": "flavor beat",
+      "explanation": "Beats that create color and flavor, may bring roleplaying opportunities (plant, animal, tempter, traitor, item, wonder, etc.)",
       "entries": [
-        "{flavor}",
+        "{flavoring}",
         "{plant}",
         "{animal}",
         "{item}",
@@ -4533,15 +4912,15 @@
       ]
     },
     {
-      "name": "rescue encounter",
-      "explanation": "Encounters where a prisoner (captive, mentor, ally, shapeshifter, tempter, traitor, trickster, animal, monster, minion, rival, etc.) can be rescued and perhaps befriended.",
+      "name": "rescue beat",
+      "explanation": "Beats where a prisoner (captive, mentor, ally, shapeshifter, tempter, traitor, trickster, animal, monster, minion, rival, etc.) can be rescued and perhaps befriended.",
       "entries": [
-        "A {helpless actor} needs to be rescued."
+        "A {helpless actant} needs to be rescued."
       ]
     },
     {
-      "name": "resource encounter",
-      "explanation": "Encounters that offer new resources (artifact, key, tool, treasure, plant, animal, information, red herring, etc.)",
+      "name": "resource beat",
+      "explanation": "Beats that offer new resources (artifact, key, tool, treasure, plant, animal, information, red herring, etc.)",
       "entries": [
         "The {var:artifact} can be found here.",
         "{key}",
@@ -4554,85 +4933,88 @@
       ]
     },
     {
-      "name": "information encounter",
-      "explanation": "Encounters that offer information (mentor, trickster, clue, shapeshifter, traitor, red herring, etc.)",
+      "name": "information beat",
+      "explanation": "Beats that offer information (mentor, trickster, clue, shapeshifter, traitor, red herring, etc.)",
       "entries": [
-        "A {friendly actor} gives useful information.",
-        "A {deceptive actor} gives wrong information.",
+        "A {friendly actant} gives useful information.",
+        "A {deceptive actant} gives wrong information.",
         "{clue}",
         "{red herring}"
       ]
     },
     {
-      "name": "help encounter",
-      "explanation": "Encounters that offer help (mentor, ally, etc.)",
+      "name": "help beat",
+      "explanation": "Beats that offer help (mentor, ally, etc.)",
       "entries": [
-        "A {friendly actor} offers to help."
+        "A {friendly actant} offers to help."
       ]
     },
     {
-      "name": "finale encounter",
-      "explanation": "Encounters solely for the adventure climax.",
+      "name": "finale beat",
+      "explanation": "Beats solely for the adventure climax.",
       "entries": [
         "Finale: XXX"
       ]
     },
     {
-      "name": "resolution encounter",
-      "explanation": "Encounters solely for the adventure resolution.",
+      "name": "resolution beat",
+      "explanation": "Beats solely for the adventure resolution.",
       "entries": [
         "Resolution: XXX"
       ]
     },
     {
-      "name": "actor",
-      "explanation": "Help table for generating a completely random actor. Usually the 'actor' subtables are called directly by the encounter tables to make the actor fit the encounter.",
+      "**************************************************": "ACTANTS"
+    },
+    {
+      "name": "actant",
+      "explanation": "Help table for generating a completely random actant. Usually the 'actant' subtables are called directly by the beat tables to make the actant fit the beat.",
       "entries": [
         {
           "m": 1,
-          "v": "{hostile actor}",
+          "v": "{hostile actant}",
           "set": {
             "attitude": "hostile"
           }
         },
         {
           "m": 1,
-          "v": "{deceptive actor}",
+          "v": "{deceptive actant}",
           "set": {
             "attitude": "deceptive"
           }
         },
         {
           "m": 1,
-          "v": "{competitive actor}",
+          "v": "{competitive actant}",
           "set": {
             "attitude": "competitive"
           }
         },
         {
           "m": 1,
-          "v": "{neutral actor}",
+          "v": "{neutral actant}",
           "set": {
             "attitude": "neutral"
           }
         },
         {
           "m": 1,
-          "v": "{friendly actor}",
+          "v": "{friendly actant}",
           "set": {
             "attitude": "friendly"
           }
         },
         {
           "m": 1,
-          "v": "{nonsentient actor}",
+          "v": "{nonsentient actant}",
           "set": {
             "attitude": "nonsentient"
           }
         },
         {
           "m": 1,
-          "v": "{helpless actor}",
+          "v": "{helpless actant}",
           "set": {
             "attitude": "helpless"
           }
@@ -4640,282 +5022,282 @@
       ]
     },
     {
-      "name": "hostile actor",
-      "explanation": "Actors who are opposed to the adventurers.",
+      "name": "hostile actant",
+      "explanation": "Actants who are opposed to the adventurers.",
       "entries": [
         {
           "explanation": "The enemy has been set when initializing and is not randomized.",
           "m": 1,
           "v": "{var:enemy}",
           "set": {
-            "actor": "enemy"
+            "actant": "enemy"
           }
         },
         {
           "m": 1,
           "v": "{var:minion}",
           "set": {
-            "actor": "minion"
+            "actant": "minion"
           }
         },
         {
           "m": 1,
           "v": "{var:guardian}",
           "set": {
-            "actor": "guardian"
+            "actant": "guardian"
           }
         },
         {
           "m": 1,
           "v": "{var:monster}",
           "set": {
-            "actor": "monster"
+            "actant": "monster"
           }
         },
         {
           "m": 1,
           "v": "{var:beast}",
           "set": {
-            "actor": "beast"
+            "actant": "beast"
           }
         }
       ]
     },
     {
-      "name": "deceptive actor",
-      "explanation": "Actors who may not be what they appear to be.",
+      "name": "deceptive actant",
+      "explanation": "Actants who may not be what they appear to be.",
       "entries": [
         {
           "m": 1,
           "v": "{var:traitor}",
           "set": {
-            "actor": "traitor"
+            "actant": "traitor"
           }
         },
         {
           "m": 1,
           "v": "{var:shapeshifter}",
           "set": {
-            "actor": "shapeshifter"
+            "actant": "shapeshifter"
           }
         },
         {
           "m": 1,
           "v": "{var:tempter}",
           "set": {
-            "actor": "tempter"
+            "actant": "tempter"
           }
         },
         {
           "m": 1,
           "v": "{var:trickster}",
           "set": {
-            "actor": "trickster"
+            "actant": "trickster"
           }
         }
       ]
     },
     {
-      "name": "competitive actor",
-      "explanation": "Actors who compete with the adventurers.",
+      "name": "competitive actant",
+      "explanation": "Actants who compete with the adventurers.",
       "entries": [
         {
           "m": 1,
           "v": "{var:tempter}",
           "set": {
-            "actor": "tempter"
+            "actant": "tempter"
           }
         },
         {
           "m": 1,
           "v": "{var:rival}",
           "set": {
-            "actor": "rival"
+            "actant": "rival"
           }
         },
         {
           "m": 1,
           "v": "{var:trickster}",
           "set": {
-            "actor": "trickster"
+            "actant": "trickster"
           }
         }
       ]
     },
     {
-      "name": "neutral actor",
-      "explanation": "Actors who initially have a neutral attitude.",
+      "name": "neutral actant",
+      "explanation": "Actants who initially have a neutral attitude.",
       "entries": [
         {
           "m": 1,
           "v": "{var:inhabitant}",
           "set": {
-            "actor": "inhabitant"
+            "actant": "inhabitant"
           }
         },
         {
           "m": 1,
           "v": "{var:animal}",
           "set": {
-            "actor": "animal"
+            "actant": "animal"
           }
         },
         {
           "m": 1,
           "v": "{var:captive}",
           "set": {
-            "actor": "captive"
+            "actant": "captive"
           }
         },
         {
           "m": 1,
           "v": "{var:herald}",
           "set": {
-            "actor": "herald"
+            "actant": "herald"
           }
         }
       ]
     },
     {
-      "name": "friendly actor",
-      "explanation": "Actors who are friendly towards the adventurers.",
+      "name": "friendly actant",
+      "explanation": "Actants who are friendly towards the adventurers.",
       "entries": [
         {
           "m": 1,
           "v": "{var:tempter}",
           "set": {
-            "actor": "tempter"
+            "actant": "tempter"
           }
         },
         {
           "m": 1,
           "v": "{var:trickster}",
           "set": {
-            "actor": "trickster"
+            "actant": "trickster"
           }
         },
         {
           "m": 1,
           "v": "{var:mentor}",
           "set": {
-            "actor": "mentor"
+            "actant": "mentor"
           }
         },
         {
           "m": 1,
           "v": "{var:ally}",
           "set": {
-            "actor": "ally"
+            "actant": "ally"
           }
         }
       ]
     },
     {
-      "name": "nonsentient actor",
-      "explanation": "Actors who have animal-like intelligence.",
+      "name": "nonsentient actant",
+      "explanation": "Actants who have animal-like intelligence.",
       "entries": [
         {
           "m": 1,
           "v": "{var:beast}",
           "set": {
-            "actor": "beast"
+            "actant": "beast"
           }
         },
         {
           "m": 1,
           "v": "{var:animal}",
           "set": {
-            "actor": "animal"
+            "actant": "animal"
           }
         }
       ]
     },
     {
-      "name": "helpless actor",
-      "explanation": "Actors who may need help from the adventurers.",
+      "name": "helpless actant",
+      "explanation": "Actants who may need help from the adventurers.",
       "entries": [
         {
           "m": 1,
           "v": "{var:minion}",
           "set": {
-            "actor": "minion"
+            "actant": "minion"
           }
         },
         {
           "m": 1,
           "v": "{var:monster}",
           "set": {
-            "actor": "monster"
+            "actant": "monster"
           }
         },
         {
           "m": 1,
           "v": "{var:animal}",
           "set": {
-            "actor": "animal"
+            "actant": "animal"
           }
         },
         {
           "m": 1,
           "v": "{var:traitor}",
           "set": {
-            "actor": "traitor"
+            "actant": "traitor"
           }
         },
         {
           "m": 1,
           "v": "{var:shapeshifter}",
           "set": {
-            "actor": "shapeshifter"
+            "actant": "shapeshifter"
           }
         },
         {
           "m": 1,
           "v": "{var:tempter}",
           "set": {
-            "actor": "tempter"
+            "actant": "tempter"
           }
         },
         {
           "m": 1,
           "v": "{var:rival}",
           "set": {
-            "actor": "rival"
+            "actant": "rival"
           }
         },
         {
           "m": 1,
           "v": "{var:trickster}",
           "set": {
-            "actor": "trickster"
+            "actant": "trickster"
           }
         },
         {
           "m": 1,
           "v": "{var:inhabitant}",
           "set": {
-            "actor": "inhabitant"
+            "actant": "inhabitant"
           }
         },
         {
           "m": 1,
           "v": "{var:captive}",
           "set": {
-            "actor": "captive"
+            "actant": "captive"
           }
         },
         {
           "m": 1,
           "v": "{var:mentor}",
           "set": {
-            "actor": "mentor"
+            "actant": "mentor"
           }
         },
         {
           "m": 1,
           "v": "{var:ally}",
           "set": {
-            "actor": "ally"
+            "actant": "ally"
           }
         }
       ]

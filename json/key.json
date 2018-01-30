@@ -1,0 +1,177 @@
+{
+  "name": "key",
+  "resultPattern": "{result}",
+  "globals": {
+    "key": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Random keys",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "lock",
+  "date": "2018-01-26",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "item"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{key}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{lib:condition} {key}"
+      ]
+    },
+    {
+      "name": "key",
+      "explanation": "Key types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common keys.",
+      "entries": [
+        "{ordinary}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare keys.",
+      "entries": [
+        "{ornate}"
+      ]
+    },
+    {
+      "**************************************************": "KEYS"
+    },
+    {
+      "name": "ordinary",
+      "explanation": "Ordinary keys.",
+      "entries": [
+        "small, nondescript key",
+        "small {lib:metal} key",
+        "medium-sized {lib:metal} key",
+        "large {lib:metal} key",
+        "large iron key",
+        "rusty iron key"
+      ]
+    },
+    {
+      "name": "ornate",
+      "explanation": "Ornate keys.",
+      "entries": [
+        "ornate key",
+        "ornate key inset with a {lib:gem}",
+        "ornate {lib:metal#precious} key",
+        "ornate {lib:metal#precious} key inset with a {lib:gem}"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Keys once rumoured to have existed.",
+      "entries": [
+        "unfaltering faith"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Keys for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{magic}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Keys for modern worlds.",
+      "entries": [
+        "{common}",
+        "fingerprint",
+        "iris scan"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Keys for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "voice sample",
+        "DNA sample"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special key tables.",
+      "entries": [
+        "{knot}",
+        "{magic}",
+        "{pressure}"
+      ]
+    },
+    {
+      "name": "knot",
+      "explanation": "Knot-based keys.",
+      "format": "requiring X",
+      "entries": [
+        "untying a simple knot",
+        "untying a complex knot",
+        "untying an extremely complicated knot"
+      ]
+    },
+    {
+      "name": "magic",
+      "explanation": "Magical keys.",
+      "format": "requiring X",
+      "entries": [
+        "a spoken password",
+        "a specific ceremony",
+        "a specific command word",
+        "that a specific artifact is shown"
+      ]
+    },
+    {
+      "name": "pressure",
+      "explanation": "Pressure keys.",
+      "format": "requiring X",
+      "entries": [
+        "at least slight pressure",
+        "heavy pressure",
+        "just the right amount of pressure"
+      ]
+    }
+  ]
+}

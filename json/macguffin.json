@@ -1,0 +1,210 @@
+{
+  "name": "macguffin",
+  "resultPattern": "{result}",
+  "globals": {
+    "macguffin": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Random plot devices (objects that draw the characters into the adventure).",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-01-26",
+  "authors": "Esko Vesala.",
+  "sources": "Five_room_dungeon",
+  "genre": "universal",
+  "categories": [
+    "item"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{macguffin}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective} {macguffin} that {power}"
+      ]
+    },
+    {
+      "name": "macguffin",
+      "explanation": "Macguffin types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common macguffin.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{information}",
+          "export": {
+            "macguffin": "information"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{container}",
+          "export": {
+            "macguffin": "container"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{weapon}",
+          "export": {
+            "macguffin": "weapon"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare macguffin.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{armor}",
+          "export": {
+            "macguffin": "armor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{treasure}",
+          "export": {
+            "macguffin": "treasure"
+          }
+        }
+      ]
+    },
+    {
+      "name": "armor",
+      "explanation": "Armor macguffins.",
+      "entries": [
+        "gauntlet"
+      ]
+    },
+    {
+      "name": "container",
+      "explanation": "Container macguffins.",
+      "entries": [
+        "urn"
+      ]
+    },
+    {
+      "name": "information",
+      "explanation": "Information macguffins.",
+      "entries": [
+        "libram"
+      ]
+    },
+    {
+      "name": "treasure",
+      "explanation": "Treasure macguffins.",
+      "entries": [
+        "scepter",
+        "crown",
+        "gem"
+      ]
+    },
+    {
+      "name": "weapon",
+      "explanation": "Weapon macguffins.",
+      "entries": [
+        "blade"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Macguffins once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Macguffins for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Macguffins for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Macguffins for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special macguffin types.",
+      "entries": [
+        "{adjective}",
+        "{power}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Macguffin adjectives.",
+      "entries": [
+        "mysterious",
+        "cursed",
+        "rune-carved"
+      ]
+    },
+    {
+      "name": "power",
+      "explanation": "Macguffin powers.",
+      "format": "-- that X",
+      "entries": [
+        "is of unknown purpose",
+        "appears valuable",
+        "seems to be strangely important to some people",
+        "is chased by an unknown faction",
+        "is desired by the villain",
+        "seems to contain a clue about something important",
+        "seems to contain some strange power"
+      ]
+    }
+  ]
+}

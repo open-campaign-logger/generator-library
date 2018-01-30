@@ -1,0 +1,201 @@
+{
+  "name": "treasure",
+  "resultPattern": "{result}",
+  "globals": {
+    "treasure": "treasure"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "treasure table",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
+  "bugs": "",
+  "to do": "Categorize treasures by type.",
+  "see": "equipment, gem, jewelry",
+  "date": "2018-01-28",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    "item"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{treasure}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective} {treasure}"
+      ]
+    },
+    {
+      "name": "treasure",
+      "explanation": "Treasure types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common treasure types.",
+      "entries": [
+        "{miscellany}{global:treasure}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare treasure types.",
+      "entries": [
+        "{lib:jewelry}",
+        "magical {lib:magicitem}"
+      ]
+    },
+    {
+      "name": "miscellany",
+      "explanation": "Miscellaneous fantasy treasure (placeholder).",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "treasure": "hoard"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "treasure": "tome"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "treasure": "secret"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "treasure": "scroll"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "treasure": "treasure"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Treasure once rumoured to have existed.",
+      "entries": [
+        "golden fleece",
+        "unicorn horn"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Treasure for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "magic item"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Treasure for modern worlds.",
+      "entries": [
+        "{common}",
+        "stock",
+        "bonds",
+        "prototype of a new invention"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Treasure for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "crypto currency",
+        "decryption key"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL CASES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special treasure subtables.",
+      "entries": [
+        "{adjective}",
+        "{bonus}",
+        "{complication}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives describing the treasure.",
+      "entries": [
+        "hidden",
+        "lost",
+        "valuable",
+        "peerless",
+        "{rare adjective}"
+      ]
+    },
+    {
+      "name": "rare adjective",
+      "explanation": "",
+      "entries": [
+        "fabled",
+        "ancient",
+        "enchanted"
+      ]
+    },
+    {
+      "name": "bonus",
+      "explanation": "Extra treasure for the keen-eyed.",
+      "entries": [
+        "piece of a magic item",
+        "map fragment"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Complications for the treasure.",
+      "entries": [
+        "cursed",
+        "fake",
+        "already gone",
+        "being looted by hostile adventurers"
+      ]
+    }
+  ]
+}

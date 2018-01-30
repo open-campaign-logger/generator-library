@@ -1,0 +1,197 @@
+{
+  "name": "citizen",
+  "resultPattern": "{result}",
+  "variables": {
+    "actant": "citizen",
+    "actants": "citizens",
+    "actantgroup": "group",
+    "actantaction": "minding their own business",
+    "actantadjective": "ordinary",
+    "actantdescription": "The citizen is not paying much attention to their surroundings.",
+    "attitude": "neutral",
+    "footnote": ""
+  },
+  "explanation": "Citizens of the standard (typically human-like) culture.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "Categorize citizens by type.",
+  "see": "activity, animal, encounter, monster, nonhuman",
+  "date": "2018-01-21",
+  "authors": "Esko Vesala.",
+  "sources": "Wikia.com, Wikipedia.org",
+  "genre": "fantasy",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{citizen}",
+        "{adjective} {citizen}",
+        "{citizen} {lib:activity}",
+        "{adjective} {citizen} {lib:activity}"
+      ]
+    },
+    {
+      "name": "citizen",
+      "explanation": "Citizens by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common citizen types.",
+      "entries": [
+        "{poor}",
+        "{lower class}",
+        "{middle class}",
+        "{upper class}"
+      ]
+    },
+    {
+      "name": "poor",
+      "explanation": "Poor citizens.",
+      "entries": [
+        "{servant}"
+      ]
+    },
+    {
+      "name": "servant",
+      "explanation": "Citizens serving others.",
+      "entries": [
+        "hireling",
+        "servant"
+      ]
+    },
+    {
+      "name": "lower class",
+      "explanation": "Lower class citizens.",
+      "entries": [
+        "{labourer}"
+      ]
+    },
+    {
+      "name": "labourer",
+      "explanation": "Citizens doing menial work.",
+      "entries": [
+        "labourer",
+        "worker",
+        "farmhand"
+      ]
+    },
+    {
+      "name": "middle class",
+      "explanation": "Middle class citizens.",
+      "entries": [
+        "{artisan}",
+        "{merchant}"
+      ]
+    },
+    {
+      "name": "artisan",
+      "explanation": "Citizens doing skilled work.",
+      "entries": [
+        "artisan"
+      ]
+    },
+    {
+      "name": "merchant",
+      "explanation": "Citizens living by business.",
+      "entries": [
+        "merchant"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare citizen types.",
+      "entries": [
+        "{upper class}",
+        "{rich}"
+      ]
+    },
+    {
+      "name": "upper class",
+      "explanation": "Upper class citizens.",
+      "entries": [
+        "politician"
+      ]
+    },
+    {
+      "name": "politician",
+      "explanation": "Citizens employed in the politics.",
+      "entries": [
+        "politician"
+      ]
+    },
+    {
+      "name": "rich",
+      "explanation": "Rich citizens.",
+      "entries": [
+        "aristocrat"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Citizens once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Citizens for fantasy worlds (with no basis in myths).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Citizens for modern worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Citizens for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special citizen types.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives describing citizens.",
+      "entries": [
+        "{psychology}"
+      ]
+    },
+    {
+      "name": "psychology",
+      "explanation": "Psychology of the citizen.",
+      "entries": [
+        "aggressive",
+        "hostile",
+        "deceptive",
+        "bored",
+        "curious",
+        "friendly"
+      ]
+    }
+  ]
+}

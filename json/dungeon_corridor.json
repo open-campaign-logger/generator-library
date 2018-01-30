@@ -1,0 +1,478 @@
+{
+  "name": "dungeon_corridor",
+  "resultPattern": "{HTML formatting}{init}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Random dungeon passages.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "Dungeon_adventure, dungeon_entrance, dungeon_room, dungeon_vault, Five_room_dungeon",
+  "date": "2018-01-26",
+  "authors": "Esko Vesala",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the corridor parameters.",
+      "entries": [
+        "{size}{shape}{type}{result}"
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary} {global:para}{extra}",
+        "{detail} {global:para}{extra}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "a {corridor} {exits}."
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "a {corridor} {exits}. In the passage a {contents} can be seen."
+      ]
+    },
+    {
+      "name": "contents",
+      "explanation": "Listing the contents of the corridor.",
+      "entries": [
+        "chest"
+      ]
+    },
+    {
+      "name": "exits",
+      "explanation": "Listing the exits from the corridor.",
+      "entries": [
+        "with the following exits: {doors}"
+      ]
+    },
+    {
+      "name": "corridor",
+      "explanation": "Dungeon corridor description types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common corridor types.",
+      "entries": [
+        "{description}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare corridor types.",
+      "entries": [
+        "{adjective}, {description}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Corridor description formats.",
+      "entries": [
+        "{global:corridorsize}, {global:corridorshape} {global:corridortype}",
+        "{global:corridorsize}, {global:corridorshape} {global:corridortype} with {wall material} walls and {floor material} floor"
+      ]
+    },
+    {
+      "**************************************************": "CORRIDOR SIZES"
+    },
+    {
+      "name": "size",
+      "explanation": "The size of the passage.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "corridorsize": "tiny"
+          }
+        },
+        {
+          "m": 3,
+          "v": "",
+          "export": {
+            "corridorsize": "small"
+          }
+        },
+        {
+          "m": 5,
+          "v": "",
+          "export": {
+            "corridorsize": "medium-sized"
+          }
+        },
+        {
+          "m": 3,
+          "v": "",
+          "export": {
+            "corridorsize": "big"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "corridorsize": "huge"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "CORRIDOR SHAPES"
+    },
+    {
+      "name": "shape",
+      "explanation": "The shape of the corridor.",
+      "entries": [
+        {
+          "m": 3,
+          "v": "",
+          "export": {
+            "corridorshape": "square"
+          }
+        },
+        {
+          "m": 4,
+          "v": "",
+          "export": {
+            "corridorshape": "squarish"
+          }
+        },
+        {
+          "m": 5,
+          "v": "",
+          "export": {
+            "corridorshape": "rectangular"
+          }
+        },
+        {
+          "m": 4,
+          "v": "",
+          "export": {
+            "corridorshape": "narrow"
+          }
+        },
+        {
+          "m": 4,
+          "v": "",
+          "export": {
+            "corridorshape": "wide"
+          }
+        },
+        {
+          "m": 3,
+          "v": "",
+          "export": {
+            "corridorshape": "round"
+          }
+        },
+        {
+          "m": 2,
+          "v": "",
+          "export": {
+            "corridorshape": "oval"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "corridorshape": "semicircle-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "corridorshape": "somewhat triangle-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "corridorshape": "octagon-shaped"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "corridorshape": "irregularly shaped"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "CORRIDOR TYPES"
+    },
+    {
+      "name": "type",
+      "explanation": "Types of corridors.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "corridortype": "corridor"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "corridortype": "passage"
+          }
+        },
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "corridortype": "hallway"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Corridors once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Corridors for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Corridors for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Corridors for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "MATERIALS"
+    },
+    {
+      "name": "ceiling material",
+      "explanation": "Ceiling materials.",
+      "entries": [
+        "{stone}",
+        "masonry",
+        "plastered masonry"
+      ]
+    },
+    {
+      "name": "floor material",
+      "explanation": "Floor materials.",
+      "entries": [
+        "{stone}",
+        "{rubble}",
+        "{dirt}",
+        "{mud}",
+        "{constructed}"
+      ]
+    },
+    {
+      "name": "stone",
+      "explanation": "Stone floors.",
+      "entries": [
+        "rough stone",
+        "smooth stone",
+        "hewn stone"
+      ]
+    },
+    {
+      "name": "rubble",
+      "explanation": "Rubble floors.",
+      "entries": [
+        "debris",
+        "rocky",
+        "pebble",
+        "rubble",
+        "sand"
+      ]
+    },
+    {
+      "name": "dirt",
+      "explanation": "Dirt floors.",
+      "entries": [
+        "dirt"
+      ]
+    },
+    {
+      "name": "mud",
+      "explanation": "Mud floors.",
+      "entries": [
+        "mud",
+        "silt",
+        "waste"
+      ]
+    },
+    {
+      "name": "constructed",
+      "explanation": "Constructed floors.",
+      "entries": [
+        "flagstone",
+        "uneven flagstone",
+        "cobblestone",
+        "mosaic stone"
+      ]
+    },
+    {
+      "name": "wall material",
+      "explanation": "Wall materials.",
+      "entries": [
+        "{stone}",
+        "brick",
+        "masonry",
+        "reinforced masonry",
+        "plastered masonry",
+        "{rare wall material}"
+      ]
+    },
+    {
+      "name": "rare wall material",
+      "explanation": "Rare wall materials.",
+      "entries": [
+        "wooden",
+        "tile",
+        "iron",
+        "magically augmented masonry"
+      ]
+    },
+    {
+      "**************************************************": "FORMATTING"
+    },
+    {
+      "name": "HTML formatting",
+      "explanation": "Set variables for formatting the output as HTML",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "starttitle": "<H2>",
+            "endtitle": "</H2>",
+            "startheading": "<H3>",
+            "endheading": "</H3>",
+            "startbold": "<B>",
+            "endbold": "</B>",
+            "para": "<P>"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CL formatting",
+      "explanation": "Set variables for formatting the output for Campaign Logger",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "starttitle": "{b|",
+            "endtitle": "}\r\n\r\n",
+            "startheading": "\r\n\r\n{b|",
+            "endheading": "}",
+            "startbold": "{b|",
+            "endbold": "}",
+            "para": "\r\n"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL CASES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special corridor tables.",
+      "entries": [
+        "{adjective}",
+        "{contents}",
+        "{description}",
+        "{doors}",
+        "{extra}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives for dungeon corridors.",
+      "entries": [
+        "bleak",
+        "murky",
+        "gloomy",
+        "dismal",
+        "dreary",
+        "dreadful",
+        "forlorn",
+        "foreboding"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Corridor descriptions.",
+      "entries": [
+        "The passage twists and turns."
+      ]
+    },
+    {
+      "name": "doors",
+      "explanation": "Doors exiting from the corridor.",
+      "entries": [
+        "End of the passage: {lib:door}",
+        "End of the passage: {lib:door}. Side door: {lib:door}",
+        "End of the passage: {lib:door}. Side doors: {global:para}1) {lib:door}, {global:para}2) {lib:door}"
+      ]
+    },
+    {
+      "**************************************************": "EXTRAS"
+    },
+    {
+      "name": "extra",
+      "explanation": "Extras for dungeon corridors.",
+      "entries": [
+        "",
+        "{global:startbold}Complication{global:endbold}: {lib:complication#corridor}",
+        "{global:startbold}Feature{global:endbold}: {lib:dungeon_feature}"
+      ]
+    }
+  ]
+}

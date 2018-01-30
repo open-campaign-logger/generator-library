@@ -1,0 +1,233 @@
+{
+  "name": "item_template",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Item templates.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "Expand the list of templates and categories.",
+  "see": "armor, condition, creature_template, equipment, weapon",
+  "date": "2018-01-29",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    "item"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{template}"
+      ]
+    },
+    {
+      "name": "template",
+      "explanation": "Template types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common templates.",
+      "entries": [
+        "{modified}",
+        "{size}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare templates.",
+      "entries": [
+        "{aligned}"
+      ]
+    },
+    {
+      "***********************************************": "ITEM TEMPLATES"
+    },
+    {
+      "name": "aligned",
+      "explanation": "Alignment-related items.",
+      "entries": [
+        "evil",
+        "chaotic",
+        "neutral",
+        "lawful",
+        "good"
+      ]
+    },
+    {
+      "name": "large",
+      "explanation": "Larger than average items.",
+      "entries": [
+        "large",
+        "huge",
+        "giant",
+        "gargantuan",
+        "colossal"
+      ]
+    },
+    {
+      "name": "modified",
+      "explanation": "Artificially modified items.",
+      "entries": [
+        "augmented"
+      ]
+    },
+    {
+      "name": "small",
+      "explanation": "Smaller than average items.",
+      "entries": [
+        "diminutive",
+        "tiny",
+        "small"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Templates once rumoured to have existed.",
+      "entries": [
+        "{shapechanging}",
+        "{supernatural}",
+        "{incorporeal}",
+        "{magical}",
+        "{demonic}",
+        "{infernal}",
+        "{celestial}"
+      ]
+    },
+    {
+      "name": "shapechanging",
+      "explanation": "Shapeshifter-related templates.",
+      "entries": [
+        "shapeshifter"
+      ]
+    },
+    {
+      "name": "supernatural",
+      "explanation": "Supernatural templates.",
+      "entries": [
+        "accursed",
+        "cursed",
+        "dark",
+        "mythic"
+      ]
+    },
+    {
+      "name": "incorporeal",
+      "explanation": "spiritform-based templates.",
+      "entries": [
+        "ghost",
+        "spirit"
+      ]
+    },
+    {
+      "name": "magical",
+      "explanation": "Magic-based templates.",
+      "entries": [
+        "magical",
+        "rune-carved",
+        "eldritch",
+        "fey"
+      ]
+    },
+    {
+      "name": "demonic",
+      "explanation": "Templates related to demonic origins.",
+      "entries": [
+        "demonic"
+      ]
+    },
+    {
+      "name": "infernal",
+      "explanation": "Templates related to hellish origins.",
+      "entries": [
+        "fiendish",
+        "infernal"
+      ]
+    },
+    {
+      "name": "celestial",
+      "explanation": "Templates related to heavenly origins.",
+      "entries": [
+        "celestial",
+        "angelic",
+        "divine"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Templates for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{elemental}",
+        "{planar}"
+      ]
+    },
+    {
+      "name": "elemental",
+      "explanation": "Elementally aligned creatures.",
+      "entries": [
+        "air",
+        "earth",
+        "water",
+        "fire"
+      ]
+    },
+    {
+      "name": "planar",
+      "explanation": "Templates related to the planes of existence.",
+      "entries": [
+        "extraplanar",
+        "ethereal",
+        "astral"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Templates for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Templates for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "cybernetically augmented"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special template types.",
+      "entries": [
+        "{size}"
+      ]
+    },
+    {
+      "name": "size",
+      "explanation": "Size-related templates.",
+      "entries": [
+        "{small}",
+        "{large}"
+      ]
+    }
+  ]
+}

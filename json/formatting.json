@@ -1,0 +1,90 @@
+{
+  "name": "formatting",
+  "resultPattern": "{init}",
+  "globals": {
+    "starttitle": "<H2>",
+    "endtitle": "</H2>",
+    "startheading": "<H3>",
+    "endheading": "</H3>",
+    "startbold": "<B>",
+    "endbold": "</B>",
+    "para": "<P>"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Sets global variables for different output formats.",
+  "structure": "Simple template for help tables.",
+  "note": "Call the desired subtable directly - e.g. lib:formatting#HTML.",
+  "format": "No direct output, just sets global variables.",
+  "bugs": "",
+  "to do": "",
+  "see": "Dungeon_adventure",
+  "date": "2018-01-28",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "meta",
+  "categories": [
+    "utility"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Intialize a random set of formatting strings.",
+      "note": "The intention is to call the desired subtable directly.",
+      "entries": [
+        "{CL}",
+        "{HTML}"
+      ]
+    },
+    {
+      "**************************************************": "FORMATTING"
+    },
+    {
+      "name": "HTML",
+      "explanation": "Set global variables for formatting the output as HTML.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "starttitle": "<H2>",
+            "endtitle": "</H2>",
+            "startheading": "<H3>",
+            "endheading": "</H3>",
+            "startbold": "<B>",
+            "endbold": "</B>",
+            "para": "<P>"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CL",
+      "explanation": "Set global variables for Campaign Logger formatting.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "starttitle": "{b|",
+            "endtitle": "}\r\n\r\n",
+            "startheading": "\r\n\r\n{b|",
+            "endheading": "}",
+            "startbold": "{b|",
+            "endbold": "}",
+            "para": "\r\n"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Testing tool for dumping the set global variables.",
+      "entries": [
+        "{global:starttitle}Title{global:endtitle} {global:startheading}Heading{global:endheading} {global:startbold}Bold text{global:endbold} {global:para}New paragrah."
+      ]
+    }
+  ]
+}

@@ -1,17 +1,17 @@
 {
   "name": "jewelry table",
-  "resultPattern": "{jewelry}",
+  "resultPattern": "{result}",
   "variables": {
     "footnote": ""
   },
   "explanation": "Jewelry for person appearance and treasure tables.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
-  "to do": "",
+  "to do": "Implement the explanations as footnotes instead of additional text in parenthesis.",
   "see": "gem",
-  "date": "2017-10-04",
+  "date": "2018-01-03",
   "authors": "Authors: Johnn Four, Jochen Linnemann, Esko Vesala.",
-  "sources": "Wikipedia.org",
+  "sources": "EngagementRings.LoveToKnow.com, Wikipedia.org",
   "genre": "universal",
   "categories": [
     "item"
@@ -19,10 +19,35 @@
   "tags": "#person, #treasure",
   "tables": [
     {
-      "name": "jewelry",
-      "explanation": "Jewelry rarity.",
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{common}",
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{jewelry}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{jewelry} with {lib:number#one digit} {lib:gem}s fastened with {setting}"
+      ]
+    },
+    {
+      "name": "jewelry",
+      "explanation": "Jewelry types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
         "{rare}"
       ]
     },
@@ -35,6 +60,16 @@
         "{chest jewelry}",
         "{arm jewelry}",
         "{hand jewelry}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare jewelry types.",
+      "entries": [
+        "{hair jewelry}",
+        "{waist jewelry}",
+        "{leg jewelry}",
+        "{foot jewelry}"
       ]
     },
     {
@@ -205,17 +240,6 @@
       ]
     },
     {
-      "name": "rare",
-      "explanation": "Rare jewelry types.",
-      "entries": [
-        "{hair jewelry}",
-        "{waist jewelry}",
-        "{leg jewelry}",
-        "{foot jewelry}",
-        "{household ornament}"
-      ]
-    },
-    {
       "name": "hair jewelry",
       "explanation": "Common jewellery worn in the hair.",
       "entries": [
@@ -278,7 +302,7 @@
       "explanation": "Common jewellery worn on feet.",
       "entries": [
         "toe ring",
-        "a matched pair of toe rings",
+        "matched pair of toe rings",
         "{rare foot jewelry}"
       ]
     },
@@ -313,17 +337,17 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary jewelry once rumoured to have existed.",
       "entries": [
         "{lib:material} amulet (defensive charm)",
         "{lib:material} periapt (charm worn on a necklace)",
         "{lib:material} talisman (magical charm)",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary adornment once rumoured to have existed.",
       "entries": [
         "cursed {lib:jewelry}",
@@ -332,18 +356,18 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary adornment for fantasy worlds.",
+      "explanation": "Imaginary fantasy adornment (with no basis in myth).",
       "entries": [
-        "{mythological}",
-        "{lib:personRace}-made {common}",
-        "{lib:monsterHumanoid}-made {common}",
+        "{myth}",
+        "{lib:nonhuman}-made {common}",
+        "{lib:monster#humanoid}-made {common}",
         "insect",
         "{rare fantasy}"
       ]
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary adornment for fantasy worlds.",
+      "explanation": "Rare fantasy adornment (with no basis in myth).",
       "entries": [
         "living {common}",
         "sentient {common}",
@@ -401,6 +425,25 @@
       "entries": [
         "cybernetic {modern}",
         "bioengineered {modern}"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special jewelry types.",
+      "entries": [
+        "{household ornament}"
+      ]
+    },
+    {
+      "name": "setting",
+      "explanation": "Setting type for gems.",
+      "entries": [
+        "prong setting (metal claws holding the gem)",
+        "bar setting (elongated metal bars holding the gem)",
+        "invisible setting (fastened without visible prongs or bars)",
+        "bezel setting (metal band wrapped around the gem)",
+        "channel setting (inserted in a channel in the jewelry)",
+        "flush setting (the gem rests in a hole, blending with the surface)"
       ]
     }
   ]

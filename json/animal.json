@@ -2,15 +2,22 @@
   "name": "animal",
   "resultPattern": "{result}",
   "variables": {
+    "actant": "animal",
+    "actants": "animals",
+    "actantgroup": "pack",
+    "actantaction": "searching for food",
+    "actantadjective": "wild",
+    "actantdescription": "The minion looks alert.",
+    "attitude": "neutral",
     "footnote": ""
   },
-  "explanation": "Animals from mammals to insects.",
+  "explanation": "Animals from insects to mammals.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "bugs": "Different regions (tropical, polar, etc.)",
-  "to do": "Better term for 'coast'?",
-  "see": "",
-  "date": "2017-10-26",
+  "to do": "",
+  "see": "activity, citizen, encounter, monster, nonhuman, plant",
+  "date": "2018-01-21",
   "authors": "",
   "sources": "Wikipedia.org",
   "genre": "",
@@ -20,10 +27,26 @@
   "tables": [
     {
       "name": "result",
-      "explanation": "Variations for resultPattern output.",
+      "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{animal}",
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
         "{animal}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective} {animal}",
+        "{animal} {lib:activity#animal}",
+        "{adjective} {animal} {lib:activity#animal}"
       ]
     },
     {
@@ -44,6 +67,16 @@
         "{invertebrate}",
         "{vertebrate}"
       ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare animal types.",
+      "entries": [
+        "{coral}"
+      ]
+    },
+    {
+      "**************************************************": "ANIMALS"
     },
     {
       "name": "invertebrate",
@@ -217,7 +250,7 @@
       "explanation": "Birds capable of flight.",
       "entries": [
         "{pet bird}",
-        "{domesticated bird}",
+        "{domestic bird}",
         "{small bird}",
         "{coastal bird}",
         "{waterfowl}",
@@ -236,7 +269,7 @@
       ]
     },
     {
-      "name": "domesticated bird",
+      "name": "domestic bird",
       "explanation": "Birds that live with people.",
       "entries": [
         "chicken",
@@ -316,7 +349,7 @@
       "explanation": "Mammals living on land.",
       "entries": [
         "{pet mammal}",
-        "{domesticated mammal}",
+        "{domestic mammal}",
         "{urban mammal}",
         "{small mammal}",
         "{large mammal}",
@@ -339,7 +372,7 @@
       ]
     },
     {
-      "name": "domesticated mammal",
+      "name": "domestic mammal",
       "explanation": "Land mammals living with people.",
       "entries": [
         "{mount}",
@@ -365,7 +398,7 @@
       "explanation": "Land mammals living in cities.",
       "entries": [
         "{pet}",
-        "{domesticated}"
+        "{domestic}"
       ]
     },
     {
@@ -420,13 +453,6 @@
       ]
     },
     {
-      "name": "rare",
-      "explanation": "Rare animal types.",
-      "entries": [
-        "{coral}"
-      ]
-    },
-    {
       "name": "coral",
       "explanation": "Coral types.",
       "entries": [
@@ -434,7 +460,10 @@
       ]
     },
     {
-      "name": "mythological",
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
       "explanation": "Animals once rumoured to have existed.",
       "entries": [
         "unicorn",
@@ -444,20 +473,11 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Animals for fantasy worlds.",
+      "explanation": "Animals for fantasy world (with no basis in myth).",
       "entries": [
-        "{mythological}",
-        "{ooze}",
+        "{myth}",
         "talking {mammal}",
         "{vertebrate} spirit"
-      ]
-    },
-    {
-      "name": "ooze",
-      "explanation": "Amoeboid ooze and jelly creatures.",
-      "entries": [
-        "ooze",
-        "jelly"
       ]
     },
     {
@@ -465,7 +485,7 @@
       "explanation": "Animals for modern worlds.",
       "entries": [
         "{pet}",
-        "{domesticated}",
+        "{domestic}",
         "{common}"
       ]
     },
@@ -482,16 +502,31 @@
       ]
     },
     {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
       "name": "special",
       "explanation": "Special animal types.",
       "entries": [
+        "{adjective}",
         "{extinct}",
         "{pet}",
-        "{domesticated}",
-        "{water}",
-        "{coast}",
+        "{domestic}",
+        "{urban}",
         "{land}",
+        "{desert}",
+        "{coast}",
+        "{water}",
         "{flying}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives for animals.",
+      "entries": [
+        "young",
+        "hungry",
+        "curious"
       ]
     },
     {
@@ -513,31 +548,18 @@
       ]
     },
     {
-      "name": "domesticated",
+      "name": "domestic",
       "explanation": "Animals living with people.",
       "entries": [
-        "{domesticated bird}",
-        "{domesticated mammal}"
+        "{domestic bird}",
+        "{domestic mammal}"
       ]
     },
     {
-      "name": "water",
-      "explanation": "Water animals.",
+      "name": "urban",
+      "explanation": "Animals living in cities and towns.",
       "entries": [
-        "{coral}",
-        "{crustacean}",
-        "{fish}",
-        "{amphibian}",
-        "{whale}"
-      ]
-    },
-    {
-      "name": "coast",
-      "explanation": "Animals living by water.",
-      "entries": [
-        "{crustacean}",
-        "{amphibian}",
-        "{coast mammal}"
+        "{urban mammal}"
       ]
     },
     {
@@ -550,6 +572,35 @@
         "{reptile}",
         "{bird}",
         "{land mammal}"
+      ]
+    },
+    {
+      "name": "desert",
+      "explanation": "Desert animals.",
+      "entries": [
+        "lizard",
+        "snake",
+        "camel"
+      ]
+    },
+    {
+      "name": "coast",
+      "explanation": "Animals living by water.",
+      "entries": [
+        "{crustacean}",
+        "{amphibian}",
+        "{coast mammal}"
+      ]
+    },
+    {
+      "name": "water",
+      "explanation": "Water animals.",
+      "entries": [
+        "{coral}",
+        "{crustacean}",
+        "{fish}",
+        "{amphibian}",
+        "{whale}"
       ]
     },
     {

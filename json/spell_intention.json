@@ -1,0 +1,200 @@
+{
+  "name": "spell intention",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Random spell intention generation.",
+  "structure": "",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "energy, magic, magical_technique, magical_instrument, potion, spell_name, spell_target, spellcasting",
+  "date": "2018-01-10",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{intention}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{intention}"
+      ]
+    },
+    {
+      "name": "intention",
+      "explanation": "Spell intention types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common spell intentions.",
+      "entries": [
+        "{negative}",
+        "{neutral}",
+        "{positive}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare spell intentions.",
+      "entries": [
+        "{meta}"
+      ]
+    },
+    {
+      "**************************************************": "INTENTION TYPES"
+    },
+    {
+      "name": "negative",
+      "explanation": "Negative spell intention types.",
+      "entries": [
+        "{destruction}"
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Neutral spell intention types.",
+      "entries": [
+        "{transformation}",
+        "{control}",
+        "{holding}"
+      ]
+    },
+    {
+      "name": "positive",
+      "explanation": "Positive spell intention types.",
+      "entries": [
+        "{defense}",
+        "{purification}",
+        "{restoration}",
+        "{healing}"
+      ]
+    },
+    {
+      "**************************************************": "INTENTIONS"
+    },
+    {
+      "name": "control",
+      "explanation": "Controlling intentions.",
+      "entries": [
+        "control",
+        "command"
+      ]
+    },
+    {
+      "name": "defense",
+      "explanation": "Defensive intentions.",
+      "entries": [
+        "defense",
+        "protection",
+        "shielding"
+      ]
+    },
+    {
+      "name": "destruction",
+      "explanation": "Destructive intentions.",
+      "entries": [
+        "destruction",
+        "obliteration",
+        "decaying"
+      ]
+    },
+    {
+      "name": "healing",
+      "explanation": "Healing intentions.",
+      "entries": [
+        "invigoration",
+        "vitalization",
+        "healing",
+        "curation",
+        "alleviation",
+        "vivification"
+      ]
+    },
+    {
+      "name": "holding",
+      "explanation": "Holding intentions.",
+      "entries": [
+        "holding",
+        "immobilizing",
+        "fixation"
+      ]
+    },
+    {
+      "name": "movement",
+      "explanation": "Movement intentions.",
+      "entries": [
+        "moving",
+        "shifting",
+        "transporting"
+      ]
+    },
+    {
+      "name": "purification",
+      "explanation": "Purifying intentions.",
+      "entries": [
+        "purifying"
+      ]
+    },
+    {
+      "name": "restoration",
+      "explanation": "Restorative intentions.",
+      "entries": [
+        "rejuvenation",
+        "restoration",
+        "renewal"
+      ]
+    },
+    {
+      "name": "transformation",
+      "explanation": "Transformative intentions.",
+      "entries": [
+        "opening",
+        "unlocking"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special spell intention tables.",
+      "entries": [
+        "{meta}"
+      ]
+    },
+    {
+      "name": "meta",
+      "explanation": "Meta intentions.",
+      "entries": [
+        "meta"
+      ]
+    }
+  ]
+}

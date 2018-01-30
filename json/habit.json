@@ -1,0 +1,193 @@
+{
+  "name": "habit",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Random habits.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "friend",
+  "date": "2018-01-14",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{habit}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{habit}"
+      ]
+    },
+    {
+      "name": "habit",
+      "explanation": "Habit types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common habits.",
+      "entries": [
+        "{negative}",
+        "{positive}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare habits.",
+      "entries": [
+        "{neutral}"
+      ]
+    },
+    {
+      "**************************************************": "HABITS"
+    },
+    {
+      "name": "negative",
+      "explanation": "Negative habits.",
+      "format": "-- who X",
+      "entries": [
+        "likes to pick fights",
+        "is always late",
+        "is always hungry",
+        "gives up easily",
+        "tell other peoples' secrets",
+        "always spends their money in a hurry",
+        "is embarrasingly loud",
+        "fears failure so much that does not even try",
+        "annouys others on purpose",
+        "always backs down when their opinions are challenged",
+        "borrows things but forgets to return them",
+        "forgets other peoples' names",
+        "likes to eavesdrop on others",
+        "forgets what they have already told to others",
+        "procrastinates as long as possible",
+        "breaks their promises",
+        "is overly critical",
+        "takes all criticism personally",
+        "is a pessimist about everything",
+        "is an attention hog",
+        "likes to exaggerate",
+        "likes to complain",
+        "gossips a lot",
+        "is always negative around others",
+        "daydreams a lot",
+        "keeps repeating themselves",
+        "is indecisive with even simplest of decisions",
+        "tends to be melodramatic",
+        "likes to brag",
+        "likes to bramble",
+        "spends too much time planning",
+        "never listens to advice",
+        "keeps losing their belongings",
+        "always gets the worst ideas",
+        "likes to sleep late",
+        "tends to lose focus when speaking with others",
+        "finishes people's sentences",
+        "often monopolizes conversations",
+        "tends to spend more money than they should",
+        "says 'yes' to everything and later cancels",
+        "expect others to tell them their most intimate secrets",
+        "swears far too much",
+        "easily loses their temper",
+        "chews with their mouth open"
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Neutral habits.",
+      "format": "-- who X",
+      "entries": [
+        "is brutally honest",
+        "tells little lies to make others happy",
+        "takes everything so seriously",
+        "likes to give others advice",
+        "is a perfectionist"
+      ]
+    },
+    {
+      "name": "positive",
+      "explanation": "Positive habits.",
+      "format": "-- who X",
+      "entries": [
+        "loves to make others laugh",
+        "has been very open about their feelings",
+        "is a great listener",
+        "know so much about surprising subjects",
+        "lives a regular life"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Habits once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Habits for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Habits for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Habits for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special habit tables.",
+      "entries": [
+        "XXX"
+      ]
+    }
+  ]
+}

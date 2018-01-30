@@ -7,7 +7,7 @@
   "explanation": "Magical techniques for magic tables.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly. Some subtables intentionally overlap.",
   "note": "",
-  "to do": "Mythological, fantasy, modern and futuristic subtables?",
+  "to do": "myth, fantasy, modern and futuristic subtables?",
   "see": "energy, magic, magical_instrument, spellcasting",
   "date": "2017-10-06",
   "authors": "Esko Vesala",

@@ -1,0 +1,475 @@
+{
+  "name": "friend",
+  "resultPattern": "{init}{result}",
+  "variables": {
+    "actant": "friend",
+    "actants": "friends",
+    "actantgroup": "posse",
+    "actantaction": "waiting for you to make the move",
+    "actantadjective": "good",
+    "actantdescription": "The friend smiles at you encouragingly.",
+    "attitude": "friendly",
+    "friend": "friend",
+    "friends": "friends",
+    "friendgroup": "posse",
+    "friendaction": "waiting for you to make the move",
+    "friendadjective": "good",
+    "frienddescription": "The friend smiles at you encouragingly.",
+    "footnote": ""
+  },
+  "explanation": "Randomized friends.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "Categorize friends by type.",
+  "see": "actant, Dungeon_adventure, hero, scene",
+  "date": "2018-01-21",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the friend parameters.",
+      "entries": [
+        {
+          "v": "",
+          "set": {
+            "actant": "friend"
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{friend}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{friend} who {lib:habit}",
+        "{personality} {friend} who {lib:habit}",
+        "{personality} {friend}",
+        "{personality} {friend} {complication}",
+        "{friend} {complication}",
+        "{friend} who wants to {goal}",
+        "{friend} {complication}, and who wants to {goal}",
+        "{personality} {friend} who wants to {goal}"
+      ]
+    },
+    {
+      "name": "friend",
+      "explanation": "Friend levels by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common friend relationships.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{family}",
+          "set": {
+            "friend": "family",
+            "frienddescription": "Part of the family."
+          }
+        },
+        {
+          "m": 1,
+          "v": "{relative}",
+          "set": {
+            "friend": "relative",
+            "frienddescription": "Related."
+          }
+        },
+        {
+          "m": 1,
+          "v": "{buddy}",
+          "set": {
+            "friend": "buddy",
+            "frienddescription": "A good friend."
+          }
+        }
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare friend relationships.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{education}",
+          "set": {
+            "friend": "education",
+            "frienddescription": ""
+          }
+        },
+        {
+          "m": 1,
+          "v": "{work}",
+          "set": {
+            "friend": "work",
+            "frienddescription": ""
+          }
+        },
+        {
+          "m": 1,
+          "v": "{neighbor}",
+          "set": {
+            "friend": "neighbor",
+            "frienddescription": ""
+          }
+        },
+        {
+          "m": 1,
+          "v": "{acquaintance}",
+          "set": {
+            "friend": "",
+            "frienddescription": "acquaintance"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "FAMILY MEMBERS"
+    },
+    {
+      "name": "family",
+      "explanation": "Friends that belong to the family.",
+      "entries": [
+        "{parent}",
+        "{sibling}",
+        "{spouse}",
+        "{child}",
+        "{extended family}"
+      ]
+    },
+    {
+      "name": "parent",
+      "explanation": "Parents.",
+      "entries": [
+        "parent",
+        "mother",
+        "father",
+        "{rare parent}"
+      ]
+    },
+    {
+      "name": "rare parent",
+      "explanation": "Rare parents.",
+      "entries": [
+        "stepfather",
+        "stepmother"
+      ]
+    },
+    {
+      "name": "sibling",
+      "explanation": "Siblings.",
+      "entries": [
+        "sibling",
+        "elder sibling",
+        "younger sibling",
+        "{rare sibling}"
+      ]
+    },
+    {
+      "name": "rare sibling",
+      "explanation": "Rare siblings.",
+      "entries": [
+        "stepsibling",
+        "twin",
+        "non-identical twin",
+        "identical twin"
+      ]
+    },
+    {
+      "name": "spouse",
+      "explanation": "Spouses.",
+      "entries": [
+        "beloved",
+        "spouse",
+        "{rare spouse}"
+      ]
+    },
+    {
+      "name": "rare spouse",
+      "explanation": "Rare spouses.",
+      "entries": [
+        "ex-spouse",
+        "lover"
+      ]
+    },
+    {
+      "name": "child",
+      "explanation": "Children.",
+      "entries": [
+        "child",
+        "{rare child}"
+      ]
+    },
+    {
+      "name": "rare child",
+      "explanation": "Rare children.",
+      "entries": [
+        "stepchild",
+        "adopted child"
+      ]
+    },
+    {
+      "name": "extended family",
+      "explanation": "Members of the extended family.",
+      "entries": [
+        "{grandparent}",
+        "{grandchild}",
+        "{rare extended family}"
+      ]
+    },
+    {
+      "name": "grandparent",
+      "explanation": "Parents of parents.",
+      "entries": [
+        "grandparent",
+        "granfather",
+        "grandmother"
+      ]
+    },
+    {
+      "name": "grandchild",
+      "explanation": "Children of children.",
+      "entries": [
+        "grandchild",
+        "grandson",
+        "granddaughter"
+      ]
+    },
+    {
+      "name": "rare extended family",
+      "explanation": "Rare extended family members.",
+      "entries": [
+        "uncle",
+        "aunt",
+        "cousin"
+      ]
+    },
+    {
+      "**************************************************": "RELATIVES"
+    },
+    {
+      "name": "relative",
+      "explanation": "Friends that are of the same blood.",
+      "entries": [
+        "{blood relative}",
+        "{inlaw}"
+      ]
+    },
+    {
+      "name": "blood relative",
+      "explanation": "Relatives that are of the same blood.",
+      "entries": [
+        "uncle",
+        "aunt",
+        "cousin",
+        "nephew",
+        "niece"
+      ]
+    },
+    {
+      "name": "inlaw",
+      "explanation": "Relatives by marriage.",
+      "entries": [
+        "father-in-law",
+        "mother-in-law",
+        "brother-in-law",
+        "sister-in-law"
+      ]
+    },
+    {
+      "**************************************************": "BUDDIES"
+    },
+    {
+      "name": "buddy",
+      "explanation": "Good, long-time friends.",
+      "entries": [
+        "childhood friend",
+        "close friend",
+        "confidant"
+      ]
+    },
+    {
+      "**************************************************": "COLLEAGUES"
+    },
+    {
+      "name": "education",
+      "explanation": "Friends by education.",
+      "entries": [
+        "mentor",
+        "coach",
+        "teacher",
+        "trainer"
+      ]
+    },
+    {
+      "name": "work",
+      "explanation": "Friends by work.",
+      "entries": [
+        "business partner",
+        "employer",
+        "co-worker",
+        "employee",
+        "contractor",
+        "customer"
+      ]
+    },
+    {
+      "**************************************************": "NEIGHBORS"
+    },
+    {
+      "name": "neighbor",
+      "explanation": "Friends by location.",
+      "entries": [
+        "neighbor",
+        "landlord",
+        "tenant"
+      ]
+    },
+    {
+      "**************************************************": "ACQUAINTANCES"
+    },
+    {
+      "name": "acquaintance",
+      "explanation": "Not so close friends.",
+      "entries": [
+        "acquaintance"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Friends once rumoured to have existed.",
+      "entries": [
+        "changeling sibling"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Friends for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "fairy godmother"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Friends for modern worlds.",
+      "entries": [
+        "{common}",
+        "hobby friend",
+        "pen pal",
+        "online friend",
+        "casual lover",
+        "polygamous lover"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "friends for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "alternate reality counterpart"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special friend tables.",
+      "entries": [
+        "{personality}",
+        "{substantive}",
+        "{strategy}",
+        "{goal}",
+        "{complication}"
+      ]
+    },
+    {
+      "name": "personality",
+      "explanation": "The personality of the friend.",
+      "entries": [
+        "lazy",
+        "stubborn",
+        "happy-go-lucky",
+        "serious",
+        "joker",
+        "industrious",
+        "generous",
+        "{rare personality}"
+      ]
+    },
+    {
+      "name": "rare personality",
+      "explanation": "Rare personalities for friends.",
+      "entries": [
+        "charismatic"
+      ]
+    },
+    {
+      "name": "strategy",
+      "explanation": "The friend's chosen approach.",
+      "entries": [
+        "survivalist",
+        "loner",
+        "strategist",
+        "leader",
+        "mentor"
+      ]
+    },
+    {
+      "name": "goal",
+      "explanation": "The friend's goal.",
+      "entries": [
+        "gain as much wealth as possible",
+        "become the best in their own area of expertise",
+        "experience adventures",
+        "live a secured life",
+        "be happy",
+        "live a happy life",
+        "raise good children"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "Complications for the friend.",
+      "entries": [
+        "whose reputation has been marred by false accusations",
+        "who knows that death is near",
+        "who seems to be hiding a big secret",
+        "who is unable to trust others",
+        "who has a drinking problem",
+        "who does not trust their own capabilities"
+      ]
+    }
+  ]
+}

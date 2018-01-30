@@ -140,12 +140,12 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Direction systems from history.",
       "entries": [
         "{Charlemagne}",
         "{Mediterranean}",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
@@ -181,7 +181,7 @@
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare direction systems from history.",
       "entries": [
         "{Biblical}",
@@ -340,9 +340,9 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Direction systems for fantasy worlds.",
+      "explanation": "Direction systems for fantasy (with no basis in myth).",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "hubwards (towards the center of the world)",
         "turnwise (following the rotation of the world)",
         "rimwards (towards the edge of the world)",

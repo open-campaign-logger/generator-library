@@ -1,0 +1,80 @@
+{
+  "name": "simple template",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "XXX",
+  "structure": "Simple template for help tables.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "@timestamp@ XXX",
+  "authors": "@author@. XXX",
+  "sources": "",
+  "genre": "",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{XXX}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{XXX} {XXX}"
+      ]
+    },
+    {
+      "name": "XXX",
+      "explanation": "XXX",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common XXX.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare XXX.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special XXX tables.",
+      "entries": [
+        "XXX"
+      ]
+    }
+  ]
+}

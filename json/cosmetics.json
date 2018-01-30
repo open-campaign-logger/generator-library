@@ -221,16 +221,16 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary cosmetics once rumoured to have existed.",
       "entries": [
         "eye make up warding from the effects of the evil eye",
         "intricately designed body paint",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary cosmetics once rumoured to have existed.",
       "entries": [
         "living flowers growing in hair",
@@ -239,16 +239,16 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary cosmetics for fantasy worlds.",
+      "explanation": "Imaginary cosmetics for fantasy (with no basis in myth).",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "living body paint (slowly changing)",
         "{rare fantasy}"
       ]
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary cosmetics for fantasy worlds.",
+      "explanation": "Rare cosmetics for fantasy (with no basis in myth).",
       "entries": [
         "living tattoos (slowly changing)"
       ]

@@ -1,0 +1,299 @@
+{
+  "name": "activity",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Character activities.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2017-12-28",
+  "authors": "",
+  "sources": "",
+  "genre": "",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Variations for resultPattern output.",
+      "entries": [
+        "{activity}"
+      ]
+    },
+    {
+      "name": "activity",
+      "explanation": "Activity types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common activities.",
+      "entries": [
+        "{passive}",
+        "{guarding}",
+        "{feeding}",
+        "{exploring}",
+        "{gathering}",
+        "{illicit}",
+        "{working}",
+        "{social}",
+        "{communication}"
+      ]
+    },
+    {
+      "name": "passive",
+      "explanation": "Passive activities.",
+      "entries": [
+        "sleeping",
+        "resting",
+        "hiding"
+      ]
+    },
+    {
+      "name": "guarding",
+      "explanation": "Guarding activities.",
+      "entries": [
+        "on guard",
+        "guarding {object}"
+      ]
+    },
+    {
+      "name": "feeding",
+      "explanation": "Eating and drinking related activities.",
+      "entries": [
+        "preparing a meal",
+        "eating {lib:food}",
+        "drinking {lib:drink}"
+      ]
+    },
+    {
+      "name": "exploring",
+      "explanation": "Exploration-related activities.",
+      "entries": [
+        "looking around",
+        "moving around",
+        "making a mental map of the area",
+        "tracking something"
+      ]
+    },
+    {
+      "name": "gathering",
+      "explanation": "Gathering-related activities.",
+      "entries": [
+        "looking for something to drink",
+        "looking for something to eat",
+        "looking for resources",
+        "searching for {object}"
+      ]
+    },
+    {
+      "name": "illicit",
+      "explanation": "Criminal activities.",
+      "entries": [
+        "hiding {object#valuables}",
+        "looking for a suitable target",
+        "following a suitable target",
+        "attempting to steal"
+      ]
+    },
+    {
+      "name": "working",
+      "explanation": "Work-related activities.",
+      "entries": [
+        "working",
+        "carrying {object}",
+        "trading {object}"
+      ]
+    },
+    {
+      "name": "social",
+      "explanation": "Social activities.",
+      "entries": [
+        "looking for someone to talk to",
+        "looking for companionship"
+      ]
+    },
+    {
+      "name": "communication",
+      "explanation": "Communicateive activities.",
+      "entries": [
+        "wondering about {discussion}",
+        "asking about {discussion}",
+        "explaining {discussion}",
+        "comparing their information about {discussion}",
+        "talking about {discussion}",
+        "debating about {discussion}",
+        "arguing about {discussion}"
+      ]
+    },
+    {
+      "name": "discussion",
+      "explanation": "Subjects of discussion.",
+      "entries": [
+        "{discussion object}",
+        "{discussion subject} finances",
+        "{discussion subject} dreams",
+        "{discussion subject} plans for the future",
+        "{discussion subject} love life",
+        "{discussion subject} work",
+        "{discussion subject} recent experience near that {lib:location#simple}",
+        "rumors about {discussion object}",
+        "arguments for and against {discussion object}",
+        "news about {discussion object}"
+      ]
+    },
+    {
+      "name": "discussion subject",
+      "explanation": "Subject of discussion.",
+      "entries": [
+        "their own",
+        "their companion's",
+        "their family's",
+        "their colleague's",
+        "their competitor's",
+        "their neighbour's",
+        "their relative's",
+        "their friend's",
+        "their acquaintance's",
+        "a local celebrity's"
+      ]
+    },
+    {
+      "name": "discussion object",
+      "explanation": "Object of discussion.",
+      "entries": [
+        "themselves",
+        "their companion",
+        "their family",
+        "their colleague",
+        "their competitor",
+        "their neighbour",
+        "their relative",
+        "their friend",
+        "their acquaintance",
+        "a local celebrity",
+        "recent {discussion scope} events",
+        "{discussion scope} politics"
+      ]
+    },
+    {
+      "name": "discussion scope",
+      "explanation": "Scope.",
+      "entries": [
+        "family",
+        "work",
+        "neighbourhood",
+        "local",
+        "regional",
+        "international"
+      ]
+    },
+    {
+      "name": "object",
+      "explanation": "Targets of citizens' activities.",
+      "entries": [
+        "{lib:equipment}",
+        "illegal substances",
+        "{valuables}"
+      ]
+    },
+    {
+      "name": "valuables",
+      "explanation": "Valuable objects.",
+      "entries": [
+        "money",
+        "{lib:jewelry}",
+        "{lib:gem}",
+        "{lib:treasure}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare activities.",
+      "entries": [
+        "{concentrating}",
+        "{grooming}"
+      ]
+    },
+    {
+      "name": "concentrating",
+      "explanation": "Activities related to concentrating.",
+      "entries": [
+        "concentrating",
+        "meditating",
+        "praying"
+      ]
+    },
+    {
+      "name": "grooming",
+      "explanation": "Activities related to personal hygiene.",
+      "entries": [
+        "tidying up",
+        "visiting a lavatory"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Activities once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Activities for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Activities for modern worlds.",
+      "entries": [
+        "{common}",
+        "calling someone"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Activities for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "communicating silently"
+      ]
+    },
+    {
+      "name": "special",
+      "explanation": "Special activity types.",
+      "entries": [
+        "{animal}"
+      ]
+    },
+    {
+      "name": "animal",
+      "explanation": "Activities for animals.",
+      "entries": [
+        "sleeping",
+        "resting",
+        "hiding",
+        "eating",
+        "on guard",
+        "looking for food",
+        "looking for a mate",
+        "looking after its young"
+      ]
+    }
+  ]
+}

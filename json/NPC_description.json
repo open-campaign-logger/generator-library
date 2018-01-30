@@ -1,17 +1,23 @@
 {
   "name": "NPC Description Generator",
   "resultPattern": "{form}{gender}{culture}{wealth}{attitude} \r\n  {description} \r\n{var:footnote}",
-  "variables": {
-    "activity": "",
-    "age": "",
-    "attitude": "",
+  "globals": {
+    "actant": "person",
+    "actants": "persons",
+    "actantgroup": "group",
+    "actantaction": "minding their own business",
+    "actantadjective": "casual",
+    "actantdescription": "The person is not paying much attention to their surroundings.",
+    "activity": "passive",
+    "attitude": "neutral",
+    "age": "adult",
     "behavior": "",
     "clothing": "",
-    "culture": "",
+    "clothingadjective": "",
+    "culture": "Northern",
     "doing": "",
-    "footnote": "",
     "form": "",
-    "gender": "",
+    "gender": "neuter",
     "mood": "",
     "moodexpression": "",
     "occupation": "",
@@ -20,15 +26,18 @@
     "style": "",
     "subject": "",
     "substantive": "",
-    "wealth": ""
+    "wealth": "middle class"
+  },
+  "variables": {
+    "footnote": ""
   },
   "explanation": "First impression of a Non-Player Character.",
   "structure": "Produces generic entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, any non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "Most table calls do not return a direct result, but variables that can then be reused in the resultPattern. This generator has been initially created as a single file. When external subtable call support is added to Campaign Logger, it would make sense to split the generator into multiple files for easier maintenance and better reuse options.",
-  "bugs": "",
+  "bugs": "Developepment currently on hold, waiting for global variable support.",
   "to do": "Most of it... Starting from genre? ",
   "see": "",
-  "date": "2017-10-01",
+  "date": "2018-01-29",
   "authors": "Esko Vesala",
   "sources": "Wikipedia.org",
   "genre": "fantasy",
@@ -39,8 +48,8 @@
       "name": "description",
       "explanation": "Short description of the character. Note that species returns a direct result (so that 'human', the default, can return an empty string.)",
       "entries": [
-        "{var:age} {var:gender} {var:speciesmentioned} is {var:attitude} and {wearing} {var:clothingadjective} {clothing}. The {var:substantive} is {var:activity}. {now} {var:subject} is {var:attitude} and {var:mood}, {var:moodexpression}. ",
-        "{var:age} {var:gender} {var:speciesmentioned} {wearing} {var:clothingadjective} {clothing}. The {var:substantive} is {var:activity}. {now} {var:subject} is {var:mood}, {var:moodexpression}. {var:subject} has a {var:speciesadjective} sense of humor."
+        "{var:age} {var:gender} {var:speciesmentioned} is {var:attitude} and {lib:synonym#wearing} {var:clothingadjective} {lib:synonym#clothing}. The {var:substantive} is {var:activity}. {lib:synonym#now} {var:subject} is {var:attitude} and {var:mood}, {var:moodexpression}. ",
+        "{var:age} {var:gender} {var:speciesmentioned} {lib:synonym#wearing} {var:clothingadjective} {lib:synonym#clothing}. The {var:substantive} is {var:activity}. {lib:synonym#now} {var:subject} is {var:mood}, {var:moodexpression}. {var:subject} has a {var:speciesadjective} sense of humor."
       ]
     },
     {
@@ -50,7 +59,7 @@
         {
           "m": 1,
           "v": "{humanoid}",
-          "set": {
+          "export": {
             "form": "humanoid"
           }
         }
@@ -63,7 +72,7 @@
         {
           "m": 50,
           "v": "",
-          "set": {
+          "export": {
             "species": "human",
             "speciesmentioned": "",
             "speciesadjective": "human"
@@ -72,7 +81,7 @@
         {
           "m": 20,
           "v": "",
-          "set": {
+          "export": {
             "species": "elf",
             "speciesmentioned": "elf",
             "speciesadjective": "elven"
@@ -81,7 +90,7 @@
         {
           "m": 20,
           "v": "",
-          "set": {
+          "export": {
             "species": "dwarf",
             "speciesmentioned": "dwarf",
             "speciesadjective": "dwarven"
@@ -90,7 +99,7 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "species": "gnome",
             "speciesmentioned": "gnome",
             "speciesadjective": "gnomish"
@@ -105,7 +114,7 @@
         {
           "m": 49,
           "v": "{female age}",
-          "set": {
+          "export": {
             "gender": "female",
             "subject": "she",
             "object": "her",
@@ -117,7 +126,7 @@
         {
           "m": 49,
           "v": "{male age}",
-          "set": {
+          "export": {
             "gender": "male",
             "subject": "he",
             "object": "him",
@@ -135,7 +144,7 @@
         {
           "m": 1,
           "v": "{neuter age}",
-          "set": {
+          "export": {
             "gender": "neuter",
             "subject": "it",
             "object": "it",
@@ -147,7 +156,7 @@
         {
           "m": 1,
           "v": "{hermafrodite age}",
-          "set": {
+          "export": {
             "gender": "hermafrodite",
             "subject": "they",
             "object": "them",
@@ -165,7 +174,7 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "age": "teenage",
             "substantive": "teenager"
           }
@@ -173,7 +182,7 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "age": "young",
             "substantive": "youngster"
           }
@@ -181,7 +190,7 @@
         {
           "m": 30,
           "v": "",
-          "set": {
+          "export": {
             "age": "adult",
             "substantive": "person"
           }
@@ -189,7 +198,7 @@
         {
           "m": 20,
           "v": "",
-          "set": {
+          "export": {
             "age": "middle aged",
             "substantive": "person"
           }
@@ -197,7 +206,7 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "age": "old",
             "substantive": "old one"
           }
@@ -205,7 +214,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "age": "ancient",
             "substantive": "ancient one"
           }
@@ -219,7 +228,7 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "age": "teenage",
             "substantive": "teenager"
           }
@@ -227,7 +236,7 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "age": "young",
             "substantive": "youngster"
           }
@@ -235,7 +244,7 @@
         {
           "m": 30,
           "v": "",
-          "set": {
+          "export": {
             "age": "adult",
             "substantive": "person"
           }
@@ -243,7 +252,7 @@
         {
           "m": 20,
           "v": "",
-          "set": {
+          "export": {
             "age": "middle aged",
             "substantive": "person"
           }
@@ -251,7 +260,7 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "age": "old",
             "substantive": "old one"
           }
@@ -259,7 +268,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "age": "ancient",
             "substantive": "ancient one"
           }
@@ -273,7 +282,7 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "age": "teenage",
             "substantive": "teenager"
           }
@@ -281,7 +290,7 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "age": "young",
             "substantive": "youngster"
           }
@@ -289,7 +298,7 @@
         {
           "m": 30,
           "v": "",
-          "set": {
+          "export": {
             "age": "adult",
             "substantive": "person"
           }
@@ -297,7 +306,7 @@
         {
           "m": 20,
           "v": "",
-          "set": {
+          "export": {
             "age": "middle aged",
             "substantive": "person"
           }
@@ -305,7 +314,7 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "age": "old",
             "substantive": "old one"
           }
@@ -313,7 +322,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "age": "ancient",
             "substantive": "ancient one"
           }
@@ -327,7 +336,7 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "age": "teenage",
             "substantive": "teenager"
           }
@@ -335,7 +344,7 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "age": "young",
             "substantive": "youngster"
           }
@@ -343,7 +352,7 @@
         {
           "m": 30,
           "v": "",
-          "set": {
+          "export": {
             "age": "adult",
             "substantive": "person"
           }
@@ -351,7 +360,7 @@
         {
           "m": 20,
           "v": "",
-          "set": {
+          "export": {
             "age": "middle aged",
             "substantive": "person"
           }
@@ -359,7 +368,7 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "age": "old",
             "substantive": "old one"
           }
@@ -367,7 +376,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "age": "ancient",
             "substantive": "ancient one"
           }
@@ -381,28 +390,28 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "culture": "Western"
           }
         },
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "culture": "Northern"
           }
         },
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "culture": "Eastern"
           }
         },
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "culture": "Southern"
           }
         }
@@ -415,35 +424,35 @@
         {
           "m": 5,
           "v": "{poor clothing}",
-          "set": {
+          "export": {
             "wealth": "poor"
           }
         },
         {
           "m": 50,
           "v": "{lower class clothing}",
-          "set": {
+          "export": {
             "wealth": "lower class"
           }
         },
         {
           "m": 30,
           "v": "{middle class clothing}",
-          "set": {
+          "export": {
             "wealth": "middle class"
           }
         },
         {
           "m": 10,
           "v": "{upper class clothing}",
-          "set": {
+          "export": {
             "wealth": "upper class"
           }
         },
         {
           "m": 5,
           "v": "{rich clothing}",
-          "set": {
+          "export": {
             "wealth": "rich"
           }
         }
@@ -456,21 +465,21 @@
         {
           "m": 5,
           "v": "",
-          "set": {
+          "export": {
             "clothing": "rags"
           }
         },
         {
           "m": 5,
           "v": "",
-          "set": {
+          "export": {
             "clothing": "ill-fitting garments"
           }
         },
         {
           "m": 5,
           "v": "",
-          "set": {
+          "export": {
             "clothingadjective": "dirty"
           }
         }
@@ -483,7 +492,7 @@
         {
           "m": 5,
           "v": "",
-          "set": {
+          "export": {
             "clothingadjective": "modest"
           }
         }
@@ -496,7 +505,7 @@
         {
           "m": 5,
           "v": "",
-          "set": {
+          "export": {
             "clothingadjective": "ordinary"
           }
         }
@@ -509,7 +518,7 @@
         {
           "m": 5,
           "v": "",
-          "set": {
+          "export": {
             "clothingadjective": "fashionable"
           }
         }
@@ -522,7 +531,7 @@
         {
           "m": 5,
           "v": "",
-          "set": {
+          "export": {
             "clothingadjective": "luxurious"
           }
         }
@@ -535,21 +544,21 @@
         {
           "m": 30,
           "v": "",
-          "set": {
+          "export": {
             "attitude": "hostile"
           }
         },
         {
           "m": 40,
           "v": "",
-          "set": {
+          "export": {
             "attitude": "neutral"
           }
         },
         {
           "m": 30,
           "v": "",
-          "set": {
+          "export": {
             "attitude": "friendly"
           }
         }
@@ -562,14 +571,14 @@
         {
           "m": 10,
           "v": "{passive activity}",
-          "set": {
+          "export": {
             "activity": "passive"
           }
         },
         {
           "m": 10,
           "v": "{active activity}",
-          "set": {
+          "export": {
             "activity": "active"
           }
         }
@@ -582,21 +591,21 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "activity": "sleeping"
           }
         },
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "activity": "sitting"
           }
         },
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "activity": "standing"
           }
         }
@@ -609,14 +618,14 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "activity": "walking"
           }
         },
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "activity": "running"
           }
         }
@@ -629,7 +638,7 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "mood": "sad",
             "moodexpression": "crying"
           }
@@ -637,7 +646,7 @@
         {
           "m": 20,
           "v": "",
-          "set": {
+          "export": {
             "mood": "passive",
             "moodexpression": "deep in thoughts"
           }
@@ -645,46 +654,11 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "mood": "happy",
             "moodexpression": "laughing"
           }
         }
-      ]
-    },
-    {
-      "name": "wearing",
-      "explanation": "Synonyms for wearing clothes.",
-      "entries": [
-        "wearing",
-        "dressed in",
-        "clad in",
-        "clothed in",
-        "donning",
-        "outfitted in"
-      ]
-    },
-    {
-      "name": "clothing",
-      "explanation": "Synonyms for clothes.",
-      "entries": [
-        "clothing",
-        "garb",
-        "apparel",
-        "outfit",
-        "attire",
-        "gear",
-        "guise",
-        "wardrobe"
-      ]
-    },
-    {
-      "name": "now",
-      "explanation": "Synonyms for 'now'.",
-      "entries": [
-        "now",
-        "currently",
-        "at this time"
       ]
     }
   ]

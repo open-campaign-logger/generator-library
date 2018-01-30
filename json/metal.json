@@ -1,6 +1,6 @@
 {
   "name": "metal table",
-  "resultPattern": "{metal}",
+  "resultPattern": "{result}",
   "variables": {
     "footnote": ""
   },
@@ -9,7 +9,7 @@
   "note": "",
   "to do": "",
   "see": "material, stone",
-  "date": "2017-10-04",
+  "date": "2018-01-08",
   "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
   "sources": "TvTropes.org, Wikipedia.org.",
   "genre": "universal",
@@ -18,6 +18,28 @@
   ],
   "tags": "#material, #resource",
   "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{metal}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{metal}"
+      ]
+    },
     {
       "name": "metal",
       "explanation": "Metal rarity.",
@@ -44,6 +66,9 @@
         "{precious}",
         "{ancient}"
       ]
+    },
+    {
+      "**************************************************": "METALS"
     },
     {
       "name": "base",
@@ -84,9 +109,6 @@
         "brass",
         "bronze",
         "pewter",
-        "steel",
-        "stainless steel",
-        "alloy steel",
         "damascus steel"
       ]
     },
@@ -116,17 +138,13 @@
       ]
     },
     {
-      "name": "ancient",
-      "explanation": "Metals from ancient cultures.",
-      "entries": [
-        "copper",
-        "bronze"
-      ]
+      "**************************************************": "WORLD-SPECIFIC"
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary metals once rumoured to have existed.",
       "entries": [
+        "cold iron",
         "hard mercury",
         "adamant",
         "orichalcum"
@@ -134,14 +152,12 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary metals for fantasy worlds.",
+      "explanation": "Fantasy metals (with no basis in myth).",
       "entries": [
-        "{mythological}",
-        "cold iron",
+        "{myth}",
         "star iron",
         "hell iron",
         "absolute iron",
-        "fine steel",
         "red steel",
         "brightsteel",
         "elven steel",
@@ -168,6 +184,9 @@
       "name": "modern",
       "explanation": "Metals discovered in the modern time period.",
       "entries": [
+        "steel",
+        "stainless steel",
+        "alloy steel",
         "aluminium",
         "nickel",
         "magnesium",
@@ -201,6 +220,56 @@
       ]
     },
     {
+      "name": "futuristic",
+      "explanation": "Imaginary metals for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "plasteel",
+        "glassteel",
+        "{futuristic alloy}",
+        "{rare futuristic}"
+      ]
+    },
+    {
+      "name": "rare futuristic",
+      "explanation": "Rare imaginary metals for science fiction worlds.",
+      "entries": [
+        "red mercury",
+        "alien metal",
+        "metal X",
+        "unaffordium",
+        "unobtainium"
+      ]
+    },
+    {
+      "name": "futuristic alloy",
+      "explanation": "Imaginary alloys for science fiction metals.",
+      "entries": [
+        "duralloy",
+        "wishalloy"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special metal tables.",
+      "entries": [
+        "{ancient}",
+        "{heavy}",
+        "{noble}"
+      ]
+    },
+    {
+      "name": "ancient",
+      "explanation": "Metals from ancient cultures.",
+      "entries": [
+        "copper",
+        "bronze"
+      ]
+    },
+    {
       "name": "noble",
       "explanation": "Common metals that are resistant to corrosion or oxidation. Excludes metals from modern and futuristic subtables. Overlaps with the precious subtable.",
       "entries": [
@@ -223,29 +292,6 @@
         "curium",
         "uranium",
         "plutonium"
-      ]
-    },
-    {
-      "name": "futuristic",
-      "explanation": "Imaginary metals for science fiction worlds.",
-      "entries": [
-        "{modern}",
-        "plasteel",
-        "glassteel",
-        "red mercury",
-        "alien metal",
-        "metal X",
-        "unaffordium",
-        "unobtainium",
-        "{futuristic alloy}"
-      ]
-    },
-    {
-      "name": "futuristic alloy",
-      "explanation": "Imaginary alloys for science fiction metals.",
-      "entries": [
-        "duralloy",
-        "wishalloy"
       ]
     }
   ]

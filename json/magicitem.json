@@ -131,15 +131,15 @@
       ]
     },
     {
-      "name": "mythological",
+      "name": "myth",
       "explanation": "Imaginary magic items once rumoured to have existed.",
       "entries": [
         "XXX",
-        "{rare mythological}"
+        "{rare myth}"
       ]
     },
     {
-      "name": "rare mythological",
+      "name": "rare myth",
       "explanation": "Rare imaginary magic items once rumoured to have existed.",
       "entries": [
         "XXX"
@@ -147,16 +147,16 @@
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary magic items for fantasy worlds.",
+      "explanation": "Fantasy magic items (with no basis in myth).",
       "entries": [
-        "{mythological}",
+        "{myth}",
         "XXX",
         "{rare fantasy}"
       ]
     },
     {
       "name": "rare fantasy",
-      "explanation": "Rare imaginary magic items for fantasy worlds.",
+      "explanation": "Rare fantasy magic items (with no basis in myth).",
       "entries": [
         "XXX"
       ]
