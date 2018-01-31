@@ -1,6 +1,6 @@
 {
   "name": "Generator Template",
-  "resultPattern": "{result}",
+  "resultPattern": "{init}{result}",
   "variables": {
     "footnote": ""
   },
@@ -19,6 +19,18 @@
     ""
   ],
   "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
     {
       "name": "result",
       "explanation": "Verbosity of the resultPattern output.",
