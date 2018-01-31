@@ -1,6 +1,9 @@
 {
   "name": "Generator Template",
   "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": "value"
+  },
   "variables": {
     "footnote": ""
   },
