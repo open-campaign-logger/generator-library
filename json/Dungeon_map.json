@@ -1,0 +1,176 @@
+{
+  "name": "Dungeon_map",
+  "resultPattern": "{lib:formatting#CL}{init}{result}",
+  "globals": {
+    "variable": "value"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "XXX",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-02-02",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{map}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{map}"
+      ]
+    },
+    {
+      "name": "map",
+      "explanation": "Dungeon map types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common dungeon map formats.",
+      "entries": [
+        "{square}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare dungeon map formats.",
+      "entries": [
+        "{square}"
+      ]
+    },
+    {
+      "**************************************************": "DUNGEON SHAPES"
+    },
+    {
+      "name": "square",
+      "explanation": "Square dungeon maps.",
+      "entries": [
+        "{three_by_three}",
+        "{four_by_four}",
+        "{five_by_five}",
+        "{six_by_six}"
+      ]
+    },
+    {
+      "**************************************************": "DUNGEON MAPS"
+    },
+    {
+      "name": "three_by_three",
+      "explanation": "4 x 4 square-shaped dungeon map.",
+      "entries": [
+        "Dungeon Map: 3x3 \r\n|| {lib:dungeon_entrance} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_vault} ",
+        "Dungeon Map: 3x3 \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_vault} \r\n|| {lib:dungeon_entrance} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} ",
+        "Dungeon Map: 3x3 \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_entrance} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_vault} ",
+        "Dungeon Map: 3x3 \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_vault} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_entrance} || {lib:dungeon_room#room} || {lib:dungeon_room#room} "
+      ]
+    },
+    {
+      "name": "four_by_four",
+      "explanation": "4 x 4 square-shaped dungeon map.",
+      "entries": [
+        "Dungeon Map: 4x4 \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| Entrance || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || Vault \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} "
+      ]
+    },
+    {
+      "name": "five_by_five",
+      "explanation": "5 x 5 square-shaped dungeon map.",
+      "entries": [
+        "Dungeon Map: 5x5 \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} "
+      ]
+    },
+    {
+      "name": "six_by_six",
+      "explanation": "6 x 6 square-shaped dungeon map.",
+      "entries": [
+        "Dungeon Map: 6x6 \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} "
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "XXX once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "XXX for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "XXX for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "XXX for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special dungeon map tables.",
+      "entries": [
+        "XXX"
+      ]
+    }
+  ]
+}
