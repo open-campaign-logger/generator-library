@@ -1,0 +1,176 @@
+{
+  "name": "set-dungeon",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "set": "dungeon",
+    "setentrance": "entrance",
+    "setlocation": "chamber",
+    "setpassage": "passage",
+    "setvault": "vault",
+    "setadjective": "dingy",
+    "setdoor": "door",
+    "setprop": "torch"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Dungeon-themed locations.",
+  "structure": "Global variables fitting a common environment.",
+  "note": "This table does not produce immediate output, only sets global variables for later use.",
+  "format": "Global variable definitions.",
+  "bugs": "",
+  "to do": "",
+  "see": "Dungeon_adventure",
+  "date": "2018-02-02",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Setting the relevant global variables.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "setadjective": "{adjective}",
+            "setentrance": "{entrance}",
+            "setlocation": "{location}",
+            "setpassage": "{passage}",
+            "setvault": "{vault}",
+            "setdoor": "{door}",
+            "setprop": "{prop}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": ".",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief description of the randomized set.",
+      "entries": [
+        "{global:setlocation}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed description of the randomized set.",
+      "entries": [
+        "{global:setadjective} {global:setlocation}",
+        "{global:setlocation} with {global:setprop}",
+        "{global:setadjective} {global:setlocation} with {global:setprop}"
+      ]
+    },
+    {
+      "name": "area",
+      "explanation": "Area types on the set.",
+      "entries": [
+        "{entrance}",
+        "{location}",
+        "{passage}",
+        "{vault}"
+      ]
+    },
+    {
+      "**************************************************": "AREAS"
+    },
+    {
+      "name": "entrance",
+      "explanation": "Entrances matching the set.",
+      "entries": [
+        "entrance",
+        "entranceway",
+        "entryway",
+        "opening",
+        "doorway",
+        "gateway",
+        "gate",
+        "double gates",
+        "portcullis gate"
+      ]
+    },
+    {
+      "name": "location",
+      "explanation": "Locations matching the set.",
+      "entries": [
+        "cell",
+        "store room",
+        "room",
+        "chamber",
+        "tomb",
+        "hall"
+      ]
+    },
+    {
+      "name": "passage",
+      "explanation": "Corridors matching the set.",
+      "entries": [
+        "corridor",
+        "passage",
+        "passageway"
+      ]
+    },
+    {
+      "name": "vault",
+      "explanation": "Centerpiece locations matching the set.",
+      "entries": [
+        "vault",
+        "crypt",
+        "sepulcher",
+        "catacomb",
+        "mausoleum"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives for the set locations.",
+      "entries": [
+        "candle-lit",
+        "darkness-engulfed"
+      ]
+    },
+    {
+      "name": "door",
+      "explanation": "Doors matching the set.",
+      "entries": [
+        "door",
+        "double doors",
+        "gate",
+        "double gates",
+        "portcullis"
+      ]
+    },
+    {
+      "name": "prop",
+      "explanation": "Potential properties for the set.",
+      "entries": [
+        "extinguished torch",
+        "empty chest"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "test",
+      "explanation": "Testing tool for dumping the set global variables.",
+      "entries": [
+        "{global:set} walkthrough: {global:setentrance} to {global:setpassage} leads to {global:setadjective} {global:setlocation} with {global:setprop}. Behind {global:setdoor} is the {global:setvault}."
+      ]
+    }
+  ]
+}
