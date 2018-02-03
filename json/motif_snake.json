@@ -1,5 +1,5 @@
 {
-  "name": "motif-snake",
+  "name": "motif_snake",
   "resultPattern": "{init}{result}",
   "globals": {
     "motif": "snake",

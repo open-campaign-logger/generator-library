@@ -1,13 +1,13 @@
 {
-  "name": "set-city",
+  "name": "set_forest",
   "resultPattern": "{init}{result}",
   "globals": {
-    "set": "city",
+    "set": "forest",
     "setentrance": "entrance",
     "setlocation": "chamber",
     "setpassage": "passage",
     "setvault": "vault",
-    "setadjective": "sooty",
+    "setadjective": "dark",
     "setdoor": "door",
     "setprop": "torch"
   },
@@ -89,45 +89,48 @@
       "name": "entrance",
       "explanation": "Entrances matching the set.",
       "entries": [
-        "city gate",
-        "city gates",
-        "toll gate"
+        "pathway to forest",
+        "forest entrance"
       ]
     },
     {
       "name": "location",
       "explanation": "Locations matching the set.",
       "entries": [
-        "tavern",
-        "inn",
-        "market square",
-        "guildhall",
-        "warehouse",
-        "bath house",
-        "docks"
+        "thicket",
+        "shrubbery",
+        "undergrowth",
+        "coppice",
+        "copse of trees",
+        "weald",
+        "woods",
+        "wildwood",
+        "backwoods"
       ]
     },
     {
       "name": "passage",
       "explanation": "Corridors matching the set.",
       "entries": [
-        "passageway",
-        "alleyway",
-        "alley",
-        "back street",
-        "street",
-        "lane",
-        "avenue"
+        "walk",
+        "stroll",
+        "hike",
+        "path",
+        "pathway",
+        "logging road",
+        "forest road"
       ]
     },
     {
       "name": "vault",
       "explanation": "Centerpiece locations matching the set.",
       "entries": [
-        "mansion",
-        "town hall",
-        "temple",
-        "courthouse"
+        "orchard",
+        "grove",
+        "tall oak tree",
+        "spring",
+        "mound",
+        "standing stones"
       ]
     },
     {
@@ -137,24 +140,33 @@
       "name": "adjective",
       "explanation": "Adjectives for the set locations.",
       "entries": [
-        "soot-covered"
+        "cobwebbed",
+        "mist-filled"
       ]
     },
     {
       "name": "door",
       "explanation": "Doors matching the set.",
       "entries": [
-        "door",
-        "gate",
-        "arched entranceway"
+        "fallen treetrunk",
+        "thick vines"
       ]
     },
     {
       "name": "prop",
       "explanation": "Potential properties for the set.",
       "entries": [
-        "cart",
-        "street-vendor's stall"
+        "mushroom ring",
+        "anthill",
+        "dead tree",
+        "fallen tree",
+        "tall tree stump",
+        "two trees grown together",
+        "giant boulder",
+        "old firepit",
+        "old campsite",
+        "menhir",
+        "circle of stones"
       ]
     },
     {

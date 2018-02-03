@@ -1,5 +1,5 @@
 {
-  "name": "set-dungeon",
+  "name": "set_dungeon",
   "resultPattern": "{init}{result}",
   "globals": {
     "set": "dungeon",
