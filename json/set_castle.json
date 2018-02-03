@@ -1,8 +1,8 @@
 {
-  "name": "set-template",
+  "name": "set-castle",
   "resultPattern": "{init}{result}",
   "globals": {
-    "set": "XXX",
+    "set": "castle",
     "setarea": "area",
     "setlocale": "locale",
     "setboundary": "boundary",
@@ -10,10 +10,10 @@
     "setlocation": "chamber",
     "setpassage": "passage",
     "setvault": "vault",
-    "setadjective": "XXX",
+    "setadjective": "drafty",
     "setdoor": "door",
     "setnook": "nook",
-    "setprop": "XXX"
+    "setprop": "coat of arms"
   },
   "variables": {
     "footnote": ""
@@ -25,9 +25,9 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "XXX",
-  "authors": "XXX.",
-  "sources": "",
+  "date": "2018-02-03",
+  "authors": "Esko Vesala.",
+  "sources": "CastlesAndManorHouses.com, Wikipedia.org",
   "genre": "universal",
   "categories": [
     "world"
@@ -42,7 +42,9 @@
           "v": "",
           "export": {
             "setadjective": "{adjective}",
-            "setboundary": "{setboundary}",
+            "setarea": "{area}",
+            "setlocale": "{locale}",
+            "setboundary": "{boundary}",
             "setentrance": "{entrance}",
             "setlocation": "{location}",
             "setpassage": "{passage}",
@@ -66,16 +68,16 @@
       "name": "summary",
       "explanation": "Brief description of the randomized set.",
       "entries": [
-        "{global:setarea}"
+        "{global:setlocation}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed description of the randomized set.",
       "entries": [
-        "{global:setadjective} {global:setarea}",
-        "{global:setarea} with {global:setprop}",
-        "{global:setadjective} {global:setarea} with {global:setprop}"
+        "{global:setadjective} {global:setlocale}",
+        "{global:setlocale} with {global:setprop}",
+        "{global:setadjective} {global:setlocale} with {global:setprop}"
       ]
     },
     {
@@ -85,7 +87,6 @@
         "{entrance}",
         "{location}",
         "{passage}",
-        "{nook}",
         "{vault}"
       ]
     },
@@ -96,49 +97,149 @@
       "name": "boundary",
       "explanation": "Borders around the set.",
       "entries": [
-        "XXX"
+        "moat",
+        "drawbridge",
+        "outer wall",
+        "courtyard"
       ]
     },
     {
       "name": "entrance",
       "explanation": "Entrances matching the set.",
       "entries": [
-        "XXX"
+        "gate"
       ]
     },
     {
       "name": "area",
       "explanation": "Areas containing several locations.",
       "entries": [
-        "XXX"
+        "wall",
+        "tower",
+        "servant's quarters",
+        "guest quarters",
+        "lady's quarters",
+        "lord's quarters"
       ]
     },
     {
       "name": "location",
       "explanation": "Locations matching the set.",
       "entries": [
-        "XXX"
+        "{wall}",
+        "{storage}",
+        "{servant}",
+        "{chapel}",
+        "{hall}",
+        "{private}"
+      ]
+    },
+    {
+      "name": "wall",
+      "explanation": "Locations around the outer wall.",
+      "entries": [
+        "gatehouse",
+        "guardroom",
+        "barracks",
+        "casemate (vaulted chamber under the ramparts)",
+        "place of arms (covered area for assembling troops)",
+        "dovecote (pigeon housing)",
+        "stables"
+      ]
+    },
+    {
+      "name": "storage",
+      "explanation": "Locations for the servants.",
+      "entries": [
+        "cellar",
+        "storage room",
+        "buttery (beer storage)",
+        "wine cellar",
+        "undercroft",
+        "ice house (insulated storage for ice)",
+        "prison"
+      ]
+    },
+    {
+      "name": "servant",
+      "explanation": "Locations for the servants.",
+      "entries": [
+        "kitchen",
+        "saucery (office responsible for sauces)",
+        "spicery (office responsible for spices)",
+        "scullery (room for washing dishes and laundering)",
+        "servants' hall"
+      ]
+    },
+    {
+      "name": "chapel",
+      "explanation": "Locations for religious functions.",
+      "entries": [
+        "chapel",
+        "oratory (private chapel)"
+      ]
+    },
+    {
+      "name": "hall",
+      "explanation": "Large chambers.",
+      "entries": [
+        "hall",
+        "main hall",
+        "dining hall",
+        "reception hall",
+        "great chamber"
+      ]
+    },
+    {
+      "name": "administration",
+      "explanation": "Locations for administrative tasks.",
+      "entries": [
+        "council chamber",
+        "war room"
+      ]
+    },
+    {
+      "name": "private",
+      "explanation": "Locations for the household.",
+      "entries": [
+        "study",
+        "library",
+        "cabinet (private room)",
+        "solar (drawing room)",
+        "dressing room",
+        "bed chamber"
       ]
     },
     {
       "name": "nook",
       "explanation": "Compartments matching the set.",
       "entries": [
-        "XXX"
+        "cess pit",
+        "lavatory",
+        "boudouir (women's lavatory)",
+        "garderobe (closet with a latrine)",
+        "bathroom",
+        "pantry (warm food storage)",
+        "larder (cool food storage)",
+        "closet"
       ]
     },
     {
       "name": "passage",
       "explanation": "Corridors matching the set.",
       "entries": [
-        "XXX"
+        "corridor",
+        "staircase"
       ]
     },
     {
       "name": "vault",
       "explanation": "Centerpiece locations matching the set.",
       "entries": [
-        "XXX"
+        "great hall",
+        "throne room",
+        "vault",
+        "strongroom (treasure store)"
       ]
     },
     {
@@ -148,21 +249,27 @@
       "name": "adjective",
       "explanation": "Adjectives for the set locations.",
       "entries": [
-        "XXX"
+        "drafty"
       ]
     },
     {
       "name": "door",
       "explanation": "Doors matching the set.",
       "entries": [
-        "XXX"
+        "door",
+        "double doors"
       ]
     },
     {
       "name": "prop",
       "explanation": "Potential properties for the set.",
       "entries": [
-        "XXX"
+        "chamber pot",
+        "tripod",
+        "decorative woodwork",
+        "coat of arms",
+        "wall hanging",
+        "tapestry"
       ]
     },
     {
