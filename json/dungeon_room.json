@@ -1,6 +1,9 @@
 {
   "name": "dungeon_room",
-  "resultPattern": "{HTML formatting}{init}",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "roomsize": ""
+  },
   "variables": {
     "footnote": ""
   },
@@ -10,7 +13,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_corridor, dungeon_vault, Five_room_dungeon",
-  "date": "2018-01-26",
+  "date": "2018-02-04",
   "authors": "Esko Vesala",
   "sources": "Five_room_dungeon",
   "genre": "fantasy",
@@ -22,7 +25,7 @@
       "name": "init",
       "explanation": "Initializing the room parameters.",
       "entries": [
-        "{size}{shape}{type} {global:para}{result}"
+        "{size}{shape}{type}"
       ]
     },
     {
@@ -1004,45 +1007,6 @@
         "tile",
         "iron",
         "magically augmented masonry"
-      ]
-    },
-    {
-      "**************************************************": "FORMATTING"
-    },
-    {
-      "name": "HTML formatting",
-      "explanation": "Set variables for formatting the output as HTML",
-      "entries": [
-        {
-          "v": "",
-          "export": {
-            "starttitle": "<H2>",
-            "endtitle": "</H2>",
-            "startheading": "<H3>",
-            "endheading": "</H3>",
-            "startbold": "<B>",
-            "endbold": "</B>",
-            "para": "<P>"
-          }
-        }
-      ]
-    },
-    {
-      "name": "CL formatting",
-      "explanation": "Set variables for formatting the output for Campaign Logger",
-      "entries": [
-        {
-          "v": "",
-          "export": {
-            "starttitle": "{b|",
-            "endtitle": "}\r\n\r\n",
-            "startheading": "\r\n\r\n{b|",
-            "endheading": "}",
-            "startbold": "{b|",
-            "endbold": "}",
-            "para": "\r\n"
-          }
-        }
       ]
     },
     {

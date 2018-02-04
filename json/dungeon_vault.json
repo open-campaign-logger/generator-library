@@ -1,6 +1,6 @@
 {
   "name": "dungeon_vault",
-  "resultPattern": "{HTML formatting}{init}",
+  "resultPattern": "{init}",
   "variables": {
     "footnote": ""
   },
@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_corridor, dungeon_entrance, dungeon_room, Five_room_dungeon",
-  "date": "2018-01-26",
+  "date": "2018-02-03",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "fantasy",
@@ -137,45 +137,6 @@
       "entries": [
         "{modern}",
         "XXX"
-      ]
-    },
-    {
-      "**************************************************": "FORMATTING"
-    },
-    {
-      "name": "HTML formatting",
-      "explanation": "Set variables for formatting the output as HTML",
-      "entries": [
-        {
-          "v": "",
-          "export": {
-            "starttitle": "<H2>",
-            "endtitle": "</H2>",
-            "startheading": "<H3>",
-            "endheading": "</H3>",
-            "startbold": "<B>",
-            "endbold": "</B>",
-            "para": "<P>"
-          }
-        }
-      ]
-    },
-    {
-      "name": "CL formatting",
-      "explanation": "Set variables for formatting the output for Campaign Logger",
-      "entries": [
-        {
-          "v": "",
-          "export": {
-            "starttitle": "{b|",
-            "endtitle": "}\r\n\r\n",
-            "startheading": "\r\n\r\n{b|",
-            "endheading": "}",
-            "startbold": "{b|",
-            "endbold": "}",
-            "para": "\r\n"
-          }
-        }
       ]
     },
     {
