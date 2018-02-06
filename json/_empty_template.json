@@ -122,14 +122,14 @@
       "name": "special",
       "explanation": "Special XXX tables.",
       "entries": [
-        "{test}"
+        "XXX"
       ]
     },
     {
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init} XXX"
+        "{init} result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special {special}."
       ]
     }
   ]
