@@ -65,10 +65,10 @@
         {
           "v": "",
           "export": {
-            "starttitle": "<H1>",
-            "endtitle": "</H1>",
-            "startheading": "<H2>",
-            "endheading": "</H2>",
+            "starttitle": "<H2>",
+            "endtitle": "</H2>",
+            "startheading": "<H3>",
+            "endheading": "</H3>",
             "startbold": "<B>",
             "endbold": "</B>",
             "para": "<P>"
