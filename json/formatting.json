@@ -20,7 +20,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-01-28",
+  "date": "2018-02-10",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "meta",
@@ -41,24 +41,6 @@
       "**************************************************": "FORMATTING"
     },
     {
-      "name": "HTML",
-      "explanation": "Set global variables for formatting the output as HTML.",
-      "entries": [
-        {
-          "v": "",
-          "export": {
-            "starttitle": "<H2>",
-            "endtitle": "</H2>",
-            "startheading": "<H3>",
-            "endheading": "</H3>",
-            "startbold": "<B>",
-            "endbold": "</B>",
-            "para": "<P>"
-          }
-        }
-      ]
-    },
-    {
       "name": "CL",
       "explanation": "Set global variables for Campaign Logger formatting.",
       "entries": [
@@ -74,6 +56,66 @@
             "para": "\r\n"
           }
         }
+      ]
+    },
+    {
+      "name": "HTML",
+      "explanation": "Set global variables for formatting output as HTML.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "starttitle": "<H1>",
+            "endtitle": "</H1>",
+            "startheading": "<H2>",
+            "endheading": "</H2>",
+            "startbold": "<B>",
+            "endbold": "</B>",
+            "para": "<P>"
+          }
+        }
+      ]
+    },
+    {
+      "name": "MD",
+      "explanation": "Set global variables for formatting output as MarkDown.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "starttitle": "\r\n# ",
+            "endtitle": "\r\n",
+            "startheading": "\r\n\r\n## ",
+            "endheading": "\r\n",
+            "startbold": "**",
+            "endbold": "** ",
+            "para": "\r\n\r\n"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "ALIASES"
+    },
+    {
+      "name": "cl",
+      "explanation": "Lowercase alias.",
+      "entries": [
+        "{CL}"
+      ]
+    },
+    {
+      "name": "html",
+      "explanation": "Lowercase alias.",
+      "entries": [
+        "{HTML}"
+      ]
+    },
+    {
+      "name": "md",
+      "explanation": "Lowercase alias.",
+      "entries": [
+        "{MD}"
       ]
     },
     {
