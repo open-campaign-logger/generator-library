@@ -20,7 +20,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-02-10",
+  "date": "2018-02-11",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "meta",
@@ -41,7 +41,7 @@
       "**************************************************": "FORMATTING"
     },
     {
-      "name": "CL",
+      "name": "CampaignLogger",
       "explanation": "Set global variables for Campaign Logger formatting.",
       "entries": [
         {
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "name": "MD",
+      "name": "Markdown",
       "explanation": "Set global variables for formatting output as MarkDown.",
       "entries": [
         {
@@ -95,31 +95,94 @@
       ]
     },
     {
-      "**************************************************": "ALIASES"
-    },
-    {
-      "name": "cl",
-      "explanation": "Lowercase alias.",
+      "name": "MediaWiki",
+      "explanation": "Set global variables for formatting output as MediaWiki.",
       "entries": [
-        "{CL}"
+        {
+          "v": "",
+          "export": {
+            "starttitle": "\r\n== ",
+            "endtitle": "== \r\n",
+            "startheading": "\r\n\r\n=== ",
+            "endheading": "=== \r\n",
+            "startbold": "'''",
+            "endbold": "'''",
+            "para": "\r\n\r\n"
+          }
+        }
       ]
     },
     {
-      "name": "html",
-      "explanation": "Lowercase alias.",
+      "**************************************************": "ALIASES"
+    },
+    {
+      "name": "CL",
+      "explanation": "Alias for Campaign Logger formatting.",
+      "entries": [
+        "{CampaignLogger}"
+      ]
+    },
+    {
+      "name": "cl",
+      "explanation": "Alias for Campaign Logger formatting.",
+      "entries": [
+        "{CampaignLogger}"
+      ]
+    },
+    {
+      "name": "htm",
+      "explanation": "Alias for HTML formatting.",
       "entries": [
         "{HTML}"
       ]
     },
     {
-      "name": "md",
-      "explanation": "Lowercase alias.",
+      "name": "html",
+      "explanation": "Lowercase alias for HTML formatting.",
       "entries": [
-        "{MD}"
+        "{HTML}"
       ]
     },
     {
-      "**************************************************": "TESTING"
+      "name": "MD",
+      "explanation": "Alias for Markdown formatting.",
+      "entries": [
+        "{Markdown}"
+      ]
+    },
+    {
+      "name": "md",
+      "explanation": "Lowercase alias for Markdown formatting.",
+      "entries": [
+        "{Markdown}"
+      ]
+    },
+    {
+      "name": "MW",
+      "explanation": "Alias for MediaWiki formatting.",
+      "entries": [
+        "{MediaWiki}"
+      ]
+    },
+    {
+      "name": "mw",
+      "explanation": "Lowercase alias for MediaWiki formatting.",
+      "entries": [
+        "{MediaWiki}"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special formatting tables.",
+      "entries": [
+        "{CampaignLogger}",
+        "{HTML}",
+        "{Markdown}",
+        "{MediaWiki}"
+      ]
     },
     {
       "name": "test",
