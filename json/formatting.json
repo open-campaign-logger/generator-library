@@ -34,7 +34,10 @@
       "note": "The intention is to call the desired subtable directly.",
       "entries": [
         "{CL}",
-        "{HTML}"
+        "{HTML}",
+        "{Md}",
+        "{MW}",
+        "{reST}"
       ]
     },
     {
@@ -113,6 +116,24 @@
       ]
     },
     {
+      "name": "reStructuredText",
+      "explanation": "Set global variables for formatting output as reST.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "starttitle": "\r\n",
+            "endtitle": "\r\n=====================================================\r\n\r\n",
+            "startheading": "\r\n\r\n",
+            "endheading": "\r\n-----------------------------------------------------\r\n\r\n",
+            "startbold": "**",
+            "endbold": "**",
+            "para": "\r\n\r\n"
+          }
+        }
+      ]
+    },
+    {
       "**************************************************": "ALIASES"
     },
     {
@@ -151,6 +172,13 @@
       ]
     },
     {
+      "name": "Md",
+      "explanation": "Alias for Markdown formatting.",
+      "entries": [
+        "{Markdown}"
+      ]
+    },
+    {
       "name": "md",
       "explanation": "Lowercase alias for Markdown formatting.",
       "entries": [
@@ -165,10 +193,52 @@
       ]
     },
     {
+      "name": "Mw",
+      "explanation": "Lowercase alias for MediaWiki formatting.",
+      "entries": [
+        "{MediaWiki}"
+      ]
+    },
+    {
       "name": "mw",
       "explanation": "Lowercase alias for MediaWiki formatting.",
       "entries": [
         "{MediaWiki}"
+      ]
+    },
+    {
+      "name": "ReST",
+      "explanation": "Alias for reStructuredText formatting.",
+      "entries": [
+        "{reStructuredText}"
+      ]
+    },
+    {
+      "name": "reST",
+      "explanation": "Alias for reStructuredText formatting.",
+      "entries": [
+        "{reStructuredText}"
+      ]
+    },
+    {
+      "name": "rest",
+      "explanation": "Lowercase alias for reStructuredText formatting.",
+      "entries": [
+        "{reStructuredText}"
+      ]
+    },
+    {
+      "name": "RST",
+      "explanation": "Lowercase alias for reStructuredText formatting.",
+      "entries": [
+        "{reStructuredText}"
+      ]
+    },
+    {
+      "name": "rst",
+      "explanation": "Lowercase alias for reStructuredText formatting.",
+      "entries": [
+        "{reStructuredText}"
       ]
     },
     {
@@ -181,7 +251,8 @@
         "{CampaignLogger}",
         "{HTML}",
         "{Markdown}",
-        "{MediaWiki}"
+        "{MediaWiki}",
+        "{reStructuredText}"
       ]
     },
     {
