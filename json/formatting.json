@@ -1,6 +1,6 @@
 {
   "name": "formatting",
-  "resultPattern": "{init}",
+  "resultPattern": "{init}{help}",
   "globals": {
     "starttitle": "<H2>",
     "endtitle": "</H2>",
@@ -260,6 +260,13 @@
       "explanation": "Testing tool for dumping the set global variables.",
       "entries": [
         "{global:starttitle}Title{global:endtitle} {global:startheading}Heading{global:endheading} {global:startbold}Bold text{global:endbold} {global:para}New paragrah."
+      ]
+    },
+    {
+      "name": "help",
+      "explanation": "Usage instructions.",
+      "entries": [
+        "Call the formatting library from your table to set global variables to match formatting tags for the selected markup. \r\nSupported global variables are: global:starttitle, global:endtitle, global:startheading, global:endheading, global:startbold, global:endbold, global:para.        \r\nSupported markups are: lib:formatting#CampaignLogger, lib:formatting#HTML, lib:formatting#MarkDown, lib:formatting#MediaWiki, lib:formatting#reStructuredText."
       ]
     }
   ]
