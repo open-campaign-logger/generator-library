@@ -2,13 +2,13 @@
   "name": "formatting",
   "resultPattern": "{init}{help}",
   "globals": {
-    "starttitle": "<H2>",
-    "endtitle": "</H2>",
-    "startheading": "<H3>",
-    "endheading": "</H3>",
-    "startbold": "<B>",
-    "endbold": "</B>",
-    "para": "<P>"
+    "starttitle": "",
+    "endtitle": "",
+    "startheading": "",
+    "endheading": "",
+    "startbold": "",
+    "endbold": "",
+    "para": ""
   },
   "variables": {
     "footnote": ""
@@ -266,7 +266,7 @@
       "name": "help",
       "explanation": "Usage instructions.",
       "entries": [
-        "Call the formatting library from your table to set global variables to match formatting tags for the selected markup. \r\nSupported global variables are: global:starttitle, global:endtitle, global:startheading, global:endheading, global:startbold, global:endbold, global:para.        \r\nSupported markups are: lib:formatting#CampaignLogger, lib:formatting#HTML, lib:formatting#MarkDown, lib:formatting#MediaWiki, lib:formatting#reStructuredText."
+        "Call the formatting library from your table to set global variables to match formatting tags for the selected markup. \r\nSupported global variables are: global:starttitle, global:endtitle, global:startheading, global:endheading, global:startbold, global:endbold, global:para. \r\nSupported markups are: lib:formatting#CampaignLogger, lib:formatting#HTML, lib:formatting#MarkDown, lib:formatting#MediaWiki, lib:formatting#reStructuredText."
       ]
     }
   ]
