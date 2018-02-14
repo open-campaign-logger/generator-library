@@ -2,7 +2,6 @@
   "name": "set_dungeon",
   "resultPattern": "{init}{result}",
   "globals": {
-    "set": "dungeon",
     "setarea": "area",
     "setlocale": "locale",
     "setboundary": "boundary",
