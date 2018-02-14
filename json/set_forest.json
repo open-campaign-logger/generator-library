@@ -2,14 +2,13 @@
   "name": "set_forest",
   "resultPattern": "{init}{result}",
   "globals": {
-    "set": "forest",
-    "setentrance": "entrance",
-    "setlocation": "chamber",
-    "setpassage": "passage",
-    "setvault": "vault",
-    "setadjective": "dark",
-    "setdoor": "door",
-    "setprop": "torch"
+    "setadjective": "{adjective}",
+    "setentrance": "{entrance}",
+    "setlocation": "{location}",
+    "setpassage": "{passage}",
+    "setvault": "{vault}",
+    "setdoor": "{door}",
+    "setprop": "{prop}"
   },
   "variables": {
     "footnote": ""
@@ -21,7 +20,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-02-02",
+  "date": "2018-02-14",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "universal",
@@ -36,15 +35,7 @@
         {
           "m": 1,
           "v": "",
-          "export": {
-            "setadjective": "{adjective}",
-            "setentrance": "{entrance}",
-            "setlocation": "{location}",
-            "setpassage": "{passage}",
-            "setvault": "{vault}",
-            "setdoor": "{door}",
-            "setprop": "{prop}"
-          }
+          "export": {}
         }
       ]
     },

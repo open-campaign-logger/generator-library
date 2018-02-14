@@ -1,20 +1,21 @@
 {
   "name": "Dungeon_map",
-  "resultPattern": "{lib:formatting#CL}{init}{result}",
+  "resultPattern": "{lib:formatting#CL}{init}{three_by_three} Set: {global:set}.",
   "globals": {
-    "variable": "value"
+    "library": "{lib:{global:set}}",
+    "room": "{global:library}"
   },
   "variables": {
     "footnote": ""
   },
-  "explanation": "XXX",
+  "explanation": "",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "format": "",
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-02-02",
+  "date": "2018-02-14",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "fantasy",
@@ -29,7 +30,7 @@
         {
           "v": "",
           "export": {
-            "": ""
+            "set": "{set}"
           }
         }
       ]
@@ -99,33 +100,79 @@
     },
     {
       "name": "three_by_three",
-      "explanation": "4 x 4 square-shaped dungeon map.",
+      "explanation": "3 x 3 square-shaped dungeon map.",
       "entries": [
-        "Dungeon Map: 3x3 \r\n|| {lib:dungeon_entrance} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_vault} ",
-        "Dungeon Map: 3x3 \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_vault} \r\n|| {lib:dungeon_entrance} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} ",
-        "Dungeon Map: 3x3 \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_entrance} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_vault} ",
-        "Dungeon Map: 3x3 \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_vault} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_entrance} || {lib:dungeon_room#room} || {lib:dungeon_room#room} "
+        "Dungeon Map: 3x3 ({global:set})\r\n|| {global:startbold}Entrance:{global:endbold} {lib:dungeon_entrance#summary} || {two_exit_room} || {one_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {one_exit_room} || {two_exit_room} || {lib:dungeon_vault#summary} "
+      ]
+    },
+    {
+      "name": "three_by_three_XXX",
+      "explanation": "3 x 3 square-shaped dungeon map.",
+      "entries": [
+        "Dungeon Map: 3x3 \r\n|| {global:startbold}Entrance:{global:endbold}{lib:dungeon_entrance#summary} || {two_exit_room} || {one_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {one_exit_room} || {two_exit_room} || {lib:dungeon_vault} ",
+        "Dungeon Map: 3x3 \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:dungeon_vault} \r\n|| {global:startbold}Entrance:{global:endbold}{lib:dungeon_entrance} || {lib:{global:set}} || {lib:{global:set}} \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} ",
+        "Dungeon Map: 3x3 \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} \r\n|| {global:startbold}Entrance:{global:endbold}{lib:dungeon_entrance} || {lib:{global:set}} || {lib:{global:set}} \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:dungeon_vault} ",
+        "Dungeon Map: 3x3 \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:dungeon_vault} \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} \r\n|| {global:startbold}Entrance:{global:endbold}{lib:dungeon_entrance} || {lib:{global:set}} || {lib:{global:set}} "
       ]
     },
     {
       "name": "four_by_four",
       "explanation": "4 x 4 square-shaped dungeon map.",
       "entries": [
-        "Dungeon Map: 4x4 \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| Entrance || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || Vault \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} "
+        "Dungeon Map: 4x4 \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} \r\n|| Entrance || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || Vault \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} "
       ]
     },
     {
       "name": "five_by_five",
       "explanation": "5 x 5 square-shaped dungeon map.",
       "entries": [
-        "Dungeon Map: 5x5 \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} "
+        "Dungeon Map: 5x5 \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} "
       ]
     },
     {
       "name": "six_by_six",
       "explanation": "6 x 6 square-shaped dungeon map.",
       "entries": [
-        "Dungeon Map: 6x6 \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} \r\n|| {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} || {lib:dungeon_room#room} "
+        "Dungeon Map: 6x6 \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} \r\n|| {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} || {lib:{global:set}} "
+      ]
+    },
+    {
+      "**************************************************": "ROOMS"
+    },
+    {
+      "name": "three_exit_room",
+      "explanation": "Room with 3 exits (not counting the entrance).",
+      "entries": [
+        {
+          "v": "{global:room} + 3 exits"
+        }
+      ]
+    },
+    {
+      "name": "two_exit_room",
+      "explanation": "Room with 2 exits (not counting the entrance).",
+      "entries": [
+        {
+          "v": "{global:room} + 2 exits"
+        }
+      ]
+    },
+    {
+      "name": "one_exit_room",
+      "explanation": "Room with 1 exit (not counting the entrance).",
+      "entries": [
+        {
+          "v": "{global:room} + 1 exit"
+        }
+      ]
+    },
+    {
+      "name": "zero_exit_room",
+      "explanation": "Room with 0 exits (not counting the entrance).",
+      "entries": [
+        {
+          "v": "{global:room} + 0 exits"
+        }
       ]
     },
     {
@@ -169,7 +216,17 @@
       "name": "special",
       "explanation": "Special dungeon map tables.",
       "entries": [
-        "XXX"
+        "{set}"
+      ]
+    },
+    {
+      "name": "set",
+      "explanation": "List of supported set tables.",
+      "entries": [
+        "set_castle",
+        "set_dungeon",
+        "set_city",
+        "set_forest"
       ]
     }
   ]

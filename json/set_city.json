@@ -2,14 +2,13 @@
   "name": "set_city",
   "resultPattern": "{init}{result}",
   "globals": {
-    "set": "",
-    "setentrance": "entrance",
-    "setlocation": "chamber",
-    "setpassage": "passage",
-    "setvault": "vault",
-    "setadjective": "sooty",
-    "setdoor": "door",
-    "setprop": "torch"
+    "setadjective": "{adjective}",
+    "setentrance": "{entrance}",
+    "setlocation": "{location}",
+    "setpassage": "{passage}",
+    "setvault": "{vault}",
+    "setdoor": "{door}",
+    "setprop": "{prop}"
   },
   "variables": {
     "footnote": ""
@@ -21,7 +20,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-02-02",
+  "date": "2018-02-14",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "universal",
@@ -36,15 +35,7 @@
         {
           "m": 1,
           "v": "",
-          "export": {
-            "setadjective": "{adjective}",
-            "setentrance": "{entrance}",
-            "setlocation": "{location}",
-            "setpassage": "{passage}",
-            "setvault": "{vault}",
-            "setdoor": "{door}",
-            "setprop": "{prop}"
-          }
+          "export": {}
         }
       ]
     },
@@ -137,7 +128,8 @@
       "name": "adjective",
       "explanation": "Adjectives for the set locations.",
       "entries": [
-        "soot-covered"
+        "soot-covered",
+        "noisy"
       ]
     },
     {

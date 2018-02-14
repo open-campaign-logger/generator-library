@@ -2,18 +2,17 @@
   "name": "set-castle",
   "resultPattern": "{init}{result}",
   "globals": {
-    "set": "castle",
-    "setarea": "area",
-    "setlocale": "locale",
-    "setboundary": "boundary",
-    "setentrance": "entrance",
-    "setlocation": "chamber",
-    "setpassage": "passage",
-    "setvault": "vault",
-    "setadjective": "drafty",
-    "setdoor": "door",
-    "setnook": "nook",
-    "setprop": "coat of arms"
+    "setadjective": "{adjective}",
+    "setarea": "{area}",
+    "setlocale": "{locale}",
+    "setboundary": "{boundary}",
+    "setentrance": "{entrance}",
+    "setlocation": "{location}",
+    "setpassage": "{passage}",
+    "setvault": "{vault}",
+    "setdoor": "{door}",
+    "setnook": "{nook}",
+    "setprop": "{prop}"
   },
   "variables": {
     "footnote": ""
@@ -25,7 +24,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-02-03",
+  "date": "2018-02-14",
   "authors": "Esko Vesala.",
   "sources": "CastlesAndManorHouses.com, Wikipedia.org",
   "genre": "universal",
@@ -40,19 +39,7 @@
         {
           "m": 1,
           "v": "",
-          "export": {
-            "setadjective": "{adjective}",
-            "setarea": "{area}",
-            "setlocale": "{locale}",
-            "setboundary": "{boundary}",
-            "setentrance": "{entrance}",
-            "setlocation": "{location}",
-            "setpassage": "{passage}",
-            "setvault": "{vault}",
-            "setdoor": "{door}",
-            "setnook": "{nook}",
-            "setprop": "{prop}"
-          }
+          "export": {}
         }
       ]
     },

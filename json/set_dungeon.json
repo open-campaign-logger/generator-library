@@ -2,17 +2,17 @@
   "name": "set_dungeon",
   "resultPattern": "{init}{result}",
   "globals": {
-    "setarea": "area",
-    "setlocale": "locale",
-    "setboundary": "boundary",
-    "setentrance": "entrance",
-    "setlocation": "chamber",
-    "setpassage": "passage",
-    "setvault": "vault",
-    "setadjective": "dingy",
-    "setdoor": "door",
-    "setnook": "nook",
-    "setprop": "torch"
+    "setadjective": "{adjective}",
+    "setarea": "{area}",
+    "setlocale": "{locale}",
+    "setboundary": "{boundary}",
+    "setentrance": "{entrance}",
+    "setlocation": "{location}",
+    "setpassage": "{passage}",
+    "setvault": "{vault}",
+    "setdoor": "{door}",
+    "setnook": "{nook}",
+    "setprop": "{prop}"
   },
   "variables": {
     "footnote": ""
@@ -24,7 +24,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-02-06",
+  "date": "2018-02-14",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "fantasy",
@@ -39,19 +39,7 @@
         {
           "m": 1,
           "v": "",
-          "export": {
-            "setadjective": "{adjective}",
-            "setarea": "{area}",
-            "setlocale": "{locale}",
-            "setboundary": "{boundary}",
-            "setentrance": "{entrance}",
-            "setlocation": "{location}",
-            "setpassage": "{passage}",
-            "setvault": "{vault}",
-            "setdoor": "{door}",
-            "setnook": "{nook}",
-            "setprop": "{prop}"
-          }
+          "export": {}
         }
       ]
     },
