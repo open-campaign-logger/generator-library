@@ -1,6 +1,6 @@
 {
   "name": "scene",
-  "resultPattern": "{HTML formatting}{result}",
+  "resultPattern": "{result}",
   "variables": {
     "footnote": ""
   },
@@ -524,7 +524,7 @@
       "entries": [
         {
           "m": 1,
-          "v": "Final Battle{global:endheading} A great battle againts the villain and the minions ensues. The result will determine the final fate of everyone involved! ",
+          "v": "Final Battle{global:endheading} A great battle against the {global:villain} and the minions ensues. The result will determine the final fate of everyone involved! ",
           "export": {
             "beat": "final battle"
           }
@@ -901,53 +901,6 @@
       "entries": [
         "{lib:actant#ally} approaches the {lib:synonym#troupe} to tell them details about the danger that is looming ahead.",
         "A {lib:clue} hints about the dangers that lie ahead."
-      ]
-    },
-    {
-      "**************************************************": "FORMATTING"
-    },
-    {
-      "name": "formatting",
-      "explanation": "Formatting types (Campaign Logger or Wordpress).",
-      "entries": [
-        "{CL formatting}",
-        "{HTML formatting}"
-      ]
-    },
-    {
-      "name": "HTML formatting",
-      "explanation": "Set variables for formatting the output as HTML",
-      "entries": [
-        {
-          "v": "",
-          "export": {
-            "starttitle": "<H2>",
-            "endtitle": "</H2>",
-            "startheading": "<H3>",
-            "endheading": "</H3>",
-            "startbold": "<B>",
-            "endbold": "</B>",
-            "para": "<P>"
-          }
-        }
-      ]
-    },
-    {
-      "name": "CL formatting",
-      "explanation": "Set variables for formatting the output for Campaign Logger",
-      "entries": [
-        {
-          "v": "",
-          "export": {
-            "starttitle": "{b|",
-            "endtitle": "}\r\n\r\n",
-            "startheading": "\r\n\r\n{b|",
-            "endheading": "}",
-            "startbold": "{b|",
-            "endbold": "}",
-            "para": "\r\n"
-          }
-        }
       ]
     },
     {
