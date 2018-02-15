@@ -37,6 +37,7 @@
         "{HTML}",
         "{Md}",
         "{MW}",
+        "{plaintext}",
         "{reST}"
       ]
     },
@@ -63,7 +64,7 @@
     },
     {
       "name": "HTML",
-      "explanation": "Set global variables for formatting output as HTML.",
+      "explanation": "Set global variables for output as HTML.",
       "entries": [
         {
           "v": "",
@@ -81,7 +82,7 @@
     },
     {
       "name": "Markdown",
-      "explanation": "Set global variables for formatting output as MarkDown.",
+      "explanation": "Set global variables for output as MarkDown.",
       "entries": [
         {
           "v": "",
@@ -99,7 +100,7 @@
     },
     {
       "name": "MediaWiki",
-      "explanation": "Set global variables for formatting output as MediaWiki.",
+      "explanation": "Set global variables for output as MediaWiki.",
       "entries": [
         {
           "v": "",
@@ -116,8 +117,26 @@
       ]
     },
     {
+      "name": "plaintext",
+      "explanation": "Set global variables for output as plain text.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "starttitle": "\r\n",
+            "endtitle": "\r\n\r\n",
+            "startheading": "\r\n\r\n",
+            "endheading": "\r\n\r\n",
+            "startbold": "",
+            "endbold": "",
+            "para": "\r\n\r\n"
+          }
+        }
+      ]
+    },
+    {
       "name": "reStructuredText",
-      "explanation": "Set global variables for formatting output as reST.",
+      "explanation": "Set global variables for output as reST.",
       "entries": [
         {
           "v": "",
@@ -207,6 +226,34 @@
       ]
     },
     {
+      "name": "plaintext",
+      "explanation": "Alias for plain text formatting.",
+      "entries": [
+        "{plaintext}"
+      ]
+    },
+    {
+      "name": "plain",
+      "explanation": "Alias for plain text formatting.",
+      "entries": [
+        "{plaintext}"
+      ]
+    },
+    {
+      "name": "text",
+      "explanation": "Alias for plain text formatting.",
+      "entries": [
+        "{plaintext}"
+      ]
+    },
+    {
+      "name": "txt",
+      "explanation": "Alias for plain text formatting.",
+      "entries": [
+        "{plaintext}"
+      ]
+    },
+    {
       "name": "ReST",
       "explanation": "Alias for reStructuredText formatting.",
       "entries": [
@@ -252,6 +299,7 @@
         "{HTML}",
         "{Markdown}",
         "{MediaWiki}",
+        "{plaintext}",
         "{reStructuredText}"
       ]
     },
