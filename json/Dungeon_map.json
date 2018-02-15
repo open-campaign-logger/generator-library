@@ -1,12 +1,13 @@
 {
   "name": "Dungeon_map",
-  "resultPattern": "{lib:formatting#CL}{init}{three_by_three} Set: {global:set}.",
+  "resultPattern": "{lib:formatting#CL}{init}{three_by_three}{debug}",
   "globals": {
-    "library": "{lib:{global:set}}",
+    "library": "{lib:{var:set}}",
     "room": "{global:library}"
   },
   "variables": {
-    "footnote": ""
+    "footnote": "",
+    "set": ""
   },
   "explanation": "",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
@@ -29,7 +30,7 @@
       "entries": [
         {
           "v": "",
-          "export": {
+          "set": {
             "set": "{set}"
           }
         }
@@ -102,7 +103,7 @@
       "name": "three_by_three",
       "explanation": "3 x 3 square-shaped dungeon map.",
       "entries": [
-        "Dungeon Map: 3x3 ({global:set})\r\n|| {global:startbold}Entrance:{global:endbold} {lib:dungeon_entrance#summary} || {two_exit_room} || {one_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {one_exit_room} || {two_exit_room} || {lib:dungeon_vault#summary} "
+        "Dungeon Map: 3x3 {debug}\r\n|| {entrance} || {two_exit_room} || {one_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {one_exit_room} || {two_exit_room} || {vault}"
       ]
     },
     {
@@ -140,6 +141,13 @@
       "**************************************************": "ROOMS"
     },
     {
+      "name": "entrance",
+      "explanation": "Entrance cell contents.",
+      "entries": [
+        "{global:startbold}Entrance:{global:endbold} {lib:dungeon_entrance#summary}"
+      ]
+    },
+    {
       "name": "three_exit_room",
       "explanation": "Room with 3 exits (not counting the entrance).",
       "entries": [
@@ -173,6 +181,13 @@
         {
           "v": "{global:room} + 0 exits"
         }
+      ]
+    },
+    {
+      "name": "vault",
+      "explanation": "Vault cell contents.",
+      "entries": [
+        "{global:startbold}Vault:{global:endbold} {lib:dungeon_vault#summary}"
       ]
     },
     {
@@ -216,7 +231,11 @@
       "name": "special",
       "explanation": "Special dungeon map tables.",
       "entries": [
-        "{set}"
+        "{entrance}",
+        "{vault}",
+        "{set}",
+        "{debug}",
+        "{test}"
       ]
     },
     {
@@ -227,6 +246,20 @@
         "set_dungeon",
         "set_city",
         "set_forest"
+      ]
+    },
+    {
+      "name": "debug",
+      "explanation": "Debug routine for displaying additional informaton.",
+      "entries": [
+        "(set = {var:set})"
+      ]
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}."
       ]
     }
   ]
