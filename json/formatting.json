@@ -20,7 +20,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-02-11",
+  "date": "2018-02-15",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "meta",
@@ -124,11 +124,11 @@
           "v": "",
           "export": {
             "starttitle": "\r\n",
-            "endtitle": "\r\n\r\n",
+            "endtitle": "\r\n",
             "startheading": "\r\n\r\n",
-            "endheading": "\r\n\r\n",
-            "startbold": "",
-            "endbold": "",
+            "endheading": "\r\n",
+            "startbold": " ",
+            "endbold": " ",
             "para": "\r\n\r\n"
           }
         }
