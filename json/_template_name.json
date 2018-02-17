@@ -1,0 +1,998 @@
+{
+  "name": "name template",
+  "resultPattern": "{result}",
+  "globals": {
+    "culture": "XXX"
+  },
+  "variables": {
+    "footnote": "note"
+  },
+  "explanation": "XXX",
+  "structure": "Genders are collected in the same file to allow easy sharing of patronym and byname tables. Subtables have been split by their initial letter to allow future support for allitteration and for example siblings sharing the same initial.",
+  "note": "",
+  "to do": "",
+  "see": "",
+  "date": "XXX",
+  "authors": "XXX",
+  "sources": "",
+  "genre": "XXX",
+  "category": "name",
+  "tags": "#person",
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{female}",
+        "{male}",
+        "{unisex}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{name}"
+      ]
+    },
+    {
+      "name": "name",
+      "explanation": "The name types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common name types.",
+      "entries": [
+        "{female full}",
+        "{male full}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare name types.",
+      "entries": [
+        "{unisex full}"
+      ]
+    },
+    {
+      "name": "female full",
+      "entries": [
+        "{female} {female byname}",
+        "{unisex} {female byname}",
+        "{female} {unisex byname}",
+        "{unisex} {unisex byname}",
+        "{female byname} {female}",
+        "{unisex byname} {female}",
+        "{female byname} {unisex}",
+        "{unisex byname} {unisex}"
+      ]
+    },
+    {
+      "name": "male full",
+      "entries": [
+        "{male} {male byname}",
+        "{unisex} {male byname}",
+        "{male} {unisex byname}",
+        "{unisex} {unisex byname}",
+        "{male byname} {male}",
+        "{unisex byname} {male}",
+        "{male byname} {unisex}",
+        "{unisex byname} {unisex}"
+      ]
+    },
+    {
+      "name": "unisex full",
+      "entries": [
+        "{unisex} {unisex byname}",
+        "{unisex byname} {unisex}"
+      ]
+    },
+    {
+      "**************************************************": "FEMALE FIRST NAMES"
+    },
+    {
+      "name": "female",
+      "export": {
+        "gender": "female"
+      },
+      "entries": [
+        "{female a}",
+        "{female b}",
+        "{female c}",
+        "{female d}",
+        "{female e}",
+        "{female f}",
+        "{female g}",
+        "{female h}",
+        "{female i}",
+        "{female j}",
+        "{female k}",
+        "{female l}",
+        "{female m}",
+        "{female n}",
+        "{female o}",
+        "{female p}",
+        "{female q}",
+        "{female r}",
+        "{female s}",
+        "{female t}",
+        "{female u}",
+        "{female v}",
+        "{female w}",
+        "{female x}",
+        "{female y}",
+        "{female z}"
+      ]
+    },
+    {
+      "name": "female a",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female b",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female c",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female d",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female e",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female f",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female g",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female h",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female i",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female j",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female k",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female l",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female m",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female n",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female o",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female p",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female q",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female r",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female s",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female t",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female u",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female v",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female w",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female x",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female y",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female z",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "MALE FIRST NAMES"
+    },
+    {
+      "name": "male",
+      "export": {
+        "gender": "male"
+      },
+      "entries": [
+        "{male a}",
+        "{male b}",
+        "{male c}",
+        "{male d}",
+        "{male e}",
+        "{male f}",
+        "{male g}",
+        "{male h}",
+        "{male i}",
+        "{male j}",
+        "{male k}",
+        "{male l}",
+        "{male m}",
+        "{male n}",
+        "{male o}",
+        "{male p}",
+        "{male q}",
+        "{male r}",
+        "{male s}",
+        "{male t}",
+        "{male u}",
+        "{male v}",
+        "{male w}",
+        "{male x}",
+        "{male y}",
+        "{male z}"
+      ]
+    },
+    {
+      "name": "male a",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male b",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male c",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male d",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male e",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male f",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male g",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male h",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male i",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male j",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male k",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male l",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male m",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male n",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male o",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male p",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male q",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male r",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male s",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male t",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male u",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male v",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male w",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male x",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male y",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male z",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "UNISEX FIRST NAMES"
+    },
+    {
+      "name": "unisex",
+      "export": {
+        "gender": "unisex"
+      },
+      "entries": [
+        "{unisex a}",
+        "{unisex b}",
+        "{unisex c}",
+        "{unisex d}",
+        "{unisex e}",
+        "{unisex f}",
+        "{unisex g}",
+        "{unisex h}",
+        "{unisex i}",
+        "{unisex j}",
+        "{unisex k}",
+        "{unisex l}",
+        "{unisex m}",
+        "{unisex n}",
+        "{unisex o}",
+        "{unisex p}",
+        "{unisex q}",
+        "{unisex r}",
+        "{unisex s}",
+        "{unisex t}",
+        "{unisex u}",
+        "{unisex v}",
+        "{unisex w}",
+        "{unisex x}",
+        "{unisex y}",
+        "{unisex z}"
+      ]
+    },
+    {
+      "name": "unisex a",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex b",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex c",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex d",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex e",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex f",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex g",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex h",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex i",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex j",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex k",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex l",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex m",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex n",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex o",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex p",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex q",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex r",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex s",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex t",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex u",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex v",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex w",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex x",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex y",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex z",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "BYNAMES"
+    },
+    {
+      "name": "byname",
+      "entries": [
+        "{female byname}",
+        "{male byname}",
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "female byname",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male byname",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex byname",
+      "entries": [
+        "{unisex negative byname}",
+        "{unisex neutral byname}",
+        "{unisex positive byname}"
+      ]
+    },
+    {
+      "name": "unisex negative byname",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex neutral byname",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex positive byname",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "INITIALS"
+    },
+    {
+      "name": "initial",
+      "entries": [
+        "{a}",
+        "{b}",
+        "{c}",
+        "{d}",
+        "{e}",
+        "{f}",
+        "{g}",
+        "{h}",
+        "{i}",
+        "{j}",
+        "{k}",
+        "{l}",
+        "{m}",
+        "{n}",
+        "{o}",
+        "{p}",
+        "{q}",
+        "{r}",
+        "{s}",
+        "{t}",
+        "{u}",
+        "{v}",
+        "{w}",
+        "{x}",
+        "{y}",
+        "{z}"
+      ]
+    },
+    {
+      "name": "a",
+      "entries": [
+        "{female a}",
+        "{male a}",
+        "{unisex a}"
+      ]
+    },
+    {
+      "name": "b",
+      "entries": [
+        "{female b}",
+        "{male b}",
+        "{unisex b}"
+      ]
+    },
+    {
+      "name": "c",
+      "entries": [
+        "{female c}",
+        "{male c}",
+        "{unisex c}"
+      ]
+    },
+    {
+      "name": "d",
+      "entries": [
+        "{female d}",
+        "{male d}",
+        "{unisex d}"
+      ]
+    },
+    {
+      "name": "e",
+      "entries": [
+        "{female e}",
+        "{male e}",
+        "{unisex e}"
+      ]
+    },
+    {
+      "name": "f",
+      "entries": [
+        "{female f}",
+        "{male f}",
+        "{unisex f}"
+      ]
+    },
+    {
+      "name": "g",
+      "entries": [
+        "{female g}",
+        "{male g}",
+        "{unisex g}"
+      ]
+    },
+    {
+      "name": "h",
+      "entries": [
+        "{female h}",
+        "{male h}",
+        "{unisex h}"
+      ]
+    },
+    {
+      "name": "i",
+      "entries": [
+        "{female i}",
+        "{male i}",
+        "{unisex i}"
+      ]
+    },
+    {
+      "name": "j",
+      "entries": [
+        "{female j}",
+        "{male j}",
+        "{unisex j}"
+      ]
+    },
+    {
+      "name": "k",
+      "entries": [
+        "{female k}",
+        "{male k}",
+        "{unisex k}"
+      ]
+    },
+    {
+      "name": "l",
+      "entries": [
+        "{female l}",
+        "{male l}",
+        "{unisex l}"
+      ]
+    },
+    {
+      "name": "m",
+      "entries": [
+        "{female m}",
+        "{male m}",
+        "{unisex m}"
+      ]
+    },
+    {
+      "name": "n",
+      "entries": [
+        "{female n}",
+        "{male n}",
+        "{unisex n}"
+      ]
+    },
+    {
+      "name": "o",
+      "entries": [
+        "{female o}",
+        "{male o}",
+        "{unisex o}"
+      ]
+    },
+    {
+      "name": "p",
+      "entries": [
+        "{female p}",
+        "{male p}",
+        "{unisex p}"
+      ]
+    },
+    {
+      "name": "q",
+      "entries": [
+        "{female q}",
+        "{male q}",
+        "{unisex q}"
+      ]
+    },
+    {
+      "name": "r",
+      "entries": [
+        "{female r}",
+        "{male r}",
+        "{unisex r}"
+      ]
+    },
+    {
+      "name": "s",
+      "entries": [
+        "{female s}",
+        "{male s}",
+        "{unisex s}"
+      ]
+    },
+    {
+      "name": "t",
+      "entries": [
+        "{female t}",
+        "{male t}",
+        "{unisex t}"
+      ]
+    },
+    {
+      "name": "u",
+      "entries": [
+        "{female u}",
+        "{male u}",
+        "{unisex u}"
+      ]
+    },
+    {
+      "name": "v",
+      "entries": [
+        "{female v}",
+        "{male v}",
+        "{unisex v}"
+      ]
+    },
+    {
+      "name": "w",
+      "entries": [
+        "{female w}",
+        "{male w}",
+        "{unisex w}"
+      ]
+    },
+    {
+      "name": "x",
+      "entries": [
+        "{female x}",
+        "{male x}",
+        "{unisex x}"
+      ]
+    },
+    {
+      "name": "y",
+      "entries": [
+        "{female y}",
+        "{male y}",
+        "{unisex y}"
+      ]
+    },
+    {
+      "name": "z",
+      "entries": [
+        "{female z}",
+        "{male z}",
+        "{unisex z}"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Gender = {global:gender}."
+      ]
+    }
+  ]
+}
