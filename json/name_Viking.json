@@ -87,16 +87,16 @@
         "gender": "female"
       },
       "entries": [
-        "{female firstname} {female patronym}",
-        "{unisex firstname} {female patronym}",
-        "{female firstname} {female byname}",
-        "{unisex firstname} {female byname}",
-        "{female firstname} {unisex byname}",
-        "{unisex firstname} {unisex byname}",
-        "{female byname} {female firstname}",
-        "{unisex byname} {female firstname}",
-        "{female byname} {unisex firstname}",
-        "{unisex byname} {unisex firstname}"
+        "{female} {female patronym}",
+        "{unisex} {female patronym}",
+        "{female} {female byname}",
+        "{unisex} {female byname}",
+        "{female} {unisex byname}",
+        "{unisex} {unisex byname}",
+        "{female byname} {female}",
+        "{unisex byname} {female}",
+        "{female byname} {unisex}",
+        "{unisex byname} {unisex}"
       ]
     },
     {
@@ -105,16 +105,16 @@
         "gender": "male"
       },
       "entries": [
-        "{male firstname} {male patronym}",
-        "{unisex firstname} {male patronym}",
-        "{male firstname} {male byname}",
-        "{unisex firstname} {male byname}",
-        "{male firstname} {unisex byname}",
-        "{unisex firstname} {unisex byname}",
-        "{male byname} {male firstname}",
-        "{unisex byname} {male firstname}",
-        "{male byname} {unisex firstname}",
-        "{unisex byname} {unisex firstname}"
+        "{male} {male patronym}",
+        "{unisex} {male patronym}",
+        "{male} {male byname}",
+        "{unisex} {male byname}",
+        "{male} {unisex byname}",
+        "{unisex} {unisex byname}",
+        "{male byname} {male}",
+        "{unisex byname} {male}",
+        "{male byname} {unisex}",
+        "{unisex byname} {unisex}"
       ]
     },
     {
@@ -123,9 +123,8 @@
         "gender": "unisex"
       },
       "entries": [
-        "{unisex firstname} {male patronym}",
-        "{unisex firstname} {unisex byname}",
-        "{unisex byname} {unisex firstname}"
+        "{unisex} {unisex byname}",
+        "{unisex byname} {unisex}"
       ]
     },
     {
@@ -5201,6 +5200,13 @@
       "**************************************************": "PATRONYMS"
     },
     {
+      "name": "patronym",
+      "entries": [
+        "{female patronym}",
+        "{male patronym}"
+      ]
+    },
+    {
       "name": "female patronym",
       "entries": [
         "{male genitive}dóttir"
@@ -5214,6 +5220,14 @@
     },
     {
       "**************************************************": "BYNAMES"
+    },
+    {
+      "name": "byname",
+      "entries": [
+        "{female byname}",
+        "{male byname}",
+        "{unisex byname}"
+      ]
     },
     {
       "name": "female byname",
@@ -5328,6 +5342,7 @@
     {
       "name": "unisex neutral byname",
       "entries": [
+        "{warrior byname}",
         "Aiþalātaz ('Oathspeaking')",
         "Askasmiðr ('Shipwright')",
         "Auga ('Eye')",
@@ -5698,7 +5713,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Gender = {global:gender}."
+        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, byname: {byname}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Gender = {global:gender}."
       ]
     }
   ]
