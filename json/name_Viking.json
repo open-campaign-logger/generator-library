@@ -1,15 +1,18 @@
 {
-  "name": "Viking name table",
-  "resultPattern": "{Viking name}  \r\n\t 1) The byname means {var:footnote}.",
+  "name": "name_Viking",
+  "resultPattern": "{result}",
+  "globals": {
+    "culture": "Viking"
+  },
   "variables": {
     "footnote": "note"
   },
-  "explanation": "Random Old Norse female, male and unisex first names, bynames and patronyms.",
-  "structure": "Subtables have been split by their initial letter to allow future support for allitteration (favored by vikings) and for example siblings sharing the same initial.",
+  "explanation": "Old Norse female, male and unisex first names, bynames and patronyms.",
+  "structure": "Genders are collected in the same file to allow easy sharing of patronym and byname tables. Subtables have been split by their initial letter to allow future support for allitteration (favored by vikings) and for example siblings sharing the same initial.",
   "note": "Requires UTF-8 character set to correctly display the Old Norse special characters (such as th, ae, and oe).",
   "to do": "The list of patronyms should be heavily expanded. Sadly the rules for Old Norse patronym creation are not completely regular.",
   "see": "",
-  "date": "2017-10-04",
+  "date": "2018-02-17",
   "authors": "Esko Vesala",
   "sources": "NordicNames.de",
   "genre": "historical",
@@ -17,8 +20,28 @@
   "tags": "#person, #viking",
   "tables": [
     {
-      "name": "Viking name",
-      "explanation": "Genders are collected in the same file to allow easy sharing of patronym and byname tables.",
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
       "entries": [
         "{female}",
         "{male}",
@@ -26,7 +49,43 @@
       ]
     },
     {
-      "name": "female",
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{name}"
+      ]
+    },
+    {
+      "name": "name",
+      "explanation": "The name types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common name types.",
+      "entries": [
+        "{female full}",
+        "{male full}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare name types.",
+      "entries": [
+        "{unisex full}"
+      ]
+    },
+    {
+      "name": "female full",
+      "export": {
+        "gender": "female"
+      },
       "entries": [
         "{female firstname} {female patronym}",
         "{unisex firstname} {female patronym}",
@@ -41,7 +100,10 @@
       ]
     },
     {
-      "name": "male",
+      "name": "male full",
+      "export": {
+        "gender": "male"
+      },
       "entries": [
         "{male firstname} {male patronym}",
         "{unisex firstname} {male patronym}",
@@ -56,7 +118,10 @@
       ]
     },
     {
-      "name": "unisex",
+      "name": "unisex full",
+      "export": {
+        "gender": "unisex"
+      },
       "entries": [
         "{unisex firstname} {male patronym}",
         "{unisex firstname} {unisex byname}",
@@ -64,34 +129,40 @@
       ]
     },
     {
-      "name": "female firstname",
+      "**************************************************": "FEMALE FIRST NAMES"
+    },
+    {
+      "name": "female",
+      "export": {
+        "gender": "female"
+      },
       "entries": [
-        "{female firstname a}",
-        "{female firstname b}",
-        "{female firstname d}",
-        "{female firstname e}",
-        "{female firstname g}",
-        "{female firstname h}",
-        "{female firstname i}",
-        "{female firstname j}",
-        "{female firstname k}",
-        "{female firstname l}",
-        "{female firstname m}",
-        "{female firstname n}",
-        "{female firstname o}",
-        "{female firstname r}",
-        "{female firstname s}",
-        "{female firstname t}",
-        "{female firstname u}",
-        "{female firstname v}",
-        "{female firstname y}",
-        "{female firstname ae}",
-        "{female firstname oe}",
-        "{female firstname th}"
+        "{female a}",
+        "{female b}",
+        "{female d}",
+        "{female e}",
+        "{female g}",
+        "{female h}",
+        "{female i}",
+        "{female j}",
+        "{female k}",
+        "{female l}",
+        "{female m}",
+        "{female n}",
+        "{female o}",
+        "{female r}",
+        "{female s}",
+        "{female t}",
+        "{female u}",
+        "{female v}",
+        "{female y}",
+        "{female ae}",
+        "{female oe}",
+        "{female th}"
       ]
     },
     {
-      "name": "female firstname a",
+      "name": "female a",
       "entries": [
         "Aðaliz",
         "Aðallaug",
@@ -223,7 +294,7 @@
       ]
     },
     {
-      "name": "female firstname b",
+      "name": "female b",
       "entries": [
         "Bára",
         "Baugeið",
@@ -290,7 +361,7 @@
       ]
     },
     {
-      "name": "female firstname d",
+      "name": "female d",
       "entries": [
         "Dagheiðr",
         "Dagmær",
@@ -314,7 +385,7 @@
       ]
     },
     {
-      "name": "female firstname e",
+      "name": "female e",
       "entries": [
         "Edda",
         "Edel",
@@ -346,7 +417,7 @@
       ]
     },
     {
-      "name": "female firstname f",
+      "name": "female f",
       "entries": [
         "Fasta",
         "Fastgærðr",
@@ -382,7 +453,7 @@
       ]
     },
     {
-      "name": "female firstname g",
+      "name": "female g",
       "entries": [
         "Gás",
         "Gauthildr",
@@ -493,7 +564,7 @@
       ]
     },
     {
-      "name": "female firstname h",
+      "name": "female h",
       "entries": [
         "Hábera",
         "Hadda",
@@ -631,7 +702,7 @@
       ]
     },
     {
-      "name": "female firstname i",
+      "name": "female i",
       "entries": [
         "Ida",
         "Iðunn",
@@ -680,7 +751,7 @@
       ]
     },
     {
-      "name": "female firstname j",
+      "name": "female j",
       "entries": [
         "Jarð",
         "Jarðþrúðr",
@@ -705,7 +776,7 @@
       ]
     },
     {
-      "name": "female firstname k",
+      "name": "female k",
       "entries": [
         "Kaðlín",
         "Kalda",
@@ -741,7 +812,7 @@
       ]
     },
     {
-      "name": "female firstname l",
+      "name": "female l",
       "entries": [
         "Laufey",
         "Leikný",
@@ -764,7 +835,7 @@
       ]
     },
     {
-      "name": "female firstname m",
+      "name": "female m",
       "entries": [
         "Mabil",
         "Mábil",
@@ -814,7 +885,7 @@
       ]
     },
     {
-      "name": "female firstname n",
+      "name": "female n",
       "entries": [
         "Nál",
         "Nanna",
@@ -827,7 +898,7 @@
       ]
     },
     {
-      "name": "female firstname o",
+      "name": "female o",
       "entries": [
         "Oda",
         "Óðalfríðr",
@@ -855,7 +926,7 @@
       ]
     },
     {
-      "name": "female firstname r",
+      "name": "female r",
       "entries": [
         "Ráðgerðr",
         "Ráðgríð",
@@ -961,7 +1032,7 @@
       ]
     },
     {
-      "name": "female firstname s",
+      "name": "female s",
       "entries": [
         "Sága",
         "Salbiǫrg",
@@ -1078,7 +1149,7 @@
       ]
     },
     {
-      "name": "female firstname t",
+      "name": "female t",
       "entries": [
         "Tanngnidr",
         "Tanngniðr",
@@ -1095,7 +1166,7 @@
       ]
     },
     {
-      "name": "female firstname u",
+      "name": "female u",
       "entries": [
         "Uðr",
         "Úlfarna",
@@ -1114,7 +1185,7 @@
       ]
     },
     {
-      "name": "female firstname v",
+      "name": "female v",
       "entries": [
         "Valborg",
         "Valdís",
@@ -1151,7 +1222,7 @@
       ]
     },
     {
-      "name": "female firstname y",
+      "name": "female y",
       "entries": [
         "Ynghildr",
         "Yngvildr",
@@ -1164,7 +1235,7 @@
       ]
     },
     {
-      "name": "female firstname ae",
+      "name": "female ae",
       "entries": [
         "Ægileif",
         "Æilíf",
@@ -1189,7 +1260,7 @@
       ]
     },
     {
-      "name": "female firstname oe",
+      "name": "female oe",
       "entries": [
         "Ǫgn",
         "Ǫlhildr",
@@ -1203,7 +1274,7 @@
       ]
     },
     {
-      "name": "female firstname th",
+      "name": "female th",
       "entries": [
         "Þióðbjǫrg",
         "Þióðgerðr",
@@ -1280,36 +1351,42 @@
       ]
     },
     {
-      "name": "male firstname",
+      "**************************************************": "MALE FIRST NAMES"
+    },
+    {
+      "name": "male",
+      "export": {
+        "gender": "male"
+      },
       "entries": [
-        "{male firstname a}",
-        "{male firstname b}",
-        "{male firstname d}",
-        "{male firstname e}",
-        "{male firstname f}",
-        "{male firstname g}",
-        "{male firstname h}",
-        "{male firstname i}",
-        "{male firstname j}",
-        "{male firstname k}",
-        "{male firstname l}",
-        "{male firstname m}",
-        "{male firstname n}",
-        "{male firstname o}",
-        "{male firstname p}",
-        "{male firstname r}",
-        "{male firstname s}",
-        "{male firstname t}",
-        "{male firstname u}",
-        "{male firstname v}",
-        "{male firstname y}",
-        "{male firstname ae}",
-        "{male firstname oe}",
-        "{male firstname th}"
+        "{male a}",
+        "{male b}",
+        "{male d}",
+        "{male e}",
+        "{male f}",
+        "{male g}",
+        "{male h}",
+        "{male i}",
+        "{male j}",
+        "{male k}",
+        "{male l}",
+        "{male m}",
+        "{male n}",
+        "{male o}",
+        "{male p}",
+        "{male r}",
+        "{male s}",
+        "{male t}",
+        "{male u}",
+        "{male v}",
+        "{male y}",
+        "{male ae}",
+        "{male oe}",
+        "{male th}"
       ]
     },
     {
-      "name": "male firstname a",
+      "name": "male a",
       "entries": [
         "Abbi",
         "Abel",
@@ -1714,7 +1791,7 @@
       ]
     },
     {
-      "name": "male firstname b",
+      "name": "male b",
       "entries": [
         "Baði",
         "Báfurr",
@@ -1994,7 +2071,7 @@
       ]
     },
     {
-      "name": "male firstname d",
+      "name": "male d",
       "entries": [
         "Dafi",
         "Dafiþ",
@@ -2070,7 +2147,7 @@
       ]
     },
     {
-      "name": "male firstname e",
+      "name": "male e",
       "entries": [
         "Ebbe",
         "Edgar",
@@ -2146,7 +2223,7 @@
       ]
     },
     {
-      "name": "male firstname f",
+      "name": "male f",
       "entries": [
         "Faði",
         "FaðiR",
@@ -2300,7 +2377,7 @@
       ]
     },
     {
-      "name": "male firstname g",
+      "name": "male g",
       "entries": [
         "Gabriel",
         "Gaddi",
@@ -2606,7 +2683,7 @@
       ]
     },
     {
-      "name": "male firstname h",
+      "name": "male h",
       "entries": [
         "Haddr",
         "Háðski",
@@ -3054,7 +3131,7 @@
       ]
     },
     {
-      "name": "male firstname i",
+      "name": "male i",
       "entries": [
         "Iafri",
         "IargæiRR",
@@ -3136,7 +3213,7 @@
       ]
     },
     {
-      "name": "male firstname j",
+      "name": "male j",
       "entries": [
         "Jafnhárr",
         "Jakaupr",
@@ -3183,7 +3260,7 @@
       ]
     },
     {
-      "name": "male firstname k",
+      "name": "male k",
       "entries": [
         "Kabbi",
         "Kábeinn",
@@ -3360,7 +3437,7 @@
       ]
     },
     {
-      "name": "male firstname l",
+      "name": "male l",
       "entries": [
         "Labbi",
         "Lafranz",
@@ -3455,7 +3532,7 @@
       ]
     },
     {
-      "name": "male firstname m",
+      "name": "male m",
       "entries": [
         "Magnbjǫrn",
         "Magni",
@@ -3531,7 +3608,7 @@
       ]
     },
     {
-      "name": "male firstname n",
+      "name": "male n",
       "entries": [
         "Naddoðr",
         "Naddoddr",
@@ -3600,7 +3677,7 @@
       ]
     },
     {
-      "name": "male firstname o",
+      "name": "male o",
       "entries": [
         "Óblauðr",
         "Óbæinn",
@@ -3720,7 +3797,7 @@
       ]
     },
     {
-      "name": "male firstname p",
+      "name": "male p",
       "entries": [
         "Pái",
         "Pall",
@@ -3736,7 +3813,7 @@
       ]
     },
     {
-      "name": "male firstname r",
+      "name": "male r",
       "entries": [
         "Ráðbarðr",
         "Ráðgeirr",
@@ -3858,7 +3935,7 @@
       ]
     },
     {
-      "name": "male firstname s",
+      "name": "male s",
       "entries": [
         "Salamon",
         "Salbjǫrn",
@@ -4281,7 +4358,7 @@
       ]
     },
     {
-      "name": "male firstname t",
+      "name": "male t",
       "entries": [
         "Taf",
         "Tafi",
@@ -4352,7 +4429,7 @@
       ]
     },
     {
-      "name": "male firstname u",
+      "name": "male u",
       "entries": [
         "Ubbi",
         "Úbeinn",
@@ -4413,7 +4490,7 @@
       ]
     },
     {
-      "name": "male firstname v",
+      "name": "male v",
       "entries": [
         "Vaði",
         "Vafri",
@@ -4606,7 +4683,7 @@
       ]
     },
     {
-      "name": "male firstname y",
+      "name": "male y",
       "entries": [
         "Ylfingr",
         "Ymir",
@@ -4616,7 +4693,7 @@
       ]
     },
     {
-      "name": "male firstname ae",
+      "name": "male ae",
       "entries": [
         "Æbbi",
         "Ægill",
@@ -4686,7 +4763,7 @@
       ]
     },
     {
-      "name": "male firstname oe",
+      "name": "male oe",
       "entries": [
         "Ødin",
         "Ødun",
@@ -4745,7 +4822,7 @@
       ]
     },
     {
-      "name": "male firstname th",
+      "name": "male th",
       "entries": [
         "Þangbrandr",
         "Þarald",
@@ -4923,7 +5000,7 @@
       ]
     },
     {
-      "name": "male firstname genitive",
+      "name": "male genitive",
       "entries": [
         "Gríms",
         "Helga",
@@ -4932,29 +5009,32 @@
       ]
     },
     {
-      "name": "unisex firstname",
+      "**************************************************": "UNISEX FIRST NAMES"
+    },
+    {
+      "name": "unisex",
       "entries": [
-        "{unisex firstname a}",
-        "{unisex firstname b}",
-        "{unisex firstname d}",
-        "{unisex firstname e}",
-        "{unisex firstname f}",
-        "{unisex firstname g}",
-        "{unisex firstname h}",
-        "{unisex firstname i}",
-        "{unisex firstname k}",
-        "{unisex firstname m}",
-        "{unisex firstname n}",
-        "{unisex firstname o}",
-        "{unisex firstname r}",
-        "{unisex firstname s}",
-        "{unisex firstname t}",
-        "{unisex firstname u}",
-        "{unisex firstname th}"
+        "{unisex a}",
+        "{unisex b}",
+        "{unisex d}",
+        "{unisex e}",
+        "{unisex f}",
+        "{unisex g}",
+        "{unisex h}",
+        "{unisex i}",
+        "{unisex k}",
+        "{unisex m}",
+        "{unisex n}",
+        "{unisex o}",
+        "{unisex r}",
+        "{unisex s}",
+        "{unisex t}",
+        "{unisex u}",
+        "{unisex th}"
       ]
     },
     {
-      "name": "unisex firstname a",
+      "name": "unisex a",
       "entries": [
         "Abbi",
         "Abel",
@@ -4974,7 +5054,7 @@
       ]
     },
     {
-      "name": "unisex firstname b",
+      "name": "unisex b",
       "entries": [
         "Bassi",
         "Becca",
@@ -4984,13 +5064,13 @@
       ]
     },
     {
-      "name": "unisex firstname d",
+      "name": "unisex d",
       "entries": [
         "Dótta"
       ]
     },
     {
-      "name": "unisex firstname e",
+      "name": "unisex e",
       "entries": [
         "Eir",
         "Elis",
@@ -4998,13 +5078,13 @@
       ]
     },
     {
-      "name": "unisex firstname f",
+      "name": "unisex f",
       "entries": [
         "Finna"
       ]
     },
     {
-      "name": "unisex firstname g",
+      "name": "unisex g",
       "entries": [
         "Gás",
         "Gás",
@@ -5022,7 +5102,7 @@
       ]
     },
     {
-      "name": "unisex firstname h",
+      "name": "unisex h",
       "entries": [
         "Heiðr",
         "Helgi",
@@ -5031,7 +5111,7 @@
       ]
     },
     {
-      "name": "unisex firstname i",
+      "name": "unisex i",
       "entries": [
         "Ing",
         "Ingi",
@@ -5040,7 +5120,7 @@
       ]
     },
     {
-      "name": "unisex firstname k",
+      "name": "unisex k",
       "entries": [
         "Kalli",
         "Karli",
@@ -5050,7 +5130,7 @@
       ]
     },
     {
-      "name": "unisex firstname m",
+      "name": "unisex m",
       "entries": [
         "Magni",
         "Mallymkun",
@@ -5062,26 +5142,26 @@
       ]
     },
     {
-      "name": "unisex firstname n",
+      "name": "unisex n",
       "entries": [
         "Nanni"
       ]
     },
     {
-      "name": "unisex firstname o",
+      "name": "unisex o",
       "entries": [
         "Oddleif"
       ]
     },
     {
-      "name": "unisex firstname r",
+      "name": "unisex r",
       "entries": [
         "Ragni",
         "Randi"
       ]
     },
     {
-      "name": "unisex firstname s",
+      "name": "unisex s",
       "entries": [
         "Sibba",
         "Sigfrid",
@@ -5093,7 +5173,7 @@
       ]
     },
     {
-      "name": "unisex firstname t",
+      "name": "unisex t",
       "entries": [
         "Tobbi",
         "Tolla",
@@ -5101,7 +5181,7 @@
       ]
     },
     {
-      "name": "unisex firstname u",
+      "name": "unisex u",
       "entries": [
         "Uðr",
         "Uni",
@@ -5111,23 +5191,29 @@
       ]
     },
     {
-      "name": "unisex firstname th",
+      "name": "unisex th",
       "entries": [
         "Þiúð",
         "Þiúðr"
       ]
     },
     {
+      "**************************************************": "PATRONYMS"
+    },
+    {
       "name": "female patronym",
       "entries": [
-        "{male firstname genitive}dóttir"
+        "{male genitive}dóttir"
       ]
     },
     {
       "name": "male patronym",
       "entries": [
-        "{male firstname genitive}son"
+        "{male genitive}son"
       ]
+    },
+    {
+      "**************************************************": "BYNAMES"
     },
     {
       "name": "female byname",
@@ -5357,6 +5443,262 @@
         "Vápni ('Weapon')",
         "Víga ('Battle')",
         "þursasprengir ('Giant-destroyer')"
+      ]
+    },
+    {
+      "**************************************************": "INITIALS"
+    },
+    {
+      "name": "initial",
+      "entries": [
+        "{a}",
+        "{b}",
+        "{d}",
+        "{e}",
+        "{f}",
+        "{g}",
+        "{h}",
+        "{i}",
+        "{j}",
+        "{k}",
+        "{l}",
+        "{m}",
+        "{n}",
+        "{o}",
+        "{p}",
+        "{r}",
+        "{s}",
+        "{t}",
+        "{u}",
+        "{v}",
+        "{y}",
+        "{ae}",
+        "{oe}",
+        "{th}"
+      ]
+    },
+    {
+      "name": "a",
+      "entries": [
+        "{female a}",
+        "{male a}",
+        "{unisex a}"
+      ]
+    },
+    {
+      "name": "b",
+      "entries": [
+        "{female b}",
+        "{male b}",
+        "{unisex b}"
+      ]
+    },
+    {
+      "name": "c",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "d",
+      "entries": [
+        "{female d}",
+        "{male d}",
+        "{unisex d}"
+      ]
+    },
+    {
+      "name": "e",
+      "entries": [
+        "{female e}",
+        "{male e}",
+        "{unisex e}"
+      ]
+    },
+    {
+      "name": "f",
+      "entries": [
+        "{female f}",
+        "{male f}",
+        "{unisex f}"
+      ]
+    },
+    {
+      "name": "g",
+      "entries": [
+        "{female g}",
+        "{male g}",
+        "{unisex g}"
+      ]
+    },
+    {
+      "name": "h",
+      "entries": [
+        "{female h}",
+        "{male h}",
+        "{unisex h}"
+      ]
+    },
+    {
+      "name": "i",
+      "entries": [
+        "{female i}",
+        "{male i}",
+        "{unisex i}"
+      ]
+    },
+    {
+      "name": "j",
+      "entries": [
+        "{female j}",
+        "{male j}"
+      ]
+    },
+    {
+      "name": "k",
+      "entries": [
+        "{female k}",
+        "{male k}",
+        "{unisex k}"
+      ]
+    },
+    {
+      "name": "l",
+      "entries": [
+        "{female l}",
+        "{male l}"
+      ]
+    },
+    {
+      "name": "m",
+      "entries": [
+        "{female m}",
+        "{male m}",
+        "{unisex m}"
+      ]
+    },
+    {
+      "name": "n",
+      "entries": [
+        "{female n}",
+        "{male n}",
+        "{unisex n}"
+      ]
+    },
+    {
+      "name": "o",
+      "entries": [
+        "{female o}",
+        "{male o}",
+        "{unisex o}"
+      ]
+    },
+    {
+      "name": "p",
+      "entries": [
+        "{male p}"
+      ]
+    },
+    {
+      "name": "q",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "r",
+      "entries": [
+        "{female r}",
+        "{male r}",
+        "{unisex r}"
+      ]
+    },
+    {
+      "name": "s",
+      "entries": [
+        "{female s}",
+        "{male s}",
+        "{unisex s}"
+      ]
+    },
+    {
+      "name": "t",
+      "entries": [
+        "{female t}",
+        "{male t}",
+        "{unisex t}"
+      ]
+    },
+    {
+      "name": "u",
+      "entries": [
+        "{female u}",
+        "{male u}",
+        "{unisex u}"
+      ]
+    },
+    {
+      "name": "v",
+      "entries": [
+        "{female v}",
+        "{male v}"
+      ]
+    },
+    {
+      "name": "w",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "x",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "y",
+      "entries": [
+        "{female y}",
+        "{male y}"
+      ]
+    },
+    {
+      "name": "z",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "ae",
+      "entries": [
+        "{female ae}",
+        "{male ae}"
+      ]
+    },
+    {
+      "name": "oe",
+      "entries": [
+        "{female oe}",
+        "{male oe}"
+      ]
+    },
+    {
+      "name": "th",
+      "entries": [
+        "{female th}",
+        "{male th}",
+        "{unisex th}"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Gender = {global:gender}."
       ]
     }
   ]
