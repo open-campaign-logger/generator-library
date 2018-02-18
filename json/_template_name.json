@@ -83,34 +83,34 @@
     {
       "name": "female full",
       "entries": [
-        "{female} {female byname}",
-        "{unisex} {female byname}",
-        "{female} {unisex byname}",
-        "{unisex} {unisex byname}",
-        "{female byname} {female}",
-        "{unisex byname} {female}",
-        "{female byname} {unisex}",
-        "{unisex byname} {unisex}"
+        "{female} {female append}",
+        "{unisex} {female append}",
+        "{female} {unisex append}",
+        "{unisex} {unisex append}",
+        "{female prepend} {female}",
+        "{unisex prepend} {female}",
+        "{female prepend} {unisex}",
+        "{unisex prepend} {unisex}"
       ]
     },
     {
       "name": "male full",
       "entries": [
-        "{male} {male byname}",
-        "{unisex} {male byname}",
-        "{male} {unisex byname}",
-        "{unisex} {unisex byname}",
-        "{male byname} {male}",
-        "{unisex byname} {male}",
-        "{male byname} {unisex}",
-        "{unisex byname} {unisex}"
+        "{male} {male append}",
+        "{unisex} {male append}",
+        "{male} {unisex append}",
+        "{unisex} {unisex append}",
+        "{male prepend} {male}",
+        "{unisex prepend} {male}",
+        "{male prepend} {unisex}",
+        "{unisex prepend} {unisex}"
       ]
     },
     {
       "name": "unisex full",
       "entries": [
-        "{unisex} {unisex byname}",
-        "{unisex byname} {unisex}"
+        "{unisex} {unisex append}",
+        "{unisex prepend} {unisex}"
       ]
     },
     {
@@ -523,15 +523,55 @@
       ]
     },
     {
+      "name": "female prepend",
+      "entries": [
+        "{female byname}",
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "female append",
+      "entries": [
+        "the {female byname}",
+        "the {unisex byname}"
+      ]
+    },
+    {
+      "name": "male prepend",
+      "entries": [
+        "{male byname}",
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "male append",
+      "entries": [
+        "the {male byname}",
+        "the {unisex byname}"
+      ]
+    },
+    {
+      "name": "unisex prepend",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "unisex append",
+      "entries": [
+        "the {unisex byname}"
+      ]
+    },
+    {
       "name": "female byname",
       "entries": [
-        ""
+        "{unisex byname}"
       ]
     },
     {
       "name": "male byname",
       "entries": [
-        ""
+        "{unisex byname}"
       ]
     },
     {
@@ -783,7 +823,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, initial: {initial}. Gender = {global:gender}."
+        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, byname: {byname}, initial: {initial}. Gender = {global:gender}."
       ]
     }
   ]
