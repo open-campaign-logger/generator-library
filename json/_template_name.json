@@ -44,8 +44,7 @@
       "explanation": "Brief resultPattern output.",
       "entries": [
         "{female}",
-        "{male}",
-        "{unisex}"
+        "{male}"
       ]
     },
     {
@@ -509,187 +508,6 @@
         "gender": "unisex"
       },
       "entries": [
-        "{unisex a}",
-        "{unisex b}",
-        "{unisex c}",
-        "{unisex d}",
-        "{unisex e}",
-        "{unisex f}",
-        "{unisex g}",
-        "{unisex h}",
-        "{unisex i}",
-        "{unisex j}",
-        "{unisex k}",
-        "{unisex l}",
-        "{unisex m}",
-        "{unisex n}",
-        "{unisex o}",
-        "{unisex p}",
-        "{unisex q}",
-        "{unisex r}",
-        "{unisex s}",
-        "{unisex t}",
-        "{unisex u}",
-        "{unisex v}",
-        "{unisex w}",
-        "{unisex x}",
-        "{unisex y}",
-        "{unisex z}"
-      ]
-    },
-    {
-      "name": "unisex a",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex b",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex c",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex d",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex e",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex f",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex g",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex h",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex i",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex j",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex k",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex l",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex m",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex n",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex o",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex p",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex q",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex r",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex s",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex t",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex u",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex v",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex w",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex x",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex y",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "unisex z",
-      "entries": [
         "XXX"
       ]
     },
@@ -707,13 +525,13 @@
     {
       "name": "female byname",
       "entries": [
-        "XXX"
+        ""
       ]
     },
     {
       "name": "male byname",
       "entries": [
-        "XXX"
+        ""
       ]
     },
     {
@@ -727,19 +545,19 @@
     {
       "name": "unisex negative byname",
       "entries": [
-        "XXX"
+        ""
       ]
     },
     {
       "name": "unisex neutral byname",
       "entries": [
-        "XXX"
+        ""
       ]
     },
     {
       "name": "unisex positive byname",
       "entries": [
-        "XXX"
+        ""
       ]
     },
     {
@@ -780,208 +598,182 @@
       "name": "a",
       "entries": [
         "{female a}",
-        "{male a}",
-        "{unisex a}"
+        "{male a}"
       ]
     },
     {
       "name": "b",
       "entries": [
         "{female b}",
-        "{male b}",
-        "{unisex b}"
+        "{male b}"
       ]
     },
     {
       "name": "c",
       "entries": [
         "{female c}",
-        "{male c}",
-        "{unisex c}"
+        "{male c}"
       ]
     },
     {
       "name": "d",
       "entries": [
         "{female d}",
-        "{male d}",
-        "{unisex d}"
+        "{male d}"
       ]
     },
     {
       "name": "e",
       "entries": [
         "{female e}",
-        "{male e}",
-        "{unisex e}"
+        "{male e}"
       ]
     },
     {
       "name": "f",
       "entries": [
         "{female f}",
-        "{male f}",
-        "{unisex f}"
+        "{male f}"
       ]
     },
     {
       "name": "g",
       "entries": [
         "{female g}",
-        "{male g}",
-        "{unisex g}"
+        "{male g}"
       ]
     },
     {
       "name": "h",
       "entries": [
         "{female h}",
-        "{male h}",
-        "{unisex h}"
+        "{male h}"
       ]
     },
     {
       "name": "i",
       "entries": [
         "{female i}",
-        "{male i}",
-        "{unisex i}"
+        "{male i}"
       ]
     },
     {
       "name": "j",
       "entries": [
         "{female j}",
-        "{male j}",
-        "{unisex j}"
+        "{male j}"
       ]
     },
     {
       "name": "k",
       "entries": [
         "{female k}",
-        "{male k}",
-        "{unisex k}"
+        "{male k}"
       ]
     },
     {
       "name": "l",
       "entries": [
         "{female l}",
-        "{male l}",
-        "{unisex l}"
+        "{male l}"
       ]
     },
     {
       "name": "m",
       "entries": [
         "{female m}",
-        "{male m}",
-        "{unisex m}"
+        "{male m}"
       ]
     },
     {
       "name": "n",
       "entries": [
         "{female n}",
-        "{male n}",
-        "{unisex n}"
+        "{male n}"
       ]
     },
     {
       "name": "o",
       "entries": [
         "{female o}",
-        "{male o}",
-        "{unisex o}"
+        "{male o}"
       ]
     },
     {
       "name": "p",
       "entries": [
         "{female p}",
-        "{male p}",
-        "{unisex p}"
+        "{male p}"
       ]
     },
     {
       "name": "q",
       "entries": [
         "{female q}",
-        "{male q}",
-        "{unisex q}"
+        "{male q}"
       ]
     },
     {
       "name": "r",
       "entries": [
         "{female r}",
-        "{male r}",
-        "{unisex r}"
+        "{male r}"
       ]
     },
     {
       "name": "s",
       "entries": [
         "{female s}",
-        "{male s}",
-        "{unisex s}"
+        "{male s}"
       ]
     },
     {
       "name": "t",
       "entries": [
         "{female t}",
-        "{male t}",
-        "{unisex t}"
+        "{male t}"
       ]
     },
     {
       "name": "u",
       "entries": [
         "{female u}",
-        "{male u}",
-        "{unisex u}"
+        "{male u}"
       ]
     },
     {
       "name": "v",
       "entries": [
         "{female v}",
-        "{male v}",
-        "{unisex v}"
+        "{male v}"
       ]
     },
     {
       "name": "w",
       "entries": [
         "{female w}",
-        "{male w}",
-        "{unisex w}"
+        "{male w}"
       ]
     },
     {
       "name": "x",
       "entries": [
         "{female x}",
-        "{male x}",
-        "{unisex x}"
+        "{male x}"
       ]
     },
     {
       "name": "y",
       "entries": [
         "{female y}",
-        "{male y}",
-        "{unisex y}"
+        "{male y}"
       ]
     },
     {
       "name": "z",
       "entries": [
         "{female z}",
-        "{male z}",
-        "{unisex z}"
+        "{male z}"
       ]
     },
     {
@@ -991,7 +783,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Gender = {global:gender}."
+        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, initial: {initial}. Gender = {global:gender}."
       ]
     }
   ]
