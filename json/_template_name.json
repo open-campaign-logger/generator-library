@@ -35,8 +35,7 @@
       "name": "result",
       "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{summary}",
-        "{detail}"
+        "{name}"
       ]
     },
     {
@@ -51,7 +50,8 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{name}"
+        "{female full}",
+        "{male full}"
       ]
     },
     {
@@ -69,6 +69,8 @@
       "name": "common",
       "explanation": "Common name types.",
       "entries": [
+        "{female}",
+        "{male}",
         "{female full}",
         "{male full}"
       ]
@@ -77,6 +79,7 @@
       "name": "rare",
       "explanation": "Rare name types.",
       "entries": [
+        "{unisex}",
         "{unisex full}"
       ]
     },
