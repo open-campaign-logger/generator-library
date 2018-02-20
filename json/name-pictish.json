@@ -14,7 +14,7 @@
   "see": "",
   "date": "2012-02-20",
   "authors": "Esko Vesala",
-  "sources": "Eithni.com, S-Gabriel.org, Wikipedia.org",
+  "sources": "Eithni.com, PeiraeusPublicLibrary.com,  S-Gabriel.org, Wikipedia.org",
   "genre": "universal",
   "category": "name",
   "tags": "#person",
@@ -335,9 +335,12 @@
         "Áed",
         "Áeda",
         "Aedth",
+        "Aenbecan",
         "Ailpín",
+        "Alpin",
         "Ainftech",
         "Albust",
+        "Allcallorred",
         "Alpin",
         "Ambicatos",
         "Aniel",
@@ -361,8 +364,10 @@
         "Bredei",
         "Breth",
         "Bridei",
+        "Broichan",
         "Brude",
         "Brudei",
+        "Brudus",
         "Buthud",
         "Buthut"
       ]
@@ -372,14 +377,17 @@
       "entries": [
         "Caeltigern",
         "Cailotigernacos",
+        "Cailtarni",
         "Cailtram",
         "Cal",
+        "Caltram",
         "Canaul",
         "Canutulachama",
         "Canaul",
         "Cano",
         "Canutulachama",
         "Carvorst",
+        "Castantin",
         "Causantín",
         "Caustantin",
         "Cemoyth",
@@ -394,14 +402,17 @@
         "Cináed",
         "Cináeda",
         "Cind",
+        "Ciniath",
         "Cinid",
         "Cinidos",
         "Cinioch",
         "Ciniod",
         "Cint",
         "Cintos",
+        "Circenn",
         "Còiseam",
-        "Conall"
+        "Conall",
+        "Crautreic"
       ]
     },
     {
@@ -411,12 +422,15 @@
         "Denbechan",
         "Deo",
         "Deoardivois",
+        "Deocillimon",
         "Deocilunon",
         "Deoord",
+        "Deort",
         "Deototreic",
         "Derelei",
         "Dhunghail",
         "Diu",
+        "Domech",
         "Domelch",
         "Dòmhnall",
         "Domnall",
@@ -444,6 +458,7 @@
       "entries": [
         "Eanfrith",
         "Edarnan",
+        "Eddarrnonn",
         "Elphin",
         "Elpin",
         "Emcad",
@@ -454,6 +469,7 @@
         "Entifidich",
         "Eochaid",
         "Eógan",
+        "Eoganan",
         "Erilich",
         "Erp",
         "Etharnan"
@@ -470,12 +486,14 @@
         "Fet",
         "Fiachu",
         "Fochle",
+        "Forcus",
         "Foth"
       ]
     },
     {
       "name": "male g",
       "entries": [
+        "Gailtram",
         "Galam",
         "Galan",
         "Galanan",
@@ -484,6 +502,7 @@
         "Gant",
         "Garnaith",
         "Gart",
+        "Gartnaich",
         "Gartnait",
         "Gartnaith",
         "Gede",
@@ -519,7 +538,8 @@
     {
       "name": "male i",
       "entries": [
-        "Ini"
+        "Ini",
+        "Irb"
       ]
     },
     {
@@ -546,10 +566,12 @@
       "name": "male m",
       "entries": [
         "Maelchon",
+        "Maelcon",
         "Maglocunos",
         "Mailcon",
         "Manath",
         "Maroleo",
+        "Melcon",
         "Mordeleg",
         "Morleo",
         "Muircholach",
@@ -565,6 +587,7 @@
         "Nechtan",
         "Nectan",
         "Nectanos",
+        "Nehhton",
         "Nerales"
       ]
     },
@@ -575,15 +598,19 @@
         "Oinogustos",
         "Olfinecta",
         "Ongust",
+        "Onnist",
         "Onnuist",
+        "Onuis",
         "Onuist",
+        "Oswiu",
         "Ougenos"
       ]
     },
     {
       "name": "male p",
       "entries": [
-        "Pant"
+        "Pant",
+        "Pidarnoin"
       ]
     },
     {
@@ -609,16 +636,20 @@
       "name": "male t",
       "entries": [
         "Tadg",
+        "Talluorh",
         "Talorc",
         "Talorcagnos",
         "Talorcan",
         "Talorcos",
+        "Talore",
         "Talorg",
         "Talorgan",
         "Talorgen",
+        "Tarain",
         "Taran",
         "Taranos",
         "Tarla",
+        "Tharain",
         "Tholarg",
         "Tolorg"
       ]
@@ -632,11 +663,14 @@
         "Uepos",
         "Uerb",
         "Uerp",
+        "Uid",
         "Uip",
         "Uirolec",
         "Uist",
         "Ungust",
+        "Unen",
         "Unuist",
+        "Uoret",
         "Urochan",
         "Uroican",
         "Usconbuts",
@@ -652,9 +686,12 @@
         "Uurguist",
         "Uurgust",
         "Uurlech",
+        "Uuroid",
         "Uust",
         "Uuthoi",
-        "Uuthoil"
+        "Uuthoil",
+        "Uvan",
+        "Uven"
       ]
     },
     {
@@ -680,6 +717,7 @@
         "Wrad",
         "Wradech",
         "Wroican",
+        "Wroid",
         "Wrguist",
         "Wthoil"
       ]
