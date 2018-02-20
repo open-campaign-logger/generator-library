@@ -1,0 +1,1028 @@
+{
+  "name": "name-pictish",
+  "resultPattern": "{result}",
+  "globals": {
+    "culture": "Pictish"
+  },
+  "variables": {
+    "footnote": "note"
+  },
+  "explanation": "Pict names.",
+  "structure": "Genders are collected in the same file to allow easy sharing of patronym and byname tables. Subtables have been split by their initial letter to allow future support for allitteration and for example siblings sharing the same initial.",
+  "note": "Includes multiple spelling variations of the same names. Several hypotectical, reconstructed names are included as well.",
+  "to do": "",
+  "see": "",
+  "date": "2012-02-20",
+  "authors": "Esko Vesala",
+  "sources": "Eithni.com, S-Gabriel.org, Wikipedia.org",
+  "genre": "universal",
+  "category": "name",
+  "tags": "#person",
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{name}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{female}",
+        "{male}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{female full}",
+        "{male full}"
+      ]
+    },
+    {
+      "name": "name",
+      "explanation": "The name types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common name types.",
+      "entries": [
+        "{female}",
+        "{male}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare name types.",
+      "entries": [
+        "{female full}",
+        "{male full}"
+      ]
+    },
+    {
+      "name": "female full",
+      "entries": [
+        "{female} {female append}",
+        "{female} {unisex append}"
+      ]
+    },
+    {
+      "name": "male full",
+      "entries": [
+        "{male} {male append}",
+        "{male} {unisex append}"
+      ]
+    },
+    {
+      "name": "unisex full",
+      "entries": [
+        "{unisex append}"
+      ]
+    },
+    {
+      "**************************************************": "FEMALE FIRST NAMES"
+    },
+    {
+      "name": "female",
+      "export": {
+        "gender": "female"
+      },
+      "entries": [
+        "{female a}",
+        "{female b}",
+        "{female c}",
+        "{female d}",
+        "{female e}",
+        "{female h}",
+        "{female l}",
+        "{female m}",
+        "{female n}",
+        "{female t}",
+        "{female v}"
+      ]
+    },
+    {
+      "name": "female a",
+      "entries": [
+        "Alpia"
+      ]
+    },
+    {
+      "name": "female b",
+      "entries": [
+        "Barita",
+        "Bodicca"
+      ]
+    },
+    {
+      "name": "female c",
+      "entries": [
+        "Cartimandua",
+        "Coblaith",
+        "Conchenn",
+        "Cunoarda",
+        "Cunovinda",
+        "Cvinda"
+      ]
+    },
+    {
+      "name": "female d",
+      "entries": [
+        "Der-Ilei",
+        "Derelei",
+        "Derile",
+        "Domelch",
+        "Drusticc"
+      ]
+    },
+    {
+      "name": "female e",
+      "entries": [
+        "Eithne",
+        "Eithni"
+      ]
+    },
+    {
+      "name": "female f",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female g",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female h",
+      "entries": [
+        "Huctia"
+      ]
+    },
+    {
+      "name": "female i",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female j",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female k",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female l",
+      "entries": [
+        "Ligach",
+        "Lonceta"
+      ]
+    },
+    {
+      "name": "female m",
+      "entries": [
+        "Mael",
+        "Maithgemm",
+        "Mongfind",
+        "Muire"
+      ]
+    },
+    {
+      "name": "female n",
+      "entries": [
+        "Nadbroicc",
+        "Nectudad"
+      ]
+    },
+    {
+      "name": "female o",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female p",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female q",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female r",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female s",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female t",
+      "entries": [
+        "Tancorix"
+      ]
+    },
+    {
+      "name": "female u",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female v",
+      "entries": [
+        "Verctissa",
+        "Verica"
+      ]
+    },
+    {
+      "name": "female w",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female x",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female y",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "female z",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "MALE FIRST NAMES"
+    },
+    {
+      "name": "male",
+      "export": {
+        "gender": "male"
+      },
+      "entries": [
+        "{male a}",
+        "{male b}",
+        "{male c}",
+        "{male d}",
+        "{male e}",
+        "{male f}",
+        "{male g}",
+        "{male h}",
+        "{male i}",
+        "{male k}",
+        "{male l}",
+        "{male m}",
+        "{male n}",
+        "{male o}",
+        "{male p}",
+        "{male r}",
+        "{male t}",
+        "{male u}",
+        "{male v}",
+        "{male w}"
+      ]
+    },
+    {
+      "name": "male a",
+      "entries": [
+        "Achiuir",
+        "Achivir",
+        "Áed",
+        "Áeda",
+        "Aedth",
+        "Ailpín",
+        "Ainftech",
+        "Albust",
+        "Alpin",
+        "Ambicatos",
+        "Aniel",
+        "Aodh",
+        "Aoidh",
+        "Artbranan",
+        "Artcois",
+        "Artobranagnos",
+        "Artocoxos"
+      ]
+    },
+    {
+      "name": "male b",
+      "entries": [
+        "Bargoit",
+        "Beli",
+        "Belinos",
+        "Bili",
+        "Bliesblituth",
+        "Bolgh",
+        "Bredei",
+        "Breth",
+        "Bridei",
+        "Brude",
+        "Brudei",
+        "Buthud",
+        "Buthut"
+      ]
+    },
+    {
+      "name": "male c",
+      "entries": [
+        "Caeltigern",
+        "Cailotigernacos",
+        "Cailtram",
+        "Cal",
+        "Canaul",
+        "Canutulachama",
+        "Canaul",
+        "Cano",
+        "Canutulachama",
+        "Carvorst",
+        "Causantín",
+        "Caustantin",
+        "Cemoyth",
+        "Cenél",
+        "Cennalaph",
+        "Choinnich",
+        "Chòiseim",
+        "Cimoiod",
+        "Cimoit",
+        "Cimoitos",
+        "Cinadhon",
+        "Cináed",
+        "Cináeda",
+        "Cind",
+        "Cinid",
+        "Cinidos",
+        "Cinioch",
+        "Ciniod",
+        "Cint",
+        "Cintos",
+        "Còiseam",
+        "Conall"
+      ]
+    },
+    {
+      "name": "male d",
+      "entries": [
+        "Denbecan",
+        "Denbechan",
+        "Deo",
+        "Deoardivois",
+        "Deocilunon",
+        "Deoord",
+        "Deototreic",
+        "Derelei",
+        "Dhunghail",
+        "Diu",
+        "Domelch",
+        "Dòmhnall",
+        "Domnall",
+        "Dompneth",
+        "Donbecan",
+        "Donbecanos",
+        "Donnel",
+        "Dornornauch",
+        "Drest",
+        "Drost",
+        "Drosten",
+        "Druisten",
+        "Drust",
+        "Drustagnos",
+        "Drustan",
+        "Drustos",
+        "Dub",
+        "Dumnovellos",
+        "Dúngail",
+        "Dúngal"
+      ]
+    },
+    {
+      "name": "male e",
+      "entries": [
+        "Eanfrith",
+        "Edarnan",
+        "Elphin",
+        "Elpin",
+        "Emcad",
+        "Emcat",
+        "Emcath",
+        "Enfidich",
+        "Enfret",
+        "Entifidich",
+        "Eochaid",
+        "Eógan",
+        "Erilich",
+        "Erp",
+        "Etharnan"
+      ]
+    },
+    {
+      "name": "male f",
+      "entries": [
+        "Fechir",
+        "Fecir",
+        "Fed",
+        "Ferath",
+        "Fergusa",
+        "Fet",
+        "Fiachu",
+        "Fochle",
+        "Foth"
+      ]
+    },
+    {
+      "name": "male g",
+      "entries": [
+        "Galam",
+        "Galan",
+        "Galanan",
+        "Galany",
+        "Ganat",
+        "Gant",
+        "Garnaith",
+        "Gart",
+        "Gartnait",
+        "Gartnaith",
+        "Gede",
+        "Gernard",
+        "Gest",
+        "Gigurum",
+        "Gilgidi",
+        "Giric",
+        "Girom",
+        "Gnith",
+        "Gocinecht",
+        "Grid",
+        "Griogair",
+        "Grit",
+        "Gritos",
+        "Guib",
+        "Guidid",
+        "Guist",
+        "Gurcich",
+        "Gurthinmoch",
+        "Gurum",
+        "Gust",
+        "Gustos",
+        "Gyrom"
+      ]
+    },
+    {
+      "name": "male h",
+      "entries": [
+        "Hudrossig"
+      ]
+    },
+    {
+      "name": "male i",
+      "entries": [
+        "Ini"
+      ]
+    },
+    {
+      "name": "male j",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male k",
+      "entries": [
+        "Kinet"
+      ]
+    },
+    {
+      "name": "male l",
+      "entries": [
+        "Lugutrinos",
+        "Luthren",
+        "Lutrin"
+      ]
+    },
+    {
+      "name": "male m",
+      "entries": [
+        "Maelchon",
+        "Maglocunos",
+        "Mailcon",
+        "Manath",
+        "Maroleo",
+        "Mordeleg",
+        "Morleo",
+        "Muircholach",
+        "Munait",
+        "Mund",
+        "Murtolic"
+      ]
+    },
+    {
+      "name": "male n",
+      "entries": [
+        "Naiton",
+        "Nechtan",
+        "Nectan",
+        "Nectanos",
+        "Nerales"
+      ]
+    },
+    {
+      "name": "male o",
+      "entries": [
+        "Óengus",
+        "Oinogustos",
+        "Olfinecta",
+        "Ongust",
+        "Onnuist",
+        "Onuist",
+        "Ougenos"
+      ]
+    },
+    {
+      "name": "male p",
+      "entries": [
+        "Pant"
+      ]
+    },
+    {
+      "name": "male q",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male r",
+      "entries": [
+        "Rhun",
+        "Ru"
+      ]
+    },
+    {
+      "name": "male s",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male t",
+      "entries": [
+        "Tadg",
+        "Talorc",
+        "Talorcagnos",
+        "Talorcan",
+        "Talorcos",
+        "Talorg",
+        "Talorgan",
+        "Talorgen",
+        "Taran",
+        "Taranos",
+        "Tarla",
+        "Tholarg",
+        "Tolorg"
+      ]
+    },
+    {
+      "name": "male u",
+      "entries": [
+        "Udarech",
+        "Udrost",
+        "Uen",
+        "Uepos",
+        "Uerb",
+        "Uerp",
+        "Uip",
+        "Uirolec",
+        "Uist",
+        "Ungust",
+        "Unuist",
+        "Urochan",
+        "Uroican",
+        "Usconbuts",
+        "Uudrost",
+        "Uuen",
+        "Uuid",
+        "Uuidid",
+        "Uurad",
+        "Uuradec",
+        "Uurat",
+        "Uurcich",
+        "Uuredeg",
+        "Uurguist",
+        "Uurgust",
+        "Uurlech",
+        "Uust",
+        "Uuthoi",
+        "Uuthoil"
+      ]
+    },
+    {
+      "name": "male v",
+      "entries": [
+        "Vepogenos",
+        "Vipog",
+        "Vipoig",
+        "Viratos",
+        "Virocagnos",
+        "Virogustos",
+        "Virolectos",
+        "Virotacos",
+        "Vurguist"
+      ]
+    },
+    {
+      "name": "male w",
+      "entries": [
+        "Wdrost",
+        "Wid",
+        "Wirp",
+        "Wrad",
+        "Wradech",
+        "Wroican",
+        "Wrguist",
+        "Wthoil"
+      ]
+    },
+    {
+      "name": "male x",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male y",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "male z",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "UNISEX FIRST NAMES"
+    },
+    {
+      "name": "unisex",
+      "export": {
+        "gender": "unisex"
+      },
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "**************************************************": "BYNAMES"
+    },
+    {
+      "name": "byname",
+      "entries": [
+        "{female byname}",
+        "{male byname}",
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "female prepend",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "female append",
+      "entries": [
+        "{female byname}",
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "male prepend",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "male append",
+      "entries": [
+        "{male byname}",
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "unisex prepend",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "unisex append",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "female byname",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "male byname",
+      "entries": [
+        "{unisex byname}",
+        "mac {male}",
+        "map {male}",
+        "Dásachtach ('Madman')",
+        "Mac Rath ('Son of Fortune')"
+      ]
+    },
+    {
+      "name": "unisex byname",
+      "entries": [
+        "{unisex neutral byname}",
+        "{unisex positive byname}"
+      ]
+    },
+    {
+      "name": "unisex negative byname",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "unisex neutral byname",
+      "entries": [
+        "Erilich",
+        "Gaed brechach",
+        "Gurthinmoch",
+        "Ini",
+        "Loc",
+        "Morbet",
+        "Olgudach",
+        "Uecla",
+        "Uetla"
+      ]
+    },
+    {
+      "name": "unisex positive byname",
+      "entries": [
+        "Diuberr ('Rich')",
+        "Mor ('Great')"
+      ]
+    },
+    {
+      "**************************************************": "INITIALS"
+    },
+    {
+      "name": "initial",
+      "entries": [
+        "{a}",
+        "{b}",
+        "{c}",
+        "{d}",
+        "{e}",
+        "{f}",
+        "{g}",
+        "{h}",
+        "{i}",
+        "{j}",
+        "{k}",
+        "{l}",
+        "{m}",
+        "{n}",
+        "{o}",
+        "{p}",
+        "{q}",
+        "{r}",
+        "{s}",
+        "{t}",
+        "{u}",
+        "{v}",
+        "{w}",
+        "{x}",
+        "{y}",
+        "{z}"
+      ]
+    },
+    {
+      "name": "a",
+      "entries": [
+        "{female a}",
+        "{male a}"
+      ]
+    },
+    {
+      "name": "b",
+      "entries": [
+        "{female b}",
+        "{male b}"
+      ]
+    },
+    {
+      "name": "c",
+      "entries": [
+        "{female c}",
+        "{male c}"
+      ]
+    },
+    {
+      "name": "d",
+      "entries": [
+        "{female d}",
+        "{male d}"
+      ]
+    },
+    {
+      "name": "e",
+      "entries": [
+        "{female e}",
+        "{male e}"
+      ]
+    },
+    {
+      "name": "f",
+      "entries": [
+        "{male f}"
+      ]
+    },
+    {
+      "name": "g",
+      "entries": [
+        "{male g}"
+      ]
+    },
+    {
+      "name": "h",
+      "entries": [
+        "{female h}",
+        "{male h}"
+      ]
+    },
+    {
+      "name": "i",
+      "entries": [
+        "{male i}"
+      ]
+    },
+    {
+      "name": "j",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "k",
+      "entries": [
+        "{male k}"
+      ]
+    },
+    {
+      "name": "l",
+      "entries": [
+        "{female l}",
+        "{male l}"
+      ]
+    },
+    {
+      "name": "m",
+      "entries": [
+        "{female m}",
+        "{male m}"
+      ]
+    },
+    {
+      "name": "n",
+      "entries": [
+        "{female n}",
+        "{male n}"
+      ]
+    },
+    {
+      "name": "o",
+      "entries": [
+        "{male o}"
+      ]
+    },
+    {
+      "name": "p",
+      "entries": [
+        "{male p}"
+      ]
+    },
+    {
+      "name": "q",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "r",
+      "entries": [
+        "{male r}"
+      ]
+    },
+    {
+      "name": "s",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "t",
+      "entries": [
+        "{female t}",
+        "{male t}"
+      ]
+    },
+    {
+      "name": "u",
+      "entries": [
+        "{male u}"
+      ]
+    },
+    {
+      "name": "v",
+      "entries": [
+        "{female v}",
+        "{male v}"
+      ]
+    },
+    {
+      "name": "w",
+      "entries": [
+        "{male w}"
+      ]
+    },
+    {
+      "name": "x",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "y",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "z",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, byname: {byname}, initial: {initial}. Gender = {global:gender}."
+      ]
+    }
+  ]
+}
