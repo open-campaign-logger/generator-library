@@ -1,28 +1,28 @@
 {
   "name": "NPC Description Generator",
-  "resultPattern": "{form}{gender}{culture}{wealth}{attitude} \r\n  {description} \r\n{var:footnote}",
+  "resultPattern": "{init}{description}",
   "globals": {
     "actant": "person",
     "actants": "persons",
     "actantgroup": "group",
     "actantaction": "minding their own business",
     "actantadjective": "casual",
-    "actantdescription": "The person is not paying much attention to their surroundings.",
+    "actantdescription": "They are not paying much attention to their surroundings.",
     "activity": "passive",
     "attitude": "neutral",
     "age": "adult",
-    "behavior": "",
-    "clothing": "",
-    "clothingadjective": "",
+    "behavior": "calm",
+    "clothing": "clothes",
+    "clothingadjective": "nondescript",
     "culture": "Northern",
-    "doing": "",
-    "form": "",
+    "doing": "relaxing",
+    "form": "humanoid",
     "gender": "neuter",
-    "mood": "",
-    "moodexpression": "",
-    "occupation": "",
-    "species": "",
-    "speciesmentioned": "",
+    "mood": "calm",
+    "moodexpression": "serious",
+    "occupation": "trader",
+    "species": "human",
+    "speciesmentioned": " ",
     "style": "",
     "subject": "",
     "substantive": "",
@@ -37,7 +37,7 @@
   "bugs": "Developepment currently on hold, waiting for global variable support.",
   "to do": "Most of it... Starting from genre? ",
   "see": "",
-  "date": "2018-01-29",
+  "date": "2018-02-22",
   "authors": "Esko Vesala",
   "sources": "Wikipedia.org",
   "genre": "fantasy",
@@ -45,11 +45,65 @@
   "tags": "#npc, #person, #appearance",
   "tables": [
     {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        "{form}{gender}{culture}{wealth}{mood}{attitude}{activity}"
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{XXX}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{XXX} {XXX}"
+      ]
+    },
+    {
+      "name": "XXX",
+      "explanation": "The XXX types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common XXX types.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare XXX types.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "description",
       "explanation": "Short description of the character. Note that species returns a direct result (so that 'human', the default, can return an empty string.)",
       "entries": [
-        "{var:age} {var:gender} {var:speciesmentioned} is {var:attitude} and {lib:synonym#wearing} {var:clothingadjective} {lib:synonym#clothing}. The {var:substantive} is {var:activity}. {lib:synonym#now} {var:subject} is {var:attitude} and {var:mood}, {var:moodexpression}. ",
-        "{var:age} {var:gender} {var:speciesmentioned} {lib:synonym#wearing} {var:clothingadjective} {lib:synonym#clothing}. The {var:substantive} is {var:activity}. {lib:synonym#now} {var:subject} is {var:mood}, {var:moodexpression}. {var:subject} has a {var:speciesadjective} sense of humor."
+        "{global:gender} {global:age} {global:speciesmentioned} is {global:attitude} and {lib:synonym#wearing} {global:clothingadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:attitude} and {global:mood}, {global:moodexpression}. ",
+        "{global:gender} {global:age} {global:speciesmentioned} {lib:synonym#wearing} {global:clothingadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:mood}, {global:moodexpression}. {global:subject} has a {global:speciesadjective} sense of humor."
       ]
     },
     {
@@ -74,7 +128,7 @@
           "v": "",
           "export": {
             "species": "human",
-            "speciesmentioned": "",
+            "speciesmentioned": " ",
             "speciesadjective": "human"
           }
         },
@@ -566,7 +620,7 @@
     },
     {
       "name": "activity",
-      "explanation": "What the character's activity level?  Returns only variables.",
+      "explanation": "What the character's activity level? Returns only variables.",
       "entries": [
         {
           "m": 10,
