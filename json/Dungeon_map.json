@@ -2,12 +2,12 @@
   "name": "Dungeon_map",
   "resultPattern": "{lib:formatting#CL}{init}{three_by_three}{debug}",
   "globals": {
-    "library": "{lib:{var:set}}",
-    "room": "{global:library}"
+    "location": "{lib:{global:set}#location}",
+    "room": "{global:location}",
+    "set": "set_dungeon"
   },
   "variables": {
-    "footnote": "",
-    "set": ""
+    "footnote": ""
   },
   "explanation": "",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
@@ -16,7 +16,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-02-14",
+  "date": "2018-02-23",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "fantasy",
@@ -31,7 +31,7 @@
         {
           "v": "",
           "set": {
-            "set": "{set}"
+            "export": "{set}"
           }
         }
       ]
@@ -252,7 +252,7 @@
       "name": "debug",
       "explanation": "Debug routine for displaying additional informaton.",
       "entries": [
-        "(set = {var:set})"
+        "(set = {global:set})"
       ]
     },
     {
