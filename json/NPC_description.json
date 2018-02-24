@@ -1,6 +1,6 @@
 {
   "name": "NPC Description Generator",
-  "resultPattern": "{init}{description}",
+  "resultPattern": "{init}{result}",
   "globals": {
     "actant": "person",
     "actants": "persons",
@@ -14,7 +14,7 @@
     "behavior": "calm",
     "clothing": "clothes",
     "clothingadjective": "nondescript",
-    "culture": "Northern",
+    "civilization": "urban",
     "doing": "relaxing",
     "form": "humanoid",
     "gender": "neuter",
@@ -37,7 +37,7 @@
   "bugs": "Developepment currently on hold, waiting for global variable support.",
   "to do": "Most of it... Starting from genre? ",
   "see": "",
-  "date": "2018-02-22",
+  "date": "2018-02-24",
   "authors": "Esko Vesala",
   "sources": "Wikipedia.org",
   "genre": "fantasy",
@@ -48,7 +48,7 @@
       "name": "init",
       "explanation": "Initializing the required global variables, if any.",
       "entries": [
-        "{form}{gender}{culture}{wealth}{mood}{attitude}{activity}"
+        "{form}{gender}{civilization}{wealth}{mood}{attitude}{activity}"
       ]
     },
     {
@@ -63,19 +63,20 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{XXX}"
+        "{description}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{XXX} {XXX}"
+        "{description}"
       ]
     },
     {
-      "name": "XXX",
-      "explanation": "The XXX types by rarity.",
+      "name": "description",
+      "explanation": "The description types by rarity.",
+      "note": "The species call returns a direct result (so that 'human', the default, can return an empty string.)",
       "entries": [
         {
           "m": 10,
@@ -86,25 +87,20 @@
     },
     {
       "name": "common",
-      "explanation": "Common XXX types.",
+      "explanation": "Common description types.",
       "entries": [
-        "XXX"
+        "{global:gender} {global:age} {global:speciesmentioned} is {global:attitude} and {lib:synonym#wearing} {global:clothingadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:attitude} and {global:mood}, {global:moodexpression}. "
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare XXX types.",
+      "explanation": "Rare description types.",
       "entries": [
-        "XXX"
+        "{global:gender} {global:age} {global:speciesmentioned} {lib:synonym#wearing} {global:clothingadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:mood}, {global:moodexpression}. {global:subject} has a {global:speciesadjective} sense of humor."
       ]
     },
     {
-      "name": "description",
-      "explanation": "Short description of the character. Note that species returns a direct result (so that 'human', the default, can return an empty string.)",
-      "entries": [
-        "{global:gender} {global:age} {global:speciesmentioned} is {global:attitude} and {lib:synonym#wearing} {global:clothingadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:attitude} and {global:mood}, {global:moodexpression}. ",
-        "{global:gender} {global:age} {global:speciesmentioned} {lib:synonym#wearing} {global:clothingadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:mood}, {global:moodexpression}. {global:subject} has a {global:speciesadjective} sense of humor."
-      ]
+      "**************************************************": "SPECIES"
     },
     {
       "name": "form",
@@ -160,6 +156,9 @@
           }
         }
       ]
+    },
+    {
+      "**************************************************": "GENDER"
     },
     {
       "name": "gender",
@@ -222,6 +221,9 @@
       ]
     },
     {
+      "**************************************************": "AGE"
+    },
+    {
       "name": "neuter age",
       "explanation": "Age for neuter characters (golems, automatons, homonculi, contructs, androids, etc).",
       "entries": [
@@ -253,7 +255,7 @@
           "m": 20,
           "v": "",
           "export": {
-            "age": "middle aged",
+            "age": "middle-aged",
             "substantive": "person"
           }
         },
@@ -307,7 +309,7 @@
           "m": 20,
           "v": "",
           "export": {
-            "age": "middle aged",
+            "age": "middle-aged",
             "substantive": "person"
           }
         },
@@ -361,7 +363,7 @@
           "m": 20,
           "v": "",
           "export": {
-            "age": "middle aged",
+            "age": "middle-aged",
             "substantive": "person"
           }
         },
@@ -415,7 +417,7 @@
           "m": 20,
           "v": "",
           "export": {
-            "age": "middle aged",
+            "age": "middle-aged",
             "substantive": "person"
           }
         },
@@ -438,38 +440,44 @@
       ]
     },
     {
-      "name": "culture",
-      "explanation": "What the character is wearing?",
+      "**************************************************": "CULTURE"
+    },
+    {
+      "name": "civilization",
+      "explanation": "Affects what the character is wearing.",
       "entries": [
         {
           "m": 10,
           "v": "",
           "export": {
-            "culture": "Western"
+            "civilization": "foraging"
           }
         },
         {
           "m": 10,
           "v": "",
           "export": {
-            "culture": "Northern"
+            "civilization": "nomad"
           }
         },
         {
           "m": 10,
           "v": "",
           "export": {
-            "culture": "Eastern"
+            "civilization": "agricultural"
           }
         },
         {
           "m": 10,
           "v": "",
           "export": {
-            "culture": "Southern"
+            "civilization": "urban"
           }
         }
       ]
+    },
+    {
+      "**************************************************": "SOCIETY"
     },
     {
       "name": "wealth",
@@ -592,6 +600,9 @@
       ]
     },
     {
+      "**************************************************": "ATTITUDE"
+    },
+    {
       "name": "attitude",
       "explanation": "What is the character's attitude towards others?",
       "entries": [
@@ -617,6 +628,9 @@
           }
         }
       ]
+    },
+    {
+      "**************************************************": "ACTIVITY"
     },
     {
       "name": "activity",
@@ -713,6 +727,23 @@
             "moodexpression": "laughing"
           }
         }
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special description tables.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}."
       ]
     }
   ]
