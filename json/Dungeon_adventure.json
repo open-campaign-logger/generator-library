@@ -1,6 +1,6 @@
 {
   "name": "Dungeon adventure",
-  "resultPattern": "{lib:formatting#CL}{init}{result}",
+  "resultPattern": "{lib:formatting#HTML}{init}{result}",
   "globals": {
     "duration": "30",
     "difficulty": "master",
@@ -697,7 +697,7 @@
       "entries": [
         "teleport trap",
         "one-way door",
-        "2000 foor water slide trap"
+        "2000 foot water slide trap"
       ]
     },
     {
