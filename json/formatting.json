@@ -1,6 +1,6 @@
 {
   "name": "formatting",
-  "resultPattern": "{init}{help} \r\nEXAMPLE: \r\n{test}\r\nEND OF EXAMPLE.",
+  "resultPattern": "{init}{shorthand}{help} \r\nEXAMPLE: \r\n{test}\r\nEND OF EXAMPLE.",
   "globals": {
     "format": "",
     "starttitle": "",
@@ -9,7 +9,28 @@
     "endheading": "",
     "startbold": "",
     "endbold": "",
-    "para": ""
+    "para": "",
+    "st": "",
+    "et": "",
+    "sh": "",
+    "eh": "",
+    "sb": "",
+    "eb": "",
+    "si": "",
+    "ei": "",
+    "sl": "",
+    "el": "",
+    "ss": "",
+    "es": "",
+    "ssub": "",
+    "esub": "",
+    "ssup": "",
+    "esup": "",
+    "sc": "",
+    "ec": "",
+    "su": "",
+    "eu": "",
+    "p": ""
   },
   "variables": {
     "footnote": ""
@@ -395,10 +416,42 @@
       ]
     },
     {
+      "name": "shorthand",
+      "explanation": "Create shorthand versions of formatting variables.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "st": "{global:starttitle}",
+            "et": "{global:endtitle}",
+            "sh": "{global:startheading}",
+            "eh": "{global:endheading}",
+            "sb": "{global:startbold}",
+            "eb": "{global:endbold}",
+            "si": "{global:startitalic}",
+            "ei": "{global:enditalic}",
+            "sl": "{global:startlink}",
+            "el": "{global:endlink}",
+            "ss": "{global:startstrikethrough}",
+            "es": "{global:endstrikethrough}",
+            "ssub": "{global:startsubscript}",
+            "esub": "{global:endsubscript}",
+            "ssup": "{global:startsuperscript}",
+            "esup": "{global:endsuperscript}",
+            "sc": "{global:starttablecell}",
+            "ec": "{global:endtablecell}",
+            "su": "{global:startunderlined}",
+            "eu": "{global:endunderlined}",
+            "p": "{global:para}"
+          }
+        }
+      ]
+    },
+    {
       "name": "test",
       "explanation": "Testing tool for dumping the set global variables.",
       "entries": [
-        "Format: {global:format}. Emphasis: {global:startbold}bold{global:endbold}, {global:startitalic}italic{global:enditalic}, {global:startstrikethrough}strikethrough{global:endstrikethrough}, {global:startsubscript}subscript{global:endsubscript}, {global:startsuperscript}superscript{global:endsuperscript}, {global:startunderlined}underlined{global:endunderlined}. Linking: {global:startlink}https://RandomCreation.net/{global:endlink}."
+        "Long tags: {global:format}. Emphasis: {global:startbold}bold{global:endbold}, {global:startitalic}italic{global:enditalic}, {global:startstrikethrough}strikethrough{global:endstrikethrough}, {global:startsubscript}subscript{global:endsubscript}, {global:startsuperscript}superscript{global:endsuperscript}, {global:startunderlined}underlined{global:endunderlined}. Linking: {global:startlink}https://RandomCreation.net/{global:endlink}. \r\n\r\nShort tags: {global:format}. Emphasis: {global:sb}bold{global:eb}, {global:si}italic{global:ei}, {global:ss}strikethrough{global:es}, {global:ssub}subscript{global:esub}, {global:ssup}superscript{global:esup}, {global:su}underlined{global:eu}. Linking: {global:sl}https://RandomCreation.net/{global:el}."
       ]
     },
     {
