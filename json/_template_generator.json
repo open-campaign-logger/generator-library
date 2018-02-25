@@ -1,5 +1,5 @@
 {
-  "name": "Generator Template",
+  "name": "generator template",
   "resultPattern": "{init}{result}",
   "globals": {
     "variable": "value"

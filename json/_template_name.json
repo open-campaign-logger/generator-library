@@ -1,5 +1,5 @@
 {
-  "name": "name template",
+  "name": "name-template",
   "resultPattern": "{result}",
   "globals": {
     "culture": "XXX"
