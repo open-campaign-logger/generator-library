@@ -1,7 +1,8 @@
 {
   "name": "formatting",
-  "resultPattern": "{init}{help}",
+  "resultPattern": "{init}{help} \r\nEXAMPLE: \r\n{test}\r\nEND OF EXAMPLE.",
   "globals": {
+    "format": "",
     "starttitle": "",
     "endtitle": "",
     "startheading": "",
@@ -20,7 +21,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-02-15",
+  "date": "2018-02-25",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "meta",
@@ -37,7 +38,7 @@
         "{HTML}",
         "{Md}",
         "{MW}",
-        "{plaintext}",
+        "{text}",
         "{reST}"
       ]
     },
@@ -51,12 +52,27 @@
         {
           "v": "",
           "export": {
+            "format": "CampaignLogger",
             "starttitle": "{b|",
             "endtitle": "}\r\n\r\n",
             "startheading": "\r\n\r\n{b|",
             "endheading": "}",
             "startbold": "{b|",
             "endbold": "}",
+            "startitalic": "{i|",
+            "enditalic": "}",
+            "startlink": "{\"|",
+            "endlink": "\"|}",
+            "startstrikethrough": "{s|",
+            "endstrikethrough": "}",
+            "startsubscript": "{\\|",
+            "endsubscript": "}",
+            "startsuperscript": "{/|",
+            "endsuperscript": "}",
+            "starttablecell": "|| ",
+            "endtablecell": " \r\n",
+            "startunderlined": "{u|",
+            "endunderlined": "}",
             "para": "\r\n"
           }
         }
@@ -69,12 +85,27 @@
         {
           "v": "",
           "export": {
+            "format": "HTML",
             "starttitle": "<H2>",
             "endtitle": "</H2>",
             "startheading": "<H3>",
             "endheading": "</H3>",
             "startbold": "<B>",
             "endbold": "</B>",
+            "startitalic": "<I>",
+            "enditalic": "</I>",
+            "startlink": "<A HREF=\"",
+            "endlink": "\">(link)</A>",
+            "startstrikethrough": "<DEL>",
+            "endstrikethrough": "</DEL>",
+            "startsubscript": "<SUB>",
+            "endsubscript": "</SUB>",
+            "startsuperscript": "<SUP>",
+            "endsuperscript": "</SUP>",
+            "starttablecell": "<TD>",
+            "endtablecell": " </TD>",
+            "startunderlined": "<INS>",
+            "endunderlined": "</INS>",
             "para": "<P>"
           }
         }
@@ -87,12 +118,27 @@
         {
           "v": "",
           "export": {
+            "format": "Markdown",
             "starttitle": "\r\n# ",
             "endtitle": "\r\n",
             "startheading": "\r\n\r\n## ",
             "endheading": "\r\n",
             "startbold": "**",
-            "endbold": "** ",
+            "endbold": "**",
+            "startitalic": "*",
+            "enditalic": "*",
+            "startlink": "<",
+            "endlink": ">",
+            "startstrikethrough": "~~",
+            "endstrikethrough": "~~",
+            "startsubscript": "",
+            "endsubscript": "",
+            "startsuperscript": "",
+            "endsuperscript": "",
+            "starttablecell": "| ",
+            "endtablecell": " ",
+            "startunderlined": "**_",
+            "endunderlined": "_** ",
             "para": "\r\n\r\n"
           }
         }
@@ -105,12 +151,27 @@
         {
           "v": "",
           "export": {
+            "format": "MediaWiki",
             "starttitle": "\r\n== ",
             "endtitle": "== \r\n",
             "startheading": "\r\n\r\n=== ",
             "endheading": "=== \r\n",
             "startbold": "'''",
             "endbold": "'''",
+            "startitalic": "''",
+            "enditalic": "''",
+            "startlink": "[",
+            "endlink": "]",
+            "startstrikethrough": "<del>",
+            "endstrikethrough": "</del>",
+            "startsubscript": "<sub>",
+            "endsubscript": "</sub>",
+            "startsuperscript": "<sup>",
+            "endsuperscript": "</sup>",
+            "starttablecell": "| ",
+            "endtablecell": " |",
+            "startunderlined": "<u>",
+            "endunderlined": "</u>",
             "para": "\r\n\r\n"
           }
         }
@@ -123,12 +184,27 @@
         {
           "v": "",
           "export": {
+            "format": "plaintext",
             "starttitle": "\r\n",
             "endtitle": "\r\n",
             "startheading": "\r\n\r\n",
             "endheading": "\r\n",
-            "startbold": " ",
-            "endbold": " ",
+            "startbold": "",
+            "endbold": "",
+            "startitalic": "",
+            "enditalic": "",
+            "startlink": "< ",
+            "endlink": " >",
+            "startstrikethrough": "",
+            "endstrikethrough": "",
+            "startsubscript": "",
+            "endsubscript": "",
+            "startsuperscript": "",
+            "endsuperscript": "",
+            "starttablecell": "",
+            "endtablecell": "",
+            "startunderlined": "",
+            "endunderlined": "",
             "para": "\r\n\r\n"
           }
         }
@@ -141,12 +217,27 @@
         {
           "v": "",
           "export": {
+            "format": "reStructuredText",
             "starttitle": "\r\n",
             "endtitle": "\r\n=====================================================\r\n\r\n",
             "startheading": "\r\n\r\n",
             "endheading": "\r\n-----------------------------------------------------\r\n\r\n",
             "startbold": "**",
             "endbold": "**",
+            "startitalic": "*",
+            "enditalic": "*",
+            "startlink": "`(link) <",
+            "endlink": ">`_",
+            "startstrikethrough": "`",
+            "endstrikethrough": "`",
+            "startsubscript": "`",
+            "endsubscript": "`",
+            "startsuperscript": "`",
+            "endsuperscript": "`",
+            "starttablecell": "  ",
+            "endtablecell": "  ",
+            "startunderlined": "``",
+            "endunderlined": "``",
             "para": "\r\n\r\n"
           }
         }
@@ -307,14 +398,14 @@
       "name": "test",
       "explanation": "Testing tool for dumping the set global variables.",
       "entries": [
-        "{global:starttitle}Title{global:endtitle} {global:startheading}Heading{global:endheading} {global:startbold}Bold text{global:endbold} {global:para}New paragrah."
+        "Format: {global:format}. Emphasis: {global:startbold}bold{global:endbold}, {global:startitalic}italic{global:enditalic}, {global:startstrikethrough}strikethrough{global:endstrikethrough}, {global:startsubscript}subscript{global:endsubscript}, {global:startsuperscript}superscript{global:endsuperscript}, {global:startunderlined}underlined{global:endunderlined}. Linking: {global:startlink}https://RandomCreation.net/{global:endlink}."
       ]
     },
     {
       "name": "help",
       "explanation": "Usage instructions.",
       "entries": [
-        "Call the formatting library from your table to set global variables to match formatting tags for the selected markup. \r\nSupported global variables are: global:starttitle, global:endtitle, global:startheading, global:endheading, global:startbold, global:endbold, global:para. \r\nSupported markups are: lib:formatting#CampaignLogger, lib:formatting#HTML, lib:formatting#MarkDown, lib:formatting#MediaWiki, lib:formatting#reStructuredText."
+        "Call the formatting library from your table to set global variables to match formatting tags for the selected markup. \r\nSupported global variables are: global:starttitle, global:endtitle, global:startheading, global:endheading, global:startbold, global:endbold, global:startitalic, global:enditalic, global:startstrikethrough, global:endstrikethrough, global:startsubscript, global:endsubscript, global:startsuperscript, global:endsuperscript, global:startunderlined, global:endunderlined, global:para. \r\nSupported markups are: lib:formatting#CampaignLogger, lib:formatting#HTML, lib:formatting#MarkDown, lib:formatting#MediaWiki, lib:formatting#plaintext, lib:formatting#reStructuredText."
       ]
     }
   ]
