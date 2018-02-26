@@ -86,6 +86,7 @@
     {
       "name": "female full",
       "entries": [
+        "{female} {surname}",
         "{female} {female append}",
         "{unisex} {female append}",
         "{female} {unisex append}",
@@ -99,6 +100,7 @@
     {
       "name": "male full",
       "entries": [
+        "{male} {surname}",
         "{male} {male append}",
         "{unisex} {male append}",
         "{male} {unisex append}",
@@ -112,6 +114,7 @@
     {
       "name": "unisex full",
       "entries": [
+        "{unisex} {surname}",
         "{unisex} {unisex append}",
         "{unisex prepend} {unisex}"
       ]
@@ -121,6 +124,7 @@
     },
     {
       "name": "female",
+      "explanation": "Female names grouped by initials.",
       "export": {
         "gender": "female"
       },
@@ -314,6 +318,7 @@
     },
     {
       "name": "male",
+      "explanation": "Male names grouped by initials.",
       "export": {
         "gender": "male"
       },
@@ -507,9 +512,431 @@
     },
     {
       "name": "unisex",
-      "export": {
-        "gender": "unisex"
-      },
+      "explanation": "Unisex names grouped by initials.",
+      "entries": [
+        "{unisex a}",
+        "{unisex b}",
+        "{unisex c}",
+        "{unisex d}",
+        "{unisex e}",
+        "{unisex f}",
+        "{unisex g}",
+        "{unisex h}",
+        "{unisex i}",
+        "{unisex j}",
+        "{unisex k}",
+        "{unisex l}",
+        "{unisex m}",
+        "{unisex n}",
+        "{unisex o}",
+        "{unisex p}",
+        "{unisex q}",
+        "{unisex r}",
+        "{unisex s}",
+        "{unisex t}",
+        "{unisex u}",
+        "{unisex v}",
+        "{unisex w}",
+        "{unisex x}",
+        "{unisex y}",
+        "{unisex z}"
+      ]
+    },
+    {
+      "name": "unisex a",
+      "explanation": "Unisex names beginning with 'A'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex b",
+      "explanation": "Gender neutral names beginning with 'B'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex c",
+      "explanation": "Gender neutral names beginning with 'C'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex d",
+      "explanation": "Gender neutral names beginning with 'D'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex e",
+      "explanation": "Gender neutral names beginning with 'E'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex f",
+      "explanation": "Gender neutral names beginning with 'F'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex g",
+      "explanation": "Gender neutral names beginning with 'G'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex h",
+      "explanation": "Gender neutral names beginning with 'H'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex i",
+      "explanation": "Gender neutral names beginning with 'I'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex j",
+      "explanation": "Gender neutral names beginning with 'J'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex k",
+      "explanation": "Gender neutral names beginning with 'K'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex l",
+      "explanation": "Gender neutral names beginning with 'L'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex m",
+      "explanation": "Gender neutral names beginning with 'M'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex n",
+      "explanation": "Gender neutral names beginning with 'N'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex o",
+      "explanation": "Gender neutral names beginning with 'O'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex p",
+      "explanation": "Gender neutral names beginning with 'P'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex q",
+      "explanation": "Gender neutral names beginning with 'Q'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex r",
+      "explanation": "Gender neutral names beginning with 'R'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex s",
+      "explanation": "Gender neutral names beginning with 'S'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex t",
+      "explanation": "Gender neutral names beginning with 'T'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex u",
+      "explanation": "Gender neutral names beginning with 'U'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex v",
+      "explanation": "Gender neutral names beginning with 'V'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex w",
+      "explanation": "Gender neutral names beginning with 'W'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex x",
+      "explanation": "Gender neutral names beginning with 'X'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex y",
+      "explanation": "Gender neutral names beginning with 'Y'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "unisex z",
+      "explanation": "Gender neutral names beginning with 'Z'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SURNAMES"
+    },
+    {
+      "name": "surname",
+      "explanation": "Last names grouped by initials.",
+      "entries": [
+        "{surname a}",
+        "{surname b}",
+        "{surname c}",
+        "{surname d}",
+        "{surname e}",
+        "{surname f}",
+        "{surname g}",
+        "{surname h}",
+        "{surname i}",
+        "{surname j}",
+        "{surname k}",
+        "{surname l}",
+        "{surname m}",
+        "{surname n}",
+        "{surname o}",
+        "{surname p}",
+        "{surname q}",
+        "{surname r}",
+        "{surname s}",
+        "{surname t}",
+        "{surname u}",
+        "{surname v}",
+        "{surname w}",
+        "{surname x}",
+        "{surname y}",
+        "{surname z}"
+      ]
+    },
+    {
+      "name": "surname a",
+      "explanation": "Last names beginning with 'A'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname b",
+      "explanation": "Last names beginning with 'B'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname c",
+      "explanation": "Last names beginning with 'C'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname d",
+      "explanation": "Last names beginning with 'D'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname e",
+      "explanation": "Last names beginning with 'E'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname f",
+      "explanation": "Last names beginning with 'F'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname g",
+      "explanation": "Last names beginning with 'G'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname h",
+      "explanation": "Last names beginning with 'H'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname i",
+      "explanation": "Last names beginning with 'I'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname j",
+      "explanation": "Last names beginning with 'J'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname k",
+      "explanation": "Last names beginning with 'K'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname l",
+      "explanation": "Last names beginning with 'L'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname m",
+      "explanation": "Last names beginning with 'M'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname n",
+      "explanation": "Last names beginning with 'N'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname o",
+      "explanation": "Last names beginning with 'O'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname p",
+      "explanation": "Last names beginning with 'P'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname q",
+      "explanation": "Last names beginning with 'Q'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname r",
+      "explanation": "Last names beginning with 'R'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname s",
+      "explanation": "Last names beginning with 'S'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname t",
+      "explanation": "Last names beginning with 'T'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname u",
+      "explanation": "Last names beginning with 'U'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname v",
+      "explanation": "Last names beginning with 'V'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname w",
+      "explanation": "Last names beginning with 'W'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname x",
+      "explanation": "Last names beginning with 'X'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname y",
+      "explanation": "Last names beginning with 'Y'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname z",
+      "explanation": "Last names beginning with 'Z'.",
       "entries": [
         "XXX"
       ]
@@ -826,7 +1253,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, byname: {byname}, initial: {initial}. Gender = {global:gender}."
+        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, surname: {surname}, byname: {byname}, initial: {initial}. Gender = {global:gender}."
       ]
     }
   ]
