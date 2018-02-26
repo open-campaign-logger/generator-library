@@ -1,0 +1,3066 @@
+{
+  "name": "name-american-modern",
+  "resultPattern": "{result}",
+  "globals": {
+    "culture": "American"
+  },
+  "variables": {
+    "footnote": "note"
+  },
+  "explanation": "Modern American names.",
+  "structure": "Genders are collected in the same file to allow easy sharing of surname tables. Subtables have been split by their initial letter to allow future support for allitteration and for example siblings sharing the same initial.",
+  "note": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-02-26",
+  "authors": "ELF Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "category": "name",
+  "tags": "#person",
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{name}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{female}",
+        "{male}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{female full}",
+        "{male full}"
+      ]
+    },
+    {
+      "name": "name",
+      "explanation": "The name types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common name types.",
+      "entries": [
+        "{female}",
+        "{male}",
+        "{female full}",
+        "{male full}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare name types.",
+      "entries": [
+        "{unisex}",
+        "{unisex full}"
+      ]
+    },
+    {
+      "name": "female full",
+      "entries": [
+        "{female} {surname}"
+      ]
+    },
+    {
+      "name": "male full",
+      "entries": [
+        "{male} {surname}"
+      ]
+    },
+    {
+      "name": "unisex full",
+      "entries": [
+        "{unisex} {surname}"
+      ]
+    },
+    {
+      "**************************************************": "FEMALE FIRST NAMES"
+    },
+    {
+      "name": "female",
+      "export": {
+        "gender": "female"
+      },
+      "entries": [
+        "{female a}",
+        "{female b}",
+        "{female c}",
+        "{female d}",
+        "{female e}",
+        "{female f}",
+        "{female g}",
+        "{female h}",
+        "{female i}",
+        "{female j}",
+        "{female k}",
+        "{female l}",
+        "{female m}",
+        "{female n}",
+        "{female o}",
+        "{female p}",
+        "{female q}",
+        "{female r}",
+        "{female s}",
+        "{female t}",
+        "{female u}",
+        "{female v}",
+        "{female w}",
+        "{female x}",
+        "{female y}",
+        "{female z}"
+      ]
+    },
+    {
+      "name": "female a",
+      "entries": [
+        "Aimee",
+        "Aleksandra",
+        "Alice",
+        "Alicia",
+        "Allison",
+        "Alyssa",
+        "Amy",
+        "Andrea",
+        "Angel",
+        "Angela",
+        "Ann",
+        "Anna",
+        "Anne",
+        "Anne Marie",
+        "Annie",
+        "Ashley"
+      ]
+    },
+    {
+      "name": "female b",
+      "entries": [
+        "Barbara",
+        "Barbie",
+        "Beatrice",
+        "Becky",
+        "Beth",
+        "Betsey",
+        "Betty",
+        "Bo",
+        "Bobbi",
+        "Brandelyn",
+        "Brandilyn",
+        "Brenda",
+        "Brooke"
+      ]
+    },
+    {
+      "name": "female c",
+      "entries": [
+        "Candace",
+        "Cara",
+        "Caren",
+        "Carol",
+        "Caroline",
+        "Carolyn",
+        "Carrie",
+        "Cassandra",
+        "Catherine",
+        "Charlotte",
+        "Chrissy",
+        "Christen",
+        "Christina",
+        "Christine",
+        "Christy",
+        "Claire",
+        "Claudia",
+        "Courtney",
+        "Crystal",
+        "Cynthia"
+      ]
+    },
+    {
+      "name": "female d",
+      "entries": [
+        "Dana",
+        "Danielle",
+        "Deanne",
+        "Deborah",
+        "Deirdre",
+        "Denise",
+        "Diane",
+        "Dianne",
+        "Dorothy"
+      ]
+    },
+    {
+      "name": "female e",
+      "entries": [
+        "Eileen",
+        "Elena",
+        "Elizabeth",
+        "Emily",
+        "Erica",
+        "Erin"
+      ]
+    },
+    {
+      "name": "female f",
+      "entries": [
+        "Fanceen",
+        "Fanni",
+        "Fannia",
+        "Fannie",
+        "Fanny",
+        "Fantine",
+        "Frances",
+        "Franki",
+        "Frankie"
+      ]
+    },
+    {
+      "name": "female g",
+      "entries": [
+        "Gabriella",
+        "Gabrielle",
+        "Gaby",
+        "Gale",
+        "Garnet",
+        "Genevieve",
+        "Georgeanne",
+        "Georgia",
+        "Geraldina",
+        "Geraldine",
+        "Gilda",
+        "Gina",
+        "Ginger",
+        "Giselle",
+        "Giulietta",
+        "Gloria",
+        "Goldie",
+        "Grace",
+        "Gracie",
+        "Greta"
+      ]
+    },
+    {
+      "name": "female h",
+      "entries": [
+        "Hailey",
+        "Haley",
+        "Halley",
+        "Hannah",
+        "Harley",
+        "Harmony",
+        "Harriet",
+        "Hazel",
+        "Heather",
+        "Heidi",
+        "Helen",
+        "Hillary",
+        "Holly",
+        "Honey",
+        "Hope"
+      ]
+    },
+    {
+      "name": "female i",
+      "entries": [
+        "Ida",
+        "Ilse",
+        "Ina",
+        "India",
+        "Ingrid",
+        "Irene",
+        "Iris",
+        "Isabel",
+        "Isabella",
+        "Isabelle",
+        "Ivie",
+        "Ivory",
+        "Ivy"
+      ]
+    },
+    {
+      "name": "female j",
+      "entries": [
+        "Jane",
+        "Janet",
+        "Janice",
+        "Jenna",
+        "Jennifer",
+        "Jessica",
+        "Joanna",
+        "Joyce",
+        "Julia",
+        "Juliana",
+        "Julie",
+        "Justine"
+      ]
+    },
+    {
+      "name": "female k",
+      "entries": [
+        "Kara",
+        "Karen",
+        "Katharine",
+        "Katherine",
+        "Kathleen",
+        "Kathryn",
+        "Katrina",
+        "Kelly",
+        "Kerry",
+        "Kim",
+        "Kimberly",
+        "Kristen",
+        "Kristina",
+        "Kristine"
+      ]
+    },
+    {
+      "name": "female l",
+      "entries": [
+        "Lace",
+        "Lacy",
+        "Laine",
+        "Lana",
+        "Lane",
+        "Lanette",
+        "Lanice",
+        "Lanna",
+        "Lark",
+        "Laticia",
+        "Laura",
+        "Lauralee",
+        "Laureen",
+        "Laurel",
+        "Laurelle",
+        "Lauren",
+        "Laurenne",
+        "Laurie",
+        "Layla",
+        "Leah",
+        "Leanna",
+        "Lee",
+        "Lexandra",
+        "Lexi",
+        "Ley",
+        "Libby",
+        "Liberty",
+        "Licia",
+        "Lila",
+        "Lilian",
+        "Linda",
+        "Lindsay",
+        "Lindsey",
+        "Linsey",
+        "Lisa",
+        "Lisbet",
+        "Loreen",
+        "Loretta",
+        "Loriana",
+        "Lori",
+        "Lorna",
+        "Lucy",
+        "Lulu",
+        "Lydia",
+        "Lynn"
+      ]
+    },
+    {
+      "name": "female m",
+      "entries": [
+        "Marcia",
+        "Margaret",
+        "Maria",
+        "Marina",
+        "Marisa",
+        "Martha",
+        "Mary",
+        "Mary Ann",
+        "Maya",
+        "Melanie",
+        "Melissa",
+        "Michelle",
+        "Monica"
+      ]
+    },
+    {
+      "name": "female n",
+      "entries": [
+        "Nadia",
+        "Nancy",
+        "Natalia",
+        "Natalie",
+        "Nelly",
+        "Nicole",
+        "Nicolette",
+        "Nina",
+        "Nora"
+      ]
+    },
+    {
+      "name": "female o",
+      "entries": [
+        "Olivia",
+        "Oona",
+        "Opal",
+        "Orabelle",
+        "Orelia"
+      ]
+    },
+    {
+      "name": "female p",
+      "entries": [
+        "Paige",
+        "Paloma",
+        "Pamela",
+        "Patience",
+        "Patricia",
+        "Paula",
+        "Paulette",
+        "Paulina",
+        "Payton",
+        "Pearl",
+        "Penelope",
+        "Penny",
+        "Phoebe",
+        "Piper",
+        "Poppy",
+        "Priscilla"
+      ]
+    },
+    {
+      "name": "female q",
+      "entries": [
+        "Queena",
+        "Queenie"
+      ]
+    },
+    {
+      "name": "female r",
+      "entries": [
+        "Rachel",
+        "Rae",
+        "Ramona",
+        "Raquel",
+        "Raven",
+        "Reagan",
+        "Rebecca",
+        "Regan",
+        "Regina",
+        "Renee",
+        "Rhonda",
+        "Roberta",
+        "Robin",
+        "Rosa",
+        "Rose",
+        "Roseanne",
+        "Rosemary",
+        "Roxane",
+        "Ruby",
+        "Ruth"
+      ]
+    },
+    {
+      "name": "female s",
+      "entries": [
+        "Sabrina",
+        "Samantha",
+        "Sandra",
+        "Sara",
+        "Sasha",
+        "Savannah",
+        "Scarlett",
+        "Selena",
+        "Serena",
+        "Serenity",
+        "Shania",
+        "Shanna",
+        "Shannon",
+        "Sharon",
+        "Shauna",
+        "Shea",
+        "Sheila",
+        "Shelby",
+        "Shelley",
+        "Shelly",
+        "Sheri",
+        "Sheridan",
+        "Sherry",
+        "Shirley",
+        "Sienna",
+        "Sierra",
+        "Silver",
+        "Simone",
+        "Sonia",
+        "Sonya",
+        "Sophia",
+        "Stacy",
+        "Stella",
+        "Stefanie",
+        "Stephanie",
+        "Storm",
+        "Sue",
+        "Suellen",
+        "Summer",
+        "Sunny",
+        "Susan",
+        "Susie",
+        "Suzanne",
+        "Suzy",
+        "Sylvia",
+        "Sylvie"
+      ]
+    },
+    {
+      "name": "female t",
+      "entries": [
+        "Tabitha",
+        "Tamara",
+        "Tammie",
+        "Tammy",
+        "Tanya",
+        "Tara",
+        "Tatiana",
+        "Tatum",
+        "Tawny",
+        "Taylor",
+        "Teela",
+        "Teige",
+        "Tempest",
+        "Teri",
+        "Terri",
+        "Terry",
+        "Tess",
+        "Theresa",
+        "Tia",
+        "Tiffany",
+        "Tina",
+        "Toni",
+        "Topaz",
+        "Traci",
+        "Tracy",
+        "Tricia",
+        "Trish",
+        "Trixie",
+        "Tyler",
+        "Tyra"
+      ]
+    },
+    {
+      "name": "female u",
+      "entries": [
+        "Una",
+        "Unity",
+        "Ursula"
+      ]
+    },
+    {
+      "name": "female v",
+      "entries": [
+        "Valeria",
+        "Valerie",
+        "Vanessa",
+        "Vanity",
+        "Velma",
+        "Velvet",
+        "Vera",
+        "Veronica",
+        "Vicky",
+        "Victoria",
+        "Violet",
+        "Virginia",
+        "Viveca",
+        "Vivian"
+      ]
+    },
+    {
+      "name": "female w",
+      "entries": [
+        "Wallis",
+        "Wendy",
+        "Whitney",
+        "Willow",
+        "Wynne"
+      ]
+    },
+    {
+      "name": "female x",
+      "entries": [
+        "Xandra"
+      ]
+    },
+    {
+      "name": "female y",
+      "entries": [
+        "Yasmin",
+        "Yolanda",
+        "Yvette",
+        "Yvonne"
+      ]
+    },
+    {
+      "name": "female z",
+      "entries": [
+        "Zabrina",
+        "Zandra",
+        "Zelma",
+        "Zina",
+        "Zoe"
+      ]
+    },
+    {
+      "**************************************************": "MALE FIRST NAMES"
+    },
+    {
+      "name": "male",
+      "export": {
+        "gender": "male"
+      },
+      "entries": [
+        "{male a}",
+        "{male b}",
+        "{male c}",
+        "{male d}",
+        "{male e}",
+        "{male f}",
+        "{male g}",
+        "{male h}",
+        "{male i}",
+        "{male j}",
+        "{male k}",
+        "{male l}",
+        "{male m}",
+        "{male n}",
+        "{male o}",
+        "{male p}",
+        "{male q}",
+        "{male r}",
+        "{male s}",
+        "{male t}",
+        "{male u}",
+        "{male v}",
+        "{male w}",
+        "{male x}",
+        "{male y}",
+        "{male z}"
+      ]
+    },
+    {
+      "name": "male a",
+      "entries": [
+        "Aaron",
+        "Adam",
+        "Adrian",
+        "Alan",
+        "Alejandro",
+        "Alex",
+        "Allen",
+        "Andrew",
+        "Andy",
+        "Anthony",
+        "Art",
+        "Arthur"
+      ]
+    },
+    {
+      "name": "male b",
+      "entries": [
+        "Barry",
+        "Bart",
+        "Ben",
+        "Benjamin",
+        "Bill",
+        "Bobby",
+        "Brad",
+        "Bradley",
+        "Brendan",
+        "Brett",
+        "Brian",
+        "Bruce",
+        "Bryan"
+      ]
+    },
+    {
+      "name": "male c",
+      "entries": [
+        "Carlos",
+        "Chad",
+        "Charles",
+        "Chris",
+        "Christopher",
+        "Chuck",
+        "Clay",
+        "Corey",
+        "Craig"
+      ]
+    },
+    {
+      "name": "male d",
+      "entries": [
+        "Dan",
+        "Daniel",
+        "Darren",
+        "Dave",
+        "David",
+        "Dean",
+        "Dennis",
+        "Denny",
+        "Derek",
+        "Don",
+        "Doug",
+        "Douglas",
+        "Duane"
+      ]
+    },
+    {
+      "name": "male e",
+      "entries": [
+        "Earl",
+        "Earnest",
+        "Ed",
+        "Eddie",
+        "Eddy",
+        "Edgar",
+        "Edison",
+        "Edmond",
+        "Edmund",
+        "Edsel",
+        "Edward",
+        "Edwin",
+        "Egbert",
+        "Elder",
+        "Eli",
+        "Elias",
+        "Eliot",
+        "Eliott",
+        "Elliot",
+        "Elliott",
+        "Ellis",
+        "Elmer",
+        "Elmore",
+        "Elsworth",
+        "Elton",
+        "Elwood",
+        "Emerson",
+        "Emmett",
+        "Eric",
+        "Ervin",
+        "Ervine",
+        "Erving",
+        "Eston",
+        "Ethan",
+        "Eugene",
+        "Evan",
+        "Everet",
+        "Everett",
+        "Everly",
+        "Ezekiel",
+        "Ezra"
+      ]
+    },
+    {
+      "name": "male f",
+      "entries": [
+        "Fabian",
+        "Fairfax",
+        "Farley",
+        "Felix",
+        "Filmore",
+        "Finn",
+        "Fleming",
+        "Fletcher",
+        "Flint",
+        "Floyd",
+        "Flynt",
+        "Forest",
+        "Forrest",
+        "Francis",
+        "Frank",
+        "Frankie",
+        "Franklin",
+        "Fraser",
+        "Fred",
+        "Frederick",
+        "Freeman",
+        "Fuller",
+        "Fulton"
+      ]
+    },
+    {
+      "name": "male g",
+      "entries": [
+        "Gardner",
+        "Garet",
+        "Garfield",
+        "Garland",
+        "Garner",
+        "Garnet",
+        "Garrison",
+        "Garry",
+        "Gary",
+        "Gavin",
+        "Gene",
+        "Geoff",
+        "Geoffrey",
+        "George",
+        "Gerald",
+        "Glen",
+        "Godfrey",
+        "Gordon",
+        "Granger",
+        "Grant",
+        "Greg",
+        "Gregory",
+        "Grey",
+        "Guy"
+      ]
+    },
+    {
+      "name": "male h",
+      "entries": [
+        "Hadley",
+        "Hadrian",
+        "Halden",
+        "Hale",
+        "Hall",
+        "Halley",
+        "Hampton",
+        "Hank",
+        "Hanley",
+        "Harlan",
+        "Harley",
+        "Harlow",
+        "Harry",
+        "Hartford",
+        "Harvey",
+        "Heathcliff",
+        "Hector",
+        "Henry",
+        "Holt",
+        "Horton",
+        "Howard",
+        "Hudson",
+        "Hunt",
+        "Hunter",
+        "Hurst",
+        "Huxley",
+        "Hyatt",
+        "Hyde"
+      ]
+    },
+    {
+      "name": "male i",
+      "entries": [
+        "Ian",
+        "Ike",
+        "Irvin",
+        "Irving",
+        "Isaiah",
+        "Ivan",
+        "Ivey",
+        "Ivor"
+      ]
+    },
+    {
+      "name": "male j",
+      "entries": [
+        "Jack",
+        "Jacob",
+        "Jake",
+        "James",
+        "Jamie",
+        "Jan",
+        "Jason",
+        "Jasper",
+        "Jay",
+        "Jeff",
+        "Jefferson",
+        "Jeffrey",
+        "Jeremiah",
+        "Jeremy",
+        "Jerry",
+        "Jesse",
+        "Jim",
+        "Jimmie",
+        "Jimmy",
+        "Joe",
+        "Joel",
+        "John",
+        "Johnny",
+        "Jonah",
+        "Jonathan",
+        "Joseph",
+        "Joshua",
+        "Junior",
+        "Justin"
+      ]
+    },
+    {
+      "name": "male k",
+      "entries": [
+        "Keaton",
+        "Kedrick",
+        "Keith",
+        "Ken",
+        "Kent",
+        "Kerrick",
+        "Kevin",
+        "Kim",
+        "Kingsley",
+        "Kirby",
+        "Kit",
+        "Kurt",
+        "Kyle"
+      ]
+    },
+    {
+      "name": "male l",
+      "entries": [
+        "Lance",
+        "Lane",
+        "Langdon",
+        "Larry",
+        "Latimer",
+        "Lawrence",
+        "Len",
+        "Lennie",
+        "Lenny",
+        "Leo",
+        "Leon",
+        "Leonard",
+        "Leopold",
+        "Leroy",
+        "Levi",
+        "Lewis",
+        "Lex",
+        "Liam",
+        "Lin",
+        "Lincoln",
+        "Lionel",
+        "Locke",
+        "Logan",
+        "Lorren",
+        "Lucas",
+        "Lucius",
+        "Luke",
+        "Lyndon"
+      ]
+    },
+    {
+      "name": "male m",
+      "entries": [
+        "MacKenzie",
+        "Madison",
+        "Malachi",
+        "Malcolm",
+        "Manfred",
+        "Manly",
+        "Marc",
+        "Mark",
+        "Marley",
+        "Marlowe",
+        "Marsh",
+        "Martin",
+        "Marvin",
+        "Matt",
+        "Matthew",
+        "Max",
+        "Maxwell",
+        "Mel",
+        "Mercer",
+        "Mervyn",
+        "Michael",
+        "Mickey",
+        "Mike",
+        "Milton",
+        "Mitch",
+        "Monty",
+        "Morris",
+        "Morrisey",
+        "Morton",
+        "Moses",
+        "Moss",
+        "Myles"
+      ]
+    },
+    {
+      "name": "male n",
+      "entries": [
+        "Nat",
+        "Nathan",
+        "Nathaniel",
+        "Neal",
+        "Ned",
+        "Neil",
+        "Nelson",
+        "Neville",
+        "Niall",
+        "Nicholas",
+        "Nick",
+        "Niles",
+        "Noah",
+        "Nolan",
+        "Norman",
+        "Norton",
+        "Nyles"
+      ]
+    },
+    {
+      "name": "male o",
+      "entries": [
+        "Oakley",
+        "Oliver",
+        "Onslow",
+        "Orlando",
+        "Orville",
+        "Oswald",
+        "Osbourne",
+        "Oscar",
+        "Osmond",
+        "Oxford",
+        "Oxley"
+      ]
+    },
+    {
+      "name": "male p",
+      "entries": [
+        "Parker",
+        "Patrick",
+        "Paul",
+        "Payne",
+        "Penn",
+        "Percy",
+        "Perry",
+        "Pete",
+        "Peter",
+        "Phil",
+        "Philip",
+        "Phillip",
+        "Pierce",
+        "Prescot",
+        "Preston",
+        "Pryor",
+        "Putnam"
+      ]
+    },
+    {
+      "name": "male q",
+      "entries": [
+        "Quentin",
+        "Quentrell",
+        "Quincey",
+        "Quint",
+        "Quintrell"
+      ]
+    },
+    {
+      "name": "male r",
+      "entries": [
+        "Radcliff",
+        "Ralph",
+        "Randy",
+        "Ramsey",
+        "Raymond",
+        "Reed",
+        "Reese",
+        "Renton",
+        "Rexford",
+        "Ricardo",
+        "Richard",
+        "Rick",
+        "Rickie",
+        "Rider",
+        "Ripley",
+        "Rob",
+        "Robert",
+        "Rod",
+        "Roger",
+        "Ron",
+        "Roscoe",
+        "Ross",
+        "Ruben",
+        "Rudyard",
+        "Russ",
+        "Russell",
+        "Ryan",
+        "Ryder"
+      ]
+    },
+    {
+      "name": "male s",
+      "entries": [
+        "Sam",
+        "Sammy",
+        "Samuel",
+        "Saul",
+        "Scot",
+        "Scott",
+        "Sean",
+        "Sebastian",
+        "Segar",
+        "Seymour",
+        "Shaun",
+        "Shelby",
+        "Shepard",
+        "Solomon",
+        "Spencer",
+        "Stan",
+        "Stanley",
+        "Stephen",
+        "Steve",
+        "Steven",
+        "Stewart",
+        "Stuart",
+        "Sumner",
+        "Syd",
+        "Sydney",
+        "Sylvester"
+      ]
+    },
+    {
+      "name": "male t",
+      "entries": [
+        "Talbot",
+        "Tanner",
+        "Tate",
+        "Taylor",
+        "Ted",
+        "Teddy",
+        "Terence",
+        "Terrance",
+        "Terry",
+        "Thomas",
+        "Tim",
+        "Timmy",
+        "Tobias",
+        "Toby",
+        "Todd",
+        "Tom",
+        "Tommy",
+        "Travis",
+        "Troy",
+        "Tucker",
+        "Tyler",
+        "Tyrone",
+        "Tyson"
+      ]
+    },
+    {
+      "name": "male u",
+      "entries": [
+        "Udolf",
+        "Ulger",
+        "Ulysses",
+        "Uriah",
+        "Uriel"
+      ]
+    },
+    {
+      "name": "male v",
+      "entries": [
+        "Valentine",
+        "Vance",
+        "Vaughn",
+        "Vern",
+        "Vernon",
+        "Victor",
+        "Vidal",
+        "Vince",
+        "Vincent",
+        "Vinnie",
+        "Virgil"
+      ]
+    },
+    {
+      "name": "male w",
+      "entries": [
+        "Wade",
+        "Walcott",
+        "Walden",
+        "Waldo",
+        "Walker",
+        "Wallace",
+        "Walter",
+        "Ward",
+        "Washington",
+        "Wayland",
+        "Waylon",
+        "Wayne",
+        "Webster",
+        "Welch",
+        "Wesley",
+        "Wilbur",
+        "William",
+        "Wilson",
+        "Windsor",
+        "Woodrow",
+        "Woolcott",
+        "Wyatt",
+        "Wynn"
+      ]
+    },
+    {
+      "name": "male x",
+      "entries": [
+        "Xaiver",
+        "Xander",
+        "Xavier",
+        "Xerxes",
+        "Xzavier"
+      ]
+    },
+    {
+      "name": "male y",
+      "entries": [
+        "Yale",
+        "Yardley",
+        "Yates",
+        "York",
+        "Yul"
+      ]
+    },
+    {
+      "name": "male z",
+      "entries": [
+        "Zach",
+        "Zachary",
+        "Zack",
+        "Zander",
+        "Zane",
+        "Zeke",
+        "Zion"
+      ]
+    },
+    {
+      "**************************************************": "UNISEX FIRST NAMES"
+    },
+    {
+      "name": "unisex",
+      "explanation": "Unisex names grouped by initials.",
+      "export": {
+        "gender": "unisex"
+      },
+      "entries": [
+        "{unisex a}",
+        "{unisex b}",
+        "{unisex c}",
+        "{unisex d}",
+        "{unisex e}",
+        "{unisex f}",
+        "{unisex g}",
+        "{unisex h}",
+        "{unisex i}",
+        "{unisex j}",
+        "{unisex k}",
+        "{unisex l}",
+        "{unisex m}",
+        "{unisex n}",
+        "{unisex o}",
+        "{unisex p}",
+        "{unisex q}",
+        "{unisex r}",
+        "{unisex s}",
+        "{unisex t}",
+        "{unisex w}",
+        "{unisex z}"
+      ]
+    },
+    {
+      "name": "unisex a",
+      "explanation": "Unisex names beginning with 'A'.",
+      "entries": [
+        "Addison",
+        "Adrian",
+        "Alex",
+        "Alexis",
+        "Ali",
+        "Amari",
+        "Andy",
+        "Angel",
+        "Ariel",
+        "Arron",
+        "Ashley",
+        "Ashton",
+        "Aubrey",
+        "Avery"
+      ]
+    },
+    {
+      "name": "unisex b",
+      "explanation": "Gender neutral names beginning with 'B'.",
+      "entries": [
+        "Bailey",
+        "Billy",
+        "Blaine",
+        "Blair",
+        "Blake",
+        "Brett",
+        "Brice"
+      ]
+    },
+    {
+      "name": "unisex c",
+      "explanation": "Gender neutral names beginning with 'C'.",
+      "entries": [
+        "Caden",
+        "Cameron",
+        "Carmen",
+        "Carmine",
+        "Carson",
+        "Cary",
+        "Casey",
+        "Cassidy",
+        "Cecil",
+        "Chandler",
+        "Charlie",
+        "Christian",
+        "Cody",
+        "Connor",
+        "Corey",
+        "Cullen"
+      ]
+    },
+    {
+      "name": "unisex d",
+      "explanation": "Gender neutral names beginning with 'D'.",
+      "entries": [
+        "Dakota",
+        "Dallas",
+        "Dana",
+        "Dane",
+        "Darren",
+        "Darryl",
+        "Delaney",
+        "Devon",
+        "Donovan",
+        "Drew",
+        "Duncan",
+        "Dustin",
+        "Dylan"
+      ]
+    },
+    {
+      "name": "unisex e",
+      "explanation": "Gender neutral names beginning with 'E'.",
+      "entries": [
+        "Eden",
+        "Elisha",
+        "Ellery",
+        "Elliot",
+        "Elliott",
+        "Ellis",
+        "Emerson",
+        "Emery",
+        "Erin",
+        "Evan"
+      ]
+    },
+    {
+      "name": "unisex f",
+      "explanation": "Gender neutral names beginning with 'F'.",
+      "entries": [
+        "Fabian",
+        "Finley",
+        "Florian",
+        "Francis"
+      ]
+    },
+    {
+      "name": "unisex g",
+      "explanation": "Gender neutral names beginning with 'G'.",
+      "entries": [
+        "Glen"
+      ]
+    },
+    {
+      "name": "unisex h",
+      "explanation": "Gender neutral names beginning with 'H'.",
+      "entries": [
+        "Hadley",
+        "Haiden",
+        "Harley",
+        "Haven",
+        "Hayden",
+        "Hayley",
+        "Hunter"
+      ]
+    },
+    {
+      "name": "unisex i",
+      "explanation": "Gender neutral names beginning with 'I'.",
+      "entries": [
+        "Ira",
+        "Israel"
+      ]
+    },
+    {
+      "name": "unisex j",
+      "explanation": "Gender neutral names beginning with 'J'.",
+      "entries": [
+        "Jade",
+        "Jaden",
+        "James",
+        "Jamie",
+        "Jan",
+        "Jerry",
+        "Jesse",
+        "Jordan",
+        "Jude",
+        "Julian",
+        "Justice"
+      ]
+    },
+    {
+      "name": "unisex k",
+      "explanation": "Gender neutral names beginning with 'K'.",
+      "entries": [
+        "Kadin",
+        "Kamryn",
+        "Karter",
+        "Kelly",
+        "Kelsey",
+        "Kendall",
+        "Kennedy",
+        "Kerry",
+        "Kiley",
+        "Kimberle",
+        "Kyrie"
+      ]
+    },
+    {
+      "name": "unisex l",
+      "explanation": "Gender neutral names beginning with 'L'.",
+      "entries": [
+        "Lane",
+        "Lee",
+        "Leslie",
+        "Lindsay",
+        "Logan",
+        "London",
+        "Lonnie",
+        "Lucian",
+        "Lyric"
+      ]
+    },
+    {
+      "name": "unisex m",
+      "explanation": "Gender neutral names beginning with 'M'.",
+      "entries": [
+        "MacKenzi",
+        "Madison",
+        "Mallory",
+        "Marley",
+        "Mason",
+        "McKenna",
+        "Meredith",
+        "Michael",
+        "Montana",
+        "Morgan",
+        "Moriah"
+      ]
+    },
+    {
+      "name": "unisex n",
+      "explanation": "Gender neutral names beginning with 'N'.",
+      "entries": [
+        "Nevada",
+        "Noel"
+      ]
+    },
+    {
+      "name": "unisex o",
+      "explanation": "Gender neutral names beginning with 'O'.",
+      "entries": [
+        "Orion"
+      ]
+    },
+    {
+      "name": "unisex p",
+      "explanation": "Gender neutral names beginning with 'P'.",
+      "entries": [
+        "Paris",
+        "Parker",
+        "Payton",
+        "Peyton",
+        "Perry",
+        "Phoenix"
+      ]
+    },
+    {
+      "name": "unisex q",
+      "explanation": "Gender neutral names beginning with 'Q'.",
+      "entries": [
+        "Quinn"
+      ]
+    },
+    {
+      "name": "unisex r",
+      "explanation": "Gender neutral names beginning with 'R'.",
+      "entries": [
+        "Raphael",
+        "Ravenel",
+        "Reagan",
+        "Reed",
+        "Reese",
+        "Regan",
+        "Remi",
+        "Remington",
+        "Rene",
+        "Riley",
+        "River",
+        "Robin",
+        "Rory",
+        "Rowan",
+        "Ryan",
+        "Rylan"
+      ]
+    },
+    {
+      "name": "unisex s",
+      "explanation": "Gender neutral names beginning with 'S'.",
+      "entries": [
+        "Sage",
+        "Sawyer",
+        "Scout",
+        "Sean",
+        "Shane",
+        "Shay",
+        "Shelby",
+        "Silver",
+        "Skye",
+        "Skylar",
+        "Skyler",
+        "Sonny",
+        "Spencer",
+        "Stacy",
+        "Stormy",
+        "Sunny",
+        "Sydney"
+      ]
+    },
+    {
+      "name": "unisex t",
+      "explanation": "Gender neutral names beginning with 'T'.",
+      "entries": [
+        "Tatum",
+        "Taylor",
+        "Terry",
+        "Tony",
+        "Tory",
+        "Tracy",
+        "Tyler",
+        "Tyne"
+      ]
+    },
+    {
+      "name": "unisex u",
+      "explanation": "Gender neutral names beginning with 'U'.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "unisex v",
+      "explanation": "Gender neutral names beginning with 'V'.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "unisex w",
+      "explanation": "Gender neutral names beginning with 'W'.",
+      "entries": [
+        "Wallace",
+        "Wesley",
+        "Whitney",
+        "Wynne"
+      ]
+    },
+    {
+      "name": "unisex x",
+      "explanation": "Gender neutral names beginning with 'X'.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "unisex y",
+      "explanation": "Gender neutral names beginning with 'Y'.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "unisex z",
+      "explanation": "Gender neutral names beginning with 'Z'.",
+      "entries": [
+        "Zane",
+        "Zion"
+      ]
+    },
+    {
+      "**************************************************": "SURNAMES"
+    },
+    {
+      "name": "surname",
+      "explanation": "Last names grouped by initials.",
+      "entries": [
+        "{surname a}",
+        "{surname b}",
+        "{surname c}",
+        "{surname d}",
+        "{surname e}",
+        "{surname f}",
+        "{surname g}",
+        "{surname h}",
+        "{surname i}",
+        "{surname j}",
+        "{surname k}",
+        "{surname l}",
+        "{surname m}",
+        "{surname n}",
+        "{surname o}",
+        "{surname p}",
+        "{surname r}",
+        "{surname s}",
+        "{surname t}",
+        "{surname u}",
+        "{surname v}",
+        "{surname w}",
+        "{surname y}",
+        "{surname z}"
+      ]
+    },
+    {
+      "name": "surname a",
+      "explanation": "Last names beginning with 'A'.",
+      "entries": [
+        "Adams",
+        "Adamson",
+        "Adler",
+        "Akers",
+        "Akin",
+        "Aleman",
+        "Alexander",
+        "Allen",
+        "Allison",
+        "Allwood",
+        "Anderson",
+        "Andreou",
+        "Anthony",
+        "Appelbaum",
+        "Applegate",
+        "Arbore",
+        "Arenson",
+        "Armold",
+        "Arntzen",
+        "Askew",
+        "Athanas",
+        "Atkinson",
+        "Ausman",
+        "Austin",
+        "Averitt",
+        "Avil"
+      ]
+    },
+    {
+      "name": "surname b",
+      "explanation": "Last names beginning with 'B'.",
+      "entries": [
+        "Badders",
+        "Baer",
+        "Baggerly",
+        "Bailliet",
+        "Baird",
+        "Baker",
+        "Ball",
+        "Ballentine",
+        "Ballew",
+        "Banks",
+        "Baptis",
+        "t-Nguyen",
+        "Barbee",
+        "Barber",
+        "Barchas",
+        "Barcio",
+        "Bardsley",
+        "Barkauskas",
+        "Barnes",
+        "Barnett",
+        "Barnwell",
+        "Barrera",
+        "Barreto",
+        "Barroso",
+        "Barrow",
+        "Bart",
+        "Barton",
+        "Bass",
+        "Bates",
+        "Bavinger",
+        "Baxter",
+        "Bazaldua",
+        "Becker",
+        "Beeghly",
+        "Belforte",
+        "Bellamy",
+        "Bellavance",
+        "Beltran",
+        "Belusar",
+        "Bennett",
+        "Benoit",
+        "Bensley",
+        "Berger",
+        "Berggren",
+        "Bergman",
+        "Berry",
+        "Bertelson",
+        "Bess",
+        "Beusse",
+        "Bickford",
+        "Bierner",
+        "Bird",
+        "Birdwell",
+        "Bixby",
+        "Blackmon",
+        "Blackwell",
+        "Blair",
+        "Blankinship",
+        "Blanton",
+        "Block",
+        "Blomkalns",
+        "Bloomfield",
+        "Blume",
+        "Boeckenhauer",
+        "Bolding",
+        "Bolt",
+        "Bolton",
+        "Book",
+        "Boucher",
+        "Boudreau",
+        "Bowman",
+        "Boyd",
+        "Boyes",
+        "Boyles",
+        "Braby",
+        "Braden",
+        "Bradley",
+        "Brady",
+        "Bragg",
+        "Brandow",
+        "Brantley",
+        "Brauner",
+        "Braunhardt",
+        "Bray",
+        "Bredenberg",
+        "Bremer",
+        "Breyer",
+        "Bricout",
+        "Briggs",
+        "Brittain",
+        "Brockman",
+        "Brockmoller",
+        "Broman",
+        "Brooks",
+        "Brown",
+        "Brubaker",
+        "Bruce",
+        "Brumfield",
+        "Brumley",
+        "Bruning",
+        "Buck",
+        "Budd",
+        "Buhler",
+        "Buhr",
+        "Burleson",
+        "Burns",
+        "Burton",
+        "Bush",
+        "Butterfield",
+        "Byers",
+        "Byon",
+        "Byrd"
+      ]
+    },
+    {
+      "name": "surname c",
+      "explanation": "Last names beginning with 'C'.",
+      "entries": [
+        "Cabrera",
+        "Caesar",
+        "Caffey",
+        "Caffrey",
+        "Calhoun",
+        "Call",
+        "Callahan",
+        "Campbell",
+        "Cano",
+        "Capri",
+        "Carey",
+        "Carlisle",
+        "Carlson",
+        "Carmichael",
+        "Carnes",
+        "Carr",
+        "Carreira",
+        "Carroll",
+        "Carson",
+        "Carswell",
+        "Carter",
+        "Cartwright",
+        "Cason",
+        "Cates",
+        "Catlett",
+        "Caudle",
+        "Cavallaro",
+        "Cave",
+        "Cazamias",
+        "Chabot",
+        "Chance",
+        "Chapman",
+        "Characklis",
+        "Cheatham",
+        "Chen",
+        "Chern",
+        "Cheville",
+        "Chong",
+        "Christensen",
+        "Church",
+        "Claibourn",
+        "Clark",
+        "Clasen",
+        "Claude",
+        "Close",
+        "Coakley",
+        "Coffey",
+        "Cohen",
+        "Cole",
+        "Collier",
+        "Conant",
+        "Connell",
+        "Conte",
+        "Conway",
+        "Cooley",
+        "Cooper",
+        "Copeland",
+        "Coram",
+        "Corbett",
+        "Cort",
+        "Cortes",
+        "Cousins",
+        "Cowsar",
+        "Cox",
+        "Coyne",
+        "Crain",
+        "Crankshaw",
+        "Craven",
+        "Crawford",
+        "Cressman",
+        "Crestani",
+        "Crier",
+        "Crocker",
+        "Cromwell",
+        "Crouse",
+        "Crowder",
+        "Crowe",
+        "Culpepper",
+        "Cummings",
+        "Cunningham",
+        "Currie",
+        "Cusey",
+        "Cutcher",
+        "Cyprus"
+      ]
+    },
+    {
+      "name": "surname d",
+      "explanation": "Last names beginning with 'D'.",
+      "entries": [
+        "d'Ascenzo",
+        "Dabak",
+        "Dakoulas",
+        "Daly",
+        "Dana",
+        "Danburg",
+        "Danenhauer",
+        "Darley",
+        "Darrouzet",
+        "Dartt",
+        "Daugherty",
+        "Davila",
+        "Davis",
+        "Dawkins",
+        "Day",
+        "DeHart",
+        "DeMoss",
+        "DeMuth",
+        "DeVincentis",
+        "Deaton",
+        "Dees",
+        "Degenhardt",
+        "Deggeller",
+        "Deigaard",
+        "Delabroy",
+        "Delaney",
+        "Demir",
+        "Denison",
+        "Denney",
+        "Derr",
+        "Deuel",
+        "Devitt",
+        "Diamond",
+        "Dickinson",
+        "Dietrich",
+        "Dilbeck",
+        "Dobson",
+        "Dodds",
+        "Dodson",
+        "Doherty",
+        "Dooley",
+        "Dorsey",
+        "Dortch",
+        "Doughty",
+        "Dove",
+        "Dowd",
+        "Dowling",
+        "Drescher",
+        "Drucker",
+        "Dryer",
+        "Dryver",
+        "Duckworth",
+        "Dunbar",
+        "Dunham",
+        "Dunn",
+        "Duston",
+        "Dettweiler",
+        "Dyson"
+      ]
+    },
+    {
+      "name": "surname e",
+      "explanation": "Last names beginning with 'E'.",
+      "entries": [
+        "Eason",
+        "Eaton",
+        "Ebert",
+        "Eckhoff",
+        "Edelman",
+        "Edmonds",
+        "Eichhorn",
+        "Eisbach",
+        "Elders",
+        "Elias",
+        "Elijah",
+        "Elizabeth",
+        "Elliott",
+        "Elliston",
+        "Elms",
+        "Emerson",
+        "Engelberg",
+        "Engle",
+        "Eplett",
+        "Epp",
+        "Erickson",
+        "Estades",
+        "Etezadi",
+        "Evans",
+        "Ewing"
+      ]
+    },
+    {
+      "name": "surname f",
+      "explanation": "Last names beginning with 'F'.",
+      "entries": [
+        "Fair",
+        "Farfan",
+        "Fargason",
+        "Farhat",
+        "Farry",
+        "Fawcett",
+        "Faye",
+        "Federle",
+        "Felcher",
+        "Feldman",
+        "Ferguson",
+        "Fergusson",
+        "Fernandez",
+        "Ferrer",
+        "Fine",
+        "Fineman",
+        "Fisher",
+        "Flanagan",
+        "Flathmann",
+        "Fleming",
+        "Fletcher",
+        "Folk",
+        "Fortune",
+        "Fossati",
+        "Foster",
+        "Foulston",
+        "Fowler",
+        "Fox",
+        "Francis",
+        "Frantom",
+        "Franz",
+        "Frazer",
+        "Fredericks",
+        "Frey",
+        "Freymann",
+        "Fuentes",
+        "Fuller",
+        "Fundling",
+        "Furlong"
+      ]
+    },
+    {
+      "name": "surname g",
+      "explanation": "Last names beginning with 'G'.",
+      "entries": [
+        "Gainer",
+        "Galang",
+        "Galeazzi",
+        "Gamse",
+        "Gannaway",
+        "Garcia",
+        "Gardner",
+        "Garneau",
+        "Gartler",
+        "Garverick",
+        "Garza",
+        "Gatt",
+        "Gattis",
+        "Gayman",
+        "Geiger",
+        "Gelder",
+        "George",
+        "Gerbino",
+        "Gerbode",
+        "Gibson",
+        "Gifford",
+        "Gillespie",
+        "Gillingham",
+        "Gilpin",
+        "Gilyot",
+        "Girgis",
+        "Gjertsen",
+        "Glantz",
+        "Glaze",
+        "Glenn",
+        "Glotzbach",
+        "Gobble",
+        "Gockenbach",
+        "Goff",
+        "Goffin",
+        "Golden",
+        "Goldwyn",
+        "Gomez",
+        "Gonzalez",
+        "Good",
+        "Graham",
+        "Gramm",
+        "Granlund",
+        "Grant",
+        "Gray",
+        "Grayson",
+        "Greene",
+        "Greenslade",
+        "Greenwood",
+        "Greer",
+        "Griffin",
+        "Grinstein",
+        "Grisham",
+        "Gross",
+        "Grove",
+        "Guthrie",
+        "Guyton"
+      ]
+    },
+    {
+      "name": "surname h",
+      "explanation": "Last names beginning with 'H'.",
+      "entries": [
+        "Haas",
+        "Hackney",
+        "Haddock",
+        "Hagelstein",
+        "Hagen",
+        "Haggard",
+        "Haines",
+        "Hale",
+        "Haley",
+        "Hall",
+        "Halladay",
+        "Hamill",
+        "Hamilton",
+        "Hammer",
+        "Hancock",
+        "Hane",
+        "Hansen",
+        "Harding",
+        "Harless",
+        "Harms",
+        "Harper",
+        "Harrigan",
+        "Harris",
+        "Harrison",
+        "Hart",
+        "Harton",
+        "Hartz",
+        "Harvey",
+        "Hastings",
+        "Hauenstein",
+        "Haushalter",
+        "Haven",
+        "Hawes",
+        "Hawkins",
+        "Hawley",
+        "Haygood",
+        "Haylock",
+        "Hazard",
+        "Heath",
+        "Heidel",
+        "Heins",
+        "Hellums",
+        "Hendricks",
+        "Henry",
+        "Henson",
+        "Herbert",
+        "Herman",
+        "Hernandez",
+        "Herrera",
+        "Hertzmann",
+        "Hewitt",
+        "Hightower",
+        "Hildebrand",
+        "Hill",
+        "Hindman",
+        "Hirasaki",
+        "Hirsh",
+        "Hochman",
+        "Hocker",
+        "Hoffman",
+        "Hoffmann",
+        "Holder",
+        "Holland",
+        "Holloman",
+        "Holstein",
+        "Holt",
+        "Holzer",
+        "Honeyman",
+        "Hood",
+        "Hooks",
+        "Hopper",
+        "Horne",
+        "House",
+        "Houston",
+        "Howard",
+        "Howell",
+        "Howley",
+        "Huang",
+        "Hudgings",
+        "Huffman",
+        "Hughes",
+        "Humphrey",
+        "Hunt",
+        "Hunter",
+        "Hurley",
+        "Huston",
+        "Hutchinson",
+        "Hyatt"
+      ]
+    },
+    {
+      "name": "surname i",
+      "explanation": "Last names beginning with 'I'.",
+      "entries": [
+        "Irving"
+      ]
+    },
+    {
+      "name": "surname j",
+      "explanation": "Last names beginning with 'J'.",
+      "entries": [
+        "Jacobs",
+        "Jaramillo",
+        "Jaranson",
+        "Jarboe",
+        "Jarrell",
+        "Jenkins",
+        "Johnson",
+        "Johnston",
+        "Jones",
+        "Joy",
+        "Juette",
+        "Julicher",
+        "Jumper"
+      ]
+    },
+    {
+      "name": "surname k",
+      "explanation": "Last names beginning with 'K'.",
+      "entries": [
+        "Kabir",
+        "Kamberova",
+        "Kamen",
+        "Kamine",
+        "Kampe",
+        "Kane",
+        "Kang",
+        "Kapetanovic",
+        "Kargatis",
+        "Karlin",
+        "Karlsson",
+        "Kasbekar",
+        "Kasper",
+        "Kastensmidt",
+        "Katz",
+        "Kauffman",
+        "Kavanagh",
+        "Kaydos",
+        "Kearsley",
+        "Keleher",
+        "Kelly",
+        "Kelty",
+        "Kendrick",
+        "Key",
+        "Kicinski",
+        "Kiefer",
+        "Kielt",
+        "Kim",
+        "Kimmel",
+        "Kincaid",
+        "King",
+        "Kinney",
+        "Kipp",
+        "Kirby",
+        "Kirk",
+        "Kirkland",
+        "Kirkpatrick",
+        "Klamczynski",
+        "Klein",
+        "Kopnicky",
+        "Kotsonis",
+        "Koutras",
+        "Kramer",
+        "Kremer",
+        "Krohn",
+        "Kuhlken",
+        "Kunitz"
+      ]
+    },
+    {
+      "name": "surname l",
+      "explanation": "Last names beginning with 'L'.",
+      "entries": [
+        "LaLonde",
+        "LaValle",
+        "LaWare",
+        "Lacy",
+        "Lam",
+        "Lamb",
+        "Lampkin",
+        "Lane",
+        "Langston",
+        "Lanier",
+        "Larsen",
+        "Lassiter",
+        "Latchford",
+        "Lawera",
+        "LeBlanc",
+        "LeGrand",
+        "Leatherbury",
+        "Lebron",
+        "Ledman",
+        "Lee",
+        "Leinenbach",
+        "Leslie",
+        "Levy",
+        "Lewis",
+        "Lichtenstein",
+        "Lisowski",
+        "Liston",
+        "Litvak",
+        "Lloyd",
+        "Lock",
+        "Lodge",
+        "Logan",
+        "Lomonaco",
+        "Long",
+        "Lopez",
+        "Loren",
+        "Loughridge",
+        "Love",
+        "Ludtke",
+        "Luers",
+        "Lukes",
+        "Luxemburg"
+      ]
+    },
+    {
+      "name": "surname m",
+      "explanation": "Last names beginning with 'M'.",
+      "entries": [
+        "MacAllister",
+        "MacLeod",
+        "Mackey",
+        "Maddox",
+        "Magee",
+        "Mallinson",
+        "Mann",
+        "Manning",
+        "Manthos",
+        "Marie",
+        "Marrow",
+        "Marshall",
+        "Martin",
+        "Martinez",
+        "Martisek",
+        "Massey",
+        "Mathis",
+        "Matt",
+        "Maxwell",
+        "Mayer",
+        "Mazurek",
+        "McAdams",
+        "McAfee",
+        "McAlexander",
+        "McBride",
+        "McCarthy",
+        "McClure",
+        "McCord",
+        "McCoy",
+        "McCrary",
+        "McCrossin",
+        "McDonald",
+        "McElfresh",
+        "McFarland",
+        "McGarr",
+        "McGhee",
+        "McGoldrick",
+        "McGrath",
+        "McGuire",
+        "McKinley",
+        "McMahan",
+        "McMahon",
+        "McMath",
+        "McNally",
+        "Mcdonald",
+        "Meade",
+        "Meador",
+        "Mebane",
+        "Medrano",
+        "Melton",
+        "Merchant",
+        "Merwin",
+        "Millam",
+        "Millard",
+        "Miller",
+        "Mills",
+        "Milstead",
+        "Minard",
+        "Miner",
+        "Minkoff",
+        "Minnotte",
+        "Minyard",
+        "Mirza",
+        "Mitchell",
+        "Money",
+        "Monk",
+        "Montgomery",
+        "Monton",
+        "Moore",
+        "Moren",
+        "Moreno",
+        "Morris",
+        "Morse",
+        "Moss",
+        "Moyer",
+        "Mueller",
+        "Mull",
+        "Mullet",
+        "Mullins",
+        "Munn",
+        "Murdock",
+        "Murphey",
+        "Murphy",
+        "Murray",
+        "Murry",
+        "Mutchler",
+        "Myers",
+        "Myrick"
+      ]
+    },
+    {
+      "name": "surname n",
+      "explanation": "Last names beginning with 'N'.",
+      "entries": [
+        "Nassar",
+        "Nathan",
+        "Nazzal",
+        "Neal",
+        "Nederveld",
+        "Nelson",
+        "Nguyen",
+        "Nichols",
+        "Nielsen",
+        "Nockton",
+        "Nolan",
+        "Noonan",
+        "Norbury",
+        "Nordlander",
+        "Norris",
+        "Norvell",
+        "Noyes",
+        "Nugent",
+        "Nunn"
+      ]
+    },
+    {
+      "name": "surname o",
+      "explanation": "Last names beginning with 'O'.",
+      "entries": [
+        "O'Brien",
+        "O'Connell",
+        "O'Neill",
+        "O'Steen",
+        "Ober",
+        "Odegard",
+        "Oliver",
+        "Ollmann",
+        "Olson",
+        "Ongley",
+        "Ordway",
+        "Ortiz",
+        "Ouellette",
+        "Overcash",
+        "Overfelt",
+        "Overley",
+        "Owens"
+      ]
+    },
+    {
+      "name": "surname p",
+      "explanation": "Last names beginning with 'P'.",
+      "entries": [
+        "Page",
+        "Paige",
+        "Pardue",
+        "Parham",
+        "Parker",
+        "Parks",
+        "Patterson",
+        "Patton",
+        "Paul",
+        "Payne",
+        "Peck",
+        "Penisson",
+        "Percer",
+        "Perez",
+        "Perlioni",
+        "Perrino",
+        "Peterman",
+        "Peters",
+        "Pfeiffer",
+        "Phelps",
+        "Philip",
+        "Philippe",
+        "Phillips",
+        "Pickett",
+        "Pippenger",
+        "Pistole",
+        "Platzek",
+        "Player",
+        "Poddar",
+        "Poirier",
+        "Poklepovic",
+        "Polk",
+        "Polking",
+        "Pond",
+        "Popish",
+        "Porter",
+        "Pound",
+        "Pounds",
+        "Powell",
+        "Powers",
+        "Prado",
+        "Preston",
+        "Price",
+        "Prichep",
+        "Priour",
+        "Prischmann",
+        "Pryor",
+        "Puckett"
+      ]
+    },
+    {
+      "name": "surname q",
+      "explanation": "Last names beginning with 'Q'.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "surname r",
+      "explanation": "Last names beginning with 'R'.",
+      "entries": [
+        "Raglin",
+        "Ralston",
+        "Rampersad",
+        "Ratner",
+        "Rawles",
+        "Ray",
+        "Read",
+        "Reddy",
+        "Reed",
+        "Reese",
+        "Reeves",
+        "Reichenbach",
+        "Reifel",
+        "Rein",
+        "Reiten",
+        "Reiter",
+        "Reitmeier",
+        "Reynolds",
+        "Richardson",
+        "Rider",
+        "Rhinehart",
+        "Ritchie",
+        "Rittenbach",
+        "Roberts",
+        "Robinson",
+        "Rodriguez",
+        "Rogers",
+        "Roper",
+        "Rosemblun",
+        "Rosen",
+        "Rosenberg",
+        "Rosenblatt",
+        "Ross",
+        "Roth",
+        "Rowatt",
+        "Roy",
+        "Royston",
+        "Rozendal",
+        "Rubble",
+        "Ruhlin",
+        "Rupert",
+        "Russell",
+        "Ruthruff",
+        "Ryan",
+        "Rye"
+      ]
+    },
+    {
+      "name": "surname s",
+      "explanation": "Last names beginning with 'S'.",
+      "entries": [
+        "Sabry",
+        "Sachitano",
+        "Sachs",
+        "Sammartino",
+        "Sands",
+        "Saunders",
+        "Savely",
+        "Scales",
+        "Schaefer",
+        "Schafer",
+        "Scheer",
+        "Schild",
+        "Schlitt",
+        "Schmitz",
+        "Schneider",
+        "Schoenberger",
+        "Schoppe",
+        "Scott",
+        "Seay",
+        "Segura",
+        "Selesnick",
+        "Self",
+        "Seligmann",
+        "Sewall",
+        "Shami",
+        "Shampine",
+        "Sharp",
+        "Shaw",
+        "Shefelbine",
+        "Sheldon",
+        "Sherrill",
+        "Shidle",
+        "Shifley",
+        "Shillingsburg",
+        "Shisler",
+        "Shopbell",
+        "Shupack",
+        "Sievert",
+        "Simpson",
+        "Sims",
+        "Sissman",
+        "Smayling",
+        "Smith",
+        "Snyder",
+        "Solomon",
+        "Solon",
+        "Soltero",
+        "Sommers",
+        "Sonneborn",
+        "Sorensen",
+        "Southworth",
+        "Spear",
+        "Speight",
+        "Spencer",
+        "Spruell",
+        "Spudich",
+        "Stacy",
+        "Staebel",
+        "Steele",
+        "Steinhour",
+        "Steinke",
+        "Stepp",
+        "Stevens",
+        "Stewart",
+        "Stickel",
+        "Stine",
+        "Stivers",
+        "Stobb",
+        "Stone",
+        "Stratmann",
+        "Stubbers",
+        "Stuckey",
+        "Stugart",
+        "Sullivan",
+        "Sultan",
+        "Sumrall",
+        "Sunley",
+        "Sunshine",
+        "Sutton",
+        "Swaim",
+        "Swales",
+        "Sweed",
+        "Swick",
+        "Swift",
+        "Swindell",
+        "Swint",
+        "Symonds",
+        "Syzdek",
+        "Szafranski"
+      ]
+    },
+    {
+      "name": "surname t",
+      "explanation": "Last names beginning with 'T'.",
+      "entries": [
+        "Talbott",
+        "Talwar",
+        "Tanner",
+        "Taslimi",
+        "Tate",
+        "Tatum",
+        "Taylor",
+        "Tchainikov",
+        "Terk",
+        "Thacker",
+        "Thomas",
+        "Thompson",
+        "Thomson",
+        "Thornton",
+        "Thurman",
+        "Thurow",
+        "Tilley",
+        "Tolle",
+        "Towns",
+        "Trafton",
+        "Tran",
+        "Trevas",
+        "Trevino",
+        "Triggs",
+        "Truchard",
+        "Tunison",
+        "Turner",
+        "Twedell",
+        "Tyler",
+        "Tyree"
+      ]
+    },
+    {
+      "name": "surname u",
+      "explanation": "Last names beginning with 'U'.",
+      "entries": [
+        "Unger"
+      ]
+    },
+    {
+      "name": "surname v",
+      "explanation": "Last names beginning with 'V'.",
+      "entries": [
+        "Van",
+        "Vanderzanden",
+        "Vanlandingham",
+        "Varanasi",
+        "Varela",
+        "Varman",
+        "Venier",
+        "Verspoor",
+        "Vick",
+        "Visinsky",
+        "Voltz"
+      ]
+    },
+    {
+      "name": "surname w",
+      "explanation": "Last names beginning with 'W'.",
+      "entries": [
+        "Wagner",
+        "Wake",
+        "Walcott",
+        "Waldron",
+        "Walker",
+        "Wallace",
+        "Walters",
+        "Walton",
+        "Ward",
+        "Wardle",
+        "Warnes",
+        "Warren",
+        "Washington",
+        "Watson",
+        "Watters",
+        "Webber",
+        "Weidenfeller",
+        "Weien",
+        "Weimer",
+        "Weiner",
+        "Weinger",
+        "Weinheimer",
+        "Weirich",
+        "Welch",
+        "Wells",
+        "Wendt",
+        "West",
+        "Westmoreland",
+        "Wex",
+        "Whitaker",
+        "White",
+        "Whitley",
+        "Wiediger",
+        "Wilburn",
+        "Williams",
+        "Williamson",
+        "Willman",
+        "Wilson",
+        "Winger",
+        "Wise",
+        "Wisur",
+        "Witt",
+        "Wong",
+        "Woodbury",
+        "Wooten",
+        "Workman",
+        "Wright",
+        "Wyatt"
+      ]
+    },
+    {
+      "name": "surname x",
+      "explanation": "Last names beginning with 'X'.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "surname y",
+      "explanation": "Last names beginning with 'Y'.",
+      "entries": [
+        "Yates",
+        "Yeamans",
+        "Yen",
+        "York",
+        "Yotov",
+        "Younan",
+        "Young"
+      ]
+    },
+    {
+      "name": "surname z",
+      "explanation": "Last names beginning with 'Z'.",
+      "entries": [
+        "Zeldin",
+        "Zettner",
+        "Ziegler",
+        "Zitterkopf",
+        "Zucker"
+      ]
+    },
+    {
+      "**************************************************": "INITIALS"
+    },
+    {
+      "name": "initial",
+      "entries": [
+        "{a}",
+        "{b}",
+        "{c}",
+        "{d}",
+        "{e}",
+        "{f}",
+        "{g}",
+        "{h}",
+        "{i}",
+        "{j}",
+        "{k}",
+        "{l}",
+        "{m}",
+        "{n}",
+        "{o}",
+        "{p}",
+        "{q}",
+        "{r}",
+        "{s}",
+        "{t}",
+        "{u}",
+        "{v}",
+        "{w}",
+        "{x}",
+        "{y}",
+        "{z}"
+      ]
+    },
+    {
+      "name": "a",
+      "entries": [
+        "{female a}",
+        "{male a}",
+        "{unisex a}"
+      ]
+    },
+    {
+      "name": "b",
+      "entries": [
+        "{female b}",
+        "{male b}",
+        "{unisex b}"
+      ]
+    },
+    {
+      "name": "c",
+      "entries": [
+        "{female c}",
+        "{male c}",
+        "{unisex c}"
+      ]
+    },
+    {
+      "name": "d",
+      "entries": [
+        "{female d}",
+        "{male d}",
+        "{unisex d}"
+      ]
+    },
+    {
+      "name": "e",
+      "entries": [
+        "{female e}",
+        "{male e}",
+        "{unisex e}"
+      ]
+    },
+    {
+      "name": "f",
+      "entries": [
+        "{female f}",
+        "{male f}",
+        "{unisex f}"
+      ]
+    },
+    {
+      "name": "g",
+      "entries": [
+        "{female g}",
+        "{male g}",
+        "{unisex g}"
+      ]
+    },
+    {
+      "name": "h",
+      "entries": [
+        "{female h}",
+        "{male h}",
+        "{unisex h}"
+      ]
+    },
+    {
+      "name": "i",
+      "entries": [
+        "{female i}",
+        "{male i}",
+        "{unisex i}"
+      ]
+    },
+    {
+      "name": "j",
+      "entries": [
+        "{female j}",
+        "{male j}",
+        "{unisex j}"
+      ]
+    },
+    {
+      "name": "k",
+      "entries": [
+        "{female k}",
+        "{male k}",
+        "{unisex k}"
+      ]
+    },
+    {
+      "name": "l",
+      "entries": [
+        "{female l}",
+        "{male l}",
+        "{unisex l}"
+      ]
+    },
+    {
+      "name": "m",
+      "entries": [
+        "{female m}",
+        "{male m}",
+        "{unisex m}"
+      ]
+    },
+    {
+      "name": "n",
+      "entries": [
+        "{female n}",
+        "{male n}",
+        "{unisex n}"
+      ]
+    },
+    {
+      "name": "o",
+      "entries": [
+        "{female o}",
+        "{male o}",
+        "{unisex o}"
+      ]
+    },
+    {
+      "name": "p",
+      "entries": [
+        "{female p}",
+        "{male p}",
+        "{unisex p}"
+      ]
+    },
+    {
+      "name": "q",
+      "entries": [
+        "{female q}",
+        "{male q}",
+        "{unisex q}"
+      ]
+    },
+    {
+      "name": "r",
+      "entries": [
+        "{female r}",
+        "{male r}",
+        "{unisex r}"
+      ]
+    },
+    {
+      "name": "s",
+      "entries": [
+        "{female s}",
+        "{male s}",
+        "{unisex s}"
+      ]
+    },
+    {
+      "name": "t",
+      "entries": [
+        "{female t}",
+        "{male t}",
+        "{unisex t}"
+      ]
+    },
+    {
+      "name": "u",
+      "entries": [
+        "{female u}",
+        "{male u}"
+      ]
+    },
+    {
+      "name": "v",
+      "entries": [
+        "{female v}",
+        "{male v}"
+      ]
+    },
+    {
+      "name": "w",
+      "entries": [
+        "{female w}",
+        "{male w}",
+        "{unisex w}"
+      ]
+    },
+    {
+      "name": "x",
+      "entries": [
+        "{female x}",
+        "{male x}"
+      ]
+    },
+    {
+      "name": "y",
+      "entries": [
+        "{female y}",
+        "{male y}"
+      ]
+    },
+    {
+      "name": "z",
+      "entries": [
+        "{female z}",
+        "{male z}",
+        "{unisex z}"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, surname: {surname}, initial: {initial}. Gender = {global:gender}."
+      ]
+    }
+  ]
+}
