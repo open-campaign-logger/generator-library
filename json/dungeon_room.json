@@ -13,7 +13,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_corridor, dungeon_vault, Five_room_dungeon",
-  "date": "2018-02-04",
+  "date": "2018-03-01",
   "authors": "Esko Vesala",
   "sources": "Five_room_dungeon",
   "genre": "fantasy",
@@ -1041,8 +1041,8 @@
       "explanation": "Doors exiting from the room.",
       "entries": [
         "There is one visible exit: {lib:door}",
-        "There are two visible exits. {global:para}1) {lib:door}, {global:para}2) {lib:door}",
-        "There are three visible exits. {global:para}1) {lib:door}, {global:para}2) {lib:door}, {global:para}3) {lib:door}"
+        "There are two visible exits. {global:para}1) {lib:door}, {global:para}2) {lib:door#unlikely false}",
+        "There are three visible exits. {global:para}1) {lib:door}, {global:para}2) {lib:door#unlikely false}, {global:para}3) {lib:door#maybe false}"
       ]
     },
     {
