@@ -186,8 +186,8 @@
   "bugs": "",
   "to do": "More external table calls to add variety.",
   "see": "dungeon_entrance, dungeon_corridor, dungeon_room, dungeon_vault, Five_room_dungeon, hook_line_and_sinker_adventure",
-  "date": "2018-01-28",
-  "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
+  "date": "2018-03-01",
+  "authors": "ELF Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon, RolePlayingTips.com",
   "genre": "universal",
   "categories": [
@@ -265,7 +265,7 @@
       "name": "adventure name",
       "explanation": "Variations for the name of the adventure based on set variables.",
       "entries": [
-        "The {global:symbol} of the {lib:villain#adjective} {global:villain#summary}",
+        "The {global:symbol} of the {lib:villain#adjective} {global:villain}",
         "{lib:location#adjective} {global:location} of the {lib:villain#adjective} {global:villain}",
         "{global:goaldescription} the {lib:villain#adjective} {global:villain}",
         "{global:macguffin} of the {lib:villain#adjective} {global:villain}",
@@ -766,10 +766,10 @@
       "name": "climax",
       "explanation": "",
       "entries": [
-        "The villain is here, ready to face the {lib:synonym#troupe}. Previous rooms have contained warning signals or an alarm, so the {global:villain} has had time to prepare.",
-        "The villain is here, and seems to be surprised by the arrival of the {lib:synonym#troupe}. The villain tries to settle things in an unusual way, through {unusual proposal}.",
-        "The villain is here and reveals the {global:treasure} to the {lib:synonym#troupe}, threatening to {reward threat}.",
-        "The villain is here, but has a weakness that the {lib:synonym#troupe} must figure out how to exploit."
+        "The {global:villain} is here, ready to face the {lib:synonym#troupe}. Previous rooms have contained warning signals or an alarm, so the {global:villain} has had time to prepare.",
+        "The {global:villain} is here, and seems to be surprised by the arrival of the {lib:synonym#troupe}. The {global:villain} tries to settle things in an unusual way, through {unusual proposal}.",
+        "The {global:villain} is here and reveals the {global:treasure} to the {lib:synonym#troupe}, threatening to {reward threat}.",
+        "The {global:villain} is here, but has a weakness that the {lib:synonym#troupe} must figure out how to exploit."
       ]
     },
     {
@@ -792,8 +792,8 @@
       "name": "big battle",
       "explanation": "",
       "entries": [
-        "The villain is here and has unexpected {capabilities}.",
-        "The villain is here, but the {lib:synonym#room} is trapped. The villain {trap ability}."
+        "The {global:villain} is here and has unexpected {capabilities}.",
+        "The {global:villain} is here, but the {lib:synonym#room} is trapped. The {global:villain} {trap ability}."
       ]
     },
     {
@@ -917,7 +917,7 @@
       "entries": [
         "A rival enters and tries to steal the reward while the {lib:synonym#troupe} is weakened after the big challenge of the previous room.",
         "The object of the quest final reward isn't what it seems or has a complication. i.e. The kidnapped king doesn't want to return.",
-        "The quest was a trick. By killing the villain the {lib:synonym#troupe} has actually helped the {longterm villain}. The {global:villain} was actually {bad guy true form}."
+        "The quest was a trick. By killing the {global:villain} the {lib:synonym#troupe} has actually helped the {longterm villain}. The {global:villain} was actually {bad guy true form}."
       ]
     },
     {
@@ -1288,7 +1288,7 @@
       "name": "test",
       "explanation": "Dumping the global variables.",
       "entries": [
-        "{init}{global:motif}, {global:difficulty}, {global:goal}, {global:artifact}, {global:danger}, {global:treasure}, {global:villain}"
+        "Motif: {global:motif}, difficulty: {global:difficulty}, goal: {global:goal}, artifact: {global:artifact}, danger: {global:danger}, treasure: {global:treasure}, villain: {global:villain}."
       ]
     }
   ]
