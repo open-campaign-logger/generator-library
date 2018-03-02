@@ -186,7 +186,7 @@
   "bugs": "",
   "to do": "More external table calls to add variety.",
   "see": "dungeon_entrance, dungeon_corridor, dungeon_room, dungeon_vault, Five_room_dungeon, hook_line_and_sinker_adventure",
-  "date": "2018-03-01",
+  "date": "2018-03-02",
   "authors": "ELF Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon, RolePlayingTips.com",
   "genre": "universal",
@@ -1106,26 +1106,29 @@
       "entries": [
         {
           "m": 1,
-          "v": "{lib:villain#apprentice}",
+          "v": "",
           "export": {
             "difficulty": "Apprentice",
-            "difficultydescription": "inexperienced adventurers"
+            "difficultydescription": "inexperienced adventurers",
+            "villain": "{lib:villain#apprentice}"
           }
         },
         {
           "m": 2,
-          "v": "{lib:villain#journeyman}",
+          "v": "",
           "export": {
             "difficulty": "Journeyman",
-            "difficultydescription": "adventurers with some experience"
+            "difficultydescription": "adventurers with some experience",
+            "villain": "{lib:villain#journeyman}"
           }
         },
         {
           "m": 3,
-          "v": "{lib:villain#master}",
+          "v": "",
           "export": {
             "difficulty": "Master",
-            "difficultydescription": "experienced adventurers"
+            "difficultydescription": "experienced adventurers",
+            "villain": "{lib:villain#master}"
           }
         }
       ]
@@ -1136,18 +1139,20 @@
       "entries": [
         {
           "m": 2,
-          "v": "{lib:villain#adept}",
+          "v": "",
           "export": {
             "difficulty": "Adept",
-            "difficultydescription": "highly experienced adventurers"
+            "difficultydescription": "highly experienced adventurers",
+            "villain": "{lib:villain#adept}"
           }
         },
         {
           "m": 1,
-          "v": "{lib:villain#legend}",
+          "v": "",
           "export": {
             "difficulty": "Legend",
-            "difficultydescription": "only the most experienced of adventurers"
+            "difficultydescription": "only the most experienced of adventurers",
+            "villain": "{lib:villain#legend}"
           }
         }
       ]

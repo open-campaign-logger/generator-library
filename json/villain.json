@@ -1,6 +1,6 @@
 {
   "name": "villain",
-  "resultPattern": "{init}{result}",
+  "resultPattern": "{result}",
   "variables": {
     "footnote": ""
   },
@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "Categorize villains by type.",
   "see": "actant, ally, Dungeon_adventure, hero, minion, scene",
-  "date": "2018-01-26",
+  "date": "2018-03-02",
   "authors": "Esko Vesala.",
   "sources": "Wikia.com",
   "genre": "fantasy",
@@ -25,7 +25,8 @@
         {
           "v": "",
           "export": {
-            "actant": "villain"
+            "actant": "villain",
+            "villain": "{villain}"
           }
         }
       ]
@@ -42,16 +43,16 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{villain}"
+        "{init}{global:villain}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {villain}",
-        "{villain} {complication}",
-        "{adjective} {villain} {complication}"
+        "{init}{adjective} {global:villain}",
+        "{init}{global:villain} {complication}",
+        "{init}{adjective} {global:villain} {complication}"
       ]
     },
     {
@@ -126,7 +127,7 @@
       "entries": [
         {
           "m": 1,
-          "v": "",
+          "v": "traitor",
           "export": {
             "villain": "traitor",
             "villainadjective": "scheming"
@@ -134,7 +135,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "madman",
           "export": {
             "villain": "madman",
             "villainadjective": "ravening"
@@ -142,7 +143,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "cultist",
           "export": {
             "villain": "cultist",
             "villainadjective": "fanatical"
@@ -150,7 +151,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "dark mistress",
           "export": {
             "villain": "dark mistress",
             "villainadjective": "alluring"
@@ -158,7 +159,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "lycanthrope",
           "export": {
             "villain": "lycanthrope",
             "villainadjective": "shapeshifting"
@@ -180,7 +181,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "false prophet",
           "export": {
             "villain": "false prophet",
             "villainadjective": "mysterious"
@@ -188,7 +189,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "high priest",
           "export": {
             "villain": "high priest",
             "villainadjective": "blood-stained"
@@ -196,7 +197,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "ogre",
           "export": {
             "villain": "ogre",
             "villainadjective": "ravenous"
@@ -204,7 +205,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "cannibal king",
           "export": {
             "villain": "cannibal king",
             "villainadjective": "sharp-toothed"
@@ -212,7 +213,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "inquisitor",
           "export": {
             "villain": "inquisitor",
             "villainadjective": "sadistic"
@@ -220,7 +221,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "serpentman",
           "export": {
             "villain": "serpentman",
             "villainadjective": "slithering"
@@ -228,7 +229,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "wight",
           "export": {
             "villain": "wight",
             "villainadjective": "undead"
@@ -242,7 +243,7 @@
       "entries": [
         {
           "m": 1,
-          "v": "",
+          "v": "general",
           "export": {
             "villain": "general",
             "villainadjective": "scheming"
@@ -250,7 +251,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "monstrosity",
           "export": {
             "villain": "monstrosity",
             "villainadjective": "inhuman"
@@ -258,7 +259,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "colossus",
           "export": {
             "villain": "colossus",
             "villainadjective": "hulking"
@@ -266,7 +267,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "abomination",
           "export": {
             "villain": "abomination",
             "villainadjective": "indescribable"
@@ -274,7 +275,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "faceless evil",
           "export": {
             "villain": "faceless evil",
             "villainadjective": "hellbound"
@@ -288,7 +289,7 @@
       "entries": [
         {
           "m": 1,
-          "v": "",
+          "v": "phantom",
           "export": {
             "villain": "phantom",
             "villainadjective": "spectral"
@@ -296,7 +297,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "wizard",
           "export": {
             "villain": "wizard",
             "villainadjective": "dark"
@@ -304,7 +305,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "necromancer",
           "export": {
             "villain": "necromancer",
             "villainadjective": "death-tainted"
@@ -312,7 +313,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "giant",
           "export": {
             "villain": "giant",
             "villainadjective": "enormous"
@@ -320,7 +321,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "wyvern",
           "export": {
             "villain": "wyvern",
             "villainadjective": "leather-winged"
@@ -334,7 +335,7 @@
       "entries": [
         {
           "m": 1,
-          "v": "",
+          "v": "lich",
           "export": {
             "villain": "lich",
             "villainadjective": "long-dead"
@@ -342,7 +343,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "dragon",
           "export": {
             "villain": "dragon",
             "villainadjective": "scale-armored"
@@ -350,7 +351,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "wyrm",
           "export": {
             "villain": "wyrm",
             "villainadjective": "ancient"
@@ -358,7 +359,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "demon lord",
           "export": {
             "villain": "demon lord",
             "villainadjective": "hateful"
@@ -366,7 +367,7 @@
         },
         {
           "m": 1,
-          "v": "",
+          "v": "old god",
           "export": {
             "villain": "old god",
             "villainadjective": "forgotten"
