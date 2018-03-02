@@ -393,13 +393,14 @@
     },
     {
       "name": "hiding place",
-      "explanation": "Hiding places for doors.",
+      "explanation": "Hiding places for hidden doors.",
       "format": "hidden door [{hiding place}]",
       "entries": [
-        "completely flush with the wall",
+        "almost seamlessly flush with the wall and difficult to detect",
         "behind curtains",
         "behind drapes",
         "behind a tapestry",
+        "behind a large painting",
         "behind a movable bookcase"
       ]
     },
