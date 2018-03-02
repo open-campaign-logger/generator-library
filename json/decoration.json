@@ -1,0 +1,241 @@
+{
+  "name": "decoration",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": "value"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Decorations.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-03-02",
+  "authors": "ELF Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "#item, #world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{decoration}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective} {decoration}"
+      ]
+    },
+    {
+      "name": "decoration",
+      "explanation": "The decoration types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common decoration types.",
+      "entries": [
+        "{carving}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare decoration types.",
+      "entries": [
+        "{etching}"
+      ]
+    },
+    {
+      "**************************************************": "DECORATIONS"
+    },
+    {
+      "name": "carving",
+      "explanation": "Carvings.",
+      "entries": [
+        "carved {symbol}",
+        "carving forming a {pattern} pattern",
+        "{shape} carving of {subject}",
+        "{symbol} carving overlaid with {lib:metal#precious}"
+      ]
+    },
+    {
+      "name": "etching",
+      "explanation": "Etchings.",
+      "entries": [
+        "etched {symbol}",
+        "{shape} etchings of {subject}"
+      ]
+    },
+    {
+      "**************************************************": "SUBJECT MATTER"
+    },
+    {
+      "name": "pattern",
+      "explanation": "Decorative patterns.",
+      "entries": [
+        "chaotic",
+        "asymmetric",
+        "symmetric",
+        "dotted",
+        "spiral",
+        "circular",
+        "wavy",
+        "striped",
+        "chequered",
+        "geometric",
+        "tiled"
+      ]
+    },
+    {
+      "name": "shape",
+      "explanation": "Decorative shapes.",
+      "entries": [
+        "geometric",
+        "spiraling",
+        "abstract",
+        "ornamental",
+        "bas-relief"
+      ]
+    },
+    {
+      "name": "subject",
+      "explanation": "Decoration subjects.",
+      "entries": [
+        "abstract shapes",
+        "strange patterns",
+        "runic shapes",
+        "various glyphs",
+        "vaguely humanoid forms",
+        "strange-looking beasts"
+      ]
+    },
+    {
+      "name": "symbol",
+      "explanation": "Decorative symbols.",
+      "entries": [
+        "markings",
+        "marks",
+        "signs",
+        "figures",
+        "symbols",
+        "runes",
+        "glyphs",
+        "sigils",
+        "hieroglyphs",
+        "magical sigil",
+        "magical pattern",
+        "magic circle",
+        "magic square"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Decorations once rumoured to have existed.",
+      "entries": [
+        "demonic symbol",
+        "angelic script"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Decorations for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "ogham writing"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Decorations for modern worlds.",
+      "entries": [
+        "{common}",
+        "fractal"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Decorations for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "nanotech-augmented pattern"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special decoration tables.",
+      "entries": [
+        "{adjective}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives related to decoration.",
+      "entries": [
+        "crude",
+        "sketchy",
+        "coarse",
+        "vague",
+        "smudged",
+        "hastily made",
+        "complicated",
+        "elegant",
+        "ornate",
+        "baroque",
+        "convoluted",
+        "graceful",
+        "elaborate",
+        "overelaborate",
+        "finely detailed"
+      ]
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}."
+      ]
+    }
+  ]
+}
