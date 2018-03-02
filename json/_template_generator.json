@@ -53,7 +53,7 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{XXX} {XXX}"
+        "{adjective} {XXX}"
       ]
     },
     {
@@ -121,6 +121,13 @@
     {
       "name": "special",
       "explanation": "Special XXX tables.",
+      "entries": [
+        "{adjective}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives related to XXX.",
       "entries": [
         "XXX"
       ]
