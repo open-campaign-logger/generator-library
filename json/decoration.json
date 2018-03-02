@@ -71,18 +71,31 @@
       "name": "common",
       "explanation": "Common decoration types.",
       "entries": [
-        "{carving}"
+        "{scratchmarks}",
+        "{engraving}",
+        "{carving}",
+        "{drawing}",
+        "{painting}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare decoration types.",
       "entries": [
-        "{etching}"
+        "{etching}",
+        "{bas relief}"
       ]
     },
     {
       "**************************************************": "DECORATIONS"
+    },
+    {
+      "name": "bas relief",
+      "explanation": "Bas-reliefs.",
+      "entries": [
+        "bas relief {symbol}",
+        "bas relief of a {shape} shape"
+      ]
     },
     {
       "name": "carving",
@@ -95,11 +108,43 @@
       ]
     },
     {
+      "name": "drawing",
+      "explanation": "Drawings.",
+      "entries": [
+        "drawn {symbol}",
+        "drawn {shape} shapes"
+      ]
+    },
+    {
+      "name": "engraving",
+      "explanation": "Engravings.",
+      "entries": [
+        "engraved {symbol}",
+        "engraved {shape} shapes"
+      ]
+    },
+    {
       "name": "etching",
       "explanation": "Etchings.",
       "entries": [
         "etched {symbol}",
         "{shape} etchings of {subject}"
+      ]
+    },
+    {
+      "name": "painting",
+      "explanation": "Paintings.",
+      "entries": [
+        "painted {symbol}",
+        "painted {shape} shapes"
+      ]
+    },
+    {
+      "name": "scratchmarks",
+      "explanation": "Scratchings.",
+      "entries": [
+        "scrathed {symbol}",
+        "scratchmarks in a {shape} shape"
       ]
     },
     {
@@ -129,8 +174,7 @@
         "geometric",
         "spiraling",
         "abstract",
-        "ornamental",
-        "bas-relief"
+        "ornamental"
       ]
     },
     {
@@ -188,7 +232,10 @@
       "explanation": "Decorations for modern worlds.",
       "entries": [
         "{common}",
-        "fractal"
+        "photograph",
+        "graphic print",
+        "print pattern",
+        "fractal image"
       ]
     },
     {
@@ -196,6 +243,7 @@
       "explanation": "Decorations for science fiction worlds.",
       "entries": [
         "{modern}",
+        "animated projection",
         "nanotech-augmented pattern"
       ]
     },
