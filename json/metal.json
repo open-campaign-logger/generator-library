@@ -9,7 +9,7 @@
   "note": "",
   "to do": "",
   "see": "material, stone",
-  "date": "2018-01-08",
+  "date": "2018-03-02",
   "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
   "sources": "TvTropes.org, Wikipedia.org.",
   "genre": "universal",
@@ -132,8 +132,14 @@
       "name": "precious",
       "explanation": "Valuable common metals.",
       "entries": [
-        "silver",
-        "gold",
+        {
+          "m": 5,
+          "v": "silver"
+        },
+        {
+          "m": 2,
+          "v": "gold"
+        },
         "{precious alloy}"
       ]
     },
