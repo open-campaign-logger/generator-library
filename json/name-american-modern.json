@@ -12,7 +12,7 @@
   "note": "",
   "to do": "",
   "see": "",
-  "date": "2018-02-26",
+  "date": "2018-03-04",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -1262,9 +1262,6 @@
     {
       "name": "unisex",
       "explanation": "Unisex names grouped by initials.",
-      "export": {
-        "gender": "unisex"
-      },
       "entries": [
         "{unisex a}",
         "{unisex b}",
