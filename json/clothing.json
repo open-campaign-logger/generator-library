@@ -1,7 +1,6 @@
 {
   "name": "clothing",
   "resultPattern": "{init}{result}",
-  "globals": {},
   "variables": {
     "footnote": ""
   },
@@ -11,8 +10,8 @@
   "bugs": "",
   "to do": "More cultures and time periods. What's the best approach for them?",
   "see": "adornment, NPC_Description",
-  "date": "2018-02-24",
-  "authors": "Esko Vesala.",
+  "date": "2018-03-04",
+  "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
   "categories": [
@@ -1847,7 +1846,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, female: {female}, male: {male}, unisex: {unisex}, nightwear: {nightwear}, swimwear: {swimwear}, infant: {infant}, child: {child}, pet: {pet}, special: {special}."
+        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, female: {female}, male: {male}, unisex: {unisex}, nightwear: {nightwear}, swimwear: {swimwear}, infant: {infant}, child: {child}, pet: {pet}, adjective: {adjective}, special: {special}."
       ]
     }
   ]
