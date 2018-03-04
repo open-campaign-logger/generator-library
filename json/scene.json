@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "actant, clue, Five_room_dungeon, hero, villain",
-  "date": "2018-03-02",
+  "date": "2018-03-04",
   "authors": "Esko Vesala.",
   "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon",
   "genre": "universal",
@@ -694,7 +694,7 @@
       "name": "chase beat",
       "explanation": "Beats for chasing the minions.",
       "entries": [
-        "A group of {lib:minion#summary}s spots the {lib:synonym#troupe} and attempts to flee and warn their master."
+        "{global:miniongroup} spots the {lib:synonym#troupe} and attempts to flee and warn their master."
       ]
     },
     {
@@ -717,7 +717,7 @@
       "name": "confrontation beat",
       "explanation": "Beats where the heroes confront the enemy in a non-physial fight.",
       "entries": [
-        "A {lib:minion#summary} sent by the {global:villain} issues a warning to the {lib:synonym#troupe}.",
+        "A {global:minion} sent by the {global:villain} issues a warning to the {lib:synonym#troupe}.",
         "The {global:villain} sends a threat to intimidate the {lib:synonym#troupe}."
       ]
     },
@@ -725,7 +725,7 @@
       "name": "contest beat",
       "explanation": "Beats where the heroes enter a ritualized contest.",
       "entries": [
-        "A {lib:minion#summary} challenges the {lib:synonym#troupe} to a {contest}."
+        "A {global:minion} challenges the {lib:synonym#troupe} to a {contest}."
       ]
     },
     {
@@ -748,7 +748,7 @@
       "name": "fight beat",
       "explanation": "Beats where the heroes must confront the enemy in a ritual fight.",
       "entries": [
-        "A {lib:minion#summary} champion challenges one of the {lib:synonym#troupe} to a ritual, unarmed fight."
+        "A {global:minion} champion challenges one of the {lib:synonym#troupe} to a ritual, unarmed fight."
       ]
     },
     {
@@ -813,14 +813,14 @@
       "name": "pursuit beat",
       "explanation": "Beats where the heroes are escaping the enemy.",
       "entries": [
-        "A far superior force of {lib:minion#summary}s spots the {lib:synonym#troupe} and starts a chase."
+        "A far superior force of {global:minions} spots the {lib:synonym#troupe} and starts a chase."
       ]
     },
     {
       "name": "race beat",
       "explanation": "Beats where the heroes race the opposition.",
       "entries": [
-        "A {lib:minion#summary} tries to reach the goal before the {lib:synonym#troupe}."
+        "A {global:minion} tries to reach the goal before the {lib:synonym#troupe}."
       ]
     },
     {
@@ -932,7 +932,7 @@
       "explanation": "Tough situations for helpless actants.",
       "format": "needs to be rescued from X.",
       "entries": [
-        "an aggressive {lib:minion#summary}",
+        "an aggressive {global:minion}",
         "a nest of vipers",
         "spreading fire from a campfire"
       ]

@@ -19,7 +19,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, hero, villain",
-  "date": "2018-01-26",
+  "date": "2018-03-04",
   "authors": "Esko Vesala.",
   "sources": "Five_room_dungeon",
   "genre": "fantasy",
@@ -313,7 +313,7 @@
       "entries": [
         {
           "m": 1,
-          "v": "{lib:minion}",
+          "v": "{lib:minion#summary}",
           "export": {
             "actant": "minion"
           }

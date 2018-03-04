@@ -186,7 +186,7 @@
   "bugs": "",
   "to do": "More external table calls to add variety.",
   "see": "dungeon_entrance, dungeon_corridor, dungeon_room, dungeon_vault, Five_room_dungeon, hook_line_and_sinker_adventure",
-  "date": "2018-03-02",
+  "date": "2018-03-04",
   "authors": "ELF Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon, RolePlayingTips.com",
   "genre": "universal",
@@ -200,7 +200,7 @@
       "entries": [
         {
           "m": 1,
-          "v": "{motif}{difficulty}{goal}{artifact}{danger}",
+          "v": "{motif}{difficulty}{minion}{goal}{artifact}{danger}",
           "export": {
             "treasure": "{lib:treasure#summary}",
             "villain": "{lib:villain#summary}"
@@ -368,7 +368,7 @@
           "v": "{fighting}",
           "export": {
             "goal": "vanquish",
-            "target": "the villain"
+            "target": "the {global:villain}"
           }
         },
         {
@@ -376,7 +376,7 @@
           "v": "{capturing}",
           "export": {
             "goal": "capture",
-            "target": "the villain"
+            "target": "the {global:villain}"
           }
         },
         {
@@ -1095,9 +1095,9 @@
       "entries": [
         {
           "m": 10,
-          "v": "{common}"
+          "v": "{common}{minion}"
         },
-        "{rare}"
+        "{rare}{minion}"
       ]
     },
     {
@@ -1158,11 +1158,24 @@
       ]
     },
     {
-      "**************************************************": "SPECIAL CASES"
+      "name": "minion",
+      "explanation": "The villain's minions.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "minion": "{lib:minion#summary}"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
     },
     {
       "name": "special",
-      "explanation": "Special room tables.",
+      "explanation": "Special tables.",
       "entries": [
         "{adjective}",
         "{key location}",
@@ -1293,7 +1306,7 @@
       "name": "test",
       "explanation": "Dumping the global variables.",
       "entries": [
-        "Motif: {global:motif}, difficulty: {global:difficulty}, goal: {global:goal}, artifact: {global:artifact}, danger: {global:danger}, treasure: {global:treasure}, villain: {global:villain}."
+        "Motif: {global:motif}, difficulty: {global:difficulty}, goal: {global:goal}, artifact: {global:artifact}, danger: {global:danger}, treasure: {global:treasure}, villain: {global:villain}, minion: {global:minion}."
       ]
     }
   ]

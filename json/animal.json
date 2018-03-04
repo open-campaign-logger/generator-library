@@ -7,7 +7,7 @@
     "actantgroup": "pack",
     "actantaction": "searching for food",
     "actantadjective": "wild",
-    "actantdescription": "The minion looks alert.",
+    "actantdescription": "The animal looks alert.",
     "attitude": "neutral",
     "footnote": ""
   },
@@ -17,7 +17,7 @@
   "bugs": "Different regions (tropical, polar, etc.)",
   "to do": "",
   "see": "activity, citizen, encounter, monster, nonhuman, plant",
-  "date": "2018-01-21",
+  "date": "2018-03-04",
   "authors": "",
   "sources": "Wikipedia.org",
   "genre": "",
