@@ -142,208 +142,46 @@
       "explanation": "Enemies suitable to face journeyman adventurers.",
       "entries": [
         "slave lord",
-        {
-          "m": 1,
-          "v": "slave lord",
-          "export": {
-            "villainsummary": "slave lord",
-            "villainadjective": "cruel"
-          }
-        },
-        {
-          "m": 1,
-          "v": "false prophet",
-          "export": {
-            "villainsummary": "false prophet",
-            "villainadjective": "mysterious"
-          }
-        },
-        {
-          "m": 1,
-          "v": "high priest",
-          "export": {
-            "villainsummary": "high priest",
-            "villainadjective": "blood-stained"
-          }
-        },
-        {
-          "m": 1,
-          "v": "ogre",
-          "export": {
-            "villainsummary": "ogre",
-            "villainadjective": "ravenous"
-          }
-        },
-        {
-          "m": 1,
-          "v": "cannibal king",
-          "export": {
-            "villainsummary": "cannibal king",
-            "villainadjective": "sharp-toothed"
-          }
-        },
-        {
-          "m": 1,
-          "v": "inquisitor",
-          "export": {
-            "villainsummary": "inquisitor",
-            "villainadjective": "sadistic"
-          }
-        },
-        {
-          "m": 1,
-          "v": "serpentman",
-          "export": {
-            "villainsummary": "serpentman",
-            "villainadjective": "slithering"
-          }
-        },
-        {
-          "m": 1,
-          "v": "wight",
-          "export": {
-            "villainsummary": "wight",
-            "villainadjective": "undead"
-          }
-        }
+        "false prophet",
+        "high priest",
+        "ogre",
+        "cannibal king",
+        "inquisitor",
+        "serpentman",
+        "wight"
       ]
     },
     {
       "name": "master",
       "explanation": "Enemies suitable to face master adventurers.",
       "entries": [
-        {
-          "m": 1,
-          "v": "general",
-          "export": {
-            "villain": "general",
-            "villainadjective": "scheming"
-          }
-        },
-        {
-          "m": 1,
-          "v": "monstrosity",
-          "export": {
-            "villainsummary": "monstrosity",
-            "villainadjective": "inhuman"
-          }
-        },
-        {
-          "m": 1,
-          "v": "colossus",
-          "export": {
-            "villainsummary": "colossus",
-            "villainadjective": "hulking"
-          }
-        },
-        {
-          "m": 1,
-          "v": "abomination",
-          "export": {
-            "villainsummary": "abomination",
-            "villainadjective": "indescribable"
-          }
-        },
-        {
-          "m": 1,
-          "v": "faceless evil",
-          "export": {
-            "villainsummary": "faceless evil",
-            "villainadjective": "hellbound"
-          }
-        }
+        "general",
+        "monstrosity",
+        "colossus",
+        "abomination",
+        "faceless evil"
       ]
     },
     {
       "name": "adept",
       "explanation": "Enemies suitable to face adept adventurers.",
       "entries": [
-        {
-          "m": 1,
-          "v": "phantom",
-          "export": {
-            "villainsummary": "phantom",
-            "villainadjective": "spectral"
-          }
-        },
-        {
-          "m": 1,
-          "v": "wizard",
-          "export": {
-            "villainsummary": "wizard",
-            "villainadjective": "dark"
-          }
-        },
-        {
-          "m": 1,
-          "v": "necromancer",
-          "export": {
-            "villainsummary": "necromancer",
-            "villainadjective": "death-tainted"
-          }
-        },
-        {
-          "m": 1,
-          "v": "giant",
-          "export": {
-            "villainsummary": "giant",
-            "villainadjective": "enormous"
-          }
-        },
-        {
-          "m": 1,
-          "v": "wyvern",
-          "export": {
-            "villainsummary": "wyvern",
-            "villainadjective": "leather-winged"
-          }
-        }
+        "phantom",
+        "wizard",
+        "necromancer",
+        "giant",
+        "wyvern"
       ]
     },
     {
       "name": "legend",
       "explanation": "Enemies suitable to face legendary adventurers.",
       "entries": [
-        {
-          "m": 1,
-          "v": "lich",
-          "export": {
-            "villainsummary": "lich",
-            "villainadjective": "long-dead"
-          }
-        },
-        {
-          "m": 1,
-          "v": "dragon",
-          "export": {
-            "villainsummary": "dragon",
-            "villainadjective": "scale-armored"
-          }
-        },
-        {
-          "m": 1,
-          "v": "wyrm",
-          "export": {
-            "villainsummary": "wyrm",
-            "villainadjective": "ancient"
-          }
-        },
-        {
-          "m": 1,
-          "v": "demon lord",
-          "export": {
-            "villainsummary": "demon lord",
-            "villainadjective": "hateful"
-          }
-        },
-        {
-          "m": 1,
-          "v": "old god",
-          "export": {
-            "villainsummary": "old god",
-            "villainadjective": "forgotten"
-          }
-        }
+        "lich",
+        "dragon",
+        "wyrm",
+        "demon lord",
+        "old god"
       ]
     },
     {
