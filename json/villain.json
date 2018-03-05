@@ -1,6 +1,10 @@
 {
   "name": "villain",
   "resultPattern": "{result}",
+  "globals": {
+    "villain": "",
+    "villainsummary": ""
+  },
   "variables": {
     "footnote": ""
   },
@@ -10,7 +14,7 @@
   "bugs": "",
   "to do": "Categorize villains by type.",
   "see": "actant, ally, Dungeon_adventure, hero, minion, scene",
-  "date": "2018-03-02",
+  "date": "2018-03-05",
   "authors": "Esko Vesala.",
   "sources": "Wikia.com",
   "genre": "fantasy",
@@ -26,7 +30,8 @@
           "v": "",
           "export": {
             "actant": "villain",
-            "villain": "{villain}"
+            "villain": "{villain}",
+            "villainadjective": "{adjective}"
           }
         }
       ]
@@ -125,57 +130,23 @@
       "name": "apprentice",
       "explanation": "Enemies suitable to face apprentice adventurers.",
       "entries": [
-        {
-          "m": 1,
-          "v": "traitor",
-          "export": {
-            "villain": "traitor",
-            "villainadjective": "scheming"
-          }
-        },
-        {
-          "m": 1,
-          "v": "madman",
-          "export": {
-            "villain": "madman",
-            "villainadjective": "ravening"
-          }
-        },
-        {
-          "m": 1,
-          "v": "cultist",
-          "export": {
-            "villain": "cultist",
-            "villainadjective": "fanatical"
-          }
-        },
-        {
-          "m": 1,
-          "v": "dark mistress",
-          "export": {
-            "villain": "dark mistress",
-            "villainadjective": "alluring"
-          }
-        },
-        {
-          "m": 1,
-          "v": "lycanthrope",
-          "export": {
-            "villain": "lycanthrope",
-            "villainadjective": "shapeshifting"
-          }
-        }
+        "traitor",
+        "madman",
+        "cultist",
+        "dark mistress",
+        "lycanthrope"
       ]
     },
     {
       "name": "journeyman",
       "explanation": "Enemies suitable to face journeyman adventurers.",
       "entries": [
+        "slave lord",
         {
           "m": 1,
-          "v": "",
+          "v": "slave lord",
           "export": {
-            "villain": "slave lord",
+            "villainsummary": "slave lord",
             "villainadjective": "cruel"
           }
         },
@@ -183,7 +154,7 @@
           "m": 1,
           "v": "false prophet",
           "export": {
-            "villain": "false prophet",
+            "villainsummary": "false prophet",
             "villainadjective": "mysterious"
           }
         },
@@ -191,7 +162,7 @@
           "m": 1,
           "v": "high priest",
           "export": {
-            "villain": "high priest",
+            "villainsummary": "high priest",
             "villainadjective": "blood-stained"
           }
         },
@@ -199,7 +170,7 @@
           "m": 1,
           "v": "ogre",
           "export": {
-            "villain": "ogre",
+            "villainsummary": "ogre",
             "villainadjective": "ravenous"
           }
         },
@@ -207,7 +178,7 @@
           "m": 1,
           "v": "cannibal king",
           "export": {
-            "villain": "cannibal king",
+            "villainsummary": "cannibal king",
             "villainadjective": "sharp-toothed"
           }
         },
@@ -215,7 +186,7 @@
           "m": 1,
           "v": "inquisitor",
           "export": {
-            "villain": "inquisitor",
+            "villainsummary": "inquisitor",
             "villainadjective": "sadistic"
           }
         },
@@ -223,7 +194,7 @@
           "m": 1,
           "v": "serpentman",
           "export": {
-            "villain": "serpentman",
+            "villainsummary": "serpentman",
             "villainadjective": "slithering"
           }
         },
@@ -231,7 +202,7 @@
           "m": 1,
           "v": "wight",
           "export": {
-            "villain": "wight",
+            "villainsummary": "wight",
             "villainadjective": "undead"
           }
         }
@@ -253,7 +224,7 @@
           "m": 1,
           "v": "monstrosity",
           "export": {
-            "villain": "monstrosity",
+            "villainsummary": "monstrosity",
             "villainadjective": "inhuman"
           }
         },
@@ -261,7 +232,7 @@
           "m": 1,
           "v": "colossus",
           "export": {
-            "villain": "colossus",
+            "villainsummary": "colossus",
             "villainadjective": "hulking"
           }
         },
@@ -269,7 +240,7 @@
           "m": 1,
           "v": "abomination",
           "export": {
-            "villain": "abomination",
+            "villainsummary": "abomination",
             "villainadjective": "indescribable"
           }
         },
@@ -277,7 +248,7 @@
           "m": 1,
           "v": "faceless evil",
           "export": {
-            "villain": "faceless evil",
+            "villainsummary": "faceless evil",
             "villainadjective": "hellbound"
           }
         }
@@ -291,7 +262,7 @@
           "m": 1,
           "v": "phantom",
           "export": {
-            "villain": "phantom",
+            "villainsummary": "phantom",
             "villainadjective": "spectral"
           }
         },
@@ -299,7 +270,7 @@
           "m": 1,
           "v": "wizard",
           "export": {
-            "villain": "wizard",
+            "villainsummary": "wizard",
             "villainadjective": "dark"
           }
         },
@@ -307,7 +278,7 @@
           "m": 1,
           "v": "necromancer",
           "export": {
-            "villain": "necromancer",
+            "villainsummary": "necromancer",
             "villainadjective": "death-tainted"
           }
         },
@@ -315,7 +286,7 @@
           "m": 1,
           "v": "giant",
           "export": {
-            "villain": "giant",
+            "villainsummary": "giant",
             "villainadjective": "enormous"
           }
         },
@@ -323,7 +294,7 @@
           "m": 1,
           "v": "wyvern",
           "export": {
-            "villain": "wyvern",
+            "villainsummary": "wyvern",
             "villainadjective": "leather-winged"
           }
         }
@@ -337,7 +308,7 @@
           "m": 1,
           "v": "lich",
           "export": {
-            "villain": "lich",
+            "villainsummary": "lich",
             "villainadjective": "long-dead"
           }
         },
@@ -345,7 +316,7 @@
           "m": 1,
           "v": "dragon",
           "export": {
-            "villain": "dragon",
+            "villainsummary": "dragon",
             "villainadjective": "scale-armored"
           }
         },
@@ -353,7 +324,7 @@
           "m": 1,
           "v": "wyrm",
           "export": {
-            "villain": "wyrm",
+            "villainsummary": "wyrm",
             "villainadjective": "ancient"
           }
         },
@@ -361,7 +332,7 @@
           "m": 1,
           "v": "demon lord",
           "export": {
-            "villain": "demon lord",
+            "villainsummary": "demon lord",
             "villainadjective": "hateful"
           }
         },
@@ -369,7 +340,7 @@
           "m": 1,
           "v": "old god",
           "export": {
-            "villain": "old god",
+            "villainsummary": "old god",
             "villainadjective": "forgotten"
           }
         }
@@ -444,14 +415,24 @@
       "explanation": "Adjectives describing the villain.",
       "entries": [
         "dark",
+        "forgotten",
         "mysterious",
         "relentless",
+        "cruel",
         "hateful",
         "spiteful",
         "sadistic",
+        "ravenous",
+        "fanatical",
         "scheming",
         "hostile",
+        "ravening",
+        "inhuman",
         "malevolent",
+        "scale-armored",
+        "blood-stained",
+        "death-tainted",
+        "hellbound",
         "evil",
         "{rare adjective}"
       ]
@@ -461,9 +442,20 @@
       "explanation": "",
       "entries": [
         "charismatic",
+        "alluring",
+        "indescribable",
+        "enormous",
+        "hulking",
         "ancient",
         "vile",
+        "sharp-toothed",
+        "slithering",
         "horned",
+        "leather-winged",
+        "long-dead",
+        "undead",
+        "spectral",
+        "shapeshifting",
         "elemental"
       ]
     },
