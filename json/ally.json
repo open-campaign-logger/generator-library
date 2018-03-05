@@ -32,8 +32,8 @@
   "bugs": "",
   "to do": "Categorize allies by type.",
   "see": "actant, Dungeon_adventure, hero, minion, scene, villain",
-  "date": "2018-01-21",
-  "authors": "Esko Vesala.",
+  "date": "2018-03-05",
+  "authors": "ELF Vesala.",
   "sources": "Wikia.com",
   "genre": "fantasy",
   "categories": [
@@ -266,8 +266,6 @@
       "entries": [
         "{adjective}",
         "{substantive}",
-        "{strategy}",
-        "{goal}",
         "{complication}"
       ]
     },
@@ -291,22 +289,6 @@
       "explanation": "Substantives describing the ally.",
       "entries": [
         "scoundrel"
-      ]
-    },
-    {
-      "name": "strategy",
-      "explanation": "The ally's chosen approach.",
-      "entries": [
-        "survivalist",
-        "leader",
-        "mentor"
-      ]
-    },
-    {
-      "name": "goal",
-      "explanation": "The ally's goal.",
-      "entries": [
-        "fight for the cause of good"
       ]
     },
     {

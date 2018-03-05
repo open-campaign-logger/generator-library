@@ -1,6 +1,6 @@
 {
   "name": "villain",
-  "resultPattern": "{result}",
+  "resultPattern": "{init}{result}",
   "globals": {
     "villain": "",
     "villainsummary": ""
@@ -15,7 +15,7 @@
   "to do": "Categorize villains by type.",
   "see": "actant, ally, Dungeon_adventure, hero, minion, scene",
   "date": "2018-03-05",
-  "authors": "Esko Vesala.",
+  "authors": "ELF Vesala.",
   "sources": "Wikia.com",
   "genre": "fantasy",
   "categories": [
@@ -30,7 +30,6 @@
           "v": "",
           "export": {
             "actant": "villain",
-            "villain": "{villain}",
             "villainadjective": "{adjective}"
           }
         }
@@ -48,16 +47,16 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{init}{global:villain}"
+        "{villain}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{init}{adjective} {global:villain}",
-        "{init}{global:villain} {complication}",
-        "{init}{adjective} {global:villain} {complication}"
+        "{init}{adjective} {villain}",
+        "{init}{villain} {complication}",
+        "{init}{adjective} {villain} {complication}"
       ]
     },
     {
@@ -131,24 +130,21 @@
       "explanation": "Enemies suitable to face apprentice adventurers.",
       "entries": [
         "traitor",
-        "madman",
+        "thug",
+        "bandit",
+        "killer",
+        "diabolist",
         "cultist",
-        "dark mistress",
-        "lycanthrope"
+        "madman"
       ]
     },
     {
       "name": "journeyman",
       "explanation": "Enemies suitable to face journeyman adventurers.",
       "entries": [
-        "slave lord",
+        "slaver",
         "false prophet",
-        "high priest",
-        "ogre",
-        "cannibal king",
-        "inquisitor",
-        "serpentman",
-        "wight"
+        "high priest"
       ]
     },
     {
@@ -156,36 +152,26 @@
       "explanation": "Enemies suitable to face master adventurers.",
       "entries": [
         "general",
-        "monstrosity",
-        "colossus",
-        "abomination",
-        "faceless evil"
+        "monstrosity"
       ]
     },
     {
       "name": "adept",
       "explanation": "Enemies suitable to face adept adventurers.",
       "entries": [
-        "phantom",
-        "wizard",
-        "necromancer",
-        "giant",
-        "wyvern"
+        "giant"
       ]
     },
     {
       "name": "legend",
       "explanation": "Enemies suitable to face legendary adventurers.",
       "entries": [
-        "lich",
-        "dragon",
-        "wyrm",
         "demon lord",
         "old god"
       ]
     },
     {
-      "**************************************************": "WORLD-SPECIFIC"
+      "**************************************************": "MYTHIC WORLDS"
     },
     {
       "name": "myth",
@@ -205,14 +191,79 @@
       ]
     },
     {
+      "**************************************************": "FANTASY WORLDS"
+    },
+    {
       "name": "fantasy",
       "explanation": "Villains for fantasy worlds (with no basis in myth).",
       "entries": [
-        "bandit",
-        "enchantress",
-        "diabolist",
-        "necromancer"
+        "{myth}",
+        "{fantasy apprentice}",
+        "{fantasy journeyman}",
+        "{fantasy master}",
+        "{fantasy adept}",
+        "{fantasy legend}"
       ]
+    },
+    {
+      "name": "fantasy apprentice",
+      "explanation": "Enemies suitable to face apprentice adventurers.",
+      "entries": [
+        "{apprentice}",
+        "enchantress",
+        "dark mistress",
+        "lycanthrope"
+      ]
+    },
+    {
+      "name": "fantasy journeyman",
+      "explanation": "Enemies suitable to face journeyman adventurers.",
+      "entries": [
+        "{journeyman}",
+        "slave lord",
+        "ogre",
+        "cannibal king",
+        "inquisitor",
+        "serpentman",
+        "wight"
+      ]
+    },
+    {
+      "name": "fantasy master",
+      "explanation": "Fantasy enemies suitable to face master adventurers.",
+      "entries": [
+        "{master}",
+        "colossus",
+        "abomination",
+        "faceless evil"
+      ]
+    },
+    {
+      "name": "fantasy adept",
+      "explanation": "Fantasy enemies suitable to face adept adventurers.",
+      "entries": [
+        "{adept}",
+        "phantom",
+        "wizard",
+        "necromancer",
+        "giant",
+        "wyvern"
+      ]
+    },
+    {
+      "name": "fantasy legend",
+      "explanation": "Fantasy enemies suitable to face legendary adventurers.",
+      "entries": [
+        "{legend}",
+        "lich",
+        "dragon",
+        "wyrm",
+        "demon lord",
+        "old god"
+      ]
+    },
+    {
+      "**************************************************": "MODERN WORLDS"
     },
     {
       "name": "modern",
@@ -227,6 +278,9 @@
       ]
     },
     {
+      "**************************************************": "FUTURISTIC WORLDS"
+    },
+    {
       "name": "futuristic",
       "explanation": "Villains for science fiction worlds.",
       "entries": [
@@ -239,12 +293,10 @@
     },
     {
       "name": "special",
-      "explanation": "Special villain types.",
+      "explanation": "Special villain tables.",
       "entries": [
         "{adjective}",
         "{substantive}",
-        "{strategy}",
-        "{goal}",
         "{complication}"
       ]
     },
@@ -306,31 +358,6 @@
         "villain",
         "blackguard",
         "miscreant"
-      ]
-    },
-    {
-      "name": "strategy",
-      "explanation": "The villain's chosen approach.",
-      "entries": [
-        "survivalist",
-        "loner",
-        "maniac",
-        "strategist",
-        "manipulator",
-        "leader",
-        "mentor"
-      ]
-    },
-    {
-      "name": "goal",
-      "explanation": "The villain's goal.",
-      "entries": [
-        "gain wealth",
-        "gain power",
-        "achieve infamy",
-        "cause suffering",
-        "serve evil",
-        "dominate the world"
       ]
     },
     {
