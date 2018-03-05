@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-03-02",
+  "date": "2018-03-05",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -71,7 +71,7 @@
       "name": "common",
       "explanation": "Common decoration types.",
       "entries": [
-        "{scratchmarks}",
+        "{scratching}",
         "{engraving}",
         "{carving}",
         "{drawing}",
@@ -140,8 +140,8 @@
       ]
     },
     {
-      "name": "scratchmarks",
-      "explanation": "Scratchings.",
+      "name": "scratching",
+      "explanation": "Scratchmarks.",
       "entries": [
         "scrathed {symbol}",
         "scratchmarks in a {shape} shape"
@@ -248,6 +248,86 @@
       ]
     },
     {
+      "**************************************************": "MATERIALS"
+    },
+    {
+      "name": "material",
+      "explanation": "Decorations for different types of surfaces.",
+      "entries": [
+        "{bone}",
+        "{ceramic}",
+        "{glass}",
+        "{leather}",
+        "{metal}",
+        "{stone}",
+        "{wood}"
+      ]
+    },
+    {
+      "name": "bone",
+      "explanation": "Ivory, horn and other bone-like materials.",
+      "entries": [
+        "{scratching}",
+        "{carving}",
+        "{painting}",
+        "{bas relief}"
+      ]
+    },
+    {
+      "name": "ceramic",
+      "explanation": "Decoration types on clay and other earthenware.",
+      "entries": [
+        "{drawing}",
+        "{painting}",
+        "{bas relief}"
+      ]
+    },
+    {
+      "name": "glass",
+      "explanation": "Decoration types on glass.",
+      "entries": [
+        "{painting}"
+      ]
+    },
+    {
+      "name": "leather",
+      "explanation": "Decoration types on glass.",
+      "entries": [
+        "{drawing}",
+        "{painting}"
+      ]
+    },
+    {
+      "name": "metal",
+      "explanation": "Decoration types on metallic surfaces.",
+      "entries": [
+        "{engraving}",
+        "{painting}",
+        "{etching}",
+        "{bas relief}"
+      ]
+    },
+    {
+      "name": "stone",
+      "explanation": "Decoration types on rock surfaces.",
+      "entries": [
+        "{scratching}",
+        "{carving}",
+        "{painting}",
+        "{bas relief}"
+      ]
+    },
+    {
+      "name": "wood",
+      "explanation": "Decoration types on timber.",
+      "entries": [
+        "{scratching}",
+        "{carving}",
+        "{painting}",
+        "{bas relief}"
+      ]
+    },
+    {
       "**************************************************": "SPECIAL TABLES"
     },
     {
@@ -282,7 +362,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}."
+        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}. Material: {material}."
       ]
     }
   ]
