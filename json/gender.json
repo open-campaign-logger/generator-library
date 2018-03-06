@@ -1,5 +1,5 @@
 {
-  "name": "character-gender",
+  "name": "gender",
   "resultPattern": "{init}{result}",
   "globals": {
     "gender": "",
@@ -20,7 +20,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-03-04",
+  "date": "2018-03-06",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",

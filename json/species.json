@@ -1,5 +1,5 @@
 {
-  "name": "character-species",
+  "name": "species",
   "resultPattern": "{init}{result}",
   "globals": {
     "variable": "value"
@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-03-04",
+  "date": "2018-03-06",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",

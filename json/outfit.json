@@ -1,5 +1,5 @@
 {
-  "name": "character-outfit",
+  "name": "outfit",
   "resultPattern": "{init}{result}",
   "globals": {
     "variable": "value"
@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-02-24",
+  "date": "2018-03-06",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "universal",
