@@ -42,7 +42,7 @@
   "bugs": "Developepment currently on hold, waiting for global variable support.",
   "to do": "Most of it... Starting from genre? ",
   "see": "",
-  "date": "2018-03-04",
+  "date": "2018-03-06",
   "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
   "genre": "fantasy",
@@ -53,8 +53,8 @@
       "name": "init",
       "explanation": "Initializing the required global variables, if any.",
       "export": {
-        "species": "{lib:character-species}",
-        "gender": "{lib:character-gender}",
+        "species": "{lib:species}",
+        "gender": "{lib:gender}",
         "civilization": "{civilization}",
         "wealth": "{wealth}"
       },
@@ -74,14 +74,14 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{name} {global:para}{description}"
+        "{name}: {basic}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{name} {global:para}{description}"
+        "{description}"
       ]
     },
     {
@@ -100,32 +100,52 @@
       "name": "common",
       "explanation": "Common description types.",
       "entries": [
-        "{basic}"
+        "{name} {global:para}{basic} {global:para}{attire} {global:para}{background} {global:para}{personality}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare description types.",
       "entries": [
-        "{basic}"
+        "{name} {global:para}{basic}"
       ]
     },
     {
       "*********************************************": "DESCRIPTION ELEMENTS"
     },
     {
-      "name": "name",
-      "explanation": "The character's name.",
+      "name": "attire",
+      "explanation": "The costume of the person.",
       "entries": [
-        "{global:startbold}{lib:name-pictish}{global:endbold}",
-        "{global:startbold}{lib:name-american-modern#unisex} {lib:name-american-modern#surname}{global:endbold}"
+        "{lib:outfit}"
       ]
     },
     {
       "name": "basic",
       "explanation": "Basic description: age, gender, species, profession.",
       "entries": [
-        "{global:age} {global:gender} {global:speciesmentioned}  {lib:personCraft}"
+        "{global:age} {global:gender} {global:speciesmentioned} {lib:personCraft}"
+      ]
+    },
+    {
+      "name": "background",
+      "explanation": "The background of the person.",
+      "entries": [
+        "{lib:employment}"
+      ]
+    },
+    {
+      "name": "name",
+      "explanation": "The character's name.",
+      "entries": [
+        "{global:startbold}{lib:name-pictish}{global:endbold}"
+      ]
+    },
+    {
+      "name": "personality",
+      "explanation": "Psychology of the person.",
+      "entries": [
+        "{global:para}{global:subject} {lib:edge}.  {global:para}{global:subject} {lib:flaw}. {global:para}{global:subject} {lib:quirk}."
       ]
     },
     {
