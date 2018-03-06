@@ -14,8 +14,8 @@
   "bugs": "",
   "to do": "",
   "see": "edge, quirk, strategy",
-  "date": "2018-02-10",
-  "authors": "Ron Calbick (as extracted from his goblin-names.json generator), Esko Vesala.",
+  "date": "2018-03-06",
+  "authors": "Ron Calbick (as extracted from his goblin-names.json generator), ELF Vesala.",
   "sources": "Ron Calbick: 'Goblin Generator'.",
   "genre": "universal",
   "categories": [
@@ -46,14 +46,14 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{XXX}"
+        "{flaw}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{XXX} {XXX}"
+        "{frequency} {flaw}"
       ]
     },
     {
@@ -114,7 +114,7 @@
       "name": "spiritual",
       "explanation": "Spirit-related flaws.",
       "entries": [
-        "XXX"
+        "tainted soul"
       ]
     },
     {
@@ -124,7 +124,9 @@
       "name": "deformed",
       "explanation": "Malformation-related disadvantages.",
       "entries": [
+        "has a club foot",
         "takes great pride in a club foot, claiming to be marked as favored by the gods",
+        "has a club hand",
         "takes great pride in a club hand, claiming to be marked as favored by the gods"
       ]
     },
@@ -195,7 +197,8 @@
       "name": "senses",
       "explanation": "Sense-related discadvantages.",
       "entries": [
-        "has very poor eyesight and has a tendency to squint to see anything more than a short distance away"
+        "has very poor eyesight and has a tendency to squint to see anything more than a short distance away",
+        "has no sense of smell"
       ]
     },
     {
@@ -203,14 +206,14 @@
     },
     {
       "name": "myth",
-      "explanation": "XXX once rumoured to have existed.",
+      "explanation": "Flaws once rumoured to have existed.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "fantasy",
-      "explanation": "XXX for fantasy worlds (with no basis in myth).",
+      "explanation": "Flaws for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
         "{magical}",
@@ -225,7 +228,7 @@
     },
     {
       "name": "modern",
-      "explanation": "XXX for modern worlds.",
+      "explanation": "Flaws for modern worlds.",
       "entries": [
         "{common}",
         "XXX"
@@ -233,7 +236,7 @@
     },
     {
       "name": "futuristic",
-      "explanation": "XXX for science fiction worlds.",
+      "explanation": "Flaws for science fiction worlds.",
       "entries": [
         "{modern}",
         "XXX"
@@ -244,9 +247,16 @@
     },
     {
       "name": "special",
-      "explanation": "Special XXX tables.",
+      "explanation": "Special flaw tables.",
       "entries": [
-        "XXX"
+        "{frequency}"
+      ]
+    },
+    {
+      "name": "frequency",
+      "explanation": "How often the flaw is demonstrated.",
+      "entries": [
+        "when excited"
       ]
     },
     {
