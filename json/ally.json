@@ -1,14 +1,7 @@
 {
   "name": "ally",
-  "resultPattern": "{HTML formatting}{init}{result}",
-  "variables": {
-    "starttitle": "<H2>",
-    "endtitle": "</H2>",
-    "startheading": "<H3>",
-    "endheading": "</H3>",
-    "startbold": "<B>",
-    "endbold": "</B>",
-    "para": "<P>",
+  "resultPattern": "{init}{result}",
+  "globals": {
     "difficulty": "",
     "difficultydescription": "",
     "actant": "ally",
@@ -23,7 +16,9 @@
     "allygroup": "group",
     "allyaction": "comstantly alert",
     "allyadjective": "trustworthy",
-    "allydescription": "The ally is looking at the group approvingly.",
+    "allydescription": "The ally is looking at the group approvingly."
+  },
+  "variables": {
     "footnote": ""
   },
   "explanation": "Randomized allies.",
@@ -32,7 +27,7 @@
   "bugs": "",
   "to do": "Categorize allies by type.",
   "see": "actant, Dungeon_adventure, hero, minion, scene, villain",
-  "date": "2018-03-05",
+  "date": "2018-03-06",
   "authors": "ELF Vesala.",
   "sources": "Wikia.com",
   "genre": "fantasy",
@@ -216,45 +211,6 @@
       "entries": [
         "{modern}",
         "space pilot"
-      ]
-    },
-    {
-      "**************************************************": "FORMATTING"
-    },
-    {
-      "name": "HTML formatting",
-      "explanation": "Set variables for formatting the output as HTML",
-      "entries": [
-        {
-          "v": "",
-          "set": {
-            "starttitle": "<H2>",
-            "endtitle": "</H2>",
-            "startheading": "<H3>",
-            "endheading": "</H3>",
-            "startbold": "<B>",
-            "endbold": "</B>",
-            "para": "<P>"
-          }
-        }
-      ]
-    },
-    {
-      "name": "CL formatting",
-      "explanation": "Set variables for formatting the output for Campaign Logger",
-      "entries": [
-        {
-          "v": "",
-          "set": {
-            "starttitle": "{b|",
-            "endtitle": "}\r\n\r\n",
-            "startheading": "\r\n\r\n{b|",
-            "endheading": "}",
-            "startbold": "{b|",
-            "endbold": "}",
-            "para": "\r\n"
-          }
-        }
       ]
     },
     {
