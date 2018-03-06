@@ -1110,7 +1110,7 @@
           "export": {
             "difficulty": "Apprentice",
             "difficultydescription": "inexperienced adventurers",
-            "villain": "{lib:villain#apprentice}"
+            "villain": "{lib:villain#fantasy apprentice}"
           }
         },
         {
@@ -1119,7 +1119,7 @@
           "export": {
             "difficulty": "Journeyman",
             "difficultydescription": "adventurers with some experience",
-            "villain": "{lib:villain#journeyman}"
+            "villain": "{lib:villain#fantasy journeyman}"
           }
         },
         {
@@ -1128,7 +1128,7 @@
           "export": {
             "difficulty": "Master",
             "difficultydescription": "experienced adventurers",
-            "villain": "{lib:villain#master}"
+            "villain": "{lib:villain#fantasy master}"
           }
         }
       ]
@@ -1143,7 +1143,7 @@
           "export": {
             "difficulty": "Adept",
             "difficultydescription": "highly experienced adventurers",
-            "villain": "{lib:villain#adept}"
+            "villain": "{lib:villain#fantasy adept}"
           }
         },
         {
@@ -1152,7 +1152,7 @@
           "export": {
             "difficulty": "Legend",
             "difficultydescription": "only the most experienced of adventurers",
-            "villain": "{lib:villain#legend}"
+            "villain": "{lib:villain#fantasy legend}"
           }
         }
       ]

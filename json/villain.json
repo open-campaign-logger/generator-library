@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "Categorize villains by type.",
   "see": "actant, ally, Dungeon_adventure, hero, minion, scene",
-  "date": "2018-03-05",
+  "date": "2018-03-06",
   "authors": "ELF Vesala.",
   "sources": "Wikia.com",
   "genre": "fantasy",
@@ -151,8 +151,7 @@
       "name": "master",
       "explanation": "Enemies suitable to face master adventurers.",
       "entries": [
-        "general",
-        "monstrosity"
+        "general"
       ]
     },
     {
@@ -166,7 +165,6 @@
       "name": "legend",
       "explanation": "Enemies suitable to face legendary adventurers.",
       "entries": [
-        "demon lord",
         "old god"
       ]
     },
@@ -175,19 +173,53 @@
     },
     {
       "name": "myth",
-      "explanation": "Villains once rumoured to have existed.",
+      "explanation": "Villains for mythic worlds.",
+      "entries": [
+        "{myth apprentice}",
+        "{myth journeyman}",
+        "{myth master}",
+        "{myth adept}",
+        "{myth legend}"
+      ]
+    },
+    {
+      "name": "myth apprentice",
+      "explanation": "Mythic enemies suitable to face apprentice adventurers.",
+      "entries": [
+        "döppelganger",
+        "adult changeling"
+      ]
+    },
+    {
+      "name": "myth journeyman",
+      "explanation": "Mythic enemies suitable to face journeyman adventurers.",
       "entries": [
         "hag",
         "witch",
+        "vengeful ghost"
+      ]
+    },
+    {
+      "name": "myth master",
+      "explanation": "Mythic enemies suitable to face master adventurers.",
+      "entries": [
         "Black Annis",
         "Jenny Greenteeth",
-        "Baobhan Sith",
-        "kallikantzaros",
-        "döppelganger",
-        "adult changeling",
-        "lamia",
-        "vampire",
-        "vengeful ghost"
+        "Baobhan Sith"
+      ]
+    },
+    {
+      "name": "myth adept",
+      "explanation": "Mythic enemies suitable to face adept adventurers.",
+      "entries": [
+        "kallikantzaros"
+      ]
+    },
+    {
+      "name": "myth legend",
+      "explanation": "Mythic enemies suitable to face legendary adventurers.",
+      "entries": [
+        "Tarrasque"
       ]
     },
     {
@@ -197,7 +229,6 @@
       "name": "fantasy",
       "explanation": "Villains for fantasy worlds (with no basis in myth).",
       "entries": [
-        "{myth}",
         "{fantasy apprentice}",
         "{fantasy journeyman}",
         "{fantasy master}",
@@ -207,9 +238,10 @@
     },
     {
       "name": "fantasy apprentice",
-      "explanation": "Enemies suitable to face apprentice adventurers.",
+      "explanation": "Fantasy enemies suitable to face apprentice adventurers.",
       "entries": [
         "{apprentice}",
+        "{myth apprentice}",
         "enchantress",
         "dark mistress",
         "lycanthrope"
@@ -217,9 +249,10 @@
     },
     {
       "name": "fantasy journeyman",
-      "explanation": "Enemies suitable to face journeyman adventurers.",
+      "explanation": "Fantasy enemies suitable to face journeyman adventurers.",
       "entries": [
         "{journeyman}",
+        "{myth journeyman}",
         "slave lord",
         "ogre",
         "cannibal king",
@@ -233,9 +266,12 @@
       "explanation": "Fantasy enemies suitable to face master adventurers.",
       "entries": [
         "{master}",
+        "{myth master}",
+        "monstrosity",
         "colossus",
         "abomination",
-        "faceless evil"
+        "faceless evil",
+        "wyvern"
       ]
     },
     {
@@ -243,11 +279,14 @@
       "explanation": "Fantasy enemies suitable to face adept adventurers.",
       "entries": [
         "{adept}",
+        "{myth adept}",
+        "vampire",
+        "lamia",
         "phantom",
         "wizard",
         "necromancer",
         "giant",
-        "wyvern"
+        "dragon"
       ]
     },
     {
@@ -255,8 +294,8 @@
       "explanation": "Fantasy enemies suitable to face legendary adventurers.",
       "entries": [
         "{legend}",
+        "{myth legend}",
         "lich",
-        "dragon",
         "wyrm",
         "demon lord",
         "old god"
@@ -269,11 +308,50 @@
       "name": "modern",
       "explanation": "Villains for modern worlds.",
       "entries": [
-        "{common}",
-        "drug trafficker",
-        "human trafficker",
-        "corrupt politician",
-        "mafioso",
+        "{modern apprentice}",
+        "{modern journeyman}",
+        "{modern master}",
+        "{modern adept}",
+        "{modern legend}"
+      ]
+    },
+    {
+      "name": "modern apprentice",
+      "explanation": "Modern enemies suitable to face apprentice adventurers.",
+      "entries": [
+        "{apprentice}",
+        "drug trafficker"
+      ]
+    },
+    {
+      "name": "modern journeyman",
+      "explanation": "Modern enemies suitable to face journeyman adventurers.",
+      "entries": [
+        "{journeyman}",
+        "human trafficker"
+      ]
+    },
+    {
+      "name": "modern master",
+      "explanation": "Modern enemies suitable to face master adventurers.",
+      "entries": [
+        "{master}",
+        "corrupt politician"
+      ]
+    },
+    {
+      "name": "modern adept",
+      "explanation": "Modern enemies suitable to face adept adventurers.",
+      "entries": [
+        "{adept}",
+        "mafioso"
+      ]
+    },
+    {
+      "name": "modern legend",
+      "explanation": "Modern enemies suitable to face legendary adventurers.",
+      "entries": [
+        "{legend}",
         "crime boss"
       ]
     },
@@ -282,10 +360,48 @@
     },
     {
       "name": "futuristic",
-      "explanation": "Villains for science fiction worlds.",
+      "explanation": "Villains for futuristic worlds.",
       "entries": [
-        "{modern}",
-        "XXX"
+        "{futuristic apprentice}",
+        "{futuristic journeyman}",
+        "{futuristic master}",
+        "{futuristic adept}",
+        "{futuristic legend}"
+      ]
+    },
+    {
+      "name": "futuristic apprentice",
+      "explanation": "Futuristic enemies suitable for apprentice adventurers.",
+      "entries": [
+        "{modern apprentice}"
+      ]
+    },
+    {
+      "name": "futuristic journeyman",
+      "explanation": "Futuristic enemies suitable for journeyman adventurers.",
+      "entries": [
+        "{modern journeyman}"
+      ]
+    },
+    {
+      "name": "futuristic master",
+      "explanation": "Futuristic enemies suitable to face master adventurers.",
+      "entries": [
+        "{modern master}"
+      ]
+    },
+    {
+      "name": "futuristic adept",
+      "explanation": "Futuristic enemies suitable for adept adventurers.",
+      "entries": [
+        "{modern adept}"
+      ]
+    },
+    {
+      "name": "futuristic legend",
+      "explanation": "Futuristic enemies suitable for legendary adventurers.",
+      "entries": [
+        "{modern legend}"
       ]
     },
     {
