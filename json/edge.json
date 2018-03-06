@@ -14,8 +14,8 @@
   "bugs": "",
   "to do": "",
   "see": "flaw, quirk, strategy",
-  "date": "2018-02-10",
-  "authors": "Ron Calbick (as extracted from his goblin-names.json generator), Esko Vesala.",
+  "date": "2018-03-06",
+  "authors": "Ron Calbick (as extracted from his goblin-names.json generator), ELF Vesala.",
   "sources": "Ron Calbick: 'Goblin Generator'.",
   "genre": "universal",
   "categories": [
@@ -112,7 +112,7 @@
       "name": "spiritual",
       "explanation": "Spirit-related edges.",
       "entries": [
-        "XXX"
+        "pure soul"
       ]
     },
     {
@@ -121,17 +121,23 @@
     {
       "name": "appearance",
       "explanation": "Appearance-related disadvantages.",
-      "entries": []
+      "entries": [
+        "XXX"
+      ]
     },
     {
       "name": "communication",
       "explanation": "Communication-related disadvantages.",
-      "entries": []
+      "entries": [
+        "XXX"
+      ]
     },
     {
       "name": "healthy",
       "explanation": "Health-related disadvantages.",
-      "entries": []
+      "entries": [
+        "XXX"
+      ]
     },
     {
       "name": "movement",
@@ -143,17 +149,23 @@
     {
       "name": "psychological",
       "explanation": "Mind-related disadvantages.",
-      "entries": []
+      "entries": [
+        "XXX"
+      ]
     },
     {
       "name": "sane",
       "explanation": "Personality-related disadvantages.",
-      "entries": []
+      "entries": [
+        "XXX"
+      ]
     },
     {
       "name": "senses",
       "explanation": "Sense-related discadvantages.",
-      "entries": []
+      "entries": [
+        "XXX"
+      ]
     },
     {
       "**************************************************": "WORLD-SPECIFIC"
