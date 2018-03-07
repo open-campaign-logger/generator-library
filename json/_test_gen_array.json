@@ -1,0 +1,33 @@
+[
+  {
+    "name": "test_gen_array",
+    "explanation": "Private generators JSON array for testing.",
+    "resultPattern": "{result}",
+    "globals": {
+      "shade": "",
+      "shape": ""
+    },
+    "tables": [
+      {
+        "name": "result",
+        "explanation": "Set variables for the _test_global_variable generator.",
+        "export": {
+          "shade": "{shade}",
+          "shape": "square"
+        },
+        "entries": [
+          "color = {global:color}, storedcolor = {global:storedcolor}. Setting also the 'shade' and 'shape' global variables."
+        ]
+      },
+      {
+        "name": "shade",
+        "explanation": "Shades of color.",
+        "entries": [
+          "dark",
+          "pale",
+          "bright"
+        ]
+      }
+    ]
+  }
+]
