@@ -3,6 +3,7 @@
   "resultPattern": "{lib:formatting#CL}{init}{result}",
   "globals": {
     "species": "",
+    "speciesadjective": " ",
     "speciesmentioned": " ",
     "age": "",
     "gender": "",
@@ -21,6 +22,8 @@
     "activity": "passive",
     "attitude": "neutral",
     "behavior": "calm",
+    "socialclass": "",
+    "employment": "",
     "wealth": "",
     "clothing": "",
     "clothingadjective": "",
@@ -42,7 +45,7 @@
   "bugs": "Developepment currently on hold, waiting for global variable support.",
   "to do": "Most of it... Starting from genre? ",
   "see": "",
-  "date": "2018-03-06",
+  "date": "2018-03-07",
   "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
   "genre": "fantasy",
@@ -56,7 +59,7 @@
         "species": "{lib:species}",
         "gender": "{lib:gender}",
         "civilization": "{civilization}",
-        "wealth": "{wealth}"
+        "wealth": "{lib:social_class}"
       },
       "entries": [
         "{mood}{attitude}{activity}"
@@ -124,14 +127,14 @@
       "name": "basic",
       "explanation": "Basic description: age, gender, species, profession.",
       "entries": [
-        "{global:age} {global:gender} {global:speciesmentioned} {lib:personCraft}"
+        "{global:age} {global:gender} {global:employment}"
       ]
     },
     {
       "name": "background",
       "explanation": "The background of the person.",
       "entries": [
-        "{lib:employment}"
+        ""
       ]
     },
     {
@@ -159,50 +162,6 @@
         "nomadic",
         "agricultural",
         "urban"
-      ]
-    },
-    {
-      "**************************************************": "ASSETS"
-    },
-    {
-      "name": "wealth",
-      "explanation": "Wealth distribution.",
-      "entries": [
-        {
-          "m": 5,
-          "v": "poor",
-          "export": {
-            "clothingadjective": "{lib:clothing#poor adjective}"
-          }
-        },
-        {
-          "m": 50,
-          "v": "lower class",
-          "export": {
-            "clothingadjective": "{lib:clothing#lower class adjective}"
-          }
-        },
-        {
-          "m": 30,
-          "v": "middle class",
-          "export": {
-            "clothingadjective": "{lib:clothing#middle class adjective}"
-          }
-        },
-        {
-          "m": 10,
-          "v": "upper class",
-          "export": {
-            "clothingadjective": "{lib:clothing#upper class adjective}"
-          }
-        },
-        {
-          "m": 5,
-          "v": "rich",
-          "export": {
-            "clothingadjective": "{lib:clothing#rich adjective}"
-          }
-        }
       ]
     },
     {
