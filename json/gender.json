@@ -4,8 +4,10 @@
   "globals": {
     "gender": "",
     "orientation": "",
+    "Subject": "",
     "subject": "",
     "object": "",
+    "Dependentpossessive": "",
     "dependentpossessive": "",
     "independentpossessive": "",
     "reflexive": ""
@@ -98,8 +100,10 @@
       "explanation": "Female gender.",
       "export": {
         "gender": "female",
+        "Subject": "She",
         "subject": "she",
         "object": "her",
+        "Dependentpossessive": "Her",
         "dependentpossessive": "her",
         "independentpossessive": "hers",
         "reflexive": "herself",
@@ -114,8 +118,10 @@
       "explanation": "hermafrodite gender.",
       "export": {
         "gender": "hermafrodite",
+        "Subject": "(S)he",
         "subject": "(s)he",
         "object": "hir",
+        "Dependentpossessive": "Hir",
         "dependentpossessive": "hir",
         "independentpossessive": "hirs",
         "reflexive": "hirself",
@@ -130,8 +136,10 @@
       "explanation": "Male gender.",
       "export": {
         "gender": "male",
+        "Subject": "He",
         "subject": "he",
         "object": "him",
+        "Dependentpossessive": "His",
         "dependentpossessive": "his",
         "independentpossessive": "his",
         "reflexive": "himself",
@@ -146,8 +154,10 @@
       "explanation": "Neuter gender.",
       "export": {
         "gender": "neuter",
+        "Subject": "It",
         "subject": "it",
         "object": "it",
+        "Dependentpossessive": "Its",
         "dependentpossessive": "its",
         "independentpossessive": "its",
         "reflexive": "itself",
@@ -423,7 +433,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}. Age: {global:age}, substantive: {global:substantive}, gender: {global:gender}, orientation: {global:orientation}."
+        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}. Age: {global:age}, substantive: {global:substantive}. Subject: {global:Subject}, subject: {global:subject}. Dependentpossessive: {global:Dependentpossessive}, dependentpossessive: {global:dependentpossessive}. Gender: {global:gender}, orientation: {global:orientation}."
       ]
     }
   ]
