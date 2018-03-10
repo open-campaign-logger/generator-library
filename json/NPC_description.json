@@ -5,11 +5,10 @@
     "species": "",
     "speciesadjective": " ",
     "speciesmentioned": " ",
+    "culture": "{culture}",
+    "gender": "{lib:gender}",
     "age": "",
-    "gender": "",
-    "orientation": "",
-    "subject": "",
-    "object": "",
+    "name": "",
     "dependentpossessive": "",
     "independentpossessive": "",
     "reflexive": "",
@@ -45,7 +44,7 @@
   "bugs": "Developepment currently on hold, waiting for global variable support.",
   "to do": "Most of it... Starting from genre? ",
   "see": "",
-  "date": "2018-03-07",
+  "date": "2018-03-10",
   "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
   "genre": "fantasy",
@@ -58,6 +57,10 @@
       "export": {
         "species": "{lib:species}",
         "gender": "{lib:gender}",
+        "culture": "{culture}",
+        "name": "{lib:name-{global:culture}#{global:gender}}",
+        "nametable": "name-{global:culture}",
+        "nametablefull": "name-{global:culture}#{global:gender}",
         "civilization": "{civilization}",
         "wealth": "{lib:social_class}"
       },
@@ -127,28 +130,28 @@
       "name": "basic",
       "explanation": "Basic description: age, gender, species, profession.",
       "entries": [
-        "{global:age} {global:gender} {global:employment}"
+        "{global:age} {global:gender} {global:culture} {global:employment}"
       ]
     },
     {
       "name": "background",
       "explanation": "The background of the person.",
       "entries": [
-        ""
+        "The {global:substantive} is an NPC."
       ]
     },
     {
       "name": "name",
       "explanation": "The character's name.",
       "entries": [
-        "{global:startbold}{lib:name-pictish}{global:endbold}"
+        "{global:startbold}{global:name}{global:endbold}"
       ]
     },
     {
       "name": "personality",
       "explanation": "Psychology of the person.",
       "entries": [
-        "{global:para}{global:subject} {lib:edge}.  {global:para}{global:subject} {lib:flaw}. {global:para}{global:subject} {lib:quirk}."
+        "{global:para}{global:subject} {lib:flaw}. {global:para}{global:subject} {lib:quirk}."
       ]
     },
     {
@@ -338,7 +341,17 @@
       "name": "special",
       "explanation": "Special NPC description tables.",
       "entries": [
+        "{culture}",
         "{legacy}"
+      ]
+    },
+    {
+      "name": "culture",
+      "explanation": "Cultural background of the character.",
+      "entries": [
+        "Malorian",
+        "pictish",
+        "Viking"
       ]
     },
     {

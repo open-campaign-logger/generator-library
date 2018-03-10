@@ -20,7 +20,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-03-06",
+  "date": "2018-03-10",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -68,7 +68,7 @@
       "explanation": "The gender types by rarity.",
       "entries": [
         {
-          "m": 10,
+          "m": 99,
           "v": "{common}"
         },
         "{rare}"
@@ -114,11 +114,11 @@
       "explanation": "hermafrodite gender.",
       "export": {
         "gender": "hermafrodite",
-        "subject": "they",
-        "object": "them",
-        "dependentpossessive": "their",
-        "independentpossessive": "theirs",
-        "reflexive": "themselves",
+        "subject": "(s)he",
+        "object": "hir",
+        "dependentpossessive": "hir",
+        "independentpossessive": "hirs",
+        "reflexive": "hirself",
         "age": "{hermafrodite age}"
       },
       "entries": [
@@ -197,14 +197,14 @@
           "m": 10,
           "v": "old",
           "export": {
-            "substantive": "old one"
+            "substantive": "old-timer"
           }
         },
         {
           "m": 1,
           "v": "ancient",
           "export": {
-            "substantive": "ancient one"
+            "substantive": "elder"
           }
         }
       ]
@@ -224,7 +224,7 @@
           "m": 10,
           "v": "young",
           "export": {
-            "substantive": "girl"
+            "substantive": "woman"
           }
         },
         {
@@ -245,14 +245,14 @@
           "m": 10,
           "v": "old",
           "export": {
-            "substantive": "old one"
+            "substantive": "woman"
           }
         },
         {
           "m": 1,
           "v": "ancient",
           "export": {
-            "substantive": "ancient one"
+            "substantive": "crone"
           }
         }
       ]
@@ -293,14 +293,14 @@
           "m": 10,
           "v": "old",
           "export": {
-            "substantive": "old one"
+            "substantive": "old-timer"
           }
         },
         {
           "m": 1,
           "v": "ancient",
           "export": {
-            "substantive": "ancient one"
+            "substantive": "elder"
           }
         }
       ]
@@ -341,14 +341,14 @@
           "m": 10,
           "v": "old",
           "export": {
-            "substantive": "old one"
+            "substantive": "old-timer"
           }
         },
         {
           "m": 1,
           "v": "ancient",
           "export": {
-            "substantive": "ancient one"
+            "substantive": "elder"
           }
         }
       ]
