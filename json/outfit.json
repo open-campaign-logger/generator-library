@@ -2,7 +2,10 @@
   "name": "outfit",
   "resultPattern": "{init}{result}",
   "globals": {
-    "variable": "value"
+    "socialclass": "social class",
+    "outfit": "outfit",
+    "outfitadjective": "adjective",
+    "outfitfeature": "feature"
   },
   "variables": {
     "footnote": ""
@@ -29,7 +32,8 @@
         {
           "v": "",
           "export": {
-            "": ""
+            "socialclass": "{lib:social_class}",
+            "outfit": "{{global:socialclass}}"
           }
         }
       ]
@@ -46,14 +50,16 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{outfit}"
+        "{global:outfit}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{global:clothingadjective} {outfit}"
+        "{global:outfitadjective} {global:outfit}",
+        "{global:outfit} {global:outfitfeature}",
+        "{global:outfitadjective} {global:outfit} {global:outfitfeature}"
       ]
     },
     {
@@ -91,51 +97,68 @@
       "name": "poor",
       "explanation": "Outfits for poor characters.",
       "export": {
-        "clothingadjective": "dirty"
+        "outfitadjective": "{poor adjective}",
+        "outfitfeature": "{poor feature}"
       },
       "entries": [
         "rags",
-        "ill-fitting garments"
+        "tatters",
+        "poor {lib:synonym#clothing}",
+        "ill-fitting {lib:synonym#clothing}",
+        "{lower class}"
       ]
     },
     {
       "name": "lower class",
       "explanation": "Outfits for lower class characters.",
       "export": {
-        "clothingadjective": "modest"
+        "outfitadjective": "{lower class adjective}",
+        "outfitfeature": "{lower class feature}"
       },
       "entries": [
-        "clothes"
+        "{poor}",
+        "lower class {lib:synonym#clothing}",
+        "{middle class}"
       ]
     },
     {
       "name": "middle class",
       "explanation": "Outfits for middle class characters.",
       "export": {
-        "clothingadjective": "ordinary"
+        "outfitadjective": "{middle class adjective}",
+        "outfitfeature": "{middle class feature}"
       },
       "entries": [
-        "clothes"
+        "{lower class}",
+        "middle-class {lib:synonym#clothing}",
+        "{upper class}"
       ]
     },
     {
       "name": "upper class",
       "explanation": "Outfits for upper class characters.",
       "export": {
-        "clothingadjective": "fashionable"
+        "outfitadjective": "{upper class adjective}",
+        "outfitfeature": "{upper class feature}"
       },
       "entries": [
-        "clothes"
+        "{middle class}",
+        "upper class {lib:synonym#clothing}",
+        "high-class garments",
+        "{upper class}"
       ]
     },
     {
       "name": "rich",
       "explanation": "Outfits for rich characters.",
       "export": {
-        "clothingadjective": "luxurious"
+        "outfitadjective": "{rich adjective}",
+        "outfitfeature": "{rich feature}"
       },
       "entries": [
-        "clothes"
+        "{upper class}",
+        "stylish {lib:synonym#clothing}",
+        "expensive {lib:synonym#clothing}"
       ]
     },
     {
@@ -143,14 +166,14 @@
     },
     {
       "name": "myth",
-      "explanation": "XXX once rumoured to have existed.",
+      "explanation": "Outfits once rumoured to have existed.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "fantasy",
-      "explanation": "XXX for fantasy worlds (with no basis in myth).",
+      "explanation": "Outfits for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
         "XXX"
@@ -158,7 +181,7 @@
     },
     {
       "name": "modern",
-      "explanation": "XXX for modern worlds.",
+      "explanation": "Outfits for modern worlds.",
       "entries": [
         "{common}",
         "XXX"
@@ -166,25 +189,19 @@
     },
     {
       "name": "futuristic",
-      "explanation": "XXX for science fiction worlds.",
+      "explanation": "Outfits for science fiction worlds.",
       "entries": [
         "{modern}",
         "XXX"
       ]
     },
     {
-      "**************************************************": "SPECIAL TABLES"
-    },
-    {
-      "name": "special",
-      "explanation": "Special outfit tables.",
-      "entries": [
-        "{adjective}"
-      ]
+      "**************************************************": "ADJECTIVES"
     },
     {
       "name": "adjective",
       "explanation": "Adjectives for outfits",
+      "format": "Optionally prepended to the front of the result.",
       "entries": [
         "{poor adjective}",
         "{lower class adjective}",
@@ -197,47 +214,176 @@
       "name": "poor adjective",
       "explanation": "Adjectives for poor outfits",
       "entries": [
-        "tattered",
+        "threadbare",
+        "shabby",
+        "torn",
         "ripped",
+        "frayed",
+        "badly patched",
+        "patched",
+        "moth-eaten",
         "dirty",
         "muddy",
-        "stained"
+        "stained",
+        "{lower class adjective}"
       ]
     },
     {
       "name": "lower class adjective",
       "explanation": "Adjectives for lower class outfits",
       "entries": [
+        "{poor adjective}",
+        "poorly made",
+        "unkempt",
+        "faded",
+        "worn",
+        "unassuming",
         "modest",
-        "faded"
+        "humble",
+        "simple",
+        "{middle class adjective}"
       ]
     },
     {
       "name": "middle class adjective",
       "explanation": "Adjectives middle class outfits",
       "entries": [
-        "ordinary"
+        "{lower class adjective}",
+        "well-kept",
+        "carefully washed",
+        "clean",
+        "neat",
+        "ordinary",
+        "plain",
+        "standard",
+        "base",
+        "nice",
+        "colorfol",
+        "decorated",
+        "{upper class adjective}"
       ]
     },
     {
       "name": "upper class adjective",
       "explanation": "Adjectives for upper class outfits",
       "entries": [
-        "fashionable"
+        "{middle class adjective}",
+        "flashy",
+        "gaudy",
+        "garish",
+        "showy",
+        "exaggerated",
+        "overblown",
+        "overdone",
+        "grandiose",
+        "bombastic",
+        "pretentious",
+        "flamboyant",
+        "vainglorious",
+        "peacockish",
+        "{rich adjective}"
       ]
     },
     {
       "name": "rich adjective",
       "explanation": "Adjectives for rich outfits",
       "entries": [
+        "{upper class adjective}",
+        "finely detailed",
+        "gracefully cut",
+        "embroidered",
+        "baroque",
+        "ornate",
+        "classy",
+        "fashionable",
+        "pompous",
+        "extravagant",
         "luxurious"
       ]
+    },
+    {
+      "**************************************************": "FEATURES"
+    },
+    {
+      "name": "feature",
+      "explanation": "Features for outfits",
+      "format": "Optionally appended to the end of the result.",
+      "entries": [
+        "{poor feature}",
+        "{lower class feature}",
+        "{middle class feature}",
+        "{upper class feature}",
+        "{rich feature}"
+      ]
+    },
+    {
+      "name": "poor feature",
+      "explanation": "Features for poor outfits",
+      "entries": [
+        "torn to pieces",
+        "in shreds",
+        "full of holes",
+        "{lower class feature}"
+      ]
+    },
+    {
+      "name": "lower class feature",
+      "explanation": "Features for lower class outfits",
+      "entries": [
+        "{poor feature}",
+        "with some stitchings visible",
+        "with a neatly sewn patch",
+        "with some signs of recent repairing visible",
+        "{middle class feature}"
+      ]
+    },
+    {
+      "name": "middle class feature",
+      "explanation": "Features middle class outfits",
+      "entries": [
+        "{lower class feature}",
+        "obviously well cared for",
+        "{upper class feature}"
+      ]
+    },
+    {
+      "name": "upper class feature",
+      "explanation": "Features for upper class outfits",
+      "entries": [
+        "{middle class feature}",
+        "neatly trimmed",
+        "{rich feature}"
+      ]
+    },
+    {
+      "name": "rich feature",
+      "explanation": "Features for rich outfits",
+      "entries": [
+        "{upper class feature}",
+        "with silver trimmings",
+        "with gilded trimmings",
+        "decorated with small jewels"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special outfit tables.",
+      "entries": [
+        "{adjective}",
+        "{feature}"
+      ]
+    },
+    {
+      "**************************************************": "TESTING"
     },
     {
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}."
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Social class: {global:socialclass}, adjective: {global:outfitadjective}, outfit: {global:outfit}, feature: {global:outfitfeature}. Special: {special}."
       ]
     }
   ]

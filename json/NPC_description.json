@@ -25,7 +25,7 @@
     "employment": "",
     "wealth": "",
     "clothing": "",
-    "clothingadjective": "",
+    "outfitadjective": "",
     "civilization": "urban",
     "doing": "relaxing",
     "form": "humanoid",
@@ -350,7 +350,7 @@
       "explanation": "Cultural background of the character.",
       "entries": [
         "Malorian",
-        "pictish",
+        "Pictish",
         "Viking"
       ]
     },
@@ -358,8 +358,8 @@
       "name": "legacy",
       "explanation": "Old result before global variables.",
       "entries": [
-        "The {global:gender} {global:age} {global:speciesmentioned} is {global:attitude} and is {lib:synonym#wearing} {global:clothingadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:attitude} and {global:mood}, {global:moodexpression}.",
-        "This {global:gender} {global:age} {global:speciesmentioned} is {lib:synonym#wearing} {global:clothingadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:mood}, {global:moodexpression}. {global:subject} has a {global:speciesadjective} sense of humor."
+        "The {global:gender} {global:age} {global:speciesmentioned} is {global:attitude} and is {lib:synonym#wearing} {global:outfitadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:attitude} and {global:mood}, {global:moodexpression}.",
+        "This {global:gender} {global:age} {global:speciesmentioned} is {lib:synonym#wearing} {global:outfitadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:mood}, {global:moodexpression}. {global:subject} has a {global:speciesadjective} sense of humor."
       ]
     },
     {
