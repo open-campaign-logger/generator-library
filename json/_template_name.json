@@ -1250,6 +1250,31 @@
       "**************************************************": "SPECIAL TABLES"
     },
     {
+      "name": "special",
+      "explanation": "Special name tables.",
+      "entries": [
+        "{hermafrodite}",
+        "{neuter}"
+      ]
+    },
+    {
+      "name": "hermafrodite",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex}"
+      ]
+    },
+    {
+      "name": "neuter",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex}"
+      ]
+    },
+    {
+      "**************************************************": "TESTING"
+    },
+    {
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
