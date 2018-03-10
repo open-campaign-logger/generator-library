@@ -7,14 +7,14 @@
   "variables": {
     "footnote": ""
   },
-  "explanation": "Goals and objectives.",
+  "explanation": "Goals and objectives for characters.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "format": "",
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-03-05",
+  "date": "2018-03-10",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -71,7 +71,8 @@
       "name": "common",
       "explanation": "Common goal types.",
       "entries": [
-        "{good}"
+        "{good}",
+        "{neutral}"
       ]
     },
     {
@@ -94,6 +95,14 @@
         "cause suffering",
         "serve evil",
         "dominate the world"
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Neutral goals.",
+      "entries": [
+        "start a new career",
+        "avenge the death of their family"
       ]
     },
     {

@@ -99,14 +99,14 @@
     },
     {
       "name": "humanoid",
-      "explanation": "Humanoid species (or races). The 'speciesmentioned' variable is used so that human (the expected norm) can be left without a mention, while other species are mentioned.",
+      "explanation": "Humanoid species (or races). The 'speciesmention' variable is used so that human (the expected norm) can be left without a mention, while other species are mentioned.",
       "entries": [
         {
           "m": 1,
           "v": "human",
           "export": {
             "species": "",
-            "speciesmentioned": "",
+            "speciesmention": "",
             "speciesadjective": "human"
           }
         }
@@ -123,7 +123,7 @@
           "m": 1,
           "v": "Atlantean",
           "export": {
-            "speciesmentioned": "Atlantean",
+            "speciesmention": "Atlantean",
             "speciesadjective": "Atlantean"
           }
         },
@@ -131,7 +131,7 @@
           "m": 1,
           "v": "Lemurian",
           "export": {
-            "speciesmentioned": "Lemurian",
+            "speciesmention": "Lemurian",
             "speciesadjective": "Lemurian"
           }
         }
@@ -145,7 +145,7 @@
           "m": 5,
           "v": "elf",
           "export": {
-            "speciesmentioned": "elf",
+            "speciesmention": "elf",
             "speciesadjective": "elven"
           }
         },
@@ -153,7 +153,7 @@
           "m": 2,
           "v": "dwarf",
           "export": {
-            "speciesmentioned": "dwarf",
+            "speciesmention": "dwarf",
             "speciesadjective": "dwarven"
           }
         },
@@ -161,7 +161,7 @@
           "m": 1,
           "v": "gnome",
           "export": {
-            "speciesmentioned": "gnome",
+            "speciesmention": "gnome",
             "speciesadjective": "gnomish"
           }
         }

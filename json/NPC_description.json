@@ -1,11 +1,12 @@
 {
-  "name": "NPC Description Generator",
+  "name": "NPC_description",
   "resultPattern": "{lib:formatting#CL}{init}{result}",
   "globals": {
     "species": "",
-    "speciesadjective": " ",
-    "speciesmentioned": " ",
+    "speciesadjective": "",
+    "speciesmention": "",
     "culture": "{culture}",
+    "civilization": "urban",
     "gender": "{lib:gender}",
     "age": "",
     "name": "",
@@ -26,7 +27,6 @@
     "wealth": "",
     "clothing": "",
     "outfitadjective": "",
-    "civilization": "urban",
     "doing": "relaxing",
     "form": "humanoid",
     "mood": "calm",
@@ -72,7 +72,6 @@
       "name": "result",
       "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{summary}",
         "{detail}"
       ]
     },
@@ -106,14 +105,14 @@
       "name": "common",
       "explanation": "Common description types.",
       "entries": [
-        "{name} {global:para}{basic} {global:para}{attire} {global:para}{background} {global:para}{personality}"
+        "{name} {global:para}{basic} {global:para}{attire} {global:para}{background} {global:para}{personality} {global:para}{goal} {global:para}{equipment}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare description types.",
       "entries": [
-        "{name} {global:para}{basic}"
+        "{common}"
       ]
     },
     {
@@ -123,7 +122,7 @@
       "name": "attire",
       "explanation": "The costume of the person.",
       "entries": [
-        "{lib:outfit}"
+        "{global:Subject} is wearing {lib:outfit}."
       ]
     },
     {
@@ -141,6 +140,20 @@
       ]
     },
     {
+      "name": "equipment",
+      "explanation": "The belongings of the person.",
+      "entries": [
+        "The {global:substantive} wields a {lib:weapon#common}."
+      ]
+    },
+    {
+      "name": "goal",
+      "explanation": "The character's life goal.",
+      "entries": [
+        "{global:Subject} wants to {lib:goal}."
+      ]
+    },
+    {
       "name": "name",
       "explanation": "The character's name.",
       "entries": [
@@ -151,7 +164,7 @@
       "name": "personality",
       "explanation": "Psychology of the person.",
       "entries": [
-        "{global:para}{global:subject} {lib:flaw}. {global:para}{global:subject} {lib:quirk}."
+        "{global:para}{global:Subject} {lib:flaw}. {global:para}{global:Subject} {lib:quirk}."
       ]
     },
     {
@@ -358,8 +371,8 @@
       "name": "legacy",
       "explanation": "Old result before global variables.",
       "entries": [
-        "The {global:gender} {global:age} {global:speciesmentioned} is {global:attitude} and is {lib:synonym#wearing} {global:outfitadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:attitude} and {global:mood}, {global:moodexpression}.",
-        "This {global:gender} {global:age} {global:speciesmentioned} is {lib:synonym#wearing} {global:outfitadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:mood}, {global:moodexpression}. {global:subject} has a {global:speciesadjective} sense of humor."
+        "The {global:gender} {global:age} {global:speciesmention} is {global:attitude} and is {lib:synonym#wearing} {global:outfitadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:attitude} and {global:mood}, {global:moodexpression}.",
+        "This {global:gender} {global:age} {global:speciesmention} is {lib:synonym#wearing} {global:outfitadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:mood}, {global:moodexpression}. {global:subject} has a {global:speciesadjective} sense of humor."
       ]
     },
     {

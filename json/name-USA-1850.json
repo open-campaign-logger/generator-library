@@ -1,6 +1,9 @@
 {
   "name": "name-USA-1850",
   "resultPattern": "{first name} {last name} ({var:gender})",
+  "globals": {
+    "culture": "American"
+  },
   "variables": {
     "gender": ""
   },
