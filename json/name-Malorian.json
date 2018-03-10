@@ -2,7 +2,7 @@
   "name": "name-Malorian",
   "resultPattern": "{result}",
   "globals": {
-    "culture": "Malorian"
+    "culture": "Albion"
   },
   "variables": {
     "footnote": "note"
@@ -12,7 +12,7 @@
   "note": "",
   "to do": "unisex names (if such exist), bynames",
   "see": "",
-  "date": "2012-02-25",
+  "date": "2012-03-10",
   "authors": "ELF Vesala.",
   "sources": "Sir Thomas Malory: 'Le Morte d'Arthur'.",
   "genre": "fantasy",
@@ -744,10 +744,35 @@
       "**************************************************": "SPECIAL TABLES"
     },
     {
+      "name": "special",
+      "explanation": "Special name tables.",
+      "entries": [
+        "{hermafrodite}",
+        "{neuter}"
+      ]
+    },
+    {
+      "name": "hermafrodite",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex}"
+      ]
+    },
+    {
+      "name": "neuter",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex}"
+      ]
+    },
+    {
+      "**************************************************": "TESTING"
+    },
+    {
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, byname: {byname}, initial: {initial}. Gender = {global:gender}."
+        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, surname: {surname}, byname: {byname}, initial: {initial}, special: {special}. Gender = {global:gender}."
       ]
     }
   ]
