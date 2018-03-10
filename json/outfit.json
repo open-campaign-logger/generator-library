@@ -14,8 +14,8 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-03-06",
-  "authors": "Esko Vesala.",
+  "date": "2018-03-10",
+  "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
   "categories": [
@@ -85,6 +85,9 @@
       ]
     },
     {
+      "**************************************************": "OUTFITS"
+    },
+    {
       "name": "poor",
       "explanation": "Outfits for poor characters.",
       "export": {
@@ -98,53 +101,41 @@
     {
       "name": "lower class",
       "explanation": "Outfits for lower class characters.",
+      "export": {
+        "clothingadjective": "modest"
+      },
       "entries": [
-        {
-          "m": 5,
-          "v": "",
-          "export": {
-            "clothingadjective": "modest"
-          }
-        }
+        "clothes"
       ]
     },
     {
       "name": "middle class",
       "explanation": "Outfits for middle class characters.",
+      "export": {
+        "clothingadjective": "ordinary"
+      },
       "entries": [
-        {
-          "m": 5,
-          "v": "",
-          "export": {
-            "clothingadjective": "ordinary"
-          }
-        }
+        "clothes"
       ]
     },
     {
       "name": "upper class",
       "explanation": "Outfits for upper class characters.",
+      "export": {
+        "clothingadjective": "fashionable"
+      },
       "entries": [
-        {
-          "m": 5,
-          "v": "",
-          "export": {
-            "clothingadjective": "fashionable"
-          }
-        }
+        "clothes"
       ]
     },
     {
       "name": "rich",
       "explanation": "Outfits for rich characters.",
+      "export": {
+        "clothingadjective": "luxurious"
+      },
       "entries": [
-        {
-          "m": 5,
-          "v": "",
-          "export": {
-            "clothingadjective": "luxurious"
-          }
-        }
+        "clothes"
       ]
     },
     {
@@ -206,15 +197,19 @@
       "name": "poor adjective",
       "explanation": "Adjectives for poor outfits",
       "entries": [
+        "tattered",
+        "ripped",
         "dirty",
-        "tattered"
+        "muddy",
+        "stained"
       ]
     },
     {
       "name": "lower class adjective",
       "explanation": "Adjectives for lower class outfits",
       "entries": [
-        "modest"
+        "modest",
+        "faded"
       ]
     },
     {
