@@ -53,7 +53,9 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {XXX}"
+        "{adjective} {XXX}",
+        "{XXX} {feature}",
+        "{adjective} {XXX} {feature}"
       ]
     },
     {
@@ -122,21 +124,34 @@
       "name": "special",
       "explanation": "Special XXX tables.",
       "entries": [
-        "{adjective}"
+        "{adjective}",
+        "{feature}"
       ]
     },
     {
       "name": "adjective",
       "explanation": "Adjectives related to XXX.",
+      "format": "Optionally prepended to the front of the result.",
       "entries": [
         "XXX"
       ]
     },
     {
+      "name": "feature",
+      "explanation": "Features related to XXX.",
+      "format": "Optionally appended to the end of the result.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}."
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
       ]
     }
   ]
