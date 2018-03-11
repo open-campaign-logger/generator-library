@@ -58,7 +58,9 @@
         "species": "{lib:species}",
         "gender": "{lib:gender}",
         "culture": "{culture}",
-        "name": "{lib:name-{global:culture}#{global:gender}}",
+        "firstname": "{lib:name-{global:culture}#{global:gender}}",
+        "byname": "{lib:name-{global:culture}#byname}",
+        "name": "{global:firstname} {global:byname}",
         "nametable": "name-{global:culture}",
         "nametablefull": "name-{global:culture}#{global:gender}",
         "civilization": "{civilization}",
@@ -143,7 +145,7 @@
       "name": "equipment",
       "explanation": "The belongings of the person.",
       "entries": [
-        "The {global:substantive} wields a {lib:weapon#common}."
+        "{global:startitalic}Weapon{global:enditalic}: {lib:weapon#common}."
       ]
     },
     {
@@ -164,7 +166,7 @@
       "name": "personality",
       "explanation": "Psychology of the person.",
       "entries": [
-        "{global:para}{global:Subject} {lib:flaw}. {global:para}{global:Subject} {lib:quirk}."
+        "{global:para}{global:name} {lib:personality}. {global:para}{global:firstname} {lib:flaw}. {global:para}{global:byname} {lib:quirk}."
       ]
     },
     {
