@@ -1,8 +1,8 @@
 {
   "name": "NPC log",
-  "resultPattern": "{lib:formatting#CL}{result}",
+  "resultPattern": "{result}",
   "explanation": "Creates static log entries for NPC records.",
-  "date": "2018-03-11",
+  "date": "2018-03-12",
   "authors": "ELF Vesala.",
   "genre": "universal",
   "categories": [
@@ -14,7 +14,7 @@
       "name": "result",
       "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{global:startbold}Name{global:endbold}: \r\n\n        {global:startbold}Profession{global:endbold}: \r\n\n        {global:startbold}Background{global:endbold}: \r\n\n        {global:startbold}Relationship{global:endbold}: {global:ssub}(ally, rival, contact, foe, supplier...){global:esub} \r\n\n        {global:startbold}Attitude{global:endbold}: \r\n\n        {global:startbold}Style{global:endbold}: \r\n\n        {global:startbold}Appearance{global:endbold}: \r\n\n        {global:startbold}Speech{global:endbold}: \r\n\n        {global:startbold}Gestures{global:endbold}: \r\n\n        {global:startbold}Behavior{global:endbold}: \r\n\n        {global:startbold}Personality{global:endbold}: \r\n \n        {global:startbold}Goal{global:endbold}: \r\n\n        {global:startbold}Secret{global:endbold}: \r\n"
+        "{b|Name}: @\"{lib:name-american-modern#detail}\"\r\n{b|Group}: ^\" \"\r\n{b|Location}: #\" \"\r\n{b|Profession}: \r\n{b|Background}: \r\n{b|Relationship}: \r\n{b|Appearance}: \r\n{b|Speech}: \r\n{b|Gestures}: \r\n{b|Behavior}: \r\n{b|Personality}: \r\n{b|Goal}: \r\n{b|Secret}: \r\n"
       ]
     }
   ]
