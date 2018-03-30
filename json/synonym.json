@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "Expansion.",
   "see": "",
-  "date": "2018-01-28",
+  "date": "2018-02-22",
   "authors": "Esko Vesala.",
   "sources": "Thesaurus.com, TvTropes.org, Wikipedia.org",
   "genre": "universal",
@@ -457,8 +457,13 @@
       "explanation": "Synonyms for 'now'.",
       "entries": [
         "now",
+        "just now",
+        "right now",
         "currently",
-        "at this time"
+        "at present",
+        "at this time",
+        "at the moment",
+        "at this moment"
       ]
     },
     {
@@ -483,7 +488,7 @@
     },
     {
       "name": "region",
-      "explanation": "Synonyms for a territory (larage outdoors area).",
+      "explanation": "Synonyms for a territory (large outdoors area).",
       "entries": [
         "area",
         "region",

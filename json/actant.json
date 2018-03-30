@@ -1,14 +1,16 @@
 {
   "name": "actant",
   "resultPattern": "{result}",
-  "variables": {
+  "globals": {
     "actant": "person",
     "actants": "persons",
     "actantgroup": "group",
     "actantaction": "wandering aimlessly",
     "actantadjective": "strange",
     "actantdescription": "A strange-looking person is acting suspiciously.",
-    "attitude": "wary",
+    "attitude": "wary"
+  },
+  "variables": {
     "footnote": ""
   },
   "explanation": "Structural roles in stories (e.g. the hero and the villain.)",
@@ -17,7 +19,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, hero, villain",
-  "date": "2018-01-22",
+  "date": "2018-03-04",
   "authors": "Esko Vesala.",
   "sources": "Five_room_dungeon",
   "genre": "fantasy",
@@ -65,42 +67,42 @@
         {
           "m": 1,
           "v": "{hostile}",
-          "set": {
+          "export": {
             "attitude": "hostile"
           }
         },
         {
           "m": 1,
           "v": "{deceptive}",
-          "set": {
+          "export": {
             "attitude": "deceptive"
           }
         },
         {
           "m": 1,
           "v": "{competitive}",
-          "set": {
+          "export": {
             "attitude": "competitive"
           }
         },
         {
           "m": 1,
           "v": "{neutral}",
-          "set": {
+          "export": {
             "attitude": "neutral"
           }
         },
         {
           "m": 1,
           "v": "{friendly}",
-          "set": {
+          "export": {
             "attitude": "friendly"
           }
         },
         {
           "m": 1,
           "v": "{helpless}",
-          "set": {
+          "export": {
             "attitude": "helpless"
           }
         }
@@ -113,7 +115,7 @@
         {
           "m": 1,
           "v": "{nonsentient}",
-          "set": {
+          "export": {
             "attitude": "nonsentient"
           }
         }
@@ -129,28 +131,28 @@
         {
           "m": 1,
           "v": "{lib:minion#summary}",
-          "set": {
+          "export": {
             "actant": "minion"
           }
         },
         {
           "m": 1,
           "v": "{guardian}",
-          "set": {
+          "export": {
             "actant": "guardian"
           }
         },
         {
           "m": 1,
           "v": "{monster}",
-          "set": {
+          "export": {
             "actant": "monster"
           }
         },
         {
           "m": 1,
           "v": "{beast}",
-          "set": {
+          "export": {
             "actant": "beast"
           }
         }
@@ -163,28 +165,28 @@
         {
           "m": 1,
           "v": "{traitor}",
-          "set": {
+          "export": {
             "actant": "traitor"
           }
         },
         {
           "m": 1,
           "v": "{shapeshifter}",
-          "set": {
+          "export": {
             "actant": "shapeshifter"
           }
         },
         {
           "m": 1,
           "v": "{tempter}",
-          "set": {
+          "export": {
             "actant": "tempter"
           }
         },
         {
           "m": 1,
           "v": "{trickster}",
-          "set": {
+          "export": {
             "actant": "trickster"
           }
         }
@@ -197,21 +199,21 @@
         {
           "m": 1,
           "v": "{tempter}",
-          "set": {
+          "export": {
             "actant": "tempter"
           }
         },
         {
           "m": 1,
           "v": "{rival}",
-          "set": {
+          "export": {
             "actant": "rival"
           }
         },
         {
           "m": 1,
           "v": "{trickster}",
-          "set": {
+          "export": {
             "actant": "trickster"
           }
         }
@@ -224,28 +226,28 @@
         {
           "m": 1,
           "v": "{inhabitant}",
-          "set": {
+          "export": {
             "actant": "inhabitant"
           }
         },
         {
           "m": 1,
           "v": "{lib:animal}",
-          "set": {
+          "export": {
             "actant": "animal"
           }
         },
         {
           "m": 1,
           "v": "{captive}",
-          "set": {
+          "export": {
             "actant": "captive"
           }
         },
         {
           "m": 1,
           "v": "{herald}",
-          "set": {
+          "export": {
             "actant": "herald"
           }
         }
@@ -258,28 +260,28 @@
         {
           "m": 1,
           "v": "{tempter}",
-          "set": {
+          "export": {
             "actant": "tempter"
           }
         },
         {
           "m": 1,
           "v": "{trickster}",
-          "set": {
+          "export": {
             "actant": "trickster"
           }
         },
         {
           "m": 1,
           "v": "{mentor}",
-          "set": {
+          "export": {
             "actant": "mentor"
           }
         },
         {
           "m": 1,
           "v": "{ally}",
-          "set": {
+          "export": {
             "actant": "ally"
           }
         }
@@ -292,14 +294,14 @@
         {
           "m": 1,
           "v": "{beast}",
-          "set": {
+          "export": {
             "actant": "beast"
           }
         },
         {
           "m": 1,
           "v": "{lib:animal}",
-          "set": {
+          "export": {
             "actant": "animal"
           }
         }
@@ -311,85 +313,85 @@
       "entries": [
         {
           "m": 1,
-          "v": "{lib:minion}",
-          "set": {
+          "v": "{lib:minion#summary}",
+          "export": {
             "actant": "minion"
           }
         },
         {
           "m": 1,
           "v": "{monster}",
-          "set": {
+          "export": {
             "actant": "monster"
           }
         },
         {
           "m": 1,
           "v": "{lib:animal#summary}",
-          "set": {
+          "export": {
             "actant": "animal"
           }
         },
         {
           "m": 1,
           "v": "{traitor}",
-          "set": {
+          "export": {
             "actant": "traitor"
           }
         },
         {
           "m": 1,
           "v": "{shapeshifter}",
-          "set": {
+          "export": {
             "actant": "shapeshifter"
           }
         },
         {
           "m": 1,
           "v": "{tempter}",
-          "set": {
+          "export": {
             "actant": "tempter"
           }
         },
         {
           "m": 1,
           "v": "{rival}",
-          "set": {
+          "export": {
             "actant": "rival"
           }
         },
         {
           "m": 1,
           "v": "{trickster}",
-          "set": {
+          "export": {
             "actant": "trickster"
           }
         },
         {
           "m": 1,
           "v": "{inhabitant}",
-          "set": {
+          "export": {
             "actant": "inhabitant"
           }
         },
         {
           "m": 1,
           "v": "{captive}",
-          "set": {
+          "export": {
             "actant": "captive"
           }
         },
         {
           "m": 1,
           "v": "{mentor}",
-          "set": {
+          "export": {
             "actant": "mentor"
           }
         },
         {
           "m": 1,
           "v": "{ally}",
-          "set": {
+          "export": {
             "actant": "ally"
           }
         }
@@ -401,7 +403,7 @@
     {
       "name": "herald",
       "explanation": "A character that foreshadows the adventure",
-      "set": {
+      "export": {
         "actant": "herald",
         "actants": "heralds",
         "actantgroup": "group",
@@ -416,7 +418,7 @@
     {
       "name": "guardian",
       "explanation": "The villain's guardian watching the entrance.",
-      "set": {
+      "export": {
         "actant": "guardian",
         "actants": "guardians",
         "actantgroup": "company",
@@ -433,7 +435,7 @@
     {
       "name": "monster",
       "explanation": "Monsters hiding in the dungeon.",
-      "set": {
+      "export": {
         "actant": "monster",
         "actants": "monsters",
         "actantgroup": "pack",
@@ -449,7 +451,7 @@
     {
       "name": "beast",
       "explanation": "A nonsentient predator stalking in the dungeon.",
-      "set": {
+      "export": {
         "actant": "beast",
         "actants": "beasts",
         "actantgroup": "pack",
@@ -464,7 +466,7 @@
     {
       "name": "traitor",
       "explanation": "Characters that betray trust.",
-      "set": {
+      "export": {
         "actant": "traitor",
         "actants": "traitors",
         "actantgroup": "group",
@@ -479,7 +481,7 @@
     {
       "name": "shapeshifter",
       "explanation": "Characters that appear to be something else.",
-      "set": {
+      "export": {
         "actant": "shapeshifter",
         "actants": "shapeshifters",
         "actantgroup": "group",
@@ -508,7 +510,7 @@
     {
       "name": "tempter",
       "explanation": "Characters that attempt to tempt the adventurers to give up their principles.",
-      "set": {
+      "export": {
         "actant": "tempter",
         "actants": "tempters",
         "actantgroup": "group",
@@ -525,7 +527,7 @@
     {
       "name": "rival",
       "explanation": "Characters that compete with the adventurers.",
-      "set": {
+      "export": {
         "actant": "rival",
         "actants": "rivals",
         "actantgroup": "group",
@@ -544,7 +546,7 @@
     {
       "name": "inhabitant",
       "explanation": "Neutral persons that live in the area.",
-      "set": {
+      "export": {
         "actant": "inhabitant",
         "actants": "inhabitants",
         "actantgroup": "group",
@@ -561,7 +563,7 @@
     {
       "name": "captive",
       "explanation": "Captured persons.",
-      "set": {
+      "export": {
         "actant": "captive",
         "actants": "captives",
         "actantgroup": "group",
@@ -578,7 +580,7 @@
     {
       "name": "trickster",
       "explanation": "Characters that may trick the adventurers.",
-      "set": {
+      "export": {
         "actant": "trickster",
         "actants": "tricksters",
         "actantgroup": "ensemble",
@@ -597,7 +599,7 @@
     {
       "name": "mentor",
       "explanation": "Characters that can teach something.",
-      "set": {
+      "export": {
         "actant": "mentor",
         "actants": "mentors",
         "actantgroup": "school",
@@ -614,7 +616,7 @@
     {
       "name": "ally",
       "explanation": "Characters that can help the adventurers.",
-      "set": {
+      "export": {
         "actant": "ally",
         "actants": "allies",
         "actantgroup": "group",
@@ -629,7 +631,7 @@
     {
       "name": "hindrance",
       "explanation": "Characters that can hinder the adventurers.",
-      "set": {
+      "export": {
         "actant": "hindrance",
         "actants": "hindrances",
         "actantgroup": "group",
@@ -706,7 +708,7 @@
     {
       "name": "hero",
       "explanation": "Hero actants. In RPG context, these are the players.",
-      "set": {
+      "export": {
         "actant": "hero",
         "actants": "heroes",
         "actantgroup": "team",
@@ -722,7 +724,7 @@
     {
       "name": "villain",
       "explanation": "Villain actants. Usually the enemy has been set when setting up the adventure and is not randomized.",
-      "set": {
+      "export": {
         "actant": "villain",
         "actants": "villains",
         "actantgroup": "band",

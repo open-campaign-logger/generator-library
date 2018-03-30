@@ -1,0 +1,297 @@
+{
+  "name": "quirk",
+  "resultPattern": "{init}{result}",
+  "explanation": "Personality quirks.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "Developed from the quirk generation section of 'Goblin Names' generator by Ron Calbick.",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "edge, flaw, strategy",
+  "date": "2018-02-10",
+  "authors": "Ron Calbick (as extracted from his goblin-names.json generator), Esko Vesala.",
+  "sources": "Ron Calbick: 'Goblin Generator'.",
+  "genre": "universal",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{quirk}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{quirk}"
+      ]
+    },
+    {
+      "name": "quirk",
+      "explanation": "Quirk types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common quirk types.",
+      "entries": [
+        "{superstitious}",
+        "{knowledge}",
+        "{physical}",
+        "{senses}",
+        "{appearance}",
+        "{movement}",
+        "{hygiene}",
+        "{behavior}",
+        "{manners}",
+        "{speech}",
+        "{clothing}",
+        "{possession}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare quirk types.",
+      "entries": [
+        "{bestial}",
+        "{animalistic}",
+        "{retarded}",
+        "{primitive}"
+      ]
+    },
+    {
+      "name": "bestial",
+      "explanation": "Beast-like quirks.",
+      "entries": [
+        "has very large feet with long clawed toes that are often used in battle"
+      ]
+    },
+    {
+      "name": "animalistic",
+      "explanation": "Animal-like quirks.",
+      "entries": [
+        "has very large feet with long clawed toes that are often used in battle.",
+        "likes to eat just about anything, including dirt, leaves, wood, paper, and just about anything else that is even remotely edible",
+        "often marks territory as an animal would, urinating at various key locations, even indoors",
+        "has a tendency to bury things, from sticks and rocks to valuables, and rarely remembers where they were buried afterwards"
+      ]
+    },
+    {
+      "name": "retarded",
+      "explanation": "Low-intelligence quirks.",
+      "entries": [
+        "breaks into an absurd dance after any accomplishment, whether the task was important or not",
+        "jumps up and down wildly at anything humorous and has a laugh that sounds very much like a braying donkey"
+      ]
+    },
+    {
+      "name": "primitive",
+      "explanation": "Primitive quirks.",
+      "entries": [
+        "has a great number of body piercings of decoratively carved pieces of bone",
+        "is usually coated with a thick, dried layer of mud"
+      ]
+    },
+    {
+      "name": "superstitious",
+      "explanation": "Superstition-related quirks.",
+      "entries": [
+        "always throws a handful of small bones and reads them before making any important decisions",
+        "believes the moon grants special powers and loves sharing that notion with others"
+      ]
+    },
+    {
+      "name": "knowledge",
+      "entries": [
+        "has an unusual knowledge of uses for nearly any plant but tends to eat any of them that aren't harmful"
+      ]
+    },
+    {
+      "name": "physical",
+      "explanation": "Body-related quirks.",
+      "entries": [
+        "has an unusually large nose that is particularly keen, often used for tracking by scent.",
+        "is rarely seen not eating, or at least in possession of, various foodstuffs",
+        "has eyes of two different colors and when speaking to others moves up close and opens them wide so they are easily noticed"
+      ]
+    },
+    {
+      "name": "senses",
+      "explanation": "Sensing-related quirks.",
+      "entries": [
+        "is missing an ear, claiming it simply fell off and was never found",
+        "has an unusually large nose that is particularly keen"
+      ]
+    },
+    {
+      "name": "appearance",
+      "explanation": "Appearance-related quirks.",
+      "entries": [
+        "has few teeth and even those remaining are in a state of severe decay, but nonetheless frequently smiles proudly",
+        "appears to have once been severely burned on nearly every body part but still manages to function almost normally",
+        "is unusually tall and skinny",
+        "is completely hairless and has blotchy skin of various shades and tints"
+      ]
+    },
+    {
+      "name": "movement",
+      "explanation": "Movement-related quirks.",
+      "entries": [
+        "is very bow-legged and moves about in a very awkward fashion as if actually mounted",
+        "can't stand still and is constantly bouncing from one foot to the other, pacing, or fidgeting"
+      ]
+    },
+    {
+      "name": "hygiene",
+      "explanation": "Sanitary-related quirks.",
+      "entries": [
+        "smells especially noxious, often leaving a lingering odor behind"
+      ]
+    },
+    {
+      "name": "behavior",
+      "explanation": "behaviour-related quirks.",
+      "entries": [
+        "is always trying to sneak and hide from others, as if life were one big game of hide and seek"
+      ]
+    },
+    {
+      "name": "manners",
+      "explanation": "Behavior-related quirks.",
+      "entries": [
+        "is prone to frequent loud, odorous belching that often makes others sick to their stomachs",
+        "is prone to nose-picking when deep in thought or anxious about something",
+        "drools incessantly and has a tendency to spit on others when speaking"
+      ]
+    },
+    {
+      "name": "speech",
+      "explanation": "Talking-related quirks.",
+      "entries": [
+        "has a penchant for dragons, but can't pronounce the word properly, calling them 'dagorns' instead.",
+        "is incapable of speaking softly and often blurts things out at the most inopportune times"
+      ]
+    },
+    {
+      "name": "clothing",
+      "explanation": "Clothes-related quirks.",
+      "entries": [
+        "wears a trophy necklace of small rodent tails that looks ridiculous and smells horribly",
+        "wears clothing adorned with all manner of worthless knick-knacks, such as pieces of rotting rope, a cracked marble, or strips of colorful cloth",
+        "is unusually clean and takes great pride in wearing various ridiculous outfits",
+        "wears an absurd headdress that usually looks like its about to slip off and fall to the ground"
+      ]
+    },
+    {
+      "name": "possession",
+      "explanation": "Possession-related quirks.",
+      "entries": [
+        "drags a very old, tattered, and barely recognizable scrap of blanket around everywhere",
+        "carries around a broken sword and longs to recover the other piece, after which it will be reforged and grant great power to its owner",
+        "is accompanied by a mongrel dog that looks fierce, growling and barking, but flees at the first sign of combat"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Quirks once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Quirks for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Quirks for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Quirks for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special quirk tables.",
+      "entries": [
+        "{goblinoid}"
+      ]
+    },
+    {
+      "name": "goblinoid",
+      "explanation": "Special quirk tables.",
+      "entries": [
+        "{bestial}",
+        "{animalistic}",
+        "{retarded}",
+        "{primitive}",
+        "{superstitious}",
+        "{physical}",
+        "{senses}",
+        "{appearance}",
+        "{movement}",
+        "{hygiene}",
+        "{behavior}",
+        "{manners}",
+        "{speech}",
+        "{clothing}",
+        "{possession}"
+      ]
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}."
+      ]
+    }
+  ]
+}

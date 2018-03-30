@@ -1,66 +1,7 @@
 {
   "name": "dungeon_entrance",
-  "resultPattern": "{HTML formatting}{init}",
+  "resultPattern": "{init}",
   "variables": {
-    "starttitle": "",
-    "endtitle": "",
-    "startheading": "",
-    "endheading": "",
-    "startbold": "",
-    "endbold": "",
-    "para": "",
-    "entrance": "door",
-    "entrancesize": "medium",
-    "entrancepurpose": "",
-    "entranceshape": "rectangular",
-    "entrancetype": "chamber",
-    "entrancedescription": "",
-    "entrancecontents": "",
-    "entranceevent": "",
-    "groundfeature": "",
-    "wallfeature": "",
-    "ceilingfeature": "",
-    "air": "",
-    "smell": "",
-    "sound": "",
-    "mineral": "",
-    "animal": "animal",
-    "animals": "animals",
-    "animalgroup": "",
-    "animalaction": "",
-    "animaladjective": "",
-    "animaldescription": "",
-    "plant": "plant",
-    "plants": "plants",
-    "plantgroup": "bush of plants",
-    "plantaction": "",
-    "plantadjective": "",
-    "plantdescription": "",
-    "door": "door",
-    "doorfeature": "",
-    "lock": "lock",
-    "lockfeature": "",
-    "key": "key",
-    "keydescription": "small silver key",
-    "corridor": "corridor",
-    "corridorfeature": "",
-    "danger": "danger",
-    "dangeraction": "",
-    "dangerdescription": "",
-    "trial": "trial",
-    "trialaction": "",
-    "trialdescription": "",
-    "hindrance": "hindrance",
-    "hindranceaction": "",
-    "hindrancedescription": "",
-    "setback": "setback",
-    "setbackaction": "",
-    "setbackdescription": "",
-    "trap": "trap",
-    "trapaction": "",
-    "trapdescription": "",
-    "damage": "damage",
-    "damagetype": "",
     "footnote": ""
   },
   "explanation": "Random dungeon entrances.",
@@ -69,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_corridor, dungeon_room, dungeon_vault, Five_room_dungeon",
-  "date": "2018-01-25",
+  "date": "2018-02-03",
   "authors": "Esko Vesala",
   "sources": "",
   "genre": "fantasy",
@@ -103,7 +44,7 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{milieu} {entrance}. {var:para}{extra}"
+        "{milieu} {entrance}. {global:para}{extra}"
       ]
     },
     {
@@ -143,7 +84,7 @@
     {
       "name": "barrier",
       "explanation": "Barred entrances.",
-      "set": {
+      "export": {
         "entrance": "barrier"
       },
       "entries": [
@@ -157,7 +98,7 @@
     {
       "name": "door",
       "explanation": "Door entrances.",
-      "set": {
+      "export": {
         "entrance": "door"
       },
       "entries": [
@@ -173,7 +114,7 @@
     {
       "name": "hidden",
       "explanation": "Hidden entrances.",
-      "set": {
+      "export": {
         "entrance": "hidden"
       },
       "entries": [
@@ -195,7 +136,7 @@
     {
       "name": "opening",
       "explanation": "Hidden entrances.",
-      "set": {
+      "export": {
         "entrance": "opening"
       },
       "entries": [
@@ -209,7 +150,7 @@
     {
       "name": "shaft",
       "explanation": "Shaft entrances.",
-      "set": {
+      "export": {
         "entrance": "shaft"
       },
       "entries": [
@@ -223,7 +164,7 @@
     {
       "name": "stairs",
       "explanation": "Stair entrances.",
-      "set": {
+      "export": {
         "entrance": "stairs"
       },
       "entries": [
@@ -234,7 +175,7 @@
     {
       "name": "trapdoor",
       "explanation": "Trapdoor entrances.",
-      "set": {
+      "export": {
         "entrance": "trapdoor"
       },
       "entries": [
@@ -316,7 +257,7 @@
     {
       "name": "indoors",
       "explanation": "Indoor entrances.",
-      "set": {
+      "export": {
         "milieu": "indoors"
       },
       "entries": [
@@ -327,7 +268,7 @@
     {
       "name": "urban",
       "explanation": "Entrances in cities.",
-      "set": {
+      "export": {
         "milieu": "urban"
       },
       "entries": [
@@ -338,7 +279,7 @@
     {
       "name": "suburban",
       "explanation": "Entrances in cities.",
-      "set": {
+      "export": {
         "milieu": "suburban"
       },
       "entries": [
@@ -349,7 +290,7 @@
     {
       "name": "rural",
       "explanation": "Entrances in countryside.",
-      "set": {
+      "export": {
         "milieu": "rural"
       },
       "entries": [
@@ -360,7 +301,7 @@
     {
       "name": "outpost",
       "explanation": "Entrances by outposts.",
-      "set": {
+      "export": {
         "milieu": "outpost"
       },
       "entries": [
@@ -371,7 +312,7 @@
     {
       "name": "grassland",
       "explanation": "Entrances on the plains.",
-      "set": {
+      "export": {
         "milieu": "grassland"
       },
       "entries": [
@@ -382,7 +323,7 @@
     {
       "name": "forest",
       "explanation": "Entrances in the woods.",
-      "set": {
+      "export": {
         "milieu": "forest"
       },
       "entries": [
@@ -393,29 +334,29 @@
     {
       "name": "hill",
       "explanation": "Entrances in the hills.",
-      "set": {
+      "export": {
         "milieu": "hill"
       },
       "entries": [
         "Amidst the hillside rubble the shape of an entrance can be seen: ",
-        "On the side of a gently sloping hill, there is "
+        "On the side of a gently sloping hill, there is something strange: "
       ]
     },
     {
       "name": "mountain",
       "explanation": "Entrances in the mountains.",
-      "set": {
+      "export": {
         "milieu": "mountain"
       },
       "entries": [
-        "In the rocky mountainside there is ",
+        "In the rocky mountainside there is something odd: ",
         "A steep cliff face offers a surprising sight: "
       ]
     },
     {
       "name": "river",
       "explanation": "Entrances by the river.",
-      "set": {
+      "export": {
         "milieu": "river"
       },
       "entries": [
@@ -426,18 +367,18 @@
     {
       "name": "lake",
       "explanation": "Entrances by the lake.",
-      "set": {
+      "export": {
         "milieu": "lake"
       },
       "entries": [
-        "On a small lake in the middle of a lake, there is ",
+        "On a small isle in the middle of a lake, there is something peculiar: ",
         "By the lakeside, a curious structure looms: "
       ]
     },
     {
       "name": "wetlands",
       "explanation": "Entrances near swamps.",
-      "set": {
+      "export": {
         "milieu": "wetlands"
       },
       "entries": [
@@ -448,7 +389,7 @@
     {
       "name": "coast",
       "explanation": "Entrances near the coast.",
-      "set": {
+      "export": {
         "milieu": "coast"
       },
       "entries": [
@@ -459,7 +400,7 @@
     {
       "name": "sea",
       "explanation": "Naval entrances.",
-      "set": {
+      "export": {
         "milieu": "sea"
       },
       "entries": [
@@ -470,7 +411,7 @@
     {
       "name": "tundra",
       "explanation": "Entrances on the tundra.",
-      "set": {
+      "export": {
         "milieu": "tundra"
       },
       "entries": [
@@ -481,7 +422,7 @@
     {
       "name": "rainforest",
       "explanation": "Entrances in the jungle.",
-      "set": {
+      "export": {
         "milieu": "rainforest"
       },
       "entries": [
@@ -492,7 +433,7 @@
     {
       "name": "savanna",
       "explanation": "Entrances on the savanna.",
-      "set": {
+      "export": {
         "milieu": "savanna"
       },
       "entries": [
@@ -503,7 +444,7 @@
     {
       "name": "desert",
       "explanation": "Entrances on the desert.",
-      "set": {
+      "export": {
         "milieu": "desert"
       },
       "entries": [
@@ -514,51 +455,12 @@
     {
       "name": "underground",
       "explanation": "Underground entrances.",
-      "set": {
+      "export": {
         "milieu": "underground"
       },
       "entries": [
         "The tortuous cavern guards a strange sight: ",
         "The undeground passageway continues for the longest of time, until it abruptly ends by "
-      ]
-    },
-    {
-      "**************************************************": "FORMATTING"
-    },
-    {
-      "name": "HTML formatting",
-      "explanation": "Set variables for formatting the output as HTML",
-      "entries": [
-        {
-          "v": "",
-          "set": {
-            "starttitle": "<H2>",
-            "endtitle": "</H2>",
-            "startheading": "<H3>",
-            "endheading": "</H3>",
-            "startbold": "<B>",
-            "endbold": "</B>",
-            "para": "<P>"
-          }
-        }
-      ]
-    },
-    {
-      "name": "CL formatting",
-      "explanation": "Set variables for formatting the output for Campaign Logger",
-      "entries": [
-        {
-          "v": "",
-          "set": {
-            "starttitle": "{b|",
-            "endtitle": "}\r\n\r\n",
-            "startheading": "\r\n\r\n{b|",
-            "endheading": "}",
-            "startbold": "{b|",
-            "endbold": "}",
-            "para": "\r\n"
-          }
-        }
       ]
     },
     {
@@ -604,8 +506,8 @@
       "name": "extra",
       "explanation": "Extras for dungeon entrances.",
       "entries": [
-        "{var:startbold}Entrance complication{var:endbold}: {complication}",
-        "{var:startbold}Entrance feature{var:endbold}: {feature}"
+        "{global:startbold}Entrance complication{global:endbold}: {complication}",
+        "{global:startbold}Entrance feature{global:endbold}: {feature}"
       ]
     },
     {

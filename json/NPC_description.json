@@ -1,32 +1,42 @@
 {
-  "name": "NPC Description Generator",
-  "resultPattern": "{form}{gender}{culture}{wealth}{attitude} \r\n  {description} \r\n{var:footnote}",
-  "variables": {
+  "name": "NPC_description",
+  "resultPattern": "{lib:formatting#CL}{init}{result}",
+  "globals": {
+    "species": "",
+    "speciesadjective": "",
+    "speciesmention": "",
+    "culture": "{culture}",
+    "civilization": "urban",
+    "gender": "{lib:gender}",
+    "age": "",
+    "name": "",
+    "dependentpossessive": "",
+    "independentpossessive": "",
+    "reflexive": "",
     "actant": "person",
     "actants": "persons",
     "actantgroup": "group",
     "actantaction": "minding their own business",
     "actantadjective": "casual",
-    "actantdescription": "The person is not paying much attention to their surroundings.",
-    "attitude": "neutral",
+    "actantdescription": "They are not paying much attention to their surroundings.",
     "activity": "passive",
-    "age": "adult",
-    "behavior": "",
+    "attitude": "neutral",
+    "behavior": "calm",
+    "socialclass": "",
+    "employment": "",
+    "wealth": "",
     "clothing": "",
-    "culture": "Northern",
-    "doing": "",
-    "footnote": "",
-    "form": "",
-    "gender": "neuter",
-    "mood": "",
-    "moodexpression": "",
-    "occupation": "",
-    "species": "",
-    "speciesmentioned": "",
+    "outfitadjective": "",
+    "doing": "relaxing",
+    "form": "humanoid",
+    "mood": "calm",
+    "moodexpression": "serious",
+    "occupation": "trader",
     "style": "",
-    "subject": "",
-    "substantive": "",
-    "wealth": "middle class"
+    "substantive": ""
+  },
+  "variables": {
+    "footnote": ""
   },
   "explanation": "First impression of a Non-Player Character.",
   "structure": "Produces generic entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, any non-generic tables should be called only from other tables by specifying their name directly.",
@@ -34,505 +44,146 @@
   "bugs": "Developepment currently on hold, waiting for global variable support.",
   "to do": "Most of it... Starting from genre? ",
   "see": "",
-  "date": "2018-01-26",
-  "authors": "Esko Vesala",
+  "date": "2018-03-10",
+  "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
   "genre": "fantasy",
   "category": "character",
   "tags": "#npc, #person, #appearance",
   "tables": [
     {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "export": {
+        "species": "{lib:species}",
+        "gender": "{lib:gender}",
+        "culture": "{culture}",
+        "firstname": "{lib:name-{global:culture}#{global:gender}}",
+        "byname": "{lib:name-{global:culture}#byname}",
+        "name": "{global:firstname} {global:byname}",
+        "nametable": "name-{global:culture}",
+        "nametablefull": "name-{global:culture}#{global:gender}",
+        "civilization": "{civilization}",
+        "wealth": "{lib:social_class}"
+      },
+      "entries": [
+        "{mood}{attitude}{activity}"
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{name}: {basic}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{description}"
+      ]
+    },
+    {
       "name": "description",
-      "explanation": "Short description of the character. Note that species returns a direct result (so that 'human', the default, can return an empty string.)",
+      "explanation": "The description types by rarity.",
+      "note": "The species call returns a direct result (so that 'human', the default, can return an empty string.)",
       "entries": [
-        "{var:age} {var:gender} {var:speciesmentioned} is {var:attitude} and {lib:synonym#wearing} {var:clothingadjective} {lib:synonym#clothing}. The {var:substantive} is {var:activity}. {lib:synonym#now} {var:subject} is {var:attitude} and {var:mood}, {var:moodexpression}. ",
-        "{var:age} {var:gender} {var:speciesmentioned} {lib:synonym#wearing} {var:clothingadjective} {lib:synonym#clothing}. The {var:substantive} is {var:activity}. {lib:synonym#now} {var:subject} is {var:mood}, {var:moodexpression}. {var:subject} has a {var:speciesadjective} sense of humor."
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
       ]
     },
     {
-      "name": "form",
-      "explanation": "Form of the character.",
+      "name": "common",
+      "explanation": "Common description types.",
       "entries": [
-        {
-          "m": 1,
-          "v": "{humanoid}",
-          "set": {
-            "form": "humanoid"
-          }
-        }
+        "{name} {global:para}{basic} {global:para}{attire} {global:para}{background} {global:para}{personality} {global:para}{goal} {global:para}{equipment}"
       ]
     },
     {
-      "name": "humanoid",
-      "explanation": "Humanoid species (or races). The 'speciesmentioned' variable is used so that human (the expected norm) can be left without a mention, while other species are mentioned.",
+      "name": "rare",
+      "explanation": "Rare description types.",
       "entries": [
-        {
-          "m": 50,
-          "v": "",
-          "set": {
-            "species": "human",
-            "speciesmentioned": "",
-            "speciesadjective": "human"
-          }
-        },
-        {
-          "m": 20,
-          "v": "",
-          "set": {
-            "species": "elf",
-            "speciesmentioned": "elf",
-            "speciesadjective": "elven"
-          }
-        },
-        {
-          "m": 20,
-          "v": "",
-          "set": {
-            "species": "dwarf",
-            "speciesmentioned": "dwarf",
-            "speciesadjective": "dwarven"
-          }
-        },
-        {
-          "m": 10,
-          "v": "",
-          "set": {
-            "species": "gnome",
-            "speciesmentioned": "gnome",
-            "speciesadjective": "gnomish"
-          }
-        }
+        "{common}"
       ]
     },
     {
-      "name": "gender",
-      "explanation": "Gender of the character.",
+      "*********************************************": "DESCRIPTION ELEMENTS"
+    },
+    {
+      "name": "attire",
+      "explanation": "The costume of the person.",
       "entries": [
-        {
-          "m": 49,
-          "v": "{female age}",
-          "set": {
-            "gender": "female",
-            "subject": "she",
-            "object": "her",
-            "dependentpossessive": "her",
-            "independentpossessive": "hers",
-            "reflexive": "herself"
-          }
-        },
-        {
-          "m": 49,
-          "v": "{male age}",
-          "set": {
-            "gender": "male",
-            "subject": "he",
-            "object": "him",
-            "dependentpossessive": "his",
-            "independentpossessive": "his",
-            "reflexive": "himself"
-          }
-        }
+        "{global:Subject} is wearing {lib:outfit}."
       ]
     },
     {
-      "name": "rare gender",
-      "explanation": "Rare genders not generated unless specifically called.",
+      "name": "basic",
+      "explanation": "Basic description: age, gender, species, profession.",
       "entries": [
-        {
-          "m": 1,
-          "v": "{neuter age}",
-          "set": {
-            "gender": "neuter",
-            "subject": "it",
-            "object": "it",
-            "dependentpossessive": "its",
-            "independentpossessive": "its",
-            "reflexive": "itself"
-          }
-        },
-        {
-          "m": 1,
-          "v": "{hermafrodite age}",
-          "set": {
-            "gender": "hermafrodite",
-            "subject": "they",
-            "object": "them",
-            "dependentpossessive": "their",
-            "independentpossessive": "theirs",
-            "reflexive": "themselves"
-          }
-        }
+        "{global:age} {global:gender} {global:culture} {global:employment}"
       ]
     },
     {
-      "name": "neuter age",
-      "explanation": "Age for neuter characters (golems, automatons, homonculi, contructs, androids, etc).",
+      "name": "background",
+      "explanation": "The background of the person.",
       "entries": [
-        {
-          "m": 10,
-          "v": "",
-          "set": {
-            "age": "teenage",
-            "substantive": "teenager"
-          }
-        },
-        {
-          "m": 10,
-          "v": "",
-          "set": {
-            "age": "young",
-            "substantive": "youngster"
-          }
-        },
-        {
-          "m": 30,
-          "v": "",
-          "set": {
-            "age": "adult",
-            "substantive": "person"
-          }
-        },
-        {
-          "m": 20,
-          "v": "",
-          "set": {
-            "age": "middle aged",
-            "substantive": "person"
-          }
-        },
-        {
-          "m": 10,
-          "v": "",
-          "set": {
-            "age": "old",
-            "substantive": "old one"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "age": "ancient",
-            "substantive": "ancient one"
-          }
-        }
+        "The {global:substantive} is an NPC."
       ]
     },
     {
-      "name": "female age",
-      "explanation": "Age for female characters.",
+      "name": "equipment",
+      "explanation": "The belongings of the person.",
       "entries": [
-        {
-          "m": 10,
-          "v": "",
-          "set": {
-            "age": "teenage",
-            "substantive": "teenager"
-          }
-        },
-        {
-          "m": 10,
-          "v": "",
-          "set": {
-            "age": "young",
-            "substantive": "youngster"
-          }
-        },
-        {
-          "m": 30,
-          "v": "",
-          "set": {
-            "age": "adult",
-            "substantive": "person"
-          }
-        },
-        {
-          "m": 20,
-          "v": "",
-          "set": {
-            "age": "middle aged",
-            "substantive": "person"
-          }
-        },
-        {
-          "m": 10,
-          "v": "",
-          "set": {
-            "age": "old",
-            "substantive": "old one"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "age": "ancient",
-            "substantive": "ancient one"
-          }
-        }
+        "{global:startitalic}Weapon{global:enditalic}: {lib:weapon#common}."
       ]
     },
     {
-      "name": "male age",
-      "explanation": "Age for male characters.",
+      "name": "goal",
+      "explanation": "The character's life goal.",
       "entries": [
-        {
-          "m": 10,
-          "v": "",
-          "set": {
-            "age": "teenage",
-            "substantive": "teenager"
-          }
-        },
-        {
-          "m": 10,
-          "v": "",
-          "set": {
-            "age": "young",
-            "substantive": "youngster"
-          }
-        },
-        {
-          "m": 30,
-          "v": "",
-          "set": {
-            "age": "adult",
-            "substantive": "person"
-          }
-        },
-        {
-          "m": 20,
-          "v": "",
-          "set": {
-            "age": "middle aged",
-            "substantive": "person"
-          }
-        },
-        {
-          "m": 10,
-          "v": "",
-          "set": {
-            "age": "old",
-            "substantive": "old one"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "age": "ancient",
-            "substantive": "ancient one"
-          }
-        }
+        "{global:Subject} wants to {lib:goal}."
       ]
     },
     {
-      "name": "hermafrodite age",
-      "explanation": "Age for hermafrodite characters.",
+      "name": "name",
+      "explanation": "The character's name.",
       "entries": [
-        {
-          "m": 10,
-          "v": "",
-          "set": {
-            "age": "teenage",
-            "substantive": "teenager"
-          }
-        },
-        {
-          "m": 10,
-          "v": "",
-          "set": {
-            "age": "young",
-            "substantive": "youngster"
-          }
-        },
-        {
-          "m": 30,
-          "v": "",
-          "set": {
-            "age": "adult",
-            "substantive": "person"
-          }
-        },
-        {
-          "m": 20,
-          "v": "",
-          "set": {
-            "age": "middle aged",
-            "substantive": "person"
-          }
-        },
-        {
-          "m": 10,
-          "v": "",
-          "set": {
-            "age": "old",
-            "substantive": "old one"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "set": {
-            "age": "ancient",
-            "substantive": "ancient one"
-          }
-        }
+        "{global:startbold}{global:name}{global:endbold}"
       ]
     },
     {
-      "name": "culture",
-      "explanation": "What the character is wearing?",
+      "name": "personality",
+      "explanation": "Psychology of the person.",
       "entries": [
-        {
-          "m": 10,
-          "v": "",
-          "set": {
-            "culture": "Western"
-          }
-        },
-        {
-          "m": 10,
-          "v": "",
-          "set": {
-            "culture": "Northern"
-          }
-        },
-        {
-          "m": 10,
-          "v": "",
-          "set": {
-            "culture": "Eastern"
-          }
-        },
-        {
-          "m": 10,
-          "v": "",
-          "set": {
-            "culture": "Southern"
-          }
-        }
+        "{global:para}{global:name} {lib:personality}. {global:para}{global:firstname} {lib:flaw}. {global:para}{global:byname} {lib:quirk}."
       ]
     },
     {
-      "name": "wealth",
-      "explanation": "Wealth distribution.",
+      "**************************************************": "CIVILIZATIONS"
+    },
+    {
+      "name": "civilization",
+      "explanation": "Affects what the character is wearing.",
       "entries": [
-        {
-          "m": 5,
-          "v": "{poor clothing}",
-          "set": {
-            "wealth": "poor"
-          }
-        },
-        {
-          "m": 50,
-          "v": "{lower class clothing}",
-          "set": {
-            "wealth": "lower class"
-          }
-        },
-        {
-          "m": 30,
-          "v": "{middle class clothing}",
-          "set": {
-            "wealth": "middle class"
-          }
-        },
-        {
-          "m": 10,
-          "v": "{upper class clothing}",
-          "set": {
-            "wealth": "upper class"
-          }
-        },
-        {
-          "m": 5,
-          "v": "{rich clothing}",
-          "set": {
-            "wealth": "rich"
-          }
-        }
+        "foraging",
+        "nomadic",
+        "agricultural",
+        "urban"
       ]
     },
     {
-      "name": "poor clothing",
-      "explanation": "Clothing for poor characters.",
-      "entries": [
-        {
-          "m": 5,
-          "v": "",
-          "set": {
-            "clothing": "rags"
-          }
-        },
-        {
-          "m": 5,
-          "v": "",
-          "set": {
-            "clothing": "ill-fitting garments"
-          }
-        },
-        {
-          "m": 5,
-          "v": "",
-          "set": {
-            "clothingadjective": "dirty"
-          }
-        }
-      ]
-    },
-    {
-      "name": "lower class clothing",
-      "explanation": "Clothing for lower class characters.",
-      "entries": [
-        {
-          "m": 5,
-          "v": "",
-          "set": {
-            "clothingadjective": "modest"
-          }
-        }
-      ]
-    },
-    {
-      "name": "middle class clothing",
-      "explanation": "Clothing for middle class characters.",
-      "entries": [
-        {
-          "m": 5,
-          "v": "",
-          "set": {
-            "clothingadjective": "ordinary"
-          }
-        }
-      ]
-    },
-    {
-      "name": "upper class clothing",
-      "explanation": "Clothing for upper class characters.",
-      "entries": [
-        {
-          "m": 5,
-          "v": "",
-          "set": {
-            "clothingadjective": "fashionable"
-          }
-        }
-      ]
-    },
-    {
-      "name": "rich clothing",
-      "explanation": "Clothing for rich characters.",
-      "entries": [
-        {
-          "m": 5,
-          "v": "",
-          "set": {
-            "clothingadjective": "luxurious"
-          }
-        }
-      ]
+      "**************************************************": "ATTITUDE"
     },
     {
       "name": "attitude",
@@ -541,41 +192,44 @@
         {
           "m": 30,
           "v": "",
-          "set": {
+          "export": {
             "attitude": "hostile"
           }
         },
         {
           "m": 40,
           "v": "",
-          "set": {
+          "export": {
             "attitude": "neutral"
           }
         },
         {
           "m": 30,
           "v": "",
-          "set": {
+          "export": {
             "attitude": "friendly"
           }
         }
       ]
     },
     {
+      "**************************************************": "ACTIVITY"
+    },
+    {
       "name": "activity",
-      "explanation": "What the character's activity level?  Returns only variables.",
+      "explanation": "What the character's activity level? Returns only variables.",
       "entries": [
         {
           "m": 10,
           "v": "{passive activity}",
-          "set": {
+          "export": {
             "activity": "passive"
           }
         },
         {
           "m": 10,
           "v": "{active activity}",
-          "set": {
+          "export": {
             "activity": "active"
           }
         }
@@ -588,21 +242,21 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "activity": "sleeping"
           }
         },
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "activity": "sitting"
           }
         },
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "activity": "standing"
           }
         }
@@ -615,18 +269,21 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "activity": "walking"
           }
         },
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "activity": "running"
           }
         }
       ]
+    },
+    {
+      "**************************************************": "MOODS"
     },
     {
       "name": "mood",
@@ -635,7 +292,7 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "mood": "sad",
             "moodexpression": "crying"
           }
@@ -643,7 +300,7 @@
         {
           "m": 20,
           "v": "",
-          "set": {
+          "export": {
             "mood": "passive",
             "moodexpression": "deep in thoughts"
           }
@@ -651,11 +308,83 @@
         {
           "m": 10,
           "v": "",
-          "set": {
+          "export": {
             "mood": "happy",
             "moodexpression": "laughing"
           }
         }
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special NPC description tables.",
+      "entries": [
+        "{culture}",
+        "{legacy}"
+      ]
+    },
+    {
+      "name": "culture",
+      "explanation": "Cultural background of the character.",
+      "entries": [
+        "Malorian",
+        "Pictish",
+        "Viking"
+      ]
+    },
+    {
+      "name": "legacy",
+      "explanation": "Old result before global variables.",
+      "entries": [
+        "The {global:gender} {global:age} {global:speciesmention} is {global:attitude} and is {lib:synonym#wearing} {global:outfitadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:attitude} and {global:mood}, {global:moodexpression}.",
+        "This {global:gender} {global:age} {global:speciesmention} is {lib:synonym#wearing} {global:outfitadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:mood}, {global:moodexpression}. {global:subject} has a {global:speciesadjective} sense of humor."
+      ]
+    },
+    {
+      "**************************************************": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}. \r\nSpecies: {global:species}, age: {global:age}, civilization: {civilization}, wealth: {global:wealth}."
       ]
     }
   ]

@@ -1,6 +1,9 @@
 {
   "name": "key",
   "resultPattern": "{result}",
+  "globals": {
+    "key": ""
+  },
   "variables": {
     "footnote": ""
   },
@@ -11,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "lock",
-  "date": "2018-01-10",
+  "date": "2018-01-26",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "universal",

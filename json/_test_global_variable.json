@@ -1,0 +1,23 @@
+{
+  "name": "test_global_variable",
+  "resultPattern": "{result}",
+  "globals": {
+    "color": "",
+    "storedcolor": "",
+    "shade": "",
+    "shape": "round"
+  },
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Calling the private 'test_gen' generator and outputting the set global variables.",
+      "export": {
+        "color": "{lib:color}",
+        "storedcolor": "{global:color}"
+      },
+      "entries": [
+        "Main generator: color = {global:color}, storedcolor = {global:storedcolor}, shape = {global:shape}, shade = {global:shade}. \r\nVisiting another generator: {gen:test_gen_array} \r\nBack in main generator: color = {global:color}, storedcolor = {global:storedcolor}, shape = {global:shape}, shade = {global:shade}."
+      ]
+    }
+  ]
+}

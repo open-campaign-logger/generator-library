@@ -4708,7 +4708,7 @@
       "entries": [
         {
           "m": 1,
-          "v": "{var:beat}{var:endheading} A great battle againts the {var:enemy} and the {var:minions} ensues. The result will determine the final fate of everyone involved! ",
+          "v": "{var:beat}{var:endheading} A great battle against the {var:enemy} and the {var:minions} ensues. The result will determine the final fate of everyone involved! ",
           "set": {
             "beat": "final battle"
           }

@@ -9,7 +9,7 @@
   "note": "",
   "to do": "Fantasy colors.",
   "see": "adjColor",
-  "date": "2018-01-08",
+  "date": "2018-02-24",
   "authors": "Esko Vesala.",
   "sources": "Craftsy.com, Wikipedia.org.",
   "genre": "universal",
@@ -284,7 +284,7 @@
         "blue-green",
         "green-blue",
         "cerulean (dark blue-green)",
-        "aquamarine (can with bluish tint)",
+        "aquamarine (cyan with bluish tint)",
         "teal blue"
       ]
     },
@@ -590,7 +590,7 @@
       "explanation": "White hues.",
       "entries": [
         "off-white",
-        "platimum grey (pale greyish white)",
+        "platinum grey (pale greyish white)",
         "beige (pale sandy)",
         "ecru (light beige)",
         "bone white",
@@ -615,7 +615,7 @@
       "entries": [
         "white",
         "off-white",
-        "platimum",
+        "platinum",
         "beige",
         "ecru",
         "smoke",

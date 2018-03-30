@@ -58,11 +58,12 @@ typings/
 .env
 
 # Campaign Logger files
-*.pdf
+Staging
 .gitignore
-Welcome to your new FTP-Home, Esko!.txt
+*.pdf
 json/_encounterSeed_generator.json
 json/_goblinName_generator.json
 json/_heroOfTheRealm_generator.json
 json/_rumorTown_generator.json
+json/_test*.json
 json/external.json

@@ -1,0 +1,446 @@
+{
+  "name": "occupation",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": "value"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Crafts, trades, professions and other forms of employment.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-03-08",
+  "authors": "ELF Vesala.",
+  "sources": "CastlesAndManorHouses.com, Svincent.com",
+  "genre": "universal",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{employment}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{employment}"
+      ]
+    },
+    {
+      "name": "employment",
+      "explanation": "Employment types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common employment types.",
+      "entries": [
+        "{lower class}",
+        "{middle class}",
+        "{upper class}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare employment types.",
+      "entries": [
+        "{poor}",
+        "{rich}"
+      ]
+    },
+    {
+      "**************************************************": "STATUSES"
+    },
+    {
+      "name": "status",
+      "explanation": "Social statuses.",
+      "entries": [
+        "{poor}",
+        "{lower class}",
+        "{middle class}",
+        "{upper class}",
+        "{rich}"
+      ]
+    },
+    {
+      "name": "poor",
+      "explanation": "The lowest social status.",
+      "entries": [
+        "{beggar}",
+        "{criminal}",
+        "{servant}"
+      ]
+    },
+    {
+      "name": "lower class",
+      "explanation": "Lower class social status.",
+      "entries": [
+        "{farmer}",
+        "{hireling}",
+        "{worker}"
+      ]
+    },
+    {
+      "name": "middle class",
+      "explanation": "Middle class social status.",
+      "entries": [
+        "{artisan}",
+        "{merchant}"
+      ]
+    },
+    {
+      "name": "upper class",
+      "explanation": "Upper class social status.",
+      "entries": [
+        "{government}",
+        "{academic}",
+        "{legal}"
+      ]
+    },
+    {
+      "name": "rich",
+      "explanation": "The highest social status.",
+      "entries": [
+        "{politician}"
+      ]
+    },
+    {
+      "**************************************************": "OCCUPATIONS"
+    },
+    {
+      "name": "academic",
+      "explanation": "Scholarly employment.",
+      "entries": [
+        "academic",
+        "scholar",
+        "researcher",
+        "academic teacher"
+      ]
+    },
+    {
+      "name": "artisan",
+      "explanation": "Craftsmen and skilled workers.",
+      "entries": [
+        "woodworker",
+        "blacksmith",
+        "butcher",
+        "baker"
+      ]
+    },
+    {
+      "name": "beggar",
+      "explanation": "No employment.",
+      "entries": [
+        "beggar",
+        "tramp",
+        "scrounger",
+        "vagabond"
+      ]
+    },
+    {
+      "name": "criminal",
+      "explanation": "Smalltime criminals.",
+      "entries": [
+        "pickpocket",
+        "burglar",
+        "bandit",
+        "robber",
+        "housebreaker",
+        "fence"
+      ]
+    },
+    {
+      "name": "farmer",
+      "explanation": "Mercantile employment.",
+      "entries": [
+        "farmer"
+      ]
+    },
+    {
+      "name": "government",
+      "explanation": "Government officials.",
+      "entries": [
+        "hireling"
+      ]
+    },
+    {
+      "name": "hireling",
+      "explanation": "Hired temporary help.",
+      "entries": [
+        "hireling"
+      ]
+    },
+    {
+      "name": "legal",
+      "explanation": "Legal professionals.",
+      "entries": [
+        "lawyer",
+        "judge"
+      ]
+    },
+    {
+      "name": "merchant",
+      "explanation": "Mercantile employment.",
+      "entries": [
+        "shopkeeper"
+      ]
+    },
+    {
+      "name": "politician",
+      "explanation": "Political positions.",
+      "entries": [
+        "mayor",
+        "diplomat"
+      ]
+    },
+    {
+      "name": "servant",
+      "explanation": "Servant employment.",
+      "entries": [
+        "servant"
+      ]
+    },
+    {
+      "name": "worker",
+      "explanation": "Menial workers.",
+      "entries": [
+        "worker",
+        "menial worker"
+      ]
+    },
+    {
+      "**************************************************": "MEDIEVAL"
+    },
+    {
+      "name": "medieval ",
+      "explanation": "Medieval social statuses.",
+      "entries": [
+        "{medieval poor}",
+        "{medieval lower class}",
+        "{medieval middle class}",
+        "{medieval upper class}",
+        "{medieval rich}"
+      ]
+    },
+    {
+      "name": "medieval poor",
+      "explanation": "The lowest social status.",
+      "entries": [
+        "{medieval servant}",
+        "{slave}",
+        "rat catcher"
+      ]
+    },
+    {
+      "name": "medieval lower class",
+      "explanation": "Lower class social status.",
+      "entries": [
+        "{medieval military}"
+      ]
+    },
+    {
+      "name": "medieval middle class",
+      "explanation": "Middle class social status.",
+      "entries": [
+        "{medieval artisan}",
+        "jailer"
+      ]
+    },
+    {
+      "name": "medieval upper class",
+      "explanation": "Upper class social status.",
+      "entries": [
+        "{medieval government}",
+        "{medieval church}"
+      ]
+    },
+    {
+      "name": "medieval rich",
+      "explanation": "The highest social status.",
+      "entries": [
+        "{nobility}"
+      ]
+    },
+    {
+      "name": "medieval artisan",
+      "explanation": "Medieval skilled workers.",
+      "entries": [
+        "cooper"
+      ]
+    },
+    {
+      "name": "medieval church",
+      "explanation": "Medieval skilled workers.",
+      "entries": [
+        "reeve (church warden)"
+      ]
+    },
+    {
+      "name": "medieval criminal",
+      "explanation": "Medieval smalltime criminals.",
+      "entries": [
+        "footpad",
+        "highway robber"
+      ]
+    },
+    {
+      "name": "medieval government",
+      "explanation": "Medieval presentatives of the government.",
+      "entries": [
+        "bailiff",
+        "chancellor",
+        "catchpole (finds debtors)",
+        "herald",
+        "hayward (in charge of fences and hedges)",
+        "woodward (keeper of a forest)",
+        "sheriff",
+        "exchequer (responsible for govenmental revenue)"
+      ]
+    },
+    {
+      "name": "medieval military",
+      "explanation": "Medieval military personnel.",
+      "entries": [
+        "guard",
+        "spearman",
+        "pikeman",
+        "halberdier",
+        "archer",
+        "sapper",
+        "arbalestier",
+        "siege engineer",
+        "sergeant",
+        "sergeant-at-arms"
+      ]
+    },
+    {
+      "name": "medieval servant",
+      "explanation": "Employment for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "pantler (head of the pantry)",
+        "larderer (head of the larder)",
+        "waferer",
+        "saucier",
+        "saucerer (preparer of sauces)",
+        "spicerer (preparer of spices)",
+        "carver",
+        "page",
+        "milkmaid",
+        "cutler",
+        "scullion"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Employment once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Employment for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "alchemist",
+        "astrologer"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Employment for modern worlds.",
+      "entries": [
+        "{common}",
+        "engineer",
+        "programmer"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Employment for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special employment tables.",
+      "entries": [
+        "{nobility}",
+        "{slave}"
+      ]
+    },
+    {
+      "name": "nobility",
+      "explanation": "Nobles.",
+      "entries": [
+        "knight",
+        "baronet",
+        "baron",
+        "viscount",
+        "count"
+      ]
+    },
+    {
+      "name": "slave",
+      "explanation": "Non-free citizens.",
+      "entries": [
+        "slave",
+        "serf"
+      ]
+    },
+    {
+      "**************************************************": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "name": "species",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": "value"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "The species (or race) of a character.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-03-06",
+  "authors": "ELF Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{species}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{species}"
+      ]
+    },
+    {
+      "name": "species",
+      "explanation": "The species types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common species types.",
+      "entries": [
+        "{humanoid}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare species types.",
+      "entries": [
+        "{fantasy}"
+      ]
+    },
+    {
+      "**************************************************": "SPECIES"
+    },
+    {
+      "name": "form",
+      "explanation": "Form of the character.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{humanoid}",
+          "export": {
+            "form": "humanoid"
+          }
+        }
+      ]
+    },
+    {
+      "name": "humanoid",
+      "explanation": "Humanoid species (or races). The 'speciesmention' variable is used so that human (the expected norm) can be left without a mention, while other species are mentioned.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "human",
+          "export": {
+            "species": "",
+            "speciesmention": "",
+            "speciesadjective": "human"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Species once rumoured to have existed.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "Atlantean",
+          "export": {
+            "speciesmention": "Atlantean",
+            "speciesadjective": "Atlantean"
+          }
+        },
+        {
+          "m": 1,
+          "v": "Lemurian",
+          "export": {
+            "speciesmention": "Lemurian",
+            "speciesadjective": "Lemurian"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Species for fantasy worlds (with no basis in myth).",
+      "entries": [
+        {
+          "m": 5,
+          "v": "elf",
+          "export": {
+            "speciesmention": "elf",
+            "speciesadjective": "elven"
+          }
+        },
+        {
+          "m": 2,
+          "v": "dwarf",
+          "export": {
+            "speciesmention": "dwarf",
+            "speciesadjective": "dwarven"
+          }
+        },
+        {
+          "m": 1,
+          "v": "gnome",
+          "export": {
+            "speciesmention": "gnome",
+            "speciesadjective": "gnomish"
+          }
+        }
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Species for modern worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Species for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "mutated human",
+        "human-alien hybrid",
+        "uplifted animal"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special species tables.",
+      "entries": [
+        "{adjective}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives related to species.",
+      "entries": [
+        "half-breed",
+        "pure-blooded"
+      ]
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}."
+      ]
+    }
+  ]
+}

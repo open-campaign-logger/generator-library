@@ -1,0 +1,548 @@
+{
+  "name": "Epithet",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": "value"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Epithets and sobriquets.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-02-06",
+  "authors": "Esko Vesala.",
+  "sources": "TVtropes.org",
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{epithet}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{epithet}"
+      ]
+    },
+    {
+      "name": "epithet",
+      "explanation": "Epithet types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common epithet formats.",
+      "entries": [
+        "{unique}",
+        "{random}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare epithets.",
+      "entries": [
+        "{prefix} {suffix}"
+      ]
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized epithets.",
+      "entries": [
+        "{prefix}{suffix}"
+      ]
+    },
+    {
+      "**************************************************": "PREFIXES"
+    },
+    {
+      "name": "prefix",
+      "explanation": "Prefix types.",
+      "entries": [
+        "{age}",
+        "{animal}",
+        "{color}",
+        "{cosmos}",
+        "{element}",
+        "{event}",
+        "{health}",
+        "{metal}",
+        "{personality}",
+        "{quality}",
+        "{time}",
+        "{wealth}",
+        "{weather}"
+      ]
+    },
+    {
+      "name": "age",
+      "explanation": "Age-related.",
+      "entries": [
+        "Old",
+        "Young"
+      ]
+    },
+    {
+      "name": "animal",
+      "explanation": "Animal-related.",
+      "entries": [
+        "Beast",
+        "Hawk",
+        "Lion",
+        "Raven",
+        "Snake",
+        "Wolf",
+        "Worm"
+      ]
+    },
+    {
+      "name": "color",
+      "explanation": "Cosmos-related.",
+      "entries": [
+        "{lib:color#prime}",
+        "Bright",
+        "Dark",
+        "Light"
+      ]
+    },
+    {
+      "name": "cosmos",
+      "explanation": "Cosmos-related.",
+      "entries": [
+        "Dawn",
+        "Moon"
+      ]
+    },
+    {
+      "name": "element",
+      "explanation": "Event-related.",
+      "entries": [
+        "Ember",
+        "Fiery",
+        "Fire",
+        "Sea"
+      ]
+    },
+    {
+      "name": "event",
+      "explanation": "Event-related.",
+      "entries": [
+        "Battle",
+        "War"
+      ]
+    },
+    {
+      "name": "health",
+      "explanation": "Health-related.",
+      "entries": [
+        "Scar",
+        "Wound"
+      ]
+    },
+    {
+      "name": "metal",
+      "explanation": "Metal-related.",
+      "entries": [
+        "Gold",
+        "Iron",
+        "Silver"
+      ]
+    },
+    {
+      "name": "personality",
+      "explanation": "Personality-related.",
+      "entries": [
+        "Bold",
+        "Brave",
+        "Merry",
+        "Stark",
+        "Stout",
+        "Wild"
+      ]
+    },
+    {
+      "name": "quality",
+      "explanation": "Quality-related.",
+      "entries": [
+        "Even",
+        "High",
+        "Luck",
+        "Odd",
+        "Strong",
+        "Swift",
+        "Wise"
+      ]
+    },
+    {
+      "name": "time",
+      "explanation": "Time-related.",
+      "entries": [
+        "Fall",
+        "Spring",
+        "Summer",
+        "Winter"
+      ]
+    },
+    {
+      "name": "wealth",
+      "explanation": "Weather-related.",
+      "entries": [
+        "Gem"
+      ]
+    },
+    {
+      "name": "weather",
+      "explanation": "Weather-related.",
+      "entries": [
+        "Storm",
+        "Thunder"
+      ]
+    },
+    {
+      "**************************************************": "SUFFIXES"
+    },
+    {
+      "name": "suffix",
+      "explanation": "Suffix types.",
+      "entries": [
+        "{armor}",
+        "{background}",
+        "{body}",
+        "{geography}",
+        "{music}",
+        "{nature}",
+        "{plant}",
+        "{sky}",
+        "{tool}",
+        "{weapon}"
+      ]
+    },
+    {
+      "name": "armor",
+      "explanation": "Armour-related.",
+      "entries": [
+        "helmet",
+        "shield"
+      ]
+    },
+    {
+      "name": "background",
+      "explanation": "Background-related.",
+      "entries": [
+        "bred",
+        "bringer",
+        "born",
+        "fame",
+        "friend",
+        "giver"
+      ]
+    },
+    {
+      "name": "body",
+      "explanation": "Body-related.",
+      "entries": [
+        "arm",
+        "blood",
+        "eyed",
+        "fist",
+        "foot",
+        "haired",
+        "heart",
+        "mane",
+        "tongue",
+        "tooth"
+      ]
+    },
+    {
+      "name": "geography",
+      "explanation": "Geography-related.",
+      "entries": [
+        "ridge"
+      ]
+    },
+    {
+      "name": "music",
+      "explanation": "Music-related.",
+      "entries": [
+        "song"
+      ]
+    },
+    {
+      "name": "nature",
+      "explanation": "Nature-related.",
+      "entries": [
+        "stone",
+        "wood"
+      ]
+    },
+    {
+      "name": "plant",
+      "explanation": "Plant-related.",
+      "entries": [
+        "flower",
+        "rose"
+      ]
+    },
+    {
+      "name": "sky",
+      "explanation": "Sky-related.",
+      "entries": [
+        "cloud",
+        "rain",
+        "shine",
+        "star"
+      ]
+    },
+    {
+      "name": "tool",
+      "explanation": "Tool-related.",
+      "entries": [
+        "hammer"
+      ]
+    },
+    {
+      "name": "weapon",
+      "explanation": "Weapon-related.",
+      "entries": [
+        "axe",
+        "bearer",
+        "blade",
+        "spear",
+        "wielder"
+      ]
+    },
+    {
+      "**************************************************": "UNIQUES"
+    },
+    {
+      "name": "unique",
+      "explanation": "Non-combination epithets.",
+      "entries": [
+        "{negative}",
+        "{neutral}",
+        "{positive}"
+      ]
+    },
+    {
+      "name": "negative",
+      "explanation": "Negative non-combination epithets.",
+      "entries": [
+        "{violent}",
+        "Deceiver",
+        "Defiler",
+        "Devourer",
+        "Infested",
+        "Unworthy"
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Neutral non-combination epithets.",
+      "entries": [
+        "Crusader",
+        "Fearsome",
+        "Wakeful",
+        "Wanderer"
+      ]
+    },
+    {
+      "name": "positive",
+      "explanation": "Positive non-combination epithets.",
+      "entries": [
+        "Counselor",
+        "Nourisher",
+        "Peacemaker",
+        "Protector",
+        "Shepherd",
+        "Truthful",
+        "Victorious",
+        "Woundhealer"
+      ]
+    },
+    {
+      "name": "violent",
+      "explanation": "Violent non-combination epithets.",
+      "entries": [
+        "Bloodletter",
+        "Butcher",
+        "Destroyer",
+        "Executioner",
+        "Impaler",
+        "Reaper",
+        "Slayer",
+        "Torturer"
+      ]
+    },
+    {
+      "**************************************************": "GENDER-SPECIFIC"
+    },
+    {
+      "name": "female",
+      "explanation": "Epithets for females.",
+      "entries": [
+        "{prefix}{female suffix}"
+      ]
+    },
+    {
+      "name": "female suffix",
+      "explanation": "Epithets for females.",
+      "entries": [
+        "daughter",
+        "sister",
+        "wife",
+        "mother",
+        "womb"
+      ]
+    },
+    {
+      "name": "male",
+      "explanation": "Epithets for males.",
+      "entries": [
+        "{prefix}{male suffix}"
+      ]
+    },
+    {
+      "name": "male suffix",
+      "explanation": "Epithets for males.",
+      "entries": [
+        "beard",
+        "father",
+        "brother",
+        "son"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Epithets once rumoured to have existed.",
+      "entries": [
+        "{mythprefix}{mythsuffix}",
+        "{mythprefix}{suffix}",
+        "{prefix}{mythsuffix}"
+      ]
+    },
+    {
+      "name": "mythprefix",
+      "explanation": "Prefixes for mythic worlds.",
+      "entries": [
+        "Charm",
+        "Curse",
+        "Fey",
+        "Foe",
+        "Hell",
+        "Rune",
+        "Spell",
+        "Troll",
+        "Witch",
+        "Woe"
+      ]
+    },
+    {
+      "name": "mythsuffix",
+      "explanation": "Suffixes for mythic worlds.",
+      "entries": [
+        "bane",
+        "lord"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Epithets for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{fantasyprefix}{fantasysuffix}",
+        "{fantasyprefix}{suffix}",
+        "{prefix}{fantasysuffix}"
+      ]
+    },
+    {
+      "name": "fantasyprefix",
+      "explanation": "Prefixes for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "Elf",
+        "Dwarf",
+        "Orc"
+      ]
+    },
+    {
+      "name": "fantasysuffix",
+      "explanation": "Suffixes for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "mage",
+        "sage"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Epithets for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Epithets for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special epithet tables.",
+      "entries": [
+        "{test}"
+      ]
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init} Common: {common}, Male: {male}, Female: {female}, Fantasy: {fantasy}."
+      ]
+    }
+  ]
+}

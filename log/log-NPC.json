@@ -1,0 +1,21 @@
+{
+  "name": "NPC log",
+  "resultPattern": "{result}",
+  "explanation": "Creates static log entries for NPC records.",
+  "date": "2018-03-12",
+  "authors": "ELF Vesala.",
+  "genre": "universal",
+  "categories": [
+    "log",
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{b|Name}: @\"{lib:name-american-modern#detail}\"\r\n{b|Group}: ^\" \"\r\n{b|Location}: #\" \"\r\n{b|Profession}: \r\n{b|Background}: \r\n{b|Relationship}: \r\n{b|Appearance}: \r\n{b|Speech}: \r\n{b|Gestures}: \r\n{b|Behavior}: \r\n{b|Personality}: \r\n{b|Goal}: \r\n{b|Secret}: \r\n"
+      ]
+    }
+  ]
+}

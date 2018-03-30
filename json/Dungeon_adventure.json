@@ -1,14 +1,7 @@
 {
   "name": "Dungeon adventure",
-  "resultPattern": "{HTML formatting}{init}{result}",
-  "variables": {
-    "starttitle": "<H2>",
-    "endtitle": "</H2>",
-    "startheading": "<H3>",
-    "endheading": "</H3>",
-    "startbold": "<B>",
-    "endbold": "</B>",
-    "para": "<P>",
+  "resultPattern": "{lib:formatting#HTML}{init}{result}",
+  "globals": {
     "duration": "30",
     "difficulty": "master",
     "difficultydescription": "experienced adventurers",
@@ -182,7 +175,9 @@
     "trapaction": "springs into action",
     "trapdescription": "A scythe has been fastened high in the ceiling. ",
     "damage": "damage",
-    "damagetype": "slashing",
+    "damagetype": "slashing"
+  },
+  "variables": {
     "footnote": ""
   },
   "explanation": "Dungeon adventure.",
@@ -191,8 +186,8 @@
   "bugs": "",
   "to do": "More external table calls to add variety.",
   "see": "dungeon_entrance, dungeon_corridor, dungeon_room, dungeon_vault, Five_room_dungeon, hook_line_and_sinker_adventure",
-  "date": "2018-01-22",
-  "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
+  "date": "2018-03-04",
+  "authors": "ELF Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon, RolePlayingTips.com",
   "genre": "universal",
   "categories": [
@@ -203,7 +198,14 @@
       "name": "init",
       "explanation": "Initializing the dungeon parameters.",
       "entries": [
-        "{motif}{goal} {artifact}{danger}"
+        {
+          "m": 1,
+          "v": "{motif}{difficulty}{minion}{goal}{artifact}{danger}",
+          "export": {
+            "treasure": "{lib:treasure#summary}",
+            "villain": "{lib:villain#summary}"
+          }
+        }
       ]
     },
     {
@@ -246,7 +248,7 @@
       "name": "five room dungeon",
       "explanation": "This is an older model is based more strictly on the 'Five Room Dungeon' formula.",
       "entries": [
-        "{var:startheading}Five Room Dungeon{var:endheading} {var:startheading}Entrance{var:endheading} {room 1} {var:startheading}Trial{var:endheading} {room 2} {var:startheading}Build-Up{var:endheading} {room 3} {var:startheading}Finale{var:endheading} {room 4} {roleplaying opportunity} {var:startheading}Resolution{var:endheading} {room 5}"
+        "{global:startheading}Five Room Dungeon{global:endheading} {global:startheading}Entrance{global:endheading} {room 1} {global:startheading}Trial{global:endheading} {room 2} {global:startheading}Build-Up{global:endheading} {room 3} {global:startheading}Finale{global:endheading} {room 4} {roleplaying opportunity} {global:startheading}Resolution{global:endheading} {room 5}"
       ]
     },
     {
@@ -256,79 +258,79 @@
       "name": "adventure title",
       "explanation": "The adventure name as a subheading.",
       "entries": [
-        "{var:starttitle}{adventure name}{var:endtitle}"
+        "{global:starttitle}{adventure name}{global:endtitle}"
       ]
     },
     {
       "name": "adventure name",
       "explanation": "Variations for the name of the adventure based on set variables.",
       "entries": [
-        "The {var:symbol} of the {lib:villain#adjective} {var:villain}",
-        "{lib:location#adjective} {var:location} of the {lib:villain#adjective} {var:villain}",
-        "{var:goaldescription} the {lib:villain#adjective} {var:villain}",
-        "{var:macguffin} of the {lib:villain#adjective} {var:villain}",
-        "{lib:treasure#adjective} {var:treasure} of the {lib:location#adjective} {var:location}",
-        "In search of a {var:treasure}",
-        "In search of the {var:treasure} of the {lib:villain#adjective} {var:villain}",
-        "Quest for the {var:treasure}",
-        "{lib:synonym#death} of the {lib:villain#adjective} {var:villain}",
-        "{lib:minion#adjective} {var:minion} of the {lib:villain#adjective} {var:villain}"
+        "The {global:symbol} of the {lib:villain#adjective} {global:villain}",
+        "{lib:location#adjective} {global:location} of the {lib:villain#adjective} {global:villain}",
+        "{global:goaldescription} the {lib:villain#adjective} {global:villain}",
+        "{global:macguffin} of the {lib:villain#adjective} {global:villain}",
+        "{lib:treasure#adjective} {global:treasure} of the {lib:location#adjective} {global:location}",
+        "In search of a {global:treasure}",
+        "In search of the {global:treasure} of the {lib:villain#adjective} {global:villain}",
+        "Quest for the {global:treasure}",
+        "{lib:synonym#death} of the {lib:villain#adjective} {global:villain}",
+        "{lib:minion#adjective} {global:minion} of the {lib:villain#adjective} {global:villain}"
       ]
     },
     {
       "name": "motif note",
       "explanation": "Description of the general theme of the adventure.",
       "entries": [
-        "{var:para}{var:startbold}Motif{var:endbold}: {var:motif}. {var:motifdescription}"
-      ]
-    },
-    {
-      "name": "villain note",
-      "explanation": "Introductory words about the villain.",
-      "entries": [
-        "{var:para}{var:startbold}Villain{var:endbold}: An evil {difficulty} with a {var:miniongroup}."
-      ]
-    },
-    {
-      "name": "goal note",
-      "explanation": "Introductory words about the goal and target.",
-      "entries": [
-        "{var:para}{var:startbold}Goal{var:endbold}: The {lib:synonym#troupe} must {var:goal} {var:target}."
-      ]
-    },
-    {
-      "name": "macguffin note",
-      "explanation": "Description of the macguffin of the adventure.",
-      "entries": [
-        "{var:para}{var:startbold}Macguffin:{var:endbold} The adventure starts when the {lib:synonym#troupe} finds out about a {lib:macguffin#detail}."
-      ]
-    },
-    {
-      "name": "treasure note",
-      "explanation": "Description of the treasure of the adventure.",
-      "entries": [
-        "{var:para}{var:startbold}Treasure:{var:endbold} Some {lib:treasure#adjective} {lib:treasure} is said to be hidden in the dungeon - but little do they know that it is {lib:treasure#complication}..."
-      ]
-    },
-    {
-      "name": "complication note",
-      "explanation": "An optional complication for the adventure.",
-      "entries": [
-        "{var:para}{var:startbold}Dungeon complication{var:endbold}: {lib:complication#dungeon}"
+        "{global:para}{global:startbold}Motif{global:endbold}: {global:motif}. {global:motifdescription}"
       ]
     },
     {
       "name": "difficulty note",
       "explanation": "A paragraph describing the difficulty of the adventure.",
       "entries": [
-        "{var:para}{var:startbold}Difficulty{var:endbold}: {var:difficulty}.  This {lib:synonym#small} {lib:synonym#adventure} is best suited for {var:difficultydescription}. "
+        "{global:para}{global:startbold}Difficulty{global:endbold}: {global:difficulty}. This {lib:synonym#small} {lib:synonym#adventure} is best suited for {global:difficultydescription}. "
+      ]
+    },
+    {
+      "name": "villain note",
+      "explanation": "Introductory words about the villain.",
+      "entries": [
+        "{global:para}{global:startbold}Villain{global:endbold}: An evil {global:villain} with a {global:miniongroup}."
+      ]
+    },
+    {
+      "name": "goal note",
+      "explanation": "Introductory words about the goal and target.",
+      "entries": [
+        "{global:para}{global:startbold}Goal{global:endbold}: The {lib:synonym#troupe} must {global:goal} {global:target}."
+      ]
+    },
+    {
+      "name": "macguffin note",
+      "explanation": "Description of the macguffin of the adventure.",
+      "entries": [
+        "{global:para}{global:startbold}Macguffin:{global:endbold} The adventure starts when the {lib:synonym#troupe} finds out about a {lib:macguffin#detail}."
+      ]
+    },
+    {
+      "name": "treasure note",
+      "explanation": "Description of the treasure of the adventure.",
+      "entries": [
+        "{global:para}{global:startbold}Treasure:{global:endbold} Some {lib:treasure#adjective} {lib:treasure} is said to be hidden in the dungeon - but little do they know that it is {lib:treasure#complication}..."
+      ]
+    },
+    {
+      "name": "complication note",
+      "explanation": "An optional complication for the adventure.",
+      "entries": [
+        "{global:para}{global:startbold}Dungeon complication{global:endbold}: {lib:complication#dungeon}"
       ]
     },
     {
       "name": "introduction",
       "explanation": "How the adventurers start the adventure.",
       "entries": [
-        "{var:para}Here the {lib:synonym#troupe} {encountering} a {lib:villain#adjective} {var:villain} and a band of {var:minions}. Will the {lib:synonym#troupe} be able to {var:goal} {var:target}? "
+        "{global:para}Here the {lib:synonym#troupe} {encountering} a {lib:villain#adjective} {global:villain} and a band of {global:minions}. Will the {lib:synonym#troupe} be able to {global:goal} {global:target}? "
       ]
     },
     {
@@ -344,14 +346,14 @@
       "name": "duration note",
       "explanation": "A paragraph about the estimated duration of the adventure, based on the number of scenes.",
       "entries": [
-        "{var:para}[The duration of the {lib:synonym#adventure} is estimated to be roughly {var:duration} minutes.] "
+        "{global:para}[The duration of the {lib:synonym#adventure} is estimated to be roughly {global:duration} minutes.] "
       ]
     },
     {
       "name": "footnote",
       "explanation": "A potential footnote (usually empty).",
       "entries": [
-        "{var:para}{var:footnote}"
+        "{global:para}{global:footnote}"
       ]
     },
     {
@@ -364,23 +366,23 @@
         {
           "m": 1,
           "v": "{fighting}",
-          "set": {
+          "export": {
             "goal": "vanquish",
-            "target": "the villain"
+            "target": "the {global:villain}"
           }
         },
         {
           "m": 1,
           "v": "{capturing}",
-          "set": {
+          "export": {
             "goal": "capture",
-            "target": "the villain"
+            "target": "the {global:villain}"
           }
         },
         {
           "m": 1,
           "v": "{rescuing}",
-          "set": {
+          "export": {
             "goal": "rescue",
             "target": "a captive"
           }
@@ -388,7 +390,7 @@
         {
           "m": 1,
           "v": "{escaping}",
-          "set": {
+          "export": {
             "goal": "escape",
             "target": "the location"
           }
@@ -402,7 +404,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "goaldescription": "against",
             "symbol": "shadow"
           }
@@ -410,7 +412,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "goaldescription": "conquer",
             "symbol": "throne"
           }
@@ -418,7 +420,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "goaldescription": "bring me the head of",
             "symbol": "blood"
           }
@@ -432,7 +434,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "goaldescription": "duel",
             "symbol": "scourge"
           }
@@ -440,7 +442,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "goaldescription": "capture",
             "symbol": "shackles"
           }
@@ -448,7 +450,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "goaldescription": "siege",
             "symbol": "downfall"
           }
@@ -456,7 +458,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "goaldescription": "challenge",
             "symbol": "blade"
           }
@@ -470,7 +472,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "goaldescription": "rescue",
             "symbol": "lure"
           }
@@ -478,7 +480,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "goaldescription": "save",
             "symbol": "call"
           }
@@ -492,7 +494,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "goaldescription": "escape",
             "symbol": "wrath"
           }
@@ -500,7 +502,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "goaldescription": "flee",
             "symbol": "revenge"
           }
@@ -517,7 +519,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "danger": "danger"
           }
         }
@@ -533,7 +535,7 @@
         {
           "m": 1,
           "v": "{lib:dungeon_entrance}{entrance}. ",
-          "set": {
+          "export": {
             "room 1": "entrance"
           }
         }
@@ -558,22 +560,22 @@
       "entries": [
         {
           "m": 1,
-          "v": "{lib:dungeon_room} {var:para}{puzzle}",
-          "set": {
+          "v": "{lib:dungeon_room} {global:para}{puzzle}",
+          "export": {
             "room 2": "puzzle"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room} {var:para}{information gathering}",
-          "set": {
+          "v": "{lib:dungeon_room} {global:para}{information gathering}",
+          "export": {
             "room 2": "information gathering"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room} {var:para}{roleplaying challenge}",
-          "set": {
+          "v": "{lib:dungeon_room} {global:para}{roleplaying challenge}",
+          "export": {
             "room 2": "roleplaying challenge"
           }
         }
@@ -606,8 +608,8 @@
       "explanation": "",
       "entries": [
         "A guardian spirit blocks access to the rest of the complex and must be befriended, not fought.",
-        "A {var:minion} standing on guard can be bluffed or coerced without raising the alarm.",
-        "The adventurers must convince a {var:minion} to let them in."
+        "A {global:minion} standing on guard can be bluffed or coerced without raising the alarm.",
+        "The adventurers must convince a {global:minion} to let them in."
       ]
     },
     {
@@ -616,36 +618,36 @@
       "entries": [
         {
           "m": 1,
-          "v": "{lib:dungeon_room} {var:para}{trick room}",
-          "set": {
+          "v": "{lib:dungeon_room} {global:para}{trick room}",
+          "export": {
             "room 3": "trick room"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room} {var:para}{trapped room}",
-          "set": {
+          "v": "{lib:dungeon_room} {global:para}{trapped room}",
+          "export": {
             "room 3": "trapped room"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room} {var:para}{setback room}",
-          "set": {
+          "v": "{lib:dungeon_room} {global:para}{setback room}",
+          "export": {
             "room 3": "setback room"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room} {var:para}{complication room}",
-          "set": {
+          "v": "{lib:dungeon_room} {global:para}{complication room}",
+          "export": {
             "room 3": "complication room"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room} {var:para}{lib:scene#combat beat}",
-          "set": {
+          "v": "{lib:dungeon_room} {global:para}{lib:scene#combat beat}",
+          "export": {
             "room 3": "combat beat"
           }
         }
@@ -655,14 +657,14 @@
       "name": "trick room",
       "explanation": "",
       "entries": [
-        "Here the adventurers can rescue a {var:captivegroup}. However, the {var:captives} {lib:complication#captive}."
+        "Here the adventurers can rescue a {global:captivegroup}. However, the {global:captives} {lib:complication#captive}."
       ]
     },
     {
       "name": "trapped room",
       "explanation": "",
       "entries": [
-        "There is a {var:trap} in the room: {lib:trap#detail}. "
+        "There is a {global:trap} in the room: {lib:trap#detail}. "
       ]
     },
     {
@@ -695,14 +697,14 @@
       "entries": [
         "teleport trap",
         "one-way door",
-        "2000 foor water slide trap"
+        "2000 foot water slide trap"
       ]
     },
     {
       "name": "complication room",
       "explanation": "",
       "entries": [
-        "The {artifact} required to defeat the {var:villain}, but it is {lib:complication#item}. Clues reveal that a solution lies ahead.",
+        "The {artifact} required to defeat the {global:villain}, but it is {lib:complication#item}. Clues reveal that a solution lies ahead.",
         "Believing the object of the quest now lays within easy reach, a  companion turns traitor and betrays the {lib:synonym#troupe}."
       ]
     },
@@ -713,21 +715,21 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "artifact": "spellbook"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "artifact": "amulet"
           }
         },
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "artifact": "magical weapon"
           }
         }
@@ -739,22 +741,22 @@
       "entries": [
         {
           "m": 1,
-          "v": "{lib:dungeon_room} {var:para}{climax}",
-          "set": {
+          "v": "{lib:dungeon_room} {global:para}{climax}",
+          "export": {
             "room 4": "climax"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room} {var:para}{big battle}",
-          "set": {
+          "v": "{lib:dungeon_room} {global:para}{big battle}",
+          "export": {
             "room 4": "big battle"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room} {var:para}{conflict}",
-          "set": {
+          "v": "{lib:dungeon_room} {global:para}{conflict}",
+          "export": {
             "room 4": "conflict"
           }
         }
@@ -764,10 +766,10 @@
       "name": "climax",
       "explanation": "",
       "entries": [
-        "The villain is here, ready to face the {lib:synonym#troupe}. Previous rooms have contained warning signals or an alarm, so the {var:villain} has had time to prepare.",
-        "The villain is here, and seems to be surprised by the arrival of the {lib:synonym#troupe}. The villain tries to settle things in an unusual way, through {unusual proposal}.",
-        "The villain is here and reveals the {var:treasure} to the {lib:synonym#troupe}, threatening to {reward threat}.",
-        "The villain is here, but has a weakness that the {lib:synonym#troupe} must figure out how to exploit."
+        "The {global:villain} is here, ready to face the {lib:synonym#troupe}. Previous rooms have contained warning signals or an alarm, so the {global:villain} has had time to prepare.",
+        "The {global:villain} is here, and seems to be surprised by the arrival of the {lib:synonym#troupe}. The {global:villain} tries to settle things in an unusual way, through {unusual proposal}.",
+        "The {global:villain} is here and reveals the {global:treasure} to the {lib:synonym#troupe}, threatening to {reward threat}.",
+        "The {global:villain} is here, but has a weakness that the {lib:synonym#troupe} must figure out how to exploit."
       ]
     },
     {
@@ -790,8 +792,8 @@
       "name": "big battle",
       "explanation": "",
       "entries": [
-        "The villain is here and has unexpected {capabilities}.",
-        "The villain is here, but the {lib:synonym#room} is trapped. The villain {trap ability}."
+        "The {global:villain} is here and has unexpected {capabilities}.",
+        "The {global:villain} is here, but the {lib:synonym#room} is trapped. The {global:villain} {trap ability}."
       ]
     },
     {
@@ -823,9 +825,9 @@
       "name": "roleplaying opportunity",
       "explanation": "",
       "entries": [
-        "The {var:villain} needs to stall for time to {reason to stall}.",
-        "A victorious combat ends with the {var:villain} bleeding to death and a few short words can be exchanged.",
-        "There is a helpless {var:captivegroup} to roleplay with once the threat is dealt with."
+        "The {global:villain} needs to stall for time to {reason to stall}.",
+        "A victorious combat ends with the {global:villain} bleeding to death and a few short words can be exchanged.",
+        "There is a helpless {global:captivegroup} to roleplay with once the threat is dealt with."
       ]
     },
     {
@@ -843,29 +845,29 @@
       "entries": [
         {
           "m": 1,
-          "v": "{lib:dungeon_room} {var:para}{reward}",
-          "set": {
+          "v": "{lib:dungeon_room} {global:para}{reward}",
+          "export": {
             "room 5": "reward"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room} {var:para}{surprise}",
-          "set": {
+          "v": "{lib:dungeon_room} {global:para}{surprise}",
+          "export": {
             "room 5": "surprise"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room} {var:para}{revelation}",
-          "set": {
+          "v": "{lib:dungeon_room} {global:para}{revelation}",
+          "export": {
             "room 5": "revelation"
           }
         },
         {
           "m": 1,
-          "v": "{lib:dungeon_room} {var:para}{plot twist}",
-          "set": {
+          "v": "{lib:dungeon_room} {global:para}{plot twist}",
+          "export": {
             "room 5": "plot twist"
           }
         }
@@ -882,7 +884,7 @@
       "name": "surprise",
       "explanation": "",
       "entries": [
-        "A {var:monster} is hiding in the treasure container: {lib:monster#detail}.",
+        "A monster is hiding in the treasure container: {lib:monster#detail}.",
         "A trap that resurrects or renews the challenge from Room Four."
       ]
     },
@@ -891,10 +893,10 @@
       "explanation": "",
       "entries": [
         "The location of the next adventure is uncovered, along with sufficient motivation to accept the quest.",
-        "The true identity of the {var:villain} is revealed.",
+        "The true identity of the {global:villain} is revealed.",
         "New clues and information pertaining to a major plot arc are embedded in the treasure, {information hiding place}.",
-        "The {var:villain} is found to have a stronger, more fearsome master.",
-        "The grand scheme of the {var:villain} is discovered.",
+        "The {global:villain} is found to have a stronger, more fearsome master.",
+        "The grand scheme of the {global:villain} is discovered.",
         "The source of an alien race's hostility towards others is uncovered, transforming them from villains to sympathetic characters in the story.",
         "The true meaning of the prophecy or poem that lead the {lib:synonym#troupe} to the dungeon is finally understood, and it's not what the {lib:synonym#troupe} thought."
       ]
@@ -915,7 +917,7 @@
       "entries": [
         "A rival enters and tries to steal the reward while the {lib:synonym#troupe} is weakened after the big challenge of the previous room.",
         "The object of the quest final reward isn't what it seems or has a complication. i.e. The kidnapped king doesn't want to return.",
-        "The quest was a trick. By killing the villain the {lib:synonym#troupe} has actually helped the {longterm villain}. The {var:villain} was actually {bad guy true form}."
+        "The quest was a trick. By killing the {global:villain} the {lib:synonym#troupe} has actually helped the {longterm villain}. The {global:villain} was actually {bad guy true form}."
       ]
     },
     {
@@ -956,42 +958,42 @@
         {
           "m": 1,
           "v": "{ca 90 minute adventure}",
-          "set": {
+          "export": {
             "duration": "90"
           }
         },
         {
           "m": 1,
           "v": "{ca 120 minute adventure}",
-          "set": {
+          "export": {
             "duration": "120"
           }
         },
         {
           "m": 2,
           "v": "{ca 150 minute adventure}",
-          "set": {
+          "export": {
             "duration": "150"
           }
         },
         {
           "m": 2,
           "v": "{ca 180 minute adventure}",
-          "set": {
+          "export": {
             "duration": "180"
           }
         },
         {
           "m": 1,
           "v": "{ca 210 minute adventure}",
-          "set": {
+          "export": {
             "duration": "210"
           }
         },
         {
           "m": 1,
           "v": "{ca 240 minute adventure}",
-          "set": {
+          "export": {
             "duration": "240"
           }
         }
@@ -1054,7 +1056,7 @@
       "entries": [
         {
           "v": "",
-          "set": {
+          "export": {
             "starttitle": "<H2>",
             "endtitle": "</H2>",
             "startheading": "<H3>",
@@ -1072,7 +1074,7 @@
       "entries": [
         {
           "v": "",
-          "set": {
+          "export": {
             "starttitle": "{b|",
             "endtitle": "}\r\n\r\n",
             "startheading": "\r\n\r\n{b|",
@@ -1093,9 +1095,9 @@
       "entries": [
         {
           "m": 10,
-          "v": "{common}"
+          "v": "{common}{minion}"
         },
-        "{rare}"
+        "{rare}{minion}"
       ]
     },
     {
@@ -1104,26 +1106,29 @@
       "entries": [
         {
           "m": 1,
-          "v": "{lib:villain#apprentice}",
-          "set": {
+          "v": "",
+          "export": {
             "difficulty": "Apprentice",
-            "difficultydescription": "inexperienced adventurers"
+            "difficultydescription": "inexperienced adventurers",
+            "villain": "{lib:villain#fantasy apprentice}"
           }
         },
         {
           "m": 2,
-          "v": "{lib:villain#journeyman}",
-          "set": {
+          "v": "",
+          "export": {
             "difficulty": "Journeyman",
-            "difficultydescription": "adventurers with some experience"
+            "difficultydescription": "adventurers with some experience",
+            "villain": "{lib:villain#fantasy journeyman}"
           }
         },
         {
           "m": 3,
-          "v": "{lib:villain#master}",
-          "set": {
+          "v": "",
+          "export": {
             "difficulty": "Master",
-            "difficultydescription": "experienced adventurers"
+            "difficultydescription": "experienced adventurers",
+            "villain": "{lib:villain#fantasy master}"
           }
         }
       ]
@@ -1134,28 +1139,43 @@
       "entries": [
         {
           "m": 2,
-          "v": "{lib:villain#adept}",
-          "set": {
+          "v": "",
+          "export": {
             "difficulty": "Adept",
-            "difficultydescription": "highly experienced adventurers"
+            "difficultydescription": "highly experienced adventurers",
+            "villain": "{lib:villain#fantasy adept}"
           }
         },
         {
           "m": 1,
-          "v": "{lib:villain#legend}",
-          "set": {
+          "v": "",
+          "export": {
             "difficulty": "Legend",
-            "difficultydescription": "only the most experienced of adventurers"
+            "difficultydescription": "only the most experienced of adventurers",
+            "villain": "{lib:villain#fantasy legend}"
           }
         }
       ]
     },
     {
-      "**************************************************": "SPECIAL CASES"
+      "name": "minion",
+      "explanation": "The villain's minions.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "minion": "{lib:minion#summary}"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
     },
     {
       "name": "special",
-      "explanation": "Special room tables.",
+      "explanation": "Special tables.",
       "entries": [
         "{adjective}",
         "{key location}",
@@ -1200,7 +1220,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "motif": "Vermin-infested pit",
             "motifdescription": "An abandoned structure overrun by unclean infestations of vermin - and something even more dangerous."
           }
@@ -1208,7 +1228,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "motif": "Temple of evil",
             "motifdescription": "A shrine of dark forces, featuring ghastly altars and worshippers of malevolent entities."
           }
@@ -1216,7 +1236,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "motif": "Classic dungeon",
             "motifdescription": "An underground structure guarded by vicious monsters and traps, brimming with treasure."
           }
@@ -1224,7 +1244,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "motif": "Fallen city",
             "motifdescription": "An ancient cataclysm toppled a forgotten city into a deep underground cavern."
           }
@@ -1232,7 +1252,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "motif": "Tomb of the undead",
             "motifdescription": "Something has awakened the cadavers resting in an ancient catacomb."
           }
@@ -1240,7 +1260,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "motif": "Abode of a lost race",
             "motifdescription": "Last remains of a long-dead civilization have entrenched themselves deep underground."
           }
@@ -1248,7 +1268,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "motif": "Submerged kingdom",
             "motifdescription": "An age-old savage empire finally fell when it was overrun by a deluge. Its flooded remains now await explorers deep below ground."
           }
@@ -1256,7 +1276,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "motif": "Underground expanse",
             "motifdescription": "Something horrific lives deep underground beneath the daylit world, and now it has crawled its way closer to the surface."
           }
@@ -1264,7 +1284,7 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "motif": "Spawning grounds of chaos",
             "motifdescription": "Magical energies emanating from deep underground have corrupted underground denizens into horrific beasts."
           }
@@ -1272,11 +1292,21 @@
         {
           "m": 1,
           "v": "",
-          "set": {
+          "export": {
             "motif": "Infernal portal",
             "motifdescription": "A gateway to nether realms has opened, vomiting out hellish denizens of the underworld to occupy their new abode."
           }
         }
+      ]
+    },
+    {
+      "**************************************************": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Dumping the global variables.",
+      "entries": [
+        "Motif: {global:motif}, difficulty: {global:difficulty}, goal: {global:goal}, artifact: {global:artifact}, danger: {global:danger}, treasure: {global:treasure}, villain: {global:villain}, minion: {global:minion}."
       ]
     }
   ]

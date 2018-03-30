@@ -1,6 +1,9 @@
 {
-  "name": "USA 1850 name table",
+  "name": "name-USA-1850",
   "resultPattern": "{first name} {last name} ({var:gender})",
+  "globals": {
+    "culture": "American"
+  },
   "variables": {
     "gender": ""
   },
@@ -9,9 +12,9 @@
   "note": "The name tables have been sorted from the most common to the least common.",
   "bugs": "",
   "to do": "",
-  "see": "name_USA_1880s_born",
-  "date": "2017-10-04",
-  "authors": "Esko Vesala",
+  "see": "name-USA-1880",
+  "date": "2018-03-10",
+  "authors": "ELF Vesala",
   "sources": " http://www.buckbd.com/genea/1850fnfl.txt,  http://www.buckbd.com/genea/1850fnml.txt,  http://www.buckbd.com/genea/1850freq.txt",
   "genre": "historical",
   "categories": [
@@ -2575,6 +2578,41 @@
         "Mitchel",
         "Flack",
         "Stafford"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special name tables.",
+      "entries": [
+        "{hermafrodite}",
+        "{neuter}"
+      ]
+    },
+    {
+      "name": "hermafrodite",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex}"
+      ]
+    },
+    {
+      "name": "neuter",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex}"
+      ]
+    },
+    {
+      "**************************************************": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, surname: {surname}, byname: {byname}, initial: {initial}, special: {special}. Gender = {global:gender}."
       ]
     }
   ]

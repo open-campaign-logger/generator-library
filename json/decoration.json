@@ -1,0 +1,369 @@
+{
+  "name": "decoration",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": "value"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Decorations.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-03-05",
+  "authors": "ELF Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "#item, #world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{decoration}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective} {decoration}"
+      ]
+    },
+    {
+      "name": "decoration",
+      "explanation": "The decoration types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common decoration types.",
+      "entries": [
+        "{scratching}",
+        "{engraving}",
+        "{carving}",
+        "{drawing}",
+        "{painting}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare decoration types.",
+      "entries": [
+        "{etching}",
+        "{bas relief}"
+      ]
+    },
+    {
+      "**************************************************": "DECORATIONS"
+    },
+    {
+      "name": "bas relief",
+      "explanation": "Bas-reliefs.",
+      "entries": [
+        "bas relief {symbol}",
+        "bas relief of a {shape} shape"
+      ]
+    },
+    {
+      "name": "carving",
+      "explanation": "Carvings.",
+      "entries": [
+        "carved {symbol}",
+        "carving forming a {pattern} pattern",
+        "{shape} carving of {subject}",
+        "{symbol} carving overlaid with {lib:metal#precious}"
+      ]
+    },
+    {
+      "name": "drawing",
+      "explanation": "Drawings.",
+      "entries": [
+        "drawn {symbol}",
+        "drawn {shape} shapes"
+      ]
+    },
+    {
+      "name": "engraving",
+      "explanation": "Engravings.",
+      "entries": [
+        "engraved {symbol}",
+        "engraved {shape} shapes"
+      ]
+    },
+    {
+      "name": "etching",
+      "explanation": "Etchings.",
+      "entries": [
+        "etched {symbol}",
+        "{shape} etchings of {subject}"
+      ]
+    },
+    {
+      "name": "painting",
+      "explanation": "Paintings.",
+      "entries": [
+        "painted {symbol}",
+        "painted {shape} shapes"
+      ]
+    },
+    {
+      "name": "scratching",
+      "explanation": "Scratchmarks.",
+      "entries": [
+        "scrathed {symbol}",
+        "scratchmarks in a {shape} shape"
+      ]
+    },
+    {
+      "**************************************************": "SUBJECT MATTER"
+    },
+    {
+      "name": "pattern",
+      "explanation": "Decorative patterns.",
+      "entries": [
+        "chaotic",
+        "asymmetric",
+        "symmetric",
+        "dotted",
+        "spiral",
+        "circular",
+        "wavy",
+        "striped",
+        "chequered",
+        "geometric",
+        "tiled"
+      ]
+    },
+    {
+      "name": "shape",
+      "explanation": "Decorative shapes.",
+      "entries": [
+        "geometric",
+        "spiraling",
+        "abstract",
+        "ornamental"
+      ]
+    },
+    {
+      "name": "subject",
+      "explanation": "Decoration subjects.",
+      "entries": [
+        "abstract shapes",
+        "strange patterns",
+        "runic shapes",
+        "various glyphs",
+        "vaguely humanoid forms",
+        "strange-looking beasts"
+      ]
+    },
+    {
+      "name": "symbol",
+      "explanation": "Decorative symbols.",
+      "entries": [
+        "markings",
+        "marks",
+        "signs",
+        "figures",
+        "symbols",
+        "runes",
+        "glyphs",
+        "sigils",
+        "hieroglyphs",
+        "magical sigil",
+        "magical pattern",
+        "magic circle",
+        "magic square"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Decorations once rumoured to have existed.",
+      "entries": [
+        "demonic symbol",
+        "angelic script"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Decorations for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "ogham writing"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Decorations for modern worlds.",
+      "entries": [
+        "{common}",
+        "photograph",
+        "graphic print",
+        "print pattern",
+        "fractal image"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Decorations for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "animated projection",
+        "nanotech-augmented pattern"
+      ]
+    },
+    {
+      "**************************************************": "MATERIALS"
+    },
+    {
+      "name": "material",
+      "explanation": "Decorations for different types of surfaces.",
+      "entries": [
+        "{bone}",
+        "{ceramic}",
+        "{glass}",
+        "{leather}",
+        "{metal}",
+        "{stone}",
+        "{wood}"
+      ]
+    },
+    {
+      "name": "bone",
+      "explanation": "Ivory, horn and other bone-like materials.",
+      "entries": [
+        "{scratching}",
+        "{carving}",
+        "{painting}",
+        "{bas relief}"
+      ]
+    },
+    {
+      "name": "ceramic",
+      "explanation": "Decoration types on clay and other earthenware.",
+      "entries": [
+        "{drawing}",
+        "{painting}",
+        "{bas relief}"
+      ]
+    },
+    {
+      "name": "glass",
+      "explanation": "Decoration types on glass.",
+      "entries": [
+        "{painting}"
+      ]
+    },
+    {
+      "name": "leather",
+      "explanation": "Decoration types on glass.",
+      "entries": [
+        "{drawing}",
+        "{painting}"
+      ]
+    },
+    {
+      "name": "metal",
+      "explanation": "Decoration types on metallic surfaces.",
+      "entries": [
+        "{engraving}",
+        "{painting}",
+        "{etching}",
+        "{bas relief}"
+      ]
+    },
+    {
+      "name": "stone",
+      "explanation": "Decoration types on rock surfaces.",
+      "entries": [
+        "{scratching}",
+        "{carving}",
+        "{painting}",
+        "{bas relief}"
+      ]
+    },
+    {
+      "name": "wood",
+      "explanation": "Decoration types on timber.",
+      "entries": [
+        "{scratching}",
+        "{carving}",
+        "{painting}",
+        "{bas relief}"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special decoration tables.",
+      "entries": [
+        "{adjective}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives related to decoration.",
+      "entries": [
+        "crude",
+        "sketchy",
+        "coarse",
+        "vague",
+        "smudged",
+        "hastily made",
+        "complicated",
+        "elegant",
+        "ornate",
+        "baroque",
+        "convoluted",
+        "graceful",
+        "elaborate",
+        "overelaborate",
+        "finely detailed"
+      ]
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}. Material: {material}."
+      ]
+    }
+  ]
+}

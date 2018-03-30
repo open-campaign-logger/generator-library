@@ -1,6 +1,9 @@
 {
-  "name": "USA 1880's first names",
-  "resultPattern": "{first name} {lib:USA 1850 names#last name} ({var:gender})",
+  "name": "name-USA-1880",
+  "resultPattern": "{first name} {lib:name-USA-1850#last name} ({var:gender})",
+  "globals": {
+    "culture": "American"
+  },
   "variables": {
     "gender": ""
   },
@@ -9,9 +12,9 @@
   "note": "The name tables have been sorted from the most common to the least common.",
   "bugs": "",
   "to do": "Chronologically closer first and last name data would be nice.",
-  "see": "name_USA_1850",
-  "date": "2017-10-04",
-  "authors": "Esko Vesala",
+  "see": "name-USA-1850",
+  "date": "2018-03-10",
+  "authors": "ELF Vesala",
   "sources": "http://www.baby2see.com/names/1880s.html",
   "genre": "historical",
   "categories": [
@@ -2047,6 +2050,41 @@
         "Brice",
         "Ewald",
         "Ammon"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special name tables.",
+      "entries": [
+        "{hermafrodite}",
+        "{neuter}"
+      ]
+    },
+    {
+      "name": "hermafrodite",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex}"
+      ]
+    },
+    {
+      "name": "neuter",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex}"
+      ]
+    },
+    {
+      "**************************************************": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, surname: {surname}, byname: {byname}, initial: {initial}, special: {special}. Gender = {global:gender}."
       ]
     }
   ]

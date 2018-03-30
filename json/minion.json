@@ -1,29 +1,7 @@
 {
   "name": "minion",
-  "resultPattern": "{HTML formatting}{init}{result}",
+  "resultPattern": "{init}{result}",
   "variables": {
-    "starttitle": "<H2>",
-    "endtitle": "</H2>",
-    "startheading": "<H3>",
-    "endheading": "</H3>",
-    "startbold": "<B>",
-    "endbold": "</B>",
-    "para": "<P>",
-    "difficulty": "",
-    "difficultydescription": "",
-    "actant": "minion",
-    "actants": "minions",
-    "actantgroup": "army",
-    "actantaction": "waiting for orders",
-    "actantadjective": "faithful",
-    "actantdescription": "The minion looks stressed.",
-    "attitude": "hostile",
-    "minion": "minion",
-    "minions": "minions",
-    "miniongroup": "army",
-    "minionaction": "waiting for orders",
-    "minionadjective": "faithful",
-    "miniondescription": "The minion looks stressed.",
     "footnote": ""
   },
   "explanation": "Randomized minions.",
@@ -32,7 +10,7 @@
   "bugs": "",
   "to do": "Categorize minions by type.",
   "see": "actant, Dungeon_adventure, hero, scene, villain",
-  "date": "2018-01-21",
+  "date": "2018-03-04",
   "authors": "Esko Vesala.",
   "sources": "Wikia.com",
   "genre": "fantasy",
@@ -46,7 +24,7 @@
       "entries": [
         {
           "v": "",
-          "set": {
+          "export": {
             "actant": "minion"
           }
         }
@@ -71,9 +49,10 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
+        "{minion} whose favorite strategy is {strategy}",
         "{adjective} {minion}",
-        "{minion} {var:para}{complication}",
-        "{adjective} {minion} {var:para}{complication}"
+        "{minion} ({complication})",
+        "{adjective} {minion} ({complication})"
       ]
     },
     {
@@ -111,7 +90,7 @@
         {
           "m": 1,
           "v": "servitor",
-          "set": {
+          "export": {
             "minion": "servitor",
             "minions": "servitors",
             "miniongroup": "congregation of servitors",
@@ -121,7 +100,7 @@
         {
           "m": 1,
           "v": "devotee",
-          "set": {
+          "export": {
             "minion": "devotee",
             "minions": "devotees",
             "miniongroup": "congregation of devotees",
@@ -131,7 +110,7 @@
         {
           "m": 1,
           "v": "slave",
-          "set": {
+          "export": {
             "minion": "slave",
             "minions": "slaves",
             "miniongroup": "slave gang"
@@ -140,7 +119,7 @@
         {
           "m": 1,
           "v": "thrall",
-          "set": {
+          "export": {
             "minion": "thrall",
             "minions": "thralls",
             "miniongroup": "gang of thralls"
@@ -149,7 +128,7 @@
         {
           "m": 1,
           "v": "guard",
-          "set": {
+          "export": {
             "minion": "guard",
             "minions": "guards",
             "miniongroup": "troop of guards"
@@ -158,7 +137,7 @@
         {
           "m": 1,
           "v": "worshipper",
-          "set": {
+          "export": {
             "minion": "worshipper",
             "minions": "worshippers",
             "miniongroup": "sect of worshippers"
@@ -173,7 +152,7 @@
         {
           "m": 1,
           "v": "automaton",
-          "set": {
+          "export": {
             "minion": "automaton",
             "minions": "automata",
             "miniongroup": "assembly of automata",
@@ -183,7 +162,7 @@
         {
           "m": 1,
           "v": "manbeast",
-          "set": {
+          "export": {
             "minion": "manbeast",
             "minions": "manbeasts",
             "miniongroup": "horde of manbeasts",
@@ -193,7 +172,7 @@
         {
           "m": 1,
           "v": "beastman",
-          "set": {
+          "export": {
             "minion": "beastman",
             "minions": "beastmen",
             "miniongroup": "horde of beastmen",
@@ -203,7 +182,7 @@
         {
           "m": 1,
           "v": "frogman",
-          "set": {
+          "export": {
             "minion": "frogman",
             "minions": "frogmen",
             "miniongroup": "group of frogmen",
@@ -213,7 +192,7 @@
         {
           "m": 1,
           "v": "imp",
-          "set": {
+          "export": {
             "minion": "imp",
             "minions": "imps",
             "miniongroup": "gathering of imps"
@@ -259,45 +238,6 @@
       ]
     },
     {
-      "**************************************************": "FORMATTING"
-    },
-    {
-      "name": "HTML formatting",
-      "explanation": "Set variables for formatting the output as HTML",
-      "entries": [
-        {
-          "v": "",
-          "set": {
-            "starttitle": "<H2>",
-            "endtitle": "</H2>",
-            "startheading": "<H3>",
-            "endheading": "</H3>",
-            "startbold": "<B>",
-            "endbold": "</B>",
-            "para": "<P>"
-          }
-        }
-      ]
-    },
-    {
-      "name": "CL formatting",
-      "explanation": "Set variables for formatting the output for Campaign Logger",
-      "entries": [
-        {
-          "v": "",
-          "set": {
-            "starttitle": "{b|",
-            "endtitle": "}\r\n\r\n",
-            "startheading": "\r\n\r\n{b|",
-            "endheading": "}",
-            "startbold": "{b|",
-            "endbold": "}",
-            "para": "\r\n"
-          }
-        }
-      ]
-    },
-    {
       "**************************************************": "SPECIAL TABLES"
     },
     {
@@ -305,8 +245,8 @@
       "explanation": "Special minion types.",
       "entries": [
         "{adjective}",
-        "{strategy}",
-        "{complication}"
+        "{complication}",
+        "{strategy}"
       ]
     },
     {
@@ -324,8 +264,18 @@
       "name": "complication",
       "explanation": "Complications for the minions.",
       "entries": [
-        "A mutiny is rising among the minions.",
-        "The minions have been alarmed and are actively patrolling to find the intruders."
+        "a mutiny is rising among the minions",
+        "the minions have been alarmed and are actively patrolling to find the intruders"
+      ]
+    },
+    {
+      "name": "strategy",
+      "explanation": "Strategies for the minions.",
+      "entries": [
+        "ambushing",
+        "attacking from afar",
+        "setting traps for the enemy",
+        "sending a champion to challenge the enemy champion"
       ]
     }
   ]
