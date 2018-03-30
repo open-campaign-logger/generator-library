@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "equipment",
-  "date": "2017-12-31",
+  "date": "2018-01-12",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "universal",
@@ -106,7 +106,8 @@
       "explanation": "Docks.",
       "entries": [
         "docks",
-        "shipyard"
+        "shipyard",
+        "harbor master's office"
       ]
     },
     {

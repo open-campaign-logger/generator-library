@@ -60,6 +60,7 @@ typings/
 # Campaign Logger files
 Staging
 .gitignore
+json/Staging
 *.pdf
 json/_encounterSeed_generator.json
 json/_goblinName_generator.json

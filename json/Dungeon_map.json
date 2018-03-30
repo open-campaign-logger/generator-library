@@ -2,7 +2,9 @@
   "name": "Dungeon_map",
   "resultPattern": "{lib:formatting#CL}{init}{result}",
   "globals": {
+    "entrance": "",
     "location": "",
+    "vault": "",
     "room": "",
     "set": ""
   },
@@ -10,7 +12,7 @@
     "footnote": ""
   },
   "explanation": "",
-  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settilocationngs, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most locations, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "format": "",
   "bugs": "",
@@ -103,31 +105,31 @@
       "name": "three_by_three",
       "explanation": "3 x 3 square-shaped dungeon map.",
       "entries": [
-        "Map: 3x3 ({global:settilocation})\r\n|| {entrance} || {two_exit_room} || {one_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {one_exit_room} || {two_exit_room} || {vault}",
-        " Map: 3x3 ({global:settilocation})\r\n|| {two_exit_room} || {two_exit_room} || {vault} \r\n|| {entrance} || {two_exit_room} || {two_exit_room} \r\n|| {two_exit_room} || {two_exit_room} || {one_exit_room} ",
-        "Dungeon Map: 3x3 \r\n|| {one_exit_room} || {two_exit_room} || {two_exit_room} \r\n|| {entrance} || {three_exit_room} || {two_exit_room} \r\n|| {one_exit_room} || {two_exit_room} || {vault} ",
-        "Dungeon Map: 3x3 ({global:settilocation})\r\n|| {two_exit_room} || {three_exit_room} || {vault} \r\n|| {two_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {entrance} || {two_exit_room} || {one_exit_room} "
+        "Map: 3x3 ({global:set})\r\n|| {entrance} || {two_exit_room} || {one_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {one_exit_room} || {two_exit_room} || {vault}",
+        " Map: 3x3 ({global:set})\r\n|| {two_exit_room} || {two_exit_room} || {vault} \r\n|| {entrance} || {two_exit_room} || {two_exit_room} \r\n|| {two_exit_room} || {two_exit_room} || {one_exit_room} ",
+        "Dungeon Map: 3x3 ({global:set})\r\n|| {one_exit_room} || {two_exit_room} || {two_exit_room} \r\n|| {entrance} || {three_exit_room} || {two_exit_room} \r\n|| {one_exit_room} || {two_exit_room} || {vault} ",
+        "Dungeon Map: 3x3 ({global:set})\r\n|| {two_exit_room} || {three_exit_room} || {vault} \r\n|| {two_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {entrance} || {two_exit_room} || {one_exit_room} "
       ]
     },
     {
       "name": "four_by_four",
       "explanation": "4 x 4 square-shaped dungeon map.",
       "entries": [
-        "Map: 4x4 ({global:settilocation})\r\n|| {one_exit_room} || {two_exit_room} || {two_exit_room} || {one_exit_room} \r\n|| {entrance} || {three_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {three_exit_room} || {vault} \r\n|| {one_exit_room} || {two_exit_room} || {two_exit_room} || {one_exit_room} "
+        "Map: 4x4 ({global:set})\r\n|| {one_exit_room} || {two_exit_room} || {two_exit_room} || {one_exit_room} \r\n|| {entrance} || {three_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {three_exit_room} || {vault} \r\n|| {one_exit_room} || {two_exit_room} || {two_exit_room} || {one_exit_room} "
       ]
     },
     {
       "name": "five_by_five",
       "explanation": "5 x 5 square-shaped dungeon map.",
       "entries": [
-        "Map: 5x5 ({global:settilocation})\r\n|| {one_exit_room} || {two_exit_room} || {two_exit_room} || {two_exit_room} || {one_exit_room} \r\n|| {entrance} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {vault} \r\n|| {one_exit_room} || {two_exit_room} || {two_exit_room} || {two_exit_room} || {one_exit_room} "
+        "Map: 5x5 ({global:set})\r\n|| {one_exit_room} || {two_exit_room} || {two_exit_room} || {two_exit_room} || {one_exit_room} \r\n|| {entrance} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {vault} \r\n|| {one_exit_room} || {two_exit_room} || {two_exit_room} || {two_exit_room} || {one_exit_room} "
       ]
     },
     {
       "name": "six_by_six",
       "explanation": "6 x 6 square-shaped dungeon map.",
       "entries": [
-        "Map: 6x6 ({global:settilocation})\r\n|| {one_exit_room} || {two_exit_room} || {two_exit_room} || {two_exit_room} || {two_exit_room} || {one_exit_room} \r\n|| {entrance} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {vault} \r\n|| {one_exit_room} || {two_exit_room} || {two_exit_room} || {two_exit_room} || {two_exit_room} || {one_exit_room} "
+        "Map: 6x6 ({global:set})\r\n|| {one_exit_room} || {two_exit_room} || {two_exit_room} || {two_exit_room} || {two_exit_room} || {one_exit_room} \r\n|| {entrance} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {two_exit_room} \r\n|| {two_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {three_exit_room} || {vault} \r\n|| {one_exit_room} || {two_exit_room} || {two_exit_room} || {two_exit_room} || {two_exit_room} || {one_exit_room} "
       ]
     },
     {
@@ -136,8 +138,11 @@
     {
       "name": "entrance",
       "explanation": "Entrance cell contents.",
+      "export": {
+        "entrance": "{lib:{global:set}#entrance}"
+      },
       "entries": [
-        "{global:startbold}Entrance:{global:endbold} {lib:dungeon_entrance#summary}"
+        "{global:startbold}Entrance:{global:endbold} {global:entrance}"
       ]
     },
     {
@@ -180,7 +185,12 @@
       "name": "vault",
       "explanation": "Vault cell contents.",
       "entries": [
-        "{global:startbold}Vault:{global:endbold} {lib:dungeon_vault#summary}"
+        {
+          "v": "{global:startbold}Vault:{global:endbold} {global:room}",
+          "export": {
+            "room": "{lib:{global:set}#vault}"
+          }
+        }
       ]
     },
     {
@@ -248,7 +258,8 @@
         {
           "v": "",
           "export": {
-            "settilocation": "{set}#location"
+            "set": "{set}",
+            "location": "{set}#location"
           }
         }
       ]
@@ -260,7 +271,7 @@
         {
           "v": "",
           "export": {
-            "room": "{lib:{global:settilocation}}"
+            "room": "{lib:{global:location}}"
           }
         }
       ]

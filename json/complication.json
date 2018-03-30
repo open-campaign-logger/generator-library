@@ -147,7 +147,7 @@
       "entries": [
         {
           "m": 10,
-          "v": "{common complication}"
+          "v": "{common creature}"
         },
         "{rare complication}"
       ]
@@ -172,7 +172,8 @@
         "crippled",
         "hamstrung",
         "handicapped",
-        "mutilated"
+        "mutilated",
+        "amputee"
       ]
     },
     {
