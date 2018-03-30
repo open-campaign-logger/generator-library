@@ -8,8 +8,8 @@
   "bugs": "",
   "to do": "",
   "see": "edge, flaw, strategy",
-  "date": "2018-02-10",
-  "authors": "Ron Calbick (as extracted from his goblin-names.json generator), Esko Vesala.",
+  "date": "2018-03-10",
+  "authors": "Ron Calbick (as extracted from his goblin-names.json generator), ELF Vesala.",
   "sources": "Ron Calbick: 'Goblin Generator'.",
   "genre": "universal",
   "categories": [
@@ -100,7 +100,6 @@
       "name": "animalistic",
       "explanation": "Animal-like quirks.",
       "entries": [
-        "has very large feet with long clawed toes that are often used in battle.",
         "likes to eat just about anything, including dirt, leaves, wood, paper, and just about anything else that is even remotely edible",
         "often marks territory as an animal would, urinating at various key locations, even indoors",
         "has a tendency to bury things, from sticks and rocks to valuables, and rarely remembers where they were buried afterwards"
@@ -140,7 +139,6 @@
       "name": "physical",
       "explanation": "Body-related quirks.",
       "entries": [
-        "has an unusually large nose that is particularly keen, often used for tracking by scent.",
         "is rarely seen not eating, or at least in possession of, various foodstuffs",
         "has eyes of two different colors and when speaking to others moves up close and opens them wide so they are easily noticed"
       ]
@@ -149,6 +147,7 @@
       "name": "senses",
       "explanation": "Sensing-related quirks.",
       "entries": [
+        "has an unusually large nose that is particularly keen, often used for tracking by scent",
         "is missing an ear, claiming it simply fell off and was never found",
         "has an unusually large nose that is particularly keen"
       ]
@@ -182,7 +181,8 @@
       "name": "behavior",
       "explanation": "behaviour-related quirks.",
       "entries": [
-        "is always trying to sneak and hide from others, as if life were one big game of hide and seek"
+        "is always trying to sneak and hide from others, as if life were one big game of hide and seek",
+        "keeps repeating heard slogans"
       ]
     },
     {
@@ -191,14 +191,15 @@
       "entries": [
         "is prone to frequent loud, odorous belching that often makes others sick to their stomachs",
         "is prone to nose-picking when deep in thought or anxious about something",
-        "drools incessantly and has a tendency to spit on others when speaking"
+        "drools incessantly and has a tendency to spit on others when speaking",
+        "plays compulsively with their hair"
       ]
     },
     {
       "name": "speech",
       "explanation": "Talking-related quirks.",
       "entries": [
-        "has a penchant for dragons, but can't pronounce the word properly, calling them 'dagorns' instead.",
+        "has a penchant for dragons, but can't pronounce the word properly, calling them 'dagorns' instead",
         "is incapable of speaking softly and often blurts things out at the most inopportune times"
       ]
     },

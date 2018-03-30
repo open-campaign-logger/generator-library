@@ -7,7 +7,7 @@
   "variables": {
     "footnote": "note"
   },
-  "explanation": "Names from the Arthurian 'Le Morte d'Arthur' epic by Sir Thomas Malory.",
+  "explanation": "Names from the Arthurian epic 'Le Morte d'Arthur' by Sir Thomas Malory.",
   "structure": "Genders are collected in the same file to allow easy sharing of patronym and byname tables. Subtables have been split by their initial letter to allow future support for allitteration and for example siblings sharing the same initial.",
   "note": "",
   "to do": "unisex names (if such exist), bynames",

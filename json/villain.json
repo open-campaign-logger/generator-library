@@ -1,10 +1,7 @@
 {
   "name": "villain",
   "resultPattern": "{init}{result}",
-  "globals": {
-    "villain": "",
-    "villainsummary": ""
-  },
+  "globals": {},
   "variables": {
     "footnote": ""
   },

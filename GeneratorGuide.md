@@ -1,8 +1,8 @@
 [//]: # (User Guide document for the Generator functionality of the Campaign Logger gamemastering tool.)
 
-[//]: # (Authors: Esko Vesala, Peter Sotos.)
+[//]: # (Authors: ELF Vesala, Peter Sotos.)
 
-[//]: # (Date: 2018-01-09.)
+[//]: # (Date: 2018-03-10.)
 
 
 # Generator Guide
@@ -272,6 +272,107 @@ Variables are specified as a list of value pairs - the key (name of the variable
     },
 
 **Note**: Variable names cannot begin with a number. Otherwise they can contain alphanumeric characters (`a` - `z`, `A` - `Z`, `0` - `9`), as well as underscore (`_`) and space (` `) characters. Note that for example a dash (`-`) is not allowed.
+
+
+### Local Variables
+
+#### Setting Variables for a Single Entry
+
+		{
+			"v": "hostage",
+			"set": {
+				"actant": "captive",
+				"actants": "captives",
+				"actantgroup": "group of captives"
+			}
+
+
+#### Setting Variables for a Table
+
+		{
+		     "name": "captive",
+		     "set": {
+		            "actant": "captive",
+		            "actants": "captives",
+		     },
+		     "entries": [
+		       "prisoner",
+		       "hostage"
+		     ]
+		   },
+
+
+### Global Variables
+
+
+## Pattern Matching and Replacing
+
+		{
+		 "resultPattern": "{var:firstLevel}",
+		 "variables": {
+		   "firstLevel": "{table}",
+		   "secondLevelHelper": "table",
+		   "secondLevel": "{{var:secondLevelHelper}2}",
+		   "thirdLevelHelper1": "table",
+		   "thirdLevelHelper2": 42,
+		   "thirdLevel": "{{{{var:thirdLevelHelper1}{var:thirdLevelHelper2}x}y}z}"
+		 },
+		 "tables": [
+		   {
+		     "name": "table",
+		     "entries": [
+		       "First level var-to-table call"
+		     ]
+		   },
+		   {
+		     "name": "table2",
+		     "entries": [
+		       "Second level var-to-table call"
+		     ]
+		   },
+		   {
+		     "name": "table42x",
+		     "entries": [
+		       "table42"
+		     ]
+		   },
+		   {
+		     "name": "table42y",
+		     "entries": [
+		       "table42"
+		     ]
+		   },
+		   {
+		     "name": "table42z",
+		     "entries": [
+		       "{table3}"
+		     ]
+		   },
+		   {
+		     "name": "table3",
+		     "entries": [
+		       "Third level var-to-table call"
+		     ]
+		   }
+		 ]
+		}
+
+
+### Extending variable content
+
+Add more content into a variable:
+
+			{ "x": "{var:x} new text" }
+
+
+## Non-Repeating Results
+
+{!table} selects a result from table by removing it from the unique instance of that table, i.e. {table} might produce this same result, but {!table}
+won't.
+
+Technically {table} references the normal instance of the table while {!table} references the unique instance. The normal instance's entries stay as they are. The unique instance's entries get fewer and fewer until depleted.
+
+Unique instances share the same variables and globals with normal instances, just entries are handled differently. Unique instances have the same scope as variables, i.e. strictly local.
 
 
 ## Random Number Generation

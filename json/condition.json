@@ -10,8 +10,8 @@
   "format": "",
   "bugs": "",
   "to do": "",
-  "see": "door, key",
-  "date": "2018-01-13",
+  "see": "door, item_template, key",
+  "date": "2018-01-29",
   "authors": "Esko Vesala.",
   "sources": "",
   "genre": "universal",
@@ -105,7 +105,8 @@
         "needing repair",
         "broken",
         "destroyed",
-        "shattered"
+        "shattered",
+        "notched"
       ]
     },
     {
