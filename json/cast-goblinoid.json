@@ -1,0 +1,366 @@
+{
+  "name": "cast-goblinoid",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "cast": "{role}",
+    "castadjective": "{adjective}",
+    "castparticiple": "{participle}",
+    "castbreed": "{breed}",
+    "castpossession": "{possession}"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Template for a themed population.",
+  "structure": "Global variables fitting a common environment.",
+  "note": "This table does not produce immediate output, only sets global variables for later use.",
+  "format": "Global variable definitions.",
+  "bugs": "",
+  "to do": "",
+  "see": "_template_cast, _template_set",
+  "date": "2018-02-15",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Setting the relevant global variables.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "export": {}
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": ".",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief description of the randomized set.",
+      "entries": [
+        "{role}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed description of the randomized set.",
+      "entries": [
+        "{adjective} {role}",
+        "{participle} {role}",
+        "{participle}, {adjective} {role}",
+        "{adjective}, {participle} {role}",
+        "{role} with {possession}",
+        "{role} wearing {clothing}",
+        "{role} equippped with {protection}",
+        "{role} wielding {weapon}",
+        "{role} carrying {equipment}",
+        "{role} holding {valuable}",
+        "{role} accompanied by {pet}",
+        "{adjective} {role} with {possession}",
+        "{participle} {role} with {possession}"
+      ]
+    },
+    {
+      "name": "group",
+      "explanation": "Groups matching the population.",
+      "entries": [
+        "patrol"
+      ]
+    },
+    {
+      "**************************************************": "ROLES"
+    },
+    {
+      "name": "role",
+      "explanation": "Randomized roles for the population.",
+      "entries": [
+        "{captive}",
+        "{servant}",
+        "{breed} {scout}",
+        "{breed} {guard}",
+        "{breed} {fighter}",
+        "{breed} {worker}",
+        "{breed} {artisan}",
+        "{breed} {trader}",
+        "{breed} {priest}",
+        "{breed} {magician}",
+        "{breed} {overseer}",
+        "{overlord} {leader}"
+      ]
+    },
+    {
+      "name": "captive",
+      "explanation": "Captives of the population.",
+      "entries": [
+        "captive {prisoner}"
+      ]
+    },
+    {
+      "name": "servant",
+      "explanation": "Servantfolk matching the population.",
+      "entries": [
+        "{prisoner} slave"
+      ]
+    },
+    {
+      "name": "scout",
+      "explanation": "Forerunners matching the population.",
+      "entries": [
+        "scout",
+        "runner",
+        "tracker",
+        "hunter"
+      ]
+    },
+    {
+      "name": "guard",
+      "explanation": "Guardians matching the population.",
+      "entries": [
+        "guard",
+        "guardian",
+        "watchman"
+      ]
+    },
+    {
+      "name": "fighter",
+      "explanation": "Warriors matching the population.",
+      "entries": [
+        "{melee}",
+        "{missile}",
+        "brute",
+        "grunt",
+        "cutthroat",
+        "ambusher",
+        "fighter",
+        "warrior"
+      ]
+    },
+    {
+      "name": "melee",
+      "explanation": "Close combat warriors matching the population.",
+      "entries": [
+        "spearman",
+        "pikeman"
+      ]
+    },
+    {
+      "name": "missile",
+      "explanation": "Long distance warriors matching the population.",
+      "entries": [
+        "sling shooter",
+        "spear thrower",
+        "archer"
+      ]
+    },
+    {
+      "name": "worker",
+      "explanation": "Laborers matching the population.",
+      "entries": [
+        "laborer",
+        "worker"
+      ]
+    },
+    {
+      "name": "artisan",
+      "explanation": "Craftsmen matching the population.",
+      "entries": [
+        "artisan",
+        "craftsman"
+      ]
+    },
+    {
+      "name": "trader",
+      "explanation": "Merchants matching the population.",
+      "entries": [
+        "barterer",
+        "dealer",
+        "trader",
+        "merchant"
+      ]
+    },
+    {
+      "name": "priest",
+      "explanation": "Clerics matching the population.",
+      "entries": [
+        "shaman",
+        "priest"
+      ]
+    },
+    {
+      "name": "magician",
+      "explanation": "Spellcasters matching the population.",
+      "entries": [
+        "witch doctor",
+        "hedge wizard"
+      ]
+    },
+    {
+      "name": "overseer",
+      "explanation": "Mid-level bosses matching the population.",
+      "entries": [
+        "foreman",
+        "headman",
+        "captain",
+        "elder"
+      ]
+    },
+    {
+      "name": "leader",
+      "explanation": "Chieftains matching the population.",
+      "entries": [
+        "chieftain",
+        "chief",
+        "master",
+        "warlord",
+        "ruler",
+        "king"
+      ]
+    },
+    {
+      "**************************************************": "POSSESSIONS"
+    },
+    {
+      "name": "possession",
+      "explanation": "Randomized possessions for the population.",
+      "entries": [
+        "{food}",
+        "{clothing}",
+        "{protection}",
+        "{weapon}",
+        "{equipment}",
+        "{valuable}",
+        "{pet}",
+        "{captive}"
+      ]
+    },
+    {
+      "name": "food",
+      "explanation": "Nourishment for the population.",
+      "entries": [
+        "dried meat"
+      ]
+    },
+    {
+      "name": "clothing",
+      "explanation": "Equipment for the population.",
+      "entries": [
+        "baggy sack"
+      ]
+    },
+    {
+      "name": "protection",
+      "explanation": "Equipment for the population.",
+      "entries": [
+        "chain mail shirt"
+      ]
+    },
+    {
+      "name": "weapon",
+      "explanation": "Equipment for the population.",
+      "entries": [
+        "club",
+        "spiked club",
+        "dagger",
+        "blunt sword",
+        "shortbow"
+      ]
+    },
+    {
+      "name": "equipment",
+      "explanation": "Equipment for the population.",
+      "entries": [
+        "patched sack"
+      ]
+    },
+    {
+      "name": "valuable",
+      "explanation": "Equipment for the population.",
+      "entries": [
+        "copper coins",
+        "tattered leather purse"
+      ]
+    },
+    {
+      "name": "pet",
+      "explanation": "Animal companions for the population.",
+      "entries": [
+        "warg pup",
+        "warg runt",
+        "warg"
+      ]
+    },
+    {
+      "**************************************************": "BREEDS"
+    },
+    {
+      "name": "prisoner",
+      "explanation": "Hostage and slave breed of the population.",
+      "entries": [
+        "kobold",
+        "enemy tribe goblin"
+      ]
+    },
+    {
+      "name": "breed",
+      "explanation": "Breeds of the population.",
+      "entries": [
+        "goblin",
+        "hobgoblin",
+        "bugbear",
+        "orc"
+      ]
+    },
+    {
+      "name": "overlord",
+      "explanation": "Ruler breed of the population.",
+      "entries": [
+        "goblin",
+        "hobgoblin",
+        "bugbear",
+        "orc",
+        "half-orc",
+        "troll"
+      ]
+    },
+    {
+      "**************************************************": "DESCRIPTIONS"
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives for the population.",
+      "entries": [
+        "barbaric",
+        "dirty"
+      ]
+    },
+    {
+      "name": "participle",
+      "explanation": "Verbs for the population.",
+      "entries": [
+        "snickering",
+        "leering"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}."
+      ]
+    }
+  ]
+}

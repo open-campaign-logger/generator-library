@@ -1,0 +1,651 @@
+{
+  "name": "appearance",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "bodytype": "",
+    "comeliness": "",
+    "hairlength": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "The countenance and facial features of a character.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "personality, NPC_description",
+  "date": "2018-03-11",
+  "authors": "ELF Vesala.",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{appearance}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective}, {appearance}",
+        "{appearance} {feature}",
+        "{adjective}, {appearance} {feature}"
+      ]
+    },
+    {
+      "name": "appearance",
+      "explanation": "The appearance types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common appearance types.",
+      "entries": [
+        "{hair} and {eyes}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare appearance types.",
+      "entries": [
+        "{body}",
+        "{voice}"
+      ]
+    },
+    {
+      "**************************************************": "BEAUTY"
+    },
+    {
+      "name": "comeliness",
+      "explanation": "The level of beauty.",
+      "entries": [
+        "{ugly}",
+        "{plain}",
+        "{comely}"
+      ]
+    },
+    {
+      "name": "ugly",
+      "explanation": "Ugly appearances.",
+      "export": {
+        "comeliness": "ugly"
+      },
+      "entries": [
+        "is downright ugly",
+        "looks homely"
+      ]
+    },
+    {
+      "name": "plain",
+      "explanation": "Plain appearances.",
+      "export": {
+        "comeliness": "plain"
+      },
+      "entries": [
+        "is pleasant to look at",
+        "is plain-looking"
+      ]
+    },
+    {
+      "name": "comely",
+      "explanation": "Good-looking appearances.",
+      "export": {
+        "comeliness": "comely"
+      },
+      "entries": [
+        "is quite comely",
+        "is good-looking"
+      ]
+    },
+    {
+      "name": "comely female",
+      "explanation": "Good-looking female appearances.",
+      "export": {
+        "comeliness": "comely"
+      },
+      "entries": [
+        "is beautiful"
+      ]
+    },
+    {
+      "name": "comely male",
+      "explanation": "Good-looking male appearances.",
+      "export": {
+        "comeliness": "comely"
+      },
+      "entries": [
+        "is handsome",
+        "has rugged good looks"
+      ]
+    },
+    {
+      "**************************************************": "BODY"
+    },
+    {
+      "name": "body",
+      "explanation": "Body-related details of appearance.",
+      "entries": [
+        "{body type}",
+        "{posture}",
+        "{gait}"
+      ]
+    },
+    {
+      "name": "body type",
+      "explanation": "Body types.",
+      "entries": [
+        "{ectomorph}",
+        "{mesomorph}",
+        "{endomorph}"
+      ]
+    },
+    {
+      "name": "ectomorph",
+      "explanation": "Delicate frame.",
+      "export": {
+        "bodytype": "ectomorph"
+      },
+      "entries": [
+        "thin"
+      ]
+    },
+    {
+      "name": "mesomorph",
+      "explanation": "Athletic frame.",
+      "export": {
+        "bodytype": "mesomorph"
+      },
+      "entries": [
+        "athletic"
+      ]
+    },
+    {
+      "name": "endomorph",
+      "explanation": "Soft and round frame.",
+      "export": {
+        "bodytype": "endomorph"
+      },
+      "entries": [
+        "plumpy"
+      ]
+    },
+    {
+      "name": "posture",
+      "explanation": "Typically assumed positioning of the body.",
+      "entries": [
+        "crouched posture"
+      ]
+    },
+    {
+      "name": "gait",
+      "explanation": "Manner of locomotion.",
+      "entries": [
+        "walks taking long strides"
+      ]
+    },
+    {
+      "**************************************************": "FACE"
+    },
+    {
+      "name": "face",
+      "explanation": "Face-related details of appearance.",
+      "entries": [
+        "{face}",
+        "{eyebrows}",
+        "{eyes}",
+        "{nose}",
+        "{mouth}",
+        "{ears}",
+        "{jaw}"
+      ]
+    },
+    {
+      "name": "ears",
+      "explanation": "Ear-related aspects of appearance.",
+      "entries": [
+        "prominent ears"
+      ]
+    },
+    {
+      "name": "eyebrows",
+      "explanation": "Eyebrow-related aspects of appearance.",
+      "entries": [
+        "unibrow"
+      ]
+    },
+    {
+      "name": "eyes",
+      "explanation": "Eye-related aspects of appearance.",
+      "entries": [
+        "eyes that are {lib:color#eye}"
+      ]
+    },
+    {
+      "name": "face",
+      "explanation": "Face shape related aspects of appearance.",
+      "entries": [
+        "square face"
+      ]
+    },
+    {
+      "name": "jaw",
+      "explanation": "Jaw-related aspects of appearance.",
+      "entries": [
+        "square-jawed"
+      ]
+    },
+    {
+      "name": "mouth",
+      "explanation": "Mouth-related aspects of appearance.",
+      "entries": [
+        "wide mouth"
+      ]
+    },
+    {
+      "name": "nose",
+      "explanation": "Nose-related aspects of appearance.",
+      "entries": [
+        "bulbous nose"
+      ]
+    },
+    {
+      "**************************************************": "HAIR"
+    },
+    {
+      "name": "hair",
+      "explanation": "Hair-related details of appearance.",
+      "entries": [
+        "{lib:color#hair}, {hairstyle}"
+      ]
+    },
+    {
+      "name": "hairstyle",
+      "explanation": "Haircuts.",
+      "entries": [
+        "{female haircut}",
+        "{male haircut}"
+      ]
+    },
+    {
+      "name": "female haircut",
+      "explanation": "",
+      "entries": [
+        "{long female}",
+        "{medium female}",
+        "{short female}"
+      ]
+    },
+    {
+      "name": "short female",
+      "explanation": "Traditionally female cuts for short hair.",
+      "export": {
+        "hairlength": "short"
+      },
+      "entries": [
+        "cropped hair",
+        "short hair"
+      ]
+    },
+    {
+      "name": "medium female",
+      "explanation": "Traditionally female cuts for medium hair.",
+      "export": {
+        "hairlength": "medium"
+      },
+      "entries": [
+        "medium-length hair",
+        "messy hair"
+      ]
+    },
+    {
+      "name": "long female",
+      "explanation": "Traditionally female cuts for long hair.",
+      "export": {
+        "hairlength": "long"
+      },
+      "entries": [
+        "long",
+        "long, curled",
+        "asymmetrically cut hair",
+        "hair collected into a beehive",
+        "bun",
+        "pigtails",
+        "braided hair",
+        "hair braided into a crown across the head"
+      ]
+    },
+    {
+      "name": "male haircut",
+      "explanation": "",
+      "entries": [
+        "{short male}",
+        "{medium male}",
+        "{long male}"
+      ]
+    },
+    {
+      "name": "short male",
+      "explanation": "Traditionally female cuts for short hair.",
+      "export": {
+        "hairlength": "short"
+      },
+      "entries": [
+        "crewcut hair",
+        "cropped hair",
+        "short hair"
+      ]
+    },
+    {
+      "name": "medium male",
+      "explanation": "Traditionally female cuts for medium hair.",
+      "export": {
+        "hairlength": "medium"
+      },
+      "entries": [
+        "bowl-cut hair",
+        "combed back hair",
+        "undercut hair",
+        "combed over hair"
+      ]
+    },
+    {
+      "name": "long male",
+      "explanation": "Traditionally female cuts for long hair.",
+      "export": {
+        "hairlength": "long"
+      },
+      "entries": [
+        "long hair"
+      ]
+    },
+    {
+      "**************************************************": "VOICE"
+    },
+    {
+      "name": "voice",
+      "explanation": "Sound-related details of appearance.",
+      "entries": [
+        "{female voice}",
+        "{male voice}",
+        "{unisex voice}"
+      ]
+    },
+    {
+      "name": "female voice",
+      "explanation": "Voices for female characters.",
+      "entries": [
+        "shrill voice"
+      ]
+    },
+    {
+      "name": "male voice",
+      "explanation": "Voices for male characters.",
+      "entries": [
+        "deep bass voice"
+      ]
+    },
+    {
+      "name": "unisex voice",
+      "explanation": "Voices for all characters.",
+      "entries": [
+        "soft voice",
+        "raspy voice"
+      ]
+    },
+    {
+      "**************************************************": "GENDER-SPECIFIC"
+    },
+    {
+      "name": "gender",
+      "explanation": "Gender-specific aspects of appearance.",
+      "entries": [
+        "{female}",
+        "{male}"
+      ]
+    },
+    {
+      "name": "female",
+      "explanation": "Female aspects of appearance.",
+      "entries": [
+        "{bosom}"
+      ]
+    },
+    {
+      "name": "hermafrodite",
+      "explanation": "Hermafrodite aspects of appearance.",
+      "entries": [
+        "{female}",
+        "{male}"
+      ]
+    },
+    {
+      "name": "male",
+      "explanation": "Male aspects of appearance.",
+      "entries": [
+        "{facial hair}"
+      ]
+    },
+    {
+      "name": "neuter",
+      "explanation": "Genders-specific aspects f appearance for neuter characters.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "bosom",
+      "explanation": "Bust-related aspects of appearance",
+      "entries": [
+        "flat-chested",
+        "voluptuous"
+      ]
+    },
+    {
+      "name": "facial hair",
+      "explanation": "Beard and moustache styles.",
+      "entries": [
+        "{shaven}",
+        "{stubble}",
+        "{beard}",
+        "{moustache}",
+        "{sideburns}",
+        "{beard and moustache}",
+        "{sideburns and moustache}",
+        "{sideburns and beard}",
+        "{beard with sideburns and moustache}"
+      ]
+    },
+    {
+      "name": "shaven",
+      "explanation": "Shaved styles.",
+      "entries": [
+        "clean-shaven"
+      ]
+    },
+    {
+      "name": "stubble",
+      "explanation": "Stubble styles.",
+      "entries": [
+        "stubble"
+      ]
+    },
+    {
+      "name": "beard",
+      "explanation": "Beard styles.",
+      "entries": [
+        "incipient beard",
+        "soul patch beard above the chin",
+        "goatee beard on the chin",
+        "bearded",
+        "tangled beard",
+        "full beard",
+        "long beard"
+      ]
+    },
+    {
+      "name": "moustache",
+      "explanation": "Moustache styles.",
+      "entries": [
+        "toothbrush moustache under the nose",
+        "narrow pencil moustache",
+        "narrow, long moustache",
+        "narrow, long moustache bent updwards",
+        "narrow, long moustache bent downwards",
+        "thick, long moustache bent downwards",
+        "narrow, slightly curved moustache",
+        "thick, slightly curved moustache",
+        "handlebar moustache",
+        "bushy walrus moustache covering the mouth",
+        "horseshow moustache extending to the jawline",
+        "big and bushy moustache",
+        "moustache covering just the upper lip",
+        "whiskers growing on the upper lip and cheeks"
+      ]
+    },
+    {
+      "name": "sideburns",
+      "explanation": "Sideburn styles.",
+      "entries": [
+        "mutton chop sideburns"
+      ]
+    },
+    {
+      "name": "beard and moustache",
+      "explanation": "Beard + moustache styles.",
+      "entries": [
+        "moustache and goatee"
+      ]
+    },
+    {
+      "name": "sideburns and moustache",
+      "explanation": "Sideburn + moustache styles.",
+      "entries": [
+        "joined mutton chop sideburns",
+        "clean-shaven chin with mutton chops connecting at the moustache"
+      ]
+    },
+    {
+      "name": "sideburns and beard",
+      "explanation": "Sideburn + beard styles.",
+      "entries": [
+        "chinstrap beard with long sideburns",
+        "sideburns with chin curtain beard covering the entire chin"
+      ]
+    },
+    {
+      "name": "beard with sideburns and moustache",
+      "explanation": "Sideburn + moustache styles.",
+      "entries": [
+        "joined mutton chop sideburns"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Appearances once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Appearances for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Appearances for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Appearances for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special appearance tables.",
+      "entries": [
+        "{adjective}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives related to appearance.",
+      "format": "Optionally prepended to the front of the result.",
+      "entries": [
+        "pleasant",
+        "unpleasant"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features related to appearance.",
+      "format": "Optionally appended to the end of the result.",
+      "entries": [
+        "busy",
+        "distracted",
+        "relaxed"
+      ]
+    },
+    {
+      "**************************************************": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+      ]
+    }
+  ]
+}

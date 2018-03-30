@@ -1,0 +1,1044 @@
+{
+  "name": "name-magician",
+  "resultPattern": "{result}",
+  "globals": {
+    "culture": "generic"
+  },
+  "variables": {
+    "footnote": "note"
+  },
+  "explanation": "Spellcaster names collected from various cultures and works of fiction.",
+  "structure": "Genders are collected in the same file to allow easy sharing of patronym and byname tables. Subtables have been split by their initial letter to allow future support for allitteration and for example siblings sharing the same initial.",
+  "note": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-03-10",
+  "authors": "ELF Vesala.",
+  "sources": "Ranker.com, Wikipedia.org",
+  "genre": "fantasy",
+  "category": "name",
+  "tags": "#person",
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{name}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{female}",
+        "{male}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{female full}",
+        "{male full}"
+      ]
+    },
+    {
+      "name": "name",
+      "explanation": "The name types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common name types.",
+      "entries": [
+        "{female}",
+        "{male}",
+        "{female full}",
+        "{male full}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare name types.",
+      "entries": [
+        "{female}",
+        "{male}",
+        "{female full}",
+        "{male full}",
+        "{unisex}",
+        "{unisex full}"
+      ]
+    },
+    {
+      "name": "female full",
+      "entries": [
+        "{female} {female append}",
+        "{female} {unisex append}",
+        "{female prepend} {female}",
+        "{unisex prepend} {female}"
+      ]
+    },
+    {
+      "name": "male full",
+      "entries": [
+        "{male} {male append}",
+        "{male} {unisex append}",
+        "{male prepend} {male}",
+        "{unisex prepend} {male}"
+      ]
+    },
+    {
+      "name": "unisex full",
+      "entries": [
+        "{unisex} {unisex append}",
+        "{unisex prepend} {unisex}"
+      ]
+    },
+    {
+      "**************************************************": "FEMALE FIRST NAMES"
+    },
+    {
+      "name": "female",
+      "export": {
+        "gender": "female"
+      },
+      "entries": [
+        "{female a}",
+        "{female b}",
+        "{female c}",
+        "{female d}",
+        "{female e}",
+        "{female f}",
+        "{female g}",
+        "{female h}",
+        "{female i}",
+        "{female j}",
+        "{female k}",
+        "{female l}",
+        "{female m}",
+        "{female n}",
+        "{female o}",
+        "{female p}",
+        "{female r}",
+        "{female s}",
+        "{female t}",
+        "{female u}",
+        "{female v}",
+        "{female w}",
+        "{female x}",
+        "{female y}",
+        "{female z}"
+      ]
+    },
+    {
+      "name": "female a",
+      "entries": [
+        "Adel",
+        "Adwen",
+        "Agnes",
+        "Alatar",
+        "Alcwyn",
+        "Alizon",
+        "Alwena",
+        "Aneira",
+        "Aradia",
+        "Arfonia",
+        "Ariane",
+        "Ariannell",
+        "Armida",
+        "Arwyn",
+        "Aurelia",
+        "Aylith",
+        "Aziza"
+      ]
+    },
+    {
+      "name": "female b",
+      "entries": [
+        "Banwen",
+        "Barabel",
+        "Berwyn",
+        "Bethan",
+        "Betrys",
+        "Blodeuwedd",
+        "Branwen",
+        "Brighde"
+      ]
+    },
+    {
+      "name": "female c",
+      "entries": [
+        "Carmilla",
+        "Carwen",
+        "Cassandra",
+        "Ceindeg",
+        "Celeste",
+        "Celia",
+        "Celynen",
+        "Ceridwen",
+        "Circe",
+        "Clea",
+        "Crisiant"
+      ]
+    },
+    {
+      "name": "female d",
+      "entries": [
+        "Doileag"
+      ]
+    },
+    {
+      "name": "female e",
+      "entries": [
+        "Eifiona",
+        "Eilonwy",
+        "Elfryn",
+        "Elspeth",
+        "Erana",
+        "Eriadna",
+        "Erichtho",
+        "Evanora"
+      ]
+    },
+    {
+      "name": "female f",
+      "entries": [
+        "Freyja"
+      ]
+    },
+    {
+      "name": "female g",
+      "entries": [
+        "Ginevra",
+        "Goewyn",
+        "Gwenddydd",
+        "Gytha"
+      ]
+    },
+    {
+      "name": "female h",
+      "entries": [
+        "Hecate",
+        "Hermione",
+        "Hexuba"
+      ]
+    },
+    {
+      "name": "female i",
+      "entries": [
+        "Ionwen",
+        "Iorwen",
+        "Iseabail",
+        "Isidora",
+        "Isobel"
+      ]
+    },
+    {
+      "name": "female j",
+      "entries": [
+        "Jadis"
+      ]
+    },
+    {
+      "name": "female k",
+      "entries": [
+        "Karavelia",
+        "Kirfenia"
+      ]
+    },
+    {
+      "name": "female l",
+      "entries": [
+        "Leitis",
+        "Liliana",
+        "Lilith",
+        "Llywela",
+        "Locasta",
+        "Lynwen"
+      ]
+    },
+    {
+      "name": "female m",
+      "entries": [
+        "Maedbh",
+        "Magaidh",
+        "Malvina",
+        "Margery",
+        "Marisa",
+        "Mauryl",
+        "Mazara",
+        "Medea",
+        "Meduwen",
+        "Medwen",
+        "Melissa",
+        "Milamber",
+        "Morgan",
+        "Morgause",
+        "Morrigan",
+        "Morwen"
+      ]
+    },
+    {
+      "name": "female n",
+      "entries": [
+        "Nefydd",
+        "Nerys",
+        "Noirin"
+      ]
+    },
+    {
+      "name": "female o",
+      "entries": [
+        "Oighrig"
+      ]
+    },
+    {
+      "name": "female p",
+      "entries": [
+        "Peigi"
+      ]
+    },
+    {
+      "name": "female q",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "female r",
+      "entries": [
+        "Rainillt",
+        "Raonaid",
+        "Rhiain",
+        "Rhianedd",
+        "Rhianwen",
+        "Rhianydd",
+        "Rhoslyn",
+        "Rinoa"
+      ]
+    },
+    {
+      "name": "female s",
+      "entries": [
+        "Salome",
+        "Searlait",
+        "Seasaidh",
+        "Semiramis",
+        "Seonag",
+        "Serafina",
+        "Serpenthia",
+        "Sheelba",
+        "Sileas",
+        "Sirena",
+        "Siusaidh",
+        "Skuld",
+        "Sulwen",
+        "Sylphiel"
+      ]
+    },
+    {
+      "name": "female t",
+      "entries": [
+        "Tamsin",
+        "Tangwystl",
+        "Tegeirian",
+        "Theodora"
+      ]
+    },
+    {
+      "name": "female u",
+      "entries": [
+        "Ulrica",
+        "Ursula"
+      ]
+    },
+    {
+      "name": "female v",
+      "entries": [
+        "Varda"
+      ]
+    },
+    {
+      "name": "female w",
+      "entries": [
+        "Wanda"
+      ]
+    },
+    {
+      "name": "female x",
+      "entries": [
+        "Xanthippe"
+      ]
+    },
+    {
+      "name": "female y",
+      "entries": [
+        "Yavanna"
+      ]
+    },
+    {
+      "name": "female z",
+      "entries": [
+        "Zariel",
+        "Zelena",
+        "Zia"
+      ]
+    },
+    {
+      "**************************************************": "MALE FIRST NAMES"
+    },
+    {
+      "name": "male",
+      "export": {
+        "gender": "male"
+      },
+      "entries": [
+        "{male a}",
+        "{male b}",
+        "{male c}",
+        "{male d}",
+        "{male e}",
+        "{male f}",
+        "{male g}",
+        "{male h}",
+        "{male i}",
+        "{male j}",
+        "{male k}",
+        "{male l}",
+        "{male m}",
+        "{male n}",
+        "{male o}",
+        "{male p}",
+        "{male r}",
+        "{male s}",
+        "{male t}",
+        "{male u}",
+        "{male w}",
+        "{male x}",
+        "{male y}",
+        "{male z}"
+      ]
+    },
+    {
+      "name": "male a",
+      "entries": [
+        "Abanazar",
+        "Abaris",
+        "Abram",
+        "Abramelim",
+        "Agamemnon",
+        "Agrippa",
+        "Alastor",
+        "Albertus",
+        "Albus",
+        "Alhamazad",
+        "Allanon",
+        "Alodar",
+        "Amon",
+        "Ansalom",
+        "Apollonius",
+        "Archentes",
+        "Arctus",
+        "Astoroth",
+        "Athanasius",
+        "Atlantes"
+      ]
+    },
+    {
+      "name": "male b",
+      "entries": [
+        "Balthazar",
+        "Bayaz",
+        "Bloyse",
+        "Braint"
+      ]
+    },
+    {
+      "name": "male c",
+      "entries": [
+        "Caswallon",
+        "Cormac",
+        "Cornelius"
+      ]
+    },
+    {
+      "name": "male d",
+      "entries": [
+        "Daibhidh",
+        "Dalamar",
+        "Demetrion",
+        "Doileag",
+        "Dyfyr",
+        "Dyfynnog"
+      ]
+    },
+    {
+      "name": "male e",
+      "entries": [
+        "Eibon",
+        "Eliphas",
+        "Elymas",
+        "Erasmus",
+        "Ermac",
+        "Etienne",
+        "Euthanatos"
+      ]
+    },
+    {
+      "name": "male f",
+      "entries": [
+        "Fachtna",
+        "Fiorawante"
+      ]
+    },
+    {
+      "name": "male g",
+      "entries": [
+        "Ged",
+        "Gearroid",
+        "Gereth",
+        "Gideon",
+        "Gorice",
+        "Greum",
+        "Gwentor",
+        "Gwydion",
+        "Gyges"
+      ]
+    },
+    {
+      "name": "male h",
+      "entries": [
+        "Heraclitus",
+        "Hermes",
+        "Hirael",
+        "Huwcyn"
+      ]
+    },
+    {
+      "name": "male i",
+      "entries": [
+        "Iamblichus",
+        "Iannes",
+        "Ionor",
+        "Iskander",
+        "Iucounu"
+      ]
+    },
+    {
+      "name": "male j",
+      "entries": [
+        "Jervis"
+      ]
+    },
+    {
+      "name": "male k",
+      "entries": [
+        "Keredwel",
+        "Khelben",
+        "Krabat"
+      ]
+    },
+    {
+      "name": "male l",
+      "entries": [
+        "Leomund",
+        "Llyr"
+      ]
+    },
+    {
+      "name": "male m",
+      "entries": [
+        "Maelor",
+        "Magius",
+        "Manannan",
+        "Mararad",
+        "Maugris",
+        "Mazirian",
+        "Melampus",
+        "Minax",
+        "Mondain",
+        "Mordack",
+        "Morthalias",
+        "Murchadh",
+        "Myrddin"
+      ]
+    },
+    {
+      "name": "male n",
+      "entries": [
+        "Neifion",
+        "Nidian",
+        "Ningauble",
+        "Nisien",
+        "Nysander"
+      ]
+    },
+    {
+      "name": "male o",
+      "entries": [
+        "Oberon",
+        "Ogion",
+        "Ogun",
+        "Olórin",
+        "Onllwyn"
+      ]
+    },
+    {
+      "name": "male p",
+      "entries": [
+        "Padraig",
+        "Paracelsus",
+        "Peredur",
+        "Prospero"
+      ]
+    },
+    {
+      "name": "male q",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "male r",
+      "entries": [
+        "Rhialto",
+        "Ruairidh"
+      ]
+    },
+    {
+      "name": "male s",
+      "entries": [
+        "Sargon",
+        "Seisyllt",
+        "Septimus",
+        "Seth",
+        "Severus",
+        "Shalidor",
+        "Silvanus",
+        "Solcius",
+        "Solomon"
+      ]
+    },
+    {
+      "name": "male t",
+      "entries": [
+        "Tagar",
+        "Tearlach",
+        "Telamon",
+        "Torcuil",
+        "Tormod"
+      ]
+    },
+    {
+      "name": "male u",
+      "entries": [
+        "Uilleam"
+      ]
+    },
+    {
+      "name": "male v",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "male w",
+      "entries": [
+        "Wetzel"
+      ]
+    },
+    {
+      "name": "male x",
+      "entries": [
+        "Xanadu",
+        "Xander"
+      ]
+    },
+    {
+      "name": "male y",
+      "entries": [
+        "Yara"
+      ]
+    },
+    {
+      "name": "male z",
+      "entries": [
+        "Zeddicus",
+        "Zemenar",
+        "Zurin"
+      ]
+    },
+    {
+      "**************************************************": "UNISEX FIRST NAMES"
+    },
+    {
+      "name": "unisex",
+      "export": {
+        "gender": "unisex"
+      },
+      "entries": [
+        "Seren"
+      ]
+    },
+    {
+      "**************************************************": "BYNAMES"
+    },
+    {
+      "name": "byname",
+      "entries": [
+        "{female byname}",
+        "{male byname}",
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "female prepend",
+      "entries": [
+        "{female byname}",
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "female append",
+      "entries": [
+        "the {female byname}",
+        "the {unisex byname}"
+      ]
+    },
+    {
+      "name": "male prepend",
+      "entries": [
+        "{male byname}",
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "male append",
+      "entries": [
+        "the {male byname}",
+        "the {unisex byname}"
+      ]
+    },
+    {
+      "name": "unisex prepend",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "unisex append",
+      "entries": [
+        "the {unisex byname}"
+      ]
+    },
+    {
+      "name": "female byname",
+      "entries": [
+        "{lib:magician#female}",
+        "{lib:magician#unisex}"
+      ]
+    },
+    {
+      "name": "male byname",
+      "entries": [
+        "{lib:magician#male}",
+        "{lib:magician#unisex}"
+      ]
+    },
+    {
+      "name": "unisex byname",
+      "entries": [
+        "{unisex negative byname}",
+        "{unisex neutral byname}",
+        "{unisex positive byname}"
+      ]
+    },
+    {
+      "name": "unisex negative byname",
+      "entries": [
+        "{lib:magician#unisex}"
+      ]
+    },
+    {
+      "name": "unisex neutral byname",
+      "entries": [
+        "{lib:magician#unisex}"
+      ]
+    },
+    {
+      "name": "unisex positive byname",
+      "entries": [
+        "{lib:magician#unisex}"
+      ]
+    },
+    {
+      "**************************************************": "INITIALS"
+    },
+    {
+      "name": "initial",
+      "entries": [
+        "{a}",
+        "{b}",
+        "{c}",
+        "{d}",
+        "{e}",
+        "{f}",
+        "{g}",
+        "{h}",
+        "{i}",
+        "{j}",
+        "{k}",
+        "{l}",
+        "{m}",
+        "{n}",
+        "{o}",
+        "{p}",
+        "{q}",
+        "{r}",
+        "{s}",
+        "{t}",
+        "{u}",
+        "{v}",
+        "{w}",
+        "{x}",
+        "{y}",
+        "{z}"
+      ]
+    },
+    {
+      "name": "a",
+      "entries": [
+        "{female a}",
+        "{male a}"
+      ]
+    },
+    {
+      "name": "b",
+      "entries": [
+        "{female b}",
+        "{male b}"
+      ]
+    },
+    {
+      "name": "c",
+      "entries": [
+        "{female c}",
+        "{male c}"
+      ]
+    },
+    {
+      "name": "d",
+      "entries": [
+        "{female d}",
+        "{male d}"
+      ]
+    },
+    {
+      "name": "e",
+      "entries": [
+        "{female e}",
+        "{male e}"
+      ]
+    },
+    {
+      "name": "f",
+      "entries": [
+        "{female f}",
+        "{male f}"
+      ]
+    },
+    {
+      "name": "g",
+      "entries": [
+        "{female g}",
+        "{male g}"
+      ]
+    },
+    {
+      "name": "h",
+      "entries": [
+        "{female h}",
+        "{male h}"
+      ]
+    },
+    {
+      "name": "i",
+      "entries": [
+        "{female i}",
+        "{male i}"
+      ]
+    },
+    {
+      "name": "j",
+      "entries": [
+        "{female j}",
+        "{male j}"
+      ]
+    },
+    {
+      "name": "k",
+      "entries": [
+        "{female k}",
+        "{male k}"
+      ]
+    },
+    {
+      "name": "l",
+      "entries": [
+        "{female l}",
+        "{male l}"
+      ]
+    },
+    {
+      "name": "m",
+      "entries": [
+        "{female m}",
+        "{male m}"
+      ]
+    },
+    {
+      "name": "n",
+      "entries": [
+        "{female n}",
+        "{male n}"
+      ]
+    },
+    {
+      "name": "o",
+      "entries": [
+        "{female o}",
+        "{male o}"
+      ]
+    },
+    {
+      "name": "p",
+      "entries": [
+        "{female p}",
+        "{male p}"
+      ]
+    },
+    {
+      "name": "q",
+      "entries": [
+        "{female q}",
+        "{male q}"
+      ]
+    },
+    {
+      "name": "r",
+      "entries": [
+        "{female r}",
+        "{male r}"
+      ]
+    },
+    {
+      "name": "s",
+      "entries": [
+        "{female s}",
+        "{male s}"
+      ]
+    },
+    {
+      "name": "t",
+      "entries": [
+        "{female t}",
+        "{male t}"
+      ]
+    },
+    {
+      "name": "u",
+      "entries": [
+        "{female u}",
+        "{male u}"
+      ]
+    },
+    {
+      "name": "v",
+      "entries": [
+        "{female v}",
+        "{male v}"
+      ]
+    },
+    {
+      "name": "w",
+      "entries": [
+        "{female w}",
+        "{male w}"
+      ]
+    },
+    {
+      "name": "x",
+      "entries": [
+        "{female x}",
+        "{male x}"
+      ]
+    },
+    {
+      "name": "y",
+      "entries": [
+        "{female y}",
+        "{male y}"
+      ]
+    },
+    {
+      "name": "z",
+      "entries": [
+        "{female z}",
+        "{male z}"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special name tables.",
+      "entries": [
+        "{hermafrodite}",
+        "{neuter}"
+      ]
+    },
+    {
+      "name": "hermafrodite",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex}"
+      ]
+    },
+    {
+      "name": "neuter",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex}"
+      ]
+    },
+    {
+      "**************************************************": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, surname: {surname}, byname: {byname}, initial: {initial}, special: {special}. Gender = {global:gender}."
+      ]
+    }
+  ]
+}

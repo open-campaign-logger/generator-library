@@ -1,6 +1,9 @@
 {
-  "name": "Generator Template",
-  "resultPattern": "{result}",
+  "name": "generator template",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": "value"
+  },
   "variables": {
     "footnote": ""
   },
@@ -20,6 +23,18 @@
   ],
   "tables": [
     {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
       "name": "result",
       "explanation": "Verbosity of the resultPattern output.",
       "entries": [
@@ -38,12 +53,14 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{XXX} {XXX}"
+        "{adjective} {XXX}",
+        "{XXX} {feature}",
+        "{adjective} {XXX} {feature}"
       ]
     },
     {
       "name": "XXX",
-      "explanation": "XXX types by rarity.",
+      "explanation": "The XXX types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -54,14 +71,14 @@
     },
     {
       "name": "common",
-      "explanation": "Common XXX.",
+      "explanation": "Common XXX types.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare XXX.",
+      "explanation": "Rare XXX types.",
       "entries": [
         "XXX"
       ]
@@ -107,7 +124,34 @@
       "name": "special",
       "explanation": "Special XXX tables.",
       "entries": [
+        "{adjective}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives related to XXX.",
+      "format": "Optionally prepended to the front of the result.",
+      "entries": [
         "XXX"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features related to XXX.",
+      "format": "Optionally appended to the end of the result.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
       ]
     }
   ]

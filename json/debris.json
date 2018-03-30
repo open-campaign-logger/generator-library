@@ -1,0 +1,303 @@
+{
+  "name": "debris",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": "value"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Junk and rubbish randomized.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "Dungeon_adventure, equipment",
+  "date": "2018-02-01",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{debris}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective} {debris}"
+      ]
+    },
+    {
+      "name": "debris",
+      "explanation": "Debris types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common debris.",
+      "entries": [
+        "{soil}",
+        "{trash}",
+        "{remains}",
+        "{wood}",
+        "{plant}",
+        "{animal}",
+        "{food}",
+        "{string}",
+        "{cloth}",
+        "{container}",
+        "{equipment}",
+        "{valuable}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare debris.",
+      "entries": [
+        "{tool}"
+      ]
+    },
+    {
+      "**************************************************": "DEBRIS"
+    },
+    {
+      "name": "animal",
+      "explanation": "Animal-based junk.",
+      "entries": [
+        "ball of hair",
+        "small bones",
+        "bird feather"
+      ]
+    },
+    {
+      "name": "cloth",
+      "explanation": "Abandoned fabrics.",
+      "entries": [
+        "dirty rags",
+        "piece of cloth",
+        "worn-out blanket",
+        "frayed carpet",
+        "moldy clothes",
+        "moth-eaten clothes",
+        "bits of leather"
+      ]
+    },
+    {
+      "name": "container",
+      "explanation": "Abandoned vessels.",
+      "entries": [
+        "shards of a broken vase",
+        "shard of glass",
+        "broken pot",
+        "empty bottle",
+        "rotten barrel",
+        "backpack with a cut strap"
+      ]
+    },
+    {
+      "name": "equipment",
+      "explanation": "Abandoned tools.",
+      "entries": [
+        "burnt-out candle"
+      ]
+    },
+    {
+      "name": "food",
+      "explanation": "Abandoned rations.",
+      "entries": [
+        "spoiled food",
+        "rotten meat",
+        "mold-covered bread",
+        "fishbone",
+        "broken eggshells",
+        "fruit peelings",
+        "half-eaten apple",
+        "half-empty bottle of spoiled wine"
+      ]
+    },
+    {
+      "name": "plant",
+      "explanation": "Plant matter.",
+      "entries": [
+        "lichen",
+        "moss",
+        "toadstools"
+      ]
+    },
+    {
+      "name": "remains",
+      "explanation": "Abandoned biological matter.",
+      "entries": [
+        "animal carcass",
+        "dead beetle",
+        "shed snakeskin",
+        "tooth",
+        "nail clippings"
+      ]
+    },
+    {
+      "name": "soil",
+      "explanation": "Soil and dirt.",
+      "entries": [
+        "dried feces",
+        "dried mud",
+        "soil",
+        "ash",
+        "rubble"
+      ]
+    },
+    {
+      "name": "string",
+      "explanation": ".",
+      "entries": [
+        "tangled piece of string",
+        "bent wire",
+        "short piece of rope",
+        "length of chain"
+      ]
+    },
+    {
+      "name": "tool",
+      "explanation": "Abandoned tools.",
+      "entries": [
+        "piece of chalk",
+        "bent needle",
+        "nail",
+        "comb",
+        "bent key",
+        "dull knife"
+      ]
+    },
+    {
+      "name": "trash",
+      "explanation": "Abandoned waste.",
+      "entries": [
+        "used handkerchief"
+      ]
+    },
+    {
+      "name": "valuable",
+      "explanation": "Lost valuables.",
+      "entries": [
+        "small coins",
+        "broken necklace"
+      ]
+    },
+    {
+      "name": "wood",
+      "explanation": "Abandoned timber.",
+      "entries": [
+        "wood chips",
+        "twigs",
+        "firewood",
+        "tree roots",
+        "planks",
+        "wooden beam",
+        "broken furniture"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Debris once rumoured to have existed.",
+      "entries": [
+        "broken wand"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Debris for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "burnt incense",
+        "punctured waterskin",
+        "burned out torch",
+        "broken arrowhead",
+        "empty vial",
+        "sprung trap",
+        "quill",
+        "dented helmet",
+        "shattered shield",
+        "wooden practice sword",
+        "leaking oil lantern"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Debris for modern worlds.",
+      "entries": [
+        "{common}",
+        "burnt cigarette",
+        "plastic bag",
+        "playing card",
+        "shoe",
+        "paperback book",
+        "waterlogged book"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Debris for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special debris tables.",
+      "entries": [
+        "{adjective}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives describing the debris.",
+      "entries": [
+        "useless",
+        "damaged",
+        "worn out"
+      ]
+    }
+  ]
+}

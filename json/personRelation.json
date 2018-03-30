@@ -1,0 +1,35 @@
+{
+	"name": "Person, Relation",
+	"resultPattern": "{personRelation}",
+	"tables": [
+		{
+			"name": "personRelation",
+			"entries": [
+                {"m": 10,
+                    "v": "{common}"
+                },
+                "{rare}"
+            ]
+        },
+        {
+            "name": "common",
+            "entries": [
+                "mother",
+                "father",
+                "sister",
+                "brother",
+                "aunt",
+                "uncle",
+                "niece",
+                "nephew"
+            ]
+        },
+        {
+            "name": "rare",
+            "entries": [
+                "twin brother",
+                "twin sister"
+			]
+		}
+	]
+}

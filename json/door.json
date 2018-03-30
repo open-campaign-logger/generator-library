@@ -1,16 +1,6 @@
 {
   "name": "door",
-  "resultPattern": "{result}",
-  "variables": {
-    "starttitle": "<H2>",
-    "endtitle": "</H2>",
-    "startheading": "<H3>",
-    "endheading": "</H3>",
-    "startbold": "<B>",
-    "endbold": "</B>",
-    "para": "<P>",
-    "footnote": ""
-  },
+  "resultPattern": "{init}{result}",
   "explanation": "Random door table.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
@@ -18,8 +8,8 @@
   "bugs": "",
   "to do": "door size",
   "see": "Dungeon_adventure",
-  "date": "2018-01-22",
-  "authors": "Esko Vesala.",
+  "date": "2018-03-02",
+  "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
   "categories": [
@@ -27,32 +17,44 @@
   ],
   "tables": [
     {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
       "name": "result",
       "explanation": "Verbosity of the resultPattern output.",
       "entries": [
-        "{summary}",
-        "{detail}"
+        "{summary} [{state}]",
+        "{detail} [{state}]"
       ]
     },
     {
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{door} [{state}]"
+        "{door}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{material} {door} with {handle} [{state}]",
-        "{material} {door} with {handle} [{state}] and appearing to be {lib:condition#strong}",
-        "{shape} {material} {door} with {handle} [{state}]",
-        "{shape} {material} {door} with {handle} [{state}] and appearing to be {lib:condition#strong}",
-        "{material} {door} with {feature} [{state}]",
-        "{material} {door} with {feature} [{state}] and appearing to be {lib:condition#strong}",
-        "{shape} {material} {door} with {feature} [{state}]",
-        "{material} {door} with {handle} [{state}] and appearing to be {lib:condition#strong}"
+        "{material} {door} with {handle}",
+        "{material} {door} with {handle} and appearing to be {lib:condition#strong}",
+        "{shape} {material} {door} with {handle}",
+        "{shape} {material} {door} with {handle} and appearing to be {lib:condition#strong}",
+        "{material} {door} with {feature}",
+        "{material} {door} with {feature} and appearing to be {lib:condition#strong}",
+        "{shape} {material} {door} with {feature}",
+        "{material} {door} with {handle} and appearing to be {lib:condition#strong}"
       ]
     },
     {
@@ -84,7 +86,135 @@
         "rotating door",
         "sliding door",
         "rising door",
+        "folding door",
         "flap door (with hinges on top)"
+      ]
+    },
+    {
+      "**************************************************": "DOOR STATES"
+    },
+    {
+      "name": "state",
+      "explanation": "Door states.",
+      "entries": [
+        "{open}",
+        "{closed}",
+        "{locked}",
+        "{rare state}"
+      ]
+    },
+    {
+      "name": "rare state",
+      "explanation": "Door states.",
+      "entries": [
+        "{trapped}"
+      ]
+    },
+    {
+      "name": "open",
+      "explanation": "Open door states.",
+      "entries": [
+        "wide open",
+        "open",
+        "ajar"
+      ]
+    },
+    {
+      "name": "closed",
+      "explanation": "Closed door states.",
+      "entries": [
+        "closed but unlocked",
+        "stuck",
+        "barred from this side with a {barring}",
+        "barred from the other side (with a {barring})",
+        "spiked shut"
+      ]
+    },
+    {
+      "name": "locked",
+      "explanation": "Locked door states.",
+      "entries": [
+        "locked with a {lib:lock#door}",
+        "locked with a {lib:lock#padlock}"
+      ]
+    },
+    {
+      "name": "trapped",
+      "explanation": "Trapped doors.",
+      "entries": [
+        "trapped: ({lib:trap#door})"
+      ]
+    },
+    {
+      "**************************************************": "DOOR SHAPES"
+    },
+    {
+      "name": "shape",
+      "explanation": "Door shapes.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "rectangular"
+        },
+        {
+          "m": 2,
+          "v": "square"
+        },
+        "{rare shape}"
+      ]
+    },
+    {
+      "name": "rare shape",
+      "explanation": "Rare door shapes.",
+      "entries": [
+        "rectangular with rounded corners",
+        "square with rounded corners",
+        "oblong",
+        "oval-shaped",
+        "triangular",
+        "trapezoid-shaped",
+        "pentagon-shaped",
+        "hexagon-shaped",
+        "octagon-shaped",
+        "approximately round",
+        "round"
+      ]
+    },
+    {
+      "**************************************************": "DOOR MATERIALS"
+    },
+    {
+      "name": "material",
+      "explanation": "Door materials.",
+      "entries": [
+        "{lib:material#wood}",
+        "iron-reinforced wooden",
+        "iron",
+        "steel",
+        "{rare material}"
+      ]
+    },
+    {
+      "name": "rare material",
+      "explanation": "Rare door materials.",
+      "entries": [
+        "{lib:stone}",
+        "brass",
+        "bronze",
+        "{lib:material#glass}"
+      ]
+    },
+    {
+      "**************************************************": "DOOR FEATURES"
+    },
+    {
+      "name": "feature",
+      "explanation": "Door features.",
+      "format": "with {feature}",
+      "entries": [
+        "a knocker",
+        "a peephole",
+        "{lib:decoration}"
       ]
     },
     {
@@ -126,6 +256,88 @@
       ]
     },
     {
+      "************************************************": "POTENTIALLY TRAPPED"
+    },
+    {
+      "name": "unlikely trapped",
+      "explanation": "Unlikely trapped doors.",
+      "entries": [
+        "{summary} [{state}]",
+        "{detail} [{state}]",
+        "{summary} [{state}]",
+        "{detail} [{state}]",
+        "{summary} [{trapped}]",
+        "{detail} [{trapped}]"
+      ]
+    },
+    {
+      "name": "maybe trapped",
+      "explanation": "Potentially trapped doors.",
+      "entries": [
+        "{summary} [{state}]",
+        "{detail} [{state}]",
+        "{summary} [{trapped}]",
+        "{detail} [{trapped}]"
+      ]
+    },
+    {
+      "name": "likely trapped",
+      "explanation": "Likely trapped doors.",
+      "entries": [
+        "{summary} [{state}]",
+        "{detail} [{state}]",
+        "{summary} [{trapped}]",
+        "{detail} [{trapped}]",
+        "{summary} [{trapped}]",
+        "{detail} [{trapped}]"
+      ]
+    },
+    {
+      "************************************************": "POTENTIALLY FALSE"
+    },
+    {
+      "name": "unlikely false",
+      "explanation": "Unlikely false doors.",
+      "entries": [
+        "{summary} [{state}]",
+        "{detail} [{state}]",
+        "{summary} [{state}]",
+        "{detail} [{state}]",
+        "{summary} [{false}]",
+        "{detail} [{false}]"
+      ]
+    },
+    {
+      "name": "maybe false",
+      "explanation": "Potentially false doors.",
+      "entries": [
+        "{summary} [{state}]",
+        "{detail} [{state}]",
+        "{summary} [{false}]",
+        "{detail} [{false}]"
+      ]
+    },
+    {
+      "name": "likely false",
+      "explanation": "Likely false doors.",
+      "entries": [
+        "{summary} [{state}]",
+        "{detail} [{state}]",
+        "{summary} [{false}]",
+        "{detail} [{false}]",
+        "{summary} [{false}]",
+        "{detail} [{false}]"
+      ]
+    },
+    {
+      "name": "false",
+      "explanation": "False doors.",
+      "note": "To prevent dead ends, called only from tables with potentially false doors.",
+      "entries": [
+        "false door"
+      ]
+    },
+    {
       "**************************************************": "SPECIAL TABLES"
     },
     {
@@ -133,43 +345,23 @@
       "explanation": "Special door tables.",
       "entries": [
         "{barring}",
-        "{closed}",
+        "{complication}",
         "{corridor}",
         "{feature}",
         "{handle}",
         "{hiding place}",
-        "{locked}",
-        "{material}",
-        "{open}",
+        "{magic}",
         "{primitive}",
-        "{shape}",
-        "{state}"
+        "{shape}"
       ]
     },
     {
       "name": "barring",
-      "explanation": "Closed door states.",
+      "explanation": "Bars used to shut doors.",
       "entries": [
         "wooden latch",
+        "wooden bolt",
         "metal bar"
-      ]
-    },
-    {
-      "name": "closed",
-      "explanation": "Closed door states.",
-      "entries": [
-        "closed but unlocked",
-        "stuck",
-        "barred from this side with a {barring}",
-        "barred from the other side (with a {barring})",
-        "spiked shut"
-      ]
-    },
-    {
-      "name": "corridor",
-      "explanation": "Corridors beyond doors.",
-      "entries": [
-        "Beyond the entryway, there is a {lib:dungeon_corridor}."
       ]
     },
     {
@@ -182,21 +374,10 @@
       ]
     },
     {
-      "name": "false",
-      "explanation": "False door states.",
+      "name": "corridor",
+      "explanation": "Corridors beyond doors.",
       "entries": [
-        "false door"
-      ]
-    },
-    {
-      "name": "feature",
-      "explanation": "Door features.",
-      "format": "with {feature}",
-      "entries": [
-        "a knocker",
-        "a peephole",
-        "rune carvings",
-        "a door trap ({lib:trap#door})"
+        "Beyond the entryway, there is a {lib:dungeon_corridor}."
       ]
     },
     {
@@ -212,20 +393,15 @@
     },
     {
       "name": "hiding place",
-      "explanation": "Hiding places for doors.",
+      "explanation": "Hiding places for hidden doors.",
       "format": "hidden door [{hiding place}]",
       "entries": [
+        "almost seamlessly flush with the wall and difficult to detect",
         "behind curtains",
         "behind drapes",
-        "behind a tapestry"
-      ]
-    },
-    {
-      "name": "locked",
-      "explanation": "Locked door states.",
-      "entries": [
-        "locked with a {lib:lock#door}",
-        "locked with a {lib:lock#padlock}"
+        "behind a tapestry",
+        "behind a large painting",
+        "behind a movable bookcase"
       ]
     },
     {
@@ -236,27 +412,6 @@
       ]
     },
     {
-      "name": "material",
-      "explanation": "Door materials.",
-      "entries": [
-        "{lib:material#wood}",
-        "iron-reinforced wooden",
-        "iron",
-        "steel",
-        "{rare material}"
-      ]
-    },
-    {
-      "name": "rare material",
-      "explanation": "Rare door materials.",
-      "entries": [
-        "{lib:stone}",
-        "brass",
-        "bronze",
-        "{lib:material#glass}"
-      ]
-    },
-    {
       "name": "primitive",
       "explanation": "Primitive doors.",
       "entries": [
@@ -264,47 +419,13 @@
       ]
     },
     {
-      "name": "shape",
-      "explanation": "Door shapes.",
-      "entries": [
-        "rectangular",
-        "square",
-        "{rare shape}"
-      ]
+      "**************************************************": "TESTING"
     },
     {
-      "name": "rare shape",
-      "explanation": "Rare door shapes.",
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "oblong",
-        "round",
-        "triangular"
-      ]
-    },
-    {
-      "name": "state",
-      "explanation": "Door states.",
-      "entries": [
-        "{open}",
-        "{closed}",
-        "{locked}",
-        "{rare state}"
-      ]
-    },
-    {
-      "name": "open",
-      "explanation": "Open door states.",
-      "entries": [
-        "wide open",
-        "open",
-        "ajar"
-      ]
-    },
-    {
-      "name": "rare state",
-      "explanation": "Rare door states.",
-      "entries": [
-        "{false}"
+        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}."
       ]
     }
   ]

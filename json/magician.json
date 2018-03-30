@@ -1,6 +1,6 @@
 {
   "name": "magician table",
-  "resultPattern": "{magician}",
+  "resultPattern": "{result}",
   "variables": {
     "actant": "magician",
     "actants": "magicians",
@@ -16,7 +16,7 @@
   "note": "",
   "to do": "myth, fantasy and futuristic subtables.",
   "see": "fighter, magic, magical_technique, magical_instrument, priest, spellcasting",
-  "date": "2018-01-21",
+  "date": "2018-02-18",
   "authors": "Esko Vesala",
   "sources": "SummitLighthouse.org, Wikipedia.org",
   "genre": "universal",
@@ -25,6 +25,40 @@
   ],
   "tags": "#person, #magic",
   "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{magician}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{magician}"
+      ]
+    },
     {
       "name": "magician",
       "explanation": "Magician types.",
@@ -40,28 +74,61 @@
       "name": "common",
       "explanation": "Common magicians.",
       "entries": [
-        "folk healer",
-        "healer",
-        "shaman",
-        "druid",
-        "seer",
-        "conjurer",
-        "wisewoman",
-        "white witch",
-        "witch",
-        "warlock (male witch)",
-        "alchemist"
+        "{unisex}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare magicians.",
       "entries": [
+        "{unisex rare}"
+      ]
+    },
+    {
+      "**************************************************": "GENDER-SPECIFIC"
+    },
+    {
+      "name": "female",
+      "explanation": "Female magicians.",
+      "entries": [
+        "wisewoman",
+        "white witch",
+        "witch"
+      ]
+    },
+    {
+      "name": "male",
+      "explanation": "Male magicians.",
+      "entries": [
+        "warlock"
+      ]
+    },
+    {
+      "name": "unisex",
+      "explanation": "Unisex magicians.",
+      "entries": [
+        "folk healer",
+        "healer",
+        "shaman",
+        "druid",
+        "seer",
+        "conjurer",
+        "alchemist",
         "sorcerer",
         "wizard",
-        "oracle",
-        "haruspex (diviner reading entrails)"
+        "{unisex rare}"
       ]
+    },
+    {
+      "name": "unisex rare",
+      "explanation": "Rare unisex magicians.",
+      "entries": [
+        "oracle",
+        "haruspex"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
     },
     {
       "name": "myth",
@@ -80,7 +147,7 @@
       "explanation": "Rare imaginary magicians once rumoured to have existed.",
       "entries": [
         "{myth}",
-        "incarnation of a divinity"
+        "divine incarnation"
       ]
     },
     {
@@ -145,6 +212,23 @@
       "entries": [
         "{futuristic}",
         "force adept (using energy field created by life)"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special magician tables.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}."
       ]
     }
   ]

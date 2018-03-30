@@ -1,0 +1,179 @@
+{
+  "name": "set-template",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "set": "XXX",
+    "setarea": "area",
+    "setlocale": "locale",
+    "setboundary": "boundary",
+    "setentrance": "entrance",
+    "setlocation": "chamber",
+    "setpassage": "passage",
+    "setvault": "vault",
+    "setadjective": "XXX",
+    "setdoor": "door",
+    "setnook": "nook",
+    "setprop": "XXX"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Template for a themed location.",
+  "structure": "Global variables fitting a common environment.",
+  "note": "This table does not produce immediate output, only sets global variables for later use.",
+  "format": "Global variable definitions.",
+  "bugs": "",
+  "to do": "",
+  "see": "Dungeon_adventure",
+  "date": "XXX",
+  "authors": "XXX.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Setting the relevant global variables.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "setadjective": "{adjective}",
+            "setboundary": "{setboundary}",
+            "setentrance": "{entrance}",
+            "setlocation": "{location}",
+            "setpassage": "{passage}",
+            "setvault": "{vault}",
+            "setdoor": "{door}",
+            "setnook": "{nook}",
+            "setprop": "{prop}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": ".",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief description of the randomized set.",
+      "entries": [
+        "{global:setarea}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed description of the randomized set.",
+      "entries": [
+        "{global:setadjective} {global:setarea}",
+        "{global:setarea} with {global:setprop}",
+        "{global:setadjective} {global:setarea} with {global:setprop}"
+      ]
+    },
+    {
+      "name": "locale",
+      "explanation": "Location types on the set.",
+      "entries": [
+        "{entrance}",
+        "{location}",
+        "{passage}",
+        "{nook}",
+        "{vault}"
+      ]
+    },
+    {
+      "**************************************************": "LOCALES"
+    },
+    {
+      "name": "boundary",
+      "explanation": "Borders around the set.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "entrance",
+      "explanation": "Entrances matching the set.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "area",
+      "explanation": "Areas containing several locations.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "location",
+      "explanation": "Locations matching the set.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "nook",
+      "explanation": "Compartments matching the set.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "passage",
+      "explanation": "Corridors matching the set.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "vault",
+      "explanation": "Centerpiece locations matching the set.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives for the set locations.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "door",
+      "explanation": "Doors matching the set.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "prop",
+      "explanation": "Potential properties for the set.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "test",
+      "explanation": "Testing tool for dumping the set global variables.",
+      "entries": [
+        "{global:set} walkthrough: to pass the {global:setboundary}, enter {global:setentrance} to {global:setarea} via {global:setpassage} that leads to {global:setadjective} {global:setlocation} and {global:setnook}  with {global:setprop} inside. Behind {global:setdoor} is the {global:setvault}."
+      ]
+    }
+  ]
+}

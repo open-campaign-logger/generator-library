@@ -1,6 +1,6 @@
 {
-  "name": "clothing: generic",
-  "resultPattern": "{result}",
+  "name": "clothing",
+  "resultPattern": "{init}{result}",
   "variables": {
     "footnote": ""
   },
@@ -9,23 +9,49 @@
   "note": "",
   "bugs": "",
   "to do": "More cultures and time periods. What's the best approach for them?",
-  "see": "adornment",
-  "date": "2017-12-29",
-  "authors": "Esko Vesala.",
+  "see": "adornment, NPC_Description",
+  "date": "2018-03-04",
+  "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
   "categories": [
-    "item"
+    "item",
+    "character"
   ],
   "tags": "#clothes, #person, #appearance",
   "tables": [
     {
-      "name": "result",
-      "explanation": "Variations for resultPattern output.",
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
       "entries": [
-        "{b|Female}: {female}",
-        "{b|Male}: {male}",
-        "{b|Unisex}: {unisex}"
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{clothing}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective} {clothing}"
       ]
     },
     {
@@ -47,6 +73,17 @@
         "{male}",
         "{unisex}"
       ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare clothes.",
+      "entries": [
+        "{child}",
+        "{lib:adornment}"
+      ]
+    },
+    {
+      "**************************************************": "FEMALE CLOTHING"
     },
     {
       "name": "female",
@@ -383,6 +420,9 @@
         "swimsuit",
         "bikini suit"
       ]
+    },
+    {
+      "**************************************************": "MALE CLOTHING"
     },
     {
       "name": "male",
@@ -762,6 +802,9 @@
       ]
     },
     {
+      "**************************************************": "UNISEX CLOTHING"
+    },
+    {
       "name": "unisex",
       "explanation": "Common unisex clothing types.",
       "entries": [
@@ -1067,12 +1110,7 @@
       ]
     },
     {
-      "name": "rare",
-      "explanation": "Rare clothes.",
-      "entries": [
-        "{child}",
-        "{lib:adornment}"
-      ]
+      "***********************************************": "CHILDRENS' CLOTHING"
     },
     {
       "name": "child",
@@ -1371,6 +1409,9 @@
       ]
     },
     {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
       "name": "myth",
       "explanation": "Clothes once rumoured to have existed.",
       "entries": [
@@ -1485,6 +1526,9 @@
       "entries": [
         "{modern unisex underwear}"
       ]
+    },
+    {
+      "**************************************************": "OUTFITS"
     },
     {
       "name": "outfit",
@@ -1622,6 +1666,9 @@
       ]
     },
     {
+      "**************************************************": "SPECIAL"
+    },
+    {
       "name": "special",
       "explanation": "Special clothing types.",
       "entries": [
@@ -1734,6 +1781,72 @@
         "pet vest",
         "pet jacket",
         "pet parka"
+      ]
+    },
+    {
+      "**************************************************": "ADJECTIVES"
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives for outfits",
+      "entries": [
+        "{poor adjective}",
+        "{lower class adjective}",
+        "{middle class adjective}",
+        "{upper class adjective}",
+        "{rich adjective}"
+      ]
+    },
+    {
+      "name": "poor adjective",
+      "explanation": "Adjectives for poor outfits",
+      "entries": [
+        "dirty",
+        "tattered"
+      ]
+    },
+    {
+      "name": "lower class adjective",
+      "explanation": "Adjectives for lower class outfits",
+      "entries": [
+        "modest",
+        "cheap",
+        "worn out"
+      ]
+    },
+    {
+      "name": "middle class adjective",
+      "explanation": "Adjectives middle class outfits",
+      "entries": [
+        "ordinary",
+        "standard",
+        "common"
+      ]
+    },
+    {
+      "name": "upper class adjective",
+      "explanation": "Adjectives for upper class outfits",
+      "entries": [
+        "fashionable",
+        "expensive"
+      ]
+    },
+    {
+      "name": "rich adjective",
+      "explanation": "Adjectives for rich outfits",
+      "entries": [
+        "flashy",
+        "luxurious"
+      ]
+    },
+    {
+      "**************************************************": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, female: {female}, male: {male}, unisex: {unisex}, nightwear: {nightwear}, swimwear: {swimwear}, infant: {infant}, child: {child}, pet: {pet}, adjective: {adjective}, special: {special}."
       ]
     }
   ]

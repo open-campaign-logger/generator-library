@@ -1,0 +1,182 @@
+{
+  "name": "difficulty",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Difficulty randomizer.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "Are world-specific difficulty descriptions useful?",
+  "see": "motif-snake",
+  "date": "2018-01-31",
+  "authors": "Esko Vesala.",
+  "sources": "Five_room_dungeon",
+  "genre": "universal",
+  "categories": [
+    "utility"
+  ],
+  "tables": [
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{difficulty}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{modifier} {difficulty}"
+      ]
+    },
+    {
+      "**************************************************": "DIFFICULTY"
+    },
+    {
+      "name": "difficulty",
+      "explanation": "Difficulty types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common levels of difficulty.",
+      "entries": [
+        {
+          "m": 5,
+          "v": "{apprentice}"
+        },
+        {
+          "m": 4,
+          "v": "{journeyman}"
+        },
+        {
+          "m": 3,
+          "v": "{master}"
+        }
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare levels of difficulty.",
+      "entries": [
+        {
+          "m": 2,
+          "v": "{adept}"
+        },
+        {
+          "m": 1,
+          "v": "{epic}"
+        }
+      ]
+    },
+    {
+      "**************************************************": "DIFFICULTIES"
+    },
+    {
+      "name": "apprentice",
+      "explanation": "The easiest difficulty.",
+      "entries": [
+        "apprentice"
+      ]
+    },
+    {
+      "name": "journeyman",
+      "explanation": "Easy difficulty.",
+      "entries": [
+        "journeyman"
+      ]
+    },
+    {
+      "name": "master",
+      "explanation": "The medium difficulty.",
+      "entries": [
+        "master"
+      ]
+    },
+    {
+      "name": "adept",
+      "explanation": "Hard difficulty.",
+      "entries": [
+        "apprentice"
+      ]
+    },
+    {
+      "name": "epic",
+      "explanation": "The hardest difficulty.",
+      "entries": [
+        "epic"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Difficulty levels once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Difficulty levels for fantasy (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Difficulty levels for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Difficulty levels for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special difficulty tables.",
+      "entries": [
+        "{modifier}"
+      ]
+    },
+    {
+      "name": "modifier",
+      "explanation": "Tweaks for difficulty levels.",
+      "entries": [
+        "almost",
+        "about the level of",
+        "higher than"
+      ]
+    }
+  ]
+}

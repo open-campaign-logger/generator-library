@@ -1,6 +1,6 @@
 {
   "name": "dungeon_entrance",
-  "resultPattern": "{HTML formatting}{init}",
+  "resultPattern": "{init}",
   "variables": {
     "footnote": ""
   },
@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_corridor, dungeon_room, dungeon_vault, Five_room_dungeon",
-  "date": "2018-01-26",
+  "date": "2018-02-03",
   "authors": "Esko Vesala",
   "sources": "",
   "genre": "fantasy",
@@ -371,7 +371,7 @@
         "milieu": "lake"
       },
       "entries": [
-        "On a small lake in the middle of a lake, there is something peculiar: ",
+        "On a small isle in the middle of a lake, there is something peculiar: ",
         "By the lakeside, a curious structure looms: "
       ]
     },
@@ -461,45 +461,6 @@
       "entries": [
         "The tortuous cavern guards a strange sight: ",
         "The undeground passageway continues for the longest of time, until it abruptly ends by "
-      ]
-    },
-    {
-      "**************************************************": "FORMATTING"
-    },
-    {
-      "name": "HTML formatting",
-      "explanation": "Set variables for formatting the output as HTML",
-      "entries": [
-        {
-          "v": "",
-          "export": {
-            "starttitle": "<H2>",
-            "endtitle": "</H2>",
-            "startheading": "<H3>",
-            "endheading": "</H3>",
-            "startbold": "<B>",
-            "endbold": "</B>",
-            "para": "<P>"
-          }
-        }
-      ]
-    },
-    {
-      "name": "CL formatting",
-      "explanation": "Set variables for formatting the output for Campaign Logger",
-      "entries": [
-        {
-          "v": "",
-          "export": {
-            "starttitle": "{b|",
-            "endtitle": "}\r\n\r\n",
-            "startheading": "\r\n\r\n{b|",
-            "endheading": "}",
-            "startbold": "{b|",
-            "endbold": "}",
-            "para": "\r\n"
-          }
-        }
       ]
     },
     {

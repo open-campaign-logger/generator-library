@@ -1,0 +1,174 @@
+{
+  "name": "set_forest",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "setadjective": "{adjective}",
+    "setentrance": "{entrance}",
+    "setlocation": "{location}",
+    "setpassage": "{passage}",
+    "setvault": "{vault}",
+    "setdoor": "{door}",
+    "setprop": "{prop}"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Template for a themed location.",
+  "structure": "Global variables fitting a common environment.",
+  "note": "This table does not produce immediate output, only sets global variables for later use.",
+  "format": "Global variable definitions.",
+  "bugs": "",
+  "to do": "",
+  "see": "Dungeon_adventure",
+  "date": "2018-02-14",
+  "authors": "Esko Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Setting the relevant global variables.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "export": {}
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": ".",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief description of the randomized set.",
+      "entries": [
+        "{global:setlocation}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed description of the randomized set.",
+      "entries": [
+        "{global:setadjective} {global:setlocation}",
+        "{global:setlocation} with {global:setprop}",
+        "{global:setadjective} {global:setlocation} with {global:setprop}"
+      ]
+    },
+    {
+      "name": "area",
+      "explanation": "Area types on the set.",
+      "entries": [
+        "{entrance}",
+        "{location}",
+        "{passage}",
+        "{vault}"
+      ]
+    },
+    {
+      "**************************************************": "AREAS"
+    },
+    {
+      "name": "entrance",
+      "explanation": "Entrances matching the set.",
+      "entries": [
+        "pathway to forest",
+        "forest entrance"
+      ]
+    },
+    {
+      "name": "location",
+      "explanation": "Locations matching the set.",
+      "entries": [
+        "thicket",
+        "shrubbery",
+        "undergrowth",
+        "coppice",
+        "copse of trees",
+        "weald",
+        "woods",
+        "wildwood",
+        "backwoods"
+      ]
+    },
+    {
+      "name": "passage",
+      "explanation": "Corridors matching the set.",
+      "entries": [
+        "walk",
+        "stroll",
+        "hike",
+        "path",
+        "pathway",
+        "logging road",
+        "forest road"
+      ]
+    },
+    {
+      "name": "vault",
+      "explanation": "Centerpiece locations matching the set.",
+      "entries": [
+        "orchard",
+        "grove",
+        "tall oak tree",
+        "spring",
+        "mound",
+        "standing stones"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives for the set locations.",
+      "entries": [
+        "cobwebbed",
+        "mist-filled"
+      ]
+    },
+    {
+      "name": "door",
+      "explanation": "Doors matching the set.",
+      "entries": [
+        "fallen treetrunk",
+        "thick vines"
+      ]
+    },
+    {
+      "name": "prop",
+      "explanation": "Potential properties for the set.",
+      "entries": [
+        "mushroom ring",
+        "anthill",
+        "dead tree",
+        "fallen tree",
+        "tall tree stump",
+        "two trees grown together",
+        "giant boulder",
+        "old firepit",
+        "old campsite",
+        "menhir",
+        "circle of stones"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "test",
+      "explanation": "Testing tool for dumping the set global variables.",
+      "entries": [
+        "{global:set} walkthrough: {global:setentrance} to {global:setpassage} leads to {global:setadjective} {global:setlocation} with {global:setprop}. Behind {global:setdoor} is the {global:setvault}."
+      ]
+    }
+  ]
+}

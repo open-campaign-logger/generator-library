@@ -1,0 +1,546 @@
+{
+  "name": "personality",
+  "resultPattern": "{init}{lib:formatting#CL}{result}",
+  "globals": {
+    "openness": "",
+    "conscientiousness": "",
+    "extroversion": "",
+    "agreeableness": "",
+    "neuroticism": "",
+    "Subject": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "The disposition and mindset of a character.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-03-11",
+  "authors": "ELF Vesala.",
+  "sources": "OpenPsychometrics.org",
+  "genre": "universal",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{personality}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{situation}: {personality}",
+        "{personality} - {feature}",
+        "{situation}: {personality} - {feature}"
+      ]
+    },
+    {
+      "name": "personality",
+      "explanation": "The personality types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common personality types.",
+      "entries": [
+        "{global:para}{global:Subject} {openness}. {global:para}{global:Subject} {conscientiousness}. {global:para}{global:Subject} {extroversion}. {global:para}{global:Subject} {agreeableness}. {global:para}{global:Subject} {neuroticism}."
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare personality types.",
+      "entries": [
+        "{global:para}{global:Subject} {intelligence}."
+      ]
+    },
+    {
+      "**************************************": "THE BIG 5 PERSONALITY FACTORS"
+    },
+    {
+      "name": "factor",
+      "explanation": "The 'Big 5' personality factors.",
+      "entries": [
+        "{openness}",
+        "{conscientiousness}",
+        "{extroversion}",
+        "{agreeableness}",
+        "{neuroticism}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "Openness"
+    },
+    {
+      "name": "openness",
+      "explanation": "The degree of imagination and openness to experience.",
+      "entries": [
+        "{minimal openness}",
+        "{low openness}",
+        "{medium openness}",
+        "{high openness}",
+        "{maximal openness}"
+      ]
+    },
+    {
+      "name": "minimal openness",
+      "explanation": "The lowest degree of openness to experience.",
+      "entries": [
+        "prefers to follow old traditions rather than adopt something new",
+        "consider no one above suspicion"
+      ]
+    },
+    {
+      "name": "low openness",
+      "explanation": "Low degree of imagination and openness to experience.",
+      "export": {
+        "openness": "low"
+      },
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "medium openness",
+      "explanation": "Medium degree of imagination and openness to experience.",
+      "export": {
+        "openness": "medium"
+      },
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "high openness",
+      "explanation": "High degree of imagination and openness to experience.",
+      "export": {
+        "openness": "high"
+      },
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "maximal openness",
+      "explanation": "The highest degree of openness to experience.",
+      "entries": [
+        "tends to trust others"
+      ]
+    },
+    {
+      "--------------------------------------------------": "Conscientiousness"
+    },
+    {
+      "name": "conscientiousness",
+      "explanation": "The degree of carefulness.",
+      "entries": [
+        "{minimal conscientiousness}",
+        "{low conscientiousness}",
+        "{medium conscientiousness}",
+        "{high conscientiousness}",
+        "{maximal conscientiousness}"
+      ]
+    },
+    {
+      "name": "minimal conscientiousness",
+      "explanation": "The lowest degree of carefulness.",
+      "entries": [
+        "cannot keep anything in order",
+        "is always losing their belongings",
+        "is extremely impulsive",
+        "makes even the most important decision without proper consideration"
+      ]
+    },
+    {
+      "name": "low conscientiousness",
+      "explanation": "Low degree of carefulness.",
+      "export": {
+        "conscientiousness": "low"
+      },
+      "entries": [
+        "does not like making plans"
+      ]
+    },
+    {
+      "name": "medium conscientiousness",
+      "explanation": "Medium degree of carefulness.",
+      "export": {
+        "conscientiousness": "medium"
+      },
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "high conscientiousness",
+      "explanation": "High degree of carefulness.",
+      "export": {
+        "conscientiousness": "high"
+      },
+      "entries": [
+        "likes to be prepared for anything"
+      ]
+    },
+    {
+      "name": "maximal conscientiousness",
+      "explanation": "The highest degree of carefulness.",
+      "entries": [
+        "ponders even the smallest of details before making a decision",
+        "takes their duties extremely seriously"
+      ]
+    },
+    {
+      "--------------------------------------------------": "Extroversion"
+    },
+    {
+      "name": "extroversion",
+      "explanation": "The degree of outgoing and talkative behaviour.",
+      "entries": [
+        "{minimal extroversion}",
+        "{low extroversion}",
+        "{medium extroversion}",
+        "{high extroversion}",
+        "{maximal extroversion}"
+      ]
+    },
+    {
+      "name": "minimal extroversion",
+      "explanation": "The lowest degree of outgoing and talkative behaviour.",
+      "entries": [
+        "is shut-in and does not want to open up to others"
+      ]
+    },
+    {
+      "name": "low extroversion",
+      "explanation": "Low degree of outgoing and talkative behaviour.",
+      "export": {
+        "extroversion": "low"
+      },
+      "entries": [
+        "is a daydreamer",
+        "prefers others to take control",
+        "prefers to keep in the background"
+      ]
+    },
+    {
+      "name": "medium extroversion",
+      "explanation": "Medium degree of outgoing and talkative behaviour.",
+      "export": {
+        "extroversion": "medium"
+      },
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "high extroversion",
+      "explanation": "High degree of outgoing and talkative behaviour.",
+      "export": {
+        "extroversion": "high"
+      },
+      "entries": [
+        "likes to take control of things"
+      ]
+    },
+    {
+      "name": "maximal extroversion",
+      "explanation": "The highest degree of outgoing and talkative behaviour.",
+      "entries": [
+        "is outgoing and social",
+        "wants to be the center of attention",
+        "cannot do withouth the company of others"
+      ]
+    },
+    {
+      "--------------------------------------------------": "Agreeableness"
+    },
+    {
+      "name": "agreeableness",
+      "explanation": "The degree of sympathetic and warm characteristics.",
+      "entries": [
+        "{minimal agreeableness}",
+        "{low agreeableness}",
+        "{medium agreeableness}",
+        "{high agreeableness}",
+        "{maximal agreeableness}"
+      ]
+    },
+    {
+      "name": "minimal agreeableness",
+      "explanation": "The lowest degree of sympathetic characteristics.",
+      "entries": [
+        "likes to criticize others and their plans",
+        "tends to be aggressive towards others",
+        "feels little concern for the wellbeing of others"
+      ]
+    },
+    {
+      "name": "low agreeableness",
+      "explanation": "Low degree of sympathetic and warm characteristics.",
+      "export": {
+        "agreeableness": "low"
+      },
+      "entries": [
+        "does not like to give their time to others",
+        "does not easily forgive",
+        "holds grudges for a long time"
+      ]
+    },
+    {
+      "name": "medium agreeableness",
+      "explanation": "Medium degree of sympathetic and warm characteristics.",
+      "export": {
+        "agreeableness": "medium"
+      },
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "high agreeableness",
+      "explanation": "High degree of sympathetic and warm characteristics.",
+      "export": {
+        "agreeableness": "high"
+      },
+      "entries": [
+        "likes to give their time for other people",
+        "easily forgives and forgets"
+      ]
+    },
+    {
+      "name": "maximal agreeableness",
+      "explanation": "The highest degree of sympathetic characteristics.",
+      "entries": [
+        "is friendly towards everyone",
+        "has an extremely optimistic outlook to life"
+      ]
+    },
+    {
+      "--------------------------------------------------": "Neuroticism"
+    },
+    {
+      "name": "neuroticism",
+      "explanation": "The degree of emotional stability.",
+      "entries": [
+        "{minimal neuroticism}",
+        "{low neuroticism}",
+        "{medium neuroticism}",
+        "{high neuroticism}",
+        "{maximal neuroticism}"
+      ]
+    },
+    {
+      "name": "minimal neuroticism",
+      "explanation": "The lowest degree of emotional stability.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "low neuroticism",
+      "explanation": "Low degree of emotional stability.",
+      "export": {
+        "neuroticism": "low"
+      },
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "medium neuroticism",
+      "explanation": "Medium degree of emotional stability.",
+      "export": {
+        "neuroticism": "medium"
+      },
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "high neuroticism",
+      "explanation": "High degree of emotional stability.",
+      "export": {
+        "neuroticism": "high"
+      },
+      "entries": [
+        "is easily frustrated"
+      ]
+    },
+    {
+      "name": "maximal neuroticism",
+      "explanation": "The highest degree of emotional stability.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "INTELLIGENCE"
+    },
+    {
+      "name": "intelligence",
+      "explanation": "The intelligence of the character.",
+      "entries": [
+        "{minimal intelligence}",
+        "{low intelligence}",
+        "{medium intelligence}",
+        "{high intelligence}",
+        "{maximal intelligence}"
+      ]
+    },
+    {
+      "name": "minimal intelligence",
+      "explanation": "The lowest degree of intelligence.",
+      "entries": [
+        "is very stupid"
+      ]
+    },
+    {
+      "name": "low intelligence",
+      "explanation": "Low degree of intelligence.",
+      "entries": [
+        "is stupid"
+      ]
+    },
+    {
+      "name": "medium intelligence",
+      "explanation": "Medium degree of intelligence.",
+      "entries": [
+        "has more common sense than brains"
+      ]
+    },
+    {
+      "name": "high intelligence",
+      "explanation": "High degree of intelligence.",
+      "entries": [
+        "is intelligent"
+      ]
+    },
+    {
+      "name": "maximal intelligence",
+      "explanation": "The highest degree of intelligence.",
+      "entries": [
+        "is extremely intelligent"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Personalities once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Personalities for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Personalities for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Personalities for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special personality tables.",
+      "entries": [
+        "{degree}",
+        "{feature}",
+        "{situation}"
+      ]
+    },
+    {
+      "name": "degree",
+      "explanation": "The degree of a personality trait.",
+      "entries": [
+        "minimal",
+        "low",
+        "medium",
+        "high",
+        "maximal"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features related to personality.",
+      "format": "Optionally appended to the end of the result.",
+      "entries": [
+        "but does not realize it",
+        "but thinks the opposite"
+      ]
+    },
+    {
+      "name": "situation",
+      "explanation": "When the trait is demonstrated?",
+      "entries": [
+        "Under stress, ",
+        "When tired, ",
+        "When hungry, ",
+        "When drunk, "
+      ]
+    },
+    {
+      "**************************************************": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+      ]
+    }
+  ]
+}

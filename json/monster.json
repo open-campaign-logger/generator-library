@@ -7,7 +7,7 @@
     "actantgroup": "pack",
     "actantaction": "on the prowl",
     "actantadjective": "hideous",
-    "actantdescription": "The monster seems to be looking for soemthing to eat.",
+    "actantdescription": "The monster seems to be looking for something to eat.",
     "attitude": "hostile"
   },
   "variables": {
@@ -46,15 +46,15 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{health} {monster}",
+        "{monster}",
         "{adjective} {monster}",
-        "{health} {adjective} {monster}",
+        "{adjective}, {lib:complication#creature} {monster}",
         "{lib:creature_template} {monster}",
-        "{health} {lib:creature_template} {monster}",
-        "{monster} capable of a {lib:attack} attack",
-        "{health} {monster} capable of a {lib:attack} attack",
-        "{monster} {lib:complication#creature}",
-        "{health} {monster} {lib:complication#creature}"
+        "{lib:complication#creature}, {lib:creature_template} {monster}",
+        "{monster} specialized {lib:attack} attacks",
+        "{adjective} {monster} specialized in {lib:attack} attacks",
+        "{lib:complication#creature} {monster} specialized in {lib:attack} attacks",
+        "{lib:creature_template} {monster} specialized in {lib:attack} attacks"
       ]
     },
     {

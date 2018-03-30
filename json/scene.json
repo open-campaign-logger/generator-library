@@ -1,6 +1,6 @@
 {
   "name": "scene",
-  "resultPattern": "{HTML formatting}{result}",
+  "resultPattern": "{result}",
   "variables": {
     "footnote": ""
   },
@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "actant, clue, Five_room_dungeon, hero, villain",
-  "date": "2018-01-26",
+  "date": "2018-03-04",
   "authors": "Esko Vesala.",
   "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon",
   "genre": "universal",
@@ -111,21 +111,21 @@
         },
         {
           "m": 1,
-          "v": "Friend kidnapped{global:endheading} A friend of one of the characters (their {lib:friend#summary}) has been taken as a prisoner by the villain. The {lib:synonym#troupe} is off to the rescue! ",
+          "v": "Friend kidnapped{global:endheading} A friend of one of the characters (their {lib:friend#summary}) has been taken as a prisoner by the {global:villain}. The {lib:synonym#troupe} is off to the rescue! ",
           "export": {
             "beat": "friend kidnapped"
           }
         },
         {
           "m": 1,
-          "v": "Death of a friend{global:endheading} A friend of one of the characters (their {lib:friend#summary}) has died because the actions of the villain or the minions. It's the {lib:synonym#troupe}'s task to avenge the lost friend!",
+          "v": "Death of a friend{global:endheading} A friend of one of the characters (their {lib:friend#summary}) has died because the actions of the {global:villain} or the minions. It's the {lib:synonym#troupe}'s task to avenge the lost friend!",
           "export": {
             "beat": "friend kidnapped"
           }
         },
         {
           "m": 1,
-          "v": "Attack{global:endheading} Someone has launched an attack that threatens what is dear to {lib:synonym#troupe}. The villain must be tracked to the hideaway and dealt with. ",
+          "v": "Attack{global:endheading} Someone has launched an attack that threatens what is dear to {lib:synonym#troupe}. The {global:villain} must be tracked to the hideaway and dealt with. ",
           "export": {
             "beat": "attack"
           }
@@ -159,7 +159,7 @@
         },
         {
           "m": 1,
-          "v": "Discovery{global:endheading} The {lib:synonym#troupe} makes a remarkable discovery: a {lib:macguffin#detail}. [The discovery is in some way linked to this adventure's villain or treasure.]",
+          "v": "Discovery{global:endheading} The {lib:synonym#troupe} makes a remarkable discovery: a {lib:macguffin#detail}. [The discovery is in some way linked to the {global:villain} or treasure.]",
           "export": {
             "beat": "discovery"
           }
@@ -180,7 +180,7 @@
         },
         {
           "m": 1,
-          "v": "Looming threat{global:endheading} The villain is planning an evil deed and the {lib:synonym#troupe} must counter the plans before it is too late.",
+          "v": "Looming threat{global:endheading} The {global:villain} is planning an evil deed and the {lib:synonym#troupe} must counter the plans before it is too late.",
           "export": {
             "beat": "looming threat"
           }
@@ -524,7 +524,7 @@
       "entries": [
         {
           "m": 1,
-          "v": "Final Battle{global:endheading} A great battle againts the villain and the minions ensues. The result will determine the final fate of everyone involved! ",
+          "v": "Final Battle{global:endheading} A great battle against the {global:villain} and the minions ensues. The result will determine the final fate of everyone involved! ",
           "export": {
             "beat": "final battle"
           }
@@ -574,35 +574,35 @@
         },
         {
           "m": 1,
-          "v": "Villain Dies{global:endheading} The villain is dead and cannot threaten anyone anymore. ",
+          "v": "Villain Dies{global:endheading} The {global:villain} is dead and cannot threaten anyone anymore. ",
           "export": {
             "beat": "villain dies"
           }
         },
         {
           "m": 1,
-          "v": "Villain Surrenders{global:endheading} After a tough fight, the villain is ready to give up and surrender to the {lib:synonym#troupe}.",
+          "v": "Villain Surrenders{global:endheading} After a tough fight, the {global:villain} is ready to give up and surrender to the {lib:synonym#troupe}.",
           "export": {
             "beat": "villain surrenders"
           }
         },
         {
           "m": 1,
-          "v": "Villain Escapes{global:endheading} The villain manages to flee from the {lib:synonym#troupe}. ",
+          "v": "Villain Escapes{global:endheading} The {global:villain} manages to flee from the {lib:synonym#troupe}. ",
           "export": {
             "beat": "villain escapes"
           }
         },
         {
           "m": 1,
-          "v": "Heroes Captured{global:endheading} The villain manages to capture the {lib:synonym#troupe}. Will they ever be able to escape? That is a different story... ",
+          "v": "Heroes Captured{global:endheading} The {global:villain} manages to capture the {lib:synonym#troupe}. Will they ever be able to escape? That is a different story... ",
           "export": {
             "beat": "heroes captured"
           }
         },
         {
           "m": 1,
-          "v": "Heroes Escape{global:endheading} The villain attempts to capture the {lib:synonym#troupe}, but they still have a slim chance of escape! ",
+          "v": "Heroes Escape{global:endheading} The {global:villain} attempts to capture the {lib:synonym#troupe}, but they still have a slim chance of escape! ",
           "export": {
             "beat": "heroes escape"
           }
@@ -680,7 +680,7 @@
       "name": "battle beat",
       "explanation": "Beats for battles with the enemy's troops.",
       "entries": [
-        "The villain's forces arrive to battle the {lib:synonym#troupe} in full force."
+        "The {global:villain}'s forces arrive to battle the {lib:synonym#troupe} in full force."
       ]
     },
     {
@@ -694,7 +694,7 @@
       "name": "chase beat",
       "explanation": "Beats for chasing the minions.",
       "entries": [
-        "A group of {lib:minion#summary}s spots the {lib:synonym#troupe} and attempts to flee and warn their master."
+        "{global:miniongroup} spots the {lib:synonym#troupe} and attempts to flee and warn their master."
       ]
     },
     {
@@ -717,15 +717,15 @@
       "name": "confrontation beat",
       "explanation": "Beats where the heroes confront the enemy in a non-physial fight.",
       "entries": [
-        "A {lib:minion#summary} sent by the villain issues a warning to the {lib:synonym#troupe}.",
-        "The villain sends a threat to intimidate the {lib:synonym#troupe}."
+        "A {global:minion} sent by the {global:villain} issues a warning to the {lib:synonym#troupe}.",
+        "The {global:villain} sends a threat to intimidate the {lib:synonym#troupe}."
       ]
     },
     {
       "name": "contest beat",
       "explanation": "Beats where the heroes enter a ritualized contest.",
       "entries": [
-        "A {lib:minion#summary} challenges the {lib:synonym#troupe} to a {contest}."
+        "A {global:minion} challenges the {lib:synonym#troupe} to a {contest}."
       ]
     },
     {
@@ -741,14 +741,14 @@
       "name": "duel beat",
       "explanation": "Beats where a hero fights the enemy one-on-one.",
       "entries": [
-        "The villain's representative challenges a champion of the {lib:synonym#troupe} to one-on-one armed combat on equal terms. The loser must agree to something that the winner wants."
+        "The {global:villain}'s representative challenges a champion of the {lib:synonym#troupe} to one-on-one armed combat on equal terms. The loser must agree to something that the winner wants."
       ]
     },
     {
       "name": "fight beat",
       "explanation": "Beats where the heroes must confront the enemy in a ritual fight.",
       "entries": [
-        "A {lib:minion#summary} champion challenges one of the {lib:synonym#troupe} to a ritual, unarmed fight."
+        "A {global:minion} champion challenges one of the {lib:synonym#troupe} to a ritual, unarmed fight."
       ]
     },
     {
@@ -777,10 +777,10 @@
       "name": "hidden weakness beat",
       "explanation": "Beats that reveal a weakness in the enemy.",
       "entries": [
-        "A {lib:actant#friendly} can be found here. If treated well, they can reveal a secret that can be used against the villain.",
-        "A {lib:actant#mentor} knows about the villain's fear that maybe could be used to gain an advantage.",
-        "Hidden here is a weapon that can be an effective asset against the villain.",
-        "If a {actant#traitor} found here can be befriended, they can tell the {lib:synonym#troupe} about a traitor in the enemy's faction."
+        "A {lib:actant#friendly} can be found here. If treated well, they can reveal a secret that can be used against the {global:villain}.",
+        "A {lib:actant#mentor} knows about the {global:villain}'s fear that maybe could be used to gain an advantage.",
+        "Hidden here is a weapon that can be an effective asset against the {global:villain}.",
+        "If a {actant#traitor} found here can be befriended, they can tell the {lib:synonym#troupe} about a traitor in the {global:villain}'s faction."
       ]
     },
     {
@@ -813,14 +813,14 @@
       "name": "pursuit beat",
       "explanation": "Beats where the heroes are escaping the enemy.",
       "entries": [
-        "A far superior force of {lib:minion#summary}s spots the {lib:synonym#troupe} and starts a chase."
+        "A far superior force of {global:minions} spots the {lib:synonym#troupe} and starts a chase."
       ]
     },
     {
       "name": "race beat",
       "explanation": "Beats where the heroes race the opposition.",
       "entries": [
-        "A {lib:minion#summary} tries to reach the goal before the {lib:synonym#troupe}."
+        "A {global:minion} tries to reach the goal before the {lib:synonym#troupe}."
       ]
     },
     {
@@ -904,53 +904,6 @@
       ]
     },
     {
-      "**************************************************": "FORMATTING"
-    },
-    {
-      "name": "formatting",
-      "explanation": "Formatting types (Campaign Logger or Wordpress).",
-      "entries": [
-        "{CL formatting}",
-        "{HTML formatting}"
-      ]
-    },
-    {
-      "name": "HTML formatting",
-      "explanation": "Set variables for formatting the output as HTML",
-      "entries": [
-        {
-          "v": "",
-          "export": {
-            "starttitle": "<H2>",
-            "endtitle": "</H2>",
-            "startheading": "<H3>",
-            "endheading": "</H3>",
-            "startbold": "<B>",
-            "endbold": "</B>",
-            "para": "<P>"
-          }
-        }
-      ]
-    },
-    {
-      "name": "CL formatting",
-      "explanation": "Set variables for formatting the output for Campaign Logger",
-      "entries": [
-        {
-          "v": "",
-          "export": {
-            "starttitle": "{b|",
-            "endtitle": "}\r\n\r\n",
-            "startheading": "\r\n\r\n{b|",
-            "endheading": "}",
-            "startbold": "{b|",
-            "endbold": "}",
-            "para": "\r\n"
-          }
-        }
-      ]
-    },
-    {
       "**************************************************": "SPECIAL TABLES"
     },
     {
@@ -979,7 +932,7 @@
       "explanation": "Tough situations for helpless actants.",
       "format": "needs to be rescued from X.",
       "entries": [
-        "an aggressive {lib:minion#summary}",
+        "an aggressive {global:minion}",
         "a nest of vipers",
         "spreading fire from a campfire"
       ]
@@ -995,9 +948,9 @@
       "name": "revelation",
       "explanation": "Big secrets.",
       "entries": [
-        "the identity of the villain",
-        "the motivation of the villain",
-        "the plans of the villain"
+        "the identity of the {global:villain}",
+        "the motivation of the {global:villain}",
+        "the plans of the {global:villain}"
       ]
     },
     {
