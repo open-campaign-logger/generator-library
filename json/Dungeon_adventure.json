@@ -1,6 +1,6 @@
 {
   "name": "Dungeon adventure",
-  "resultPattern": "{lib:formatting#HTML}{init}{result}",
+  "resultPattern": "{lib:formatting#CL}{init}{result}",
   "globals": {
     "duration": "30",
     "difficulty": "master",
@@ -265,7 +265,7 @@
       "name": "adventure name",
       "explanation": "Variations for the name of the adventure based on set variables.",
       "entries": [
-        "The {global:symbol} of the {lib:villain#adjective} {global:villain}",
+        "The {global:symbol} of the {lib:villain#adjective} {global:villain#summary}",
         "{lib:location#adjective} {global:location} of the {lib:villain#adjective} {global:villain}",
         "{global:goaldescription} the {lib:villain#adjective} {global:villain}",
         "{global:macguffin} of the {lib:villain#adjective} {global:villain}",
