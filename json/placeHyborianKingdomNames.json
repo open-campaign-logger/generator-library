@@ -1,0 +1,85 @@
+{
+    "name": "Place, Hyborian Kingdom Generator",
+    "resultPattern": "{placeHyborianKingdom}",
+    "tables": [
+        {
+            "name": "placeHyborianKingdom",
+            "explanation": "Hyborian Kingdoms.",
+            "entries": [
+                {
+                    "m": 10,
+                    "v": "{common}"
+                },
+                {
+                    "m": 3,
+                    "v": "{rare}"
+                },
+                "{very rare}"
+            ]
+        },
+        {
+            "name": "common",
+            "entries": [
+                "Aquilonia",
+                "Argos",
+                "Asgard",
+                "Border Kingdoms",
+                "Bossonian Marches",
+                "Brythunia",
+                "Cimmeria",
+                "Corinthia",
+                "Gunderland",
+                "Hyperborea",
+                "Hyrkania",
+                "Iranistan",
+                "Khoraja",
+                "Koth",
+                "Nemedia",
+                "Ophir",
+                "Picts",
+                "Poitain",
+                "Shem",
+                "Stygia",
+                "Turan",
+                "Vanaheim",
+                "Zamora",
+                "Zingara"
+            ]
+        },
+        {
+            "name": "rare",
+            "entries": [
+                "Afghulistan",
+                "Amazon",
+                "Barachan Islands",
+                "Darfar",
+                "Kambuja",
+                "Keshan",
+                "Khauran",
+                "Khitai",
+                "Kosala",
+                "Kusan",
+                "Kush",
+                "Punt",
+                "Vendhya",
+                "Zembabwei"
+            ]
+        },
+        {
+            "name": "very rare",
+            "entries": [
+                "Acheron",
+                "Alkmeenon",
+                "Kozaki",
+                "Meru",
+                "Pathenia",
+                "Pelishtim",
+                "Uttara Kuru",
+                "Yamatai",
+                "Wadai",
+                "Wazuli",
+                "Zuagir"
+            ]
+        }
+    ]
+}

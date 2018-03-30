@@ -58,9 +58,10 @@ typings/
 .env
 
 # Campaign Logger files
-*.pdf
+Staging
 .gitignore
 json/Staging
+*.pdf
 json/_encounterSeed_generator.json
 json/_goblinName_generator.json
 json/_heroOfTheRealm_generator.json

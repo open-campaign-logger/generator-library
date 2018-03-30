@@ -166,6 +166,9 @@ Each entry must be enclosed within quotes, and separated by commas (again, no co
 
 Entries can be strings ranging from a single character to an entire paragraph of text, as long as the text is included between quotation marks.
 
+### Using your custom generators
+
+There is a button underneath the Log Entry section of the Campaign Logger called "Show Generators". Clicking on this button will show your custom generators.
 
 ### That's It!
 
