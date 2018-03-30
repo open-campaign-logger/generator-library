@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "edge, quirk, strategy",
-  "date": "2018-03-06",
+  "date": "2018-03-10",
   "authors": "Ron Calbick (as extracted from his goblin-names.json generator), ELF Vesala.",
   "sources": "Ron Calbick: 'Goblin Generator'.",
   "genre": "universal",
@@ -114,7 +114,7 @@
       "name": "spiritual",
       "explanation": "Spirit-related flaws.",
       "entries": [
-        "tainted soul"
+        "is a tainted soul"
       ]
     },
     {
