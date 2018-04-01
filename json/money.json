@@ -1,0 +1,658 @@
+{
+  "name": "money",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": "value"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Types of currency.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-03-31",
+  "authors": "ELF Vesala.",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "categories": [
+    "item"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{money}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective} {money}",
+        "{money} ({feature})",
+        "{adjective} {money} ({feature})"
+      ]
+    },
+    {
+      "name": "money",
+      "explanation": "The money types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common money types.",
+      "entries": [
+        "{coin}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare money types.",
+      "entries": [
+        "{exotic coin}"
+      ]
+    },
+    {
+      "**************************************************": "COINS"
+    },
+    {
+      "name": "coin",
+      "explanation": "Coins.",
+      "entries": [
+        "{cheap coin}",
+        "{medium coin}",
+        "{valuable coin}"
+      ]
+    },
+    {
+      "name": "cheap coin",
+      "explanation": "Cheap coinage.",
+      "entries": [
+        "{cheap coin material} {cheap coin type}"
+      ]
+    },
+    {
+      "name": "cheap coin material",
+      "explanation": "Materials for coins of small value.",
+      "entries": [
+        "iron",
+        "lead",
+        "tin",
+        "brass",
+        "copper"
+      ]
+    },
+    {
+      "name": "cheap coin type",
+      "explanation": "Names for coins of small value.",
+      "entries": [
+        "bit",
+        "piece",
+        "farthing",
+        "halfpenny",
+        "penny"
+      ]
+    },
+    {
+      "name": "medium coin",
+      "explanation": "Medium coinage.",
+      "entries": [
+        "{medium coin material} {medium coin type}"
+      ]
+    },
+    {
+      "name": "medium coin material",
+      "explanation": "Materials for coins of medium value.",
+      "entries": [
+        "silver"
+      ]
+    },
+    {
+      "name": "medium coin type",
+      "explanation": "Names for coins of medium value.",
+      "entries": [
+        "coin",
+        "shilling",
+        "mark",
+        "noble",
+        "eagle"
+      ]
+    },
+    {
+      "name": "valuable coin",
+      "explanation": "Valuable coinage.",
+      "entries": [
+        "{valuable coin material} {valuable coin type}"
+      ]
+    },
+    {
+      "name": "valuable coin material",
+      "explanation": "Materials for coins of high value.",
+      "entries": [
+        "gold"
+      ]
+    },
+    {
+      "name": "valuable coin type",
+      "explanation": "Names for coins of high value.",
+      "entries": [
+        "lion",
+        "crown",
+        "dragon"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC COINS"
+    },
+    {
+      "name": "exotic coin",
+      "explanation": "Exotic coin types.",
+      "entries": [
+        "{exotic cheap coin}",
+        "{exotic medium coin}",
+        "{exotic valuable coin}"
+      ]
+    },
+    {
+      "name": "exotic cheap coin",
+      "explanation": "Exotic cheap coinage.",
+      "entries": [
+        "{cheap coin material} {exotic cheap coin type}",
+        "{exotic cheap coin material} {cheap coin type}",
+        "{exotic cheap coin material} {exotic cheap coin type}"
+      ]
+    },
+    {
+      "name": "exotic cheap coin material",
+      "explanation": "Materials for exotic coins of small value.",
+      "entries": [
+        "zinc"
+      ]
+    },
+    {
+      "name": "exotic cheap coin type",
+      "explanation": "Names for exotic coins of small value.",
+      "entries": [
+        "pfennig",
+        "obol",
+        "sestertius"
+      ]
+    },
+    {
+      "name": "exotic medium coin",
+      "explanation": "Exotic medium coinage.",
+      "entries": [
+        "{medium coin material} {exotic medium coin type}",
+        "{exotic medium coin material} {medium coin type}",
+        "{exotic medium coin material} {exotic medium coin type}"
+      ]
+    },
+    {
+      "name": "exotic medium coin material",
+      "explanation": "Materials for exotic coins of medium value.",
+      "entries": [
+        "electrum"
+      ]
+    },
+    {
+      "name": "exotic medium coin type",
+      "explanation": "Names for exotic coins of medium value.",
+      "entries": [
+        "thaler",
+        "dirham",
+        "shekel",
+        "stater",
+        "denarius"
+      ]
+    },
+    {
+      "name": "exotic valuable coin",
+      "explanation": "Exotic valuable coinage.",
+      "entries": [
+        "{valuable coin material} {exotic valuable coin type}",
+        "{exotic valuable coin material} {valuable coin type}",
+        "{exotic valuable coin material} {exotic valuable coin type}"
+      ]
+    },
+    {
+      "name": "exotic valuable coin material",
+      "explanation": "Exotic materials for coins of high value.",
+      "entries": [
+        "platinum"
+      ]
+    },
+    {
+      "name": "exotic valuable coin type",
+      "explanation": "Names for exotic coins of high value.",
+      "entries": [
+        "florin",
+        "talent",
+        "ducat",
+        "doubloon",
+        "dinar"
+      ]
+    },
+    {
+      "**************************************************": "DESCRIPTION"
+    },
+    {
+      "name": "description",
+      "explanation": "",
+      "entries": [
+        "{appearance} {coin}. There is {faces}.",
+        "{appearance} {coin} {extra}. There is {faces}."
+      ]
+    },
+    {
+      "name": "appearance",
+      "explanation": "Currency looks.",
+      "entries": [
+        "{shape}",
+        "{thickness}, {shape}",
+        "{exotic shape}",
+        "{thickness}, {exotic shape}"
+      ]
+    },
+    {
+      "name": "shape",
+      "explanation": "Currency shapes",
+      "entries": [
+        "round",
+        "approximately round"
+      ]
+    },
+    {
+      "name": "exotic shape",
+      "explanation": "Exotic currency shapes.",
+      "entries": [
+        "oblong",
+        "12-sided",
+        "decagonal",
+        "octagonal",
+        "hexagonal",
+        "square-shaped",
+        "triangular"
+      ]
+    },
+    {
+      "name": "thickness",
+      "explanation": "How thick the coin is?",
+      "entries": [
+        "thin",
+        "medium thickness",
+        "thick"
+      ]
+    },
+    {
+      "name": "extra",
+      "explanation": "Currency extra features.",
+      "entries": [
+        "with a round hole",
+        "with a square hole",
+        "with a wavy edge"
+      ]
+    },
+    {
+      "name": "faces",
+      "explanation": "",
+      "entries": [
+        "{heads} on the front and {tails} on the reverse side",
+        "{heads} on one side and {tails} on the opposite side",
+        "{heads} on this side and {tails} on the other side",
+        "{heads} on one side and nothing on the opposite side"
+      ]
+    },
+    {
+      "name": "heads",
+      "explanation": "The observe side of the coin.",
+      "entries": [
+        "{image} of {subject}",
+        "{image} of {subject} with {ornament}"
+      ]
+    },
+    {
+      "name": "tails",
+      "explanation": "The reverse side of the coin.",
+      "entries": [
+        "a coat of arms",
+        "a heraldic depiction of {symbol}"
+      ]
+    },
+    {
+      "name": "image",
+      "explanation": "The image type of a coin.",
+      "entries": [
+        "an image",
+        "a profile",
+        "an engraving"
+      ]
+    },
+    {
+      "name": "subject",
+      "explanation": "The subject matter of the coin imagery,",
+      "entries": [
+        "{personality} {person}",
+        "a {personality} {deity}",
+        "a {deity} of {association}"
+      ]
+    },
+    {
+      "name": "personality",
+      "explanation": "Description of the character depicted on the coin.",
+      "entries": [
+        "an old",
+        "an aged",
+        "a stern",
+        "a brooding",
+        "a tight-lipped",
+        "a majestic",
+        "a smiling",
+        "a lifelike image of"
+      ]
+    },
+    {
+      "name": "person",
+      "explanation": "The person depicted on the coin.",
+      "entries": [
+        "man",
+        "woman",
+        "past ruler"
+      ]
+    },
+    {
+      "name": "deity",
+      "explanation": "Divinities.",
+      "entries": [
+        "deity",
+        "divinity",
+        "god",
+        "goddess",
+        "demigod",
+        "demigoddess",
+        "spirit",
+        "idol"
+      ]
+    },
+    {
+      "name": "association",
+      "explanation": "The divine realm associated with a deity.",
+      "entries": [
+        "death",
+        "war",
+        "sea",
+        "sky",
+        "nature",
+        "fate",
+        "trickery",
+        "health",
+        "agriculture",
+        "knowledge",
+        "love",
+        "art"
+      ]
+    },
+    {
+      "name": "symbol",
+      "explanation": "The symbol depicted on the coin.",
+      "entries": [
+        "a lion",
+        "a tree",
+        "a castle",
+        "a tower",
+        "a sword",
+        "a shield",
+        "grain",
+        "a fruit",
+        "an empty hand"
+      ]
+    },
+    {
+      "name": "ornament",
+      "explanation": "The ornaments of the coin.",
+      "entries": [
+        "simple ornaments",
+        "rich details",
+        "several embellishments"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Money once rumoured to have existed.",
+      "entries": [
+        "obol"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Money for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{common}",
+        "{coin material} {fantasy coin}"
+      ]
+    },
+    {
+      "name": "fantasy coin",
+      "explanation": "Money for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{coin type}",
+        "shard",
+        "sickle",
+        "crescent",
+        "orb"
+      ]
+    },
+    {
+      "name": "primitive",
+      "explanation": "Money for developing cultures.",
+      "entries": [
+        "seashell",
+        "tooth",
+        "bead"
+      ]
+    },
+    {
+      "name": "historical",
+      "explanation": "Money for historical cultures.",
+      "entries": [
+        "groat",
+        "guinea"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Money for modern worlds.",
+      "entries": [
+        "{coin value} {modern currency} coin",
+        "{note value} {modern currency} note",
+        "{rare modern}"
+      ]
+    },
+    {
+      "name": "rare modern",
+      "explanation": "Rare money for modern worlds.",
+      "entries": [
+        "IOU",
+        "financial agreement",
+        "{modern currency}-based debenture",
+        "obligation",
+        "stock option"
+      ]
+    },
+    {
+      "name": "modern currency",
+      "explanation": "Contemporary currencies.",
+      "entries": [
+        "dollar",
+        "pound",
+        "euro",
+        "franc",
+        "guilder",
+        "lira",
+        "real",
+        "peseta",
+        "peso",
+        "escudo",
+        "ruble",
+        "rupee"
+      ]
+    },
+    {
+      "name": "postapocalyptic",
+      "explanation": "Money for aftermath worlds.",
+      "entries": [
+        "bottle cap",
+        "card",
+        "cartridge",
+        "clip"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Money for science fiction worlds.",
+      "entries": [
+        "credit",
+        "unit",
+        "token",
+        "point",
+        "cryptocurrency"
+      ]
+    },
+    {
+      "**************************************************": "CROSSREFERENCES"
+    },
+    {
+      "name": "coin material",
+      "explanation": "Coin materials.",
+      "entries": [
+        "{cheap coin material}",
+        "{medium coin material}",
+        "{valuable coin material}"
+      ]
+    },
+    {
+      "name": "coin type",
+      "explanation": "Coin types.",
+      "entries": [
+        "{cheap coin type}",
+        "{medium coin type}",
+        "{valuable coin type}"
+      ]
+    },
+    {
+      "name": "exotic coin material",
+      "explanation": "Exotic coin materials.",
+      "entries": [
+        "{exotic cheap coin material}",
+        "{exotic medium coin material}",
+        "{exotic valuable coin material}"
+      ]
+    },
+    {
+      "name": "exotic coin type",
+      "explanation": "Exotic coin types.",
+      "entries": [
+        "{exotic cheap coin type}",
+        "{exotic medium coin type}",
+        "{exotic valuable coin type}"
+      ]
+    },
+    {
+      "**************************************************": "VALUES"
+    },
+    {
+      "name": "coin value",
+      "explanation": "The value of the coin.",
+      "entries": [
+        "half",
+        "1",
+        "5"
+      ]
+    },
+    {
+      "name": "note value",
+      "explanation": "The value of the coin.",
+      "entries": [
+        "10",
+        "50",
+        "100"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special money tables.",
+      "entries": [
+        "{adjective}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives related to money.",
+      "format": "Optionally prepended to the front of the result.",
+      "entries": [
+        "damaged",
+        "worn",
+        "pristine"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features related to money.",
+      "format": "Optionally appended to the end of the result.",
+      "entries": [
+        "possibly counterfeit",
+        "possibly stolen",
+        "marked",
+        "invalid as currency",
+        "with a hole in the middle"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+      ]
+    }
+  ]
+}
