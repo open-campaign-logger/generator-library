@@ -5,7 +5,7 @@
     "culture": "XXX"
   },
   "variables": {
-    "footnote": "note"
+    "footnote": ""
   },
   "explanation": "XXX",
   "structure": "Genders are collected in the same file to allow easy sharing of patronym and byname tables. Subtables have been split by their initial letter to allow future support for allitteration and for example siblings sharing the same initial.",

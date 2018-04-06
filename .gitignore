@@ -59,6 +59,7 @@ typings/
 
 # Campaign Logger files
 Staging
+.ftpconfig
 .gitignore
 json/Staging
 *.pdf

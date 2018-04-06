@@ -2,7 +2,7 @@
   "name": "generator template",
   "resultPattern": "{init}{result}",
   "globals": {
-    "variable": "value"
+    "variable": ""
   },
   "variables": {
     "footnote": ""
