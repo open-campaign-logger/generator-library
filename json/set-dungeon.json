@@ -1,29 +1,33 @@
 {
-  "name": "set_city",
+  "name": "set-dungeon",
   "resultPattern": "{init}{result}",
   "globals": {
     "setadjective": "{adjective}",
+    "setarea": "{area}",
+    "setlocale": "{locale}",
+    "setboundary": "{boundary}",
     "setentrance": "{entrance}",
     "setlocation": "{location}",
     "setpassage": "{passage}",
     "setvault": "{vault}",
     "setdoor": "{door}",
+    "setnook": "{nook}",
     "setprop": "{prop}"
   },
   "variables": {
     "footnote": ""
   },
-  "explanation": "Template for a themed location.",
+  "explanation": "Dungeon-themed locations.",
   "structure": "Global variables fitting a common environment.",
   "note": "This table does not produce immediate output, only sets global variables for later use.",
   "format": "Global variable definitions.",
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-02-14",
-  "authors": "Esko Vesala.",
+  "date": "2018-04-07",
+  "authors": "ELF Vesala.",
   "sources": "",
-  "genre": "universal",
+  "genre": "fantasy",
   "categories": [
     "world"
   ],
@@ -58,14 +62,14 @@
       "name": "detail",
       "explanation": "Detailed description of the randomized set.",
       "entries": [
-        "{global:setadjective} {global:setlocation}",
-        "{global:setlocation} with {global:setprop}",
-        "{global:setadjective} {global:setlocation} with {global:setprop}"
+        "{global:setadjective} {global:setlocale}",
+        "{global:setlocale} with {global:setprop}",
+        "{global:setadjective} {global:setlocale} with {global:setprop}"
       ]
     },
     {
-      "name": "area",
-      "explanation": "Area types on the set.",
+      "name": "locale",
+      "explanation": "Location types on the set.",
       "entries": [
         "{entrance}",
         "{location}",
@@ -74,51 +78,87 @@
       ]
     },
     {
-      "**************************************************": "AREAS"
+      "**************************************************": "LOCALES"
+    },
+    {
+      "name": "boundary",
+      "explanation": "Borders around the set.",
+      "entries": [
+        "outer wall"
+      ]
     },
     {
       "name": "entrance",
       "explanation": "Entrances matching the set.",
       "entries": [
-        "city gate",
-        "city gates",
-        "toll gate"
+        "entrance",
+        "entranceway",
+        "entryway",
+        "opening",
+        "doorway",
+        "gateway",
+        "gate",
+        "double gates",
+        "portcullis gate"
+      ]
+    },
+    {
+      "name": "area",
+      "explanation": "Areas containing several locations.",
+      "entries": [
+        "first level",
+        "second level",
+        "third level"
       ]
     },
     {
       "name": "location",
       "explanation": "Locations matching the set.",
       "entries": [
-        "tavern",
-        "inn",
-        "market square",
-        "guildhall",
-        "warehouse",
-        "bath house",
-        "docks"
+        "room",
+        "chamber",
+        "hall",
+        "forge",
+        "library",
+        "armory",
+        "distillery",
+        "dormitory",
+        "guardroom",
+        "laboratory",
+        "torture chamber"
+      ]
+    },
+    {
+      "name": "nook",
+      "explanation": "Compartments matching the set.",
+      "entries": [
+        "pit",
+        "cell",
+        "store room",
+        "storage room"
       ]
     },
     {
       "name": "passage",
       "explanation": "Corridors matching the set.",
       "entries": [
-        "passageway",
-        "alleyway",
-        "alley",
-        "back street",
-        "street",
-        "lane",
-        "avenue"
+        "corridor",
+        "passage",
+        "passageway"
       ]
     },
     {
       "name": "vault",
       "explanation": "Centerpiece locations matching the set.",
       "entries": [
-        "mansion",
-        "town hall",
-        "temple",
-        "courthouse"
+        "vault",
+        "crypt",
+        "tomb",
+        "sepulcher",
+        "catacomb",
+        "mausoleum",
+        "treasure chamber",
+        "invocation chamber"
       ]
     },
     {
@@ -128,8 +168,8 @@
       "name": "adjective",
       "explanation": "Adjectives for the set locations.",
       "entries": [
-        "soot-covered",
-        "noisy"
+        "candle-lit",
+        "darkness-engulfed"
       ]
     },
     {
@@ -137,16 +177,18 @@
       "explanation": "Doors matching the set.",
       "entries": [
         "door",
+        "double doors",
         "gate",
-        "arched entranceway"
+        "double gates",
+        "portcullis"
       ]
     },
     {
       "name": "prop",
       "explanation": "Potential properties for the set.",
       "entries": [
-        "cart",
-        "street-vendor's stall"
+        "extinguished torch",
+        "empty chest"
       ]
     },
     {
@@ -156,7 +198,7 @@
       "name": "test",
       "explanation": "Testing tool for dumping the set global variables.",
       "entries": [
-        "{global:set} walkthrough: {global:setentrance} to {global:setpassage} leads to {global:setadjective} {global:setlocation} with {global:setprop}. Behind {global:setdoor} is the {global:setvault}."
+        "{global:set} walkthrough: to pass the {global:setboundary}, enter {global:setentrance} to {global:setarea} via {global:setpassage} that leads to {global:setadjective} {global:setlocation} and {global:setnook}  with {global:setprop} inside. Behind {global:setdoor} is the {global:setvault}."
       ]
     }
   ]
