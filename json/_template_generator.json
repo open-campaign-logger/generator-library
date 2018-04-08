@@ -35,28 +35,55 @@
       ]
     },
     {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
       "name": "result",
-      "explanation": "Verbosity of the resultPattern output.",
+      "explanation": "The output format.",
       "entries": [
         "{summary}",
         "{detail}"
       ]
     },
     {
+      "name": "name",
+      "explanation": "A proper name.",
+      "entries": [
+        "{XXX}"
+      ]
+    },
+    {
       "name": "summary",
-      "explanation": "Brief resultPattern output.",
+      "explanation": "Brief output.",
       "entries": [
         "{XXX}"
       ]
     },
     {
       "name": "detail",
-      "explanation": "Detailed resultPattern output variations.",
+      "explanation": "More detailed output variations.",
       "entries": [
         "{adjective} {XXX}",
         "{XXX} {feature}",
         "{adjective} {XXX} {feature}"
       ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {adjective} {XXX} looks {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "XXX: {XXX}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
     },
     {
       "name": "XXX",
@@ -71,14 +98,14 @@
     },
     {
       "name": "common",
-      "explanation": "Common XXX types.",
+      "explanation": "Common types.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare XXX types.",
+      "explanation": "Rare types.",
       "entries": [
         "XXX"
       ]
@@ -88,14 +115,22 @@
     },
     {
       "name": "myth",
-      "explanation": "XXX once rumoured to have existed.",
+      "explanation": "Entries for real-world mythogical worlds.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "fantasy",
-      "explanation": "XXX for fantasy worlds (with no basis in myth).",
+      "explanation": "Entries for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Entries for medieval worlds (with no magical elements).",
       "entries": [
         "{myth}",
         "XXX"
@@ -103,7 +138,7 @@
     },
     {
       "name": "modern",
-      "explanation": "XXX for modern worlds.",
+      "explanation": "Entries for modern worlds.",
       "entries": [
         "{common}",
         "XXX"
@@ -111,7 +146,7 @@
     },
     {
       "name": "futuristic",
-      "explanation": "XXX for science fiction worlds.",
+      "explanation": "Entries for science fiction worlds.",
       "entries": [
         "{modern}",
         "XXX"
@@ -130,7 +165,7 @@
     },
     {
       "name": "adjective",
-      "explanation": "Adjectives related to XXX.",
+      "explanation": "Adjectives related to the XXX.",
       "format": "Optionally prepended to the front of the result.",
       "entries": [
         "XXX"
@@ -138,7 +173,7 @@
     },
     {
       "name": "feature",
-      "explanation": "Features related to XXX.",
+      "explanation": "Features related to the XXX.",
       "format": "Optionally appended to the end of the result.",
       "entries": [
         "XXX"
