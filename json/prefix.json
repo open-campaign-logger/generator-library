@@ -1,0 +1,253 @@
+{
+  "name": "prefix",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Prefixes for names.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-04-08",
+  "authors": "ELF Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "name"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{name}",
+        "{summary}",
+        "{detail}",
+        "{description}"
+      ]
+    },
+    {
+      "name": "name",
+      "explanation": "A proper name.",
+      "entries": [
+        "{prefix}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{prefix}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{adjective} {prefix}",
+        "{prefix} {feature}",
+        "{adjective} {prefix} {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {adjective} {prefix} looks {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "prefix: {prefix}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "prefix",
+      "explanation": "The prefix types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common types.",
+      "entries": [
+        "{location}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare types.",
+      "entries": [
+        "{time}"
+      ]
+    },
+    {
+      "**************************************************": "LOCATION"
+    },
+    {
+      "name": "location",
+      "explanation": "Location-based prefixes.",
+      "entries": [
+        "{direction}",
+        "{elevation}",
+        "{side}"
+      ]
+    },
+    {
+      "name": "direction",
+      "explanation": "Compass points.",
+      "entries": [
+        "North",
+        "East",
+        "South",
+        "West"
+      ]
+    },
+    {
+      "name": "elevation",
+      "explanation": "Vertical positions.",
+      "entries": [
+        "Lower",
+        "Low",
+        "High",
+        "Upper"
+      ]
+    },
+    {
+      "name": "side",
+      "explanation": "Sides.",
+      "entries": [
+        "Bayside",
+        "Hillside"
+      ]
+    },
+    {
+      "**************************************************": "TIME"
+    },
+    {
+      "name": "time",
+      "explanation": "Time-based prefixes.",
+      "entries": [
+        "{age}"
+      ]
+    },
+    {
+      "name": "age",
+      "explanation": "The age of the subject.",
+      "entries": [
+        "Old",
+        "New"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Entries for real-world mythogical worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Entries for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Entries for medieval worlds (with no magical elements).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Entries for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Entries for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special prefix tables.",
+      "entries": [
+        "{adjective}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives related to the prefix.",
+      "format": "Optionally prepended to the front of the result.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features related to the prefix.",
+      "format": "Optionally appended to the end of the result.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+      ]
+    }
+  ]
+}
