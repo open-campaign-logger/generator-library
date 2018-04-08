@@ -1,0 +1,535 @@
+{
+  "name": "district",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Neighbourhoods for settlements.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "Separate proper names from district types!",
+  "see": "business, settlement, shop",
+  "date": "2018-04-07",
+  "authors": "ELF Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{name}",
+        "{description}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{district}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{adjective} {district}",
+        "{district} {feature}",
+        "{adjective} {district} {feature}"
+      ]
+    },
+    {
+      "name": "name",
+      "explanation": "Just the proper name.",
+      "entries": [
+        "{age} {district}",
+        "{location} {district}",
+        "{direction} {district}",
+        "{elevation} {district}",
+        "{elevation} {direction} {district}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description.",
+      "entries": [
+        "The {adjective} {district} {feature}."
+      ]
+    },
+    {
+      "name": "district",
+      "explanation": "The district types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common district types.",
+      "entries": [
+        "{poor} {slum}",
+        "{lower class} {residential}",
+        "{middle class} {residential}",
+        "{upper class} {residential}",
+        "{lower class} {commercial}",
+        "{middle class} {commercial}",
+        "{upper class} {commercial}",
+        "{middle class} {midtown}",
+        "{upper class} {midtown}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare district types.",
+      "entries": [
+        "{poor} {harbor}",
+        "{lower class} {harbor}",
+        "{poor} {warehouse}",
+        "{lower class} {warehouse}",
+        "{lower class} {suburb}",
+        "{middle class} {suburb}",
+        "{upper class} {suburb}",
+        "{middle class} {park}",
+        "{upper class} {park}",
+        "{middle class} {administrative}",
+        "{upper class} {administrative}",
+        "{middle class} {financial}",
+        "{upper class} {financial}",
+        "{rich} {financial}",
+        "{upper class} {wealthy}",
+        "{rich} {wealthy}"
+      ]
+    },
+    {
+      "**************************************************": "RESIDENTS"
+    },
+    {
+      "name": "resident",
+      "explanation": "Inhabitants of the district.",
+      "entries": [
+        "{poor}",
+        "{lower class}",
+        "{middle class}",
+        "{upper class}",
+        "{rich}"
+      ]
+    },
+    {
+      "name": "poor",
+      "explanation": "Poor inhabitants.",
+      "entries": [
+        "{lib:occupation#poor}s'",
+        "thieves'",
+        "beggars'",
+        "{lower class}"
+      ]
+    },
+    {
+      "name": "lower class",
+      "explanation": "Lower class inhabitants.",
+      "entries": [
+        "{poor}",
+        "{lib:occupation#lower class}s'",
+        "adventurers'",
+        "travelers'",
+        "workers'",
+        "{middle class}"
+      ]
+    },
+    {
+      "name": "middle class",
+      "explanation": "Middle class inhabitants.",
+      "entries": [
+        "{lower class}",
+        "{lib:occupation#middle class}s'",
+        "craftsmen's",
+        "artificiers'",
+        "cobblers'",
+        "{upper class}"
+      ]
+    },
+    {
+      "name": "upper class",
+      "explanation": "Upper class inhabitants.",
+      "entries": [
+        "{middle class}",
+        "{lib:occupation#upper class}s'",
+        "merchants'",
+        "priests'",
+        "scholars'",
+        "{rich}"
+      ]
+    },
+    {
+      "name": "rich",
+      "explanation": "Affluent inhabitants.",
+      "entries": [
+        "{upper class}",
+        "{lib:occupation#rich}s'",
+        "nobles'"
+      ]
+    },
+    {
+      "**************************************************": "DISTRICTS"
+    },
+    {
+      "name": "neighborhood",
+      "explanation": "Types of districts.",
+      "entries": [
+        "{administrative}",
+        "{commercial}",
+        "{financial}",
+        "{harbor}",
+        "{midtown}",
+        "{park}",
+        "{residential}",
+        "{slum}",
+        "{suburb}",
+        "{wealthy}",
+        "{warehouse}"
+      ]
+    },
+    {
+      "name": "administrative",
+      "explanation": "Governmental area.",
+      "entries": [
+        "district",
+        "court",
+        "lane",
+        "forum"
+      ]
+    },
+    {
+      "name": "commercial",
+      "explanation": "Shops and stores.",
+      "entries": [
+        "market",
+        "bazaar",
+        "exchange",
+        "street"
+      ]
+    },
+    {
+      "name": "financial",
+      "explanation": "Banking and large companies.",
+      "entries": [
+        "crescent",
+        "plaza",
+        "arc"
+      ]
+    },
+    {
+      "name": "harbor",
+      "explanation": "The dock area.",
+      "entries": [
+        "harbor",
+        "docks",
+        "dock",
+        "port",
+        "marina",
+        "pier",
+        "wharf",
+        "jetty",
+        "landing",
+        "point",
+        "bay",
+        "cove"
+      ]
+    },
+    {
+      "name": "midtown",
+      "explanation": "Central area.",
+      "entries": [
+        "avenue",
+        "boulevard",
+        "square",
+        "cross",
+        "center",
+        "circle"
+      ]
+    },
+    {
+      "name": "park",
+      "explanation": "Outdoor recreational areas.",
+      "entries": [
+        "park",
+        "garden",
+        "grove",
+        "lawn",
+        "green",
+        "wood",
+        "woods",
+        "pathway",
+        "range"
+      ]
+    },
+    {
+      "name": "residential",
+      "explanation": "Living quarters.",
+      "entries": [
+        "row",
+        "quarter",
+        "ward",
+        "town",
+        "way",
+        "route"
+      ]
+    },
+    {
+      "name": "slum",
+      "explanation": "Poor neighborhood.",
+      "entries": [
+        "shantytown",
+        "hideout",
+        "shelter",
+        "ghetto",
+        "slum",
+        "hive",
+        "nest",
+        "lair",
+        "den",
+        "pit",
+        "hollow",
+        "burrow",
+        "alley"
+      ]
+    },
+    {
+      "name": "suburb",
+      "explanation": "Residential areas away from the center.",
+      "entries": [
+        "acre",
+        "vale",
+        "valley",
+        "side",
+        "nook",
+        "corner",
+        "road"
+      ]
+    },
+    {
+      "name": "wealthy",
+      "explanation": "Affluent uptown areas for the wealthy.",
+      "entries": [
+        "sanctuary",
+        "atelier",
+        "cloister",
+        "sanctum",
+        "retreat",
+        "terrace",
+        "heights",
+        "hill"
+      ]
+    },
+    {
+      "name": "warehouse",
+      "explanation": "Depots and depositories.",
+      "entries": [
+        "yard",
+        "stash",
+        "stock",
+        "depot",
+        "trail"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Districts once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Districts for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "arcane {neighborhood}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Districts for modern worlds.",
+      "entries": [
+        "suburb",
+        "precinct",
+        "projects"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Districts for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "turf",
+        "block",
+        "sector",
+        "zone",
+        "urb"
+      ]
+    },
+    {
+      "**************************************************": "NAME COMPONENTS"
+    },
+    {
+      "name": "age",
+      "explanation": "The age of the district",
+      "entries": [
+        "Old",
+        "New"
+      ]
+    },
+    {
+      "name": "direction",
+      "explanation": "Compass point.",
+      "entries": [
+        "North",
+        "East",
+        "South",
+        "West"
+      ]
+    },
+    {
+      "name": "elevation",
+      "explanation": "Vertical position.",
+      "entries": [
+        "Lower",
+        "Low",
+        "High",
+        "Upper"
+      ]
+    },
+    {
+      "name": "location",
+      "explanation": "Location.",
+      "entries": [
+        "Bayside",
+        "Hillside"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special district tables.",
+      "entries": [
+        "{adjective}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives related to the district.",
+      "format": "Optionally prepended to the front of the result.",
+      "entries": [
+        "quiet",
+        "sleepy",
+        "busy",
+        "crowded"
+      ]
+    },
+    {
+      "**************************************************": "FEATURES"
+    },
+    {
+      "name": "feature",
+      "explanation": "Features related to the district.",
+      "format": "Optionally appended to the end of the result.",
+      "entries": [
+        "{dangerous}",
+        "{decaying}",
+        "{quiet}",
+        "{standard}",
+        "{busy}",
+        "{thriving}"
+      ]
+    },
+    {
+      "name": "dangerous",
+      "explanation": "Features for dangerous districts.",
+      "entries": [
+        "whose reputation is bad",
+        "is best avoided by night, say many"
+      ]
+    },
+    {
+      "name": "decaying",
+      "explanation": "Features for decaying districts.",
+      "entries": [
+        "has fallen in disrepair",
+        "has recently lost many of its inhabitants",
+        "that has seen better days"
+      ]
+    },
+    {
+      "name": "quiet",
+      "explanation": "Features for quiet districts.",
+      "entries": [
+        "is usually a quiet neighborhood"
+      ]
+    },
+    {
+      "name": "standard",
+      "explanation": "Features for standard districts.",
+      "entries": [
+        "is noisy by daytime, but deadly quiet by night"
+      ]
+    },
+    {
+      "name": "busy",
+      "explanation": "Features for busy districts.",
+      "entries": [
+        "is often crowded"
+      ]
+    },
+    {
+      "name": "thriving",
+      "explanation": "Features for thriving districts.",
+      "entries": [
+        "has seen many new inhabitants arrive",
+        "gets livelier by evenings",
+        "that has recently become a fashionable area"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+      ]
+    }
+  ]
+}

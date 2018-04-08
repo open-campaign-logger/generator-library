@@ -1,0 +1,254 @@
+{
+  "name": "shop",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Stores, boutiques and emporiums.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "business, district",
+  "date": "2018-04-07",
+  "authors": "ELF Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{description}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{shop}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{adjective} {shop}",
+        "{shop} {feature}",
+        "{adjective} {shop} {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description.",
+      "entries": [
+        "The {shop} operates from {premises}. The place has {selection}, the prices are {pricing} and the staff {staff}."
+      ]
+    },
+    {
+      "name": "shop",
+      "explanation": "The shop types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common shop types.",
+      "entries": [
+        "{goods} {establishment}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare shop types.",
+      "entries": [
+        "{services} {establishment}"
+      ]
+    },
+    {
+      "**************************************************": "TYPE"
+    },
+    {
+      "name": "establishment",
+      "explanation": "The type of the store",
+      "entries": [
+        "shop",
+        "store",
+        "stand",
+        "boutique",
+        "emporium"
+      ]
+    },
+    {
+      "**************************************************": "GOODS"
+    },
+    {
+      "name": "goods",
+      "explanation": "",
+      "entries": [
+        "{grocery}"
+      ]
+    },
+    {
+      "name": "grocery",
+      "explanation": "Food and groceries.",
+      "entries": [
+        "food"
+      ]
+    },
+    {
+      "**************************************************": "SERVICES"
+    },
+    {
+      "name": "services",
+      "explanation": "",
+      "entries": [
+        "blacksmithing"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "premises",
+      "explanation": "Details of the building.",
+      "format": "The shop operates from --",
+      "entries": [
+        "a cart",
+        "a market stall",
+        "a small building",
+        "a basement of a house",
+        "in a large building"
+      ]
+    },
+    {
+      "name": "pricing",
+      "explanation": "Details of the shop price level.",
+      "entries": [
+        "cheap",
+        "average",
+        "expensive",
+        "outrageous"
+      ]
+    },
+    {
+      "name": "selection",
+      "explanation": "Details of the shop inventory.",
+      "entries": [
+        "a small selection",
+        "a wide selection"
+      ]
+    },
+    {
+      "name": "staff",
+      "explanation": "Details of the shop proprietors and workers.",
+      "entries": [
+        "rude",
+        "eccentric",
+        "talkative",
+        "polite"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Shops once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Shops for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Shops for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Shops for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special shop tables.",
+      "entries": [
+        "{adjective}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives related to the shop.",
+      "format": "Optionally prepended to the front of the result.",
+      "entries": [
+        "chaotic",
+        "orderly",
+        "well-organized"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features related to the shop.",
+      "format": "Optionally appended to the end of the result.",
+      "entries": [
+        "with a sale",
+        "(temporarily closed)",
+        "(apparently closed until further notice)"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+      ]
+    }
+  ]
+}

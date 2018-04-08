@@ -1,0 +1,342 @@
+{
+  "name": "settlement",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Villages, towns, cities and other habitats.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "district",
+  "date": "2018-04-06",
+  "authors": "ELF Vesala",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{description}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{settlement}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{adjective} {settlement}",
+        "{settlement} {feature}",
+        "{adjective} {settlement} {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Detailed description of the settlement.",
+      "entries": [
+        "The {settlement} {established} {location} {origin} {present} {purpose}. It is famous for {fame}."
+      ]
+    },
+    {
+      "name": "settlement",
+      "explanation": "The settlement types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common settlement types.",
+      "entries": [
+        "{village}",
+        "{town}",
+        "{city}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare settlement types.",
+      "entries": [
+        "{camp}",
+        "{cottage}",
+        "{outpost}",
+        "{region}"
+      ]
+    },
+    {
+      "**************************************************": "ORIGIN"
+    },
+    {
+      "name": "established",
+      "explanation": "Synonyms for establishing the settlement.",
+      "format": "The settlement --",
+      "entries": [
+        "was established",
+        "was originally built",
+        "has been built",
+        "was formed",
+        "started as"
+      ]
+    },
+    {
+      "name": "origin",
+      "explanation": "Why the settlement was originally established?",
+      "entries": [
+        "in a safe location",
+        "near good hunting grounds",
+        "in a fertile area",
+        "on crossroads of travel routes",
+        "on a trade route",
+        "as a trading post",
+        "to offer protection to the surrounding area",
+        "as a military garrison",
+        "as a center of administration"
+      ]
+    },
+    {
+      "name": "activity",
+      "explanation": "How successful the settlement is?",
+      "entries": [
+        "a thriving",
+        "a busy",
+        "a declining"
+      ]
+    },
+    {
+      "name": "present",
+      "explanation": "Synonyms for the ",
+      "format": "The settlement was established as a trading place --",
+      "entries": [
+        "and is now",
+        "but is nowadays",
+        "but has grown into"
+      ]
+    },
+    {
+      "name": "purpose",
+      "explanation": "The current role of the settlement.",
+      "entries": [
+        "a center of trade"
+      ]
+    },
+    {
+      "name": "fame",
+      "explanation": "The settlement's claim for fame (or notoriety).",
+      "entries": [
+        "it's architecture"
+      ]
+    },
+    {
+      "**************************************************": "LOCATION"
+    },
+    {
+      "name": "location",
+      "explanation": "The position of the settlement.",
+      "entries": [
+        "in a valley",
+        "on rolling hills",
+        "on plains",
+        "by a river",
+        "in a forest clearing",
+        "near the coast",
+        "on an island"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "camp",
+      "explanation": "Temporary settlements in the wilderness.",
+      "entries": [
+        "campfire",
+        "camp",
+        "encampment",
+        "campground",
+        "campsite"
+      ]
+    },
+    {
+      "name": "cottage",
+      "explanation": "Permanent lone settlements in the wilderness.",
+      "entries": [
+        "hovel",
+        "shack",
+        "cabin",
+        "cottage",
+        "hut",
+        "lodge",
+        "log house"
+      ]
+    },
+    {
+      "name": "outpost",
+      "explanation": "Outposts in the wilderness.",
+      "entries": [
+        "fort",
+        "fortress",
+        "keep",
+        "settlement",
+        "outpost",
+        "colony"
+      ]
+    },
+    {
+      "name": "region",
+      "explanation": "Inhabited areas in the countryside.",
+      "entries": [
+        "municipality",
+        "township",
+        "shire",
+        "barony",
+        "county",
+        "principality",
+        "territory",
+        "province",
+        "protectorate"
+      ]
+    },
+    {
+      "name": "village",
+      "explanation": "Small settlements in the countryside.",
+      "entries": [
+        "thorp",
+        "hamlet",
+        "village"
+      ]
+    },
+    {
+      "name": "town",
+      "explanation": "Medium-sized settlements.",
+      "entries": [
+        "smalltown",
+        "town",
+        "freetown",
+        "borough"
+      ]
+    },
+    {
+      "name": "city",
+      "explanation": "Large settlements.",
+      "entries": [
+        "burg",
+        "city",
+        "metropolis"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Settlements once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Settlements for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Settlements for modern worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Settlements for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "{futuristic city}"
+      ]
+    },
+    {
+      "name": "futuristic city",
+      "explanation": "Cities for science fiction worlds.",
+      "entries": [
+        "habitat",
+        "dome",
+        "polis",
+        "megalopolis",
+        "cosmopolis"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special settlement tables.",
+      "entries": [
+        "{adjective}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives related to the settlement.",
+      "format": "Optionally prepended to the front of the result.",
+      "entries": [
+        "beautiful"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features related to the settlement.",
+      "format": "Optionally appended to the end of the result.",
+      "entries": [
+        "with strict border control"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+      ]
+    }
+  ]
+}
