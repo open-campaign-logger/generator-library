@@ -16,8 +16,8 @@
   "note": "",
   "to do": "Expanding special biotopes (such as water plants).",
   "see": "",
-  "date": "2018-01-21",
-  "authors": "Esko Vesala",
+  "date": "2018-04-09",
+  "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
   "categories": [
@@ -465,7 +465,7 @@
       "explanation": "Fantasy plants (with no basis in myth).",
       "entries": [
         "{myth}",
-        "{random}"
+        "{name}"
       ]
     },
     {
@@ -486,14 +486,16 @@
       ]
     },
     {
-      "**************************************************": "RANDOM CREATION"
+      "**************************************************": "NAMES"
     },
     {
-      "name": "random",
+      "name": "name",
       "explanation": "Randomized plants (names generated from components).",
       "entries": [
         "{beginning}{ending}",
-        "{descriptor}{beginning}{ending}"
+        "{descriptor}{beginning}{ending}",
+        "{beginning}{ending}{extension}",
+        "{descriptor}{beginning}{ending}{extension}"
       ]
     },
     {
@@ -550,7 +552,14 @@
       ]
     },
     {
-      "**************************************************": "SPECIAL TABLES"
+      "name": "extension",
+      "explanation": "Extensions for randomized names.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL CASES"
     },
     {
       "name": "special",
