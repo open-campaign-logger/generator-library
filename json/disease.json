@@ -1,0 +1,352 @@
+{
+  "name": "disease",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Disease and illness generation.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-04-09",
+  "authors": "ELF Vesala.",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{name}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{XXX}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{adjective} {XXX}",
+        "{XXX} {feature}",
+        "{adjective} {XXX} {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {adjective} {XXX} looks {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "XXX: {XXX}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "XXX",
+      "explanation": "The XXX types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common types.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare types.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Entries for real-world mythogical worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Entries for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{fantasy beginning} {ending}"
+      ]
+    },
+    {
+      "name": "fantasy beginning",
+      "explanation": "Fantasy-themed name components.",
+      "entries": [
+        "dragon",
+        "lycanthtropic",
+        "soul",
+        "spirit",
+        "vampiric",
+        "witch"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Entries for medieval worlds (with no magical elements).",
+      "entries": [
+        "{myth}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Entries for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Entries for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "NAMES"
+    },
+    {
+      "name": "name",
+      "explanation": "Randomized names (generated from components).",
+      "entries": [
+        "{beginning} {ending}",
+        "{descriptor} {beginning} {ending}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized plant names.",
+      "entries": [
+        "aggressive",
+        "chronic",
+        "delirious",
+        "epidemic",
+        "inflammatory",
+        "irritable",
+        "necrotizing",
+        "recurrent",
+        "temporal",
+        "toxic",
+        "undifferentiated"
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized names.",
+      "entries": [
+        "{animal}",
+        "{material}",
+        "{organ}",
+        "{symptom}",
+        "{terrain}",
+        "failing",
+        "mortal",
+        "parasitic",
+        "sleep"
+      ]
+    },
+    {
+      "name": "animal",
+      "explanation": "Animal-related disease names.",
+      "entries": [
+        "arachnid",
+        "avian",
+        "canine",
+        "feline"
+      ]
+    },
+    {
+      "name": "material",
+      "explanation": "Materials.",
+      "entries": [
+        "lead"
+      ]
+    },
+    {
+      "name": "organ",
+      "explanation": "Internal organs.",
+      "entries": [
+        "bowel",
+        "brain",
+        "heart",
+        "nervous",
+        "pelvic",
+        "respiratory",
+        "stomach",
+        "throat",
+        "vein"
+      ]
+    },
+    {
+      "name": "symptom",
+      "explanation": "Symptom-based names.",
+      "entries": [
+        "frenzied",
+        "numbing",
+        "shivering",
+        "shriveling",
+        "spotted",
+        "twitching",
+        "warping"
+      ]
+    },
+    {
+      "name": "terrain",
+      "explanation": "Topographical variations.",
+      "entries": [
+        "cave",
+        "mountain",
+        "river",
+        "swamp"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized names.",
+      "entries": [
+        "ache",
+        "affection",
+        "ailment",
+        "bane",
+        "blindness",
+        "blight",
+        "breakdown",
+        "canker",
+        "chills",
+        "cold",
+        "condition",
+        "contagion",
+        "contamination",
+        "corruption",
+        "decay",
+        "defilement",
+        "disease",
+        "disorder",
+        "fever",
+        "flu",
+        "gangrene",
+        "illness",
+        "infection",
+        "inflammation",
+        "malady",
+        "malignancy",
+        "morbidity",
+        "paralysis",
+        "pathosis",
+        "pestilence",
+        "phenomenon",
+        "plague",
+        "pneumonia",
+        "poisoning",
+        "pox",
+        "seizure",
+        "sickness",
+        "spoliation",
+        "sores",
+        "taint",
+        "tumor"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized names.",
+      "entries": [
+        "",
+        "gravis"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special XXX tables.",
+      "entries": [
+        "{adjective}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives related to the XXX.",
+      "format": "Optionally prepended to the front of the result.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features related to the XXX.",
+      "format": "Optionally appended to the end of the result.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+      ]
+    }
+  ]
+}
