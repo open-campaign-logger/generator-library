@@ -64,10 +64,7 @@
       "name": "name",
       "explanation": "Just the proper name.",
       "entries": [
-        "{age} {district}",
-        "{location} {district}",
-        "{direction} {district}",
-        "{elevation} {district}",
+        "{lib:prefix#place} {district}",
         "{elevation} {direction} {district}"
       ]
     },
