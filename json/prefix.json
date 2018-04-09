@@ -12,11 +12,11 @@
   "note": "",
   "format": "",
   "bugs": "",
-  "to do": "",
+  "to do": "Gender-specific nicknames? Person: affiliation, origin, reputation.",
   "see": "",
-  "date": "2018-04-08",
+  "date": "2018-04-09",
   "authors": "ELF Vesala.",
-  "sources": "",
+  "sources": "Wikipedia.org",
   "genre": "universal",
   "categories": [
     "name"
@@ -41,10 +41,8 @@
       "name": "result",
       "explanation": "The output format.",
       "entries": [
-        "{name}",
         "{summary}",
-        "{detail}",
-        "{description}"
+        "{detail}"
       ]
     },
     {
@@ -102,14 +100,134 @@
       "name": "common",
       "explanation": "Common types.",
       "entries": [
-        "{location}"
+        "{person}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare types.",
       "entries": [
-        "{time}"
+        "{place}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "person",
+      "explanation": "Prefixes for persons.",
+      "entries": [
+        "{appearance}",
+        "{class}",
+        "{person age}",
+        "{personality}"
+      ]
+    },
+    {
+      "name": "place",
+      "explanation": "Prefixes for places.",
+      "entries": [
+        "{location}",
+        "{place age}"
+      ]
+    },
+    {
+      "**************************************************": "APPEARANCE"
+    },
+    {
+      "name": "appearance",
+      "explanation": "Looks-based prefixes.",
+      "entries": [
+        "{build}",
+        "{hair}",
+        "Lefty"
+      ]
+    },
+    {
+      "name": "build",
+      "explanation": "Body type based prefixes.",
+      "entries": [
+        "Beanpole",
+        "Lofty",
+        "Shorty",
+        "Slim"
+      ]
+    },
+    {
+      "name": "hair",
+      "explanation": "Hairstyle-based prefixes.",
+      "entries": [
+        "Curly",
+        "Ginger",
+        "Blue",
+        "Red"
+      ]
+    },
+    {
+      "**************************************************": "CLASS"
+    },
+    {
+      "name": "class",
+      "explanation": "Social class based prefixes.",
+      "entries": [
+        "{poor}",
+        "{lower class}",
+        "{middle class}",
+        "{upper class}",
+        "{rich}"
+      ]
+    },
+    {
+      "name": "poor",
+      "explanation": "Prefixes for the occupations of the poor.",
+      "entries": [
+        "Booger",
+        "Spaz"
+      ]
+    },
+    {
+      "name": "lower class",
+      "explanation": "Prefixes for the occupations of the lower class.",
+      "entries": [
+        "Boss",
+        "Bunny",
+        "Chalky",
+        "Dusty",
+        "Jock",
+        "Mick",
+        "Paddy",
+        "Spud",
+        "Taffy",
+        "Tug"
+      ]
+    },
+    {
+      "name": "middle class",
+      "explanation": "Prefixes for the occupations of the middle class.",
+      "entries": [
+        "Dob",
+        "Hob",
+        "Mac",
+        "Nabby",
+        "Nob",
+        "Nobby"
+      ]
+    },
+    {
+      "name": "upper class",
+      "explanation": "Prefixes for the occupations of the upper class.",
+      "entries": [
+        "Chief",
+        "Doc",
+        "Fitz",
+        "Hal"
+      ]
+    },
+    {
+      "name": "rich",
+      "explanation": "Prefixes for the occupations of the rich.",
+      "entries": [
+        "Moneybags"
       ]
     },
     {
@@ -121,7 +239,8 @@
       "entries": [
         "{direction}",
         "{elevation}",
-        "{side}"
+        "{side}",
+        "{elevation} {direction}"
       ]
     },
     {
@@ -153,6 +272,17 @@
       ]
     },
     {
+      "**************************************************": "PERSONALITY"
+    },
+    {
+      "name": "personality",
+      "explanation": "Character-based prefixes.",
+      "entries": [
+        "Chatty",
+        "Sleepy"
+      ]
+    },
+    {
       "**************************************************": "TIME"
     },
     {
@@ -164,7 +294,25 @@
     },
     {
       "name": "age",
-      "explanation": "The age of the subject.",
+      "explanation": "",
+      "entries": [
+        "{person age}",
+        "{place age}"
+      ]
+    },
+    {
+      "name": "person age",
+      "explanation": "The age of a person.",
+      "entries": [
+        "Junior",
+        "Old",
+        "Senior",
+        "Young"
+      ]
+    },
+    {
+      "name": "place age",
+      "explanation": "The age of a place.",
       "entries": [
         "Old",
         "New"
@@ -228,7 +376,7 @@
       "explanation": "Adjectives related to the prefix.",
       "format": "Optionally prepended to the front of the result.",
       "entries": [
-        "XXX"
+        ""
       ]
     },
     {
@@ -236,7 +384,7 @@
       "explanation": "Features related to the prefix.",
       "format": "Optionally appended to the end of the result.",
       "entries": [
-        "XXX"
+        ""
       ]
     },
     {
