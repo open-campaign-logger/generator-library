@@ -23,6 +23,7 @@ For documentation on other Campaign Logger topics, please refer to the Campaign 
 		- [`name`](#name)
 		- [`resultPattern`](#resultpattern)
 		- [`tables`](#tables)
+		- [Using your custom generators](#using-your-custom-generators)
 		- [That's It!](#thats-it)
 	- [Using Your Custom Generators](#using-your-custom-generators)
 - [Advanced Topics](#advanced-topics)
@@ -34,10 +35,22 @@ For documentation on other Campaign Logger topics, please refer to the Campaign 
 		- [External Subtable Calls](#external-subtable-calls)
 	- [Weighing Values](#weighing-values)
 	- [Variables](#variables)
+		- [Local Variables](#local-variables)
+			- [Setting Variables for a Single Entry](#setting-variables-for-a-single-entry)
+			- [Setting Variables for a Table](#setting-variables-for-a-table)
+		- [Global Variables](#global-variables)
+	- [Pattern Matching and Replacing](#pattern-matching-and-replacing)
+		- [Extending variable content](#extending-variable-content)
+	- [Non-Repeating Results](#non-repeating-results)
 	- [Random Number Generation](#random-number-generation)
 	- [Formatting the output](#formatting-the-output)
+		- [Emphasis](#emphasis)
 		- [Linebreaks and Tabulation](#linebreaks-and-tabulation)
+		- [Headings and Subheadings](#headings-and-subheadings)
+		- [Superscipt and Subscript](#superscipt-and-subscript)
+		- [Colors](#colors)
 		- [Table Formatting](#table-formatting)
+	- [Text Transformation](#text-transformation)
 	- [Templates](#templates)
 - [Recommended Practices](#recommended-practices)
 	- [A Closer Look at Table Properties](#a-closer-look-at-table-properties)
@@ -389,9 +402,26 @@ Note that only one modifier (such as the `+10` in the above example) is supporte
 
 ## Formatting the output
 
+### Emphasis
+
+The following formatting commands can be used to add emphasis to output:
+
+* The `{u|underlined}` string will be displayed as _underlined_.
+
+* The `b|bolded}` string will be displayed as **bold**.
+
+* The `i|italics}` string will be displayed as *italics*.
+
+* The `s|strike-through}` string will be displayed as ~~strike-through~~.
+
+It is also possible to combine several formatting commands:
+
+		{ubis│underlined, bolded, italics and struck-through text}
+
+
 ### Linebreaks and Tabulation
 
-It's possible to add the following formatting controls to table output:
+It's possible to control horizontal and vertical spacing with the following control characters:
 
 * **`\r`** - return
 * **`\n`** - newline
@@ -400,6 +430,45 @@ It's possible to add the following formatting controls to table output:
 To add an indented footnote on the next line after an oracle's statement, you could use a `resultPattern` like this:
 
     "resultPattern": "{oracle statement} \r\n\t 1) This may not come true.",
+
+
+### Headings and Subheadings
+
+Start a line with two equal signs `==` and a space, write your text, and end the line with a space and two equal signs. Now you have a first level headline. Use three equal signs for level two, four for level three, etc. The lowest subheading level is 6, marked with 7 equal signs.
+
+		== Level 1 Headline ==
+
+		=== Level 2 Headline ===
+
+		==== Level 3 Headline ====
+
+		===== Level 4 Headline =====
+
+		====== Level 5 Headline ======
+
+		======= Level 6 Headline =======
+
+
+### Superscipt and Subscript
+
+* Superscript: The `{/|Superscript}` string is displayed  as superscript.
+
+* Subscript: The `{\|Subscript}` string is displayed as subscript.
+
+
+### Colors
+
+Text can be colored by using the hash character `#` followed by a six-digit hexadecimal RGB color value.
+
+In the RGB color value, the first 2 characters (0 - F) specify the intensity of the red color component, the following 2 the intensity of the green color component and the last 2 character the intensity of the blue color component. The lowest value for each component is `00`, and the highest value `FF`.
+
+For example the following formatting would produce bolded and bright red text:
+
+		{b#CC0000│bold red text}
+
+RR - the red component 0-255 in hexadecimal notation, i.e. 0 = 00, 255 = FF
+GG - the green component ...
+BB - the blue component ...
 
 
 ### Table Formatting
@@ -422,6 +491,20 @@ Note that the pairs of vertical bars (`||`) must be separated from table cell co
 		||<space>one<space>||<space>two<space>||<space>three\n||<space>a<space>||<space>b<space>||<space>c
 
 **Tip**: If you create a table with only one cell, that will produce a box around the output. Just start the output with the `|| `string. This could be used for example to highlight readout sections in an adventure generator.
+
+
+## Text Transformation
+
+* Upper case: The `{b|THIS is an example|ucase}` string is displayed as "THIS IS AN EXAMPLE".
+
+* Lower case: The `{b|THIS is an example|lcase}` string is displayed as "this is an example".
+
+* Capitalization: The `{b|THIS is an example|caps}` string is displayed as "This Is An Example".
+
+* Title case: The `{b|THIS is an example|tcase}` string is displayed as "This Is an Example".
+
+* Sentense case: The `{b|THIS is an example|scase}` string is displayed as "THIS is an example".
+
 
 ## Templates
 
