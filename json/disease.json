@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-04-09",
+  "date": "2018-04-10",
   "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -41,37 +41,38 @@
       "name": "result",
       "explanation": "The output format.",
       "entries": [
-        "{name}"
+        "{summary}",
+        "{detail}"
       ]
     },
     {
       "name": "summary",
       "explanation": "Brief output.",
       "entries": [
-        "{XXX}"
+        "{disease}"
       ]
     },
     {
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{adjective} {XXX}",
-        "{XXX} {feature}",
-        "{adjective} {XXX} {feature}"
+        "{adjective} {disease}",
+        "{disease} {feature}",
+        "{adjective} {disease} {feature}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {adjective} {name} looks {feature}."
+        "The {name} starts to show symptoms after {incubation} and is contagiuous after {latency}."
       ]
     },
     {
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "Disease: {name}"
+        "Disease: {name} \r\nIncubation: {incubation}.\r\nLatency: {latency}."
       ]
     },
     {
@@ -92,18 +93,53 @@
       "name": "common",
       "explanation": "Common types.",
       "entries": [
-        "XXX"
+        "{acute}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare types.",
       "entries": [
-        "XXX"
+        "{chronic}"
+      ]
+    },
+    {
+      "name": "acute",
+      "explanation": "Short-lived disease types.",
+      "entries": [
+        "typically lasts about {1d6+2} days."
+      ]
+    },
+    {
+      "name": "chronic",
+      "explanation": "Long-time disease types.",
+      "entries": [
+        "typically lasts about {2d6} months."
       ]
     },
     {
       "**************************************************": "DETAILS"
+    },
+    {
+      "name": "incubation",
+      "explanation": "The time between the infection and symptoms.",
+      "entries": [
+        "{dice:1d6+1} hours",
+        "{dice:2d10} hours",
+        "{dice:1d3+1} days",
+        "{dice:1d6+1} days",
+        "{dice:2d6} days"
+      ]
+    },
+    {
+      "name": "latency",
+      "explanation": "The time between the infection and spreading.",
+      "entries": [
+        "{dice:2d10} hours",
+        "{dice:1d3+1} days",
+        "{dice:1d6+1} days",
+        "{dice:2d6} days"
+      ]
     },
     {
       "**************************************************": "TERMS"
