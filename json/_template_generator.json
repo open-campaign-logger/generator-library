@@ -72,7 +72,7 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "XXX: {XXX}"
+        "Name: {name}"
       ]
     },
     {
@@ -80,7 +80,7 @@
     },
     {
       "name": "XXX",
-      "explanation": "The XXX types by rarity.",
+      "explanation": "Types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -104,85 +104,245 @@
       ]
     },
     {
-      "**************************************************": "WORLD-SPECIFIC"
+      "**************************************************": "DETAIL"
     },
     {
-      "name": "myth",
-      "explanation": "Entries for real-world mythogical worlds.",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "fantasy",
-      "explanation": "Entries for fantasy worlds (with no basis in myth).",
-      "entries": [
-        "{myth}",
-        "XXX"
-      ]
-    },
-    {
-      "name": "medieval",
-      "explanation": "Entries for medieval worlds (with no magical elements).",
-      "entries": [
-        "{myth}",
-        "XXX"
-      ]
-    },
-    {
-      "name": "modern",
-      "explanation": "Entries for modern worlds.",
-      "entries": [
-        "{common}",
-        "XXX"
-      ]
-    },
-    {
-      "name": "futuristic",
-      "explanation": "Entries for science fiction worlds.",
-      "entries": [
-        "{modern}",
-        "XXX"
-      ]
-    },
-    {
-      "**************************************************": "NAMES"
+      "**************************************************": "TERMS"
     },
     {
       "name": "name",
-      "explanation": "Randomized names (generated from components).",
+      "explanation": "Randomized terms (generated from components).",
       "entries": [
         "{beginning}{ending}",
-        "{descriptor}{beginning}{ending}",
-        "{beginning}{ending}{extension}",
-        "{descriptor}{beginning}{ending}{extension}"
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
       ]
     },
     {
       "name": "descriptor",
-      "explanation": "Descriptors for randomized plant names.",
+      "explanation": "Descriptors for randomized terms.",
       "entries": [
         ""
       ]
     },
     {
       "name": "beginning",
-      "explanation": "Beginnings for randomized names.",
+      "explanation": "Beginnings for randomized terms.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "ending",
-      "explanation": "Endings for randomized names.",
+      "explanation": "Endings for randomized terms.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "extension",
-      "explanation": "Extensions for randomized names.",
+      "explanation": "Extensions for randomized terms.",
       "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "FANTASY"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Terms for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{beginning}{fantasy ending}",
+        "{fantasy beginning}{ending}",
+        "{fantasy beginning}{fantasy ending}",
+        "{fantasy beginning}{fantasy ending} {fantasy extension}",
+        "{fantasy descriptor} {fantasy beginning}{fantasy ending}",
+        "{fantasy descriptor} {fantasy beginning}{fantasy ending} {fantasy extension}"
+      ]
+    },
+    {
+      "name": "fantasy descriptor",
+      "explanation": "Fantasy-themed term descriptors.",
+      "entries": [
+        "{descriptor}",
+        "{medieval descriptor}",
+        ""
+      ]
+    },
+    {
+      "name": "fantasy beginning",
+      "explanation": "Fantasy-themed term beginnings.",
+      "entries": [
+        "{beginning}",
+        "{medieval beginning}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy ending",
+      "explanation": "Fantasy-themed term endings.",
+      "entries": [
+        "{ending}",
+        "{medieval ending}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy extension",
+      "explanation": "Fantasy-themed term extensions.",
+      "entries": [
+        "{extension}",
+        "{medieval extension}",
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "MEDIEVAL"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Terms for medieval worlds (with no fantasy elements).",
+      "entries": [
+        "{beginning}{medieval ending}",
+        "{medieval beginning}{ending}",
+        "{medieval beginning}{medieval ending}",
+        "{medieval beginning}{medieval ending} {medieval extension}",
+        "{medieval descriptor} {medieval beginning}{medieval ending}",
+        "{medieval descriptor} {medieval beginning}{medieval ending} {medieval extension}"
+      ]
+    },
+    {
+      "name": "medieval descriptor",
+      "explanation": "Medieval term descriptors.",
+      "entries": [
+        "{descriptor}",
+        ""
+      ]
+    },
+    {
+      "name": "medieval beginning",
+      "explanation": "Medieval term beginnings.",
+      "entries": [
+        "{beginning}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "medieval ending",
+      "explanation": "Medieval term endings.",
+      "entries": [
+        "{ending}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "medieval extension",
+      "explanation": "Medieval term extensions.",
+      "entries": [
+        "{extension}",
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "MODERN"
+    },
+    {
+      "name": "modern",
+      "explanation": "Terms for modern worlds.",
+      "entries": [
+        "{beginning}{modern ending}",
+        "{modern beginning}{ending}",
+        "{modern beginning}{modern ending}",
+        "{modern beginning}{modern ending} {modern extension}",
+        "{modern descriptor} {modern beginning}{modern ending}",
+        "{modern descriptor} {modern beginning}{modern ending} {modern extension}"
+      ]
+    },
+    {
+      "name": "modern descriptor",
+      "explanation": "Modern term descriptors.",
+      "entries": [
+        "{descriptor}",
+        ""
+      ]
+    },
+    {
+      "name": "modern beginning",
+      "explanation": "Modern term beginnings.",
+      "entries": [
+        "{beginning}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern ending",
+      "explanation": "Modern term endings.",
+      "entries": [
+        "{ending}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern extension",
+      "explanation": "Modern term extensions.",
+      "entries": [
+        "{extension}",
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "FUTURISTIC"
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Terms for science fiction worlds.",
+      "entries": [
+        "{modern beginning}{futuristic ending}",
+        "{futuristic beginning}{modern ending}",
+        "{futuristic beginning}{futuristic ending}",
+        "{futuristic beginning}{futuristic ending} {futuristic extension}",
+        "{futuristic descriptor} {futuristic beginning}{futuristic ending}",
+        "{futuristic descriptor} {futuristic beginning}{futuristic ending} {futuristic extension}"
+      ]
+    },
+    {
+      "name": "futuristic descriptor",
+      "explanation": "Futuristic term descriptors.",
+      "entries": [
+        "{descriptor}",
+        "{modern descriptor}",
+        ""
+      ]
+    },
+    {
+      "name": "futuristic beginning",
+      "explanation": "Futuristic term beginnings.",
+      "entries": [
+        "{beginning}",
+        "{modern beginning}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic ending",
+      "explanation": "Futuristic term endings.",
+      "entries": [
+        "{ending}",
+        "{modern ending}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic extension",
+      "explanation": "Futuristic term extensions.",
+      "entries": [
+        "{extension}",
+        "{modern extension}",
         ""
       ]
     },
@@ -191,7 +351,7 @@
     },
     {
       "name": "special",
-      "explanation": "Special XXX tables.",
+      "explanation": "Special tables.",
       "entries": [
         "{adjective}",
         "{feature}"
@@ -199,16 +359,14 @@
     },
     {
       "name": "adjective",
-      "explanation": "Adjectives related to the XXX.",
-      "format": "Optionally prepended to the front of the result.",
+      "explanation": "Adjectives prepended to the front of the result.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "feature",
-      "explanation": "Features related to the XXX.",
-      "format": "Optionally appended to the end of the result.",
+      "explanation": "Features appended to the end of the result.",
       "entries": [
         "XXX"
       ]
@@ -220,7 +378,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Name: {name}. Fantasy: {fantasy}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
       ]
     }
   ]

@@ -57,7 +57,7 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "XXX: {XXX}"
+        "Name: {name}"
       ]
     },
     {
@@ -65,7 +65,7 @@
     },
     {
       "name": "XXX",
-      "explanation": "XXX",
+      "explanation": "Types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -76,55 +76,58 @@
     },
     {
       "name": "common",
-      "explanation": "Common XXX.",
+      "explanation": "Common types.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare XXX.",
+      "explanation": "Rare types.",
       "entries": [
         "XXX"
       ]
     },
     {
-      "**************************************************": "NAMES"
+      "**************************************************": "DETAILS"
+    },
+    {
+      "**************************************************": "TERMS"
     },
     {
       "name": "name",
-      "explanation": "Randomized names (generated from components).",
+      "explanation": "Randomized terms (generated from components).",
       "entries": [
         "{beginning}{ending}",
-        "{descriptor}{beginning}{ending}",
-        "{beginning}{ending}{extension}",
-        "{descriptor}{beginning}{ending}{extension}"
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
       ]
     },
     {
       "name": "descriptor",
-      "explanation": "Descriptors for randomized plant names.",
+      "explanation": "Descriptors for randomized terms.",
       "entries": [
         ""
       ]
     },
     {
       "name": "beginning",
-      "explanation": "Beginnings for randomized names.",
+      "explanation": "Beginnings for randomized terms.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "ending",
-      "explanation": "Endings for randomized names.",
+      "explanation": "Endings for randomized terms.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "extension",
-      "explanation": "Extensions for randomized names.",
+      "explanation": "Extensions for randomized terms.",
       "entries": [
         ""
       ]
@@ -134,7 +137,7 @@
     },
     {
       "name": "special",
-      "explanation": "Special XXX tables.",
+      "explanation": "Special tables.",
       "entries": [
         "{adjective}",
         "{feature}"
@@ -142,16 +145,14 @@
     },
     {
       "name": "adjective",
-      "explanation": "Adjectives related to the XXX.",
-      "format": "Optionally prepended to the front of the result.",
+      "explanation": "Adjectives prepended to the front of the result.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "feature",
-      "explanation": "Features related to the XXX.",
-      "format": "Optionally appended to the end of the result.",
+      "explanation": "Features appended to the end of the result.",
       "entries": [
         "XXX"
       ]
