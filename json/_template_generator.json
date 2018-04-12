@@ -65,7 +65,9 @@
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {adjective} {XXX} looks {feature}."
+        "The {XXX} {lib:synonym#looks} {adjective}.",
+        "The {XXX} {lib:synonym#looks} {feature}.",
+        "The {adjective} {XXX} {lib:synonym#looks} {feature}."
       ]
     },
     {
@@ -104,7 +106,7 @@
       ]
     },
     {
-      "**************************************************": "DETAIL"
+      "**************************************************": "DETAILS"
     },
     {
       "**************************************************": "TERMS"

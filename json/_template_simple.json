@@ -50,7 +50,9 @@
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "{adjective} {XXX} {feature}"
+        "The {XXX} appears to be {adjective}.",
+        "The {XXX} appears to be {feature}.",
+        "The {adjective} {XXX} appears to be {feature}."
       ]
     },
     {
