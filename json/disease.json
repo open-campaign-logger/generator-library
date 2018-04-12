@@ -14,9 +14,9 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-04-10",
+  "date": "2018-04-12",
   "authors": "ELF Vesala.",
-  "sources": "Wikipedia.org",
+  "sources": "MedicineNet.com, Wikipedia.org",
   "genre": "universal",
   "categories": [
     "world"
@@ -65,14 +65,14 @@
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {name} starts to show symptoms after {incubation} and is contagiuous after {latency}."
+        "{b|{name}|scase} spreads via {vector} and causes {symptom}. It starts to show symptoms after {incubation} and {contagion}. It typically lasts {duration}."
       ]
     },
     {
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "Disease: {name} \r\nIncubation: {incubation}.\r\nLatency: {latency}."
+        "=== {name} ===\r\n{b|Incubation}: {incubation}.\r\n{b|Latency}: {latency}."
       ]
     },
     {
@@ -93,32 +93,76 @@
       "name": "common",
       "explanation": "Common types.",
       "entries": [
-        "{acute}"
+        "{mild}",
+        "{medium}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare types.",
       "entries": [
-        "{chronic}"
+        "{severe}"
       ]
     },
     {
-      "name": "acute",
-      "explanation": "Short-lived disease types.",
+      "name": "mild",
+      "explanation": "Non-serious symptoms.",
       "entries": [
-        "typically lasts about {1d6+2} days."
+        "{fever}"
       ]
     },
     {
-      "name": "chronic",
-      "explanation": "Long-time disease types.",
+      "name": "medium",
+      "explanation": "Serious symptoms.",
       "entries": [
-        "typically lasts about {2d6} months."
+        "{pain}"
+      ]
+    },
+    {
+      "name": "severe",
+      "explanation": "Very  symptoms.",
+      "entries": [
+        "convulsions"
+      ]
+    },
+    {
+      "**************************************************": "SYMPTOMS"
+    },
+    {
+      "name": "symptom",
+      "explanation": "The visible signs of the disease.",
+      "entries": [
+        "{fever}",
+        "{pain}"
+      ]
+    },
+    {
+      "name": "fever",
+      "explanation": "High temperature.",
+      "entries": [
+        "mild fever",
+        "fever",
+        "high fever",
+        "extreme fever"
+      ]
+    },
+    {
+      "name": "pain",
+      "explanation": "Ache and soreness.",
+      "entries": [
+        "pain in {lib:bodypart#summary}"
       ]
     },
     {
       "**************************************************": "DETAILS"
+    },
+    {
+      "name": "contagion",
+      "explanation": "How the disease spreads?",
+      "entries": [
+        "is not contagious",
+        "is contagiuous after {latency}"
+      ]
     },
     {
       "name": "incubation",
@@ -139,6 +183,51 @@
         "{dice:1d3+1} days",
         "{dice:1d6+1} days",
         "{dice:2d6} days"
+      ]
+    },
+    {
+      "name": "vector",
+      "explanation": "Delivery methods.",
+      "entries": [
+        "an unknown vector",
+        "spoiled food",
+        "skin contact"
+      ]
+    },
+    {
+      "**************************************************": "DURATION"
+    },
+    {
+      "name": "duration",
+      "explanation": "How long the disease lasts?",
+      "entries": [
+        "{acute}",
+        "{chronic}",
+        "{terminal}"
+      ]
+    },
+    {
+      "name": "acute",
+      "explanation": "Short-lived disease types.",
+      "entries": [
+        "{dice:1d6+2} days",
+        "{dice:1d3+1} weeks"
+      ]
+    },
+    {
+      "name": "chronic",
+      "explanation": "Long-time disease types.",
+      "entries": [
+        "{dice:2d6} months",
+        "up to {dice:2d6} years"
+      ]
+    },
+    {
+      "name": "terminal",
+      "explanation": "Deadly diseases.",
+      "entries": [
+        "until death",
+        "until a painful death"
       ]
     },
     {
@@ -513,14 +602,14 @@
       "name": "adjective",
       "explanation": "Adjectives prepended to the front of the result.",
       "entries": [
-        "XXX"
+        ""
       ]
     },
     {
       "name": "feature",
       "explanation": "Features appended to the end of the result.",
       "entries": [
-        "XXX"
+        ""
       ]
     },
     {
