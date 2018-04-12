@@ -8,10 +8,10 @@
   "structure": "",
   "note": "Intended usage: lib:synonym#word. Please retain the alphabetical order of the subtables!",
   "bugs": "",
-  "to do": "Expansion.",
+  "to do": "",
   "see": "",
-  "date": "2018-02-22",
-  "authors": "Esko Vesala.",
+  "date": "2018-04-12",
+  "authors": "ELF Vesala.",
   "sources": "Thesaurus.com, TvTropes.org, Wikipedia.org",
   "genre": "universal",
   "categories": [
@@ -398,6 +398,23 @@
         "obliterate",
         "slaughter",
         "slay"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Synonyms for looking like something.",
+      "entries": [
+        "appears",
+        "appears to be",
+        "conveys the impression of being",
+        "gives the feeling of being",
+        "has the appearance of being",
+        "looks",
+        "looks as if it was",
+        "looks like",
+        "seems",
+        "seems to be",
+        "strikes you as"
       ]
     },
     {
