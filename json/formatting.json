@@ -9,6 +9,20 @@
     "endheading": "",
     "startbold": "",
     "endbold": "",
+    "startitalic": "",
+    "enditalic": "",
+    "startlink": "",
+    "endlink": "",
+    "startstrikethrough": "",
+    "endstrikethrough": "",
+    "startsubscript": "",
+    "endsubscript": "",
+    "startsuperscript": "",
+    "endsuperscript": "",
+    "starttablecell": "",
+    "endtablecell": "",
+    "startunderlined": "",
+    "endunderlined": "",
     "para": "",
     "st": "",
     "et": "",
@@ -42,8 +56,8 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-02-25",
-  "authors": "Esko Vesala.",
+  "date": "2018-04-13",
+  "authors": "ELF Vesala.",
   "sources": "",
   "genre": "meta",
   "categories": [
@@ -451,7 +465,7 @@
       "name": "test",
       "explanation": "Testing tool for dumping the set global variables.",
       "entries": [
-        "Long tags: {global:format}. Emphasis: {global:startbold}bold{global:endbold}, {global:startitalic}italic{global:enditalic}, {global:startstrikethrough}strikethrough{global:endstrikethrough}, {global:startsubscript}subscript{global:endsubscript}, {global:startsuperscript}superscript{global:endsuperscript}, {global:startunderlined}underlined{global:endunderlined}. Linking: {global:startlink}https://RandomCreation.net/{global:endlink}. \r\n\r\nShort tags: {global:format}. Emphasis: {global:sb}bold{global:eb}, {global:si}italic{global:ei}, {global:ss}strikethrough{global:es}, {global:ssub}subscript{global:esub}, {global:ssup}superscript{global:esup}, {global:su}underlined{global:eu}. Linking: {global:sl}https://RandomCreation.net/{global:el}."
+        "{init}Long tags: {global:format}. Emphasis: {global:startbold}bold{global:endbold}, {global:startitalic}italic{global:enditalic}, {global:startstrikethrough}strikethrough{global:endstrikethrough}, {global:startsubscript}subscript{global:endsubscript}, {global:startsuperscript}superscript{global:endsuperscript}, {global:startunderlined}underlined{global:endunderlined}. Linking: {global:startlink}https://RandomCreation.net/{global:endlink}. \r\n\r\nShort tags: {global:format}. Emphasis: {global:sb}bold{global:eb}, {global:si}italic{global:ei}, {global:ss}strikethrough{global:es}, {global:ssub}subscript{global:esub}, {global:ssup}superscript{global:esup}, {global:su}underlined{global:eu}. Linking: {global:sl}https://RandomCreation.net/{global:el}."
       ]
     },
     {
