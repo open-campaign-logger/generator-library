@@ -96,7 +96,7 @@
             "endbold": "}",
             "startitalic": "{i|",
             "enditalic": "}",
-            "startlink": "{\"|",
+            "startlink": "{\"",
             "endlink": "\"|}",
             "startstrikethrough": "{s|",
             "endstrikethrough": "}",
