@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-04-12",
+  "date": "2018-04-14",
   "authors": "ELF Vesala.",
   "sources": "Thesaurus.com, TvTropes.org, Wikipedia.org",
   "genre": "universal",
@@ -44,6 +44,16 @@
         "crusader",
         "hero",
         "traveler"
+      ]
+    },
+    {
+      "name": "animal",
+      "explanation": "Synonyms for a beast.",
+      "entries": [
+        "animal",
+        "beast",
+        "creature",
+        "critter"
       ]
     },
     {
@@ -403,18 +413,12 @@
     {
       "name": "looks",
       "explanation": "Synonyms for looking like something.",
+      "format": "-- well kept.",
       "entries": [
         "appears",
-        "appears to be",
-        "conveys the impression of being",
-        "gives the feeling of being",
-        "has the appearance of being",
+        "feels",
         "looks",
-        "looks as if it was",
-        "looks like",
-        "seems",
-        "seems to be",
-        "strikes you as"
+        "seems"
       ]
     },
     {
