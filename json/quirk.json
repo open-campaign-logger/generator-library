@@ -8,7 +8,7 @@
   "bugs": "",
   "to do": "",
   "see": "edge, flaw, strategy",
-  "date": "2018-03-10",
+  "date": "2018-04-14",
   "authors": "Ron Calbick (as extracted from his goblin-names.json generator), ELF Vesala.",
   "sources": "Ron Calbick: 'Goblin Generator'.",
   "genre": "universal",
@@ -30,7 +30,7 @@
     },
     {
       "name": "result",
-      "explanation": "Verbosity of the resultPattern output.",
+      "explanation": "Verbosity of the result.",
       "entries": [
         "{summary}",
         "{detail}"
@@ -38,17 +38,20 @@
     },
     {
       "name": "summary",
-      "explanation": "Brief resultPattern output.",
+      "explanation": "Brief result.",
       "entries": [
         "{quirk}"
       ]
     },
     {
       "name": "detail",
-      "explanation": "Detailed resultPattern output variations.",
+      "explanation": "Detailed result.",
       "entries": [
         "{quirk}"
       ]
+    },
+    {
+      "**************************************************": "TYPES"
     },
     {
       "name": "quirk",
@@ -65,18 +68,19 @@
       "name": "common",
       "explanation": "Common quirk types.",
       "entries": [
-        "{superstitious}",
-        "{knowledge}",
-        "{physical}",
-        "{senses}",
         "{appearance}",
-        "{movement}",
-        "{hygiene}",
         "{behavior}",
-        "{manners}",
-        "{speech}",
         "{clothing}",
-        "{possession}"
+        "{humor}",
+        "{hygiene}",
+        "{knowledge}",
+        "{manners}",
+        "{movement}",
+        "{physical}",
+        "{possession}",
+        "{senses}",
+        "{speech}",
+        "{superstitious}"
       ]
     },
     {
@@ -90,11 +94,7 @@
       ]
     },
     {
-      "name": "bestial",
-      "explanation": "Beast-like quirks.",
-      "entries": [
-        "has very large feet with long clawed toes that are often used in battle"
-      ]
+      "**************************************************": "DETAILS"
     },
     {
       "name": "animalistic",
@@ -103,53 +103,6 @@
         "likes to eat just about anything, including dirt, leaves, wood, paper, and just about anything else that is even remotely edible",
         "often marks territory as an animal would, urinating at various key locations, even indoors",
         "has a tendency to bury things, from sticks and rocks to valuables, and rarely remembers where they were buried afterwards"
-      ]
-    },
-    {
-      "name": "retarded",
-      "explanation": "Low-intelligence quirks.",
-      "entries": [
-        "breaks into an absurd dance after any accomplishment, whether the task was important or not",
-        "jumps up and down wildly at anything humorous and has a laugh that sounds very much like a braying donkey"
-      ]
-    },
-    {
-      "name": "primitive",
-      "explanation": "Primitive quirks.",
-      "entries": [
-        "has a great number of body piercings of decoratively carved pieces of bone",
-        "is usually coated with a thick, dried layer of mud"
-      ]
-    },
-    {
-      "name": "superstitious",
-      "explanation": "Superstition-related quirks.",
-      "entries": [
-        "always throws a handful of small bones and reads them before making any important decisions",
-        "believes the moon grants special powers and loves sharing that notion with others"
-      ]
-    },
-    {
-      "name": "knowledge",
-      "entries": [
-        "has an unusual knowledge of uses for nearly any plant but tends to eat any of them that aren't harmful"
-      ]
-    },
-    {
-      "name": "physical",
-      "explanation": "Body-related quirks.",
-      "entries": [
-        "is rarely seen not eating, or at least in possession of, various foodstuffs",
-        "has eyes of two different colors and when speaking to others moves up close and opens them wide so they are easily noticed"
-      ]
-    },
-    {
-      "name": "senses",
-      "explanation": "Sensing-related quirks.",
-      "entries": [
-        "has an unusually large nose that is particularly keen, often used for tracking by scent",
-        "is missing an ear, claiming it simply fell off and was never found",
-        "has an unusually large nose that is particularly keen"
       ]
     },
     {
@@ -163,21 +116,6 @@
       ]
     },
     {
-      "name": "movement",
-      "explanation": "Movement-related quirks.",
-      "entries": [
-        "is very bow-legged and moves about in a very awkward fashion as if actually mounted",
-        "can't stand still and is constantly bouncing from one foot to the other, pacing, or fidgeting"
-      ]
-    },
-    {
-      "name": "hygiene",
-      "explanation": "Sanitary-related quirks.",
-      "entries": [
-        "smells especially noxious, often leaving a lingering odor behind"
-      ]
-    },
-    {
       "name": "behavior",
       "explanation": "behaviour-related quirks.",
       "entries": [
@@ -186,21 +124,10 @@
       ]
     },
     {
-      "name": "manners",
-      "explanation": "Behavior-related quirks.",
+      "name": "bestial",
+      "explanation": "Beast-like quirks.",
       "entries": [
-        "is prone to frequent loud, odorous belching that often makes others sick to their stomachs",
-        "is prone to nose-picking when deep in thought or anxious about something",
-        "drools incessantly and has a tendency to spit on others when speaking",
-        "plays compulsively with their hair"
-      ]
-    },
-    {
-      "name": "speech",
-      "explanation": "Talking-related quirks.",
-      "entries": [
-        "has a penchant for dragons, but can't pronounce the word properly, calling them 'dagorns' instead",
-        "is incapable of speaking softly and often blurts things out at the most inopportune times"
+        "has very large feet with long clawed toes that are often used in battle"
       ]
     },
     {
@@ -214,12 +141,103 @@
       ]
     },
     {
+      "name": "humor",
+      "explanation": "Sense of humour.",
+      "entries": [
+        "laughs loudly at their own jokes",
+        "does not laugh at jokes"
+      ]
+    },
+    {
+      "name": "hygiene",
+      "explanation": "Sanitary-related quirks.",
+      "entries": [
+        "smells especially noxious, often leaving a lingering odor behind",
+        "picks their nose and then inspects findings",
+        "picks their nose and eats the findings",
+        "digs deep into their ear with a bare finger"
+      ]
+    },
+    {
+      "name": "knowledge",
+      "entries": [
+        "has an unusual knowledge of uses for nearly any plant but tends to eat any of them that aren't harmful"
+      ]
+    },
+    {
+      "name": "manners",
+      "explanation": "Behavior-related quirks.",
+      "entries": [
+        "is prone to frequent loud, odorous belching that often makes others sick to their stomachs",
+        "is prone to nose-picking when deep in thought or anxious about something",
+        "drools incessantly and has a tendency to spit on others when speaking",
+        "plays compulsively with their hair"
+      ]
+    },
+    {
+      "name": "movement",
+      "explanation": "Movement-related quirks.",
+      "entries": [
+        "is very bow-legged and moves about in a very awkward fashion as if actually mounted",
+        "can't stand still and is constantly bouncing from one foot to the other, pacing, or fidgeting"
+      ]
+    },
+    {
+      "name": "physical",
+      "explanation": "Body-related quirks.",
+      "entries": [
+        "is rarely seen not eating, or at least in possession of, various foodstuffs",
+        "has eyes of two different colors and when speaking to others moves up close and opens them wide so they are easily noticed"
+      ]
+    },
+    {
       "name": "possession",
       "explanation": "Possession-related quirks.",
       "entries": [
         "drags a very old, tattered, and barely recognizable scrap of blanket around everywhere",
         "carries around a broken sword and longs to recover the other piece, after which it will be reforged and grant great power to its owner",
         "is accompanied by a mongrel dog that looks fierce, growling and barking, but flees at the first sign of combat"
+      ]
+    },
+    {
+      "name": "primitive",
+      "explanation": "Primitive quirks.",
+      "entries": [
+        "has a great number of body piercings of decoratively carved pieces of bone",
+        "is usually coated with a thick, dried layer of mud"
+      ]
+    },
+    {
+      "name": "retarded",
+      "explanation": "Low-intelligence quirks.",
+      "entries": [
+        "breaks into an absurd dance after any accomplishment, whether the task was important or not",
+        "jumps up and down wildly at anything humorous and has a laugh that sounds very much like a braying donkey"
+      ]
+    },
+    {
+      "name": "senses",
+      "explanation": "Sensing-related quirks.",
+      "entries": [
+        "has an unusually large nose that is particularly keen, often used for tracking by scent",
+        "is missing an ear, claiming it simply fell off and was never found",
+        "has an unusually large nose that is particularly keen"
+      ]
+    },
+    {
+      "name": "speech",
+      "explanation": "Talking-related quirks.",
+      "entries": [
+        "has a penchant for dragons, but can't pronounce the word properly, calling them 'dagorns' instead",
+        "is incapable of speaking softly and often blurts things out at the most inopportune times"
+      ]
+    },
+    {
+      "name": "superstitious",
+      "explanation": "Superstition-related quirks.",
+      "entries": [
+        "always throws a handful of small bones and reads them before making any important decisions",
+        "believes the moon grants special powers and loves sharing that notion with others"
       ]
     },
     {
@@ -286,6 +304,9 @@
         "{clothing}",
         "{possession}"
       ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
     },
     {
       "name": "test",
