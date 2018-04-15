@@ -1,6 +1,6 @@
 {
-  "name": "Dungeon adventure",
-  "resultPattern": "{lib:formatting#CL}{init}{result}",
+  "name": "Dungeon_adventure",
+  "resultPattern": "{lib:formatting#HTML}{init}{result}",
   "globals": {
     "duration": "30",
     "difficulty": "master",
@@ -258,7 +258,7 @@
       "name": "adventure title",
       "explanation": "The adventure name as a subheading.",
       "entries": [
-        "{global:starttitle}{adventure name}{global:endtitle}"
+        "{g:starttitle}{adventure name}{g:endtitle}"
       ]
     },
     {
