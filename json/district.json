@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "Separate proper names from district types!",
   "see": "business, settlement, shop",
-  "date": "2018-04-07",
+  "date": "2018-04-15",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -200,7 +200,11 @@
       "explanation": "Types of districts.",
       "entries": [
         "{administrative}",
+        "{artisan}",
+        "{border}",
+        "{church}",
         "{commercial}",
+        "{entertainment}",
         "{financial}",
         "{harbor}",
         "{midtown}",
@@ -219,7 +223,82 @@
         "district",
         "court",
         "lane",
-        "forum"
+        "forum",
+        "embassy",
+        "library",
+        "domain",
+        "dominion",
+        "demesne",
+        "presidium"
+      ]
+    },
+    {
+      "name": "artisan",
+      "explanation": "Craftsmen's and artificers' district.",
+      "entries": [
+        "forge",
+        "smithy",
+        "crafts",
+        "stalls",
+        "tannery",
+        "shed"
+      ]
+    },
+    {
+      "name": "border",
+      "explanation": "The edges of the city.",
+      "entries": [
+        "rampart",
+        "moat",
+        "ditch",
+        "wall",
+        "fence",
+        "hedge",
+        "gate",
+        "gateway",
+        "lip",
+        "hem",
+        "skirt",
+        "rim",
+        "brim",
+        "edge",
+        "brink",
+        "verge",
+        "fringe",
+        "frontier",
+        "border",
+        "boundary",
+        "terminus",
+        "ring"
+      ]
+    },
+    {
+      "name": "church",
+      "explanation": "Church district.",
+      "entries": [
+        "cathedral",
+        "church",
+        "shrine",
+        "temple",
+        "tabernacle",
+        "altar",
+        "chancel",
+        "sanctum",
+        "sanctorium",
+        "reliquary",
+        "feretory",
+        "arca",
+        "pantheon",
+        "cloister",
+        "convent",
+        "abbey",
+        "friary",
+        "priory",
+        "priorate",
+        "hermitage",
+        "monastery",
+        "community",
+        "chapterhouse"
       ]
     },
     {
@@ -229,13 +308,41 @@
         "market",
         "bazaar",
         "exchange",
-        "street"
+        "street",
+        "trade",
+        "monger",
+        "vend",
+        "barter"
+      ]
+    },
+    {
+      "name": "entertainment",
+      "explanation": "Show and entertainment areas.",
+      "entries": [
+        "circus",
+        "carnival",
+        "fair",
+        "gala",
+        "fete",
+        "kermis",
+        "pageant",
+        "banquet",
+        "feast",
+        "show",
+        "gilly",
+        "regale",
+        "delight"
       ]
     },
     {
       "name": "financial",
       "explanation": "Banking and large companies.",
       "entries": [
+        "treasury",
+        "hoard",
+        "vault",
+        "coffer",
+        "safe",
         "crescent",
         "plaza",
         "arc"
@@ -253,21 +360,40 @@
         "pier",
         "wharf",
         "jetty",
+        "quay",
+        "berth",
+        "dam",
         "landing",
         "point",
+        "isle",
+        "cay",
         "bay",
-        "cove"
+        "cove",
+        "enclave",
+        "front",
+        "shingle",
+        "strand",
+        "waterfront",
+        "bank",
+        "shore",
+        "beach",
+        "coast",
+        "cliff"
       ]
     },
     {
       "name": "midtown",
       "explanation": "Central area.",
       "entries": [
+        "city",
         "avenue",
         "boulevard",
+        "gallery",
         "square",
         "cross",
         "center",
+        "central",
+        "main",
         "circle"
       ]
     },
@@ -282,6 +408,7 @@
         "green",
         "wood",
         "woods",
+        "menagerie",
         "pathway",
         "range"
       ]
@@ -294,6 +421,13 @@
         "quarter",
         "ward",
         "town",
+        "abode",
+        "residence",
+        "lodge",
+        "shelter",
+        "berth",
+        "refuge",
+        "cot",
         "way",
         "route"
       ]
@@ -312,6 +446,23 @@
         "lair",
         "den",
         "pit",
+        "pits",
+        "fen",
+        "bog",
+        "sump",
+        "quag",
+        "mire",
+        "moss",
+        "marsh",
+        "swale",
+        "slough",
+        "gutter",
+        "trench",
+        "trenches",
+        "sewer",
+        "cesspit",
+        "cesspool",
+        "bottoms",
         "hollow",
         "burrow",
         "alley"
@@ -334,13 +485,17 @@
       "name": "wealthy",
       "explanation": "Affluent uptown areas for the wealthy.",
       "entries": [
+        "haven",
         "sanctuary",
+        "embrace",
         "atelier",
         "cloister",
         "sanctum",
+        "resort",
         "retreat",
         "terrace",
         "heights",
+        "towers",
         "hill"
       ]
     },
@@ -351,7 +506,17 @@
         "yard",
         "stash",
         "stock",
+        "haul",
+        "bale",
+        "heft",
+        "load",
+        "freight",
         "depot",
+        "store",
+        "loft",
+        "lot",
+        "plot",
+        "tract",
         "trail"
       ]
     },
@@ -363,6 +528,13 @@
       "explanation": "Districts once rumoured to have existed.",
       "entries": [
         "XXX"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Districts for Middle Age worlds (without magic).",
+      "entries": [
+        "flea {slum}"
       ]
     },
     {
