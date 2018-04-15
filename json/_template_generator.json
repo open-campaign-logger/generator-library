@@ -363,14 +363,15 @@
       "name": "adjective",
       "explanation": "Adjectives prepended to the front of the result.",
       "entries": [
-        "XXX"
+        ""
       ]
     },
     {
       "name": "feature",
       "explanation": "Features appended to the end of the result.",
+      "format": "It appears --",
       "entries": [
-        "XXX"
+        ""
       ]
     },
     {
@@ -380,7 +381,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Name: {name}. Fantasy: {fantasy}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+        "result: {result}, summary: {summary}, detail: {detail}, description: {description} Common: {common}, rare: {rare}. Name: {name}. Fantasy: {fantasy}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
       ]
     }
   ]
