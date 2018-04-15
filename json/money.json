@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-03-31",
+  "date": "2018-04-15",
   "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -96,10 +96,17 @@
       ]
     },
     {
+      "name": "coins",
+      "explanation": "Pile of coins.",
+      "entries": [
+        "{dice:1d100} {coin}s"
+      ]
+    },
+    {
       "name": "cheap coin",
       "explanation": "Cheap coinage.",
       "entries": [
-        "{cheap coin material} {cheap coin type}"
+        "{cheap coin material} {!cheap coin type}"
       ]
     },
     {
@@ -128,7 +135,7 @@
       "name": "medium coin",
       "explanation": "Medium coinage.",
       "entries": [
-        "{medium coin material} {medium coin type}"
+        "{medium coin material} {!medium coin type}"
       ]
     },
     {
@@ -153,7 +160,7 @@
       "name": "valuable coin",
       "explanation": "Valuable coinage.",
       "entries": [
-        "{valuable coin material} {valuable coin type}"
+        "{valuable coin material} {!valuable coin type}"
       ]
     },
     {
@@ -188,9 +195,9 @@
       "name": "exotic cheap coin",
       "explanation": "Exotic cheap coinage.",
       "entries": [
-        "{cheap coin material} {exotic cheap coin type}",
-        "{exotic cheap coin material} {cheap coin type}",
-        "{exotic cheap coin material} {exotic cheap coin type}"
+        "{cheap coin material} {!exotic cheap coin type}",
+        "{exotic cheap coin material} {!cheap coin type}",
+        "{exotic cheap coin material} {!exotic cheap coin type}"
       ]
     },
     {
@@ -213,9 +220,9 @@
       "name": "exotic medium coin",
       "explanation": "Exotic medium coinage.",
       "entries": [
-        "{medium coin material} {exotic medium coin type}",
-        "{exotic medium coin material} {medium coin type}",
-        "{exotic medium coin material} {exotic medium coin type}"
+        "{medium coin material} {!exotic medium coin type}",
+        "{exotic medium coin material} {!medium coin type}",
+        "{exotic medium coin material} {!exotic medium coin type}"
       ]
     },
     {
@@ -240,9 +247,9 @@
       "name": "exotic valuable coin",
       "explanation": "Exotic valuable coinage.",
       "entries": [
-        "{valuable coin material} {exotic valuable coin type}",
-        "{exotic valuable coin material} {valuable coin type}",
-        "{exotic valuable coin material} {exotic valuable coin type}"
+        "{valuable coin material} {!exotic valuable coin type}",
+        "{exotic valuable coin material} {!valuable coin type}",
+        "{exotic valuable coin material} {!exotic valuable coin type}"
       ]
     },
     {
@@ -444,6 +451,56 @@
         "simple ornaments",
         "rich details",
         "several embellishments"
+      ]
+    },
+    {
+      "**************************************************": "STASHES"
+    },
+    {
+      "name": "stash",
+      "explanation": "Stack of coins.",
+      "entries": [
+        "{cheap stash}",
+        "{medium stash}",
+        "{valuable stash}",
+        "{exotic stash}"
+      ]
+    },
+    {
+      "name": "cheap stash",
+      "explanation": "Stack of cheap coins.",
+      "entries": [
+        "{dice:1d100} {cheap coin}s",
+        "{dice:1d100} {cheap coin}s and {dice:1d100} {cheap coin}s"
+      ]
+    },
+    {
+      "name": "medium stash",
+      "explanation": "Stack of medium-value coins.",
+      "entries": [
+        "{dice:1d100} {medium coin}s",
+        "{dice:1d100} {medium coin}s and {dice:1d100} {cheap coin}s",
+        "{dice:1d100} {medium coin}s and {dice:1d100} {medium coin}s"
+      ]
+    },
+    {
+      "name": "valuable stash",
+      "explanation": "Stack of valuable coins.",
+      "entries": [
+        "{dice:1d100} {valuable coin}s",
+        "{dice:1d100} {valuable coin}s and {dice:1d100} {cheap coin}s",
+        "{dice:1d100} {valuable coin}s and {dice:1d100} {medium coin}s",
+        "{dice:1d100} {valuable coin}s and {dice:1d100} {valuable coin}s",
+        "{dice:1d100} {valuable coin}s, {dice:1d100} {medium coin}s, and {dice:1d100} {cheap coin}s",
+        "{dice:1d100} {valuable coin}s, {dice:1d100} {valuable coin}s, and {dice:1d100} {cheap coin}s"
+      ]
+    },
+    {
+      "name": "exotic stash",
+      "explanation": "Stack of exotic coins.",
+      "entries": [
+        "{dice:1d100} {exotic coin}s",
+        "{dice:1d100} {exotic coin}s and {dice:1d100} {exotic coin}s"
       ]
     },
     {
