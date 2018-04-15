@@ -497,9 +497,28 @@
       "name": "special",
       "explanation": "Special personality tables.",
       "entries": [
+        "{animal}",
         "{degree}",
         "{feature}",
         "{situation}"
+      ]
+    },
+    {
+      "name": "animal",
+      "explanation": "Personality types for pets and other animals.",
+      "entries": [
+        "sleepy",
+        "timid",
+        "shy",
+        "calm",
+        "obedient",
+        "happy",
+        "curious",
+        "playful",
+        "bold",
+        "rebellious",
+        "wild",
+        "aggressive"
       ]
     },
     {
