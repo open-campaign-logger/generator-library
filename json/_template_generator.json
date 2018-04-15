@@ -349,6 +349,17 @@
       ]
     },
     {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "XXX",
+      "explanation": "Variant expressions to avoid repetition.",
+      "format": "XXX",
+      "entries": [
+        ""
+      ]
+    },
+    {
       "**************************************************": "SPECIAL TABLES"
     },
     {
