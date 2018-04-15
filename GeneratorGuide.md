@@ -464,7 +464,7 @@ In the RGB color value, the first 2 characters (0 - F) specify the intensity of 
 
 For example the following formatting would produce bolded and bright red text:
 
-		{b#CC0000│bold red text}
+		{b#CC0000|bold red text}
 
 RR - the red component 0-255 in hexadecimal notation, i.e. 0 = 00, 255 = FF
 GG - the green component ...
