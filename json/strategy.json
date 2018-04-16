@@ -14,12 +14,13 @@
   "bugs": "",
   "to do": "",
   "see": "edge, flaw, quirk",
-  "date": "2018-03-05",
+  "date": "2018-04-16",
   "authors": "Ron Calbick (as extracted from his goblin-names.json generator), ELF Vesala.",
-  "sources": "Ron Calbick: 'Goblin Generator'.",
+  "sources": "Ron Calbick: 'Goblin Generator', Wikipedia.org",
   "genre": "universal",
   "categories": [
-    "character"
+    "character",
+    "combat"
   ],
   "tables": [
     {
@@ -71,26 +72,44 @@
       "name": "common",
       "explanation": "Common strategy types.",
       "entries": [
-        "{melee}"
+        "{combat}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare strategy types.",
       "entries": [
-        "XXX"
+        "{intrigue}"
       ]
     },
     {
-      "name": "melee",
-      "explanation": "Strategies for close-up physical conflicts.",
+      "name": "combat",
+      "explanation": "Strategies for fighting.",
       "entries": [
-        "{melee defense}",
-        "{melee offense}"
+        "{melee}",
+        "{ranged}",
+        "{war}"
+      ]
+    },
+    {
+      "name": "intrigue",
+      "explanation": "Strategies for plotting and subterfuge.",
+      "entries": [
+        "{life}",
+        "{negotiation}"
       ]
     },
     {
       "**************************************************": "LIFE"
+    },
+    {
+      "name": "life",
+      "explanation": "Strategy in life.",
+      "entries": [
+        "{negative}",
+        "{neutral}",
+        "{positive}"
+      ]
     },
     {
       "name": "negative",
@@ -121,6 +140,14 @@
       "**************************************************": "MELEE"
     },
     {
+      "name": "melee",
+      "explanation": "Strategies for close-up physical conflicts.",
+      "entries": [
+        "{melee defense}",
+        "{melee offense}"
+      ]
+    },
+    {
       "name": "melee defense",
       "explanation": "Melee offense related tactics.",
       "entries": [
@@ -133,6 +160,39 @@
       "entries": [
         "always attempts to grapple foes, usually going for the shins and ankles",
         "likes throwing unusual things at enemies during combat, such as insects, flour, sand, or anything else easily portable"
+      ]
+    },
+    {
+      "**************************************************": "NEGOTIATION"
+    },
+    {
+      "name": "negotiation",
+      "explanation": "Strategies for trading, politics, etc.",
+      "entries": [
+        "divide and conquer",
+        "eliminate the most dangerous enemy first"
+      ]
+    },
+    {
+      "**************************************************": "RANGED"
+    },
+    {
+      "name": "ranged",
+      "explanation": "Strategies for long-distance combat.",
+      "entries": [
+        "focused fire"
+      ]
+    },
+    {
+      "**************************************************": "WAR"
+    },
+    {
+      "name": "war",
+      "explanation": "Strategies for large-scale warfare.",
+      "entries": [
+        "attacks using concentrated force at rapid speed to break through defenses",
+        "attempts to cut off the enemy's supplies and communications",
+        "wears down the enemy by causing continuous losses"
       ]
     },
     {
