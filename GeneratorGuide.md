@@ -284,9 +284,9 @@ But the same effect can be achieved with a handier method (sorry!). The  *multip
 					"entries": [
 						"thumb",
 						{
-		          "m": 4,
-		          "v": "finger"
-		        },
+							"m": 4,
+							"v": "finger"
+						},
 					]
 				},
 
@@ -417,7 +417,7 @@ Let's say you have created a *treasure* generator. A `{treasure}` call could wel
 
 Luckily it is easy to avoid duplicated results like the scepter in the example above. Just add an exclamation mark to the front of the table name, and call the treasure table like this:
 
-				`{!treasure}`
+				{!treasure}
 
 This kind of a *non-repeating* call creates a temporary copy of the table, and with each call removes the selected result from the temporary table. This means that a result will not occur more than once.
 
