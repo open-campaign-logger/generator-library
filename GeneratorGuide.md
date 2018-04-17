@@ -2,7 +2,7 @@
 
 [//]: # (Authors: ELF Vesala, Peter Sotos.)
 
-[//]: # (Date: 2018-03-10.)
+[//]: # (Date: 2018-04-17.)
 
 
 # Generator Guide
@@ -264,16 +264,42 @@ Note that there are no spaces in front of after the `#` character. The subtable 
 
 ## Weighing Values
 
-If you want some table entries to be more common than others, you can specify the *multiplicity* property (`m`) to it.
+If you want some table entries to be more common than others, one way to do that is to add more entries for the more common result. For example, a generator randomizing the fingers of a hand could look like the following:
 
-This example defines an entry that appears thee times more likely than unweighed values:
+				{
+					"name": "finger",
+					"entries": [
+						"thumb",
+						"finger",
+						"finger",
+						"finger",
+						"finger"
+					]
+				},
 
-        {
-          "m": 3,
-          "v": "three times as common entry"
-        },
+But the same effect can be achieved with a handier method (sorry!). The  *multiplicity* property (`m`) defines a value specifying how many times more likely that entry will be selected, when compared to an ordinary single entry. The above finger example could be written like this:
 
-The "m" property causes this entry to appear three times as often as an ordinary entry. The "v" property contains the output produced by that entry.
+				{
+					"name": "finger",
+					"entries": [
+						"thumb",
+						{
+		          "m": 4,
+		          "v": "finger"
+		        },
+					]
+				},
+
+The `"m"` property causes this entry to appear four times as often as an ordinary entry. The `"v"` property contains the output produced by that entry.
+
+
+## Random Number Generation
+
+The `dice:` function allows you to simulate dice rolls - even for dice for which there is no physical die available. The following dice call would produce results between 13 and 31:
+
+    {dice:3d7+10}
+
+Note that only one modifier (such as the `+10` in the above example) is supported. The modifier can only be a plus (`+`) or minus (`-`) operation, not for example multiplier (~~*~~) or another die roll.
 
 
 ## Variables
@@ -381,23 +407,23 @@ Add more content into a variable:
 			{ "x": "{var:x} new text" }
 
 
+
+
 ## Non-Repeating Results
 
-{!table} selects a result from table by removing it from the unique instance of that table, i.e. {table} might produce this same result, but {!table}
-won't.
+Let's say you have created a *treasure* generator. A `{treasure}` call could well produce the following result:
 
-Technically {table} references the normal instance of the table while {!table} references the unique instance. The normal instance's entries stay as they are. The unique instance's entries get fewer and fewer until depleted.
+> a golden scepter, a crown, a golden scepter, a golden scepter
 
-Unique instances share the same variables and globals with normal instances, just entries are handled differently. Unique instances have the same scope as variables, i.e. strictly local.
+Luckily it is easy to avoid duplicated results like the scepter in the example above. Just add an exclamation mark to the front of the table name, and call the treasure table like this:
 
+				`{!treasure}`
 
-## Random Number Generation
+This kind of a *non-repeating* call creates a temporary copy of the table, and with each call removes the selected result from the temporary table. This means that a result will not occur more than once.
 
-The `dice:` function allows you to simulate dice rolls - even for dice for which there is no physical die available. The following dice call would produce results between 13 and 31:
+Technically the standard `{table}` call refers to the normal instance of the table, while a non-repeating `{!table}` call refers to a temporary copy. The normal instance's entries remain unchanged. The entries in the temporary copy get fewer and fewer until the temporary table is empty. When the temporary table is empty, non-repeating calls return only empty results.
 
-    {dice:3d7+10}
-
-Note that only one modifier (such as the `+10` in the above example) is supported. The modifier can only be a plus (`+`) or minus (`-`) operation, not for example multiplier (~~*~~) or another die roll.
+Unique table instances share the same variables and globals with the normal table instances. Unique instances have the same scope as local variables, i.e. the results remain unique only when called from the same generator file.
 
 
 ## Formatting the output
