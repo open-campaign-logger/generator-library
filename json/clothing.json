@@ -51,7 +51,7 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {clothing}"
+        "{attribute} {clothing}"
       ]
     },
     {
@@ -1784,30 +1784,30 @@
       ]
     },
     {
-      "**************************************************": "ADJECTIVES"
+      "**************************************************": "ATTRIBUTES"
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives for outfits",
+      "name": "attribute",
+      "explanation": "Attributes for outfits",
       "entries": [
-        "{poor adjective}",
-        "{lower class adjective}",
-        "{middle class adjective}",
-        "{upper class adjective}",
-        "{rich adjective}"
+        "{poor attribute}",
+        "{lower class attribute}",
+        "{middle class attribute}",
+        "{upper class attribute}",
+        "{rich attribute}"
       ]
     },
     {
-      "name": "poor adjective",
-      "explanation": "Adjectives for poor outfits",
+      "name": "poor attribute",
+      "explanation": "Attributes for poor outfits",
       "entries": [
         "dirty",
         "tattered"
       ]
     },
     {
-      "name": "lower class adjective",
-      "explanation": "Adjectives for lower class outfits",
+      "name": "lower class attribute",
+      "explanation": "Attributes for lower class outfits",
       "entries": [
         "modest",
         "cheap",
@@ -1815,8 +1815,8 @@
       ]
     },
     {
-      "name": "middle class adjective",
-      "explanation": "Adjectives middle class outfits",
+      "name": "middle class attribute",
+      "explanation": "Attributes middle class outfits",
       "entries": [
         "ordinary",
         "standard",
@@ -1824,16 +1824,16 @@
       ]
     },
     {
-      "name": "upper class adjective",
-      "explanation": "Adjectives for upper class outfits",
+      "name": "upper class attribute",
+      "explanation": "Attributes for upper class outfits",
       "entries": [
         "fashionable",
         "expensive"
       ]
     },
     {
-      "name": "rich adjective",
-      "explanation": "Adjectives for rich outfits",
+      "name": "rich attribute",
+      "explanation": "Attributes for rich outfits",
       "entries": [
         "flashy",
         "luxurious"
@@ -1846,7 +1846,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, female: {female}, male: {male}, unisex: {unisex}, nightwear: {nightwear}, swimwear: {swimwear}, infant: {infant}, child: {child}, pet: {pet}, adjective: {adjective}, special: {special}."
+        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, female: {female}, male: {male}, unisex: {unisex}, nightwear: {nightwear}, swimwear: {swimwear}, infant: {infant}, child: {child}, pet: {pet}, attribute: {attribute}, special: {special}."
       ]
     }
   ]

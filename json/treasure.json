@@ -11,9 +11,9 @@
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
   "bugs": "",
-  "to do": "Categorize treasures by type.",
+  "to do": "Categorize treasures by value and type!",
   "see": "equipment, gem, jewelry",
-  "date": "2018-04-15",
+  "date": "2018-04-16",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "fantasy",
@@ -52,11 +52,11 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {treasure}",
+        "{attribute} {treasure}",
         "{treasure} {complication}",
         "{treasure} {feature}",
-        "{adjective} {treasure} {complication}",
-        "{adjective} {treasure} {feature}"
+        "{attribute} {treasure} {complication}",
+        "{attribute} {treasure} {feature}"
       ]
     },
     {
@@ -273,26 +273,26 @@
       "name": "special",
       "explanation": "Special treasure subtables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{complication}",
         "{feature}",
         "{synonym}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives describing the treasure.",
+      "name": "attribute",
+      "explanation": "Attributes describing the treasure.",
       "entries": [
         "valuable",
         "ornamental",
         "delicate",
         "sturdy",
-        "{rare adjective}"
+        "{rare attribute}"
       ]
     },
     {
-      "name": "rare adjective",
-      "explanation": "",
+      "name": "rare attribute",
+      "explanation": "Rare attributes.",
       "entries": [
         "fabled",
         "ancient",

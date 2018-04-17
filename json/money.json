@@ -53,9 +53,9 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {money}",
+        "{attribute} {money}",
         "{money} ({feature})",
-        "{adjective} {money} ({feature})"
+        "{attribute} {money} ({feature})"
       ]
     },
     {
@@ -675,13 +675,13 @@
       "name": "special",
       "explanation": "Special money tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{feature}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives related to money.",
+      "name": "attribute",
+      "explanation": "Attributes related to money.",
       "format": "Optionally prepended to the front of the result.",
       "entries": [
         "damaged",

@@ -10,7 +10,7 @@
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "bugs": "",
-  "to do": "Add themes to categorize adjectives and other elements.",
+  "to do": "Add themes to categorize attributes and other elements.",
   "see": "5_room_dungeon, encounter, hook_line_and_sinker_adventure",
   "date": "2018-01-05",
   "authors": "Esko Vesala",
@@ -33,7 +33,7 @@
       "explanation": "Brief resultPattern output.",
       "entries": [
         "{location}",
-        "{adjective} {location}"
+        "{attribute} {location}"
       ]
     },
     {
@@ -41,7 +41,7 @@
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
         "{location}, {complication}",
-        "{adjective} {location}, {complication}"
+        "{attribute} {location}, {complication}"
       ]
     },
     {
@@ -1416,8 +1416,8 @@
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives describing the location.",
+      "name": "attribute",
+      "explanation": "Attributes describing the location.",
       "entries": [
         "dilapidated",
         "decayed",
@@ -1458,11 +1458,11 @@
         "perilous",
         "treacherous",
         "booby-trapped",
-        "{rare adjective}"
+        "{rare attribute}"
       ]
     },
     {
-      "name": "rare adjective",
+      "name": "rare attribute",
       "explanation": "A lurid descriptor for the location.",
       "entries": [
         "forgotten",

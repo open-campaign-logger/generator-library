@@ -49,9 +49,9 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{adjective} {business}",
+        "{attribute} {business}",
         "{business} {feature}",
-        "{adjective} {business} {feature}"
+        "{attribute} {business} {feature}"
       ]
     },
     {
@@ -68,7 +68,7 @@
       "name": "description",
       "explanation": "Long description.",
       "entries": [
-        "{adjective} {business} {feature}"
+        "{attribute} {business} {feature}"
       ]
     },
     {
@@ -389,13 +389,13 @@
       "name": "special",
       "explanation": "Special business tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{feature}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives related to the busines.",
+      "name": "attribute",
+      "explanation": "Attributes related to the busines.",
       "format": "Optionally prepended to the front of the result.",
       "entries": [
         "shady",

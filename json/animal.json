@@ -2,13 +2,13 @@
   "name": "animal",
   "resultPattern": "{result}",
   "variables": {
-    "actant": "animal",
-    "actants": "animals",
-    "actantgroup": "pack",
-    "actantaction": "searching for food",
-    "actantadjective": "wild",
-    "actantdescription": "The animal looks alert.",
-    "attitude": "neutral",
+    "actant": "",
+    "actants": "",
+    "actantgroup": "",
+    "actantaction": "",
+    "actantattribute": "",
+    "actantdescription": "",
+    "attitude": "",
     "footnote": ""
   },
   "explanation": "Animals from insects to mammals.",
@@ -44,9 +44,9 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {animal}",
+        "{attribute} {animal}",
         "{animal} {lib:activity#animal}",
-        "{adjective} {animal} {lib:activity#animal}"
+        "{attribute} {animal} {lib:activity#animal}"
       ]
     },
     {
@@ -527,7 +527,7 @@
       "name": "special",
       "explanation": "Special animal types.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{extinct}",
         "{pet}",
         "{domestic}",
@@ -540,8 +540,8 @@
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives for animals.",
+      "name": "attribute",
+      "explanation": "Attributes for animals.",
       "entries": [
         "young",
         "hungry",

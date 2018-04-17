@@ -41,18 +41,18 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{adjective} {XXX}",
+        "{attribute} {XXX}",
         "{XXX} {feature}",
-        "{adjective} {XXX} {feature}"
+        "{attribute} {XXX} {feature}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {XXX} appears to be {adjective}.",
+        "The {XXX} appears to be {attribute}.",
         "The {XXX} appears to be {feature}.",
-        "The {adjective} {XXX} appears to be {feature}."
+        "The {attribute} {XXX} appears to be {feature}."
       ]
     },
     {
@@ -152,13 +152,13 @@
       "name": "special",
       "explanation": "Special tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{feature}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives prepended to the front of the result.",
+      "name": "attribute",
+      "explanation": "Attributes prepended to the front of the result.",
       "entries": [
         ""
       ]

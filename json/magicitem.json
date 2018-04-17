@@ -54,9 +54,9 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {magic item} of {lib:spell_intention}",
+        "{attribute} {magic item} of {lib:spell_intention}",
         "{magic item} of {lib:spell_intention} {feature}",
-        "{adjective} {magic item} of {lib:spell_intention} {feature}"
+        "{attribute} {magic item} of {lib:spell_intention} {feature}"
       ]
     },
     {
@@ -209,13 +209,13 @@
       "name": "special",
       "explanation": "Special magic item tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{feature}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives related to the magic item.",
+      "name": "attribute",
+      "explanation": "Attributes related to the magic item.",
       "format": "Optionally prepended to the front of the result.",
       "entries": [
         "indestructible",

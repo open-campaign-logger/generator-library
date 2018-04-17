@@ -8,7 +8,7 @@
   "bugs": "",
   "to do": "",
   "see": "edge, flaw, strategy",
-  "date": "2018-04-14",
+  "date": "2018-04-17",
   "authors": "Ron Calbick (as extracted from his goblin-names.json generator), ELF Vesala.",
   "sources": "Ron Calbick: 'Goblin Generator'.",
   "genre": "universal",
@@ -87,10 +87,16 @@
       "name": "rare",
       "explanation": "Rare quirk types.",
       "entries": [
-        "{bestial}",
-        "{animalistic}",
         "{retarded}",
         "{primitive}"
+      ]
+    },
+    {
+      "name": "exceptional",
+      "explanation": "Unique quirk types not assigned randomly.",
+      "entries": [
+        "{bestial}",
+        "{animalistic}"
       ]
     },
     {
@@ -144,8 +150,11 @@
       "name": "humor",
       "explanation": "Sense of humour.",
       "entries": [
+        "has no sense on humor",
+        "does not laugh at jokes",
+        "repeats old jokes",
         "laughs loudly at their own jokes",
-        "does not laugh at jokes"
+        "makes a lot of puns without even noticing"
       ]
     },
     {

@@ -8,14 +8,14 @@
     "footnote": ""
   },
   "explanation": "Factions randomized.",
-  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "format": "",
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-02-06",
-  "authors": "Esko Vesala.",
+  "date": "2018-04-17",
+  "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
   "categories": [
@@ -35,8 +35,11 @@
       ]
     },
     {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
       "name": "result",
-      "explanation": "Verbosity of the resultPattern output.",
+      "explanation": "The output format.",
       "entries": [
         "{summary}",
         "{detail}"
@@ -44,17 +47,38 @@
     },
     {
       "name": "summary",
-      "explanation": "Brief resultPattern output.",
+      "explanation": "Brief output.",
       "entries": [
         "{faction}"
       ]
     },
     {
       "name": "detail",
-      "explanation": "Detailed resultPattern output variations.",
+      "explanation": "More detailed output variations.",
       "entries": [
-        "{adjective} {faction}"
+        "{attribute} {faction}",
+        "{faction} {feature}",
+        "{attribute} {faction} {feature}"
       ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {faction} {lib:synonym#looks} {attribute}.",
+        "The {faction} {lib:synonym#looks} {feature}.",
+        "The {attribute} {faction} {lib:synonym#looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "Name: {name}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
     },
     {
       "name": "faction",
@@ -71,24 +95,49 @@
       "name": "common",
       "explanation": "Common factions.",
       "entries": [
-        "The {cause} {organization}",
-        "The {adjective} {cause} {organization}",
-        "{organization} of {plurals}",
-        "{organization} of {adjective} {plurals}"
+        "{political}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare factions.",
       "entries": [
-        "The {organization} for {cause}",
-        "The {organization} for {adjective} {cause}",
-        "The {adjective} {organization} for {cause}",
-        "The {adjective} {organization} for {adjective} {cause}"
+        "{religious}"
       ]
     },
     {
-      "**************************************************": "COMPONENTS"
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "political",
+      "explanation": "Political factions.",
+      "entries": [
+        "{name}"
+      ]
+    },
+    {
+      "name": "religious",
+      "explanation": "Religious factions.",
+      "entries": [
+        "{name}"
+      ]
+    },
+    {
+      "**************************************************": "NAMES"
+    },
+    {
+      "name": "name",
+      "explanation": "Faction name types.",
+      "entries": [
+        "{cause} {organization}",
+        "{adjective} {cause} {organization}",
+        "{organization} of {plurals}",
+        "{organization} of {adjective} {plurals}",
+        "{organization} for {cause}",
+        "{organization} for {adjective} {cause}",
+        "{adjective} {organization} for {cause}",
+        "{adjective} {organization} for {adjective} {cause}"
+      ]
     },
     {
       "name": "adjective",
@@ -205,6 +254,29 @@
         "Perdition",
         "Reincarnation",
         "Resurrection"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Factions for Middle Ages.",
+      "entries": [
+        "The {medieval cause} {organization}",
+        "The {medieval adjective} {medieval cause} {organization}",
+        "{organization} of {medieval adjective} {plurals}"
+      ]
+    },
+    {
+      "name": "medieval adjective",
+      "explanation": "Adjectives for medieval worlds.",
+      "entries": [
+        "Crusading"
+      ]
+    },
+    {
+      "name": "medieval cause",
+      "explanation": "Causes for medieval worlds.",
+      "entries": [
+        "Crusade"
       ]
     },
     {
@@ -346,11 +418,11 @@
       ]
     },
     {
-      "**************************************************": "SPECIAL TABLES"
+      "**************************************************": "GENDER-SPECIFIC"
     },
     {
-      "name": "special",
-      "explanation": "Special faction tables.",
+      "name": "gender",
+      "explanation": "Gender-specific factions.",
       "entries": [
         "{female}",
         "{male}"
@@ -375,10 +447,39 @@
       ]
     },
     {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attributes prepended to the front of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It appears --",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, female: {female}, male: {male}, special: {special}."
+        "result: {result}, summary: {summary}, detail: {detail}, description: {description} Common: {common}, rare: {rare}. Name: {name}. Fantasy: {fantasy}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
       ]
     }
   ]

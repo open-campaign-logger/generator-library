@@ -68,7 +68,7 @@
       "explanation": "Dungeon raid template.",
       "entries": [
         {
-          "v": "{title}{hook} The adventures hear about a {lib:placeAdventure} of a {lib:monster#adjective} {lib:monster} that hides a  {lib:treasure#adjective} {lib:treasure}. {line} The place is nowadays inhabited by a {lib:monster#adjective} {lib:monsterHumanoid}. {sinker} The treasure is actually {lib:treasure#complication}.",
+          "v": "{title}{hook} The adventures hear about a {lib:placeAdventure} of a {lib:monster#attribute} {lib:monster} that hides a  {lib:treasure#attribute} {lib:treasure}. {line} The place is nowadays inhabited by a {lib:monster#attribute} {lib:monsterHumanoid}. {sinker} The treasure is actually {lib:treasure#complication}.",
           "set": {
             "adventure": "Dungeon Adventure"
           }
@@ -80,7 +80,7 @@
       "explanation": "Rescue mission template.",
       "entries": [
         {
-          "v": "{title}{hook} A {lib:personCraft} asks the adventurers to rescue a {lib:weapon} that has been stolen by a {lib:monsterHumanoid}. {line} The thief is accompanied by a band of {lib:monster#adjective} {lib:monsterHumanoid}s. {sinker} The mission giver is not the rightful owner of the 'stolen' item.",
+          "v": "{title}{hook} A {lib:personCraft} asks the adventurers to rescue a {lib:weapon} that has been stolen by a {lib:monsterHumanoid}. {line} The thief is accompanied by a band of {lib:monster#attribute} {lib:monsterHumanoid}s. {sinker} The mission giver is not the rightful owner of the 'stolen' item.",
           "set": {
             "adventure": "Rescue Mission"
           }
@@ -128,7 +128,7 @@
       "explanation": "Imprisoned adventure template.",
       "entries": [
         {
-          "v": "{title}{hook} The adventurers wake up captive in {lib:location#dungeon}. They are guarded by a {lib:monsterGiant}. {line} They have been captured by {lib:villain#adjective} {lib:villain} who wants {lib:villain#goal}. {sinker} The demand is not really important to the capturer, who actually wants _____.",
+          "v": "{title}{hook} The adventurers wake up captive in {lib:location#dungeon}. They are guarded by a {lib:monsterGiant}. {line} They have been captured by {lib:villain#attribute} {lib:villain} who wants {lib:villain#goal}. {sinker} The demand is not really important to the capturer, who actually wants _____.",
           "set": {
             "adventure": "Imprisoned"
           }

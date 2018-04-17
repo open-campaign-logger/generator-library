@@ -6,7 +6,7 @@
     "actants": "plants",
     "actantgroup": "patch",
     "actantaction": "rooted",
-    "actantadjective": "plain",
+    "actantattribute": "plain",
     "actantdescription": "The plant seems oblivious to their surroundings.",
     "attitude": "passive",
     "footnote": ""

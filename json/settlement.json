@@ -54,9 +54,9 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {settlement}",
+        "{attribute} {settlement}",
         "{settlement} {feature}",
-        "{adjective} {settlement} {feature}"
+        "{attribute} {settlement} {feature}"
       ]
     },
     {
@@ -308,13 +308,13 @@
       "name": "special",
       "explanation": "Special settlement tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{feature}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives related to the settlement.",
+      "name": "attribute",
+      "explanation": "Attributes related to the settlement.",
       "format": "Optionally prepended to the front of the result.",
       "entries": [
         "beautiful"

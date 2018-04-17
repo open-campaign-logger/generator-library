@@ -6,7 +6,7 @@
     "actants": "monsters",
     "actantgroup": "pack",
     "actantaction": "on the prowl",
-    "actantadjective": "hideous",
+    "actantattribute": "hideous",
     "actantdescription": "The monster seems to be looking for something to eat.",
     "attitude": "hostile"
   },
@@ -47,12 +47,12 @@
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
         "{monster}",
-        "{adjective} {monster}",
-        "{adjective}, {lib:complication#creature} {monster}",
+        "{attribute} {monster}",
+        "{attribute}, {lib:complication#creature} {monster}",
         "{lib:creature_template} {monster}",
         "{lib:complication#creature}, {lib:creature_template} {monster}",
         "{monster} specialized {lib:attack} attacks",
-        "{adjective} {monster} specialized in {lib:attack} attacks",
+        "{attribute} {monster} specialized in {lib:attack} attacks",
         "{lib:complication#creature} {monster} specialized in {lib:attack} attacks",
         "{lib:creature_template} {monster} specialized in {lib:attack} attacks"
       ]
@@ -526,12 +526,12 @@
       "name": "special",
       "explanation": "Special monster tables.",
       "entries": [
-        "{adjective}"
+        "{attribute}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives describing the monster.",
+      "name": "attribute",
+      "explanation": "Attributes describing the monster.",
       "entries": [
         "vengeful",
         "bloodthirsty",

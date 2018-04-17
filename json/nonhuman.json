@@ -6,7 +6,7 @@
     "actants": "nonhumans",
     "actantgroup": "group",
     "actantaction": "taking care of their own business",
-    "actantadjective": "strange",
+    "actantattribute": "strange",
     "actantdescription": "The nonhuman looks cautious.",
     "attitude": "neutral",
     "footnote": ""
@@ -45,8 +45,8 @@
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
         "{nonhuman} {lib:activity}",
-        "{adjective} {nonhuman}",
-        "{adjective} {nonhuman} {lib:activity}",
+        "{attribute} {nonhuman}",
+        "{attribute} {nonhuman} {lib:activity}",
         "{lib:creature_template} {nonhuman}",
         "{lib:creature_template} {nonhuman} {lib:activity}"
       ]
@@ -222,8 +222,8 @@
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives describing the nonhuman.",
+      "name": "attribute",
+      "explanation": "Attributes describing the nonhuman.",
       "entries": [
         "{psychology}"
       ]

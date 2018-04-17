@@ -3,7 +3,7 @@
   "resultPattern": "{init}{result}",
   "globals": {
     "cast": "{role}",
-    "castadjective": "{adjective}",
+    "castattribute": "{attribute}",
     "castparticiple": "{participle}",
     "castbreed": "{breed}",
     "castpossession": "{possession}"
@@ -56,10 +56,10 @@
       "name": "detail",
       "explanation": "Detailed description of the randomized set.",
       "entries": [
-        "{adjective} {role}",
+        "{attribute} {role}",
         "{participle} {role}",
-        "{participle}, {adjective} {role}",
-        "{adjective}, {participle} {role}",
+        "{participle}, {attribute} {role}",
+        "{attribute}, {participle} {role}",
         "{role} with {possession}",
         "{role} wearing {clothing}",
         "{role} equippped with {protection}",
@@ -67,7 +67,7 @@
         "{role} carrying {equipment}",
         "{role} holding {valuable}",
         "{role} accompanied by {pet}",
-        "{adjective} {role} with {possession}",
+        "{attribute} {role} with {possession}",
         "{participle} {role} with {possession}"
       ]
     },
@@ -337,8 +337,8 @@
       "**************************************************": "DESCRIPTIONS"
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives for the population.",
+      "name": "attribute",
+      "explanation": "Attributes for the population.",
       "entries": [
         "barbaric",
         "dirty"

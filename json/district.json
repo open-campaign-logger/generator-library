@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "Separate proper names from district types!",
   "see": "business, settlement, shop",
-  "date": "2018-04-15",
+  "date": "2018-04-16",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -55,9 +55,9 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{adjective} {district}",
+        "{attribute} {district}",
         "{district} {feature}",
-        "{adjective} {district} {feature}"
+        "{attribute} {district} {feature}"
       ]
     },
     {
@@ -72,7 +72,7 @@
       "name": "description",
       "explanation": "Long description.",
       "entries": [
-        "The {adjective} {district} {feature}."
+        "The {attribute} {district} {feature}."
       ]
     },
     {
@@ -107,15 +107,23 @@
       "entries": [
         "{poor} {harbor}",
         "{lower class} {harbor}",
+        "{poor} {border}",
+        "{lower class} {border}",
         "{poor} {warehouse}",
         "{lower class} {warehouse}",
         "{lower class} {suburb}",
+        "{lower class} {entertainment}",
+        "{middle class} {entertainment}",
+        "{lower class} {artisan}",
+        "{middle class} {artisan}",
         "{middle class} {suburb}",
         "{upper class} {suburb}",
         "{middle class} {park}",
         "{upper class} {park}",
         "{middle class} {administrative}",
         "{upper class} {administrative}",
+        "{upper class} {church}",
+        "{rich} {church}",
         "{middle class} {financial}",
         "{upper class} {financial}",
         "{rich} {financial}",
@@ -612,19 +620,18 @@
       "name": "special",
       "explanation": "Special district tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{feature}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives related to the district.",
+      "name": "attribute",
+      "explanation": "Attributes related to the district.",
       "format": "Optionally prepended to the front of the result.",
       "entries": [
-        "quiet",
-        "sleepy",
-        "busy",
-        "crowded"
+        "messy",
+        "littered",
+        "orderly"
       ]
     },
     {
@@ -697,7 +704,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+        "result: {result}, summary: {summary}, detail: {detail}, description: {description} Common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
       ]
     }
   ]

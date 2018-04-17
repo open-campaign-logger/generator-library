@@ -56,18 +56,18 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{adjective} {speech}",
+        "{attribute} {speech}",
         "{speech}, {feature}",
-        "{adjective} {speech}, {feature}"
+        "{attribute} {speech}, {feature}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {speech} {lib:synonym#looks} {adjective}.",
+        "The {speech} {lib:synonym#looks} {attribute}.",
         "The {speech} {lib:synonym#looks} {feature}.",
-        "The {adjective} {speech} {lib:synonym#looks} {feature}."
+        "The {attribute} {speech} {lib:synonym#looks} {feature}."
       ]
     },
     {
@@ -473,13 +473,13 @@
       "name": "special",
       "explanation": "Special tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{feature}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives prepended to the front of the result.",
+      "name": "attribute",
+      "explanation": "Attributes prepended to the front of the result.",
       "entries": [
         "usually",
         "typically",

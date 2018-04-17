@@ -38,7 +38,7 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective}, {clue} about {subject}"
+        "{attribute}, {clue} about {subject}"
       ]
     },
     {
@@ -125,13 +125,13 @@
       "name": "special",
       "explanation": "Special clue tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{subject}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives for clues.",
+      "name": "attribute",
+      "explanation": "Attributes for clues.",
       "entries": [
         "well-hidden",
         "poorly hidden",

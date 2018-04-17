@@ -37,7 +37,7 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {magic}"
+        "{attribute} {magic}"
       ]
     },
     {
@@ -236,8 +236,8 @@
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Magical adjectives.",
+      "name": "attribute",
+      "explanation": "Magical attributes.",
       "entries": [
         "{negative}",
         "{neutral}",
@@ -246,7 +246,7 @@
     },
     {
       "name": "negative",
-      "explanation": "Negative adjectives.",
+      "explanation": "Negative attributes.",
       "entries": [
         "occult",
         "witches'",
@@ -256,7 +256,7 @@
     },
     {
       "name": "neutral",
-      "explanation": "Neutral adjectives.",
+      "explanation": "Neutral attributes.",
       "entries": [
         "alchemical",
         "hermetic",
@@ -270,7 +270,7 @@
     },
     {
       "name": "positive",
-      "explanation": "Positive adjectives.",
+      "explanation": "Positive attributes.",
       "entries": [
         "enchanted",
         "thaumaturgic",

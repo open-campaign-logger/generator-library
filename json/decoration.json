@@ -53,7 +53,7 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {decoration}"
+        "{attribute} {decoration}"
       ]
     },
     {
@@ -334,12 +334,12 @@
       "name": "special",
       "explanation": "Special decoration tables.",
       "entries": [
-        "{adjective}"
+        "{attribute}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives related to decoration.",
+      "name": "attribute",
+      "explanation": "Attributes related to decoration.",
       "entries": [
         "crude",
         "sketchy",

@@ -63,16 +63,16 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{adjective} {prefix}",
+        "{attribute} {prefix}",
         "{prefix} {feature}",
-        "{adjective} {prefix} {feature}"
+        "{attribute} {prefix} {feature}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {adjective} {prefix} looks {feature}."
+        "The {attribute} {prefix} looks {feature}."
       ]
     },
     {
@@ -367,13 +367,13 @@
       "name": "special",
       "explanation": "Special prefix tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{feature}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives related to the prefix.",
+      "name": "attribute",
+      "explanation": "Attributes related to the prefix.",
       "format": "Optionally prepended to the front of the result.",
       "entries": [
         ""

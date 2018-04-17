@@ -55,9 +55,9 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective}, {appearance}",
-        "{appearance} {feature}",
-        "{adjective}, {appearance} {feature}"
+        "{attribute}, {appearance}",
+        "{attribute} {feature}",
+        "{attribute}, {appearance} {feature}"
       ]
     },
     {
@@ -614,13 +614,13 @@
       "name": "special",
       "explanation": "Special appearance tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{feature}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives related to appearance.",
+      "name": "attribute",
+      "explanation": "Attributes related to appearance.",
       "format": "Optionally prepended to the front of the result.",
       "entries": [
         "pleasant",

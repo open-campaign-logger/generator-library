@@ -95,9 +95,9 @@
       "explanation": "Room description formats.",
       "entries": [
         "{global:roomsize}, {global:roomshape} {global:roomtype}",
-        "{adjective}, {global:roomsize}, {global:roomshape} {global:roomtype}",
+        "{attribute}, {global:roomsize}, {global:roomshape} {global:roomtype}",
         "{global:roomsize}, {global:roomshape} {global:roomtype} with {wall material} walls and {floor material} floor",
-        "{adjective}, {global:roomsize}, {global:roomshape} {global:roomtype} with {wall material} walls and {floor material} floor"
+        "{attribute}, {global:roomsize}, {global:roomshape} {global:roomtype} with {wall material} walls and {floor material} floor"
       ]
     },
     {
@@ -1016,15 +1016,15 @@
       "name": "special",
       "explanation": "Special room tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{corridor}",
         "{doors}",
         "{extra}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives for dungeon rooms.",
+      "name": "attribute",
+      "explanation": "Attributes for dungeon rooms.",
       "entries": [
         "bleak",
         "murky",

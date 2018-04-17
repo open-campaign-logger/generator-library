@@ -3,7 +3,7 @@
   "resultPattern": "{lib:formatting#CL}{init}{result}",
   "globals": {
     "species": "",
-    "speciesadjective": "",
+    "speciesattribute": "",
     "speciesmention": "",
     "culture": "{culture}",
     "civilization": "urban",
@@ -17,7 +17,7 @@
     "actants": "persons",
     "actantgroup": "group",
     "actantaction": "minding their own business",
-    "actantadjective": "casual",
+    "actantattribute": "casual",
     "actantdescription": "They are not paying much attention to their surroundings.",
     "activity": "passive",
     "attitude": "neutral",
@@ -26,7 +26,7 @@
     "employment": "",
     "wealth": "",
     "clothing": "",
-    "outfitadjective": "",
+    "outfitattribute": "",
     "doing": "relaxing",
     "form": "humanoid",
     "mood": "calm",
@@ -373,8 +373,8 @@
       "name": "legacy",
       "explanation": "Old result before global variables.",
       "entries": [
-        "The {global:gender} {global:age} {global:speciesmention} is {global:attitude} and is {lib:synonym#wearing} {global:outfitadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:attitude} and {global:mood}, {global:moodexpression}.",
-        "This {global:gender} {global:age} {global:speciesmention} is {lib:synonym#wearing} {global:outfitadjective} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:mood}, {global:moodexpression}. {global:subject} has a {global:speciesadjective} sense of humor."
+        "The {global:gender} {global:age} {global:speciesmention} is {global:attitude} and is {lib:synonym#wearing} {global:outfitattribute} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:attitude} and {global:mood}, {global:moodexpression}.",
+        "This {global:gender} {global:age} {global:speciesmention} is {lib:synonym#wearing} {global:outfitattribute} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:mood}, {global:moodexpression}. {global:subject} has a {global:speciesattribute} sense of humor."
       ]
     },
     {

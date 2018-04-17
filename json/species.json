@@ -107,7 +107,7 @@
           "export": {
             "species": "",
             "speciesmention": "",
-            "speciesadjective": "human"
+            "speciesattribute": "human"
           }
         }
       ]
@@ -124,7 +124,7 @@
           "v": "Atlantean",
           "export": {
             "speciesmention": "Atlantean",
-            "speciesadjective": "Atlantean"
+            "speciesattribute": "Atlantean"
           }
         },
         {
@@ -132,7 +132,7 @@
           "v": "Lemurian",
           "export": {
             "speciesmention": "Lemurian",
-            "speciesadjective": "Lemurian"
+            "speciesattribute": "Lemurian"
           }
         }
       ]
@@ -146,7 +146,7 @@
           "v": "elf",
           "export": {
             "speciesmention": "elf",
-            "speciesadjective": "elven"
+            "speciesattribute": "elven"
           }
         },
         {
@@ -154,7 +154,7 @@
           "v": "dwarf",
           "export": {
             "speciesmention": "dwarf",
-            "speciesadjective": "dwarven"
+            "speciesattribute": "dwarven"
           }
         },
         {
@@ -162,7 +162,7 @@
           "v": "gnome",
           "export": {
             "speciesmention": "gnome",
-            "speciesadjective": "gnomish"
+            "speciesattribute": "gnomish"
           }
         }
       ]
@@ -191,12 +191,12 @@
       "name": "special",
       "explanation": "Special species tables.",
       "entries": [
-        "{adjective}"
+        "{attribute}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives related to species.",
+      "name": "attribute",
+      "explanation": "Attributes related to species.",
       "entries": [
         "half-breed",
         "pure-blooded"

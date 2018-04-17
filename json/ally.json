@@ -8,14 +8,14 @@
     "actants": "allies",
     "actantgroup": "group",
     "actantaction": "constantly alert",
-    "actantadjective": "trustworthy",
+    "actantattribute": "trustworthy",
     "actantdescription": "The ally is looking at the group approvingly.",
     "attitude": "friendly",
     "ally": "ally",
     "allies": "allies",
     "allygroup": "group",
     "allyaction": "comstantly alert",
-    "allyadjective": "trustworthy",
+    "allyattribute": "trustworthy",
     "allydescription": "The ally is looking at the group approvingly."
   },
   "variables": {
@@ -66,9 +66,9 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {ally}",
+        "{attribute} {ally}",
         "{ally} {complication}",
-        "{adjective} {ally} {complication}"
+        "{attribute} {ally} {complication}"
       ]
     },
     {
@@ -220,21 +220,21 @@
       "name": "special",
       "explanation": "Special ally tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{substantive}",
         "{complication}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives describing the ally.",
+      "name": "attribute",
+      "explanation": "Attributes describing the ally.",
       "entries": [
         "trustworthy",
-        "{rare adjective}"
+        "{rare attribute}"
       ]
     },
     {
-      "name": "rare adjective",
+      "name": "rare attribute",
       "explanation": "",
       "entries": [
         "charismatic"

@@ -40,7 +40,7 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {macguffin} that {power}"
+        "{attribute} {macguffin} that {power}"
       ]
     },
     {
@@ -179,13 +179,13 @@
       "name": "special",
       "explanation": "Special macguffin types.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{power}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Macguffin adjectives.",
+      "name": "attribute",
+      "explanation": "Macguffin attributes.",
       "entries": [
         "mysterious",
         "cursed",

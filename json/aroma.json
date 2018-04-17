@@ -37,7 +37,7 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {aroma}",
+        "{attribute} {aroma}",
         "{aroma} {lib:synonym#and} {aroma}"
       ]
     },
@@ -177,14 +177,14 @@
       "name": "special",
       "explanation": "Special aroma tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{smelling}",
         "{tasting}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Aromas in adjective form.",
+      "name": "attribute",
+      "explanation": "Aroma attributes.",
       "entries": [
         "rotting",
         "fecal",

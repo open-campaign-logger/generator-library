@@ -6,7 +6,7 @@
     "actants": "citizens",
     "actantgroup": "group",
     "actantaction": "minding their own business",
-    "actantadjective": "ordinary",
+    "actantattribute": "ordinary",
     "actantdescription": "The citizen is not paying much attention to their surroundings.",
     "attitude": "neutral",
     "footnote": ""
@@ -59,18 +59,18 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{adjective} {citizen}",
+        "{attribute} {citizen}",
         "{citizen} {feature}",
-        "{adjective} {citizen} {feature}"
+        "{attribute} {citizen} {feature}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {citizen} {lib:synonym#looks} {adjective}.",
+        "The {citizen} {lib:synonym#looks} {attribute}.",
         "The {citizen} {lib:synonym#looks} {feature}.",
-        "The {adjective} {citizen} {lib:synonym#looks} {feature}."
+        "The {attribute} {citizen} {lib:synonym#looks} {feature}."
       ]
     },
     {
@@ -293,13 +293,13 @@
       "name": "special",
       "explanation": "Special tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{feature}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives prepended to the front of the result.",
+      "name": "attribute",
+      "explanation": "Attributes prepended to the front of the result.",
       "entries": [
         "{psychology}"
       ]

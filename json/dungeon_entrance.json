@@ -470,14 +470,14 @@
       "name": "special",
       "explanation": "Special entrance tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{extra}",
         "{key}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives for dungeon entrances.",
+      "name": "attribute",
+      "explanation": "Attributes for dungeon entrances.",
       "entries": [
         "bleak",
         "murky",

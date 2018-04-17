@@ -53,7 +53,7 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {debris}"
+        "{attribute} {debris}"
       ]
     },
     {
@@ -287,12 +287,12 @@
       "name": "special",
       "explanation": "Special debris tables.",
       "entries": [
-        "{adjective}"
+        "{attribute}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives describing the debris.",
+      "name": "attribute",
+      "explanation": "Attributes describing the debris.",
       "entries": [
         "useless",
         "damaged",

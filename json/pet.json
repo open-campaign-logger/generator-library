@@ -56,18 +56,18 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{adjective} {pet}",
+        "{attribute} {pet}",
         "{pet} {feature}",
-        "{adjective} {pet} {feature}"
+        "{attribute} {pet} {feature}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {pet} {lib:synonym#looks} {adjective}. It {personality}.",
+        "The {pet} {lib:synonym#looks} {attribute}. It {personality}.",
         "The {pet} {lib:synonym#looks} {feature}. It {personality}.",
-        "The {adjective} {pet} {lib:synonym#looks} {feature}. It  {personality}."
+        "The {attribute} {pet} {lib:synonym#looks} {feature}. It  {personality}."
       ]
     },
     {
@@ -363,13 +363,13 @@
       "name": "special",
       "explanation": "Special tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{feature}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives prepended to the front of the result.",
+      "name": "attribute",
+      "explanation": "Attributes prepended to the front of the result.",
       "entries": [
         "a baby",
         "a young",

@@ -83,7 +83,7 @@
       "name": "rare",
       "explanation": "Rare corridor types.",
       "entries": [
-        "{adjective}, {description}"
+        "{attribute}, {description}"
       ]
     },
     {
@@ -425,7 +425,7 @@
       "name": "special",
       "explanation": "Special corridor tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{contents}",
         "{description}",
         "{doors}",
@@ -433,8 +433,8 @@
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives for dungeon corridors.",
+      "name": "attribute",
+      "explanation": "Attributes for dungeon corridors.",
       "entries": [
         "bleak",
         "murky",

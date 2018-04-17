@@ -54,9 +54,9 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{adjective} {shop}",
+        "{attribute} {shop}",
         "{shop} {feature}",
-        "{adjective} {shop} {feature}"
+        "{attribute} {shop} {feature}"
       ]
     },
     {
@@ -216,13 +216,13 @@
       "name": "special",
       "explanation": "Special shop tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{feature}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives related to the shop.",
+      "name": "attribute",
+      "explanation": "Attributes related to the shop.",
       "format": "Optionally prepended to the front of the result.",
       "entries": [
         "chaotic",
