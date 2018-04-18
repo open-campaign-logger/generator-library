@@ -44,7 +44,7 @@
   "bugs": "Developepment currently on hold, waiting for global variable support.",
   "to do": "Most of it... Starting from genre? ",
   "see": "",
-  "date": "2018-03-10",
+  "date": "2018-04-18",
   "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
   "genre": "fantasy",
@@ -58,11 +58,11 @@
         "species": "{lib:species}",
         "gender": "{lib:gender}",
         "culture": "{culture}",
-        "firstname": "{lib:name-{global:culture}#{global:gender}}",
-        "byname": "{lib:name-{global:culture}#byname}",
-        "name": "{global:firstname} {global:byname}",
-        "nametable": "name-{global:culture}",
-        "nametablefull": "name-{global:culture}#{global:gender}",
+        "firstname": "{lib:name-{g:culture}#{g:gender}}",
+        "byname": "{lib:name-{g:culture}#byname}",
+        "name": "{g:firstname} {g:byname}",
+        "nametable": "name-{g:culture}",
+        "nametablefull": "name-{g:culture}#{g:gender}",
         "civilization": "{civilization}",
         "wealth": "{lib:social_class}"
       },
@@ -71,29 +71,50 @@
       ]
     },
     {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
       "name": "result",
-      "explanation": "Verbosity of the resultPattern output.",
+      "explanation": "The output format.",
       "entries": [
+        "{summary}",
         "{detail}"
       ]
     },
     {
       "name": "summary",
-      "explanation": "Brief resultPattern output.",
+      "explanation": "Brief output.",
       "entries": [
         "{name}: {basic}"
       ]
     },
     {
       "name": "detail",
-      "explanation": "Detailed resultPattern output variations.",
+      "explanation": "More detailed output variations.",
       "entries": [
-        "{description}"
+        "{name} {g:para}{basic} {g:para}{attire} {g:para}{background} {g:para}{personality} {g:para}{goal} {g:para}{equipment}"
       ]
     },
     {
       "name": "description",
-      "explanation": "The description types by rarity.",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The person is {detail}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "Name: {name} \r\n{basic} \r\nPersonality: {personality}\r\nAttire: {attire} \r\nEquipment: {equipment}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "NPC_description",
+      "explanation": "The NPC description types by rarity.",
       "note": "The species call returns a direct result (so that 'human', the default, can return an empty string.)",
       "entries": [
         {
@@ -105,16 +126,16 @@
     },
     {
       "name": "common",
-      "explanation": "Common description types.",
+      "explanation": "Common NPC description types.",
       "entries": [
-        "{name} {global:para}{basic} {global:para}{attire} {global:para}{background} {global:para}{personality} {global:para}{goal} {global:para}{equipment}"
+        "{description}"
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare description types.",
+      "explanation": "Rare NPC description types.",
       "entries": [
-        "{common}"
+        "Stat block: {stats}"
       ]
     },
     {
@@ -124,49 +145,49 @@
       "name": "attire",
       "explanation": "The costume of the person.",
       "entries": [
-        "{global:Subject} is wearing {lib:outfit}."
+        "{g:Subject} is wearing {lib:outfit}."
       ]
     },
     {
       "name": "basic",
       "explanation": "Basic description: age, gender, species, profession.",
       "entries": [
-        "{global:age} {global:gender} {global:culture} {global:employment}"
+        "{g:age} {g:gender} {g:culture} {g:employment}"
       ]
     },
     {
       "name": "background",
       "explanation": "The background of the person.",
       "entries": [
-        "The {global:substantive} is an NPC."
+        "The {g:substantive} is an NPC."
       ]
     },
     {
       "name": "equipment",
       "explanation": "The belongings of the person.",
       "entries": [
-        "{global:startitalic}Weapon{global:enditalic}: {lib:weapon#common}."
+        "{g:startitalic}Weapon{g:enditalic}: {lib:weapon#common}."
       ]
     },
     {
       "name": "goal",
       "explanation": "The character's life goal.",
       "entries": [
-        "{global:Subject} wants to {lib:goal}."
+        "{g:Subject} wants to {lib:goal}."
       ]
     },
     {
       "name": "name",
       "explanation": "The character's name.",
       "entries": [
-        "{global:startbold}{global:name}{global:endbold}"
+        "{g:startbold}{g:name}{g:endbold}"
       ]
     },
     {
       "name": "personality",
       "explanation": "Psychology of the person.",
       "entries": [
-        "{global:para}{global:name} {lib:personality}. {global:para}{global:firstname} {lib:flaw}. {global:para}{global:byname} {lib:quirk}."
+        "\r\n- {lib:personality}. \r\n- {lib:flaw}. \r\n- {lib:quirk}."
       ]
     },
     {
@@ -221,14 +242,14 @@
       "entries": [
         {
           "m": 10,
-          "v": "{passive activity}",
+          "v": "{passive}",
           "export": {
             "activity": "passive"
           }
         },
         {
           "m": 10,
-          "v": "{active activity}",
+          "v": "{active}",
           "export": {
             "activity": "active"
           }
@@ -236,7 +257,7 @@
       ]
     },
     {
-      "name": "passive activity",
+      "name": "passive",
       "explanation": "Passive activities. Returns only variables.",
       "entries": [
         {
@@ -263,7 +284,7 @@
       ]
     },
     {
-      "name": "active activity",
+      "name": "active",
       "explanation": "Active activities. Returns only variables.",
       "entries": [
         {
@@ -316,6 +337,47 @@
       ]
     },
     {
+      "**************************************************": "TERMS"
+    },
+    {
+      "name": "term",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{beginning}{ending}",
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
       "**************************************************": "WORLD-SPECIFIC"
     },
     {
@@ -330,6 +392,14 @@
       "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
+        "{medieval}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
         "XXX"
       ]
     },
@@ -350,14 +420,33 @@
       ]
     },
     {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions to avoid repetition.",
+      "entries": [
+        ""
+      ]
+    },
+    {
       "**************************************************": "SPECIAL TABLES"
     },
     {
       "name": "special",
-      "explanation": "Special NPC description tables.",
+      "explanation": "Special tables.",
       "entries": [
+        "{attribute}",
         "{culture}",
+        "{feature}",
         "{legacy}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        ""
       ]
     },
     {
@@ -370,21 +459,29 @@
       ]
     },
     {
-      "name": "legacy",
-      "explanation": "Old result before global variables.",
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It appears --",
       "entries": [
-        "The {global:gender} {global:age} {global:speciesmention} is {global:attitude} and is {lib:synonym#wearing} {global:outfitattribute} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:attitude} and {global:mood}, {global:moodexpression}.",
-        "This {global:gender} {global:age} {global:speciesmention} is {lib:synonym#wearing} {global:outfitattribute} {lib:synonym#clothing}. The {global:substantive} is {global:activity}. {lib:synonym#now} {global:subject} is {global:mood}, {global:moodexpression}. {global:subject} has a {global:speciesattribute} sense of humor."
+        ""
       ]
     },
     {
-      "**************************************************": "TESTING"
+      "name": "legacy",
+      "explanation": "Old result before global variables.",
+      "entries": [
+        "The {g:gender} {g:age} {g:speciesmention} is {g:attitude} and is {lib:synonym#wearing} {g:outfitattribute} {lib:synonym#clothing}. The {g:substantive} is {g:activity}. {lib:synonym#now} {g:subject} is {g:attitude} and {g:mood}, {g:moodexpression}.",
+        "This {g:gender} {g:age} {g:speciesmention} is {lib:synonym#wearing} {g:outfitattribute} {lib:synonym#clothing}. The {g:substantive} is {g:activity}. {lib:synonym#now} {g:subject} is {g:mood}, {g:moodexpression}. {g:subject} has a {g:speciesattribute} sense of humor."
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
     },
     {
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}. \r\nSpecies: {global:species}, age: {global:age}, civilization: {civilization}, wealth: {global:wealth}."
+        "Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Name: {name}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}. \r\nSpecies: {g:species}, age: {g:age}, civilization: {civilization}, wealth: {g:wealth}."
       ]
     }
   ]
