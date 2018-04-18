@@ -74,7 +74,7 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "Name: {name}"
+        "Name: {term}"
       ]
     },
     {
@@ -107,6 +107,13 @@
     },
     {
       "**************************************************": "DETAILS"
+    },
+    {
+      "name": "",
+      "explanation": "",
+      "entries": [
+        ""
+      ]
     },
     {
       "**************************************************": "TERMS"
@@ -163,7 +170,7 @@
     },
     {
       "name": "myth",
-      "explanation": "Descriptions for worlds once rumoured to have existed.",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
       "entries": [
         "XXX"
       ]
@@ -196,9 +203,9 @@
     },
     {
       "name": "synonym",
-      "explanation": "Variant expressions to avoid repetition.",
+      "explanation": "Variant expressions for the generator subject matter.",
       "entries": [
-        ""
+        "XXX"
       ]
     },
     {
