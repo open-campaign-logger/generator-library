@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-03-10",
+  "date": "2018-04-19",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -76,7 +76,7 @@
           "v": "lower class",
           "export": {
             "socialclass": "lower class",
-            "employment": "{lib:employment#lower class}",
+            "employment": "{lib:occupation#lower class}",
             "outfitattribute": "{lib:clothing#lower class attribute}"
           }
         },
@@ -85,7 +85,7 @@
           "v": "middle class",
           "export": {
             "socialclass": "middle class",
-            "employment": "{lib:employment#middle class}",
+            "employment": "{lib:occupation#middle class}",
             "outfitattribute": "{lib:clothing#middle class attribute}"
           }
         },
@@ -94,7 +94,7 @@
           "v": "upper class",
           "export": {
             "socialclass": "upper class",
-            "employment": "{lib:employment#upper class}",
+            "employment": "{lib:occupation#upper class}",
             "outfitattribute": "{lib:clothing#upper class attribute}"
           }
         }
@@ -109,7 +109,7 @@
           "v": "poor",
           "export": {
             "socialclass": "poor",
-            "employment": "{lib:employment#poor}",
+            "employment": "{lib:occupation#poor}",
             "outfitattribute": "{lib:clothing#poor attribute}"
           }
         },
@@ -118,7 +118,7 @@
           "v": "rich",
           "export": {
             "socialclass": "rich",
-            "employment": "{lib:employment#rich}",
+            "employment": "{lib:occupation#rich}",
             "outfitattribute": "{lib:clothing#rich attribute}"
           }
         }
