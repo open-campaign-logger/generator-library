@@ -112,7 +112,7 @@
       "**************************************************": "TERMS"
     },
     {
-      "name": "name",
+      "name": "term",
       "explanation": "Randomized terms (generated from components).",
       "entries": [
         "{beginning}{ending}",
@@ -153,208 +153,50 @@
       "**************************************************": "WORLD-SPECIFIC"
     },
     {
-      "--------------------------------------------------": "FANTASY"
-    },
-    {
       "name": "fantasy",
-      "explanation": "Terms for fantasy worlds (with no basis in myth).",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
-        "{beginning}{fantasy ending}",
-        "{fantasy beginning}{ending}",
-        "{fantasy beginning}{fantasy ending}",
-        "{fantasy beginning}{fantasy ending} {fantasy extension}",
-        "{fantasy descriptor} {fantasy beginning}{fantasy ending}",
-        "{fantasy descriptor} {fantasy beginning}{fantasy ending} {fantasy extension}"
-      ]
-    },
-    {
-      "name": "fantasy descriptor",
-      "explanation": "Fantasy-themed term descriptors.",
-      "entries": [
-        "{descriptor}",
-        "{medieval descriptor}",
-        ""
-      ]
-    },
-    {
-      "name": "fantasy beginning",
-      "explanation": "Fantasy-themed term beginnings.",
-      "entries": [
-        "{beginning}",
-        "{medieval beginning}",
+        "{myth}",
+        "{medieval}",
         "XXX"
       ]
     },
     {
-      "name": "fantasy ending",
-      "explanation": "Fantasy-themed term endings.",
+      "name": "myth",
+      "explanation": "Descriptions for worlds once rumoured to have existed.",
       "entries": [
-        "{ending}",
-        "{medieval ending}",
         "XXX"
       ]
-    },
-    {
-      "name": "fantasy extension",
-      "explanation": "Fantasy-themed term extensions.",
-      "entries": [
-        "{extension}",
-        "{medieval extension}",
-        ""
-      ]
-    },
-    {
-      "--------------------------------------------------": "MEDIEVAL"
     },
     {
       "name": "medieval",
-      "explanation": "Terms for medieval worlds (with no fantasy elements).",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
       "entries": [
-        "{beginning}{medieval ending}",
-        "{medieval beginning}{ending}",
-        "{medieval beginning}{medieval ending}",
-        "{medieval beginning}{medieval ending} {medieval extension}",
-        "{medieval descriptor} {medieval beginning}{medieval ending}",
-        "{medieval descriptor} {medieval beginning}{medieval ending} {medieval extension}"
-      ]
-    },
-    {
-      "name": "medieval descriptor",
-      "explanation": "Medieval term descriptors.",
-      "entries": [
-        "{descriptor}",
-        ""
-      ]
-    },
-    {
-      "name": "medieval beginning",
-      "explanation": "Medieval term beginnings.",
-      "entries": [
-        "{beginning}",
         "XXX"
       ]
-    },
-    {
-      "name": "medieval ending",
-      "explanation": "Medieval term endings.",
-      "entries": [
-        "{ending}",
-        "XXX"
-      ]
-    },
-    {
-      "name": "medieval extension",
-      "explanation": "Medieval term extensions.",
-      "entries": [
-        "{extension}",
-        ""
-      ]
-    },
-    {
-      "--------------------------------------------------": "MODERN"
     },
     {
       "name": "modern",
-      "explanation": "Terms for modern worlds.",
+      "explanation": "Descriptions for modern worlds.",
       "entries": [
-        "{beginning}{modern ending}",
-        "{modern beginning}{ending}",
-        "{modern beginning}{modern ending}",
-        "{modern beginning}{modern ending} {modern extension}",
-        "{modern descriptor} {modern beginning}{modern ending}",
-        "{modern descriptor} {modern beginning}{modern ending} {modern extension}"
-      ]
-    },
-    {
-      "name": "modern descriptor",
-      "explanation": "Modern term descriptors.",
-      "entries": [
-        "{descriptor}",
-        ""
-      ]
-    },
-    {
-      "name": "modern beginning",
-      "explanation": "Modern term beginnings.",
-      "entries": [
-        "{beginning}",
+        "{common}",
         "XXX"
       ]
-    },
-    {
-      "name": "modern ending",
-      "explanation": "Modern term endings.",
-      "entries": [
-        "{ending}",
-        "XXX"
-      ]
-    },
-    {
-      "name": "modern extension",
-      "explanation": "Modern term extensions.",
-      "entries": [
-        "{extension}",
-        ""
-      ]
-    },
-    {
-      "--------------------------------------------------": "FUTURISTIC"
     },
     {
       "name": "futuristic",
-      "explanation": "Terms for science fiction worlds.",
+      "explanation": "Descriptions for science fiction worlds.",
       "entries": [
-        "{modern beginning}{futuristic ending}",
-        "{futuristic beginning}{modern ending}",
-        "{futuristic beginning}{futuristic ending}",
-        "{futuristic beginning}{futuristic ending} {futuristic extension}",
-        "{futuristic descriptor} {futuristic beginning}{futuristic ending}",
-        "{futuristic descriptor} {futuristic beginning}{futuristic ending} {futuristic extension}"
-      ]
-    },
-    {
-      "name": "futuristic descriptor",
-      "explanation": "Futuristic term descriptors.",
-      "entries": [
-        "{descriptor}",
-        "{modern descriptor}",
-        ""
-      ]
-    },
-    {
-      "name": "futuristic beginning",
-      "explanation": "Futuristic term beginnings.",
-      "entries": [
-        "{beginning}",
-        "{modern beginning}",
+        "{modern}",
         "XXX"
-      ]
-    },
-    {
-      "name": "futuristic ending",
-      "explanation": "Futuristic term endings.",
-      "entries": [
-        "{ending}",
-        "{modern ending}",
-        "XXX"
-      ]
-    },
-    {
-      "name": "futuristic extension",
-      "explanation": "Futuristic term extensions.",
-      "entries": [
-        "{extension}",
-        "{modern extension}",
-        ""
       ]
     },
     {
       "**************************************************": "SYNONYMS"
     },
     {
-      "name": "XXX",
+      "name": "synonym",
       "explanation": "Variant expressions to avoid repetition.",
-      "format": "XXX",
       "entries": [
         ""
       ]
@@ -392,7 +234,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "result: {result}, summary: {summary}, detail: {detail}, description: {description} Common: {common}, rare: {rare}. Name: {name}. Fantasy: {fantasy}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+        "Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Term: {term}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]
