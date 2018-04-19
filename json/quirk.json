@@ -8,7 +8,7 @@
   "bugs": "",
   "to do": "",
   "see": "edge, flaw, strategy",
-  "date": "2018-04-17",
+  "date": "2018-04-19",
   "authors": "Ron Calbick (as extracted from his goblin-names.json generator), ELF Vesala.",
   "sources": "Ron Calbick: 'Goblin Generator'.",
   "genre": "universal",
@@ -74,6 +74,7 @@
         "{humor}",
         "{hygiene}",
         "{knowledge}",
+        "{social}",
         "{manners}",
         "{movement}",
         "{physical}",
@@ -108,7 +109,8 @@
       "entries": [
         "likes to eat just about anything, including dirt, leaves, wood, paper, and just about anything else that is even remotely edible",
         "often marks territory as an animal would, urinating at various key locations, even indoors",
-        "has a tendency to bury things, from sticks and rocks to valuables, and rarely remembers where they were buried afterwards"
+        "has a tendency to bury things, from sticks and rocks to valuables, and rarely remembers where they were buried afterwards",
+        "eats using only hands, using no utensils"
       ]
     },
     {
@@ -117,8 +119,7 @@
       "entries": [
         "has few teeth and even those remaining are in a state of severe decay, but nonetheless frequently smiles proudly",
         "appears to have once been severely burned on nearly every body part but still manages to function almost normally",
-        "is unusually tall and skinny",
-        "is completely hairless and has blotchy skin of various shades and tints"
+        "is unusually tall and skinny"
       ]
     },
     {
@@ -133,7 +134,8 @@
       "name": "bestial",
       "explanation": "Beast-like quirks.",
       "entries": [
-        "has very large feet with long clawed toes that are often used in battle"
+        "growls when threatened",
+        "prefers to eat their meat raw"
       ]
     },
     {
@@ -231,6 +233,16 @@
         "has an unusually large nose that is particularly keen, often used for tracking by scent",
         "is missing an ear, claiming it simply fell off and was never found",
         "has an unusually large nose that is particularly keen"
+      ]
+    },
+    {
+      "name": "social",
+      "explanation": "Quirks related to social behavior.",
+      "entries": [
+        "shuns the company of people",
+        "prefers the company of animals",
+        "prefers small groups to large crowds",
+        "enjoys large crowds"
       ]
     },
     {
