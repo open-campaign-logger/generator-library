@@ -50,9 +50,9 @@
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {XXX} appears to be {attribute}.",
-        "The {XXX} appears to be {feature}.",
-        "The {attribute} {XXX} appears to be {feature}."
+        "The {XXX} {looks} {attribute}.",
+        "The {XXX} {looks} {feature}.",
+        "The {attribute} {XXX} {looks} {feature}."
       ]
     },
     {
@@ -149,6 +149,16 @@
       "explanation": "Variant expressions for the generator subject matter.",
       "entries": [
         ""
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Synonyms for looking like something.",
+      "entries": [
+        "appears to be",
+        "feels like",
+        "looks like",
+        "seems to be"
       ]
     },
     {
