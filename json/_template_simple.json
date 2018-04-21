@@ -59,7 +59,7 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "Name: {term}"
+        "{b|Name}: {term}"
       ]
     },
     {
@@ -154,11 +154,11 @@
     {
       "name": "looks",
       "explanation": "Synonyms for looking like something.",
+      "format": "-- be in good condition.",
       "entries": [
-        "appears to be",
-        "feels like",
-        "looks like",
-        "seems to be"
+        "appears to",
+        "looks to",
+        "seems to"
       ]
     },
     {
@@ -182,7 +182,7 @@
     {
       "name": "feature",
       "explanation": "Features appended to the end of the result.",
-      "format": "It appears --",
+      "format": "It seems to --",
       "entries": [
         ""
       ]
