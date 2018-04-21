@@ -13,8 +13,8 @@
   "format": "",
   "bugs": "",
   "to do": "Separate proper names from district types!",
-  "see": "business, settlement, shop",
-  "date": "2018-04-16",
+  "see": "business, settlement, shop, street",
+  "date": "2018-04-21",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -529,7 +529,56 @@
       ]
     },
     {
+      "**************************************************": "TERMS"
+    },
+    {
+      "name": "term",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{beginning}{ending}",
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
       "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Districts for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "arcane {neighborhood}"
+      ]
     },
     {
       "name": "myth",
@@ -543,14 +592,6 @@
       "explanation": "Districts for Middle Age worlds (without magic).",
       "entries": [
         "flea {slum}"
-      ]
-    },
-    {
-      "name": "fantasy",
-      "explanation": "Districts for fantasy worlds (with no basis in myth).",
-      "entries": [
-        "{myth}",
-        "arcane {neighborhood}"
       ]
     },
     {
