@@ -17,7 +17,7 @@
   "bugs": "Different regions (tropical, polar, etc.)",
   "to do": "",
   "see": "activity, citizen, encounter, monster, nonhuman, plant",
-  "date": "2018-03-14",
+  "date": "2018-04-21",
   "authors": "",
   "sources": "Wikipedia.org",
   "genre": "",
@@ -178,9 +178,43 @@
       "name": "fish",
       "explanation": "Fish types.",
       "entries": [
+        "{freshwater fish}",
+        "{sea fish}"
+      ]
+    },
+    {
+      "name": "freshwater fish",
+      "explanation": "Fish of lakes and rivers.",
+      "entries": [
+        "hagfish",
+        "lamprey",
+        "eel",
+        "sturgeon",
+        "whitefish",
         "perch",
         "pike",
-        "salmon"
+        "carp",
+        "tench",
+        "trout",
+        "salmon",
+        "catfish"
+      ]
+    },
+    {
+      "name": "sea fish",
+      "explanation": "Fish of the seas and oceans.",
+      "entries": [
+        "herring",
+        "cod",
+        "seabass",
+        "haddock",
+        "redfish",
+        "mackerel",
+        "mullet",
+        "tuna",
+        "ray",
+        "swordfish",
+        "shark"
       ]
     },
     {
@@ -249,40 +283,23 @@
       "name": "bird",
       "explanation": "Bird types.",
       "entries": [
-        "{flightless bird}",
-        "{flying bird}"
-      ]
-    },
-    {
-      "name": "flightless bird",
-      "explanation": "Birds incapable of flight.",
-      "entries": [
-        "kiwi",
-        "emu",
-        "ostrich"
+        "{flying bird}",
+        "{domestic bird}"
       ]
     },
     {
       "name": "flying bird",
       "explanation": "Birds capable of flight.",
       "entries": [
-        "{pet bird}",
-        "{domestic bird}",
         "{small bird}",
         "{coastal bird}",
         "{waterfowl}",
         "{predatory bird}",
         "nightjar",
         "woodpecker",
-        "gull",
+        "dove",
+        "cuckoo",
         "crane"
-      ]
-    },
-    {
-      "name": "pet bird",
-      "explanation": "Birds kept as pets.",
-      "entries": [
-        "canary bird"
       ]
     },
     {
@@ -295,25 +312,47 @@
       ]
     },
     {
+      "name": "pet bird",
+      "explanation": "Birds kept as pets.",
+      "entries": [
+        "canary bird"
+      ]
+    },
+    {
       "name": "small bird",
       "explanation": "Small-sized birds.",
       "entries": [
         "sparrow",
+        "lark",
+        "wagtail",
+        "crossbill",
+        "robin",
         "swallow",
         "nightingale"
       ]
     },
     {
-      "name": "coastal birds",
+      "name": "coastal bird",
       "explanation": "Birds that live by water.",
       "entries": [
-        "stork"
+        "gull",
+        "seagull",
+        "tern",
+        "cormorant",
+        "stork",
+        "heron",
+        "peregrine falcon",
+        "osprey",
+        "sea eagle"
       ]
     },
     {
       "name": "waterfowl",
       "explanation": "Birds that live in water.",
       "entries": [
+        "duck",
+        "goose",
+        "teal",
         "swan",
         "stork"
       ]
@@ -322,10 +361,45 @@
       "name": "predatory bird",
       "explanation": "Birds that hunt.",
       "entries": [
+        "{owl}",
+        "{falcon}",
+        "{hawk}",
+        "{eagle}"
+      ]
+    },
+    {
+      "name": "owl",
+      "explanation": "Owl species.",
+      "entries": [
         "owl",
-        "hawk",
+        "barn-owl",
+        "horned owl"
+      ]
+    },
+    {
+      "name": "falcon",
+      "explanation": "Falcon species.",
+      "entries": [
         "falcon",
-        "eagle"
+        "kestrel",
+        "merlin"
+      ]
+    },
+    {
+      "name": "hawk",
+      "explanation": "Hawk species.",
+      "entries": [
+        "hawk",
+        "sparrowhawk",
+        "goshawk"
+      ]
+    },
+    {
+      "name": "eagle",
+      "explanation": "Eagle species.",
+      "entries": [
+        "eagle",
+        "sea eagle"
       ]
     },
     {
@@ -536,7 +610,8 @@
         "{desert}",
         "{coast}",
         "{water}",
-        "{flying}"
+        "{flying}",
+        "{flightless bird}"
       ]
     },
     {
@@ -631,6 +706,15 @@
         "{flying insect}",
         "{flying bird}",
         "{bat}"
+      ]
+    },
+    {
+      "name": "flightless bird",
+      "explanation": "Birds incapable of flight.",
+      "entries": [
+        "kiwi",
+        "emu",
+        "ostrich"
       ]
     }
   ]
