@@ -116,35 +116,35 @@
       "name": "poor",
       "explanation": "Poor neighborhoods.",
       "entries": [
-        "{|{poor area} {poor neighborhood}|tcase}"
+        "{poor area} {poor neighborhood}"
       ]
     },
     {
       "name": "lower class",
       "explanation": "Lower class neighborhoods.",
       "entries": [
-        "{|{lower class area} {lower class neighborhood}|tcase}"
+        "{lower class area} {lower class neighborhood}"
       ]
     },
     {
       "name": "middle class",
       "explanation": "Middle class neighborhoods.",
       "entries": [
-        "{|{middle class area} {middle class neighborhood}|tcase}"
+        "{middle class area} {middle class neighborhood}"
       ]
     },
     {
       "name": "upper class",
       "explanation": "Upper class neighborhoods.",
       "entries": [
-        "{|{upper class area} {upper class neighborhood}|tcase}"
+        "{upper class area} {upper class neighborhood}"
       ]
     },
     {
       "name": "rich",
       "explanation": "Rich neighborhoods.",
       "entries": [
-        "{|{rich area} {rich neighborhood}|tcase}"
+        "{rich area} {rich neighborhood}"
       ]
     },
     {
