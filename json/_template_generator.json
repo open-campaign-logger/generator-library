@@ -42,7 +42,9 @@
       "explanation": "The output format.",
       "entries": [
         "{summary}",
-        "{detail}"
+        "{detail}",
+        "{description}",
+        "{stats}"
       ]
     },
     {
