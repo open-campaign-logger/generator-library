@@ -1,6 +1,6 @@
 {
   "name": "money",
-  "resultPattern": "{init}{result}",
+  "resultPattern": "{init}{lib:formatting#HTML}{result}",
   "globals": {
     "variable": "value"
   },
@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-04-15",
+  "date": "2018-04-22",
   "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -35,23 +35,28 @@
       ]
     },
     {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
       "name": "result",
-      "explanation": "Verbosity of the resultPattern output.",
+      "explanation": "The output format.",
       "entries": [
         "{summary}",
-        "{detail}"
+        "{detail}",
+        "{description}",
+        "{stats}"
       ]
     },
     {
       "name": "summary",
-      "explanation": "Brief resultPattern output.",
+      "explanation": "Brief output.",
       "entries": [
         "{money}"
       ]
     },
     {
       "name": "detail",
-      "explanation": "Detailed resultPattern output variations.",
+      "explanation": "More detailed output variations.",
       "entries": [
         "{attribute} {money}",
         "{money} ({feature})",
@@ -59,8 +64,26 @@
       ]
     },
     {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "This is {appearance} {coin}. There is {faces}.",
+        "This is {appearance} {coin} {extra}. There is {faces}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{g:bullet}{g:startbold}Coin{g:endbold}: {coin}. {g:bullet}{g:startbold}Denomination{g:endbold}: {coin denomination}. {g:bullet}{g:startbold}Appearance{g:endbold}: {appearance}. {g:bullet}{g:startbold}Faces{g:endbold}: {faces}. {g:bullet}{g:startbold}Condition{g:endbold}: {attribute}. {g:bullet}{g:startbold}Feature{g:endbold}: {feature}."
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
       "name": "money",
-      "explanation": "The money types by rarity.",
+      "explanation": "Types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -71,14 +94,14 @@
     },
     {
       "name": "common",
-      "explanation": "Common money types.",
+      "explanation": "Common types.",
       "entries": [
         "{coin}"
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare money types.",
+      "explanation": "Rare types.",
       "entries": [
         "{exotic coin}"
       ]
@@ -274,14 +297,6 @@
       "**************************************************": "DESCRIPTION"
     },
     {
-      "name": "description",
-      "explanation": "",
-      "entries": [
-        "{appearance} {coin}. There is {faces}.",
-        "{appearance} {coin} {extra}. There is {faces}."
-      ]
-    },
-    {
       "name": "appearance",
       "explanation": "Currency looks.",
       "entries": [
@@ -361,6 +376,7 @@
       "explanation": "The image type of a coin.",
       "entries": [
         "an image",
+        "a lifelike image of",
         "a profile",
         "an engraving"
       ]
@@ -384,8 +400,7 @@
         "a brooding",
         "a tight-lipped",
         "a majestic",
-        "a smiling",
-        "a lifelike image of"
+        "a smiling"
       ]
     },
     {
@@ -504,18 +519,52 @@
       ]
     },
     {
-      "**************************************************": "WORLD-SPECIFIC"
+      "**************************************************": "TERMS"
     },
     {
-      "name": "myth",
-      "explanation": "Money once rumoured to have existed.",
+      "name": "term",
+      "explanation": "Randomized terms (generated from components).",
       "entries": [
-        "obol"
+        "{beginning}{ending}",
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
       ]
     },
     {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
       "name": "fantasy",
-      "explanation": "Money for fantasy worlds (with no basis in myth).",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
         "{common}",
         "{coin material} {fantasy coin}"
@@ -523,13 +572,20 @@
     },
     {
       "name": "fantasy coin",
-      "explanation": "Money for fantasy worlds (with no basis in myth).",
+      "explanation": "Coins for fantasy worlds (with no basis in myth).",
       "entries": [
         "{coin type}",
         "shard",
         "sickle",
         "crescent",
         "orb"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Money once rumoured to have existed.",
+      "entries": [
+        "obol"
       ]
     },
     {
@@ -542,8 +598,8 @@
       ]
     },
     {
-      "name": "historical",
-      "explanation": "Money for historical cultures.",
+      "name": "medieval",
+      "explanation": "Money for medieval cultures.",
       "entries": [
         "groat",
         "guinea"
@@ -553,8 +609,8 @@
       "name": "modern",
       "explanation": "Money for modern worlds.",
       "entries": [
-        "{coin value} {modern currency} coin",
-        "{note value} {modern currency} note",
+        "{coin denomination} {modern currency} coin",
+        "{note denomination} {modern currency} note",
         "{rare modern}"
       ]
     },
@@ -609,6 +665,16 @@
       ]
     },
     {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        "{exotic coin}"
+      ]
+    },
+    {
       "**************************************************": "CROSSREFERENCES"
     },
     {
@@ -651,8 +717,8 @@
       "**************************************************": "VALUES"
     },
     {
-      "name": "coin value",
-      "explanation": "The value of the coin.",
+      "name": "coin denomination",
+      "explanation": "The nominal value of the coin.",
       "entries": [
         "half",
         "1",
@@ -660,8 +726,8 @@
       ]
     },
     {
-      "name": "note value",
-      "explanation": "The value of the coin.",
+      "name": "note denomination",
+      "explanation": "The nominal value of the bank note.",
       "entries": [
         "10",
         "50",
@@ -669,11 +735,31 @@
       ]
     },
     {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "money"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Synonyms for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "looks to be",
+        "seems to be"
+      ]
+    },
+    {
       "**************************************************": "SPECIAL TABLES"
     },
     {
       "name": "special",
-      "explanation": "Special money tables.",
+      "explanation": "Special tables.",
       "entries": [
         "{attribute}",
         "{feature}"
@@ -681,24 +767,52 @@
     },
     {
       "name": "attribute",
-      "explanation": "Attributes related to money.",
-      "format": "Optionally prepended to the front of the result.",
+      "explanation": "Attribute prepended to the front of the result.",
       "entries": [
+        "ruined",
+        "defaced",
+        "misshapen",
         "damaged",
+        "flawed",
+        "scratched",
+        "undamaged",
+        "dirty",
+        "tarnished",
+        "blemished",
+        "badly worn",
         "worn",
-        "pristine"
+        "dull",
+        "clean",
+        "normal",
+        "intact",
+        "spotless",
+        "pristine",
+        "flawless",
+        "faultless",
+        "exquisite",
+        "impeccable",
+        "immaculate",
+        "perfect"
       ]
     },
     {
       "name": "feature",
-      "explanation": "Features related to money.",
-      "format": "Optionally appended to the end of the result.",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
       "entries": [
         "possibly counterfeit",
+        "invalid as currency",
         "possibly stolen",
         "marked",
-        "invalid as currency",
-        "with a hole in the middle"
+        "old",
+        "common",
+        "genuine",
+        "ordinary",
+        "standard issue",
+        "possibly rare",
+        "a rare specimen",
+        "possibly valuable for collectors",
+        "more precious than first look reveals"
       ]
     },
     {
@@ -708,7 +822,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Term: {term}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]
