@@ -154,11 +154,11 @@
     {
       "name": "looks",
       "explanation": "Synonyms for looking like something.",
-      "format": "-- be in good condition.",
+      "format": "-- in good condition.",
       "entries": [
-        "appears to",
-        "looks to",
-        "seems to"
+        "appears to be",
+        "looks to be",
+        "seems to be"
       ]
     },
     {
@@ -182,7 +182,7 @@
     {
       "name": "feature",
       "explanation": "Features appended to the end of the result.",
-      "format": "It seems to --",
+      "format": "It seems to be --",
       "entries": [
         ""
       ]
