@@ -76,7 +76,7 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Passage}: {street}"
+        "{b|Passage}: {street} \r\n{b|Feature}: {feature}"
       ]
     },
     {
@@ -694,6 +694,7 @@
         "Mews",
         "Place",
         "End",
+        "Ginnel",
         "{middle class street}"
       ]
     },
@@ -711,6 +712,7 @@
         "Crescent",
         "Ring",
         "Cross",
+        "Bystreet",
         "Houses",
         "{upper class street}"
       ]
@@ -728,6 +730,7 @@
         "Grove",
         "Aisle",
         "Rise",
+        "Overpass",
         "{rich street}"
       ]
     },
@@ -737,6 +740,7 @@
       "entries": [
         "{upper class street}",
         "Boulevard",
+        "Esplanade",
         "Parkway",
         "Promenade",
         "View",
@@ -945,7 +949,6 @@
         "tunnel",
         "shaft",
         "subway",
-        "underpass",
         "passage",
         "passageway"
       ]
@@ -1016,9 +1019,17 @@
       "explanation": "Attribute prepended to the front of the result.",
       "entries": [
         "currently closed",
-        "silent",
+        "quiet",
+        "lively",
         "crowded",
-        "busy"
+        "silent",
+        "busy",
+        "unusually dark",
+        "shady",
+        "gloomy",
+        "well-lit",
+        "steep",
+        "level"
       ]
     },
     {
@@ -1027,9 +1038,23 @@
       "format": "It seems to be --",
       "entries": [
         "in bad repair",
+        "in good condition",
         "well traveled",
         "seldom used",
-        "in good condition"
+        "downright filthy",
+        "quite dirty",
+        "mostly clean",
+        "quite narrow",
+        "almost cut off in the middle",
+        "narrowing towards the other end",
+        "broadening towards the end",
+        "surprisingly broad",
+        "twisting and turning",
+        "slightly curved",
+        "mostly straight",
+        "forks in the middle",
+        "a dead end",
+        "at first sight a dead end, but actually continues"
       ]
     },
     {
