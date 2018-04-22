@@ -13,8 +13,8 @@
   "format": "",
   "bugs": "",
   "to do": "",
-  "see": "",
-  "date": "2018-03-08",
+  "see": "business, district, shop",
+  "date": "2018-04-22",
   "authors": "ELF Vesala.",
   "sources": "CastlesAndManorHouses.com, Svincent.com",
   "genre": "universal",
@@ -128,7 +128,7 @@
       "name": "upper class",
       "explanation": "Upper class social status.",
       "entries": [
-        "{government}",
+        "{administration}",
         "{academic}",
         "{legal}"
       ]
@@ -151,6 +151,13 @@
         "scholar",
         "researcher",
         "academic teacher"
+      ]
+    },
+    {
+      "name": "administration",
+      "explanation": "Government officials.",
+      "entries": [
+        "{hireling}"
       ]
     },
     {
@@ -190,13 +197,6 @@
       "explanation": "Mercantile employment.",
       "entries": [
         "farmer"
-      ]
-    },
-    {
-      "name": "government",
-      "explanation": "Government officials.",
-      "entries": [
-        "hireling"
       ]
     },
     {

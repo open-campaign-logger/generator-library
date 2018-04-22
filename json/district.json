@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "Separate proper names from district types!",
   "see": "business, settlement, shop, street",
-  "date": "2018-04-21",
+  "date": "2018-04-22",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -230,7 +230,6 @@
       "entries": [
         "district",
         "court",
-        "lane",
         "forum",
         "embassy",
         "library",
@@ -260,10 +259,8 @@
         "moat",
         "ditch",
         "wall",
-        "fence",
         "hedge",
         "gate",
-        "gateway",
         "lip",
         "hem",
         "skirt",
@@ -276,8 +273,7 @@
         "frontier",
         "border",
         "boundary",
-        "terminus",
-        "ring"
+        "terminus"
       ]
     },
     {
@@ -316,7 +312,6 @@
         "market",
         "bazaar",
         "exchange",
-        "street",
         "trade",
         "monger",
         "vend",
@@ -351,9 +346,7 @@
         "vault",
         "coffer",
         "safe",
-        "crescent",
-        "plaza",
-        "arc"
+        "plaza"
       ]
     },
     {
@@ -394,15 +387,11 @@
       "explanation": "Central area.",
       "entries": [
         "city",
-        "avenue",
-        "boulevard",
         "gallery",
         "square",
-        "cross",
         "center",
         "central",
-        "main",
-        "circle"
+        "main"
       ]
     },
     {
@@ -417,7 +406,6 @@
         "wood",
         "woods",
         "menagerie",
-        "pathway",
         "range"
       ]
     },
@@ -425,7 +413,6 @@
       "name": "residential",
       "explanation": "Living quarters.",
       "entries": [
-        "row",
         "quarter",
         "ward",
         "town",
@@ -435,9 +422,7 @@
         "shelter",
         "berth",
         "refuge",
-        "cot",
-        "way",
-        "route"
+        "cot"
       ]
     },
     {
@@ -453,6 +438,7 @@
         "nest",
         "lair",
         "den",
+        "sty",
         "pit",
         "pits",
         "fen",
@@ -464,16 +450,12 @@
         "marsh",
         "swale",
         "slough",
-        "gutter",
-        "trench",
-        "trenches",
         "sewer",
         "cesspit",
         "cesspool",
         "bottoms",
         "hollow",
-        "burrow",
-        "alley"
+        "burrow"
       ]
     },
     {
@@ -481,12 +463,12 @@
       "explanation": "Residential areas away from the center.",
       "entries": [
         "acre",
+        "dale",
         "vale",
         "valley",
         "side",
         "nook",
-        "corner",
-        "road"
+        "corner"
       ]
     },
     {
@@ -501,7 +483,6 @@
         "sanctum",
         "resort",
         "retreat",
-        "terrace",
         "heights",
         "towers",
         "hill"
@@ -523,9 +504,7 @@
         "store",
         "loft",
         "lot",
-        "plot",
-        "tract",
-        "trail"
+        "tract"
       ]
     },
     {
