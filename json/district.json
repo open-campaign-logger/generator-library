@@ -1,13 +1,13 @@
 {
   "name": "district",
-  "resultPattern": "{init}{result}",
+  "resultPattern": "{init}{lib:formatting#CL}{result}",
   "globals": {
     "variable": ""
   },
   "variables": {
     "footnote": ""
   },
-  "explanation": "Neighbourhoods for settlements.",
+  "explanation": "Neighborhoods for settlements.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "format": "",
@@ -35,13 +35,16 @@
       ]
     },
     {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
       "name": "result",
-      "explanation": "Verbosity of the resultPattern output.",
+      "explanation": "The output format.",
       "entries": [
         "{summary}",
         "{detail}",
-        "{name}",
-        "{description}"
+        "{description}",
+        "{stats}"
       ]
     },
     {
@@ -56,28 +59,31 @@
       "explanation": "More detailed output variations.",
       "entries": [
         "{attribute} {district}",
-        "{district} {feature}",
-        "{attribute} {district} {feature}"
-      ]
-    },
-    {
-      "name": "name",
-      "explanation": "Just the proper name.",
-      "entries": [
-        "{lib:prefix#place} {district}",
-        "{elevation} {direction} {district}"
+        "{district} {feature}."
       ]
     },
     {
       "name": "description",
-      "explanation": "Long description.",
+      "explanation": "Long description as a paragraph of text.",
       "entries": [
+        "The {district} {synonym} {looks} {attribute}.",
+        "The {district} {synonym} {feature}.",
         "The {attribute} {district} {feature}."
       ]
     },
     {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{g:bullet}{g:startbold}District{g:endbold}: {district}. \r\n{g:bullet}{g:startbold}Attribute{g:endbold}: {attribute}. \r\n{g:bullet}{g:startbold}Feature{g:endbold}: This {synonym} {feature}."
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
       "name": "district",
-      "explanation": "The district types by rarity.",
+      "explanation": "Types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -88,140 +94,203 @@
     },
     {
       "name": "common",
-      "explanation": "Common district types.",
+      "explanation": "Common types.",
       "entries": [
-        "{poor} {slum}",
-        "{lower class} {residential}",
-        "{middle class} {residential}",
-        "{upper class} {residential}",
-        "{lower class} {commercial}",
-        "{middle class} {commercial}",
-        "{upper class} {commercial}",
-        "{middle class} {midtown}",
-        "{upper class} {midtown}"
+        "{poor}",
+        "{lower class}",
+        "{middle class}"
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare district types.",
+      "explanation": "Rare types.",
       "entries": [
-        "{poor} {harbor}",
-        "{lower class} {harbor}",
-        "{poor} {border}",
-        "{lower class} {border}",
-        "{poor} {warehouse}",
-        "{lower class} {warehouse}",
-        "{lower class} {suburb}",
-        "{lower class} {entertainment}",
-        "{middle class} {entertainment}",
-        "{lower class} {artisan}",
-        "{middle class} {artisan}",
-        "{middle class} {suburb}",
-        "{upper class} {suburb}",
-        "{middle class} {park}",
-        "{upper class} {park}",
-        "{middle class} {administrative}",
-        "{upper class} {administrative}",
-        "{upper class} {church}",
-        "{rich} {church}",
-        "{middle class} {financial}",
-        "{upper class} {financial}",
-        "{rich} {financial}",
-        "{upper class} {wealthy}",
-        "{rich} {wealthy}"
-      ]
-    },
-    {
-      "**************************************************": "RESIDENTS"
-    },
-    {
-      "name": "resident",
-      "explanation": "Inhabitants of the district.",
-      "entries": [
-        "{poor}",
-        "{lower class}",
-        "{middle class}",
         "{upper class}",
         "{rich}"
       ]
     },
     {
+      "**************************************************": "STATUS"
+    },
+    {
       "name": "poor",
+      "explanation": "Poor neighborhoods.",
+      "entries": [
+        "{|{poor area} {poor neighborhood}|tcase}"
+      ]
+    },
+    {
+      "name": "lower class",
+      "explanation": "Lower class neighborhoods.",
+      "entries": [
+        "{|{lower class area} {lower class neighborhood}|tcase}"
+      ]
+    },
+    {
+      "name": "middle class",
+      "explanation": "Middle class neighborhoods.",
+      "entries": [
+        "{|{middle class area} {middle class neighborhood}|tcase}"
+      ]
+    },
+    {
+      "name": "upper class",
+      "explanation": "Upper class neighborhoods.",
+      "entries": [
+        "{|{upper class area} {upper class neighborhood}|tcase}"
+      ]
+    },
+    {
+      "name": "rich",
+      "explanation": "Rich neighborhoods.",
+      "entries": [
+        "{|{rich area} {rich neighborhood}|tcase}"
+      ]
+    },
+    {
+      "**************************************************": "AREAS"
+    },
+    {
+      "name": "area",
+      "explanation": "Inhabitants of the district.",
+      "entries": [
+        "{poor area}",
+        "{lower class area}",
+        "{middle class area}",
+        "{upper class area}",
+        "{rich area}"
+      ]
+    },
+    {
+      "name": "poor area",
       "explanation": "Poor inhabitants.",
       "entries": [
         "{lib:occupation#poor}s'",
         "thieves'",
         "beggars'",
-        "{lower class}"
+        "{lower class area}"
       ]
     },
     {
-      "name": "lower class",
+      "name": "lower class area",
       "explanation": "Lower class inhabitants.",
       "entries": [
-        "{poor}",
+        "{poor area}",
         "{lib:occupation#lower class}s'",
         "adventurers'",
         "travelers'",
         "workers'",
-        "{middle class}"
+        "{middle class area}"
       ]
     },
     {
-      "name": "middle class",
+      "name": "middle class area",
       "explanation": "Middle class inhabitants.",
       "entries": [
-        "{lower class}",
+        "{lower class area}",
         "{lib:occupation#middle class}s'",
         "craftsmen's",
         "artificiers'",
         "cobblers'",
-        "{upper class}"
+        "{upper class area}"
       ]
     },
     {
-      "name": "upper class",
+      "name": "upper class area",
       "explanation": "Upper class inhabitants.",
       "entries": [
-        "{middle class}",
+        "{middle class area}",
         "{lib:occupation#upper class}s'",
         "merchants'",
         "priests'",
         "scholars'",
-        "{rich}"
+        "{rich area}"
       ]
     },
     {
-      "name": "rich",
+      "name": "rich area",
       "explanation": "Affluent inhabitants.",
       "entries": [
-        "{upper class}",
+        "{upper class area}",
         "{lib:occupation#rich}s'",
         "nobles'"
       ]
     },
     {
-      "**************************************************": "DISTRICTS"
+      "**************************************************": "NEIGHBORHOODS"
     },
     {
       "name": "neighborhood",
-      "explanation": "Types of districts.",
+      "explanation": "Types of neighborhoods.",
       "entries": [
-        "{administrative}",
-        "{artisan}",
+        "{poor neighborhood}",
+        "{lower class neighborhood}",
+        "{middle class neighborhood}",
+        "{upper class neighborhood}",
+        "{rich neighborhood}"
+      ]
+    },
+    {
+      "name": "poor neighborhood",
+      "explanation": "Poor neighborhoods.",
+      "entries": [
+        "{slum}",
+        "{harbor}",
         "{border}",
-        "{church}",
+        "{warehouse}"
+      ]
+    },
+    {
+      "name": "lower class neighborhood",
+      "explanation": "Lower class neighborhoods.",
+      "entries": [
+        "{residential}",
+        "{commercial}",
+        "{harbor}",
+        "{border}",
+        "{warehouse}",
+        "{suburb}",
+        "{entertainment}",
+        "{artisan}"
+      ]
+    },
+    {
+      "name": "middle class neighborhood",
+      "explanation": "Middle class neighborhoods.",
+      "entries": [
+        "{residential}",
         "{commercial}",
         "{entertainment}",
-        "{financial}",
-        "{harbor}",
-        "{midtown}",
-        "{park}",
-        "{residential}",
-        "{slum}",
+        "{artisan}",
         "{suburb}",
-        "{wealthy}",
-        "{warehouse}"
+        "{park}",
+        "{administrative}",
+        "{financial}",
+        "{midtown}"
+      ]
+    },
+    {
+      "name": "upper class neighborhood",
+      "explanation": "Upper class neighborhoods.",
+      "entries": [
+        "{residential}",
+        "{commercial}",
+        "{midtown}",
+        "{suburb}",
+        "{park}",
+        "{administrative}",
+        "{church}",
+        "{financial}",
+        "{wealthy}"
+      ]
+    },
+    {
+      "name": "rich neighborhood",
+      "explanation": "Rich neighborhoods.",
+      "entries": [
+        "{church}",
+        "{financial}",
+        "{wealthy}"
       ]
     },
     {
@@ -427,7 +496,7 @@
     },
     {
       "name": "slum",
-      "explanation": "Poor neighborhood.",
+      "explanation": "The abodes of the poorest.",
       "entries": [
         "shantytown",
         "hideout",
@@ -514,88 +583,22 @@
       "name": "term",
       "explanation": "Randomized terms (generated from components).",
       "entries": [
-        "{beginning}{ending}",
-        "{descriptor} {beginning}{ending}",
-        "{beginning}{ending} {extension}",
-        "{descriptor} {beginning}{ending} {extension}"
+        "{beginning} {ending}",
+        "{descriptor} {beginning} {ending}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
       ]
     },
     {
       "name": "descriptor",
       "explanation": "Descriptors for randomized terms.",
       "entries": [
-        ""
+        "{age}",
+        "{direction}",
+        "{elevation}",
+        "{elevation} {direction}",
+        "{location}"
       ]
-    },
-    {
-      "name": "beginning",
-      "explanation": "Beginnings for randomized terms.",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "ending",
-      "explanation": "Endings for randomized terms.",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "extension",
-      "explanation": "Extensions for randomized terms.",
-      "entries": [
-        ""
-      ]
-    },
-    {
-      "**************************************************": "WORLD-SPECIFIC"
-    },
-    {
-      "name": "fantasy",
-      "explanation": "Districts for fantasy worlds (with no basis in myth).",
-      "entries": [
-        "{myth}",
-        "arcane {neighborhood}"
-      ]
-    },
-    {
-      "name": "myth",
-      "explanation": "Districts once rumoured to have existed.",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "medieval",
-      "explanation": "Districts for Middle Age worlds (without magic).",
-      "entries": [
-        "flea {slum}"
-      ]
-    },
-    {
-      "name": "modern",
-      "explanation": "Districts for modern worlds.",
-      "entries": [
-        "suburb",
-        "precinct",
-        "projects"
-      ]
-    },
-    {
-      "name": "futuristic",
-      "explanation": "Districts for science fiction worlds.",
-      "entries": [
-        "{modern}",
-        "turf",
-        "block",
-        "sector",
-        "zone",
-        "urb"
-      ]
-    },
-    {
-      "**************************************************": "NAME COMPONENTS"
     },
     {
       "name": "age",
@@ -634,11 +637,120 @@
       ]
     },
     {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{lib:prefix#place}"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "{district}"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Districts for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{district}",
+        "arcane {neighborhood}"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Districts once rumoured to have existed.",
+      "entries": [
+        "{district}"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Districts for Middle Age worlds (without magic).",
+      "entries": [
+        "{district}",
+        "flea {slum}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Districts for modern worlds.",
+      "entries": [
+        "{district}",
+        "suburb",
+        "precinct",
+        "projects"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Districts for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "turf",
+        "block",
+        "sector",
+        "zone",
+        "urb"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        "zone"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "district",
+        "neighborhood",
+        "territory",
+        "area",
+        "place",
+        "site",
+        "region",
+        "locale",
+        "locality",
+        "location"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Synonyms for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "looks to be",
+        "seems to be"
+      ]
+    },
+    {
       "**************************************************": "SPECIAL TABLES"
     },
     {
       "name": "special",
-      "explanation": "Special district tables.",
+      "explanation": "Special tables.",
       "entries": [
         "{attribute}",
         "{feature}"
@@ -651,70 +763,84 @@
       "entries": [
         "messy",
         "littered",
-        "orderly"
+        "clean",
+        "shady",
+        "gloomy",
+        "well-lit",
+        "maze-like",
+        "orderly",
+        "hostile",
+        "friendly",
+        "historic",
+        "new",
+        "diverse"
       ]
     },
     {
-      "**************************************************": "FEATURES"
+      "--------------------------------------------------": "FEATURES"
     },
     {
       "name": "feature",
       "explanation": "Features related to the district.",
       "format": "Optionally appended to the end of the result.",
       "entries": [
-        "{dangerous}",
-        "{decaying}",
-        "{quiet}",
-        "{standard}",
-        "{busy}",
-        "{thriving}"
+        "{poor feature}",
+        "{lower class feature}",
+        "{middle class feature}",
+        "{upper class feature}",
+        "{rich feature}"
       ]
     },
     {
-      "name": "dangerous",
-      "explanation": "Features for dangerous districts.",
+      "name": "poor feature",
+      "explanation": "Features for poor districts.",
       "entries": [
+        "is best avoided by night, say many",
         "whose reputation is bad",
-        "is best avoided by night, say many"
+        "{lower class feature}"
       ]
     },
     {
-      "name": "decaying",
-      "explanation": "Features for decaying districts.",
+      "name": "lower class feature",
+      "explanation": "Features for lower class districts.",
       "entries": [
+        "{poor feature}",
         "has fallen in disrepair",
         "has recently lost many of its inhabitants",
-        "that has seen better days"
+        "has seen better days",
+        "gets livelier by evenings",
+        "{middle class feature}"
       ]
     },
     {
-      "name": "quiet",
-      "explanation": "Features for quiet districts.",
+      "name": "middle class feature",
+      "explanation": "Features for middle class districts.",
       "entries": [
-        "is usually a quiet neighborhood"
+        "{lower class feature}",
+        "is noisy by daytime, but deadly quiet by night",
+        "has seen many new inhabitants arrive",
+        "is often crowded",
+        "{upper class feature}"
       ]
     },
     {
-      "name": "standard",
-      "explanation": "Features for standard districts.",
-      "entries": [
-        "is noisy by daytime, but deadly quiet by night"
-      ]
-    },
-    {
-      "name": "busy",
+      "name": "upper class feature",
       "explanation": "Features for busy districts.",
       "entries": [
-        "is often crowded"
+        "{middle class feature}",
+        "is no longer so fashionable as it used to be",
+        "has recently become a fashionable area",
+        "{rich feature}"
       ]
     },
     {
-      "name": "thriving",
+      "name": "rich feature",
       "explanation": "Features for thriving districts.",
       "entries": [
-        "has seen many new inhabitants arrive",
-        "gets livelier by evenings",
-        "that has recently become a fashionable area"
+        "{upper class feature}",
+        "is a well guarded area",
+        "is home for many high-ranking citizens",
+        "is usually a quiet neighborhood"
       ]
     },
     {
@@ -724,7 +850,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "result: {result}, summary: {summary}, detail: {detail}, description: {description} Common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Term: {term}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]
