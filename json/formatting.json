@@ -23,6 +23,7 @@
     "endtablecell": "",
     "startunderlined": "",
     "endunderlined": "",
+    "bullet": "",
     "para": "",
     "st": "",
     "et": "",
@@ -44,6 +45,7 @@
     "ec": "",
     "su": "",
     "eu": "",
+    "b": "",
     "p": ""
   },
   "variables": {
@@ -56,7 +58,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-04-13",
+  "date": "2018-04-22",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "meta",
@@ -85,13 +87,13 @@
       "explanation": "Set global variables for Campaign Logger formatting.",
       "entries": [
         {
-          "v": "",
+          "v": "{shorthand}",
           "export": {
             "format": "CampaignLogger",
-            "starttitle": "{b|",
-            "endtitle": "}\r\n\r\n",
-            "startheading": "\r\n\r\n{b|",
-            "endheading": "}",
+            "starttitle": "\r\n== ",
+            "endtitle": " ==\r\n",
+            "startheading": "\r\n==== ",
+            "endheading": " ====\r\n",
             "startbold": "{b|",
             "endbold": "}",
             "startitalic": "{i|",
@@ -108,6 +110,7 @@
             "endtablecell": " \r\n",
             "startunderlined": "{u|",
             "endunderlined": "}",
+            "bullet": "\r\n * ",
             "para": "\r\n"
           }
         }
@@ -118,7 +121,7 @@
       "explanation": "Set global variables for output as HTML.",
       "entries": [
         {
-          "v": "",
+          "v": "{shorthand}",
           "export": {
             "format": "HTML",
             "starttitle": "<H2>",
@@ -141,6 +144,7 @@
             "endtablecell": " </TD>",
             "startunderlined": "<INS>",
             "endunderlined": "</INS>",
+            "bullet": "<LI>",
             "para": "<P>"
           }
         }
@@ -151,7 +155,7 @@
       "explanation": "Set global variables for output as MarkDown.",
       "entries": [
         {
-          "v": "",
+          "v": "{shorthand}",
           "export": {
             "format": "Markdown",
             "starttitle": "\r\n# ",
@@ -174,6 +178,7 @@
             "endtablecell": " ",
             "startunderlined": "**_",
             "endunderlined": "_** ",
+            "bullet": "\r\n* ",
             "para": "\r\n\r\n"
           }
         }
@@ -184,7 +189,7 @@
       "explanation": "Set global variables for output as MediaWiki.",
       "entries": [
         {
-          "v": "",
+          "v": "{shorthand}",
           "export": {
             "format": "MediaWiki",
             "starttitle": "\r\n== ",
@@ -207,6 +212,7 @@
             "endtablecell": " |",
             "startunderlined": "<u>",
             "endunderlined": "</u>",
+            "bullet": "\r\n* ",
             "para": "\r\n\r\n"
           }
         }
@@ -217,7 +223,7 @@
       "explanation": "Set global variables for output as plain text.",
       "entries": [
         {
-          "v": "",
+          "v": "{shorthand}",
           "export": {
             "format": "plaintext",
             "starttitle": "\r\n",
@@ -240,6 +246,7 @@
             "endtablecell": "",
             "startunderlined": "",
             "endunderlined": "",
+            "bullet": "\r\n * ",
             "para": "\r\n\r\n"
           }
         }
@@ -250,7 +257,7 @@
       "explanation": "Set global variables for output as reST.",
       "entries": [
         {
-          "v": "",
+          "v": "{shorthand}",
           "export": {
             "format": "reStructuredText",
             "starttitle": "\r\n",
@@ -273,6 +280,7 @@
             "endtablecell": "  ",
             "startunderlined": "``",
             "endunderlined": "``",
+            "bullet": "\r\n* ",
             "para": "\r\n\r\n"
           }
         }
@@ -436,27 +444,28 @@
         {
           "v": "",
           "export": {
-            "st": "{global:starttitle}",
-            "et": "{global:endtitle}",
-            "sh": "{global:startheading}",
-            "eh": "{global:endheading}",
-            "sb": "{global:startbold}",
-            "eb": "{global:endbold}",
-            "si": "{global:startitalic}",
-            "ei": "{global:enditalic}",
-            "sl": "{global:startlink}",
-            "el": "{global:endlink}",
-            "ss": "{global:startstrikethrough}",
-            "es": "{global:endstrikethrough}",
-            "ssub": "{global:startsubscript}",
-            "esub": "{global:endsubscript}",
-            "ssup": "{global:startsuperscript}",
-            "esup": "{global:endsuperscript}",
-            "sc": "{global:starttablecell}",
-            "ec": "{global:endtablecell}",
-            "su": "{global:startunderlined}",
-            "eu": "{global:endunderlined}",
-            "p": "{global:para}"
+            "st": "{g:starttitle}",
+            "et": "{g:endtitle}",
+            "sh": "{g:startheading}",
+            "eh": "{g:endheading}",
+            "sb": "{g:startbold}",
+            "eb": "{g:endbold}",
+            "si": "{g:startitalic}",
+            "ei": "{g:enditalic}",
+            "sl": "{g:startlink}",
+            "el": "{g:endlink}",
+            "ss": "{g:startstrikethrough}",
+            "es": "{g:endstrikethrough}",
+            "ssub": "{g:startsubscript}",
+            "esub": "{g:endsubscript}",
+            "ssup": "{g:startsuperscript}",
+            "esup": "{g:endsuperscript}",
+            "sc": "{g:starttablecell}",
+            "ec": "{g:endtablecell}",
+            "su": "{g:startunderlined}",
+            "eu": "{g:endunderlined}",
+            "b": "{g:bullet}",
+            "p": "{g:para}"
           }
         }
       ]
@@ -465,14 +474,14 @@
       "name": "test",
       "explanation": "Testing tool for dumping the set global variables.",
       "entries": [
-        "{init}Long tags: {global:format}. Emphasis: {global:startbold}bold{global:endbold}, {global:startitalic}italic{global:enditalic}, {global:startstrikethrough}strikethrough{global:endstrikethrough}, {global:startsubscript}subscript{global:endsubscript}, {global:startsuperscript}superscript{global:endsuperscript}, {global:startunderlined}underlined{global:endunderlined}. Linking: {global:startlink}https://RandomCreation.net/{global:endlink}. \r\n\r\nShort tags: {global:format}. Emphasis: {global:sb}bold{global:eb}, {global:si}italic{global:ei}, {global:ss}strikethrough{global:es}, {global:ssub}subscript{global:esub}, {global:ssup}superscript{global:esup}, {global:su}underlined{global:eu}. Linking: {global:sl}https://RandomCreation.net/{global:el}."
+        "{init}Long tags: {g:format}. Emphasis: {g:startbold}bold{g:endbold}, {g:startitalic}italic{g:enditalic}, {g:startstrikethrough}strikethrough{g:endstrikethrough}, {g:startsubscript}subscript{g:endsubscript}, {g:startsuperscript}superscript{g:endsuperscript}, {g:startunderlined}underlined{g:endunderlined}. Linking: {g:startlink}https://RandomCreation.net/{g:endlink}. \r\n\r\nShort tags: {g:format}. Emphasis: {g:sb}bold{g:eb}, {g:si}italic{g:ei}, {g:ss}strikethrough{g:es}, {g:ssub}subscript{g:esub}, {g:ssup}superscript{g:esup}, {g:su}underlined{g:eu}. Linking: {g:sl}https://RandomCreation.net/{g:el}. {g:para}Paragraph. {g:bullet} bullet point."
       ]
     },
     {
       "name": "help",
       "explanation": "Usage instructions.",
       "entries": [
-        "Call the formatting library from your table to set global variables to match formatting tags for the selected markup. \r\nSupported global variables are: global:starttitle, global:endtitle, global:startheading, global:endheading, global:startbold, global:endbold, global:startitalic, global:enditalic, global:startstrikethrough, global:endstrikethrough, global:startsubscript, global:endsubscript, global:startsuperscript, global:endsuperscript, global:startunderlined, global:endunderlined, global:para. \r\nSupported markups are: lib:formatting#CampaignLogger, lib:formatting#HTML, lib:formatting#MarkDown, lib:formatting#MediaWiki, lib:formatting#plaintext, lib:formatting#reStructuredText."
+        "Call the formatting library from your table to set global variables to match formatting tags for the selected markup. \r\nSupported global variables are: g:starttitle, g:endtitle, g:startheading, g:endheading, g:startbold, g:endbold, g:startitalic, g:enditalic, g:startstrikethrough, g:endstrikethrough, g:startsubscript, g:endsubscript, g:startsuperscript, g:endsuperscript, g:startunderlined, g:endunderlined, g:bullet, g:para. \r\nSupported markups are: lib:formatting#CampaignLogger, lib:formatting#HTML, lib:formatting#MarkDown, lib:formatting#MediaWiki, lib:formatting#plaintext, lib:formatting#reStructuredText."
       ]
     }
   ]
