@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "business, district, settlement, shop",
-  "date": "2018-04-22",
+  "date": "2018-04-23",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -59,8 +59,7 @@
       "explanation": "More detailed output variations.",
       "entries": [
         "{attribute} {street}",
-        "{street} is {feature}",
-        "The {attribute} {street} is {feature}. "
+        "{street} {looks} {feature}"
       ]
     },
     {
@@ -76,7 +75,7 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Passage}: {street} \r\n{b|Feature}: {feature}"
+        "{b|Passage}: {street} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature}"
       ]
     },
     {
@@ -1035,7 +1034,7 @@
     {
       "name": "feature",
       "explanation": "Features appended to the end of the result.",
-      "format": "It seems to be --",
+      "format": "It seems to be -- / It is --",
       "entries": [
         "in bad repair",
         "in good condition",
@@ -1052,7 +1051,7 @@
         "twisting and turning",
         "slightly curved",
         "mostly straight",
-        "forks in the middle",
+        "forking in the middle",
         "a dead end",
         "at first sight a dead end, but actually continues"
       ]
