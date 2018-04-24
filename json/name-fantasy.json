@@ -32,27 +32,56 @@
       ]
     },
     {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
       "name": "result",
-      "explanation": "Verbosity of the resultPattern output.",
+      "explanation": "The output format.",
       "entries": [
-        "{name}"
+        "{summary}",
+        "{detail}",
+        "{description}",
+        "{stats}"
       ]
     },
     {
       "name": "summary",
-      "explanation": "Brief resultPattern output.",
+      "explanation": "Brief output.",
       "entries": [
         "{female}",
-        "{male}"
+        "{male}",
+        "{unisex}"
       ]
     },
     {
       "name": "detail",
-      "explanation": "Detailed resultPattern output variations.",
+      "explanation": "More detailed output variations.",
       "entries": [
         "{female full}",
-        "{male full}"
+        "{male full}",
+        "{unisex full}"
       ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "{female} '{female byname}' {female surname}",
+        "{male} '{male byname}' {male surname}",
+        "{unisex} '{unisex byname}' {unisex surname}"
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|First name}: {female} \r\n{b|Surname}: {female surname} \r\n{b|Byname}: {female byname} \r\n{b|Gender}: female\r\n{b|Culture}: {g:culture}",
+        "{b|First name}: {male} \r\n{b|Surname}: {male surname} \r\n{b|Byname}: {male byname} \r\n{b|Gender}: male\r\n{b|Culture}: {g:culture}",
+        "{b|First name}: {unisex} \r\n{b|Surname}: {unisex surname} \r\n{b|Byname}: {unisex byname} \r\n{b|Gender}: undetermined \r\n{b|Culture}: {g:culture}"
+      ]
+    },
+    {
+      "**************************************************": "GENDERS"
     },
     {
       "name": "name",
@@ -82,6 +111,9 @@
         "{unisex}",
         "{unisex full}"
       ]
+    },
+    {
+      "**************************************************": "FULL NAMES"
     },
     {
       "name": "female full",
@@ -961,6 +993,28 @@
       "**************************************************": "SURNAMES"
     },
     {
+      "name": "female surname",
+      "explanation": "Female forms of surnames, if such are used.",
+      "entries": [
+        "{surname}"
+      ]
+    },
+    {
+      "name": "male surname",
+      "explanation": "Female forms of surnames, if such are used.",
+      "entries": [
+        "{surname}"
+      ]
+    },
+    {
+      "name": "unisex surname",
+      "explanation": "Female forms of surnames, if such are used.",
+      "entries": [
+        "{female surname}",
+        "{male surname}"
+      ]
+    },
+    {
       "name": "surname",
       "explanation": "Last names grouped by initials.",
       "entries": [
@@ -996,182 +1050,539 @@
       "name": "surname a",
       "explanation": "Last names beginning with 'A'.",
       "entries": [
-        "XXX"
+        "{beginning a}{ending}"
       ]
     },
     {
       "name": "surname b",
       "explanation": "Last names beginning with 'B'.",
       "entries": [
-        "XXX"
+        "{beginning b}{ending}"
       ]
     },
     {
       "name": "surname c",
       "explanation": "Last names beginning with 'C'.",
       "entries": [
-        "XXX"
+        "{beginning c}{ending}"
       ]
     },
     {
       "name": "surname d",
       "explanation": "Last names beginning with 'D'.",
       "entries": [
-        "XXX"
+        "{beginning d}{ending}"
       ]
     },
     {
       "name": "surname e",
       "explanation": "Last names beginning with 'E'.",
       "entries": [
-        "XXX"
+        "{beginning e}{ending}"
       ]
     },
     {
       "name": "surname f",
       "explanation": "Last names beginning with 'F'.",
       "entries": [
-        "XXX"
+        "{beginning f}{ending}"
       ]
     },
     {
       "name": "surname g",
       "explanation": "Last names beginning with 'G'.",
       "entries": [
-        "XXX"
+        "{beginning g}{ending}"
       ]
     },
     {
       "name": "surname h",
       "explanation": "Last names beginning with 'H'.",
       "entries": [
-        "XXX"
+        "{beginning h}{ending}"
       ]
     },
     {
       "name": "surname i",
       "explanation": "Last names beginning with 'I'.",
       "entries": [
-        "XXX"
+        "{beginning i}{ending}"
       ]
     },
     {
       "name": "surname j",
       "explanation": "Last names beginning with 'J'.",
       "entries": [
-        "XXX"
+        "{beginning j}{ending}"
       ]
     },
     {
       "name": "surname k",
       "explanation": "Last names beginning with 'K'.",
       "entries": [
-        "XXX"
+        "{beginning k}{ending}"
       ]
     },
     {
       "name": "surname l",
       "explanation": "Last names beginning with 'L'.",
       "entries": [
-        "XXX"
+        "{beginning l}{ending}"
       ]
     },
     {
       "name": "surname m",
       "explanation": "Last names beginning with 'M'.",
       "entries": [
-        "XXX"
+        "{beginning m}{ending}"
       ]
     },
     {
       "name": "surname n",
       "explanation": "Last names beginning with 'N'.",
       "entries": [
-        "XXX"
+        "{beginning n}{ending}"
       ]
     },
     {
       "name": "surname o",
       "explanation": "Last names beginning with 'O'.",
       "entries": [
-        "XXX"
+        "{beginning o}{ending}"
       ]
     },
     {
       "name": "surname p",
       "explanation": "Last names beginning with 'P'.",
       "entries": [
-        "XXX"
+        "{beginning p}{ending}"
       ]
     },
     {
       "name": "surname q",
       "explanation": "Last names beginning with 'Q'.",
       "entries": [
-        "XXX"
+        "{beginning q}{ending}"
       ]
     },
     {
       "name": "surname r",
       "explanation": "Last names beginning with 'R'.",
       "entries": [
-        "XXX"
+        "{beginning r}{ending}"
       ]
     },
     {
       "name": "surname s",
       "explanation": "Last names beginning with 'S'.",
       "entries": [
-        "XXX"
+        "{beginning s}{ending}"
       ]
     },
     {
       "name": "surname t",
       "explanation": "Last names beginning with 'T'.",
       "entries": [
-        "XXX"
+        "{beginning t}{ending}"
       ]
     },
     {
       "name": "surname u",
       "explanation": "Last names beginning with 'U'.",
       "entries": [
-        "XXX"
+        "{beginning u}{ending}"
       ]
     },
     {
       "name": "surname v",
       "explanation": "Last names beginning with 'V'.",
       "entries": [
-        "XXX"
+        "{beginning v}{ending}"
       ]
     },
     {
       "name": "surname w",
       "explanation": "Last names beginning with 'W'.",
       "entries": [
-        "XXX"
+        "{beginning w}{ending}"
       ]
     },
     {
       "name": "surname x",
       "explanation": "Last names beginning with 'X'.",
       "entries": [
-        "XXX"
+        "{beginning x}{ending}"
       ]
     },
     {
       "name": "surname y",
       "explanation": "Last names beginning with 'Y'.",
       "entries": [
-        "XXX"
+        "{beginning y}{ending}"
       ]
     },
     {
       "name": "surname z",
       "explanation": "Last names beginning with 'Z'.",
       "entries": [
-        "XXX"
+        "{beginning z}{ending}"
+      ]
+    },
+    {
+      "**************************************************": "NAME COMPONENTS"
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings of component-based names.",
+      "entries": [
+        "{beginning a}",
+        "{beginning b}",
+        "{beginning c}",
+        "{beginning d}",
+        "{beginning e}",
+        "{beginning f}",
+        "{beginning g}",
+        "{beginning h}",
+        "{beginning i}",
+        "{beginning j}",
+        "{beginning k}",
+        "{beginning l}",
+        "{beginning m}",
+        "{beginning n}",
+        "{beginning o}",
+        "{beginning p}",
+        "{beginning q}",
+        "{beginning r}",
+        "{beginning s}",
+        "{beginning t}",
+        "{beginning u}",
+        "{beginning v}",
+        "{beginning w}",
+        "{beginning y}"
+      ]
+    },
+    {
+      "name": "beginning a",
+      "explanation": "Beginnings starting with the letter 'A'.",
+      "entries": [
+        "Ash"
+      ]
+    },
+    {
+      "name": "beginning b",
+      "explanation": "Beginnings starting with the letter 'B'.",
+      "entries": [
+        "Black",
+        "Blue",
+        "Bold",
+        "Bright"
+      ]
+    },
+    {
+      "name": "beginning c",
+      "explanation": "Beginnings starting with the letter 'C'.",
+      "entries": [
+        "Chill",
+        "Cloud",
+        "Copper"
+      ]
+    },
+    {
+      "name": "beginning d",
+      "explanation": "Beginnings starting with the letter 'D'.",
+      "entries": [
+        "Dagger",
+        "Dark",
+        "Dawn",
+        "Day",
+        "Death",
+        "Deep",
+        "Doom",
+        "Dusk"
+      ]
+    },
+    {
+      "name": "beginning e",
+      "explanation": "Beginnings starting with the letter 'E'.",
+      "entries": [
+        "East",
+        "Elm",
+        "Ember"
+      ]
+    },
+    {
+      "name": "beginning f",
+      "explanation": "Beginnings starting with the letter 'F'.",
+      "entries": [
+        "Fall",
+        "Far",
+        "Fast",
+        "Fell",
+        "Fiend",
+        "Fire",
+        "Flame",
+        "Foe",
+        "Frost"
+      ]
+    },
+    {
+      "name": "beginning g",
+      "explanation": "Beginnings starting with the letter 'G'.",
+      "entries": [
+        "Gold",
+        "Green",
+        "Grey"
+      ]
+    },
+    {
+      "name": "beginning h",
+      "explanation": "Beginnings starting with the letter 'H'.",
+      "entries": [
+        "Hard",
+        "High"
+      ]
+    },
+    {
+      "name": "beginning i",
+      "explanation": "Beginnings starting with the letter 'I'.",
+      "entries": [
+        "Ice",
+        "Iron"
+      ]
+    },
+    {
+      "name": "beginning j",
+      "explanation": "Beginnings starting with the letter 'J'.",
+      "entries": [
+        "Just"
+      ]
+    },
+    {
+      "name": "beginning k",
+      "explanation": "Beginnings starting with the letter 'K'.",
+      "entries": [
+        "Keen"
+      ]
+    },
+    {
+      "name": "beginning l",
+      "explanation": "Beginnings starting with the letter 'L'.",
+      "entries": [
+        "Light",
+        "Long",
+        "Low"
+      ]
+    },
+    {
+      "name": "beginning m",
+      "explanation": "Beginnings starting with the letter 'M'.",
+      "entries": [
+        "Mist",
+        "Moon",
+        "Mourn"
+      ]
+    },
+    {
+      "name": "beginning n",
+      "explanation": "Beginnings starting with the letter 'N'.",
+      "entries": [
+        "Night",
+        "Noon",
+        "North"
+      ]
+    },
+    {
+      "name": "beginning o",
+      "explanation": "Beginnings starting with the letter 'O'.",
+      "entries": [
+        "Oaken",
+        "Old"
+      ]
+    },
+    {
+      "name": "beginning p",
+      "explanation": "Beginnings starting with the letter 'P'.",
+      "entries": [
+        "Pain",
+        "Pale"
+      ]
+    },
+    {
+      "name": "beginning q",
+      "explanation": "Beginnings starting with the letter 'Q'.",
+      "entries": [
+        "Quick"
+      ]
+    },
+    {
+      "name": "beginning r",
+      "explanation": "Beginnings starting with the letter 'R'.",
+      "entries": [
+        "Rain",
+        "Raven",
+        "Red",
+        "Rime",
+        "Rune"
+      ]
+    },
+    {
+      "name": "beginning s",
+      "explanation": "Beginnings starting with the letter 'S'.",
+      "entries": [
+        "Shadow",
+        "Short",
+        "Silver",
+        "Sky",
+        "South",
+        "Spring",
+        "Star",
+        "Stern",
+        "Still",
+        "Stone",
+        "Storm",
+        "Stout",
+        "Summer",
+        "Sun"
+      ]
+    },
+    {
+      "name": "beginning t",
+      "explanation": "Beginnings starting with the letter 'T'.",
+      "entries": [
+        "Thorn",
+        "Trick"
+      ]
+    },
+    {
+      "name": "beginning u",
+      "explanation": "Beginnings starting with the letter 'U'.",
+      "entries": [
+        "Urn"
+      ]
+    },
+    {
+      "name": "beginning v",
+      "explanation": "Beginnings starting with the letter 'V'.",
+      "entries": [
+        "Vain",
+        "Viper"
+      ]
+    },
+    {
+      "name": "beginning w",
+      "explanation": "Beginnings starting with the letter 'W'.",
+      "entries": [
+        "West",
+        "White",
+        "Willow",
+        "Wind",
+        "Winter",
+        "Wolf"
+      ]
+    },
+    {
+      "name": "beginning x",
+      "explanation": "Beginnings starting with the letter 'X'.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning y",
+      "explanation": "Beginnings starting with the letter 'Y'.",
+      "entries": [
+        "Young"
+      ]
+    },
+    {
+      "name": "beginning z",
+      "explanation": "Beginnings starting with the letter 'Z'.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings of component-based names.",
+      "entries": [
+        "arm",
+        "bane",
+        "blade",
+        "blood",
+        "bolt",
+        "bone",
+        "borne",
+        "bow",
+        "bred",
+        "brook",
+        "court",
+        "croft",
+        "crown",
+        "dale",
+        "den",
+        "dew",
+        "dread",
+        "field",
+        "flare",
+        "forge",
+        "fort",
+        "feather",
+        "gate",
+        "gaunt",
+        "gaze",
+        "gleam",
+        "glow",
+        "grief",
+        "guard",
+        "hammer",
+        "hand",
+        "heart",
+        "helm",
+        "hill",
+        "hold",
+        "hope",
+        "hound",
+        "ire",
+        "keep",
+        "lance",
+        "land",
+        "leaf",
+        "lock",
+        "lore",
+        "mane",
+        "maw",
+        "mind",
+        "mire",
+        "moor",
+        "mount",
+        "pike",
+        "pool",
+        "port",
+        "river",
+        "shaper",
+        "shield",
+        "skull",
+        "song",
+        "spirit",
+        "staff",
+        "stream",
+        "stride",
+        "strife",
+        "tear",
+        "thrall",
+        "tongue",
+        "tooth",
+        "treader",
+        "vale",
+        "wall",
+        "ward",
+        "weaver",
+        "well",
+        "whisper",
+        "wind",
+        "wing",
+        "wood",
+        "wound"
       ]
     },
     {
@@ -1505,13 +1916,13 @@
       ]
     },
     {
-      "**************************************************": "TESTING"
+      "--------------------------------------------------": "TESTING"
     },
     {
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, surname: {surname}, byname: {byname}, initial: {initial}. Gender = {global:gender}."
+        "{init}Female: {female}, male: {male}, unisex: {unisex}. Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Surname: {surname}, byname: {byname}, initial: {initial}. Gender = {g:gender}."
       ]
     }
   ]
