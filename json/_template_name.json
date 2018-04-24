@@ -32,27 +32,56 @@
       ]
     },
     {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
       "name": "result",
-      "explanation": "Verbosity of the resultPattern output.",
+      "explanation": "The output format.",
       "entries": [
-        "{name}"
+        "{summary}",
+        "{detail}",
+        "{description}",
+        "{stats}"
       ]
     },
     {
       "name": "summary",
-      "explanation": "Brief resultPattern output.",
+      "explanation": "Brief output.",
       "entries": [
         "{female}",
-        "{male}"
+        "{male}",
+        "{unisex}"
       ]
     },
     {
       "name": "detail",
-      "explanation": "Detailed resultPattern output variations.",
+      "explanation": "More detailed output variations.",
       "entries": [
         "{female full}",
-        "{male full}"
+        "{male full}",
+        "{unisex full}"
       ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "{female} '{female byname}' {female surname}",
+        "{male} '{male byname}' {male surname}",
+        "{unisex} '{unisex byname}' {unisex surname}"
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|First name}: {female} \r\n{b|Surname}: {female surname} \r\n{b|Byname}: {female byname} \r\n{b|Gender}: female\r\n{b|Culture}: {g:culture}",
+        "{b|First name}: {male} \r\n{b|Surname}: {male surname} \r\n{b|Byname}: {male byname} \r\n{b|Gender}: male\r\n{b|Culture}: {g:culture}",
+        "{b|First name}: {unisex} \r\n{b|Surname}: {unisex surname} \r\n{b|Byname}: {unisex byname} \r\n{b|Gender}: undetermined \r\n{b|Culture}: {g:culture}"
+      ]
+    },
+    {
+      "**************************************************": "GENDERS"
     },
     {
       "name": "name",
@@ -84,9 +113,12 @@
       ]
     },
     {
+      "**************************************************": "FULL NAMES"
+    },
+    {
       "name": "female full",
       "entries": [
-        "{female} {surname}",
+        "{female} {female surname}",
         "{female} {female append}",
         "{unisex} {female append}",
         "{female} {unisex append}",
@@ -100,7 +132,7 @@
     {
       "name": "male full",
       "entries": [
-        "{male} {surname}",
+        "{male} {male surname}",
         "{male} {male append}",
         "{unisex} {male append}",
         "{male} {unisex append}",
@@ -114,7 +146,7 @@
     {
       "name": "unisex full",
       "entries": [
-        "{unisex} {surname}",
+        "{unisex} {unisex surname}",
         "{unisex} {unisex append}",
         "{unisex prepend} {unisex}"
       ]
@@ -728,6 +760,28 @@
       "**************************************************": "SURNAMES"
     },
     {
+      "name": "female surname",
+      "explanation": "Female forms of surnames, if such are used.",
+      "entries": [
+        "{surname}"
+      ]
+    },
+    {
+      "name": "male surname",
+      "explanation": "Female forms of surnames, if such are used.",
+      "entries": [
+        "{surname}"
+      ]
+    },
+    {
+      "name": "unisex surname",
+      "explanation": "Female forms of surnames, if such are used.",
+      "entries": [
+        "{female surname}",
+        "{male surname}"
+      ]
+    },
+    {
       "name": "surname",
       "explanation": "Last names grouped by initials.",
       "entries": [
@@ -1272,13 +1326,13 @@
       ]
     },
     {
-      "**************************************************": "TESTING"
+      "--------------------------------------------------": "TESTING"
     },
     {
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, surname: {surname}, byname: {byname}, initial: {initial}. Gender = {global:gender}."
+        "{init}Female: {female}, male: {male}, unisex: {unisex}. Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Surname: {surname}, byname: {byname}, initial: {initial}. Gender = {g:gender}."
       ]
     }
   ]
