@@ -1,0 +1,1518 @@
+{
+  "name": "name-fantasy",
+  "resultPattern": "{result}",
+  "globals": {
+    "culture": "generic fantasy"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Generic fantasy names not based on a real-world culture.",
+  "structure": "Genders are collected in the same file to allow easy sharing of patronym and byname tables. Subtables have been split by their initial letter to allow future support for allitteration and for example siblings sharing the same initial.",
+  "note": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-04-24",
+  "authors": "Ron Calbick, ELF Vesala.",
+  "sources": "name_f_1.json, name_f_2.json, name_m_1.json, name_m_2.json",
+  "genre": "fantasy",
+  "category": "name",
+  "tags": "#person",
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{name}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{female}",
+        "{male}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{female full}",
+        "{male full}"
+      ]
+    },
+    {
+      "name": "name",
+      "explanation": "The name types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common name types.",
+      "entries": [
+        "{female}",
+        "{male}",
+        "{female full}",
+        "{male full}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare name types.",
+      "entries": [
+        "{unisex}",
+        "{unisex full}"
+      ]
+    },
+    {
+      "name": "female full",
+      "entries": [
+        "{female} {surname}",
+        "{female} {female append}",
+        "{unisex} {female append}",
+        "{female} {unisex append}",
+        "{unisex} {unisex append}",
+        "{female prepend} {female}",
+        "{unisex prepend} {female}",
+        "{female prepend} {unisex}",
+        "{unisex prepend} {unisex}"
+      ]
+    },
+    {
+      "name": "male full",
+      "entries": [
+        "{male} {surname}",
+        "{male} {male append}",
+        "{unisex} {male append}",
+        "{male} {unisex append}",
+        "{unisex} {unisex append}",
+        "{male prepend} {male}",
+        "{unisex prepend} {male}",
+        "{male prepend} {unisex}",
+        "{unisex prepend} {unisex}"
+      ]
+    },
+    {
+      "name": "unisex full",
+      "entries": [
+        "{unisex} {surname}",
+        "{unisex} {unisex append}",
+        "{unisex prepend} {unisex}"
+      ]
+    },
+    {
+      "**************************************************": "FEMALE FIRST NAMES"
+    },
+    {
+      "name": "female",
+      "explanation": "Female names grouped by initials.",
+      "export": {
+        "gender": "female"
+      },
+      "entries": [
+        "{female a}",
+        "{female b}",
+        "{female c}",
+        "{female d}",
+        "{female e}",
+        "{female f}",
+        "{female g}",
+        "{female h}",
+        "{female i}",
+        "{female j}",
+        "{female k}",
+        "{female l}",
+        "{female m}",
+        "{female n}",
+        "{female o}",
+        "{female p}",
+        "{female q}",
+        "{female r}",
+        "{female s}",
+        "{female t}",
+        "{female u}",
+        "{female v}",
+        "{female w}",
+        "{female x}",
+        "{female y}",
+        "{female z}"
+      ]
+    },
+    {
+      "name": "female a",
+      "entries": [
+        "Adah",
+        "Adaline",
+        "Adriel",
+        "Ahlia",
+        "Anya",
+        "Abriella"
+      ]
+    },
+    {
+      "name": "female b",
+      "entries": [
+        "Barboda",
+        "Bavmorda",
+        "Beaunyld",
+        "Belissa",
+        "Briseis"
+      ]
+    },
+    {
+      "name": "female c",
+      "entries": [
+        "Caili",
+        "Cara",
+        "Cora"
+      ]
+    },
+    {
+      "name": "female d",
+      "entries": [
+        "Dagmar",
+        "Danyell",
+        "Delena",
+        "Delma",
+        "Dionna"
+      ]
+    },
+    {
+      "name": "female e",
+      "entries": [
+        "Eavella",
+        "Ebeth",
+        "Edorin",
+        "Eira",
+        "Eisa",
+        "Elena",
+        "Ellidyr",
+        "Elora",
+        "Elyon",
+        "Evadne",
+        "Evet"
+      ]
+    },
+    {
+      "name": "female f",
+      "entries": [
+        "Fabienne",
+        "Faustina",
+        "Fayne",
+        "Fenia",
+        "Ferrate",
+        "Florine",
+        "Fonya",
+        "Fynnete"
+      ]
+    },
+    {
+      "name": "female g",
+      "entries": [
+        "Galadren",
+        "Galanna",
+        "Ganieda",
+        "Gwynn"
+      ]
+    },
+    {
+      "name": "female h",
+      "entries": [
+        "Hana",
+        "Hermelinda",
+        "Hortensia"
+      ]
+    },
+    {
+      "name": "female i",
+      "entries": [
+        "Idona",
+        "Ilona",
+        "Ivoris"
+      ]
+    },
+    {
+      "name": "female j",
+      "entries": [
+        "Jacinta",
+        "Johana",
+        "Jynerva"
+      ]
+    },
+    {
+      "name": "female k",
+      "entries": [
+        "Karri",
+        "Kimber",
+        "Kirstalia"
+      ]
+    },
+    {
+      "name": "female l",
+      "entries": [
+        "Lanelle",
+        "Leisa",
+        "Lizbeth",
+        "Lorena"
+      ]
+    },
+    {
+      "name": "female m",
+      "entries": [
+        "Malander",
+        "Mareena",
+        "Margolis",
+        "Milanthe"
+      ]
+    },
+    {
+      "name": "female n",
+      "entries": [
+        "Naida",
+        "Nakesha",
+        "Noelia"
+      ]
+    },
+    {
+      "name": "female o",
+      "entries": [
+        "Odona",
+        "Oelita",
+        "Olvyris",
+        "Ondola",
+        "Ordelle"
+      ]
+    },
+    {
+      "name": "female p",
+      "entries": [
+        "Peramee",
+        "Pereta",
+        "Perith",
+        "Perle",
+        "Petita",
+        "Petronilla",
+        "Philadona",
+        "Prisane"
+      ]
+    },
+    {
+      "name": "female q",
+      "entries": [
+        "Qiana",
+        "Quana",
+        "Quihanna",
+        "Quyen"
+      ]
+    },
+    {
+      "name": "female r",
+      "entries": [
+        "Raina",
+        "Rathia",
+        "Rosalind"
+      ]
+    },
+    {
+      "name": "female s",
+      "entries": [
+        "Sadareen",
+        "Salema",
+        "Samira",
+        "Sarielle",
+        "Scronna"
+      ]
+    },
+    {
+      "name": "female t",
+      "entries": [
+        "Talea",
+        "Tamarantha",
+        "Teresse",
+        "Thaleen",
+        "Theia",
+        "Tiania"
+      ]
+    },
+    {
+      "name": "female u",
+      "entries": [
+        "Urielle",
+        "Ursula",
+        "Usha"
+      ]
+    },
+    {
+      "name": "female v",
+      "entries": [
+        "Valene",
+        "Valeria",
+        "Verda"
+      ]
+    },
+    {
+      "name": "female w",
+      "entries": [
+        "Walena",
+        "Wellath",
+        "Wyvorna"
+      ]
+    },
+    {
+      "name": "female x",
+      "entries": [
+        "Xara",
+        "Xiomara"
+      ]
+    },
+    {
+      "name": "female y",
+      "entries": [
+        "Ygerna",
+        "Yolanda",
+        "Yrnette",
+        "Yvonnette"
+      ]
+    },
+    {
+      "name": "female z",
+      "entries": [
+        "Zenia",
+        "Zidar",
+        "Zoraida",
+        "Zyneste"
+      ]
+    },
+    {
+      "**************************************************": "MALE FIRST NAMES"
+    },
+    {
+      "name": "male",
+      "explanation": "Male names grouped by initials.",
+      "export": {
+        "gender": "male"
+      },
+      "entries": [
+        "{male a}",
+        "{male b}",
+        "{male c}",
+        "{male d}",
+        "{male e}",
+        "{male f}",
+        "{male g}",
+        "{male h}",
+        "{male i}",
+        "{male j}",
+        "{male k}",
+        "{male l}",
+        "{male m}",
+        "{male n}",
+        "{male o}",
+        "{male p}",
+        "{male q}",
+        "{male r}",
+        "{male s}",
+        "{male t}",
+        "{male u}",
+        "{male v}",
+        "{male w}",
+        "{male x}",
+        "{male y}",
+        "{male z}"
+      ]
+    },
+    {
+      "name": "male a",
+      "entries": [
+        "Abarden",
+        "Akarzil",
+        "Ambrose"
+      ]
+    },
+    {
+      "name": "male b",
+      "entries": [
+        "Barryn",
+        "Boaldeir",
+        "Bregan",
+        "Brylant"
+      ]
+    },
+    {
+      "name": "male c",
+      "entries": [
+        "Casdin",
+        "Celbahr",
+        "Crestin"
+      ]
+    },
+    {
+      "name": "male d",
+      "entries": [
+        "Daermond",
+        "Dagos",
+        "Defyrion"
+      ]
+    },
+    {
+      "name": "male e",
+      "entries": [
+        "Eadric",
+        "Edan",
+        "Edoc",
+        "Elderon",
+        "Elidigon",
+        "Elius",
+        "Elphin",
+        "Eoman",
+        "Etran"
+      ]
+    },
+    {
+      "name": "male f",
+      "entries": [
+        "Faeron",
+        "Falan",
+        "Faran",
+        "Feldor",
+        "Felor",
+        "Findal"
+      ]
+    },
+    {
+      "name": "male g",
+      "entries": [
+        "Galar",
+        "Galen",
+        "Galion",
+        "Gann",
+        "Garith",
+        "Geirrod",
+        "Guthford"
+      ]
+    },
+    {
+      "name": "male h",
+      "entries": [
+        "Halmar",
+        "Helm",
+        "Heramon"
+      ]
+    },
+    {
+      "name": "male i",
+      "entries": [
+        "Iagan",
+        "Ilengar",
+        "Iredorn"
+      ]
+    },
+    {
+      "name": "male j",
+      "entries": [
+        "Januviel",
+        "Jathinest",
+        "Jespar",
+        "Joriel"
+      ]
+    },
+    {
+      "name": "male k",
+      "entries": [
+        "Kael",
+        "Kibidon",
+        "Keal",
+        "Kesmon",
+        "Kethren",
+        "Kiril",
+        "Kyrad"
+      ]
+    },
+    {
+      "name": "male l",
+      "entries": [
+        "Landolfur",
+        "Larwahl",
+        "Leonaro",
+        "Lyron"
+      ]
+    },
+    {
+      "name": "male m",
+      "entries": [
+        "Malhshenz",
+        "Merkesh",
+        "Modesteles",
+        "Monterareis"
+      ]
+    },
+    {
+      "name": "male n",
+      "entries": [
+        "Namourn",
+        "Nefarus",
+        "Nothar",
+        "Nyfain"
+      ]
+    },
+    {
+      "name": "male o",
+      "entries": [
+        "Ocarin",
+        "Omarion",
+        "Orellis"
+      ]
+    },
+    {
+      "name": "male p",
+      "entries": [
+        "Pasquale",
+        "Pelebroc",
+        "Phairidon",
+        "Porfirio"
+      ]
+    },
+    {
+      "name": "male q",
+      "entries": [
+        "Qadir",
+        "Qidan",
+        "Qysan"
+      ]
+    },
+    {
+      "name": "male r",
+      "entries": [
+        "Ranbalin",
+        "Rhillion",
+        "Rhygel",
+        "Rogist",
+        "Rythern"
+      ]
+    },
+    {
+      "name": "male s",
+      "entries": [
+        "Sebastian",
+        "Sil'forrin",
+        "Sothales"
+      ]
+    },
+    {
+      "name": "male t",
+      "entries": [
+        "Thaniel",
+        "Trendall",
+        "Tyralis"
+      ]
+    },
+    {
+      "name": "male u",
+      "entries": [
+        "Uberto",
+        "Uerthin",
+        "Urien"
+      ]
+    },
+    {
+      "name": "male v",
+      "entries": [
+        "Vared",
+        "Virgilis",
+        "Voudim"
+      ]
+    },
+    {
+      "name": "male w",
+      "entries": [
+        "Waeron",
+        "Welentor",
+        "Whane",
+        "Witmor"
+      ]
+    },
+    {
+      "name": "male x",
+      "entries": [
+        "Xanril",
+        "Xealen",
+        "Xylano"
+      ]
+    },
+    {
+      "name": "male y",
+      "entries": [
+        "Yreth",
+        "Yve",
+        "Yveserin"
+      ]
+    },
+    {
+      "name": "male z",
+      "entries": [
+        "Zecane",
+        "Zidar",
+        "Zytenn"
+      ]
+    },
+    {
+      "**************************************************": "UNISEX FIRST NAMES"
+    },
+    {
+      "name": "unisex",
+      "explanation": "Unisex names grouped by initials.",
+      "entries": [
+        "{unisex a}",
+        "{unisex b}",
+        "{unisex c}",
+        "{unisex d}",
+        "{unisex e}",
+        "{unisex f}",
+        "{unisex g}",
+        "{unisex h}",
+        "{unisex i}",
+        "{unisex j}",
+        "{unisex k}",
+        "{unisex l}",
+        "{unisex m}",
+        "{unisex n}",
+        "{unisex o}",
+        "{unisex p}",
+        "{unisex q}",
+        "{unisex r}",
+        "{unisex s}",
+        "{unisex t}",
+        "{unisex u}",
+        "{unisex v}",
+        "{unisex w}",
+        "{unisex x}",
+        "{unisex y}",
+        "{unisex z}"
+      ]
+    },
+    {
+      "name": "unisex a",
+      "explanation": "Unisex names beginning with 'A'.",
+      "entries": [
+        "Adison",
+        "Adonia",
+        "Alessa",
+        "Alix",
+        "Altair",
+        "Alva",
+        "Alyx",
+        "Aras",
+        "Ari",
+        "Ariel"
+      ]
+    },
+    {
+      "name": "unisex b",
+      "explanation": "Gender neutral names beginning with 'B'.",
+      "entries": [
+        "Blair",
+        "Braith",
+        "Brier",
+        "Bryn"
+      ]
+    },
+    {
+      "name": "unisex c",
+      "explanation": "Gender neutral names beginning with 'C'.",
+      "entries": [
+        "Camille",
+        "Ceri",
+        "Clare",
+        "Cyrille"
+      ]
+    },
+    {
+      "name": "unisex d",
+      "explanation": "Gender neutral names beginning with 'D'.",
+      "entries": [
+        "Dale",
+        "Dana",
+        "Darian",
+        "Darien",
+        "Darryl",
+        "Delwyn",
+        "Derryl",
+        "Devon",
+        "Dominique",
+        "Drew"
+      ]
+    },
+    {
+      "name": "unisex e",
+      "explanation": "Gender neutral names beginning with 'E'.",
+      "entries": [
+        "Eilian",
+        "Elian",
+        "Emlyn"
+      ]
+    },
+    {
+      "name": "unisex f",
+      "explanation": "Gender neutral names beginning with 'F'.",
+      "entries": [
+        "Félicité",
+        "Fiore",
+        "Francis"
+      ]
+    },
+    {
+      "name": "unisex g",
+      "explanation": "Gender neutral names beginning with 'G'.",
+      "entries": [
+        "Garnet",
+        "Greer",
+        "Gwyn"
+      ]
+    },
+    {
+      "name": "unisex h",
+      "explanation": "Gender neutral names beginning with 'H'.",
+      "entries": [
+        "Harper",
+        "Hollis"
+      ]
+    },
+    {
+      "name": "unisex i",
+      "explanation": "Gender neutral names beginning with 'I'.",
+      "entries": [
+        "Inge",
+        "Innis"
+      ]
+    },
+    {
+      "name": "unisex j",
+      "explanation": "Gender neutral names beginning with 'J'.",
+      "entries": [
+        "Jadyn",
+        "Janika",
+        "Jaylin",
+        "Jocelyn",
+        "Jordyn"
+      ]
+    },
+    {
+      "name": "unisex k",
+      "explanation": "Gender neutral names beginning with 'K'.",
+      "entries": [
+        "Kai",
+        "Kell",
+        "Kerry",
+        "Kim"
+      ]
+    },
+    {
+      "name": "unisex l",
+      "explanation": "Gender neutral names beginning with 'L'.",
+      "entries": [
+        "Lark",
+        "Lauren",
+        "Lin",
+        "Loren",
+        "Lorin"
+      ]
+    },
+    {
+      "name": "unisex m",
+      "explanation": "Gender neutral names beginning with 'M'.",
+      "entries": [
+        "Maeve",
+        "Malka",
+        "Mead",
+        "Meredith",
+        "Merle"
+      ]
+    },
+    {
+      "name": "unisex n",
+      "explanation": "Gender neutral names beginning with 'N'.",
+      "entries": [
+        "Noam",
+        "Noor"
+      ]
+    },
+    {
+      "name": "unisex o",
+      "explanation": "Gender neutral names beginning with 'O'.",
+      "entries": [
+        "Odalis",
+        "Ora"
+      ]
+    },
+    {
+      "name": "unisex p",
+      "explanation": "Gender neutral names beginning with 'P'.",
+      "entries": [
+        "Paise",
+        "Piper"
+      ]
+    },
+    {
+      "name": "unisex q",
+      "explanation": "Gender neutral names beginning with 'Q'.",
+      "entries": [
+        "Qi",
+        "Quinn"
+      ]
+    },
+    {
+      "name": "unisex r",
+      "explanation": "Gender neutral names beginning with 'R'.",
+      "entries": [
+        "Rael",
+        "Rimon",
+        "Rosario",
+        "Rowan"
+      ]
+    },
+    {
+      "name": "unisex s",
+      "explanation": "Gender neutral names beginning with 'S'.",
+      "entries": [
+        "Sage",
+        "Shea",
+        "Sloan",
+        "Sora"
+      ]
+    },
+    {
+      "name": "unisex t",
+      "explanation": "Gender neutral names beginning with 'T'.",
+      "entries": [
+        "Talia",
+        "Tayler",
+        "Tristan"
+      ]
+    },
+    {
+      "name": "unisex u",
+      "explanation": "Gender neutral names beginning with 'U'.",
+      "entries": [
+        "Ula",
+        "Uri"
+      ]
+    },
+    {
+      "name": "unisex v",
+      "explanation": "Gender neutral names beginning with 'V'.",
+      "entries": [
+        "Val",
+        "Vivien"
+      ]
+    },
+    {
+      "name": "unisex w",
+      "explanation": "Gender neutral names beginning with 'W'.",
+      "entries": [
+        "Wynn",
+        "Wynne"
+      ]
+    },
+    {
+      "name": "unisex x",
+      "explanation": "Gender neutral names beginning with 'X'.",
+      "entries": [
+        "Xavia",
+        "Xen"
+      ]
+    },
+    {
+      "name": "unisex y",
+      "explanation": "Gender neutral names beginning with 'Y'.",
+      "entries": [
+        "Yannic",
+        "Ysanne"
+      ]
+    },
+    {
+      "name": "unisex z",
+      "explanation": "Gender neutral names beginning with 'Z'.",
+      "entries": [
+        "Zane",
+        "Zara",
+        "Zorion"
+      ]
+    },
+    {
+      "**************************************************": "SURNAMES"
+    },
+    {
+      "name": "surname",
+      "explanation": "Last names grouped by initials.",
+      "entries": [
+        "{surname a}",
+        "{surname b}",
+        "{surname c}",
+        "{surname d}",
+        "{surname e}",
+        "{surname f}",
+        "{surname g}",
+        "{surname h}",
+        "{surname i}",
+        "{surname j}",
+        "{surname k}",
+        "{surname l}",
+        "{surname m}",
+        "{surname n}",
+        "{surname o}",
+        "{surname p}",
+        "{surname q}",
+        "{surname r}",
+        "{surname s}",
+        "{surname t}",
+        "{surname u}",
+        "{surname v}",
+        "{surname w}",
+        "{surname x}",
+        "{surname y}",
+        "{surname z}"
+      ]
+    },
+    {
+      "name": "surname a",
+      "explanation": "Last names beginning with 'A'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname b",
+      "explanation": "Last names beginning with 'B'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname c",
+      "explanation": "Last names beginning with 'C'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname d",
+      "explanation": "Last names beginning with 'D'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname e",
+      "explanation": "Last names beginning with 'E'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname f",
+      "explanation": "Last names beginning with 'F'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname g",
+      "explanation": "Last names beginning with 'G'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname h",
+      "explanation": "Last names beginning with 'H'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname i",
+      "explanation": "Last names beginning with 'I'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname j",
+      "explanation": "Last names beginning with 'J'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname k",
+      "explanation": "Last names beginning with 'K'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname l",
+      "explanation": "Last names beginning with 'L'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname m",
+      "explanation": "Last names beginning with 'M'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname n",
+      "explanation": "Last names beginning with 'N'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname o",
+      "explanation": "Last names beginning with 'O'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname p",
+      "explanation": "Last names beginning with 'P'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname q",
+      "explanation": "Last names beginning with 'Q'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname r",
+      "explanation": "Last names beginning with 'R'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname s",
+      "explanation": "Last names beginning with 'S'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname t",
+      "explanation": "Last names beginning with 'T'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname u",
+      "explanation": "Last names beginning with 'U'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname v",
+      "explanation": "Last names beginning with 'V'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname w",
+      "explanation": "Last names beginning with 'W'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname x",
+      "explanation": "Last names beginning with 'X'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname y",
+      "explanation": "Last names beginning with 'Y'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "surname z",
+      "explanation": "Last names beginning with 'Z'.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "BYNAMES"
+    },
+    {
+      "name": "byname",
+      "entries": [
+        "{female byname}",
+        "{male byname}",
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "female prepend",
+      "entries": [
+        "{female byname}",
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "female append",
+      "entries": [
+        "the {female byname}",
+        "the {unisex byname}"
+      ]
+    },
+    {
+      "name": "male prepend",
+      "entries": [
+        "{male byname}",
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "male append",
+      "entries": [
+        "the {male byname}",
+        "the {unisex byname}"
+      ]
+    },
+    {
+      "name": "unisex prepend",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "unisex append",
+      "entries": [
+        "the {unisex byname}"
+      ]
+    },
+    {
+      "name": "female byname",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "male byname",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "unisex byname",
+      "entries": [
+        "{unisex negative byname}",
+        "{unisex neutral byname}",
+        "{unisex positive byname}"
+      ]
+    },
+    {
+      "name": "unisex negative byname",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "unisex neutral byname",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "unisex positive byname",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "INITIALS"
+    },
+    {
+      "name": "initial",
+      "entries": [
+        "{a}",
+        "{b}",
+        "{c}",
+        "{d}",
+        "{e}",
+        "{f}",
+        "{g}",
+        "{h}",
+        "{i}",
+        "{j}",
+        "{k}",
+        "{l}",
+        "{m}",
+        "{n}",
+        "{o}",
+        "{p}",
+        "{q}",
+        "{r}",
+        "{s}",
+        "{t}",
+        "{u}",
+        "{v}",
+        "{w}",
+        "{x}",
+        "{y}",
+        "{z}"
+      ]
+    },
+    {
+      "name": "a",
+      "entries": [
+        "{female a}",
+        "{male a}"
+      ]
+    },
+    {
+      "name": "b",
+      "entries": [
+        "{female b}",
+        "{male b}"
+      ]
+    },
+    {
+      "name": "c",
+      "entries": [
+        "{female c}",
+        "{male c}"
+      ]
+    },
+    {
+      "name": "d",
+      "entries": [
+        "{female d}",
+        "{male d}"
+      ]
+    },
+    {
+      "name": "e",
+      "entries": [
+        "{female e}",
+        "{male e}"
+      ]
+    },
+    {
+      "name": "f",
+      "entries": [
+        "{female f}",
+        "{male f}"
+      ]
+    },
+    {
+      "name": "g",
+      "entries": [
+        "{female g}",
+        "{male g}"
+      ]
+    },
+    {
+      "name": "h",
+      "entries": [
+        "{female h}",
+        "{male h}"
+      ]
+    },
+    {
+      "name": "i",
+      "entries": [
+        "{female i}",
+        "{male i}"
+      ]
+    },
+    {
+      "name": "j",
+      "entries": [
+        "{female j}",
+        "{male j}"
+      ]
+    },
+    {
+      "name": "k",
+      "entries": [
+        "{female k}",
+        "{male k}"
+      ]
+    },
+    {
+      "name": "l",
+      "entries": [
+        "{female l}",
+        "{male l}"
+      ]
+    },
+    {
+      "name": "m",
+      "entries": [
+        "{female m}",
+        "{male m}"
+      ]
+    },
+    {
+      "name": "n",
+      "entries": [
+        "{female n}",
+        "{male n}"
+      ]
+    },
+    {
+      "name": "o",
+      "entries": [
+        "{female o}",
+        "{male o}"
+      ]
+    },
+    {
+      "name": "p",
+      "entries": [
+        "{female p}",
+        "{male p}"
+      ]
+    },
+    {
+      "name": "q",
+      "entries": [
+        "{female q}",
+        "{male q}"
+      ]
+    },
+    {
+      "name": "r",
+      "entries": [
+        "{female r}",
+        "{male r}"
+      ]
+    },
+    {
+      "name": "s",
+      "entries": [
+        "{female s}",
+        "{male s}"
+      ]
+    },
+    {
+      "name": "t",
+      "entries": [
+        "{female t}",
+        "{male t}"
+      ]
+    },
+    {
+      "name": "u",
+      "entries": [
+        "{female u}",
+        "{male u}"
+      ]
+    },
+    {
+      "name": "v",
+      "entries": [
+        "{female v}",
+        "{male v}"
+      ]
+    },
+    {
+      "name": "w",
+      "entries": [
+        "{female w}",
+        "{male w}"
+      ]
+    },
+    {
+      "name": "x",
+      "entries": [
+        "{female x}",
+        "{male x}"
+      ]
+    },
+    {
+      "name": "y",
+      "entries": [
+        "{female y}",
+        "{male y}"
+      ]
+    },
+    {
+      "name": "z",
+      "entries": [
+        "{female z}",
+        "{male z}"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special name tables.",
+      "entries": [
+        "{hermafrodite}",
+        "{neuter}"
+      ]
+    },
+    {
+      "name": "hermafrodite",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex}"
+      ]
+    },
+    {
+      "name": "neuter",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex}"
+      ]
+    },
+    {
+      "**************************************************": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, surname: {surname}, byname: {byname}, initial: {initial}. Gender = {global:gender}."
+      ]
+    }
+  ]
+}
