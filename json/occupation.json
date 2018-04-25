@@ -14,9 +14,9 @@
   "bugs": "",
   "to do": "",
   "see": "business, district, shop",
-  "date": "2018-04-22",
+  "date": "2018-04-25",
   "authors": "ELF Vesala.",
-  "sources": "CastlesAndManorHouses.com, Svincent.com",
+  "sources": "CastlesAndManorHouses.com, MedievalScotland.org, Svincent.com",
   "genre": "universal",
   "categories": [
     ""
@@ -46,7 +46,7 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{employment}"
+        "{occupation}"
       ]
     },
     {
@@ -57,8 +57,8 @@
       ]
     },
     {
-      "name": "employment",
-      "explanation": "Employment types by rarity.",
+      "name": "occupation",
+      "explanation": "Types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -69,7 +69,7 @@
     },
     {
       "name": "common",
-      "explanation": "Common employment types.",
+      "explanation": "Common types.",
       "entries": [
         "{lower class}",
         "{middle class}",
@@ -78,7 +78,7 @@
     },
     {
       "name": "rare",
-      "explanation": "Rare employment types.",
+      "explanation": "Rare types.",
       "entries": [
         "{poor}",
         "{rich}"
@@ -164,10 +164,12 @@
       "name": "artisan",
       "explanation": "Craftsmen and skilled workers.",
       "entries": [
-        "woodworker",
+        "baker",
         "blacksmith",
+        "bookbinder",
         "butcher",
-        "baker"
+        "woodcarver",
+        "woodworker"
       ]
     },
     {
@@ -245,7 +247,29 @@
       ]
     },
     {
-      "**************************************************": "MEDIEVAL"
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Occupations for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "alchemist",
+        "astrologer"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MYTH"
+    },
+    {
+      "name": "myth",
+      "explanation": "Occupations once rumoured to have existed.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MEDIEVAL"
     },
     {
       "name": "medieval ",
@@ -286,8 +310,9 @@
       "name": "medieval upper class",
       "explanation": "Upper class social status.",
       "entries": [
+        "{medieval church}",
         "{medieval government}",
-        "{medieval church}"
+        "{medieval scholar}"
       ]
     },
     {
@@ -298,9 +323,26 @@
       ]
     },
     {
+      "--------------------------------------------------": "MEDIEVAL OCCUPATIONS"
+    },
+    {
+      "name": "medieval armoursmith",
+      "explanation": "",
+      "entries": [
+        "armourer",
+        "hauberger",
+        "platesmith",
+        "sheath maker",
+        "shieldwright",
+        "sword sharpener"
+      ]
+    },
+    {
       "name": "medieval artisan",
       "explanation": "Medieval skilled workers.",
       "entries": [
+        "{medieval armoursmith}",
+        "{medieveal weaponsmith}",
         "cooper"
       ]
     },
@@ -350,6 +392,13 @@
       ]
     },
     {
+      "name": "medieval scholar",
+      "explanation": "Medieval learned professions.",
+      "entries": [
+        "scrivener"
+      ]
+    },
+    {
       "name": "medieval servant",
       "explanation": "Employment for fantasy worlds (with no basis in myth).",
       "entries": [
@@ -367,23 +416,20 @@
       ]
     },
     {
-      "**************************************************": "WORLD-SPECIFIC"
-    },
-    {
-      "name": "myth",
-      "explanation": "Employment once rumoured to have existed.",
+      "name": "medieval weaponsmith",
+      "explanation": "Medieval weapon manufacturers.",
       "entries": [
-        "XXX"
+        "arrowsmith",
+        "bowmaker",
+        "bowwright",
+        "bladesmith",
+        "fletcher",
+        "knifesmith",
+        "stringer"
       ]
     },
     {
-      "name": "fantasy",
-      "explanation": "Employment for fantasy worlds (with no basis in myth).",
-      "entries": [
-        "{myth}",
-        "alchemist",
-        "astrologer"
-      ]
+      "--------------------------------------------------": "MODERN"
     },
     {
       "name": "modern",
@@ -395,6 +441,9 @@
       ]
     },
     {
+      "--------------------------------------------------": "FUTURISTIC"
+    },
+    {
       "name": "futuristic",
       "explanation": "Employment for science fiction worlds.",
       "entries": [
@@ -403,7 +452,7 @@
       ]
     },
     {
-      "**************************************************": "SPECIAL TABLES"
+      "**************************************************": "SPECIAL CASES"
     },
     {
       "name": "special",
@@ -433,7 +482,7 @@
       ]
     },
     {
-      "**************************************************": "TESTING"
+      "--------------------------------------------------": "TESTING"
     },
     {
       "name": "test",
