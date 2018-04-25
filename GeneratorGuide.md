@@ -23,7 +23,6 @@ For documentation on other Campaign Logger topics, please refer to the Campaign 
 		- [`name`](#name)
 		- [`resultPattern`](#resultpattern)
 		- [`tables`](#tables)
-		- [Using your custom generators](#using-your-custom-generators)
 		- [That's It!](#thats-it)
 	- [Using Your Custom Generators](#using-your-custom-generators)
 - [Advanced Topics](#advanced-topics)
