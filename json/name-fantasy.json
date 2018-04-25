@@ -12,9 +12,9 @@
   "note": "",
   "to do": "",
   "see": "",
-  "date": "2018-04-24",
+  "date": "2018-04-25",
   "authors": "Ron Calbick, ELF Vesala.",
-  "sources": "name_f_1.json, name_f_2.json, name_m_1.json, name_m_2.json",
+  "sources": "Freedictionary.com, name_f_1.json, name_f_2.json, name_m_1.json, name_m_2.json",
   "genre": "fantasy",
   "category": "name",
   "tags": "#person",
@@ -1265,7 +1265,9 @@
       "name": "beginning a",
       "explanation": "Beginnings starting with the letter 'A'.",
       "entries": [
-        "Ash"
+        "Alm",
+        "Ash",
+        "Asp"
       ]
     },
     {
@@ -1339,7 +1341,8 @@
       "explanation": "Beginnings starting with the letter 'H'.",
       "entries": [
         "Hard",
-        "High"
+        "High",
+        "Hunger"
       ]
     },
     {
@@ -1347,6 +1350,9 @@
       "explanation": "Beginnings starting with the letter 'I'.",
       "entries": [
         "Ice",
+        "Idle",
+        "Ink",
+        "Ire",
         "Iron"
       ]
     },
@@ -1354,6 +1360,8 @@
       "name": "beginning j",
       "explanation": "Beginnings starting with the letter 'J'.",
       "entries": [
+        "Jinx",
+        "Joy",
         "Just"
       ]
     },
@@ -1361,7 +1369,9 @@
       "name": "beginning k",
       "explanation": "Beginnings starting with the letter 'K'.",
       "entries": [
-        "Keen"
+        "Keen",
+        "Keg",
+        "Knob"
       ]
     },
     {
@@ -1369,6 +1379,7 @@
       "explanation": "Beginnings starting with the letter 'L'.",
       "entries": [
         "Light",
+        "Lone",
         "Long",
         "Low"
       ]
@@ -1396,7 +1407,9 @@
       "explanation": "Beginnings starting with the letter 'O'.",
       "entries": [
         "Oaken",
-        "Old"
+        "Odd",
+        "Old",
+        "One"
       ]
     },
     {
@@ -1404,14 +1417,19 @@
       "explanation": "Beginnings starting with the letter 'P'.",
       "entries": [
         "Pain",
-        "Pale"
+        "Pale",
+        "Plain",
+        "Poor",
+        "Pox"
       ]
     },
     {
       "name": "beginning q",
       "explanation": "Beginnings starting with the letter 'Q'.",
       "entries": [
-        "Quick"
+        "Quick",
+        "Quiet",
+        "Quill"
       ]
     },
     {
@@ -1450,6 +1468,7 @@
       "explanation": "Beginnings starting with the letter 'T'.",
       "entries": [
         "Thorn",
+        "Toad",
         "Trick"
       ]
     },
@@ -1457,6 +1476,8 @@
       "name": "beginning u",
       "explanation": "Beginnings starting with the letter 'U'.",
       "entries": [
+        "Ugly",
+        "Urge",
         "Urn"
       ]
     },
@@ -1465,6 +1486,7 @@
       "explanation": "Beginnings starting with the letter 'V'.",
       "entries": [
         "Vain",
+        "Venom",
         "Viper"
       ]
     },
@@ -1483,29 +1505,39 @@
     {
       "name": "beginning x",
       "explanation": "Beginnings starting with the letter 'X'.",
+      "note": "These are so forced that they are used only when requested.",
       "entries": [
-        ""
+        "Xeno",
+        "Xero",
+        "Xyst"
       ]
     },
     {
       "name": "beginning y",
       "explanation": "Beginnings starting with the letter 'Y'.",
       "entries": [
+        "Yarn",
+        "Yew",
         "Young"
       ]
     },
     {
       "name": "beginning z",
       "explanation": "Beginnings starting with the letter 'Z'.",
+      "note": "These are so forced that they are used only when requested.",
       "entries": [
-        ""
+        "Zax",
+        "Zinc",
+        "Zyme"
       ]
     },
     {
       "name": "ending",
       "explanation": "Endings of component-based names.",
       "entries": [
+        "ally",
         "arm",
+        "axe",
         "bane",
         "blade",
         "blood",
@@ -1515,6 +1547,7 @@
         "bow",
         "bred",
         "brook",
+        "brow",
         "court",
         "croft",
         "crown",
@@ -1522,8 +1555,10 @@
         "den",
         "dew",
         "dread",
+        "fen",
         "field",
         "flare",
+        "foot",
         "forge",
         "fort",
         "feather",
@@ -1542,8 +1577,9 @@
         "hold",
         "hope",
         "hound",
-        "ire",
+        "jaw",
         "keep",
+        "kin",
         "lance",
         "land",
         "leaf",
@@ -1555,12 +1591,17 @@
         "mire",
         "moor",
         "mount",
+        "pact",
         "pike",
+        "plot",
+        "pole",
+        "pond",
         "pool",
         "port",
         "river",
         "shaper",
         "shield",
+        "sight",
         "skull",
         "song",
         "spirit",
@@ -1579,10 +1620,12 @@
         "weaver",
         "well",
         "whisper",
+        "wight",
         "wind",
         "wing",
         "wood",
-        "wound"
+        "wound",
+        "wright"
       ]
     },
     {
