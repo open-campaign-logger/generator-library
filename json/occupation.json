@@ -113,6 +113,7 @@
       "entries": [
         "{farmer}",
         "{hireling}",
+        "{performer}",
         "{worker}"
       ]
     },
@@ -121,7 +122,8 @@
       "explanation": "Middle class social status.",
       "entries": [
         "{artisan}",
-        "{merchant}"
+        "{merchant}",
+        "{clothing}"
       ]
     },
     {
@@ -148,9 +150,9 @@
       "explanation": "Scholarly employment.",
       "entries": [
         "academic",
-        "scholar",
+        "academic teacher",
         "researcher",
-        "academic teacher"
+        "scholar"
       ]
     },
     {
@@ -164,10 +166,14 @@
       "name": "artisan",
       "explanation": "Craftsmen and skilled workers.",
       "entries": [
+        "{clothing}",
+        "{metalworker}",
         "baker",
-        "blacksmith",
         "bookbinder",
-        "butcher",
+        "cook",
+        "glassblower",
+        "hatter",
+        "painter",
         "woodcarver",
         "woodworker"
       ]
@@ -180,6 +186,16 @@
         "tramp",
         "scrounger",
         "vagabond"
+      ]
+    },
+    {
+      "name": "clothing",
+      "explanation": "Occupations related to clothes.",
+      "entries": [
+        "clothier",
+        "embroiderer",
+        "seamstress",
+        "tailor"
       ]
     },
     {
@@ -212,8 +228,8 @@
       "name": "legal",
       "explanation": "Legal professionals.",
       "entries": [
-        "lawyer",
-        "judge"
+        "judge",
+        "lawyer"
       ]
     },
     {
@@ -224,11 +240,29 @@
       ]
     },
     {
+      "name": "metalworker",
+      "explanation": "Smiths.",
+      "entries": [
+        "blacksmith",
+        "goldsmith"
+      ]
+    },
+    {
+      "name": "performer",
+      "explanation": "Performing artist.",
+      "entries": [
+        "dancer",
+        "juggler",
+        "musician",
+        "singer"
+      ]
+    },
+    {
       "name": "politician",
       "explanation": "Political positions.",
       "entries": [
-        "mayor",
-        "diplomat"
+        "diplomat",
+        "mayor"
       ]
     },
     {
@@ -242,8 +276,9 @@
       "name": "worker",
       "explanation": "Menial workers.",
       "entries": [
-        "worker",
-        "menial worker"
+        "butcher",
+        "menial worker",
+        "worker"
       ]
     },
     {
@@ -295,7 +330,9 @@
       "name": "medieval lower class",
       "explanation": "Lower class social status.",
       "entries": [
-        "{medieval military}"
+        "{medieval kitchen}",
+        "{medieval military}",
+        "{medieval performer}"
       ]
     },
     {
@@ -312,6 +349,7 @@
       "entries": [
         "{medieval church}",
         "{medieval government}",
+        "{medieval merchant}",
         "{medieval scholar}"
       ]
     },
@@ -341,9 +379,12 @@
       "name": "medieval artisan",
       "explanation": "Medieval skilled workers.",
       "entries": [
-        "{medieval armoursmith}",
-        "{medieveal weaponsmith}",
-        "cooper"
+        "{medieval clothing}",
+        "{medieval metalworker}",
+        "bagweaver",
+        "cooper",
+        "limner",
+        "pouchmaker"
       ]
     },
     {
@@ -351,6 +392,17 @@
       "explanation": "Medieval skilled workers.",
       "entries": [
         "reeve (church warden)"
+      ]
+    },
+    {
+      "name": "medieval clothing",
+      "explanation": "Medieval occupations related to clothes.",
+      "entries": [
+        "dyer",
+        "linen weaver",
+        "spinster",
+        "weaver",
+        "wool comber"
       ]
     },
     {
@@ -376,6 +428,37 @@
       ]
     },
     {
+      "name": "medieval kitchen",
+      "explanation": "Medieval cooking staff.",
+      "entries": [
+        "brewer",
+        "larderer (head of the larder)",
+        "pantler (head of the pantry)",
+        "saucerer (preparer of sauces)",
+        "spicerer (preparer of spices)"
+      ]
+    },
+    {
+      "name": "medieval merchant",
+      "explanation": "Medieval traders.",
+      "entries": [
+        "clothmonger",
+        "woolmonger"
+      ]
+    },
+    {
+      "name": "medieval metalworker",
+      "explanation": "Medievel smiths.",
+      "entries": [
+        "{medieval armoursmith}",
+        "{medieveal weaponsmith}",
+        "brownsmith (copper and brass)",
+        "coppersmith",
+        "greensmith (lead)",
+        "whitesmith (tin)"
+      ]
+    },
+    {
       "name": "medieval military",
       "explanation": "Medieval military personnel.",
       "entries": [
@@ -392,6 +475,14 @@
       ]
     },
     {
+      "name": "medieval performer",
+      "explanation": "Medieval performing artists.",
+      "entries": [
+        "bard",
+        "troubador"
+      ]
+    },
+    {
       "name": "medieval scholar",
       "explanation": "Medieval learned professions.",
       "entries": [
@@ -402,12 +493,8 @@
       "name": "medieval servant",
       "explanation": "Employment for fantasy worlds (with no basis in myth).",
       "entries": [
-        "pantler (head of the pantry)",
-        "larderer (head of the larder)",
         "waferer",
         "saucier",
-        "saucerer (preparer of sauces)",
-        "spicerer (preparer of spices)",
         "carver",
         "page",
         "milkmaid",
@@ -478,7 +565,8 @@
       "explanation": "Non-free citizens.",
       "entries": [
         "slave",
-        "serf"
+        "serf",
+        "thrall"
       ]
     },
     {
