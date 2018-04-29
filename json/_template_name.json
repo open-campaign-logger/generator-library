@@ -123,10 +123,10 @@
         "{unisex} {female append}",
         "{female} {unisex append}",
         "{unisex} {unisex append}",
-        "{female prepend} {female}",
-        "{unisex prepend} {female}",
-        "{female prepend} {unisex}",
-        "{unisex prepend} {unisex}"
+        "'{female prepend}' {female}",
+        "'{unisex prepend}' {female}",
+        "'{female prepend}' {unisex}",
+        "'{unisex prepend}' {unisex}"
       ]
     },
     {
@@ -137,10 +137,10 @@
         "{unisex} {male append}",
         "{male} {unisex append}",
         "{unisex} {unisex append}",
-        "{male prepend} {male}",
-        "{unisex prepend} {male}",
-        "{male prepend} {unisex}",
-        "{unisex prepend} {unisex}"
+        "'{male prepend}' {male}",
+        "'{unisex prepend}' {male}",
+        "'{male prepend}' {unisex}",
+        "'{unisex prepend}' {unisex}"
       ]
     },
     {
@@ -148,7 +148,7 @@
       "entries": [
         "{unisex} {unisex surname}",
         "{unisex} {unisex append}",
-        "{unisex prepend} {unisex}"
+        "'{unisex prepend}' {unisex}"
       ]
     },
     {
@@ -156,7 +156,7 @@
     },
     {
       "name": "female",
-      "explanation": "Female names grouped by initials.",
+      "explanation": "Feminine names grouped by initials.",
       "export": {
         "gender": "female"
       },
@@ -350,7 +350,7 @@
     },
     {
       "name": "male",
-      "explanation": "Male names grouped by initials.",
+      "explanation": "Masculine names grouped by initials.",
       "export": {
         "gender": "male"
       },
@@ -544,7 +544,7 @@
     },
     {
       "name": "unisex",
-      "explanation": "Unisex names grouped by initials.",
+      "explanation": "Gender-neutral names grouped by initials.",
       "entries": [
         "{unisex a}",
         "{unisex b}",
@@ -768,14 +768,14 @@
     },
     {
       "name": "male surname",
-      "explanation": "Female forms of surnames, if such are used.",
+      "explanation": "Male forms of surnames, if such are used.",
       "entries": [
         "{surname}"
       ]
     },
     {
       "name": "unisex surname",
-      "explanation": "Female forms of surnames, if such are used.",
+      "explanation": "Unisex forms of surnames, if such are used.",
       "entries": [
         "{female surname}",
         "{male surname}"
@@ -1069,19 +1069,19 @@
     {
       "name": "unisex negative byname",
       "entries": [
-        ""
+        "{lib:epithet#negative}"
       ]
     },
     {
       "name": "unisex neutral byname",
       "entries": [
-        ""
+        "{lib:epithet#neutral}"
       ]
     },
     {
       "name": "unisex positive byname",
       "entries": [
-        ""
+        "{lib:epithet#positive}"
       ]
     },
     {
@@ -1089,6 +1089,7 @@
     },
     {
       "name": "initial",
+      "explanation": "Names grouped by their first letter.",
       "entries": [
         "{a}",
         "{b}",
