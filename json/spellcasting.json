@@ -9,8 +9,8 @@
   "note": "",
   "to do": "",
   "see": "magic, magician, magical_technique, magical_instrument",
-  "date": "2017-10-04",
-  "authors": "Esko Vesala",
+  "date": "2018-04-29",
+  "authors": "ELF Vesala",
   "sources": "powerlisting.wikia.com, Wikipedia.org.",
   "genre": "universal",
   "categories": [
@@ -40,7 +40,7 @@
         "repeating a mantra",
         "praying",
         "touching a charm",
-        "waving a {lib:magical instrument}"
+        "waving a {lib:magical_instrument}"
       ]
     },
     {
