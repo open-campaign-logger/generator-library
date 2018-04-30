@@ -1,0 +1,623 @@
+{
+  "name": "spell_cost",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "The cost of casting a spell or using a magic item.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-04-30",
+  "authors": "ELF Vesala.",
+  "sources": "Inspired by Johnn Four's RolePlaying Tips newsletter 2018-04-25: 'A Quick Way To Make Awesome Rewards'.",
+  "genre": "fantasy",
+  "categories": [
+    "magic"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{description}",
+        "{stats}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{cost}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "the effect requires {cost}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The effect requires {cost}.",
+        "The user must be {cost}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Cost}: {cost} \r\n{b|Schedule}: {schedule} \r\n{b|Failure}: {threat} \r\n{b|Level}: {g:level} \r\n{b|Threat}: {g:threat} \r\n"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "cost",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common types.",
+      "entries": [
+        "{minor}",
+        "{medium}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare types.",
+      "entries": [
+        "{major}"
+      ]
+    },
+    {
+      "**************************************************": "LEVEL"
+    },
+    {
+      "name": "level",
+      "explanation": "The level of the effect.",
+      "entries": [
+        "{minor}",
+        "{medium}",
+        "{major}"
+      ]
+    },
+    {
+      "name": "minor",
+      "explanation": "Mild requirements.",
+      "export": {
+        "level": "minor"
+      },
+      "entries": [
+        "{action} {often}, or {light}",
+        "{action} {occasionally} or {light}",
+        "{fuel} {often} or {light}",
+        "{fuel} {occasionally} or {light}"
+      ]
+    },
+    {
+      "name": "medium",
+      "explanation": "Intermediate requirements.",
+      "export": {
+        "level": "medium"
+      },
+      "entries": [
+        "{energy} {often}, or {moderate}",
+        "{energy} {occasionally}, or {moderate}",
+        "{energy} {seldom}, or {moderate}",
+        "{social} {often}, or {moderate}",
+        "{social} {occasionally}, or {moderate}",
+        "{social} {seldom}, or {moderate}"
+      ]
+    },
+    {
+      "name": "major",
+      "explanation": "Severe requirements.",
+      "export": {
+        "level": "major"
+      },
+      "entries": [
+        "{supernatural} {occasionally}, or {grave}",
+        "{supernatural} {seldom}, or {grave}",
+        "{life} {occasionally}, or {grave}",
+        "{life} {seldom}, or {grave}"
+      ]
+    },
+    {
+      "**************************************************": "COSTS"
+    },
+    {
+      "name": "action",
+      "explanation": "Work and tasks.",
+      "entries": [
+        "making loud noises for a moment",
+        "speaking the magic formula",
+        "drawing a magical sigil in {liquid}"
+      ]
+    },
+    {
+      "name": "energy",
+      "explanation": "Life energies.",
+      "entries": [
+        "a kiss from a pure soul",
+        "sacrificing some blood",
+        "losing 40 winks of sleep [not receiving the full benefits of resting]"
+      ]
+    },
+    {
+      "name": "fuel",
+      "explanation": "Consumables.",
+      "entries": [
+        "bathing the item in {liquid}"
+      ]
+    },
+    {
+      "name": "life",
+      "explanation": "Lives.",
+      "entries": [
+        "the life an unknown stranger",
+        "the life of the next person they encounter",
+        "the life of their own child"
+      ]
+    },
+    {
+      "name": "social",
+      "explanation": "Relationships.",
+      "entries": [
+        "betraying a friend",
+        "making a loved one believe a lie"
+      ]
+    },
+    {
+      "name": "supernatural",
+      "explanation": "Esoteric forms of payment.",
+      "entries": [
+        "a palm-sized piece of the person's shadow [until the shadow runs out]",
+        "a small piece of the person's soul [until they turn into undead]"
+      ]
+    },
+    {
+      "**************************************************": "SCHEDULES"
+    },
+    {
+      "name": "schedule",
+      "explanation": "When the cost must be paid?",
+      "entries": [
+        "{often}",
+        "{occasionally}",
+        "{seldom}"
+      ]
+    },
+    {
+      "name": "often",
+      "explanation": "When the cost must be paid?",
+      "entries": [
+        "{use}",
+        "{daily}"
+      ]
+    },
+    {
+      "name": "occasionally",
+      "explanation": "When the cost must be paid?",
+      "entries": [
+        "{infrequently}",
+        "{weekly}",
+        "{monthly}"
+      ]
+    },
+    {
+      "name": "seldom",
+      "explanation": "When the cost must be paid?",
+      "entries": [
+        "{quarterly}",
+        "{semiannually}",
+        "{annually}",
+        "{rarely}",
+        "{once}"
+      ]
+    },
+    {
+      "--------------------------------------------------": ""
+    },
+    {
+      "name": "infrequently",
+      "explanation": "At random intervals.",
+      "entries": [
+        "when both the sun and the moon are visible on the same sky",
+        "when neither the sun nor the moon are visible",
+        "when no stars litter the night sky",
+        "during a thunderstorm",
+        "when the heavens rain for a day and a night without interruption",
+        "when the thickest fog covers everything in its moist embrace",
+        "under a rainbow",
+        "in a snowfall",
+        "when the earth is parched dry and thirsts for rain"
+      ]
+    },
+    {
+      "name": "use",
+      "explanation": "With every use.",
+      "entries": [
+        "before each use",
+        "when using it",
+        "immediately after each use"
+      ]
+    },
+    {
+      "name": "daily",
+      "explanation": "Once every day.",
+      "entries": [
+        "in pale moonlight",
+        "when the last star on the night sky is extinguished",
+        "in the light of the last rays of the setting moon",
+        "during the previous night before use",
+        "during the following night",
+        "the previous midnight before use",
+        "the next midnight after use",
+        "under a starry sky",
+        "before the sun rises",
+        "at the crack of dawn",
+        "in the rays of the noon sun",
+        "when the shadows are at their smallest",
+        "when the shadows are at their longest",
+        "before the sun sets",
+        "in the light of the last rays of the setting sun",
+        "in the light of the first rays of the rising moon",
+        "when the first star on the night sky is lit"
+      ]
+    },
+    {
+      "name": "weekly",
+      "explanation": "Once every week.",
+      "entries": [
+        "before a week has passed",
+        "seven days before use - no more, no less",
+        "on the seventh day after use - no sooner, no later",
+        "on the first day of the week",
+        "on the last day of the week"
+      ]
+    },
+    {
+      "name": "monthly",
+      "explanation": "Once every month.",
+      "entries": [
+        "before the new moon",
+        "in the dark of a new moon",
+        "before full moon",
+        "in the light of a full moon",
+        "on the first day of the month",
+        "on the last day of the month",
+        "when the tide is at its highest",
+        "when the tide is at its lowest"
+      ]
+    },
+    {
+      "name": "quarterly",
+      "explanation": "Four times a year.",
+      "entries": [
+        "during the previous equinox or solstice before use",
+        "before the next equinox or solstice",
+        "during the next equinox or solstice"
+      ]
+    },
+    {
+      "name": "semiannually",
+      "explanation": "Twice a year.",
+      "entries": [
+        "during the previous equinox before use",
+        "during the next equinox",
+        "during the previous solstice before use",
+        "during the next solstice"
+      ]
+    },
+    {
+      "name": "annually",
+      "explanation": "Once in a year.",
+      "entries": [
+        "when the year changes",
+        "on the Midsummer Eve's night",
+        "on the day of the vernal equinox",
+        "when the day is at its longest",
+        "on the day of the summer solstice",
+        "on the day of the autumnal equinox",
+        "on the day of the winter solstice",
+        "when the day is at its shortest",
+        "on the date of the user's birth",
+        "on the date of the target's birth",
+        "when the first snow of the winter falls",
+        "when the first bird of the spring sings"
+      ]
+    },
+    {
+      "name": "rarely",
+      "explanation": "During infrequent intervals.",
+      "entries": [
+        "when the moon is eclipsed",
+        "when the sun is eclipsed",
+        "during an eclipse",
+        "when the moon shines crimson",
+        "when fire falls from the heavens",
+        "when the earth shakes and cracks open"
+      ]
+    },
+    {
+      "name": "once",
+      "explanation": "Only one-time uses.",
+      "entries": [
+        "once only",
+        "only once",
+        "just once",
+        "a single time",
+        "one time only",
+        "on one occasion only",
+        "once in the user's lifetime",
+        "once in a generation",
+        "once every century",
+        "once every millennium",
+        "once for every Great Age of the world",
+        "once before the end of the world",
+        "only once on each plane"
+      ]
+    },
+    {
+      "**************************************************": "THREAT"
+    },
+    {
+      "name": "threat",
+      "explanation": "What happens if the price is not paid?",
+      "entries": [
+        "{light}",
+        "{moderate}",
+        "{grave}"
+      ]
+    },
+    {
+      "name": "light",
+      "explanation": "What happens if the price is not paid?",
+      "export": {
+        "threat": "light"
+      },
+      "entries": [
+        "the magic stops working"
+      ]
+    },
+    {
+      "name": "moderate",
+      "explanation": "Intermediate threats.",
+      "export": {
+        "threat": "moderate"
+      },
+      "entries": [
+        "the user ages one year"
+      ]
+    },
+    {
+      "name": "grave",
+      "explanation": "Grim threats.",
+      "export": {
+        "threat": "grave"
+      },
+      "entries": [
+        "the user is cursed",
+        "the user loses their soul"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "ingredient",
+      "explanation": "Fuel ingredients.",
+      "entries": [
+        "moonlight"
+      ]
+    },
+    {
+      "name": "liquid",
+      "explanation": "Liquids for paying the cost.",
+      "entries": [
+        "fresh dew",
+        "milk",
+        "the purest honey",
+        "animal blood",
+        "human blood",
+        "their own blood",
+        "an exotic oil manufactured from {ingredient} and {solvent}"
+      ]
+    },
+    {
+      "name": "solvent",
+      "explanation": "Fuel solvent.",
+      "entries": [
+        "{lib:plant#fruit} juice",
+        "cooked {lib:animal#mammal} fat",
+        "cooked {lib:monster#summary} fat",
+        "cooked {lib:occupation#summary} fat"
+      ]
+    },
+    {
+      "**************************************************": "TERMS"
+    },
+    {
+      "name": "term",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{beginning}{ending}",
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Synonyms for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "looks to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Term: {term}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
+      ]
+    }
+  ]
+}
