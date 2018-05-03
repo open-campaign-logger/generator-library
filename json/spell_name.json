@@ -18,7 +18,7 @@
   "see": "energy, magic, magical_technique, magical_instrument, spell_intention, spell_target, spellcasting",
   "date": "2018-05-01",
   "authors": "ELF Vesala.",
-  "sources": "",
+  "sources": "Jack Vance: the 'Dying Earth' books.",
   "genre": "fantasy",
   "categories": [
     "magic"
@@ -61,9 +61,13 @@
     },
     {
       "name": "detail",
-      "explanation": "More detailed output variations.",
+      "explanation": "Vancian spell names.",
       "entries": [
-        "{spell}"
+        "{|{adjective} {agent}|tcase}",
+        "{|the {spell} by the {adjective} {agent}|tcase}",
+        "{|{inventor}|tcase}'s {|{adjective} {agent}|tcase}",
+        "{|{!adjective} {effect} by the {!adjective} {agent}|tcase}",
+        "{|{quantifier} {!adjective} {effect} by the {!adjective} {agent}|tcase}"
       ]
     },
     {
@@ -298,18 +302,7 @@
       "name": "synonym",
       "explanation": "Variant expressions for the generator subject matter.",
       "entries": [
-        "spell",
-        "magic",
-        "sorcery",
-        "ensorcellment",
-        "wizardry",
-        "conjury",
-        "conjuration",
-        "conjuring",
-        "dweomer",
-        "prestidigitation",
-        "sortilege",
-        "trickery"
+        "{neutral}"
       ]
     },
     {
@@ -320,6 +313,194 @@
         "appears to be",
         "looks to be",
         "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "VANCIAN SPELLS"
+    },
+    {
+      "name": "effect",
+      "explanation": "The effects produced by the spell.",
+      "entries": [
+        "amalgamation",
+        "annihilation",
+        "cacophony",
+        "conveyance",
+        "crucible",
+        "delirium",
+        "departure",
+        "discovery",
+        "encystment",
+        "enhancement",
+        "eradication",
+        "exorcism",
+        "expulsion",
+        "extinguishment",
+        "intervention",
+        "inversion",
+        "lamentation",
+        "linkage",
+        "menagerie",
+        "metamorphosis",
+        "multiplication",
+        "oblivion",
+        "occultation",
+        "palsy",
+        "permutation",
+        "renewal",
+        "reversion",
+        "salvation",
+        "sanctuary",
+        "spray",
+        "synthesis",
+        "thunderclap",
+        "transfiguration",
+        "transmogrification",
+        "transmutation",
+        "transformation",
+        "turpitude",
+        "unearthing"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives describing the spell.",
+      "entries": [
+        "abhorrent",
+        "aerial",
+        "ambidextrous",
+        "antagonistic",
+        "aromatic",
+        "belligerent",
+        "blasphemous",
+        "blatant",
+        "boisterous",
+        "celestial",
+        "chromatic",
+        "corporeal",
+        "cunning",
+        "diminutive",
+        "ethereal",
+        "evasive",
+        "ever-present",
+        "excellent",
+        "extraneous",
+        "flexible",
+        "forlorn",
+        "gallant",
+        "ghastly",
+        "gigantic",
+        "greater",
+        "hideous",
+        "illustrious",
+        "impenetrable",
+        "inaudible",
+        "incendiary",
+        "indefinite",
+        "indescribable",
+        "inflexible",
+        "inquiring",
+        "instantenous",
+        "insubstantial",
+        "iridescent",
+        "irrational",
+        "irregular",
+        "lesser",
+        "lustrous",
+        "mercurial",
+        "mimicking",
+        "mysterious",
+        "nacreous",
+        "nasal",
+        "nocturnal",
+        "omnipotent",
+        "opalescent",
+        "physical",
+        "pleasant",
+        "practical",
+        "prime",
+        "primordial",
+        "prismatic",
+        "prophetic",
+        "radiant",
+        "repulsive",
+        "restorative",
+        "sagacious",
+        "sequestrious",
+        "shimmering",
+        "sinister",
+        "slippery",
+        "thieving",
+        "tireless",
+        "translucent",
+        "turbulent",
+        "unerring",
+        "unseen",
+        "vengeful",
+        "venomous",
+        "vile",
+        "visible",
+        "volatile"
+      ]
+    },
+    {
+      "name": "agent",
+      "explanation": "Personied performers of the spell effect.",
+      "entries": [
+        "advocate",
+        "apprentice",
+        "bookworm",
+        "collaborator",
+        "construct",
+        "creature",
+        "digitalia",
+        "escort",
+        "familiar",
+        "guardian",
+        "hand",
+        "instructor",
+        "minion",
+        "overseer",
+        "phantom",
+        "sentinel",
+        "servant",
+        "shadow",
+        "whisperer"
+      ]
+    },
+    {
+      "name": "inventor",
+      "explanation": "Wizards who have created the spells.",
+      "entries": [
+        "{lib:name-magician}"
+      ]
+    },
+    {
+      "name": "quantifier",
+      "explanation": "Descriptions of the strength of the spell.",
+      "entries": [
+        "absolutely",
+        "altogether",
+        "emphatically",
+        "fully",
+        "indefinitely",
+        "indisputably",
+        "most assuredly",
+        "partially",
+        "positively",
+        "potentially",
+        "questionably",
+        "seemingly",
+        "the least",
+        "the most",
+        "thoroughly",
+        "unconditionally",
+        "unmistakably",
+        "unquestionably",
+        "utterly",
+        "veritably",
+        "without fail",
+        "wholly"
       ]
     },
     {
@@ -346,6 +527,13 @@
       "format": "It seems to be --",
       "entries": [
         ""
+      ]
+    },
+    {
+      "name": "vancian",
+      "explanation": "Redirect for Vancian spell names.",
+      "entries": [
+        "{detail}"
       ]
     },
     {
