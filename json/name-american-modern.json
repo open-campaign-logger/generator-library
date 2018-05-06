@@ -12,7 +12,7 @@
   "note": "",
   "to do": "",
   "see": "",
-  "date": "2018-03-10",
+  "date": "2018-05-05",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -3068,6 +3068,20 @@
       ]
     },
     {
+      "name": "hermafrodite byname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "hermafrodite surname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex surname}"
+      ]
+    },
+    {
       "name": "neuter",
       "explanation": "Alias for unisex naming.",
       "entries": [
@@ -3075,7 +3089,21 @@
       ]
     },
     {
-      "**************************************************": "TESTING"
+      "name": "neuter byname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "neuter surname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex surname}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
     },
     {
       "name": "test",

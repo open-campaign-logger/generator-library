@@ -12,7 +12,7 @@
   "note": "Requires UTF-8 character set to correctly display the Old Norse special characters (such as th, ae, and oe).",
   "to do": "The list of patronyms should be heavily expanded. Sadly the rules for Old Norse patronym creation are not completely regular.",
   "see": "",
-  "date": "2018-03-10",
+  "date": "2018-05-05",
   "authors": "ELF Vesala",
   "sources": "NordicNames.de",
   "genre": "historical",
@@ -5725,6 +5725,20 @@
       ]
     },
     {
+      "name": "hermafrodite byname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "hermafrodite surname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex surname}"
+      ]
+    },
+    {
       "name": "neuter",
       "explanation": "Alias for unisex naming.",
       "entries": [
@@ -5732,7 +5746,21 @@
       ]
     },
     {
-      "**************************************************": "TESTING"
+      "name": "neuter byname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "neuter surname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex surname}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
     },
     {
       "name": "test",

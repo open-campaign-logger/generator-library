@@ -12,7 +12,7 @@
   "note": "Includes multiple spelling variations of the same names. Several hypotectical, reconstructed names are included as well.",
   "to do": "",
   "see": "",
-  "date": "2018-03-10",
+  "date": "2018-05-05",
   "authors": "ELF Vesala",
   "sources": "Eithni.com, PeiraeusPublicLibrary.com,  S-Gabriel.org, Wikipedia.org",
   "genre": "universal",
@@ -1050,10 +1050,32 @@
       "**************************************************": "SPECIAL TABLES"
     },
     {
+      "name": "special",
+      "explanation": "Special name tables.",
+      "entries": [
+        "{hermafrodite}",
+        "{neuter}"
+      ]
+    },
+    {
       "name": "hermafrodite",
       "explanation": "Alias for unisex naming.",
       "entries": [
         "{unisex}"
+      ]
+    },
+    {
+      "name": "hermafrodite byname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "hermafrodite surname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex surname}"
       ]
     },
     {
@@ -1062,6 +1084,23 @@
       "entries": [
         "{unisex}"
       ]
+    },
+    {
+      "name": "neuter byname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "neuter surname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex surname}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
     },
     {
       "name": "test",

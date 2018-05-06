@@ -12,7 +12,7 @@
   "note": "",
   "to do": "",
   "see": "",
-  "date": "2018-04-25",
+  "date": "2018-05-05",
   "authors": "Ron Calbick, ELF Vesala.",
   "sources": "Freedictionary.com, name_f_1.json, name_f_2.json, name_m_1.json, name_m_2.json",
   "genre": "fantasy",
@@ -1952,10 +1952,38 @@
       ]
     },
     {
+      "name": "hermafrodite byname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "hermafrodite surname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex surname}"
+      ]
+    },
+    {
       "name": "neuter",
       "explanation": "Alias for unisex naming.",
       "entries": [
         "{unisex}"
+      ]
+    },
+    {
+      "name": "neuter byname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "neuter surname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex surname}"
       ]
     },
     {
