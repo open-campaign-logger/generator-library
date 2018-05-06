@@ -3,6 +3,7 @@
   "resultPattern": "{init}{result}",
   "globals": {
     "gender": "",
+    "ambiguity": "",
     "orientation": "",
     "Subject": "",
     "subject": "",
@@ -10,7 +11,8 @@
     "Dependentpossessive": "",
     "dependentpossessive": "",
     "independentpossessive": "",
-    "reflexive": ""
+    "reflexive": "",
+    "age": ""
   },
   "variables": {
     "footnote": ""
@@ -22,7 +24,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-04-19",
+  "date": "2018-05-05",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -38,6 +40,7 @@
           "v": "",
           "export": {
             "gender": "{gender}",
+            "ambiguity": "{ambiguity}",
             "orientation": "{orientation}"
           }
         }
@@ -51,39 +54,37 @@
       "explanation": "The output format.",
       "entries": [
         "{summary}",
-        "{detail}"
+        "{detail}",
+        "{description}",
+        "{stats}"
       ]
     },
     {
       "name": "summary",
       "explanation": "Brief output.",
       "entries": [
-        "{g:gender}"
+        "{gender}"
       ]
     },
     {
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{attribute} {g:gender}",
-        "{g:gender} {feature}",
-        "{attribute} {g:gender} {feature}"
+        "{ambiguity} {gender}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {g:gender} {lib:synonym#looks} {attribute}.",
-        "The {g:gender} {lib:synonym#looks} {feature}.",
-        "The {attribute} {g:gender} {lib:synonym#looks} {feature}."
+        "{ambiguity} {gender} {orientation}"
       ]
     },
     {
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "Gender: {g:gender} \r\nAge: {g:age}"
+        "{b|Gender}: {g:gender} \r\n{b|Ambiguity}: {g:ambiguity} \r\n{b|Orientation}: {g:orientation} \r\n{b|Age}: {g:age} \r\n{b|Substantive}: {g:substantive}"
       ]
     },
     {
@@ -189,6 +190,89 @@
       },
       "entries": [
         "neuter"
+      ]
+    },
+    {
+      "**************************************************": "AMBIVALENCY"
+    },
+    {
+      "name": "ambiguity",
+      "explanation": "The clarity of the gender.",
+      "entries": [
+        "{ambiguous}",
+        "{feminine}",
+        "{masculine}",
+        "{unambigious}"
+      ]
+    },
+    {
+      "name": "ambiguous",
+      "explanation": "Ambivalent appearance.",
+      "export": {
+        "ambiguity": "ambiguous"
+      },
+      "entries": [
+        "ambiguous",
+        "ambivalent",
+        "distantly",
+        "faintly",
+        "inconclusively",
+        "indefinite",
+        "possibly",
+        "probably",
+        "somewhat",
+        "vaguely"
+      ]
+    },
+    {
+      "name": "feminine",
+      "explanation": "Womanlike appearance.",
+      "export": {
+        "ambiguity": "feminine"
+      },
+      "entries": [
+        "effeminate",
+        "feminine",
+        "girlish",
+        "ladylike",
+        "matronly",
+        "womanish",
+        "womanlike",
+        "womanly"
+      ]
+    },
+    {
+      "name": "masculine",
+      "explanation": "Manly appearance.",
+      "export": {
+        "ambiguity": "masculine"
+      },
+      "entries": [
+        "macho",
+        "manful",
+        "manlike",
+        "manly",
+        "mannish",
+        "masculine"
+      ]
+    },
+    {
+      "name": "unambigious",
+      "explanation": "Clearly defined appearance.",
+      "export": {
+        "ambiguity": "unambiguous"
+      },
+      "entries": [
+        "assuredly",
+        "decidedly",
+        "definitely",
+        "emphatically",
+        "positively",
+        "thoroughly",
+        "undeniably",
+        "undoubtedly",
+        "unquestionably",
+        "utterly"
       ]
     },
     {
@@ -482,6 +566,16 @@
       ]
     },
     {
+      "name": "looks",
+      "explanation": "Synonyms for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "looks to be",
+        "seems to be"
+      ]
+    },
+    {
       "**************************************************": "SPECIAL TABLES"
     },
     {
@@ -497,13 +591,13 @@
       "name": "attribute",
       "explanation": "Attribute prepended to the front of the result.",
       "entries": [
-        ""
+        "{ambiguity}"
       ]
     },
     {
       "name": "feature",
       "explanation": "Features appended to the end of the result.",
-      "format": "It appears --",
+      "format": "It seems to be --",
       "entries": [
         ""
       ]
