@@ -13,7 +13,7 @@
   "bugs": "",
   "to do": "Chronologically closer first and last name data would be nice.",
   "see": "name-USA-1850",
-  "date": "2018-05-05",
+  "date": "2018-05-06",
   "authors": "ELF Vesala",
   "sources": "http://www.baby2see.com/names/1880s.html",
   "genre": "historical",
@@ -2050,6 +2050,36 @@
         "Brice",
         "Ewald",
         "Ammon"
+      ]
+    },
+    {
+      "**************************************************": "SURNAMES"
+    },
+    {
+      "name": "female surname",
+      "explanation": "Feminine last names.",
+      "entries": [
+        "{surname}"
+      ]
+    },
+    {
+      "name": "male surname",
+      "explanation": "Masculine last names.",
+      "entries": [
+        "{surname}"
+      ]
+    },
+    {
+      "name": "unisex surname",
+      "explanation": "Gender-neutral last names.",
+      "entries": [
+        "{surname}"
+      ]
+    },
+    {
+      "name": "surname",
+      "entries": [
+        "{lib:name-USA-1850#surname}"
       ]
     },
     {

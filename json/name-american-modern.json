@@ -12,7 +12,7 @@
   "note": "",
   "to do": "",
   "see": "",
-  "date": "2018-05-05",
+  "date": "2018-05-06",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -1622,6 +1622,27 @@
     },
     {
       "**************************************************": "SURNAMES"
+    },
+    {
+      "name": "female surname",
+      "explanation": "Feminine last names.",
+      "entries": [
+        "{surname}"
+      ]
+    },
+    {
+      "name": "male surname",
+      "explanation": "Masculine last names.",
+      "entries": [
+        "{surname}"
+      ]
+    },
+    {
+      "name": "unisex surname",
+      "explanation": "Gender-neutral last names.",
+      "entries": [
+        "{surname}"
+      ]
     },
     {
       "name": "surname",

@@ -13,7 +13,7 @@
   "bugs": "",
   "to do": "",
   "see": "name-USA-1880",
-  "date": "2018-05-05",
+  "date": "2018-05-06",
   "authors": "ELF Vesala",
   "sources": " http://www.buckbd.com/genea/1850fnfl.txt,  http://www.buckbd.com/genea/1850fnml.txt,  http://www.buckbd.com/genea/1850freq.txt",
   "genre": "historical",
@@ -1445,7 +1445,31 @@
       ]
     },
     {
-      "name": "last name",
+      "**************************************************": "SURNAMES"
+    },
+    {
+      "name": "female surname",
+      "explanation": "Feminine last names.",
+      "entries": [
+        "{surname}"
+      ]
+    },
+    {
+      "name": "male surname",
+      "explanation": "Masculine last names.",
+      "entries": [
+        "{surname}"
+      ]
+    },
+    {
+      "name": "unisex surname",
+      "explanation": "Gender-neutral last names.",
+      "entries": [
+        "{surname}"
+      ]
+    },
+    {
+      "name": "surname",
       "explanation": "Last names sorted by popularity.",
       "entries": [
         "Smith",

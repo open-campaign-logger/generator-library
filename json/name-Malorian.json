@@ -12,7 +12,7 @@
   "note": "",
   "to do": "unisex names (if such exist), bynames",
   "see": "",
-  "date": "2018-05-05",
+  "date": "2018-05-06",
   "authors": "ELF Vesala.",
   "sources": "Sir Thomas Malory: 'Le Morte d'Arthur'.",
   "genre": "fantasy",
@@ -549,7 +549,30 @@
     {
       "name": "surname",
       "entries": [
-        "{byname}"
+        "{female surname}",
+        "{male surname}",
+        "{unisex surname}"
+      ]
+    },
+    {
+      "name": "female surname",
+      "explanation": "Feminine last names.",
+      "entries": [
+        "{female byname}"
+      ]
+    },
+    {
+      "name": "male surname",
+      "explanation": "Masculine last names.",
+      "entries": [
+        "{male byname}"
+      ]
+    },
+    {
+      "name": "unisex surname",
+      "explanation": "Gender-neutral last names.",
+      "entries": [
+        "{unisex byname}"
       ]
     },
     {

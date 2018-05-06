@@ -12,7 +12,7 @@
   "note": "Includes multiple spelling variations of the same names. Several hypotectical, reconstructed names are included as well.",
   "to do": "",
   "see": "",
-  "date": "2018-05-05",
+  "date": "2018-05-06",
   "authors": "ELF Vesala",
   "sources": "Eithni.com, PeiraeusPublicLibrary.com,  S-Gabriel.org, Wikipedia.org",
   "genre": "universal",
@@ -748,6 +748,38 @@
       "export": {
         "gender": "unisex"
       },
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "**************************************************": "SURNAMES"
+    },
+    {
+      "name": "surname",
+      "entries": [
+        "{female surname}",
+        "{male surname}",
+        "{unisex surname}"
+      ]
+    },
+    {
+      "name": "female surname",
+      "explanation": "Feminine last names.",
+      "entries": [
+        "{female byname}"
+      ]
+    },
+    {
+      "name": "male surname",
+      "explanation": "Masculine last names.",
+      "entries": [
+        "{male byname}"
+      ]
+    },
+    {
+      "name": "unisex surname",
+      "explanation": "Gender-neutral last names.",
       "entries": [
         "{unisex byname}"
       ]

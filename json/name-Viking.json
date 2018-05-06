@@ -12,7 +12,7 @@
   "note": "Requires UTF-8 character set to correctly display the Old Norse special characters (such as th, ae, and oe).",
   "to do": "The list of patronyms should be heavily expanded. Sadly the rules for Old Norse patronym creation are not completely regular.",
   "see": "",
-  "date": "2018-05-05",
+  "date": "2018-05-06",
   "authors": "ELF Vesala",
   "sources": "NordicNames.de",
   "genre": "historical",
@@ -5194,6 +5194,40 @@
       "entries": [
         "Þiúð",
         "Þiúðr"
+      ]
+    },
+    {
+      "**************************************************": "SURNAMES"
+    },
+    {
+      "name": "surname",
+      "entries": [
+        "{female surname}",
+        "{male surname}",
+        "{unisex surname}"
+      ]
+    },
+    {
+      "name": "female surname",
+      "explanation": "Feminine last names.",
+      "entries": [
+        "{female byname}",
+        "{female patronym}"
+      ]
+    },
+    {
+      "name": "male surname",
+      "explanation": "Masculine last names.",
+      "entries": [
+        "{male byname}",
+        "{male patronym}"
+      ]
+    },
+    {
+      "name": "unisex surname",
+      "explanation": "Gender-neutral last names.",
+      "entries": [
+        "{unisex byname}"
       ]
     },
     {
