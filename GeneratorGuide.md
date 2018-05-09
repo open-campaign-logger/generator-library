@@ -428,17 +428,21 @@ Unique table instances share the same variables and globals with the normal tabl
 
 The following formatting commands can be used to add emphasis to output:
 
-* The `{u|underlined}` string will be displayed as _underlined_.
-
 * The `b|bolded}` string will be displayed as **bold**.
 
 * The `i|italics}` string will be displayed as *italics*.
 
 * The `s|strike-through}` string will be displayed as ~~strike-through~~.
 
+* The `{\|Subscript}` string is displayed as <sub>subscript</sub>.
+
+* The `{/|Superscript}` string is displayed  as <sup>superscript</sup>.
+
+* The `{u|underlined}` string will be displayed as _underlined_.
+
 It is also possible to combine several formatting commands:
 
-		{ubis│underlined, bolded, italics and struck-through text}
+		{bisu│bolded, italic, struck-through and underlined text}
 
 
 ### Linebreaks and Tabulation
@@ -471,22 +475,15 @@ Start a line with two equal signs `==` and a space, write your text, and end the
 		======= Level 6 Headline =======
 
 
-### Superscipt and Subscript
-
-* Superscript: The `{/|Superscript}` string is displayed  as superscript.
-
-* Subscript: The `{\|Subscript}` string is displayed as subscript.
-
-
 ### Colors
 
 Text can be colored by using the hash character `#` followed by a six-digit hexadecimal RGB color value.
 
 In the RGB color value, the first 2 characters (0 - F) specify the intensity of the red color component, the following 2 the intensity of the green color component and the last 2 character the intensity of the blue color component. The lowest value for each component is `00`, and the highest value `FF`.
 
-For example the following formatting would produce bolded and bright red text:
+For example the following formatting would produce bright red text:
 
-		{b#CC0000|bold red text}
+		{#CC0000|red}
 
 RR - the red component 0-255 in hexadecimal notation, i.e. 0 = 00, 255 = FF
 GG - the green component ...
