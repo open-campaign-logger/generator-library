@@ -2,7 +2,7 @@
 
 [//]: # (Authors: ELF Vesala, Peter Sotos.)
 
-[//]: # (Date: 2018-04-17.)
+[//]: # (Date: 2018-05-08.)
 
 
 # Generator Guide
@@ -33,6 +33,7 @@ For documentation on other Campaign Logger topics, please refer to the Campaign 
 		- [Private Library Calls](#private-library-calls)
 		- [External Subtable Calls](#external-subtable-calls)
 	- [Weighing Values](#weighing-values)
+	- [Random Number Generation](#random-number-generation)
 	- [Variables](#variables)
 		- [Local Variables](#local-variables)
 			- [Setting Variables for a Single Entry](#setting-variables-for-a-single-entry)
@@ -41,12 +42,10 @@ For documentation on other Campaign Logger topics, please refer to the Campaign 
 	- [Pattern Matching and Replacing](#pattern-matching-and-replacing)
 		- [Extending variable content](#extending-variable-content)
 	- [Non-Repeating Results](#non-repeating-results)
-	- [Random Number Generation](#random-number-generation)
 	- [Formatting the output](#formatting-the-output)
 		- [Emphasis](#emphasis)
 		- [Linebreaks and Tabulation](#linebreaks-and-tabulation)
 		- [Headings and Subheadings](#headings-and-subheadings)
-		- [Superscipt and Subscript](#superscipt-and-subscript)
 		- [Colors](#colors)
 		- [Table Formatting](#table-formatting)
 	- [Text Transformation](#text-transformation)
