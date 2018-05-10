@@ -414,6 +414,10 @@ Luckily it is easy to avoid duplicated results like the scepter in the example a
 
 				{!treasure}
 
+A non-repeating call to the generator library would have the exclamation mark just before the table name, after the `lib:` prefix: 
+
+				{lib:!color}
+
 This kind of a *non-repeating* call creates a temporary copy of the table, and with each call removes the selected result from the temporary table. This means that a result will not occur more than once.
 
 Technically the standard `{table}` call refers to the normal instance of the table, while a non-repeating `{!table}` call refers to a temporary copy. The normal instance's entries remain unchanged. The entries in the temporary copy get fewer and fewer until the temporary table is empty. When the temporary table is empty, non-repeating calls return only empty results.
