@@ -2,7 +2,11 @@
   "name": "book",
   "resultPattern": "{init}{result}",
   "globals": {
-    "variable": ""
+    "appearance": "",
+    "ending": "",
+    "format": "",
+    "purpose": "",
+    "topic": ""
   },
   "variables": {
     "footnote": ""
@@ -14,7 +18,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-05-10",
+  "date": "2018-05-11",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -29,7 +33,8 @@
         {
           "v": "",
           "export": {
-            "": ""
+            "topic": "{topic}",
+            "format": "{book}"
           }
         }
       ]
@@ -51,29 +56,30 @@
       "name": "summary",
       "explanation": "Brief output.",
       "entries": [
-        "{book} about {subject}",
-        "{attribute} {book} about {subject}"
+        "'{term}'",
+        "{book} about {g:topic}",
+        "{attribute} {book} about {g:topic}"
       ]
     },
     {
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "The {format} is a {book} {about} {subject}. The {synonym} has {shape} {cover} covers. It {looks} {feature}."
+        "{book} {about} {g:topic}, called '{term}'"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The book is a {attribute} {book} {about} {subject}. The {synonym} has {cover} covers. The {page} pages contain {text} in {language} written in {ink}. It {looks} {feature}."
+        "'{term}' is a {attribute} {book} {about} {g:topic}. {g:appearance}. It {looks} {feature}."
       ]
     },
     {
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Name}: {term}\r\n{b|Format}: {format}\r\n{b|Subject}: {subject}\r\n"
+        "{b|Name}: {term}\r\n{b|Format}: {book} ({g:format})\r\n{b|Topic}: {g:topic}\r\n"
       ]
     },
     {
@@ -94,120 +100,43 @@
       "name": "common",
       "explanation": "Common types.",
       "entries": [
-        "{academic}",
-        "{novel}",
-        "{reference}",
-        "{textbook}"
+        "{bound}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare types.",
       "entries": [
-        "{picturebook}",
-        "{poetry}"
-      ]
-    },
-    {
-      "**************************************************": "DETAILS"
-    },
-    {
-      "name": "academic",
-      "explanation": "Research publication.",
-      "entries": [
-        "discourse",
-        "dissertation",
-        "essay",
-        "thesis",
-        "tract",
-        "treatise"
-      ]
-    },
-    {
-      "name": "novel",
-      "explanation": "Fictional stories.",
-      "entries": [
-        "novel",
-        "omnibus",
-        "story"
-      ]
-    },
-    {
-      "name": "picturebook",
-      "explanation": "Other types of books.",
-      "entries": [
-        "album",
-        "portfolio"
-      ]
-    },
-    {
-      "name": "poetry",
-      "explanation": "Poems.",
-      "entries": [
-        "epic",
-        "poem",
-        "poetry"
-      ]
-    },
-    {
-      "name": "reference",
-      "explanation": "Factual sourcebooks.",
-      "entries": [
-        "atlas",
-        "compendium",
-        "cyclopedia",
-        "dictionary",
-        "encyclopedia",
-        "lexicon",
-        "monograph",
-        "reference",
-        "thesaurus"
-      ]
-    },
-    {
-      "name": "textbook",
-      "explanation": "Study books.",
-      "entries": [
-        "enchiridion",
-        "guide",
-        "guidebook",
-        "handbook",
-        "instruction",
-        "manual",
-        "primer",
-        "textbook",
-        "workbook"
-      ]
-    },
-    {
-      "**************************************************": "SUBJECT MATTER"
-    },
-    {
-      "name": "subject",
-      "explanation": "Subject matter of the book.",
-      "entries": [
-        "cookery",
-        "mythology",
-        "natural history"
-      ]
-    },
-    {
-      "**************************************************": "FORMAT"
-    },
-    {
-      "name": "format",
-      "explanation": "The form of the book.",
-      "entries": [
-        "booklet",
-        "folio",
-        "leaflet",
-        "octavo",
-        "quarto",
-        "pamphlet"
+        "{tablet}",
+        "{parchment}",
+        "{scroll}"
       ]
     },
     {
       "**************************************************": "APPEARANCE"
+    },
+    {
+      "name": "bound",
+      "explanation": "Books between covers.",
+      "export": {
+        "format": "bound",
+        "appearance": "{bound appearance}"
+      },
+      "entries": [
+        "pamphlet",
+        "booklet",
+        "folio",
+        "leaflet",
+        "octavo",
+        "quarto"
+      ]
+    },
+    {
+      "name": "bound appearance",
+      "explanation": "The looks of bound books.",
+      "entries": [
+        "It has {cover} covers. The {page} pages contain {text} in {language} written in {ink}"
+      ]
     },
     {
       "name": "shape",
@@ -305,6 +234,167 @@
       ]
     },
     {
+      "--------------------------------------------------": "RARE FORMATS"
+    },
+    {
+      "name": "parchment",
+      "explanation": "Parchments and pergaments.",
+      "export": {
+        "format": "parchment",
+        "appearance": "{parchment appearance}"
+      },
+      "entries": [
+        "parchment",
+        "pergament"
+      ]
+    },
+    {
+      "name": "parchment appearance",
+      "explanation": "The looks of parchments and pergaments.",
+      "entries": [
+        "a dusty pergament"
+      ]
+    },
+    {
+      "name": "scroll",
+      "explanation": "Scrolls.",
+      "export": {
+        "format": "scroll",
+        "appearance": "{scroll appearance}"
+      },
+      "entries": [
+        "papyrus",
+        "scroll"
+      ]
+    },
+    {
+      "name": "scroll appearance",
+      "explanation": "The looks of scrolls.",
+      "entries": [
+        "an old scroll"
+      ]
+    },
+    {
+      "name": "tablet",
+      "explanation": "Clay tablets, etc.",
+      "export": {
+        "format": "tablet",
+        "appearance": "{tablet appearance}"
+      },
+      "entries": [
+        "clay tablet",
+        "stone tablet"
+      ]
+    },
+    {
+      "name": "tablet appearance",
+      "explanation": "The looks of clay tablets, etc.",
+      "entries": [
+        "a cracked slab"
+      ]
+    },
+    {
+      "**************************************************": "PURPOSE"
+    },
+    {
+      "name": "purpose",
+      "explanation": "Type of subject matter.",
+      "entries": [
+        "{academic}",
+        "{novel}",
+        "{picturebook}",
+        "{poetry}",
+        "{reference}",
+        "{textbook}"
+      ]
+    },
+    {
+      "name": "academic",
+      "explanation": "Research publication.",
+      "export": {
+        "purpose": "academic"
+      },
+      "entries": [
+        "discourse",
+        "dissertation",
+        "essay",
+        "thesis",
+        "tract",
+        "treatise"
+      ]
+    },
+    {
+      "name": "novel",
+      "explanation": "Fictional stories.",
+      "export": {
+        "purpose": "novel"
+      },
+      "entries": [
+        "novel",
+        "omnibus",
+        "story"
+      ]
+    },
+    {
+      "name": "picturebook",
+      "explanation": "Pictorial of books.",
+      "export": {
+        "purpose": "picturebook"
+      },
+      "entries": [
+        "album",
+        "portfolio"
+      ]
+    },
+    {
+      "name": "poetry",
+      "explanation": "Poems.",
+      "export": {
+        "purpose": "poetry"
+      },
+      "entries": [
+        "epic",
+        "poem",
+        "poetry"
+      ]
+    },
+    {
+      "name": "reference",
+      "explanation": "Factual sourcebooks.",
+      "export": {
+        "purpose": "reference"
+      },
+      "entries": [
+        "atlas",
+        "compendium",
+        "cyclopedia",
+        "dictionary",
+        "encyclopedia",
+        "lexicon",
+        "monograph",
+        "reference",
+        "thesaurus"
+      ]
+    },
+    {
+      "name": "textbook",
+      "explanation": "Study books.",
+      "export": {
+        "purpose": "textbook"
+      },
+      "entries": [
+        "enchiridion",
+        "guide",
+        "guidebook",
+        "handbook",
+        "instruction",
+        "manual",
+        "primer",
+        "textbook",
+        "workbook"
+      ]
+    },
+    {
       "**************************************************": "TERMS"
     },
     {
@@ -361,55 +451,11 @@
     {
       "name": "ending",
       "explanation": "Endings for randomized terms.",
+      "export": {
+        "ending": "{{g:topic}}"
+      },
       "entries": [
-        "Ancient Wisdom",
-        "Ancient Myths",
-        "Animalkind",
-        "Art",
-        "Beasts",
-        "Children",
-        "Common Fallacies",
-        "the Dark Arts",
-        "Darkness",
-        "Death and Dying",
-        "Drinking",
-        "the Elderly",
-        "Exotic Plants",
-        "Folk Wisdom",
-        "the Future",
-        "Gems",
-        "Healing Arts",
-        "Herbs",
-        "Jewelry",
-        "the Language",
-        "Light",
-        "Lost Aeons",
-        "Lost Worlds",
-        "Love",
-        "Magick",
-        "the Mental Faculties",
-        "Mountains",
-        "the Oceans",
-        "Omens",
-        "Our Loved Ones",
-        "Our Past",
-        "Religion",
-        "Riches",
-        "Sanity",
-        "the Savages",
-        "Ships",
-        "Sigils",
-        "the Sky",
-        "Stargazing",
-        "Strange Creatures",
-        "Temples",
-        "Underground Areas",
-        "Uncharted Depths",
-        "Watery Depths",
-        "Wisdom",
-        "the World",
-        "the Worlds Beyond",
-        "Worship"
+        "{g:ending}"
       ]
     },
     {
@@ -424,6 +470,157 @@
         "of Our Past",
         "of the Past Generations",
         "of the Unknown"
+      ]
+    },
+    {
+      "**************************************************": "TOPICS"
+    },
+    {
+      "name": "topic",
+      "explanation": "Subject matter of the book.",
+      "entries": [
+        "art",
+        "cookery",
+        "geography",
+        "mythology",
+        "philosophy",
+        "religion",
+        "natural history"
+      ]
+    },
+    {
+      "name": "art",
+      "explanation": "Fine arts.",
+      "export": {
+        "topic": "art"
+      },
+      "entries": [
+        "Art"
+      ]
+    },
+    {
+      "name": "cookery",
+      "explanation": "Cooking and culinary arts.",
+      "export": {
+        "topic": "cookery"
+      },
+      "entries": [
+        "Bakery",
+        "Culinary Arts",
+        "Food",
+        "Drinking"
+      ]
+    },
+    {
+      "name": "esoterica",
+      "explanation": "Magic and the supernatural.",
+      "export": {
+        "topic": "esoterica"
+      },
+      "entries": [
+        "the Dark Arts",
+        "Esoterica",
+        "Magick",
+        "Sigils"
+      ]
+    },
+    {
+      "name": "geography",
+      "explanation": "The world.",
+      "export": {
+        "topic": "geography"
+      },
+      "entries": [
+        "Maps and Mapping",
+        "Mountains",
+        "the Oceans",
+        "Sea Charts",
+        "Underground Areas",
+        "Uncharted Depths",
+        "Watery Depths"
+      ]
+    },
+    {
+      "name": "mythology",
+      "explanation": "Myths.",
+      "export": {
+        "topic": "mythology"
+      },
+      "entries": [
+        "Ancient Myths",
+        "Gods and Demigods"
+      ]
+    },
+    {
+      "name": "natural history",
+      "explanation": "Natural history.",
+      "export": {
+        "topic": "natural history"
+      },
+      "entries": [
+        "Animalkind",
+        "Beasts",
+        "Exotic Plants",
+        "Gems",
+        "Herbs",
+        "Mushroom",
+        "Plants",
+        "Strange Creatures"
+      ]
+    },
+    {
+      "name": "philosophy",
+      "explanation": "Philosophy.",
+      "export": {
+        "topic": "philosophy"
+      },
+      "entries": [
+        "Ancient Wisdom"
+      ]
+    },
+    {
+      "name": "religion",
+      "explanation": "Religion.",
+      "export": {
+        "topic": "religion"
+      },
+      "entries": [
+        "Religion"
+      ]
+    },
+    {
+      "name": "",
+      "explanation": "",
+      "entries": [
+        "Children",
+        "Common Fallacies",
+        "Darkness",
+        "Death and Dying",
+        "the Elderly",
+        "Folk Wisdom",
+        "the Future",
+        "Healing Arts",
+        "Jewelry",
+        "the Language",
+        "Light",
+        "Lost Aeons",
+        "Lost Worlds",
+        "Love",
+        "the Mental Faculties",
+        "Omens",
+        "Our Loved Ones",
+        "Our Past",
+        "Riches",
+        "Sanity",
+        "the Savages",
+        "Ships",
+        "the Sky",
+        "Stargazing",
+        "Temples",
+        "Wisdom",
+        "the World",
+        "the Worlds Beyond",
+        "Worship"
       ]
     },
     {
