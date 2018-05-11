@@ -2,7 +2,7 @@
 
 [//]: # (Authors: ELF Vesala, Peter Sotos.)
 
-[//]: # (Date: 2018-05-08.)
+[//]: # (Date: 2018-05-11.)
 
 
 # Generator Guide
@@ -299,19 +299,24 @@ Note that only one modifier (such as the `+10` in the above example) is supporte
 
 ## Variables
 
-Variables can be a powerful feature when designing advanced generators. They can be defined using the optional `variables` property.
+Variables can be a powerful feature when designing advanced generators.
 
-Variables are specified as a list of value pairs - the key (name of the variable) and its default value:
+**Note**: Variable names cannot begin with a number. Otherwise they can contain alphanumeric characters (`a` - `z`, `A` - `Z`, `0` - `9`), as well as underscore (`_`) and space (` `) characters. Note that for example a dash (`-`) is not allowed.
+
+
+### Local Variables
+
+Local variables can be defined using the optional `variables` property.
+
+Local variables are specified as a list of value pairs - the key (name of the variable) and its default value:
 
     "variables": {
       "variable 1": "1",
       "variable 2": "another value"
     },
 
-**Note**: Variable names cannot begin with a number. Otherwise they can contain alphanumeric characters (`a` - `z`, `A` - `Z`, `0` - `9`), as well as underscore (`_`) and space (` `) characters. Note that for example a dash (`-`) is not allowed.
+Note that although it is possible to use the same names for local and global variables, the variables are completely separate. Changing a global variable does not affect a local variable using a similar name, for example.
 
-
-### Local Variables
 
 #### Setting Variables for a Single Entry
 
@@ -340,6 +345,15 @@ Variables are specified as a list of value pairs - the key (name of the variable
 
 
 ### Global Variables
+
+Global variables (also known as just 'globals') can be defined using the optional `globals` property.
+
+Just like local variables, also globals are specified as a list of value pairs - the key (name of the variable) and its default value:
+
+    "globals": {
+      "variable 1": "1",
+      "variable 2": "another value"
+    },
 
 
 ## Pattern Matching and Replacing
@@ -414,7 +428,7 @@ Luckily it is easy to avoid duplicated results like the scepter in the example a
 
 				{!treasure}
 
-A non-repeating call to the generator library would have the exclamation mark just before the table name, after the `lib:` prefix: 
+A non-repeating call to the generator library would have the exclamation mark just before the table name, after the `lib:` prefix:
 
 				{lib:!color}
 
