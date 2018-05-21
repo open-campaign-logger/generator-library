@@ -12,7 +12,7 @@
   "note": "",
   "format": "",
   "bugs": "",
-  "to do": "supernatural weather (mana storms, etc.)",
+  "to do": "different climes, sea weather, space weather",
   "see": "",
   "date": "2018-05-21",
   "authors": "ELF Vesala.",
@@ -145,6 +145,7 @@
       "entries": [
         "{clear}",
         "{cloudy}",
+        "{windy}",
         "{snow}"
       ]
     },
@@ -173,8 +174,12 @@
       "entries": [
         "{clear}",
         "{cloudy}",
+        "{windy}",
+        "{fog}",
         "{precipitation}",
-        "{rain}"
+        "{rain}",
+        "{hail}",
+        "{storm}"
       ]
     },
     {
@@ -203,9 +208,12 @@
       "entries": [
         "{clear}",
         "{cloudy}",
+        "{fog}",
         "{precipitation}",
         "{rain}",
-        "{storm}"
+        "{windy}",
+        "{storm}",
+        "{thunder}"
       ]
     },
     {
@@ -235,8 +243,12 @@
         "{clear}",
         "{cloudy}",
         "{precipitation}",
+        "{windy}",
+        "{fog}",
         "{rain}",
-        "{storm}"
+        "{hail}",
+        "{storm}",
+        "{thunder}"
       ]
     },
     {
@@ -334,6 +346,13 @@
       ]
     },
     {
+      "name": "hail",
+      "explanation": "Ice rain.",
+      "entries": [
+        "hailstorm"
+      ]
+    },
+    {
       "name": "precipitation",
       "explanation": "Moisture in the air.",
       "entries": [
@@ -362,6 +381,13 @@
       "explanation": "Tempestuous weather.",
       "entries": [
         "storm",
+        "thunderstorm"
+      ]
+    },
+    {
+      "name": "thunder",
+      "explanation": "Thunderstorm.",
+      "entries": [
         "thunderstorm"
       ]
     },
@@ -489,21 +515,23 @@
       "entries": [
         "{myth}",
         "{medieval}",
-        "XXX"
+        "{magical}",
+        "{planar}"
       ]
     },
     {
       "name": "myth",
       "explanation": "Descriptions for mythic worlds (once thought true).",
       "entries": [
-        "XXX"
+        "{magical}",
+        "{planar}"
       ]
     },
     {
       "name": "medieval",
       "explanation": "Descriptions for medieval worlds (with no magic).",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
@@ -511,7 +539,7 @@
       "explanation": "Descriptions for modern worlds.",
       "entries": [
         "{common}",
-        "XXX"
+        "{cyber}"
       ]
     },
     {
@@ -519,7 +547,9 @@
       "explanation": "Descriptions for science fiction worlds.",
       "entries": [
         "{modern}",
-        "XXX"
+        "acid rain",
+        "{cyber}",
+        "{psionic}"
       ]
     },
     {
@@ -529,7 +559,24 @@
       "name": "exotic",
       "explanation": "Exotic alternatives.",
       "entries": [
-        "{magical}"
+        "{cyber}",
+        "{magical}",
+        "{planar}",
+        "{psionic}"
+      ]
+    },
+    {
+      "name": "cyber",
+      "explanation": "Data network conditions.",
+      "entries": [
+        "blocked (network in an inoperational state)",
+        "choked (network operates at significantly reduced capacity)",
+        "congested (network operates at reduced capacity)",
+        "stable (network operates normally)",
+        "undulating (network operates at varying capacity)",
+        "data storm (network capacity varies wildly)",
+        "unstable (network operates unpredictably)",
+        "high speed (network operates almost at the theoretical maximum capacity)"
       ]
     },
     {
@@ -547,17 +594,41 @@
       ]
     },
     {
+      "name": "planar",
+      "explanation": "Dimensional stability.",
+      "entries": [
+        "planar blockade (interplanar access is temporarily blocked)",
+        "planar ebb (interplanar access is almost impossible)",
+        "planar disturbance (interplanar access is more difficult)",
+        "static planes (planar conditions are normal)",
+        "undulating planes (planar access cyclically gets less and more difficult)",
+        "planar storm (interplanar access conditions vary wildly)",
+        "unstable planes (interplanar access creates unexpected side effects)",
+        "planar surge (interplanar access is easier)"
+      ]
+    },
+    {
+      "name": "psionic",
+      "explanation": "Stability of psionic energy fields.",
+      "entries": [
+        "psionic blockade (psionic energies are temporarily blocked)",
+        "psionic ebb (using psionic energies is almost impossible)",
+        "psionic disturbance (using psionic energies is more difficult)",
+        "static psi (psionic energies operate normally)",
+        "undulating psi (using psionic energies cyclically gets less and more difficult)",
+        "psionic storm (psionic conditions vary wildly)",
+        "unstable psi (psionic energies create unexpected side effects)",
+        "psionic surge (using psionic energies is easier)"
+      ]
+    },
+    {
       "**************************************************": "SYNONYMS"
     },
     {
-      "name": "synonym",
-      "explanation": "Variant expressions for the generator subject matter.",
+      "name": "fall",
+      "explanation": "Redirect to support the American term.",
       "entries": [
-        "climate",
-        "clime",
-        "condition",
-        "conditions",
-        "weather"
+        "{autumn}"
       ]
     },
     {
@@ -568,6 +639,16 @@
         "appears to be",
         "looks to be",
         "seems to be"
+      ]
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "climate",
+        "clime",
+        "condition",
+        "weather"
       ]
     },
     {
