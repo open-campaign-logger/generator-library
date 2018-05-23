@@ -1,18 +1,24 @@
 {
   "name": "motif-snake",
-  "resultPattern": "{init}{result}",
+  "resultPattern": "{init}{stats}",
   "globals": {
     "motif": "snake",
-    "location": "",
-    "villain": "",
+    "creature": "",
     "minion": "",
+    "villain": "",
     "danger": "",
+    "landmark": "",
+    "location": "",
     "artifact": "",
+    "object": "",
     "treasure": "",
-    "sound": "",
+    "adjective": "",
     "aroma": "",
+    "sound": "",
     "symbol": "",
-    "object": ""
+    "characteristic": "",
+    "culture": "",
+    "situation": ""
   },
   "variables": {
     "footnote": ""
@@ -24,7 +30,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-05-22",
+  "date": "2018-05-23",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -40,137 +46,100 @@
           "m": 1,
           "v": "",
           "export": {
-            "location": "{location}",
-            "villain": "{villain}",
+            "creature": "{creature}",
             "minion": "{minion}",
+            "villain": "{villain}",
             "danger": "{danger}",
+            "landmark": "{landmark}",
+            "location": "{location}",
             "artifact": "{artifact}",
+            "object": "{object}",
             "treasure": "{treasure}",
-            "sound": "{sound}",
+            "adjective": "{adjective}",
             "aroma": "{aroma}",
+            "sound": "{sound}",
             "symbol": "{symbol}",
-            "object": "{object}"
+            "characteristic": "{characteristic}",
+            "culture": "{culture}",
+            "situation": "{situation}"
           }
         }
       ]
     },
     {
       "name": "result",
-      "explanation": ".",
+      "explanation": "The output format.",
       "entries": [
         "{summary}",
-        "{detail}"
+        "{detail}",
+        "{description}",
+        "{stats}"
       ]
     },
     {
       "name": "summary",
       "explanation": "Brief description of the randomized motif.",
       "entries": [
-        "The heroes travel via {!creature}-{!location adjective} {!landmark} and {!creature}-{!location adjective} {!landmark}, encountering a {creature} {culture} in order to enter the {global:location} to face an evil, {creature}-{person} {global:villain} and a horde of {global:minion} minions."
+        "The heroes travel via {!creature}-{!situation} {!landmark} and {!creature}-{!situation} {!landmark}, encountering a {creature} {culture} in order to enter the {global:location} to face an evil, {creature}-{characteristic} {global:villain} and a horde of {global:minion} minions."
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed description of the randomized motif.",
       "entries": [
-        "The heroes travel via {!creature}-{!location adjective} {!landmark} and {!creature}-{!location adjective} {!landmark}, encountering a {creature} {culture} in order to enter the {global:location} to face an evil, {creature}-{person} {global:villain} and a horde of {global:minion} minions. They must face dangers such as a {global:danger} to find the {global:artifact} and hopefully be able to recover the {global:treasure}."
+        "The heroes travel via {!creature}-{!situation} {!landmark} and {!creature}-{!situation} {!landmark}, encountering a {creature} {culture} in order to enter the {g:location} to face an evil, {creature}-{characteristic} {g:villain} and a horde of {g:minion} minions. They must face dangers such as a {g:danger} to find the {g:artifact} and hopefully be able to recover the {g:treasure}."
       ]
     },
     {
-      "**************************************************": "CONCEPTS"
-    },
-    {
-      "name": "location",
-      "explanation": "The area where the events take place.",
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "temple of a snake cult",
-        "accursed tower of snakes"
+        "The heroes travel via {!creature}-{!situation} {!landmark} and {!creature}-{!situation} {!landmark}, encountering a {creature} {culture} in order to enter the {g:location} to face an evil, {creature}-{characteristic} {g:villain} and a horde of {g:minion} minions. They must face dangers such as a {g:danger} to find the {g:artifact} and hopefully be able to recover the {g:treasure}."
       ]
     },
     {
-      "name": "villain",
-      "explanation": "The antagonist.",
+      "name": "stats",
+      "explanation": "Details as statistics.",
       "entries": [
-        "cult leader",
-        "evil high priest",
-        "insane snake priest"
+        "{b|Motif}: {g:motif} \r\n{b|Landmark}: {g:landmark}\r\n{b|Location}: {g:location} \r\n{b|Danger}: {g:danger} \r\n{b|Creature}: {g:creature} \r\n{b|Minion}: {g:minion} \r\n{b|Villain}: {g:villain} \r\n{b|Artifact}: {g:artifact} \r\n{b|Object}: {g:object} \r\n{b|Treasure}: {g:treasure} \r\n{b|Adjective}: {g:adjective} \r\n{b|Aroma}: {g:aroma} \r\n{b|Sound}: {g:sound} \r\n{b|Symbol}: {g:symbol} \r\n{b|Characteristic}: {g:characteristic} \r\n{b|Culture}: {g:culture} \r\n{b|Situation}: {g:situation} \r\n"
       ]
     },
     {
-      "name": "minion",
-      "explanation": "The antagonist's accomplices.",
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "motif",
+      "explanation": "Types by rarity.",
+      "format": "Dummy output to retain a standard subtable as functional.",
       "entries": [
-        "cultist",
-        "priest",
-        "follower"
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
       ]
     },
     {
-      "name": "danger",
-      "explanation": "Dangers matching the motif.",
+      "name": "common",
+      "explanation": "Common types.",
+      "format": "Dummy output to retain a standard subtable as functional.",
       "entries": [
-        "snake trap",
-        "venom-coated door handle"
+        "{g:motif}"
       ]
     },
     {
-      "name": "artifact",
-      "explanation": "Artifacts matching the motif.",
+      "name": "rare",
+      "explanation": "Rare types.",
+      "format": "Dummy output to retain a standard subtable as functional.",
       "entries": [
-        "spellbook bound in snake skin",
-        "fang of a long-dead serpent deity"
-      ]
-    },
-    {
-      "name": "treasure",
-      "explanation": "Treasures matching the motif.",
-      "entries": [
-        "snake idol",
-        "snake statuette",
-        "snake-crested helmet",
-        "snake scale armor"
+        "{special}"
       ]
     },
     {
       "**************************************************": "DETAILS"
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives for motif-themed concepts.",
-      "entries": [
-        "coiled",
-        "crawling",
-        "creeping",
-        "crooked",
-        "elongated",
-        "encircled",
-        "entwined",
-        "fanged",
-        "ophidian",
-        "ophite",
-        "poisonous",
-        "reptilian",
-        "scaled",
-        "scaly",
-        "seething",
-        "sinous",
-        "slimy",
-        "slithering",
-        "snakelike",
-        "twisting",
-        "undulating",
-        "venomous",
-        "writhing"
-      ]
-    },
-    {
-      "name": "aroma",
-      "explanation": "Odors and tastes related to the motif.",
-      "entries": [
-        "pungent",
-        "putrid",
-        "reptile"
-      ]
+      "--------------------------------------------------": "CREATURES"
     },
     {
       "name": "creature",
@@ -186,12 +155,60 @@
       ]
     },
     {
+      "name": "minion",
+      "explanation": "The antagonist's accomplices.",
+      "entries": [
+        "cultist",
+        "priest",
+        "follower"
+      ]
+    },
+    {
+      "name": "villain",
+      "explanation": "The antagonist.",
+      "entries": [
+        "cult leader",
+        "high priest",
+        "snake priest"
+      ]
+    },
+    {
+      "--------------------------------------------------": "LOCATIONS"
+    },
+    {
+      "name": "danger",
+      "explanation": "Dangers matching the motif.",
+      "entries": [
+        "snake trap",
+        "venom-coated door handle"
+      ]
+    },
+    {
       "name": "landmark",
       "explanation": "Terrain details associated with the motif.",
       "entries": [
         "pillar",
         "temple",
-        "tomb"
+        "viper nest"
+      ]
+    },
+    {
+      "name": "location",
+      "explanation": "The area where the events take place.",
+      "entries": [
+        "temple of a snake cult",
+        "accursed tower of snakes"
+      ]
+    },
+    {
+      "--------------------------------------------------": "OBJECTS"
+    },
+    {
+      "name": "artifact",
+      "explanation": "Artifacts matching the motif.",
+      "entries": [
+        "spellbook bound in snake skin",
+        "fang of a long-dead serpent deity"
       ]
     },
     {
@@ -206,20 +223,91 @@
       ]
     },
     {
+      "name": "treasure",
+      "explanation": "Treasures matching the motif.",
+      "entries": [
+        "snake idol",
+        "snake statuette",
+        "snake-crested helmet",
+        "snake scale armor"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ATMOSPHERE"
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives for motif-themed concepts.",
+      "entries": [
+        "circuitous",
+        "circular",
+        "coiled",
+        "crawling",
+        "creeping",
+        "crooked",
+        "curved",
+        "elongated",
+        "encircled",
+        "entwined",
+        "fanged",
+        "meandering",
+        "ophidian",
+        "ophite",
+        "poisonous",
+        "reptant",
+        "reptilian",
+        "scaled",
+        "scaly",
+        "seething",
+        "serpentiform",
+        "serpentine",
+        "sinous",
+        "slimy",
+        "slithering",
+        "snakelike",
+        "twisting",
+        "undulating",
+        "venomous",
+        "winding",
+        "writhing"
+      ]
+    },
+    {
+      "name": "aroma",
+      "explanation": "Odors and tastes related to the motif.",
+      "entries": [
+        "acrid",
+        "acrimonious",
+        "biting",
+        "bitter",
+        "ophidian",
+        "pungent",
+        "putrid",
+        "reptilian",
+        "sour",
+        "stinging",
+        "virulent"
+      ]
+    },
+    {
       "name": "sound",
       "explanation": "Sounds related to the motif.",
       "entries": [
         "hissing",
-        "slithering"
+        "sibilating",
+        "sliding",
+        "slithering",
+        "undulating"
       ]
     },
     {
       "name": "symbol",
       "explanation": "Symbols related to the motif.",
       "entries": [
-        "two-headed snake",
-        "winged serpent",
-        "feathered serpent"
+        "a feathered serpent",
+        "a snake biting its own tail",
+        "a two-headed snake",
+        "a winged serpent"
       ]
     },
     {
@@ -229,57 +317,155 @@
       "name": "term",
       "explanation": "Randomized terms (generated from components).",
       "entries": [
-        "{beginning}{ending}",
-        "{descriptor} {beginning}{ending}",
-        "{beginning}{ending} {extension}",
-        "{descriptor} {beginning}{ending} {extension}"
+        "{beginning}-{ending}",
+        "{descriptor} {beginning}-{ending}",
+        "{beginning}-{ending} {extension}",
+        "{descriptor} {beginning}-{ending} {extension}"
       ]
     },
     {
       "name": "descriptor",
       "explanation": "Descriptors for randomized terms.",
       "entries": [
-        ""
+        "{adjective}"
       ]
     },
     {
       "name": "beginning",
       "explanation": "Beginnings for randomized terms.",
       "entries": [
-        "snake",
-        "serpent",
-        "scale"
+        "{creature}",
+        "{exotic}",
+        "{synonym}"
       ]
     },
     {
       "name": "ending",
       "explanation": "Endings for randomized terms.",
       "entries": [
-        "XXX"
+        "{characteristic}"
       ]
     },
     {
       "name": "extension",
       "explanation": "Extensions for randomized terms.",
       "entries": [
-        ""
+        "{culture}"
       ]
     },
     {
-      "**************************************************": "SPECIAL TABLES"
+      "**************************************************": "WORLD-SPECIFIC"
     },
     {
-      "name": "special",
-      "explanation": "Special tables.",
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
+        "{myth}",
+        "{medieval}",
+        "basilisk"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "ouroboros"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "asp"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}",
+        "cobra"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "viper"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        "constrictor"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "adder",
+        "asp",
+        "reptile",
+        "serpent",
+        "snake",
+        "viper",
+        "worm"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Synonyms for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "looks to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "STANDARD TABLES"
+    },
+    {
+      "name": "standard",
+      "explanation": "Standard tables.",
+      "entries": [
+        "{characteristic}",
         "{culture}",
-        "{location}",
-        "{person}"
+        "{situation}"
+      ]
+    },
+    {
+      "name": "characteristic",
+      "explanation": "Standard personal characteristics.",
+      "entries": [
+        "armed",
+        "bodied",
+        "born",
+        "controlled",
+        "eyed",
+        "formed",
+        "handed",
+        "headed",
+        "minded",
+        "sired",
+        "skinned",
+        "taught",
+        "tongued",
+        "worshipping"
       ]
     },
     {
       "name": "culture",
-      "explanation": "Generic terms for societies.",
+      "explanation": "Standard terms for societies.",
       "entries": [
         "affiliation",
         "alliance",
@@ -297,10 +483,13 @@
         "conspiracy",
         "cult",
         "culture",
+        "dominion",
+        "dynasty",
         "faction",
         "folk",
         "gang",
         "guild",
+        "hegemony",
         "horde",
         "kin",
         "kindred",
@@ -314,28 +503,35 @@
         "populace",
         "population",
         "race",
+        "regime",
+        "reign",
         "sect",
         "settlement",
         "society",
         "species",
+        "supremacy",
         "syndicate",
         "tribe",
         "union"
       ]
     },
     {
-      "name": "location adjective",
-      "explanation": "Generic location descriptions.",
+      "name": "situation",
+      "explanation": "Standard situation descriptions.",
       "entries": [
         "demolished",
         "desecrated",
         "despoiled",
         "destroyed",
+        "dominated",
+        "encroached",
         "engulfed",
+        "governed",
         "infested",
+        "invaded",
+        "occupied",
         "overrun",
         "overwhelmed",
-        "pillaged",
         "populated",
         "preyed",
         "raided",
@@ -343,36 +539,51 @@
         "ravaged",
         "razed",
         "ruined",
+        "ruled",
         "seized",
         "sieged",
         "spoiled",
         "tortured",
+        "usurped",
         "wasted",
         "wrecked"
       ]
     },
     {
-      "name": "person",
-      "explanation": "Generic personal attributes.",
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
       "entries": [
-        "bodied",
-        "born",
-        "eyed",
-        "formed",
-        "handed",
-        "headed",
-        "minded",
-        "sired",
-        "skinned",
-        "taught",
-        "worshipping"
+        "{attribute}",
+        "{feature}"
       ]
     },
     {
-      "name": "test",
-      "explanation": "Testing tool for dumping the set global variables.",
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "format": "Dummy output to retain a standard subtable as functional.",
       "entries": [
-        "Motif: {global:motif}, Villain: {global:villain}, Minions: {global:minion}, Danger: {global:danger}, Artifact: {global:artifact}, Treasure: {global:treasure}."
+        "{descriptor}"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "Dummy output to retain a standard subtable as functional.",
+      "entries": [
+        "{extension}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Term: {term}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]
