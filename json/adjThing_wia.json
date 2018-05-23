@@ -1,39 +1,39 @@
 {
-	"name": "Adjective, Thing (with indefinitive article) Generator",
-	"resultPattern": "{adjThing wia}",
-	"tables": [
-		{
-			"name": "adjThing wia",
-			"entries": [
-		    	"an accursed",
-		        "an ancestral",
-		        "an ancient",
-		        "an animated", 
-		    	"a blinding",
-        		"a broken",
-        		"{lib:color_wia}",
-        		"a dancing",
-        		"an enchanted",
-		        "an ethereal",
-        		"a fiery",
-        		"a flaming",
-        		"a frosted",
-        		"a gilded",
-        		"a glamered",
-        		"a holy",
-        		"an infamous",
-        		"a lost",
-        		"a magical",
-        		"an ornate",
-        		"a powerful",
-        		"a royal",
-        		"a shadowy",
-        		"a shining",
-        		"a smoking",
-        		"a thundering",
-        		"an unholy",
-        		"a vicious"
-			]
-		}
-	]
+  "name": "Adjective, Thing (with indefinitive article) Generator",
+  "resultPattern": "{adjThing wia}",
+  "tables": [
+    {
+      "name": "adjThing wia",
+      "entries": [
+        "an accursed",
+        "an ancestral",
+        "an ancient",
+        "an animated",
+        "a blinding",
+        "a broken",
+        "{lib:color_wia}",
+        "a dancing",
+        "an enchanted",
+        "an ethereal",
+        "a fiery",
+        "a flaming",
+        "a frosted",
+        "a gilded",
+        "a glamered",
+        "a holy",
+        "an infamous",
+        "a lost",
+        "a magical",
+        "an ornate",
+        "a powerful",
+        "a royal",
+        "a shadowy",
+        "a shining",
+        "a smoking",
+        "a thundering",
+        "an unholy",
+        "a vicious"
+      ]
+    }
+  ]
 }
