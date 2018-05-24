@@ -3,6 +3,7 @@
   "resultPattern": "{init}{stats}",
   "globals": {
     "motif": "snake",
+    "animal": "",
     "creature": "",
     "minion": "",
     "villain": "",
@@ -30,7 +31,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-05-23",
+  "date": "2018-05-24",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -46,6 +47,7 @@
           "m": 1,
           "v": "",
           "export": {
+            "animal": "{animal}",
             "creature": "{creature}",
             "minion": "{minion}",
             "villain": "{villain}",
@@ -139,11 +141,49 @@
       "**************************************************": "DETAILS"
     },
     {
-      "--------------------------------------------------": "CREATURES"
+      "--------------------------------------------------": "ACTANTS"
+    },
+    {
+      "name": "actant",
+      "explanation": "Randomized actor in the plot.",
+      "entries": [
+        "{ally}",
+        "{animal}",
+        "{beast}",
+        "{captive}",
+        "{guardian}",
+        "{herald}",
+        "{inhabitant}",
+        "{mentor}",
+        "{minion}",
+        "{monster}",
+        "{rival}",
+        "{shapeshifter}",
+        "{tempter}",
+        "{traitor}",
+        "{trickster}",
+        "{villain}"
+      ]
     },
     {
       "name": "creature",
-      "explanation": "Creatures associated with the motif.",
+      "explanation": "Randomized non-human being.",
+      "entries": [
+        "{animal}",
+        "{beast}",
+        "{monster}"
+      ]
+    },
+    {
+      "name": "ally",
+      "explanation": "Accomplices and partners associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "animal",
+      "explanation": "Neutral animals associated with the motif.",
       "entries": [
         "adder",
         "asp",
@@ -155,8 +195,50 @@
       ]
     },
     {
+      "name": "beast",
+      "explanation": "Hostile animals associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "captive",
+      "explanation": "Prisoners and hostages associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "guardian",
+      "explanation": "Guards and sentinels associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "herald",
+      "explanation": "Harbingers and messengers associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "inhabitant",
+      "explanation": "Common people associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "mentor",
+      "explanation": "Guides and advisers associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
       "name": "minion",
-      "explanation": "The antagonist's accomplices.",
+      "explanation": "Antagonist's accomplices associated with the motif.",
       "entries": [
         "cultist",
         "priest",
@@ -164,8 +246,50 @@
       ]
     },
     {
+      "name": "monster",
+      "explanation": "Supernatural beasts associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "rival",
+      "explanation": "Competing characters associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "shapeshifter",
+      "explanation": "Impostors and transforming characters.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "tempter",
+      "explanation": "Seducers and allurers associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "traitor",
+      "explanation": "Deceivers and turncoats associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "trickster",
+      "explanation": "Charlatans and frauds associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
       "name": "villain",
-      "explanation": "The antagonist.",
+      "explanation": "Enemies and antagonists associated with the motif.",
       "entries": [
         "cult leader",
         "high priest",
@@ -334,7 +458,7 @@
       "name": "beginning",
       "explanation": "Beginnings for randomized terms.",
       "entries": [
-        "{creature}",
+        "{animal}",
         "{exotic}",
         "{synonym}"
       ]
