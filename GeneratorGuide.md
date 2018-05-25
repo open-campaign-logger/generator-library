@@ -2,7 +2,7 @@
 
 [//]: # (Authors: ELF Vesala, Peter Sotos.)
 
-[//]: # (Date: 2018-05-11.)
+[//]: # (Date: 2018-05-25.)
 
 
 # Generator Guide
@@ -641,6 +641,7 @@ The following optional properties can be used:
 * **`categories`**: The categories property specifies a class in which the file belongs to. This is used for organizing the generator files in the Campaign Logger user interface. It is recommended to select one of the following values:
 
   * **character** (PC and NPC generation)
+	* **combat** (fighting and conflict resolution)
   * **encounter** (events and random encounters)
   * **item** (equipment and treasure generation)
   * **magic** (spells and magic items)
