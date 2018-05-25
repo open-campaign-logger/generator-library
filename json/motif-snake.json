@@ -31,7 +31,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-05-24",
+  "date": "2018-05-25",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -297,6 +297,91 @@
       ]
     },
     {
+      "--------------------------------------------------": "ATMOSPHERE"
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives for motif-themed concepts.",
+      "entries": [
+        "circuitous",
+        "circular",
+        "coiled",
+        "crawling",
+        "creeping",
+        "crooked",
+        "curved",
+        "elongated",
+        "encircled",
+        "entwined",
+        "fanged",
+        "meandering",
+        "ophidian",
+        "ophite",
+        "poisonous",
+        "reptant",
+        "reptilian",
+        "scaled",
+        "scaly",
+        "seething",
+        "serpentiform",
+        "serpentine",
+        "sinous",
+        "slimy",
+        "slithering",
+        "snakelike",
+        "twisting",
+        "undulating",
+        "venomous",
+        "winding",
+        "writhing"
+      ]
+    },
+    {
+      "name": "aroma",
+      "explanation": "Odors and tastes related to the motif.",
+      "entries": [
+        "acrid",
+        "acrimonious",
+        "biting",
+        "bitter",
+        "ophidian",
+        "pungent",
+        "putrid",
+        "reptilian",
+        "sour",
+        "stinging",
+        "virulent"
+      ]
+    },
+    {
+      "name": "color",
+      "explanation": "Colors and shades related to the motif.",
+      "entries": [
+        "venom green"
+      ]
+    },
+    {
+      "name": "sound",
+      "explanation": "Sounds related to the motif.",
+      "entries": [
+        "hissing",
+        "sibilating",
+        "sliding",
+        "slithering",
+        "undulating"
+      ]
+    },
+    {
+      "name": "symbol",
+      "explanation": "Symbols related to the motif.",
+      "entries": [
+        "a feathered serpent",
+        "a snake biting its own tail",
+        "a two-headed snake",
+        "a winged serpent"
+      ]
+    },
+    {
       "--------------------------------------------------": "LOCATIONS"
     },
     {
@@ -357,81 +442,10 @@
       ]
     },
     {
-      "--------------------------------------------------": "ATMOSPHERE"
-    },
-    {
-      "name": "adjective",
-      "explanation": "Adjectives for motif-themed concepts.",
+      "name": "weapon",
+      "explanation": "Weapons matching the motif.",
       "entries": [
-        "circuitous",
-        "circular",
-        "coiled",
-        "crawling",
-        "creeping",
-        "crooked",
-        "curved",
-        "elongated",
-        "encircled",
-        "entwined",
-        "fanged",
-        "meandering",
-        "ophidian",
-        "ophite",
-        "poisonous",
-        "reptant",
-        "reptilian",
-        "scaled",
-        "scaly",
-        "seething",
-        "serpentiform",
-        "serpentine",
-        "sinous",
-        "slimy",
-        "slithering",
-        "snakelike",
-        "twisting",
-        "undulating",
-        "venomous",
-        "winding",
-        "writhing"
-      ]
-    },
-    {
-      "name": "aroma",
-      "explanation": "Odors and tastes related to the motif.",
-      "entries": [
-        "acrid",
-        "acrimonious",
-        "biting",
-        "bitter",
-        "ophidian",
-        "pungent",
-        "putrid",
-        "reptilian",
-        "sour",
-        "stinging",
-        "virulent"
-      ]
-    },
-    {
-      "name": "sound",
-      "explanation": "Sounds related to the motif.",
-      "entries": [
-        "hissing",
-        "sibilating",
-        "sliding",
-        "slithering",
-        "undulating"
-      ]
-    },
-    {
-      "name": "symbol",
-      "explanation": "Symbols related to the motif.",
-      "entries": [
-        "a feathered serpent",
-        "a snake biting its own tail",
-        "a two-headed snake",
-        "a winged serpent"
+        ""
       ]
     },
     {
