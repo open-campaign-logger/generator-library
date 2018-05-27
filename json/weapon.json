@@ -1,6 +1,6 @@
 {
   "name": "weapon",
-  "resultPattern": "{weapon}",
+  "resultPattern": "{init}{result}",
   "variables": {
     "footnote": ""
   },
@@ -10,8 +10,8 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2017-12-28",
-  "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "date": "2018-05-27",
+  "authors": "Johnn Four, Jochen Linnemann, ELF Vesala.",
   "sources": "",
   "genre": "universal",
   "categories": [
@@ -19,6 +19,65 @@
   ],
   "tags": "",
   "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{description}",
+        "{stats}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{weapon}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {weapon}",
+        "{weapon}, {feature}",
+        "{attribute} {weapon}, {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {weapon} {synonym} {looks} {feature}.",
+        "The {attribute} {weapon} {synonym} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Weapon}: {weapon} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
     {
       "name": "weapon",
       "explanation": "Weapon rarity.",
@@ -38,6 +97,18 @@
         "{melee}",
         "{ranged}"
       ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare weapons.",
+      "entries": [
+        "{primitive}",
+        "{ancient}",
+        "{exotic}"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
     },
     {
       "name": "hand to hand",
@@ -430,41 +501,70 @@
       ]
     },
     {
-      "name": "rare",
-      "explanation": "Rare weapons.",
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
       "entries": [
-        "{primitive weapon}",
-        "{ancient weapon}",
-        "{exotic weapon}"
+        "{beginning}{ending}",
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
       ]
     },
     {
-      "name": "primitive weapon",
-      "explanation": "Primitive weapons.",
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
       "entries": [
-        "throwing stones",
-        "wooden club",
-        "{lib:material#primitive} knife",
-        "{lib:material#primitive}-tipped spear"
+        ""
       ]
     },
     {
-      "name": "ancient weapon",
-      "explanation": "Knives.",
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
       "entries": [
-        "{lib:metal#ancient} knife"
+        "XXX"
       ]
     },
     {
-      "name": "exotic weapon",
-      "explanation": "Exotic weapons.",
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
       "entries": [
-        "blowgun"
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}",
+        "sledgehammer",
+        "spike maul",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare fantasy weapons (with no basis in myth).",
+      "entries": [
+        "self-swinging sword"
       ]
     },
     {
       "name": "myth",
-      "explanation": "Imaginary weapons once rumoured to have existed.",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
       "entries": [
         "cold iron sword (averts faery folk)",
         "{rare myth}"
@@ -568,26 +668,34 @@
       ]
     },
     {
-      "name": "fantasy",
-      "explanation": "Fantasy weapons (with no basis in myth).",
+      "name": "primitive",
+      "explanation": "Primitive weapons.",
       "entries": [
-        "{myth}",
-        "sledgehammer",
-        "spike maul",
-        "{rare fantasy}"
+        "throwing stones",
+        "wooden club",
+        "{lib:material#primitive} knife",
+        "{lib:material#primitive}-tipped spear"
       ]
     },
     {
-      "name": "rare fantasy",
-      "explanation": "Rare fantasy weapons (with no basis in myth).",
+      "name": "ancient",
+      "explanation": "Ancient weapons.",
       "entries": [
-        "self-swinging sword"
+        "{lib:metal#ancient} knife"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{common}"
       ]
     },
     {
       "name": "modern",
-      "explanation": "Weapons for modern worlds.",
+      "explanation": "Descriptions for modern worlds.",
       "entries": [
+        "{common}",
         "{modern hand to hand}",
         "{modern melee}",
         "{modern ranged}",
@@ -757,7 +865,7 @@
     },
     {
       "name": "futuristic",
-      "explanation": "Imaginary weapons for science fiction worlds.",
+      "explanation": "Descriptions for science fiction worlds.",
       "entries": [
         "{modern}",
         "{futuristic melee}",
@@ -803,6 +911,72 @@
         "monomolecular blade (cuts practically anything)",
         "monofilament whip (slices practically anything)",
         "energy sword (shaft projecting a force field)"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        "blowgun"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Synonyms for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "looks to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     },
     {
