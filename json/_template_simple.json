@@ -44,17 +44,16 @@
       "explanation": "More detailed output variations.",
       "entries": [
         "{attribute} {XXX}",
-        "{XXX} {feature}",
-        "{attribute} {XXX} {feature}"
+        "{XXX}, {feature}",
+        "{attribute} {XXX}, {feature}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {XXX} {looks} {attribute}.",
-        "The {XXX} {looks} {feature}.",
-        "The {attribute} {XXX} {looks} {feature}."
+        "The {XXX} {synonym} {looks} {feature}.",
+        "The {attribute} {XXX} {synonym} {looks} {feature}."
       ]
     },
     {
@@ -80,14 +79,14 @@
     },
     {
       "name": "common",
-      "explanation": "Common types.",
+      "explanation": "Usual types.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare types.",
+      "explanation": "Unusual types.",
       "entries": [
         "XXX"
       ]
