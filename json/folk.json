@@ -1,0 +1,430 @@
+{
+  "name": "folk",
+  "resultPattern": "{init}{stats}",
+  "globals": {
+    "people": "generic",
+    "ally": "",
+    "inhabitant": "",
+    "mentor": "",
+    "minion": "",
+    "patron": "",
+    "shapeshifter": "",
+    "tempter": "",
+    "traitor": "",
+    "trickster": "",
+    "language": "",
+    "name": "",
+    "equipment": "",
+    "prop": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Data set details for communities and nations.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "culture, faction, milieu",
+  "date": "2018-05-28",
+  "authors": "ELF Vesala",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "ally": "{ally}",
+            "inhabitant": "{inhabitant}",
+            "mentor": "{mentor}",
+            "minion": "{minion}",
+            "patron": "{patron}",
+            "shapeshifter": "{shapeshifter}",
+            "tempter": "{tempter}",
+            "traitor": "{traitor}",
+            "trickster": "{trickster}",
+            "language": "{language}",
+            "name": "{name}",
+            "equipment": "{equipment}",
+            "prop": "{prop}"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{description}",
+        "{stats}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{people}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {people}",
+        "{people}, {feature}",
+        "{attribute} {people}, {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {people} {synonym} {looks} {feature}.",
+        "The {attribute} {people} {synonym} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|People}: {people} \r\n{b|Ally}: {ally} \r\n{b|Inhabitant}: {inhabitant} \r\n{b|Mentor}: {mentor} \r\n{b|Minion}: {minion} \r\n{b|Patron}: {patron} \r\n{b|Shapeshifter}: {shapeshifter} \r\n{b|Tempter}: {tempter} \r\n{b|Traitor}: {traitor} \r\n{b|Trickster}: {trickster} \r\n{b|Language}: {language} \r\n{b|Name}: {name} \r\n{b|Equipment}: {equipment} \r\n{b|Prop}: {prop} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "people",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Usual types.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Unusual types.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "--------------------------------------------------": "CHARACTERS"
+    },
+    {
+      "name": "ally",
+      "explanation": "Friends matching the people.",
+      "entries": [
+        "ally",
+        "friend"
+      ]
+    },
+    {
+      "name": "inhabitant",
+      "explanation": "Citizens matching the people.",
+      "entries": [
+        "citizen"
+      ]
+    },
+    {
+      "name": "mentor",
+      "explanation": "Tutors and teachers matching the people.",
+      "entries": [
+        "mentor"
+      ]
+    },
+    {
+      "name": "minion",
+      "explanation": "The enemy's helpers matching the people.",
+      "entries": [
+        "minion"
+      ]
+    },
+    {
+      "name": "patron",
+      "explanation": "Supporters matching the people.",
+      "entries": [
+        "patron"
+      ]
+    },
+    {
+      "name": "shapeshifter",
+      "explanation": "Transforming characters matching the people.",
+      "entries": [
+        "shapeshifter"
+      ]
+    },
+    {
+      "name": "tempter",
+      "explanation": "Seducers matching the people.",
+      "entries": [
+        "tempter"
+      ]
+    },
+    {
+      "name": "traitor",
+      "explanation": "Turncoats matching the people.",
+      "entries": [
+        "traitor"
+      ]
+    },
+    {
+      "name": "trickster",
+      "explanation": "Tricksters matching the people.",
+      "entries": [
+        "trickster"
+      ]
+    },
+    {
+      "--------------------------------------------------": "INFORMATION"
+    },
+    {
+      "name": "language",
+      "explanation": "The tongue used to convey information.",
+      "entries": [
+        "the common vernacular",
+        "a common language in the area",
+        "a local dialect",
+        "a simplified pidgin language",
+        "broken language using poor grammar",
+        "a corrupted form of the local language",
+        "a common language heavily influenced by a foreign tongue",
+        "slang with plenty of loan words from another language",
+        "a trade language with vocabulary from multiple languages",
+        "an mixed language combining different tongues",
+        "a mixture of different languages",
+        "the specialized jargon of an close-knit group",
+        "gibberish",
+        "thieves' cant",
+        "argot (the secret language of a private group)",
+        "the formal language of the governing body",
+        "the aristocratic language of the upper class",
+        "the language of a local minority group",
+        "a language spoken in a neighboring area",
+        "a scholarly language",
+        "language used in old religious texts",
+        "an esoteric, almost forgotten language",
+        "a dead language"
+      ]
+    },
+    {
+      "name": "name",
+      "explanation": "Person names matching the people.",
+      "entries": [
+        "{lib:name-random#summary}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ITEMS"
+    },
+    {
+      "name": "equipment",
+      "explanation": "Useful tools matching the people.",
+      "entries": [
+        "{lib:equipment#summary}"
+      ]
+    },
+    {
+      "name": "prop",
+      "explanation": "Non-useful paraphernalia matching the people.",
+      "entries": [
+        "tankard"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{beginning}{ending}",
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "commonality",
+        "commonalty",
+        "folk",
+        "people",
+        "nation",
+        "nationality",
+        "populace"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Synonyms for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "looks to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
+      ]
+    }
+  ]
+}
