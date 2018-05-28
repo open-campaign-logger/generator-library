@@ -1,8 +1,8 @@
 {
   "name": "genre",
-  "resultPattern": "{init}{result}",
+  "resultPattern": "{init}{stats}",
   "globals": {
-    "genre": "universal",
+    "genre": "generic",
     "protagonist": "",
     "villain": "",
     "beat": "",
@@ -11,14 +11,14 @@
   "variables": {
     "footnote": ""
   },
-  "explanation": "The literary type of the story.",
+  "explanation": "Data set details for the literary type of the story.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "format": "",
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-05-26",
+  "date": "2018-05-28",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -121,13 +121,23 @@
       "name": "protagonist",
       "explanation": "The main character",
       "entries": [
-        "adventurer"
+        "adventurer",
+        "central character",
+        "hero",
+        "lead character",
+        "principal character",
+        "protagonist"
       ]
     },
     {
       "name": "villain",
       "explanation": "The antagonist.",
       "entries": [
+        "antihero",
+        "arch enemy",
+        "enemy",
+        "malefactor",
+        "scoundrel",
         "villain"
       ]
     },
@@ -266,7 +276,18 @@
       "name": "synonym",
       "explanation": "Variant expressions for the generator subject matter.",
       "entries": [
-        "XXX"
+        "archetype",
+        "blueprint",
+        "category",
+        "convention",
+        "form",
+        "formula",
+        "genre",
+        "model",
+        "scheme",
+        "stereotype",
+        "style",
+        "tradition"
       ]
     },
     {
@@ -294,7 +315,20 @@
       "name": "attribute",
       "explanation": "Attribute prepended to the front of the result.",
       "entries": [
-        ""
+        "clichéd",
+        "hackneyed",
+        "stereotypical",
+        "run-of-the-mill",
+        "classical",
+        "stock",
+        "standard",
+        "conventional",
+        "traditional",
+        "innovative",
+        "experimental",
+        "post modern",
+        "avant-garde",
+        "inventive"
       ]
     },
     {
@@ -302,7 +336,10 @@
       "explanation": "Features appended to the end of the result.",
       "format": "It seems to be --",
       "entries": [
-        ""
+        "using familiar genre conventions",
+        "in a grimly dark rendition",
+        "with comical overtones",
+        "taken to the extreme"
       ]
     },
     {
