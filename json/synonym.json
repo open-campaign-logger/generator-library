@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-04-14",
+  "date": "2018-05-28",
   "authors": "ELF Vesala.",
   "sources": "Thesaurus.com, TvTropes.org, Wikipedia.org",
   "genre": "universal",
@@ -596,16 +596,7 @@
       "name": "smell",
       "explanation": "Neutral synonyms for 'smell' (good or bad odour).",
       "entries": [
-        "odor",
-        "tang",
-        "smell",
-        "scent",
-        "aroma",
-        "whiff",
-        "flatus",
-        "bouquet",
-        "fragrance",
-        "redolence"
+        "{lib:aroma#odor}"
       ]
     },
     {
@@ -655,16 +646,7 @@
       "name": "taste",
       "explanation": "Synonyms for 'taste' (good or bad).",
       "entries": [
-        "zest",
-        "taste",
-        "savor",
-        "spice",
-        "flavor",
-        "flavoring",
-        "condiment",
-        "aftertaste",
-        "savoriness",
-        "palatableness"
+        "{lib:aroma#savor}"
       ]
     },
     {
