@@ -108,10 +108,16 @@
       "name": "random",
       "explanation": "Randomized terms (generated from components).",
       "entries": [
-        "{beginning}{ending}",
-        "{descriptor} {beginning}{ending}",
-        "{beginning}{ending} {extension}",
-        "{descriptor} {beginning}{ending} {extension}"
+        "{beginning}{compound}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {beginning}{compound}",
+        "{descriptor} {beginning} {ending}",
+        "{beginning}{compound} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {beginning}{compound} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
       ]
     },
     {
@@ -129,8 +135,15 @@
       ]
     },
     {
+      "name": "compound",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "ending",
-      "explanation": "Endings for randomized terms.",
+      "explanation": "Separate word endings for randomized terms.",
       "entries": [
         "XXX"
       ]
@@ -158,7 +171,7 @@
       "format": "-- in good condition.",
       "entries": [
         "appears to be",
-        "looks to be",
+        "looks like being",
         "seems to be"
       ]
     },

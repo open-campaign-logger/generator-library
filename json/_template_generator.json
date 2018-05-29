@@ -123,10 +123,16 @@
       "name": "random",
       "explanation": "Randomized terms (generated from components).",
       "entries": [
-        "{beginning}{ending}",
-        "{descriptor} {beginning}{ending}",
-        "{beginning}{ending} {extension}",
-        "{descriptor} {beginning}{ending} {extension}"
+        "{beginning}{compound}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {beginning}{compound}",
+        "{descriptor} {beginning} {ending}",
+        "{beginning}{compound} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {beginning}{compound} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
       ]
     },
     {
@@ -144,8 +150,15 @@
       ]
     },
     {
+      "name": "compound",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "name": "ending",
-      "explanation": "Endings for randomized terms.",
+      "explanation": "Separate word endings for randomized terms.",
       "entries": [
         "XXX"
       ]
@@ -161,6 +174,9 @@
       "**************************************************": "WORLD-SPECIFIC"
     },
     {
+      "--------------------------------------------------": "FANTASTIC"
+    },
+    {
       "name": "fantasy",
       "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
@@ -170,11 +186,17 @@
       ]
     },
     {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
       "name": "myth",
       "explanation": "Descriptions for mythic worlds (once thought true).",
       "entries": [
         "XXX"
       ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
     },
     {
       "name": "primitive",
@@ -184,11 +206,17 @@
       ]
     },
     {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
       "name": "ancient",
       "explanation": "Descriptions for ancient worlds.",
       "entries": [
         "XXX"
       ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
     },
     {
       "name": "medieval",
@@ -198,12 +226,18 @@
       ]
     },
     {
+      "--------------------------------------------------": "CONTEMPORARY"
+    },
+    {
       "name": "modern",
       "explanation": "Descriptions for modern worlds.",
       "entries": [
         "{common}",
         "XXX"
       ]
+    },
+    {
+      "--------------------------------------------------": "SCIENCE FICTION"
     },
     {
       "name": "futuristic",
@@ -239,7 +273,7 @@
       "format": "-- in good condition.",
       "entries": [
         "appears to be",
-        "looks to be",
+        "looks like being",
         "seems to be"
       ]
     },
