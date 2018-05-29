@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-05-28",
+  "date": "2018-05-29",
   "authors": "ELF Vesala.",
   "sources": "Thesaurus.com, TvTropes.org, Wikipedia.org",
   "genre": "universal",
@@ -465,12 +465,7 @@
       "name": "monster",
       "explanation": "Synonyms for a monster.",
       "entries": [
-        "beast",
-        "creature",
-        "fiend",
-        "horror",
-        "monster",
-        "monstrosity"
+        "{lib:monster#synonym}"
       ]
     },
     {
