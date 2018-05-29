@@ -862,6 +862,7 @@ tables:
       - looks to be
       - seems to be
 
+
   ################################################## SPECIAL TABLES
 
   - name: special
@@ -908,6 +909,7 @@ tables:
       - forking in the middle
       - a dead end
       - 'at first sight a dead end, but actually continues'
+
 
 # -------------------------------------------------- TESTING
 
