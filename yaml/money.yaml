@@ -1,5 +1,5 @@
 name: money
-resultPattern: '{init}{lib:formatting#HTML}{result}'
+resultPattern: '{init}{lib:formatting#CL}{result}'
 
 globals:
   variable: value
@@ -427,9 +427,9 @@ tables:
       - '{dice:1d100} {exotic coin}s and {dice:1d100} {exotic coin}s'
 
 
-  ################################################## TERMS
+  ################################################## RANDOMIZATION
 
-  - name: term
+  - name: random
     explanation: Randomized terms (generated from components).
     entries:
       - '{beginning}{ending}'
@@ -678,7 +678,7 @@ tables:
       - >-
         {init}Result: {result}, summary: {summary}, detail: {detail},
         description: {description}, stats: {stats}. Common: {common}, rare:
-        {rare}. Term: {term}. Fantasy: {fantasy}, myth: {myth}, medieval:
+        {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval:
         {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym:
         {synonym}. Special: {special}, attribute: {attribute}, feature:
         {feature}.

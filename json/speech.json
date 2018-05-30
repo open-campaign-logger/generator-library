@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-05-15",
+  "date": "2018-05-30",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -213,10 +213,10 @@
       ]
     },
     {
-      "**************************************************": "TERMS"
+      "**************************************************": "RANDOMIZATION"
     },
     {
-      "name": "name",
+      "name": "random",
       "explanation": "Randomized terms (generated from components).",
       "entries": [
         "{beginning}{ending}",
@@ -504,7 +504,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "result: {result}, summary: {summary}, detail: {detail}, description: {description} Common: {common}, rare: {rare}. Name: {name}. Fantasy: {fantasy}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+        "result: {result}, summary: {summary}, detail: {detail}, description: {description} Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
       ]
     }
   ]

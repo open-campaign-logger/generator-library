@@ -53,7 +53,7 @@
   "bugs": "Developepment currently on hold, waiting for global variable support.",
   "to do": "Most of it... Starting from genre? ",
   "see": "",
-  "date": "2018-05-06",
+  "date": "2018-05-30",
   "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
   "genre": "fantasy",
@@ -349,10 +349,10 @@
       ]
     },
     {
-      "**************************************************": "TERMS"
+      "**************************************************": "RANDOMIZATION"
     },
     {
-      "name": "term",
+      "name": "random",
       "explanation": "Randomized terms (generated from components).",
       "entries": [
         "{beginning}{ending}",

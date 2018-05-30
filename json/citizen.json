@@ -17,7 +17,7 @@
   "bugs": "",
   "to do": "Categorize citizens by type.",
   "see": "activity, animal, encounter, monster, nonhuman",
-  "date": "2018-04-14",
+  "date": "2018-05-30",
   "authors": "ELF Vesala.",
   "sources": "Wikia.com, Wikipedia.org",
   "genre": "fantasy",
@@ -77,7 +77,7 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "Name: {name}"
+        "Name: {random}"
       ]
     },
     {
@@ -196,10 +196,10 @@
       ]
     },
     {
-      "**************************************************": "TERMS"
+      "**************************************************": "RANDOMIZATION"
     },
     {
-      "name": "name",
+      "name": "random",
       "explanation": "Randomized terms (generated from components).",
       "entries": [
         "{beginning}{ending}",
@@ -331,7 +331,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "result: {result}, summary: {summary}, detail: {detail}, description: {description} Common: {common}, rare: {rare}. Name: {name}. Fantasy: {fantasy}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+        "result: {result}, summary: {summary}, detail: {detail}, description: {description} Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
       ]
     }
   ]

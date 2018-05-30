@@ -18,7 +18,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-05-11",
+  "date": "2018-05-30",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -56,7 +56,7 @@
       "name": "summary",
       "explanation": "Brief output.",
       "entries": [
-        "'{term}'",
+        "'{random}'",
         "{book} about {g:topic}",
         "{attribute} {book} about {g:topic}"
       ]
@@ -65,21 +65,21 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{book} {about} {g:topic}, called '{term}'"
+        "{book} {about} {g:topic}, called '{random}'"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "'{term}' is a {attribute} {book} {about} {g:topic}. {g:appearance}. It {looks} {feature}."
+        "'{random}' is a {attribute} {book} {about} {g:topic}. {g:appearance}. It {looks} {feature}."
       ]
     },
     {
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Name}: {term}\r\n{b|Format}: {book} ({g:format})\r\n{b|Topic}: {g:topic}\r\n"
+        "{b|Name}: {random}\r\n{b|Format}: {book} ({g:format})\r\n{b|Topic}: {g:topic}\r\n"
       ]
     },
     {
@@ -395,10 +395,10 @@
       ]
     },
     {
-      "**************************************************": "TERMS"
+      "**************************************************": "RANDOMIZATION"
     },
     {
-      "name": "term",
+      "name": "random",
       "explanation": "Randomized terms (generated from components).",
       "entries": [
         "{beginning} {ending}",
@@ -806,7 +806,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Term: {term}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]

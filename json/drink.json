@@ -9,8 +9,8 @@
   "note": " Subtable classification is based on everyday usage, not scientific taxonomy.",
   "to do": "More content.",
   "see": "food",
-  "date": "2018-01-05",
-  "authors": "Esko Vesala.",
+  "date": "2018-05-30",
+  "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
   "categories": [
@@ -209,7 +209,7 @@
         "tangy",
         "sweet",
         "delicious",
-        "{strength} {lib:food#herb} flavored",
+        "{strength} {lib:plant#herb} flavored",
         "{strength} flavored with {lib:plant#spice}"
       ]
     },

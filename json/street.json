@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "business, district, settlement, shop",
-  "date": "2018-04-23",
+  "date": "2018-05-30",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -791,10 +791,10 @@
       ]
     },
     {
-      "**************************************************": "TERMS"
+      "**************************************************": "RANDOMIZED"
     },
     {
-      "name": "term",
+      "name": "random",
       "explanation": "Randomized terms (generated from components).",
       "entries": [
         "{beginning} {ending}",
@@ -1063,7 +1063,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Term: {term}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]
