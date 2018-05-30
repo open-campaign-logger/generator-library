@@ -123,15 +123,15 @@
       "name": "random",
       "explanation": "Randomized terms (generated from components).",
       "entries": [
-        "{beginning}{compound}",
+        "{compoundbegin}{compoundend}",
         "{beginning} {ending}",
         "{ending} {extension}",
         "{descriptor} {ending}",
-        "{descriptor} {beginning}{compound}",
+        "{descriptor} {compoundbegin}{compoundend}",
         "{descriptor} {beginning} {ending}",
-        "{beginning}{compound} {extension}",
+        "{compoundbegin}{compoundend} {extension}",
         "{beginning} {ending} {extension}",
-        "{descriptor} {beginning}{compound} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
         "{descriptor} {beginning} {ending} {extension}"
       ]
     },
@@ -146,11 +146,19 @@
       "name": "beginning",
       "explanation": "Beginnings for randomized terms.",
       "entries": [
+        "{compoundbegin}",
         "XXX"
       ]
     },
     {
-      "name": "compound",
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundend",
       "explanation": "Compound word endings for randomized terms.",
       "entries": [
         "XXX"
@@ -270,10 +278,9 @@
     {
       "name": "looks",
       "explanation": "Synonyms for looking like something.",
-      "format": "-- in good condition.",
+      "format": "-- in good condition / approaching",
       "entries": [
         "appears to be",
-        "looks like being",
         "seems to be"
       ]
     },
