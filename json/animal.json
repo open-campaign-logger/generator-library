@@ -17,7 +17,7 @@
   "bugs": "Different regions (tropical, polar, etc.)",
   "to do": "",
   "see": "activity, citizen, encounter, monster, nonhuman, plant",
-  "date": "2018-05-23",
+  "date": "2018-05-30",
   "authors": "",
   "sources": "Wikipedia.org",
   "genre": "",
@@ -114,13 +114,99 @@
       "**************************************************": "ANIMALS"
     },
     {
+      "--------------------------------------------------": "INVERTEBRATEA"
+    },
+    {
       "name": "invertebrate",
       "explanation": "Invertebrates.",
       "entries": [
-        "{insect}",
-        "{mollusc}",
+        "{worm}",
+        "{land mollusc}",
+        "{arthropod}"
+      ]
+    },
+    {
+      "name": "echinoderm",
+      "explanation": "Echinodermata.",
+      "entries": [
+        "sea cucumber",
+        "sea urchin",
+        "sea lily",
+        "sea star"
+      ]
+    },
+    {
+      "name": "worm",
+      "explanation": "Spiralia types.",
+      "entries": [
+        "worm",
+        "earthworm",
+        "leech"
+      ]
+    },
+    {
+      "name": "mollusc",
+      "explanation": "Mollusc types.",
+      "entries": [
+        "{water mollusc}",
+        "{land mollusc}"
+      ]
+    },
+    {
+      "name": "water mollusc",
+      "explanation": "Water-based mollusc types.",
+      "entries": [
+        "mussel",
+        "oyster",
+        "clam",
+        "conch",
+        "sea butterfly",
+        "sea snail",
+        "sea hare",
+        "nautilus",
+        "cuttlefish",
+        "squid",
+        "octopus"
+      ]
+    },
+    {
+      "name": "land mollusc",
+      "explanation": "Land-based mollusc types.",
+      "entries": [
+        "slug",
+        "snail"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ARTHROPODS"
+    },
+    {
+      "name": "arthropod",
+      "explanation": "Arthropoda.",
+      "entries": [
         "{crustacean}",
+        "{myriapod}",
+        "{insect}",
         "{arachnid}"
+      ]
+    },
+    {
+      "name": "crustacean",
+      "explanation": "Crustacean types.",
+      "entries": [
+        "shrimp",
+        "krill",
+        "crayfish",
+        "crab",
+        "lobster"
+      ]
+    },
+    {
+      "name": "myriapod",
+      "explanation": "Myriapod types.",
+      "entries": [
+        "centipede",
+        "millipede"
       ]
     },
     {
@@ -128,27 +214,70 @@
       "explanation": "Insect types.",
       "entries": [
         "{crawling insect}",
-        "{flying insect}"
+        "{winged insect}"
       ]
     },
     {
       "name": "crawling insect",
       "explanation": "Insects that move by crawling.",
       "entries": [
+        "{beetle}",
+        "flea",
+        "louse",
+        "bug",
         "ant",
-        "beetle"
+        "cockroach",
+        "termite",
+        "stick insect",
+        "grasshopper",
+        "mantis",
+        "grub",
+        "maggot"
+      ]
+    },
+    {
+      "name": "beetle",
+      "explanation": "Beetles.",
+      "entries": [
+        "beetle",
+        "leaf beetle",
+        "flower beetle",
+        "jewel beetle",
+        "deathwatch beetle",
+        "scarab",
+        "ladybird",
+        "firefly"
       ]
     },
     {
       "name": "flying insect",
       "explanation": "Insects that move flying.",
       "entries": [
-        "beetle",
+        "{bee}",
+        "{butterfly}",
         "gnat",
         "mosquito",
-        "wasp",
+        "fly",
+        "damselfly",
+        "dragonfly",
+        "wasp"
+      ]
+    },
+    {
+      "name": "bee",
+      "explanation": "Bees.",
+      "entries": [
         "bee",
-        "{butterfly}"
+        "bumblebee",
+        "honey bee"
+      ]
+    },
+    {
+      "name": "butterfly",
+      "explanation": "Butterflies.",
+      "entries": [
+        "moth",
+        "butterfly"
       ]
     },
     {
@@ -156,37 +285,19 @@
       "explanation": "Insects kept as pets.",
       "entries": [
         "flea",
+        "beetle",
         "cockroach",
         "stick insect"
-      ]
-    },
-    {
-      "name": "butterfly",
-      "explanation": "Butterflies.",
-      "entries": [
-        "butterfly",
-        "moth"
-      ]
-    },
-    {
-      "name": "mollusc",
-      "explanation": "Mollusc types.",
-      "entries": [
-        "snail"
-      ]
-    },
-    {
-      "name": "crustacean",
-      "explanation": "Crustacean types.",
-      "entries": [
-        "crab"
       ]
     },
     {
       "name": "arachnid",
       "explanation": "Arachnid types.",
       "entries": [
+        "mite",
+        "tick",
         "spider",
+        "false scorpion",
         "scorpion"
       ]
     },
@@ -199,8 +310,11 @@
       ]
     },
     {
+      "--------------------------------------------------": "VERTEBRATEA"
+    },
+    {
       "name": "vertebrate",
-      "explanation": "Vertebratea.",
+      "explanation": "Vertebrates.",
       "entries": [
         "{fish}",
         "{amphibian}",
@@ -795,7 +909,7 @@
       "explanation": "Land animals.",
       "entries": [
         "{crawling insect}",
-        "{mollusc}",
+        "{land mollusc}",
         "{arachnid}",
         "{reptile}",
         "{bird}",
@@ -825,6 +939,9 @@
       "explanation": "Water animals.",
       "entries": [
         "{coral}",
+        "{echinoderm}",
+        "jellyfish",
+        "{water mollusc}",
         "{crustacean}",
         "{fish}",
         "{amphibian}",
