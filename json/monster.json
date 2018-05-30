@@ -19,7 +19,7 @@
   "bugs": "",
   "to do": "Categorize monsters by type.",
   "see": "animal, attack, citizen, complication, encounter, nonhuman",
-  "date": "2018-05-29",
+  "date": "2018-05-30",
   "authors": "ELF Vesala.",
   "sources": "D20SRD.org, DanDWiki.com, Wikia.com, Wikipedia.org",
   "genre": "fantasy",
@@ -184,15 +184,15 @@
       "name": "random",
       "explanation": "Randomized terms (generated from components).",
       "entries": [
-        "{beginning}{compound}",
+        "{compoundbegin}{compoundend}",
         "{beginning} {ending}",
         "{ending} {extension}",
         "{descriptor} {ending}",
-        "{descriptor} {beginning}{compound}",
+        "{descriptor} {compoundbegin}{compoundend}",
         "{descriptor} {beginning} {ending}",
-        "{beginning}{compound} {extension}",
+        "{compoundbegin}{compoundend} {extension}",
         "{beginning} {ending} {extension}",
-        "{descriptor} {beginning}{compound} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
         "{descriptor} {beginning} {ending} {extension}"
       ]
     },
@@ -200,8 +200,11 @@
       "name": "descriptor",
       "explanation": "Descriptors for randomized terms.",
       "entries": [
+        "abyssal",
+        "aerial",
         "arcane",
         "aquatic",
+        "astral",
         "barbed",
         "colossal",
         "corrupted",
@@ -226,11 +229,13 @@
         "parasitic",
         "phantasmal",
         "preying",
+        "psionic",
         "rotting",
         "silent",
         "scaly",
         "spectral",
         "striped",
+        "sylvan",
         "tentacled",
         "tusked",
         "unborn",
@@ -246,15 +251,29 @@
       "name": "beginning",
       "explanation": "Beginnings for randomized terms.",
       "entries": [
+        "{compoundbegin}",
+        "black",
+        "coffin",
+        "hell",
+        "hollow",
+        "pale",
+        "poison",
+        "slug",
+        "trap"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "format": "-ling",
+      "entries": [
         "acid",
         "ash",
         "bane",
         "bark",
-        "black",
         "blade",
         "blood",
         "bone",
-        "coffin",
         "crypt",
         "dark",
         "death",
@@ -265,31 +284,25 @@
         "frost",
         "ghost",
         "grave",
-        "hell",
-        "hollow",
         "ice",
         "mist",
         "night",
-        "pale",
         "plague",
-        "poison",
         "rot",
         "scythe",
         "shadow",
         "sky",
-        "slug",
         "spike",
         "stone",
         "taint",
         "thorn",
         "thunder",
-        "trap",
         "warp",
         "web"
       ]
     },
     {
-      "name": "compound",
+      "name": "compoundend",
       "explanation": "Compound word endings for randomized terms.",
       "entries": [
         "face",
@@ -303,16 +316,15 @@
       "name": "ending",
       "explanation": "Separate word endings for randomized terms.",
       "entries": [
-        "bat",
+        "{plant ending}",
+        "{ooze}",
+        "{animal ending}",
         "beast",
-        "beetle",
         "brood",
         "brute",
         "butcher",
-        "constrictor",
         "claw",
         "corpse",
-        "creeper",
         "demon",
         "devil",
         "drake",
@@ -321,56 +333,133 @@
         "guardian",
         "hag",
         "haunt",
-        "hawk",
-        "hound",
         "hunter",
         "lurker",
-        "mantis",
         "mirage",
-        "ooze",
         "phantom",
         "piercer",
-        "plant",
         "predator",
         "revenant",
-        "scorpion",
         "screamer",
         "sentinel",
         "shrieker",
         "shade",
         "seeker",
-        "serpent",
-        "shrub",
         "slayer",
-        "slime",
         "soul",
-        "spider",
         "spitter",
-        "squid",
         "stalker",
         "statue",
         "strider",
         "swarm",
         "talon",
         "terror",
-        "toad",
         "tormentor",
-        "tree",
         "vagrant",
         "vermin",
-        "vine",
-        "viper",
         "wailer",
         "walker",
         "wing",
-        "worm",
         "wraith"
       ]
+    },
+    {
+      "--------------------------------------------------": "ENDING TYPES"
+    },
+    {
+      "name": "animal ending",
+      "explanation": "Word endings for animal monsters.",
+      "entries": [
+        "{mollusc ending}",
+        "{arachnid ending}",
+        "{insect ending}",
+        "{amphibian ending}",
+        "{reptile ending}",
+        "{bird ending}",
+        "{mammal ending}",
+        "worm"
+      ]
+    },
+    {
+      "name": "amphibian ending",
+      "explanation": "Word endings for amphibian monsters.",
+      "entries": [
+        "frog",
+        "toad"
+      ]
+    },
+    {
+      "name": "arachnid ending",
+      "explanation": "Word endings for arachnid monsters.",
+      "entries": [
+        "scorpion",
+        "spider"
+      ]
+    },
+    {
+      "name": "bird ending",
+      "explanation": "Word endings for bird monsters.",
+      "entries": [
+        "eagle",
+        "falcon",
+        "hawk"
+      ]
+    },
+    {
+      "name": "insect ending",
+      "explanation": "Word endings for insect monsters.",
+      "entries": [
+        "beetle",
+        "mantis"
+      ]
+    },
+    {
+      "name": "mammal ending",
+      "explanation": "Word endings for mammal monsters.",
+      "entries": [
+        "bat",
+        "bear",
+        "hound",
+        "wolf"
+      ]
+    },
+    {
+      "name": "mollusc ending",
+      "explanation": "Word endings for mollusc monsters.",
+      "entries": [
+        "{lib:animal#mollusc}"
+      ]
+    },
+    {
+      "name": "plant ending",
+      "explanation": "Word endings for plant monsters.",
+      "entries": [
+        "bush",
+        "creeper",
+        "plant",
+        "shrub",
+        "tree",
+        "vine"
+      ]
+    },
+    {
+      "name": "reptile ending",
+      "explanation": "Word endings for reptile monsters.",
+      "entries": [
+        "adder",
+        "constrictor",
+        "serpent",
+        "viper"
+      ]
+    },
+    {
+      "--------------------------------------------------": "EXTENSIONS"
     },
     {
       "name": "extension",
       "explanation": "Extensions for randomized terms.",
       "entries": [
+        "amalgamation",
         "from beyond",
         "from the void",
         "of chaos",
@@ -392,6 +481,7 @@
         "{myth}",
         "{medieval}",
         "{ooze}",
+        "{fungus}",
         "{magical beast}",
         "{monstrous humanoid}",
         "{avian}",
@@ -407,11 +497,21 @@
       "name": "ooze",
       "explanation": "Amorphous ooze and jelly creatures.",
       "entries": [
-        "giant amoeba",
         "blob",
-        "ooze",
+        "goo",
         "jelly",
-        "slime mold"
+        "ooze",
+        "pudding",
+        "slime"
+      ]
+    },
+    {
+      "name": "fungus",
+      "explanation": "Mushroom and fungi creatures.",
+      "entries": [
+        "fungus",
+        "mold",
+        "mushroom"
       ]
     },
     {
@@ -836,7 +936,6 @@
       "format": "-- in good condition.",
       "entries": [
         "appears to be",
-        "looks to be",
         "seems to be"
       ]
     },
