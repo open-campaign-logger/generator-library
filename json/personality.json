@@ -19,7 +19,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-03-11",
+  "date": "2018-05-30",
   "authors": "ELF Vesala.",
   "sources": "OpenPsychometrics.org",
   "genre": "universal",
@@ -500,6 +500,7 @@
         "{animal}",
         "{degree}",
         "{feature}",
+        "{monster}",
         "{situation}"
       ]
     },
@@ -539,6 +540,19 @@
       "entries": [
         "but does not realize it",
         "but thinks the opposite"
+      ]
+    },
+    {
+      "name": "monster",
+      "explanation": "Personality types for low-intelligence monsters.",
+      "entries": [
+        "{animal}",
+        "hostile",
+        "vengeful",
+        "vindictive",
+        "greedy",
+        "sad",
+        "friendly"
       ]
     },
     {
