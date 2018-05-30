@@ -1,7 +1,8 @@
 {
   "name": "monster",
-  "resultPattern": "{init}{result}",
+  "resultPattern": "{init}{number}",
   "globals": {
+    "monster": "",
     "actant": "monster",
     "actants": "monsters",
     "actantgroup": "pack",
@@ -21,7 +22,7 @@
   "see": "animal, attack, citizen, complication, encounter, nonhuman",
   "date": "2018-05-30",
   "authors": "ELF Vesala.",
-  "sources": "D20SRD.org, DanDWiki.com, Wikia.com, Wikipedia.org",
+  "sources": "D20SRD.org, DanDWiki.com, Musings newsletter by Johnn Four, Wikia.com, Wikipedia.org",
   "genre": "fantasy",
   "categories": [
     "monster"
@@ -34,7 +35,7 @@
         {
           "v": "",
           "export": {
-            "": ""
+            "monster": "{monster}"
           }
         }
       ]
@@ -56,31 +57,31 @@
       "name": "summary",
       "explanation": "Brief output.",
       "entries": [
-        "{monster}"
+        "{g:monster}"
       ]
     },
     {
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{attribute} {monster}",
-        "{monster}, {feature}",
-        "{attribute} {monster}, {feature}",
-        "{attribute}, {lib:complication#creature} {monster}",
-        "{lib:creature_template} {monster}",
-        "{lib:complication#creature}, {lib:creature_template} {monster}",
-        "{monster} specialized {lib:attack} attacks",
-        "{attribute} {monster} specialized in {lib:attack} attacks",
-        "{lib:complication#creature} {monster} specialized in {lib:attack} attacks",
-        "{lib:creature_template} {monster} specialized in {lib:attack} attacks"
+        "{attribute} {g:monster}",
+        "{g:monster}, {feature}",
+        "{attribute} {g:monster}, {feature}",
+        "{attribute}, {lib:complication#creature} {g:monster}",
+        "{lib:creature_template} {g:monster}",
+        "{lib:complication#creature}, {lib:creature_template} {g:monster}",
+        "{g:monster} specialized {lib:attack} attacks",
+        "{attribute} {g:monster} specialized in {lib:attack} attacks",
+        "{lib:complication#creature} {g:monster} specialized in {lib:attack} attacks",
+        "{lib:creature_template} {g:monster} specialized in {lib:attack} attacks"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {monster} {synonym} {looks} {feature}.",
-        "The {attribute} {monster} {synonym} {looks} {feature}."
+        "The {g:monster} {synonym} {looks} {feature}.",
+        "The {attribute} {g:monster} {synonym} {looks} {feature}."
       ]
     },
     {
@@ -108,18 +109,119 @@
       "name": "common",
       "explanation": "Usual types.",
       "entries": [
-        "{humanoid}"
+        "{humanoid}",
+        "{fantasy}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Unusual types.",
       "entries": [
-        "{vermin}"
+        "{vermin}",
+        "{myth}"
       ]
     },
     {
-      "**************************************************": "DETAILS"
+      "**************************************************": "NUMBERS"
+    },
+    {
+      "name": "number",
+      "explanation": "",
+      "entries": [
+        "{single}",
+        "{group}"
+      ]
+    },
+    {
+      "name": "single",
+      "explanation": "The formation of the monster(s).",
+      "entries": [
+        "one {g:monster}",
+        "a lone {g:monster}",
+        "a sole {g:monster}",
+        "a single {g:monster}",
+        "a separate {g:monster}",
+        "a singular {g:monster}",
+        "a solitary {g:monster}",
+        "an isolated {g:monster}",
+        "an individual {g:monster}"
+      ]
+    },
+    {
+      "name": "group",
+      "explanation": "The formation of the monster(s).",
+      "entries": [
+        "one {g:monster}",
+        "a lone {g:monster}",
+        "a single {g:monster}",
+        "two {g:monster}s",
+        "pair of {g:monster}s",
+        "three {g:monster}s",
+        "a trio of {g:monster}s",
+        "four {g:monster}s",
+        "a quartet of {g:monster}s",
+        "five {g:monster}s",
+        "{dice:2d6} {g:monster}s",
+        "a group of {g:monster}s",
+        "a pack of {g:monster}s",
+        "a team of {g:monster}s",
+        "{rare group}"
+      ]
+    },
+    {
+      "name": "rare group",
+      "explanation": "Rare formations of monsters.",
+      "entries": [
+        "a company of {g:monster}s",
+        "a brigage of {g:monster}s",
+        "an army of {g:monster}s",
+        "a horde of {g:monster}s",
+        "a swarm of {g:monster}s"
+      ]
+    },
+    {
+      "**************************************************": "INDIVIDUALIZATION"
+    },
+    {
+      "name": "activity",
+      "explanation": "Action just before encounter.",
+      "entries": [
+        "licking wounds",
+        "eating",
+        "searching for something"
+      ]
+    },
+    {
+      "name": "personality",
+      "explanation": "",
+      "entries": [
+        "{lib:personality#monster}"
+      ]
+    },
+    {
+      "name": "signature",
+      "explanation": "Signature moves.",
+      "entries": [
+        "rears back before lunging",
+        "whimpers when attacking"
+      ]
+    },
+    {
+      "name": "strategy",
+      "explanation": "Combat tactics.",
+      "entries": [
+        "{lib:strategy}"
+      ]
+    },
+    {
+      "name": "humanoid signature",
+      "explanation": "Signature moves for intelligent monsters.",
+      "entries": [
+        "attempts to carve initials on opponent's skin"
+      ]
+    },
+    {
+      "**************************************************": "SPECIES"
     },
     {
       "--------------------------------------------------": "HUMANOIDS"
@@ -954,26 +1056,6 @@
       "name": "attribute",
       "explanation": "Attribute prepended to the front of the result.",
       "entries": [
-        "bloodthirsty",
-        "brutal",
-        "feral",
-        "ferocious",
-        "fierce",
-        "inhuman",
-        "ravenous",
-        "ruthless",
-        "savage",
-        "thieving",
-        "unyielding",
-        "vengeful",
-        "vicious"
-      ]
-    },
-    {
-      "name": "feature",
-      "explanation": "Features appended to the end of the result.",
-      "format": "It seems to be --",
-      "entries": [
         "burnt",
         "crazed",
         "diseased",
@@ -982,6 +1064,14 @@
         "leprous",
         "scarred",
         "sickly"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
       ]
     },
     {
