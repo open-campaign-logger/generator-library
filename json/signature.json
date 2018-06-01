@@ -1,0 +1,409 @@
+{
+  "name": "signature",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Signature moves.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-06-01",
+  "authors": "ELF Vesala",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "combat"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{description}",
+        "{stats}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{signature}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {signature}",
+        "{signature}, {feature}",
+        "{attribute} {signature}, {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {synonym} {looks} that the {foe} {signature} {feature}.",
+        "The {synonym} {looks} that the {foe} {attribute} {signature} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Signature move}: {signature} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "signature",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Usual types.",
+      "entries": [
+        "{defense}",
+        "{offensive defense}",
+        "{offense}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Unusual types.",
+      "entries": [
+        "{defensive offense}",
+        "{intelligent}",
+        "{trick}"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "defense",
+      "explanation": "Signature moves for defending.",
+      "entries": [
+        "leaves their defense purposefully open to lure the opponent closer",
+        "positions themselves to create as small target as possible"
+      ]
+    },
+    {
+      "name": "defensive offense",
+      "explanation": "Signature moves for defending while attacking.",
+      "entries": [
+        "holds a defensive pose but attacks constantly"
+      ]
+    },
+    {
+      "name": "intelligent",
+      "explanation": "Signature moves for intelligent monsters.",
+      "entries": [
+        "attempts to carve initials on opponent's skin"
+      ]
+    },
+    {
+      "name": "offense",
+      "explanation": "Signature moves for attacks.",
+      "entries": [
+        "whimpers when attacking",
+        "rears back before lunging",
+        "ducks down and leaps to attack",
+        "strikes quick hits towards the opponent's throat"
+      ]
+    },
+    {
+      "name": "offensive defense",
+      "explanation": "Signature moves for attacking when defending.",
+      "entries": [
+        "parries and immediately counterattacks",
+        "stays in defensive pose but occasionally launches quick attacks"
+      ]
+    },
+    {
+      "name": "trick",
+      "explanation": "Tricking-related signature moves.",
+      "entries": [
+        "appears not to notice the opponent until quickly attacks without even looking"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{compoundbegin}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "FANTASTIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
+        "{typical} {move}"
+      ]
+    },
+    {
+      "name": "foe",
+      "explanation": "Variant expressions for a fighter.",
+      "entries": [
+        "combatant",
+        "enemy",
+        "foe",
+        "opponent"
+      ]
+    },
+    {
+      "name": "typical",
+      "explanation": "Variant expressions for 'signature'.",
+      "entries": [
+        "characteristic",
+        "common",
+        "distinctive",
+        "distinguishing",
+        "emblematic",
+        "identifying",
+        "instinctive",
+        "intuitive",
+        "signature",
+        "special",
+        "standard",
+        "typical"
+      ]
+    },
+    {
+      "name": "move",
+      "explanation": "Variant expressions for 'move'.",
+      "entries": [
+        "action",
+        "gimmick",
+        "maneuver",
+        "move",
+        "ploy",
+        "scheme",
+        "stratagem",
+        "style",
+        "tactic",
+        "trick"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Synonyms for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        "first feints and then"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        "and then quickly retreats"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
+      ]
+    }
+  ]
+}
