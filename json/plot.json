@@ -14,14 +14,14 @@
   "variables": {
     "footnote": ""
   },
-  "explanation": "Plot and story structure.",
+  "explanation": "Data set details for plot and story structures.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "format": "",
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-05-26",
+  "date": "2018-05-30",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",

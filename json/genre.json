@@ -11,14 +11,14 @@
   "variables": {
     "footnote": ""
   },
-  "explanation": "Data set details for the literary type of the story.",
+  "explanation": "Data set details for literary styles.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "format": "",
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-05-28",
+  "date": "2018-05-30",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
