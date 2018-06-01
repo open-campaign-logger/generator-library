@@ -1,6 +1,9 @@
 {
   "name": "attack",
-  "resultPattern": "{result}",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
   "variables": {
     "footnote": ""
   },
@@ -10,24 +13,76 @@
   "bugs": "",
   "to do": "",
   "see": "encounter, monster",
-  "date": "2017-12-28",
-  "authors": "Esko Vesala.",
+  "date": "2018-06-01",
+  "authors": "ELF Vesala.",
   "sources": "D20srd.org",
-  "genre": "fantasy",
+  "genre": "universal",
   "categories": [
-    "monster"
+    "combat"
   ],
   "tables": [
     {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
       "name": "result",
-      "explanation": "Variations for resultPattern output.",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{description}",
+        "{stats}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
       "entries": [
         "{attack}"
       ]
     },
     {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {attack}",
+        "{attack} ({feature})",
+        "{attribute} {attack} ({feature})"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {attack} {synonym} {looks} {feature}.",
+        "The {attribute} {attack} {synonym} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Name}: {random} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
       "name": "attack",
-      "explanation": "Attack types by rarity.",
+      "explanation": "Types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -38,24 +93,35 @@
     },
     {
       "name": "common",
-      "explanation": "Common attacks.",
+      "explanation": "Usual types.",
       "entries": [
-        "{natural}"
+        "{animal}"
       ]
     },
     {
-      "name": "natural",
+      "name": "rare",
+      "explanation": "Unusual types.",
+      "entries": [
+        "{monster}"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "animal",
       "explanation": "Natural attack styles.",
       "entries": [
         "slam",
         "bite",
         "claw",
-        "grab"
+        "grab",
+        "{rare animal}"
       ]
     },
     {
-      "name": "rare",
-      "explanation": "Rare attacks.",
+      "name": "rare animal",
+      "explanation": "Rare natural attack styles.",
       "entries": [
         "gore",
         "choke",
@@ -65,30 +131,29 @@
       ]
     },
     {
-      "name": "myth",
-      "explanation": "Attacks once rumoured to have existed.",
+      "name": "breath",
+      "explanation": "Breath attacks.",
       "entries": [
-        "{lib:weapon#myth}"
+        "breath of fire",
+        "breath of poison"
       ]
     },
     {
-      "name": "fantasy",
-      "explanation": "Attacks for fantasy worlds (with no basis in myth).",
+      "name": "gaze",
+      "explanation": "Gaze attacks.",
       "entries": [
-        "{myth}",
-        "{lib:weapon#fantasy}",
-        "{special attack}"
+        "paralyzing gaze"
       ]
     },
     {
-      "name": "special attack",
+      "name": "monster",
       "explanation": "Creature special attacks.",
       "entries": [
-        "{touch}",
         "{breath}",
+        "{gaze}",
+        "{touch}",
         "constrict",
         "fear",
-        "{gaze}",
         "cursed wound",
         "energy drain",
         "temporary ability damage",
@@ -103,49 +168,325 @@
       ]
     },
     {
-      "name": "breath",
-      "explanation": "Breath attacks.",
+      "name": "weapon",
+      "explanation": "Weapon attacks.",
       "entries": [
-        "breath of fire"
+        "{lib:weapon}",
+        "{lib:weapon} and {lib:weapon}"
       ]
     },
     {
-      "name": "gaze",
-      "explanation": "Gaze attacks.",
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
       "entries": [
-        "stoning gaze"
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
       ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        "advancing",
+        "crouching",
+        "diagonal",
+        "double",
+        "extended",
+        "horizontal",
+        "jumping",
+        "sacrificial",
+        "spinning",
+        "surprise",
+        "two-level",
+        "turning",
+        "unbalancing",
+        "vertical"
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{compoundbegin}",
+        "{target}",
+        "backward",
+        "cross",
+        "downward",
+        "forward",
+        "front",
+        "inside",
+        "inverted",
+        "outside",
+        "overhead",
+        "rear",
+        "rising",
+        "round",
+        "roundhouse",
+        "side",
+        "sideways",
+        "snap",
+        "straight",
+        "uppercut",
+        "upward"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "hammer",
+        "hook"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "butt",
+        "chop",
+        "fist",
+        "ing",
+        "jab",
+        "lock",
+        "slash"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "{synonym}",
+        "grab",
+        "grapple",
+        "lock",
+        "slap",
+        "jab",
+        "swipe",
+        "slash",
+        "stab",
+        "punch",
+        "thrust",
+        "chop",
+        "swing",
+        "kick",
+        "sweep",
+        "lunge",
+        "choke",
+        "claw",
+        "rake",
+        "barrage",
+        "takedown",
+        "throw"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        "in reverse",
+        "while charging",
+        "while retreating"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "FANTASTIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}",
+        "{lib:weapon#fantasy}",
+        "{monster}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "shapechanging",
+        "{lib:weapon#myth}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
     },
     {
       "name": "modern",
-      "explanation": "Attacks for modern worlds.",
+      "explanation": "Descriptions for modern worlds.",
       "entries": [
         "{common}",
         "{lib:weapon#modern}"
       ]
     },
     {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
       "name": "futuristic",
-      "explanation": "Attacks for science fiction worlds.",
+      "explanation": "Descriptions for science fiction worlds.",
       "entries": [
         "{modern}",
         "{lib:weapon#futuristic}"
       ]
     },
     {
-      "name": "special",
-      "explanation": "Special attack types.",
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
       "entries": [
-        "shapechanging",
-        "{armed}"
+        "{weapon}"
       ]
     },
     {
-      "name": "armed",
-      "explanation": "Armed attack styles.",
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
       "entries": [
-        "{lib:weapon}",
-        "{lib:weapon} and {lib:weapon}"
+        "assault",
+        "attack",
+        "onslaught",
+        "offensive",
+        "strike"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Synonyms for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}",
+        "{target}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        "puny",
+        "feeble",
+        "flimsy",
+        "dainty",
+        "light",
+        "loose",
+        "wild",
+        "agile",
+        "merciless",
+        "ruthless",
+        "forceful",
+        "damaging",
+        "hurtful",
+        "brutal",
+        "savage",
+        "feral",
+        "fierce",
+        "ferocious",
+        "barbaric",
+        "destructive",
+        "devastating"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        "an attack of opportunity",
+        "a quick jab",
+        "well-timed",
+        "carefully aimed"
+      ]
+    },
+    {
+      "name": "target",
+      "explanation": "The target area.",
+      "entries": [
+        "eye",
+        "head",
+        "throat",
+        "neck",
+        "shoulder",
+        "arm",
+        "chest",
+        "gut",
+        "back",
+        "hip",
+        "knee",
+        "leg"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]
