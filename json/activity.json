@@ -1,33 +1,91 @@
 {
   "name": "activity",
-  "resultPattern": "{result}",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
   "variables": {
     "footnote": ""
   },
   "explanation": "Character activities.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
+  "format": "",
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2017-12-28",
-  "authors": "",
+  "date": "2018-06-01",
+  "authors": "ELF Vesala.",
   "sources": "",
-  "genre": "",
+  "genre": "universal",
   "categories": [
-    ""
+    "character",
+    "encounter",
+    "monster"
   ],
   "tables": [
     {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
       "name": "result",
-      "explanation": "Variations for resultPattern output.",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{description}",
+        "{stats}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
       "entries": [
         "{activity}"
       ]
     },
     {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {activity}",
+        "{activity}, {feature}",
+        "{attribute} {activity}, {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {activity} {synonym} {looks} {feature}.",
+        "The {attribute} {activity} {synonym} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Activity}: {activity} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
       "name": "activity",
-      "explanation": "Activity types by rarity.",
+      "explanation": "Types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -38,7 +96,7 @@
     },
     {
       "name": "common",
-      "explanation": "Common activities.",
+      "explanation": "Usual types.",
       "entries": [
         "{passive}",
         "{guarding}",
@@ -52,77 +110,15 @@
       ]
     },
     {
-      "name": "passive",
-      "explanation": "Passive activities.",
+      "name": "rare",
+      "explanation": "Unusual types.",
       "entries": [
-        "sleeping",
-        "resting",
-        "hiding"
+        "{concentrating}",
+        "{grooming}"
       ]
     },
     {
-      "name": "guarding",
-      "explanation": "Guarding activities.",
-      "entries": [
-        "on guard",
-        "guarding {object}"
-      ]
-    },
-    {
-      "name": "feeding",
-      "explanation": "Eating and drinking related activities.",
-      "entries": [
-        "preparing a meal",
-        "eating {lib:food}",
-        "drinking {lib:drink}"
-      ]
-    },
-    {
-      "name": "exploring",
-      "explanation": "Exploration-related activities.",
-      "entries": [
-        "looking around",
-        "moving around",
-        "making a mental map of the area",
-        "tracking something"
-      ]
-    },
-    {
-      "name": "gathering",
-      "explanation": "Gathering-related activities.",
-      "entries": [
-        "looking for something to drink",
-        "looking for something to eat",
-        "looking for resources",
-        "searching for {object}"
-      ]
-    },
-    {
-      "name": "illicit",
-      "explanation": "Criminal activities.",
-      "entries": [
-        "hiding {object#valuables}",
-        "looking for a suitable target",
-        "following a suitable target",
-        "attempting to steal"
-      ]
-    },
-    {
-      "name": "working",
-      "explanation": "Work-related activities.",
-      "entries": [
-        "working",
-        "carrying {object}",
-        "trading {object}"
-      ]
-    },
-    {
-      "name": "social",
-      "explanation": "Social activities.",
-      "entries": [
-        "looking for someone to talk to",
-        "looking for companionship"
-      ]
+      "**************************************************": "DETAILS"
     },
     {
       "name": "communication",
@@ -138,6 +134,15 @@
       ]
     },
     {
+      "name": "concentrating",
+      "explanation": "Activities related to concentrating.",
+      "entries": [
+        "concentrating",
+        "meditating",
+        "praying"
+      ]
+    },
+    {
       "name": "discussion",
       "explanation": "Subjects of discussion.",
       "entries": [
@@ -147,11 +152,98 @@
         "{discussion subject} plans for the future",
         "{discussion subject} love life",
         "{discussion subject} work",
-        "{discussion subject} recent experience near that {lib:location#simple}",
+        "{discussion subject} recent experience near that {lib:location#summary}",
         "rumors about {discussion object}",
         "arguments for and against {discussion object}",
         "news about {discussion object}"
       ]
+    },
+    {
+      "name": "exploring",
+      "explanation": "Exploration-related activities.",
+      "entries": [
+        "moving around",
+        "looking around",
+        "looking for something to eat",
+        "searching for something",
+        "making a mental map of the area",
+        "tracking something"
+      ]
+    },
+    {
+      "name": "feeding",
+      "explanation": "Eating and drinking related activities.",
+      "entries": [
+        "preparing a meal",
+        "eating {lib:food#summary}",
+        "drinking {lib:drink#summary}"
+      ]
+    },
+    {
+      "name": "gathering",
+      "explanation": "Gathering-related activities.",
+      "entries": [
+        "looking for something to drink",
+        "looking for something to eat",
+        "looking for resources",
+        "searching for {object}"
+      ]
+    },
+    {
+      "name": "grooming",
+      "explanation": "Activities related to personal hygiene.",
+      "entries": [
+        "tidying up",
+        "visiting a lavatory"
+      ]
+    },
+    {
+      "name": "guarding",
+      "explanation": "Guarding activities.",
+      "entries": [
+        "on guard",
+        "guarding {object}"
+      ]
+    },
+    {
+      "name": "illicit",
+      "explanation": "Criminal activities.",
+      "entries": [
+        "hiding {object#valuables}",
+        "looking for a suitable target",
+        "following a suitable target",
+        "attempting to steal"
+      ]
+    },
+    {
+      "name": "passive",
+      "explanation": "Passive activities.",
+      "entries": [
+        "sleeping",
+        "licking its wounds",
+        "resting",
+        "hiding"
+      ]
+    },
+    {
+      "name": "social",
+      "explanation": "Social activities.",
+      "entries": [
+        "looking for someone to talk to",
+        "looking for companionship"
+      ]
+    },
+    {
+      "name": "working",
+      "explanation": "Work-related activities.",
+      "entries": [
+        "working",
+        "carrying {object}",
+        "trading {object}"
+      ]
+    },
+    {
+      "**************************************************": "DISCUSSIONS"
     },
     {
       "name": "discussion subject",
@@ -203,7 +295,7 @@
       "name": "object",
       "explanation": "Targets of citizens' activities.",
       "entries": [
-        "{lib:equipment}",
+        "{lib:equipment#summary}",
         "illegal substances",
         "{valuables}"
       ]
@@ -213,72 +305,199 @@
       "explanation": "Valuable objects.",
       "entries": [
         "money",
-        "{lib:jewelry}",
-        "{lib:gem}",
-        "{lib:treasure}"
+        "{lib:jewelry#summary}",
+        "{lib:gem#summary}",
+        "{lib:treasure#summary}"
       ]
     },
     {
-      "name": "rare",
-      "explanation": "Rare activities.",
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
       "entries": [
-        "{concentrating}",
-        "{grooming}"
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
       ]
     },
     {
-      "name": "concentrating",
-      "explanation": "Activities related to concentrating.",
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
       "entries": [
-        "concentrating",
-        "meditating",
-        "praying"
+        ""
       ]
     },
     {
-      "name": "grooming",
-      "explanation": "Activities related to personal hygiene.",
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
       "entries": [
-        "tidying up",
-        "visiting a lavatory"
+        "{compoundbegin}",
+        "XXX"
       ]
     },
     {
-      "name": "myth",
-      "explanation": "Activities once rumoured to have existed.",
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
       "entries": [
         "XXX"
       ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "FANTASTIC"
     },
     {
       "name": "fantasy",
-      "explanation": "Activities for fantasy worlds (with no basis in myth).",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
-        "XXX"
+        "{medieval}"
       ]
     },
     {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
+    },
+    {
       "name": "modern",
-      "explanation": "Activities for modern worlds.",
+      "explanation": "Descriptions for modern worlds.",
       "entries": [
         "{common}",
         "calling someone"
       ]
     },
     {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
       "name": "futuristic",
-      "explanation": "Activities for science fiction worlds.",
+      "explanation": "Descriptions for science fiction worlds.",
       "entries": [
         "{modern}",
         "communicating silently"
       ]
     },
     {
-      "name": "special",
-      "explanation": "Special activity types.",
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
       "entries": [
-        "{animal}"
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
+        "activity",
+        "affair",
+        "duty",
+        "effort",
+        "exercise",
+        "interest",
+        "occupation",
+        "project",
+        "proposition",
+        "pursuit",
+        "task",
+        "undertaking"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Synonyms for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{animal}",
+        "{attribute}",
+        "{feature}"
       ]
     },
     {
@@ -293,6 +512,38 @@
         "looking for food",
         "looking for a mate",
         "looking after its young"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        "angrily",
+        "carefully",
+        "carelessly",
+        "happily",
+        "pleasantly",
+        "ponderously"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        "taking longer than expected",
+        "soon over",
+        "going well"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]
