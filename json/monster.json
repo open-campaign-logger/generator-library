@@ -1,6 +1,6 @@
 {
   "name": "monster",
-  "resultPattern": "{init}{number}",
+  "resultPattern": "{init}{description}",
   "globals": {
     "monster": "",
     "actant": "monster",
@@ -20,7 +20,7 @@
   "bugs": "",
   "to do": "Categorize monsters by type.",
   "see": "animal, attack, citizen, complication, encounter, nonhuman",
-  "date": "2018-05-30",
+  "date": "2018-06-01",
   "authors": "ELF Vesala.",
   "sources": "D20SRD.org, DanDWiki.com, Musings newsletter by Johnn Four, Wikia.com, Wikipedia.org",
   "genre": "fantasy",
@@ -68,27 +68,26 @@
         "{g:monster}, {feature}",
         "{attribute} {g:monster}, {feature}",
         "{attribute}, {lib:complication#creature} {g:monster}",
-        "{lib:creature_template} {g:monster}",
-        "{lib:complication#creature}, {lib:creature_template} {g:monster}",
-        "{g:monster} specialized {lib:attack} attacks",
-        "{attribute} {g:monster} specialized in {lib:attack} attacks",
-        "{lib:complication#creature} {g:monster} specialized in {lib:attack} attacks",
-        "{lib:creature_template} {g:monster} specialized in {lib:attack} attacks"
+        "{lib:aspect-creature#summary} {g:monster}",
+        "{lib:complication-creature#summary}, {lib:aspect-creature#summary} {g:monster}",
+        "{g:monster} specialized {lib:attack#summary} attacks",
+        "{attribute} {g:monster} specialized in {lib:attack#summary} attacks",
+        "{lib:complication-creature#summary} {g:monster} specialized in {lib:attack#summary} attacks",
+        "{lib:aspect-creature#summary} {g:monster} specialized in {lib:attack#summary} attacks"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {g:monster} {synonym} {looks} {feature}.",
-        "The {attribute} {g:monster} {synonym} {looks} {feature}."
+        "The {attribute} {g:monster} {looks} {feature}. The {synonym} is {personality}. \r\nWhen preparing to fight, its strategy is  {strategy}. In combat, it often {signature}."
       ]
     },
     {
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Name}: {random} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+        "{b|Name}: {random} \r\n{b|Personality}: {personality} \r\n{b|Signature}: {signature} \r\n{b|Strategy}: {strategy} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
       ]
     },
     {
@@ -177,47 +176,6 @@
         "an army of {g:monster}s",
         "a horde of {g:monster}s",
         "a swarm of {g:monster}s"
-      ]
-    },
-    {
-      "**************************************************": "INDIVIDUALIZATION"
-    },
-    {
-      "name": "activity",
-      "explanation": "Action just before encounter.",
-      "entries": [
-        "licking wounds",
-        "eating",
-        "searching for something"
-      ]
-    },
-    {
-      "name": "personality",
-      "explanation": "",
-      "entries": [
-        "{lib:personality#monster}"
-      ]
-    },
-    {
-      "name": "signature",
-      "explanation": "Signature moves.",
-      "entries": [
-        "rears back before lunging",
-        "whimpers when attacking"
-      ]
-    },
-    {
-      "name": "strategy",
-      "explanation": "Combat tactics.",
-      "entries": [
-        "{lib:strategy}"
-      ]
-    },
-    {
-      "name": "humanoid signature",
-      "explanation": "Signature moves for intelligent monsters.",
-      "entries": [
-        "attempts to carve initials on opponent's skin"
       ]
     },
     {
@@ -418,37 +376,36 @@
       "name": "ending",
       "explanation": "Separate word endings for randomized terms.",
       "entries": [
+        "{fungus}",
         "{plant ending}",
         "{ooze}",
         "{animal ending}",
+        "{fey}",
+        "{lycanthrope}",
+        "{undead}",
+        "{demonic}",
+        "{infernal}",
+        "{celestial}",
         "beast",
         "brood",
         "brute",
         "butcher",
         "claw",
         "corpse",
-        "demon",
-        "devil",
         "drake",
         "eater",
-        "ghoul",
         "guardian",
-        "hag",
-        "haunt",
         "hunter",
         "lurker",
         "mirage",
-        "phantom",
         "piercer",
         "predator",
-        "revenant",
+        "prowler",
         "screamer",
+        "seeker",
         "sentinel",
         "shrieker",
-        "shade",
-        "seeker",
         "slayer",
-        "soul",
         "spitter",
         "stalker",
         "statue",
@@ -461,8 +418,7 @@
         "vermin",
         "wailer",
         "walker",
-        "wing",
-        "wraith"
+        "wing"
       ]
     },
     {
@@ -512,6 +468,7 @@
       "explanation": "Word endings for insect monsters.",
       "entries": [
         "beetle",
+        "bug",
         "mantis"
       ]
     },
@@ -620,7 +577,7 @@
       "name": "magical beast",
       "explanation": "Magic-imbued animals.",
       "entries": [
-        "magical beast"
+        "the questing beast"
       ]
     },
     {
@@ -824,8 +781,17 @@
       "name": "incorporeal",
       "explanation": "Spirits of the dead.",
       "entries": [
+        "apparition",
+        "eidolon",
         "ghost",
+        "haunt",
+        "phantasm",
         "phantom",
+        "shade",
+        "shadow",
+        "soul",
+        "spectre",
+        "spirit",
         "wraith"
       ]
     },
@@ -851,12 +817,14 @@
       "name": "corporeal",
       "explanation": "Dead creatures animated to unlife.",
       "entries": [
-        "skeleton",
+        "{vampire}",
+        "ghoul",
+        "lich",
         "mummy",
         "revenant",
+        "skeleton",
         "wight",
-        "lich",
-        "{vampire}"
+        "wraith"
       ]
     },
     {
@@ -881,13 +849,18 @@
       "name": "demonic",
       "explanation": "Demons.",
       "entries": [
-        "demon"
+        "demon",
+        "incubus",
+        "succubus"
       ]
     },
     {
       "name": "infernal",
       "explanation": "Denizens of the hells.",
       "entries": [
+        "imp",
+        "fiend",
+        "devilkin",
         "devil"
       ]
     },
@@ -907,7 +880,7 @@
       "name": "primitive",
       "explanation": "Descriptions for prehistoric worlds.",
       "entries": [
-        "{lib:animal}"
+        "{lib:animal#predator}"
       ]
     },
     {
@@ -917,7 +890,7 @@
       "name": "ancient",
       "explanation": "Descriptions for ancient worlds.",
       "entries": [
-        "{lib:animal}"
+        "{lib:animal#predator}"
       ]
     },
     {
@@ -927,7 +900,7 @@
       "name": "medieval",
       "explanation": "Descriptions for medieval worlds (with no magic).",
       "entries": [
-        "{lib:animal}"
+        "{lib:animal#predator}"
       ]
     },
     {
@@ -937,7 +910,7 @@
       "name": "modern",
       "explanation": "Descriptions for modern worlds.",
       "entries": [
-        "{lib:animal}",
+        "{lib:animal#predator}",
         "{cryptid}"
       ]
     },
@@ -1014,6 +987,30 @@
       ]
     },
     {
+      "**************************************************": "INDIVIDUALIZATION"
+    },
+    {
+      "name": "personality",
+      "explanation": "",
+      "entries": [
+        "{lib:personality#monster}"
+      ]
+    },
+    {
+      "name": "signature",
+      "explanation": "Signature moves.",
+      "entries": [
+        "{lib:signature#summary}"
+      ]
+    },
+    {
+      "name": "strategy",
+      "explanation": "Combat tactics.",
+      "entries": [
+        "{lib:strategy#summary}"
+      ]
+    },
+    {
       "**************************************************": "SYNONYMS"
     },
     {
@@ -1071,7 +1068,10 @@
       "explanation": "Features appended to the end of the result.",
       "format": "It seems to be --",
       "entries": [
-        ""
+        "licking its wounds",
+        "looking for something to eat",
+        "eating",
+        "searching for something"
       ]
     },
     {
