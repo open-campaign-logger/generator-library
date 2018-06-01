@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-05-31",
+  "date": "2018-06-01",
   "authors": "ELF Vesala.",
   "sources": "Dungeon_adventure",
   "genre": "universal",
@@ -126,12 +126,12 @@
       "name": "captive",
       "explanation": "Complications for captives.",
       "entries": [
-        "are not innocent, but suffering a sentence for their horrific crimes",
-        "are pleading to be escorted back to safety immediately",
-        "are about to be executed",
-        "do not want to be rescued after all",
-        "are enemies in disguise",
-        "are booby-trapped"
+        "is not innocent, but suffering a sentence for their horrific crimes",
+        "is pleading to be escorted back to safety immediately",
+        "is about to be executed",
+        "does not want to be rescued after all",
+        "is an enemy in disguise",
+        "is booby-trapped"
       ]
     },
     {
