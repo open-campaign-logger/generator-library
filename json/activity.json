@@ -61,16 +61,16 @@
       "explanation": "More detailed output variations.",
       "entries": [
         "{attribute} {activity}",
-        "{activity}, {feature}",
-        "{attribute} {activity}, {feature}"
+        "{activity} ({feature})",
+        "{attribute} {activity} ({feature})"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {activity} {synonym} {looks} {feature}.",
-        "The {attribute} {activity} {synonym} {looks} {feature}."
+        "{activity} {looks} {feature}",
+        "{attribute} {activity} {looks} {feature}"
       ]
     },
     {
