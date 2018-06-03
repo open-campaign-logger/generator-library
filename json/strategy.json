@@ -1,5 +1,5 @@
 {
-  "name": "Strategy",
+  "name": "strategy",
   "resultPattern": "{init}{result}",
   "globals": {
     "variable": "value"
@@ -10,11 +10,11 @@
   "explanation": "Strategies for conflicts.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "Developed from the quirk generation section of 'Goblin Names' generator by Ron Calbick.",
-  "format": "",
+  "format": "It --",
   "bugs": "",
   "to do": "",
   "see": "edge, flaw, quirk",
-  "date": "2018-04-16",
+  "date": "2018-06-02",
   "authors": "Ron Calbick (as extracted from his goblin-names.json generator), ELF Vesala.",
   "sources": "Ron Calbick: 'Goblin Generator', Wikipedia.org",
   "genre": "universal",
@@ -123,17 +123,17 @@
       "name": "neutral",
       "explanation": "Neutral life goals.",
       "entries": [
-        "survivalist",
-        "strategist",
-        "loner",
-        "leader"
+        "is a survivalist",
+        "is a strategist",
+        "is a loner",
+        "is a leader"
       ]
     },
     {
       "name": "positive",
       "explanation": "Positive life goals.",
       "entries": [
-        "mentor"
+        "aims to be a mentor"
       ]
     },
     {
@@ -158,8 +158,8 @@
       "name": "melee offense",
       "explanation": "Melee offense related tactics.",
       "entries": [
-        "always attempts to grapple foes, usually going for the shins and ankles",
-        "likes throwing unusual things at enemies during combat, such as insects, flour, sand, or anything else easily portable"
+        "attempts to grapple foes, usually going for the shins and ankles",
+        "likes throwing objects at enemies during combat, such as sand or anything else nearby"
       ]
     },
     {
@@ -169,8 +169,8 @@
       "name": "negotiation",
       "explanation": "Strategies for trading, politics, etc.",
       "entries": [
-        "divide and conquer",
-        "eliminate the most dangerous enemy first"
+        "follows the 'divide and conquer' principle",
+        "attempts eliminate the most dangerous enemy first"
       ]
     },
     {
@@ -180,7 +180,7 @@
       "name": "ranged",
       "explanation": "Strategies for long-distance combat.",
       "entries": [
-        "focused fire"
+        "uses focused fire"
       ]
     },
     {

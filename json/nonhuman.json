@@ -17,8 +17,8 @@
   "bugs": "",
   "to do": "Categorize nonhumans by type.",
   "see": "activity, animal, citizen, encounter, monster",
-  "date": "2018-01-21",
-  "authors": "Esko Vesala.",
+  "date": "2018-06-01",
+  "authors": "ELF Vesala.",
   "sources": "Wikia.com, Wikipedia.org",
   "genre": "fantasy",
   "categories": [
@@ -154,8 +154,7 @@
       "name": "myth",
       "explanation": "Nonhumans once rumoured to have existed.",
       "entries": [
-        "Atlantean",
-        "Lemurian"
+        "swan maiden"
       ]
     },
     {
@@ -170,7 +169,9 @@
       "explanation": "Nonhumans for modern worlds.",
       "entries": [
         "{cryptid}",
-        "{ufology}"
+        "{ufology}",
+        "Atlantean",
+        "Lemurian"
       ]
     },
     {

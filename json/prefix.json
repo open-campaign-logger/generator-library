@@ -267,6 +267,7 @@
       "name": "side",
       "explanation": "Sides.",
       "entries": [
+        "Waterside",
         "Bayside",
         "Hillside"
       ]
