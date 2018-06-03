@@ -118,20 +118,7 @@
       "name": "creature",
       "explanation": "Complications for persons and beings.",
       "entries": [
-        "{captive}",
         "{character}"
-      ]
-    },
-    {
-      "name": "captive",
-      "explanation": "Complications for captives.",
-      "entries": [
-        "is not innocent, but suffering a sentence for their horrific crimes",
-        "is pleading to be escorted back to safety immediately",
-        "is about to be executed",
-        "does not want to be rescued after all",
-        "is an enemy in disguise",
-        "is booby-trapped"
       ]
     },
     {
@@ -571,6 +558,7 @@
       "explanation": "Special tables.",
       "entries": [
         "{attribute}",
+        "{captive}",
         "{feature}"
       ]
     },
@@ -579,6 +567,18 @@
       "explanation": "Attribute prepended to the front of the result.",
       "entries": [
         ""
+      ]
+    },
+    {
+      "name": "captive",
+      "explanation": "Complications for captives.",
+      "entries": [
+        "is not innocent, but suffering a sentence for their horrific crimes",
+        "is pleading to be escorted back to safety immediately",
+        "is about to be executed",
+        "does not want to be rescued after all",
+        "is an enemy in disguise",
+        "is booby-trapped"
       ]
     },
     {
