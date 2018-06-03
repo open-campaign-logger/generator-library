@@ -1,6 +1,6 @@
 {
   "name": "monster",
-  "resultPattern": "{init}{description}",
+  "resultPattern": "{init}{result}",
   "globals": {
     "monster": "",
     "actant": "monster",
@@ -65,14 +65,14 @@
       "explanation": "More detailed output variations.",
       "entries": [
         "{attribute} {g:monster}",
-        "{g:monster}, {feature}",
-        "{attribute} {g:monster}, {feature}",
-        "{attribute}, {lib:complication#creature} {g:monster}",
+        "{g:monster}, {activity}",
+        "{attribute} {g:monster}, {activity}",
+        "{attribute} {g:monster}, {lib:complication#creature}",
         "{lib:aspect-creature#summary} {g:monster}",
-        "{lib:complication-creature#summary}, {lib:aspect-creature#summary} {g:monster}",
+        "{lib:aspect-creature#summary} {g:monster}, {lib:complication#creature}",
         "{g:monster} specialized {lib:attack#summary} attacks",
         "{attribute} {g:monster} specialized in {lib:attack#summary} attacks",
-        "{lib:complication-creature#summary} {g:monster} specialized in {lib:attack#summary} attacks",
+        "{g:monster} specialized in {lib:attack#summary} attacks, {lib:complication#creature}",
         "{lib:aspect-creature#summary} {g:monster} specialized in {lib:attack#summary} attacks"
       ]
     },
@@ -80,14 +80,14 @@
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {attribute} {g:monster} {looks} {feature}. The {synonym} is {personality}. \r\nWhen preparing to fight, its strategy is  {strategy}. In combat, it often {signature}."
+        "The {attribute} {g:monster} {looks} {activity}. The {synonym} is {personality}. \r\nWhen preparing to fight, it {strategy}. \r\nIn combat, it often {signature}."
       ]
     },
     {
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Name}: {random} \r\n{b|Personality}: {personality} \r\n{b|Signature}: {signature} \r\n{b|Strategy}: {strategy} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+        "{b|Monster}: {g:monster} \r\n{b|Name}: {name} \r\n{b|Activity}: {looks} {activity} \r\n{b|Personality}: The {synonym} is {personality}. \r\n{b|Strategy}: {often} {strategy}. \r\n{b|Combat}: Often {signature}."
       ]
     },
     {
@@ -538,10 +538,8 @@
       "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
-        "{medieval}",
         "{ooze}",
         "{fungus}",
-        "{magical beast}",
         "{monstrous humanoid}",
         "{avian}",
         "{reptilian}",
@@ -574,13 +572,6 @@
       ]
     },
     {
-      "name": "magical beast",
-      "explanation": "Magic-imbued animals.",
-      "entries": [
-        "the questing beast"
-      ]
-    },
-    {
       "name": "monstrous humanoid",
       "explanation": "Humanoid creature with monstrous features.",
       "entries": [
@@ -591,9 +582,7 @@
       "name": "avian",
       "explanation": "Humanoid creature with bird-like features.",
       "entries": [
-        "swan maiden",
         "tengu",
-        "bird people",
         "avian"
       ]
     },
@@ -733,10 +722,12 @@
       "name": "mythic beast",
       "explanation": "Mythological animals.",
       "entries": [
-        "gargoyle",
+        "{chimerical}",
+        "alicorn",
         "catoblepas",
-        "unicorn",
-        "{chimerical}"
+        "gargoyle",
+        "pegasus",
+        "unicorn"
       ]
     },
     {
@@ -745,7 +736,9 @@
       "entries": [
         "cockatrice",
         "chimera",
-        "manticore"
+        "griffon",
+        "manticore",
+        "sphinx"
       ]
     },
     {
@@ -990,6 +983,20 @@
       "**************************************************": "INDIVIDUALIZATION"
     },
     {
+      "name": "name",
+      "explanation": "Names for monsters.",
+      "entries": [
+        "{|{lib:name-monster#description}|tcase}"
+      ]
+    },
+    {
+      "name": "activity",
+      "explanation": "Pursuits when an encounter starts.",
+      "entries": [
+        "{lib:activity#summary}"
+      ]
+    },
+    {
       "name": "personality",
       "explanation": "",
       "entries": [
@@ -1007,7 +1014,14 @@
       "name": "strategy",
       "explanation": "Combat tactics.",
       "entries": [
-        "{lib:strategy#summary}"
+        "{lib:strategy#combat}"
+      ]
+    },
+    {
+      "name": "trait",
+      "explanation": "Recognizable traits for monsters.",
+      "entries": [
+        "{lib:distinction#monster}"
       ]
     },
     {
@@ -1036,6 +1050,24 @@
       "entries": [
         "appears to be",
         "seems to be"
+      ]
+    },
+    {
+      "name": "often",
+      "explanation": "Variant expressions for 'often'.",
+      "entries": [
+        "commonly",
+        "customarily",
+        "generally",
+        "habitually",
+        "frequently",
+        "mostly",
+        "often",
+        "primarily",
+        "regularly",
+        "routinely",
+        "typically",
+        "usually"
       ]
     },
     {
@@ -1068,10 +1100,7 @@
       "explanation": "Features appended to the end of the result.",
       "format": "It seems to be --",
       "entries": [
-        "licking its wounds",
-        "looking for something to eat",
-        "eating",
-        "searching for something"
+        ""
       ]
     },
     {
