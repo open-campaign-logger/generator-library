@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-02",
+  "date": "2018-06-04",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -59,16 +59,15 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{attribute} {distinction}",
-        "{distinction}, {feature}",
-        "{attribute} {distinction}, {feature}"
+        "{distinction}",
+        "{distinction}, {feature}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "has a {synonym}: {distinction}"
+        "{!distinction} and {!distinction}"
       ]
     },
     {
@@ -96,7 +95,8 @@
       "name": "common",
       "explanation": "Usual types.",
       "entries": [
-        "{clothing}"
+        "{adornment}",
+        "{equipment}"
       ]
     },
     {
@@ -111,24 +111,50 @@
       "**************************************************": "DETAILS"
     },
     {
-      "name": "clothing",
+      "name": "adornment",
       "explanation": "Distinctive clothing.",
       "entries": [
-        "wears a bright red scarf"
+        "{!wears} {!attribute} {lib:!color#prime} {lib:!clothing#medieval male}",
+        "{!wears} {!attribute} {lib:!armor#summary}",
+        "{!wears} {!attribute} {lib:!jewelry#summary}"
+      ]
+    },
+    {
+      "name": "equipment",
+      "explanation": "Distinctive possessions.",
+      "entries": [
+        "{!carries} {!attribute} {lib:!equipment#summary}",
+        "{!carries} {!attribute} {lib:!musical_instrument}"
       ]
     },
     {
       "name": "modification",
       "explanation": "Distinctive modifications.",
       "entries": [
-        "has a tattoo"
+        "wears war paint",
+        "has {lib:decoration#painting} on the {lib:bodypart#external}",
+        "has a {lib:decoration#subject} tattooed in the {lib:bodypart#external}",
+        "has a piercing in the {lib:bodypart#head}",
+        "has {lib:decoration#carving} carved on their skin",
+        "has {lib:decoration#symbol} branded on their skin",
+        "wears multiple neck rings",
+        "has lips stretched with a piercing",
+        "has ritual scarring",
+        "has blackened teeth",
+        "has sharpened teeth",
+        "has cut ears",
+        "has the tongue cut in half"
       ]
     },
     {
       "name": "trophy",
       "explanation": "Distinctive trophies.",
       "entries": [
-        "carries a trophy"
+        "{carries} an old enemy's {lib:!clothing#medieval male} as {booty}",
+        "{carries} a piece of an old enemy's {lib:armor#summary} as {booty}",
+        "{wears} {attribute} {lib:!color#prime} and {lib:!color#prime} banner",
+        "boasts {old} {lib:weapon#melee} as {booty}",
+        "{carries} an enemy's cut off head as {booty}"
       ]
     },
     {
@@ -299,12 +325,69 @@
       ]
     },
     {
+      "name": "carries",
+      "explanation": "Synonyms for carrying something.",
+      "format": "-- X",
+      "entries": [
+        "carries",
+        "is hauling",
+        "is holding",
+        "is lugging",
+        "is packing",
+        "totes"
+      ]
+    },
+    {
       "name": "looks",
       "explanation": "Synonyms for looking like something.",
       "format": "-- in good condition / approaching",
       "entries": [
         "appears to be",
         "seems to be"
+      ]
+    },
+    {
+      "name": "old",
+      "explanation": "Synonyms for 'old' items.",
+      "entries": [
+        "an aged",
+        "an ancient",
+        "an antiquated",
+        "a dated",
+        "a decrepit",
+        "an old",
+        "an old-fashioned",
+        "a primitive",
+        "a time-worn",
+        "a venerable",
+        "a worn-out"
+      ]
+    },
+    {
+      "name": "booty",
+      "explanation": "Synonyms for victory trophies.",
+      "entries": [
+        "a battle trophy",
+        "booty",
+        "decoration",
+        "a keepsake",
+        "a memento",
+        "a prize",
+        "a souvenir",
+        "a trophy",
+        "a token of victory",
+        "the spoils of victory"
+      ]
+    },
+    {
+      "name": "wears",
+      "explanation": "Synonyms for being clothed in something.",
+      "format": "-- clothing / jewelry",
+      "entries": [
+        "has put on",
+        "has slipped on",
+        "wears",
+        "is wearing"
       ]
     },
     {
@@ -323,7 +406,14 @@
       "name": "attribute",
       "explanation": "Attribute prepended to the front of the result.",
       "entries": [
-        ""
+        "an apparently important",
+        "a battered",
+        "a blood-spattered",
+        "a broken",
+        "a dirty",
+        "an old",
+        "a poorly constructed",
+        "a strange-looking"
       ]
     },
     {
@@ -331,7 +421,8 @@
       "explanation": "Features appended to the end of the result.",
       "format": "It seems to be --",
       "entries": [
-        ""
+        "hidden under {!attribute} {lib:fabric#summary} covering",
+        "prominently displayed"
       ]
     },
     {
