@@ -9,7 +9,7 @@
   "note": "",
   "to do": "",
   "see": "material",
-  "date": "2018-05-27",
+  "date": "2018-06-04",
   "authors": "Johnn Four, Jochen Linnemann, ELF Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -106,7 +106,7 @@
         "silk",
         "silk damask",
         "silk lace",
-        "silk gauze (thin and translucent)",
+        "silk gauze",
         "wild silk (from non-cultivated silk worms)",
         "sea silk (produced from seashell filaments)"
       ]
@@ -150,27 +150,27 @@
       "explanation": "Variations of common leather.",
       "entries": [
         "{leather type}",
-        "{leather type} dyed {lib:color}",
-        "full sauvage (finely dyed) {lib:color} {leather type}",
+        "{leather type} dyed {lib:color#prime}",
+        "full sauvage (finely dyed) {lib:color#prime} {leather type}",
         "{leather finishing} {leather type}",
-        "{leather finishing} {leather type} dyed {lib:color}",
-        "full sauvage (finely dyed) {lib:color} {leather finishing} {leather type}"
+        "{leather finishing} {leather type} dyed {lib:color#prime}",
+        "full sauvage (finely dyed) {lib:color#prime} {leather finishing} {leather type}"
       ]
     },
     {
       "name": "leather type",
       "explanation": "Common leather types.",
       "entries": [
-        "rawhide (untanned leather)",
+        "rawhide",
         "shagreen (rough untanned leather)",
         "deerskin leather",
         "pigskin leather",
-        "goatskin leather (soft but tough)",
-        "sheepskin leather (soft and thin)",
+        "goatskin leather",
+        "sheepskin leather",
         "shearling leather (tanned sheep skin with short wool)",
         "oxskin leather",
-        "chamois leather (soft and porous)",
-        "buckskin leather (suede-like)",
+        "chamois leather",
+        "buckskin leather",
         "horse leather",
         "cordovan (high-quality horse leather)",
         "{rare leather}"
@@ -180,9 +180,9 @@
       "name": "soft leather",
       "explanation": "Soft leather types.",
       "entries": [
-        "lambskin leather (very soft leather from young sheep)",
-        "kidskin leather (very soft leather from young goats)",
-        "calfskin leather (soft and fine leather from young cows)",
+        "lambskin leather",
+        "kidskin leather",
+        "calfskin leather",
         "slink leather (soft skin of unborn calves)"
       ]
     },
@@ -200,11 +200,11 @@
       "name": "fishskin",
       "explanation": "Variations of fishskin leather.",
       "entries": [
-        "salmon skin (strong, fine scales)",
-        "cod skin (fine scales)",
-        "perch skin (large, soft scales)",
+        "salmon skin",
+        "cod skin",
+        "perch skin",
         "sturgeon leather",
-        "eelskin (smooth and shiny)"
+        "eelskin"
       ]
     },
     {
@@ -240,7 +240,7 @@
       "entries": [
         "sheep wool",
         "weaner fleece (from young sheep)",
-        "lambswool (soft)",
+        "lambswool",
         "goat wool"
       ]
     },
@@ -248,10 +248,10 @@
       "name": "plant",
       "explanation": "Plant-based fabrics.",
       "entries": [
-        "jute (coarse and strong)",
+        "jute",
         "cotton",
         "hemp",
-        "linen (from the flax plant)",
+        "linen",
         "cotton damask",
         "wool damask",
         "linen damask"
@@ -399,9 +399,9 @@
         "composition leather (hide trimmings bonded to a fabric layer)",
         "bonded (layered with fiber backer)",
         "bicast leather (with polyurethane finishing)",
-        "nubuck leather (suede-like, sanded surface)",
-        "suede (soft, vulnerable leather)",
-        "napa leather (soft)",
+        "nubuck leather",
+        "suede",
+        "napa leather",
         "patent leather (with a shiny coating)",
         "pull-up aniline leather (slightly dyed high-quality leather with wax coating)",
         "semi aniline leather (slightly dyed leather with a protective layer added)",
@@ -430,8 +430,8 @@
       "name": "synthetic",
       "explanation": "Synthetic fabrics.",
       "entries": [
-        "nylon (imitation silk)",
-        "acrylic (imitation wool)",
+        "nylon",
+        "acrylic",
         "polyester",
         "faux fur",
         "spandex",
@@ -518,7 +518,7 @@
       "explanation": "Exotic leather types.",
       "entries": [
         "bison leather",
-        "kangaroo leather (thin but strong)",
+        "kangaroo leather",
         "ostrich leather (with distinct quill follicles)",
         "alligator skin",
         "shark skin"
@@ -530,12 +530,12 @@
       "entries": [
         "camel hair",
         "merino wool",
-        "cashmere wool (fine and soft)",
+        "cashmere wool",
         "pashmina (fine cashmere wool)",
-        "mohair (goat) wool",
-        "angora (fluffy rabbit) wool",
+        "mohair wool",
+        "angora wool",
         "chiengora (dog wool)",
-        "alpaca fleece (soft and luxurious)",
+        "alpaca fleece",
         "llama wool",
         "vicuña wool",
         "yak wool",

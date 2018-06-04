@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "More equipment types.",
   "see": "business, gem, jewelry, treasure",
-  "date": "2018-05-30",
+  "date": "2018-06-04",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -111,8 +111,7 @@
         "{riding}",
         "{climbing}",
         "{transportation}",
-        "{miscellaneous}",
-        "{lib:musical_instrument}"
+        "{miscellaneous}"
       ]
     },
     {
@@ -271,7 +270,7 @@
       "name": "marking",
       "explanation": "Marking equipment.",
       "entries": [
-        "chalk"
+        "piece of chalk"
       ]
     },
     {
@@ -279,10 +278,10 @@
       "explanation": "Medical equipment.",
       "entries": [
         "bandages",
-        "crutches",
+        "pair of crutches",
         "healing potion",
-        "antitoxin",
-        "antivenom"
+        "vial of antitoxin",
+        "vial of antivenom"
       ]
     },
     {
@@ -385,8 +384,8 @@
       "name": "snow vehicle",
       "explanation": "Transportation equipment for winter.",
       "entries": [
-        "snow shoes",
-        "skis",
+        "pair of snow shoes",
+        "pair of skis",
         "sleigh"
       ]
     },

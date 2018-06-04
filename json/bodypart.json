@@ -11,7 +11,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-05-30",
+  "date": "2018-06-04",
   "authors": "ELF Vesala.",
   "sources": "InnerBody.com, MedicineNet.com, TeachMeAnatomy.com, Wikipedia.org",
   "genre": "universal",
@@ -952,8 +952,12 @@
       "explanation": "Special tables.",
       "entries": [
         "{attribute}",
-        "{feature}"
+        "{feature}",
+        "{main}"
       ]
+    },
+    {
+      "--------------------------------------------------": ""
     },
     {
       "name": "attribute",
@@ -1014,6 +1018,9 @@
       ]
     },
     {
+      "--------------------------------------------------": ""
+    },
+    {
       "name": "feature",
       "explanation": "Features appended to the end of the result.",
       "entries": [
@@ -1037,6 +1044,21 @@
         "in shape",
         "in good shape",
         "in good condition"
+      ]
+    },
+    {
+      "--------------------------------------------------": ""
+    },
+    {
+      "name": "main",
+      "explanation": "The main body parts (for a humanoid body plan).",
+      "entries": [
+        "head",
+        "arm",
+        "arm",
+        "torso",
+        "leg",
+        "leg"
       ]
     }
   ]
