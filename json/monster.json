@@ -20,9 +20,9 @@
   "bugs": "",
   "to do": "Categorize monsters by type.",
   "see": "animal, attack, citizen, complication, encounter, nonhuman",
-  "date": "2018-06-01",
+  "date": "2018-06-05",
   "authors": "ELF Vesala.",
-  "sources": "D20SRD.org, DanDWiki.com, Musings newsletter by Johnn Four, Wikia.com, Wikipedia.org",
+  "sources": "D20SRD.org, DanDWiki.com, Johnn Four's Musings newsletter 2018-06-08, Wikia.com, Wikipedia.org",
   "genre": "fantasy",
   "categories": [
     "monster"
@@ -205,7 +205,11 @@
       "explanation": "Trollkin.",
       "entries": [
         "troll",
-        "cave troll"
+        "mountain troll",
+        "cave troll",
+        "hill troll",
+        "forest troll",
+        "swamp troll"
       ]
     },
     {

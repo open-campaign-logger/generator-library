@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-01",
+  "date": "2018-06-05",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -139,10 +139,11 @@
       "name": "offense",
       "explanation": "Signature moves for attacks.",
       "entries": [
-        "whimpers when attacking",
         "rears back before lunging",
         "ducks down and leaps to attack",
-        "strikes quick hits towards the opponent's throat"
+        "strikes quick hits towards the opponent's throat",
+        "attempts to grab the opponent's face",
+        "gloats before attacking"
       ]
     },
     {

@@ -13,7 +13,7 @@
   "bugs": "",
   "to do": "",
   "see": "encounter, monster",
-  "date": "2018-06-01",
+  "date": "2018-06-05",
   "authors": "ELF Vesala.",
   "sources": "D20srd.org",
   "genre": "universal",
@@ -198,6 +198,7 @@
       "name": "descriptor",
       "explanation": "Descriptors for randomized terms.",
       "entries": [
+        "standing",
         "advancing",
         "crouching",
         "diagonal",
@@ -205,6 +206,7 @@
         "extended",
         "horizontal",
         "jumping",
+        "flying",
         "sacrificial",
         "spinning",
         "surprise",
@@ -228,6 +230,7 @@
         "inside",
         "inverted",
         "outside",
+        "overhand",
         "overhead",
         "rear",
         "rising",
@@ -276,6 +279,7 @@
         "slash",
         "stab",
         "punch",
+        "pound",
         "thrust",
         "chop",
         "swing",
@@ -285,6 +289,7 @@
         "choke",
         "claw",
         "rake",
+        "twister",
         "barrage",
         "takedown",
         "throw"
@@ -296,7 +301,9 @@
       "entries": [
         "in reverse",
         "while charging",
-        "while retreating"
+        "while retreating",
+        "followed by {random}",
+        "combined with {random}"
       ]
     },
     {

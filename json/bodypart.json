@@ -11,7 +11,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-04",
+  "date": "2018-06-05",
   "authors": "ELF Vesala.",
   "sources": "InnerBody.com, MedicineNet.com, TeachMeAnatomy.com, Wikipedia.org",
   "genre": "universal",
@@ -953,7 +953,8 @@
       "entries": [
         "{attribute}",
         "{feature}",
-        "{main}"
+        "{main}",
+        "{trophies}"
       ]
     },
     {
@@ -1059,6 +1060,34 @@
         "torso",
         "leg",
         "leg"
+      ]
+    },
+    {
+      "name": "trophies",
+      "explanation": "Cut off body parts worn as victory mementos.",
+      "entries": [
+        "teeth",
+        "ears",
+        "noses",
+        "fingers",
+        "scalps",
+        "bones",
+        "skulls",
+        "heads"
+      ]
+    },
+    {
+      "name": "trophy",
+      "explanation": "Cut off body part worn as a victory memento.",
+      "entries": [
+        "tooth",
+        "ear",
+        "nose",
+        "finger",
+        "scalp",
+        "bone",
+        "skull",
+        "head"
       ]
     }
   ]

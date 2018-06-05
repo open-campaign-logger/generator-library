@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-04",
+  "date": "2018-06-05",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -59,8 +59,7 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{distinction}",
-        "{distinction}, {feature}"
+        "{distinction}"
       ]
     },
     {
@@ -96,7 +95,8 @@
       "explanation": "Usual types.",
       "entries": [
         "{adornment}",
-        "{equipment}"
+        "{combat}",
+        "{possession}"
       ]
     },
     {
@@ -104,6 +104,7 @@
       "explanation": "Unusual types.",
       "entries": [
         "{modification}",
+        "{sensory}",
         "{trophy}"
       ]
     },
@@ -120,11 +121,19 @@
       ]
     },
     {
-      "name": "equipment",
-      "explanation": "Distinctive possessions.",
+      "name": "combat",
+      "explanation": "Distinctive combat styles.",
       "entries": [
-        "{!carries} {!attribute} {lib:!equipment#summary}",
-        "{!carries} {!attribute} {lib:!musical_instrument}"
+        "Uses {lib:attack#random} as a special combat move"
+      ]
+    },
+    {
+      "name": "possession",
+      "explanation": "Distinctive equipment and other possessions.",
+      "entries": [
+        "{!carries} {!attribute} {lib:!equipment#summary} {carry}",
+        "{!carries} {!attribute} {lib:!musical_instrument} {carry}",
+        "has a {lib:pet#summary} as a companion"
       ]
     },
     {
@@ -147,14 +156,23 @@
       ]
     },
     {
+      "name": "sensory",
+      "explanation": "Distinctive smell.",
+      "entries": [
+        "smells like {lib:aroma#monster}",
+        "{emits} when {acting}"
+      ]
+    },
+    {
       "name": "trophy",
       "explanation": "Distinctive trophies.",
       "entries": [
-        "{carries} an old enemy's {lib:!clothing#medieval male} as {booty}",
-        "{carries} a piece of an old enemy's {lib:armor#summary} as {booty}",
         "{wears} {attribute} {lib:!color#prime} and {lib:!color#prime} banner",
-        "boasts {old} {lib:weapon#melee} as {booty}",
-        "{carries} an enemy's cut off head as {booty}"
+        "{wears} a looted {lib:!jewelry#summary} as {booty}",
+        "{carries} an old enemy's {lib:!clothing#medieval male} as {booty}",
+        "{wears} a piece of an old enemy's {lib:armor#summary} as {booty}",
+        "{wields} {old} {lib:weapon#melee} as {booty}",
+        "{carries} enemies' cut off {lib:bodypart#trophies} as {booty}"
       ]
     },
     {
@@ -325,6 +343,39 @@
       ]
     },
     {
+      "name": "acting",
+      "explanation": "Various actions.",
+      "format": "Roars when -- ",
+      "entries": [
+        "attacking",
+        "changing position",
+        "charging",
+        "defending",
+        "measuring the opposition",
+        "preparing to attack",
+        "retreating",
+        "taking cover",
+        "uses an ability",
+        "wounded"
+      ]
+    },
+    {
+      "name": "booty",
+      "explanation": "Synonyms for victory trophies.",
+      "entries": [
+        "a battle trophy",
+        "booty",
+        "decoration",
+        "a keepsake",
+        "a memento",
+        "a prize",
+        "a souvenir",
+        "a trophy",
+        "a token of victory",
+        "the spoils of victory"
+      ]
+    },
+    {
       "name": "carries",
       "explanation": "Synonyms for carrying something.",
       "format": "-- X",
@@ -335,6 +386,27 @@
         "is lugging",
         "is packing",
         "totes"
+      ]
+    },
+    {
+      "name": "emits",
+      "explanation": "",
+      "entries": [
+        "barks",
+        "bellows",
+        "cackles",
+        "growls",
+        "howls",
+        "murmurs",
+        "roars",
+        "screams",
+        "shouts",
+        "shrieks",
+        "wails",
+        "whimpers",
+        "whines",
+        "whispers",
+        "yells"
       ]
     },
     {
@@ -364,22 +436,6 @@
       ]
     },
     {
-      "name": "booty",
-      "explanation": "Synonyms for victory trophies.",
-      "entries": [
-        "a battle trophy",
-        "booty",
-        "decoration",
-        "a keepsake",
-        "a memento",
-        "a prize",
-        "a souvenir",
-        "a trophy",
-        "a token of victory",
-        "the spoils of victory"
-      ]
-    },
-    {
       "name": "wears",
       "explanation": "Synonyms for being clothed in something.",
       "format": "-- clothing / jewelry",
@@ -388,6 +444,20 @@
         "has slipped on",
         "wears",
         "is wearing"
+      ]
+    },
+    {
+      "name": "wields",
+      "explanation": "Synonyms for being using something as a weapon.",
+      "format": "-- weapon",
+      "entries": [
+        "brandishes",
+        "employs",
+        "holds",
+        "swings",
+        "uses",
+        "utilizes",
+        "wields"
       ]
     },
     {
@@ -417,19 +487,33 @@
       ]
     },
     {
+      "name": "carry",
+      "explanation": "Carrying positions for equipment.",
+      "entries": [
+        "hidden under {!attribute} {lib:fabric#summary} covering",
+        "close by",
+        "prominently displayed",
+        "like a trophy",
+        "like a treasure"
+      ]
+    },
+    {
       "name": "feature",
       "explanation": "Features appended to the end of the result.",
       "format": "It seems to be --",
       "entries": [
-        "hidden under {!attribute} {lib:fabric#summary} covering",
-        "prominently displayed"
+        ""
       ]
     },
     {
       "name": "monster",
       "explanation": "Distinctive features for monsters.",
       "entries": [
+        "{adornment}",
+        "{combat}",
         "{modification}",
+        "{possession}",
+        "{sensory}",
         "{trophy}"
       ]
     },

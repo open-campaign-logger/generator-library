@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "Add content.",
   "see": "",
-  "date": "2018-05-28",
+  "date": "2018-06-05",
   "authors": "ELF Vesala.",
   "sources": "Wikipedia.org.",
   "genre": "universal",
@@ -404,6 +404,7 @@
       "entries": [
         "{attribute}",
         "{feature}",
+        "{monster}",
         "{smell}",
         "{smelling}",
         "{taste}",
@@ -462,6 +463,15 @@
         "distinct",
         "unmistakable",
         "strong"
+      ]
+    },
+    {
+      "name": "monster",
+      "explanation": "Odors for monsters.",
+      "entries": [
+        "{dark}",
+        "{rotting}",
+        "{stingy}"
       ]
     },
     {

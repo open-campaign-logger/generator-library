@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "edge, flaw, quirk",
-  "date": "2018-06-02",
+  "date": "2018-06-05",
   "authors": "Ron Calbick (as extracted from his goblin-names.json generator), ELF Vesala.",
   "sources": "Ron Calbick: 'Goblin Generator', Wikipedia.org",
   "genre": "universal",
@@ -88,6 +88,7 @@
       "entries": [
         "{melee}",
         "{ranged}",
+        "{stealth}",
         "{war}"
       ]
     },
@@ -181,6 +182,16 @@
       "explanation": "Strategies for long-distance combat.",
       "entries": [
         "uses focused fire"
+      ]
+    },
+    {
+      "**************************************************": "STEALTH"
+    },
+    {
+      "name": "stealth",
+      "explanation": "Strategies for unnoticed approaches.",
+      "entries": [
+        "uses poison"
       ]
     },
     {
