@@ -12,7 +12,7 @@
   "note": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-02",
+  "date": "2018-06-05",
   "authors": "ELF Vesala",
   "sources": "name-random",
   "genre": "universal",
@@ -68,9 +68,9 @@
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "{female}, known as {female byname}",
-        "{male}, known as {male byname}",
-        "{unisex}, known as {unisex byname}"
+        "{female}, {alias} {female byname}",
+        "{male}, {alias} {male byname}",
+        "{unisex}, {alias} {unisex byname}"
       ]
     },
     {
@@ -1941,8 +1941,25 @@
       "name": "special",
       "explanation": "Special name tables.",
       "entries": [
+        "{aka}",
         "{hermafrodite}",
         "{neuter}"
+      ]
+    },
+    {
+      "name": "alias",
+      "explanation": "Synonyms for Also Known As.",
+      "entries": [
+        "alias",
+        "also called",
+        "also known as",
+        "better known as",
+        "known as",
+        "named as",
+        "often described as",
+        "otherwise known as",
+        "variously known as",
+        "widely known as"
       ]
     },
     {

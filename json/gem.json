@@ -1,5 +1,5 @@
 {
-  "name": "gem table",
+  "name": "gem",
   "resultPattern": "{init}{result}",
   "globals": {
     "variable": ""
@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "More content, better organization.",
   "see": "material",
-  "date": "2018-06-01",
+  "date": "2018-06-05",
   "authors": "Johnn Four, Jochen Linnemann, ELF Vesala.",
   "sources": "GemSociety.org, Wikipedia.org.",
   "genre": "universal",
@@ -185,10 +185,11 @@
       "name": "size",
       "explanation": "The size of the gemstone.",
       "entries": [
-        "tiny",
-        "small",
-        "medium-sized",
-        "large"
+        "a tiny",
+        "a small",
+        "an average-sized",
+        "a medium-sized",
+        "a large"
       ]
     },
     {

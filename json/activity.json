@@ -186,7 +186,7 @@
         "looking for something to drink",
         "looking for something to eat",
         "looking for resources",
-        "searching for {object}"
+        "searching for {object description} {object}"
       ]
     },
     {
@@ -202,7 +202,7 @@
       "explanation": "Guarding activities.",
       "entries": [
         "on guard",
-        "guarding {object}"
+        "guarding {object description} {object}"
       ]
     },
     {
@@ -238,8 +238,8 @@
       "explanation": "Work-related activities.",
       "entries": [
         "working",
-        "carrying {object}",
-        "trading {object}"
+        "carrying {object description} {object}",
+        "trading {object description} {object}"
       ]
     },
     {
@@ -298,6 +298,19 @@
         "{lib:equipment#summary}",
         "illegal substances",
         "{valuables}"
+      ]
+    },
+    {
+      "name": "object description",
+      "explanation": "",
+      "entries": [
+        "a battered",
+        "a dirty",
+        "a cheap looking",
+        "a poorly constructed",
+        "a strange-looking",
+        "an apparently prized",
+        "an expensive looking"
       ]
     },
     {

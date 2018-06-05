@@ -96,7 +96,8 @@
       "entries": [
         "{adornment}",
         "{combat}",
-        "{possession}"
+        "{possession}",
+        "{wound}"
       ]
     },
     {
@@ -124,7 +125,7 @@
       "name": "combat",
       "explanation": "Distinctive combat styles.",
       "entries": [
-        "Uses {lib:attack#random} as a special combat move"
+        "uses a special combat move of {lib:attack#random}"
       ]
     },
     {
@@ -133,7 +134,7 @@
       "entries": [
         "{!carries} {!attribute} {lib:!equipment#summary} {carry}",
         "{!carries} {!attribute} {lib:!musical_instrument} {carry}",
-        "has a {lib:pet#summary} as a companion"
+        "has a domesticated {lib:pet#summary} as a companion"
       ]
     },
     {
@@ -152,7 +153,7 @@
         "has blackened teeth",
         "has sharpened teeth",
         "has cut ears",
-        "has the tongue cut in half"
+        "has their tongue cut in half"
       ]
     },
     {
@@ -173,6 +174,24 @@
         "{wears} a piece of an old enemy's {lib:armor#summary} as {booty}",
         "{wields} {old} {lib:weapon#melee} as {booty}",
         "{carries} enemies' cut off {lib:bodypart#trophies} as {booty}"
+      ]
+    },
+    {
+      "name": "wound",
+      "explanation": "Old injuries.",
+      "entries": [
+        "is spattered with dried blood",
+        "has a badly healed wound {lib:bodypart#scar}",
+        "has a festering wound {lib:bodypart#scar}",
+        "has burn marks {lib:bodypart#scar}",
+        "has a deep scar {lib:bodypart#scar}",
+        "has a scarred face",
+        "has a broken tooth",
+        "has a broken nose",
+        "has a strangely twisted limb",
+        "is limping",
+        "has a blind eye",
+        "is missing {lib:bodypart#missing}"
       ]
     },
     {
@@ -441,7 +460,6 @@
       "format": "-- clothing / jewelry",
       "entries": [
         "has put on",
-        "has slipped on",
         "wears",
         "is wearing"
       ]
@@ -479,7 +497,6 @@
         "an apparently important",
         "a battered",
         "a blood-spattered",
-        "a broken",
         "a dirty",
         "an old",
         "a poorly constructed",
@@ -491,7 +508,7 @@
       "explanation": "Carrying positions for equipment.",
       "entries": [
         "hidden under {!attribute} {lib:fabric#summary} covering",
-        "close by",
+        "by its side",
         "prominently displayed",
         "like a trophy",
         "like a treasure"

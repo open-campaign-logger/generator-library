@@ -1,8 +1,8 @@
 {
   "name": "monster",
-  "resultPattern": "{init}{result}",
+  "resultPattern": "{lib:formatting#cl}{init}{result}",
   "globals": {
-    "monster": "",
+    "monster": "{monster}",
     "actant": "monster",
     "actants": "monsters",
     "actantgroup": "pack",
@@ -70,7 +70,7 @@
         "{attribute} {g:monster}, {lib:complication#creature}",
         "{lib:aspect-creature#summary} {g:monster}",
         "{lib:aspect-creature#summary} {g:monster}, {lib:complication#creature}",
-        "{g:monster} specialized {lib:attack#summary} attacks",
+        "{g:monster} specialized in {lib:attack#summary} attacks",
         "{attribute} {g:monster} specialized in {lib:attack#summary} attacks",
         "{g:monster} specialized in {lib:attack#summary} attacks, {lib:complication#creature}",
         "{lib:aspect-creature#summary} {g:monster} specialized in {lib:attack#summary} attacks"
@@ -80,14 +80,14 @@
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {attribute} {g:monster} {looks} {activity}. The {synonym} is {personality}. \r\nWhen preparing to fight, it {strategy}. \r\nIn combat, it often {signature}."
+        "{g:startheading}{name}{g:endheading} {g:para}The {attribute} {g:monster} {looks} {activity}. The {synonym} is of {personality} nature and {distinction}.  {g:para}{g:startbold}Strategy{g:endbold}: When entering battle, it {strategy}.  {g:para}{g:startbold}Melee{g:endbold}: In close combat, it {often} {signature}."
       ]
     },
     {
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Monster}: {g:monster} \r\n{b|Name}: {name} \r\n{b|Activity}: {looks} {activity} \r\n{b|Personality}: The {synonym} is {personality}. \r\n{b|Strategy}: {often} {strategy}. \r\n{b|Combat}: Often {signature}."
+        "{g:startbold}Name{g:endbold}: {name}  {g:para}{g:startbold}Monster{g:endbold}: {g:monster}  {g:para}{g:startbold}Activity{g:endbold}: {looks} {activity}  {g:para}{g:startbold}Personality{g:endbold}: The {synonym} is of {personality} nature.  {g:para}{g:startbold}Strategy{g:endbold}: {!often} {strategy}. {g:para}{g:startbold}Melee{g:endbold}: {!often} {signature}."
       ]
     },
     {
@@ -109,15 +109,23 @@
       "explanation": "Usual types.",
       "entries": [
         "{humanoid}",
-        "{fantasy}"
+        "{reptilian}",
+        "{amphibian}",
+        "{undead}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Unusual types.",
       "entries": [
-        "{vermin}",
-        "{myth}"
+        "{construct}",
+        "{halfhuman}",
+        "{fey}",
+        "{lycanthrope}",
+        "{spirit}",
+        "{dragon}",
+        "{demonic}",
+        "{infernal}"
       ]
     },
     {
@@ -188,16 +196,30 @@
       "name": "humanoid",
       "explanation": "Monsters with the approximate shape of a human.",
       "entries": [
+        "{goblinoid}",
         "{crossbreed}",
         "{troll}",
         "{giant}"
       ]
     },
     {
+      "name": "goblinoid",
+      "explanation": "Goblin-like creatures",
+      "entries": [
+        "goblin",
+        "hobgoblin",
+        "bugbear",
+        "orc"
+      ]
+    },
+    {
       "name": "crossbreed",
       "explanation": "Crossbred monsters.",
       "entries": [
-        "half-ogre"
+        "half-orc",
+        "half-ogre",
+        "half-troll",
+        "half-giant"
       ]
     },
     {
@@ -228,17 +250,6 @@
         "cyclops",
         "storm giant",
         "cloud giant"
-      ]
-    },
-    {
-      "--------------------------------------------------": "VERMIN"
-    },
-    {
-      "name": "vermin",
-      "explanation": "Monstrous insects, worms, etc.",
-      "entries": [
-        "monster bug",
-        "monster rat"
       ]
     },
     {
@@ -544,7 +555,6 @@
         "{myth}",
         "{ooze}",
         "{fungus}",
-        "{monstrous humanoid}",
         "{avian}",
         "{reptilian}",
         "{amphibian}",
@@ -576,13 +586,6 @@
       ]
     },
     {
-      "name": "monstrous humanoid",
-      "explanation": "Humanoid creature with monstrous features.",
-      "entries": [
-        "orc"
-      ]
-    },
-    {
       "name": "avian",
       "explanation": "Humanoid creature with bird-like features.",
       "entries": [
@@ -596,7 +599,7 @@
       "entries": [
         "serpent man",
         "snakeman",
-        "lizardfolk",
+        "lizard creature",
         "reptilian",
         "saurian",
         "draconian",
@@ -607,7 +610,7 @@
       "name": "amphibian",
       "explanation": "Humanoid creature with frog-like features.",
       "entries": [
-        "frog folk"
+        "frog creature"
       ]
     },
     {
@@ -964,7 +967,7 @@
       "name": "piscine",
       "explanation": "Humanoid creature with fish-like features.",
       "entries": [
-        "merfolk",
+        "mercreature",
         "merrow",
         "selkie",
         "siren",
@@ -990,7 +993,7 @@
       "name": "name",
       "explanation": "Names for monsters.",
       "entries": [
-        "{|{lib:name-monster#description}|tcase}"
+        "{lib:name-monster#description}"
       ]
     },
     {
@@ -998,6 +1001,13 @@
       "explanation": "Pursuits when an encounter starts.",
       "entries": [
         "{lib:activity#summary}"
+      ]
+    },
+    {
+      "name": "distinction",
+      "explanation": "Recognizable traits for monsters.",
+      "entries": [
+        "{lib:distinction#monster}"
       ]
     },
     {
@@ -1019,13 +1029,6 @@
       "explanation": "Combat tactics.",
       "entries": [
         "{lib:strategy#combat}"
-      ]
-    },
-    {
-      "name": "trait",
-      "explanation": "Recognizable traits for monsters.",
-      "entries": [
-        "{lib:distinction#monster}"
       ]
     },
     {
@@ -1082,21 +1085,25 @@
       "explanation": "Special tables.",
       "entries": [
         "{attribute}",
-        "{feature}"
+        "{feature}",
+        "{plantlike}"
       ]
     },
     {
       "name": "attribute",
       "explanation": "Attribute prepended to the front of the result.",
       "entries": [
-        "burnt",
-        "crazed",
-        "diseased",
         "dying",
-        "filthy",
-        "leprous",
+        "burnt",
         "scarred",
-        "sickly"
+        "diseased",
+        "sickly",
+        "crazed",
+        "leprous",
+        "filthy",
+        "hungry",
+        "tired",
+        "alert"
       ]
     },
     {
@@ -1105,6 +1112,14 @@
       "format": "It seems to be --",
       "entries": [
         ""
+      ]
+    },
+    {
+      "name": "plantlike",
+      "explanation": "Plant-like monsters.",
+      "entries": [
+        "{ooze}",
+        "{fungus}"
       ]
     },
     {

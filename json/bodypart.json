@@ -954,7 +954,10 @@
         "{attribute}",
         "{feature}",
         "{main}",
-        "{trophies}"
+        "{missing}",
+        "{scar}",
+        "{trophies}",
+        "{trophy}"
       ]
     },
     {
@@ -1048,7 +1051,7 @@
       ]
     },
     {
-      "--------------------------------------------------": ""
+      "--------------------------------------------------": "LOCATIONS"
     },
     {
       "name": "main",
@@ -1060,6 +1063,36 @@
         "torso",
         "leg",
         "leg"
+      ]
+    },
+    {
+      "name": "missing",
+      "explanation": "Missing body parts.",
+      "entries": [
+        "a tooth",
+        "several teeth",
+        "a finger",
+        "several fingers",
+        "an ear",
+        "an eye"
+      ]
+    },
+    {
+      "name": "scar",
+      "explanation": "Wound and scar locations",
+      "entries": [
+        "across the forehead",
+        "across the face",
+        "over an eye",
+        "across a cheek",
+        "on the edge of the mouth",
+        "on the jaw",
+        "on the throat",
+        "along an arm",
+        "across the chest",
+        "across the stomach",
+        "across the back",
+        "on a leg"
       ]
     },
     {
