@@ -95,7 +95,6 @@
       "explanation": "Usual types.",
       "entries": [
         "{adornment}",
-        "{combat}",
         "{possession}",
         "{wound}"
       ]
@@ -119,13 +118,6 @@
         "{!wears} {!attribute} {lib:!color#prime} {lib:!clothing#medieval male}",
         "{!wears} {!attribute} {lib:!armor#summary}",
         "{!wears} {!attribute} {lib:!jewelry#summary}"
-      ]
-    },
-    {
-      "name": "combat",
-      "explanation": "Distinctive combat styles.",
-      "entries": [
-        "uses a special combat move of {lib:attack#random}"
       ]
     },
     {
@@ -528,7 +520,6 @@
       "explanation": "Distinctive features for monsters.",
       "entries": [
         "{adornment}",
-        "{combat}",
         "{modification}",
         "{possession}",
         "{sensory}",

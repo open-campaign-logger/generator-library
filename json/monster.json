@@ -823,20 +823,13 @@
       "name": "corporeal",
       "explanation": "Dead creatures animated to unlife.",
       "entries": [
-        "{vampire}",
         "ghoul",
         "lich",
         "mummy",
         "revenant",
         "skeleton",
         "wight",
-        "wraith"
-      ]
-    },
-    {
-      "name": "vampire",
-      "explanation": "Vampiric undead.",
-      "entries": [
+        "wraith",
         "vampire"
       ]
     },
@@ -846,9 +839,9 @@
       "entries": [
         "linnorm",
         "wyvern",
+        "drake",
         "dragon",
-        "wyrm",
-        "tarasque"
+        "wyrm"
       ]
     },
     {

@@ -98,7 +98,8 @@
       "entries": [
         "{defense}",
         "{offensive defense}",
-        "{offense}"
+        "{offense}",
+        "{maneuver}"
       ]
     },
     {
@@ -150,6 +151,13 @@
       "explanation": "Signature moves for attacking when defending.",
       "entries": [
         "parries and immediately counterattacks"
+      ]
+    },
+    {
+      "name": "maneuver",
+      "explanation": "Special combat moves.",
+      "entries": [
+        "uses a special combat move of {lib:attack#random}"
       ]
     },
     {

@@ -165,7 +165,6 @@
         "moving around",
         "looking around",
         "looking for something to eat",
-        "searching for something",
         "making a mental map of the area",
         "tracking something"
       ]
@@ -186,7 +185,7 @@
         "looking for something to drink",
         "looking for something to eat",
         "looking for resources",
-        "searching for {object description} {object}"
+        "searching for something"
       ]
     },
     {
@@ -296,7 +295,6 @@
       "explanation": "Targets of citizens' activities.",
       "entries": [
         "{lib:equipment#summary}",
-        "illegal substances",
         "{valuables}"
       ]
     },
