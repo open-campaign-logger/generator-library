@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-05",
+  "date": "2018-06-06",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -158,10 +158,11 @@
     },
     {
       "name": "sensory",
-      "explanation": "Distinctive smell.",
+      "explanation": "Distinctive sensory perceptions.",
       "entries": [
         "smells like {lib:aroma#monster}",
-        "{emits} when {acting}"
+        "{emits} when {acting}",
+        "feels {tactile} to touch"
       ]
     },
     {
@@ -372,7 +373,6 @@
         "defending",
         "measuring the opposition",
         "preparing to attack",
-        "retreating",
         "taking cover",
         "uses an ability",
         "wounded"
@@ -487,7 +487,8 @@
       "entries": [
         "{attribute}",
         "{feature}",
-        "{monster}"
+        "{monster}",
+        "{tactile}"
       ]
     },
     {
@@ -532,6 +533,26 @@
         "{possession}",
         "{sensory}",
         "{trophy}"
+      ]
+    },
+    {
+      "name": "tactile",
+      "explanation": "Touch sensations.",
+      "entries": [
+        "caustic",
+        "coarse",
+        "cold",
+        "corrugated",
+        "dry",
+        "gooey",
+        "grainy",
+        "rough",
+        "slimy",
+        "smooth",
+        "soft",
+        "viscous",
+        "wet",
+        "wrinkled"
       ]
     },
     {

@@ -20,7 +20,7 @@
   "bugs": "",
   "to do": "Categorize monsters by type.",
   "see": "animal, attack, citizen, complication, encounter, nonhuman",
-  "date": "2018-06-05",
+  "date": "2018-06-06",
   "authors": "ELF Vesala.",
   "sources": "D20SRD.org, DanDWiki.com, Johnn Four's Musings newsletter 2018-06-08, Wikia.com, Wikipedia.org",
   "genre": "fantasy",
@@ -589,6 +589,7 @@
       "name": "avian",
       "explanation": "Humanoid creature with bird-like features.",
       "entries": [
+        "bird {synonym}",
         "tengu",
         "avian"
       ]
@@ -599,7 +600,7 @@
       "entries": [
         "serpent man",
         "snakeman",
-        "lizard creature",
+        "lizard {synonym}",
         "reptilian",
         "saurian",
         "draconian",
@@ -610,7 +611,10 @@
       "name": "amphibian",
       "explanation": "Humanoid creature with frog-like features.",
       "entries": [
-        "frog creature"
+        "frog {synonym}",
+        "toad {synonym}",
+        "newt {synonym}",
+        "salamander {synonym}"
       ]
     },
     {
@@ -692,7 +696,9 @@
       "name": "outsider",
       "explanation": "Extraplanar creatures from other states of existence.",
       "entries": [
-        "extraplanar creature"
+        "extraplanar {synonym}",
+        "alien {synonym}",
+        "{synonym} from another world"
       ]
     },
     {
@@ -967,7 +973,7 @@
       "name": "piscine",
       "explanation": "Humanoid creature with fish-like features.",
       "entries": [
-        "mercreature",
+        "mer{synonym}",
         "merrow",
         "selkie",
         "siren",
@@ -1000,7 +1006,7 @@
       "name": "activity",
       "explanation": "Pursuits when an encounter starts.",
       "entries": [
-        "{lib:activity#summary}"
+        "{lib:activity#monster}"
       ]
     },
     {
@@ -1019,7 +1025,7 @@
     },
     {
       "name": "signature",
-      "explanation": "Signature moves.",
+      "explanation": "Signature moves in combat.",
       "entries": [
         "{lib:signature#summary}"
       ]
@@ -1028,7 +1034,7 @@
       "name": "strategy",
       "explanation": "Combat tactics.",
       "entries": [
-        "{lib:strategy#combat}"
+        "{lib:strategy#melee}"
       ]
     },
     {
@@ -1038,21 +1044,16 @@
       "name": "synonym",
       "explanation": "Variant expressions for generator subject matter.",
       "entries": [
-        "aberration",
-        "abomination",
         "beast",
         "creature",
-        "deformity",
         "fiend",
         "horror",
-        "miscreation",
-        "monster",
-        "monstrosity"
+        "monster"
       ]
     },
     {
       "name": "looks",
-      "explanation": "Synonyms for looking like something.",
+      "explanation": "Variant expressions for looking like something.",
       "format": "-- in good condition.",
       "entries": [
         "appears to be",

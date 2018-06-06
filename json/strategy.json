@@ -14,9 +14,9 @@
   "bugs": "",
   "to do": "",
   "see": "edge, flaw, quirk",
-  "date": "2018-06-05",
+  "date": "2018-06-06",
   "authors": "Ron Calbick (as extracted from his goblin-names.json generator), ELF Vesala.",
-  "sources": "Ron Calbick: 'Goblin Generator', Wikipedia.org",
+  "sources": "Ron Calbick: 'Goblin Generator', TheLostBoys.org, Wikipedia.org",
   "genre": "universal",
   "categories": [
     "character",
@@ -144,23 +144,79 @@
       "name": "melee",
       "explanation": "Strategies for close-up physical conflicts.",
       "entries": [
+        "{melee movement}",
         "{melee defense}",
-        "{melee offense}"
+        "{melee offense}",
+        "{melee trick}"
+      ]
+    },
+    {
+      "name": "melee movement",
+      "explanation": "Melee movement related tactics.",
+      "entries": [
+        "tries to find a good defensive location and then holds the position",
+        "moves slowly to maintain maximum defense",
+        "tries to use the environment to quickly escape after attacking",
+        "swaps position between attacks to avoid being hit",
+        "moves quickly back and forth between attacks",
+        "tries to stay in constant motion"
       ]
     },
     {
       "name": "melee defense",
-      "explanation": "Melee offense related tactics.",
+      "explanation": "Melee defense related tactics.",
       "entries": [
-        "never backs down from a fight"
+        "is willing to sacrifice themselves to help allies",
+        "leaves their defense purposefully open to lure the opponent closer",
+        "takes a position that creates as small target as possible",
+        "tries to create well defended anchor points to avoid retreating",
+        "attempts to use terrain to prevent the opponent from charging",
+        "attempts to distract the opponents from attacking allies",
+        "stays in defensive pose but occasionally launches quick attacks",
+        "holds a defensive position but attacks constantly",
+        "never backs down from combat"
       ]
     },
     {
       "name": "melee offense",
       "explanation": "Melee offense related tactics.",
       "entries": [
+        "likes to carefully observe the opponent to find a weak spot",
+        "tries to unbalance opponents before striking",
+        "attempts to sneak into a position for a surprise attack",
+        "prefers sneak attacks from hiding",
+        "prefers to attack from behind cover",
+        "prefers to attack from back",
+        "tries to stay low and attack from below",
         "attempts to grapple foes, usually going for the shins and ankles",
-        "likes throwing objects at enemies during combat, such as sand or anything else nearby"
+        "attempts to call reinforcements before attacking",
+        "prefers flank attacks to the side of the opponent",
+        "attempts to reduce the opponent's mobility by falling on them",
+        "prefers to attack from above",
+        "likes to use fire and flames to disrupt the opponent",
+        "tries to force the opponent into a tight spot to reduce their mobility",
+        "employs hit and run tactics",
+        "likes to circle around the opponent to find an opening",
+        "likes to forcefully push the enemy to make them move",
+        "likes to push the enemy into dangerous spots",
+        "likes to advance quickly to gain new ground",
+        "attempts to break enemy lines and prevent them from regrouping",
+        "attempts to divide the enemy forces and handle each pocket separately",
+        "tries to break the enemy's morale with violent atrocities"
+      ]
+    },
+    {
+      "name": "melee trick",
+      "explanation": "Melee trick related tactics.",
+      "entries": [
+        "likes throwing objects at enemies during combat, such as sand or anything else nearby",
+        "tries to appear more formidable than actually is",
+        "pretends to be more vulnerable than actually is",
+        "usually makes several feint attacks before striking",
+        "acts as a bait to lead the opponent into a dangerous spot",
+        "likes to pretend being wounded and then making a surprise attack",
+        "tries to find a way to use the environment to make the opponent retreat",
+        "attempts to capture prisoners and force the opponent to surrender"
       ]
     },
     {
@@ -170,8 +226,13 @@
       "name": "negotiation",
       "explanation": "Strategies for trading, politics, etc.",
       "entries": [
+        "makes only promises that intends to keep",
+        "presents modest requirements but is not willing to back down",
         "follows the 'divide and conquer' principle",
-        "attempts eliminate the most dangerous enemy first"
+        "attempts eliminate the most dangerous enemy first",
+        "likes make promises that does not plan to keep",
+        "attempts to create false impressions without actually lying",
+        "set their demands high but is willing to lower them considerably"
       ]
     },
     {
@@ -181,7 +242,11 @@
       "name": "ranged",
       "explanation": "Strategies for long-distance combat.",
       "entries": [
-        "uses focused fire"
+        "focuses ranged attacks only on most strategic areas",
+        "employs focused fire but constantly switches targets",
+        "spreads ranged attacks to wide areas",
+        "employs quicks volleys of ranged attacks and retreating to cover",
+        "employs constant barrages of ranged attacks"
       ]
     },
     {
@@ -191,7 +256,10 @@
       "name": "stealth",
       "explanation": "Strategies for unnoticed approaches.",
       "entries": [
-        "uses poison"
+        "attempts to operate undetected as long as possible",
+        "proceeds slowly but stealthily",
+        "prefers to set up traps beforehand",
+        "prefers to use poison"
       ]
     },
     {

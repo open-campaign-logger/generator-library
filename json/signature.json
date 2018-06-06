@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-05",
+  "date": "2018-06-06",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -106,7 +106,7 @@
       "explanation": "Unusual types.",
       "entries": [
         "{defensive offense}",
-        "{intelligent}",
+        "{psychology}",
         "{trick}"
       ]
     },
@@ -117,22 +117,14 @@
       "name": "defense",
       "explanation": "Signature moves for defending.",
       "entries": [
-        "leaves their defense purposefully open to lure the opponent closer",
-        "takes a position that creates as small target as possible"
+        "curses the opponent while defending"
       ]
     },
     {
       "name": "defensive offense",
       "explanation": "Signature moves for defending while attacking.",
       "entries": [
-        "holds a defensive pose but attacks constantly"
-      ]
-    },
-    {
-      "name": "intelligent",
-      "explanation": "Signature moves for intelligent monsters.",
-      "entries": [
-        "attempts to carve initials on opponent's skin"
+        "attacks with small moves to be able to immediately defend"
       ]
     },
     {
@@ -147,18 +139,25 @@
       ]
     },
     {
+      "name": "psychology",
+      "explanation": "Signature moves for intelligent monsters.",
+      "entries": [
+        "attempts to carve markings on opponent"
+      ]
+    },
+    {
       "name": "offensive defense",
       "explanation": "Signature moves for attacking when defending.",
       "entries": [
-        "parries and immediately counterattacks",
-        "stays in defensive pose but occasionally launches quick attacks"
+        "parries and immediately counterattacks"
       ]
     },
     {
       "name": "trick",
       "explanation": "Tricking-related signature moves.",
       "entries": [
-        "appears not to notice the opponent until quickly attacks without even looking"
+        "appears not to notice the opponent until quickly attacks without even looking",
+        "uses equipment for feint attacks"
       ]
     },
     {
