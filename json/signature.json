@@ -119,6 +119,7 @@
       "entries": [
         "curses the opponent while defending",
         "spits at an advancing enemy",
+        "weaves from side to side to avoid being hit",
         "parries and immediately counterattacks"
       ]
     },
@@ -128,7 +129,8 @@
       "entries": [
         "performs a ritual before combat",
         "sings {song} when joining combat",
-        "asks for forgiveness from a slain enemy"
+        "asks for forgiveness from a slain enemy",
+        "keeps switching between main and backup weapon"
       ]
     },
     {
@@ -148,6 +150,7 @@
       "explanation": "Special combat moves.",
       "entries": [
         "uses a special combat move of {lib:attack#random}",
+        "occasionally pauses and aims carefully",
         "occasionally makes sweeping spin attacks"
       ]
     },
@@ -161,7 +164,8 @@
         "invokes gods to curse the opposition",
         "imitates spellcasting gestures to scare the opponent",
         "attempts to grab some possessions from the opponent",
-        "attempts to carve markings on opponent"
+        "attempts to carve markings on opponent",
+        "selects one opponent and stalks that until either is dead"
       ]
     },
     {
@@ -169,7 +173,8 @@
       "explanation": "Tricking-related signature moves.",
       "entries": [
         "appears not to notice the opponent until quickly attacks without even looking",
-        "uses equipment for feint attacks"
+        "uses equipment for feint attacks",
+        "tries to block opponent's view and then quickly attacks"
       ]
     },
     {
