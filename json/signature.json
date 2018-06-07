@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-06",
+  "date": "2018-06-07",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -97,7 +97,6 @@
       "explanation": "Usual types.",
       "entries": [
         "{defense}",
-        "{offensive defense}",
         "{offense}",
         "{maneuver}"
       ]
@@ -106,7 +105,7 @@
       "name": "rare",
       "explanation": "Unusual types.",
       "entries": [
-        "{defensive offense}",
+        "{habit}",
         "{psychology}",
         "{trick}"
       ]
@@ -118,20 +117,25 @@
       "name": "defense",
       "explanation": "Signature moves for defending.",
       "entries": [
-        "curses the opponent while defending"
+        "curses the opponent while defending",
+        "spits at an advancing enemy",
+        "parries and immediately counterattacks"
       ]
     },
     {
-      "name": "defensive offense",
-      "explanation": "Signature moves for defending while attacking.",
+      "name": "habit",
+      "explanation": "General behavior.",
       "entries": [
-        "attacks with small moves to be able to immediately defend"
+        "performs a ritual before combat",
+        "sings {song} when joining combat",
+        "asks for forgiveness from a slain enemy"
       ]
     },
     {
       "name": "offense",
       "explanation": "Signature moves for attacks.",
       "entries": [
+        "favors {lib:bodypart#main} attacks",
         "rears back before lunging",
         "ducks down and leaps to attack",
         "strikes quick hits towards the opponent's throat",
@@ -140,24 +144,24 @@
       ]
     },
     {
-      "name": "psychology",
-      "explanation": "Signature moves for intelligent monsters.",
-      "entries": [
-        "attempts to carve markings on opponent"
-      ]
-    },
-    {
-      "name": "offensive defense",
-      "explanation": "Signature moves for attacking when defending.",
-      "entries": [
-        "parries and immediately counterattacks"
-      ]
-    },
-    {
       "name": "maneuver",
       "explanation": "Special combat moves.",
       "entries": [
-        "uses a special combat move of {lib:attack#random}"
+        "uses a special combat move of {lib:attack#random}",
+        "occasionally makes sweeping spin attacks"
+      ]
+    },
+    {
+      "name": "psychology",
+      "explanation": "Signature moves for intelligent monsters.",
+      "entries": [
+        "dances victory dances even before combat",
+        "taunts opponents before combat",
+        "tries to scare opponents by describing their gory deaths",
+        "invokes gods to curse the opposition",
+        "imitates spellcasting gestures to scare the opponent",
+        "attempts to grab some possessions from the opponent",
+        "attempts to carve markings on opponent"
       ]
     },
     {
@@ -385,7 +389,8 @@
       "explanation": "Special tables.",
       "entries": [
         "{attribute}",
-        "{feature}"
+        "{feature}",
+        "{song}"
       ]
     },
     {
@@ -401,6 +406,48 @@
       "format": "It seems to be --",
       "entries": [
         "and then quickly retreats"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SONGS"
+    },
+    {
+      "name": "song",
+      "explanation": "Song types.",
+      "entries": [
+        "{song style} {song type}"
+      ]
+    },
+    {
+      "name": "song style",
+      "explanation": "Song types.",
+      "entries": [
+        "a battle",
+        "a joyful",
+        "a merry",
+        "an odd",
+        "a religious",
+        "a rhythmic",
+        "a sad",
+        "a simple",
+        "a solemn",
+        "a traditional"
+      ]
+    },
+    {
+      "name": "song type",
+      "explanation": "Song types.",
+      "entries": [
+        "anthem",
+        "ballad",
+        "canticle",
+        "hymn",
+        "chant",
+        "ditty",
+        "song",
+        "tune",
+        "hymn",
+        "melody"
       ]
     },
     {
