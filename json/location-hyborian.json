@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-05-30",
+  "date": "2018-06-10",
   "authors": "ELF Vesala",
   "sources": "Robert E. Howard: the 'Conan' tales.",
   "genre": "fantasy",
@@ -59,23 +59,32 @@
       "explanation": "More detailed output variations.",
       "entries": [
         "{random} {location}",
+        "{random} {location} {feature}",
+        "{attribute} {random} {location}",
+        "{attribute} {random} {location} {feature}",
         "{location} of {motif}",
-        "{random} {location} of {motif}"
+        "{location} of {motif} {feature}",
+        "{attribute} {location} of {motif}",
+        "{attribute} {location} of {motif} {feature}",
+        "{random} {location} of {motif}",
+        "{random} {location} of {motif} {feature}",
+        "{attribute} {random} {location} of {motif}",
+        "{attribute} {random} {location} of {motif} {feature}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {location} {looks} {random}.",
-        "The place {looks} {random} {location} of {motif}."
+        "The {location} {looks} {random} {synonym}.",
+        "The {synonym} {looks} {random} {location} of {motif}."
       ]
     },
     {
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Location}: {location} \r\n{b|Descriptor}: {ramdom} \r\n{b|Motif}: {motif}"
+        "{b|Location}: {location} \r\n{b|Descriptor}: {random} \r\n{b|Motif}: {motif}"
       ]
     },
     {
@@ -145,12 +154,18 @@
       "explanation": "Central themes for locations.",
       "format": "land of --",
       "entries": [
+        "danger",
+        "delusion",
         "fortune",
         "horror",
+        "menace",
         "mystery",
         "nightmare",
         "peril",
-        "secrecy"
+        "phantasms",
+        "reverie",
+        "secrecy",
+        "tribulations"
       ]
     },
     {
@@ -162,8 +177,8 @@
       "entries": [
         "{beginning}-{ending}",
         "{descriptor}, {beginning}-{ending}",
-        "{beginning}-{ending} {extension}",
-        "{descriptor}, {beginning}-{ending} {extension}"
+        "{beginning}-{ending}, {extension}",
+        "{descriptor}, {beginning}-{ending}, {extension}"
       ]
     },
     {
@@ -236,7 +251,48 @@
       "name": "extension",
       "explanation": "Extensions for randomized terms.",
       "entries": [
-        ""
+        "{magical}",
+        "{vile}"
+      ]
+    },
+    {
+      "name": "magical",
+      "explanation": "Extensions for magical locales.",
+      "entries": [
+        "bewitched",
+        "demoniac",
+        "diabolic",
+        "eerie",
+        "ensorcelled",
+        "fiendish",
+        "haunted",
+        "mysterious",
+        "necromantic",
+        "occult",
+        "otherworldly",
+        "sorcerous",
+        "spectral",
+        "spellbound",
+        "thaumaturgic",
+        "uncanny",
+        "weird"
+      ]
+    },
+    {
+      "name": "vile",
+      "explanation": "Extensions for vile locales.",
+      "entries": [
+        "bestial",
+        "corrupt",
+        "depraved",
+        "foul",
+        "horrid",
+        "loathsome",
+        "miserable",
+        "repugnant",
+        "vicious",
+        "vile",
+        "wicked"
       ]
     },
     {
@@ -247,38 +303,35 @@
       "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
-        "{medieval}",
-        "XXX"
+        "{medieval}"
       ]
     },
     {
       "name": "myth",
       "explanation": "Descriptions for mythic worlds (once thought true).",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
       "name": "medieval",
       "explanation": "Descriptions for medieval worlds (with no magic).",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
       "name": "modern",
       "explanation": "Descriptions for modern worlds.",
       "entries": [
-        "{common}",
-        "XXX"
+        "{common}"
       ]
     },
     {
       "name": "futuristic",
       "explanation": "Descriptions for science fiction worlds.",
       "entries": [
-        "{modern}",
-        "XXX"
+        "{modern}"
       ]
     },
     {
@@ -298,7 +351,16 @@
       "name": "synonym",
       "explanation": "Variant expressions for the generator subject matter.",
       "entries": [
-        "XXX"
+        "ground",
+        "haunt",
+        "locale",
+        "location",
+        "locality",
+        "place",
+        "region",
+        "site",
+        "terrain",
+        "spot"
       ]
     },
     {
@@ -326,7 +388,15 @@
       "name": "attribute",
       "explanation": "Attribute prepended to the front of the result.",
       "entries": [
-        ""
+        "chimeral",
+        "chimerical",
+        "eidolic",
+        "fanciful",
+        "phantasmal",
+        "phantasmic",
+        "phantasmagoric",
+        "shadowy",
+        "unearthly"
       ]
     },
     {
@@ -334,7 +404,13 @@
       "explanation": "Features appended to the end of the result.",
       "format": "It seems to be --",
       "entries": [
-        ""
+        "devoid of redemption",
+        "tainted by the darkest curses",
+        "with barely any traces of civilization",
+        "bellowing with the cries of the innocent",
+        "with a history lost in the mists of time",
+        "apparently accursed by some higher being",
+        "spoken about only in hushed tones"
       ]
     },
     {
