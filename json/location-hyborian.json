@@ -59,13 +59,15 @@
       "explanation": "More detailed output variations.",
       "entries": [
         "{random} {location}",
+        "{random} {location} of {lib:place-hyborian#summary}",
         "{random} {location} {feature}",
         "{attribute} {random} {location}",
+        "{attribute} {random} {location} of {lib:place-hyborian#summary}",
         "{attribute} {random} {location} {feature}",
-        "{location} of {motif}",
-        "{location} of {motif} {feature}",
-        "{attribute} {location} of {motif}",
-        "{attribute} {location} of {motif} {feature}",
+        "{lib:place-hyborian#summary}, {location} of {motif}",
+        "{lib:place-hyborian#summary}, {location} of {motif} {feature}",
+        "{attribute} {lib:place-hyborian#summary}, location} of {motif}",
+        "{attribute} {lib:place-hyborian#summary}, {location} of {motif} {feature}",
         "{random} {location} of {motif}",
         "{random} {location} of {motif} {feature}",
         "{attribute} {random} {location} of {motif}",
@@ -76,12 +78,10 @@
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {location} with its {spectacle} {sentence}.",
-        "The {location} with its {populace} {sentence}.",
-        "The {location} with its {populace} and {spectacle} {sentence}.",
-        "The {location} {sentence}.",
-        "The {synonym} {sentence}.",
-        "The {synonym} {sentence}."
+        "The {location} of {lib:place-hyborian#summary} with its {spectacle} {sentence}.",
+        "The {location} of {lib:place-hyborian#summary} with its {populace} {sentence}.",
+        "The {location} of {lib:place-hyborian#summary} with its {populace} and {spectacle} {sentence}.",
+        "The {location} of {lib:place-hyborian#summary} {sentence}."
       ]
     },
     {
@@ -109,8 +109,8 @@
       "name": "common",
       "explanation": "Common types.",
       "entries": [
-        "{civilized} of {lib:name-random#summary}",
-        "{wilderness} of {lib:name-random#summary}"
+        "{civilized}",
+        "{wilderness}"
       ]
     },
     {
@@ -389,7 +389,7 @@
         "{looks} {!random} {synonym} of {motif}",
         "{looks} {attribute}, {!random} {synonym} of {motif}",
         "lies spread across the {synonym} like a {lib:color#prime} {clothing} beneath the stars",
-        "borders on the {descriptor} lands of {lib:name-random#summary}"
+        "borders on the {descriptor} lands of {lib:place-hyborian#summary}"
       ]
     },
     {
@@ -610,7 +610,6 @@
       "explanation": "Variant expressions for 'haired'.",
       "entries": [
         "haired",
-        "locked",
         "maned"
       ]
     },
