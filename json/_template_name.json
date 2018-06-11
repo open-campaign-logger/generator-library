@@ -1,6 +1,6 @@
 {
   "name": "name-template",
-  "resultPattern": "{result}",
+  "resultPattern": "{init}{result}",
   "globals": {
     "culture": "XXX"
   },
@@ -16,8 +16,9 @@
   "authors": "XXX",
   "sources": "",
   "genre": "XXX",
-  "category": "name",
-  "tags": "#person",
+  "categories": [
+    "name"
+  ],
   "tables": [
     {
       "name": "init",
