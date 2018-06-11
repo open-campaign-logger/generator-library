@@ -58,21 +58,22 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{full}"
+        "the {attribute} {place}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "{place} {looks} {feature}."
+        "{place} {looks} {feature}.",
+        "The {attribute} {place} {looks} {feature}."
       ]
     },
     {
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Place}: {place} \r\n{b|Unofficial}: {full} \r\n{b|Culture}: {g:culture}"
+        "{b|Place}: {place} \r\n{b|Byname}: {byname} \r\n{b|Culture}: {g:culture}"
       ]
     },
     {
@@ -100,7 +101,7 @@
       "name": "rare",
       "explanation": "Rare name types.",
       "entries": [
-        "{moniker}"
+        "{full}"
       ]
     },
     {
@@ -259,7 +260,7 @@
     {
       "name": "beginning f",
       "entries": [
-        "XXX"
+        "Fal"
       ]
     },
     {
@@ -341,13 +342,13 @@
     {
       "name": "beginning q",
       "entries": [
-        "XXX"
+        "Qul"
       ]
     },
     {
       "name": "beginning r",
       "entries": [
-        "XXX"
+        "Ra"
       ]
     },
     {
@@ -394,7 +395,7 @@
     {
       "name": "beginning x",
       "entries": [
-        "XXX"
+        "Xul"
       ]
     },
     {
@@ -501,7 +502,6 @@
         "mat",
         "me",
         "med",
-        "mee",
         "meen",
         "nop",
         "por",
@@ -575,9 +575,9 @@
     {
       "name": "full",
       "entries": [
-        "the {prepend} {place}",
-        "{place} the {append}",
-        "{place}, {alias} {moniker}"
+        "{prepend} {random}",
+        "{random} the {append}",
+        "{random}, {alias} {moniker} of the {territory}"
       ]
     },
     {
@@ -590,7 +590,7 @@
     {
       "name": "prepend",
       "entries": [
-        "XXX"
+        "fabulous"
       ]
     },
     {
@@ -613,19 +613,44 @@
     {
       "name": "negative moniker",
       "entries": [
-        "XXX"
+        "Brothel",
+        "Purgatory",
+        "Sewer",
+        "Slave Pit"
       ]
     },
     {
       "name": "neutral moniker",
       "entries": [
-        "XXX"
+        "Bazaar",
+        "Guardian",
+        "Keep",
+        "Meeting Place",
+        "Vault",
+        "Watch Tower"
       ]
     },
     {
       "name": "positive moniker",
       "entries": [
-        "XXX"
+        "Bulwark",
+        "Gem",
+        "Prize",
+        "Treasure"
+      ]
+    },
+    {
+      "name": "territory",
+      "explanation": "Area of effect for the moniker.",
+      "entries": [
+        "East",
+        "Empire",
+        "Known World",
+        "North",
+        "Realm",
+        "South",
+        "West",
+        "World"
       ]
     },
     {
@@ -881,7 +906,16 @@
       "name": "attribute",
       "explanation": "Attribute prepended to the front of the result.",
       "entries": [
-        ""
+        "aeons old",
+        "ancient",
+        "barbaric",
+        "fabled",
+        "forgotten",
+        "lost",
+        "mythical",
+        "primeval",
+        "primitive",
+        "uncivilized"
       ]
     },
     {
@@ -889,7 +923,11 @@
       "explanation": "Features appended to the end of the result.",
       "format": "It seems to be --",
       "entries": [
-        ""
+        "guarding age-old secrets",
+        "hiding uncounted riches on its bosom",
+        "never fully explored",
+        "unequaled in savagery",
+        "without peer"
       ]
     },
     {
