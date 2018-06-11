@@ -1,0 +1,747 @@
+{
+  "name": "_template-place",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "culture": "XXX"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "XXX.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "@timestamp@ XXX",
+  "authors": "@author@. XXX",
+  "sources": "",
+  "genre": "",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{description}",
+        "{stats}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{place}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{full}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "{place} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Place}: {place} \r\n{b|Unofficial}: {full} \r\n{b|Culture}: {g:culture}"
+      ]
+    },
+    {
+      "**************************************************": "PLACE NAMES"
+    },
+    {
+      "name": "place",
+      "explanation": "The name types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common name types.",
+      "entries": [
+        "{random}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare name types.",
+      "entries": [
+        "{moniker}"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized place names.",
+      "entries": [
+        "{short}",
+        "{medium}",
+        "{long}"
+      ]
+    },
+    {
+      "name": "short",
+      "explanation": "Short place names.",
+      "entries": [
+        "{beginning}{short stem}"
+      ]
+    },
+    {
+      "name": "medium",
+      "explanation": "Medium-length place names.",
+      "entries": [
+        "{beginning}{medium stem}"
+      ]
+    },
+    {
+      "name": "long",
+      "explanation": "Long place names.",
+      "entries": [
+        "{beginning}{long stem}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "STEMS"
+    },
+    {
+      "name": "stem",
+      "explanation": "Variable-length place name stems.",
+      "entries": [
+        "{short stem}",
+        "{medium stem}",
+        "{long stem}"
+      ]
+    },
+    {
+      "name": "short stem",
+      "explanation": "Short place name stem.",
+      "entries": [
+        "",
+        "{ending}"
+      ]
+    },
+    {
+      "name": "medium stem",
+      "explanation": "Medium-length place name stems.",
+      "entries": [
+        "{short middle}{ending}",
+        "{medium middle}{ending}"
+      ]
+    },
+    {
+      "name": "long stem",
+      "explanation": "Long place name stems.",
+      "entries": [
+        "{short middle}{medium middle}{ending}",
+        "{medium middle}{short middle}{ending}",
+        "{!medium middle}{!medium middle}{ending}",
+        "{long middle}{ending}"
+      ]
+    },
+    {
+      "**************************************************": "BEGINNING"
+    },
+    {
+      "name": "beginning",
+      "explanation": "Name starting components.",
+      "entries": [
+        "{beginning a}",
+        "{beginning b}",
+        "{beginning c}",
+        "{beginning d}",
+        "{beginning e}",
+        "{beginning f}",
+        "{beginning g}",
+        "{beginning h}",
+        "{beginning i}",
+        "{beginning j}",
+        "{beginning k}",
+        "{beginning l}",
+        "{beginning m}",
+        "{beginning n}",
+        "{beginning o}",
+        "{beginning p}",
+        "{beginning q}",
+        "{beginning r}",
+        "{beginning s}",
+        "{beginning t}",
+        "{beginning u}",
+        "{beginning v}",
+        "{beginning w}",
+        "{beginning x}",
+        "{beginning y}",
+        "{beginning z}"
+      ]
+    },
+    {
+      "name": "beginning a",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning b",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning c",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning d",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning e",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning f",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning g",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning h",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning i",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning j",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning k",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning l",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning m",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning n",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning o",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning p",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning q",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning r",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning s",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning t",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning u",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning v",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning w",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning x",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning y",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning z",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "MIDDLE"
+    },
+    {
+      "name": "middle",
+      "explanation": "Optional middle sections.",
+      "entries": [
+        "{short middle}",
+        "{medium middle}",
+        "{long middle}"
+      ]
+    },
+    {
+      "name": "short middle",
+      "explanation": "Optional short middle sections.",
+      "entries": [
+        "a",
+        "e",
+        "i",
+        "o",
+        "u"
+      ]
+    },
+    {
+      "name": "medium middle",
+      "explanation": "Optional medium-length middle sections.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "long middle",
+      "explanation": "Optional long middle sections.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "ENDINGS"
+    },
+    {
+      "name": "ending",
+      "explanation": "Place name endings.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "UNOFFICIAL NAMES"
+    },
+    {
+      "name": "full",
+      "entries": [
+        "the {prepend} {place}",
+        "{place} the {append}",
+        "{place}, {alias} {moniker}"
+      ]
+    },
+    {
+      "name": "byname",
+      "entries": [
+        "{prepend}",
+        "{append}"
+      ]
+    },
+    {
+      "name": "prepend",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "append",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MONIKERS"
+    },
+    {
+      "name": "moniker",
+      "entries": [
+        "{negative moniker}",
+        "{neutral moniker}",
+        "{positive moniker}"
+      ]
+    },
+    {
+      "name": "negative moniker",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "neutral moniker",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "positive moniker",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "PLACE NAMES"
+    },
+    {
+      "name": "initial",
+      "explanation": "Place names grouped by their first letter.",
+      "entries": [
+        "{a}",
+        "{b}",
+        "{c}",
+        "{d}",
+        "{e}",
+        "{f}",
+        "{g}",
+        "{h}",
+        "{i}",
+        "{j}",
+        "{k}",
+        "{l}",
+        "{m}",
+        "{n}",
+        "{o}",
+        "{p}",
+        "{q}",
+        "{r}",
+        "{s}",
+        "{t}",
+        "{u}",
+        "{v}",
+        "{w}",
+        "{x}",
+        "{y}",
+        "{z}"
+      ]
+    },
+    {
+      "name": "a",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "b",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "c",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "d",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "e",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "f",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "g",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "h",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "i",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "j",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "k",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "l",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "m",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "n",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "o",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "p",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "q",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "r",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "s",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "t",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "u",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "v",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "w",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "x",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "y",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "z",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "area",
+        "district",
+        "locale",
+        "place",
+        "region",
+        "site",
+        "territory"
+      ]
+    },
+    {
+      "name": "alias",
+      "explanation": "Synonyms for Also Known As.",
+      "entries": [
+        "alias",
+        "also called",
+        "also known as",
+        "better known as",
+        "known as",
+        "named as",
+        "often described as",
+        "otherwise known as",
+        "variously known as",
+        "widely known as"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Synonyms for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "is gossiped to be",
+        "is reputed to be",
+        "is rumored to be",
+        "is said to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Place: {place}. Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Byname: {byname}, initial: {initial}. Culture = {g:culture}."
+      ]
+    }
+  ]
+}
