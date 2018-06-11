@@ -1,6 +1,6 @@
 {
   "name": "location-hyborian",
-  "resultPattern": "{init}{result}",
+  "resultPattern": "{init}{description}",
   "globals": {
     "variable": ""
   },
@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-10",
+  "date": "2018-06-11",
   "authors": "ELF Vesala",
   "sources": "Robert E. Howard: the 'Conan' tales.",
   "genre": "fantasy",
@@ -76,15 +76,19 @@
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {location} {looks} {random} {synonym}.",
-        "The {synonym} {looks} {random} {location} of {motif}."
+        "The {location} with its {spectacle} {sentence}.",
+        "The {location} with its {populace} {sentence}.",
+        "The {location} with its {populace} and {spectacle} {sentence}.",
+        "The {location} {sentence}.",
+        "The {synonym} {sentence}.",
+        "The {synonym} {sentence}."
       ]
     },
     {
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Location}: {location} \r\n{b|Descriptor}: {random} \r\n{b|Motif}: {motif}"
+        "{b|Location}: {location} \r\n{b|Descriptor}: {!random} \r\n{b|Motif}: {!motif} \r\n{b|Populace}: {populace} \r\n{b|Spectacle}: {spectacle}"
       ]
     },
     {
@@ -105,18 +109,20 @@
       "name": "common",
       "explanation": "Common types.",
       "entries": [
-        "{civilized}"
+        "{civilized} of {lib:name-random#summary}",
+        "{wilderness} of {lib:name-random#summary}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare types.",
       "entries": [
+        "{civilized}",
         "{wilderness}"
       ]
     },
     {
-      "**************************************************": "DETAILS"
+      "**************************************************": "LOCATIONS"
     },
     {
       "name": "civilized",
@@ -127,12 +133,9 @@
         "domain",
         "dominion",
         "kingdom",
-        "nation",
         "port",
         "province",
         "territory",
-        "tomb",
-        "tower",
         "hamlet"
       ]
     },
@@ -148,6 +151,9 @@
         "wasteland",
         "wilderness"
       ]
+    },
+    {
+      "**************************************************": "DETAILS"
     },
     {
       "name": "motif",
@@ -166,6 +172,240 @@
         "reverie",
         "secrecy",
         "tribulations"
+      ]
+    },
+    {
+      "--------------------------------------------------": "POPULATION"
+    },
+    {
+      "name": "populace",
+      "explanation": "",
+      "entries": [
+        "{countenance} {people}"
+      ]
+    },
+    {
+      "name": "countenance",
+      "explanation": "The looks of the inhabitants",
+      "entries": [
+        "{color}-{colored}",
+        "{color}-{haired}",
+        "{emotion}-{minded}"
+      ]
+    },
+    {
+      "name": "color",
+      "explanation": "",
+      "entries": [
+        "{dark}",
+        "{light}"
+      ]
+    },
+    {
+      "name": "dark",
+      "explanation": "",
+      "entries": [
+        "charcoal",
+        "dark",
+        "jet",
+        "ebon",
+        "obsidian",
+        "onyx",
+        "raven",
+        "sable",
+        "shadowy",
+        "swart",
+        "tawny"
+      ]
+    },
+    {
+      "name": "light",
+      "explanation": "",
+      "entries": [
+        "auburn",
+        "albino",
+        "blonde",
+        "fair",
+        "flaxen",
+        "golden",
+        "honeyed",
+        "ivory",
+        "pale",
+        "pearly",
+        "sallow",
+        "sandy",
+        "snowy",
+        "tawny"
+      ]
+    },
+    {
+      "name": "colored",
+      "explanation": "Variant expressons for 'coloured'.",
+      "entries": [
+        "colored",
+        "hued",
+        "tinged"
+      ]
+    },
+    {
+      "name": "emotion",
+      "explanation": "Emotions typical for local populace.",
+      "format": "-eyed",
+      "entries": [
+        "{evil}",
+        "{grim}"
+      ]
+    },
+    {
+      "name": "evil",
+      "explanation": "Evil nature.",
+      "entries": [
+        "evil",
+        "hate",
+        "malign",
+        "spite",
+        "vile",
+        "wrath"
+      ]
+    },
+    {
+      "name": "grim",
+      "explanation": "Gloomy nature.",
+      "entries": [
+        "gloomy",
+        "grim",
+        "heavy",
+        "somber",
+        "sour",
+        "stubborn",
+        "sullen"
+      ]
+    },
+    {
+      "name": "people",
+      "explanation": "Inhabitants of the area.",
+      "format": "Plural meaning.",
+      "entries": [
+        "clans",
+        "folk",
+        "hordes",
+        "kindred",
+        "lineage",
+        "men",
+        "people",
+        "populace",
+        "race",
+        "tribe",
+        "women"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SPECTACLES"
+    },
+    {
+      "name": "spectacle",
+      "explanation": "The area's claim to fame.",
+      "entries": [
+        "{landmarks} of {random} {!motif}",
+        "{culture}",
+        "{extension} {culture}"
+      ]
+    },
+    {
+      "name": "culture",
+      "explanation": "The practices of the area.",
+      "entries": [
+        "chivalry",
+        "{plans}",
+        "{plans} of {goal}",
+        "{strange} {magic}",
+        "{strange} customs"
+      ]
+    },
+    {
+      "name": "goal",
+      "explanation": "Targeted outcomes for cultures.",
+      "entries": [
+        "conquer",
+        "domination",
+        "insurgency",
+        "rebellion",
+        "sovereignty",
+        "supremacy"
+      ]
+    },
+    {
+      "name": "landmarks",
+      "explanation": "Famous sights and vistas of the area.",
+      "entries": [
+        "arches",
+        "catacombs",
+        "caverns",
+        "caves",
+        "chambers",
+        "châteaus",
+        "citadels",
+        "cities",
+        "columns",
+        "crypts",
+        "donjons",
+        "dungeons",
+        "fortresses",
+        "gates",
+        "grottoes",
+        "halls",
+        "keeps",
+        "mansions",
+        "mausoleums",
+        "menhirs",
+        "minarets",
+        "monoliths",
+        "monuments",
+        "necropolises",
+        "obelisks",
+        "oubliettes",
+        "palaces",
+        "pillars",
+        "pits",
+        "portals",
+        "ruins",
+        "sepulchers",
+        "spires",
+        "strongholds",
+        "tombs",
+        "towers",
+        "vaults"
+      ]
+    },
+    {
+      "**************************************************": "SENTENCE"
+    },
+    {
+      "name": "sentence",
+      "explanation": "",
+      "entries": [
+        "{looks} {!random} {synonym}",
+        "{looks} {attribute}, {!random} {synonym}",
+        "{looks} {!random} {synonym} of {motif}",
+        "{looks} {attribute}, {!random} {synonym} of {motif}",
+        "lies spread across the {synonym} like a {lib:color#prime} {clothing} beneath the stars",
+        "borders on the {descriptor} lands of {lib:name-random#summary}"
+      ]
+    },
+    {
+      "name": "clothing",
+      "explanation": "Pieces of clothing.",
+      "entries": [
+        "cape",
+        "cloth",
+        "curtain",
+        "cloak",
+        "drape",
+        "mantle",
+        "robe",
+        "shroud",
+        "tabard",
+        "veil"
       ]
     },
     {
@@ -201,7 +441,7 @@
         "jeweled",
         "mysterious",
         "ophidian",
-        "shadowy",
+        "pastoral",
         "shining",
         "shuddersome",
         "stygian",
@@ -233,6 +473,7 @@
       "explanation": "Endings for randomized terms.",
       "entries": [
         "cursed",
+        "defended",
         "defiled",
         "desecrated",
         "despoiled",
@@ -241,10 +482,13 @@
         "haunted",
         "infested",
         "invaded",
+        "overseen",
+        "patrolled",
         "plagued",
         "ravaged",
         "spoiled",
-        "tormented"
+        "tormented",
+        "warded"
       ]
     },
     {
@@ -265,7 +509,6 @@
         "eerie",
         "ensorcelled",
         "fiendish",
-        "haunted",
         "mysterious",
         "necromantic",
         "occult",
@@ -274,22 +517,22 @@
         "spectral",
         "spellbound",
         "thaumaturgic",
-        "uncanny",
-        "weird"
+        "uncanny"
       ]
     },
     {
       "name": "vile",
       "explanation": "Extensions for vile locales.",
       "entries": [
+        "appalling",
         "bestial",
         "corrupt",
         "depraved",
         "foul",
-        "horrid",
         "loathsome",
         "miserable",
         "repugnant",
+        "repulsive",
         "vicious",
         "vile",
         "wicked"
@@ -351,16 +594,63 @@
       "name": "synonym",
       "explanation": "Variant expressions for the generator subject matter.",
       "entries": [
-        "ground",
+        "area",
+        "district",
         "haunt",
         "locale",
-        "location",
-        "locality",
         "place",
+        "realm",
         "region",
         "site",
-        "terrain",
-        "spot"
+        "territory"
+      ]
+    },
+    {
+      "name": "haired",
+      "explanation": "Variant expressions for 'haired'.",
+      "entries": [
+        "haired",
+        "locked",
+        "maned"
+      ]
+    },
+    {
+      "name": "magic",
+      "explanation": "Variant expressions for 'wizardry'.",
+      "entries": [
+        "alchemy",
+        "black arts",
+        "conjury",
+        "devilry",
+        "diabolism",
+        "mysticism",
+        "necromancy",
+        "occultism",
+        "sorcery",
+        "thaumaturgy",
+        "witchcraft",
+        "witchery",
+        "wizardry"
+      ]
+    },
+    {
+      "name": "minded",
+      "explanation": "Variant expressions for 'eyed'.",
+      "entries": [
+        "browed",
+        "eyed",
+        "disposed",
+        "minded"
+      ]
+    },
+    {
+      "name": "plans",
+      "explanation": "Secret intentions.",
+      "entries": [
+        "conspiracies",
+        "intrigues",
+        "machinations",
+        "stratagems"
       ]
     },
     {
@@ -369,8 +659,27 @@
       "format": "-- in good condition.",
       "entries": [
         "appears to be",
-        "looks to be",
+        "is gossiped to be",
+        "is reputed to be",
+        "is rumored to be",
+        "is said to be",
         "seems to be"
+      ]
+    },
+    {
+      "name": "strange",
+      "explanation": "Variant expressions for 'odd'.",
+      "entries": [
+        "arcane",
+        "bizarre",
+        "ghastly",
+        "grotesque",
+        "inscrutable",
+        "outlandish",
+        "peculiar",
+        "strange",
+        "unfathomable",
+        "weird"
       ]
     },
     {
@@ -388,15 +697,16 @@
       "name": "attribute",
       "explanation": "Attribute prepended to the front of the result.",
       "entries": [
-        "chimeral",
-        "chimerical",
-        "eidolic",
-        "fanciful",
-        "phantasmal",
-        "phantasmic",
-        "phantasmagoric",
-        "shadowy",
-        "unearthly"
+        "a chimeral",
+        "a chimerical",
+        "an eidolic",
+        "a fanciful",
+        "a phantasmal",
+        "a phantasmic",
+        "a phantasmagoric",
+        "a shadowy",
+        "an undreamed",
+        "an unearthly"
       ]
     },
     {
