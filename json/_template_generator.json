@@ -121,7 +121,17 @@
     },
     {
       "name": "random",
-      "explanation": "Randomized terms (generated from components).",
+      "explanation": "Randomization methods.",
+      "entries": [
+        "{component}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMPONENTS"
+    },
+    {
+      "name": "component",
+      "explanation": "Component-based terms (generated from words).",
       "entries": [
         "{compoundbegin}{compoundend}",
         "{beginning} {ending}",
