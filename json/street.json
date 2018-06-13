@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "business, district, settlement, shop",
-  "date": "2018-05-30",
+  "date": "2018-06-13",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -938,7 +938,7 @@
       "entries": [
         "{underground}",
         "{water}",
-        "{planar}"
+        "{dimension}"
       ]
     },
     {
@@ -965,8 +965,8 @@
       ]
     },
     {
-      "name": "planar",
-      "explanation": "Interdimensional passageways.",
+      "name": "dimension",
+      "explanation": "Interdimensional or planar passageways.",
       "entries": [
         "portal",
         "door",

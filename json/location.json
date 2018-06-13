@@ -12,8 +12,8 @@
   "bugs": "",
   "to do": "Add themes to categorize attributes and other elements.",
   "see": "5_room_dungeon, encounter, hook_line_and_sinker_adventure",
-  "date": "2018-01-05",
-  "authors": "Esko Vesala",
+  "date": "2018-06-13",
+  "authors": "ELF Vesala",
   "sources": "encounter, Wikipedia.org",
   "genre": "universal",
   "categories": [
@@ -70,10 +70,10 @@
       "entries": [
         {
           "m": 1,
-          "v": "{indoors}",
+          "v": "{indoor}",
           "set": {
-            "milieu": "indoors",
-            "milieudescription": "indoors"
+            "milieu": "indoor",
+            "milieudescription": "indoor"
           }
         },
         {
@@ -322,10 +322,10 @@
         },
         {
           "m": 1,
-          "v": "{rainforest}",
+          "v": "{jungle}",
           "set": {
-            "milieu": "rainforest",
-            "milieudescription": "rainforest"
+            "milieu": "jungle",
+            "milieudescription": "jungle"
           }
         }
       ]
@@ -368,9 +368,9 @@
         },
         {
           "m": 1,
-          "v": "{planar}",
+          "v": "{dimension}",
           "set": {
-            "milieu": "planar",
+            "milieu": "dimension",
             "milieudescription": "extraplanar area"
           }
         }
@@ -380,15 +380,15 @@
       "**************************************************": "LOCATIONS"
     },
     {
-      "name": "indoors",
+      "name": "indoor",
       "explanation": "Indoors location structure.",
       "entries": [
-        "{indoors site}",
-        "{indoors site} with {indoors feature}"
+        "{indoor site}",
+        "{indoor site} with {indoor feature}"
       ]
     },
     {
-      "name": "indoors site",
+      "name": "indoor site",
       "explanation": "Locations inside buildings.",
       "entries": [
         "storage room",
@@ -402,7 +402,7 @@
       ]
     },
     {
-      "name": "indoors feature",
+      "name": "indoor feature",
       "explanation": "Features for locations inside buildings.",
       "entries": [
         "staircase",
@@ -731,24 +731,24 @@
       ]
     },
     {
-      "name": "rainforest",
-      "explanation": "Tropical forest location structure.",
+      "name": "jungle",
+      "explanation": "Tropical rainforest location structure.",
       "entries": [
-        "{rainforest site}",
-        "{rainforest site} with {rainforest feature}"
+        "{jungle site}",
+        "{jungle site} with {jungle feature}"
       ]
     },
     {
-      "name": "rainforest site",
-      "explanation": "Locations in the tropical forests.",
+      "name": "jungle site",
+      "explanation": "Locations in the tropical rainforests.",
       "entries": [
         "rainforest",
         "jungle"
       ]
     },
     {
-      "name": "rainforest feature",
-      "explanation": "Features for locations in the tropical forests.",
+      "name": "jungle feature",
+      "explanation": "Features for locations in the tropical rainforests.",
       "entries": [
         "thick bushes",
         "hanging lianas"
@@ -1294,15 +1294,15 @@
       ]
     },
     {
-      "name": "planar",
+      "name": "dimension",
       "explanation": "Extraplanar location structure.",
       "entries": [
-        "{planar site}",
-        "{planar site} with {planar feature}"
+        "{dimension site}",
+        "{dimension site} with {dimension feature}"
       ]
     },
     {
-      "name": "planar site",
+      "name": "dimension site",
       "explanation": "Locations in other planes of existence.",
       "entries": [
         "astral plane",
@@ -1310,7 +1310,7 @@
       ]
     },
     {
-      "name": "planar feature",
+      "name": "dimension feature",
       "explanation": "Features for locations in other planes.",
       "entries": [
         "ethereal vortex",

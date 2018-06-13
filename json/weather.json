@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "different climes, sea weather, space weather",
   "see": "",
-  "date": "2018-05-30",
+  "date": "2018-06-13",
   "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -516,7 +516,7 @@
         "{myth}",
         "{medieval}",
         "{magical}",
-        "{planar}"
+        "{dimension}"
       ]
     },
     {
@@ -524,7 +524,7 @@
       "explanation": "Descriptions for mythic worlds (once thought true).",
       "entries": [
         "{magical}",
-        "{planar}"
+        "{dimension}"
       ]
     },
     {
@@ -561,7 +561,7 @@
       "entries": [
         "{cyber}",
         "{magical}",
-        "{planar}",
+        "{dimension}",
         "{psionic}"
       ]
     },
@@ -594,8 +594,8 @@
       ]
     },
     {
-      "name": "planar",
-      "explanation": "Dimensional stability.",
+      "name": "dimension",
+      "explanation": "Dimensional or planar stability.",
       "entries": [
         "planar blockade (interplanar access is temporarily blocked)",
         "planar ebb (interplanar access is almost impossible)",

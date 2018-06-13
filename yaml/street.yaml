@@ -17,7 +17,7 @@ format: ''
 bugs: ''
 to do: ''
 see: 'business, district, settlement, shop'
-date: '2018-05-29'
+date: '2018-06-13'
 authors: ELF Vesala
 sources: ''
 genre: universal
@@ -809,7 +809,7 @@ tables:
     entries:
       - '{underground}'
       - '{water}'
-      - '{planar}'
+      - '{dimension}'
 
   - name: underground
     explanation: Routes below the ground surface.
@@ -830,8 +830,8 @@ tables:
       - passage
       - waterway
 
-  - name: planar
-    explanation: Interdimensional passageways.
+  - name: dimension
+    explanation: Interdimensional or planar passageways.
     entries:
       - portal
       - door

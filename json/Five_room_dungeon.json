@@ -193,8 +193,8 @@
   "bugs": "",
   "to do": "Support for external motif files (requires global variables). More beats!",
   "see": "Dungeon_adventure, hook_line_and_sinker_adventure",
-  "date": "2018-04-17",
-  "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
+  "date": "2018-06-13",
+  "authors": "ELF Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "Dream Park: The Roleplaying Game, RolePlayingTips.com",
   "genre": "universal",
   "categories": [
@@ -725,7 +725,7 @@
           "v": "{indoor location}",
           "set": {
             "milieu": "indoor",
-            "milieudescription": "indoors"
+            "milieudescription": "indoor"
           }
         },
         {
@@ -848,10 +848,10 @@
         },
         {
           "m": 1,
-          "v": "{rainforest location}",
+          "v": "{jungle location}",
           "set": {
-            "milieu": "rainforest",
-            "milieudescription": "rainforest"
+            "milieu": "jungle",
+            "milieudescription": "jungle"
           }
         },
         {
@@ -926,9 +926,9 @@
         },
         {
           "m": 1,
-          "v": "{planar location}",
+          "v": "{dimension location}",
           "set": {
-            "milieu": "planar",
+            "milieu": "dimension",
             "milieudescription": "extraplanar area"
           }
         }
@@ -1247,14 +1247,14 @@
       ]
     },
     {
-      "name": "rainforest location",
-      "explanation": "Locations in the tropical forests.",
+      "name": "jungle location",
+      "explanation": "Locations in the tropical rainforests.",
       "entries": [
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "rainforest floor",
+            "location": "jungle floor",
             "locationdescription": "sparse soil shadowed by a thick canopy of trees and other vegetation"
           }
         },
@@ -1783,7 +1783,7 @@
       ]
     },
     {
-      "name": "planar location",
+      "name": "dimension location",
       "explanation": "Locations in other planes of existence.",
       "entries": [
         {

@@ -112,18 +112,81 @@
       "name": "milieu",
       "explanation": "Milieu types.",
       "entries": [
+        "{any}",
+        "{city}",
         "{civilized}",
+        "{continental}",
+        "{extreme}",
         "{freshwater}",
+        "{highland}",
+        "{ocean}",
+        "{offworld}",
+        "{plain}",
+        "{polar}",
         "{seawater}",
+        "{submerged}",
+        "{subpolar}",
+        "{subtropical}",
+        "{temperate}",
+        "{tropical}",
         "{water}",
         "{wilderness}"
       ]
     },
     {
-      "name": "civilized",
-      "explanation": "Any type.",
+      "name": "any",
+      "explanation": "Any milieu.",
       "entries": [
-        "{indoors}",
+        "{indoor}",
+        "{urban}",
+        "{suburban}",
+        "{village}",
+        "{rural}",
+        "{road}",
+        "{outpost}",
+        "{barren}",
+        "{grassland}",
+        "{shrubland}",
+        "{forest}",
+        "{hill}",
+        "{mountain}",
+        "{river}",
+        "{lake}",
+        "{wetland}",
+        "{coast}",
+        "{ship}",
+        "{sea}",
+        "{island}",
+        "{taiga}",
+        "{tundra}",
+        "{jungle}",
+        "{savanna}",
+        "{desert}",
+        "{underground}",
+        "{volcanic}",
+        "{glacier}",
+        "{underwater}",
+        "{seabed}",
+        "{earth}",
+        "{air}",
+        "{space}",
+        "{dimension}"
+      ]
+    },
+    {
+      "name": "city",
+      "explanation": "City milieu.",
+      "entries": [
+        "{indoor}",
+        "{urban}",
+        "{suburban}"
+      ]
+    },
+    {
+      "name": "civilized",
+      "explanation": "Inhabited milieus.",
+      "entries": [
+        "{indoor}",
         "{urban}",
         "{suburban}",
         "{rural}",
@@ -131,8 +194,27 @@
       ]
     },
     {
+      "name": "continental",
+      "explanation": "Inland temperate terrain milieus.",
+      "entries": [
+        "{grassland}",
+        "{shrubland}",
+        "{forest}",
+        "{hill}",
+        "{mountain}"
+      ]
+    },
+    {
+      "name": "extreme",
+      "explanation": "Extreme terrain milieus.",
+      "entries": [
+        "{volcanic}",
+        "{glacier}"
+      ]
+    },
+    {
       "name": "freshwater",
-      "explanation": "Locations in or by water.",
+      "explanation": "Milieus in or by water.",
       "entries": [
         "{river}",
         "{lake}",
@@ -141,8 +223,48 @@
       ]
     },
     {
+      "name": "highland",
+      "explanation": "Elevated milieus.",
+      "entries": [
+        "{hill}",
+        "{mountain}"
+      ]
+    },
+    {
+      "name": "ocean",
+      "explanation": "Oceanic milieus.",
+      "entries": [
+        "{sea}",
+        "{seabed}"
+      ]
+    },
+    {
+      "name": "offworld",
+      "explanation": "Milieus outside the world.",
+      "entries": [
+        "{space}",
+        "{dimension}"
+      ]
+    },
+    {
+      "name": "plain",
+      "explanation": "Temperate flatland terrain milieus.",
+      "entries": [
+        "{grassland}",
+        "{shrubland}"
+      ]
+    },
+    {
+      "name": "polar",
+      "explanation": "Cold wilderness terrain milieus.",
+      "entries": [
+        "{tundra}",
+        "{glacier}"
+      ]
+    },
+    {
       "name": "seawater",
-      "explanation": "Locations in or by water.",
+      "explanation": "Milieus in or by water.",
       "entries": [
         "{coast}",
         "{sea}",
@@ -151,18 +273,11 @@
       ]
     },
     {
-      "name": "water",
-      "explanation": "Locations in or by water.",
-      "entries": [
-        "{freshwater}",
-        "{seawater}"
-      ]
-    },
-    {
-      "name": "wilderness",
-      "explanation": "Temperate wilderness locations.",
+      "name": "temperate",
+      "explanation": "Medium-temperature wilderness milieus.",
       "entries": [
         "{grassland}",
+        "{shrubland}",
         "{forest}",
         "{hill}",
         "{mountain}",
@@ -172,19 +287,93 @@
       ]
     },
     {
+      "name": "tropical",
+      "explanation": "Hot wilderness terrain milieus.",
+      "entries": [
+        "{jungle}",
+        "{savanna}",
+        "{desert}"
+      ]
+    },
+    {
+      "name": "submerged",
+      "explanation": "Subaquatic milieus.",
+      "entries": [
+        "{underwater}",
+        "{seabed}"
+      ]
+    },
+    {
+      "name": "subpolar",
+      "explanation": "Terrain milieus between temperate and polar regions.",
+      "entries": [
+        "{shrubland}",
+        "{mountain}",
+        "{taiga}",
+        "{tundra}"
+      ]
+    },
+    {
+      "name": "subtropical",
+      "explanation": "Terrain milieus between temperate and tropical regions.",
+      "entries": [
+        "{grassland}",
+        "{shrubland}",
+        "{forest}",
+        "{hill}"
+      ]
+    },
+    {
+      "name": "water",
+      "explanation": "Milieus in or by water.",
+      "entries": [
+        "{freshwater}",
+        "{seawater}"
+      ]
+    },
+    {
+      "name": "wilderness",
+      "explanation": "Wilderness terrain milieus.",
+      "entries": [
+        "{polar}",
+        "{subpolar}",
+        "{temperate}",
+        "{subtropical}",
+        "{tropical}"
+      ]
+    },
+    {
       "**************************************************": "DETAILS"
     },
     {
       "name": "air",
       "explanation": "Locations in the sky.",
+      "export": {
+        "milieu": "air"
+      },
       "entries": [
         "cloud",
         "sky"
       ]
     },
     {
+      "name": "barren",
+      "explanation": "Locations in desolate areas.",
+      "export": {
+        "milieu": "barren"
+      },
+      "entries": [
+        "lowland",
+        "land",
+        "terrain"
+      ]
+    },
+    {
       "name": "coast",
       "explanation": "Locations on the coast.",
+      "export": {
+        "milieu": "coast"
+      },
       "entries": [
         "grotto",
         "cove",
@@ -194,6 +383,9 @@
     {
       "name": "desert",
       "explanation": "Locations in the desert.",
+      "export": {
+        "milieu": "desert"
+      },
       "entries": [
         "desert",
         "dunes",
@@ -201,8 +393,35 @@
       ]
     },
     {
+      "name": "dimension",
+      "explanation": "Locations in other dimensions or planes of existence.",
+      "export": {
+        "milieu": "dimension"
+      },
+      "entries": [
+        "dimension",
+        "plane",
+        "portal",
+        "vortex"
+      ]
+    },
+    {
+      "name": "earth",
+      "explanation": "Locations in the soil (not just underground).",
+      "export": {
+        "milieu": "earth"
+      },
+      "entries": [
+        "in the soil",
+        "in the earth"
+      ]
+    },
+    {
       "name": "forest",
-      "explanation": "Locations in the woods.",
+      "explanation": "Deciduous woodland locations.",
+      "export": {
+        "milieu": "forest"
+      },
       "entries": [
         "forest",
         "woods",
@@ -212,13 +431,20 @@
     {
       "name": "glacier",
       "explanation": "Locations on snow and ice covered areas.",
+      "export": {
+        "milieu": "glacier"
+      },
       "entries": [
-        "glacier"
+        "glacier",
+        "ice cave"
       ]
     },
     {
       "name": "grassland",
       "explanation": "Locations on grasslands.",
+      "export": {
+        "milieu": "grassland"
+      },
       "entries": [
         "moor",
         "land",
@@ -228,30 +454,55 @@
     {
       "name": "hill",
       "explanation": "Locations in the hills.",
+      "export": {
+        "milieu": "hill"
+      },
       "entries": [
         "dell",
-        "hill"
+        "hill",
+        "ridge"
       ]
     },
     {
-      "name": "indoors",
+      "name": "indoor",
       "explanation": "Locations inside buildings.",
+      "export": {
+        "milieu": "indoor"
+      },
       "entries": [
         "hall",
-        "chamber"
+        "chamber",
+        "passage",
+        "room"
       ]
     },
     {
       "name": "island",
       "explanation": "Locations on ocean islands.",
+      "export": {
+        "milieu": "island"
+      },
       "entries": [
         "isle",
         "island"
       ]
     },
     {
+      "name": "jungle",
+      "explanation": "Locations in the tropical rainforests.",
+      "export": {
+        "milieu": "jungle"
+      },
+      "entries": [
+        "jungle"
+      ]
+    },
+    {
       "name": "lake",
       "explanation": "Locations on still freshwater (lakes, ponds, etc).",
+      "export": {
+        "milieu": "lake"
+      },
       "entries": [
         "lake",
         "isle"
@@ -260,15 +511,25 @@
     {
       "name": "mountain",
       "explanation": "Locations in the mountains.",
+      "export": {
+        "milieu": "mountain"
+      },
       "entries": [
-        "mountain",
+        "bluff",
+        "cliff",
+        "crag",
         "eyrie",
+        "mountain",
+        "peak",
         "vale"
       ]
     },
     {
       "name": "outpost",
       "explanation": "Locations in outposts, such as camps and fortifications.",
+      "export": {
+        "milieu": "outpost"
+      },
       "entries": [
         "camp",
         "encampment",
@@ -283,34 +544,35 @@
       ]
     },
     {
-      "name": "plane",
-      "explanation": "Locations in other planes of existence.",
-      "entries": [
-        "plane",
-        "portal",
-        "vortex"
-      ]
-    },
-    {
-      "name": "rainforest",
-      "explanation": "Locations in the tropical forests.",
-      "entries": [
-        "jungle"
-      ]
-    },
-    {
       "name": "river",
       "explanation": "Locations on running freshwater (rivers, streams, etc).",
+      "export": {
+        "milieu": "river"
+      },
       "entries": [
         "ford",
         "delta"
       ]
     },
     {
+      "name": "road",
+      "explanation": "Locations on and along the roadways.",
+      "export": {
+        "milieu": "road"
+      },
+      "entries": [
+        "trail",
+        "path",
+        "road"
+      ]
+    },
+    {
       "name": "rural",
       "explanation": "Locations in the countryside.",
+      "export": {
+        "milieu": "rural"
+      },
       "entries": [
-        "village",
         "manor",
         "grove",
         "maze"
@@ -319,6 +581,9 @@
     {
       "name": "savanna",
       "explanation": "Locations in the tropical grasslands.",
+      "export": {
+        "milieu": "savanna"
+      },
       "entries": [
         "plain",
         "savanna",
@@ -328,6 +593,9 @@
     {
       "name": "sea",
       "explanation": "Locations on the sea.",
+      "export": {
+        "milieu": "sea"
+      },
       "entries": [
         "island",
         "sea",
@@ -337,13 +605,46 @@
     {
       "name": "seabed",
       "explanation": "Locations under the sea surface.",
+      "export": {
+        "milieu": "seabed"
+      },
       "entries": [
         "seabed"
       ]
     },
     {
+      "name": "ship",
+      "explanation": "Locations on boats and other sea vessels.",
+      "export": {
+        "milieu": "ship"
+      },
+      "entries": [
+        "cargo hold",
+        "captain's cabin",
+        "mast",
+        "crow's nest"
+      ]
+    },
+    {
+      "name": "shrubland",
+      "explanation": "Scrubland and bush locations.",
+      "export": {
+        "milieu": "shrubland"
+      },
+      "entries": [
+        "brush",
+        "bush",
+        "scrub",
+        "scrubland",
+        "shrubland"
+      ]
+    },
+    {
       "name": "space",
       "explanation": "Locations in outer space.",
+      "export": {
+        "milieu": "space"
+      },
       "entries": [
         "space",
         "void",
@@ -353,13 +654,31 @@
     {
       "name": "suburban",
       "explanation": "Locations in the outskirts of a city.",
+      "export": {
+        "milieu": "suburban"
+      },
       "entries": [
         "prison"
       ]
     },
     {
+      "name": "taiga",
+      "explanation": "Coniferous woodland locations.",
+      "export": {
+        "milieu": "taiga"
+      },
+      "entries": [
+        "forest",
+        "woods",
+        "taiga"
+      ]
+    },
+    {
       "name": "tundra",
       "explanation": "Locations in low temperature wilderness.",
+      "export": {
+        "milieu": "tundra"
+      },
       "entries": [
         "wilderness",
         "wasteland",
@@ -369,23 +688,32 @@
     {
       "name": "underground",
       "explanation": "Locations under the earth's surface.",
+      "export": {
+        "milieu": "underground"
+      },
       "entries": [
+        "catacomb",
         "cave",
         "cavern",
-        "lair",
-        "tomb",
         "crypt",
+        "dungeon",
         "grave",
         "labyrinth",
-        "vault",
-        "dungeon",
+        "lair",
         "mine",
-        "pit"
+        "pit",
+        "tomb",
+        "tunnel",
+        "underground lake",
+        "vault"
       ]
     },
     {
       "name": "underwater",
       "explanation": "Locations under the freshwater surface.",
+      "export": {
+        "milieu": "underwater"
+      },
       "entries": [
         "bottom"
       ]
@@ -393,6 +721,9 @@
     {
       "name": "urban",
       "explanation": "Locations in a city.",
+      "export": {
+        "milieu": "urban"
+      },
       "entries": [
         "town",
         "house",
@@ -405,20 +736,41 @@
       ]
     },
     {
+      "name": "village",
+      "explanation": "Locations in a hamlet.",
+      "export": {
+        "milieu": "village"
+      },
+      "entries": [
+        "house",
+        "inn",
+        "shed",
+        "stable",
+        "village green"
+      ]
+    },
+    {
       "name": "volcanic",
       "explanation": "Volcanic locations.",
+      "export": {
+        "milieu": "volcanic"
+      },
       "entries": [
-        "field",
-        "spring",
-        "geyser",
         "caldera",
-        "volcano",
-        "crater"
+        "crater",
+        "field",
+        "geyser",
+        "spring",
+        "sulphur pit",
+        "volcano"
       ]
     },
     {
       "name": "wetland",
       "explanation": "Locations on bogs, swamps, etc.",
+      "export": {
+        "milieu": "wetland"
+      },
       "entries": [
         "mire",
         "swamp",
@@ -1148,7 +1500,7 @@
         "{seabed}",
         "{air}",
         "{space}",
-        "{plane}"
+        "{dimension}"
       ]
     },
     {
@@ -1203,42 +1555,8 @@
       "name": "special",
       "explanation": "Special tables.",
       "entries": [
-        "{any}",
         "{attribute}",
         "{feature}"
-      ]
-    },
-    {
-      "name": "any",
-      "explanation": "Any location.",
-      "entries": [
-        "{indoors}",
-        "{urban}",
-        "{suburban}",
-        "{rural}",
-        "{outpost}",
-        "{grassland}",
-        "{forest}",
-        "{hill}",
-        "{mountain}",
-        "{river}",
-        "{lake}",
-        "{wetland}",
-        "{coast}",
-        "{sea}",
-        "{island}",
-        "{tundra}",
-        "{rainforest}",
-        "{savanna}",
-        "{desert}",
-        "{underground}",
-        "{volcanic}",
-        "{glacier}",
-        "{underwater}",
-        "{seabed}",
-        "{air}",
-        "{space}",
-        "{plane}"
       ]
     },
     {

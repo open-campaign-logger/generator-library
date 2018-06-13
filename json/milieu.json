@@ -16,7 +16,7 @@
   "bugs": "",
   "to do": "Not sure what would be the best way to sync the descriptions without being able to pass variables between files.",
   "see": "culture, Dungeon_adventure, Five_room_dungeon, location, people",
-  "date": "2018-05-28",
+  "date": "2018-06-13",
   "authors": "ELF Vesala.",
   "sources": "Five_room_dungeon",
   "genre": "universal",
@@ -101,10 +101,10 @@
       "entries": [
         {
           "m": 1,
-          "v": "{indoors location}",
+          "v": "{indoor location}",
           "set": {
-            "milieu": "indoors",
-            "milieudescription": "indoors"
+            "milieu": "indoor",
+            "milieudescription": "indoor"
           }
         },
         {
@@ -227,10 +227,10 @@
         },
         {
           "m": 1,
-          "v": "{rainforest location}",
+          "v": "{jungle location}",
           "set": {
-            "milieu": "rainforest",
-            "milieudescription": "rainforest"
+            "milieu": "jungle",
+            "milieudescription": "jungle"
           }
         },
         {
@@ -263,7 +263,7 @@
       "**************************************************": "LOCATIONS"
     },
     {
-      "name": "indoors location",
+      "name": "indoor location",
       "explanation": "Locations inside buildings.",
       "entries": [
         {
@@ -377,7 +377,7 @@
           "v": "",
           "set": {
             "location": "village",
-            "locationdescription": "a country villge"
+            "locationdescription": "a country village"
           }
         },
         {
@@ -575,14 +575,14 @@
       ]
     },
     {
-      "name": "rainforest location",
+      "name": "jungle location",
       "explanation": "Locations in the tropical forests.",
       "entries": [
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "rainforest floor",
+            "location": "jungle floor",
             "locationdescription": "sparse soil shadowed by a thick canopy of trees and other vegetation"
           }
         },
@@ -1111,7 +1111,7 @@
       ]
     },
     {
-      "name": "planar location",
+      "name": "dimension location",
       "explanation": "Locations in other planes of existence.",
       "entries": [
         {
@@ -1181,9 +1181,9 @@
         },
         {
           "m": 1,
-          "v": "{planar location}",
+          "v": "{dimension location}",
           "set": {
-            "milieu": "planar",
+            "milieu": "dimension",
             "milieudescription": "extraplanar area"
           }
         },
