@@ -126,6 +126,7 @@
         "{seawater}",
         "{submerged}",
         "{subpolar}",
+        "{subterranean}",
         "{subtropical}",
         "{temperate}",
         "{tropical}",
@@ -167,9 +168,10 @@
         "{glacier}",
         "{underwater}",
         "{seabed}",
-        "{earth}",
+        "{soil}",
         "{air}",
         "{space}",
+        "{netherworld}",
         "{dimension}"
       ]
     },
@@ -189,7 +191,9 @@
         "{indoor}",
         "{urban}",
         "{suburban}",
+        "{village}",
         "{rural}",
+        "{road}",
         "{outpost}"
       ]
     },
@@ -235,6 +239,7 @@
       "explanation": "Oceanic milieus.",
       "entries": [
         "{sea}",
+        "{ship}",
         "{seabed}"
       ]
     },
@@ -243,6 +248,7 @@
       "explanation": "Milieus outside the world.",
       "entries": [
         "{space}",
+        "{netherworld}",
         "{dimension}"
       ]
     },
@@ -250,6 +256,7 @@
       "name": "plain",
       "explanation": "Temperate flatland terrain milieus.",
       "entries": [
+        "{barren}",
         "{grassland}",
         "{shrubland}"
       ]
@@ -273,9 +280,48 @@
       ]
     },
     {
+      "name": "submerged",
+      "explanation": "Subaquatic milieus.",
+      "entries": [
+        "{underwater}",
+        "{seabed}"
+      ]
+    },
+    {
+      "name": "subpolar",
+      "explanation": "Terrain milieus between temperate and polar regions.",
+      "entries": [
+        "{barren}",
+        "{shrubland}",
+        "{mountain}",
+        "{taiga}",
+        "{tundra}"
+      ]
+    },
+    {
+      "name": "subterranean",
+      "explanation": "Locations under the surface of the earth.",
+      "entries": [
+        "{underground}",
+        "{soil}"
+      ]
+    },
+    {
+      "name": "subtropical",
+      "explanation": "Terrain milieus between temperate and tropical regions.",
+      "entries": [
+        "{barren}",
+        "{grassland}",
+        "{shrubland}",
+        "{forest}",
+        "{hill}"
+      ]
+    },
+    {
       "name": "temperate",
       "explanation": "Medium-temperature wilderness milieus.",
       "entries": [
+        "{barren}",
         "{grassland}",
         "{shrubland}",
         "{forest}",
@@ -293,34 +339,6 @@
         "{jungle}",
         "{savanna}",
         "{desert}"
-      ]
-    },
-    {
-      "name": "submerged",
-      "explanation": "Subaquatic milieus.",
-      "entries": [
-        "{underwater}",
-        "{seabed}"
-      ]
-    },
-    {
-      "name": "subpolar",
-      "explanation": "Terrain milieus between temperate and polar regions.",
-      "entries": [
-        "{shrubland}",
-        "{mountain}",
-        "{taiga}",
-        "{tundra}"
-      ]
-    },
-    {
-      "name": "subtropical",
-      "explanation": "Terrain milieus between temperate and tropical regions.",
-      "entries": [
-        "{grassland}",
-        "{shrubland}",
-        "{forest}",
-        "{hill}"
       ]
     },
     {
@@ -406,10 +424,10 @@
       ]
     },
     {
-      "name": "earth",
-      "explanation": "Locations in the soil (not just underground).",
+      "name": "soil",
+      "explanation": "Locations in the earth (not just underground).",
       "export": {
-        "milieu": "earth"
+        "milieu": "soil"
       },
       "entries": [
         "in the soil",
@@ -525,6 +543,24 @@
       ]
     },
     {
+      "name": "netherworld",
+      "explanation": "Locations beyond the lands of the living.",
+      "export": {
+        "milieu": "netherworld"
+      },
+      "entries": [
+        "abyss",
+        "blazes",
+        "inferno",
+        "netherworld",
+        "pit",
+        "fire",
+        "perdition",
+        "purgatory",
+        "underworld"
+      ]
+    },
+    {
       "name": "outpost",
       "explanation": "Locations in outposts, such as camps and fortifications.",
       "export": {
@@ -614,20 +650,21 @@
     },
     {
       "name": "ship",
-      "explanation": "Locations on boats and other sea vessels.",
+      "explanation": "Locations on boats and other vessels.",
       "export": {
         "milieu": "ship"
       },
       "entries": [
         "cargo hold",
         "captain's cabin",
+        "crew's quarters",
         "mast",
         "crow's nest"
       ]
     },
     {
       "name": "shrubland",
-      "explanation": "Scrubland and bush locations.",
+      "explanation": "Locations with scrubland and bushes.",
       "export": {
         "milieu": "shrubland"
       },
