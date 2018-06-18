@@ -1,0 +1,547 @@
+{
+  "name": "adventure",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "adventure": "",
+    "genre": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Mad Libs style plot hooks and adventure structures.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-06-18",
+  "authors": "ELF Vesala",
+  "sources": "Crowdsourced with the readers of Johnn Four's 'Roleplaying Tips' newsletter.",
+  "genre": "universal",
+  "categories": [
+    "story"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "genre": "{genre}",
+            "adventure": "{{g:genre}}"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{stats}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{adventure}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {adventure}",
+        "{adventure}, {feature}",
+        "{attribute} {adventure}, {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {adventure} {synonym} {looks} {feature}.",
+        "The {attribute} {adventure} {synonym} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Name}: {random} \r\n{b|Adventure}: {g:adventure} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} \r\n{b|Genre}: {g:genre} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "adventure",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{|{common}|scase}"
+        },
+        "{|{rare}|scase}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Usual types.",
+      "entries": [
+        "{universal}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Unusual types.",
+      "entries": [
+        "{fantasy}"
+      ]
+    },
+    {
+      "**************************************************": "STRUCTURES"
+    },
+    {
+      "name": "universal",
+      "explanation": "Non-genre specific adventure structures.",
+      "entries": [
+        "{condition} {group} of {members} {action} {means} {location} {goal} {motivation}, {complication}."
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "action",
+      "explanation": "What the actants are doing?",
+      "entries": [
+        "is exterminating the defilers of a sacred place",
+        "is dying"
+      ]
+    },
+    {
+      "name": "complication",
+      "explanation": "The complication that the actants must face.",
+      "entries": [
+        "but they have lost the way",
+        "but they have been lied to"
+      ]
+    },
+    {
+      "name": "condition",
+      "explanation": "State of the actants.",
+      "entries": [
+        "a rebellious",
+        "a military"
+      ]
+    },
+    {
+      "name": "disaster",
+      "explanation": "A dramatic event that forces actants into action.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "dynamics",
+      "explanation": "The group dynamics of the actants.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "goal",
+      "explanation": "What the actants aim to achieve?",
+      "entries": [
+        "to amass an army",
+        "to assume control"
+      ]
+    },
+    {
+      "name": "group",
+      "explanation": "Organization of the actants.",
+      "entries": [
+        "band",
+        "horde"
+      ]
+    },
+    {
+      "name": "location",
+      "explanation": "Where the actants are operating?",
+      "entries": [
+        "at a sea cave that can only be entered at low tide",
+        "on the border"
+      ]
+    },
+    {
+      "name": "means",
+      "explanation": "How the actants are performing their task?",
+      "entries": [
+        "with a censor to a forbidden god",
+        "with an old rusty chain"
+      ]
+    },
+    {
+      "name": "members",
+      "explanation": "The actants.",
+      "entries": [
+        "philosophy students",
+        "squires"
+      ]
+    },
+    {
+      "name": "motivation",
+      "explanation": "The reason driving the actants.",
+      "entries": [
+        "because they want to ruin a ruler",
+        "because they are poor"
+      ]
+    },
+    {
+      "name": "opponent",
+      "explanation": "The enemy of the actants.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "punishment",
+      "explanation": "The price of failure.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "reward",
+      "explanation": "The reward for success.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "situation",
+      "explanation": "What is the initial state of affairs?",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomization methods.",
+      "entries": [
+        "{component}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMPONENTS"
+    },
+    {
+      "name": "component",
+      "explanation": "Component-based terms (generated from words).",
+      "entries": [
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{compoundbegin}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "FANTASTIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}",
+        "{fantasy condition} {fantasy group} of {fantasy members} {fantasy action} {fantasy means} {fantasy location} {fantasy goal} {fantasy motivation}, {fantasy complication}."
+      ]
+    },
+    {
+      "name": "fantasy action",
+      "explanation": "What the actants are doing?",
+      "entries": [
+        "{action}",
+        "is fantasy feasting"
+      ]
+    },
+    {
+      "name": "fantasy condition",
+      "explanation": "State of the actants.",
+      "entries": [
+        "{condition}",
+        "in fantasy condition"
+      ]
+    },
+    {
+      "name": "fantasy goal",
+      "explanation": "What the actants aim to achieve?",
+      "entries": [
+        "{goal}",
+        "with a fantasy goal"
+      ]
+    },
+    {
+      "name": "fantasy group",
+      "explanation": "Organization of the actants.",
+      "entries": [
+        "{group}",
+        "fantasy group"
+      ]
+    },
+    {
+      "name": "fantasy location",
+      "explanation": "Where the actants are operating?",
+      "entries": [
+        "{location}",
+        "in a fantasy location"
+      ]
+    },
+    {
+      "name": "fantasy means",
+      "explanation": "How the actants are performing their task?",
+      "entries": [
+        "{means}",
+        "by fantasy means"
+      ]
+    },
+    {
+      "name": "fantasy members",
+      "explanation": "The actants.",
+      "entries": [
+        "{members}",
+        "fantasy members"
+      ]
+    },
+    {
+      "name": "fantasy motivation",
+      "explanation": "The reason driving the actants.",
+      "entries": [
+        "{motivation}",
+        "to fantasy motivation"
+      ]
+    },
+    {
+      "name": "fantasy opponent",
+      "explanation": "The enemy oof the actants",
+      "entries": [
+        "{opponent}",
+        "a fantasy opponent"
+      ]
+    },
+    {
+      "name": "fantasy complication",
+      "explanation": "The complication that the actants must face.",
+      "entries": [
+        "{complication}",
+        "but a fantasy complication occurs"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
+        "task",
+        "quest",
+        "foray",
+        "venture",
+        "mission",
+        "pursuit",
+        "adventure",
+        "operation",
+        "assignment",
+        "undertaking"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Synonyms for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}",
+        "{genre}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "genre",
+      "explanation": "The literary classification of the adventure",
+      "entries": [
+        "universal",
+        "fantasy"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
+      ]
+    }
+  ]
+}
