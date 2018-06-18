@@ -2,7 +2,7 @@
 
 [//]: # (Authors: ELF Vesala, Peter Sotos.)
 
-[//]: # (Date: 2018-05-26.)
+[//]: # (Date: 2018-06-18.)
 
 
 # Generator Guide
@@ -629,11 +629,14 @@ The following optional properties can be used:
 
 * **`genre`**: If the table is intended for only certain genres, it can be specified here. This presents one way to scan for suitable tables. Commonly used genres are the following:
 
+  * **ancient** (the earliest civilizations and antiquity; Bronze and Iron Ages)
   * **fantasy** (imaginary realms of myth and magic)
-  * **futuristic** (science fiction worlds in)
-  * **historical** (some period of real-world history)
+  * **futuristic** (science fiction worlds from the near to the far future)
+  * **historical** (a period of history; details in the `explanation` field)
+	* **medieval** (from the Dark Ages to the Late Middle Ages)
   * **modern** (contemporary settings resembling the real world)
   * **myth** (mundane world with hidden, mythic secrets)
+	* **primitive** (the prehistoric time period; Stone Age)
   * **universal** (not specific to a genre)
 
   Using these common categories helps to organize the tables in a standard way, but any genre definition can be used.
