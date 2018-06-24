@@ -15,7 +15,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-23",
+  "date": "2018-06-24",
   "authors": "ELF Vesala",
   "sources": "Crowdsourced with the readers of Johnn Four's 'Roleplaying Tips' newsletter.",
   "genre": "universal",
@@ -868,7 +868,6 @@
         "temple monks",
         "rebels",
         "runaways",
-        "psychics",
         "tinkerers",
         "traveling merchants",
         "mysterious cloaked men",
@@ -1169,17 +1168,14 @@
       "explanation": "What the actants are doing?",
       "entries": [
         "{action}",
+        "{medieval action}",
         "is summoning",
         "is enchanting",
         "is requesting a divine audience",
-        "is trying to slow the plague's progression",
-        "is organizing peasants",
-        "is robbing clerics",
         "is terrorizing mages",
         "is questing for a magical formula",
         "is searching for an arch wizard's legendary lost spell book",
-        "is writing a new powerful magic book",
-        "is defiling shrines"
+        "is writing a new powerful magic book"
       ]
     },
     {
@@ -1188,6 +1184,7 @@
       "format": "but --",
       "entries": [
         "{complication}",
+        "{medieval complication}",
         "they have angered a divinity",
         "a god opposes them",
         "there is a supernatural presence at the site",
@@ -1201,7 +1198,7 @@
       "explanation": "State of the actants.",
       "entries": [
         "{condition}",
-        "a gentry",
+        "{medieval condition}",
         "a fey-touched",
         "a lycanthropic",
         "a geased",
@@ -1229,31 +1226,24 @@
       "explanation": "What the actants aim to achieve?",
       "entries": [
         "{goal}",
+        "{medieval goal}",
         "to become immortal",
-        "to become king",
         "to bind a demon",
         "to break the walls separating reality",
         "to bring back a lost one to live",
         "to bring domination to their race",
         "to create a powerful magic item",
-        "to defeat a cleric",
         "to destroy a divinity",
         "to destroy magic",
-        "to embarrass a local noble",
-        "to extinguish a race",
         "to heal a great wound upon the land",
         "to heal a great wound upon the people",
         "to hunt a vampire",
-        "to implode the court",
-        "to join the court",
         "to keep their godess happy",
         "to kill a colony of humanoids",
-        "to kill a king",
         "to locate a tome of unspeakable truths",
         "to open a magical gate",
         "to open a portal to another dimension",
         "to revive a forgotten god",
-        "to shame a knight",
         "to summon a monster",
         "to turn people undead",
         "to ally themselves with a vampire lord",
@@ -1269,14 +1259,8 @@
       "explanation": "Organization of the actants.",
       "entries": [
         "{group}",
-        "horde",
-        "collegium",
-        "guild",
-        "noble house",
-        "conclave",
-        "coterie",
-        "mages",
-        "hags"
+        "{medieval group}",
+        "coterie"
       ]
     },
     {
@@ -1284,20 +1268,15 @@
       "explanation": "Where the actants are operating?",
       "entries": [
         "{location}",
+        "{medieval location}",
         "at the bottom of a maze",
         "at a crossroads at midnight during a new moon",
         "near a cursed village",
         "inside the skull of a dead god",
         "at the witches' coven",
-        "at a fortress under siege",
-        "in a druid's grove",
         "near a magical spring",
         "in a dragon's lair",
-        "in a kingdom's treasury",
         "in a local cave that connects to an underground realm",
-        "in a throne room",
-        "in a leper colony",
-        "at a four-day alcohol-fueled jousting competition",
         "at the shores before the world's end",
         "in the crypt of a wizard",
         "at the burial mounds of an ancient prison",
@@ -1308,26 +1287,14 @@
         "in a hive for giant bees",
         "in a dimensional nexus",
         "at a god's home",
-        "on the King's road",
         "in the center of the darkest clouds",
         "at the gates to the divine path",
-        "in the catacombs",
-        "in the kingdom's armory",
         "between two dimensional vortexes",
         "in a flying fortress",
         "in the forbidden section of a mage's library",
-        "in a town afflicted with the plague",
-        "at a bizarre menagerie",
-        "at the royal family's tomb",
-        "at the guildhall",
         "at the moment the seas part before them",
         "at a mysterious portal recently found",
         "at the feet of the sleeping titans",
-        "at the noble's gathering",
-        "under the druid's grove",
-        "in the tombs and catacombs of a large temple",
-        "in the catacombs",
-        "in the necropolis",
         "among the tombs of giants",
         "on the lowest level of The Mad Wizard's dungeon",
         "in the Tower of Light",
@@ -1338,9 +1305,7 @@
         "at the end of the rainbow",
         "in a glacial fortress",
         "in a flying castle",
-        "in a floating city",
-        "in a castle courtyard",
-        "in the dungeons"
+        "in a floating city"
       ]
     },
     {
@@ -1348,13 +1313,13 @@
       "explanation": "How the actants are performing their task?",
       "entries": [
         "{means}",
+        "{medieval means}",
         "with a censor to a forbidden god",
         "with a dragon's support",
         "with magical man-catchers",
         "with a diadem of control",
         "with a wand of magic missiles",
         "with a plague of locusts",
-        "by extorting the king",
         "with an enchanted quill",
         "with a rope of braided from blood boar hair",
         "with forbidden tomes",
@@ -1366,7 +1331,6 @@
         "with the skull of a long dead necromancer",
         "with a god's blessing",
         "with a cursed weapon",
-        "with the king's orders in hand",
         "with a magical army",
         "with a slayer",
         "with divine blessings",
@@ -1374,7 +1338,6 @@
         "with a thousand tortured souls",
         "with the bones of an ancient mage",
         "with a god's finger",
-        "with the support of the noble court",
         "with a dragon's hoard",
         "with a stolen artifact",
         "with a merfolk bridal veil",
@@ -1392,67 +1355,48 @@
       "explanation": "The actants.",
       "entries": [
         "{members}",
-        "squires",
+        "{medieval members}",
+        "mages",
+        "hags",
         "sahuagin",
         "illusionists",
         "werewolves",
-        "acolytes",
         "vampires",
-        "rogues",
         "elementals",
         "goblin hunters",
-        "knights",
-        "bardic actors",
         "plants",
-        "nobles and their retinue",
-        "royalty",
-        "lepers",
         "kobold trapsmiths",
         "wizards",
+        "psychics",
         "ancients",
-        "bandits",
-        "mendicant monks",
         "giants",
         "demigods",
         "dwarven archaeologists",
-        "alchemists",
         "halflings",
         "doppelgangers",
         "local spirits",
         "masterless golems",
-        "local town guard",
-        "druids",
-        "kings",
-        "diviners",
         "liches",
         "sprites",
         "kuotoa monitors",
         "ghosts",
         "fairies",
-        "holy inquisitors",
         "enchanters",
-        "bards",
         "orcs",
         "dragons",
         "otherworldly beings",
-        "nobility",
         "undead",
         "witches",
         "planar travelers",
         "chaos worshipers",
-        "peasants",
         "gods",
         "plant creatures",
         "sea creatures",
-        "barons",
         "necromancers",
         "gnomes",
         "homonculi",
         "golems",
-        "fey creatures",
-        "barbarians",
-        "scribes",
-        "journeymen"
+        "fey creatures"
       ]
     },
     {
@@ -1460,16 +1404,15 @@
       "explanation": "The reason driving the actants.",
       "entries": [
         "{motivation}",
+        "{medieval motivation}",
         "because they are under a powerful geas spell from an evil wizard.",
         "because they've been cursed by a priest of an ancient one",
-        "because they want to ruin a king",
         "because they are actually gods",
         "because they are demigods and want to ascend",
         "because they serve an elder evil god",
         "because they are afflicted with a curse",
         "because they serve a demon lord",
         "because they wish to unleash the titans",
-        "because they conspire to overthrow the king",
         "because they quest to recover a lost technology or form of magic",
         "because they serve a devil prince",
         "to fund their search for personal immortality",
@@ -1482,10 +1425,10 @@
     },
     {
       "name": "fantasy opponent",
-      "explanation": "The enemy oof the actants",
+      "explanation": "The enemy of the actants",
       "entries": [
         "{opponent}",
-        "a fantasy opponent"
+        "{medieval opponent}"
       ]
     },
     {
@@ -1495,7 +1438,7 @@
       "name": "myth",
       "explanation": "Descriptions for mythic worlds (once thought true).",
       "entries": [
-        "{common}"
+        "{universal}"
       ]
     },
     {
@@ -1505,7 +1448,7 @@
       "name": "primitive",
       "explanation": "Descriptions for prehistoric worlds.",
       "entries": [
-        "{common}"
+        "{universal}"
       ]
     },
     {
@@ -1515,7 +1458,7 @@
       "name": "ancient",
       "explanation": "Descriptions for ancient worlds.",
       "entries": [
-        "{common}"
+        "{universal}"
       ]
     },
     {
@@ -1525,7 +1468,159 @@
       "name": "medieval",
       "explanation": "Descriptions for medieval worlds (with no magic).",
       "entries": [
-        "{common}"
+        "{universal}",
+        "{medieval condition} {medieval group} of {medieval members} {medieval action} {medieval means} {medieval location}. Their {purpose} is {medieval goal} {medieval motivation}, but {medieval complication}."
+      ]
+    },
+    {
+      "name": "medieval action",
+      "explanation": "What the actants are doing?",
+      "entries": [
+        "{action}",
+        "is trying to slow the plague's progression",
+        "is organizing peasants",
+        "is robbing clerics",
+        "is defiling shrines"
+      ]
+    },
+    {
+      "name": "medieval complication",
+      "explanation": "The complication that the actants must face.",
+      "format": "but --",
+      "entries": [
+        "{complication}"
+      ]
+    },
+    {
+      "name": "medieval condition",
+      "explanation": "State of the actants.",
+      "entries": [
+        "{condition}",
+        "a gentry"
+      ]
+    },
+    {
+      "name": "medieval disaster",
+      "explanation": "A dramatic event that forces actants into action.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "medieval dynamics",
+      "explanation": "The group dynamics of the actants.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "medieval goal",
+      "explanation": "What the actants aim to achieve?",
+      "entries": [
+        "{goal}",
+        "to become king",
+        "to defeat a cleric",
+        "to embarrass a local noble",
+        "to extinguish a race",
+        "to implode the court",
+        "to join the court",
+        "to kill a king",
+        "to shame a knight"
+      ]
+    },
+    {
+      "name": "medieval group",
+      "explanation": "Organization of the actants.",
+      "entries": [
+        "{group}",
+        "horde",
+        "collegium",
+        "guild",
+        "noble house",
+        "conclave"
+      ]
+    },
+    {
+      "name": "medieval location",
+      "explanation": "Where the actants are operating?",
+      "entries": [
+        "{location}",
+        "in a fortress under siege",
+        "in a druid's grove",
+        "in a kingdom's treasury",
+        "in a throne room",
+        "in a leper colony",
+        "at a four-day alcohol-fueled jousting competition",
+        "on the King's road",
+        "in the catacombs",
+        "in the kingdom's armory",
+        "in a town afflicted with the plague",
+        "at a bizarre menagerie",
+        "at the royal family's tomb",
+        "at the guildhall",
+        "at the noble's gathering",
+        "under the druid's grove",
+        "in the tombs and catacombs of a large temple",
+        "in the catacombs",
+        "in the necropolis",
+        "in a castle courtyard",
+        "in the dungeons"
+      ]
+    },
+    {
+      "name": "medieval means",
+      "explanation": "How the actants are performing their task?",
+      "entries": [
+        "{means}",
+        "by extorting the king",
+        "with the king's orders in hand",
+        "with the support of the noble court"
+      ]
+    },
+    {
+      "name": "medieval members",
+      "explanation": "The actants.",
+      "entries": [
+        "{members}",
+        "squires",
+        "acolytes",
+        "rogues",
+        "knights",
+        "bardic actors",
+        "nobles and their retinue",
+        "royalty",
+        "lepers",
+        "bandits",
+        "mendicant monks",
+        "alchemists",
+        "local town guard",
+        "druids",
+        "kings",
+        "diviners",
+        "holy inquisitors",
+        "bards",
+        "nobility",
+        "peasants",
+        "barons",
+        "barbarians",
+        "scribes",
+        "journeymen"
+      ]
+    },
+    {
+      "name": "medieval motivation",
+      "explanation": "The reason driving the actants.",
+      "entries": [
+        "{motivation}",
+        "because they want to ruin a king",
+        "because they conspire to overthrow the king"
+      ]
+    },
+    {
+      "name": "medieval opponent",
+      "explanation": "The enemy of the actants",
+      "entries": [
+        "{opponent}"
       ]
     },
     {
@@ -1535,14 +1630,14 @@
       "name": "modern",
       "explanation": "Descriptions for modern worlds.",
       "entries": [
-        "{common}"
+        "{universal}"
       ]
     },
     {
       "name": "modern location",
       "explanation": "Descriptions for modern worlds.",
       "entries": [
-        "{common}",
+        "{location}",
         "in the gaming rooms",
         "in the casinos"
       ]
@@ -1564,7 +1659,7 @@
       "name": "exotic",
       "explanation": "Exotic alternatives.",
       "entries": [
-        ""
+        "{universal}"
       ]
     },
     {
