@@ -469,310 +469,362 @@
       ]
     },
     {
-      "**************************************************": "GENDER COEFFECT"
+      "**************************************************": "SUBSTANTIVES"
+    },
+    {
+      "--------------------------------------------------": "FEMALES"
+    },
+    {
+      "name": "female",
+      "explanation": "Females of all ages.",
+      "entries": [
+        "{infant female}",
+        "{toddler female}",
+        "{small child female}",
+        "{child female}",
+        "{adolescent female}",
+        "{young female}",
+        "{adult female}",
+        "{middle-aged female}",
+        "{old female}",
+        "{ancient female}"
+      ]
+    },
+    {
+      "name": "infant female",
+      "explanation": "females under 1 year of age.",
+      "entries": [
+        "girl baby"
+      ]
+    },
+    {
+      "name": "toddler female",
+      "explanation": "Females from 1 to 3 years of age.",
+      "entries": [
+        "toddler girl"
+      ]
+    },
+    {
+      "name": "small child female",
+      "explanation": "Female preschoolers.",
+      "entries": [
+        "little girl"
+      ]
+    },
+    {
+      "name": "child female",
+      "explanation": "Female children.",
+      "entries": [
+        "young girl"
+      ]
+    },
+    {
+      "name": "adolescent female",
+      "explanation": "Female teenagers.",
+      "entries": [
+        "girl"
+      ]
+    },
+    {
+      "name": "young female",
+      "explanation": "Young female adults.",
+      "entries": [
+        "young woman"
+      ]
+    },
+    {
+      "name": "adult female",
+      "explanation": "Grown-up women.",
+      "entries": [
+        "woman"
+      ]
+    },
+    {
+      "name": "middle-aged female",
+      "explanation": "Middle aged women.",
+      "entries": [
+        "woman"
+      ]
+    },
+    {
+      "name": "old female",
+      "explanation": "Old women.",
+      "entries": [
+        "woman"
+      ]
+    },
+    {
+      "name": "ancient female",
+      "explanation": "Very old women.",
+      "entries": [
+        "crone"
+      ]
+    },
+    {
+      "--------------------------------------------------": "HERMAFRODITES"
+    },
+    {
+      "name": "hermafrodite",
+      "explanation": "Hermafrodites of all ages.",
+      "entries": [
+        "{infant hermafrodite}",
+        "{toddler hermafrodite}",
+        "{small child hermafrodite}",
+        "{child hermafrodite}",
+        "{adolescent hermafrodite}",
+        "{young hermafrodite}",
+        "{adult hermafrodite}",
+        "{middle-aged hermafrodite}",
+        "{old hermafrodite}",
+        "{ancient hermafrodite}"
+      ]
+    },
+    {
+      "name": "infant hermafrodite",
+      "explanation": "Hermafrodites under 1 year of age.",
+      "entries": [
+        "baby"
+      ]
+    },
+    {
+      "name": "toddler hermafrodite",
+      "explanation": "Hermafrodites from 1 to 3 years of age.",
+      "entries": [
+        "toddler"
+      ]
+    },
+    {
+      "name": "small child hermafrodite",
+      "explanation": "Hermafrodite preschoolers.",
+      "entries": [
+        "small child"
+      ]
+    },
+    {
+      "name": "child hermafrodite",
+      "explanation": "Hermafrodite children.",
+      "entries": [
+        "young child"
+      ]
+    },
+    {
+      "name": "adolescent hermafrodite",
+      "explanation": "Hermafrodite teenagers.",
+      "entries": [
+        "adolescent"
+      ]
+    },
+    {
+      "name": "young hermafrodite",
+      "explanation": "Young hermafrodite adults.",
+      "entries": [
+        "young person"
+      ]
+    },
+    {
+      "name": "adult hermafrodite",
+      "explanation": "Grown-up hermafrodites.",
+      "entries": [
+        "person"
+      ]
+    },
+    {
+      "name": "middle-aged hermafrodite",
+      "explanation": "Middle aged hermafrodites.",
+      "entries": [
+        "person"
+      ]
+    },
+    {
+      "name": "old hermafrodite",
+      "explanation": "Old hermafrodites.",
+      "entries": [
+        "old person"
+      ]
+    },
+    {
+      "name": "ancient hermafrodite",
+      "explanation": "Very old hermafrodites.",
+      "entries": [
+        "elder"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MALES"
+    },
+    {
+      "name": "male",
+      "explanation": "Males of all ages.",
+      "entries": [
+        "{infant male}",
+        "{toddler male}",
+        "{small child male}",
+        "{child male}",
+        "{adolescent male}",
+        "{young male}",
+        "{adult male}",
+        "{middle-aged male}",
+        "{old male}",
+        "{ancient male}"
+      ]
+    },
+    {
+      "name": "infant male",
+      "explanation": "Males under 1 year of age.",
+      "entries": [
+        "boy baby"
+      ]
+    },
+    {
+      "name": "toddler male",
+      "explanation": "Males from 1 to 3 years of age.",
+      "entries": [
+        "toddler boy"
+      ]
+    },
+    {
+      "name": "small child male",
+      "explanation": "Male preschoolers.",
+      "entries": [
+        "little boy"
+      ]
+    },
+    {
+      "name": "child male",
+      "explanation": "Male children.",
+      "entries": [
+        "young boy"
+      ]
+    },
+    {
+      "name": "adolescent male",
+      "explanation": "Male teenagers.",
+      "entries": [
+        "boy"
+      ]
+    },
+    {
+      "name": "young male",
+      "explanation": "Young male adults.",
+      "entries": [
+        "young man"
+      ]
+    },
+    {
+      "name": "adult male",
+      "explanation": "Grown-up men.",
+      "entries": [
+        "man"
+      ]
+    },
+    {
+      "name": "middle-aged male",
+      "explanation": "Middle aged men.",
+      "entries": [
+        "man"
+      ]
+    },
+    {
+      "name": "old male",
+      "explanation": "Old men.",
+      "entries": [
+        "man"
+      ]
+    },
+    {
+      "name": "ancient male",
+      "explanation": "Very old men.",
+      "entries": [
+        "old-timer"
+      ]
+    },
+    {
+      "--------------------------------------------------": "NEUTERS"
     },
     {
       "name": "neuter",
       "explanation": "Age for neuter characters (golems, automatons, homonculi, contructs, androids, etc).",
       "entries": [
-        {
-          "m": 5,
-          "v": "child",
-          "export": {
-            "an age": "an underaged",
-            "humanyears": "{dice:1d6+6}",
-            "substantive": "child",
-            "a substantive": "a child"
-          }
-        },
-        {
-          "m": 10,
-          "v": "adolescent",
-          "export": {
-            "an age": "an adolescent",
-            "humanyears": "{dice:1d7+12}",
-            "substantive": "adolescent",
-            "a substantive": "an adolescent"
-          }
-        },
-        {
-          "m": 20,
-          "v": "young",
-          "export": {
-            "an age": "a young",
-            "humanyears": "{dice:1d10+19}",
-            "substantive": "youngster",
-            "a substantive": "a youngster"
-          }
-        },
-        {
-          "m": 30,
-          "v": "adult",
-          "export": {
-            "an age": "an adult",
-            "humanyears": "{dice:1d10+29}",
-            "substantive": "person",
-            "a substantive": "a person"
-          }
-        },
-        {
-          "m": 20,
-          "v": "middle-aged",
-          "export": {
-            "an age": "a middle-aged",
-            "humanyears": "{dice:1d20+39}",
-            "substantive": "person",
-            "a substantive": "a person"
-          }
-        },
-        {
-          "m": 10,
-          "v": "old",
-          "export": {
-            "an age": "an old",
-            "humanyears": "{dice:1d20+59}",
-            "substantive": "old-timer",
-            "a substantive": "an old-timer"
-          }
-        },
-        {
-          "m": 5,
-          "v": "ancient",
-          "export": {
-            "an age": "an ancient",
-            "humanyears": "{dice:1d20+79}",
-            "substantive": "elder",
-            "a substantive": "an elder"
-          }
-        }
+        "{infant neuter}",
+        "{toddler neuter}",
+        "{small child neuter}",
+        "{child neuter}",
+        "{adolescent neuter}",
+        "{young neuter}",
+        "{adult neuter}",
+        "{middle-aged neuter}",
+        "{old neuter}",
+        "{ancient neuter}"
       ]
     },
     {
-      "name": "female",
-      "explanation": "Age for female characters.",
+      "name": "infant neuter",
+      "explanation": "Neuters under 1 year of age.",
       "entries": [
-        {
-          "m": 5,
-          "v": "child",
-          "export": {
-            "an age": "an underaged",
-            "humanyears": "{dice:1d6+6}",
-            "substantive": "young girl",
-            "a substantive": "a young girl"
-          }
-        },
-        {
-          "m": 10,
-          "v": "adolescent",
-          "export": {
-            "an age": "an adolescent",
-            "humanyears": "{dice:1d7+12}",
-            "substantive": "girl",
-            "a substantive": "a girl"
-          }
-        },
-        {
-          "m": 20,
-          "v": "young",
-          "export": {
-            "an age": "a young",
-            "humanyears": "{dice:1d10+19}",
-            "substantive": "young woman",
-            "a substantive": "a young woman"
-          }
-        },
-        {
-          "m": 30,
-          "v": "adult",
-          "export": {
-            "an age": "an adult",
-            "humanyears": "{dice:1d10+29}",
-            "substantive": "woman",
-            "a substantive": "a woman"
-          }
-        },
-        {
-          "m": 20,
-          "v": "middle-aged",
-          "export": {
-            "an age": "a middle-aged",
-            "humanyears": "{dice:1d20+39}",
-            "substantive": "woman",
-            "a substantive": "a woman"
-          }
-        },
-        {
-          "m": 10,
-          "v": "old",
-          "export": {
-            "an age": "an old",
-            "humanyears": "{dice:1d20+59}",
-            "substantive": "woman",
-            "a substantive": "a woman"
-          }
-        },
-        {
-          "m": 5,
-          "v": "ancient",
-          "export": {
-            "an age": "an ancient",
-            "humanyears": "{dice:1d20+79}",
-            "substantive": "crone",
-            "a substantive": "a crone"
-          }
-        }
+        "baby"
       ]
     },
     {
-      "name": "male",
-      "explanation": "Age for male characters.",
+      "name": "toddler neuter",
+      "explanation": "Neuters from 1 to 3 years of age.",
       "entries": [
-        {
-          "m": 5,
-          "v": "child",
-          "export": {
-            "an age": "an underaged",
-            "humanyears": "{dice:1d6+6}",
-            "substantive": "young boy",
-            "a substantive": "a young boy"
-          }
-        },
-        {
-          "m": 10,
-          "v": "adolescent",
-          "export": {
-            "an age": "an adolescent",
-            "humanyears": "{dice:1d7+12}",
-            "substantive": "boy",
-            "a substantive": "a boy"
-          }
-        },
-        {
-          "m": 20,
-          "v": "young",
-          "export": {
-            "an age": "a young",
-            "humanyears": "{dice:1d10+19}",
-            "substantive": "youngster",
-            "a substantive": "a youngster"
-          }
-        },
-        {
-          "m": 30,
-          "v": "adult",
-          "export": {
-            "an age": "an adult",
-            "humanyears": "{dice:1d10+29}",
-            "substantive": "man",
-            "a substantive": "a man"
-          }
-        },
-        {
-          "m": 20,
-          "v": "middle-aged",
-          "export": {
-            "an age": "a middle-aged",
-            "humanyears": "{dice:1d20+39}",
-            "substantive": "man",
-            "a substantive": "a man"
-          }
-        },
-        {
-          "m": 10,
-          "v": "old",
-          "export": {
-            "an age": "an old",
-            "humanyears": "{dice:1d20+59}",
-            "substantive": "old-timer",
-            "a substantive": "an old-timer"
-          }
-        },
-        {
-          "m": 5,
-          "v": "ancient",
-          "export": {
-            "an age": "an ancient",
-            "humanyears": "{dice:1d20+79}",
-            "substantive": "elder",
-            "a substantive": "an elder"
-          }
-        }
+        "toddler"
       ]
     },
     {
-      "name": "hermafrodite",
-      "explanation": "Age for hermafrodite characters.",
+      "name": "small child neuter",
+      "explanation": "Neuter preschoolers.",
       "entries": [
-        {
-          "m": 5,
-          "v": "child",
-          "export": {
-            "an age": "an underaged",
-            "humanyears": "{dice:1d6+6}",
-            "substantive": "child",
-            "a substantive": "a child"
-          }
-        },
-        {
-          "m": 10,
-          "v": "adolescent",
-          "export": {
-            "an age": "an adolescent",
-            "humanyears": "{dice:1d7+12}",
-            "substantive": "adolescent",
-            "a substantive": "an adolescent"
-          }
-        },
-        {
-          "m": 20,
-          "v": "young",
-          "export": {
-            "an age": "a young",
-            "humanyears": "{dice:1d10+19}",
-            "substantive": "youngster",
-            "a substantive": "a youngster"
-          }
-        },
-        {
-          "m": 30,
-          "v": "adult",
-          "export": {
-            "an age": "an adult",
-            "humanyears": "{dice:1d10+29}",
-            "substantive": "person",
-            "a substantive": "a person"
-          }
-        },
-        {
-          "m": 20,
-          "v": "middle-aged",
-          "export": {
-            "an age": "a middle-aged",
-            "humanyears": "{dice:1d20+39}",
-            "substantive": "person",
-            "a substantive": "a person"
-          }
-        },
-        {
-          "m": 10,
-          "v": "old",
-          "export": {
-            "an age": "an old",
-            "humanyears": "{dice:1d20+59}",
-            "substantive": "old-timer",
-            "a substantive": "an old-timer"
-          }
-        },
-        {
-          "m": 5,
-          "v": "ancient",
-          "export": {
-            "an age": "an ancient",
-            "humanyears": "{dice:1d20+79}",
-            "substantive": "elder",
-            "a substantive": "an elder"
-          }
-        }
+        "small child"
+      ]
+    },
+    {
+      "name": "child neuter",
+      "explanation": "Neuter children.",
+      "entries": [
+        "young child"
+      ]
+    },
+    {
+      "name": "adolescent neuter",
+      "explanation": "Neuter teenagers.",
+      "entries": [
+        "adolescent"
+      ]
+    },
+    {
+      "name": "young neuter",
+      "explanation": "Young neuter adults.",
+      "entries": [
+        "young person"
+      ]
+    },
+    {
+      "name": "adult neuter",
+      "explanation": "Grown-up neuters.",
+      "entries": [
+        "person"
+      ]
+    },
+    {
+      "name": "middle-aged neuter",
+      "explanation": "Middle aged neuters.",
+      "entries": [
+        "person"
+      ]
+    },
+    {
+      "name": "old neuter",
+      "explanation": "Old neuters.",
+      "entries": [
+        "old person"
+      ]
+    },
+    {
+      "name": "ancient neuter",
+      "explanation": "Very old neuters.",
+      "entries": [
+        "elder person"
       ]
     },
     {
