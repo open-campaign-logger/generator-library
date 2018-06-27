@@ -12,7 +12,9 @@
     "independentpossessive": "",
     "reflexive": "",
     "age": "",
-    "substantive": ""
+    "an age": "",
+    "substantive": "",
+    "a substantive": ""
   },
   "variables": {
     "footnote": ""
@@ -282,42 +284,54 @@
           "m": 10,
           "v": "teenage",
           "export": {
-            "substantive": "teenager"
+            "an age": "a teenage",
+            "substantive": "teenager",
+            "a substantive": "a teenager"
           }
         },
         {
           "m": 10,
           "v": "young",
           "export": {
-            "substantive": "youngster"
+            "an age": "a young",
+            "substantive": "youngster",
+            "a substantive": "a youngster"
           }
         },
         {
           "m": 30,
           "v": "adult",
           "export": {
-            "substantive": "person"
+            "an age": "an adult",
+            "substantive": "person",
+            "a substantive": "a person"
           }
         },
         {
           "m": 20,
           "v": "middle-aged",
           "export": {
-            "substantive": "person"
+            "an age": "a middle-aged",
+            "substantive": "person",
+            "a substantive": "a person"
           }
         },
         {
           "m": 10,
           "v": "old",
           "export": {
-            "substantive": "old-timer"
+            "an age": "an old",
+            "substantive": "old-timer",
+            "a substantive": "an old-timer"
           }
         },
         {
           "m": 1,
           "v": "ancient",
           "export": {
-            "substantive": "elder"
+            "an age": "an ancient",
+            "substantive": "elder",
+            "a substantive": "an elder"
           }
         }
       ]
@@ -330,42 +344,54 @@
           "m": 10,
           "v": "teenage",
           "export": {
-            "substantive": "girl"
+            "an age": "a teenage",
+            "substantive": "girl",
+            "a substantive": "a girl"
           }
         },
         {
           "m": 10,
           "v": "young",
           "export": {
-            "substantive": "woman"
+            "an age": "a young",
+            "substantive": "woman",
+            "a substantive": "a woman"
           }
         },
         {
           "m": 30,
           "v": "adult",
           "export": {
-            "substantive": "woman"
+            "an age": "an adult",
+            "substantive": "woman",
+            "a substantive": "a woman"
           }
         },
         {
           "m": 20,
           "v": "middle-aged",
           "export": {
-            "substantive": "woman"
+            "an age": "a middle-aged",
+            "substantive": "woman",
+            "a substantive": "a woman"
           }
         },
         {
           "m": 10,
           "v": "old",
           "export": {
-            "substantive": "woman"
+            "an age": "an old",
+            "substantive": "woman",
+            "a substantive": "a woman"
           }
         },
         {
           "m": 1,
           "v": "ancient",
           "export": {
-            "substantive": "crone"
+            "an age": "an ancient",
+            "substantive": "crone",
+            "a substantive": "a crone"
           }
         }
       ]
@@ -378,42 +404,54 @@
           "m": 10,
           "v": "teenage",
           "export": {
-            "substantive": "boy"
+            "an age": "a teenage",
+            "substantive": "boy",
+            "a substantive": "a boy"
           }
         },
         {
           "m": 10,
           "v": "young",
           "export": {
-            "substantive": "youngster"
+            "an age": "a young",
+            "substantive": "youngster",
+            "a substantive": "a youngster"
           }
         },
         {
           "m": 30,
           "v": "adult",
           "export": {
-            "substantive": "man"
+            "an age": "an adult",
+            "substantive": "man",
+            "a substantive": "a man"
           }
         },
         {
           "m": 20,
           "v": "middle-aged",
           "export": {
-            "substantive": "man"
+            "an age": "a middle-aged",
+            "substantive": "man",
+            "a substantive": "a man"
           }
         },
         {
           "m": 10,
           "v": "old",
           "export": {
-            "substantive": "old-timer"
+            "an age": "an old",
+            "substantive": "old-timer",
+            "a substantive": "an old-timer"
           }
         },
         {
           "m": 1,
           "v": "ancient",
           "export": {
-            "substantive": "elder"
+            "an age": "an ancient",
+            "substantive": "elder",
+            "a substantive": "an elder"
           }
         }
       ]
@@ -426,44 +464,133 @@
           "m": 10,
           "v": "teenage",
           "export": {
-            "substantive": "teenager"
+            "an age": "a teenage",
+            "substantive": "teenager",
+            "a substantive": "a teenager"
           }
         },
         {
           "m": 10,
           "v": "young",
           "export": {
-            "substantive": "youngster"
+            "an age": "a young",
+            "substantive": "youngster",
+            "a substantive": "a youngster"
           }
         },
         {
           "m": 30,
           "v": "adult",
           "export": {
-            "substantive": "person"
+            "an age": "an adult",
+            "substantive": "person",
+            "a substantive": "a person"
           }
         },
         {
           "m": 20,
           "v": "middle-aged",
           "export": {
-            "substantive": "person"
+            "an age": "a middle-aged",
+            "substantive": "person",
+            "a substantive": "a person"
           }
         },
         {
           "m": 10,
           "v": "old",
           "export": {
-            "substantive": "old-timer"
+            "an age": "an old",
+            "substantive": "old-timer",
+            "a substantive": "an old-timer"
           }
         },
         {
           "m": 1,
           "v": "ancient",
           "export": {
-            "substantive": "elder"
+            "an age": "an ancient",
+            "substantive": "elder",
+            "a substantive": "an elder"
           }
         }
+      ]
+    },
+    {
+      "**************************************************": "DISTRIBUTION"
+    },
+    {
+      "name": "balanced",
+      "explanation": "Equal gender distribution (50 %).",
+      "entries": [
+        "{female}",
+        "{male}"
+      ]
+    },
+    {
+      "name": "more female",
+      "explanation": "Females are more common (67 %).",
+      "entries": [
+        {
+          "m": 2,
+          "v": "{female}"
+        },
+        "{male}"
+      ]
+    },
+    {
+      "name": "more male",
+      "explanation": "Males are more common (67 %).",
+      "entries": [
+        {
+          "m": 2,
+          "v": "{male}"
+        },
+        "{female}"
+      ]
+    },
+    {
+      "name": "mostly female",
+      "explanation": "Females are much more common (80 %).",
+      "entries": [
+        {
+          "m": 4,
+          "v": "{female}"
+        },
+        "{male}"
+      ]
+    },
+    {
+      "name": "mostly male",
+      "explanation": "Males are much more common (80 %).",
+      "entries": [
+        {
+          "m": 4,
+          "v": "{male}"
+        },
+        "{female}"
+      ]
+    },
+    {
+      "name": "usually female",
+      "explanation": "Females are the rule (95 %).",
+      "entries": [
+        {
+          "m": 19,
+          "v": "{female}"
+        },
+        "{male}"
+      ]
+    },
+    {
+      "name": "usually male",
+      "explanation": "Males are the rule (95 %).",
+      "entries": [
+        {
+          "m": 19,
+          "v": "{male}"
+        },
+        "{female}"
       ]
     },
     {
@@ -626,7 +753,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}. Age: {global:age}, substantive: {global:substantive}, subject: {global:subject}, possessive: {global:possessive}. Gender: {global:gender}, orientation: {global:orientation}."
+        "Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}. Age: {global:age}, substantive: {global:substantive}, a substantive: {g:a substantive}, subject: {global:subject}, possessive: {global:possessive}. Gender: {global:gender}, orientation: {global:orientation}."
       ]
     }
   ]
