@@ -1,0 +1,967 @@
+{
+  "name": "age",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "age": "",
+    "an age": "",
+    "humanyears": "",
+    "circa": "",
+    "substantive": "",
+    "a substantive": "",
+    "femalesubstantive": "",
+    "malesubstantive": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "The age of a character.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-06-27",
+  "authors": "ELF Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "circa": "{circa}"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{description}",
+        "{stats}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{age}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{circa} {age}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "{circa} {age}"
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Age}: {age} \r\n{b|Precision}: {g:circa} \r\n{b|Human years}: {g:humanyears} \r\n{b|Substantive}: {g:substantive}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "age",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 99,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common types.",
+      "entries": [
+        "{young}",
+        "{adult}",
+        "{middle-aged}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare types.",
+      "entries": [
+        "{child}",
+        "{adolescent}",
+        "{old}",
+        "{ancient}"
+      ]
+    },
+    {
+      "name": "expectional",
+      "explanation": "Types not generated with a standard call.",
+      "entries": [
+        "{infant}",
+        "{toddler}",
+        "{small child}"
+      ]
+    },
+    {
+      "**************************************************": "AGES"
+    },
+    {
+      "name": "infant",
+      "explanation": "Babies under 1 year of age.",
+      "entries": [
+        {
+          "v": "infant",
+          "export": {
+            "age": "infant",
+            "an age": "a baby",
+            "humanyears": "0",
+            "substantive": "infant",
+            "a substantive": "an infant",
+            "female": "girl baby",
+            "male": "boy baby"
+          }
+        }
+      ]
+    },
+    {
+      "name": "toddler",
+      "explanation": "Children from 1 to 3 years of age.",
+      "entries": [
+        {
+          "v": "toddler",
+          "export": {
+            "age": "toddler",
+            "an age": "a toddler",
+            "humanyears": "{dice:1d3}",
+            "substantive": "toddler",
+            "a substantive": "a toddler",
+            "female": "toddler girl",
+            "male": "toddler boy"
+          }
+        }
+      ]
+    },
+    {
+      "name": "small child",
+      "explanation": "Preschoolers.",
+      "entries": [
+        {
+          "v": "small child",
+          "export": {
+            "age": "small child",
+            "an age": "a small child",
+            "humanyears": "{dice:1d3+3}",
+            "substantive": "small child",
+            "a substantive": "a small child",
+            "female": "little girl",
+            "male": "little boy"
+          }
+        }
+      ]
+    },
+    {
+      "name": "child",
+      "explanation": "Children.",
+      "entries": [
+        {
+          "v": "underaged",
+          "export": {
+            "age": "underaged",
+            "an age": "an underaged",
+            "humanyears": "{dice:1d6+6}",
+            "substantive": "child",
+            "a substantive": "a child",
+            "female": "young girl",
+            "male": "young boy"
+          }
+        }
+      ]
+    },
+    {
+      "name": "adolescent",
+      "explanation": "Teenagers.",
+      "entries": [
+        {
+          "v": "adolescent",
+          "export": {
+            "age": "adolescent",
+            "an age": "an adolescent",
+            "humanyears": "{dice:1d7+12}",
+            "substantive": "adolescent",
+            "a substantive": "an adolescent",
+            "female": "girl",
+            "male": "boy"
+          }
+        }
+      ]
+    },
+    {
+      "name": "young",
+      "explanation": "Young adults.",
+      "entries": [
+        {
+          "v": "young",
+          "export": {
+            "age": "young",
+            "an age": "a young",
+            "humanyears": "{dice:1d10+19}",
+            "substantive": "youngster",
+            "a substantive": "a youngster",
+            "female": "young woman",
+            "male": "young man"
+          }
+        }
+      ]
+    },
+    {
+      "name": "adult",
+      "explanation": "Grownups.",
+      "entries": [
+        {
+          "v": "adult",
+          "export": {
+            "age": "adult",
+            "an age": "an adult",
+            "humanyears": "{dice:1d10+29}",
+            "substantive": "person",
+            "a substantive": "a person",
+            "female": "woman",
+            "male": "man"
+          }
+        }
+      ]
+    },
+    {
+      "name": "middle-aged",
+      "explanation": "The middle aged.",
+      "entries": [
+        {
+          "v": "middle-aged",
+          "export": {
+            "age": "middle-aged",
+            "an age": "a middle-aged",
+            "humanyears": "{dice:1d20+39}",
+            "substantive": "person",
+            "a substantive": "a person",
+            "female": "woman",
+            "male": "man"
+          }
+        }
+      ]
+    },
+    {
+      "name": "old",
+      "explanation": "Old people.",
+      "entries": [
+        {
+          "v": "old",
+          "export": {
+            "age": "old",
+            "an age": "an old",
+            "humanyears": "{dice:1d20+59}",
+            "substantive": "old-timer",
+            "a substantive": "an old-timer",
+            "female": "woman",
+            "male": "man"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ancient",
+      "explanation": "Very old people.",
+      "entries": [
+        {
+          "v": "ancient",
+          "export": {
+            "age": "ancient",
+            "an age": "an ancient",
+            "humanyears": "{dice:1d20+79}",
+            "substantive": "elder",
+            "a substantive": "an elder",
+            "female": "crone",
+            "male": "old-timer"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "AGE GROUPS"
+    },
+    {
+      "name": "any",
+      "explanation": "All age groups.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{infant}"
+        },
+        {
+          "m": 1,
+          "v": "{toddler}"
+        },
+        {
+          "m": 1,
+          "v": "{small child}"
+        },
+        {
+          "m": 2,
+          "v": "{child}"
+        },
+        {
+          "m": 10,
+          "v": "{adolescent}"
+        },
+        {
+          "m": 20,
+          "v": "{young}"
+        },
+        {
+          "m": 30,
+          "v": "{adult}"
+        },
+        {
+          "m": 20,
+          "v": "{middle-aged}"
+        },
+        {
+          "m": 10,
+          "v": "{old}"
+        },
+        {
+          "m": 5,
+          "v": "{ancient}"
+        }
+      ]
+    },
+    {
+      "name": "baby",
+      "explanation": "Baby age groups.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{infant}"
+        },
+        {
+          "m": 1,
+          "v": "{toddler}"
+        }
+      ]
+    },
+    {
+      "name": "kid",
+      "explanation": "Childrens' age groups.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{small child}"
+        },
+        {
+          "m": 5,
+          "v": "{child}"
+        }
+      ]
+    },
+    {
+      "name": "minor",
+      "explanation": "Underaged age groups.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{infant}"
+        },
+        {
+          "m": 1,
+          "v": "{toddler}"
+        },
+        {
+          "m": 1,
+          "v": "{small child}"
+        },
+        {
+          "m": 5,
+          "v": "{child}"
+        },
+        {
+          "m": 10,
+          "v": "{adolescent}"
+        }
+      ]
+    },
+    {
+      "name": "major",
+      "explanation": "Adult age groups.",
+      "entries": [
+        {
+          "m": 20,
+          "v": "{young}"
+        },
+        {
+          "m": 30,
+          "v": "{adult}"
+        },
+        {
+          "m": 20,
+          "v": "{middle-aged}"
+        },
+        {
+          "m": 10,
+          "v": "{old}"
+        },
+        {
+          "m": 5,
+          "v": "{ancient}"
+        }
+      ]
+    },
+    {
+      "name": "prime",
+      "explanation": "Working age groups.",
+      "entries": [
+        {
+          "m": 20,
+          "v": "{young}"
+        },
+        {
+          "m": 30,
+          "v": "{adult}"
+        },
+        {
+          "m": 20,
+          "v": "{middle-aged}"
+        }
+      ]
+    },
+    {
+      "name": "elderly",
+      "explanation": "Elderly age groups.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{old}"
+        },
+        {
+          "m": 5,
+          "v": "{ancient}"
+        }
+      ]
+    },
+    {
+      "**************************************************": "GENDER COEFFECT"
+    },
+    {
+      "name": "neuter",
+      "explanation": "Age for neuter characters (golems, automatons, homonculi, contructs, androids, etc).",
+      "entries": [
+        {
+          "m": 5,
+          "v": "child",
+          "export": {
+            "an age": "an underaged",
+            "humanyears": "{dice:1d6+6}",
+            "substantive": "child",
+            "a substantive": "a child"
+          }
+        },
+        {
+          "m": 10,
+          "v": "adolescent",
+          "export": {
+            "an age": "an adolescent",
+            "humanyears": "{dice:1d7+12}",
+            "substantive": "adolescent",
+            "a substantive": "an adolescent"
+          }
+        },
+        {
+          "m": 20,
+          "v": "young",
+          "export": {
+            "an age": "a young",
+            "humanyears": "{dice:1d10+19}",
+            "substantive": "youngster",
+            "a substantive": "a youngster"
+          }
+        },
+        {
+          "m": 30,
+          "v": "adult",
+          "export": {
+            "an age": "an adult",
+            "humanyears": "{dice:1d10+29}",
+            "substantive": "person",
+            "a substantive": "a person"
+          }
+        },
+        {
+          "m": 20,
+          "v": "middle-aged",
+          "export": {
+            "an age": "a middle-aged",
+            "humanyears": "{dice:1d20+39}",
+            "substantive": "person",
+            "a substantive": "a person"
+          }
+        },
+        {
+          "m": 10,
+          "v": "old",
+          "export": {
+            "an age": "an old",
+            "humanyears": "{dice:1d20+59}",
+            "substantive": "old-timer",
+            "a substantive": "an old-timer"
+          }
+        },
+        {
+          "m": 5,
+          "v": "ancient",
+          "export": {
+            "an age": "an ancient",
+            "humanyears": "{dice:1d20+79}",
+            "substantive": "elder",
+            "a substantive": "an elder"
+          }
+        }
+      ]
+    },
+    {
+      "name": "female",
+      "explanation": "Age for female characters.",
+      "entries": [
+        {
+          "m": 5,
+          "v": "child",
+          "export": {
+            "an age": "an underaged",
+            "humanyears": "{dice:1d6+6}",
+            "substantive": "young girl",
+            "a substantive": "a young girl"
+          }
+        },
+        {
+          "m": 10,
+          "v": "adolescent",
+          "export": {
+            "an age": "an adolescent",
+            "humanyears": "{dice:1d7+12}",
+            "substantive": "girl",
+            "a substantive": "a girl"
+          }
+        },
+        {
+          "m": 20,
+          "v": "young",
+          "export": {
+            "an age": "a young",
+            "humanyears": "{dice:1d10+19}",
+            "substantive": "young woman",
+            "a substantive": "a young woman"
+          }
+        },
+        {
+          "m": 30,
+          "v": "adult",
+          "export": {
+            "an age": "an adult",
+            "humanyears": "{dice:1d10+29}",
+            "substantive": "woman",
+            "a substantive": "a woman"
+          }
+        },
+        {
+          "m": 20,
+          "v": "middle-aged",
+          "export": {
+            "an age": "a middle-aged",
+            "humanyears": "{dice:1d20+39}",
+            "substantive": "woman",
+            "a substantive": "a woman"
+          }
+        },
+        {
+          "m": 10,
+          "v": "old",
+          "export": {
+            "an age": "an old",
+            "humanyears": "{dice:1d20+59}",
+            "substantive": "woman",
+            "a substantive": "a woman"
+          }
+        },
+        {
+          "m": 5,
+          "v": "ancient",
+          "export": {
+            "an age": "an ancient",
+            "humanyears": "{dice:1d20+79}",
+            "substantive": "crone",
+            "a substantive": "a crone"
+          }
+        }
+      ]
+    },
+    {
+      "name": "male",
+      "explanation": "Age for male characters.",
+      "entries": [
+        {
+          "m": 5,
+          "v": "child",
+          "export": {
+            "an age": "an underaged",
+            "humanyears": "{dice:1d6+6}",
+            "substantive": "young boy",
+            "a substantive": "a young boy"
+          }
+        },
+        {
+          "m": 10,
+          "v": "adolescent",
+          "export": {
+            "an age": "an adolescent",
+            "humanyears": "{dice:1d7+12}",
+            "substantive": "boy",
+            "a substantive": "a boy"
+          }
+        },
+        {
+          "m": 20,
+          "v": "young",
+          "export": {
+            "an age": "a young",
+            "humanyears": "{dice:1d10+19}",
+            "substantive": "youngster",
+            "a substantive": "a youngster"
+          }
+        },
+        {
+          "m": 30,
+          "v": "adult",
+          "export": {
+            "an age": "an adult",
+            "humanyears": "{dice:1d10+29}",
+            "substantive": "man",
+            "a substantive": "a man"
+          }
+        },
+        {
+          "m": 20,
+          "v": "middle-aged",
+          "export": {
+            "an age": "a middle-aged",
+            "humanyears": "{dice:1d20+39}",
+            "substantive": "man",
+            "a substantive": "a man"
+          }
+        },
+        {
+          "m": 10,
+          "v": "old",
+          "export": {
+            "an age": "an old",
+            "humanyears": "{dice:1d20+59}",
+            "substantive": "old-timer",
+            "a substantive": "an old-timer"
+          }
+        },
+        {
+          "m": 5,
+          "v": "ancient",
+          "export": {
+            "an age": "an ancient",
+            "humanyears": "{dice:1d20+79}",
+            "substantive": "elder",
+            "a substantive": "an elder"
+          }
+        }
+      ]
+    },
+    {
+      "name": "hermafrodite",
+      "explanation": "Age for hermafrodite characters.",
+      "entries": [
+        {
+          "m": 5,
+          "v": "child",
+          "export": {
+            "an age": "an underaged",
+            "humanyears": "{dice:1d6+6}",
+            "substantive": "child",
+            "a substantive": "a child"
+          }
+        },
+        {
+          "m": 10,
+          "v": "adolescent",
+          "export": {
+            "an age": "an adolescent",
+            "humanyears": "{dice:1d7+12}",
+            "substantive": "adolescent",
+            "a substantive": "an adolescent"
+          }
+        },
+        {
+          "m": 20,
+          "v": "young",
+          "export": {
+            "an age": "a young",
+            "humanyears": "{dice:1d10+19}",
+            "substantive": "youngster",
+            "a substantive": "a youngster"
+          }
+        },
+        {
+          "m": 30,
+          "v": "adult",
+          "export": {
+            "an age": "an adult",
+            "humanyears": "{dice:1d10+29}",
+            "substantive": "person",
+            "a substantive": "a person"
+          }
+        },
+        {
+          "m": 20,
+          "v": "middle-aged",
+          "export": {
+            "an age": "a middle-aged",
+            "humanyears": "{dice:1d20+39}",
+            "substantive": "person",
+            "a substantive": "a person"
+          }
+        },
+        {
+          "m": 10,
+          "v": "old",
+          "export": {
+            "an age": "an old",
+            "humanyears": "{dice:1d20+59}",
+            "substantive": "old-timer",
+            "a substantive": "an old-timer"
+          }
+        },
+        {
+          "m": 5,
+          "v": "ancient",
+          "export": {
+            "an age": "an ancient",
+            "humanyears": "{dice:1d20+79}",
+            "substantive": "elder",
+            "a substantive": "an elder"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "PRECISION"
+    },
+    {
+      "name": "circa",
+      "explanation": "The accuracy of the age.",
+      "entries": [
+        "{under}",
+        "{approximately}",
+        "{over}"
+      ]
+    },
+    {
+      "name": "under",
+      "explanation": "Somewhat less than the stated age.",
+      "entries": [
+        "almost",
+        "bordering on",
+        "close to",
+        "not far from",
+        "not quite",
+        "under"
+      ]
+    },
+    {
+      "name": "approximately",
+      "explanation": "About the stated age.",
+      "entries": [
+        "about",
+        "approximately",
+        "circa",
+        "just about",
+        "loosely",
+        "more or less",
+        "roughly"
+      ]
+    },
+    {
+      "name": "over",
+      "explanation": "Somewhat more than the stated age.",
+      "entries": [
+        "beyond",
+        "more than",
+        "over",
+        "past",
+        "upwards of"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZATION"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{beginning}{ending}",
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "age",
+        "maturity"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Synonyms for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "looks to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        "{circa}"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}. Age: {global:age}, substantive: {global:substantive}, a substantive: {g:a substantive}."
+      ]
+    }
+  ]
+}
