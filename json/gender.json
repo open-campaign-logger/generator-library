@@ -8,11 +8,11 @@
     "Subject": "",
     "subject": "",
     "object": "",
-    "Dependentpossessive": "",
-    "dependentpossessive": "",
+    "possessive": "",
     "independentpossessive": "",
     "reflexive": "",
-    "age": ""
+    "age": "",
+    "substantive": ""
   },
   "variables": {
     "footnote": ""
@@ -24,7 +24,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-05-30",
+  "date": "2018-06-27",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -128,8 +128,7 @@
         "Subject": "She",
         "subject": "she",
         "object": "her",
-        "Dependentpossessive": "Her",
-        "dependentpossessive": "her",
+        "possessive": "her",
         "independentpossessive": "hers",
         "reflexive": "herself",
         "age": "{female age}"
@@ -146,8 +145,7 @@
         "Subject": "(S)he",
         "subject": "(s)he",
         "object": "hir",
-        "Dependentpossessive": "Hir",
-        "dependentpossessive": "hir",
+        "possessive": "hir",
         "independentpossessive": "hirs",
         "reflexive": "hirself",
         "age": "{hermafrodite age}"
@@ -164,8 +162,7 @@
         "Subject": "He",
         "subject": "he",
         "object": "him",
-        "Dependentpossessive": "His",
-        "dependentpossessive": "his",
+        "possessive": "his",
         "independentpossessive": "his",
         "reflexive": "himself",
         "age": "{male age}"
@@ -182,8 +179,7 @@
         "Subject": "It",
         "subject": "it",
         "object": "it",
-        "Dependentpossessive": "Its",
-        "dependentpossessive": "its",
+        "possessive": "its",
         "independentpossessive": "its",
         "reflexive": "itself",
         "age": "{neuter age}"
@@ -293,7 +289,6 @@
           "m": 10,
           "v": "young",
           "export": {
-            "age": "",
             "substantive": "youngster"
           }
         },
@@ -631,7 +626,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}. Age: {global:age}, substantive: {global:substantive}. Subject: {global:Subject}, subject: {global:subject}. Dependentpossessive: {global:Dependentpossessive}, dependentpossessive: {global:dependentpossessive}. Gender: {global:gender}, orientation: {global:orientation}."
+        "Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}. Age: {global:age}, substantive: {global:substantive}, subject: {global:subject}, possessive: {global:possessive}. Gender: {global:gender}, orientation: {global:orientation}."
       ]
     }
   ]
