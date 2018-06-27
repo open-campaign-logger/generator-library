@@ -11,6 +11,7 @@
     "ambiguity": "",
     "orientation": "",
     "age": "",
+    "substantive": "",
     "name": "",
     "byname": "",
     "surname": "",
@@ -18,8 +19,7 @@
     "Subject": "",
     "subject": "",
     "object": "",
-    "Dependentpossessive": "",
-    "dependentpossessive": "",
+    "possessive": "",
     "independentpossessive": "",
     "reflexive": "",
     "actant": "person",
@@ -41,8 +41,7 @@
     "mood": "calm",
     "moodexpression": "serious",
     "occupation": "trader",
-    "style": "",
-    "substantive": ""
+    "style": ""
   },
   "variables": {
     "footnote": ""
@@ -53,7 +52,7 @@
   "bugs": "Developepment currently on hold, waiting for global variable support.",
   "to do": "Most of it... Starting from genre? ",
   "see": "",
-  "date": "2018-05-30",
+  "date": "2018-06-27",
   "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
   "genre": "fantasy",
