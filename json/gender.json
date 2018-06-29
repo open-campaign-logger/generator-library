@@ -24,7 +24,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-27",
+  "date": "2018-06-29",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -130,8 +130,7 @@
         "object": "her",
         "possessive": "her",
         "independentpossessive": "hers",
-        "reflexive": "herself",
-        "age": "{lib:age#female}"
+        "reflexive": "herself"
       },
       "entries": [
         "female"
@@ -147,8 +146,7 @@
         "object": "hir",
         "possessive": "hir",
         "independentpossessive": "hirs",
-        "reflexive": "hirself",
-        "age": "{lib:age#hermafrodite}"
+        "reflexive": "hirself"
       },
       "entries": [
         "hermafrodite"
@@ -164,8 +162,7 @@
         "object": "him",
         "possessive": "his",
         "independentpossessive": "his",
-        "reflexive": "himself",
-        "age": "{lib:age#male}"
+        "reflexive": "himself"
       },
       "entries": [
         "male"
@@ -181,8 +178,7 @@
         "object": "it",
         "possessive": "its",
         "independentpossessive": "its",
-        "reflexive": "itself",
-        "age": "{lib:age#neuter}"
+        "reflexive": "itself"
       },
       "entries": [
         "neuter"
