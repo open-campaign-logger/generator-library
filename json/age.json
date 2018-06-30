@@ -7,10 +7,9 @@
     "humanyears": "",
     "humandecade": "",
     "circa": "",
-    "substantive": "",
     "a substantive": "",
-    "femalesubstantive": "",
-    "malesubstantive": ""
+    "female": "",
+    "male": ""
   },
   "variables": {
     "footnote": ""
@@ -22,7 +21,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-29",
+  "date": "2018-06-30",
   "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -81,7 +80,7 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Age}: {age} \r\n{b|Precision}: {g:circa} \r\n{b|Human years}: {g:humanyears} \r\n{b|Human decade}: {g:humandecade} \r\n{b|Substantive}: {g:substantive}"
+        "{b|Age}: {age} \r\n{b|Precision}: {g:circa} \r\n{b|Human years}: {g:humanyears} \r\n{b|Human decade}: {g:humandecade} \r\n{b|A substantive}: {g:asubstantive}"
       ]
     },
     {
@@ -140,7 +139,6 @@
             "an age": "a baby",
             "humanyears": "0",
             "humandecade": "first year of life",
-            "substantive": "infant",
             "a substantive": "an infant",
             "female": "girl baby",
             "male": "boy baby"
@@ -159,7 +157,6 @@
             "an age": "a toddler",
             "humanyears": "{dice:1d3}",
             "humandecade": "first years of life",
-            "substantive": "toddler",
             "a substantive": "a toddlers",
             "female": "toddler girl",
             "male": "toddler boy"
@@ -178,7 +175,6 @@
             "an age": "a small child",
             "humanyears": "{dice:1d3+3}",
             "humandecade": "first decade of life",
-            "substantive": "small child",
             "a substantive": "a small child",
             "female": "little girl",
             "male": "little boy"
@@ -197,7 +193,6 @@
             "an age": "an underaged",
             "humanyears": "{dice:1d6+6}",
             "humandecade": "preteen years",
-            "substantive": "child",
             "a substantive": "a child",
             "female": "young girl",
             "male": "young boy"
@@ -216,7 +211,6 @@
             "an age": "an adolescent",
             "humanyears": "{dice:1d7+12}",
             "humandecade": "teenage years",
-            "substantive": "adolescent",
             "a substantive": "an adolescent",
             "female": "girl",
             "male": "boy"
@@ -235,7 +229,6 @@
             "an age": "a young",
             "humanyears": "{dice:1d10+19}",
             "humandecade": "twenties",
-            "substantive": "youngster",
             "a substantive": "a youngster",
             "female": "young woman",
             "male": "young man"
@@ -254,7 +247,6 @@
             "an age": "an adult",
             "humanyears": "{dice:1d10+29}",
             "humandecade": "thirties",
-            "substantive": "person",
             "a substantive": "a person",
             "female": "woman",
             "male": "man"
@@ -273,7 +265,6 @@
             "an age": "a middle-aged",
             "humanyears": "{dice:1d20+39}",
             "humandecade": "forties or fifties",
-            "substantive": "person",
             "a substantive": "a person",
             "female": "woman",
             "male": "man"
@@ -292,7 +283,6 @@
             "an age": "an old",
             "humanyears": "{dice:1d20+59}",
             "humandecade": "sixties or seventies",
-            "substantive": "old-timer",
             "a substantive": "an old-timer",
             "female": "woman",
             "male": "man"
@@ -311,7 +301,6 @@
             "an age": "an ancient",
             "humanyears": "{dice:1d20+79}",
             "humandecade": "eighties of nineties",
-            "substantive": "elder",
             "a substantive": "an elder",
             "female": "crone",
             "male": "old-timer"
