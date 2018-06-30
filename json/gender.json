@@ -10,9 +10,7 @@
     "object": "",
     "possessive": "",
     "independentpossessive": "",
-    "reflexive": "",
-    "substantive": "",
-    "a substantive": ""
+    "reflexive": ""
   },
   "variables": {
     "footnote": ""
@@ -24,7 +22,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-29",
+  "date": "2018-06-30",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -84,7 +82,7 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Gender}: {g:gender} \r\n{b|Ambiguity}: {g:ambiguity} \r\n{b|Orientation}: {g:orientation} \r\n{b|Substantive}: {g:substantive}"
+        "{b|Gender}: {g:gender} \r\n{b|Ambiguity}: {g:ambiguity} \r\n{b|Orientation}: {g:orientation}"
       ]
     },
     {
@@ -506,7 +504,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}. Substantive: {global:substantive}, a substantive: {g:a substantive}, subject: {global:subject}, possessive: {global:possessive}. Gender: {global:gender}, orientation: {global:orientation}."
+        "Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}. Subject: {global:subject}, possessive: {global:possessive}. Gender: {global:gender}, orientation: {global:orientation}."
       ]
     }
   ]
