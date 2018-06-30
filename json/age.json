@@ -80,7 +80,7 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Age}: {age} \r\n{b|Precision}: {g:circa} \r\n{b|Human years}: {g:humanyears} \r\n{b|Human decade}: {g:humandecade} \r\n{b|A substantive}: {g:asubstantive}"
+        "{b|Age}: {age} \r\n{b|Precision}: {g:circa} \r\n{b|Human years}: {g:humanyears} \r\n{b|Human decade}: {g:humandecade} \r\n{b|A substantive}: {g:a substantive}"
       ]
     },
     {
@@ -383,6 +383,27 @@
           "m": 5,
           "v": "{child}"
         }
+      ]
+    },
+    {
+      "name": "juvenile",
+      "explanation": "Preteens and teenagers.",
+      "entries": [
+        {
+          "m": 2,
+          "v": "{child}"
+        },
+        {
+          "m": 10,
+          "v": "{adolescent}"
+        }
+      ]
+    },
+    {
+      "name": "teenager",
+      "explanation": "The teen-aged.",
+      "entries": [
+        "{adolescent}"
       ]
     },
     {
@@ -953,38 +974,80 @@
       "name": "random",
       "explanation": "Randomized terms (generated from components).",
       "entries": [
-        "{beginning}{ending}",
-        "{descriptor} {beginning}{ending}",
-        "{beginning}{ending} {extension}",
-        "{descriptor} {beginning}{ending} {extension}"
+        "{beginning}-{ending}",
+        "{descriptor} {beginning}-{ending}",
+        "{beginning}-{ending} {extension}",
+        "{descriptor} {beginning}-{ending} {extension}"
       ]
     },
     {
       "name": "descriptor",
       "explanation": "Descriptors for randomized terms.",
       "entries": [
-        ""
+        "fairly",
+        "genuinely",
+        "moderately",
+        "positively",
+        "pretty",
+        "quite",
+        "rather",
+        "really",
+        "relatively",
+        "reasonably",
+        "somewhat",
+        "very"
       ]
     },
     {
       "name": "beginning",
       "explanation": "Beginnings for randomized terms.",
       "entries": [
-        "XXX"
+        "{youthful}",
+        "{mature}"
+      ]
+    },
+    {
+      "name": "youthful",
+      "explanation": "Descriptions for looking young.",
+      "entries": [
+        "active",
+        "fresh",
+        "vigorous",
+        "young",
+        "youthful"
+      ]
+    },
+    {
+      "name": "mature",
+      "explanation": "Descriptions for looking old.",
+      "entries": [
+        "decrepit",
+        "mature",
+        "old",
+        "seasoned",
+        "venerable"
       ]
     },
     {
       "name": "ending",
       "explanation": "Endings for randomized terms.",
       "entries": [
-        "XXX"
+        "looking",
+        "mannered"
       ]
     },
     {
       "name": "extension",
       "explanation": "Extensions for randomized terms.",
       "entries": [
-        ""
+        "for their age",
+        "for their actual age",
+        "for their real age",
+        "for their true age",
+        "for their actual years",
+        "for their real years",
+        "for their true years",
+        "for their years"
       ]
     },
     {
@@ -996,37 +1059,35 @@
       "entries": [
         "{myth}",
         "{medieval}",
-        "XXX"
+        "{age}"
       ]
     },
     {
       "name": "myth",
       "explanation": "Descriptions for mythic worlds (once thought true).",
       "entries": [
-        "XXX"
+        "{age}"
       ]
     },
     {
       "name": "medieval",
       "explanation": "Descriptions for medieval worlds (with no magic).",
       "entries": [
-        "XXX"
+        "{age}"
       ]
     },
     {
       "name": "modern",
       "explanation": "Descriptions for modern worlds.",
       "entries": [
-        "{common}",
-        "XXX"
+        "{age}"
       ]
     },
     {
       "name": "futuristic",
       "explanation": "Descriptions for science fiction worlds.",
       "entries": [
-        "{modern}",
-        "XXX"
+        "{modern}"
       ]
     },
     {
@@ -1083,7 +1144,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}. Age: {global:age}, substantive: {global:substantive}, a substantive: {g:a substantive}."
+        "Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}. Age: {global:age}, a substantive: {g:a substantive}."
       ]
     }
   ]
