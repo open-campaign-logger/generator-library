@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-29",
+  "date": "2018-06-30",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -69,7 +69,7 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Place}: {place} \r\n{b|Appellation}: {appellation} \r\n{b|Culture}: {g:culture}"
+        "{b|Place}: {place} \r\n{b|Aspect}: {aspectual} \r\n{b|Concept}: {conceptual} \r\n{b|Milieu}: {milieu} \r\n{b|Appellation}: {appellation} \r\n{b|Culture}: {g:culture}"
       ]
     },
     {
@@ -90,16 +90,31 @@
       "name": "common",
       "explanation": "Usual types.",
       "entries": [
-        "{beginning} {civilized}",
-        "{beginning} {wilderness}"
+        "{|{aspectual}|tcase}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Unusual types.",
       "entries": [
-        "{beginning} {freshwater}",
-        "{beginning} {seawater}"
+        "{|{conceptual}|tcase}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "aspectual",
+      "explanation": "Aspect-based place names.",
+      "entries": [
+        "{lib:aspect#summary} {wilderness}"
+      ]
+    },
+    {
+      "name": "conceptual",
+      "explanation": "Concept-based place names.",
+      "entries": [
+        "{wilderness} of {lib:concept#summary}"
       ]
     },
     {
