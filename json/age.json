@@ -21,7 +21,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-30",
+  "date": "2018-07-02",
   "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -433,6 +433,20 @@
       ]
     },
     {
+      "name": "youth",
+      "explanation": "The teen-aged and young adults.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{adolescent}"
+        },
+        {
+          "m": 20,
+          "v": "{young}"
+        }
+      ]
+    },
+    {
       "name": "major",
       "explanation": "Adult age groups.",
       "entries": [
@@ -573,7 +587,6 @@
       "name": "adult female",
       "explanation": "Grown-up women.",
       "entries": [
-        "female",
         "woman"
       ]
     },
@@ -581,7 +594,6 @@
       "name": "middle-aged female",
       "explanation": "Middle aged women.",
       "entries": [
-        "female",
         "woman"
       ]
     },
@@ -779,7 +791,6 @@
       "entries": [
         "guy",
         "young fellow",
-        "young male",
         "young man"
       ]
     },
@@ -789,7 +800,6 @@
       "entries": [
         "fellow",
         "gent",
-        "male",
         "man"
       ]
     },
@@ -799,7 +809,6 @@
       "entries": [
         "fellow",
         "gent",
-        "male",
         "man"
       ]
     },
