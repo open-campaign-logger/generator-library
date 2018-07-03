@@ -42,9 +42,7 @@
       "explanation": "The output format.",
       "entries": [
         "{summary}",
-        "{detail}",
-        "{description}",
-        "{stats}"
+        "{detail}"
       ]
     },
     {
@@ -1558,7 +1556,7 @@
     },
     {
       "name": "alias",
-      "explanation": "Synonyms for Also Known As.",
+      "explanation": "Variant expressions for 'Also Known As'.",
       "entries": [
         "alias",
         "also called",
@@ -1574,7 +1572,7 @@
     },
     {
       "name": "looks",
-      "explanation": "Synonyms for looking like something.",
+      "explanation": "Variant expressions for looking like something.",
       "format": "-- in good condition / approaching",
       "entries": [
         "appears to be",
