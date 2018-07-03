@@ -21,7 +21,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-07-02",
+  "date": "2018-07-03",
   "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -953,8 +953,7 @@
         "bordering on",
         "close to",
         "not far from",
-        "not quite",
-        "under"
+        "not quite"
       ]
     },
     {
@@ -1112,7 +1111,7 @@
     },
     {
       "name": "looks",
-      "explanation": "Synonyms for looking like something.",
+      "explanation": "Variant expressions for looking like something.",
       "format": "-- in good condition.",
       "entries": [
         "appears to be",

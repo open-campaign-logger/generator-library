@@ -380,7 +380,7 @@
     },
     {
       "name": "booty",
-      "explanation": "Synonyms for victory trophies.",
+      "explanation": "Variant expressions for victory trophies.",
       "entries": [
         "a battle trophy",
         "booty",
@@ -396,7 +396,7 @@
     },
     {
       "name": "carries",
-      "explanation": "Synonyms for carrying something.",
+      "explanation": "Variant expressions for carrying something.",
       "format": "-- X",
       "entries": [
         "carries",
@@ -409,7 +409,7 @@
     },
     {
       "name": "emits",
-      "explanation": "",
+      "explanation": "Variants expressions for producing noise.",
       "entries": [
         "barks",
         "bellows",
@@ -430,7 +430,7 @@
     },
     {
       "name": "looks",
-      "explanation": "Synonyms for looking like something.",
+      "explanation": "Variant expressions for looking like something.",
       "format": "-- in good condition / approaching",
       "entries": [
         "appears to be",
@@ -439,7 +439,7 @@
     },
     {
       "name": "old",
-      "explanation": "Synonyms for 'old' items.",
+      "explanation": "Variant expressions for 'old' items.",
       "entries": [
         "an aged",
         "an ancient",
@@ -456,7 +456,7 @@
     },
     {
       "name": "wears",
-      "explanation": "Synonyms for being clothed in something.",
+      "explanation": "Variant expressions for being clothed in something.",
       "format": "-- clothing / jewelry",
       "entries": [
         "has put on",
@@ -466,7 +466,7 @@
     },
     {
       "name": "wields",
-      "explanation": "Synonyms for being using something as a weapon.",
+      "explanation": "Variant expressions for using something as a weapon.",
       "format": "-- weapon",
       "entries": [
         "brandishes",

@@ -1948,7 +1948,7 @@
     },
     {
       "name": "alias",
-      "explanation": "Synonyms for Also Known As.",
+      "explanation": "Variant expressions for 'Also Known As'.",
       "entries": [
         "alias",
         "also called",

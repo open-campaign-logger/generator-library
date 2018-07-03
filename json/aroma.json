@@ -355,7 +355,7 @@
     },
     {
       "name": "odor",
-      "explanation": "Neutral synonyms for 'smell' (good or bad odour).",
+      "explanation": "Neutral expressions for 'smell' (good or bad odour).",
       "entries": [
         "odor",
         "tang",
@@ -371,7 +371,7 @@
     },
     {
       "name": "savor",
-      "explanation": "Neutral synonyms for 'taste' (good or bad).",
+      "explanation": "Neutral expressions for 'taste' (good or bad).",
       "entries": [
         "zest",
         "taste",
@@ -387,7 +387,7 @@
     },
     {
       "name": "looks",
-      "explanation": "Synonyms for looking like something.",
+      "explanation": "Variant expressions for looking like something.",
       "format": "-- in good condition.",
       "entries": [
         "appears to be",

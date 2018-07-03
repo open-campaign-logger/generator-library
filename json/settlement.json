@@ -101,7 +101,7 @@
     },
     {
       "name": "established",
-      "explanation": "Synonyms for establishing the settlement.",
+      "explanation": "Variant expressions for establishing the settlement.",
       "format": "The settlement --",
       "entries": [
         "was established",
@@ -137,7 +137,7 @@
     },
     {
       "name": "present",
-      "explanation": "Synonyms for the ",
+      "explanation": "Variant expressions for the ",
       "format": "The settlement was established as a trading place --",
       "entries": [
         "and is now",

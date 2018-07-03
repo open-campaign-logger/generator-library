@@ -1683,7 +1683,7 @@
     },
     {
       "name": "looks",
-      "explanation": "Synonyms for looking like something.",
+      "explanation": "Variant expressions for looking like something.",
       "format": "-- in good condition / approaching",
       "entries": [
         "appears to be",
@@ -1702,7 +1702,7 @@
     },
     {
       "name": "representative",
-      "explanation": "Synonyms for characters representing something.",
+      "explanation": "Variant expressions for persons representing something.",
       "entries": [
         "agent",
         "delegate",
