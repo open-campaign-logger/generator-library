@@ -4,11 +4,14 @@
   "globals": {
     "unit": "",
     "units": "",
-    "singularpossessive": "",
-    "pluralpossessive": "",
+    "a unit": "",
+    "unitpossessive": "",
+    "unitspossessive": "",
     "smallerunit": "",
     "smallerunits": "",
-    "biggerrunit": ""
+    "biggerrunit": "",
+    "absolute": "",
+    "relative": ""
   },
   "variables": {
     "footnote": ""
@@ -19,13 +22,13 @@
   "format": "",
   "bugs": "",
   "to do": "",
-  "see": "",
-  "date": "2018-07-02",
+  "see": "number",
+  "date": "2018-07-03",
   "authors": "ELF Vesala",
-  "sources": "",
-  "genre": "",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
   "categories": [
-    ""
+    "utility"
   ],
   "tables": [
     {
@@ -79,7 +82,7 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Name}: {random} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+        "{b|Time}: {time} \r\n{b|Absolute}: {g:absolute} \r\n{b|Relative}: {g:relative} \r\n{b|Unit}: {g:unit} \r\n{b|Clock}: {clock} \r\n{b|Date}: {date} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
       ]
     },
     {
@@ -119,122 +122,337 @@
       "name": "absolute",
       "explanation": "",
       "entries": [
-        "on {weekday}"
+        "{g:absolute}"
       ]
     },
     {
       "name": "relative",
       "explanation": "",
       "entries": [
-        "{relative day}"
+        "{g:relative}"
       ]
     },
     {
-      "--------------------------------------------------": "UNITS"
+      "**************************************************": "UNITS"
     },
     {
       "name": "unit",
-      "explanation": "The scale of measurement.",
+      "explanation": "A random scale of measurement.",
+      "entries": [
+        "{second}",
+        "{minute}",
+        "{hour}",
+        "{day}",
+        "{week}",
+        "{month}",
+        "{year}",
+        "{decade}",
+        "{century}",
+        "{millennium}",
+        "{aeon}"
+      ]
+    },
+    {
+      "name": "second",
+      "explanation": "Typically 1/60 of a minute.",
       "entries": [
         {
-          "v": "",
+          "v": "second",
           "export": {
-            "unit": "minute",
-            "units": "minutes",
-            "singularpossessive": "minute's",
-            "pluralpossessive": "minutes'",
-            "smallerunit": "a second",
-            "smallerunits": "seconds"
-          }
-        },
-        {
-          "v": "",
-          "export": {
-            "unit": "hour",
-            "units": "hours",
-            "singularpossessive": "hour's",
-            "pluralpossessive": "hours'",
-            "smallerunit": "a minute",
-            "smallerunits": "minutes"
-          }
-        },
-        {
-          "v": "",
-          "export": {
-            "unit": "day",
-            "units": "days",
-            "singularpossessive": "day's",
-            "pluralpossessive": "days'",
-            "smallerunit": "an hour",
-            "smallerunits": "hours"
-          }
-        },
-        {
-          "v": "",
-          "export": {
-            "unit": "week",
-            "units": "weeks",
-            "singularpossessive": "week's",
-            "pluralpossessive": "weeks'",
-            "smallerunit": "a day",
-            "smallerunits": "days"
-          }
-        },
-        {
-          "v": "",
-          "export": {
-            "unit": "month",
-            "units": "months",
-            "singularpossessive": "month's",
-            "pluralpossessive": "months'",
-            "smallerunit": "a week",
-            "smallerunits": "weeks"
-          }
-        },
-        {
-          "v": "",
-          "export": {
-            "unit": "year",
-            "units": "years",
-            "singularpossessive": "year's",
-            "pluralpossessive": "years'",
-            "smallerunit": "a month",
-            "smallerunits": "months"
-          }
-        },
-        {
-          "v": "",
-          "export": {
-            "unit": "decade",
-            "units": "decades",
-            "singularpossessive": "decade's",
-            "pluralpossessive": "decades'",
-            "smallerunit": "a year",
-            "smallerunits": "years"
-          }
-        },
-        {
-          "v": "",
-          "export": {
-            "unit": "century",
-            "units": "centuries",
-            "singularpossessive": "century's",
-            "pluralpossessive": "centuries'",
-            "smallerunit": "a decade",
-            "smallerunits": "decades"
-          }
-        },
-        {
-          "v": "",
-          "export": {
-            "unit": "millennium",
-            "units": "millennia",
-            "singularpossessive": "millennium's",
-            "pluralpossessive": "millennia's",
-            "smallerunit": "a century",
-            "smallerunits": "centuries"
+            "a unit": "a second",
+            "units": "seconds",
+            "unitpossessive": "second's",
+            "unitspossessive": "seconds'",
+            "smallerunit": "a millisecond",
+            "smallerunits": "milliseconds",
+            "biggerrunit": "a minute",
+            "absolute": "at {dice:1d59+1} seconds",
+            "relative": "in {dice:1d59+1} seconds"
           }
         }
+      ]
+    },
+    {
+      "name": "minute",
+      "explanation": "Typically 60 seconds.",
+      "entries": [
+        {
+          "v": "minute",
+          "export": {
+            "a unit": "a minute",
+            "units": "minutes",
+            "unitpossessive": "minute's",
+            "unitspossessive": "minutes'",
+            "smallerunit": "a second",
+            "smallerunits": "seconds",
+            "biggerrunit": "an hour",
+            "absolute": "at {dice:1d59+1} minutes",
+            "relative": "in {dice:1d59+1} minutes"
+          }
+        }
+      ]
+    },
+    {
+      "name": "hour",
+      "explanation": "Typically 60 minutes.",
+      "entries": [
+        {
+          "v": "hour",
+          "export": {
+            "a unit": "an hour",
+            "units": "hours",
+            "unitpossessive": "hour's",
+            "unitspossessive": "hours'",
+            "smallerunit": "a minute",
+            "smallerunits": "minutes",
+            "biggerrunit": "a day",
+            "absolute": "at {dice:1d23+1} hours",
+            "relative": "in {dice:1d23+1} hours"
+          }
+        }
+      ]
+    },
+    {
+      "name": "day",
+      "explanation": "Typically 24 hours.",
+      "entries": [
+        {
+          "v": "day",
+          "export": {
+            "a unit": "a day",
+            "units": "days",
+            "unitpossessive": "day's",
+            "unitspossessive": "days'",
+            "smallerunit": "an hour",
+            "smallerunits": "hours",
+            "biggerrunit": "a week",
+            "absolute": "on {weekday}",
+            "relative": "in {lib:number#up to seven} days"
+          }
+        }
+      ]
+    },
+    {
+      "name": "week",
+      "explanation": "Typically 7 days.",
+      "entries": [
+        {
+          "v": "week",
+          "export": {
+            "a unit": "a week",
+            "units": "weeks",
+            "unitpossessive": "week's",
+            "unitspossessive": "weeks'",
+            "smallerunit": "a day",
+            "smallerunits": "days",
+            "biggerrunit": "a month",
+            "absolute": "after {lib:number#up to four} weeks",
+            "relative": "in {lib:number#up to four} weeks"
+          }
+        }
+      ]
+    },
+    {
+      "name": "month",
+      "explanation": "Typically 30 days.",
+      "entries": [
+        {
+          "v": "month",
+          "export": {
+            "a unit": "a month",
+            "units": "months",
+            "unitpossessive": "month's",
+            "unitspossessive": "months'",
+            "smallerunit": "a week",
+            "smallerunits": "weeks",
+            "biggerrunit": "a year",
+            "absolute": "after {lib:number#up to twelve} months",
+            "relative": "in {lib:number#up to twelve} months"
+          }
+        }
+      ]
+    },
+    {
+      "name": "year",
+      "explanation": "Typically 12 months.",
+      "entries": [
+        {
+          "v": "year",
+          "export": {
+            "a unit": "a year",
+            "units": "years",
+            "unitpossessive": "year's",
+            "unitspossessive": "years'",
+            "smallerunit": "a month",
+            "smallerunits": "months",
+            "biggerrunit": "a decade",
+            "absolute": "after {lib:number#up to ten} years",
+            "relative": "in {lib:number#up to ten} years"
+          }
+        }
+      ]
+    },
+    {
+      "name": "decade",
+      "explanation": "Typically 10 years.",
+      "entries": [
+        {
+          "v": "decade",
+          "export": {
+            "a unit": "a decade",
+            "units": "decades",
+            "unitpossessive": "decade's",
+            "unitspossessive": "decades'",
+            "smallerunit": "a year",
+            "smallerunits": "years",
+            "biggerrunit": "a century",
+            "absolute": "after {lib:number#up to ten} decades",
+            "relative": "in {lib:number#up to ten} decades"
+          }
+        }
+      ]
+    },
+    {
+      "name": "century",
+      "explanation": "Typically 100 years.",
+      "entries": [
+        {
+          "v": "century",
+          "export": {
+            "a unit": "a century",
+            "units": "centuries",
+            "unitpossessive": "century's",
+            "unitspossessive": "centuries'",
+            "smallerunit": "a decade",
+            "smallerunits": "decades",
+            "biggerrunit": "a millennium",
+            "absolute": "after {lib:number#up to ten} centuries",
+            "relative": "in {lib:number#up to ten} centuries"
+          }
+        }
+      ]
+    },
+    {
+      "name": "millennium",
+      "explanation": "Typically 1000 years.",
+      "entries": [
+        {
+          "v": "millennium",
+          "export": {
+            "a unit": "a millennium",
+            "units": "millennia",
+            "unitpossessive": "millennium's",
+            "unitspossessive": "millennia's",
+            "smallerunit": "a century",
+            "smallerunits": "centuries",
+            "biggerrunit": "an aeon",
+            "absolute": "after {lib:number#up to twelve} millennia",
+            "relative": "in {lib:number#up to twelve} millennia"
+          }
+        }
+      ]
+    },
+    {
+      "name": "aeon",
+      "explanation": "A world age.",
+      "entries": [
+        {
+          "v": "aeon",
+          "export": {
+            "a unit": "an aeon",
+            "units": "aeons",
+            "unitpossessive": "aeon's",
+            "unitspossessive": "aeons'",
+            "smallerunit": "a millennium",
+            "smallerunits": "millennia",
+            "biggerrunit": "an eternity",
+            "absolute": "after {lib:number#up to twelve} aeons",
+            "relative": "in {lib:number#up to twelve} aeons"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "RANGES"
+    },
+    {
+      "name": "seconds",
+      "explanation": "A stopwatch range of minutes and seconds.",
+      "entries": [
+        "{second}",
+        "{minute}"
+      ]
+    },
+    {
+      "name": "minutes",
+      "explanation": "A clockface range of hours and minutes.",
+      "entries": [
+        "{minute}",
+        "{hour}"
+      ]
+    },
+    {
+      "name": "hours",
+      "explanation": "A day scheduler range of days and hours.",
+      "entries": [
+        "{hour}",
+        "{day}"
+      ]
+    },
+    {
+      "name": "days",
+      "explanation": "A calendar range of weeks and days.",
+      "entries": [
+        "{day}",
+        "{week}"
+      ]
+    },
+    {
+      "name": "weeks",
+      "explanation": "A calendar range of months and weeks.",
+      "entries": [
+        "{week}",
+        "{month}"
+      ]
+    },
+    {
+      "name": "months",
+      "explanation": "A calendar range of years and months.",
+      "entries": [
+        "{month}",
+        "{year}"
+      ]
+    },
+    {
+      "name": "years",
+      "explanation": "A calendar range of decades and years.",
+      "entries": [
+        "{year}",
+        "{decade}"
+      ]
+    },
+    {
+      "name": "decades",
+      "explanation": "A calendar range of centuries and decades.",
+      "entries": [
+        "{decade}",
+        "{century}"
+      ]
+    },
+    {
+      "name": "centuries",
+      "explanation": "A calendar range of millenniums and centuries.",
+      "entries": [
+        "{century}",
+        "{millennium}"
+      ]
+    },
+    {
+      "name": "millennia",
+      "explanation": "A calendar range of aeons and millenniums.",
+      "entries": [
+        "{millennium}",
+        "{aeon}"
       ]
     },
     {
@@ -244,24 +462,21 @@
       "name": "past",
       "explanation": "Events in the history.",
       "entries": [
-        "{g:unit} ago",
-        "two {g:units} ago",
-        "three {g:units} ago",
-        "four {g:units} ago",
-        "five {g:units} ago",
-        "several {g:units} ago"
+        "{g:a unit} {ago}",
+        "{lib:number#up to twelve} {g:units} {ago}",
+        "{lib:number#a few} {g:units} {ago}",
+        "{lib:number#many} {g:units} {ago}"
       ]
     },
     {
       "name": "future",
       "explanation": "Events in the future.",
       "entries": [
+        "in {g:a unit}",
         "in one {g:unit}",
-        "in two {g:units}",
-        "in three {g:units}",
-        "in four {g:units}",
-        "in five {g:units}",
-        "in a few {g:units}"
+        "in {lib:number#up to twelve} {g:units}",
+        "in {lib:number#a few} {g:units}",
+        "in {lib:number#many} {g:units}"
       ]
     },
     {
@@ -315,6 +530,55 @@
       ]
     },
     {
+      "**************************************************": "MOMENTS"
+    },
+    {
+      "--------------------------------------------------": "CLOCK"
+    },
+    {
+      "name": "clock",
+      "explanation": "Random clock types.",
+      "entries": [
+        "{clock of 12}",
+        "{clock of 24}"
+      ]
+    },
+    {
+      "name": "clock of 12",
+      "explanation": "12-hour clock",
+      "entries": [
+        "{dice:1d12}:{dice:1d60-1} {period}"
+      ]
+    },
+    {
+      "name": "clock of 24",
+      "explanation": "24-hour clock",
+      "entries": [
+        "{dice:1d24-1}:{dice:1d60-1}"
+      ]
+    },
+    {
+      "name": "period",
+      "explanation": "A.M. (Ante Meridiem) and P.M. (Post Meridiem) times.",
+      "entries": [
+        "AM",
+        "PM"
+      ]
+    },
+    {
+      "--------------------------------------------------": "DATES"
+    },
+    {
+      "name": "date",
+      "explanation": "Random dates.",
+      "entries": [
+        "{month} {g:monthday}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "DAYS"
+    },
+    {
       "name": "weekday",
       "explanation": "Days of the week.",
       "entries": [
@@ -325,6 +589,194 @@
         "Friday",
         "Saturday",
         "Sunday"
+      ]
+    },
+    {
+      "name": "month of 28",
+      "explanation": "Days for a 28-day month.",
+      "entries": [
+        "1st",
+        "2nd",
+        "3rd",
+        "4th",
+        "5th",
+        "6th",
+        "7th",
+        "8th",
+        "9th",
+        "10th",
+        "11th",
+        "12th",
+        "13th",
+        "14th",
+        "15th",
+        "16th",
+        "17th",
+        "18th",
+        "19th",
+        "20th",
+        "21st",
+        "22nd",
+        "23rd",
+        "24th",
+        "25th",
+        "26th",
+        "27th",
+        "28th"
+      ]
+    },
+    {
+      "name": "month of 30",
+      "explanation": "Days for 30-day months.",
+      "entries": [
+        "1st",
+        "2nd",
+        "3rd",
+        "4th",
+        "5th",
+        "6th",
+        "7th",
+        "8th",
+        "9th",
+        "10th",
+        "11th",
+        "12th",
+        "13th",
+        "14th",
+        "15th",
+        "16th",
+        "17th",
+        "18th",
+        "19th",
+        "20th",
+        "21st",
+        "22nd",
+        "23rd",
+        "24th",
+        "25th",
+        "26th",
+        "27th",
+        "28th",
+        "29th",
+        "30th"
+      ]
+    },
+    {
+      "name": "month of 31",
+      "explanation": "Days for 31-day months.",
+      "entries": [
+        "1st",
+        "2nd",
+        "3rd",
+        "4th",
+        "5th",
+        "6th",
+        "7th",
+        "8th",
+        "9th",
+        "10th",
+        "11th",
+        "12th",
+        "13th",
+        "14th",
+        "15th",
+        "16th",
+        "17th",
+        "18th",
+        "19th",
+        "20th",
+        "21st",
+        "22nd",
+        "23rd",
+        "24th",
+        "25th",
+        "26th",
+        "27th",
+        "28th",
+        "29th",
+        "30th",
+        "31st"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MONTHS"
+    },
+    {
+      "name": "month",
+      "explanation": "Months of the year.",
+      "entries": [
+        {
+          "v": "January",
+          "export": {
+            "monthday": "{month of 31}"
+          }
+        },
+        {
+          "v": "February",
+          "export": {
+            "monthday": "{month of 28}"
+          }
+        },
+        {
+          "v": "March",
+          "export": {
+            "monthday": "{month of 31}"
+          }
+        },
+        {
+          "v": "April",
+          "export": {
+            "monthday": "{month of 30}"
+          }
+        },
+        {
+          "v": "May",
+          "export": {
+            "monthday": "{month of 31}"
+          }
+        },
+        {
+          "v": "June",
+          "export": {
+            "monthday": "{month of 30}"
+          }
+        },
+        {
+          "v": "July",
+          "export": {
+            "monthday": "{month of 31}"
+          }
+        },
+        {
+          "v": "August",
+          "export": {
+            "monthday": "{month of 31}"
+          }
+        },
+        {
+          "v": "September",
+          "export": {
+            "monthday": "{month of 30}"
+          }
+        },
+        {
+          "v": "October",
+          "export": {
+            "monthday": "{month of 31}"
+          }
+        },
+        {
+          "v": "November",
+          "export": {
+            "monthday": "{month of 30}"
+          }
+        },
+        {
+          "v": "December",
+          "export": {
+            "monthday": "{month of 31}"
+          }
+        }
       ]
     },
     {
@@ -499,12 +951,28 @@
       ]
     },
     {
+      "name": "ago",
+      "explanation": "Variant expressions for 'since'.",
+      "entries": [
+        "ago",
+        "back",
+        "past"
+      ]
+    },
+    {
       "name": "looks",
-      "explanation": "Synonyms for looking like something.",
+      "explanation": "Variant expressions for looking like something.",
       "format": "-- in good condition / approaching",
       "entries": [
         "appears to be",
         "seems to be"
+      ]
+    },
+    {
+      "name": "some",
+      "explanation": "Variant expression for 'a few'.",
+      "entries": [
+        ""
       ]
     },
     {
@@ -531,7 +999,8 @@
       "format": "It seems to be --",
       "entries": [
         "give or take {g:smallerunit}",
-        "give or take a few {g:smallerunits}"
+        "give or take a few {g:smallerunits}",
+        "several {g:units}, but not quite {g:biggerrunit}"
       ]
     },
     {
