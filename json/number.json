@@ -1,6 +1,6 @@
 {
   "name": "number",
-  "resultPattern": "{result}",
+  "resultPattern": "{init}{result}",
   "variables": {
     "footnote": ""
   },
@@ -9,9 +9,9 @@
   "note": "",
   "bugs": "",
   "to do": "Add full range of US big numbers.",
-  "see": "",
-  "date": "2018-01-07",
-  "authors": "Esko Vesala.",
+  "see": "time",
+  "date": "2018-07-03",
+  "authors": "ELF Vesala.",
   "sources": "Sizes.com, Wikipedia.org",
   "genre": "universal",
   "categories": [
@@ -19,15 +19,65 @@
   ],
   "tables": [
     {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
       "name": "result",
-      "explanation": "Variations for resultPattern output.",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
       "entries": [
         "{number}"
       ]
     },
     {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {number}",
+        "{number}, {feature}",
+        "{attribute} {number}, {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {synonym} {looks} {number} items {feature}.",
+        "The {synonym} {looks} {attribute} {number} items {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Number}: {number} \r\n{b|Random}: {random} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
       "name": "number",
-      "explanation": "A randomized number.",
+      "explanation": "Type by rarity.",
       "entries": [
         {
           "m": 10,
@@ -38,7 +88,7 @@
     },
     {
       "name": "common",
-      "explanation": "Common number types.",
+      "explanation": "Usual types.",
       "entries": [
         "{one digit}",
         "{twenty}",
@@ -47,7 +97,7 @@
     },
     {
       "name": "rare",
-      "explanation": "Rare number types.",
+      "explanation": "Unusual types.",
       "entries": [
         "{three digits}",
         "{four digits}",
@@ -55,6 +105,9 @@
         "{six digits}",
         "{seven digits}"
       ]
+    },
+    {
+      "**************************************************": "DETAILS"
     },
     {
       "name": "one digit",
@@ -543,7 +596,7 @@
         "sixty",
         "three-score of",
         "a sexagetet (60) of",
-        "over fifty",
+        "{over} fifty",
         "dozens of"
       ]
     },
@@ -555,7 +608,7 @@
         "seventy",
         "three-score and ten of",
         "a septuagetet (70) of",
-        "over fifty",
+        "{over} fifty",
         "dozens of"
       ]
     },
@@ -568,7 +621,7 @@
         "four-score of",
         "an octogetet (80) of",
         "dozens of",
-        "close to a hundred"
+        "{under} a hundred"
       ]
     },
     {
@@ -580,7 +633,7 @@
         "four-score and ten of",
         "an nonagetet (90) of",
         "dozens of",
-        "close to a hundred"
+        "{under} a hundred"
       ]
     },
     {
@@ -593,7 +646,7 @@
         "five-score of",
         "a centet (100) of",
         "a century of",
-        "about hundred",
+        "{approximately} a hundred",
         "a ton of"
       ]
     },
@@ -603,7 +656,7 @@
       "entries": [
         "110",
         "hundred and ten",
-        "over a hundred"
+        "{over} a hundred"
       ]
     },
     {
@@ -618,7 +671,7 @@
         "a long hundred of",
         "a great hundred of",
         "a six-score of",
-        "over a hundred"
+        "{over} a hundred"
       ]
     },
     {
@@ -637,7 +690,7 @@
         "140",
         "hundred and forty",
         "a seven-score of",
-        "close to 150"
+        "{under} 150"
       ]
     },
     {
@@ -648,7 +701,7 @@
         "gross",
         "dozen dozens of",
         "a square dozen of",
-        "close to 150"
+        "{under} to 150"
       ]
     },
     {
@@ -658,7 +711,7 @@
         "150",
         "hundred and fifty",
         "one and a half hundred",
-        "about 150"
+        "{approximately} 150"
       ]
     },
     {
@@ -668,7 +721,7 @@
         "160",
         "hundred and sixty",
         "a eight-score of",
-        "over 150"
+        "{over} 150"
       ]
     },
     {
@@ -677,7 +730,7 @@
       "entries": [
         "170",
         "hundred and seventy",
-        "over 150"
+        "{over} 150"
       ]
     },
     {
@@ -687,7 +740,7 @@
         "180",
         "hundred and eighty",
         "a nine-score of",
-        "close to 200"
+        "{under} 200"
       ]
     },
     {
@@ -696,7 +749,7 @@
       "entries": [
         "190",
         "hundred and ninety",
-        "close to 200"
+        "{under} 200"
       ]
     },
     {
@@ -706,7 +759,7 @@
         "200",
         "two hundred",
         "a ten-score of",
-        "about 200"
+        "{approximately} 200"
       ]
     },
     {
@@ -716,7 +769,7 @@
         "300",
         "three hundred",
         "a fifteen-score of",
-        "about 300",
+        "{approximately} 300",
         "hundreds of"
       ]
     },
@@ -727,7 +780,7 @@
         "400",
         "four hundred",
         "a twenty-score of",
-        "about 300",
+        "{approximately} 300",
         "hundreds of"
       ]
     },
@@ -766,7 +819,7 @@
         "800",
         "eight hundred",
         "several hundreds of",
-        "close to a thousand"
+        "{under} a thousand"
       ]
     },
     {
@@ -776,7 +829,7 @@
         "900",
         "nine hundred",
         "several hundreds of",
-        "close to a thousand"
+        "{under} a thousand"
       ]
     },
     {
@@ -796,7 +849,7 @@
         "1100",
         "eleven hundred",
         "one thousand one hundred",
-        "over a thousand"
+        "{over} a thousand"
       ]
     },
     {
@@ -807,7 +860,7 @@
         "twelve hundred",
         "a long thousand of",
         "10 long hundreds",
-        "over a thousand"
+        "{over} a thousand"
       ]
     },
     {
@@ -816,7 +869,7 @@
       "entries": [
         "1300",
         "thirteen hundred",
-        "over a thousand"
+        "{over} a thousand"
       ]
     },
     {
@@ -825,7 +878,7 @@
       "entries": [
         "1400",
         "fourteen hundred",
-        "over a thousand"
+        "{over} a thousand"
       ]
     },
     {
@@ -843,7 +896,7 @@
       "entries": [
         "1600",
         "sixteen hundred",
-        "over one and a half thousand"
+        "{over} one and a half thousand"
       ]
     },
     {
@@ -852,7 +905,7 @@
       "entries": [
         "1700",
         "seventeen hundred",
-        "over one and a half thousand"
+        "{over} one and a half thousand"
       ]
     },
     {
@@ -864,7 +917,7 @@
         "a great gross of",
         "dozen grosses of",
         "a cubic dozen of",
-        "over one and a half thousand"
+        "{over} one and a half thousand"
       ]
     },
     {
@@ -873,7 +926,7 @@
       "entries": [
         "1800",
         "eighteen hundred",
-        "close to two thousand"
+        "{under} two thousand"
       ]
     },
     {
@@ -882,7 +935,7 @@
       "entries": [
         "1900",
         "nineteen hundred",
-        "close to two thousand"
+        "{under} two thousand"
       ]
     },
     {
@@ -945,7 +998,7 @@
         "8000",
         "eight thousand",
         "thousands of",
-        "close to ten thousand"
+        "{under} ten thousand"
       ]
     },
     {
@@ -955,7 +1008,7 @@
         "9000",
         "nine thousand",
         "thousands of",
-        "close to ten thousand"
+        "{under} ten thousand"
       ]
     },
     {
@@ -1094,7 +1147,7 @@
       "entries": [
         "800,000",
         "eight hundred thousand",
-        "close to a million"
+        "{under} a million"
       ]
     },
     {
@@ -1103,7 +1156,7 @@
       "entries": [
         "900,000",
         "nine hundred thousand",
-        "close to a million"
+        "{under} a million"
       ]
     },
     {
@@ -1127,18 +1180,20 @@
       ]
     },
     {
-      "**************************************************": "SPECIAL TABLES"
+      "**************************************************": "VARIATIONS"
     },
     {
-      "name": "special",
-      "explanation": "Special number types.",
+      "name": "variation",
+      "explanation": "Number variations.",
       "entries": [
         "{negative}",
         "{zero}",
         "{small number}",
         "{fraction}",
         "{one}",
+        "{couple}",
         "{few}",
+        "{a few}",
         "{many}",
         "{very many}",
         "{big number}",
@@ -1218,15 +1273,38 @@
       ]
     },
     {
+      "name": "couple",
+      "explanation": "A pair (2 related items).",
+      "entries": [
+        "a couple of",
+        "a couplet of",
+        "a doublet of",
+        "a duet of",
+        "a duo of",
+        "a dyad of",
+        "a pair of",
+        "a twosome of"
+      ]
+    },
+    {
       "name": "few",
       "explanation": "Not many.",
       "entries": [
         "few",
-        "some",
         "scant",
         "not many",
         "iotas of",
-        "smidgens of"
+        "smidgens of",
+        "a very small number of"
+      ]
+    },
+    {
+      "name": "a few",
+      "explanation": "A small number.",
+      "entries": [
+        "a few",
+        "some",
+        "a small number of"
       ]
     },
     {
@@ -1234,14 +1312,11 @@
       "explanation": "A number of items.",
       "entries": [
         "many",
-        "various",
         "several",
         "multiple",
         "numerous",
         "quite a few",
-        "a number of",
-        "a copious number of",
-        "a considerable number of"
+        "a number of"
       ]
     },
     {
@@ -1250,9 +1325,11 @@
       "entries": [
         "a large number of",
         "a vast number of",
+        "a copious number of",
         "a massive number of",
         "an immense number of",
         "an enormous number of",
+        "a considerable number of",
         "an exuberant number of",
         "tremendous numbers of",
         "gigantic numbers of"
@@ -1411,6 +1488,573 @@
         "a limitless number of",
         "a near infinite number of",
         "an infinite number of"
+      ]
+    },
+    {
+      "**************************************************": "'UP TO' COUNTS"
+    },
+    {
+      "name": "up to",
+      "explanation": "Random 'up to' counts.",
+      "entries": [
+        "{up to word}",
+        "{up to number}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "'UP TO' WORDS"
+    },
+    {
+      "name": "up to word",
+      "explanation": "An 'up to' count expressed in writing.",
+      "entries": [
+        "{up to two}",
+        "{up to three}",
+        "{up to four}",
+        "{up to five}",
+        "{up to six}",
+        "{up to seven}",
+        "{up to eight}",
+        "{up to nine}",
+        "{up to ten}",
+        "{up to twelve}"
+      ]
+    },
+    {
+      "name": "up to two",
+      "explanation": "Up to two units (1 - 2).",
+      "entries": [
+        "{maybe} a couple of",
+        "{maybe} two",
+        "one or two",
+        "up to two"
+      ]
+    },
+    {
+      "name": "up to three",
+      "explanation": "Up to three units (2 - 3).",
+      "entries": [
+        "two",
+        "three"
+      ]
+    },
+    {
+      "name": "up to four",
+      "explanation": "Up to four units (2 - 4).",
+      "entries": [
+        "two",
+        "three",
+        "four"
+      ]
+    },
+    {
+      "name": "up to five",
+      "explanation": "Up to five units (2 - 5).",
+      "entries": [
+        "two",
+        "three",
+        "four",
+        "five"
+      ]
+    },
+    {
+      "name": "up to six",
+      "explanation": "Up to six units (2 - 6).",
+      "entries": [
+        "two",
+        "three",
+        "four",
+        "five",
+        "six"
+      ]
+    },
+    {
+      "name": "up to seven",
+      "explanation": "Up to seven units (2 - 7).",
+      "entries": [
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven"
+      ]
+    },
+    {
+      "name": "up to eight",
+      "explanation": "Up to eight units (2 - 8).",
+      "entries": [
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight"
+      ]
+    },
+    {
+      "name": "up to nine",
+      "explanation": "Up to nine units (2 - 9).",
+      "entries": [
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine"
+      ]
+    },
+    {
+      "name": "up to ten",
+      "explanation": "Up to ten units (2 - 10).",
+      "entries": [
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten"
+      ]
+    },
+    {
+      "name": "up to twelve",
+      "explanation": "Up to twelve units (2 - 12).",
+      "entries": [
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten",
+        "eleven",
+        "twelve"
+      ]
+    },
+    {
+      "--------------------------------------------------": "'UP TO' NUMBERS"
+    },
+    {
+      "name": "up to number",
+      "explanation": "An 'up to' count expressed as a number.",
+      "entries": [
+        "{up to 10}",
+        "{up to 12}",
+        "{up to 20}",
+        "{up to 24}",
+        "{up to 30}",
+        "{up to 40}",
+        "{up to 50}",
+        "{up to 60}",
+        "{up to 70}",
+        "{up to 80}",
+        "{up to 90}",
+        "{up to 100}",
+        "{up to 500}",
+        "{up to 1000}"
+      ]
+    },
+    {
+      "name": "up to 10",
+      "explanation": "Between 2 and 10 units.",
+      "entries": [
+        "{dice:1d9+1}"
+      ]
+    },
+    {
+      "name": "up to 12",
+      "explanation": "Between 2 and 12 units.",
+      "entries": [
+        "{dice:1d11+1}"
+      ]
+    },
+    {
+      "name": "up to 20",
+      "explanation": "Between 2 and 20 units.",
+      "entries": [
+        "{dice:1d19+1}"
+      ]
+    },
+    {
+      "name": "up to 24",
+      "explanation": "Between 2 and 24 units.",
+      "entries": [
+        "{dice:1d23+1}"
+      ]
+    },
+    {
+      "name": "up to 30",
+      "explanation": "Between 2 and 30 units.",
+      "entries": [
+        "{dice:1d29+1}"
+      ]
+    },
+    {
+      "name": "up to 40",
+      "explanation": "Between 2 and 40 units.",
+      "entries": [
+        "{dice:1d39+1}"
+      ]
+    },
+    {
+      "name": "up to 50",
+      "explanation": "Between 2 and 50 units.",
+      "entries": [
+        "{dice:1d49+1}"
+      ]
+    },
+    {
+      "name": "up to 60",
+      "explanation": "Between 2 and 60 units.",
+      "entries": [
+        "{dice:1d59+1}"
+      ]
+    },
+    {
+      "name": "up to 70",
+      "explanation": "Between 2 and 70 units.",
+      "entries": [
+        "{dice:1d69+1}"
+      ]
+    },
+    {
+      "name": "up to 80",
+      "explanation": "Between 2 and 80 units.",
+      "entries": [
+        "{dice:1d79+1}"
+      ]
+    },
+    {
+      "name": "up to 90",
+      "explanation": "Between 2 and 90 units.",
+      "entries": [
+        "{dice:1d89+1}"
+      ]
+    },
+    {
+      "name": "up to 100",
+      "explanation": "Between 2 and 100 units.",
+      "entries": [
+        "{dice:1d99+1}"
+      ]
+    },
+    {
+      "name": "up to 500",
+      "explanation": "Between 2 and 500 units.",
+      "entries": [
+        "{dice:1d499+1}"
+      ]
+    },
+    {
+      "name": "up to 1000",
+      "explanation": "Between 2 and 1,000 units.",
+      "entries": [
+        "{dice:1d999+1}"
+      ]
+    },
+    {
+      "**************************************************": "PRECISION"
+    },
+    {
+      "name": "circa",
+      "explanation": "The accuracy of the stated age.",
+      "entries": [
+        "{under}",
+        "{approximately}",
+        "{over}"
+      ]
+    },
+    {
+      "name": "under",
+      "explanation": "Somewhat less than the stated count.",
+      "entries": [
+        "almost",
+        "bordering on",
+        "close to",
+        "not far from",
+        "not quite",
+        "under",
+        "very close to"
+      ]
+    },
+    {
+      "name": "approximately",
+      "explanation": "About the stated count.",
+      "entries": [
+        "about",
+        "around",
+        "just about",
+        "{maybe}",
+        "roughly"
+      ]
+    },
+    {
+      "name": "over",
+      "explanation": "Somewhat more than the stated count.",
+      "entries": [
+        "beyond",
+        "more than",
+        "over",
+        "past",
+        "upwards of"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomization methods.",
+      "entries": [
+        "{component}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMPONENTS"
+    },
+    {
+      "name": "component",
+      "explanation": "Component-based terms (generated from words).",
+      "entries": [
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        "{attribute}"
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "thir",
+        "fif",
+        "six",
+        "seven",
+        "eigh",
+        "nine"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "teen",
+        "ty",
+        "teen hundred"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "",
+        "hundred",
+        "thousand"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        "{feature}"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "FANTASTIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}",
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
+        "count",
+        "number",
+        "quantity",
+        "sum",
+        "tally",
+        "totality"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "seems to be"
+      ]
+    },
+    {
+      "name": "maybe",
+      "explanation": "Variant expressions for 'perhaps'.",
+      "entries": [
+        "conceivably",
+        "could be",
+        "maybe",
+        "might be",
+        "perhaps",
+        "possibly"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        "{approximately}"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        "- {maybe} a few more or less",
+        "as an estimate",
+        "altogether",
+        "- give or take a few",
+        "on the whole",
+        "or thereabouts"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]
