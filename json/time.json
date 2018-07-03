@@ -11,7 +11,8 @@
     "smallerunits": "",
     "biggerrunit": "",
     "absolute": "",
-    "relative": ""
+    "relative": "",
+    "monthday": ""
   },
   "variables": {
     "footnote": ""
@@ -38,7 +39,8 @@
         {
           "v": "",
           "export": {
-            "unit": "{unit}"
+            "unit": "{unit}",
+            "month": "{month}"
           }
         }
       ]
@@ -456,7 +458,7 @@
       ]
     },
     {
-      "**************************************************": "PAST"
+      "**************************************************": "RELATIVE"
     },
     {
       "name": "past",
@@ -480,10 +482,10 @@
       ]
     },
     {
-      "--------------------------------------------------": "DAYS"
+      "--------------------------------------------------": "RELATIVE DAYS"
     },
     {
-      "name": "relative day",
+      "name": "relative",
       "explanation": "Days relative to this day.",
       "entries": [
         "{relative day past}",
@@ -497,26 +499,8 @@
       "entries": [
         "yesterday",
         "the day before yesterday",
-        "two days ago",
-        "three days ago",
-        "four days ago",
-        "five days ago",
-        "six days ago",
+        "{lib:number#up to six} days {ago}",
         "a week ago"
-      ]
-    },
-    {
-      "name": "relative day future",
-      "explanation": "Coming days.",
-      "entries": [
-        "tomorrow",
-        "the day after tomorrow",
-        "in two days",
-        "in three days",
-        "in four days",
-        "in five days",
-        "in six days",
-        "in a week"
       ]
     },
     {
@@ -527,6 +511,16 @@
         "on this day",
         "on this very day",
         "today"
+      ]
+    },
+    {
+      "name": "relative day future",
+      "explanation": "Coming days.",
+      "entries": [
+        "tomorrow",
+        "the day after tomorrow",
+        "in {lib:number#up to six} days",
+        "in a week"
       ]
     },
     {
@@ -862,8 +856,7 @@
       "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
-        "{medieval}",
-        "XXX"
+        "{medieval}"
       ]
     },
     {
@@ -873,7 +866,7 @@
       "name": "myth",
       "explanation": "Descriptions for mythic worlds (once thought true).",
       "entries": [
-        "XXX"
+        "{time}"
       ]
     },
     {
@@ -883,7 +876,7 @@
       "name": "primitive",
       "explanation": "Descriptions for prehistoric worlds.",
       "entries": [
-        "XXX"
+        "{time}"
       ]
     },
     {
@@ -893,7 +886,7 @@
       "name": "ancient",
       "explanation": "Descriptions for ancient worlds.",
       "entries": [
-        "XXX"
+        "{time}"
       ]
     },
     {
@@ -903,7 +896,7 @@
       "name": "medieval",
       "explanation": "Descriptions for medieval worlds (with no magic).",
       "entries": [
-        "XXX"
+        "{time}"
       ]
     },
     {
@@ -913,8 +906,7 @@
       "name": "modern",
       "explanation": "Descriptions for modern worlds.",
       "entries": [
-        "{common}",
-        "XXX"
+        "{time}"
       ]
     },
     {
@@ -924,8 +916,7 @@
       "name": "futuristic",
       "explanation": "Descriptions for science fiction worlds.",
       "entries": [
-        "{modern}",
-        "XXX"
+        "{modern}"
       ]
     },
     {
@@ -1000,7 +991,7 @@
       "entries": [
         "give or take {g:smallerunit}",
         "give or take a few {g:smallerunits}",
-        "several {g:units}, but not quite {g:biggerrunit}"
+        "but not quite {g:biggerrunit}"
       ]
     },
     {
