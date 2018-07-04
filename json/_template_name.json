@@ -112,6 +112,13 @@
       ]
     },
     {
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
+      "entries": [
+        ""
+      ]
+    },
+    {
       "**************************************************": "FULL NAMES"
     },
     {

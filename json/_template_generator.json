@@ -105,6 +105,23 @@
       ]
     },
     {
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "RANGES"
+    },
+    {
+      "name": "",
+      "explanation": "",
+      "entries": [
+        ""
+      ]
+    },
+    {
       "**************************************************": "DETAILS"
     },
     {
