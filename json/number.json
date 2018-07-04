@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "Add full range of US big numbers.",
   "see": "time",
-  "date": "2018-07-03",
+  "date": "2018-07-04",
   "authors": "ELF Vesala.",
   "sources": "Sizes.com, Wikipedia.org",
   "genre": "universal",
@@ -53,16 +53,16 @@
       "explanation": "More detailed output variations.",
       "entries": [
         "{attribute} {number}",
-        "{number}, {feature}",
-        "{attribute} {number}, {feature}"
+        "{number} {items}, {feature}",
+        "{attribute} {number} {items}, {feature}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {synonym} {looks} {number} items {feature}.",
-        "The {synonym} {looks} {attribute} {number} items {feature}."
+        "The {synonym} {looks} {number} {items} {feature}.",
+        "The {synonym} {looks} {attribute} {number} {items} {feature}."
       ]
     },
     {
@@ -1761,6 +1761,153 @@
       ]
     },
     {
+      "**************************************************": "ORDINALS"
+    },
+    {
+      "name": "ordinal",
+      "explanation": "Randomly selected ordinal sets.",
+      "entries": [
+        "{ordinal 21}",
+        "{ordinal 28}",
+        "{ordinal 30}",
+        "{ordinal 31}"
+      ]
+    },
+    {
+      "name": "ordinal 21",
+      "explanation": "For example centuries up to 2000's.",
+      "entries": [
+        "1st",
+        "2nd",
+        "3rd",
+        "4th",
+        "5th",
+        "6th",
+        "7th",
+        "8th",
+        "9th",
+        "10th",
+        "11th",
+        "12th",
+        "13th",
+        "14th",
+        "15th",
+        "16th",
+        "17th",
+        "18th",
+        "19th",
+        "20th",
+        "21st"
+      ]
+    },
+    {
+      "name": "ordinal 28",
+      "explanation": "For example days for a 28-day month.",
+      "entries": [
+        "1st",
+        "2nd",
+        "3rd",
+        "4th",
+        "5th",
+        "6th",
+        "7th",
+        "8th",
+        "9th",
+        "10th",
+        "11th",
+        "12th",
+        "13th",
+        "14th",
+        "15th",
+        "16th",
+        "17th",
+        "18th",
+        "19th",
+        "20th",
+        "21st",
+        "22nd",
+        "23rd",
+        "24th",
+        "25th",
+        "26th",
+        "27th",
+        "28th"
+      ]
+    },
+    {
+      "name": "ordinal 30",
+      "explanation": "For example days for 30-day months.",
+      "entries": [
+        "1st",
+        "2nd",
+        "3rd",
+        "4th",
+        "5th",
+        "6th",
+        "7th",
+        "8th",
+        "9th",
+        "10th",
+        "11th",
+        "12th",
+        "13th",
+        "14th",
+        "15th",
+        "16th",
+        "17th",
+        "18th",
+        "19th",
+        "20th",
+        "21st",
+        "22nd",
+        "23rd",
+        "24th",
+        "25th",
+        "26th",
+        "27th",
+        "28th",
+        "29th",
+        "30th"
+      ]
+    },
+    {
+      "name": "ordinal 31",
+      "explanation": "For example days for 31-day months.",
+      "entries": [
+        "1st",
+        "2nd",
+        "3rd",
+        "4th",
+        "5th",
+        "6th",
+        "7th",
+        "8th",
+        "9th",
+        "10th",
+        "11th",
+        "12th",
+        "13th",
+        "14th",
+        "15th",
+        "16th",
+        "17th",
+        "18th",
+        "19th",
+        "20th",
+        "21st",
+        "22nd",
+        "23rd",
+        "24th",
+        "25th",
+        "26th",
+        "27th",
+        "28th",
+        "29th",
+        "30th",
+        "31st"
+      ]
+    },
+    {
       "**************************************************": "PRECISION"
     },
     {
@@ -1996,6 +2143,16 @@
       ]
     },
     {
+      "name": "items",
+      "explanation": "Variant expressions for 'pieces'.",
+      "entries": [
+        "articles",
+        "items",
+        "pieces",
+        "units"
+      ]
+    },
+    {
       "name": "looks",
       "explanation": "Variant expressions for looking like something.",
       "format": "-- in good condition / approaching",
@@ -2039,10 +2196,10 @@
       "explanation": "Features appended to the end of the result.",
       "format": "It seems to be --",
       "entries": [
-        "- {maybe} a few more or less",
+        "{maybe} a few more or less",
         "as an estimate",
         "altogether",
-        "- give or take a few",
+        "give or take a few",
         "on the whole",
         "or thereabouts"
       ]
