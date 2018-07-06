@@ -17,12 +17,13 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-03-10",
+  "date": "2018-07-06",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
   "categories": [
-    "character"
+    "character",
+    "item"
   ],
   "tables": [
     {
@@ -241,6 +242,7 @@
         "modest",
         "humble",
         "simple",
+        "unfashionable",
         "{middle class attribute}"
       ]
     },

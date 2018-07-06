@@ -32,7 +32,7 @@
   "bugs": "",
   "to do": "past, future, absolute, relative",
   "see": "number",
-  "date": "2018-07-04",
+  "date": "2018-07-05",
   "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -56,6 +56,14 @@
       "entries": [
         "{summary}",
         "{detail}"
+      ]
+    },
+    {
+      "name": "basic",
+      "explanation": "Output a single value without additions.",
+      "note": "To set the unit non-randomly, call it first: '{hour}{basic}'",
+      "entries": [
+        "{g:value} {g:units}"
       ]
     },
     {
@@ -288,7 +296,7 @@
             "smallerunit": "a minute",
             "smallerunits": "minutes",
             "biggerunit": "a day",
-            "value": "{dice:1d12}",
+            "value": "{dice:1d11+1}",
             "absolute": "at {g:value} {period}",
             "relative": "in {g:value} hours"
           }
