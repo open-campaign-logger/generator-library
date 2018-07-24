@@ -186,7 +186,7 @@
   "bugs": "",
   "to do": "More external table calls to add variety.",
   "see": "dungeon_entrance, dungeon_corridor, dungeon_room, dungeon_vault, Five_room_dungeon, hook_line_and_sinker_adventure",
-  "date": "2018-03-04",
+  "date": "2018-07-24",
   "authors": "ELF Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "Dream Park: The Roleplaying Game, Five_room_dungeon, RolePlayingTips.com",
   "genre": "universal",
@@ -202,8 +202,8 @@
           "m": 1,
           "v": "{motif}{difficulty}{minion}{goal}{artifact}{danger}",
           "export": {
-            "treasure": "{lib:treasure#summary}",
-            "villain": "{lib:villain#summary}"
+            "macguffin": "{lib:macguffin#detail}",
+            "treasure": "{lib:treasure#rare}"
           }
         }
       ]
@@ -265,72 +265,72 @@
       "name": "adventure name",
       "explanation": "Variations for the name of the adventure based on set variables.",
       "entries": [
-        "The {global:symbol} of the {lib:villain#attribute} {global:villain#summary}",
-        "{lib:location#attribute} {global:location} of the {lib:villain#attribute} {global:villain}",
-        "{global:goaldescription} the {lib:villain#attribute} {global:villain}",
-        "{global:macguffin} of the {lib:villain#attribute} {global:villain}",
-        "{lib:treasure#attribute} {global:treasure} of the {lib:location#attribute} {global:location}",
-        "In search of a {global:treasure}",
-        "In search of the {global:treasure} of the {lib:villain#attribute} {global:villain}",
-        "Quest for the {global:treasure}",
-        "{lib:synonym#death} of the {lib:villain#attribute} {global:villain}",
-        "{lib:minion#attribute} {global:minion} of the {lib:villain#attribute} {global:villain}"
+        "The {g:symbol} of the {lib:villain#attribute} {g:villain}",
+        "{lib:location#attribute} {g:location} of the {lib:villain#attribute} {g:villain}",
+        "{g:goaldescription} the {lib:villain#attribute} {g:villain}",
+        "The {g:macguffin} of the {lib:villain#attribute} {g:villain}",
+        "{lib:treasure#attribute} {g:treasure} of the {lib:location#attribute} {g:location}",
+        "In search of a {g:treasure}",
+        "In search of the {g:treasure} of the {lib:villain#attribute} {g:villain}",
+        "Quest for the {g:treasure}",
+        "{lib:synonym#death} of the {lib:villain#attribute} {g:villain}",
+        "{lib:minion#attribute} {g:minion} of the {lib:villain#attribute} {g:villain}"
       ]
     },
     {
       "name": "motif note",
       "explanation": "Description of the general theme of the adventure.",
       "entries": [
-        "{global:para}{global:startbold}Motif{global:endbold}: {global:motif}. {global:motifdescription}"
+        "{g:para}{global:startbold}Motif{global:endbold}: {global:motif}. {global:motifdescription}"
       ]
     },
     {
       "name": "difficulty note",
       "explanation": "A paragraph describing the difficulty of the adventure.",
       "entries": [
-        "{global:para}{global:startbold}Difficulty{global:endbold}: {global:difficulty}. This {lib:synonym#small} {lib:synonym#adventure} is best suited for {global:difficultydescription}. "
+        "{g:para}{g:startbold}Difficulty{g:endbold}: {g:difficulty}. This {lib:synonym#small} {lib:synonym#adventure} is best suited for {g:difficultydescription}. "
       ]
     },
     {
       "name": "villain note",
       "explanation": "Introductory words about the villain.",
       "entries": [
-        "{global:para}{global:startbold}Villain{global:endbold}: An evil {global:villain} with a {global:miniongroup}."
+        "{g:para}{g:startbold}Villain{g:endbold}: An evil {g:villain} with a {g:miniongroup}."
       ]
     },
     {
       "name": "goal note",
       "explanation": "Introductory words about the goal and target.",
       "entries": [
-        "{global:para}{global:startbold}Goal{global:endbold}: The {lib:synonym#troupe} must {global:goal} {global:target}."
+        "{g:para}{g:startbold}Goal{g:endbold}: The {lib:synonym#troupe} must {g:goal} {g:target}."
       ]
     },
     {
       "name": "macguffin note",
       "explanation": "Description of the macguffin of the adventure.",
       "entries": [
-        "{global:para}{global:startbold}Macguffin:{global:endbold} The adventure starts when the {lib:synonym#troupe} finds out about a {lib:macguffin#detail}."
+        "{g:para}{g:startbold}Macguffin:{g:endbold} The adventure starts when the {lib:synonym#troupe} finds out about {g:macguffin}."
       ]
     },
     {
       "name": "treasure note",
       "explanation": "Description of the treasure of the adventure.",
       "entries": [
-        "{global:para}{global:startbold}Treasure:{global:endbold} Some {lib:treasure#attribute} {lib:treasure} is said to be hidden in the dungeon - but little do they know that it is {lib:treasure#complication}..."
+        "{g:para}{g:startbold}Treasure:{g:endbold} It is said that  {lib:treasure#attribute} {lib:treasure#rare} is hidden in the dungeon - but little do they know that it is {lib:treasure#complication}..."
       ]
     },
     {
       "name": "complication note",
       "explanation": "An optional complication for the adventure.",
       "entries": [
-        "{global:para}{global:startbold}Dungeon complication{global:endbold}: {lib:complication#dungeon}"
+        "{g:para}{g:startbold}Dungeon complication{g:endbold}: {lib:complication#dungeon}"
       ]
     },
     {
       "name": "introduction",
       "explanation": "How the adventurers start the adventure.",
       "entries": [
-        "{global:para}Here the {lib:synonym#troupe} {encountering} a {lib:villain#attribute} {global:villain} and a band of {global:minions}. Will the {lib:synonym#troupe} be able to {global:goal} {global:target}? "
+        "{g:para}Here the {lib:synonym#troupe} {encountering} a {lib:villain#attribute} {g:villain} and a band of {g:minions}. Will the {lib:synonym#troupe} be able to {g:goal} {g:target}? "
       ]
     },
     {
@@ -346,14 +346,14 @@
       "name": "duration note",
       "explanation": "A paragraph about the estimated duration of the adventure, based on the number of scenes.",
       "entries": [
-        "{global:para}[The duration of the {lib:synonym#adventure} is estimated to be roughly {global:duration} minutes.] "
+        "{g:para}[The duration of the {lib:synonym#adventure} is estimated to be roughly {g:duration} minutes.] "
       ]
     },
     {
       "name": "footnote",
       "explanation": "A potential footnote (usually empty).",
       "entries": [
-        "{global:para}{global:footnote}"
+        "{g:para}{g:footnote}"
       ]
     },
     {
@@ -368,7 +368,7 @@
           "v": "{fighting}",
           "export": {
             "goal": "vanquish",
-            "target": "the {global:villain}"
+            "target": "the {g:villain}"
           }
         },
         {
@@ -376,7 +376,7 @@
           "v": "{capturing}",
           "export": {
             "goal": "capture",
-            "target": "the {global:villain}"
+            "target": "the {g:villain}"
           }
         },
         {
@@ -392,7 +392,7 @@
           "v": "{escaping}",
           "export": {
             "goal": "escape",
-            "target": "the location"
+            "target": "the {g:location}"
           }
         }
       ]
@@ -704,7 +704,7 @@
       "name": "complication room",
       "explanation": "",
       "entries": [
-        "The {artifact} required to defeat the {global:villain}, but it is {lib:complication#item}. Clues reveal that a solution lies ahead.",
+        "The {artifact} required to defeat the {g:villain}, but it is {lib:complication#item}. Clues reveal that a solution lies ahead.",
         "Believing the object of the quest now lays within easy reach, a  companion turns traitor and betrays the {lib:synonym#troupe}."
       ]
     },
@@ -766,10 +766,10 @@
       "name": "climax",
       "explanation": "",
       "entries": [
-        "The {global:villain} is here, ready to face the {lib:synonym#troupe}. Previous rooms have contained warning signals or an alarm, so the {global:villain} has had time to prepare.",
-        "The {global:villain} is here, and seems to be surprised by the arrival of the {lib:synonym#troupe}. The {global:villain} tries to settle things in an unusual way, through {unusual proposal}.",
-        "The {global:villain} is here and reveals the {global:treasure} to the {lib:synonym#troupe}, threatening to {reward threat}.",
-        "The {global:villain} is here, but has a weakness that the {lib:synonym#troupe} must figure out how to exploit."
+        "The {g:villain} is here, ready to face the {lib:synonym#troupe}. Previous rooms have contained warning signals or an alarm, so the {g:villain} has had time to prepare.",
+        "The {g:villain} is here, and seems to be surprised by the arrival of the {lib:synonym#troupe}. The {g:villain} tries to settle things in an unusual way, through {unusual proposal}.",
+        "The {g:villain} is here and reveals the {global:treasure} to the {lib:synonym#troupe}, threatening to {reward threat}.",
+        "The {g:villain} is here, but has a weakness that the {lib:synonym#troupe} must figure out how to exploit."
       ]
     },
     {
@@ -792,8 +792,8 @@
       "name": "big battle",
       "explanation": "",
       "entries": [
-        "The {global:villain} is here and has unexpected {capabilities}.",
-        "The {global:villain} is here, but the {lib:synonym#room} is trapped. The {global:villain} {trap ability}."
+        "The {g:villain} is here and has unexpected {capabilities}.",
+        "The {g:villain} is here, but the {lib:synonym#room} is trapped. The {g:villain} {trap ability}."
       ]
     },
     {
@@ -825,8 +825,8 @@
       "name": "roleplaying opportunity",
       "explanation": "",
       "entries": [
-        "The {global:villain} needs to stall for time to {reason to stall}.",
-        "A victorious combat ends with the {global:villain} bleeding to death and a few short words can be exchanged.",
+        "The {g:villain} needs to stall for time to {reason to stall}.",
+        "A victorious combat ends with the {g:villain} bleeding to death and a few short words can be exchanged.",
         "There is a helpless {global:captivegroup} to roleplay with once the threat is dealt with."
       ]
     },
@@ -893,10 +893,10 @@
       "explanation": "",
       "entries": [
         "The location of the next adventure is uncovered, along with sufficient motivation to accept the quest.",
-        "The true identity of the {global:villain} is revealed.",
+        "The true identity of the {g:villain} is revealed.",
         "New clues and information pertaining to a major plot arc are embedded in the treasure, {information hiding place}.",
-        "The {global:villain} is found to have a stronger, more fearsome master.",
-        "The grand scheme of the {global:villain} is discovered.",
+        "The {g:villain} is found to have a stronger, more fearsome master.",
+        "The grand scheme of the {g:villain} is discovered.",
         "The source of an alien race's hostility towards others is uncovered, transforming them from villains to sympathetic characters in the story.",
         "The true meaning of the prophecy or poem that lead the {lib:synonym#troupe} to the dungeon is finally understood, and it's not what the {lib:synonym#troupe} thought."
       ]
@@ -917,7 +917,7 @@
       "entries": [
         "A rival enters and tries to steal the reward while the {lib:synonym#troupe} is weakened after the big challenge of the previous room.",
         "The object of the quest final reward isn't what it seems or has a complication. i.e. The kidnapped king doesn't want to return.",
-        "The quest was a trick. By killing the {global:villain} the {lib:synonym#troupe} has actually helped the {longterm villain}. The {global:villain} was actually {bad guy true form}."
+        "The quest was a trick. By killing the {g:villain} the {lib:synonym#troupe} has actually helped the {longterm villain}. The {g:villain} was actually {bad guy true form}."
       ]
     },
     {

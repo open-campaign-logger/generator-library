@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-06-01",
+  "date": "2018-07-24",
   "authors": "ELF Vesala.",
   "sources": "Dungeon_adventure",
   "genre": "universal",
@@ -29,7 +29,8 @@
         {
           "v": "",
           "export": {
-            "": ""
+            "villain": "villain",
+            "minion": "minion"
           }
         }
       ]
@@ -301,10 +302,10 @@
         "In the area there is a helpless {lib:actant#helpless} that must be protected and rescued.",
         "The otherworldly energies of the area are warped, creating unpredictable side effects each time magic is used.",
         "A competing group of adventurers is trying to reach the goal before the protagonists, and is willing to use also dirty tricks to win.",
-        "In addition to the villain and the minions, another hostile force is present in the area.",
+        "In addition to the {g:villain} and the {g:minion} underlings, another hostile force is present in the area.",
         "A pestilence has contaminated the area, making most of the encountered people plague carriers.",
-        "The villain's minions have split into rival factions warring with each other.",
-        "The villain's minions are planning a mutiny against their master.",
+        "The {g:villain}'s {g:minion} forces have split into rival factions warring with each other.",
+        "The {g:villain}'s {g:minion} forces are planning a mutiny against their master.",
         "Periodic tremors cause debris to fall from the ceiling.",
         "The location will be destroyed within a time limit, and everyone must exit before the destruction."
       ]
@@ -368,7 +369,7 @@
         "a helpless protege must be protected",
         "the heroes must act against the will of those in power",
         "the heroes are caught between rivals",
-        "the villain turns out to be working for a good cause",
+        "the {g:villain} turns out to be working for a good cause",
         "the public has turned against the heroes",
         "achieving the goal will destroy something valuable to the heroes",
         "achieving the goal will release an even greater threat"

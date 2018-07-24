@@ -13,7 +13,7 @@
   "bugs": "",
   "to do": "Categorize treasures by value and type!",
   "see": "equipment, gem, jewelry",
-  "date": "2018-04-16",
+  "date": "2018-07-24",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "fantasy",
@@ -53,9 +53,9 @@
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
         "{attribute} {treasure}",
-        "{treasure} {complication}",
+        "{treasure} ({complication})",
         "{treasure} {feature}",
-        "{attribute} {treasure} {complication}",
+        "{attribute} {treasure} ({complication})",
         "{attribute} {treasure} {feature}"
       ]
     },
@@ -75,7 +75,6 @@
       "explanation": "Common treasure types.",
       "entries": [
         "{lib:jewelry#summary}",
-        "{lib:money#stash}",
         "{accessory}",
         "{cup}",
         "{art object}"
@@ -86,8 +85,15 @@
       "explanation": "Rare treasure types.",
       "entries": [
         "{information}",
-        "{furniture}",
         "{storage}"
+      ]
+    },
+    {
+      "name": "unique",
+      "explanation": "Treasure types not produced by random.",
+      "entries": [
+        "{lib:money#stash}",
+        "{furniture}"
       ]
     },
     {
@@ -283,10 +289,21 @@
       "name": "attribute",
       "explanation": "Attributes describing the treasure.",
       "entries": [
-        "valuable",
-        "ornamental",
-        "delicate",
-        "sturdy",
+        "a valued",
+        "a valuable",
+        "an invaluable",
+        "a prized",
+        "a rare",
+        "an extraordinary",
+        "an incomparable",
+        "a strange",
+        "a mysterious",
+        "a bizarre",
+        "a curious",
+        "a peculiar",
+        "an ornamental",
+        "a delicate",
+        "a priceless",
         "{rare attribute}"
       ]
     },
@@ -294,20 +311,31 @@
       "name": "rare attribute",
       "explanation": "Rare attributes.",
       "entries": [
-        "fabled",
-        "ancient",
-        "peerless",
-        "enchanted"
+        "an ancient",
+        "a peerless",
+        "a fabled",
+        "an enchanted",
+        "a magical",
+        "a sorcerous",
+        "an occult",
+        "a thaumaturgic",
+        "a miraculous",
+        "a holy",
+        "a mystical",
+        "a mythical",
+        "a legendary",
+        "an alien",
+        "an otherworldly"
       ]
     },
     {
       "name": "complication",
       "explanation": "Complications for the treasure.",
       "entries": [
-        "(cursed)",
-        "(fake)",
-        "(incomplete)",
-        "(part of an incomplete set)",
+        "cursed",
+        "fake",
+        "incomplete",
+        "part of an incomplete set",
         "with a piece missing"
       ]
     },
