@@ -1,6 +1,6 @@
 {
   "name": "name-USA-1880",
-  "resultPattern": "{first name} {lib:name-USA-1850#last name} ({var:gender})",
+  "resultPattern": "{first name} {lib:name-USA-1850#surname} ({var:gender})",
   "globals": {
     "culture": "American"
   },
