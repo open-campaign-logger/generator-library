@@ -16,7 +16,14 @@
   "see": "",
   "date": "2018-07-26",
   "authors": "Craig Bogun",
-  "sources": "https://wiki.rpg.net/index.php/Aspects_List",
+  "attribution": {
+    "creators": "ChristopherA and other contributors to RPGnet Wiki",
+    "copyright": "RPGnet Wiki, https://wiki.rpg.net/index.php/RPGnetWiki:Copyrights",
+    "licence": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "disclaimer": "https://wiki.rpg.net/index.php/RPGnetWiki:General_disclaimer",
+    "source": "https://wiki.rpg.net/index.php/Aspects_List",
+    "changes": "Translation into JSON file format for generator usage"
+  },
   "licence": "https://creativecommons.org/licenses/by-sa/2.5/",
   "genre": "universal",
   "categories": [
