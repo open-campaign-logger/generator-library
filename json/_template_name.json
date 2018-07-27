@@ -15,6 +15,14 @@
   "date": "XXX",
   "authors": "XXX",
   "sources": "",
+  "attribution": {
+    "creators": "",
+    "copyright": "",
+    "licence": "https://",
+    "disclaimer": "https://",
+    "source": "",
+    "changes": "Translation into Campaign Logger generator format."
+  },
   "genre": "XXX",
   "categories": [
     "name"

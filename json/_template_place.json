@@ -17,6 +17,14 @@
   "date": "@timestamp@ XXX",
   "authors": "@author@. XXX",
   "sources": "",
+  "attribution": {
+    "creators": "",
+    "copyright": "",
+    "licence": "https://",
+    "disclaimer": "https://",
+    "source": "",
+    "changes": "Translation into Campaign Logger generator format."
+  },
   "genre": "",
   "categories": [
     "world"
