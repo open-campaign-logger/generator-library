@@ -10,8 +10,8 @@
   "bugs": "",
   "to do": "",
   "see": "adjDirection",
-  "date": "2017-10-07",
-  "authors": "Esko Vesala",
+  "date": "2018-08-03",
+  "authors": "ELF Vesala",
   "sources": "wiki.Lspace.org, Wikipedia.org",
   "genre": "universal",
   "categories": [
@@ -36,7 +36,7 @@
       "entries": [
         "{cardinal}",
         "{intercardinal}",
-        "{principal winds}"
+        "{principal}"
       ]
     },
     {
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "name": "principal winds",
+      "name": "principal",
       "entries": [
         "North",
         "Northeasth",
@@ -343,10 +343,10 @@
       "explanation": "Direction systems for fantasy (with no basis in myth).",
       "entries": [
         "{myth}",
-        "hubwards (towards the center of the world)",
-        "turnwise (following the rotation of the world)",
-        "rimwards (towards the edge of the world)",
-        "widdershins (against the rotation of the world)"
+        "hubwards",
+        "turnwise",
+        "rimwards",
+        "widdershins"
       ]
     },
     {
@@ -388,6 +388,15 @@
       "entries": [
         "galactic (based on the plane of the local galaxy)",
         "supergalactic (based on the plane of the local galaxy group)"
+      ]
+    },
+    {
+      "name": "adjective",
+      "entries": [
+        "Northern",
+        "Eastern",
+        "Southern",
+        "Western"
       ]
     }
   ]

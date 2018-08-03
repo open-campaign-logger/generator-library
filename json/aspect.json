@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "concept, motif-*, place, theme",
-  "date": "2018-06-30",
+  "date": "2018-08-03",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -42,9 +42,7 @@
       "explanation": "The output format.",
       "entries": [
         "{summary}",
-        "{detail}",
-        "{description}",
-        "{stats}"
+        "{detail}"
       ]
     },
     {
@@ -96,14 +94,22 @@
       "name": "common",
       "explanation": "Usual types.",
       "entries": [
-        "{any}"
+        "{animal}",
+        "{color}",
+        "{direction}",
+        "{negative}",
+        "{plant}",
+        "{positive}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Unusual types.",
       "entries": [
-        "{any}"
+        "{air}",
+        "{cold}",
+        "{material}",
+        "{warm}"
       ]
     },
     {
@@ -126,10 +132,14 @@
       ]
     },
     {
+      "--------------------------------------------------": "ASPECTS"
+    },
+    {
       "name": "air",
       "explanation": "Air-related aspects.",
       "entries": [
-        "cloud"
+        "cloud",
+        "sky"
       ]
     },
     {
@@ -159,7 +169,7 @@
       "name": "direction",
       "explanation": "Orientation-related concepts",
       "entries": [
-        "{lib:direction}"
+        "{lib:direction#adjective}"
       ]
     },
     {

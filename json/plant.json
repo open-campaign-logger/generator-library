@@ -528,6 +528,7 @@
       "name": "descriptor",
       "explanation": "Descriptors for randomized plant names.",
       "entries": [
+        "{lib:aspect#summary}",
         "{lib:concept#descriptor}",
         "{lib:concept#shape}-leaved",
         "{lib:color#prime}-eyed",
@@ -535,15 +536,20 @@
         "{lib:color#prime}-rooted",
         "crawling",
         "creeping",
+        "cutleaf",
         "evergreen",
         "flowering",
+        "five-leafed",
+        "four-leafed",
         "hairy",
         "lush",
         "poisonous",
         "running",
         "speckled",
         "striped",
+        "three-leafed",
         "trailing",
+        "two-leafed",
         "weeping"
       ]
     },
@@ -551,7 +557,16 @@
       "name": "beginning",
       "explanation": "Beginnings for randomized plant names.",
       "entries": [
-        "{lib:concept#summary}"
+        "{lib:concept#summary}",
+        "{person beginning}"
+      ]
+    },
+    {
+      "name": "person beginning",
+      "explanation": "Person-related initial name components.",
+      "entries": [
+        "beggars",
+        "monks"
       ]
     },
     {
@@ -624,10 +639,15 @@
         "bell",
         "button",
         "cap",
+        "comb",
         "cup",
+        "feather",
         "finger",
+        "fork",
         "foot",
+        "lace",
         "nest",
+        "rod",
         "spoon",
         "spur",
         "tail",
