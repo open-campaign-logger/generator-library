@@ -1763,8 +1763,25 @@
       "name": "special",
       "explanation": "Special name tables.",
       "entries": [
+        "{alias}",
         "{hermafrodite}",
         "{neuter}"
+      ]
+    },
+    {
+      "name": "alias",
+      "explanation": "Variant expressions for 'Also Known As'.",
+      "entries": [
+        "alias",
+        "also called",
+        "also known as",
+        "better known as",
+        "known as",
+        "named as",
+        "often described as",
+        "otherwise known as",
+        "variously known as",
+        "widely known as"
       ]
     },
     {
