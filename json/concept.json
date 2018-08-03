@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "aspect, motif-*, place, theme",
-  "date": "2018-06-30",
+  "date": "2018-08-03",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -42,9 +42,7 @@
       "explanation": "The output format.",
       "entries": [
         "{summary}",
-        "{detail}",
-        "{description}",
-        "{stats}"
+        "{detail}"
       ]
     },
     {
@@ -96,14 +94,15 @@
       "name": "common",
       "explanation": "Usual types.",
       "entries": [
-        "{any}"
+        "{neutral}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Unusual types.",
       "entries": [
-        "{any}"
+        "{negative}",
+        "{positive}"
       ]
     },
     {
@@ -114,36 +113,255 @@
       "explanation": "All concepts for random selection.",
       "entries": [
         "{negative}",
-        "{positive}",
-        "{time}"
+        "{neutral}",
+        "{positive}"
       ]
     },
     {
       "name": "negative",
       "explanation": "Ominous concepts.",
       "entries": [
-        "death",
-        "desolation",
-        "pain",
-        "suffering"
+        "{death}",
+        "{pain}",
+        "{sorrow}"
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Neutral concepts.",
+      "entries": [
+        "{animal}",
+        "{aroma}",
+        "{body}",
+        "{color}",
+        "{effect}",
+        "{liquid}",
+        "{place}",
+        "{quality}",
+        "{shape}",
+        "{sky}",
+        "{time}",
+        "{weapon}",
+        "{weather}"
       ]
     },
     {
       "name": "positive",
-      "explanation": "Deligthful concepts.",
+      "explanation": "Happy concepts.",
+      "entries": [
+        "{joy}",
+        "{life}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONCEPTS"
+    },
+    {
+      "name": "animal",
+      "explanation": "Animal-related initial name components.",
+      "entries": [
+        "{lib:animal#land}",
+        "bird",
+        "beetle",
+        "bull",
+        "calf",
+        "cattle",
+        "chick",
+        "colt",
+        "fawn",
+        "foal",
+        "fowl",
+        "herd",
+        "hog",
+        "hound",
+        "kit",
+        "lamb",
+        "mare",
+        "nag",
+        "ox",
+        "stallion",
+        "steed",
+        "swine",
+        "vermin",
+        "whelp"
+      ]
+    },
+    {
+      "name": "aroma",
+      "explanation": "Aroma-related initial name components.",
+      "entries": [
+        "bitter",
+        "sour",
+        "sweet"
+      ]
+    },
+    {
+      "name": "body",
+      "explanation": "Body part related initial name components.",
+      "entries": [
+        "claw",
+        "horn",
+        "spine",
+        "tooth"
+      ]
+    },
+    {
+      "name": "color",
+      "explanation": "Color-related initial name components.",
+      "entries": [
+        "{lib:color#prime}",
+        "ash",
+        "chalk",
+        "dark",
+        "dim",
+        "gold",
+        "light",
+        "pale",
+        "silver"
+      ]
+    },
+    {
+      "name": "death",
+      "explanation": "Death-related initial name components.",
+      "entries": [
+        "bane",
+        "death",
+        "poison",
+        "reaper",
+        "skull"
+      ]
+    },
+    {
+      "name": "effect",
+      "explanation": "Effect-related initial name components.",
+      "entries": [
+        "burn",
+        "itch"
+      ]
+    },
+    {
+      "name": "joy",
+      "explanation": "Joy-related initial name components.",
       "entries": [
         "hope",
+        "joy",
         "light",
+        "luck",
+        "mirth",
         "wonder"
       ]
     },
     {
+      "name": "life",
+      "explanation": "Life-related initial name components.",
+      "entries": [
+        "child"
+      ]
+    },
+    {
+      "name": "liquid",
+      "explanation": "Liquid-related initial name components.",
+      "entries": [
+        "mead",
+        "milk",
+        "water"
+      ]
+    },
+    {
+      "name": "pain",
+      "explanation": "Pain-related initial name components.",
+      "entries": [
+        "ill",
+        "pain",
+        "suffer",
+        "tear"
+      ]
+    },
+    {
+      "name": "place",
+      "explanation": "Location-related initial name components.",
+      "entries": [
+        "{lib:place#temperate}"
+      ]
+    },
+    {
+      "name": "quality",
+      "explanation": "Quality-related initial name components.",
+      "entries": [
+        "bad",
+        "brittle",
+        "good",
+        "hard",
+        "master",
+        "soft",
+        "strong"
+      ]
+    },
+    {
+      "name": "shape",
+      "explanation": "Shape-related initial name components.",
+      "entries": [
+        "broad",
+        "cone",
+        "hook",
+        "knot",
+        "long",
+        "plume",
+        "round",
+        "short",
+        "thick",
+        "thin"
+      ]
+    },
+    {
+      "name": "sky",
+      "explanation": "Sky-related initial name components.",
+      "entries": [
+        "moon",
+        "sky",
+        "star",
+        "sun"
+      ]
+    },
+    {
+      "name": "sorrow",
+      "explanation": "Sorrow-related initial name components.",
+      "entries": [
+        "sad",
+        "sorrow"
+      ]
+    },
+    {
       "name": "time",
-      "explanation": "Temporal concepts.",
+      "explanation": "Time-related initial name components.",
       "entries": [
         "dawn",
+        "day",
         "dusk",
-        "night"
+        "night",
+        "noon"
+      ]
+    },
+    {
+      "name": "weapon",
+      "explanation": "Weapon-related initial name components.",
+      "entries": [
+        "arrow",
+        "axe",
+        "blade",
+        "bow",
+        "dirk",
+        "spear"
+      ]
+    },
+    {
+      "name": "weather",
+      "explanation": "Weather-related initial name components.",
+      "entries": [
+        "cloud",
+        "dew",
+        "mist",
+        "rain"
       ]
     },
     {
@@ -179,7 +397,15 @@
       "name": "descriptor",
       "explanation": "Descriptors for randomized terms.",
       "entries": [
-        ""
+        "bleak",
+        "common",
+        "dwarf",
+        "false",
+        "giant",
+        "grand",
+        "rare",
+        "tall",
+        "wild"
       ]
     },
     {

@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-03-05",
+  "date": "2018-08-03",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -154,17 +154,18 @@
       "name": "pattern",
       "explanation": "Decorative patterns.",
       "entries": [
-        "chaotic",
         "asymmetric",
-        "symmetric",
-        "dotted",
-        "spiral",
-        "circular",
-        "wavy",
-        "striped",
+        "chaotic",
         "chequered",
+        "circular",
+        "dotted",
         "geometric",
-        "tiled"
+        "speckled",
+        "spiral",
+        "striped",
+        "symmetric",
+        "tiled",
+        "wavy"
       ]
     },
     {
