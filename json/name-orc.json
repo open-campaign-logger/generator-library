@@ -1,20 +1,20 @@
 {
-  "name": "name-monster",
+  "name": "name-orc",
   "resultPattern": "{init}{result}",
   "globals": {
-    "culture": "generic"
+    "culture": "orcish"
   },
   "variables": {
     "footnote": ""
   },
-  "explanation": "Component-based monster names.",
+  "explanation": "Orcish names.",
   "structure": "Genders are collected in the same file to allow easy sharing of patronym and byname tables. Subtables have been split by their initial letter to allow future support for allitteration and for example siblings sharing the same initial.",
   "note": "",
   "to do": "",
-  "see": "name-elf, name-orc",
+  "see": "name-monster",
   "date": "2018-08-08",
   "authors": "ELF Vesala",
-  "sources": "name-random",
+  "sources": "name-elf, name-monster",
   "genre": "universal",
   "categories": [
     "monster",
@@ -362,116 +362,90 @@
       "entries": [
         "Agh",
         "Agr",
-        "Ara",
         "Arag",
-        "Arm",
         "Arg"
       ]
     },
     {
       "name": "beginning b",
       "entries": [
-        "Ban",
-        "Ber",
-        "Bor",
-        "Blud",
-        "Bur"
+        "Blud"
       ]
     },
     {
       "name": "beginning c",
       "entries": [
-        "Clud",
-        "Cyr"
+        "Cur"
       ]
     },
     {
       "name": "beginning d",
       "entries": [
-        "Daf",
-        "Dag",
-        "Dagh",
-        "Dor",
-        "Durm",
-        "Dyw"
+        "Dugh",
+        "Dul"
       ]
     },
     {
       "name": "beginning e",
       "entries": [
-        "Elm",
-        "Elym"
+        "Egh"
       ]
     },
     {
       "name": "beginning f",
       "entries": [
-        "Fal",
-        "Far",
-        "Farg",
-        "Fo",
-        "Fyr"
+        "Fag",
+        "Fur"
       ]
     },
     {
       "name": "beginning g",
       "entries": [
-        "Ghan",
-        "Gor",
-        "Goro",
-        "Gyl"
+        "Gah",
+        "Go",
+        "Golg",
+        "Gor"
       ]
     },
     {
       "name": "beginning h",
       "entries": [
-        "Hag",
-        "Hagg",
-        "Hel",
-        "Hyl"
+        "Hag"
       ]
     },
     {
       "name": "beginning i",
       "entries": [
-        "Ing",
-        "Irth"
+        "Irg"
       ]
     },
     {
       "name": "beginning j",
       "entries": [
-        "Jad",
-        "Jag",
-        "Jelog",
-        "Jyr"
+        "Jeg"
       ]
     },
     {
       "name": "beginning k",
       "entries": [
         "Kar",
-        "Kiln",
-        "Kre",
-        "Krum"
+        "Khar",
+        "Khug",
+        "Kug"
       ]
     },
     {
       "name": "beginning l",
       "entries": [
-        "Lem",
-        "Lo",
-        "Loe",
-        "Lor",
-        "Lyr"
+        "Lem"
       ]
     },
     {
       "name": "beginning m",
       "entries": [
         "Mal",
-        "Mar",
-        "Mene",
+        "Mogr",
+        "Mug",
         "Mur"
       ]
     },
@@ -479,118 +453,86 @@
       "name": "beginning n",
       "entries": [
         "Nag",
-        "Nar",
-        "Neme",
-        "Num"
+        "Nur"
       ]
     },
     {
       "name": "beginning o",
       "entries": [
-        "Og",
-        "Ogh",
-        "Olm",
-        "Or",
-        "Orm"
+        "Og"
       ]
     },
     {
       "name": "beginning p",
       "entries": [
-        "Par",
-        "Pegg",
-        "Per",
-        "Por",
-        "Pyw"
+        "Pug"
       ]
     },
     {
       "name": "beginning q",
       "entries": [
-        "Qel",
-        "Qiln",
-        "Quth",
-        "Qyr"
+        "Qyrg"
       ]
     },
     {
       "name": "beginning r",
       "entries": [
-        "Rag",
-        "Reg",
-        "Rem",
-        "Rulth"
+        "Rag"
       ]
     },
     {
       "name": "beginning s",
       "entries": [
-        "San",
-        "See",
-        "Seth",
-        "Sha",
-        "Soth",
-        "Sulm"
+        "Sath"
       ]
     },
     {
       "name": "beginning t",
       "entries": [
-        "Tel",
         "Thra",
-        "Tul",
-        "Tyer"
+        "Tugh"
       ]
     },
     {
       "name": "beginning u",
       "entries": [
-        "Uath",
         "Ugh",
-        "Ulan",
         "Ulm",
-        "Ush"
+        "Ur",
+        "Urb"
       ]
     },
     {
       "name": "beginning v",
       "entries": [
-        "Var",
-        "Ven",
-        "Ver"
+        "Var"
       ]
     },
     {
       "name": "beginning w",
       "entries": [
-        "War",
-        "Wer",
-        "Wulm",
-        "Wur"
+        "Wer"
       ]
     },
     {
       "name": "beginning x",
       "entries": [
         "Xar",
-        "Xeg",
-        "Xurm"
+        "Xeg"
       ]
     },
     {
       "name": "beginning y",
       "entries": [
-        "Ylo",
-        "Yo",
-        "Yva",
-        "Yw"
+        "Yat",
+        "Ygg"
       ]
     },
     {
       "name": "beginning z",
       "entries": [
-        "Zar",
-        "Ze",
+        "Zag",
+        "Zer",
         "Zum"
       ]
     },
@@ -612,9 +554,10 @@
       "entries": [
         "a",
         "e",
-        "i",
-        "o",
+        "r",
+        "s",
         "u",
+        "y",
         "'"
       ]
     },
@@ -622,31 +565,35 @@
       "name": "medium middle",
       "explanation": "Optional medium-length middle sections.",
       "entries": [
-        "em",
+        "ag",
+        "ar",
+        "eg",
         "er",
-        "eth",
-        "lo",
-        "lu",
-        "ly",
-        "re",
-        "ro",
-        "ru"
+        "gh",
+        "gr",
+        "rg",
+        "rs",
+        "ru",
+        "sh",
+        "ug"
       ]
     },
     {
       "name": "long middle",
       "explanation": "Optional long middle sections.",
       "entries": [
-        "aen",
-        "amm",
-        "ara",
-        "eath",
-        "ell",
-        "ill",
-        "lor",
-        "uln",
-        "oum",
-        "yrcth"
+        "agh",
+        "arg",
+        "egh",
+        "erg",
+        "rth",
+        "shm",
+        "sth",
+        "ugh",
+        "urg",
+        "umh",
+        "ust",
+        "uth"
       ]
     },
     {
@@ -664,8 +611,10 @@
       "explanation": "Feminine name endings.",
       "entries": [
         "{unisex ending}",
-        "cawyn",
-        "oer"
+        "ag",
+        "e",
+        "gtha",
+        "rtha"
       ]
     },
     {
@@ -673,29 +622,21 @@
       "explanation": "Masculine name endings.",
       "entries": [
         "{unisex ending}",
-        "dumth",
+        "buth",
+        "dum",
         "guth",
-        "mog",
-        "og",
-        "ug"
+        "mog"
       ]
     },
     {
       "name": "unisex ending",
       "explanation": "Unisex name endings.",
       "entries": [
-        "abar",
-        "gha",
-        "gu",
-        "ogun",
-        "ol",
-        "rn",
-        "tag",
-        "tael",
-        "th",
-        "tul",
-        "ub",
+        "og",
+        "ug",
+        "uk",
         "ul",
+        "um",
         "ut",
         "uth"
       ]
@@ -1044,19 +985,9 @@
       "name": "descriptor",
       "explanation": "Descriptors for randomized terms.",
       "entries": [
-        "Avenging",
-        "Brutal",
         "Cruel",
-        "Dark",
-        "Evil",
-        "Hateful",
         "Hungry",
-        "Horrible",
         "Merciless",
-        "Ravenous",
-        "Terrible",
-        "Thirsty",
-        "Unforgiving",
         "Vicious"
       ]
     },
@@ -1065,19 +996,8 @@
       "explanation": "Beginnings for randomized terms.",
       "entries": [
         "{compoundbegin}",
-        "Brain",
-        "Corpse",
-        "Eye",
-        "Flesh",
-        "Gut",
-        "Limb",
         "Marrow",
-        "Meat",
-        "Sinew",
-        "Skull",
-        "Tendon",
-        "Tongue",
-        "Venom",
+        "Thunder",
         "Vermin"
       ]
     },
@@ -1085,19 +1005,29 @@
       "name": "compoundbegin",
       "explanation": "Compound word beginnings for randomized terms.",
       "entries": [
-        "Bile",
         "Blood",
         "Bone",
-        "Gore"
+        "Gut",
+        "Rune",
+        "Sky",
+        "Spike",
+        "Star"
       ]
     },
     {
       "name": "compoundend",
       "explanation": "Compound word endings for randomized terms.",
       "entries": [
+        "brood",
+        "curser",
         "fang",
-        "horn",
-        "talon"
+        "jaw",
+        "maul",
+        "shriek",
+        "skull",
+        "talon",
+        "tooth",
+        "watcher"
       ]
     },
     {
@@ -1130,46 +1060,18 @@
     },
     {
       "name": "adjective",
-      "explanation": "Description of the monster's home.",
+      "explanation": "Description of the orc's homeland.",
       "entries": [
-        "Abandoned",
-        "Accursed",
-        "Blighted",
-        "Cursed",
-        "Forsaken",
-        "Howling",
-        "Infernal",
-        "Lightless",
-        "Stygian",
-        "Thrice-cursed",
-        "Unconquered",
-        "Unholy",
-        "Unknown",
-        "Vile"
+        "Blood",
+        "Hollow"
       ]
     },
     {
       "name": "location",
-      "explanation": "Home of the monster.",
+      "explanation": "Homeland of the orc.",
       "entries": [
-        "Abyss",
-        "Catacombs",
-        "Chasm",
-        "Crypt",
-        "Depths",
-        "Desert",
-        "Grave",
-        "Hollows",
-        "Mark",
-        "Moors",
-        "Mound",
-        "Pit",
-        "Shadows",
-        "Tomb",
-        "Tor",
-        "Wastes",
-        "Wilderness",
-        "Woods"
+        "Caves",
+        "Mountain"
       ]
     },
     {

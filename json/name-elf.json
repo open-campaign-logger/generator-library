@@ -1,23 +1,22 @@
 {
-  "name": "name-monster",
+  "name": "name-elf",
   "resultPattern": "{init}{result}",
   "globals": {
-    "culture": "generic"
+    "culture": "elvish"
   },
   "variables": {
     "footnote": ""
   },
-  "explanation": "Component-based monster names.",
+  "explanation": "Elven names.",
   "structure": "Genders are collected in the same file to allow easy sharing of patronym and byname tables. Subtables have been split by their initial letter to allow future support for allitteration and for example siblings sharing the same initial.",
   "note": "",
   "to do": "",
-  "see": "name-elf, name-orc",
+  "see": "name-monster, name-orc",
   "date": "2018-08-08",
   "authors": "ELF Vesala",
-  "sources": "name-random",
+  "sources": "name-monster",
   "genre": "universal",
   "categories": [
-    "monster",
     "name"
   ],
   "tables": [
@@ -360,238 +359,159 @@
     {
       "name": "beginning a",
       "entries": [
-        "Agh",
-        "Agr",
-        "Ara",
-        "Arag",
-        "Arm",
-        "Arg"
+        "Arn"
       ]
     },
     {
       "name": "beginning b",
       "entries": [
-        "Ban",
-        "Ber",
-        "Bor",
-        "Blud",
-        "Bur"
+        "Be"
       ]
     },
     {
       "name": "beginning c",
       "entries": [
-        "Clud",
-        "Cyr"
+        "Cor"
       ]
     },
     {
       "name": "beginning d",
       "entries": [
-        "Daf",
-        "Dag",
-        "Dagh",
-        "Dor",
-        "Durm",
-        "Dyw"
+        "Doe"
       ]
     },
     {
       "name": "beginning e",
       "entries": [
-        "Elm",
-        "Elym"
+        "El"
       ]
     },
     {
       "name": "beginning f",
       "entries": [
-        "Fal",
-        "Far",
-        "Farg",
-        "Fo",
-        "Fyr"
+        "Fil"
       ]
     },
     {
       "name": "beginning g",
       "entries": [
-        "Ghan",
-        "Gor",
-        "Goro",
-        "Gyl"
+        "Gal"
       ]
     },
     {
       "name": "beginning h",
       "entries": [
-        "Hag",
-        "Hagg",
-        "Hel",
-        "Hyl"
+        "Hal"
       ]
     },
     {
       "name": "beginning i",
       "entries": [
-        "Ing",
-        "Irth"
+        "Ir"
       ]
     },
     {
       "name": "beginning j",
       "entries": [
-        "Jad",
-        "Jag",
-        "Jelog",
-        "Jyr"
+        "Jan"
       ]
     },
     {
       "name": "beginning k",
       "entries": [
-        "Kar",
-        "Kiln",
-        "Kre",
-        "Krum"
+        "Kal"
       ]
     },
     {
       "name": "beginning l",
       "entries": [
-        "Lem",
-        "Lo",
-        "Loe",
-        "Lor",
-        "Lyr"
+        "Lo"
       ]
     },
     {
       "name": "beginning m",
       "entries": [
-        "Mal",
-        "Mar",
-        "Mene",
-        "Mur"
+        "Mal"
       ]
     },
     {
       "name": "beginning n",
       "entries": [
-        "Nag",
-        "Nar",
-        "Neme",
-        "Num"
+        "Nul"
       ]
     },
     {
       "name": "beginning o",
       "entries": [
-        "Og",
-        "Ogh",
-        "Olm",
-        "Or",
-        "Orm"
+        "Oan"
       ]
     },
     {
       "name": "beginning p",
       "entries": [
-        "Par",
-        "Pegg",
-        "Per",
-        "Por",
-        "Pyw"
+        "Pal"
       ]
     },
     {
       "name": "beginning q",
       "entries": [
-        "Qel",
-        "Qiln",
-        "Quth",
-        "Qyr"
+        "Que"
       ]
     },
     {
       "name": "beginning r",
       "entries": [
-        "Rag",
-        "Reg",
-        "Rem",
-        "Rulth"
+        "Rin"
       ]
     },
     {
       "name": "beginning s",
       "entries": [
-        "San",
-        "See",
-        "Seth",
-        "Sha",
-        "Soth",
-        "Sulm"
+        "Sal"
       ]
     },
     {
       "name": "beginning t",
       "entries": [
-        "Tel",
-        "Thra",
-        "Tul",
-        "Tyer"
+        "Ta",
+        "Tin"
       ]
     },
     {
       "name": "beginning u",
       "entries": [
-        "Uath",
-        "Ugh",
-        "Ulan",
-        "Ulm",
-        "Ush"
+        "Ul",
+        "Uo"
       ]
     },
     {
       "name": "beginning v",
       "entries": [
-        "Var",
-        "Ven",
-        "Ver"
+        "Van"
       ]
     },
     {
       "name": "beginning w",
       "entries": [
-        "War",
-        "Wer",
-        "Wulm",
-        "Wur"
+        "Wie"
       ]
     },
     {
       "name": "beginning x",
       "entries": [
-        "Xar",
-        "Xeg",
-        "Xurm"
+        "Xae"
       ]
     },
     {
       "name": "beginning y",
       "entries": [
-        "Ylo",
-        "Yo",
-        "Yva",
-        "Yw"
+        "Yan"
       ]
     },
     {
       "name": "beginning z",
       "entries": [
-        "Zar",
-        "Ze",
-        "Zum"
+        "Zal"
       ]
     },
     {
@@ -613,40 +533,38 @@
         "a",
         "e",
         "i",
-        "o",
-        "u",
-        "'"
+        "o"
       ]
     },
     {
       "name": "medium middle",
       "explanation": "Optional medium-length middle sections.",
       "entries": [
-        "em",
-        "er",
-        "eth",
-        "lo",
+        "al",
+        "an",
+        "en",
+        "el",
         "lu",
-        "ly",
-        "re",
-        "ro",
-        "ru"
+        "nu",
+        "va"
       ]
     },
     {
       "name": "long middle",
       "explanation": "Optional long middle sections.",
       "entries": [
-        "aen",
-        "amm",
-        "ara",
-        "eath",
-        "ell",
-        "ill",
-        "lor",
-        "uln",
-        "oum",
-        "yrcth"
+        "aln",
+        "inu",
+        "erg",
+        "rth",
+        "shm",
+        "sth",
+        "ugh",
+        "urg",
+        "umh",
+        "ust",
+        "uth",
+        "vie"
       ]
     },
     {
@@ -664,8 +582,10 @@
       "explanation": "Feminine name endings.",
       "entries": [
         "{unisex ending}",
-        "cawyn",
-        "oer"
+        "an",
+        "atha",
+        "el",
+        "iel"
       ]
     },
     {
@@ -673,31 +593,16 @@
       "explanation": "Masculine name endings.",
       "entries": [
         "{unisex ending}",
-        "dumth",
-        "guth",
-        "mog",
-        "og",
-        "ug"
+        "as",
+        "or"
       ]
     },
     {
       "name": "unisex ending",
       "explanation": "Unisex name endings.",
       "entries": [
-        "abar",
-        "gha",
-        "gu",
-        "ogun",
-        "ol",
-        "rn",
-        "tag",
-        "tael",
-        "th",
-        "tul",
-        "ub",
-        "ul",
-        "ut",
-        "uth"
+        "os",
+        "un"
       ]
     },
     {
@@ -1015,13 +920,17 @@
     },
     {
       "name": "epithet",
-      "explanation": "Monstrous epithets.",
+      "explanation": "Elfin epithets.",
       "entries": [
-        "Bloodletter",
-        "Bonesnapper",
-        "Corpsegrinder",
-        "Eyegouger",
-        "Wailer"
+        "Guardian",
+        "Harbinger",
+        "Outrider",
+        "Pathfinder",
+        "Sentinel",
+        "Traveler",
+        "Vanguard",
+        "Warden",
+        "Wayfarer"
       ]
     },
     {
@@ -1044,80 +953,61 @@
       "name": "descriptor",
       "explanation": "Descriptors for randomized terms.",
       "entries": [
-        "Avenging",
-        "Brutal",
-        "Cruel",
-        "Dark",
-        "Evil",
-        "Hateful",
-        "Hungry",
-        "Horrible",
-        "Merciless",
-        "Ravenous",
-        "Terrible",
-        "Thirsty",
-        "Unforgiving",
-        "Vicious"
+        "Ageless",
+        "Immortal",
+        "Shining",
+        "Vigilant"
       ]
     },
     {
       "name": "randombeginning",
       "explanation": "Beginnings for randomized terms.",
       "entries": [
-        "{compoundbegin}",
-        "Brain",
-        "Corpse",
-        "Eye",
-        "Flesh",
-        "Gut",
-        "Limb",
-        "Marrow",
-        "Meat",
-        "Sinew",
-        "Skull",
-        "Tendon",
-        "Tongue",
-        "Venom",
-        "Vermin"
+        "{compoundbegin}"
       ]
     },
     {
       "name": "compoundbegin",
       "explanation": "Compound word beginnings for randomized terms.",
       "entries": [
-        "Bile",
-        "Blood",
-        "Bone",
-        "Gore"
+        "Bright",
+        "Dawn",
+        "Dusk",
+        "Life",
+        "Mist",
+        "Moon",
+        "Star",
+        "Sky",
+        "Sun",
+        "Tear"
       ]
     },
     {
       "name": "compoundend",
       "explanation": "Compound word endings for randomized terms.",
       "entries": [
-        "fang",
-        "horn",
-        "talon"
+        "born",
+        "blade",
+        "friend",
+        "gleam",
+        "glow",
+        "leaf",
+        "seer",
+        "song"
       ]
     },
     {
       "name": "randomending",
       "explanation": "Separate word endings for randomized terms.",
       "entries": [
-        "Bane",
-        "Drinker",
-        "Eater",
-        "Gouger",
-        "Grinder",
-        "Opener",
-        "Renderer",
-        "Ripper",
-        "Slasher",
-        "Spatterer",
-        "Spitter",
-        "Splitter",
-        "Stabber",
-        "Tearer"
+        "Dreamer",
+        "Giver",
+        "Healer",
+        "Minstrel",
+        "Kin",
+        "Petal",
+        "Singer",
+        "Stargazer"
       ]
     },
     {
@@ -1130,46 +1020,45 @@
     },
     {
       "name": "adjective",
-      "explanation": "Description of the monster's home.",
+      "explanation": "Description of the elvish homeland.",
       "entries": [
-        "Abandoned",
-        "Accursed",
-        "Blighted",
-        "Cursed",
-        "Forsaken",
-        "Howling",
-        "Infernal",
-        "Lightless",
-        "Stygian",
-        "Thrice-cursed",
-        "Unconquered",
-        "Unholy",
-        "Unknown",
-        "Vile"
+        "Amaranthine",
+        "Crescent",
+        "Eternal",
+        "Far",
+        "Gleaming",
+        "Golden",
+        "Grey",
+        "Immortal",
+        "Pale",
+        "Silver",
+        "Night",
+        "Pearly",
+        "Radiant",
+        "Shimmering",
+        "Timeless",
+        "White"
       ]
     },
     {
       "name": "location",
-      "explanation": "Home of the monster.",
+      "explanation": "Homeland of the elf.",
       "entries": [
-        "Abyss",
-        "Catacombs",
-        "Chasm",
-        "Crypt",
-        "Depths",
-        "Desert",
-        "Grave",
-        "Hollows",
-        "Mark",
-        "Moors",
-        "Mound",
-        "Pit",
-        "Shadows",
-        "Tomb",
-        "Tor",
-        "Wastes",
-        "Wilderness",
-        "Woods"
+        "Arches",
+        "Beacon",
+        "Citadel",
+        "Cupolas",
+        "Cities",
+        "Dale",
+        "Forest",
+        "Gate",
+        "Glade",
+        "Haven",
+        "Hills",
+        "Meadow",
+        "Spires",
+        "Tower",
+        "Vale"
       ]
     },
     {
