@@ -12,7 +12,7 @@
   "note": "",
   "to do": "",
   "see": "name-monster, name-orc",
-  "date": "2018-08-08",
+  "date": "2018-08-10",
   "authors": "ELF Vesala",
   "sources": "name-monster",
   "genre": "universal",
@@ -186,12 +186,8 @@
         "gender": "female"
       },
       "entries": [
-        "{beginning}{short middle}{medium middle}{female ending}",
-        "{beginning}{short middle}{medium middle}{unisex ending}",
-        "{beginning}{medium middle}{short middle}{female ending}",
-        "{beginning}{medium middle}{short middle}{unisex ending}",
-        "{beginning}{!medium middle}{!medium middle}{female ending}",
-        "{beginning}{!medium middle}{!medium middle}{unisex ending}",
+        "{beginning}{medium middle}{female ending}",
+        "{beginning}{medium middle}{unisex ending}",
         "{beginning}{long middle}{female ending}",
         "{beginning}{long middle}{unisex ending}"
       ]
@@ -243,12 +239,8 @@
         "gender": "male"
       },
       "entries": [
-        "{beginning}{short middle}{medium middle}{male ending}",
-        "{beginning}{short middle}{medium middle}{unisex ending}",
-        "{beginning}{medium middle}{short middle}{male ending}",
-        "{beginning}{medium middle}{short middle}{unisex ending}",
-        "{beginning}{!medium middle}{!medium middle}{male ending}",
-        "{beginning}{!medium middle}{!medium middle}{unisex ending}",
+        "{beginning}{medium middle}{male ending}",
+        "{beginning}{medium middle}{unisex ending}",
         "{beginning}{long middle}{male ending}",
         "{beginning}{long middle}{unisex ending}"
       ]
@@ -285,9 +277,7 @@
       "name": "long unisex",
       "explanation": "Long masculine names.",
       "entries": [
-        "{beginning}{short middle}{medium middle}{unisex ending}",
-        "{beginning}{medium middle}{short middle}{unisex ending}",
-        "{beginning}{!medium middle}{!medium middle}{unisex ending}",
+        "{beginning}{medium middle}{unisex ending}",
         "{beginning}{long middle}{unisex ending}"
       ]
     },
@@ -419,7 +409,7 @@
     {
       "name": "beginning k",
       "entries": [
-        "Kal"
+        "{beginning c}"
       ]
     },
     {
@@ -493,13 +483,13 @@
     {
       "name": "beginning w",
       "entries": [
-        "Wie"
+        "{beginning v}"
       ]
     },
     {
       "name": "beginning x",
       "entries": [
-        "Xae"
+        "{beginning k}"
       ]
     },
     {
@@ -511,7 +501,7 @@
     {
       "name": "beginning z",
       "entries": [
-        "Zal"
+        "{beginning t}"
       ]
     },
     {
