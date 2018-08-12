@@ -1235,6 +1235,13 @@
           "--------------------------------------------------": "DETAILS"
         },
         {
+          "name": "resource",
+          "explanation": "Valuable materials available in the milieu.",
+          "entries": [
+            ""
+          ]
+        },
+        {
           "--------------------------------------------------": "EVENTS"
         },
         {
