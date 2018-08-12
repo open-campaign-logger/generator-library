@@ -1,0 +1,673 @@
+{
+  "name": "statblock",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "System-neutral stat block generator.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-08-12",
+  "authors": "ELF Vesala",
+  "sources": "",
+  "attribution": {
+    "creators": "",
+    "copyright": "",
+    "licence": "https://",
+    "disclaimer": "https://",
+    "source": "",
+    "changes": "Translation into Campaign Logger generator format."
+  },
+  "genre": "universal",
+  "categories": [
+    "meta"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "name": "Bob",
+            "race": "human",
+            "racemention": "",
+            "age": "middle-aged",
+            "gender": "male",
+            "substantive": "man"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{|{detail}|scase}",
+        "{|{description}|scase}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{statblock}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{basics}. \r\n{statblock}."
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "{basics}. \r\n{statblock}.\n{plot}. "
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Name}: {random} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "statblock",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Usual types.",
+      "entries": [
+        "{commoner}",
+        "{fighter}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Unusual types.",
+      "entries": [
+        "{spellcaster}"
+      ]
+    },
+    {
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "BASICS"
+    },
+    {
+      "name": "heading",
+      "explanation": "",
+      "entries": [
+        "==== {g:name} ====\r\n"
+      ]
+    },
+    {
+      "name": "basics",
+      "explanation": "",
+      "entries": [
+        "{g:age} {g:gender} {g:race}"
+      ]
+    },
+    {
+      "**************************************************": "RANGES"
+    },
+    {
+      "name": "commoner",
+      "explanation": "Average person's stat block.",
+      "entries": [
+        "{occupation}"
+      ]
+    },
+    {
+      "name": "fighter",
+      "explanation": "Warrior stat block.",
+      "entries": [
+        "{fighting}"
+      ]
+    },
+    {
+      "name": "spellcaster",
+      "explanation": "Mage stat block.",
+      "entries": [
+        "{magic}"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "age",
+      "explanation": "",
+      "entries": [
+        "{g:age}"
+      ]
+    },
+    {
+      "name": "body",
+      "explanation": "",
+      "entries": [
+        "lanky",
+        "lithe",
+        "muscular",
+        "obese",
+        "pot-bellied",
+        "tall and thin"
+      ]
+    },
+    {
+      "name": "fighting",
+      "explanation": "Fighting ability.",
+      "format": "The character has --",
+      "entries": [
+        "{ability} fighting skill with {fighting talent}",
+        "{!ability} fighting skills with {!fighting talent}, and {!ability} with other weapons",
+        "{!ability} fighting skills with {!fighting talent}, {!ability} with {!fighting talent}, and {!ability} with other weapons"
+      ]
+    },
+    {
+      "name": "magic",
+      "explanation": "Magical ability.",
+      "format": "The character has --",
+      "entries": [
+        "{ability} magical ability in {spellcasting talent}",
+        "{!ability} magical ability in {!spellcasting talent}, and {!ability} with {!spellcasting talent}"
+      ]
+    },
+    {
+      "name": "occupation",
+      "explanation": "Professional ability.",
+      "format": "The character has --",
+      "entries": [
+        "{ability} talent in {common talent}",
+        "{!ability} talent in {!common talent}, and {!ability} in {!common talent}"
+      ]
+    },
+    {
+      "name": "plot",
+      "explanation": "Plot seeds for the character.",
+      "entries": [
+        "Plot seed: {plot seed}"
+      ]
+    },
+    {
+      "name": "plot seed",
+      "explanation": "Plot seeds for the character.",
+      "entries": [
+        "Needs an object",
+        "Needs information",
+        "Needs protection"
+      ]
+    },
+    {
+      "**************************************************": "ABILITIES"
+    },
+    {
+      "name": "ability",
+      "explanation": "Level of ability.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "inferior"
+        },
+        {
+          "m": 2,
+          "v": "average"
+        },
+        {
+          "m": 4,
+          "v": "competent"
+        },
+        {
+          "m": 2,
+          "v": "proficient"
+        },
+        {
+          "m": 1,
+          "v": "masterful"
+        }
+      ]
+    },
+    {
+      "--------------------------------------------------": "FOCUSED"
+    },
+    {
+      "name": "inferior",
+      "explanation": "Poor level of ability.",
+      "entries": [
+        {
+          "m": 7,
+          "v": "inferior"
+        },
+        {
+          "m": 2,
+          "v": "average"
+        },
+        {
+          "m": 1,
+          "v": "competent"
+        }
+      ]
+    },
+    {
+      "name": "average",
+      "explanation": "Typical level of ability.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "inferior"
+        },
+        {
+          "m": 3,
+          "v": "average"
+        },
+        {
+          "m": 1,
+          "v": "competent"
+        }
+      ]
+    },
+    {
+      "name": "competent",
+      "explanation": "Skilled level of ability.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "average"
+        },
+        {
+          "m": 3,
+          "v": "competent"
+        },
+        {
+          "m": 1,
+          "v": "proficient"
+        }
+      ]
+    },
+    {
+      "name": "proficient",
+      "explanation": "Advanced level of ability.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "competent"
+        },
+        {
+          "m": 3,
+          "v": "proficient"
+        },
+        {
+          "m": 1,
+          "v": "masterful"
+        }
+      ]
+    },
+    {
+      "name": "masterful",
+      "explanation": "Legendary level of ability.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "competent"
+        },
+        {
+          "m": 2,
+          "v": "proficient"
+        },
+        {
+          "m": 7,
+          "v": "masterful"
+        }
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMMON"
+    },
+    {
+      "name": "common talent",
+      "explanation": "",
+      "entries": [
+        "ancient wisdom",
+        "crafting",
+        "hunting",
+        "trading",
+        "trapping"
+      ]
+    },
+    {
+      "--------------------------------------------------": "FIGHTING"
+    },
+    {
+      "name": "fighting talent",
+      "explanation": "",
+      "entries": [
+        "{unarmed}",
+        "{melee}",
+        "{missile}"
+      ]
+    },
+    {
+      "name": "melee",
+      "explanation": "Close quarter combat.",
+      "entries": [
+        "{blunt}",
+        "{edged}",
+        "{piercing}",
+        "light melee weapons",
+        "one-handed melee weapons"
+      ]
+    },
+    {
+      "name": "missile",
+      "explanation": "",
+      "entries": [
+        "blowpipe",
+        "crossbow",
+        "javelin",
+        "throwing net",
+        "throwing spear",
+        "bow and arrows"
+      ]
+    },
+    {
+      "name": "unarmed",
+      "explanation": "",
+      "entries": [
+        "barehanded fighting",
+        "dirty fighting tricks",
+        "fisticuffs",
+        "unarmed combat",
+        "wrestling"
+      ]
+    },
+    {
+      "name": "blunt",
+      "explanation": "Blunt weapons.",
+      "entries": [
+        "club",
+        "cudgel",
+        "mace",
+        "maul"
+      ]
+    },
+    {
+      "name": "edged",
+      "explanation": "Blade weapons.",
+      "entries": [
+        "dagger",
+        "sword",
+        "sword and shield"
+      ]
+    },
+    {
+      "name": "piercing",
+      "explanation": "",
+      "entries": [
+        "spear",
+        "thrusting dagger"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SPELLCASTING"
+    },
+    {
+      "name": "spellcasting talent",
+      "explanation": "",
+      "entries": [
+        "evocation",
+        "transmutation and conjuration",
+        "divination",
+        "transmutation",
+        "illusion",
+        "enchantment",
+        "abjuration",
+        "necromancy"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomization methods.",
+      "entries": [
+        "{component}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMPONENTS"
+    },
+    {
+      "name": "component",
+      "explanation": "Component-based terms (generated from words).",
+      "entries": [
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{compoundbegin}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "FANTASTIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}",
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
+      ]
+    }
+  ]
+}
