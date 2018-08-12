@@ -157,9 +157,6 @@
     {
       "name": "female",
       "explanation": "Female names grouped by initials.",
-      "export": {
-        "gender": "female"
-      },
       "entries": [
         "{female a}",
         "{female b}",
@@ -440,9 +437,6 @@
     {
       "name": "male",
       "explanation": "Male names grouped by initials.",
-      "export": {
-        "gender": "male"
-      },
       "entries": [
         "{male a}",
         "{male b}",
@@ -1993,7 +1987,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}Female: {female}, male: {male}, unisex: {unisex}. Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Surname: {surname}, byname: {byname}, initial: {initial}. Gender = {g:gender}."
+        "{init}Female: {female}, male: {male}, unisex: {unisex}. Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Surname: {surname}, byname: {byname}, initial: {initial}."
       ]
     }
   ]

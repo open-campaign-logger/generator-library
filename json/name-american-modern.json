@@ -106,9 +106,6 @@
     },
     {
       "name": "female",
-      "export": {
-        "gender": "female"
-      },
       "entries": [
         "{female a}",
         "{female b}",
@@ -638,9 +635,6 @@
     },
     {
       "name": "male",
-      "export": {
-        "gender": "male"
-      },
       "entries": [
         "{male a}",
         "{male b}",
@@ -3130,7 +3124,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, surname: {surname}, byname: {byname}, initial: {initial}, special: {special}. Gender = {global:gender}."
+        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, surname: {surname}, byname: {byname}, initial: {initial}, special: {special}."
       ]
     }
   ]

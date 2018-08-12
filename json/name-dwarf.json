@@ -2,7 +2,7 @@
   "name": "name-dwarf",
   "resultPattern": "{init}{result}",
   "globals": {
-    "culture": "dwarven"
+    "culture": "dwarf"
   },
   "variables": {
     "footnote": ""
@@ -145,9 +145,6 @@
     {
       "name": "female",
       "explanation": "Feminine names.",
-      "export": {
-        "gender": "female"
-      },
       "entries": [
         "{short female}",
         "{medium female}",
@@ -157,9 +154,6 @@
     {
       "name": "short female",
       "explanation": "Short feminine names.",
-      "export": {
-        "gender": "female"
-      },
       "entries": [
         "{beginning}",
         "{beginning}{female ending}",
@@ -169,9 +163,6 @@
     {
       "name": "medium female",
       "explanation": "Medium-length feminine names.",
-      "export": {
-        "gender": "female"
-      },
       "entries": [
         "{beginning}{short middle}{female ending}",
         "{beginning}{short middle}{unisex ending}",
@@ -182,9 +173,6 @@
     {
       "name": "long female",
       "explanation": "Long feminine names.",
-      "export": {
-        "gender": "female"
-      },
       "entries": [
         "{beginning}{medium middle}{female ending}",
         "{beginning}{medium middle}{unisex ending}",
@@ -198,9 +186,6 @@
     {
       "name": "male",
       "explanation": "Masculine names.",
-      "export": {
-        "gender": "male"
-      },
       "entries": [
         "{short male}",
         "{medium male}",
@@ -210,9 +195,6 @@
     {
       "name": "short male",
       "explanation": "Short masculine names.",
-      "export": {
-        "gender": "male"
-      },
       "entries": [
         "{beginning}",
         "{beginning}{male ending}",
@@ -222,9 +204,6 @@
     {
       "name": "medium male",
       "explanation": "Medium-length masculine names.",
-      "export": {
-        "gender": "male"
-      },
       "entries": [
         "{beginning}{short middle}{male ending}",
         "{beginning}{short middle}{unisex ending}",
@@ -235,9 +214,6 @@
     {
       "name": "long male",
       "explanation": "Long masculine names.",
-      "export": {
-        "gender": "male"
-      },
       "entries": [
         "{beginning}{medium middle}{male ending}",
         "{beginning}{medium middle}{unisex ending}",
@@ -2088,7 +2064,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}Female: {female}, male: {male}, unisex: {unisex}. Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Surname: {surname}, byname: {byname}, initial: {initial}. Gender = {g:gender}."
+        "{init}Female: {female}, male: {male}, unisex: {unisex}. Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Surname: {surname}, byname: {byname}, initial: {initial}."
       ]
     }
   ]
