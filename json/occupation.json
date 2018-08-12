@@ -53,7 +53,7 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{employment}"
+        "{occupation}"
       ]
     },
     {
