@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "concept, motif-*, place, theme",
-  "date": "2018-08-03",
+  "date": "2018-08-04",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -94,12 +94,14 @@
       "name": "common",
       "explanation": "Usual types.",
       "entries": [
+        "{age}",
         "{animal}",
         "{color}",
         "{direction}",
         "{negative}",
         "{plant}",
-        "{positive}"
+        "{positive}",
+        "{time}"
       ]
     },
     {
@@ -119,6 +121,7 @@
       "name": "any",
       "explanation": "All aspects for random selection.",
       "entries": [
+        "{age}",
         "{air}",
         "{animal}",
         "{cold}",
@@ -128,11 +131,20 @@
         "{negative}",
         "{plant}",
         "{positive}",
+        "{time}",
         "{warm}"
       ]
     },
     {
       "--------------------------------------------------": "ASPECTS"
+    },
+    {
+      "name": "age",
+      "explanation": "Age-related aspects.",
+      "entries": [
+        "new",
+        "old"
+      ]
     },
     {
       "name": "air",
@@ -203,6 +215,16 @@
         "bright",
         "shining",
         "wondrous"
+      ]
+    },
+    {
+      "name": "time",
+      "explanation": "Time-related aspects.",
+      "entries": [
+        "autumn",
+        "spring",
+        "summer",
+        "winter"
       ]
     },
     {
