@@ -1,7 +1,8 @@
 {
-  "name": "cast-goblinoid",
+  "name": "cast-dwarf",
   "resultPattern": "{init}{result}",
   "globals": {
+    "plural": "dwarves",
     "cast": "{role}",
     "castattribute": "{attribute}",
     "castparticiple": "{participle}",
@@ -11,15 +12,15 @@
   "variables": {
     "footnote": ""
   },
-  "explanation": "Template for a themed population.",
+  "explanation": "Template for population details.",
   "structure": "Global variables fitting a common environment.",
   "note": "This table does not produce immediate output, only sets global variables for later use.",
   "format": "Global variable definitions.",
   "bugs": "",
   "to do": "",
-  "see": "_template_cast, _template_set",
-  "date": "2018-02-15",
-  "authors": "Esko Vesala.",
+  "see": "_template_cast, cast-goblinoid",
+  "date": "2018-08-11",
+  "authors": "ELF Vesala",
   "sources": "",
   "genre": "fantasy",
   "categories": [
@@ -42,44 +43,250 @@
       "explanation": ".",
       "entries": [
         "{summary}",
-        "{detail}"
+        "{detail}",
+        "{description}"
       ]
     },
     {
       "name": "summary",
-      "explanation": "Brief description of the randomized set.",
+      "explanation": "Brief output.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed description of the randomized set.",
+      "entries": [
+        "{attribute} {common}",
+        "{participle} {common}",
+        "{participle}, {attribute} {common}",
+        "{attribute}, {participle} {common}",
+        "{common} with {possession}",
+        "{common} wearing {clothing}",
+        "{common} equippped with {protection}",
+        "{common} wielding {weapon}",
+        "{common} carrying {equipment}",
+        "{common} holding {valuable}",
+        "{common} accompanied by {pet}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description of the randomized set.",
+      "entries": [
+        "{attribute} {common} with {possession}",
+        "{participle} {common} with {possession}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "cast",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Usual types.",
       "entries": [
         "{role}"
       ]
     },
     {
-      "name": "detail",
-      "explanation": "Detailed description of the randomized set.",
+      "name": "rare",
+      "explanation": "Unusual types.",
       "entries": [
-        "{attribute} {role}",
-        "{participle} {role}",
-        "{participle}, {attribute} {role}",
-        "{attribute}, {participle} {role}",
-        "{role} with {possession}",
-        "{role} wearing {clothing}",
-        "{role} equippped with {protection}",
-        "{role} wielding {weapon}",
-        "{role} carrying {equipment}",
-        "{role} holding {valuable}",
-        "{role} accompanied by {pet}",
-        "{attribute} {role} with {possession}",
-        "{participle} {role} with {possession}"
+        "{breed}"
       ]
+    },
+    {
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "APPEARANCE"
+    },
+    {
+      "name": "appearance",
+      "explanation": "Outwards visible general looks.",
+      "entries": [
+        "{skin}"
+      ]
+    },
+    {
+      "name": "skin",
+      "explanation": "Skin details.",
+      "entries": [
+        "{skin attribute}, {skin color} skin {skin feature}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "DETAILS"
+    },
+    {
+      "name": "body",
+      "explanation": "Bodily appearance.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "eye attribute",
+      "explanation": "Eye type (before description).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "eye color",
+      "explanation": "Iris pigmentation.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "eye feature",
+      "explanation": "Additional eye detail (after description).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "face attribute",
+      "explanation": "Face quality (before description).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "face",
+      "explanation": "Facial appearance.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "face feature",
+      "explanation": "Additional facial details (after description).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "facial hair female",
+      "explanation": "WBeard, moustache and sideburns for women.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "facial hair male",
+      "explanation": "Beard, moustache and sideburns for men.",
+      "entries": [
+        "long beard",
+        "long beard {adorned with} decorations"
+      ]
+    },
+    {
+      "name": "hair attribute",
+      "explanation": "Hair quality (before description).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "hair color",
+      "explanation": "Hair pigmentation.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "hair feature",
+      "explanation": "Additional hair details (after description).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "mouth",
+      "explanation": "Lips, mouth and teeth described.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "nose",
+      "explanation": "Nose size and shape.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "size",
+      "explanation": "Body height and size.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "skin attribute",
+      "explanation": "Skin quality (before description).",
+      "entries": [
+        "coarsened",
+        "leathery",
+        "roughened",
+        "rugged",
+        "thick",
+        "weatherbeaten"
+      ]
+    },
+    {
+      "name": "skin color",
+      "explanation": "Skin pigmentation.",
+      "entries": [
+        "bronzed",
+        "pale",
+        "tanned"
+      ]
+    },
+    {
+      "name": "skin feature",
+      "explanation": "Additional skin details (after description).",
+      "entries": [
+        "{adorned with} ritual scars",
+        "{adorned with} tattoos",
+        "{adorned with} tribal markings"
+      ]
+    },
+    {
+      "name": "voice",
+      "explanation": "Speech characteristics.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "ROLES"
     },
     {
       "name": "group",
       "explanation": "Groups matching the population.",
       "entries": [
-        "patrol"
+        "band",
+        "group"
       ]
-    },
-    {
-      "**************************************************": "ROLES"
     },
     {
       "name": "role",
@@ -118,7 +325,6 @@
       "explanation": "Forerunners matching the population.",
       "entries": [
         "scout",
-        "runner",
         "tracker",
         "hunter"
       ]
@@ -128,8 +334,7 @@
       "explanation": "Guardians matching the population.",
       "entries": [
         "guard",
-        "guardian",
-        "watchman"
+        "guardian"
       ]
     },
     {
@@ -138,9 +343,6 @@
       "entries": [
         "{melee}",
         "{missile}",
-        "brute",
-        "grunt",
-        "cutthroat",
         "ambusher",
         "fighter",
         "warrior"
@@ -150,24 +352,20 @@
       "name": "melee",
       "explanation": "Close combat warriors matching the population.",
       "entries": [
-        "spearman",
-        "pikeman"
+        "XXX"
       ]
     },
     {
       "name": "missile",
       "explanation": "Long distance warriors matching the population.",
       "entries": [
-        "sling shooter",
-        "spear thrower",
-        "archer"
+        "XXX"
       ]
     },
     {
       "name": "worker",
       "explanation": "Laborers matching the population.",
       "entries": [
-        "laborer",
         "worker"
       ]
     },
@@ -175,15 +373,13 @@
       "name": "artisan",
       "explanation": "Craftsmen matching the population.",
       "entries": [
-        "artisan",
-        "craftsman"
+        "artisan"
       ]
     },
     {
       "name": "trader",
       "explanation": "Merchants matching the population.",
       "entries": [
-        "barterer",
         "dealer",
         "trader",
         "merchant"
@@ -193,7 +389,6 @@
       "name": "priest",
       "explanation": "Clerics matching the population.",
       "entries": [
-        "shaman",
         "priest"
       ]
     },
@@ -201,30 +396,21 @@
       "name": "magician",
       "explanation": "Spellcasters matching the population.",
       "entries": [
-        "witch doctor",
-        "hedge wizard"
+        "XXX"
       ]
     },
     {
       "name": "overseer",
       "explanation": "Mid-level bosses matching the population.",
       "entries": [
-        "foreman",
-        "headman",
-        "captain",
-        "elder"
+        "foreman"
       ]
     },
     {
       "name": "leader",
       "explanation": "Chieftains matching the population.",
       "entries": [
-        "chieftain",
-        "chief",
-        "master",
-        "warlord",
-        "ruler",
-        "king"
+        "master"
       ]
     },
     {
@@ -248,56 +434,49 @@
       "name": "food",
       "explanation": "Nourishment for the population.",
       "entries": [
-        "dried meat"
+        "XXX"
       ]
     },
     {
       "name": "clothing",
       "explanation": "Equipment for the population.",
       "entries": [
-        "baggy sack"
+        "XXX"
       ]
     },
     {
       "name": "protection",
       "explanation": "Equipment for the population.",
       "entries": [
-        "chain mail shirt"
+        "XXX"
       ]
     },
     {
       "name": "weapon",
       "explanation": "Equipment for the population.",
       "entries": [
-        "club",
-        "spiked club",
-        "dagger",
-        "blunt sword",
-        "shortbow"
+        "XXX"
       ]
     },
     {
       "name": "equipment",
       "explanation": "Equipment for the population.",
       "entries": [
-        "patched sack"
+        "XXX"
       ]
     },
     {
       "name": "valuable",
       "explanation": "Equipment for the population.",
       "entries": [
-        "copper coins",
-        "tattered leather purse"
+        "XXX"
       ]
     },
     {
       "name": "pet",
       "explanation": "Animal companions for the population.",
       "entries": [
-        "warg pup",
-        "warg runt",
-        "warg"
+        "XXX"
       ]
     },
     {
@@ -307,30 +486,21 @@
       "name": "prisoner",
       "explanation": "Hostage and slave breed of the population.",
       "entries": [
-        "kobold",
-        "enemy tribe goblin"
+        "XXX"
       ]
     },
     {
       "name": "breed",
       "explanation": "Breeds of the population.",
       "entries": [
-        "goblin",
-        "hobgoblin",
-        "bugbear",
-        "orc"
+        "XXX"
       ]
     },
     {
       "name": "overlord",
       "explanation": "Ruler breed of the population.",
       "entries": [
-        "goblin",
-        "hobgoblin",
-        "bugbear",
-        "orc",
-        "half-orc",
-        "troll"
+        "XXX"
       ]
     },
     {
@@ -340,16 +510,26 @@
       "name": "attribute",
       "explanation": "Attributes for the population.",
       "entries": [
-        "barbaric",
-        "dirty"
+        "XXX"
       ]
     },
     {
       "name": "participle",
       "explanation": "Verbs for the population.",
       "entries": [
-        "snickering",
-        "leering"
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "adorned with",
+      "explanation": "Variant expressions for 'embellished with'.",
+      "entries": [
+        "adorned with",
+        "decorated with",
+        "embellished with"
       ]
     },
     {
