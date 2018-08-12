@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "aspect, motif-*, place, theme",
-  "date": "2018-08-03",
+  "date": "2018-08-04",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -139,6 +139,7 @@
         "{place}",
         "{quality}",
         "{shape}",
+        "{size}",
         "{sky}",
         "{time}",
         "{weapon}",
@@ -179,6 +180,7 @@
         "mare",
         "nag",
         "ox",
+        "rooster",
         "stallion",
         "steed",
         "swine",
@@ -201,6 +203,7 @@
       "entries": [
         "claw",
         "horn",
+        "rib",
         "spine",
         "tooth"
       ]
@@ -262,9 +265,11 @@
       "name": "liquid",
       "explanation": "Liquid-related initial name components.",
       "entries": [
+        "ale",
         "mead",
         "milk",
-        "water"
+        "water",
+        "wine"
       ]
     },
     {
@@ -272,16 +277,24 @@
       "explanation": "Pain-related initial name components.",
       "entries": [
         "ill",
+        "fever",
         "pain",
         "suffer",
-        "tear"
+        "tear",
+        "wound"
       ]
     },
     {
       "name": "place",
       "explanation": "Location-related initial name components.",
       "entries": [
-        "{lib:place#temperate}"
+        "{lib:place#temperate}",
+        "field",
+        "ground",
+        "highland",
+        "lowland",
+        "marsh",
+        "sand"
       ]
     },
     {
@@ -290,9 +303,11 @@
       "entries": [
         "bad",
         "brittle",
+        "dull",
         "good",
         "hard",
         "master",
+        "sharp",
         "soft",
         "strong"
       ]
@@ -305,12 +320,24 @@
         "cone",
         "hook",
         "knot",
-        "long",
         "plume",
         "round",
-        "short",
         "thick",
         "thin"
+      ]
+    },
+    {
+      "name": "size",
+      "explanation": "Size-related initial name components.",
+      "entries": [
+        "dwarf",
+        "giant",
+        "grand",
+        "great",
+        "long",
+        "short",
+        "tall",
+        "tiny"
       ]
     },
     {
@@ -399,12 +426,8 @@
       "entries": [
         "bleak",
         "common",
-        "dwarf",
         "false",
-        "giant",
-        "grand",
         "rare",
-        "tall",
         "wild"
       ]
     },
