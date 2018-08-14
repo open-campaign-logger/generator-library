@@ -105,7 +105,7 @@
           "m": 1,
           "v": "human",
           "export": {
-            "species": "",
+            "species": "human",
             "speciesmention": "",
             "speciesattribute": "human"
           }
@@ -149,6 +149,7 @@
           "m": 5,
           "v": "elf",
           "export": {
+            "species": "elf",
             "speciesmention": "elf",
             "speciesattribute": "elven"
           }
@@ -157,6 +158,7 @@
           "m": 2,
           "v": "dwarf",
           "export": {
+            "species": "dwarf",
             "speciesmention": "dwarf",
             "speciesattribute": "dwarven"
           }
@@ -165,6 +167,7 @@
           "m": 1,
           "v": "gnome",
           "export": {
+            "species": "gnome",
             "speciesmention": "gnome",
             "speciesattribute": "gnomish"
           }
