@@ -2,9 +2,6 @@
   "name": "statblock",
   "resultPattern": "{init}{result}",
   "globals": {
-    "class": "",
-    "level": "",
-    "classification": "",
     "skillset": "",
     "variable": ""
   },
