@@ -2,8 +2,10 @@
   "name": "statblock",
   "resultPattern": "{init}{result}",
   "globals": {
-    "classification": "",
+    "class": "",
     "level": "",
+    "classification": "",
+    "skillset": "",
     "variable": ""
   },
   "variables": {
@@ -47,7 +49,8 @@
             "age": "{lib:age#major}",
             "substantive": "{lib:age#{g:age} {g:gender}}",
             "name": "{lib:name-random#summary}",
-            "level": "{verbal level}"
+            "level": "{verbal level}",
+            "skillset": "{classification}"
           }
         }
       ]
@@ -109,14 +112,14 @@
       "name": "common",
       "explanation": "Usual types.",
       "entries": [
-        "{g:level} {class}. \r\n{g:classification}"
+        "{g:level} {g:class}. \r\n{g:skillset}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Unusual types.",
       "entries": [
-        "{no class}. \r\n{g:classification}"
+        "{commoner}. \r\n{g:skillset}"
       ]
     },
     {
@@ -127,135 +130,274 @@
       ]
     },
     {
-      "**************************************************": "CLASS"
-    },
-    {
-      "name": "class",
-      "explanation": "Randomized character class.",
-      "entries": [
-        {
-          "v": "barbarian",
-          "export": {
-            "classification": "{fighter}"
-          }
-        },
-        {
-          "v": "bard",
-          "export": {
-            "classification": "{spellcaster}"
-          }
-        },
-        {
-          "v": "cleric",
-          "export": {
-            "classification": "{spellcaster}"
-          }
-        },
-        {
-          "v": "druid",
-          "export": {
-            "classification": "{spellcaster}"
-          }
-        },
-        {
-          "v": "fighter",
-          "export": {
-            "classification": "{fighter}"
-          }
-        },
-        {
-          "v": "monk",
-          "export": {
-            "classification": "{fighter}"
-          }
-        },
-        {
-          "v": "paladin",
-          "export": {
-            "classification": "{fighter}"
-          }
-        },
-        {
-          "v": "ranger",
-          "export": {
-            "classification": "{rogue}"
-          }
-        },
-        {
-          "v": "rogue",
-          "export": {
-            "classification": "{rogue}"
-          }
-        },
-        {
-          "v": "sorcerer",
-          "export": {
-            "classification": "{spellcaster}"
-          }
-        },
-        {
-          "v": "warlock",
-          "export": {
-            "classification": "{spellcaster}"
-          }
-        },
-        {
-          "v": "wizard",
-          "export": {
-            "classification": "{spellcaster}"
-          }
-        }
-      ]
-    },
-    {
-      "name": "no class",
-      "explanation": "Non-adventurer character class.",
-      "entries": [
-        {
-          "v": "commoner",
-          "export": {
-            "classification": "{commoner}"
-          }
-        }
-      ]
-    },
-    {
       "**************************************************": "CLASSIFICATION"
     },
     {
       "name": "classification",
-      "explanation": "Character focus.",
+      "explanation": "Classifiction by power source.",
       "entries": [
-        "{commoner}",
+        "{arcane}",
+        "{common}",
+        "{divine}",
+        "{martial}",
+        "{primal}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "POWER SOURCES"
+    },
+    {
+      "name": "arcane",
+      "explanation": "Arcane characters.",
+      "export": {
+        "classification": "arcane"
+      },
+      "entries": [
+        "{artificer}",
+        "{bard}",
+        "{sorcerer}",
+        "{warlock}",
+        "{wizard}"
+      ]
+    },
+    {
+      "name": "divine",
+      "explanation": "Divine characters.",
+      "export": {
+        "classification": "divine"
+      },
+      "entries": [
+        "{cleric}",
+        "{invoker}",
+        "{paladin}"
+      ]
+    },
+    {
+      "name": "martial",
+      "explanation": "Martial characters.",
+      "export": {
+        "classification": "martial"
+      },
+      "entries": [
         "{fighter}",
+        "{ranger}",
         "{rogue}",
-        "{spellcaster}"
+        "{warlord}"
       ]
     },
     {
-      "name": "commoner",
-      "explanation": "Average person's stat block.",
+      "name": "none",
+      "explanation": "Common characters.",
+      "export": {
+        "classification": "common"
+      },
       "entries": [
-        "{common ability}"
+        "{commoner}"
       ]
     },
     {
-      "name": "fighter",
-      "explanation": "Warrior stat block.",
+      "name": "primal",
+      "explanation": "Primal characters.",
+      "export": {
+        "classification": "primal"
+      },
+      "entries": [
+        "{barbarian}",
+        "{druid}",
+        "{shaman}"
+      ]
+    },
+    {
+      "name": "psionic",
+      "explanation": "Psionic characters.",
+      "note": "Not selectable at random.",
+      "export": {
+        "classification": "psionic"
+      },
+      "entries": [
+        "{monk}",
+        "{psion}"
+      ]
+    },
+    {
+      "**************************************************": "CLASSES"
+    },
+    {
+      "name": "artificer",
+      "explanation": "",
+      "export": {
+        "class": "artificer"
+      },
+      "entries": [
+        "{mental}. \r\n{magic ability}"
+      ]
+    },
+    {
+      "name": "barbarian",
+      "explanation": "",
+      "export": {
+        "class": "barbarian"
+      },
       "entries": [
         "{physical}. \r\n{fighting ability}"
       ]
     },
     {
-      "name": "rogue",
-      "explanation": "Thief stat block.",
+      "name": "bard",
+      "explanation": "",
+      "export": {
+        "class": "bard"
+      },
       "entries": [
         "{social}. \r\n{rogue ability}"
       ]
     },
     {
-      "name": "spellcaster",
-      "explanation": "Mage stat block.",
+      "name": "cleric",
+      "explanation": "",
+      "export": {
+        "class": "cleric"
+      },
+      "entries": [
+        "{mental}. \r\n{magic ability}"
+      ]
+    },
+    {
+      "name": "commoner",
+      "explanation": "",
+      "export": {
+        "class": "commoner"
+      },
+      "entries": [
+        "{social}. \r\n{common ability}"
+      ]
+    },
+    {
+      "name": "druid",
+      "explanation": "",
+      "export": {
+        "class": "druid"
+      },
+      "entries": [
+        "{mental}. \r\n{magic ability}"
+      ]
+    },
+    {
+      "name": "fighter",
+      "explanation": "",
+      "export": {
+        "class": "fighter"
+      },
+      "entries": [
+        "{physical}. \r\n{fighting ability}"
+      ]
+    },
+    {
+      "name": "invoker",
+      "explanation": "",
+      "export": {
+        "class": "invoker"
+      },
+      "entries": [
+        "{mental}. \r\n{magic ability}"
+      ]
+    },
+    {
+      "name": "monk",
+      "explanation": "",
+      "export": {
+        "class": "monk"
+      },
+      "entries": [
+        "{physical}. \r\n{fighting ability}"
+      ]
+    },
+    {
+      "name": "paladin",
+      "explanation": "",
+      "export": {
+        "class": "paladin"
+      },
+      "entries": [
+        "{physical}. \r\n{fighting ability}"
+      ]
+    },
+    {
+      "name": "psion",
+      "explanation": "",
+      "export": {
+        "class": "psion"
+      },
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ranger",
+      "explanation": "",
+      "export": {
+        "class": "ranger"
+      },
+      "entries": [
+        "{mental}. \r\n{magic ability}"
+      ]
+    },
+    {
+      "name": "rogue",
+      "explanation": "",
+      "export": {
+        "class": "rogue"
+      },
+      "entries": [
+        "{social}. \r\n{rogue ability}"
+      ]
+    },
+    {
+      "name": "shaman",
+      "explanation": "",
+      "export": {
+        "class": "shaman"
+      },
+      "entries": [
+        "{mental}. \r\n{magic ability}"
+      ]
+    },
+    {
+      "name": "sorcerer",
+      "explanation": "",
+      "export": {
+        "class": "sorcerer"
+      },
+      "entries": [
+        "{mental}. \r\n{magic ability}"
+      ]
+    },
+    {
+      "name": "warlock",
+      "explanation": "",
+      "export": {
+        "class": "warlock"
+      },
+      "entries": [
+        "{mental}. \r\n{magic ability}"
+      ]
+    },
+    {
+      "name": "warlord",
+      "explanation": "",
+      "export": {
+        "class": "warlord"
+      },
+      "entries": [
+        "{physical}. \r\n{fighting ability}"
+      ]
+    },
+    {
+      "name": "wizard",
+      "explanation": "",
+      "export": {
+        "class": "wizard"
+      },
       "entries": [
         "{mental}. \r\n{magic ability}"
       ]
