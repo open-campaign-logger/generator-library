@@ -137,7 +137,6 @@
       "explanation": "Classifiction by power source.",
       "entries": [
         "{arcane}",
-        "{common}",
         "{divine}",
         "{martial}",
         "{primal}"
