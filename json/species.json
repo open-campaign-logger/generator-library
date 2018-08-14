@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-03-06",
+  "date": "2018-08-13",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -141,6 +141,10 @@
       "name": "fantasy",
       "explanation": "Species for fantasy worlds (with no basis in myth).",
       "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
         {
           "m": 5,
           "v": "elf",
