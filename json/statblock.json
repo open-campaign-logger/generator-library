@@ -16,7 +16,7 @@
   "bugs": "",
   "to do": "Body.",
   "see": "",
-  "date": "2018-08-13",
+  "date": "2018-08-14",
   "authors": "ELF Vesala",
   "sources": "",
   "attribution": {
@@ -47,7 +47,7 @@
             "age": "{lib:age#major}",
             "substantive": "{lib:age#{g:age} {g:gender}}",
             "name": "{lib:name-random#summary}",
-            "level": "{level}"
+            "level": "{verbal level}"
           }
         }
       ]
@@ -109,7 +109,7 @@
       "name": "common",
       "explanation": "Usual types.",
       "entries": [
-        "level {g:level} {class}. \r\n{g:classification}"
+        "{g:level} {class}. \r\n{g:classification}"
       ]
     },
     {
@@ -376,7 +376,7 @@
       "explanation": "Occupational talents.",
       "format": "The character has --",
       "entries": [
-        "{ability level} {common talent} skill",
+        "{verbal level} {common talent} skill",
         "average {!common talent} and inferior {!common talent} skills",
         "competent {!common talent} and average {!common talent} skills",
         "proficient {!common talent} and competent {!common talent} skills",
@@ -388,7 +388,7 @@
       "explanation": "Combat talents.",
       "format": "The character has --",
       "entries": [
-        "{ability level} fighting skill with {fighting talent}",
+        "{verbal level} fighting skill with {fighting talent}",
         "average fighting skills with {!fighting talent} and inferior with {!fighting talent}",
         "average fighting skills with {!fighting talent} and inferior with other weapons",
         "competent fighting skills with {!fighting talent} and average with {!fighting talent}",
@@ -405,7 +405,7 @@
       "explanation": "Spellcasting talents.",
       "format": "The character has --",
       "entries": [
-        "{ability level} magical ability in {spellcasting talent}",
+        "{verbal level} magical ability in {spellcasting talent}",
         "average magical ability with {!spellcasting talent} and inferior with {!spellcasting talent}",
         "competent magical ability with {!spellcasting talent} and average with {!spellcasting talent}",
         "proficient magical ability with {!spellcasting talent} and competent with {!spellcasting talent}",
@@ -418,41 +418,12 @@
       "explanation": "Thieving talents.",
       "format": "The character has --",
       "entries": [
-        "{ability level} skill in {rogue talent}",
+        "{verbal level} skill in {rogue talent}",
         "average skill with {!rogue talent} and inferior with {!rogue talent}",
         "competent skill with {!rogue talent} and average with {!rogue talent}",
         "proficient skill with {!rogue talent} and competent with {!rogue talent}",
         "masterful skill with {!rogue talent} and proficient with {!rogue talent}",
         "masterful skill with {!rogue talent}, proficient with {!rogue talent}, and competent with {!rogue talent}"
-      ]
-    },
-    {
-      "--------------------------------------------------": "ABILITY LEVELS"
-    },
-    {
-      "name": "ability level",
-      "explanation": "Random degree of talent.",
-      "entries": [
-        {
-          "m": 1,
-          "v": "inferior"
-        },
-        {
-          "m": 2,
-          "v": "average"
-        },
-        {
-          "m": 4,
-          "v": "competent"
-        },
-        {
-          "m": 2,
-          "v": "proficient"
-        },
-        {
-          "m": 1,
-          "v": "masterful"
-        }
       ]
     },
     {
@@ -633,47 +604,81 @@
     },
     {
       "name": "level",
-      "explanation": "",
+      "explanation": "Random character level format.",
+      "entries": [
+        "{numeric level}",
+        "{verbal level}"
+      ]
+    },
+    {
+      "name": "numeric level",
+      "explanation": "Character level described using numbers.",
       "entries": [
         {
           "m": 10,
-          "v": "1"
+          "v": "level 1"
         },
         {
           "m": 9,
-          "v": "2"
+          "v": "level 2"
         },
         {
           "m": 8,
-          "v": "3"
+          "v": "level 3"
         },
         {
           "m": 7,
-          "v": "4"
+          "v": "level 4"
         },
         {
           "m": 6,
-          "v": "5"
+          "v": "level 5"
         },
         {
           "m": 5,
-          "v": "6"
+          "v": "level 6"
         },
         {
           "m": 4,
-          "v": "7"
+          "v": "level 7"
         },
         {
           "m": 3,
-          "v": "8"
+          "v": "level 8"
         },
         {
           "m": 2,
-          "v": "9"
+          "v": "level 9"
         },
         {
           "m": 1,
-          "v": "10"
+          "v": "level 10"
+        }
+      ]
+    },
+    {
+      "name": "verbal level",
+      "explanation": "Level described using words.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "inferior"
+        },
+        {
+          "m": 2,
+          "v": "average"
+        },
+        {
+          "m": 4,
+          "v": "competent"
+        },
+        {
+          "m": 2,
+          "v": "proficient"
+        },
+        {
+          "m": 1,
+          "v": "masterful"
         }
       ]
     },
