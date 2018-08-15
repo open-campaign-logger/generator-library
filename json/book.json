@@ -18,7 +18,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-05-30",
+  "date": "2018-08-15",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -719,6 +719,13 @@
         "appears to be",
         "looks to be",
         "seems to be"
+      ]
+    },
+    {
+      "name": "title",
+      "explanation": "Alternative entry point name.",
+      "entries": [
+        "{random}"
       ]
     },
     {
