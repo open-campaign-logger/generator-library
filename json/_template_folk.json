@@ -1,13 +1,13 @@
 {
-  "name": "_template_cast",
+  "name": "_template_folk",
   "resultPattern": "{init}{result}",
   "globals": {
     "plural": "XXX",
-    "cast": "{role}",
-    "castattribute": "{attribute}",
-    "castparticiple": "{participle}",
-    "castbreed": "{breed}",
-    "castpossession": "{possession}"
+    "folk": "{role}",
+    "folkattribute": "{attribute}",
+    "folkparticiple": "{participle}",
+    "folkbreed": "{breed}",
+    "folkpossession": "{possession}"
   },
   "variables": {
     "footnote": ""
@@ -51,39 +51,39 @@
       "name": "summary",
       "explanation": "Brief output.",
       "entries": [
-        "{common}"
+        "{folk}"
       ]
     },
     {
       "name": "detail",
       "explanation": "More detailed description of the randomized set.",
       "entries": [
-        "{attribute} {common}",
-        "{participle} {common}",
-        "{participle}, {attribute} {common}",
-        "{attribute}, {participle} {common}",
-        "{common} with {possession}",
-        "{common} wearing {clothing}",
-        "{common} equippped with {protection}",
-        "{common} wielding {weapon}",
-        "{common} carrying {equipment}",
-        "{common} holding {valuable}",
-        "{common} accompanied by {pet}"
+        "{attribute} {folk}",
+        "{participle} {folk}",
+        "{participle}, {attribute} {folk}",
+        "{attribute}, {participle} {folk}",
+        "{folk} with {possession}",
+        "{folk} wearing {clothing}",
+        "{folk} equippped with {protection}",
+        "{folk} wielding {weapon}",
+        "{folk} carrying {equipment}",
+        "{folk} holding {valuable}",
+        "{folk} accompanied by {pet}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description of the randomized set.",
       "entries": [
-        "{attribute} {common} with {possession}",
-        "{participle} {common} with {possession}"
+        "{attribute} {folk} with {possession}",
+        "{participle} {folk} with {possession}"
       ]
     },
     {
       "**************************************************": "TYPES"
     },
     {
-      "name": "cast",
+      "name": "folk",
       "explanation": "Types by rarity.",
       "entries": [
         {
@@ -121,28 +121,98 @@
       "name": "appearance",
       "explanation": "Outwards visible general looks.",
       "entries": [
-        ""
+        "{body appearance}",
+        "{eye appearance}",
+        "{face appearance}",
+        "{hair appearance}",
+        "{skin appearance}",
+        "{voice appearance}"
+      ]
+    },
+    {
+      "name": "body appearance",
+      "explanation": "Body description.",
+      "entries": [
+        "{body attribute}, {body} body {body feature}"
+      ]
+    },
+    {
+      "name": "eye appearance",
+      "explanation": "Eye description.",
+      "entries": [
+        "{eye attribute}, {eye color} eyes {eye feature}"
+      ]
+    },
+    {
+      "name": "face appearance",
+      "explanation": "Face description.",
+      "entries": [
+        "{face attribute}, {face} face {face feature}"
+      ]
+    },
+    {
+      "name": "hair appearance",
+      "explanation": "Hair description.",
+      "entries": [
+        "{hair attribute}, {hair color} hair {hair feature}"
+      ]
+    },
+    {
+      "name": "skin appearance",
+      "explanation": "Skin description.",
+      "entries": [
+        "{skin attribute}, {skin color} skin {skin feature}"
+      ]
+    },
+    {
+      "name": "voice appearance",
+      "explanation": "Voice description.",
+      "entries": [
+        "{voice attribute}, {voice} voice {voice feature}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "DETAILS"
+    },
+    {
+      "name": "body attribute",
+      "explanation": "Body type (before description).",
+      "entries": [
+        "hunched"
       ]
     },
     {
       "name": "body",
       "explanation": "Bodily appearance.",
       "entries": [
-        ""
+        "bulky",
+        "stout"
+      ]
+    },
+    {
+      "name": "body feature",
+      "explanation": "Additional body detail (after description).",
+      "entries": [
+        "with short arms",
+        "with short legs"
       ]
     },
     {
       "name": "eye attribute",
       "explanation": "Eye type (before description).",
       "entries": [
-        ""
+        "droopy"
       ]
     },
     {
       "name": "eye color",
       "explanation": "Iris pigmentation.",
       "entries": [
-        ""
+        "{lib:color#dark eyes}",
+        "{lib:color#dark mixed eyes}",
+        "{lib:color#mixed eyes}",
+        "{lib:color#light mixed eyes}",
+        "{lib:color#light eyes}"
       ]
     },
     {
@@ -177,28 +247,50 @@
       "name": "facial hair female",
       "explanation": "WBeard, moustache and sideburns for women.",
       "entries": [
-        ""
+        "hairless"
       ]
     },
     {
       "name": "facial hair male",
       "explanation": "Beard, moustache and sideburns for men.",
       "entries": [
-        ""
+        "hairless",
+        "beard",
+        "moustache",
+        "sideburns"
+      ]
+    },
+    {
+      "name": "facial hair feature",
+      "explanation": "Additional facial hair details.",
+      "entries": [
+        "{adorned with} decorations",
+        "carefully groomed",
+        "carefully oiled",
+        "perfumed"
       ]
     },
     {
       "name": "hair attribute",
       "explanation": "Hair quality (before description).",
       "entries": [
-        ""
+        "balding"
       ]
     },
     {
       "name": "hair color",
       "explanation": "Hair pigmentation.",
       "entries": [
-        ""
+        "{lib:color#black hair}",
+        "{lib:color#dark brown hair}",
+        "{lib:color#brown hair}",
+        "{lib:color#light brown hair}",
+        "{lib:color#dark blond hair}",
+        "{lib:color#blond hair}",
+        "{lib:color#light blond hair}",
+        "{lib:color#very light blond hair}",
+        "{lib:color#red blond hair}",
+        "{lib:color#red hair}"
       ]
     },
     {
@@ -226,35 +318,69 @@
       "name": "size",
       "explanation": "Body height and size.",
       "entries": [
-        ""
+        "short"
       ]
     },
     {
       "name": "skin attribute",
       "explanation": "Skin quality (before description).",
       "entries": [
-        ""
+        "XXX"
       ]
     },
     {
       "name": "skin color",
       "explanation": "Skin pigmentation.",
       "entries": [
-        ""
+        "{lib:color#brown}"
       ]
     },
     {
       "name": "skin feature",
       "explanation": "Additional skin details (after description).",
       "entries": [
-        ""
+        "{adorned with} tattoos"
+      ]
+    },
+    {
+      "name": "voice attribute",
+      "explanation": "Voice quality (before description).",
+      "entries": [
+        "low"
       ]
     },
     {
       "name": "voice",
       "explanation": "Speech characteristics.",
       "entries": [
-        ""
+        "slow talking"
+      ]
+    },
+    {
+      "name": "voice feature",
+      "explanation": "Additional voice details (after description).",
+      "entries": [
+        "often interrupted by coughing"
+      ]
+    },
+    {
+      "**************************************************": "ABILITIES"
+    },
+    {
+      "name": "sense",
+      "explanation": "Senses.",
+      "entries": [
+        "darkvision"
+      ]
+    },
+    {
+      "**************************************************": "PERSONALITY"
+    },
+    {
+      "name": "personality",
+      "explanation": "Typical mental characteristics.",
+      "entries": [
+        "stubborn"
       ]
     },
     {
@@ -462,13 +588,6 @@
       "**************************************************": "BREEDS"
     },
     {
-      "name": "prisoner",
-      "explanation": "Hostage and slave breed of the population.",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
       "name": "breed",
       "explanation": "Breeds of the population.",
       "entries": [
@@ -478,6 +597,20 @@
     {
       "name": "overlord",
       "explanation": "Ruler breed of the population.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "prisoner",
+      "explanation": "Hostage and slave breed of the population.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "relative",
+      "explanation": "Related species.",
       "entries": [
         "XXX"
       ]
@@ -500,13 +633,32 @@
       ]
     },
     {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the folk.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "adorned with",
+      "explanation": "Variant expressions for 'embellished with'.",
+      "entries": [
+        "adorned with",
+        "decorated with",
+        "embellished with"
+      ]
+    },
+    {
       "**************************************************": "SPECIAL TABLES"
     },
     {
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}."
+        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, special: {special}."
       ]
     }
   ]
