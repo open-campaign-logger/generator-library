@@ -13,8 +13,8 @@
   "format": "",
   "bugs": "",
   "to do": "",
-  "see": "",
-  "date": "2018-06-30",
+  "see": "_template_place, encounter, location",
+  "date": "2018-08-16",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -163,6 +163,7 @@
         "{forest}",
         "{hill}",
         "{mountain}",
+        "{valley}",
         "{river}",
         "{lake}",
         "{wetland}",
@@ -217,7 +218,8 @@
         "{shrubland}",
         "{forest}",
         "{hill}",
-        "{mountain}"
+        "{mountain}",
+        "{valley}"
       ]
     },
     {
@@ -243,7 +245,8 @@
       "explanation": "Elevated milieus.",
       "entries": [
         "{hill}",
-        "{mountain}"
+        "{mountain}",
+        "{valley}"
       ]
     },
     {
@@ -326,7 +329,8 @@
         "{grassland}",
         "{shrubland}",
         "{forest}",
-        "{hill}"
+        "{hill}",
+        "{valley}"
       ]
     },
     {
@@ -339,6 +343,7 @@
         "{forest}",
         "{hill}",
         "{mountain}",
+        "{valley}",
         "{river}",
         "{lake}",
         "{wetland}"
@@ -383,7 +388,13 @@
       },
       "entries": [
         "cloud",
-        "sky"
+        "clouds",
+        "fog",
+        "haze",
+        "gloom",
+        "mist",
+        "sky",
+        "vapor"
       ]
     },
     {
@@ -418,8 +429,7 @@
       },
       "entries": [
         "desert",
-        "dunes",
-        "oasis"
+        "dunes"
       ]
     },
     {
@@ -430,9 +440,7 @@
       },
       "entries": [
         "dimension",
-        "plane",
-        "portal",
-        "vortex"
+        "plane"
       ]
     },
     {
@@ -442,8 +450,8 @@
         "milieu": "soil"
       },
       "entries": [
-        "in the soil",
-        "in the earth"
+        "soil",
+        "earth"
       ]
     },
     {
@@ -453,9 +461,23 @@
         "milieu": "forest"
       },
       "entries": [
+        "bosk",
+        "coppice",
+        "copse",
         "forest",
-        "woods",
-        "mound"
+        "grove",
+        "mound",
+        "thicket",
+        "thickets",
+        "timberland",
+        "timberlands",
+        "weald",
+        "wildwood",
+        "wildwoods",
+        "wood",
+        "woodland",
+        "woodlands",
+        "woods"
       ]
     },
     {
@@ -465,8 +487,11 @@
         "milieu": "glacier"
       },
       "entries": [
+        "expanse",
+        "field",
+        "fields",
         "glacier",
-        "ice cave"
+        "snow"
       ]
     },
     {
@@ -476,9 +501,22 @@
         "milieu": "grassland"
       },
       "entries": [
-        "moor",
+        "field",
+        "fields",
+        "grass",
+        "grassland",
+        "heath",
         "land",
-        "dolmen"
+        "lawn",
+        "moor",
+        "pasture",
+        "plain",
+        "plains",
+        "range",
+        "steppe",
+        "steppes",
+        "sward",
+        "turf"
       ]
     },
     {
@@ -488,9 +526,19 @@
         "milieu": "hill"
       },
       "entries": [
+        "ascent",
+        "barrow",
+        "crest",
         "dell",
         "hill",
-        "ridge"
+        "hillock",
+        "hills",
+        "hummock",
+        "knoll",
+        "mound",
+        "slope",
+        "tor",
+        "tumulus"
       ]
     },
     {
@@ -524,7 +572,10 @@
         "milieu": "jungle"
       },
       "entries": [
-        "jungle"
+        "jungle",
+        "rainforest",
+        "thicket",
+        "thickets"
       ]
     },
     {
@@ -534,8 +585,10 @@
         "milieu": "lake"
       },
       "entries": [
+        "basin",
         "lake",
-        "isle"
+        "pond",
+        "puddle"
       ]
     },
     {
@@ -548,9 +601,18 @@
         "bluff",
         "cliff",
         "crag",
+        "dome",
         "eyrie",
+        "heights",
+        "highlands",
+        "mount",
         "mountain",
+        "mountains",
         "peak",
+        "range",
+        "ranges",
+        "rise",
+        "summit",
         "vale"
       ]
     },
@@ -563,11 +625,11 @@
       "entries": [
         "abyss",
         "blazes",
+        "fire",
         "inferno",
         "netherworld",
-        "pit",
-        "fire",
         "perdition",
+        "pit",
         "purgatory",
         "underworld"
       ]
@@ -580,15 +642,15 @@
       },
       "entries": [
         "camp",
-        "encampment",
+        "castle",
         "donjon",
-        "tower",
+        "encampment",
+        "fort",
+        "fortification",
+        "fortress",
         "keep",
         "stronghold",
-        "fortification",
-        "fort",
-        "fortress",
-        "castle"
+        "tower"
       ]
     },
     {
@@ -598,8 +660,21 @@
         "milieu": "river"
       },
       "entries": [
+        "brook",
+        "brooklet",
+        "burn",
+        "creek",
+        "delta",
+        "ditch",
         "ford",
-        "delta"
+        "rill",
+        "rille",
+        "river",
+        "rivulet",
+        "runnel",
+        "stream",
+        "streamlet",
+        "watercourse"
       ]
     },
     {
@@ -621,9 +696,8 @@
         "milieu": "rural"
       },
       "entries": [
-        "manor",
         "grove",
-        "maze"
+        "manor"
       ]
     },
     {
@@ -633,9 +707,18 @@
         "milieu": "savanna"
       },
       "entries": [
+        "fields",
+        "grassland",
+        "grasslands",
+        "outcrop",
+        "pasture",
+        "pastures",
         "plain",
+        "plains",
+        "range",
         "savanna",
-        "outcrop"
+        "steppe",
+        "veldt"
       ]
     },
     {
@@ -645,9 +728,13 @@
         "milieu": "sea"
       },
       "entries": [
-        "island",
+        "deep",
+        "expanse",
+        "ocean",
         "sea",
-        "ocean"
+        "seas",
+        "seaway",
+        "tides"
       ]
     },
     {
@@ -657,6 +744,11 @@
         "milieu": "seabed"
       },
       "entries": [
+        "bed",
+        "bottom",
+        "depth",
+        "depths",
+        "floor",
         "seabed"
       ]
     },
@@ -667,11 +759,8 @@
         "milieu": "ship"
       },
       "entries": [
-        "cargo hold",
-        "captain's cabin",
-        "crew's quarters",
-        "mast",
-        "crow's nest"
+        "ship",
+        "vessel"
       ]
     },
     {
@@ -681,11 +770,26 @@
         "milieu": "shrubland"
       },
       "entries": [
+        "bramble",
+        "brambles",
+        "brier",
+        "briers",
         "brush",
+        "brushes",
         "bush",
+        "bushes",
+        "hedge",
+        "hedges",
         "scrub",
+        "scrubs",
         "scrubland",
-        "shrubland"
+        "scrublands",
+        "shrub",
+        "shrubs",
+        "shrubland",
+        "shrublands",
+        "weeds",
+        "weedlands"
       ]
     },
     {
@@ -695,9 +799,9 @@
         "milieu": "space"
       },
       "entries": [
+        "expanse",
         "space",
-        "void",
-        "asteroid"
+        "void"
       ]
     },
     {
@@ -707,7 +811,7 @@
         "milieu": "suburban"
       },
       "entries": [
-        "prison"
+        "suburb"
       ]
     },
     {
@@ -718,6 +822,7 @@
       },
       "entries": [
         "forest",
+        "wood",
         "woods",
         "taiga"
       ]
@@ -746,6 +851,7 @@
         "cavern",
         "crypt",
         "dungeon",
+        "hollow",
         "grave",
         "labyrinth",
         "lair",
@@ -753,7 +859,7 @@
         "pit",
         "tomb",
         "tunnel",
-        "underground lake",
+        "underground",
         "vault"
       ]
     },
@@ -764,7 +870,9 @@
         "milieu": "underwater"
       },
       "entries": [
-        "bottom"
+        "deep",
+        "depth",
+        "depths"
       ]
     },
     {
@@ -774,14 +882,29 @@
         "milieu": "urban"
       },
       "entries": [
+        "borough",
+        "burg",
+        "city",
+        "metropolis",
+        "port",
         "town",
-        "house",
-        "temple",
-        "hall",
-        "chamber",
-        "monument",
-        "undercity",
-        "sewer"
+        "undercity"
+      ]
+    },
+    {
+      "name": "valley",
+      "explanation": "Locations between hills or mountains.",
+      "entries": [
+        "canyon",
+        "chasm",
+        "clove",
+        "crevasse",
+        "gap",
+        "gorge",
+        "gulch",
+        "pass",
+        "ravine",
+        "valley"
       ]
     },
     {
@@ -791,11 +914,10 @@
         "milieu": "village"
       },
       "entries": [
-        "house",
-        "inn",
-        "shed",
-        "stable",
-        "village green"
+        "hamlet",
+        "thorp",
+        "town",
+        "township"
       ]
     },
     {
@@ -807,10 +929,9 @@
       "entries": [
         "caldera",
         "crater",
-        "field",
         "geyser",
+        "pit",
         "spring",
-        "sulphur pit",
         "volcano"
       ]
     },
@@ -821,10 +942,21 @@
         "milieu": "wetland"
       },
       "entries": [
-        "mire",
-        "swamp",
         "bog",
-        "fen"
+        "fen",
+        "marsh",
+        "marshland",
+        "marshlands",
+        "mire",
+        "morass",
+        "moss",
+        "muddle",
+        "peat",
+        "slough",
+        "sump",
+        "swamp",
+        "swampland",
+        "swamplands"
       ]
     },
     {
@@ -834,8 +966,7 @@
       "name": "random",
       "explanation": "Randomization methods.",
       "entries": [
-        "{component}",
-        "{syllable}"
+        "{component}"
       ]
     },
     {
@@ -861,36 +992,38 @@
       "name": "descriptor",
       "explanation": "Descriptors for randomized terms.",
       "entries": [
-        ""
+        "Trackless",
+        "Tractless",
+        "Uncharted"
       ]
     },
     {
       "name": "begin",
       "explanation": "Beginnings for randomized terms.",
       "entries": [
-        "{compoundbegin}",
-        "XXX"
+        "{beginning}",
+        "{compoundbegin}"
       ]
     },
     {
       "name": "compoundbegin",
       "explanation": "Compound word beginnings for randomized terms.",
       "entries": [
-        "XXX"
+        "{lib:concept#summary}"
       ]
     },
     {
       "name": "compoundend",
       "explanation": "Compound word endings for randomized terms.",
       "entries": [
-        "XXX"
+        "{milieu}"
       ]
     },
     {
       "name": "ending",
       "explanation": "Separate word endings for randomized terms.",
       "entries": [
-        "XXX"
+        "{milieu}"
       ]
     },
     {
@@ -1564,12 +1697,15 @@
       "explanation": "Variant expressions for the generator subject matter.",
       "entries": [
         "area",
+        "belt",
         "district",
         "locale",
         "place",
         "region",
         "site",
-        "territory"
+        "stretch",
+        "territory",
+        "tract"
       ]
     },
     {

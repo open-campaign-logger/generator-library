@@ -11,8 +11,8 @@
   "note": "",
   "bugs": "",
   "to do": "Add themes to categorize statuses and other elements.",
-  "see": "activity, animal, citizen, Five_room_dungeon, hook_line_and_sinker_adventure, location, monster",
-  "date": "2018-06-13",
+  "see": "activity, animal, citizen, Five_room_dungeon, hook_line_and_sinker_adventure, location, monster, place",
+  "date": "2018-08-16",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -160,6 +160,14 @@
           "set": {
             "milieu": "mountain",
             "milieudescription": "in a mountainous area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{valley}",
+          "set": {
+            "milieu": "valley",
+            "milieudescription": "in a valley"
           }
         }
       ]
@@ -809,6 +817,37 @@
       "explanation": "Events on the mountains.",
       "entries": [
         "avalanche"
+      ]
+    },
+    {
+      "name": "valley",
+      "explanation": "Valley encounter structure.",
+      "entries": [
+        "{valley encounter}",
+        "{valley encounter} {valley goal}",
+        "{valley event}"
+      ]
+    },
+    {
+      "name": "valley encounter",
+      "explanation": "Encounters in valleys.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "valley goal",
+      "explanation": "Goals for encounters in valleys.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "valley event",
+      "explanation": "Events in valleys.",
+      "entries": [
+        "avalanche",
+        "rock slide"
       ]
     },
     {

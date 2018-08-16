@@ -6,13 +6,13 @@
     "milieudescription": "",
     "footnote": ""
   },
-  "explanation": "Location table.",
+  "explanation": "Location generator.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "bugs": "",
   "to do": "Add themes to categorize attributes and other elements.",
-  "see": "5_room_dungeon, encounter, hook_line_and_sinker_adventure",
-  "date": "2018-06-13",
+  "see": "5_room_dungeon, encounter, hook_line_and_sinker_adventure, place",
+  "date": "2018-08-16",
   "authors": "ELF Vesala",
   "sources": "encounter, Wikipedia.org",
   "genre": "universal",
@@ -182,6 +182,14 @@
           "set": {
             "milieu": "mountain",
             "milieudescription": "mountainous area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{valley}",
+          "set": {
+            "milieu": "valley",
+            "milieudescription": "valley"
           }
         }
       ]
@@ -867,6 +875,29 @@
       "entries": [
         "steep cliff",
         "precariously balanced boulder",
+        "waterfall"
+      ]
+    },
+    {
+      "name": "valley",
+      "explanation": "Valley location structure.",
+      "entries": [
+        "{valley site}",
+        "{valley site} with {valley feature}"
+      ]
+    },
+    {
+      "name": "valley site",
+      "explanation": "Locations in the valleys.",
+      "entries": [
+        "valley"
+      ]
+    },
+    {
+      "name": "valley feature",
+      "explanation": "Features for locations in the mountains.",
+      "entries": [
+        "steep cliff",
         "waterfall"
       ]
     },
