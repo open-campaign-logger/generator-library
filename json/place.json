@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "_template_place, encounter, location",
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -387,14 +387,51 @@
         "milieu": "air"
       },
       "entries": [
+        "air",
+        "blue",
+        "breeze",
+        "breezes",
         "cloud",
         "clouds",
         "fog",
-        "haze",
+        "draft",
+        "drafts",
+        "draught",
+        "draughts",
+        "flurry",
+        "flurries",
+        "flutter",
+        "flutters",
+        "gale",
+        "gales",
         "gloom",
+        "gust",
+        "gusts",
+        "haze",
         "mist",
+        "mistral",
+        "mists",
+        "puff",
+        "puffs",
+        "skies",
         "sky",
-        "vapor"
+        "smoke",
+        "tempest",
+        "tempests",
+        "vapor",
+        "waft",
+        "wafting",
+        "wafts",
+        "whiff",
+        "whiffs",
+        "whisk",
+        "whisks",
+        "wind",
+        "winds",
+        "wisp",
+        "wisps",
+        "zephyr",
+        "zephyrs"
       ]
     },
     {
@@ -404,9 +441,29 @@
         "milieu": "barren"
       },
       "entries": [
+        "arid",
+        "arids",
+        "badland",
+        "badlands",
+        "barren",
+        "barrens",
+        "desolation",
+        "dustbowl",
+        "flats",
+        "hinterland",
         "lowland",
+        "lowlands",
         "land",
-        "terrain"
+        "lands",
+        "outback",
+        "rock desert",
+        "solitude",
+        "waste",
+        "wastes",
+        "wasteland",
+        "wastelands",
+        "wilderness",
+        "wilds"
       ]
     },
     {
@@ -416,9 +473,58 @@
         "milieu": "coast"
       },
       "entries": [
-        "grotto",
+        "anchorage",
+        "bank",
+        "basin",
+        "bay",
+        "bayou",
+        "beach",
+        "beaches",
+        "berth",
+        "bight",
+        "board",
+        "breakwater",
+        "channel",
+        "coast",
+        "coastline",
         "cove",
-        "bay"
+        "dam",
+        "delta",
+        "dock",
+        "docks",
+        "earthwork",
+        "embankment",
+        "enclave",
+        "estuary",
+        "firth",
+        "fjord",
+        "grotto",
+        "gulf",
+        "harbor",
+        "haven",
+        "inlet",
+        "jetty",
+        "landing",
+        "levee",
+        "marina",
+        "mooring",
+        "mouth",
+        "narrows",
+        "peninsula",
+        "pier",
+        "quay",
+        "seaboard",
+        "seacoast",
+        "seaport",
+        "seashore",
+        "seaside",
+        "shore",
+        "shores",
+        "shoreline",
+        "sound",
+        "strait",
+        "strand",
+        "wharf"
       ]
     },
     {
@@ -428,8 +534,17 @@
         "milieu": "desert"
       },
       "entries": [
+        "badland",
+        "barren",
         "desert",
-        "dunes"
+        "desolation",
+        "dunes",
+        "dust",
+        "field",
+        "fields",
+        "sands",
+        "solitude",
+        "wilds"
       ]
     },
     {
@@ -439,8 +554,19 @@
         "milieu": "dimension"
       },
       "entries": [
+        "cosm",
+        "cosmos",
+        "creation",
         "dimension",
-        "plane"
+        "domain",
+        "dominion",
+        "haunt",
+        "plane",
+        "reality",
+        "realm",
+        "sphere",
+        "universe",
+        "world"
       ]
     },
     {
@@ -450,8 +576,26 @@
         "milieu": "soil"
       },
       "entries": [
+        "clay",
+        "ground",
+        "earth",
+        "fill",
+        "gravel",
+        "humus",
+        "land",
+        "marl",
+        "mud",
+        "peat",
+        "rock",
+        "roots",
+        "sand",
+        "sod",
         "soil",
-        "earth"
+        "stone",
+        "subsoil",
+        "terra",
+        "terrain",
+        "turf"
       ]
     },
     {
@@ -487,10 +631,23 @@
         "milieu": "glacier"
       },
       "entries": [
+        "bank",
+        "banks",
+        "berg",
+        "blanket",
+        "cap",
+        "drift",
         "expanse",
         "field",
         "fields",
+        "floe",
+        "frost",
         "glacier",
+        "glaze",
+        "sleet",
+        "sleets",
+        "slide",
+        "slush",
         "snow"
       ]
     },
@@ -501,6 +658,7 @@
         "milieu": "grassland"
       },
       "entries": [
+        "carpet",
         "field",
         "fields",
         "grass",
@@ -508,15 +666,20 @@
         "heath",
         "land",
         "lawn",
+        "lea",
+        "meadow",
         "moor",
         "pasture",
         "plain",
         "plains",
+        "prairie",
         "range",
+        "rug",
         "steppe",
         "steppes",
         "sward",
-        "turf"
+        "turf",
+        "veldt"
       ]
     },
     {
@@ -548,10 +711,44 @@
         "milieu": "indoor"
       },
       "entries": [
-        "hall",
+        "alcove",
+        "antechamber",
+        "anteroom",
+        "arcade",
+        "atrium",
+        "balcony",
+        "cellar",
         "chamber",
+        "chambers",
+        "colonnade",
+        "entrance",
+        "entrancehall",
+        "foyer",
+        "foyers",
+        "gallery",
+        "gateway",
+        "hall",
+        "halls",
+        "hallway",
+        "home",
+        "lobby",
         "passage",
-        "room"
+        "passages",
+        "passageway",
+        "patio",
+        "porch",
+        "portico",
+        "room",
+        "rooms",
+        "rotunda",
+        "stoa",
+        "storage",
+        "suite",
+        "underbuilding",
+        "vault",
+        "veranda",
+        "vestibule",
+        "walkway"
       ]
     },
     {
@@ -561,8 +758,23 @@
         "milieu": "island"
       },
       "entries": [
+        "ait",
+        "archipelago",
+        "atoll",
+        "beach",
+        "cay",
         "isle",
-        "island"
+        "islet",
+        "island",
+        "key",
+        "lagoon",
+        "reef",
+        "rock",
+        "sandbank",
+        "sandbar",
+        "shallow",
+        "shallows",
+        "shoal"
       ]
     },
     {
@@ -572,10 +784,25 @@
         "milieu": "jungle"
       },
       "entries": [
+        "boscage",
+        "garden",
+        "gardens",
+        "growth",
+        "hell",
+        "inferno",
         "jungle",
+        "labyrinth",
+        "maze",
+        "menagerie",
         "rainforest",
+        "skein",
+        "snarl",
+        "tangle",
         "thicket",
-        "thickets"
+        "thickets",
+        "undergrowth",
+        "wasteland",
+        "woods"
       ]
     },
     {
@@ -586,9 +813,18 @@
       },
       "entries": [
         "basin",
+        "fountain",
+        "inland sea",
         "lake",
+        "lakelet",
+        "loch",
+        "mere",
         "pond",
-        "puddle"
+        "pool",
+        "puddle",
+        "reservoir",
+        "spring",
+        "tarn"
       ]
     },
     {
@@ -641,16 +877,42 @@
         "milieu": "outpost"
       },
       "entries": [
+        "balustrade",
+        "barricade",
+        "barrier",
+        "bastion",
+        "battlements",
+        "belfry",
+        "bulwark",
         "camp",
+        "campanile",
         "castle",
+        "citadel",
+        "defense",
         "donjon",
+        "earthwork",
+        "embankment",
+        "embattlement",
         "encampment",
+        "entrenchment",
+        "escarpment",
         "fort",
         "fortification",
         "fortress",
+        "garrison",
+        "guard",
         "keep",
+        "moat",
+        "outpost",
+        "parapet",
+        "rampart",
+        "reinforcement",
+        "steeple",
         "stronghold",
-        "tower"
+        "tower",
+        "trench",
+        "turret",
+        "wall"
       ]
     },
     {
@@ -663,17 +925,26 @@
         "brook",
         "brooklet",
         "burn",
+        "channel",
         "creek",
         "delta",
         "ditch",
+        "flow",
         "ford",
+        "gush",
         "rill",
         "rille",
         "river",
         "rivulet",
+        "run",
         "runnel",
+        "rush",
+        "sluice",
+        "spout",
+        "spray",
         "stream",
         "streamlet",
+        "surge",
         "watercourse"
       ]
     },
@@ -684,9 +955,34 @@
         "milieu": "road"
       },
       "entries": [
-        "trail",
+        "approach",
+        "bend",
+        "byway",
+        "circuit",
+        "connection",
+        "course",
+        "detour",
+        "entry",
+        "highway",
+        "journey",
+        "lane",
+        "line",
+        "march",
+        "passage",
         "path",
-        "road"
+        "pathway",
+        "range",
+        "ride",
+        "road",
+        "roadway",
+        "route",
+        "run",
+        "thoroughfare",
+        "track",
+        "trail",
+        "turn",
+        "walk",
+        "way"
       ]
     },
     {
@@ -696,8 +992,28 @@
         "milieu": "rural"
       },
       "entries": [
+        "backwoods",
+        "belt",
+        "community",
+        "country",
+        "farm",
+        "farmland",
+        "field",
+        "fields",
         "grove",
-        "manor"
+        "hinerland",
+        "homeland",
+        "land",
+        "landscape",
+        "manor",
+        "outback",
+        "outland",
+        "pasture",
+        "pastures",
+        "province",
+        "scenery",
+        "soil",
+        "village"
       ]
     },
     {
@@ -800,6 +1116,7 @@
       },
       "entries": [
         "expanse",
+        "firmament",
         "space",
         "void"
       ]
@@ -824,7 +1141,9 @@
         "forest",
         "wood",
         "woods",
-        "taiga"
+        "taiga",
+        "wasteland",
+        "wastelands"
       ]
     },
     {
@@ -856,10 +1175,13 @@
         "labyrinth",
         "lair",
         "mine",
+        "netherworld",
         "pit",
         "tomb",
         "tunnel",
         "underground",
+        "underrealm",
+        "underworld",
         "vault"
       ]
     },
@@ -893,7 +1215,7 @@
     },
     {
       "name": "valley",
-      "explanation": "Locations between hills or mountains.",
+      "explanation": "Lowlands between hills or mountains.",
       "entries": [
         "canyon",
         "chasm",
