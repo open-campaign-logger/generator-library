@@ -8,7 +8,7 @@
     "aim": "",
     "belief": "",
     "ritual": "",
-    "source": "",
+    "newssource": "",
     "armor": "",
     "artifact": "",
     "fabric": "",
@@ -53,7 +53,7 @@
             "aim": "{aim}",
             "belief": "{ritual}",
             "ritual": "{ritual}",
-            "source": "{source}",
+            "newssource": "{newssource}",
             "armor": "{armor}",
             "artifact": "{artifact}",
             "fabric": "{fabric}",
@@ -112,7 +112,7 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Culture}: {g:culture} \r\n{b|Trial}: {g:trial} \r\n{b|Trap}: {g:trap} \r\n{b|Aim}: {g:aim} \r\n{b|Belief}: {g:belief} \r\n{b|Ritual}: {g:ritual} \r\n{b|Information source}: {g:source} \r\n{b|Armor}: {g:armor} \r\n{b|Artifact}: {g:artifact} \r\n{b|Fabric}: {g:fabric} \r\n{b|Key}: {g:key} \r\n{b|Material}: {g:material} \r\n{b|Metal}: {g:metal} \r\n{b|Style}: {g:style} \r\n{b|Technology}: {g:technology} \r\n{b|Treasure}: {g:treasure} \r\n{b|Weapon}: {g:weapon} \r\n{b|Door}: {g:door} \r\n{b|Furnishing}: {g:furnishing} \r\n{b|Lock}: {g:lock} "
+        "{b|Culture}: {g:culture} \r\n{b|Trial}: {g:trial} \r\n{b|Trap}: {g:trap} \r\n{b|Aim}: {g:aim} \r\n{b|Belief}: {g:belief} \r\n{b|Ritual}: {g:ritual} \r\n{b|Information source}: {g:newssource} \r\n{b|Armor}: {g:armor} \r\n{b|Artifact}: {g:artifact} \r\n{b|Fabric}: {g:fabric} \r\n{b|Key}: {g:key} \r\n{b|Material}: {g:material} \r\n{b|Metal}: {g:metal} \r\n{b|Style}: {g:style} \r\n{b|Technology}: {g:technology} \r\n{b|Treasure}: {g:treasure} \r\n{b|Weapon}: {g:weapon} \r\n{b|Door}: {g:door} \r\n{b|Furnishing}: {g:furnishing} \r\n{b|Lock}: {g:lock} "
       ]
     },
     {
@@ -133,28 +133,31 @@
       "name": "common",
       "explanation": "Common types.",
       "entries": [
-        "XXX"
+        "{aspect}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare types.",
       "entries": [
-        "XXX"
+        "{aspect}"
       ]
     },
     {
       "**************************************************": "DETAILS"
     },
     {
-      "name": "detail",
+      "name": "aspect",
       "explanation": "Random aspect of the culture",
       "entries": [
         "{event}",
         "{heritage}",
         "{information}",
         "{item}",
-        "{place}"
+        "{naming}",
+        "{place}",
+        "{social}",
+        "{society}"
       ]
     },
     {
@@ -222,11 +225,11 @@
       "name": "information",
       "explanation": "Knowledge about the culture.",
       "entries": [
-        "{source}"
+        "{newssource}"
       ]
     },
     {
-      "name": "source",
+      "name": "newssource",
       "explanation": "Information sources for intelligence and revelations.",
       "format": "-- reveals",
       "entries": [
@@ -253,6 +256,7 @@
         "{armor}",
         "{artifact}",
         "{clothing}",
+        "{equipment}",
         "{fabric}",
         "{key}",
         "{material}",
@@ -260,6 +264,7 @@
         "{style}",
         "{technology}",
         "{treasure}",
+        "{vehicle}",
         "{weapon}"
       ]
     },
@@ -287,6 +292,13 @@
     {
       "name": "clothing",
       "explanation": "Items of apparel.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "equipment",
+      "explanation": "Carried items.",
       "entries": [
         ""
       ]
@@ -349,10 +361,58 @@
       ]
     },
     {
+      "name": "vehicle",
+      "explanation": "Typical mounts or vehicles.",
+      "entries": [
+        ""
+      ]
+    },
+    {
       "name": "weapon",
       "explanation": "Weapons matching the culture.",
       "entries": [
         "{lib:weapon#summary}"
+      ]
+    },
+    {
+      "**************************************************": "NAMING"
+    },
+    {
+      "name": "naming",
+      "explanation": "Naming patterns matching the culture.",
+      "entries": [
+        "{byname}",
+        "{firstname}",
+        "{fullname}",
+        "{surname}"
+      ]
+    },
+    {
+      "name": "byname",
+      "explanation": "Naming patterns matching the culture.",
+      "entries": [
+        "{lib:name-{g:culture}#{g:gender} byname}"
+      ]
+    },
+    {
+      "name": "firstname",
+      "explanation": "Naming patterns matching the culture.",
+      "entries": [
+        "{lib:name-{g:culture}#{g:gender}}"
+      ]
+    },
+    {
+      "name": "fullname",
+      "explanation": "Naming patterns matching the culture.",
+      "entries": [
+        "{g:firstname} {g:surname}"
+      ]
+    },
+    {
+      "name": "surname",
+      "explanation": "Naming patterns matching the culture.",
+      "entries": [
+        "{lib:name-{g:culture}#{g:gender} surname}"
       ]
     },
     {
@@ -394,24 +454,58 @@
       "**************************************************": "SOCIAL"
     },
     {
+      "name": "social",
+      "explanation": "Social details matching the culture.",
+      "entries": [
+        "{gesturing}",
+        "{personality}",
+        "{quirk}"
+      ]
+    },
+    {
       "name": "gesturing",
-      "explanation": "",
+      "explanation": "Gestigulations matching the culture.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "personality",
-      "explanation": "",
+      "explanation": "Personality traits matching the culture.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "quirk",
-      "explanation": "",
+      "explanation": "Quirks matching the culture.",
       "entries": [
         "XXX"
+      ]
+    },
+    {
+      "**************************************************": "SOCIETY"
+    },
+    {
+      "name": "society",
+      "explanation": "Societal details of the culture.",
+      "entries": [
+        "{background}",
+        "{occupation}"
+      ]
+    },
+    {
+      "name": "background",
+      "explanation": "Character backgrounds matching the culture.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "occupation",
+      "explanation": "Employments matching the culture.",
+      "entries": [
+        ""
       ]
     },
     {
