@@ -1,6 +1,6 @@
 {
-  "name": "NPC_description",
-  "resultPattern": "{lib:formatting#CL}{init}{result}",
+  "name": "NPC",
+  "resultPattern": "{init}{result}",
   "globals": {
     "species": "",
     "speciesattribute": "",
@@ -48,16 +48,16 @@
   "variables": {
     "footnote": ""
   },
-  "explanation": "First impression of a Non-Player Character.",
+  "explanation": "Non-Player Character first impressions.",
   "structure": "Produces generic entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, any non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "Most table calls do not return a direct result, but variables that can then be reused in the resultPattern. This generator has been initially created as a single file. When external subtable call support is added to Campaign Logger, it would make sense to split the generator into multiple files for easier maintenance and better reuse options.",
   "bugs": "Developepment currently on hold, waiting for global variable support.",
   "to do": "Most of it... Starting from genre? ",
   "see": "",
-  "date": "2018-06-30",
+  "date": "2018-08-20",
   "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
-  "genre": "fantasy",
+  "genre": "universal",
   "category": "character",
   "tags": "#npc, #person, #appearance",
   "tables": [
@@ -65,8 +65,8 @@
       "name": "init",
       "explanation": "Initializing the required global variables, if any.",
       "export": {
-        "species": "{lib:species#summary}",
-        "gender": "{lib:gender#summary}",
+        "species": "{lib:species#common}",
+        "gender": "{lib:gender#common}",
         "ambiguity": "{lib:gender#ambiguity}",
         "orientation": "{lib:gender#orientation}",
         "age": "{lib:age#major}",
@@ -92,8 +92,7 @@
       "entries": [
         "{summary}",
         "{detail}",
-        "{description}",
-        "{stats}"
+        "{description}"
       ]
     },
     {
@@ -107,14 +106,14 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{name} {g:para}{basic} {g:para}{attire} {g:para}{background} {g:para}{personality} {g:para}{goal} {g:para}{equipment}"
+        "{name} \r\n{basic} \r\n{attire} \r\n{background} \r\n{personality} \r\n{goal} \r\n{equipment}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The person is {detail}."
+        "{name} \r\n{basic} \r\n{attire} \r\n{background} \r\n{personality} \r\n{goal} \r\n{equipment}"
       ]
     },
     {
@@ -128,7 +127,7 @@
       "**************************************************": "TYPES"
     },
     {
-      "name": "NPC_description",
+      "name": "NPC",
       "explanation": "The NPC description types by rarity.",
       "note": "The species call returns a direct result (so that 'human', the default, can return an empty string.)",
       "entries": [
@@ -143,18 +142,18 @@
       "name": "common",
       "explanation": "Common NPC description types.",
       "entries": [
-        "{description}"
+        "{mood}{attitude}{activity}{description}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare NPC description types.",
       "entries": [
-        "Stat block: {stats}"
+        "{mood}{attitude}{activity}{stats}"
       ]
     },
     {
-      "*********************************************": "DESCRIPTION ELEMENTS"
+      "*********************************************": "DETAILS"
     },
     {
       "name": "attire",
@@ -167,7 +166,8 @@
       "name": "basic",
       "explanation": "Base description: age, gender, species, profession.",
       "entries": [
-        "{g:age} {g:ambiguity} {g:gender} {g:orientation} {g:culture} {g:employment}"
+        "{g:age} {g:ambiguity} {g:gender} {g:orientation} {g:employment}",
+        "{g:ambiguity} {g:gender} {g:orientation} {g:employment} in their {g:humandecade}"
       ]
     },
     {
@@ -195,7 +195,7 @@
       "name": "name",
       "explanation": "The character's name.",
       "entries": [
-        "{g:startbold}{g:fullname}{g:endbold}"
+        "{b|{g:fullname}}"
       ]
     },
     {
@@ -408,7 +408,7 @@
       "entries": [
         "{myth}",
         "{medieval}",
-        "XXX"
+        "{name} \r\n{basic} \r\n{attire} \r\n{background} \r\n{personality} \r\n{goal} \r\n{equipment}"
       ]
     },
     {
@@ -421,9 +421,24 @@
     {
       "name": "modern",
       "explanation": "Descriptions for modern worlds.",
+      "export": {
+        "species": "human",
+        "gender": "{lib:gender#summary}",
+        "ambiguity": "{lib:gender#ambiguity}",
+        "orientation": "{lib:gender#orientation}",
+        "age": "{lib:age#major}",
+        "substantive": "{lib:age#{g:age} {g:gender}}",
+        "culture": "american-modern",
+        "firstname": "{lib:name-{g:culture}#{g:gender}}",
+        "surname": "{lib:name-{g:culture}#{g:gender} surname}",
+        "byname": "{lib:name-{g:culture}#{g:gender} byname}",
+        "fullname": "{g:name} {g:surname}",
+        "civilization": "{civilization}",
+        "wealth": "{lib:social_class}"
+      },
       "entries": [
-        "{common}",
-        "XXX"
+        "{NPC}",
+        "{mood}{attitude}{activity}{name} \r\n{basic} \r\n{attire} \r\n{background} \r\n{personality} \r\n{goal} \r\n{equipment}"
       ]
     },
     {
@@ -432,6 +447,21 @@
       "entries": [
         "{modern}",
         "XXX"
+      ]
+    },
+    {
+      "name": "vampire",
+      "explanation": "'Vampire: The Masquarade' NPC format.",
+      "export": {},
+      "entries": [
+        "{modern} \r\n{aura}"
+      ]
+    },
+    {
+      "name": "aura",
+      "explanation": "Character's aura.",
+      "entries": [
+        "{lib:color#prime} aura."
       ]
     },
     {
@@ -472,8 +502,7 @@
       "entries": [
         "fantasy",
         "Malorian",
-        "pictish",
-        "random"
+        "pictish"
       ]
     },
     {
