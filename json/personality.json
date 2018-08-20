@@ -1,13 +1,12 @@
 {
   "name": "personality",
-  "resultPattern": "{init}{lib:formatting#CL}{result}",
+  "resultPattern": "{init}{result}",
   "globals": {
     "openness": "",
     "conscientiousness": "",
     "extroversion": "",
     "agreeableness": "",
-    "neuroticism": "",
-    "Subject": ""
+    "neuroticism": ""
   },
   "variables": {
     "footnote": ""
@@ -19,7 +18,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-05",
+  "date": "2018-08-20",
   "authors": "ELF Vesala.",
   "sources": "OpenPsychometrics.org",
   "genre": "universal",
@@ -58,9 +57,9 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{situation}: {personality}",
+        "{situation} {personality}",
         "{personality} - {feature}",
-        "{situation}: {personality} - {feature}"
+        "{situation} {personality} - {feature}"
       ]
     },
     {
@@ -78,14 +77,18 @@
       "name": "common",
       "explanation": "Common personality types.",
       "entries": [
-        "{global:para}{global:Subject} {openness}. {global:para}{global:Subject} {conscientiousness}. {global:para}{global:Subject} {extroversion}. {global:para}{global:Subject} {agreeableness}. {global:para}{global:Subject} {neuroticism}."
+        "{openness}",
+        "{conscientiousness}",
+        "{extroversion}",
+        "{agreeableness}",
+        "{neuroticism}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare personality types.",
       "entries": [
-        "{global:para}{global:Subject} {intelligence}."
+        "{intelligence}"
       ]
     },
     {
@@ -120,8 +123,7 @@
       "name": "minimal openness",
       "explanation": "The lowest degree of openness to experience.",
       "entries": [
-        "prefers to follow old traditions rather than adopt something new",
-        "consider no one above suspicion"
+        "considers no one above suspicion"
       ]
     },
     {
@@ -131,7 +133,7 @@
         "openness": "low"
       },
       "entries": [
-        "XXX"
+        "prefers to follow old traditions rather than adopt something new"
       ]
     },
     {
@@ -141,7 +143,7 @@
         "openness": "medium"
       },
       "entries": [
-        "XXX"
+        "needs proof before accepting unfamiliar statements"
       ]
     },
     {
@@ -151,14 +153,14 @@
         "openness": "high"
       },
       "entries": [
-        "XXX"
+        "tends to trust others"
       ]
     },
     {
       "name": "maximal openness",
       "explanation": "The highest degree of openness to experience.",
       "entries": [
-        "tends to trust others"
+        "does not want to believe that anyone would mean harm"
       ]
     },
     {
@@ -202,7 +204,7 @@
         "conscientiousness": "medium"
       },
       "entries": [
-        "XXX"
+        "likes to make backup plans"
       ]
     },
     {
@@ -263,7 +265,7 @@
         "extroversion": "medium"
       },
       "entries": [
-        "XXX"
+        "takes charge only when no one else is willing to do that"
       ]
     },
     {
@@ -327,7 +329,7 @@
         "agreeableness": "medium"
       },
       "entries": [
-        "XXX"
+        "wants to keep to themselves when under stress"
       ]
     },
     {
@@ -367,7 +369,7 @@
       "name": "minimal neuroticism",
       "explanation": "The lowest degree of emotional stability.",
       "entries": [
-        "XXX"
+        "is usually relaxed"
       ]
     },
     {
@@ -377,7 +379,7 @@
         "neuroticism": "low"
       },
       "entries": [
-        "XXX"
+        "is not bothered by small details"
       ]
     },
     {
@@ -387,7 +389,7 @@
         "neuroticism": "medium"
       },
       "entries": [
-        "XXX"
+        "gets tense and easily angered under stress"
       ]
     },
     {
@@ -404,7 +406,7 @@
       "name": "maximal neuroticism",
       "explanation": "The highest degree of emotional stability.",
       "entries": [
-        "XXX"
+        "is often tense and on the edge"
       ]
     },
     {
@@ -463,31 +465,28 @@
       "name": "myth",
       "explanation": "Personalities once rumoured to have existed.",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
       "name": "fantasy",
       "explanation": "Personalities for fantasy worlds (with no basis in myth).",
       "entries": [
-        "{myth}",
-        "XXX"
+        "{myth}"
       ]
     },
     {
       "name": "modern",
       "explanation": "Personalities for modern worlds.",
       "entries": [
-        "{common}",
-        "XXX"
+        "{common}"
       ]
     },
     {
       "name": "futuristic",
       "explanation": "Personalities for science fiction worlds.",
       "entries": [
-        "{modern}",
-        "XXX"
+        "{modern}"
       ]
     },
     {

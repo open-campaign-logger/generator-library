@@ -8,7 +8,7 @@
   "bugs": "",
   "to do": "",
   "see": "edge, flaw, strategy",
-  "date": "2018-04-19",
+  "date": "2018-08-20",
   "authors": "Ron Calbick (as extracted from his goblin-names.json generator), ELF Vesala.",
   "sources": "Ron Calbick: 'Goblin Generator'.",
   "genre": "universal",
@@ -268,31 +268,28 @@
       "name": "myth",
       "explanation": "Quirks once rumoured to have existed.",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
       "name": "fantasy",
       "explanation": "Quirks for fantasy worlds (with no basis in myth).",
       "entries": [
-        "{myth}",
-        "XXX"
+        "{myth}"
       ]
     },
     {
       "name": "modern",
       "explanation": "Quirks for modern worlds.",
       "entries": [
-        "{common}",
-        "XXX"
+        "{common}"
       ]
     },
     {
       "name": "futuristic",
       "explanation": "Quirks for science fiction worlds.",
       "entries": [
-        "{modern}",
-        "XXX"
+        "{modern}"
       ]
     },
     {

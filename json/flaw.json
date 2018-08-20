@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "edge, quirk, strategy",
-  "date": "2018-03-10",
+  "date": "2018-08-20",
   "authors": "Ron Calbick (as extracted from his goblin-names.json generator), ELF Vesala.",
   "sources": "Ron Calbick: 'Goblin Generator'.",
   "genre": "universal",
@@ -208,7 +208,7 @@
       "name": "myth",
       "explanation": "Flaws once rumoured to have existed.",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
@@ -221,7 +221,7 @@
           "name": "magical",
           "explanation": "Magical flaws.",
           "entries": [
-            "XXX"
+            "has a suspicious-looking aura"
           ]
         }
       ]
@@ -230,16 +230,14 @@
       "name": "modern",
       "explanation": "Flaws for modern worlds.",
       "entries": [
-        "{common}",
-        "XXX"
+        "{common}"
       ]
     },
     {
       "name": "futuristic",
       "explanation": "Flaws for science fiction worlds.",
       "entries": [
-        "{modern}",
-        "XXX"
+        "{modern}"
       ]
     },
     {
