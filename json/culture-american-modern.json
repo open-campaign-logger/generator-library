@@ -1,8 +1,8 @@
 {
-  "name": "_template_culture",
+  "name": "culture-american-modern",
   "resultPattern": "{init}{stats}",
   "globals": {
-    "culture": "generic",
+    "culture": "american-modern",
     "trial": "",
     "trap": "",
     "aim": "",
@@ -32,11 +32,11 @@
   "format": "",
   "bugs": "",
   "to do": "",
-  "see": "culture",
-  "date": "@timestamp@ XXX",
-  "authors": "@author@. XXX",
+  "see": "_template_culture, culture",
+  "date": "2018-08-20",
+  "authors": "ELF Vesala",
   "sources": "Johnn Four's RolePlaying Tips newsletter #599: '3 Line Cultures: How To Inject Races and Factions With Flavour'.",
-  "genre": "universal",
+  "genre": "modern",
   "categories": [
     "world"
   ],
@@ -182,7 +182,7 @@
       "name": "trap",
       "explanation": "Traps matching the culture.",
       "entries": [
-        "{lib:trap#summary}"
+        "{lib:trap#modern}"
       ]
     },
     {
@@ -234,7 +234,11 @@
       "format": "-- reveals",
       "entries": [
         "{rare source}",
-        "XXX"
+        "blog",
+        "news site",
+        "magazine",
+        "newspaper",
+        "TV broadcast"
       ]
     },
     {
@@ -242,7 +246,7 @@
       "explanation": "Non-generic information sources.",
       "note": "XXX To be moved to suitable culture templates!",
       "entries": [
-        "XXX"
+        "book"
       ]
     },
     {
@@ -272,14 +276,14 @@
       "name": "adornment",
       "explanation": "Jewelry and accessories.",
       "entries": [
-        "{lib:adornment#summary}"
+        "{lib:adornment#modern}"
       ]
     },
     {
       "name": "armor",
       "explanation": "Armoring that matches the culture.",
       "entries": [
-        "{lib:armor#summary}"
+        "{lib:armor#modern}"
       ]
     },
     {
@@ -293,56 +297,56 @@
       "name": "clothing",
       "explanation": "Items of apparel.",
       "entries": [
-        "{lib:clothing#summary}"
+        "{lib:clothing#modern}"
       ]
     },
     {
       "name": "equipment",
       "explanation": "Carried items.",
       "entries": [
-        "{lib:equipment#summary}"
+        "{lib:equipment#modern}"
       ]
     },
     {
       "name": "fabric",
       "explanation": "Clothing materials matching the culture.",
       "entries": [
-        "{lib:fabric#summary}"
+        "{lib:fabric#modern}"
       ]
     },
     {
       "name": "key",
       "explanation": "Keys matching the culture.",
       "entries": [
-        "{lib:key#summary}"
+        "{lib:key#modern}"
       ]
     },
     {
       "name": "material",
       "explanation": "Miscellaneous materials matching the culture.",
       "entries": [
-        "{lib:material#summary}"
+        "{lib:material#modern}"
       ]
     },
     {
       "name": "metal",
       "explanation": "Metals matching the culture.",
       "entries": [
-        "{lib:metal#summary}"
+        "{lib:metal#modern}"
       ]
     },
     {
       "name": "money",
       "explanation": "Currency matching the culture.",
       "entries": [
-        "{lib:money#summary}"
+        "dollar"
       ]
     },
     {
       "name": "style",
       "explanation": "Styles matching the culture.",
       "entries": [
-        "{lib:style#summary}"
+        "{lib:style#modern}"
       ]
     },
     {
@@ -350,15 +354,14 @@
       "explanation": "Techcnologies matching the culture.",
       "entries": [
         "muscle-powered",
-        "clockwork-operated",
-        "XXX"
+        "clockwork-operated"
       ]
     },
     {
       "name": "treasure",
       "explanation": "Valuables matching the culture.",
       "entries": [
-        "{lib:treasure#summary}"
+        "{lib:treasure#modern}"
       ]
     },
     {
@@ -372,7 +375,7 @@
       "name": "weapon",
       "explanation": "Weapons matching the culture.",
       "entries": [
-        "{lib:weapon#summary}"
+        "{lib:weapon#modern}"
       ]
     },
     {
@@ -432,7 +435,7 @@
       "name": "door",
       "explanation": "Portals matching the culture.",
       "entries": [
-        "{lib:door#summary}"
+        "{lib:door#modern}"
       ]
     },
     {
@@ -441,15 +444,14 @@
       "entries": [
         "table",
         "chair",
-        "bed",
-        "XXX"
+        "bed"
       ]
     },
     {
       "name": "lock",
       "explanation": "Locks matching the culture.",
       "entries": [
-        "{lib:lock#summary}"
+        "{lib:lock#modern}"
       ]
     },
     {
@@ -475,14 +477,14 @@
       "name": "personality",
       "explanation": "Personality traits matching the culture.",
       "entries": [
-        "{lib:personality#summary}"
+        "{lib:personality#modern}"
       ]
     },
     {
       "name": "quirk",
       "explanation": "Quirks matching the culture.",
       "entries": [
-        "{lib:quirk#summary}"
+        "{lib:quirk#modern}"
       ]
     },
     {
@@ -507,7 +509,7 @@
       "name": "occupation",
       "explanation": "Employments matching the culture.",
       "entries": [
-        "{lib:occupation#summary}"
+        "{lib:occupation#modern}"
       ]
     },
     {
