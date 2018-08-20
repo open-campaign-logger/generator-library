@@ -57,9 +57,9 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{situation} {personality}",
-        "{personality} - {feature}",
-        "{situation} {personality} - {feature}"
+        "{situation} {g:subject} {personality}",
+        "{g:subject} {personality} - {feature}",
+        "{situation} {g:subject} {personality} - {feature}"
       ]
     },
     {

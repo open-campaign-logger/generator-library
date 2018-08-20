@@ -46,14 +46,14 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{flaw}"
+        "{g:subject} {flaw}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{frequency} {flaw}"
+        "{frequency}, {g:subject} {flaw}"
       ]
     },
     {

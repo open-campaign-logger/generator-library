@@ -40,14 +40,14 @@
       "name": "summary",
       "explanation": "Brief result.",
       "entries": [
-        "{quirk}"
+        "{g:subject} {quirk}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed result.",
       "entries": [
-        "{quirk}"
+        "{g:subject} {quirk}"
       ]
     },
     {

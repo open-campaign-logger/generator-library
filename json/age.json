@@ -73,7 +73,7 @@
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "{looks} in their {g:humandecade}"
+        "{looks} in {g:possessive} {g:humandecade}"
       ]
     },
     {
@@ -1112,14 +1112,14 @@
       "name": "extension",
       "explanation": "Extensions for randomized terms.",
       "entries": [
-        "for their age",
-        "for their actual age",
-        "for their real age",
-        "for their true age",
-        "for their actual years",
-        "for their real years",
-        "for their true years",
-        "for their years"
+        "for {g:possessive} age",
+        "for {g:possessive} actual age",
+        "for {g:possessive} real age",
+        "for {g:possessive} true age",
+        "for {g:possessive} actual years",
+        "for {g:possessive} real years",
+        "for {g:possessive} true years",
+        "for {g:possessive} years"
       ]
     },
     {

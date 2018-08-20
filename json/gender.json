@@ -22,7 +22,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-30",
+  "date": "2018-08-20",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -123,6 +123,7 @@
       "explanation": "Female gender.",
       "export": {
         "gender": "female",
+        "a gender": "a female",
         "Subject": "She",
         "subject": "she",
         "object": "her",
@@ -138,7 +139,8 @@
       "name": "hermafrodite",
       "explanation": "hermafrodite gender.",
       "export": {
-        "gender": "hermafrodite",
+        "gender": "a hermafrodite",
+        "a gender": "a hermafrodite",
         "Subject": "(S)he",
         "subject": "(s)he",
         "object": "hir",
@@ -155,6 +157,7 @@
       "explanation": "Male gender.",
       "export": {
         "gender": "male",
+        "a gender": "a male",
         "Subject": "He",
         "subject": "he",
         "object": "him",
@@ -171,6 +174,7 @@
       "explanation": "Neuter gender.",
       "export": {
         "gender": "neuter",
+        "a gender": "a neuter",
         "Subject": "It",
         "subject": "it",
         "object": "it",
@@ -202,12 +206,12 @@
         "ambiguity": "ambiguous"
       },
       "entries": [
-        "ambiguous",
-        "ambivalent",
+        "an ambiguous",
+        "an ambivalent",
         "distantly",
         "faintly",
         "inconclusively",
-        "indefinite",
+        "an indefinite",
         "possibly",
         "probably",
         "somewhat",
@@ -221,14 +225,14 @@
         "ambiguity": "feminine"
       },
       "entries": [
-        "effeminate",
-        "feminine",
-        "girlish",
-        "ladylike",
-        "matronly",
-        "womanish",
-        "womanlike",
-        "womanly"
+        "an effeminate",
+        "a feminine",
+        "a girlish",
+        "a ladylike",
+        "a matronly",
+        "a womanish",
+        "a womanlike",
+        "a womanly"
       ]
     },
     {
@@ -238,12 +242,12 @@
         "ambiguity": "masculine"
       },
       "entries": [
-        "macho",
-        "manful",
-        "manlike",
-        "manly",
-        "mannish",
-        "masculine"
+        "a macho",
+        "a manful",
+        "a manlike",
+        "a manly",
+        "a mannish",
+        "a masculine"
       ]
     },
     {
@@ -504,7 +508,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}. Subject: {global:subject}, possessive: {global:possessive}. Gender: {global:gender}, orientation: {global:orientation}."
+        "Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}. Subject: {g:subject}, possessive: {g:possessive}. Gender: {g:gender}, orientation: {g:orientation}."
       ]
     }
   ]

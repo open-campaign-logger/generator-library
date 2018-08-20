@@ -75,7 +75,7 @@
         "name": "{lib:name-{g:culture}#{g:gender}}",
         "surname": "{lib:name-{g:culture}#{g:gender} surname}",
         "byname": "{lib:name-{g:culture}#{g:gender} byname}",
-        "fullname": "{g:name} {g:surname}",
+        "fullname": "{g:firstname} {g:surname}",
         "civilization": "{civilization}",
         "wealth": "{lib:social_class}"
       },
@@ -106,7 +106,7 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{name} \r\n{basic} \r\n{attire} \r\n{background} \r\n{personality} \r\n{goal} \r\n{equipment}"
+        "{name} \r\n{basic} \r\n{attire} \r\n{personality} \r\n{goal} \r\n{equipment}"
       ]
     },
     {
@@ -120,7 +120,7 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|First name}: {g:name} \r\n{b|Byname}: {g:byname} \r\n{b|Surname}: {g:surname} \r\n{basic} \r\n{b|Personality}: {personality}\r\n{b|Attire}: {attire} \r\n{b|Equipment}: {equipment}"
+        "{b|First name}: {g:firstname} \r\n{b|Byname}: {g:byname} \r\n{b|Surname}: {g:surname} \r\n{basic} \r\n{b|Personality}: {personality}\r\n{b|Attire}: {attire} \r\n{b|Equipment}: {equipment}"
       ]
     },
     {
@@ -149,7 +149,7 @@
       "name": "rare",
       "explanation": "Rare NPC description types.",
       "entries": [
-        "{mood}{attitude}{activity}{stats}"
+        "{mood}{attitude}{activity}{description}"
       ]
     },
     {
@@ -166,22 +166,22 @@
       "name": "basic",
       "explanation": "Base description: age, gender, species, profession.",
       "entries": [
-        "{g:age} {g:ambiguity} {g:gender} {g:orientation} {g:employment}",
-        "{g:ambiguity} {g:gender} {g:orientation} {g:employment} in their {g:humandecade}"
+        "{g:Subject} is {g:an age} {g:gender} {g:orientation} {g:employment}.",
+        "{g:Subject} is {g:a gender} {g:orientation} {g:employment} in {g:possessive} {g:humandecade}."
       ]
     },
     {
       "name": "background",
       "explanation": "The background of the person.",
       "entries": [
-        "The {g:substantive} is an NPC."
+        "The {g:substantive} has seen a lot in {g:possessive} life."
       ]
     },
     {
       "name": "equipment",
       "explanation": "The belongings of the person.",
       "entries": [
-        "{g:startitalic}Weapon{g:enditalic}: {lib:weapon#common}."
+        "{b|Weapon}: {lib:weapon#common}."
       ]
     },
     {
@@ -202,7 +202,7 @@
       "name": "personality",
       "explanation": "Psychology of the person.",
       "entries": [
-        "\r\n- {lib:personality}. \r\n- {lib:flaw}. \r\n- {lib:quirk}."
+        "\r\n{|{lib:personality}|scase}. \r\n{|{lib:flaw}|scase}. \r\n{|{lib:quirk}|scase}."
       ]
     },
     {
@@ -408,7 +408,7 @@
       "entries": [
         "{myth}",
         "{medieval}",
-        "{name} \r\n{basic} \r\n{attire} \r\n{background} \r\n{personality} \r\n{goal} \r\n{equipment}"
+        "{name} \r\n{basic} \r\n{attire} \r\n{personality} \r\n{goal} \r\n{equipment}"
       ]
     },
     {
@@ -432,13 +432,13 @@
         "firstname": "{lib:name-{g:culture}#{g:gender}}",
         "surname": "{lib:name-{g:culture}#{g:gender} surname}",
         "byname": "{lib:name-{g:culture}#{g:gender} byname}",
-        "fullname": "{g:name} {g:surname}",
+        "fullname": "{g:firstname} {g:surname}",
         "civilization": "{civilization}",
         "wealth": "{lib:social_class}"
       },
       "entries": [
         "{NPC}",
-        "{mood}{attitude}{activity}{name} \r\n{basic} \r\n{attire} \r\n{background} \r\n{personality} \r\n{goal} \r\n{equipment}"
+        "{mood}{attitude}{activity}{name} \r\n{basic} \r\n{attire} \r\n{personality} \r\n{goal} \r\n{equipment}"
       ]
     },
     {
