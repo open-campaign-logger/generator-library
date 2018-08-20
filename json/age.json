@@ -21,7 +21,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-07-03",
+  "date": "2018-08-20",
   "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -73,7 +73,7 @@
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "They seem to be in their {g:humandecade}."
+        "{looks} in their {g:humandecade}"
       ]
     },
     {
@@ -228,7 +228,7 @@
             "age": "young",
             "an age": "a young",
             "humanyears": "{dice:1d10+19}",
-            "humandecade": "twenties",
+            "humandecade": "{young decade}",
             "a substantive": "a youngster",
             "female": "young woman",
             "male": "young man"
@@ -246,7 +246,7 @@
             "age": "adult",
             "an age": "an adult",
             "humanyears": "{dice:1d10+29}",
-            "humandecade": "thirties",
+            "humandecade": "{adult decade}",
             "a substantive": "a person",
             "female": "woman",
             "male": "man"
@@ -264,7 +264,7 @@
             "age": "middle-aged",
             "an age": "a middle-aged",
             "humanyears": "{dice:1d20+39}",
-            "humandecade": "forties or fifties",
+            "humandecade": "{middle-aged decade}",
             "a substantive": "a person",
             "female": "woman",
             "male": "man"
@@ -282,7 +282,7 @@
             "age": "old",
             "an age": "an old",
             "humanyears": "{dice:1d20+59}",
-            "humandecade": "sixties or seventies",
+            "humandecade": "{old decade}",
             "a substantive": "an old-timer",
             "female": "woman",
             "male": "man"
@@ -300,12 +300,76 @@
             "age": "ancient",
             "an age": "an ancient",
             "humanyears": "{dice:1d20+79}",
-            "humandecade": "eighties of nineties",
+            "humandecade": "{ancient decade}",
             "a substantive": "an elder",
             "female": "crone",
             "male": "old-timer"
           }
         }
+      ]
+    },
+    {
+      "**************************************************": "DECADES"
+    },
+    {
+      "name": "estimate",
+      "explanation": "A closer estimate of the apparent age in human decades.",
+      "format": "No space between estimate and decade!",
+      "entries": [
+        "early ",
+        "mid-",
+        "late "
+      ]
+    },
+    {
+      "name": "young decade",
+      "explanation": "Tens of years of ages for young humans.",
+      "entries": [
+        "late teens",
+        "{estimate}twenties",
+        "{estimate}thirties"
+      ]
+    },
+    {
+      "name": "adult decade",
+      "explanation": "Tens of years of ages for adult humans.",
+      "entries": [
+        "{estimate}twenties",
+        "{estimate}thirties",
+        "{estimate}forties"
+      ]
+    },
+    {
+      "name": "middle-aged decade",
+      "explanation": "Tens of years of ages for middle-aged humans.",
+      "entries": [
+        "{estimate}thirties",
+        "{estimate}forties",
+        "{estimate}fifties",
+        "forties or fifties",
+        "{estimate}sixties"
+      ]
+    },
+    {
+      "name": "old decade",
+      "explanation": "Tens of years of ages for old humans.",
+      "entries": [
+        "{estimate}fifties",
+        "{estimate}sixties",
+        "{estimate}seventies",
+        "sixties or seventies",
+        "{estimate}eighties"
+      ]
+    },
+    {
+      "name": "ancient decade",
+      "explanation": "Tens of years of ages for ancient humans.",
+      "entries": [
+        "{estimate}seventies",
+        "{estimate}eighties",
+        "{estimate}nineties",
+        "eighties or nineties",
+        "{circa} a hundred"
       ]
     },
     {
