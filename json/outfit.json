@@ -2,7 +2,7 @@
   "name": "outfit",
   "resultPattern": "{init}{result}",
   "globals": {
-    "socialclass": "social class",
+    "social_class": "social class",
     "outfit": "outfit",
     "outfitattribute": "attribute",
     "outfitfeature": "feature"
@@ -17,7 +17,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-07-06",
+  "date": "2018-08-21",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -33,8 +33,8 @@
         {
           "v": "",
           "export": {
-            "socialclass": "{lib:social_class}",
-            "outfit": "{{global:socialclass}}"
+            "social_class": "{lib:social_class}",
+            "outfit": "{{global:social_class}}"
           }
         }
       ]
@@ -385,7 +385,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Social class: {global:socialclass}, attribute: {global:outfitattribute}, outfit: {global:outfit}, feature: {global:outfitfeature}. Special: {special}."
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Social class: {global:social_class}, attribute: {global:outfitattribute}, outfit: {global:outfit}, feature: {global:outfitfeature}. Special: {special}."
       ]
     }
   ]

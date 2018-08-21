@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "business, district, shop",
-  "date": "2018-04-25",
+  "date": "2018-08-21",
   "authors": "ELF Vesala.",
   "sources": "CastlesAndManorHouses.com, MedievalScotland.org, Svincent.com",
   "genre": "universal",
@@ -307,7 +307,7 @@
       "--------------------------------------------------": "MEDIEVAL"
     },
     {
-      "name": "medieval ",
+      "name": "medieval",
       "explanation": "Medieval social statuses.",
       "entries": [
         "{medieval poor}",
@@ -451,7 +451,7 @@
       "explanation": "Medievel smiths.",
       "entries": [
         "{medieval armoursmith}",
-        "{medieveal weaponsmith}",
+        "{medieval weaponsmith}",
         "brownsmith (copper and brass)",
         "coppersmith",
         "greensmith (lead)",
@@ -522,9 +522,152 @@
       "name": "modern",
       "explanation": "Employment for modern worlds.",
       "entries": [
-        "{common}",
+        "{modern poor}",
+        "{modern lower class}",
+        "{modern middle class}",
+        "{modern upper class}",
+        "{modern rich}"
+      ]
+    },
+    {
+      "name": "modern poor",
+      "explanation": "The lowest modern social status.",
+      "entries": [
+        "cashier",
+        "cleaner",
+        "dry cleaner",
+        "homeless",
+        "janitor",
+        "laborer",
+        "laundry worker",
+        "waiter"
+      ]
+    },
+    {
+      "name": "modern lower class",
+      "explanation": "Modern lower class social status.",
+      "entries": [
+        "{industrial worker}",
+        "{office worker}",
+        "nurse",
+        "salesperson"
+      ]
+    },
+    {
+      "name": "modern middle class",
+      "explanation": "Modern middle class social status.",
+      "entries": [
+        "{IT worker}",
+        "budget analyst",
+        "credit analyst",
+        "distribution manager",
+        "executive assistant",
+        "funeral service manager",
+        "human resources specialist",
+        "inspector",
+        "insurance appraiser",
+        "interpreter",
+        "office clerk",
+        "police detective",
+        "police officer",
+        "project manager",
+        "production supervisor",
+        "purchasing manager",
+        "social worker",
+        "tax collector",
+        "teacher",
+        "technical writer",
+        "translator",
+        "transportation manager"
+      ]
+    },
+    {
+      "name": "IT worker",
+      "explanation": "Modern middle class social status.",
+      "entries": [
+        "computer programmer",
+        "computer systems analyst",
+        "database administrator",
+        "network architect",
+        "software developer",
+        "system administrator",
+        "system architect",
+        "web developer"
+      ]
+    },
+    {
+      "name": "modern upper class",
+      "explanation": "Modern upper class social status.",
+      "entries": [
+        "accountant",
+        "architect",
+        "auditor",
+        "air traffic controller",
+        "business operations specialist",
+        "commercial pilot",
+        "consruction manager",
+        "doctor",
         "engineer",
-        "programmer"
+        "financial analyst",
+        "human resources manager",
+        "insurance claim adjuster",
+        "lawyer",
+        "management analyst",
+        "market research analyst",
+        "marketing specialist",
+        "programmer",
+        "purchasing agent",
+        "therapist"
+      ]
+    },
+    {
+      "name": "modern rich",
+      "explanation": "The highest modern social status.",
+      "entries": [
+        "{manager}",
+        "investor"
+      ]
+    },
+    {
+      "name": "industrial worker",
+      "explanation": "Modern industrial occupations.",
+      "entries": [
+        "assembler",
+        "brazer",
+        "cutter",
+        "machinist",
+        "power plant operator",
+        "production worker",
+        "solderer",
+        "tester",
+        "welder"
+      ]
+    },
+    {
+      "name": "manager",
+      "explanation": "High-level management positions.",
+      "entries": [
+        "advertising manager",
+        "business manager",
+        "chief executive",
+        "distribution manager",
+        "financial manager",
+        "general manager",
+        "manager",
+        "marketing manager",
+        "operations manager",
+        "public relations manager",
+        "sales manager",
+        "transportation manager"
+      ]
+    },
+    {
+      "name": "office worker",
+      "explanation": "Modern office workers.",
+      "entries": [
+        "administrative assistant",
+        "secretary",
+        "statistician"
       ]
     },
     {

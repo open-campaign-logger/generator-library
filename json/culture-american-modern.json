@@ -508,8 +508,11 @@
     {
       "name": "occupation",
       "explanation": "Employments matching the culture.",
+      "export": {
+        "": ""
+      },
       "entries": [
-        "{lib:occupation#modern}"
+        "{lib:occupation#modern {g:social_class}}"
       ]
     },
     {

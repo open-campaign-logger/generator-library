@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-04-19",
+  "date": "2018-08-21",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -75,8 +75,8 @@
           "m": 50,
           "v": "lower class",
           "export": {
-            "socialclass": "lower class",
-            "employment": "{lib:occupation#lower class}",
+            "social_class": "lower class",
+            "occupation": "{lib:occupation#lower class}",
             "outfitattribute": "{lib:clothing#lower class attribute}"
           }
         },
@@ -84,8 +84,8 @@
           "m": 30,
           "v": "middle class",
           "export": {
-            "socialclass": "middle class",
-            "employment": "{lib:occupation#middle class}",
+            "social_class": "middle class",
+            "occupation": "{lib:occupation#middle class}",
             "outfitattribute": "{lib:clothing#middle class attribute}"
           }
         },
@@ -93,8 +93,8 @@
           "m": 10,
           "v": "upper class",
           "export": {
-            "socialclass": "upper class",
-            "employment": "{lib:occupation#upper class}",
+            "social_class": "upper class",
+            "occupation": "{lib:occupation#upper class}",
             "outfitattribute": "{lib:clothing#upper class attribute}"
           }
         }
@@ -108,8 +108,8 @@
           "m": 5,
           "v": "poor",
           "export": {
-            "socialclass": "poor",
-            "employment": "{lib:occupation#poor}",
+            "social_class": "poor",
+            "occupation": "{lib:occupation#poor}",
             "outfitattribute": "{lib:clothing#poor attribute}"
           }
         },
@@ -117,8 +117,8 @@
           "m": 5,
           "v": "rich",
           "export": {
-            "socialclass": "rich",
-            "employment": "{lib:occupation#rich}",
+            "socia_class": "rich",
+            "occupation": "{lib:occupation#rich}",
             "outfitattribute": "{lib:clothing#rich attribute}"
           }
         }
