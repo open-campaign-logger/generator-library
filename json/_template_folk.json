@@ -42,9 +42,16 @@
       "name": "result",
       "explanation": ".",
       "entries": [
+        "{word}",
         "{summary}",
-        "{detail}",
-        "{description}"
+        "{detail}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{folk}"
       ]
     },
     {

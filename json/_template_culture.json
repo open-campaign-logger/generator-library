@@ -78,9 +78,16 @@
       "name": "result",
       "explanation": "The output format.",
       "entries": [
+        "{word}",
         "{summary}",
-        "{detail}",
-        "{description}"
+        "{detail}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{culture}"
       ]
     },
     {

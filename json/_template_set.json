@@ -66,24 +66,32 @@
       "name": "result",
       "explanation": ".",
       "entries": [
+        "{word}",
         "{summary}",
         "{detail}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{g:setarea}"
       ]
     },
     {
       "name": "summary",
       "explanation": "Brief description of the randomized set.",
       "entries": [
-        "{global:setarea}"
+        "{g:setarea}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed description of the randomized set.",
       "entries": [
-        "{global:setadjective} {global:setarea}",
-        "{global:setarea} with {global:setprop}",
-        "{global:setadjective} {global:setarea} with {global:setprop}"
+        "{g:setadjective} {g:setarea}",
+        "{g:setarea} with {g:setprop}",
+        "{g:setadjective} {g:setarea} with {g:setprop}"
       ]
     },
     {
@@ -180,7 +188,7 @@
       "name": "test",
       "explanation": "Testing tool for dumping the set global variables.",
       "entries": [
-        "{global:set} walkthrough: to pass the {global:setboundary}, enter {global:setentrance} to {global:setarea} via {global:setpassage} that leads to {global:setadjective} {global:setlocation} and {global:setnook}  with {global:setprop} inside. Behind {global:setdoor} is the {global:setvault}."
+        "{g:set} walkthrough: to pass the {g:setboundary}, enter {g:setentrance} to {g:setarea} via {g:setpassage} that leads to {g:setadjective} {g:setlocation} and {g:setnook}  with {g:setprop} inside. Behind {g:setdoor} is the {g:setvault}."
       ]
     }
   ]

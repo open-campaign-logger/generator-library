@@ -47,8 +47,18 @@
       "name": "result",
       "explanation": "The output format.",
       "entries": [
+        "{word}",
         "{summary}",
         "{detail}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{female}",
+        "{male}",
+        "{unisex}"
       ]
     },
     {
