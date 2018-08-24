@@ -14,9 +14,9 @@
   "bugs": "",
   "to do": "",
   "see": "business, district, shop",
-  "date": "2018-08-21",
+  "date": "2018-08-24",
   "authors": "ELF Vesala.",
-  "sources": "CastlesAndManorHouses.com, MedievalScotland.org, Svincent.com",
+  "sources": "CastlesAndManorHouses.com, MedievalScotland.org, Ranker.com, Svincent.com",
   "genre": "universal",
   "categories": [
     ""
@@ -170,9 +170,11 @@
         "{metalworker}",
         "baker",
         "bookbinder",
+        "carpenter",
         "cook",
         "glassblower",
         "hatter",
+        "mason",
         "painter",
         "woodcarver",
         "woodworker"
@@ -221,7 +223,9 @@
       "name": "hireling",
       "explanation": "Hired temporary help.",
       "entries": [
-        "hireling"
+        "courier",
+        "hireling",
+        "messenger"
       ]
     },
     {
@@ -285,26 +289,31 @@
       "**************************************************": "WORLD-SPECIFIC"
     },
     {
+      "==================================================": "FANTASY"
+    },
+    {
       "name": "fantasy",
       "explanation": "Occupations for fantasy worlds (with no basis in myth).",
       "entries": [
+        "{medieval}",
         "{myth}",
+        "{lib:magician#summary}",
         "alchemist",
         "astrologer"
       ]
     },
     {
-      "--------------------------------------------------": "MYTH"
+      "==================================================": "MYTH"
     },
     {
       "name": "myth",
       "explanation": "Occupations once rumoured to have existed.",
       "entries": [
-        "XXX"
+        "{fantasy}"
       ]
     },
     {
-      "--------------------------------------------------": "MEDIEVAL"
+      "==================================================": "MEDIEVAL"
     },
     {
       "name": "medieval",
@@ -516,7 +525,7 @@
       ]
     },
     {
-      "--------------------------------------------------": "MODERN"
+      "==================================================": "MODERN"
     },
     {
       "name": "modern",
@@ -535,11 +544,13 @@
       "entries": [
         "cashier",
         "cleaner",
+        "dishwasher",
         "dry cleaner",
         "homeless",
         "janitor",
         "laborer",
         "laundry worker",
+        "posting clerk",
         "waiter"
       ]
     },
@@ -549,8 +560,40 @@
       "entries": [
         "{industrial worker}",
         "{office worker}",
+        "bus driver",
+        "cafeteria counter attendant",
+        "cosmetologist",
+        "counter clerk",
+        "delivery service driver",
+        "dispatcher",
+        "driver",
+        "farmworker",
+        "fitness trainer",
+        "hairdresser",
+        "hairstylist",
+        "helper",
+        "human resources assistant",
+        "lifeguard",
+        "lobby attendant",
+        "mail carrier",
+        "maintenance worker",
+        "manicurist",
         "nurse",
-        "salesperson"
+        "packager",
+        "parking lot attendant",
+        "pedicurist",
+        "pest control worker",
+        "procurement clerk",
+        "product promoter",
+        "production worker",
+        "receptionist",
+        "rental clerk",
+        "repair worker",
+        "salesperson",
+        "security guard",
+        "teacher assistant",
+        "telemarketer",
+        "ticket taker"
       ]
     },
     {
@@ -558,65 +601,86 @@
       "explanation": "Modern middle class social status.",
       "entries": [
         "{IT worker}",
+        "accountant",
+        "actor",
+        "auditor",
+        "bartender",
+        "bill collector",
         "budget analyst",
+        "construction laborer",
+        "consruction manager",
+        "cook",
+        "correctional officer",
         "credit analyst",
+        "criminal investigator",
+        "dental assistant",
+        "dentist",
+        "detective",
         "distribution manager",
+        "editor",
+        "electrician",
+        "engineer",
         "executive assistant",
+        "executive secretary",
+        "firefighter",
+        "flight attendant",
         "funeral service manager",
+        "graphic designer",
         "human resources specialist",
         "inspector",
         "insurance appraiser",
+        "insurance claim adjuster",
         "interpreter",
+        "librarian",
+        "mechanic",
         "office clerk",
+        "optician",
+        "painter",
+        "paramedic",
+        "payroll clerk",
+        "pharmacist",
+        "photographer",
+        "physician",
+        "plumber",
         "police detective",
         "police officer",
         "project manager",
         "production supervisor",
+        "psychologist",
+        "purchasing agent",
         "purchasing manager",
+        "real estate sales agent",
+        "roofer",
+        "sales manager",
+        "service technician",
         "social worker",
         "tax collector",
+        "taxi driver",
         "teacher",
+        "technician",
         "technical writer",
         "translator",
-        "transportation manager"
-      ]
-    },
-    {
-      "name": "IT worker",
-      "explanation": "Modern middle class social status.",
-      "entries": [
-        "computer programmer",
-        "computer systems analyst",
-        "database administrator",
-        "network architect",
-        "software developer",
-        "system administrator",
-        "system architect",
-        "web developer"
+        "transportation manager",
+        "travel agent",
+        "truck driver",
+        "veterinarian"
       ]
     },
     {
       "name": "modern upper class",
       "explanation": "Modern upper class social status.",
       "entries": [
-        "accountant",
         "architect",
-        "auditor",
         "air traffic controller",
         "business operations specialist",
         "commercial pilot",
-        "consruction manager",
         "doctor",
-        "engineer",
         "financial analyst",
         "human resources manager",
-        "insurance claim adjuster",
         "lawyer",
         "management analyst",
         "market research analyst",
         "marketing specialist",
-        "programmer",
-        "purchasing agent",
         "therapist"
       ]
     },
@@ -627,6 +691,9 @@
         "{manager}",
         "investor"
       ]
+    },
+    {
+      "--------------------------------------------------": "MODERN OCCUPATIONS"
     },
     {
       "name": "industrial worker",
@@ -644,6 +711,24 @@
       ]
     },
     {
+      "name": "IT worker",
+      "explanation": "Modern middle class social status.",
+      "entries": [
+        "computer programmer",
+        "computer support specialist",
+        "computer systems analyst",
+        "database administrator",
+        "network architect",
+        "network administrator",
+        "programmer",
+        "software developer",
+        "system administrator",
+        "system architect",
+        "system software developer",
+        "web developer"
+      ]
+    },
+    {
       "name": "manager",
       "explanation": "High-level management positions.",
       "entries": [
@@ -657,7 +742,6 @@
         "marketing manager",
         "operations manager",
         "public relations manager",
-        "sales manager",
         "transportation manager"
       ]
     },
@@ -671,14 +755,13 @@
       ]
     },
     {
-      "--------------------------------------------------": "FUTURISTIC"
+      "==================================================": "FUTURISTIC"
     },
     {
       "name": "futuristic",
       "explanation": "Employment for science fiction worlds.",
       "entries": [
-        "{modern}",
-        "XXX"
+        "{modern}"
       ]
     },
     {
