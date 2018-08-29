@@ -230,8 +230,7 @@
       "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
-        "{medieval}",
-        "XXX"
+        "{medieval}"
       ]
     },
     {
@@ -241,7 +240,7 @@
       "name": "myth",
       "explanation": "Descriptions for mythic worlds (once thought true).",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
@@ -251,7 +250,7 @@
       "name": "primitive",
       "explanation": "Descriptions for prehistoric worlds.",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
@@ -261,7 +260,7 @@
       "name": "ancient",
       "explanation": "Descriptions for ancient worlds.",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
@@ -271,7 +270,7 @@
       "name": "medieval",
       "explanation": "Descriptions for medieval worlds (with no magic).",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
@@ -281,8 +280,7 @@
       "name": "modern",
       "explanation": "Descriptions for modern worlds.",
       "entries": [
-        "{common}",
-        "XXX"
+        "{common}"
       ]
     },
     {
@@ -292,8 +290,7 @@
       "name": "futuristic",
       "explanation": "Descriptions for science fiction worlds.",
       "entries": [
-        "{modern}",
-        "XXX"
+        "{modern}"
       ]
     },
     {
