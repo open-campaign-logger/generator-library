@@ -131,8 +131,8 @@
       "**************************************************": "RANGES"
     },
     {
-      "name": "",
-      "explanation": "",
+      "name": "any",
+      "explanation": "Random selection.",
       "entries": [
         ""
       ]
