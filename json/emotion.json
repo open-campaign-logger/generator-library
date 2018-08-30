@@ -1,0 +1,813 @@
+{
+  "name": "emotion",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Emotions and states of minds.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-08-30",
+  "authors": "ELF Vesala.",
+  "sources": "ChangingMinds.org, Wikipedia.org",
+  "attribution": {
+    "creators": "",
+    "copyright": "",
+    "licence": "https://",
+    "disclaimer": "https://",
+    "source": "",
+    "changes": "Translation into Campaign Logger generator format."
+  },
+  "genre": "universal",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{word}",
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{emotion}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{attribute} {emotion}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{emotion}, {feature}",
+        "{attribute} {emotion}, {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {emotion} {synonym} {looks} {feature}.",
+        "The {attribute} {emotion} {synonym} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Name}: {random} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "emotion",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Usual types.",
+      "entries": [
+        "{love}",
+        "{joy}",
+        "{anger}",
+        "{sadness}",
+        "{fear}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Unusual types.",
+      "entries": [
+        "{boredom}",
+        "{surprise}"
+      ]
+    },
+    {
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "RANGES"
+    },
+    {
+      "name": "any",
+      "explanation": "Random emotion.",
+      "entries": [
+        "{anger}",
+        "{boredom}",
+        "{fear}",
+        "{joy}",
+        "{love}",
+        "{sadness}",
+        "{surprise}"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "--------------------------------------------------": "ANGER"
+    },
+    {
+      "name": "anger",
+      "explanation": "The feeling of rage.",
+      "entries": [
+        "{disgust}",
+        "{envy}",
+        "{frustration}",
+        "{irritation}",
+        "{rage}",
+        "tormented"
+      ]
+    },
+    {
+      "name": "disgust",
+      "explanation": "The feeling of revulsion.",
+      "entries": [
+        "contemptful",
+        "disgusted",
+        "repulsed"
+      ]
+    },
+    {
+      "name": "envy",
+      "explanation": "The feeling of jealousy.",
+      "entries": [
+        "envious",
+        "greedy",
+        "jealous"
+      ]
+    },
+    {
+      "name": "frustration",
+      "explanation": "The feeling of exasperation.",
+      "entries": [
+        "exasperated",
+        "frustrated"
+      ]
+    },
+    {
+      "name": "irritation",
+      "explanation": "The feeling of annoyance.",
+      "entries": [
+        "aggravated",
+        "agitated",
+        "annoyed",
+        "grouchy",
+        "grumpy",
+        "irritated"
+      ]
+    },
+    {
+      "name": "rage",
+      "explanation": "The feeling of fury.",
+      "entries": [
+        "aggressive",
+        "angry",
+        "bitter",
+        "cruel",
+        "enraged",
+        "ferocious",
+        "furious",
+        "hateful",
+        "hostile",
+        "ill-tempered",
+        "outraged",
+        "resentful",
+        "scornful",
+        "somber",
+        "sour",
+        "sulky",
+        "sullen",
+        "spiteful",
+        "vengeful",
+        "wrathful"
+      ]
+    },
+    {
+      "--------------------------------------------------": "BOREDOM"
+    },
+    {
+      "name": "boredom",
+      "explanation": "The feeling of apathy.",
+      "entries": [
+        "apathetic",
+        "bored",
+        "calm",
+        "disinterested",
+        "inattentive",
+        "relaxed"
+      ]
+    },
+    {
+      "--------------------------------------------------": "FEAR"
+    },
+    {
+      "name": "fear",
+      "explanation": "The feeling of horror.",
+      "entries": [
+        "{horror}",
+        "{nervousness}"
+      ]
+    },
+    {
+      "name": "horror",
+      "explanation": "The feeling of shock.",
+      "entries": [
+        "alarmed",
+        "fearful",
+        "frightened",
+        "horrified",
+        "hysteric",
+        "mortified",
+        "panicked",
+        "shocked"
+      ]
+    },
+    {
+      "name": "nervousness",
+      "explanation": "The feeling of anxiety.",
+      "entries": [
+        "anxious",
+        "distressed",
+        "helpless",
+        "nervous",
+        "suspicious",
+        "tense",
+        "uneasy",
+        "worried"
+      ]
+    },
+    {
+      "--------------------------------------------------": "JOY"
+    },
+    {
+      "name": "joy",
+      "explanation": "The feeling of cheefulness.",
+      "entries": [
+        "{cheerfulness}",
+        "{contentment}",
+        "{enthrallment}",
+        "{excitement}",
+        "{optimism}",
+        "{pride}",
+        "relieved"
+      ]
+    },
+    {
+      "name": "cheerfulness",
+      "explanation": "The feeling of gaiety.",
+      "entries": [
+        "amused",
+        "blissfull",
+        "cheerful",
+        "delighted",
+        "ecstatic",
+        "elated",
+        "euphoric",
+        "glad",
+        "gleeful",
+        "happy",
+        "jolly",
+        "jovial",
+        "joyous",
+        "satisfied",
+        "silly"
+      ]
+    },
+    {
+      "name": "contentment",
+      "explanation": "The feeling of pleasure.",
+      "entries": [
+        "content",
+        "pleasurable"
+      ]
+    },
+    {
+      "name": "enthrallment",
+      "explanation": "The feeling of rapture.",
+      "entries": [
+        "curious",
+        "enthralled",
+        "raptured"
+      ]
+    },
+    {
+      "name": "excitement",
+      "explanation": "The feeling of zest.",
+      "entries": [
+        "confident",
+        "courageous",
+        "determined",
+        "interested",
+        "loyal",
+        "motivated",
+        "enthusiastic",
+        "excited",
+        "exhilarated",
+        "keen",
+        "thrilled",
+        "zealous",
+        "zestful"
+      ]
+    },
+    {
+      "name": "optimism",
+      "explanation": "The feeling of hope.",
+      "entries": [
+        "eager",
+        "hopeful",
+        "optimistic",
+        "trusting"
+      ]
+    },
+    {
+      "name": "pride",
+      "explanation": "The feeling of triumph.",
+      "entries": [
+        "arrogant",
+        "proud",
+        "shameless",
+        "triumphant"
+      ]
+    },
+    {
+      "--------------------------------------------------": "LOVE"
+    },
+    {
+      "name": "love",
+      "explanation": "The feeling of affection.",
+      "entries": [
+        "{affection}",
+        "{lust}",
+        "longing"
+      ]
+    },
+    {
+      "name": "affection",
+      "explanation": "",
+      "entries": [
+        "affectionate",
+        "caring",
+        "compassionate",
+        "empathetic",
+        "friendly",
+        "full of love",
+        "in love",
+        "kind",
+        "loving",
+        "romantic",
+        "sentimental"
+      ]
+    },
+    {
+      "name": "lust",
+      "explanation": "Lustful feelings.",
+      "entries": [
+        "aroused",
+        "infatuated",
+        "lusty",
+        "passionate"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SADNESS"
+    },
+    {
+      "name": "sadness",
+      "explanation": "The feeling of suffering.",
+      "entries": [
+        "{despair}",
+        "{disappointment}",
+        "{neglect}",
+        "{shame}",
+        "{suffering}",
+        "{sympathy}"
+      ]
+    },
+    {
+      "name": "despair",
+      "explanation": "The feeling of depression.",
+      "entries": [
+        "depressed",
+        "despaired",
+        "empty",
+        "fatigued",
+        "gloomy",
+        "glum",
+        "grieving",
+        "grim",
+        "hollow",
+        "hopeless",
+        "insignificant",
+        "melancholic",
+        "sad",
+        "sorrowful",
+        "unhappy",
+        "woeful"
+      ]
+    },
+    {
+      "name": "disappointment",
+      "explanation": "The feeling of dismay.",
+      "entries": [
+        "disappointed",
+        "dismayed",
+        "displeasured",
+        "moody"
+      ]
+    },
+    {
+      "name": "neglect",
+      "explanation": "The feeling of alienation.",
+      "entries": [
+        "alienated",
+        "defeated",
+        "embarrassed",
+        "homesick",
+        "humiliated",
+        "insecure",
+        "insulted",
+        "isolated",
+        "lonely",
+        "neglected",
+        "rejected",
+        "shy"
+      ]
+    },
+    {
+      "name": "shame",
+      "explanation": "The feeling of guilt.",
+      "entries": [
+        "guilty",
+        "modest",
+        "prudent",
+        "regretful",
+        "remorseful",
+        "shameful"
+      ]
+    },
+    {
+      "name": "suffering",
+      "explanation": "The feeling of agony.",
+      "entries": [
+        "anguished",
+        "agonized",
+        "hurt",
+        "suffering"
+      ]
+    },
+    {
+      "name": "sympathy",
+      "explanation": "The feeling of pity.",
+      "entries": [
+        "benevolent",
+        "pitiful",
+        "sympathetic"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SURPRISE"
+    },
+    {
+      "name": "surprise",
+      "explanation": "The feeling of amazement.",
+      "entries": [
+        "amazed",
+        "astonished",
+        "surprised"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomization methods.",
+      "entries": [
+        "{component}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMPONENTS"
+    },
+    {
+      "name": "component",
+      "explanation": "Component-based terms (generated from words).",
+      "entries": [
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{compoundbegin}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "FANTASTIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
+        "emotion",
+        "feeling",
+        "mental state",
+        "state of mind"
+      ]
+    },
+    {
+      "name": "because of",
+      "explanation": "Variable expressions for 'as a result of'.",
+      "entries": [
+        "as a result of",
+        "because of",
+        "due to",
+        "owing to",
+        "thanks to"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ATTRIBUTE"
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        "{little}",
+        "{very}"
+      ]
+    },
+    {
+      "name": "little",
+      "explanation": "",
+      "entries": [
+        "a bit",
+        "a little",
+        "fairly",
+        "lightly",
+        "mildly",
+        "moderately",
+        "quite",
+        "reasonably",
+        "slightly",
+        "somewhat"
+      ]
+    },
+    {
+      "name": "very",
+      "explanation": "",
+      "entries": [
+        "clearly",
+        "considerably",
+        "noticeably",
+        "obviously",
+        "openly",
+        "perceptibly",
+        "undeniably",
+        "undoubtedly",
+        "unquestionably",
+        "visibly"
+      ]
+    },
+    {
+      "--------------------------------------------------": "FEATURE"
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        "{because of} {reason}"
+      ]
+    },
+    {
+      "name": "reason",
+      "explanation": "The cause of the emotion.",
+      "format": "because of --",
+      "entries": [
+        "a death in the family",
+        "a dream",
+        "a friend's behavior",
+        "a friend's fate",
+        "a friend's recent luck",
+        "a recent discussion",
+        "a recent meal",
+        "a recent revelation",
+        "a recently broken piece of equipment",
+        "a recently received present",
+        "an animal's behavior",
+        "recent news",
+        "recent rumors",
+        "life as a whole",
+        "the success of their plans"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
+      ]
+    }
+  ]
+}
