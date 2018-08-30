@@ -65,14 +65,13 @@
       "name": "summary",
       "explanation": "Brief output.",
       "entries": [
-        "{XXX}"
+        "{attribute} {XXX}"
       ]
     },
     {
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{attribute} {XXX}",
         "{XXX}, {feature}",
         "{attribute} {XXX}, {feature}"
       ]

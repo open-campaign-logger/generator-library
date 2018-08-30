@@ -58,14 +58,13 @@
       "name": "summary",
       "explanation": "Brief output.",
       "entries": [
-        "{folk}"
+        "{attribute} {folk}"
       ]
     },
     {
       "name": "detail",
       "explanation": "More detailed description of the randomized set.",
       "entries": [
-        "{attribute} {folk}",
         "{participle} {folk}",
         "{participle}, {attribute} {folk}",
         "{attribute}, {participle} {folk}",

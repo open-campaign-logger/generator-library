@@ -94,14 +94,13 @@
       "name": "summary",
       "explanation": "Brief output.",
       "entries": [
-        "{culture}"
+        "{attribute} {culture}"
       ]
     },
     {
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{attribute} {culture}",
         "{culture} {feature}",
         "{attribute} {culture} {feature}"
       ]

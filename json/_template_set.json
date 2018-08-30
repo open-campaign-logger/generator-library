@@ -82,14 +82,13 @@
       "name": "summary",
       "explanation": "Brief description of the randomized set.",
       "entries": [
-        "{g:setarea}"
+        "{g:setadjective} {g:setarea}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed description of the randomized set.",
       "entries": [
-        "{g:setadjective} {g:setarea}",
         "{g:setarea} with {g:setprop}",
         "{g:setadjective} {g:setarea} with {g:setprop}"
       ]

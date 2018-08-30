@@ -59,7 +59,7 @@
       "name": "summary",
       "explanation": "Brief output.",
       "entries": [
-        "{milieu}"
+        "{attribute} {milieu}"
       ]
     },
     {
@@ -67,7 +67,6 @@
       "explanation": "More detailed output variations.",
       "entries": [
         "{milieu} {g:para}{lib:complication#milieu}",
-        "{attribute} {milieu}",
         "{milieu}, {feature}",
         "{attribute} {milieu}, {feature}"
       ]

@@ -65,18 +65,18 @@
       "name": "summary",
       "explanation": "Brief output.",
       "entries": [
-        "{female}",
-        "{male}",
-        "{unisex}"
+        "{female full}",
+        "{male full}",
+        "{unisex full}"
       ]
     },
     {
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{female full}",
-        "{male full}",
-        "{unisex full}"
+        "{female} '{female byname}'",
+        "{male} '{male byname}'",
+        "{unisex} '{unisex byname}'"
       ]
     },
     {
