@@ -540,31 +540,40 @@
       "name": "component",
       "explanation": "Component-based terms (generated from words).",
       "entries": [
-        "{compoundbegin}{compoundend}",
         "{beginning} {ending}",
-        "{ending} {extension}",
-        "{descriptor} {ending}",
-        "{descriptor} {compoundbegin}{compoundend}",
         "{descriptor} {beginning} {ending}",
-        "{compoundbegin}{compoundend} {extension}",
-        "{beginning} {ending} {extension}",
-        "{descriptor} {compoundbegin}{compoundend} {extension}",
-        "{descriptor} {beginning} {ending} {extension}"
+        "{beginning} {ending}, {extension}",
+        "{descriptor} {beginning} {ending}, {extension}"
       ]
     },
     {
       "name": "descriptor",
       "explanation": "Descriptors for randomized terms.",
       "entries": [
-        ""
+        "a chronic",
+        "a constant",
+        "a continual",
+        "a declining",
+        "an increasing",
+        "an infrequent",
+        "an intermittent",
+        "an occasional",
+        "a periodical",
+        "a recurring"
       ]
     },
     {
       "name": "beginning",
       "explanation": "Beginnings for randomized terms.",
       "entries": [
-        "{compoundbegin}",
-        "XXX"
+        "acceptance of",
+        "anger at",
+        "avoidance of",
+        "denial of",
+        "depression by",
+        "doubt of",
+        "fear of",
+        "need for"
       ]
     },
     {
@@ -585,14 +594,34 @@
       "name": "ending",
       "explanation": "Separate word endings for randomized terms.",
       "entries": [
-        "XXX"
+        "abasement",
+        "acceptance",
+        "achievement",
+        "acquisition",
+        "affiliation",
+        "aggression",
+        "autonomy",
+        "deference",
+        "dominance",
+        "failure",
+        "order",
+        "play",
+        "recognition",
+        "rejection",
+        "seclusion",
+        "security",
+        "self-expression",
+        "submission"
       ]
     },
     {
       "name": "extension",
       "explanation": "Extensions for randomized terms.",
       "entries": [
-        ""
+        "by proxy",
+        "subconscious",
+        "sublimated",
+        "suppressed"
       ]
     },
     {
