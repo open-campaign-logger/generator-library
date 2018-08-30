@@ -110,7 +110,7 @@
       "name": "common",
       "explanation": "Usual types.",
       "entries": [
-        "{you}"
+        "{you are}"
       ]
     },
     {
@@ -124,6 +124,7 @@
       "name": "exclusive",
       "explanation": "Extra rare types (not produced by random).",
       "entries": [
+        "{rpg}",
         "{rude}"
       ]
     },
@@ -131,10 +132,10 @@
       "**************************************************": "RANGES"
     },
     {
-      "name": "you",
+      "name": "you are",
       "explanation": "'You are' type insults.",
       "entries": [
-        "you {are} {like} {random}"
+        "{you} {are} {like} {random}"
       ]
     },
     {
@@ -193,9 +194,12 @@
         "a numb",
         "a palsied",
         "a paraplegic",
+        "a puked on",
         "a sore",
         "a stiff",
+        "a sweaty",
         "a swindling",
+        "a thick",
         "a witless"
       ]
     },
@@ -204,14 +208,14 @@
       "explanation": "Beginnings for randomized terms.",
       "entries": [
         "{!animal}",
+        "{!body part}",
         "{compoundbegin}",
-        "arm pit",
-        "bowel",
-        "buttock",
         "dandruff",
         "diarrhea",
         "earwax",
         "fungus",
+        "lard",
+        "nail clipping",
         "toejam"
       ]
     },
@@ -224,16 +228,15 @@
         "fat",
         "goo",
         "gunk",
-        "lard",
         "mold",
         "pee",
         "piss",
         "poop",
+        "puke",
         "puss",
         "slime",
         "snot",
         "sweat",
-        "thick",
         "toe"
       ]
     },
@@ -249,8 +252,8 @@
         "lips",
         "mouth",
         "pants",
-        "puke",
-        "skull"
+        "skull",
+        "stain"
       ]
     },
     {
@@ -353,7 +356,7 @@
     },
     {
       "name": "rude compoundbegin",
-      "explanation": "Compound word beginnings for randomized terms.",
+      "explanation": "Compound word beginnings for bad language terms.",
       "entries": [
         "{compoundbegin}",
         "arse",
@@ -367,7 +370,7 @@
     },
     {
       "name": "rude compoundend",
-      "explanation": "Compound word endings for randomized terms.",
+      "explanation": "Compound word endings for bad language terms.",
       "entries": [
         "{compoundend}",
         "hole",
@@ -378,7 +381,7 @@
     },
     {
       "name": "rude ending",
-      "explanation": "Separate word endings for randomized terms.",
+      "explanation": "Separate word endings for bad language terms.",
       "entries": [
         "{ending}",
         "bedshitter",
@@ -392,6 +395,212 @@
       "entries": [
         "{extension}",
         "with a syphilis"
+      ]
+    },
+    {
+      "**************************************************": "RPG"
+    },
+    {
+      "name": "rpg",
+      "explanation": "Role-playing game related randomization methods.",
+      "entries": [
+        "{|{rpg feature}|scase}!",
+        "{|{rpg you} {are} {like} {rpg random}|scase}!",
+        "{|{rpg you} {are} {like} {rpg random}|scase}. {|{rpg feature}|scase}!",
+        "{|{rpg attribute} {rpg you} {are} {like} {rpg random}|scase}!",
+        "{|{rpg you} {are} {like} {rpg random}|scase}. {|{feature}|scase}!",
+        "{|{rpg attribute} {rpg you} {are} {like} {rpg random}|scase}. {|{feature}|scase}!"
+      ]
+    },
+    {
+      "--------------------------------------------------": "RPG RANDOM"
+    },
+    {
+      "name": "rpg random",
+      "explanation": "Component-based RPG language terms.",
+      "entries": [
+        "{rpg beginning} {rpg ending}",
+        "{rpg ending} {rpg extension}",
+        "{rpg descriptor} {rpg ending}",
+        "{rpg descriptor} {rpg compoundbegin}{rpg compoundend}",
+        "{rpg descriptor} {rpg beginning} {rpg ending}",
+        "{rpg compoundbegin}{rpg compoundend} {rpg extension}",
+        "{rpg beginning} {rpg ending} {rpg extension}",
+        "{rpg descriptor} {rpg compoundbegin}{rpg compoundend} {rpg extension}",
+        "{rpg descriptor} {rpg beginning} {rpg ending} {rpg extension}"
+      ]
+    },
+    {
+      "name": "rpg descriptor",
+      "explanation": "RPG language insulting descriptions.",
+      "entries": [
+        "{descriptor}",
+        "a bottom level",
+        "a critically failed",
+        "a cursed",
+        "a fumbled",
+        "a looted"
+      ]
+    },
+    {
+      "name": "rpg beginning",
+      "explanation": "Beginnings for RPG language randomized terms.",
+      "entries": [
+        "{beginning}",
+        "{rpg compoundbegin}"
+      ]
+    },
+    {
+      "name": "rpg compoundbegin",
+      "explanation": "Compound word beginnings for randomized RPG terms.",
+      "entries": [
+        "{compoundbegin}",
+        "fail"
+      ]
+    },
+    {
+      "name": "rpg compoundend",
+      "explanation": "Compound word endings for randomized RPG terms.",
+      "entries": [
+        "{compoundend}",
+        "die",
+        "sheet"
+      ]
+    },
+    {
+      "name": "rpg ending",
+      "explanation": "Separate word endings for randomized RPG terms.",
+      "entries": [
+        "{rpg creature}'s {body part}'",
+        "{ending}",
+        "battle map",
+        "campaign",
+        "cheater",
+        "dice bag",
+        "dice roller",
+        "dice tower",
+        "dungeon",
+        "encounter",
+        "GM shield",
+        "hex map",
+        "hoard",
+        "lair",
+        "loot",
+        "map tile",
+        "meeple",
+        "mini",
+        "munchkin",
+        "NPC",
+        "quest giver",
+        "random encounter",
+        "rulebook",
+        "sandbox",
+        "trap"
+      ]
+    },
+    {
+      "name": "rpg extension",
+      "explanation": "RPG language insulting characterisations.",
+      "entries": [
+        "{extension}",
+        "on a Monopoly board",
+        "with a permanent disadvantage",
+        "with '3D6, drop highest' stats",
+        "with weighed dice",
+        "with zero bonuses",
+        "who cries the GM to help"
+      ]
+    },
+    {
+      "name": "rpg action",
+      "explanation": "Actions for role-playing games.",
+      "entries": [
+        "{negative rpg action}",
+        "{positive rpg action}"
+      ]
+    },
+    {
+      "name": "rpg creature",
+      "explanation": "Role-playing game critters.",
+      "entries": [
+        "bastard elf",
+        "female dwarf",
+        "goblin",
+        "midget halfling",
+        "half orc",
+        "kobold"
+      ]
+    },
+    {
+      "name": "negative rpg action",
+      "explanation": "Actions for role-playing games.",
+      "entries": [
+        "bribe the GM",
+        "drop a level",
+        "fart at the table",
+        "forget the game night",
+        "forget to level up",
+        "fudge your die rolls",
+        "get zero XP",
+        "lose your dice",
+        "misplace your character sheet",
+        "miss your initiative",
+        "secretly re-roll",
+        "spill your drink",
+        "use homebrew"
+      ]
+    },
+    {
+      "name": "positive rpg action",
+      "explanation": "Actions for role-playing games.",
+      "entries": [
+        "count your arrows",
+        "bring snacks",
+        "hex crawl",
+        "level up",
+        "map",
+        "point buy",
+        "roll for initiative"
+      ]
+    },
+    {
+      "--------------------------------------------------": "RPG SPECIALS"
+    },
+    {
+      "name": "rpg attribute",
+      "explanation": "RPG attributes prepended to the front of the result.",
+      "entries": [
+        "{attribute}",
+        "Did you already buy that supplement where",
+        "Even the lamest NPC knows that",
+        "I don't need a rules lawyer to tell me that",
+        "In every game we have played,",
+        "In front of the GM screen",
+        "In this campaign",
+        "It says straight in the rulebook that",
+        "There should be a Kickstarter to celebrate how",
+        "Whatever the rule system,"
+      ]
+    },
+    {
+      "name": "rpg feature",
+      "explanation": "RPG features appended to the end of the result.",
+      "entries": [
+        "{feature}",
+        "Do you even know what game you are playing?",
+        "There should be a feat for your level of fail",
+        "This ain't a brony rpg, dude",
+        "You think we are playing 4th edition?",
+        "You roll 0 on a d20"
+      ]
+    },
+    {
+      "name": "rpg you",
+      "explanation": "The insult target described",
+      "entries": [
+        "you",
+        "you and your {failed} character",
+        "you and your {failed} dice"
       ]
     },
     {
@@ -553,6 +762,19 @@
       ]
     },
     {
+      "name": "failed",
+      "explanation": "Variant expressions for 'lame'.",
+      "entries": [
+        "botched",
+        "failed",
+        "lame",
+        "pay to win",
+        "poor",
+        "sorry",
+        "zero effort"
+      ]
+    },
+    {
       "**************************************************": "SPECIAL TABLES"
     },
     {
@@ -583,7 +805,7 @@
     },
     {
       "name": "attribute",
-      "explanation": "Attribute prepended to the front of the result.",
+      "explanation": "Attributes prepended to the front of the result.",
       "entries": [
         "Everyone knows that",
         "Have you heard that",
@@ -591,6 +813,18 @@
         "Hey you over there,",
         "Read my lips:",
         "The word on the street is that"
+      ]
+    },
+    {
+      "name": "body part",
+      "explanation": "Insulting body parts.",
+      "entries": [
+        "armpit",
+        "bowel",
+        "butt",
+        "groin",
+        "navel",
+        "toenail"
       ]
     },
     {
@@ -609,6 +843,14 @@
         "father",
         "mother",
         "sister"
+      ]
+    },
+    {
+      "name": "you",
+      "explanation": "The insult target described",
+      "entries": [
+        "you",
+        "you and your sorry family"
       ]
     },
     {
