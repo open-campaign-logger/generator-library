@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "Separate proper names from district types!",
   "see": "business, settlement, shop, street",
-  "date": "2018-05-30",
+  "date": "2018-08-30",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -41,10 +41,16 @@
       "name": "result",
       "explanation": "The output format.",
       "entries": [
+        "{word}",
         "{summary}",
-        "{detail}",
-        "{description}",
-        "{stats}"
+        "{detail}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{neighborhood}"
       ]
     },
     {
@@ -828,7 +834,7 @@
       "explanation": "Features for busy districts.",
       "entries": [
         "{middle class feature}",
-        "is no longer so fashionable as it used to be",
+        "is no longer as fashionable as it used to be",
         "has recently become a fashionable area",
         "{rich feature}"
       ]
