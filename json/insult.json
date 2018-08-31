@@ -447,6 +447,7 @@
         "{beginning}",
         "{!rpg adjective}",
         "1st edition",
+        "previous edition",
         "cheater's",
         "experimental rule with",
         "Forge-worshipping",
@@ -501,6 +502,7 @@
         "empty dice bag",
         "empty lair",
         "errata sheet",
+        "failure meme",
         "feat abuser",
         "forgotten campaign",
         "forum activist",
@@ -510,6 +512,7 @@
         "hexcrawler on a grid",
         "home-made GM shield",
         "illusory trap",
+        "image board troll",
         "impromptu rulings",
         "indie publisher",
         "level 1 hoard",
@@ -526,11 +529,11 @@
         "OSR blogger",
         "party splitter",
         "PDF-only ruleset",
+        "photocopied rulebook",
         "plot thread",
         "podcast promoter",
         "pointless encounter",
         "power gamer",
-        "previous edition rulebook",
         "rage quitter",
         "random encounter",
         "random generator",
@@ -546,6 +549,7 @@
         "solo gamer",
         "SRD rip-off",
         "time waster",
+        "tired GIF",
         "unwiped battle map",
         "wargamer"
       ]
@@ -650,7 +654,7 @@
       "entries": [
         "{attribute}",
         "Did you buy a supplement where",
-        "Even the lamest NPC knows that",
+        "Even {lamest} NPC knows that",
         "I don't need a rules lawyer to tell me that",
         "In every game we play,",
         "In front of the GM screen",
@@ -685,8 +689,20 @@
         "There should be a feat for your level of fail",
         "There's no saving throw for you",
         "This ain't a brony rpg, dude",
+        "You are {rpg lamest} gamer ever",
         "You think we are playing 4th edition?",
         "You roll 0 on a d20"
+      ]
+    },
+    {
+      "name": "rpg lamest",
+      "explanation": "RPG variant expressions for 'lamest'.",
+      "entries": [
+        "{lamest}",
+        "the most nerfed",
+        "the worst rolled",
+        "the worst typoed",
+        "the original zero level"
       ]
     },
     {
@@ -883,6 +899,17 @@
       ]
     },
     {
+      "name": "lamest",
+      "explanation": "Variant expressions for 'lamest'.",
+      "entries": [
+        "the lamest",
+        "the most badly failed",
+        "the most inane",
+        "the most stoopid",
+        "the worst"
+      ]
+    },
+    {
       "**************************************************": "SPECIAL TABLES"
     },
     {
@@ -913,6 +940,7 @@
       "entries": [
         "ape",
         "bull",
+        "chicken",
         "cow",
         "donkey",
         "goat",
@@ -921,6 +949,7 @@
         "pig",
         "rat",
         "sheep",
+        "swine",
         "walrus",
         "worm"
       ]
