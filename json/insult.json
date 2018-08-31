@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-08-30",
+  "date": "2018-08-31",
   "authors": "ELF Vesala",
   "sources": "",
   "attribution": {
@@ -58,7 +58,7 @@
       "name": "word",
       "explanation": "One-word output.",
       "entries": [
-        "{idiot}"
+        "{!idiot}"
       ]
     },
     {
@@ -182,7 +182,6 @@
         "a feebleminded",
         "a half-baked",
         "a half-witted",
-        "an idiotic",
         "an ill-advised",
         "an inbred",
         "a lame",
@@ -207,16 +206,12 @@
       "name": "beginning",
       "explanation": "Beginnings for randomized terms.",
       "entries": [
+        "{!adjective}",
         "{!animal}",
         "{!body part}",
-        "{compoundbegin}",
-        "dandruff",
-        "diarrhea",
-        "earwax",
-        "fungus",
-        "lard",
-        "nail clipping",
-        "toejam"
+        "{!excretion}",
+        "{!idiot}",
+        "{compoundbegin}"
       ]
     },
     {
@@ -299,9 +294,8 @@
       "name": "extension",
       "explanation": "Extensions for randomized terms.",
       "entries": [
-        "and {!idiot}",
-        "and so was your {!relative}",
-        "and your {!relative} is even worse",
+        "and so does your {!relative}",
+        "and your {!relative} is {!like} you",
         "in a rut",
         "living in a latrine",
         "married to a {!animal}",
@@ -404,12 +398,11 @@
       "name": "rpg",
       "explanation": "Role-playing game related randomization methods.",
       "entries": [
-        "{|{rpg feature}|scase}!",
-        "{|{rpg you} {are} {like} {rpg random}|scase}!",
-        "{|{rpg you} {are} {like} {rpg random}|scase}. {|{rpg feature}|scase}!",
-        "{|{rpg attribute} {rpg you} {are} {like} {rpg random}|scase}!",
-        "{|{rpg you} {are} {like} {rpg random}|scase}. {|{feature}|scase}!",
-        "{|{rpg attribute} {rpg you} {are} {like} {rpg random}|scase}. {|{feature}|scase}!"
+        "{|{rpg you} {are} {!like} {rpg random}|scase}!",
+        "{|{rpg you} {are} {!like} {rpg random}|scase}. {|{rpg feature}|scase}!",
+        "{|{rpg attribute} {rpg you} {are} {!like} {rpg random}|scase}!",
+        "{|{rpg you} {are} {!like} {rpg random}|scase}. {|{rpg feature}|scase}!",
+        "{|{rpg attribute} {rpg you} {are} {!like} {rpg random}|scase}. {|{rpg feature}|scase}!"
       ]
     },
     {
@@ -422,11 +415,8 @@
         "{rpg beginning} {rpg ending}",
         "{rpg ending} {rpg extension}",
         "{rpg descriptor} {rpg ending}",
-        "{rpg descriptor} {rpg compoundbegin}{rpg compoundend}",
         "{rpg descriptor} {rpg beginning} {rpg ending}",
-        "{rpg compoundbegin}{rpg compoundend} {rpg extension}",
         "{rpg beginning} {rpg ending} {rpg extension}",
-        "{rpg descriptor} {rpg compoundbegin}{rpg compoundend} {rpg extension}",
         "{rpg descriptor} {rpg beginning} {rpg ending} {rpg extension}"
       ]
     },
@@ -438,8 +428,16 @@
         "a bottom level",
         "a critically failed",
         "a cursed",
+        "a diceless",
+        "a failed",
+        "a fake",
+        "a forged",
         "a fumbled",
-        "a looted"
+        "a leftover",
+        "a looted",
+        "a pay-to-win",
+        "a roll-fudging",
+        "a zero level"
       ]
     },
     {
@@ -447,7 +445,15 @@
       "explanation": "Beginnings for RPG language randomized terms.",
       "entries": [
         "{beginning}",
-        "{rpg compoundbegin}"
+        "{!rpg adjective}",
+        "1st edition",
+        "cheater's",
+        "experimental rule with",
+        "Forge-worshipping",
+        "paywall",
+        "playtest",
+        "retard's homebrew",
+        "rules-bending"
       ]
     },
     {
@@ -455,7 +461,8 @@
       "explanation": "Compound word beginnings for randomized RPG terms.",
       "entries": [
         "{compoundbegin}",
-        "fail"
+        "fail",
+        "suck"
       ]
     },
     {
@@ -464,6 +471,7 @@
       "entries": [
         "{compoundend}",
         "die",
+        "hex",
         "sheet"
       ]
     },
@@ -471,31 +479,75 @@
       "name": "rpg ending",
       "explanation": "Separate word endings for randomized RPG terms.",
       "entries": [
-        "{rpg creature}'s {body part}'",
+        "{!idiot} house rule",
+        "{!rpg adjective} {!rpg creature}",
+        "{!rpg creature}'s {!body part}",
         "{ending}",
-        "battle map",
-        "campaign",
-        "cheater",
-        "dice bag",
+        "30-sided die",
+        "accidental grid wiper",
+        "anime fan",
+        "beta test rule set",
+        "board gamer",
+        "cantrip caster",
+        "CCG player",
+        "copper piece loot",
+        "crowdfunding project",
+        "d4 dropped on the floor",
+        "d8 with a dotted 6",
+        "dice pool",
         "dice roller",
         "dice tower",
-        "dungeon",
-        "encounter",
-        "GM shield",
+        "empty character sheet",
+        "empty dice bag",
+        "empty lair",
+        "errata sheet",
+        "feat abuser",
+        "forgotten campaign",
+        "forum activist",
+        "gamebook player",
+        "grognard in a terminal care",
         "hex map",
-        "hoard",
-        "lair",
-        "loot",
-        "map tile",
+        "hexcrawler on a grid",
+        "home-made GM shield",
+        "illusory trap",
+        "impromptu rulings",
+        "indie publisher",
+        "level 1 hoard",
+        "LFG failure",
+        "looted dungeon",
+        "lost map tile",
+        "made-up rules",
+        "marching order",
         "meeple",
         "mini",
         "munchkin",
+        "negative modifier",
         "NPC",
-        "quest giver",
+        "OSR blogger",
+        "party splitter",
+        "PDF-only ruleset",
+        "plot thread",
+        "podcast promoter",
+        "pointless encounter",
+        "power gamer",
+        "previous edition rulebook",
+        "rage quitter",
         "random encounter",
-        "rulebook",
-        "sandbox",
-        "trap"
+        "random generator",
+        "random quest giver",
+        "randomly generated sandbox",
+        "red box clone",
+        "rental GM",
+        "rule as written",
+        "rules lawyer",
+        "saving throw failure",
+        "social media spammer",
+        "soda spiller",
+        "solo gamer",
+        "SRD rip-off",
+        "time waster",
+        "unwiped battle map",
+        "wargamer"
       ]
     },
     {
@@ -508,15 +560,70 @@
         "with '3D6, drop highest' stats",
         "with weighed dice",
         "with zero bonuses",
-        "who cries the GM to help"
+        "with negative hit points",
+        "with misprinted stat blocks",
+        "who cries the GM for help",
+        "who failed to {rpg positive action}",
+        "who managed to {rpg negative action}"
+      ]
+    },
+    {
+      "name": "rpg adjective",
+      "explanation": "Adjectives from role-playing games.",
+      "entries": [
+        "{!adjective}",
+        "dice-licking",
+        "map-folding",
+        "session-skipping"
       ]
     },
     {
       "name": "rpg action",
+      "explanation": "Actions from role-playing games.",
+      "entries": [
+        "{rpg negative action}",
+        "{rpg positive action}"
+      ]
+    },
+    {
+      "name": "rpg negative action",
       "explanation": "Actions for role-playing games.",
       "entries": [
-        "{negative rpg action}",
-        "{positive rpg action}"
+        "bribe the GM",
+        "buy wrong edition rules",
+        "drop a level",
+        "fart at the table",
+        "forget the game night",
+        "forget to level up",
+        "fudge the die rolls",
+        "produce zero XP",
+        "lose the dice",
+        "misplace the character sheet",
+        "miss their turn",
+        "secretly re-roll",
+        "spill the drinks",
+        "use a homebrew class"
+      ]
+    },
+    {
+      "name": "rpg positive action",
+      "explanation": "Actions for role-playing games.",
+      "entries": [
+        "bring snacks",
+        "buy equipment",
+        "check for traps",
+        "count the arrows",
+        "check their spells",
+        "heal up",
+        "learn their cantrips",
+        "level up",
+        "map",
+        "point buy",
+        "roll for initiative",
+        "select a figure",
+        "split the treasure",
+        "stock rations",
+        "track their hit points"
       ]
     },
     {
@@ -524,43 +631,14 @@
       "explanation": "Role-playing game critters.",
       "entries": [
         "bastard elf",
+        "blind cyclops",
         "female dwarf",
+        "gnome barbarian",
         "goblin",
+        "rear end of a centaur",
         "midget halfling",
         "half orc",
         "kobold"
-      ]
-    },
-    {
-      "name": "negative rpg action",
-      "explanation": "Actions for role-playing games.",
-      "entries": [
-        "bribe the GM",
-        "drop a level",
-        "fart at the table",
-        "forget the game night",
-        "forget to level up",
-        "fudge your die rolls",
-        "get zero XP",
-        "lose your dice",
-        "misplace your character sheet",
-        "miss your initiative",
-        "secretly re-roll",
-        "spill your drink",
-        "use homebrew"
-      ]
-    },
-    {
-      "name": "positive rpg action",
-      "explanation": "Actions for role-playing games.",
-      "entries": [
-        "count your arrows",
-        "bring snacks",
-        "hex crawl",
-        "level up",
-        "map",
-        "point buy",
-        "roll for initiative"
       ]
     },
     {
@@ -571,15 +649,31 @@
       "explanation": "RPG attributes prepended to the front of the result.",
       "entries": [
         "{attribute}",
-        "Did you already buy that supplement where",
+        "Did you buy a supplement where",
         "Even the lamest NPC knows that",
         "I don't need a rules lawyer to tell me that",
-        "In every game we have played,",
+        "In every game we play,",
         "In front of the GM screen",
-        "In this campaign",
+        "In your campaign",
         "It says straight in the rulebook that",
         "There should be a Kickstarter to celebrate how",
-        "Whatever the rule system,"
+        "Whatever the rules,",
+        "Why not set up a Patreon to prove how"
+      ]
+    },
+    {
+      "name": "rpg failed",
+      "explanation": "RPG expressions for 'lame'.",
+      "entries": [
+        "{failed}",
+        "1-rolling",
+        "always missing",
+        "botched",
+        "critical failure",
+        "fudged",
+        "fumbling",
+        "zero AC",
+        "zero effort"
       ]
     },
     {
@@ -589,6 +683,7 @@
         "{feature}",
         "Do you even know what game you are playing?",
         "There should be a feat for your level of fail",
+        "There's no saving throw for you",
         "This ain't a brony rpg, dude",
         "You think we are playing 4th edition?",
         "You roll 0 on a d20"
@@ -599,8 +694,20 @@
       "explanation": "The insult target described",
       "entries": [
         "you",
-        "you and your {failed} character",
-        "you and your {failed} dice"
+        "you and your {failed} {rpg companion}"
+      ]
+    },
+    {
+      "name": "rpg companion",
+      "explanation": "The target's aides.",
+      "entries": [
+        "campaign",
+        "character",
+        "dice",
+        "GM",
+        "gaming table",
+        "group",
+        "session"
       ]
     },
     {
@@ -708,9 +815,11 @@
       "entries": [
         "act",
         "are",
+        "behave",
         "look",
+        "perform",
         "smell",
-        "smell"
+        "sound"
       ]
     },
     {
@@ -744,11 +853,13 @@
     {
       "name": "like",
       "explanation": "Variable expressions for being.",
+      "format": "are -- you",
       "entries": [
         "even worse than",
         "just like",
         "like",
         "no better than",
+        "the same as",
         "worse than"
       ]
     },
@@ -765,13 +876,10 @@
       "name": "failed",
       "explanation": "Variant expressions for 'lame'.",
       "entries": [
-        "botched",
         "failed",
         "lame",
-        "pay to win",
         "poor",
-        "sorry",
-        "zero effort"
+        "sorry"
       ]
     },
     {
@@ -781,10 +889,22 @@
       "name": "special",
       "explanation": "Special tables.",
       "entries": [
+        "{adjective}",
         "{animal}",
         "{attribute}",
+        "{body part}",
+        "{excretion}",
         "{feature}",
-        "{relative}"
+        "{relative}",
+        "{you}"
+      ]
+    },
+    {
+      "name": "adjective",
+      "explanation": "Insulting adjectives.",
+      "entries": [
+        "butt-scratching",
+        "nose-picking"
       ]
     },
     {
@@ -792,11 +912,13 @@
       "explanation": "Insulting animals.",
       "entries": [
         "ape",
+        "bull",
         "cow",
         "donkey",
         "goat",
         "monkey",
         "mule",
+        "pig",
         "rat",
         "sheep",
         "walrus",
@@ -822,9 +944,28 @@
         "armpit",
         "bowel",
         "butt",
+        "buttock",
         "groin",
         "navel",
+        "nose hair",
+        "nostril",
         "toenail"
+      ]
+    },
+    {
+      "name": "excretion",
+      "explanation": "Bodily fluids and other offerings.",
+      "entries": [
+        "dandruff",
+        "diarrhea",
+        "earwax",
+        "fungus",
+        "lard",
+        "nail clipping",
+        "puke",
+        "snot",
+        "sweat",
+        "toejam"
       ]
     },
     {
