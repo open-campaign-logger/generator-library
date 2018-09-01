@@ -175,7 +175,7 @@
       "explanation": "Descriptors for randomized terms.",
       "entries": [
         "an asinine",
-        "a braindead",
+        "a brain dead",
         "a brainless",
         "a deformed",
         "a dumb",
@@ -193,7 +193,7 @@
         "a numb",
         "a palsied",
         "a paraplegic",
-        "a puked on",
+        "a puked-on",
         "a sore",
         "a stiff",
         "a sweaty",
@@ -298,7 +298,7 @@
         "and your {!relative} is {!like} you",
         "in a rut",
         "living in a latrine",
-        "married to a {!animal}",
+        "married to {!animal}",
         "without a clue"
       ]
     },
@@ -398,11 +398,11 @@
       "name": "rpg",
       "explanation": "Role-playing game related randomization methods.",
       "entries": [
-        "{|{rpg you} {are} {!like} {rpg random}|scase}!",
-        "{|{rpg you} {are} {!like} {rpg random}|scase}. {|{rpg feature}|scase}!",
-        "{|{rpg attribute} {rpg you} {are} {!like} {rpg random}|scase}!",
-        "{|{rpg you} {are} {!like} {rpg random}|scase}. {|{rpg feature}|scase}!",
-        "{|{rpg attribute} {rpg you} {are} {!like} {rpg random}|scase}. {|{rpg feature}|scase}!"
+        "{|{rpg you} {rpg are} {!like} {rpg random}|scase}!",
+        "{|{rpg you} {rpg are} {!like} {rpg random}|scase}. {|{rpg feature}|scase}!",
+        "{|{rpg attribute} {rpg you} {rpg are} {!like} {rpg random}|scase}!",
+        "{|{rpg you} {rpg are} {!like} {rpg random}|scase}. {|{rpg feature}|scase}!",
+        "{|{rpg attribute} {rpg you} {rpg are} {!like} {rpg random}|scase}. {|{rpg feature}|scase}!"
       ]
     },
     {
@@ -434,7 +434,6 @@
         "a forged",
         "a fumbled",
         "a leftover",
-        "a looted",
         "a pay-to-win",
         "a roll-fudging",
         "a zero level"
@@ -447,14 +446,24 @@
         "{beginning}",
         "{!rpg adjective}",
         "1st edition",
-        "previous edition",
-        "cheater's",
+        "alignment shifting",
+        "backstabbing",
+        "beer-swilling",
+        "Chaotic Neutral",
+        "d4 hit dice",
+        "dice thieving",
+        "drunk",
         "experimental rule with",
         "Forge-worshipping",
         "paywall",
         "playtest",
+        "previous edition",
         "retard's homebrew",
-        "rules-bending"
+        "rulebook-browsing",
+        "'rules as written'",
+        "rules-bending",
+        "weed-smoking",
+        "whiny"
       ]
     },
     {
@@ -483,14 +492,19 @@
         "{!idiot} house rule",
         "{!rpg adjective} {!rpg creature}",
         "{!rpg creature}'s {!body part}",
+        "{dice:1d10}-member Google+ group admin",
         "{ending}",
         "30-sided die",
-        "accidental grid wiper",
         "anime fan",
+        "assistant GM",
+        "battle map wiper",
         "beta test rule set",
         "board gamer",
         "cantrip caster",
         "CCG player",
+        "cheat sheet",
+        "clip art illustrator",
+        "collector of obscure RPGs",
         "copper piece loot",
         "crowdfunding project",
         "d4 dropped on the floor",
@@ -498,39 +512,63 @@
         "dice pool",
         "dice roller",
         "dice tower",
+        "disabled larper",
+        "Discord bot",
+        "DLC supporter",
+        "DriveThru peddler",
+        "eBay speculator",
         "empty character sheet",
         "empty dice bag",
-        "empty lair",
         "errata sheet",
-        "failure meme",
+        "Facebook group moderator",
         "feat abuser",
-        "forgotten campaign",
-        "forum activist",
+        "Fighting Fantasy nostalgic",
+        "campaign",
+        "forum zealot",
+        "funnel fodder",
+        "furry enthusiast",
         "gamebook player",
+        "gamejacker",
         "grognard in a terminal care",
-        "hex map",
+        "hacked dice rolling app",
+        "henchman hoarder",
+        "hipster gamer",
+        "crumpled hex map",
         "hexcrawler on a grid",
         "home-made GM shield",
         "illusory trap",
         "image board troll",
-        "impromptu rulings",
+        "impromptu ruling",
+        "incomplete deck",
         "indie publisher",
+        "IndieGoGo marketer",
+        "joke character",
+        "Kickstarter scam",
+        "kobold lair",
         "level 1 hoard",
-        "LFG failure",
+        "'Looking For Gamers' failure",
         "looted dungeon",
-        "lost map tile",
+        "map tile from a wrong set",
         "made-up rules",
-        "marching order",
+        "marked card",
         "meeple",
-        "mini",
+        "meme",
+        "metagamer",
+        "miniature hoarder",
+        "MtG antiquarian",
         "munchkin",
         "negative modifier",
         "NPC",
+        "OGL violator",
         "OSR blogger",
         "party splitter",
+        "overpriced 'Pay What You Want' product",
+        "PBM player",
+        "PDF pirate",
         "PDF-only ruleset",
-        "photocopied rulebook",
+        "photocopy rulebook",
         "plot thread",
+        "plothole seeker",
         "podcast promoter",
         "pointless encounter",
         "power gamer",
@@ -540,18 +578,31 @@
         "random quest giver",
         "randomly generated sandbox",
         "red box clone",
+        "Reddit karma slut",
         "rental GM",
-        "rule as written",
+        "reroller",
+        "RPG theoretician",
         "rules lawyer",
         "saving throw failure",
+        "session streamer",
         "social media spammer",
         "soda spiller",
         "solo gamer",
+        "'Spawn of Fashan' GM",
         "SRD rip-off",
+        "story derailer",
+        "Synnibarr homebrewer",
+        "THAC0 mathematician",
+        "third-grade character artist",
         "time waster",
         "tired GIF",
+        "Tumblr user",
+        "Twitch GM",
         "unwiped battle map",
-        "wargamer"
+        "video gamer",
+        "wargamer",
+        "West Marches scheduler",
+        "youtuber"
       ]
     },
     {
@@ -568,6 +619,7 @@
         "with misprinted stat blocks",
         "who cries the GM for help",
         "who failed to {rpg positive action}",
+        "who lost the dice",
         "who managed to {rpg negative action}"
       ]
     },
@@ -638,24 +690,39 @@
         "blind cyclops",
         "female dwarf",
         "gnome barbarian",
-        "goblin",
+        "rickety goblin",
         "rear end of a centaur",
         "midget halfling",
-        "half orc",
-        "kobold"
+        "the bottom half of a half orc",
+        "stunted kobold",
+        "schizophrenic ettin"
       ]
     },
     {
       "--------------------------------------------------": "RPG SPECIALS"
     },
     {
+      "name": "rpg are",
+      "explanation": "RPG expressions for 'are'.",
+      "entries": [
+        "{are}",
+        "cheat",
+        "create your characters",
+        "always lose",
+        "play",
+        "roleplay",
+        "roll"
+      ]
+    },
+    {
       "name": "rpg attribute",
       "explanation": "RPG attributes prepended to the front of the result.",
       "entries": [
         "{attribute}",
-        "Did you buy a supplement where",
+        "A quest giver NPC just told me that",
         "Even {lamest} NPC knows that",
         "I don't need a rules lawyer to tell me that",
+        "I'm putting together a supplement where",
         "In every game we play,",
         "In front of the GM screen",
         "In your campaign",
@@ -663,6 +730,19 @@
         "There should be a Kickstarter to celebrate how",
         "Whatever the rules,",
         "Why not set up a Patreon to prove how"
+      ]
+    },
+    {
+      "name": "rpg companion",
+      "explanation": "The target's aides.",
+      "entries": [
+        "campaign",
+        "character",
+        "dice",
+        "GM",
+        "household",
+        "group",
+        "session"
       ]
     },
     {
@@ -674,8 +754,9 @@
         "always missing",
         "botched",
         "critical failure",
-        "fudged",
         "fumbling",
+        "house-ruled",
+        "low-stat",
         "zero AC",
         "zero effort"
       ]
@@ -689,9 +770,19 @@
         "There should be a feat for your level of fail",
         "There's no saving throw for you",
         "This ain't a brony rpg, dude",
+        "Try to keep your dice on the table, {idiot}",
+        "Try to stay awake at least on your on turn",
         "You are {rpg lamest} gamer ever",
+        "You are the world's least popular roleplaying gamer",
+        "You make Leeroy Jenkins look good",
+        "You should stick to storytelling games",
         "You think we are playing 4th edition?",
-        "You roll 0 on a d20"
+        "You thought the d100 was cool",
+        "You roll 0 on a d20",
+        "You should be forbidden in the house rules",
+        "Your character's fake accent makes me gringe",
+        "Your picture needs to be in the monster manual",
+        "Your snacks suck"
       ]
     },
     {
@@ -700,9 +791,9 @@
       "entries": [
         "{lamest}",
         "the most nerfed",
+        "the worst zero level",
         "the worst rolled",
-        "the worst typoed",
-        "the original zero level"
+        "the worst typoed"
       ]
     },
     {
@@ -710,20 +801,7 @@
       "explanation": "The insult target described",
       "entries": [
         "you",
-        "you and your {failed} {rpg companion}"
-      ]
-    },
-    {
-      "name": "rpg companion",
-      "explanation": "The target's aides.",
-      "entries": [
-        "campaign",
-        "character",
-        "dice",
-        "GM",
-        "gaming table",
-        "group",
-        "session"
+        "you and your {rpg failed} {rpg companion}"
       ]
     },
     {
@@ -833,7 +911,6 @@
         "are",
         "behave",
         "look",
-        "perform",
         "smell",
         "sound"
       ]
@@ -875,7 +952,6 @@
         "just like",
         "like",
         "no better than",
-        "the same as",
         "worse than"
       ]
     },
@@ -985,15 +1061,19 @@
       "name": "excretion",
       "explanation": "Bodily fluids and other offerings.",
       "entries": [
+        "blubber",
         "dandruff",
         "diarrhea",
         "earwax",
-        "fungus",
+        "fat",
+        "flab",
         "lard",
         "nail clipping",
         "puke",
+        "smegma",
         "snot",
         "sweat",
+        "tallow",
         "toejam"
       ]
     },
@@ -1002,6 +1082,7 @@
       "explanation": "Features appended to the end of the result.",
       "format": "It seems to be --",
       "entries": [
+        "Ask your legal guardian to explain what that means",
         "Need I repeat that - slowly?"
       ]
     },
@@ -1011,6 +1092,8 @@
       "entries": [
         "family",
         "father",
+        "household",
+        "legal guardian",
         "mother",
         "sister"
       ]
