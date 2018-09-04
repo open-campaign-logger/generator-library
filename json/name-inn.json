@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-09-03",
+  "date": "2018-09-04",
   "authors": "ELF Vesala",
   "sources": "",
   "attribution": {
@@ -136,6 +136,7 @@
         "{animal and occupation}",
         "{aspect animal}",
         "{aspect occupation}",
+        "{aspect occupation and item}",
         "{color} {animal}",
         "{gerund animal}",
         "{gerund occupation}",
@@ -184,6 +185,13 @@
       "explanation": "",
       "entries": [
         "{aspect} {occupation}"
+      ]
+    },
+    {
+      "name": "aspect occupation and item",
+      "explanation": "",
+      "entries": [
+        "{aspect} {occupation} {and} {item}"
       ]
     },
     {
@@ -294,25 +302,65 @@
       "name": "animal",
       "explanation": "",
       "entries": [
+        "badger",
+        "bear",
+        "bee",
         "bird",
+        "boar",
         "bull",
+        "cow",
+        "crow",
+        "doe",
+        "dog",
+        "dove",
+        "duck",
+        "eagle",
+        "falcon",
+        "flea",
+        "fly",
         "fox",
+        "frog",
+        "goat",
         "greyhound",
         "hare",
         "hart",
+        "heron",
         "horse",
         "hound",
+        "lamb",
         "lion",
+        "mouse",
+        "mule",
         "nag",
-        "swan"
+        "owl",
+        "pike",
+        "rabbit",
+        "rat",
+        "raven",
+        "swan",
+        "swine",
+        "toad",
+        "viper"
       ]
     },
     {
       "name": "aspect",
       "explanation": "",
       "entries": [
+        "drunken",
+        "grateful",
+        "greedy",
+        "humble",
+        "hungry",
+        "jolly",
+        "lost",
+        "old",
+        "one-eyed",
+        "rampant",
         "royal",
-        "thirsty"
+        "stingy",
+        "thirsty",
+        "weary"
       ]
     },
     {
@@ -321,9 +369,11 @@
       "entries": [
         "black",
         "blue",
+        "crimson",
         "golden",
         "green",
         "red",
+        "silver",
         "white"
       ]
     },
@@ -331,8 +381,13 @@
       "name": "gerund",
       "explanation": "",
       "entries": [
+        "dancing",
         "drinking",
-        "singing"
+        "laughing",
+        "riding",
+        "singing",
+        "smiling",
+        "whispering"
       ]
     },
     {
@@ -340,12 +395,29 @@
       "explanation": "",
       "entries": [
         "anchor",
+        "barrel",
         "bell",
+        "boot",
+        "chalice",
         "carriage",
         "coach",
+        "coin",
         "crown",
+        "cup",
+        "dagger",
+        "flag",
+        "flask",
+        "goblet",
+        "harp",
         "head",
         "horseshoe",
+        "keg",
+        "lantern",
+        "mug",
+        "pearl",
+        "ring",
+        "scythe",
+        "shield",
         "ship",
         "staff",
         "tankard",
@@ -356,13 +428,20 @@
       "name": "items",
       "explanation": "",
       "entries": [
+        "antlers",
         "arms",
         "bells",
+        "boots",
+        "bottle",
+        "candle",
         "carriages",
         "coaches",
         "crowns",
         "dice",
+        "grapes",
+        "hammer",
         "horseshoes",
+        "kettle",
         "keys",
         "ships",
         "staves",
@@ -375,6 +454,11 @@
       "explanation": "",
       "entries": [
         "beehive",
+        "bridge",
+        "castle",
+        "cave",
+        "lair",
+        "mill",
         "plough",
         "windmill"
       ]
@@ -392,19 +476,42 @@
       "name": "occupation",
       "explanation": "",
       "entries": [
+        "abbott",
+        "barber",
+        "beggar",
         "Bishop",
+        "brewer",
         "butcher",
         "carpenter",
+        "chandler",
+        "chef",
+        "cowherd",
+        "Duchess",
         "Duke",
+        "falconer",
+        "fishmonger",
+        "goldsmith",
         "groom",
+        "hermit",
+        "jester",
+        "jeweler",
+        "jongleur",
         "King",
         "knight",
+        "lady",
+        "locksmith",
+        "lord",
+        "maiden",
         "mason",
         "monk",
         "Prince",
         "Queen",
         "sailor",
-        "traveller"
+        "shoemaker",
+        "swineherd",
+        "traveller",
+        "weaver",
+        "woodcarver"
       ]
     },
     {
@@ -510,7 +617,20 @@
       "entries": [
         "{myth}",
         "{medieval}",
-        "The {monster}"
+        "The {monster}",
+        "The {fantasy occupation}",
+        "The {fantasy occupation} and the {monster}"
+      ]
+    },
+    {
+      "name": "fantasy occupation",
+      "explanation": "",
+      "entries": [
+        "alchemist",
+        "mystic",
+        "rogue",
+        "warrior",
+        "wizard"
       ]
     },
     {
@@ -519,7 +639,11 @@
       "entries": [
         "dragon",
         "goblin",
-        "troll"
+        "griffin",
+        "pixie",
+        "swan maiden",
+        "troll",
+        "unicorn"
       ]
     },
     {
@@ -600,7 +724,13 @@
       "explanation": "Variant expressions for generator subject matter.",
       "entries": [
         "alehouse",
+        "hall",
+        "haven",
+        "hideaway",
+        "house",
         "inn",
+        "lodge",
+        "room",
         "tavern",
         "pub",
         "public house"
