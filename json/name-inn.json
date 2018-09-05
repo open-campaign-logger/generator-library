@@ -14,9 +14,9 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-09-04",
+  "date": "2018-09-05",
   "authors": "ELF Vesala",
-  "sources": "",
+  "sources": "PubsGalore.co.uk, Wikipedia.org",
   "attribution": {
     "creators": "",
     "copyright": "",
@@ -78,7 +78,7 @@
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "That {inn} {synonym} {looks} {feature}.",
+        "That '{inn}' {synonym} {looks} {feature}.",
         "The {attribute} '{inn}' {synonym} is known for its {feature}."
       ]
     },
@@ -98,9 +98,9 @@
       "entries": [
         {
           "m": 10,
-          "v": "{|{common}|tcase}"
+          "v": "{|{common}|scase}"
         },
-        "{|{rare}|tcase}"
+        "{|{rare}|scase}"
       ]
     },
     {
@@ -114,7 +114,7 @@
       "name": "rare",
       "explanation": "Unusual types.",
       "entries": [
-        "{common} {synonym}"
+        "{any} {synonym}"
       ]
     },
     {
@@ -134,20 +134,27 @@
         "{animal and animal}",
         "{animal and item}",
         "{animal and occupation}",
+        "{animal and plant}",
+        "{animals event}",
         "{aspect animal}",
         "{aspect occupation}",
-        "{aspect occupation and item}",
         "{color} {animal}",
         "{gerund animal}",
         "{gerund occupation}",
         "{item and item}",
         "{number items}",
-        "{occupations action}",
+        "{occupation and item}",
+        "{occupation and occupation}",
+        "{occupations bodypart}",
+        "{occupations event}",
         "{occupations item}",
+        "{occupations location}",
+        "{plant and item}",
         "{the animal}",
+        "{the event}",
         "{the item}",
-        "{the items}",
         "{the location}",
+        "{the occupation}",
         "{the plant}",
         "{the sky}"
       ]
@@ -156,27 +163,49 @@
       "name": "animal and animal",
       "explanation": "'The Fox and the Hound' style names.",
       "entries": [
-        "The {!animal} and the {!animal}"
+        "{!animal} and {!animal}",
+        "The {!animal} {and} the {!animal}"
       ]
     },
     {
       "name": "animal and item",
       "explanation": "'The Hound and the Whistle' style names.",
       "entries": [
-        "The {animal} and the {item}"
+        "The {animal} {and} the {item}",
+        "The {animal} {and} the {items}",
+        "The {item} and the {animal}",
+        "The {items} and the {animal}"
       ]
     },
     {
       "name": "animal and occupation",
       "explanation": "'The Hound and the Groom' style names.",
       "entries": [
-        "{animal} and {occupation}"
+        "The {animal} {and} the {occupation}",
+        "The {occupation} {and} the {animal}"
+      ]
+    },
+    {
+      "name": "animal and plant",
+      "explanation": "",
+      "entries": [
+        "The {animal} {and} the {plant}",
+        "The {plant} {and} the {animal}"
+      ]
+    },
+    {
+      "name": "animals event",
+      "explanation": "",
+      "entries": [
+        "{animal}'s {event}",
+        "The {animal}'s {event}"
       ]
     },
     {
       "name": "aspect animal",
       "explanation": "",
       "entries": [
+        "{aspect} {animal}",
         "The {aspect} {animal}"
       ]
     },
@@ -184,14 +213,8 @@
       "name": "aspect occupation",
       "explanation": "",
       "entries": [
-        "{aspect} {occupation}"
-      ]
-    },
-    {
-      "name": "aspect occupation and item",
-      "explanation": "",
-      "entries": [
-        "{aspect} {occupation} {and} {item}"
+        "{aspect} {occupation}",
+        "The {aspect} {occupation}"
       ]
     },
     {
@@ -199,42 +222,73 @@
       "explanation": "'Red Lion' style names.",
       "entries": [
         "{color} {animal}",
-        "the {color} {animal}"
+        "The {color} {animal}"
       ]
     },
     {
       "name": "gerund animal",
       "explanation": "",
       "entries": [
-        "{gerund} {animal}"
+        "{gerund} {animal}",
+        "The {gerund} {animal}"
       ]
     },
     {
       "name": "gerund occupation",
       "explanation": "",
       "entries": [
-        "{gerund} {occupation}"
+        "{gerund} {occupation}",
+        "The {gerund} {occupation}"
       ]
     },
     {
       "name": "item and item",
       "explanation": "",
       "entries": [
-        "{!item} {and} {!item}"
+        "{!item} {and} {!item}",
+        "The {!item} {and} the {!item}",
+        "{items} {and} {item}",
+        "{!items} {and} {!items}",
+        "The {items} {and} the {item}",
+        "The {!items} {and} the {!items}"
       ]
     },
     {
       "name": "number items",
       "explanation": "",
       "entries": [
-        "{number} {items}"
+        "{number} {items}",
+        "The {number} {items}"
       ]
     },
     {
-      "name": "occupations action",
+      "name": "occupation and item",
       "explanation": "",
       "entries": [
-        "{occupation}'s {action}"
+        "The {occupation} {and} the {item}",
+        "The {occupation} {and} the {items}",
+        "The {item} and the {occupation}",
+        "The {items} and the {occupation}",
+        "The {aspect} {occupation} {and} the {item}",
+        "The {aspect} {occupation} {and} the {items}",
+        "The {item} and the {aspect} {occupation}",
+        "The {items} and the {aspect} {occupation}"
+      ]
+    },
+    {
+      "name": "occupation and occupation",
+      "explanation": "",
+      "entries": [
+        "The {!occupation} {and} the {!occupation}",
+        "The {!occupation} {and} the {!aspect} {!occupation}"
+      ]
+    },
+    {
+      "name": "occupations event",
+      "explanation": "",
+      "entries": [
+        "{occupation}'s {event}",
+        "The {occupation}'s {event}"
       ]
     },
     {
@@ -242,27 +296,55 @@
       "explanation": "",
       "entries": [
         "{occupation}'s {item}",
-        "{occupation}'s {items}"
+        "The {occupation}'s {item}",
+        "{occupation}'s {items}",
+        "The {occupation}'s {items}"
+      ]
+    },
+    {
+      "name": "occupations bodypart",
+      "explanation": "",
+      "entries": [
+        "{occupation}'s {bodypart}",
+        "The {occupation}'s {bodypart}"
+      ]
+    },
+    {
+      "name": "occupations location",
+      "explanation": "",
+      "entries": [
+        "{occupation}'s {location}",
+        "The {occupation}'s {location}"
+      ]
+    },
+    {
+      "name": "plant and item",
+      "explanation": "",
+      "entries": [
+        "The {plant} {and} the {item}",
+        "The {plant} {and} the {items}"
       ]
     },
     {
       "name": "the animal",
       "explanation": "",
       "entries": [
+        "{animal}",
         "The {animal}"
+      ]
+    },
+    {
+      "name": "the event",
+      "explanation": "",
+      "entries": [
+        "The {event}"
       ]
     },
     {
       "name": "the item",
       "explanation": "",
       "entries": [
-        "The {item}"
-      ]
-    },
-    {
-      "name": "the items",
-      "explanation": "",
-      "entries": [
+        "The {item}",
         "The {items}"
       ]
     },
@@ -271,6 +353,13 @@
       "explanation": "",
       "entries": [
         "The {location}"
+      ]
+    },
+    {
+      "name": "the occupation",
+      "explanation": "",
+      "entries": [
+        "The {occupation}"
       ]
     },
     {
@@ -291,25 +380,22 @@
       "**************************************************": "DETAILS"
     },
     {
-      "name": "action",
-      "explanation": "",
-      "entries": [
-        "meal",
-        "rest"
-      ]
-    },
-    {
       "name": "animal",
       "explanation": "",
       "entries": [
+        "{lib:animal#land mammal}",
+        "{lib:animal#flying bird}",
         "badger",
         "bear",
         "bee",
         "bird",
         "boar",
         "bull",
+        "butterfly",
+        "cat",
         "cow",
         "crow",
+        "deer",
         "doe",
         "dog",
         "dove",
@@ -321,6 +407,7 @@
         "fox",
         "frog",
         "goat",
+        "goose",
         "greyhound",
         "hare",
         "hart",
@@ -329,6 +416,7 @@
         "hound",
         "lamb",
         "lion",
+        "mare",
         "mouse",
         "mule",
         "nag",
@@ -337,6 +425,8 @@
         "rabbit",
         "rat",
         "raven",
+        "stag",
+        "stallion",
         "swan",
         "swine",
         "toad",
@@ -347,20 +437,43 @@
       "name": "aspect",
       "explanation": "",
       "entries": [
+        "angry",
+        "blind",
+        "curious",
+        "dirty",
         "drunken",
         "grateful",
         "greedy",
+        "happy",
+        "horned",
         "humble",
         "hungry",
         "jolly",
         "lost",
         "old",
         "one-eyed",
+        "quiet",
         "rampant",
         "royal",
         "stingy",
         "thirsty",
+        "tired",
         "weary"
+      ]
+    },
+    {
+      "name": "bodypart",
+      "explanation": "Body parts.",
+      "entries": [
+        "arm",
+        "bones",
+        "eye",
+        "finger",
+        "foot",
+        "hand",
+        "head",
+        "leg",
+        "skull"
       ]
     },
     {
@@ -369,12 +482,31 @@
       "entries": [
         "black",
         "blue",
+        "brown",
         "crimson",
+        "dun",
         "golden",
         "green",
+        "grey",
+        "pale",
         "red",
         "silver",
         "white"
+      ]
+    },
+    {
+      "name": "event",
+      "explanation": "",
+      "entries": [
+        "end",
+        "feast",
+        "festival",
+        "hanging",
+        "hope",
+        "meal",
+        "rest",
+        "trip",
+        "wedding"
       ]
     },
     {
@@ -383,10 +515,13 @@
       "entries": [
         "dancing",
         "drinking",
+        "eating",
         "laughing",
         "riding",
+        "running",
         "singing",
         "smiling",
+        "walking",
         "whispering"
       ]
     },
@@ -395,11 +530,12 @@
       "explanation": "",
       "entries": [
         "anchor",
+        "arrow",
         "barrel",
         "bell",
         "boot",
-        "chalice",
         "carriage",
+        "chalice",
         "coach",
         "coin",
         "crown",
@@ -408,17 +544,23 @@
         "flag",
         "flask",
         "goblet",
+        "hammer",
         "harp",
-        "head",
+        "harrow",
+        "hatchet",
         "horseshoe",
         "keg",
+        "kettle",
         "lantern",
+        "mallet",
         "mug",
         "pearl",
+        "plough",
         "ring",
         "scythe",
         "shield",
         "ship",
+        "shovel",
         "staff",
         "tankard",
         "whistle"
@@ -428,21 +570,37 @@
       "name": "items",
       "explanation": "",
       "entries": [
+        "anchors",
         "antlers",
         "arms",
+        "arrows",
+        "barrels",
         "bells",
         "boots",
         "bottle",
         "candle",
+        "cards",
         "carriages",
-        "coaches",
+        "chalices",
+        "coins",
+        "cups",
         "crowns",
+        "daggers",
         "dice",
-        "grapes",
-        "hammer",
+        "flasks",
+        "goblets",
+        "hammers",
+        "harps",
         "horseshoes",
-        "kettle",
+        "kegs",
         "keys",
+        "lanterns",
+        "mugs",
+        "nails",
+        "pearls",
+        "rings",
+        "scythes",
+        "shields",
         "ships",
         "staves",
         "tankards",
@@ -453,14 +611,30 @@
       "name": "location",
       "explanation": "",
       "entries": [
+        "abbey",
         "beehive",
         "bridge",
+        "cottage",
+        "hermitage",
         "castle",
         "cave",
+        "corner",
+        "fountain",
+        "gardens",
+        "gate",
+        "hovel",
+        "hut",
         "lair",
+        "manor",
         "mill",
-        "plough",
-        "windmill"
+        "priory",
+        "reach",
+        "shop",
+        "stable",
+        "vaults",
+        "wall",
+        "windmill",
+        "wood"
       ]
     },
     {
@@ -469,30 +643,53 @@
       "entries": [
         "two",
         "three",
-        "four"
+        "four",
+        "five",
+        "six",
+        "seven"
       ]
     },
     {
       "name": "occupation",
       "explanation": "",
       "entries": [
+        "{lib:occupation#poor}",
+        "{lib:occupation#lower class}",
+        "{lib:occupation#middle class}",
+        "{lib:occupation#upper class}",
+        "{lib:occupation#nobility}",
         "abbott",
+        "angel",
+        "archer",
+        "baker",
         "barber",
         "beggar",
         "Bishop",
+        "blacksmith",
         "brewer",
+        "bricklayer",
+        "builder",
         "butcher",
         "carpenter",
         "chandler",
         "chef",
+        "child",
         "cowherd",
+        "devil",
         "Duchess",
         "Duke",
         "falconer",
+        "farmer",
+        "farrier",
+        "fisherman",
         "fishmonger",
+        "foundryman",
         "goldsmith",
         "groom",
+        "hangman",
         "hermit",
+        "highwayman",
+        "hunter",
         "jester",
         "jeweler",
         "jongleur",
@@ -502,32 +699,53 @@
         "locksmith",
         "lord",
         "maiden",
+        "man",
         "mason",
+        "merchant",
         "monk",
         "Prince",
         "Queen",
         "sailor",
+        "scholar",
+        "shepherd",
         "shoemaker",
+        "smuggler",
+        "soldier",
         "swineherd",
+        "thief",
         "traveller",
+        "villain",
         "weaver",
-        "woodcarver"
+        "watchman",
+        "wheelwright",
+        "wife",
+        "witch",
+        "woodcarver",
+        "woodman"
       ]
     },
     {
       "name": "plant",
       "explanation": "",
       "entries": [
-        "elm",
-        "oak",
-        "rose"
+        "{lib:plant#flower}",
+        "{lib:plant#tree}",
+        "barleycorn",
+        "bush",
+        "fern",
+        "flower",
+        "grapes",
+        "hop",
+        "ivy",
+        "malt",
+        "thistle",
+        "toadstool"
       ]
     },
     {
       "name": "sky",
       "explanation": "",
       "entries": [
-        "angel",
         "moon",
         "star",
         "sun"
@@ -566,7 +784,13 @@
       "name": "descriptor",
       "explanation": "Descriptors for randomized terms.",
       "entries": [
-        ""
+        "grand",
+        "great",
+        "new",
+        "East",
+        "North",
+        "South",
+        "West"
       ]
     },
     {
@@ -640,6 +864,8 @@
         "dragon",
         "goblin",
         "griffin",
+        "mermaid",
+        "phoenix",
         "pixie",
         "swan maiden",
         "troll",
@@ -693,7 +919,14 @@
       "name": "modern",
       "explanation": "Descriptions for modern worlds.",
       "entries": [
-        "{common}"
+        "{common}",
+        "commercial",
+        "cricketers",
+        "dolphin",
+        "globe",
+        "railway",
+        "station",
+        "union"
       ]
     },
     {
@@ -724,13 +957,29 @@
       "explanation": "Variant expressions for generator subject matter.",
       "entries": [
         "alehouse",
+        "brewhouse",
+        "burrow",
+        "club",
+        "den",
+        "drinkery",
         "hall",
         "haven",
         "hideaway",
         "house",
         "inn",
+        "kitchen",
+        "lair",
+        "lobby",
         "lodge",
+        "lodging",
+        "parlor",
+        "refuge",
+        "retreat",
         "room",
+        "salon",
+        "sanctuary",
+        "shelter",
+        "suite",
         "tavern",
         "pub",
         "public house"
@@ -741,6 +990,9 @@
       "explanation": "Variant expressions for '&'.",
       "entries": [
         "and",
+        "and",
+        "and",
+        "by",
         "with"
       ]
     },
