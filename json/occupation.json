@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "business, district, shop",
-  "date": "2018-08-24",
+  "date": "2018-09-05",
   "authors": "ELF Vesala.",
   "sources": "CastlesAndManorHouses.com, MedievalScotland.org, Ranker.com, Svincent.com",
   "genre": "universal",
@@ -38,8 +38,16 @@
       "name": "result",
       "explanation": "Verbosity of the resultPattern output.",
       "entries": [
+        "{word}",
         "{summary}",
         "{detail}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{occupation}"
       ]
     },
     {
