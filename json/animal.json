@@ -17,7 +17,7 @@
   "bugs": "Different regions (tropical, polar, etc.)",
   "to do": "Expand the content.",
   "see": "activity, citizen, encounter, monster, nonhuman, plant",
-  "date": "2018-06-01",
+  "date": "2018-09-05",
   "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -44,10 +44,16 @@
       "name": "result",
       "explanation": "The output format.",
       "entries": [
+        "{word}",
         "{summary}",
-        "{detail}",
-        "{description}",
-        "{stats}"
+        "{detail}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{animal}"
       ]
     },
     {
@@ -111,7 +117,133 @@
       ]
     },
     {
-      "**************************************************": "ANIMALS"
+      "**************************************************": "RANGES"
+    },
+    {
+      "name": "any",
+      "explanation": "Any range.",
+      "entries": [
+        "{coast}",
+        "{desert}",
+        "{domestic}",
+        "{extinct}",
+        "{flightless bird}",
+        "{flying}",
+        "{land}",
+        "{pet}",
+        "{predator}",
+        "{urban}",
+        "{water}"
+      ]
+    },
+    {
+      "name": "coast",
+      "explanation": "Animals living by water.",
+      "entries": [
+        "{crustacean}",
+        "{amphibian}",
+        "{coast mammal}"
+      ]
+    },
+    {
+      "name": "desert",
+      "explanation": "Desert animals.",
+      "entries": [
+        "lizard",
+        "snake",
+        "camel"
+      ]
+    },
+    {
+      "name": "domestic",
+      "explanation": "Animals living with people.",
+      "entries": [
+        "{domestic bird}",
+        "{domestic mammal}"
+      ]
+    },
+    {
+      "name": "extinct",
+      "explanation": "Extinct animals.",
+      "entries": [
+        "dinosaur",
+        "mammoth"
+      ]
+    },
+    {
+      "name": "flightless bird",
+      "explanation": "Birds incapable of flight.",
+      "entries": [
+        "kiwi",
+        "emu",
+        "ostrich"
+      ]
+    },
+    {
+      "name": "flying",
+      "explanation": "Flying animals.",
+      "entries": [
+        "{flying insect}",
+        "{flying bird}",
+        "{bat}"
+      ]
+    },
+    {
+      "name": "land",
+      "explanation": "Land animals.",
+      "entries": [
+        "{crawling insect}",
+        "{land mollusc}",
+        "{arachnid}",
+        "{reptile}",
+        "{bird}",
+        "{land mammal}"
+      ]
+    },
+    {
+      "name": "pet",
+      "explanation": "Animals kept as pets.",
+      "entries": [
+        "{pet insect}",
+        "{pet arachnid}",
+        "{pet amphibian}",
+        "{pet reptile}",
+        "{pet bird}",
+        "{pet mammal}"
+      ]
+    },
+    {
+      "name": "predator",
+      "explanation": "Predatory animal",
+      "entries": [
+        "{predatory reptile}",
+        "{predatory bird}",
+        "{predatory mammal}"
+      ]
+    },
+    {
+      "name": "urban",
+      "explanation": "Animals living in cities and towns.",
+      "entries": [
+        "{urban mammal}"
+      ]
+    },
+    {
+      "name": "water",
+      "explanation": "Water animals.",
+      "entries": [
+        "{coral}",
+        "{echinoderm}",
+        "jellyfish",
+        "{water mollusc}",
+        "{crustacean}",
+        "{fish}",
+        "{amphibian}",
+        "{whale}"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
     },
     {
       "--------------------------------------------------": "INVERTEBRATEA"
@@ -497,7 +629,7 @@
         "cormorant",
         "stork",
         "heron",
-        "peregrine falcon",
+        "peregrine",
         "osprey",
         "sea eagle"
       ]
@@ -840,17 +972,7 @@
       "explanation": "Special animal types.",
       "entries": [
         "{attribute}",
-        "{feature}",
-        "{extinct}",
-        "{pet}",
-        "{domestic}",
-        "{urban}",
-        "{land}",
-        "{desert}",
-        "{coast}",
-        "{water}",
-        "{flying}",
-        "{flightless bird}"
+        "{feature}"
       ]
     },
     {
@@ -865,40 +987,6 @@
       ]
     },
     {
-      "name": "coast",
-      "explanation": "Animals living by water.",
-      "entries": [
-        "{crustacean}",
-        "{amphibian}",
-        "{coast mammal}"
-      ]
-    },
-    {
-      "name": "desert",
-      "explanation": "Desert animals.",
-      "entries": [
-        "lizard",
-        "snake",
-        "camel"
-      ]
-    },
-    {
-      "name": "domestic",
-      "explanation": "Animals living with people.",
-      "entries": [
-        "{domestic bird}",
-        "{domestic mammal}"
-      ]
-    },
-    {
-      "name": "extinct",
-      "explanation": "Extinct animals.",
-      "entries": [
-        "dinosaur",
-        "mammoth"
-      ]
-    },
-    {
       "name": "feature",
       "explanation": "Features appended to the end of the result.",
       "format": "It seems to be --",
@@ -907,78 +995,6 @@
         "trying to find something to eat",
         "looking for a good location",
         "observing its environs"
-      ]
-    },
-    {
-      "name": "flightless bird",
-      "explanation": "Birds incapable of flight.",
-      "entries": [
-        "kiwi",
-        "emu",
-        "ostrich"
-      ]
-    },
-    {
-      "name": "flying",
-      "explanation": "Flying animals.",
-      "entries": [
-        "{flying insect}",
-        "{flying bird}",
-        "{bat}"
-      ]
-    },
-    {
-      "name": "land",
-      "explanation": "Land animals.",
-      "entries": [
-        "{crawling insect}",
-        "{land mollusc}",
-        "{arachnid}",
-        "{reptile}",
-        "{bird}",
-        "{land mammal}"
-      ]
-    },
-    {
-      "name": "pet",
-      "explanation": "Animals kept as pets.",
-      "entries": [
-        "{pet insect}",
-        "{pet arachnid}",
-        "{pet amphibian}",
-        "{pet reptile}",
-        "{pet bird}",
-        "{pet mammal}"
-      ]
-    },
-    {
-      "name": "predator",
-      "explanation": "Predatory animal",
-      "entries": [
-        "{predatory reptile}",
-        "{predatory bird}",
-        "{predatory mammal}"
-      ]
-    },
-    {
-      "name": "urban",
-      "explanation": "Animals living in cities and towns.",
-      "entries": [
-        "{urban mammal}"
-      ]
-    },
-    {
-      "name": "water",
-      "explanation": "Water animals.",
-      "entries": [
-        "{coral}",
-        "{echinoderm}",
-        "jellyfish",
-        "{water mollusc}",
-        "{crustacean}",
-        "{fish}",
-        "{amphibian}",
-        "{whale}"
       ]
     },
     {
