@@ -14,15 +14,15 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-09-05",
+  "date": "2018-09-06",
   "authors": "ELF Vesala",
-  "sources": "PubsGalore.co.uk, Wikipedia.org",
+  "sources": "Morningadvertiser.co.uk, PubsGalore.co.uk, Wikipedia.org",
   "attribution": {
     "creators": "",
     "copyright": "",
     "licence": "https://",
     "disclaimer": "https://",
-    "source": "Morningadvertiser.co.uk, Wikipedia.org",
+    "source": "",
     "changes": "Translation into Campaign Logger generator format."
   },
   "genre": "",
@@ -114,7 +114,18 @@
       "name": "rare",
       "explanation": "Unusual types.",
       "entries": [
-        "{any} {synonym}"
+        "{occupation}'s {synonym}",
+        "The {occupation} {synonym}",
+        "The {aspect} {occupation} {synonym}",
+        "The {animal} {synonym}",
+        "The {aspect} {animal} {synonym}",
+        "The {color} {animal} {synonym}",
+        "The {gerund} {animal} {synonym}",
+        "The {event} {synonym}",
+        "The {item} {synonym}",
+        "The {location} {synonym}",
+        "The {plant} {synonym}",
+        "The {sky} {synonym}"
       ]
     },
     {
@@ -135,6 +146,7 @@
         "{animal and item}",
         "{animal and occupation}",
         "{animal and plant}",
+        "{animal by location}",
         "{animals event}",
         "{aspect animal}",
         "{aspect occupation}",
@@ -145,6 +157,7 @@
         "{number items}",
         "{occupation and item}",
         "{occupation and occupation}",
+        "{occupation by location}",
         "{occupations bodypart}",
         "{occupations event}",
         "{occupations item}",
@@ -191,6 +204,14 @@
       "entries": [
         "The {animal} {and} the {plant}",
         "The {plant} {and} the {animal}"
+      ]
+    },
+    {
+      "name": "animal by location",
+      "explanation": "",
+      "entries": [
+        "{animal} by the {location}",
+        "The {animal} by the {location}"
       ]
     },
     {
@@ -281,6 +302,14 @@
       "entries": [
         "The {!occupation} {and} the {!occupation}",
         "The {!occupation} {and} the {!aspect} {!occupation}"
+      ]
+    },
+    {
+      "name": "occupation by location",
+      "explanation": "",
+      "entries": [
+        "{occupation} by the {location}",
+        "The {occupation} by the {location}"
       ]
     },
     {
@@ -495,19 +524,94 @@
       ]
     },
     {
+      "--------------------------------------------------": "EVENT"
+    },
+    {
       "name": "event",
       "explanation": "",
       "entries": [
+        "{drinking}",
+        "{eating}",
+        "{resting}",
+        "{sleeping}",
+        "{traveling}",
         "end",
-        "feast",
+        "fancy",
         "festival",
         "hanging",
         "hope",
-        "meal",
-        "rest",
-        "trip",
+        "reverie",
         "wedding"
       ]
+    },
+    {
+      "name": "drinking",
+      "explanation": "",
+      "entries": [
+        "drink",
+        "gulp",
+        "guzzle",
+        "quaff",
+        "sip",
+        "sup",
+        "swig",
+        "toast"
+      ]
+    },
+    {
+      "name": "eating",
+      "explanation": "",
+      "entries": [
+        "banquet",
+        "feast",
+        "fete",
+        "fodder",
+        "grub",
+        "luncheon",
+        "meal",
+        "potluck",
+        "supper",
+        "treat"
+      ]
+    },
+    {
+      "name": "resting",
+      "explanation": "",
+      "entries": [
+        "comfort",
+        "leisure",
+        "perch",
+        "relief",
+        "respite",
+        "rest"
+      ]
+    },
+    {
+      "name": "sleeping",
+      "explanation": "",
+      "entries": [
+        "doze",
+        "dream",
+        "drowse",
+        "nap",
+        "nod",
+        "sleep",
+        "slumber",
+        "snooze"
+      ]
+    },
+    {
+      "name": "traveling",
+      "explanation": "",
+      "entries": [
+        "jaunt",
+        "ramble",
+        "stroll",
+        "trip"
+      ]
+    },
+    {
+      "--------------------------------------------------": ""
     },
     {
       "name": "gerund",
@@ -526,34 +630,32 @@
       ]
     },
     {
+      "--------------------------------------------------": "ITEMS"
+    },
+    {
       "name": "item",
       "explanation": "",
       "entries": [
+        "{vessel}",
         "anchor",
         "arrow",
-        "barrel",
         "bell",
         "boot",
+        "candle",
         "carriage",
-        "chalice",
         "coach",
         "coin",
         "crown",
-        "cup",
         "dagger",
         "flag",
-        "flask",
-        "goblet",
         "hammer",
         "harp",
         "harrow",
         "hatchet",
         "horseshoe",
-        "keg",
         "kettle",
         "lantern",
         "mallet",
-        "mug",
         "pearl",
         "plough",
         "ring",
@@ -562,8 +664,33 @@
         "ship",
         "shovel",
         "staff",
-        "tankard",
         "whistle"
+      ]
+    },
+    {
+      "name": "vessel",
+      "explanation": "",
+      "entries": [
+        "barrel",
+        "beaker",
+        "bottle",
+        "carafe",
+        "cask",
+        "chalice",
+        "cup",
+        "decanter",
+        "ewer",
+        "flagon",
+        "flask",
+        "goblet",
+        "jug",
+        "keg",
+        "mug",
+        "pitcher",
+        "pot",
+        "stein",
+        "tankard",
+        "vessel"
       ]
     },
     {
@@ -577,8 +704,7 @@
         "barrels",
         "bells",
         "boots",
-        "bottle",
-        "candle",
+        "candles",
         "cards",
         "carriages",
         "chalices",
@@ -608,10 +734,14 @@
       ]
     },
     {
+      "--------------------------------------------------": ""
+    },
+    {
       "name": "location",
       "explanation": "",
       "entries": [
         "abbey",
+        "alcove",
         "beehive",
         "bridge",
         "cottage",
@@ -622,13 +752,17 @@
         "fountain",
         "gardens",
         "gate",
+        "hideout",
         "hovel",
         "hut",
         "lair",
         "manor",
         "mill",
+        "niche",
+        "nook",
         "priory",
         "reach",
+        "recess",
         "shop",
         "stable",
         "vaults",
@@ -734,7 +868,7 @@
         "bush",
         "fern",
         "flower",
-        "grapes",
+        "grape",
         "hop",
         "ivy",
         "malt",
@@ -959,6 +1093,7 @@
         "alehouse",
         "brewhouse",
         "burrow",
+        "canteen",
         "club",
         "den",
         "drinkery",
@@ -992,7 +1127,6 @@
         "and",
         "and",
         "and",
-        "by",
         "with"
       ]
     },
