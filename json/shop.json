@@ -2,7 +2,7 @@
   "name": "shop",
   "resultPattern": "{init}{result}",
   "globals": {
-    "variable": ""
+    "business": ""
   },
   "variables": {
     "footnote": ""
@@ -14,9 +14,17 @@
   "bugs": "",
   "to do": "",
   "see": "business, district",
-  "date": "2018-04-23",
+  "date": "2018-09-10",
   "authors": "ELF Vesala.",
   "sources": "",
+  "attribution": {
+    "creators": "",
+    "copyright": "",
+    "licence": "https://",
+    "disclaimer": "https://",
+    "source": "",
+    "changes": "Translation into Campaign Logger generator format."
+  },
   "genre": "universal",
   "categories": [
     "world"
@@ -35,12 +43,22 @@
       ]
     },
     {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
       "name": "result",
-      "explanation": "Verbosity of the resultPattern output.",
+      "explanation": "The output format.",
       "entries": [
+        "{word}",
         "{summary}",
-        "{detail}",
-        "{description}"
+        "{detail}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{class}"
       ]
     },
     {
@@ -54,82 +72,390 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{attribute} {shop}",
-        "{shop} {feature}",
-        "{attribute} {shop} {feature}"
+        "{attribute} '{shop}' [selling {g:business} {g:commodity}]",
+        "'{shop}' [selling {g:business} {g:commodity}] that is {feature}",
+        "{attribute} '{shop}' [selling {g:business} {g:commodity}] that is {feature}"
       ]
     },
     {
       "name": "description",
-      "explanation": "Long description.",
+      "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {shop} operates from {premises}. The place has {selection}, the prices are {pricing} and the staff {staff}."
+        "The '{shop}' operates from {premises}. The place has {selection}, the prices are {pricing} and the staff {staff}."
       ]
     },
     {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Name}: {shop} \r\n{b|Line of Business}: {g:business} {g:commodity} \r\n{b|Premises}: {premises} \r\n{b|Selection}: {selection} \r\n{b|Pricing}: {pricing} \r\n{b|Staff}: {staff} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
       "name": "shop",
-      "explanation": "The shop types by rarity.",
+      "explanation": "Types by rarity.",
       "entries": [
         {
           "m": 10,
-          "v": "{common}"
+          "v": "{|{common}|scase}"
         },
-        "{rare}"
+        "{|{rare}|scase}"
       ]
     },
     {
       "name": "common",
-      "explanation": "Common shop types.",
+      "explanation": "Usual types.",
       "entries": [
-        "{goods} {establishment}"
+        "{commodity} {class}",
+        "{title} {commodity} {class}",
+        "{lib:name-random#summary}'s {commodity}",
+        "{lib:name-random#summary}'s {title} {commodity}",
+        "{lib:name-random#summary}'s {commodity} {class}",
+        "{lib:name-random#summary}'s {title} {commodity} {class}"
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare shop types.",
+      "explanation": "Unusual types.",
       "entries": [
-        "{services} {establishment}"
+        "{lib:name-random#summary}'s {service}",
+        "{lib:name-random#summary}'s {service title} {service}"
       ]
     },
     {
-      "**************************************************": "TYPE"
-    },
-    {
-      "name": "establishment",
-      "explanation": "The type of the store",
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
       "entries": [
-        "shop",
-        "store",
-        "stand",
-        "boutique",
-        "emporium"
+        ""
       ]
     },
     {
-      "**************************************************": "GOODS"
+      "**************************************************": "RANGES"
+    },
+    {
+      "name": "any",
+      "explanation": "Random selection.",
+      "entries": [
+        "{commodity}"
+      ]
+    },
+    {
+      "**************************************************": "COMMODITIES"
+    },
+    {
+      "name": "commodity",
+      "explanation": "Items and services offered for sale.",
+      "entries": [
+        "{goods}",
+        "{goods title} {goods}",
+        "{perishables}",
+        "{perishable title} {perishables}",
+        "{secondhand}",
+        "{secondhand title} {secondhand}",
+        "{service}",
+        "{service title} {service}"
+      ]
+    },
+    {
+      "==================================================": "GOODS"
     },
     {
       "name": "goods",
-      "explanation": "",
+      "explanation": "Permanent goods for sale",
+      "export": {
+        "commodity": "goods"
+      },
       "entries": [
-        "{grocery}"
+        "{armor}",
+        "{blacksmith}",
+        "{clothing}",
+        "{weapons}"
       ]
     },
     {
-      "name": "grocery",
+      "name": "armor",
+      "explanation": "Armours.",
+      "export": {
+        "business": "armor shop"
+      },
+      "entries": [
+        "{lib:armor#word}",
+        "bastion",
+        "shields"
+      ]
+    },
+    {
+      "name": "clothing",
+      "explanation": "Clothes and apparel.",
+      "export": {
+        "business": "clothing shop"
+      },
+      "entries": [
+        "apparel",
+        "clothing",
+        "fashion",
+        "style",
+        "wardrobe"
+      ]
+    },
+    {
+      "name": "weapons",
+      "explanation": "Arms and weapons.",
+      "export": {
+        "business": "weapon shop"
+      },
+      "entries": [
+        "{lib:weapon#word}",
+        "arms",
+        "arms locker",
+        "blades",
+        "knives",
+        "weapons",
+        "weapon stand"
+      ]
+    },
+    {
+      "==================================================": "PERISHABLES"
+    },
+    {
+      "name": "perishables",
+      "explanation": "One-time use items for sale.",
+      "export": {
+        "commodity": "perishables"
+      },
+      "entries": [
+        "{grocer}"
+      ]
+    },
+    {
+      "name": "grocer",
       "explanation": "Food and groceries.",
+      "export": {
+        "business": "grocery shop"
+      },
       "entries": [
-        "food"
+        "delicacies",
+        "dishes",
+        "food",
+        "foodstuffs",
+        "groceries"
       ]
     },
     {
-      "**************************************************": "SERVICES"
+      "==================================================": "SECONDHAND"
     },
     {
-      "name": "services",
+      "name": "secondhand",
+      "explanation": "Used items for sale.",
+      "export": {
+        "commodity": "used goods"
+      },
+      "entries": [
+        "{armor}",
+        "{clothing}",
+        "{weapons}"
+      ]
+    },
+    {
+      "==================================================": "SERVICES"
+    },
+    {
+      "name": "service",
+      "explanation": "Services for sale.",
+      "export": {
+        "commodity": "services"
+      },
+      "entries": [
+        "{blacksmith}"
+      ]
+    },
+    {
+      "name": "blacksmith",
+      "explanation": "Smithy.",
+      "export": {
+        "business": "blacksmithing"
+      },
+      "entries": [
+        "anvil",
+        "arsenal",
+        "furnace",
+        "hammer",
+        "steelworks"
+      ]
+    },
+    {
+      "**************************************************": "TITLES"
+    },
+    {
+      "name": "any title",
+      "explanation": "Fully random descriptor.",
+      "entries": [
+        "{title}",
+        "{goods title}",
+        "{perishable title}",
+        "{secondhand title}",
+        "{service title}"
+      ]
+    },
+    {
+      "name": "title",
+      "explanation": "Universal shop descriptors.",
+      "entries": [
+        "best quality",
+        "cheap",
+        "exotic",
+        "fine",
+        "finest",
+        "first-rate",
+        "good-quality",
+        "high-quality",
+        "quality",
+        "state-of-the-art"
+      ]
+    },
+    {
+      "name": "goods title",
       "explanation": "",
       "entries": [
-        "blacksmithing"
+        "benign",
+        "brand-new",
+        "current",
+        "exemplary",
+        "faultless",
+        "foreign",
+        "immaculate",
+        "imported",
+        "just out",
+        "latest",
+        "modern",
+        "newfangled",
+        "novel",
+        "original",
+        "perfect",
+        "sound",
+        "up-to-date",
+        "virtuous",
+        "worthy"
+      ]
+    },
+    {
+      "name": "perishable title",
+      "explanation": "",
+      "entries": [
+        "{goods title}",
+        "fresh",
+        "healthy",
+        "invigorating",
+        "juicy",
+        "natural",
+        "nourishing",
+        "pure",
+        "raw",
+        "restorative",
+        "season's",
+        "seasonal",
+        "sparkling",
+        "stimulating",
+        "taintless",
+        "unblemished",
+        "unpolluted",
+        "unprocessed",
+        "virginal",
+        "wholesome"
+      ]
+    },
+    {
+      "name": "secondhand title",
+      "explanation": "",
+      "entries": [
+        "{goods title}",
+        "almost new",
+        "as good as new",
+        "buy and sell",
+        "intact",
+        "mint",
+        "new and used",
+        "pre-loved",
+        "pre-used",
+        "previously owned",
+        "second-hand",
+        "spotless",
+        "unstained",
+        "untarnished",
+        "used"
+      ]
+    },
+    {
+      "name": "service title",
+      "explanation": "",
+      "entries": [
+        "{goods title}",
+        "amicable",
+        "cheap",
+        "cheerful",
+        "cheery",
+        "cordial",
+        "easy",
+        "efficient",
+        "fast",
+        "friendly",
+        "genial",
+        "guaranteed",
+        "helpful",
+        "honest",
+        "jolly",
+        "kindly",
+        "merry",
+        "quick",
+        "trustworthy"
+      ]
+    },
+    {
+      "**************************************************": "CLASSES"
+    },
+    {
+      "name": "class",
+      "explanation": "Types of shops.",
+      "entries": [
+        "agent",
+        "arcade",
+        "auction",
+        "bazaar",
+        "booth",
+        "boutique",
+        "center",
+        "clearance",
+        "closeout",
+        "commerce",
+        "cut-rate store",
+        "dealer",
+        "discount store",
+        "emporium",
+        "enterprise",
+        "fair",
+        "flea fair",
+        "flea market",
+        "galleria",
+        "house",
+        "market",
+        "mart",
+        "negotiations",
+        "outlet",
+        "piazza",
+        "plaza",
+        "purveyor",
+        "sales",
+        "shop",
+        "showroom",
+        "specialties",
+        "specialty shop",
+        "store",
+        "thrift shop",
+        "trading",
+        "vendor"
       ]
     },
     {
@@ -176,37 +502,181 @@
       ]
     },
     {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomization methods.",
+      "entries": [
+        "{component}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMPONENTS"
+    },
+    {
+      "name": "component",
+      "explanation": "Component-based terms (generated from words).",
+      "entries": [
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{compoundbegin}",
+        "{lib:name-random#summary}'s"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
       "**************************************************": "WORLD-SPECIFIC"
     },
     {
-      "name": "myth",
-      "explanation": "Shops once rumoured to have existed.",
-      "entries": [
-        "XXX"
-      ]
+      "--------------------------------------------------": "FANTASTIC"
     },
     {
       "name": "fantasy",
-      "explanation": "Shops for fantasy worlds (with no basis in myth).",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
-        "XXX"
+        "{medieval}"
       ]
+    },
+    {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
     },
     {
       "name": "modern",
-      "explanation": "Shops for modern worlds.",
+      "explanation": "Descriptions for modern worlds.",
       "entries": [
-        "{common}",
-        "XXX"
+        "{common}"
       ]
     },
     {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
       "name": "futuristic",
-      "explanation": "Shops for science fiction worlds.",
+      "explanation": "Descriptions for science fiction worlds.",
       "entries": [
-        "{modern}",
-        "XXX"
+        "{modern}"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
+        "dealer",
+        "shop",
+        "store",
+        "vendor"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "seems to be"
       ]
     },
     {
@@ -235,9 +705,9 @@
       "explanation": "Features related to the shop.",
       "format": "Optionally appended to the end of the result.",
       "entries": [
-        "with a sale",
-        "(temporarily closed)",
-        "(apparently closed until further notice)"
+        "having a sale",
+        "temporarily closed",
+        "apparently closed until further notice"
       ]
     },
     {
