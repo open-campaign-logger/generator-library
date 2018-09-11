@@ -2,7 +2,9 @@
   "name": "shop",
   "resultPattern": "{init}{result}",
   "globals": {
-    "business": ""
+    "business": "",
+    "commodity": "",
+    "establishment": ""
   },
   "variables": {
     "footnote": ""
@@ -14,7 +16,7 @@
   "bugs": "",
   "to do": "",
   "see": "business, district",
-  "date": "2018-09-10",
+  "date": "2018-09-11",
   "authors": "ELF Vesala.",
   "sources": "",
   "attribution": {
@@ -58,7 +60,7 @@
       "name": "word",
       "explanation": "One-word output.",
       "entries": [
-        "{class}"
+        "{establishment}"
       ]
     },
     {
@@ -88,7 +90,7 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Name}: {shop} \r\n{b|Line of Business}: {g:business} {g:commodity} \r\n{b|Premises}: {premises} \r\n{b|Selection}: {selection} \r\n{b|Pricing}: {pricing} \r\n{b|Staff}: {staff} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+        "{b|Name}: {shop} \r\n{b|Class}: {g:establishment} for {g:business} {g:commodity} \r\n{b|Premises}: {premises} \r\n{b|Selection}: {selection} \r\n{b|Pricing}: {pricing} \r\n{b|Staff}: {staff} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
       ]
     },
     {
@@ -109,20 +111,20 @@
       "name": "common",
       "explanation": "Usual types.",
       "entries": [
-        "{commodity} {class}",
-        "{title} {commodity} {class}",
+        "{commodity}",
+        "{title} {commodity}",
         "{lib:name-random#summary}'s {commodity}",
-        "{lib:name-random#summary}'s {title} {commodity}",
-        "{lib:name-random#summary}'s {commodity} {class}",
-        "{lib:name-random#summary}'s {title} {commodity} {class}"
+        "{lib:name-random#summary}'s {title} {commodity}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Unusual types.",
       "entries": [
-        "{lib:name-random#summary}'s {service}",
-        "{lib:name-random#summary}'s {service title} {service}"
+        "{service} {service establishment}",
+        "{lib:name-random#summary}'s {service} {service establishment}",
+        "{service title} {service} {service establishment}",
+        "{lib:name-random#summary}'s {service title} {service} {service establishment}"
       ]
     },
     {
@@ -149,14 +151,14 @@
       "name": "commodity",
       "explanation": "Items and services offered for sale.",
       "entries": [
-        "{goods}",
-        "{goods title} {goods}",
-        "{perishables}",
-        "{perishable title} {perishables}",
-        "{secondhand}",
-        "{secondhand title} {secondhand}",
-        "{service}",
-        "{service title} {service}"
+        "{goods} {goods establishment}",
+        "{goods title} {goods} {goods establishment}",
+        "{perishables} {perishables establishment}",
+        "{perishable title} {perishables} {perishables establishment}",
+        "{secondhand} {secondhand establishment}",
+        "{secondhand title} {secondhand} {secondhand establishment}",
+        "{service} {service establishment}",
+        "{service title} {service} {service establishment}"
       ]
     },
     {
@@ -179,7 +181,7 @@
       "name": "armor",
       "explanation": "Armours.",
       "export": {
-        "business": "armor shop"
+        "business": "armoury"
       },
       "entries": [
         "{lib:armor#word}",
@@ -191,7 +193,7 @@
       "name": "clothing",
       "explanation": "Clothes and apparel.",
       "export": {
-        "business": "clothing shop"
+        "business": "clothing"
       },
       "entries": [
         "apparel",
@@ -205,7 +207,7 @@
       "name": "weapons",
       "explanation": "Arms and weapons.",
       "export": {
-        "business": "weapon shop"
+        "business": "weaponry"
       },
       "entries": [
         "{lib:weapon#word}",
@@ -234,14 +236,20 @@
       "name": "grocer",
       "explanation": "Food and groceries.",
       "export": {
-        "business": "grocery shop"
+        "business": "grocery"
       },
       "entries": [
-        "delicacies",
-        "dishes",
+        "banquet",
+        "delight",
+        "delicacy",
+        "dish",
+        "feast",
         "food",
-        "foodstuffs",
-        "groceries"
+        "foodstuff",
+        "gourmet",
+        "grocery",
+        "morsel",
+        "treat"
       ]
     },
     {
@@ -251,7 +259,7 @@
       "name": "secondhand",
       "explanation": "Used items for sale.",
       "export": {
-        "commodity": "used goods"
+        "commodity": "secondhand"
       },
       "entries": [
         "{armor}",
@@ -283,7 +291,9 @@
         "arsenal",
         "furnace",
         "hammer",
-        "steelworks"
+        "ironmonger",
+        "sledgehammer",
+        "steelwork"
       ]
     },
     {
@@ -310,10 +320,10 @@
         "fine",
         "finest",
         "first-rate",
-        "good-quality",
         "high-quality",
         "quality",
-        "state-of-the-art"
+        "state-of-the-art",
+        "top quality"
       ]
     },
     {
@@ -407,55 +417,382 @@
         "helpful",
         "honest",
         "jolly",
-        "kindly",
+        "kind",
         "merry",
         "quick",
         "trustworthy"
       ]
     },
     {
-      "**************************************************": "CLASSES"
+      "**************************************************": "ESTABLISHMENTS"
     },
     {
-      "name": "class",
-      "explanation": "Types of shops.",
+      "name": "establishment",
+      "explanation": "Classes of shops.",
       "entries": [
+        "{agency}",
+        "{auction}",
+        "{exchange}",
+        "{illicit}",
+        "{large}",
+        "{market}",
+        "{medium}",
+        "{premium}",
+        "{small}",
+        "{specialty}",
+        "{street}",
+        "{thrift}",
+        "{wholesale}"
+      ]
+    },
+    {
+      "--------------------------------------------------": ""
+    },
+    {
+      "name": "goods establishment",
+      "explanation": "Establishment types for sellers of goods.",
+      "entries": [
+        "{agency}",
+        "{auction}",
+        "{exchange}",
+        "{illicit}",
+        "{large}",
+        "{market}",
+        "{medium}",
+        "{premium}",
+        "{small}",
+        "{specialty}",
+        "{street}",
+        "{thrift}",
+        "{wholesale}"
+      ]
+    },
+    {
+      "name": "perishables establishment",
+      "explanation": "Establishment types for sellers of perishables.",
+      "entries": [
+        "{large}",
+        "{market}",
+        "{medium}",
+        "{small}",
+        "{street}",
+        "{wholesale}"
+      ]
+    },
+    {
+      "name": "secondhand establishment",
+      "explanation": "Establishment types for sellers of secondhand goods.",
+      "entries": [
+        "{auction}",
+        "{exchange}",
+        "{illicit}",
+        "{market}",
+        "{small}",
+        "{specialty}",
+        "{street}",
+        "{thrift}"
+      ]
+    },
+    {
+      "name": "service establishment",
+      "explanation": "Establishment types for sellers of services.",
+      "entries": [
+        "{agency}",
+        "{market}",
+        "{small}",
+        "{specialty}",
+        "{street}"
+      ]
+    },
+    {
+      "--------------------------------------------------": ""
+    },
+    {
+      "name": "agency",
+      "explanation": "Agency establishments.",
+      "export": {
+        "establishment": "agency"
+      },
+      "entries": [
+        "{wholesale}",
+        "agency",
         "agent",
-        "arcade",
+        "agreements",
+        "appraiser",
+        "arbitrator",
+        "arrangements",
+        "assessor",
+        "auditor",
+        "bonds",
+        "bureau",
+        "conciliator",
+        "contracts",
+        "deals",
+        "delegate",
+        "emissary",
+        "financier",
+        "fixer",
+        "interagent",
+        "intermediary",
+        "intermedium",
+        "mediator",
+        "middleman",
+        "moderator",
+        "negotiations",
+        "negotiator",
+        "office",
+        "overseer",
+        "pacts",
+        "pledges",
+        "settlements",
+        "transactions",
+        "treaties"
+      ]
+    },
+    {
+      "name": "auction",
+      "explanation": "Auction establishments.",
+      "export": {
+        "establishment": "auction"
+      },
+      "entries": [
+        "{exchange}",
         "auction",
-        "bazaar",
-        "booth",
-        "boutique",
+        "auctioneer",
+        "auctioneers",
+        "auctioning",
+        "auctions",
+        "barter",
+        "bartering",
+        "depository",
+        "haggle",
+        "haggling",
+        "pawnshop"
+      ]
+    },
+    {
+      "name": "exchange",
+      "explanation": "Exchange establishments.",
+      "export": {
+        "establishment": "exchange"
+      },
+      "entries": [
+        "{auction}",
+        "broker",
+        "exchange",
+        "swap",
+        "swapping",
+        "swop",
+        "swopping",
+        "trade",
+        "trading"
+      ]
+    },
+    {
+      "name": "illicit",
+      "explanation": "Shady establishments.",
+      "export": {
+        "establishment": "illicit trader"
+      },
+      "entries": [
+        "{small}",
+        "cartel",
+        "fence",
+        "handler",
+        "jobber",
+        "operator",
+        "ring",
+        "smuggler",
+        "syndicate",
+        "trafficker"
+      ]
+    },
+    {
+      "name": "large",
+      "explanation": "",
+      "export": {
+        "establishment": "large establishment"
+      },
+      "entries": [
+        "{medium}",
+        "arcade",
         "center",
-        "clearance",
-        "closeout",
-        "commerce",
-        "cut-rate store",
-        "dealer",
-        "discount store",
+        "depot",
         "emporium",
         "enterprise",
+        "galleria",
+        "mart",
+        "piazza",
+        "plaza",
+        "warehouse"
+      ]
+    },
+    {
+      "name": "market",
+      "explanation": "Marketplace style establishments.",
+      "export": {
+        "establishment": "market stand"
+      },
+      "entries": [
+        "{small}",
+        "bazaar",
+        "booth",
         "fair",
         "flea fair",
         "flea market",
-        "galleria",
-        "house",
         "market",
-        "mart",
-        "negotiations",
-        "outlet",
-        "piazza",
-        "plaza",
-        "purveyor",
-        "sales",
+        "stables",
+        "stall"
+      ]
+    },
+    {
+      "name": "medium",
+      "explanation": "Types of shops.",
+      "export": {
+        "establishment": "medium-sized establishment"
+      },
+      "entries": [
+        "{large}",
+        "house",
+        "marketer",
+        "merchandise",
+        "merchant",
+        "retailer",
+        "seller",
         "shop",
-        "showroom",
-        "specialties",
-        "specialty shop",
         "store",
-        "thrift shop",
-        "trading",
+        "vending",
         "vendor"
+      ]
+    },
+    {
+      "name": "premium",
+      "explanation": "Expensive shops.",
+      "export": {
+        "establishment": "premium establishment"
+      },
+      "entries": [
+        "{specialty}",
+        "boutique",
+        "chamber",
+        "hall",
+        "purveyor",
+        "showroom"
+      ]
+    },
+    {
+      "name": "small",
+      "explanation": "Little establishments.",
+      "export": {
+        "establishment": "small establishment"
+      },
+      "entries": [
+        "{medium}",
+        "alcove",
+        "attic",
+        "basement",
+        "cabin",
+        "cellar",
+        "closet",
+        "cottage",
+        "hovel",
+        "hut",
+        "pantry",
+        "room",
+        "shack",
+        "shed",
+        "vault"
+      ]
+    },
+    {
+      "name": "specialty",
+      "explanation": "Specialized establishments.",
+      "export": {
+        "establishment": "specialty establishment"
+      },
+      "entries": [
+        "{agency}",
+        "adept",
+        "authority",
+        "connoisseur",
+        "expert",
+        "guidance",
+        "guide",
+        "master",
+        "mastery",
+        "masterpieces",
+        "professionals",
+        "sage",
+        "savant",
+        "scholar",
+        "specialist",
+        "specialties",
+        "speciality",
+        "specialty shop",
+        "virtuoso"
+      ]
+    },
+    {
+      "name": "street",
+      "explanation": "Vendors on the street.",
+      "export": {
+        "establishment": "street vendor"
+      },
+      "entries": [
+        "{market}",
+        "cart",
+        "colporteur",
+        "costard",
+        "coster",
+        "costermonger",
+        "hawker",
+        "huckster",
+        "peddler",
+        "pitcher",
+        "street seller",
+        "street vendor"
+      ]
+    },
+    {
+      "name": "thrift",
+      "explanation": "Cheap stores.",
+      "export": {
+        "establishment": "thrift store"
+      },
+      "entries": [
+        "{small}",
+        "bargains",
+        "clearance",
+        "closeout",
+        "cut-rate store",
+        "discount house",
+        "discount store",
+        "discounts",
+        "outlet",
+        "sales",
+        "thrift shop",
+        "variety store"
+      ]
+    },
+    {
+      "name": "wholesale",
+      "explanation": "Wholesale establishments.",
+      "export": {
+        "establishment": "wholesale establishment"
+      },
+      "entries": [
+        "{large}",
+        "bulk trade",
+        "bulk trading",
+        "commerce",
+        "dealer",
+        "dealing",
+        "mass trade",
+        "mass trading",
+        "quantity discounts",
+        "volume trade",
+        "volume trading",
+        "wholesale"
       ]
     },
     {
