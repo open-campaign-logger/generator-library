@@ -656,13 +656,9 @@
         "house",
         "marketer",
         "merchandise",
-        "merchant",
-        "retailer",
-        "seller",
         "shop",
         "store",
-        "vending",
-        "vendor"
+        "vending"
       ]
     },
     {
@@ -1001,10 +997,9 @@
       "name": "synonym",
       "explanation": "Variant expressions for generator subject matter.",
       "entries": [
-        "dealer",
+        "establishment",
         "shop",
-        "store",
-        "vendor"
+        "store"
       ]
     },
     {
@@ -1014,6 +1009,18 @@
       "entries": [
         "appears to be",
         "seems to be"
+      ]
+    },
+    {
+      "name": "vendor",
+      "explanation": "",
+      "entries": [
+        "dealer",
+        "merchant",
+        "retailer",
+        "seller",
+        "shopkeeper",
+        "vendor"
       ]
     },
     {
