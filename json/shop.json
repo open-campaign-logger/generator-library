@@ -4,7 +4,7 @@
   "globals": {
     "business": "",
     "commodity": "",
-    "establishment": ""
+    "establishment": "establishment"
   },
   "variables": {
     "footnote": ""
@@ -16,7 +16,7 @@
   "bugs": "",
   "to do": "",
   "see": "business, district",
-  "date": "2018-09-11",
+  "date": "2018-09-12",
   "authors": "ELF Vesala.",
   "sources": "",
   "attribution": {
@@ -74,9 +74,7 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{attribute} '{shop}' [selling {g:business} {g:commodity}]",
-        "'{shop}' [selling {g:business} {g:commodity}] that is {feature}",
-        "{attribute} '{shop}' [selling {g:business} {g:commodity}] that is {feature}"
+        "\"{shop}\" [{meta}]"
       ]
     },
     {
@@ -90,7 +88,14 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Name}: {shop} \r\n{b|Class}: {g:establishment} for {g:business} {g:commodity} \r\n{b|Premises}: {premises} \r\n{b|Selection}: {selection} \r\n{b|Pricing}: {pricing} \r\n{b|Staff}: {staff} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+        "{b|Name}: {shop} \r\n{b|Class}: {meta} \r\n{b|Premises}: {premises} \r\n{b|Selection}: {selection} \r\n{b|Pricing}: {pricing} \r\n{b|Staff}: {staff} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "name": "meta",
+      "explanation": "Off-game explanation of the result.",
+      "entries": [
+        "{g:establishment} for {g:business} {g:commodity}"
       ]
     },
     {
@@ -112,19 +117,14 @@
       "explanation": "Usual types.",
       "entries": [
         "{commodity}",
-        "{title} {commodity}",
-        "{lib:name-random#summary}'s {commodity}",
-        "{lib:name-random#summary}'s {title} {commodity}"
+        "{lib:name-random#summary}'s {commodity}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Unusual types.",
       "entries": [
-        "{service} {service establishment}",
-        "{lib:name-random#summary}'s {service} {service establishment}",
-        "{service title} {service} {service establishment}",
-        "{lib:name-random#summary}'s {service title} {service} {service establishment}"
+        "{title} {commodity}"
       ]
     },
     {
@@ -171,10 +171,11 @@
         "commodity": "goods"
       },
       "entries": [
-        "{armor}",
-        "{blacksmith}",
-        "{clothing}",
-        "{weapons}"
+        "{!armor}",
+        "{!blacksmith}",
+        "{!carpenter}",
+        "{!clothing}",
+        "{!weapons}"
       ]
     },
     {
@@ -184,9 +185,40 @@
         "business": "armoury"
       },
       "entries": [
+        "{!armor} & {!armor}",
         "{lib:armor#word}",
-        "bastion",
-        "shields"
+        "armour",
+        "protection",
+        "safe and sound",
+        "shield"
+      ]
+    },
+    {
+      "name": "blacksmith",
+      "explanation": "Smithy.",
+      "export": {
+        "business": "blacksmithing"
+      },
+      "entries": [
+        "anvil",
+        "arsenal",
+        "furnace",
+        "hammer",
+        "ironmonger",
+        "sledgehammer",
+        "steelwork"
+      ]
+    },
+    {
+      "name": "carpenter",
+      "explanation": "Carpentry.",
+      "export": {
+        "business": "carpentry"
+      },
+      "entries": [
+        "carpentry",
+        "timber",
+        "woodwork"
       ]
     },
     {
@@ -196,6 +228,7 @@
         "business": "clothing"
       },
       "entries": [
+        "{!clothing} & {!clothing}",
         "apparel",
         "clothing",
         "fashion",
@@ -210,6 +243,7 @@
         "business": "weaponry"
       },
       "entries": [
+        "{!weapons} & {!weapons}",
         "{lib:weapon#word}",
         "arms",
         "arms locker",
@@ -229,7 +263,7 @@
         "commodity": "perishables"
       },
       "entries": [
-        "{grocer}"
+        "{!grocer}"
       ]
     },
     {
@@ -239,15 +273,18 @@
         "business": "grocery"
       },
       "entries": [
+        "{!grocer} & {!grocer}",
         "banquet",
         "delight",
         "delicacy",
         "dish",
         "feast",
+        "fish",
         "food",
         "foodstuff",
         "gourmet",
         "grocery",
+        "meats",
         "morsel",
         "treat"
       ]
@@ -262,6 +299,7 @@
         "commodity": "secondhand"
       },
       "entries": [
+        "{!secondhand} & {!secondhand}",
         "{armor}",
         "{clothing}",
         "{weapons}"
@@ -277,23 +315,117 @@
         "commodity": "services"
       },
       "entries": [
-        "{blacksmith}"
+        "{!service} & {!service}",
+        "{lodging}",
+        "{moneychanger}",
+        "{pawnshop}",
+        "{tavern}",
+        "{usurer}"
       ]
     },
     {
-      "name": "blacksmith",
-      "explanation": "Smithy.",
+      "name": "lodging",
+      "explanation": "Boarding house services.",
       "export": {
-        "business": "blacksmithing"
+        "business": "lodging"
       },
       "entries": [
-        "anvil",
-        "arsenal",
-        "furnace",
-        "hammer",
-        "ironmonger",
-        "sledgehammer",
-        "steelwork"
+        "bed and breakfast",
+        "boarding",
+        "haven",
+        "home away from home",
+        "lodge",
+        "lodging",
+        "lodgment",
+        "palace",
+        "quarters",
+        "refuge",
+        "residence",
+        "retreat",
+        "room and board",
+        "rooming",
+        "rooms",
+        "room",
+        "sanctuary",
+        "shelter",
+        "suite"
+      ]
+    },
+    {
+      "name": "moneychanger",
+      "explanation": "Changing currencies to others.",
+      "export": {
+        "business": "pawnshop"
+      },
+      "entries": [
+        "capital",
+        "cash",
+        "currency",
+        "exchange",
+        "fund",
+        "money",
+        "tender"
+      ]
+    },
+    {
+      "name": "pawnshop",
+      "explanation": "Lending money against a valuable deposit.",
+      "export": {
+        "business": "pawnshop"
+      },
+      "entries": [
+        "deposit",
+        "financing",
+        "mortgage",
+        "pawnbroker",
+        "pawning",
+        "pawnshop"
+      ]
+    },
+    {
+      "name": "tavern",
+      "explanation": "Inn services.",
+      "export": {
+        "business": "lodging"
+      },
+      "entries": [
+        "alehouse",
+        "brewhouse",
+        "burrow",
+        "canteen",
+        "club",
+        "den",
+        "drinkery",
+        "hall",
+        "hideaway",
+        "house",
+        "inn",
+        "kitchen",
+        "lair",
+        "lobby",
+        "parlor",
+        "salon",
+        "pub",
+        "public house",
+        "tavern"
+      ]
+    },
+    {
+      "name": "usurer",
+      "explanation": "Lending money against interest.",
+      "export": {
+        "business": "usurer"
+      },
+      "entries": [
+        "banker",
+        "creditor",
+        "financier",
+        "financing",
+        "lender",
+        "loan",
+        "moneylender",
+        "moneymonger",
+        "usurer"
       ]
     },
     {
@@ -452,6 +584,8 @@
       "name": "goods establishment",
       "explanation": "Establishment types for sellers of goods.",
       "entries": [
+        "{store}",
+        "{vendor}",
         "{agency}",
         "{auction}",
         "{exchange}",
@@ -471,6 +605,8 @@
       "name": "perishables establishment",
       "explanation": "Establishment types for sellers of perishables.",
       "entries": [
+        "{store}",
+        "{vendor}",
         "{large}",
         "{market}",
         "{medium}",
@@ -483,6 +619,8 @@
       "name": "secondhand establishment",
       "explanation": "Establishment types for sellers of secondhand goods.",
       "entries": [
+        "{store}",
+        "{vendor}",
         "{auction}",
         "{exchange}",
         "{illicit}",
@@ -997,9 +1135,8 @@
       "name": "synonym",
       "explanation": "Variant expressions for generator subject matter.",
       "entries": [
-        "establishment",
-        "shop",
-        "store"
+        "{store}",
+        "{vendor}"
       ]
     },
     {
@@ -1012,8 +1149,32 @@
       ]
     },
     {
+      "name": "services",
+      "explanation": "Variant expressions for 'assistance'.",
+      "entries": [
+        "aid",
+        "assistance",
+        "facilitation",
+        "help",
+        "relief",
+        "service",
+        "services",
+        "support"
+      ]
+    },
+    {
+      "name": "store",
+      "explanation": "Variant expressions for 'shop'.",
+      "entries": [
+        "business",
+        "establishment",
+        "shop",
+        "store"
+      ]
+    },
+    {
       "name": "vendor",
-      "explanation": "",
+      "explanation": "Variant expressions for 'seller'.",
       "entries": [
         "dealer",
         "merchant",
