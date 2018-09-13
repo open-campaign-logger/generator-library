@@ -107,7 +107,7 @@
     },
     {
       "name": "description",
-      "explanation": "Long description as a paragraph of text.",
+      "explanation": "Long description as a sentence.",
       "entries": [
         "The {culture} {looks} {attribute}.",
         "The {culture} {looks} {feature}.",
@@ -115,10 +115,24 @@
       ]
     },
     {
+      "name": "section",
+      "explanation": "Long description as a subheading and a text paragraph.",
+      "entries": [
+        "===== {XXX} =====\r\n{b|{meta}} \r\n "
+      ]
+    },
+    {
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
         "{b|Culture}: {g:culture} \r\n{b|Trial}: {g:trial} \r\n{b|Trap}: {g:trap} \r\n{b|Aim}: {g:aim} \r\n{b|Belief}: {g:belief} \r\n{b|Ritual}: {g:ritual} \r\n{b|Information source}: {g:newssource} \r\n{b|Armor}: {g:armor} \r\n{b|Artifact}: {g:artifact} \r\n{b|Fabric}: {g:fabric} \r\n{b|Key}: {g:key} \r\n{b|Material}: {g:material} \r\n{b|Metal}: {g:metal} \r\n{b|Style}: {g:style} \r\n{b|Technology}: {g:technology} \r\n{b|Treasure}: {g:treasure} \r\n{b|Weapon}: {g:weapon} \r\n{b|Door}: {g:door} \r\n{b|Furnishing}: {g:furnishing} \r\n{b|Lock}: {g:lock} "
+      ]
+    },
+    {
+      "name": "meta",
+      "explanation": "Off-game explanation of the result.",
+      "entries": [
+        ""
       ]
     },
     {

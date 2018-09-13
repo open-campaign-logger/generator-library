@@ -77,9 +77,16 @@
     },
     {
       "name": "description",
-      "explanation": "Long description as a paragraph of text.",
+      "explanation": "Long description as a sentence.",
       "entries": [
         "{place} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "section",
+      "explanation": "Long description as a subheading and a text paragraph.",
+      "entries": [
+        "===== {XXX} =====\r\n{b|{meta}} \r\n "
       ]
     },
     {
@@ -87,6 +94,13 @@
       "explanation": "Details as statistics.",
       "entries": [
         "{b|Place}: {place} \r\n{b|Appellation}: {appellation} \r\n{b|Culture}: {g:culture}"
+      ]
+    },
+    {
+      "name": "meta",
+      "explanation": "Off-game explanation of the result.",
+      "entries": [
+        ""
       ]
     },
     {

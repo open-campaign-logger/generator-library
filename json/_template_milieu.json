@@ -73,10 +73,17 @@
     },
     {
       "name": "description",
-      "explanation": "Long description as a paragraph of text.",
+      "explanation": "Long description as a sentence.",
       "entries": [
         "The {milieu} {synonym} {looks} {feature}.",
         "The {attribute} {milieu} {synonym} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "section",
+      "explanation": "Long description as a subheading and a text paragraph.",
+      "entries": [
+        "===== {XXX} =====\r\n{b|{meta}} \r\n "
       ]
     },
     {
@@ -84,6 +91,13 @@
       "explanation": "Details as statistics.",
       "entries": [
         "{b|Milieu}: {milieu} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "name": "meta",
+      "explanation": "Off-game explanation of the result.",
+      "entries": [
+        ""
       ]
     },
     {

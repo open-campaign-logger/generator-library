@@ -81,11 +81,18 @@
     },
     {
       "name": "description",
-      "explanation": "Long description as a paragraph of text.",
+      "explanation": "Long description as a sentence.",
       "entries": [
         "{female} '{female byname}' {female surname}",
         "{male} '{male byname}' {male surname}",
         "{unisex} '{unisex byname}' {unisex surname}"
+      ]
+    },
+    {
+      "name": "section",
+      "explanation": "Long description as a subheading and a text paragraph.",
+      "entries": [
+        "===== {XXX} =====\r\n{b|{meta}} \r\n "
       ]
     },
     {
@@ -95,6 +102,13 @@
         "{b|First name}: {female} \r\n{b|Surname}: {female surname} \r\n{b|Byname}: {female byname} \r\n{b|Gender}: female\r\n{b|Culture}: {g:culture}",
         "{b|First name}: {male} \r\n{b|Surname}: {male surname} \r\n{b|Byname}: {male byname} \r\n{b|Gender}: male\r\n{b|Culture}: {g:culture}",
         "{b|First name}: {unisex} \r\n{b|Surname}: {unisex surname} \r\n{b|Byname}: {unisex byname} \r\n{b|Gender}: undetermined \r\n{b|Culture}: {g:culture}"
+      ]
+    },
+    {
+      "name": "meta",
+      "explanation": "Off-game explanation of the result.",
+      "entries": [
+        ""
       ]
     },
     {

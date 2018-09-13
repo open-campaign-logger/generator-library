@@ -87,11 +87,35 @@
     },
     {
       "name": "detail",
-      "explanation": "Detailed description of the randomized set.",
+      "explanation": "Detailed description as a sentence.",
       "entries": [
         "{g:setarea} with {g:setprop}",
         "{g:setadjective} {g:setarea} with {g:setprop}"
       ]
+    },
+    {
+      "name": "section",
+      "explanation": "Long description as a subheading and a text paragraph.",
+      "entries": [
+        "===== {XXX} =====\r\n{b|{meta}} \r\n "
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Name}: {random} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "name": "meta",
+      "explanation": "Off-game explanation of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "LOCALES"
     },
     {
       "name": "locale",
@@ -103,9 +127,6 @@
         "{nook}",
         "{vault}"
       ]
-    },
-    {
-      "**************************************************": "LOCALES"
     },
     {
       "name": "boundary",
