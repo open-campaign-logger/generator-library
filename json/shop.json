@@ -16,7 +16,7 @@
   "bugs": "",
   "to do": "",
   "see": "business, district",
-  "date": "2018-09-12",
+  "date": "2018-09-13",
   "authors": "ELF Vesala.",
   "sources": "",
   "attribution": {
@@ -79,16 +79,23 @@
     },
     {
       "name": "description",
-      "explanation": "Long description as a paragraph of text.",
+      "explanation": "Long description as a sentence.",
       "entries": [
-        "The '{shop}' operates from {premises}. The place has {selection}, the prices are {pricing} and the staff {staff}."
+        "{shop} operates from {premises}. The place has {selection}, the prices are {pricing}. {personnel}. {staff}. {customers}."
+      ]
+    },
+    {
+      "name": "section",
+      "explanation": "Long description as a subheading and a text paragraph.",
+      "entries": [
+        "===== {shop} =====\r\n{b|{meta}} \r\nThe {store} operates from {premises}. The place has {selection} and the prices are {pricing}. \r\n{personnel}.\r\nThe place is {attribute}. It {feature}."
       ]
     },
     {
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Name}: {shop} \r\n{b|Class}: {meta} \r\n{b|Premises}: {premises} \r\n{b|Selection}: {selection} \r\n{b|Pricing}: {pricing} \r\n{b|Staff}: {staff} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+        "- {b|Name}: {shop} \r\n- {b|Class}: {meta} \r\n- {b|Premises}: {premises} \r\n- {b|Selection}: {selection} \r\n- {b|Pricing}: {pricing} \r\n- {b|Proprietor}: {proprietor} \r\n- {b|Staff}: {staff} \r\n- {b|Customers}: {customers} \r\n- {b|Attribute}: {attribute} \r\n- {b|Feature}: {feature} "
       ]
     },
     {
@@ -284,7 +291,7 @@
         "foodstuff",
         "gourmet",
         "grocery",
-        "meats",
+        "meat",
         "morsel",
         "treat"
       ]
@@ -933,6 +940,9 @@
       "**************************************************": "DETAILS"
     },
     {
+      "==================================================": "PREMISES"
+    },
+    {
       "name": "premises",
       "explanation": "Details of the building.",
       "format": "The shop operates from --",
@@ -945,6 +955,9 @@
       ]
     },
     {
+      "==================================================": "STOCK"
+    },
+    {
       "name": "pricing",
       "explanation": "Details of the shop price level.",
       "entries": [
@@ -952,6 +965,27 @@
         "average",
         "expensive",
         "outrageous"
+      ]
+    },
+    {
+      "name": "sale items",
+      "explanation": "Item groups that are on sale.",
+      "entries": [
+        "a failed type of product",
+        "clearance items",
+        "currently unfashionable items",
+        "customer returns",
+        "damaged goods",
+        "items that seem perfectly fine",
+        "items with cosmetic defects",
+        "last items of a product category to be removed",
+        "last season's items that are no longer in vogue",
+        "obviously used goods",
+        "old stock",
+        "popular but overstocked items",
+        "some dust-covered old items",
+        "some garish-looking items",
+        "ugly but functional items"
       ]
     },
     {
@@ -963,13 +997,93 @@
       ]
     },
     {
-      "name": "staff",
-      "explanation": "Details of the shop proprietors and workers.",
+      "==================================================": "PERSONNEL"
+    },
+    {
+      "name": "personnel",
+      "explanation": "The people present in the establishment.",
       "entries": [
+        "{proprietor}. {staff}",
+        "{proprietor}. {customers}",
+        "{proprietor}. {staff}. {customers}"
+      ]
+    },
+    {
+      "name": "proprietor",
+      "explanation": "",
+      "entries": [
+        "The proprietor appears not to be present",
+        "The proprietor is {lib:NPC#init}{lib:NPC#summary}. {g:name} is {personality} and currently {mood}, {proprietor activity}"
+      ]
+    },
+    {
+      "name": "personality",
+      "explanation": "Characteristics of the shop proprietor and workers.",
+      "entries": [
+        "{lib:personality#summary}",
         "rude",
         "eccentric",
         "talkative",
         "polite"
+      ]
+    },
+    {
+      "name": "mood",
+      "explanation": "States of mind.",
+      "entries": [
+        "{lib:emotion#summary}"
+      ]
+    },
+    {
+      "name": "staff",
+      "explanation": "Employers in the shop",
+      "entries": [
+        "There is no staff visible",
+        "There is an assistant present: {lib:NPC#init}{g:name}{lib:NPC#summary}, {staff activity}"
+      ]
+    },
+    {
+      "name": "customers",
+      "explanation": "Other visitors in the shop",
+      "entries": [
+        "There are no other customers visible",
+        "There is a customer present: {lib:NPC#init}{g:name}{lib:NPC#summary}, {customer activity}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ACTIVITIES"
+    },
+    {
+      "name": "activity",
+      "explanation": "",
+      "entries": [
+        "{proprietor activity}",
+        "{staff activity}",
+        "{customer activity}"
+      ]
+    },
+    {
+      "name": "proprietor activity",
+      "explanation": "",
+      "entries": [
+        "lost in their thoughts",
+        "studying the inventory"
+      ]
+    },
+    {
+      "name": "staff activity",
+      "explanation": "",
+      "entries": [
+        "cleaning",
+        "organizing the store"
+      ]
+    },
+    {
+      "name": "customer activity",
+      "explanation": "",
+      "entries": [
+        "browsing the selection",
+        "comparing prices"
       ]
     },
     {
@@ -1178,9 +1292,12 @@
       "entries": [
         "dealer",
         "merchant",
+        "owner",
+        "proprietor",
         "retailer",
         "seller",
         "shopkeeper",
+        "store owner",
         "vendor"
       ]
     },
@@ -1196,23 +1313,76 @@
       ]
     },
     {
+      "--------------------------------------------------": "ATTRIBUTES"
+    },
+    {
       "name": "attribute",
       "explanation": "Attributes related to the shop.",
-      "format": "Optionally prepended to the front of the result.",
+      "format": "The -- store",
+      "entries": [
+        "{lighting}",
+        "{organization}"
+      ]
+    },
+    {
+      "name": "lighting",
+      "explanation": "The brightness level of the shop.",
+      "format": "The -- store",
+      "entries": [
+        "brightly lit",
+        "dimly-lit",
+        "somewhat hazy",
+        "well lit"
+      ]
+    },
+    {
+      "name": "organization",
+      "explanation": "The orderliness of the shop.",
       "entries": [
         "chaotic",
+        "disarrayed",
         "orderly",
+        "overstocked",
         "well-organized"
       ]
     },
     {
+      "--------------------------------------------------": ""
+    },
+    {
       "name": "feature",
       "explanation": "Features related to the shop.",
-      "format": "Optionally appended to the end of the result.",
+      "format": "The store --",
       "entries": [
-        "having a sale",
-        "temporarily closed",
-        "apparently closed until further notice"
+        "{air}",
+        "{closed}",
+        "{event}"
+      ]
+    },
+    {
+      "name": "air",
+      "explanation": "The air in the shop.",
+      "entries": [
+        "has an odd smell lingering in the air",
+        "has a slight smell of smoke permeating the premises"
+      ]
+    },
+    {
+      "name": "closed",
+      "explanation": "The shop is closed.",
+      "format": "The store --",
+      "entries": [
+        "is closed until the {vendor} returns from an errand",
+        "is temporarily closed",
+        "is apparently closed until further notice"
+      ]
+    },
+    {
+      "name": "event",
+      "explanation": "Events in the shop.",
+      "entries": [
+        "has a sale for {sale items}",
+        "has recently been robbed"
       ]
     },
     {
