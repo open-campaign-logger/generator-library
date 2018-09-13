@@ -1,6 +1,6 @@
 {
   "name": "shop",
-  "resultPattern": "{init}{result}",
+  "resultPattern": "{init}{section}",
   "globals": {
     "business": "",
     "commodity": "",
@@ -1013,7 +1013,7 @@
       "explanation": "",
       "entries": [
         "The proprietor appears not to be present",
-        "The proprietor is {lib:NPC#init}{lib:NPC#summary}. {g:name} is {personality} and currently {mood}, {proprietor activity}"
+        "The proprietor is {lib:NPC#init}{lib:NPC#basic}. {g:name} is {mood}, {proprietor activity}"
       ]
     },
     {
@@ -1039,7 +1039,7 @@
       "explanation": "Employers in the shop",
       "entries": [
         "There is no staff visible",
-        "There is an assistant present: {lib:NPC#init}{g:name}{lib:NPC#summary}, {staff activity}"
+        "There is an assistant present: {lib:NPC#init}{g:name} - {lib:NPC#basic}, {staff activity}"
       ]
     },
     {
@@ -1047,7 +1047,7 @@
       "explanation": "Other visitors in the shop",
       "entries": [
         "There are no other customers visible",
-        "There is a customer present: {lib:NPC#init}{g:name}{lib:NPC#summary}, {customer activity}"
+        "There is a customer present: {lib:NPC#init}{lib:NPC#basic}, {customer activity}"
       ]
     },
     {

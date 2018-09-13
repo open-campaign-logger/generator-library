@@ -30,6 +30,7 @@
     "actantaction": "",
     "actantattribute": "",
     "actantdescription": "",
+    "mode": "",
     "activity": "",
     "attitude": "",
     "behavior": "",
@@ -53,7 +54,7 @@
   "bugs": "Developepment currently on hold, waiting for global variable support.",
   "to do": "Most of it... Starting from genre? ",
   "see": "",
-  "date": "2018-08-21",
+  "date": "2018-09-13",
   "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -158,36 +159,36 @@
       "name": "attire",
       "explanation": "The costume of the person.",
       "entries": [
-        "{g:Subject} is wearing {lib:outfit}."
+        "{g:Subject} is wearing {lib:outfit}"
       ]
     },
     {
       "name": "basic",
       "explanation": "Base description: age, gender, species, profession.",
       "entries": [
-        "{g:Subject} is {g:an age} {g:gender} {g:orientation} {g:occupation}.",
-        "{g:Subject} is {g:a gender} {g:orientation} {g:occupation} in {g:possessive} {g:humandecade}."
+        "{g:an age} {g:gender} {g:orientation} {g:occupation}",
+        "{g:a gender} {g:orientation} {g:occupation} in {g:possessive} {g:humandecade}"
       ]
     },
     {
       "name": "background",
       "explanation": "The background of the person.",
       "entries": [
-        "The {g:substantive} has seen a lot in {g:possessive} life."
+        "The {g:substantive} has seen a lot in {g:possessive} life"
       ]
     },
     {
       "name": "equipment",
       "explanation": "The belongings of the person.",
       "entries": [
-        "{b|Weapon}: {lib:weapon#common}."
+        "{b|Weapon}: {lib:weapon#common}"
       ]
     },
     {
       "name": "goal",
       "explanation": "The character's life goal.",
       "entries": [
-        "{g:Subject} wants to {lib:goal}."
+        "{g:Subject} wants to {lib:goal}"
       ]
     },
     {
@@ -258,14 +259,14 @@
           "m": 10,
           "v": "{passive}",
           "export": {
-            "activity": "passive"
+            "mode": "passive"
           }
         },
         {
           "m": 10,
           "v": "{active}",
           "export": {
-            "activity": "active"
+            "mode": "active"
           }
         }
       ]
@@ -499,9 +500,7 @@
       "name": "culture",
       "explanation": "Cultural background of the character.",
       "entries": [
-        "fantasy",
-        "Malorian",
-        "pictish"
+        "fantasy"
       ]
     },
     {
