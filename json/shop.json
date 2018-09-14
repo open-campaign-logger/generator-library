@@ -16,7 +16,7 @@
   "bugs": "",
   "to do": "",
   "see": "business, district",
-  "date": "2018-09-13",
+  "date": "2018-09-14",
   "authors": "ELF Vesala.",
   "sources": "",
   "attribution": {
@@ -970,6 +970,7 @@
     {
       "name": "sale items",
       "explanation": "Item groups that are on sale.",
+      "format": "a sale for --",
       "entries": [
         "a failed type of product",
         "clearance items",
@@ -982,7 +983,9 @@
         "last season's items that are no longer in vogue",
         "obviously used goods",
         "old stock",
+        "poorly selling items",
         "popular but overstocked items",
+        "sample items",
         "some dust-covered old items",
         "some garish-looking items",
         "ugly but functional items"
@@ -1364,7 +1367,8 @@
       "explanation": "The air in the shop.",
       "entries": [
         "has an odd smell lingering in the air",
-        "has a slight smell of smoke permeating the premises"
+        "has a slight smell of smoke permeating the premises",
+        "smells strongly of stale sweat"
       ]
     },
     {
@@ -1382,7 +1386,11 @@
       "explanation": "Events in the shop.",
       "entries": [
         "has a sale for {sale items}",
-        "has recently been robbed"
+        "has recently been robbed",
+        "is being renovated",
+        "is reorganizing its premises and the wares are in disarray",
+        "is having an inventory over its stock",
+        "suffered a fire some time ago"
       ]
     },
     {
