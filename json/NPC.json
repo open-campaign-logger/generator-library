@@ -54,7 +54,7 @@
   "bugs": "Developepment currently on hold, waiting for global variable support.",
   "to do": "Most of it... Starting from genre? ",
   "see": "",
-  "date": "2018-09-13",
+  "date": "2018-09-20",
   "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -96,6 +96,13 @@
       ]
     },
     {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{g:occupation}"
+      ]
+    },
+    {
       "name": "summary",
       "explanation": "Brief output.",
       "entries": [
@@ -106,21 +113,21 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{name} \r\n{basic} \r\n{attire} \r\n{personality} \r\n{goal} \r\n{equipment}"
+        "{name} \r\n{basic} \r\n{attire} \r\n{personality}. \r\n{goal} \r\n{equipment}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "{name} \r\n{basic} \r\n{attire} \r\n{background} \r\n{personality} \r\n{goal} \r\n{equipment}"
+        "{name} \r\n{basic} \r\n{attire} \r\n{background} \r\n{personality}. \r\n{goal} \r\n{equipment}"
       ]
     },
     {
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|First name}: {g:firstname} \r\n{b|Byname}: {g:byname} \r\n{b|Surname}: {g:surname} \r\n{basic} \r\n{b|Personality}: {personality}\r\n{b|Attire}: {attire} \r\n{b|Equipment}: {equipment}"
+        "{b|First name}: {g:firstname} \r\n{b|Byname}: {g:byname} \r\n{b|Surname}: {g:surname} \r\n{basic} \r\n{b|Personality}: {personality} \r\n{b|Attire}: {attire} \r\n{b|Equipment}: {equipment}"
       ]
     },
     {
@@ -202,7 +209,9 @@
       "name": "personality",
       "explanation": "Psychology of the person.",
       "entries": [
-        "\r\n{|{lib:personality}|scase}. \r\n{|{lib:flaw}|scase}. \r\n{|{lib:quirk}|scase}."
+        "{|{lib:personality}|scase}",
+        "{|{lib:flaw}|scase}",
+        "{|{lib:quirk}|scase}"
       ]
     },
     {
@@ -408,7 +417,7 @@
       "entries": [
         "{myth}",
         "{medieval}",
-        "{name} \r\n{basic} \r\n{attire} \r\n{personality} \r\n{goal} \r\n{equipment}"
+        "{name} \r\n{basic} \r\n{attire} \r\n{personality}. \r\n{goal} \r\n{equipment}"
       ]
     },
     {
@@ -438,7 +447,7 @@
       },
       "entries": [
         "{NPC}",
-        "{mood}{attitude}{activity}{name} \r\n{basic} \r\n{attire} \r\n{personality} \r\n{goal} \r\n{equipment}"
+        "{mood}{attitude}{activity}{name} \r\n{basic} \r\n{attire} \r\n{personality}. \r\n{goal} \r\n{equipment}"
       ]
     },
     {
