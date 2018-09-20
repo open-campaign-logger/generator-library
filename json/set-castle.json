@@ -24,7 +24,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-04-07",
+  "date": "2018-09-20",
   "authors": "ELF Vesala.",
   "sources": "CastlesAndManorHouses.com, Wikipedia.org",
   "genre": "universal",
@@ -266,7 +266,7 @@
       "name": "test",
       "explanation": "Testing tool for dumping the set global variables.",
       "entries": [
-        "{global:set} walkthrough: to pass the {global:setboundary}, enter {global:setentrance} to {global:setarea} via {global:setpassage} that leads to {global:setadjective} {global:setlocation} and {global:setnook}  with {global:setprop} inside. Behind {global:setdoor} is the {global:setvault}."
+        "{global:setlocale} walkthrough: to pass the {global:setboundary}, enter {global:setentrance} to {global:setarea} via {global:setpassage} that leads to {global:setadjective} {global:setlocation} and {global:setnook}  with {global:setprop} inside. Behind {global:setdoor} is the {global:setvault}."
       ]
     }
   ]
