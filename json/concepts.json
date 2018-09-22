@@ -1,5 +1,5 @@
 {
-  "name": "concept",
+  "name": "concepts",
   "resultPattern": "{init}{result}",
   "globals": {
     "variable": ""
@@ -7,13 +7,13 @@
   "variables": {
     "footnote": ""
   },
-  "explanation": "Concepts, themes and motifs for place names, etc.",
+  "explanation": "Plural concepts, themes and motifs for place names, etc.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
-  "note": "Only include uncountable words!",
-  "format": "Place of --",
+  "note": "Only include countable words in plural!",
+  "format": "Place of the --",
   "bugs": "",
   "to do": "",
-  "see": "aspect, concepts, motif-*, place, theme",
+  "see": "aspect, concept, motif-*, place, theme",
   "date": "2018-09-22",
   "authors": "ELF Vesala",
   "sources": "",
@@ -50,30 +50,30 @@
       "name": "word",
       "explanation": "One-word output.",
       "entries": [
-        "{concept}"
+        "{concepts}"
       ]
     },
     {
       "name": "summary",
       "explanation": "Brief output.",
       "entries": [
-        "{attribute} {concept}"
+        "{attribute} {concepts}"
       ]
     },
     {
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{concept}, {feature}",
-        "{attribute} {concept}, {feature}"
+        "{concepts}, {feature}",
+        "{attribute} {concepts}, {feature}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {concept} {synonym} {looks} {feature}.",
-        "The {attribute} {concept} {synonym} {looks} {feature}."
+        "The {concepts} {synonym} {look} {feature}.",
+        "The {attribute} {concepts} {synonym} {look} {feature}."
       ]
     },
     {
@@ -87,7 +87,7 @@
       "**************************************************": "TYPES"
     },
     {
-      "name": "concept",
+      "name": "concepts",
       "explanation": "Types by rarity.",
       "entries": [
         {
@@ -168,51 +168,48 @@
       "name": "animal",
       "explanation": "Animal-related name components.",
       "entries": [
-        "{lib:animal#land}",
-        "bird",
-        "beetle",
-        "bull",
-        "calf",
-        "cattle",
-        "chick",
-        "colt",
-        "fawn",
-        "foal",
-        "fowl",
-        "herd",
-        "hog",
-        "hound",
-        "kit",
-        "lamb",
-        "mare",
-        "nag",
-        "ox",
-        "rooster",
-        "stallion",
-        "steed",
+        "birds",
+        "beetles",
+        "bulls",
+        "calves",
+        "chicks",
+        "colts",
+        "fawns",
+        "foals",
+        "fowls",
+        "herds",
+        "hogs",
+        "hounds",
+        "kits",
+        "lambs",
+        "mares",
+        "nags",
+        "oxen",
+        "roosters",
+        "stallions",
+        "steeds",
         "swine",
         "vermin",
-        "whelp"
+        "whelps"
       ]
     },
     {
       "name": "aroma",
       "explanation": "Aroma-related name components.",
       "entries": [
-        "bitter",
-        "sour",
-        "sweet"
+        "bitters",
+        "sours"
       ]
     },
     {
       "name": "body",
       "explanation": "Body part related name components.",
       "entries": [
-        "claw",
-        "horn",
-        "rib",
-        "spine",
-        "tooth"
+        "claws",
+        "horns",
+        "ribs",
+        "spines",
+        "tooths"
       ]
     },
     {
@@ -220,79 +217,66 @@
       "explanation": "Color-related name components.",
       "entries": [
         "{lib:color#prime}",
-        "ash",
-        "chalk",
-        "dark",
-        "dim",
-        "gold",
-        "light",
-        "pale",
-        "silver"
+        "ashes",
+        "lights"
       ]
     },
     {
       "name": "death",
       "explanation": "Death-related name components.",
       "entries": [
-        "bane",
-        "death",
-        "poison",
-        "the reaper"
+        "deaths",
+        "poisons",
+        "skulls"
       ]
     },
     {
       "name": "effect",
       "explanation": "Effect-related name components.",
       "entries": [
-        "burn",
-        "itch",
-        "sore"
+        "burns",
+        "itches",
+        "sores"
       ]
     },
     {
       "name": "joy",
       "explanation": "Joy-related name components.",
       "entries": [
-        "hope",
-        "joy",
-        "light",
-        "luck",
-        "mirth"
+        "joys",
+        "lights"
       ]
     },
     {
       "name": "life",
       "explanation": "Life-related name components.",
       "entries": [
-        "breath",
-        "heart",
-        "life",
-        "soul",
-        "spark",
-        "vigor"
+        "hearts",
+        "lives",
+        "souls",
+        "sparks"
       ]
     },
     {
       "name": "liquid",
       "explanation": "Liquid-related name components.",
       "entries": [
-        "ale",
-        "mead",
-        "milk",
-        "water",
-        "wine"
+        "ales",
+        "meads",
+        "waters",
+        "wines"
       ]
     },
     {
       "name": "pain",
       "explanation": "Pain-related name components.",
       "entries": [
-        "ill",
-        "fever",
-        "pain",
-        "suffering",
-        "tear",
-        "wound"
+        "ills",
+        "fevers",
+        "pains",
+        "sufferings",
+        "tears",
+        "wounds"
       ]
     },
     {
@@ -300,106 +284,86 @@
       "explanation": "Location-related name components.",
       "entries": [
         "{lib:place#temperate}",
-        "field",
-        "ground",
-        "highland",
-        "lowland",
-        "marsh",
-        "sand"
+        "fields",
+        "grounds",
+        "highlands",
+        "lowlands",
+        "marshes",
+        "sands"
       ]
     },
     {
       "name": "quality",
       "explanation": "Quality-related name components.",
       "entries": [
-        "bad",
-        "brittle",
-        "dull",
-        "good",
-        "hard",
-        "master",
-        "sharp",
-        "soft",
-        "strong"
+        "elites",
+        "masters"
       ]
     },
     {
       "name": "shape",
       "explanation": "Shape-related name components.",
       "entries": [
-        "broad",
-        "cone",
-        "hook",
-        "knot",
-        "plume",
-        "round",
-        "thick",
-        "thin"
+        "cones",
+        "hooks",
+        "knots",
+        "plumes"
       ]
     },
     {
       "name": "size",
       "explanation": "Size-related name components.",
       "entries": [
-        "dwarf",
-        "giant",
-        "grand",
-        "great",
-        "long",
-        "short",
-        "tall",
-        "tiny"
+        "dwarves",
+        "giants",
+        "midgets"
       ]
     },
     {
       "name": "sky",
       "explanation": "Sky-related name components.",
       "entries": [
-        "moon",
-        "sky",
-        "star",
-        "sun"
+        "skies",
+        "stars"
       ]
     },
     {
       "name": "sorrow",
       "explanation": "Sorrow-related name components.",
       "entries": [
-        "mourn",
-        "sorrow"
+        "sorrows"
       ]
     },
     {
       "name": "time",
       "explanation": "Time-related name components.",
       "entries": [
-        "dawn",
-        "day",
-        "dusk",
-        "night",
-        "noon"
+        "dawns",
+        "days",
+        "dusks",
+        "nights",
+        "noons"
       ]
     },
     {
       "name": "weapon",
       "explanation": "Weapon-related name components.",
       "entries": [
-        "arrow",
-        "axe",
-        "blade",
-        "bow",
-        "dirk",
-        "spear"
+        "arrows",
+        "axes",
+        "blades",
+        "bows",
+        "dirks",
+        "spears"
       ]
     },
     {
       "name": "weather",
       "explanation": "Weather-related name components.",
       "entries": [
-        "cloud",
-        "dew",
-        "mist",
-        "rain"
+        "clouds",
+        "mists",
+        "rains"
       ]
     },
     {
@@ -490,7 +454,7 @@
       "entries": [
         "{myth}",
         "{medieval}",
-        "dragon"
+        "dragons"
       ]
     },
     {
@@ -572,16 +536,16 @@
       "name": "synonym",
       "explanation": "Variant expressions for generator subject matter.",
       "entries": [
-        "concept"
+        "concepts"
       ]
     },
     {
-      "name": "looks",
+      "name": "look",
       "explanation": "Variant expressions for looking like something.",
       "format": "-- in good condition / approaching",
       "entries": [
-        "appears to be",
-        "seems to be"
+        "appear to be",
+        "seem to be"
       ]
     },
     {
