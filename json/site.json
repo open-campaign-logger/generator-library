@@ -1,25 +1,35 @@
 {
-  "name": "aspect",
+  "name": "site",
   "resultPattern": "{init}{result}",
   "globals": {
-    "variable": ""
+    "milieu": "",
+    "milieudescription": "",
+    "site": ""
   },
   "variables": {
     "footnote": ""
   },
-  "explanation": "Aspects, attributes and descriptors for place names, etc.",
+  "explanation": "Sites of interest.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
-  "note": "Use only words suitable for front position!",
-  "format": "-- place",
+  "note": "",
+  "format": "",
   "bugs": "",
   "to do": "",
-  "see": "concept, motif-*, place, theme",
+  "see": "culture, Dungeon_adventure, Five_room_dungeon, location, milieu, people, place, site",
   "date": "2018-09-22",
   "authors": "ELF Vesala",
   "sources": "",
-  "genre": "universal",
+  "attribution": {
+    "creators": "",
+    "copyright": "",
+    "licence": "https://",
+    "disclaimer": "https://",
+    "source": "",
+    "changes": "Translation into Campaign Logger generator format."
+  },
+  "genre": "",
   "categories": [
-    "utility"
+    ""
   ],
   "tables": [
     {
@@ -29,7 +39,7 @@
         {
           "v": "",
           "export": {
-            "": ""
+            "site": "{site}"
           }
         }
       ]
@@ -41,46 +51,64 @@
       "name": "result",
       "explanation": "The output format.",
       "entries": [
-        "{summary}",
-        "{detail}"
+        "{section}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{g:site}"
       ]
     },
     {
       "name": "summary",
       "explanation": "Brief output.",
       "entries": [
-        "{aspect}"
+        "{attribute} {g:site}"
       ]
     },
     {
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{attribute} {aspect}",
-        "{aspect}, {feature}",
-        "{attribute} {aspect}, {feature}"
+        "{g:site} {complication}, {feature}",
+        "{attribute} {g:site} {complication}, {feature}"
       ]
     },
     {
       "name": "description",
-      "explanation": "Long description as a paragraph of text.",
+      "explanation": "Long description as a sentence.",
       "entries": [
-        "The {aspect} {synonym} {looks} {feature}.",
-        "The {attribute} {aspect} {synonym} {looks} {feature}."
+        "The {g:milieu} {complication} and {inhabited} {denizen attribute} {denizen}. The {synonym} {hides} {reward attribute} {reward}."
+      ]
+    },
+    {
+      "name": "section",
+      "explanation": "Long description as a subheading and a text paragraph.",
+      "entries": [
+        "===== {random} =====\r\n{description} \r\n "
       ]
     },
     {
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Name}: {random} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+        "{b|Name}: {random} \r\n{b|Complication}: {complication} \r\n{b|Denizen}: {denizen attribute} {denizen} \r\n{b|Reward}: {reward attribute} {reward} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "name": "meta",
+      "explanation": "Off-game explanation of the result.",
+      "entries": [
+        ""
       ]
     },
     {
       "**************************************************": "TYPES"
     },
     {
-      "name": "aspect",
+      "name": "site",
       "explanation": "Types by rarity.",
       "entries": [
         {
@@ -94,144 +122,125 @@
       "name": "common",
       "explanation": "Usual types.",
       "entries": [
-        "{age}",
-        "{animal}",
-        "{color}",
-        "{direction}",
-        "{negative}",
-        "{plant}",
-        "{positive}",
-        "{time}"
+        "{lib:place#subpolar}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Unusual types.",
       "entries": [
-        "{air}",
-        "{cold}",
-        "{material}",
-        "{warm}"
+        "{lib:place#underground}"
+      ]
+    },
+    {
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
+      "entries": [
+        "{lib:place#exclusive}"
+      ]
+    },
+    {
+      "**************************************************": "RANGES"
+    },
+    {
+      "name": "any",
+      "explanation": "Random selection.",
+      "entries": [
+        ""
       ]
     },
     {
       "**************************************************": "DETAILS"
     },
     {
-      "name": "any",
-      "explanation": "All aspects for random selection.",
+      "name": "complication",
+      "explanation": "",
       "entries": [
-        "{age}",
-        "{air}",
-        "{animal}",
-        "{cold}",
-        "{color}",
-        "{direction}",
-        "{material}",
-        "{negative}",
-        "{plant}",
-        "{positive}",
-        "{time}",
-        "{warm}"
+        "carries the taint of plague",
+        "has been cursed",
+        "has partially collapsed",
+        "is about to collapse",
+        "is a low magic zone",
+        "is booby trapped"
       ]
     },
     {
-      "--------------------------------------------------": "ASPECTS"
+      "--------------------------------------------------": "DENIZENS"
     },
     {
-      "name": "age",
-      "explanation": "Age-related aspects.",
+      "name": "denizen",
+      "explanation": "",
+      "format": "singular",
       "entries": [
-        "new",
-        "old"
+        "group of ancestor spirits",
+        "beast man",
+        "halfbreed",
+        "hermit",
+        "hunter",
+        "lycanthrope",
+        "madman",
+        "pack of wolves",
+        "seer",
+        "shaman",
+        "totem spirit",
+        "tracker",
+        "horde of undead creatures"
       ]
     },
     {
-      "name": "air",
-      "explanation": "Air-related aspects.",
+      "name": "denizen attribute",
+      "explanation": "",
       "entries": [
-        "cloud",
-        "sky"
+        "an angered",
+        "a distrustful",
+        "a hungry",
+        "an insane",
+        "a phobic",
+        "a plague-carrying",
+        "a psychotic",
+        "a ravenous",
+        "a religious",
+        "a suspicious",
+        "a vengeful",
+        "a wounded"
       ]
     },
     {
-      "name": "animal",
-      "explanation": "Animal-related aspects.",
+      "--------------------------------------------------": "REWARDS"
+    },
+    {
+      "name": "reward",
+      "explanation": "",
       "entries": [
-        "{lib:animal#summary}"
+        "crafting recipe",
+        "healing item",
+        "piece of information",
+        "item imbued with spiritual energy",
+        "rare material component for a spell",
+        "scroll",
+        "spell",
+        "talisman",
+        "treasure chest",
+        "weapon"
       ]
     },
     {
-      "name": "cold",
-      "explanation": "Cold-related aspects.",
+      "name": "reward attribute",
+      "explanation": "",
       "entries": [
-        "frost",
-        "ice",
-        "snow"
-      ]
-    },
-    {
-      "name": "color",
-      "explanation": "Colour-related aspects.",
-      "entries": [
-        "{lib:color#word}"
-      ]
-    },
-    {
-      "name": "direction",
-      "explanation": "Orientation-related aspects.",
-      "entries": [
-        "{lib:direction#adjective}"
-      ]
-    },
-    {
-      "name": "material",
-      "explanation": "Material-related aspects.",
-      "entries": [
-        "{lib:material#summary}"
-      ]
-    },
-    {
-      "name": "negative",
-      "explanation": "Ominous aspects.",
-      "entries": [
-        "cursed",
-        "desolate",
-        "forbidden",
-        "murky"
-      ]
-    },
-    {
-      "name": "plant",
-      "explanation": "Vegetation-related aspects.",
-      "entries": [
-        "{lib:plant#summary}"
-      ]
-    },
-    {
-      "name": "positive",
-      "explanation": "Deligthful aspects.",
-      "entries": [
-        "bright",
-        "shining",
-        "wondrous"
-      ]
-    },
-    {
-      "name": "time",
-      "explanation": "Time-related aspects.",
-      "entries": [
-        "autumn",
-        "spring",
-        "summer",
-        "winter"
-      ]
-    },
-    {
-      "name": "warm",
-      "explanation": "Warmth-related aspects.",
-      "entries": [
-        "sun"
+        "a camouflaged",
+        "a cursed",
+        "a dwarf-forged",
+        "a fae-cursed",
+        "a fake",
+        "a hidden",
+        "an infamous",
+        "a legendary",
+        "a primitive",
+        "a rare",
+        "a ravaged",
+        "a sorcerous",
+        "a valuable"
       ]
     },
     {
@@ -241,7 +250,7 @@
       "name": "random",
       "explanation": "Randomization methods.",
       "entries": [
-        "{component}"
+        "{|{component}|tcase}"
       ]
     },
     {
@@ -251,15 +260,11 @@
       "name": "component",
       "explanation": "Component-based terms (generated from words).",
       "entries": [
-        "{compoundbegin}{compoundend}",
         "{beginning} {ending}",
         "{ending} {extension}",
         "{descriptor} {ending}",
-        "{descriptor} {compoundbegin}{compoundend}",
         "{descriptor} {beginning} {ending}",
-        "{compoundbegin}{compoundend} {extension}",
         "{beginning} {ending} {extension}",
-        "{descriptor} {compoundbegin}{compoundend} {extension}",
         "{descriptor} {beginning} {ending} {extension}"
       ]
     },
@@ -267,43 +272,44 @@
       "name": "descriptor",
       "explanation": "Descriptors for randomized terms.",
       "entries": [
-        ""
+        "{lib:place#descriptor}"
       ]
     },
     {
       "name": "beginning",
       "explanation": "Beginnings for randomized terms.",
       "entries": [
-        "{compoundbegin}",
-        "XXX"
+        "{lib:concept#negative}",
+        "{lib:concept#neutral}",
+        "{compoundbegin}"
       ]
     },
     {
       "name": "compoundbegin",
       "explanation": "Compound word beginnings for randomized terms.",
       "entries": [
-        "XXX"
+        "{lib:place#compoundbegin}"
       ]
     },
     {
       "name": "compoundend",
       "explanation": "Compound word endings for randomized terms.",
       "entries": [
-        "XXX"
+        "{lib:place#compoundend}"
       ]
     },
     {
       "name": "ending",
       "explanation": "Separate word endings for randomized terms.",
       "entries": [
-        "XXX"
+        "{g:site}"
       ]
     },
     {
       "name": "extension",
       "explanation": "Extensions for randomized terms.",
       "entries": [
-        ""
+        "{lib:place#extension}"
       ]
     },
     {
@@ -317,8 +323,7 @@
       "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
-        "{medieval}",
-        "dragon"
+        "{medieval}"
       ]
     },
     {
@@ -328,7 +333,7 @@
       "name": "myth",
       "explanation": "Descriptions for mythic worlds (once thought true).",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
@@ -338,7 +343,7 @@
       "name": "primitive",
       "explanation": "Descriptions for prehistoric worlds.",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
@@ -348,7 +353,7 @@
       "name": "ancient",
       "explanation": "Descriptions for ancient worlds.",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
@@ -358,7 +363,7 @@
       "name": "medieval",
       "explanation": "Descriptions for medieval worlds (with no magic).",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
@@ -368,8 +373,7 @@
       "name": "modern",
       "explanation": "Descriptions for modern worlds.",
       "entries": [
-        "{common}",
-        "XXX"
+        "{common}"
       ]
     },
     {
@@ -379,8 +383,7 @@
       "name": "futuristic",
       "explanation": "Descriptions for science fiction worlds.",
       "entries": [
-        "{modern}",
-        "XXX"
+        "{modern}"
       ]
     },
     {
@@ -400,10 +403,30 @@
       "name": "synonym",
       "explanation": "Variant expressions for generator subject matter.",
       "entries": [
-        "aspect",
-        "attribute",
-        "charasteristic",
-        "facet"
+        "location",
+        "milieu",
+        "place",
+        "site"
+      ]
+    },
+    {
+      "name": "hides",
+      "explanation": "Variant expressions for 'shelters'.",
+      "entries": [
+        "harbors a secret:",
+        "has a well-kept secret:",
+        "hides",
+        "is the hiding place of",
+        "is the resting place of",
+        "shelters"
+      ]
+    },
+    {
+      "name": "inhabited",
+      "explanation": "Variant expressions for 'frequented by'.",
+      "entries": [
+        "is frequented by",
+        "is inhabited by"
       ]
     },
     {

@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "_template_place, encounter, location, milieu, site",
-  "date": "2018-09-20",
+  "date": "2018-09-22",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -98,6 +98,13 @@
       "explanation": "Unusual types.",
       "entries": [
         "{|{conceptual}|tcase}"
+      ]
+    },
+    {
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
+      "entries": [
+        ""
       ]
     },
     {
@@ -1314,6 +1321,7 @@
       "name": "descriptor",
       "explanation": "Descriptors for randomized terms.",
       "entries": [
+        "{lib:direction#adjective}",
         "Trackless",
         "Tractless",
         "Uncharted"
@@ -1331,14 +1339,20 @@
       "name": "compoundbegin",
       "explanation": "Compound word beginnings for randomized terms.",
       "entries": [
-        "{lib:concept#summary}"
+        "{lib:aspect#summary}",
+        "moss",
+        "mud",
+        "rock",
+        "stone"
       ]
     },
     {
       "name": "compoundend",
       "explanation": "Compound word endings for randomized terms.",
       "entries": [
-        "{milieu}"
+        "field",
+        "home",
+        "land"
       ]
     },
     {
@@ -1352,7 +1366,12 @@
       "name": "extension",
       "explanation": "Extensions for randomized terms.",
       "entries": [
-        ""
+        "of {lib:concept#negative}",
+        "of no {lib:concept#positive}",
+        "of the {lib:concepts#word}",
+        "of lost hope",
+        "of no return",
+        "without end"
       ]
     },
     {
@@ -1606,7 +1625,7 @@
     {
       "name": "beginning x",
       "entries": [
-        "Xeno"
+        "{beginning}"
       ]
     },
     {

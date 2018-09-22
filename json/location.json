@@ -2,12 +2,12 @@
   "name": "location",
   "resultPattern": "{init}{result}",
   "globals": {
-    "variable": ""
-  },
-  "variables": {
     "milieu": "",
     "milieudescription": "",
     "footnote": ""
+  },
+  "variables": {
+    "variable": ""
   },
   "explanation": "Location generator.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
@@ -15,7 +15,7 @@
   "bugs": "",
   "to do": "Add themes to categorize attributes and other elements.",
   "see": "5_room_dungeon, encounter, hook_line_and_sinker_adventure, milieu, place, site",
-  "date": "2018-09-20",
+  "date": "2018-09-22",
   "authors": "ELF Vesala",
   "sources": "encounter, Wikipedia.org",
   "attribution": {
@@ -168,7 +168,7 @@
         {
           "m": 1,
           "v": "{indoor}",
-          "set": {
+          "export": {
             "milieu": "indoor",
             "milieudescription": "indoor"
           }
@@ -176,7 +176,7 @@
         {
           "m": 1,
           "v": "{urban}",
-          "set": {
+          "export": {
             "milieu": "urban",
             "milieudescription": "urban area"
           }
@@ -184,7 +184,7 @@
         {
           "m": 1,
           "v": "{suburban}",
-          "set": {
+          "export": {
             "milieu": "suburban",
             "milieudescription": "suburban area"
           }
@@ -201,7 +201,7 @@
         {
           "m": 1,
           "v": "{village}",
-          "set": {
+          "export": {
             "milieu": "village",
             "milieudescription": "village area"
           }
@@ -209,7 +209,7 @@
         {
           "m": 1,
           "v": "{rural}",
-          "set": {
+          "export": {
             "milieu": "rural",
             "milieudescription": "rural area"
           }
@@ -217,7 +217,7 @@
         {
           "m": 1,
           "v": "{road}",
-          "set": {
+          "export": {
             "milieu": "road",
             "milieudescription": "road"
           }
@@ -225,7 +225,7 @@
         {
           "m": 1,
           "v": "{outpost}",
-          "set": {
+          "export": {
             "milieu": "outpost",
             "milieudescription": "far reaches of civilization"
           }
@@ -253,7 +253,7 @@
         {
           "m": 1,
           "v": "{barren}",
-          "set": {
+          "export": {
             "milieu": "barren",
             "milieudescription": "barren lowlands"
           }
@@ -261,7 +261,7 @@
         {
           "m": 1,
           "v": "{grassland}",
-          "set": {
+          "export": {
             "milieu": "grassland",
             "milieudescription": "grass plains"
           }
@@ -269,7 +269,7 @@
         {
           "m": 1,
           "v": "{forest}",
-          "set": {
+          "export": {
             "milieu": "forest",
             "milieudescription": "forested area"
           }
@@ -277,7 +277,7 @@
         {
           "m": 1,
           "v": "{hill}",
-          "set": {
+          "export": {
             "milieu": "hill",
             "milieudescription": "hilly area"
           }
@@ -285,7 +285,7 @@
         {
           "m": 1,
           "v": "{mountain}",
-          "set": {
+          "export": {
             "milieu": "mountain",
             "milieudescription": "mountainous area"
           }
@@ -293,7 +293,7 @@
         {
           "m": 1,
           "v": "{valley}",
-          "set": {
+          "export": {
             "milieu": "valley",
             "milieudescription": "valley"
           }
@@ -310,7 +310,7 @@
         {
           "m": 1,
           "v": "{wetlands}",
-          "set": {
+          "export": {
             "milieu": "wetlands",
             "milieudescription": "wetlands"
           }
@@ -318,7 +318,7 @@
         {
           "m": 1,
           "v": "{river}",
-          "set": {
+          "export": {
             "milieu": "river",
             "milieudescription": "river"
           }
@@ -326,7 +326,7 @@
         {
           "m": 1,
           "v": "{lake}",
-          "set": {
+          "export": {
             "milieu": "lake",
             "milieudescription": "lake"
           }
@@ -334,7 +334,7 @@
         {
           "m": 1,
           "v": "{coast}",
-          "set": {
+          "export": {
             "milieu": "coast",
             "milieudescription": "coastal area"
           }
@@ -342,7 +342,7 @@
         {
           "m": 1,
           "v": "{sea}",
-          "set": {
+          "export": {
             "milieu": "sea",
             "milieudescription": "sea"
           }
@@ -350,7 +350,7 @@
         {
           "m": 1,
           "v": "{ship}",
-          "set": {
+          "export": {
             "milieu": "ship",
             "milieudescription": "ship"
           }
@@ -358,7 +358,7 @@
         {
           "m": 1,
           "v": "{island}",
-          "set": {
+          "export": {
             "milieu": "island",
             "milieudescription": "island"
           }
@@ -375,7 +375,7 @@
         {
           "m": 1,
           "v": "{underground}",
-          "set": {
+          "export": {
             "milieu": "underground",
             "milieudescription": "underground area"
           }
@@ -383,7 +383,7 @@
         {
           "m": 1,
           "v": "{volcanic}",
-          "set": {
+          "export": {
             "milieu": "volcanic",
             "milieudescription": "volcanic area"
           }
@@ -405,7 +405,7 @@
         {
           "m": 1,
           "v": "{tundra}",
-          "set": {
+          "export": {
             "milieu": "tundra",
             "milieudescription": "tundra terrain"
           }
@@ -413,7 +413,7 @@
         {
           "m": 1,
           "v": "{glacial}",
-          "set": {
+          "export": {
             "milieu": "glacial",
             "milieudescription": "glacial area"
           }
@@ -427,7 +427,7 @@
         {
           "m": 1,
           "v": "{desert}",
-          "set": {
+          "export": {
             "milieu": "desert",
             "milieudescription": "desert"
           }
@@ -435,7 +435,7 @@
         {
           "m": 1,
           "v": "{savanna}",
-          "set": {
+          "export": {
             "milieu": "savanna",
             "milieudescription": "savanna"
           }
@@ -443,7 +443,7 @@
         {
           "m": 1,
           "v": "{jungle}",
-          "set": {
+          "export": {
             "milieu": "jungle",
             "milieudescription": "jungle"
           }
@@ -460,7 +460,7 @@
         {
           "m": 1,
           "v": "{underwater}",
-          "set": {
+          "export": {
             "milieu": "underwater",
             "milieudescription": "underwater"
           }
@@ -468,7 +468,7 @@
         {
           "m": 1,
           "v": "{earth}",
-          "set": {
+          "export": {
             "milieu": "earth",
             "milieudescription": "in the ground"
           }
@@ -476,7 +476,7 @@
         {
           "m": 1,
           "v": "{air}",
-          "set": {
+          "export": {
             "milieu": "air",
             "milieudescription": "air"
           }
@@ -484,7 +484,7 @@
         {
           "m": 1,
           "v": "{space}",
-          "set": {
+          "export": {
             "milieu": "space",
             "milieudescription": "space"
           }
@@ -492,7 +492,7 @@
         {
           "m": 1,
           "v": "{dimension}",
-          "set": {
+          "export": {
             "milieu": "dimension",
             "milieudescription": "extraplanar area"
           }
