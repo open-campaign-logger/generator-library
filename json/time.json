@@ -32,7 +32,7 @@
   "bugs": "",
   "to do": "past, future, absolute, relative",
   "see": "number",
-  "date": "2018-07-05",
+  "date": "2018-09-22",
   "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -905,6 +905,55 @@
       "entries": [
         "AM",
         "PM"
+      ]
+    },
+    {
+      "**************************************************": "TIMES OF THE DAY"
+    },
+    {
+      "name": "time of day",
+      "explanation": "Approximate times of the day.",
+      "entries": [
+        "{morning}",
+        "{day}",
+        "{evening}",
+        "{night}"
+      ]
+    },
+    {
+      "name": "morning",
+      "explanation": "Approximate times of the day.",
+      "entries": [
+        "dawn",
+        "morning",
+        "forenoon"
+      ]
+    },
+    {
+      "name": "day",
+      "explanation": "Approximate times of the day.",
+      "entries": [
+        "noon",
+        "early afternoon",
+        "afternoon"
+      ]
+    },
+    {
+      "name": "evening",
+      "explanation": "Approximate times of the day.",
+      "entries": [
+        "evening",
+        "dusk",
+        "nightfall"
+      ]
+    },
+    {
+      "name": "night",
+      "explanation": "Approximate times of the day.",
+      "entries": [
+        "night",
+        "midnight",
+        "small hours"
       ]
     },
     {
