@@ -16,7 +16,7 @@
   "bugs": "",
   "to do": "",
   "see": "culture, Dungeon_adventure, Five_room_dungeon, location, milieu, people, place, site",
-  "date": "2018-09-22",
+  "date": "2018-09-23",
   "authors": "ELF Vesala",
   "sources": "",
   "attribution": {
@@ -72,29 +72,29 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{g:site} {feature}. The {!synonym} {complication}.",
-        "{attribute} {g:site} {feature}. The {!synonym} {complication}."
+        "{g:site} {feature}. {obstacle}.",
+        "{attribute} {g:site} {feature}. {obstacle}."
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a sentence.",
       "entries": [
-        "The {g:milieu} {inhabited} {denizen attribute} {denizen}. The {!synonym} {complication}. The {!synonym} {hides} {reward attribute} {reward}."
+        "{inhabitant}. {obstacle}. {reward}."
       ]
     },
     {
       "name": "section",
       "explanation": "Long description as a subheading and a text paragraph.",
       "entries": [
-        "===== {random} =====\r\n{description} \r\n "
+        "{init}===== {random} =====\r\n{description} \r\n "
       ]
     },
     {
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Name}: {random} \r\n{b|Complication}: The {synonym} {complication}. \r\n{b|Denizen}: {denizen attribute} {denizen} \r\n{b|Reward}: {reward attribute} {reward} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+        "{b|Name}: {random} \r\n{b|Obstacle}: {obstacle}. \r\n{b|Inhabitant}: {inhabitant} \r\n{b|Reward}: {reward} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
       ]
     },
     {
@@ -146,7 +146,38 @@
       "name": "any",
       "explanation": "Random selection.",
       "entries": [
-        ""
+        "{inhabitant}",
+        "{lore}",
+        "{obstacle}",
+        "{reward}"
+      ]
+    },
+    {
+      "name": "inhabitant",
+      "explanation": "The dweller on the site.",
+      "entries": [
+        "The {g:milieu} {inhabited} {denizen attribute} {denizen}"
+      ]
+    },
+    {
+      "name": "lore",
+      "explanation": "Information available on the site.",
+      "entries": [
+        "The {g:milieu} {!hides} {information attribute} {information}"
+      ]
+    },
+    {
+      "name": "obstacle",
+      "explanation": "Complications on the site.",
+      "entries": [
+        "The {!synonym} {complication}"
+      ]
+    },
+    {
+      "name": "reward",
+      "explanation": "Valuables on the site.",
+      "entries": [
+        "The {!synonym} {!hides} {treasure attribute} {treasure}"
       ]
     },
     {
@@ -154,7 +185,7 @@
     },
     {
       "name": "complication",
-      "explanation": "",
+      "explanation": "Variable conditions on the site.",
       "entries": [
         "{lib:complication#location}",
         "carries the taint of plague",
@@ -167,6 +198,24 @@
     },
     {
       "--------------------------------------------------": "DENIZENS"
+    },
+    {
+      "name": "denizen attribute",
+      "explanation": "",
+      "entries": [
+        "an angered",
+        "a distrustful",
+        "a hungry",
+        "an insane",
+        "a phobic",
+        "a plague-carrying",
+        "a psychotic",
+        "a ravenous",
+        "a religious",
+        "a suspicious",
+        "a vengeful",
+        "a wounded"
+      ]
     },
     {
       "name": "denizen",
@@ -189,31 +238,49 @@
       ]
     },
     {
-      "name": "denizen attribute",
+      "--------------------------------------------------": "INFORMATION"
+    },
+    {
+      "name": "information attribute",
       "explanation": "",
       "entries": [
-        "an angered",
-        "a distrustful",
-        "a hungry",
-        "an insane",
-        "a phobic",
-        "a plague-carrying",
-        "a psychotic",
-        "a ravenous",
-        "a religious",
-        "a suspicious",
-        "a vengeful",
-        "a wounded"
+        "a book containing",
+        "a scroll containing"
+      ]
+    },
+    {
+      "name": "information",
+      "explanation": "",
+      "entries": [
+        "a crafting recipe"
       ]
     },
     {
       "--------------------------------------------------": "REWARDS"
     },
     {
-      "name": "reward",
+      "name": "treasure attribute",
       "explanation": "",
       "entries": [
-        "crafting recipe",
+        "a camouflaged",
+        "a cursed",
+        "a damaged",
+        "a dwarf-forged",
+        "a fae-cursed",
+        "a fake",
+        "a hidden",
+        "an infamous",
+        "a legendary",
+        "a primitive",
+        "a rare",
+        "a sorcerous",
+        "a valuable"
+      ]
+    },
+    {
+      "name": "treasure",
+      "explanation": "",
+      "entries": [
         "healing item",
         "piece of information",
         "item imbued with spiritual energy",
@@ -223,25 +290,6 @@
         "talisman",
         "treasure chest",
         "weapon"
-      ]
-    },
-    {
-      "name": "reward attribute",
-      "explanation": "",
-      "entries": [
-        "a camouflaged",
-        "a cursed",
-        "a dwarf-forged",
-        "a fae-cursed",
-        "a fake",
-        "a hidden",
-        "an infamous",
-        "a legendary",
-        "a primitive",
-        "a rare",
-        "a ravaged",
-        "a sorcerous",
-        "a valuable"
       ]
     },
     {
@@ -411,6 +459,17 @@
       ]
     },
     {
+      "name": "containing",
+      "explanation": "Variant expressions for 'including'.",
+      "entries": [
+        "accommodating",
+        "containing",
+        "hiding",
+        "holding",
+        "including"
+      ]
+    },
+    {
       "name": "hides",
       "explanation": "Variant expressions for 'shelters'.",
       "entries": [
@@ -423,11 +482,31 @@
       ]
     },
     {
+      "name": "home",
+      "explanation": "Variant expressions for 'dwelling'.",
+      "entries": [
+        "abode",
+        "dwelling",
+        "habitat",
+        "haunt",
+        "hideaway",
+        "hideout",
+        "hiding place",
+        "home",
+        "refuge",
+        "shelter"
+      ]
+    },
+    {
       "name": "inhabited",
       "explanation": "Variant expressions for 'frequented by'.",
+      "format": "The site --",
       "entries": [
+        "has been settled by",
+        "has been taken over by",
         "is frequented by",
-        "is inhabited by"
+        "is inhabited by",
+        "is the {home} of"
       ]
     },
     {
