@@ -72,15 +72,15 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{g:site} {complication}, {feature}",
-        "{attribute} {g:site} {complication}, {feature}"
+        "{g:site} {feature}. The {!synonym} {complication}.",
+        "{attribute} {g:site} {feature}. The {!synonym} {complication}."
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a sentence.",
       "entries": [
-        "The {g:milieu} {complication} and {inhabited} {denizen attribute} {denizen}. The {synonym} {hides} {reward attribute} {reward}."
+        "The {g:milieu} {inhabited} {denizen attribute} {denizen}. The {!synonym} {complication}. The {!synonym} {hides} {reward attribute} {reward}."
       ]
     },
     {
@@ -94,7 +94,7 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Name}: {random} \r\n{b|Complication}: {complication} \r\n{b|Denizen}: {denizen attribute} {denizen} \r\n{b|Reward}: {reward attribute} {reward} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+        "{b|Name}: {random} \r\n{b|Complication}: The {synonym} {complication}. \r\n{b|Denizen}: {denizen attribute} {denizen} \r\n{b|Reward}: {reward attribute} {reward} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
       ]
     },
     {
@@ -156,6 +156,7 @@
       "name": "complication",
       "explanation": "",
       "entries": [
+        "{lib:complication#location}",
         "carries the taint of plague",
         "has been cursed",
         "has partially collapsed",
@@ -264,8 +265,7 @@
         "{ending} {extension}",
         "{descriptor} {ending}",
         "{descriptor} {beginning} {ending}",
-        "{beginning} {ending} {extension}",
-        "{descriptor} {beginning} {ending} {extension}"
+        "{beginning} {ending} {extension}"
       ]
     },
     {
@@ -403,6 +403,7 @@
       "name": "synonym",
       "explanation": "Variant expressions for generator subject matter.",
       "entries": [
+        "area",
         "location",
         "milieu",
         "place",

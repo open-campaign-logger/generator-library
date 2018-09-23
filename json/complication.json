@@ -277,6 +277,7 @@
     {
       "name": "location",
       "explanation": "Location types.",
+      "format": "The place --",
       "entries": [
         "{corridor}",
         "{dungeon}",
@@ -288,58 +289,59 @@
       "name": "corridor",
       "explanation": "Complications for (dungeon) corridors.",
       "entries": [
-        "In some areas the ceiling is so low that it slows down movement.",
-        "The passages slopes downwards in an almost undetectable manner.",
-        "The passages slopes downwards so sharply that it makes balancing difficult."
+        "has the ceiling so low that it slows down movement",
+        "slopes downwards in an almost undetectable manner",
+        "slopes downwards so sharply that it makes balancing difficult"
       ]
     },
     {
       "name": "dungeon",
       "explanation": "Complications for dungeons.",
       "entries": [
-        "The structure is about to collapse.",
-        "Rising water levels are slowly flooding the area.",
-        "In the area there is a helpless {lib:actant#helpless} that must be protected and rescued.",
-        "The otherworldly energies of the area are warped, creating unpredictable side effects each time magic is used.",
-        "A competing group of adventurers is trying to reach the goal before the protagonists, and is willing to use also dirty tricks to win.",
-        "In addition to the {g:villain} and the {g:minion} underlings, another hostile force is present in the area.",
-        "A pestilence has contaminated the area, making most of the encountered people plague carriers.",
-        "The {g:villain}'s {g:minion} forces have split into rival factions warring with each other.",
-        "The {g:villain}'s {g:minion} forces are planning a mutiny against their master.",
-        "Periodic tremors cause debris to fall from the ceiling.",
-        "The location will be destroyed within a time limit, and everyone must exit before the destruction."
+        "is about to collapse",
+        "is being slowly flooded by rising water levels",
+        "has a helpless {lib:actant#helpless} that must be protected and rescued",
+        "has warped otherworldly energies, creating unpredictable side effects each time magic is used",
+        "has a competing group of adventurers trying to reach the goal before the protagonists, and are willing to use dirty tricks to win",
+        "has also another hostile force present",
+        "has been contaminated by pestilence, making most of the encountered people plague carriers",
+        "has the enemy forces split into rival factions warring with each other",
+        "has enemy forces planning a mutiny against their master",
+        "periodic tremors causing debris to fall from the ceiling",
+        "is going to be destroyed within a time limit"
       ]
     },
     {
       "name": "room",
       "explanation": "Complications for (dungeon) rooms.",
       "entries": [
-        "The air here is heavy and breathing soon becomes difficult.",
-        "The darkness here feels magical and makes light sources feel dimmer.",
-        "Noxious fumes make everyone breathing them cough and sneeze.",
-        "An extremely foul smell makes breathing difficult here.",
-        "Gusts of wind threaten to put out torches and lanterns.",
-        "Loud echoes in the room make communication difficult.",
-        "An infestation of spiders has produced thick webs in the area.",
-        "An oily substance on the floor makes it slippery.",
-        "Strange sounds emanate from an unknown source.",
-        "In some areas the ceiling is so low that it slows down movement.",
-        "The flooring is muddy, which slows down progress and leaves a clear trail for anyone to follow.",
-        "There are noxious fumes in the air.",
-        "The air is extremely hot and humid, which makes all physical activities strenuous.",
-        "The area is infested with centipedes and small insects.",
-        "Most of the surfaces are slime-covered, which makes floors and objects slippery.",
-        "Air and horizontal surfaces are filled with ash, making everyone suspectible to heavy coughing.",
-        "The area is contaminated with a black mold that makes eyes watery and causes skin to itch.",
-        "The area is filled with debris that makes progress slow."
+        "has heavy air that soon makes breathing difficult",
+        "is covered by darkness that feels magical and makes light sources seem dimmer",
+        "has noxious fumes that make everyone breathing them cough and sneeze",
+        "has an extremely foul smell that makes breathing difficult",
+        "has gusts of wind that threaten to put out torches and lanterns",
+        "has loud echoes that make communication difficult",
+        "has an infestation of spiders that has produced thick webs in the area",
+        "has an oily substance on the ground, making it slippery",
+        "has strange sounds emanating  from an unknown source",
+        "has the ceiling so low that it slows down movement",
+        "has muddy ground, which slows down progress and leaves a clear trail for anyone to follow",
+        "has noxious fumes in the air",
+        "has extremely hot and humid air, which makes all physical activities strenuous",
+        "is infested with centipedes and small insects",
+        "has most of the surfaces slime-covered, which makes floors and objects slippery",
+        "has air and horizontal surfaces filled with ash, making everyone suspectible to heavy coughing",
+        "is contaminated with a black mold that makes eyes watery and causes skin to itch",
+        "is filled with debris that makes progress slow"
       ]
     },
     {
       "name": "milieu",
       "explanation": "Complications for environments.",
       "entries": [
-        "being ravaged by earthquake tremors",
-        "extreme weather conditions"
+        "is ravaged by earthquake tremors",
+        "has extreme weather conditions",
+        "has treacherous pits"
       ]
     },
     {

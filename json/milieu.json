@@ -16,7 +16,7 @@
   "bugs": "",
   "to do": "Not sure what would be the best way to sync the descriptions without being able to pass variables between files.",
   "see": "culture, Dungeon_adventure, Five_room_dungeon, location, people, place, site",
-  "date": "2018-09-20",
+  "date": "2018-09-22",
   "authors": "ELF Vesala.",
   "sources": "Five_room_dungeon",
   "genre": "universal",
@@ -60,7 +60,7 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{milieu} \r\n{lib:complication#milieu}",
+        "{milieu} \r\nThe area {lib:complication#milieu}",
         "{attribute} {milieu}",
         "{milieu}, {feature}",
         "{attribute} {milieu}, {feature}"

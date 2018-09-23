@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_entrance, dungeon_room, dungeon_vault, Five_room_dungeon",
-  "date": "2018-07-24",
+  "date": "2018-09-22",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "fantasy",
@@ -431,7 +431,7 @@
       "explanation": "Extras for dungeon corridors.",
       "entries": [
         "",
-        "{global:startbold}Complication{global:endbold}: {lib:complication#corridor}",
+        "{global:startbold}Complication{global:endbold}: The area {lib:complication#corridor}",
         "{global:startbold}Feature{global:endbold}: {lib:dungeon_feature}"
       ]
     }

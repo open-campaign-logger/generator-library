@@ -13,8 +13,8 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_corridor, dungeon_vault, Five_room_dungeon",
-  "date": "2018-03-01",
-  "authors": "Esko Vesala",
+  "date": "2018-09-22",
+  "authors": "ELF Vesala",
   "sources": "Five_room_dungeon",
   "genre": "fantasy",
   "categories": [
@@ -1054,7 +1054,7 @@
       "entries": [
         "",
         "{global:startbold}Flavoring{global:endbold}: {flavoring}",
-        "{global:startbold}Room complication{global:endbold}: {lib:complication#room}",
+        "{global:startbold}Room complication{global:endbold}: the room {lib:complication#room}",
         "{global:startbold}Feature{global:endbold}: {lib:dungeon_feature}"
       ]
     },

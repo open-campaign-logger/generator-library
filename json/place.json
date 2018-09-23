@@ -1313,8 +1313,7 @@
         "{descriptor} {begin} {ending}",
         "{compoundbegin}{compoundend} {extension}",
         "{begin} {ending} {extension}",
-        "{descriptor} {compoundbegin}{compoundend} {extension}",
-        "{descriptor} {begin} {ending} {extension}"
+        "{descriptor} {compoundbegin}{compoundend} {extension}"
       ]
     },
     {
