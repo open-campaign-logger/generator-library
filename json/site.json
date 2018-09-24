@@ -152,20 +152,26 @@
         "{animal}",
         "{denizen}",
         "{information}",
+        "{item}",
+        "{landmark}",
         "{monster}",
         "{mood}",
         "{obstacle}",
         "{plant}",
         "{reward}",
-        "{supernatural}"
+        "{structure}",
+        "{supernatural}",
+        "{trap}"
       ]
     },
     {
       "name": "approach",
       "explanation": "Elements observed initially.",
       "entries": [
+        "{landmark}",
         "{mood}",
-        "{plant}"
+        "{plant}",
+        "{structure}"
       ]
     },
     {
@@ -174,8 +180,10 @@
       "entries": [
         "{animal}",
         "{denizen}",
+        "{item}",
         "{monster}",
-        "{obstacle}"
+        "{obstacle}",
+        "{trap}"
       ]
     },
     {
@@ -209,6 +217,20 @@
       "explanation": "Information available on the site.",
       "entries": [
         "The {!synonym} hides {information element}."
+      ]
+    },
+    {
+      "name": "item",
+      "explanation": "Items on the site.",
+      "entries": [
+        "The {!synonym} hides {item element}."
+      ]
+    },
+    {
+      "name": "landmark",
+      "explanation": "Landmarks on the site.",
+      "entries": [
+        "The {!synonym} features {landmark element}."
       ]
     },
     {
@@ -247,10 +269,24 @@
       ]
     },
     {
+      "name": "structure",
+      "explanation": "Structures on the site.",
+      "entries": [
+        "The {!synonym} features {information element}."
+      ]
+    },
+    {
       "name": "supernatural",
       "explanation": "Occult elements of the site.",
       "entries": [
         "The {!synonym} {!hides} {supernatural element}."
+      ]
+    },
+    {
+      "name": "trap",
+      "explanation": "Trap elements of the site.",
+      "entries": [
+        "The {!synonym} {!hides} {trap element}."
       ]
     },
     {
@@ -273,7 +309,8 @@
       "entries": [
         "an aggressive",
         "a ravenous",
-        "a wounded"
+        "a wounded",
+        "tracks of a"
       ]
     },
     {
@@ -366,7 +403,7 @@
       "explanation": "",
       "entries": [
         "a treatise {containing}",
-        "a code hiding",
+        "a coded message disguising",
         "a painting hiding a clue about",
         "a riddle hinting at",
         "a scroll {containing}",
@@ -395,6 +432,91 @@
         "that does not appear believable",
         "that may make the possessor of the knowledge a target for hostile forces",
         "that is not entirely truthful"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ITEMS"
+    },
+    {
+      "name": "item element",
+      "explanation": "Knowledge available on the site.",
+      "entries": [
+        "{item attribute} {item core}",
+        "{item attribute} {item core} {item feature}"
+      ]
+    },
+    {
+      "name": "item attribute",
+      "explanation": "",
+      "entries": [
+        "a broken",
+        "a discarded",
+        "a surprisingly well-preserved",
+        "a weather-beaten"
+      ]
+    },
+    {
+      "name": "item core",
+      "explanation": "",
+      "entries": [
+        "almost illegible letter",
+        "backpack",
+        "coded message",
+        "coin purse",
+        "collection of rations",
+        "empty flask",
+        "small key",
+        "piece of jewelry",
+        "piece of map",
+        "rusty dagger",
+        "single boot",
+        "small cage",
+        "tiny gem"
+      ]
+    },
+    {
+      "name": "item feature",
+      "explanation": "",
+      "entries": [
+        "half-buried in the ground"
+      ]
+    },
+    {
+      "--------------------------------------------------": "LANDMARKS"
+    },
+    {
+      "name": "landmark element",
+      "explanation": "Landmarks on the site.",
+      "entries": [
+        "{landmark attribute} {landmark core}",
+        "{landmark attribute} {landmark core} {landmark feature}"
+      ]
+    },
+    {
+      "name": "landmark attribute",
+      "explanation": "",
+      "entries": [
+        "a decrepit",
+        "a very noticeable"
+      ]
+    },
+    {
+      "name": "landmark core",
+      "explanation": "",
+      "entries": [
+        "wound-like fissure in the ground",
+        "geysir",
+        "gigantic boulder",
+        "mound of rocks",
+        "stone arc"
+      ]
+    },
+    {
+      "name": "landmark feature",
+      "explanation": "",
+      "entries": [
+        "of obviously ancient age",
+        "that produces a unique look for the {synonym}"
       ]
     },
     {
@@ -439,7 +561,7 @@
       "name": "monster feature",
       "explanation": "",
       "entries": [
-        "guarding something valuble"
+        "guarding a treasure"
       ]
     },
     {
@@ -488,7 +610,7 @@
       "explanation": "",
       "entries": [
         "and {!mood core}",
-        "- which does not feel natural"
+        "- and it does not feel natural"
       ]
     },
     {
@@ -566,7 +688,13 @@
       "explanation": "",
       "format": "singular",
       "entries": [
+        "curiously shaped tree",
+        "fallen tree",
+        "gnarly roots",
         "hollow tree",
+        "cover of mold blanketing the ground",
+        "pair of intertwined trees",
+        "ring of mushrooms",
         "thicket",
         "thorny thicket",
         "tree stump",
@@ -632,6 +760,63 @@
       ]
     },
     {
+      "--------------------------------------------------": "STRUCTURES"
+    },
+    {
+      "name": "structure element",
+      "explanation": "Knowledge available on the site.",
+      "entries": [
+        "{structure attribute} {structure core}",
+        "{structure attribute} {structure core} {structure feature}"
+      ]
+    },
+    {
+      "name": "structure attribute",
+      "explanation": "",
+      "entries": [
+        "an apparently recently used",
+        "a forgotten",
+        "a long since abandoned",
+        "a well-preserved"
+      ]
+    },
+    {
+      "name": "structure core",
+      "explanation": "",
+      "entries": [
+        "abstract carving",
+        "altar",
+        "animal trap",
+        "arrow shape made of small stones",
+        "bird snare",
+        "boundary mark",
+        "cache of cheap trinkets",
+        "cairn",
+        "campsite",
+        "grave",
+        "hunting platform",
+        "menhir",
+        "monolith",
+        "pile of rocks",
+        "roasting pit",
+        "remains of a campfire",
+        "sacrificial stone",
+        "shrine",
+        "sign",
+        "tent",
+        "tombstone",
+        "totem",
+        "trench"
+      ]
+    },
+    {
+      "name": "structure feature",
+      "explanation": "",
+      "entries": [
+        "covered by moss"
+      ]
+    },
+    {
       "--------------------------------------------------": "SUPERNATURAL"
     },
     {
@@ -663,6 +848,45 @@
       "explanation": "",
       "entries": [
         ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "TRAPS"
+    },
+    {
+      "name": "trap element",
+      "explanation": "Magical conditions on the site.",
+      "entries": [
+        "{trap attribute} {trap core}",
+        "{trap attribute} {trap core} {trap feature}"
+      ]
+    },
+    {
+      "name": "trap attribute",
+      "explanation": "",
+      "entries": [
+        "a rather obvious",
+        "a well-hidden",
+        "an already sprung"
+      ]
+    },
+    {
+      "name": "trap core",
+      "explanation": "",
+      "entries": [
+        "arrow trap",
+        "net trap",
+        "pit trap",
+        "poison trap",
+        "snare trap",
+        "spike trap"
+      ]
+    },
+    {
+      "name": "trap feature",
+      "explanation": "",
+      "entries": [
+        "near the center"
       ]
     },
     {

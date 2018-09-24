@@ -1250,8 +1250,10 @@
       "explanation": "Locations on arctic, snow and ice covered areas.",
       "name": "glacial site",
       "entries": [
+        "ice cave",
         "ice field",
         "ice floe (floating sea ice)",
+        "ice lake",
         "iceberg",
         "glacier",
         "crevasse",
