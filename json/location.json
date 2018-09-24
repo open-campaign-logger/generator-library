@@ -15,7 +15,7 @@
   "bugs": "",
   "to do": "Add themes to categorize attributes and other elements.",
   "see": "5_room_dungeon, encounter, hook_line_and_sinker_adventure, milieu, place, site",
-  "date": "2018-09-22",
+  "date": "2018-09-24",
   "authors": "ELF Vesala",
   "sources": "encounter, Wikipedia.org",
   "attribution": {
@@ -1291,8 +1291,8 @@
       "entries": [
         "underwater reef",
         "sunken ship",
-        "lagan (sunken cargo tied to a floating marker)",
-        "derelict (cargo sunken to the seafloor)"
+        "lagan",
+        "derelict"
       ]
     },
     {

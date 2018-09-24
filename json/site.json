@@ -16,7 +16,7 @@
   "bugs": "",
   "to do": "",
   "see": "culture, Dungeon_adventure, Five_room_dungeon, location, milieu, people, place, site",
-  "date": "2018-09-23",
+  "date": "2018-09-24",
   "authors": "ELF Vesala",
   "sources": "",
   "attribution": {
@@ -72,15 +72,15 @@
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{g:site} {feature}. {obstacle}.",
-        "{attribute} {g:site} {feature}. {obstacle}."
+        "{g:site} {feature} {obstacle}",
+        "{attribute} {g:site} {feature} {obstacle}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a sentence.",
       "entries": [
-        "{inhabitant}. {obstacle}. {reward}."
+        "{approach} \r\n{passage} \r\n{vault}"
       ]
     },
     {
@@ -94,7 +94,7 @@
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
-        "{b|Name}: {random} \r\n{b|Obstacle}: {obstacle}. \r\n{b|Inhabitant}: {inhabitant} \r\n{b|Reward}: {reward} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+        "{b|Name}: {random} \r\n{b|Obstacle}: {obstacle} \r\n{b|Denizen}: {denizen} \r\n{b|Reward}: {reward} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
       ]
     },
     {
@@ -122,6 +122,8 @@
       "name": "common",
       "explanation": "Usual types.",
       "entries": [
+        "{lib:place#plain}",
+        "{lib:place#polar}",
         "{lib:place#subpolar}"
       ]
     },
@@ -129,6 +131,7 @@
       "name": "rare",
       "explanation": "Unusual types.",
       "entries": [
+        "{lib:place#highland}",
         "{lib:place#underground}"
       ]
     },
@@ -146,58 +149,162 @@
       "name": "any",
       "explanation": "Random selection.",
       "entries": [
-        "{inhabitant}",
-        "{lore}",
+        "{animal}",
+        "{denizen}",
+        "{information}",
+        "{monster}",
+        "{mood}",
         "{obstacle}",
-        "{reward}"
+        "{plant}",
+        "{reward}",
+        "{supernatural}"
       ]
     },
     {
-      "name": "inhabitant",
-      "explanation": "The dweller on the site.",
+      "name": "approach",
+      "explanation": "Elements observed initially.",
       "entries": [
-        "The {g:milieu} {inhabited} {denizen attribute} {denizen}"
+        "{mood}",
+        "{plant}"
       ]
     },
     {
-      "name": "lore",
+      "name": "passage",
+      "explanation": "Elements inside the structure.",
+      "entries": [
+        "{animal}",
+        "{denizen}",
+        "{monster}",
+        "{obstacle}"
+      ]
+    },
+    {
+      "name": "vault",
+      "explanation": "Elements of the inner sanctum.",
+      "entries": [
+        "{information}",
+        "{reward}",
+        "{supernatural}"
+      ]
+    },
+    {
+      "--------------------------------------------------": ""
+    },
+    {
+      "name": "animal",
+      "explanation": "Animals on the site.",
+      "entries": [
+        "The {g:milieu} {inhabited} {animal element}."
+      ]
+    },
+    {
+      "name": "denizen",
+      "explanation": "The inhabitants of the site.",
+      "entries": [
+        "The {g:milieu} {inhabited} {denizen element}."
+      ]
+    },
+    {
+      "name": "information",
       "explanation": "Information available on the site.",
       "entries": [
-        "The {g:milieu} {!hides} {information attribute} {information}"
+        "The {!synonym} hides {information element}."
+      ]
+    },
+    {
+      "name": "monster",
+      "explanation": "Monstrosities on the site.",
+      "entries": [
+        "The {g:milieu} {inhabited} {monster element}."
+      ]
+    },
+    {
+      "name": "mood",
+      "explanation": "The atmosphere of the site.",
+      "entries": [
+        "In the {g:milieu} {mood element}."
       ]
     },
     {
       "name": "obstacle",
       "explanation": "Complications on the site.",
       "entries": [
-        "The {!synonym} {complication}"
+        "{obstacle element}."
+      ]
+    },
+    {
+      "name": "plant",
+      "explanation": "Plants on the site.",
+      "entries": [
+        "In the {g:milieu} grows {plant element}."
       ]
     },
     {
       "name": "reward",
       "explanation": "Valuables on the site.",
       "entries": [
-        "The {!synonym} {!hides} {treasure attribute} {treasure}"
+        "The {!synonym} {!hides} {reward element}."
+      ]
+    },
+    {
+      "name": "supernatural",
+      "explanation": "Occult elements of the site.",
+      "entries": [
+        "The {!synonym} {!hides} {supernatural element}."
       ]
     },
     {
       "**************************************************": "DETAILS"
     },
     {
-      "name": "complication",
-      "explanation": "Variable conditions on the site.",
+      "--------------------------------------------------": "ANIMALS"
+    },
+    {
+      "name": "animal element",
+      "explanation": "Animals on the site.",
       "entries": [
-        "{lib:complication#location}",
-        "carries the taint of plague",
-        "has been cursed",
-        "has partially collapsed",
-        "is about to collapse",
-        "is a low magic zone",
-        "is booby trapped"
+        "{animal attribute} {animal core}",
+        "{animal attribute} {animal core} {animal feature}"
+      ]
+    },
+    {
+      "name": "animal attribute",
+      "explanation": "",
+      "entries": [
+        "an aggressive",
+        "a ravenous",
+        "a wounded"
+      ]
+    },
+    {
+      "name": "animal core",
+      "explanation": "",
+      "format": "singular",
+      "entries": [
+        "bear",
+        "lynx",
+        "pack of wolves"
+      ]
+    },
+    {
+      "name": "animal feature",
+      "explanation": "",
+      "entries": [
+        "is guarding an offspring",
+        "is sleeping - very lightly",
+        "looking for nourishment"
       ]
     },
     {
       "--------------------------------------------------": "DENIZENS"
+    },
+    {
+      "name": "denizen element",
+      "explanation": "Inhabitants of the site.",
+      "entries": [
+        "{denizen attribute} {denizen core}",
+        "{denizen attribute} {denizen core} {denizen feature}"
+      ]
     },
     {
       "name": "denizen attribute",
@@ -218,7 +325,7 @@
       ]
     },
     {
-      "name": "denizen",
+      "name": "denizen core",
       "explanation": "",
       "format": "singular",
       "entries": [
@@ -229,7 +336,6 @@
         "hunter",
         "lycanthrope",
         "madman",
-        "pack of wolves",
         "seer",
         "shaman",
         "totem spirit",
@@ -238,35 +344,262 @@
       ]
     },
     {
+      "name": "denizen feature",
+      "explanation": "",
+      "entries": [
+        "preparing for an attack"
+      ]
+    },
+    {
       "--------------------------------------------------": "INFORMATION"
+    },
+    {
+      "name": "information element",
+      "explanation": "Knowledge available on the site.",
+      "entries": [
+        "{information attribute} {information core}",
+        "{information attribute} {information core} {information feature}"
+      ]
     },
     {
       "name": "information attribute",
       "explanation": "",
       "entries": [
-        "a book containing",
-        "a scroll containing"
+        "a treatise {containing}",
+        "a code hiding",
+        "a painting hiding a clue about",
+        "a riddle hinting at",
+        "a scroll {containing}",
+        "scratchmarks forming a crude presentation of",
+        "strange markings forming"
       ]
     },
     {
-      "name": "information",
+      "name": "information core",
       "explanation": "",
       "entries": [
-        "a crafting recipe"
+        "a crafting recipe",
+        "a map",
+        "criminal plan",
+        "esoteric knowledge",
+        "evidence of a secret alliance",
+        "forgotten lore",
+        "information about local history"
+      ]
+    },
+    {
+      "name": "information feature",
+      "explanation": "",
+      "entries": [
+        "that could prove to be very valuable for the right people",
+        "that does not appear believable",
+        "that may make the possessor of the knowledge a target for hostile forces",
+        "that is not entirely truthful"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MONSTERS"
+    },
+    {
+      "name": "monster element",
+      "explanation": "Monsters on the site.",
+      "entries": [
+        "{monster attribute} {monster core}",
+        "{monster attribute} {monster core} {monster feature}"
+      ]
+    },
+    {
+      "name": "monster attribute",
+      "explanation": "",
+      "entries": [
+        "an angered",
+        "a distrustful",
+        "a hungry",
+        "an insane",
+        "a phobic",
+        "a plague-carrying",
+        "a psychotic",
+        "a ravenous",
+        "a vengeful"
+      ]
+    },
+    {
+      "name": "monster core",
+      "explanation": "",
+      "format": "singular",
+      "entries": [
+        "group of ancestor spirits",
+        "beast man",
+        "lycanthrope",
+        "totem spirit",
+        "horde of undead creatures"
+      ]
+    },
+    {
+      "name": "monster feature",
+      "explanation": "",
+      "entries": [
+        "guarding something valuble"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MOOD"
+    },
+    {
+      "name": "mood element",
+      "explanation": "Atmosphere on the site.",
+      "entries": [
+        "{mood attribute} {!mood core}",
+        "{mood attribute} {!mood core} {mood feature}"
+      ]
+    },
+    {
+      "name": "mood attribute",
+      "explanation": "",
+      "entries": [
+        "careful observation reveals that",
+        "it is apparent at first sight that",
+        "visitors soon notice that"
+      ]
+    },
+    {
+      "name": "mood core",
+      "explanation": "",
+      "entries": [
+        "the air has a strange smell",
+        "the atmosphere has an unnatural feel",
+        "the atmosphere is chilly",
+        "being in the {synonym} seems to cause an itching feeling",
+        "black mold grows on every surface",
+        "occasionally glimpses of light can be seen in peripheral vision",
+        "surfaces feel brittle to touch",
+        "in the {synonym}, hairs stand on end",
+        "it is difficult to breathe in the {synonym}",
+        "it is unusually cold",
+        "light sources seem unusually dim",
+        "low humming can be heard emanating from somewhere",
+        "the {synonym} feels comforting",
+        "the {synonym} is deadly quiet",
+        "the {synonym} seems to be strangely devoid of life"
+      ]
+    },
+    {
+      "name": "mood feature",
+      "explanation": "",
+      "entries": [
+        "and {!mood core}",
+        "- which does not feel natural"
+      ]
+    },
+    {
+      "--------------------------------------------------": "OBSTACLES"
+    },
+    {
+      "name": "obstacle element",
+      "explanation": "Hindrances on the site.",
+      "entries": [
+        "{|{obstacle attribute}|scase} {obstacle core}",
+        "{|{obstacle attribute}|scase} {obstacle core} {obstacle feature}"
+      ]
+    },
+    {
+      "name": "obstacle attribute",
+      "explanation": "",
+      "entries": [
+        "a nearby area",
+        "the approach to the {synonym}",
+        "the boundary of the {synonym}",
+        "the center",
+        "the entrance",
+        "the environment",
+        "the outskirts",
+        "the passageway",
+        "the surrounding area",
+        "the vicinity of the {synonym}"
+      ]
+    },
+    {
+      "name": "obstacle core",
+      "explanation": "",
+      "entries": [
+        "{lib:complication#location}",
+        "carries the taint of plague",
+        "has been blocked",
+        "has been cursed",
+        "has partially collapsed",
+        "is about to collapse",
+        "is a low magic zone",
+        "is booby trapped"
+      ]
+    },
+    {
+      "name": "obstacle feature",
+      "explanation": "",
+      "entries": [
+        "and shows signs of burn damage",
+        "without advance warning"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PLANTS"
+    },
+    {
+      "name": "plant element",
+      "explanation": "Plants on the site.",
+      "entries": [
+        "{plant attribute} {plant core}",
+        "{plant attribute} {plant core} {plant feature}"
+      ]
+    },
+    {
+      "name": "plant attribute",
+      "explanation": "",
+      "entries": [
+        "an ancient-looking",
+        "a dead",
+        "a withered",
+        "a petrified"
+      ]
+    },
+    {
+      "name": "plant core",
+      "explanation": "",
+      "format": "singular",
+      "entries": [
+        "hollow tree",
+        "thicket",
+        "thorny thicket",
+        "tree stump",
+        "twisted tree"
+      ]
+    },
+    {
+      "name": "plant feature",
+      "explanation": "",
+      "entries": [
+        "covers a clue to the history of the place",
+        "that guards the passageway"
       ]
     },
     {
       "--------------------------------------------------": "REWARDS"
     },
     {
-      "name": "treasure attribute",
+      "name": "reward element",
+      "explanation": "Treasures and bounties available on the site.",
+      "entries": [
+        "{reward attribute} {reward core}",
+        "{reward attribute} {reward core} {reward feature}"
+      ]
+    },
+    {
+      "name": "reward attribute",
       "explanation": "",
       "entries": [
         "a camouflaged",
         "a cursed",
         "a damaged",
-        "a dwarf-forged",
-        "a fae-cursed",
+        "a non-human",
         "a fake",
         "a hidden",
         "an infamous",
@@ -278,11 +611,10 @@
       ]
     },
     {
-      "name": "treasure",
+      "name": "reward core",
       "explanation": "",
       "entries": [
         "healing item",
-        "piece of information",
         "item imbued with spiritual energy",
         "rare material component for a spell",
         "scroll",
@@ -290,6 +622,47 @@
         "talisman",
         "treasure chest",
         "weapon"
+      ]
+    },
+    {
+      "name": "reward feature",
+      "explanation": "",
+      "entries": [
+        "that is sought by hostile forces"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SUPERNATURAL"
+    },
+    {
+      "name": "supernatural element",
+      "explanation": "Magical conditions on the site.",
+      "entries": [
+        "{supernatural attribute} {supernatural core}",
+        "{supernatural attribute} {supernatural core} {supernatural feature}"
+      ]
+    },
+    {
+      "name": "supernatural attribute",
+      "explanation": "",
+      "entries": [
+        "a book {containing}",
+        "a scroll {containing}"
+      ]
+    },
+    {
+      "name": "supernatural core",
+      "explanation": "",
+      "entries": [
+        "a spell of healing",
+        "guidelines for astral travel"
+      ]
+    },
+    {
+      "name": "supernatural feature",
+      "explanation": "",
+      "entries": [
+        ""
       ]
     },
     {
@@ -320,15 +693,18 @@
       "name": "descriptor",
       "explanation": "Descriptors for randomized terms.",
       "entries": [
-        "{lib:place#descriptor}"
+        "{lib:adjPlace#negative}",
+        "{lib:place#descriptor}",
+        "{lib:prefix#place}"
       ]
     },
     {
       "name": "beginning",
       "explanation": "Beginnings for randomized terms.",
       "entries": [
-        "{lib:concept#negative}",
-        "{lib:concept#neutral}",
+        "{lib:aspect#cold}",
+        "{lib:aspect#common}",
+        "{lib:aspect#negative}",
         "{compoundbegin}"
       ]
     },

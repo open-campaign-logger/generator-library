@@ -13,8 +13,8 @@
   "format": "-- place",
   "bugs": "",
   "to do": "",
-  "see": "concept, motif-*, place, theme",
-  "date": "2018-09-22",
+  "see": "concept, concepts, motif-*, place, theme",
+  "date": "2018-09-24",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -115,7 +115,7 @@
       ]
     },
     {
-      "**************************************************": "DETAILS"
+      "**************************************************": "RANGES"
     },
     {
       "name": "any",
@@ -134,6 +134,25 @@
         "{time}",
         "{warm}"
       ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Aspects that are not negative or positive.",
+      "entries": [
+        "{age}",
+        "{air}",
+        "{animal}",
+        "{cold}",
+        "{color}",
+        "{direction}",
+        "{material}",
+        "{plant}",
+        "{time}",
+        "{warm}"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
     },
     {
       "--------------------------------------------------": "ASPECTS"

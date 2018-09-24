@@ -9,7 +9,7 @@
   },
   "explanation": "Concepts, themes and motifs for place names, etc.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
-  "note": "Only include uncountable words!",
+  "note": "Only include uncountable words suited for postposition!",
   "format": "Place of --",
   "bugs": "",
   "to do": "",
@@ -237,7 +237,7 @@
         "bane",
         "death",
         "poison",
-        "the reaper"
+        "reaper"
       ]
     },
     {
