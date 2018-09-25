@@ -16,7 +16,7 @@
   "bugs": "",
   "to do": "",
   "see": "culture, Dungeon_adventure, Five_room_dungeon, location, milieu, people, place, site",
-  "date": "2018-09-24",
+  "date": "2018-09-25",
   "authors": "ELF Vesala",
   "sources": "",
   "attribution": {
@@ -202,14 +202,16 @@
       "name": "animal",
       "explanation": "Animals on the site.",
       "entries": [
-        "The {g:milieu} {inhabited} {animal element}."
+        "The {g:milieu} {occupied} {animal element}.",
+        "There are {animal signs} {animal element}."
       ]
     },
     {
       "name": "denizen",
       "explanation": "The inhabitants of the site.",
       "entries": [
-        "The {g:milieu} {inhabited} {denizen element}."
+        "The {g:milieu} {inhabited} {denizen element}.",
+        "There is {denizen sign} {denizen element}."
       ]
     },
     {
@@ -230,7 +232,7 @@
       "name": "landmark",
       "explanation": "Landmarks on the site.",
       "entries": [
-        "The {!synonym} features {landmark element}."
+        "The {!synonym} {features} {landmark element}."
       ]
     },
     {
@@ -258,7 +260,7 @@
       "name": "plant",
       "explanation": "Plants on the site.",
       "entries": [
-        "In the {g:milieu} grows {plant element}."
+        "In the {g:milieu}, there {grows} {plant element}."
       ]
     },
     {
@@ -272,7 +274,7 @@
       "name": "structure",
       "explanation": "Structures on the site.",
       "entries": [
-        "The {!synonym} features {information element}."
+        "The {!synonym} {features} {information element}."
       ]
     },
     {
@@ -307,10 +309,7 @@
       "name": "animal attribute",
       "explanation": "",
       "entries": [
-        "an aggressive",
-        "a ravenous",
-        "a wounded",
-        "tracks of a"
+        "{lib:animal#attribute}"
       ]
     },
     {
@@ -318,18 +317,49 @@
       "explanation": "",
       "format": "singular",
       "entries": [
-        "bear",
-        "lynx",
-        "pack of wolves"
+        "{animal polar}",
+        "{animal subpolar}"
       ]
     },
     {
       "name": "animal feature",
       "explanation": "",
       "entries": [
-        "is guarding an offspring",
-        "is sleeping - very lightly",
-        "looking for nourishment"
+        "{lib:animal#feature}"
+      ]
+    },
+    {
+      "name": "animal polar",
+      "explanation": "",
+      "format": "singular",
+      "entries": [
+        "{lib:animal#polar beast}"
+      ]
+    },
+    {
+      "name": "animal signs",
+      "explanation": "Signs left on the site by animals.",
+      "format": "plural",
+      "entries": [
+        "blood drippings from",
+        "droppings of",
+        "remains of a feast by",
+        "faint scent traces of",
+        "sounds of",
+        "remains of",
+        "scratch marks left by",
+        "signs of a resting spot by",
+        "traces of skin from",
+        "tracks of"
+      ]
+    },
+    {
+      "name": "animal subpolar",
+      "explanation": "",
+      "format": "singular",
+      "entries": [
+        "{lib:animal#subpolar beast}",
+        "pack of wolves"
       ]
     },
     {
@@ -366,18 +396,13 @@
       "explanation": "",
       "format": "singular",
       "entries": [
-        "group of ancestor spirits",
-        "beast man",
         "halfbreed",
         "hermit",
         "hunter",
-        "lycanthrope",
         "madman",
         "seer",
         "shaman",
-        "totem spirit",
-        "tracker",
-        "horde of undead creatures"
+        "tracker"
       ]
     },
     {
@@ -385,6 +410,18 @@
       "explanation": "",
       "entries": [
         "preparing for an attack"
+      ]
+    },
+    {
+      "name": "denizen sign",
+      "explanation": "Signs left on the site by people.",
+      "format": "singular",
+      "entries": [
+        "a campsite of",
+        "scraps of food discarded by",
+        "a piece of clothing of",
+        "a piece of equipment belonging to",
+        "a trail left by"
       ]
     },
     {
@@ -417,7 +454,7 @@
       "entries": [
         "a crafting recipe",
         "a map",
-        "criminal plan",
+        "a criminal plan",
         "esoteric knowledge",
         "evidence of a secret alliance",
         "forgotten lore",
@@ -831,23 +868,49 @@
       "name": "supernatural attribute",
       "explanation": "",
       "entries": [
-        "a book {containing}",
-        "a scroll {containing}"
+        "a coded",
+        "a hidden",
+        "an indecipherable"
       ]
     },
     {
       "name": "supernatural core",
       "explanation": "",
       "entries": [
-        "a spell of healing",
-        "guidelines for astral travel"
+        "{supernatural source} {containing} {supernatural knowledge} {supernatural purpose}"
       ]
     },
     {
       "name": "supernatural feature",
       "explanation": "",
       "entries": [
-        ""
+        "that requires blood sacrifice"
+      ]
+    },
+    {
+      "name": "supernatural knowledge",
+      "explanation": "",
+      "entries": [
+        "a ceremony",
+        "a ritual for",
+        "a spell of"
+      ]
+    },
+    {
+      "name": "supernatural purpose",
+      "explanation": "",
+      "entries": [
+        "astral travel",
+        "healing"
+      ]
+    },
+    {
+      "name": "supernatural source",
+      "explanation": "",
+      "entries": [
+        "book",
+        "grimoire",
+        "scroll"
       ]
     },
     {
@@ -1064,9 +1127,55 @@
       "entries": [
         "accommodating",
         "containing",
+        "enclosing",
         "hiding",
         "holding",
-        "including"
+        "including",
+        "incorporating"
+      ]
+    },
+    {
+      "name": "den",
+      "explanation": "Variant expressions for a 'lair'.",
+      "entries": [
+        "den",
+        "habitat",
+        "lair",
+        "nest"
+      ]
+    },
+    {
+      "name": "exhibits",
+      "explanation": "Variant expressions for 'exhibits'.",
+      "entries": [
+        "displays",
+        "exhibits",
+        "shows"
+      ]
+    },
+    {
+      "name": "features",
+      "explanation": "Variant expressions for 'calls attention to'.",
+      "entries": [
+        "accentuates",
+        "brings attention to",
+        "calls attention to",
+        "draws attention to",
+        "features",
+        "gives prominence to",
+        "highlights",
+        "showcases"
+      ]
+    },
+    {
+      "name": "grows",
+      "explanation": "Variant expressions for 'extends'.",
+      "entries": [
+        "endures",
+        "grows",
+        "lives",
+        "prevails",
+        "survives"
       ]
     },
     {
@@ -1083,7 +1192,7 @@
     },
     {
       "name": "home",
-      "explanation": "Variant expressions for 'dwelling'.",
+      "explanation": "Variant expressions for a 'dwelling'.",
       "entries": [
         "abode",
         "dwelling",
@@ -1099,7 +1208,7 @@
     },
     {
       "name": "inhabited",
-      "explanation": "Variant expressions for 'frequented by'.",
+      "explanation": "Variant expressions for 'frequented by' (for people).",
       "format": "The site --",
       "entries": [
         "has been settled by",
@@ -1116,6 +1225,17 @@
       "entries": [
         "appears to be",
         "seems to be"
+      ]
+    },
+    {
+      "name": "occupied",
+      "explanation": "Variant expressions for 'settled by' (for animals).",
+      "format": "The site --",
+      "entries": [
+        "has been settled by",
+        "has been taken over by",
+        "is frequented by",
+        "is the {den} of"
       ]
     },
     {

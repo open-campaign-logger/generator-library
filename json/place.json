@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "_template_place, encounter, location, milieu, site",
-  "date": "2018-09-22",
+  "date": "2018-09-25",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -1369,9 +1369,8 @@
       "explanation": "Extensions for randomized terms.",
       "entries": [
         "of {lib:concept#negative}",
-        "of no {lib:concept#positive}",
+        "of lost {lib:concepts#life}",
         "of the {lib:concepts#word}",
-        "of lost hope",
         "of no return",
         "without end"
       ]

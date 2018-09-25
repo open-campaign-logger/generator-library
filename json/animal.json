@@ -14,10 +14,10 @@
   "explanation": "Animals from insects to mammals.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
-  "bugs": "Different regions (tropical, polar, etc.)",
-  "to do": "Expand the content.",
+  "bugs": "",
+  "to do": "Different regions (tropical, polar, etc).",
   "see": "activity, citizen, encounter, monster, nonhuman, plant",
-  "date": "2018-09-05",
+  "date": "2018-09-25",
   "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -883,6 +883,49 @@
       ]
     },
     {
+      "**************************************************": "BIOTOPES"
+    },
+    {
+      "--------------------------------------------------": "POLAR"
+    },
+    {
+      "name": "polar",
+      "explanation": "Animals of polar regions.",
+      "entries": [
+        "{polar beast}"
+      ]
+    },
+    {
+      "name": "polar beast",
+      "explanation": "Beasts of polar regions.",
+      "entries": [
+        "arctic fox",
+        "polar bear",
+        "walrus"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SUBPOLAR"
+    },
+    {
+      "name": "subpolar",
+      "explanation": "Animals of subpolar regions.",
+      "entries": [
+        "{subpolar beast}"
+      ]
+    },
+    {
+      "name": "subpolar beast",
+      "explanation": "Beasts of subpolar regions.",
+      "entries": [
+        "bear",
+        "fox",
+        "lynx",
+        "wolf",
+        "wolverine"
+      ]
+    },
+    {
       "**************************************************": "WORLD-SPECIFIC"
     },
     {
@@ -979,11 +1022,14 @@
       "name": "attribute",
       "explanation": "Attribute prepended to the front of the result.",
       "entries": [
-        "young",
-        "hungry",
-        "curious",
-        "scared",
-        "tired"
+        "an aggressive",
+        "a curious",
+        "a hungry",
+        "a ravenous",
+        "a scared",
+        "a tired",
+        "a wounded",
+        "a young"
       ]
     },
     {
@@ -991,10 +1037,13 @@
       "explanation": "Features appended to the end of the result.",
       "format": "It seems to be --",
       "entries": [
+        "guarding an offspring",
         "guarding another of its kind",
-        "trying to find something to eat",
         "looking for a good location",
-        "observing its environs"
+        "looking for nourishment",
+        "observing its environs",
+        "sleeping",
+        "trying to find something to eat"
       ]
     },
     {
