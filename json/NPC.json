@@ -42,7 +42,6 @@
     "doing": "",
     "form": "",
     "mood": "",
-    "moodexpression": "",
     "style": ""
   },
   "variables": {
@@ -54,7 +53,7 @@
   "bugs": "Developepment currently on hold, waiting for global variable support.",
   "to do": "Most of it... Starting from genre? ",
   "see": "",
-  "date": "2018-09-20",
+  "date": "2018-09-26",
   "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -77,10 +76,11 @@
         "byname": "{lib:name-{g:culture}#{g:gender} byname}",
         "fullname": "{g:firstname} {g:surname}",
         "civilization": "{civilization}",
-        "wealth": "{lib:social_class}"
+        "wealth": "{lib:social_class}",
+        "mood": "{mood}"
       },
       "entries": [
-        "{mood}{attitude}{activity}"
+        "{attitude}{activity}"
       ]
     },
     {
@@ -106,21 +106,21 @@
       "name": "summary",
       "explanation": "Brief output.",
       "entries": [
-        "{name}: {basic}"
+        "{name}: {NPC}"
       ]
     },
     {
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{name} \r\n{basic} \r\n{attire} \r\n{personality}. \r\n{goal} \r\n{equipment}"
+        "{name} \r\n{NPC} \r\n{attire} \r\n{personality}. \r\n{goal} \r\n{equipment}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "{name} \r\n{basic} \r\n{attire} \r\n{background} \r\n{personality}. \r\n{goal} \r\n{equipment}"
+        "{name} \r\n{NPC} \r\n{attire} \r\n{background} \r\n{personality}. \r\n{goal} \r\n{equipment}"
       ]
     },
     {
@@ -149,25 +149,18 @@
       "name": "common",
       "explanation": "Common NPC description types.",
       "entries": [
-        "{mood}{attitude}{activity}{description}"
+        "{deck}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare NPC description types.",
       "entries": [
-        "{mood}{attitude}{activity}{description}"
+        "{basic}"
       ]
     },
     {
-      "*********************************************": "DETAILS"
-    },
-    {
-      "name": "attire",
-      "explanation": "The costume of the person.",
-      "entries": [
-        "{g:Subject} is wearing {lib:outfit}"
-      ]
+      "**************************************************": "RANGES"
     },
     {
       "name": "basic",
@@ -178,6 +171,52 @@
       ]
     },
     {
+      "name": "deck",
+      "explanation": "",
+      "entries": [
+        "{|{appearance}|scase} {occupation} with {equipment} is {action}. \r\nThe {mood} {g:substantive} is {situation}. {g:Subject} wants to {goal} but {problem}."
+      ]
+    },
+    {
+      "name": "list",
+      "explanation": "Listing of key factors.",
+      "entries": [
+        "{attitude}{activity}{description}"
+      ]
+    },
+    {
+      "*********************************************": "DETAILS"
+    },
+    {
+      "--------------------------------------------------": "APPEARANCE"
+    },
+    {
+      "name": "appearance",
+      "explanation": "",
+      "entries": [
+        "bucktoothed",
+        "plump",
+        "tall and lanky"
+      ]
+    },
+    {
+      "name": "attire",
+      "explanation": "The costume of the person.",
+      "entries": [
+        "{g:Subject} is wearing {lib:outfit}"
+      ]
+    },
+    {
+      "name": "equipment",
+      "explanation": "The belongings of the person.",
+      "entries": [
+        "{lib:equipment#summary}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "BACKGROUND"
+    },
+    {
       "name": "background",
       "explanation": "The background of the person.",
       "entries": [
@@ -185,18 +224,34 @@
       ]
     },
     {
-      "name": "equipment",
-      "explanation": "The belongings of the person.",
+      "name": "occupation",
+      "explanation": "",
       "entries": [
-        "{b|Weapon}: {lib:weapon#common}"
+        "{lib:occupation#summary}"
       ]
     },
     {
-      "name": "goal",
-      "explanation": "The character's life goal.",
+      "--------------------------------------------------": "BEHAVIOR"
+    },
+    {
+      "name": "action",
+      "explanation": "What the character is doing just now?",
       "entries": [
-        "{g:Subject} wants to {lib:goal}"
+        "escaping pursuers",
+        "picking up a fight"
       ]
+    },
+    {
+      "name": "mood",
+      "explanation": "The mental state of the character.",
+      "entries": [
+        "desperate",
+        "fearful",
+        "panicked"
+      ]
+    },
+    {
+      "--------------------------------------------------": "IDENTITY"
     },
     {
       "name": "name",
@@ -206,12 +261,46 @@
       ]
     },
     {
+      "--------------------------------------------------": "PERSONALITY"
+    },
+    {
       "name": "personality",
       "explanation": "Psychology of the person.",
       "entries": [
         "{|{lib:personality}|scase}",
-        "{|{lib:flaw}|scase}",
+        "{|{lib:flaw}|scase}"
+      ]
+    },
+    {
+      "name": "quirk",
+      "explanation": "Minor quirks of the person.",
+      "entries": [
         "{|{lib:quirk}|scase}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SITUATION"
+    },
+    {
+      "name": "goal",
+      "explanation": "The character's life goal.",
+      "entries": [
+        "{lib:goal#summary}"
+      ]
+    },
+    {
+      "name": "problem",
+      "explanation": "Difficulties encountered by the character.",
+      "entries": [
+        "cannot control {g:possessive} emotions",
+        "speaks the local language poorly"
+      ]
+    },
+    {
+      "name": "situation",
+      "explanation": "A grander scheme in which the character is involved in.",
+      "entries": [
+        "searching for a lost inheritance"
       ]
     },
     {
@@ -323,39 +412,6 @@
           "v": "",
           "export": {
             "activity": "running"
-          }
-        }
-      ]
-    },
-    {
-      "**************************************************": "MOODS"
-    },
-    {
-      "name": "mood",
-      "explanation": "How the character is feeling?",
-      "entries": [
-        {
-          "m": 10,
-          "v": "",
-          "export": {
-            "mood": "sad",
-            "moodexpression": "crying"
-          }
-        },
-        {
-          "m": 20,
-          "v": "",
-          "export": {
-            "mood": "passive",
-            "moodexpression": "deep in thoughts"
-          }
-        },
-        {
-          "m": 10,
-          "v": "",
-          "export": {
-            "mood": "happy",
-            "moodexpression": "laughing"
           }
         }
       ]
@@ -524,8 +580,8 @@
       "name": "legacy",
       "explanation": "Old result before global variables.",
       "entries": [
-        "The {g:gender} {g:age} {g:speciesmention} is {g:attitude} and is {lib:synonym#wearing} {g:outfitattribute} {lib:synonym#clothing}. The {g:substantive} is {g:activity}. {lib:synonym#now} {g:subject} is {g:attitude} and {g:mood}, {g:moodexpression}.",
-        "This {g:gender} {g:age} {g:speciesmention} is {lib:synonym#wearing} {g:outfitattribute} {lib:synonym#clothing}. The {g:substantive} is {g:activity}. {lib:synonym#now} {g:subject} is {g:mood}, {g:moodexpression}. {g:subject} has a {g:speciesattribute} sense of humor."
+        "The {g:gender} {g:age} {g:speciesmention} is {g:attitude} and is {lib:synonym#wearing} {g:outfitattribute} {lib:synonym#clothing}. The {g:substantive} is {g:activity}. {lib:synonym#now} {g:subject} is {g:attitude} and {g:mood}.",
+        "This {g:gender} {g:age} {g:speciesmention} is {lib:synonym#wearing} {g:outfitattribute} {lib:synonym#clothing}. The {g:substantive} is {g:activity}. {lib:synonym#now} {g:subject} is {g:mood}. {g:subject} has a {g:speciesattribute} sense of humor."
       ]
     },
     {
