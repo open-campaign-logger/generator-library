@@ -386,13 +386,16 @@
       "name": "danger attribute",
       "explanation": "",
       "entries": [
-        "a hard to notice"
+        "a hard to notice",
+        "a huge",
+        "a larger than initially apparent"
       ]
     },
     {
       "name": "danger core",
       "explanation": "",
       "entries": [
+        "cover of brittle ice",
         "crack spouting out sulphuric fumes",
         "spot of quagmire"
       ]
@@ -401,7 +404,9 @@
       "name": "danger feature",
       "explanation": "",
       "entries": [
-        "that could be lethal"
+        "that could be lethal",
+        "that has trapped a wild beast",
+        "that still hides the remains of a previous visitor"
       ]
     },
     {
@@ -458,7 +463,10 @@
       "name": "denizen feature",
       "explanation": "",
       "entries": [
-        "preparing for an attack"
+        "hiding their valuables",
+        "preparing to defend against an attack",
+        "setting up traps",
+        "readily waiting in a superior attack position"
       ]
     },
     {
@@ -539,6 +547,7 @@
         "a broken",
         "a discarded",
         "a surprisingly well-preserved",
+        "a trapped",
         "a weather-beaten"
       ]
     },
@@ -553,6 +562,7 @@
         "collection of rations",
         "empty flask",
         "flag",
+        "flagon",
         "small key",
         "piece of jewelry",
         "piece of map",
@@ -566,7 +576,9 @@
       "name": "item feature",
       "explanation": "",
       "entries": [
-        "half-buried in the ground"
+        "cut in half",
+        "partially buried in the ground",
+        "torn into several pieces"
       ]
     },
     {
@@ -683,7 +695,9 @@
       "name": "monster feature",
       "explanation": "",
       "entries": [
-        "guarding a treasure"
+        "guarding a treasure",
+        "following the tracks of the adventurers",
+        "preparing for an ambush"
       ]
     },
     {
@@ -878,6 +892,7 @@
       "name": "reward feature",
       "explanation": "",
       "entries": [
+        "that is not as valuable as initially seems",
         "that is sought by hostile forces"
       ]
     },
@@ -953,7 +968,8 @@
       "explanation": "",
       "entries": [
         "that has apparently been hastily abandoned",
-        "that has been covered by moss"
+        "that has been covered by moss",
+        "that has been trapped"
       ]
     },
     {
@@ -987,6 +1003,7 @@
       "name": "supernatural feature",
       "explanation": "",
       "entries": [
+        "that can bring forth the ire of the gods",
         "that requires blood sacrifice"
       ]
     },
@@ -994,7 +1011,9 @@
       "name": "supernatural knowledge",
       "explanation": "",
       "entries": [
+        "a chant",
         "a ceremony",
+        "a potion of",
         "a ritual for",
         "a spell of"
       ]
@@ -1003,6 +1022,7 @@
       "name": "supernatural purpose",
       "explanation": "",
       "entries": [
+        "{lib:spell_intention#summary}",
         "astral travel",
         "healing"
       ]
@@ -1032,8 +1052,7 @@
       "explanation": "",
       "entries": [
         "a rather obvious",
-        "a well-hidden",
-        "an already sprung"
+        "a well-hidden"
       ]
     },
     {
@@ -1052,7 +1071,8 @@
       "name": "trap feature",
       "explanation": "",
       "entries": [
-        "near the center"
+        "that has already been sprung",
+        "that still has the corpse of a previous victim lying nearby"
       ]
     },
     {
