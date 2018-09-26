@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-07-24",
+  "date": "2018-09-26",
   "authors": "ELF Vesala.",
   "sources": "Dungeon_adventure",
   "genre": "universal",
@@ -339,9 +339,13 @@
       "name": "milieu",
       "explanation": "Complications for environments.",
       "entries": [
-        "is ravaged by earthquake tremors",
+        "contains poisonous elements",
+        "has a deep sinkhole on the ground",
         "has extreme weather conditions",
-        "has treacherous pits"
+        "has toxic gas on the area",
+        "has treacherous pits",
+        "is neutral ground between enemy forces",
+        "is ravaged by earthquake tremors"
       ]
     },
     {

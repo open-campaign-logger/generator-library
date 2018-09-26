@@ -210,7 +210,7 @@
       "name": "equipment",
       "explanation": "The belongings of the person.",
       "entries": [
-        "{lib:equipment#summary}"
+        "{lib:equipment#attribute} {lib:equipment#summary}"
       ]
     },
     {

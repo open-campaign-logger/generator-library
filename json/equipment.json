@@ -10,7 +10,7 @@
   "bugs": "",
   "to do": "More equipment types.",
   "see": "business, gem, jewelry, treasure",
-  "date": "2018-06-04",
+  "date": "2018-09-26",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -129,10 +129,10 @@
       "name": "provisions",
       "explanation": "Food for the trail.",
       "entries": [
-        "rations",
-        "salted fish",
-        "pickled eggs",
-        "flour"
+        "set of rations",
+        "pack of salted fish",
+        "pack of pickled eggs",
+        "sack of flour"
       ]
     },
     {
@@ -600,11 +600,28 @@
       "name": "attribute",
       "explanation": "Attributes prepended to the front of the result.",
       "entries": [
-        "cheaply made",
-        "old-fashioned",
-        "customized",
-        "composite",
-        "double"
+        "an ancient",
+        "a badly kept",
+        "a cheaply made",
+        "a composite",
+        "a crude",
+        "a customized",
+        "a damaged",
+        "a double",
+        "an expensive-looking",
+        "a fake",
+        "a fine-looking",
+        "a finely detailed",
+        "a heavy",
+        "a light",
+        "an old",
+        "an old-fashioned",
+        "an outdated",
+        "a smelly",
+        "a suspicious-looking",
+        "a tainted",
+        "a valuable",
+        "a well-preserved"
       ]
     },
     {
@@ -612,9 +629,7 @@
       "explanation": "Features appended to the end of the result.",
       "format": "It appears/feels/looks/seems -- ",
       "entries": [
-        "badly kept",
-        "like it has fallen into disrepair",
-        "well kept"
+        "like it has fallen into disrepair"
       ]
     },
     {

@@ -16,7 +16,7 @@
   "bugs": "",
   "to do": "",
   "see": "culture, Dungeon_adventure, Five_room_dungeon, location, milieu, people, place, site",
-  "date": "2018-09-25",
+  "date": "2018-09-26",
   "authors": "ELF Vesala",
   "sources": "",
   "attribution": {
@@ -150,6 +150,7 @@
       "explanation": "Random selection.",
       "entries": [
         "{animal}",
+        "{danger}",
         "{denizen}",
         "{information}",
         "{item}",
@@ -168,6 +169,7 @@
       "name": "approach",
       "explanation": "Elements observed initially.",
       "entries": [
+        "{danger}",
         "{landmark}",
         "{mood}",
         "{plant}",
@@ -204,6 +206,13 @@
       "entries": [
         "The {g:milieu} {occupied} {animal element}.",
         "There are {animal signs} {animal element}."
+      ]
+    },
+    {
+      "name": "danger",
+      "explanation": "Danger elements of the site.",
+      "entries": [
+        "The {!synonym} {!hides} {danger element}."
       ]
     },
     {
@@ -363,6 +372,39 @@
       ]
     },
     {
+      "--------------------------------------------------": "DANGERS"
+    },
+    {
+      "name": "danger element",
+      "explanation": "Magical conditions on the site.",
+      "entries": [
+        "{danger attribute} {danger core}",
+        "{danger attribute} {danger core} {danger feature}"
+      ]
+    },
+    {
+      "name": "danger attribute",
+      "explanation": "",
+      "entries": [
+        "a hard to notice"
+      ]
+    },
+    {
+      "name": "danger core",
+      "explanation": "",
+      "entries": [
+        "crack spouting out sulphuric fumes",
+        "spot of quagmire"
+      ]
+    },
+    {
+      "name": "danger feature",
+      "explanation": "",
+      "entries": [
+        "that could be lethal"
+      ]
+    },
+    {
       "--------------------------------------------------": "DENIZENS"
     },
     {
@@ -396,13 +438,20 @@
       "explanation": "",
       "format": "singular",
       "entries": [
+        "adventurer",
+        "escaped slave",
+        "stranded explorer",
+        "grave robber",
         "halfbreed",
+        "healer",
         "hermit",
         "hunter",
         "madman",
         "seer",
         "shaman",
-        "tracker"
+        "slaver",
+        "tracker",
+        "trader"
       ]
     },
     {
@@ -486,6 +535,7 @@
       "name": "item attribute",
       "explanation": "",
       "entries": [
+        "{lib:equipment#attribute}",
         "a broken",
         "a discarded",
         "a surprisingly well-preserved",
@@ -502,6 +552,7 @@
         "coin purse",
         "collection of rations",
         "empty flask",
+        "flag",
         "small key",
         "piece of jewelry",
         "piece of map",
@@ -533,7 +584,13 @@
       "name": "landmark attribute",
       "explanation": "",
       "entries": [
+        "a dangerous",
         "a decrepit",
+        "a hard to spot",
+        "a hidden",
+        "an isolated",
+        "a mist-covered",
+        "a peculiar-looking",
         "a very noticeable"
       ]
     },
@@ -541,19 +598,47 @@
       "name": "landmark core",
       "explanation": "",
       "entries": [
-        "wound-like fissure in the ground",
+        "cave",
+        "circle of stones",
+        "cliffside",
+        "crevice",
+        "field of sharp rocks",
+        "fissure in the ground",
+        "gemstone lode",
         "geysir",
         "gigantic boulder",
+        "glacier",
+        "grave mound",
+        "hot spring",
+        "mammoth graveyard",
         "mound of rocks",
-        "stone arc"
+        "mountain peak",
+        "mountain range",
+        "natural well",
+        "peat bog",
+        "range of hills",
+        "rock formation",
+        "spring",
+        "steep cliff",
+        "stone arc",
+        "stream",
+        "tar pit",
+        "underground river",
+        "valley",
+        "vein of ore",
+        "waterfall",
+        "watering hole"
       ]
     },
     {
       "name": "landmark feature",
       "explanation": "",
       "entries": [
+        "connected to the spirit world",
         "of obviously ancient age",
-        "that produces a unique look for the {synonym}"
+        "that produces a unique look for the {synonym}",
+        "where spirits are stronger than usual",
+        "with traces of bandits present"
       ]
     },
     {
@@ -616,8 +701,8 @@
       "name": "mood attribute",
       "explanation": "",
       "entries": [
-        "careful observation reveals that",
-        "it is apparent at first sight that",
+        "observation reveals that",
+        "it's apparent at first sight that",
         "visitors soon notice that"
       ]
     },
@@ -647,7 +732,7 @@
       "explanation": "",
       "entries": [
         "and {!mood core}",
-        "- and it does not feel natural"
+        "- which does not feel natural"
       ]
     },
     {
@@ -733,7 +818,7 @@
         "pair of intertwined trees",
         "ring of mushrooms",
         "thicket",
-        "thorny thicket",
+        "thorny bush",
         "tree stump",
         "twisted tree"
       ]
@@ -812,8 +897,13 @@
       "explanation": "",
       "entries": [
         "an apparently recently used",
+        "a blackened",
         "a forgotten",
+        "a frozen",
+        "a lichen-coated",
         "a long since abandoned",
+        "a tainted",
+        "a weather-worn",
         "a well-preserved"
       ]
     },
@@ -824,23 +914,35 @@
         "abstract carving",
         "altar",
         "animal trap",
+        "animal warren",
         "arrow shape made of small stones",
+        "beacon",
         "bird snare",
         "boundary mark",
+        "burial site",
         "cache of cheap trinkets",
         "cairn",
         "campsite",
+        "catacomb",
+        "corpse",
+        "den",
+        "fort",
         "grave",
         "hunting platform",
         "menhir",
         "monolith",
+        "mummified corpse",
+        "path",
         "pile of rocks",
+        "pillar of balanced boulders",
         "roasting pit",
         "remains of a campfire",
         "sacrificial stone",
         "shrine",
         "sign",
+        "stack of stones",
         "tent",
+        "tomb",
         "tombstone",
         "totem",
         "trench"
@@ -850,7 +952,8 @@
       "name": "structure feature",
       "explanation": "",
       "entries": [
-        "covered by moss"
+        "that has apparently been hastily abandoned",
+        "that has been covered by moss"
       ]
     },
     {
