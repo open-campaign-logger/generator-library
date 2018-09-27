@@ -16,7 +16,7 @@
   "bugs": "",
   "to do": "",
   "see": "culture, Dungeon_adventure, Five_room_dungeon, location, milieu, people, place, site",
-  "date": "2018-09-26",
+  "date": "2018-09-27",
   "authors": "ELF Vesala",
   "sources": "",
   "attribution": {
@@ -87,7 +87,7 @@
       "name": "section",
       "explanation": "Long description as a subheading and a text paragraph.",
       "entries": [
-        "{init}===== {random} =====\r\n{description} \r\n "
+        "{init}===== {random} =====\r\n{description}"
       ]
     },
     {
@@ -160,6 +160,7 @@
         "{obstacle}",
         "{plant}",
         "{reward}",
+        "{significance}",
         "{structure}",
         "{supernatural}",
         "{trap}"
@@ -173,6 +174,7 @@
         "{landmark}",
         "{mood}",
         "{plant}",
+        "{significance}",
         "{structure}"
       ]
     },
@@ -277,6 +279,13 @@
       "explanation": "Valuables on the site.",
       "entries": [
         "The {!synonym} {!hides} {reward element}."
+      ]
+    },
+    {
+      "name": "significance",
+      "explanation": "The significance of the site.",
+      "entries": [
+        "The {g:milieu} is {significance element}."
       ]
     },
     {
@@ -630,6 +639,7 @@
         "peat bog",
         "range of hills",
         "rock formation",
+        "small pond teeming with leeches",
         "spring",
         "steep cliff",
         "stone arc",
@@ -715,8 +725,9 @@
       "name": "mood attribute",
       "explanation": "",
       "entries": [
-        "observation reveals that",
-        "it's apparent at first sight that",
+        "an inspection reveals that",
+        "it's apparent that",
+        "it's not immediately noticeble, but",
         "visitors soon notice that"
       ]
     },
@@ -727,18 +738,27 @@
         "the air has a strange smell",
         "the atmosphere has an unnatural feel",
         "the atmosphere is chilly",
+        "a barely noticeable, extremely low sound seems to emanate from somewhere",
         "being in the {synonym} seems to cause an itching feeling",
         "black mold grows on every surface",
+        "colors seem to be dimmer in the area",
+        "the earth itself seems to be slowly breathing",
+        "every now and then the ground seems to tremble slightly",
         "occasionally glimpses of light can be seen in peripheral vision",
         "surfaces feel brittle to touch",
+        "a swarm of tiny insect-like creatures crawls on the ground",
         "in the {synonym}, hairs stand on end",
         "it is difficult to breathe in the {synonym}",
         "it is unusually cold",
         "light sources seem unusually dim",
         "low humming can be heard emanating from somewhere",
+        "occasionally small, sparkling lights can be seen in peripheral vision",
         "the {synonym} feels comforting",
+        "the {synonym} feels darker than the surroundings",
         "the {synonym} is deadly quiet",
-        "the {synonym} seems to be strangely devoid of life"
+        "the {synonym} gives goosebumps to visitors",
+        "the {synonym} seems to be strangely devoid of life",
+        "vapors seem to emanate from the ground"
       ]
     },
     {
@@ -746,7 +766,9 @@
       "explanation": "",
       "entries": [
         "and {!mood core}",
-        "- which does not feel natural"
+        "and a foreboding feeling seems to emanate from the surroundings",
+        "- which does not feel natural",
+        "which seems to have scared other wildlife away"
       ]
     },
     {
@@ -814,7 +836,9 @@
       "explanation": "",
       "entries": [
         "an ancient-looking",
+        "a curiously shaped",
         "a dead",
+        "a suffering",
         "a withered",
         "a petrified"
       ]
@@ -824,11 +848,13 @@
       "explanation": "",
       "format": "singular",
       "entries": [
-        "curiously shaped tree",
-        "fallen tree",
-        "gnarly roots",
-        "hollow tree",
         "cover of mold blanketing the ground",
+        "curiously shaped tree",
+        "giant tree",
+        "fallen tree",
+        "stangle of gnarly roots",
+        "hollow tree",
+        "mushroom-covered tree",
         "pair of intertwined trees",
         "ring of mushrooms",
         "thicket",
@@ -841,8 +867,15 @@
       "name": "plant feature",
       "explanation": "",
       "entries": [
-        "covers a clue to the history of the place",
-        "that guards the passageway"
+        "that covers a clue to the history of the place",
+        "that guards the passageway",
+        "that has an item trapped within",
+        "that has taken over the location",
+        "with an animal skull on top of it",
+        "with dyed, geometric patterns on it",
+        "with numerous spears struck to it",
+        "with weathered ribbons tied on it",
+        "with primitive trinkets scattered around as offerings to spirits"
       ]
     },
     {
@@ -879,11 +912,6 @@
       "explanation": "",
       "entries": [
         "healing item",
-        "item imbued with spiritual energy",
-        "rare material component for a spell",
-        "scroll",
-        "spell",
-        "talisman",
         "treasure chest",
         "weapon"
       ]
@@ -894,6 +922,76 @@
       "entries": [
         "that is not as valuable as initially seems",
         "that is sought by hostile forces"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SIGNIFICANCE"
+    },
+    {
+      "name": "significance element",
+      "explanation": "Significance of the site.",
+      "entries": [
+        "{significance attribute} {significance core}",
+        "{significance attribute} {significance core} {significance feature}"
+      ]
+    },
+    {
+      "name": "significance attribute",
+      "explanation": "",
+      "entries": [
+        "an ancient",
+        "a cursed",
+        "a fearsome",
+        "a haunted",
+        "an infamous",
+        "a major",
+        "an once famous"
+      ]
+    },
+    {
+      "name": "significance core",
+      "explanation": "",
+      "entries": [
+        "abode of a holy hermit",
+        "animal graveyard",
+        "area known for supernatural phenomena",
+        "battleground",
+        "borderland between hostile tribes",
+        "burial site",
+        "den of a dangerous beast",
+        "exploration target",
+        "holy site",
+        "hunting ground",
+        "location of a monster lair",
+        "location of a truce between warring tribes",
+        "magical place",
+        "mass grave",
+        "source of rare herbs",
+        "place of trials",
+        "place of worship",
+        "portal to spirit world",
+        "rumored hiding place of a treasure",
+        "sacred location for local inhabitants",
+        "sacrificial site",
+        "seat of a tribal ruler",
+        "settlement of a lost race",
+        "site for an adulthood rite",
+        "site for harvesting magical materials",
+        "site of justice",
+        "site of massacre",
+        "site of pilgrimage",
+        "territory of a rare beast",
+        "trading place"
+      ]
+    },
+    {
+      "name": "significance feature",
+      "explanation": "",
+      "entries": [
+        "but few remember it any more",
+        "that has largely been forgotten",
+        "that is only known by few people",
+        "that played a significant role in local history"
       ]
     },
     {
@@ -1011,10 +1109,21 @@
       "name": "supernatural knowledge",
       "explanation": "",
       "entries": [
-        "a chant",
-        "a ceremony",
-        "a potion of",
+        "ancient wisdom about",
+        "a chant for",
+        "a ceremony of",
+        "a description of an artifact for",
+        "inaccurate folklore about",
+        "information about the hiding place of a magic item for",
+        "a liturgy for",
+        "a magical sigil for",
+        "a prayer for",
+        "a recipe for a potion of",
+        "a magical rite for",
+        "manufacturing instructions for a talisman of",
+        "a rare material component for a spell of",
         "a ritual for",
+        "a sacrificial tradition for",
         "a spell of"
       ]
     },
@@ -1023,14 +1132,16 @@
       "explanation": "",
       "entries": [
         "{lib:spell_intention#summary}",
-        "astral travel",
-        "healing"
+        "healing",
+        "plague cure",
+        "travel to the spirit world"
       ]
     },
     {
       "name": "supernatural source",
       "explanation": "",
       "entries": [
+        "animal hide covered in writing",
         "book",
         "grimoire",
         "scroll"
@@ -1296,6 +1407,7 @@
       "entries": [
         "endures",
         "grows",
+        "is",
         "lives",
         "prevails",
         "survives"
