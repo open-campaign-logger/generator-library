@@ -16,7 +16,7 @@
   "bugs": "",
   "to do": "",
   "see": "culture, Dungeon_adventure, Five_room_dungeon, location, milieu, people, place, site",
-  "date": "2018-09-27",
+  "date": "2018-09-28",
   "authors": "ELF Vesala",
   "sources": "",
   "attribution": {
@@ -184,7 +184,6 @@
       "entries": [
         "{animal}",
         "{denizen}",
-        "{item}",
         "{monster}",
         "{obstacle}",
         "{trap}"
@@ -195,6 +194,7 @@
       "explanation": "Elements of the inner sanctum.",
       "entries": [
         "{information}",
+        "{item}",
         "{reward}",
         "{supernatural}"
       ]
@@ -214,7 +214,7 @@
       "name": "danger",
       "explanation": "Danger elements of the site.",
       "entries": [
-        "The {!synonym} {!hides} {danger element}."
+        "The {g:milieu} has {danger element}."
       ]
     },
     {
@@ -243,7 +243,7 @@
       "name": "landmark",
       "explanation": "Landmarks on the site.",
       "entries": [
-        "The {!synonym} {features} {landmark element}."
+        "The {!synonym} has {landmark element}."
       ]
     },
     {
@@ -292,7 +292,7 @@
       "name": "structure",
       "explanation": "Structures on the site.",
       "entries": [
-        "The {!synonym} {features} {information element}."
+        "The {!synonym} has {information element}."
       ]
     },
     {
@@ -306,7 +306,7 @@
       "name": "trap",
       "explanation": "Trap elements of the site.",
       "entries": [
-        "The {!synonym} {!hides} {trap element}."
+        "The {!synonym} has {trap element}."
       ]
     },
     {
@@ -472,10 +472,15 @@
       "name": "denizen feature",
       "explanation": "",
       "entries": [
+        "faking a grievous injury",
         "hiding their valuables",
         "preparing to defend against an attack",
+        "searching for something valuable",
         "setting up traps",
-        "readily waiting in a superior attack position"
+        "waiting in a superior attack position",
+        "who is plannning to rob any visitors",
+        "who is in dire need of help",
+        "who pretends to be friendly"
       ]
     },
     {
@@ -485,7 +490,7 @@
       "entries": [
         "a campsite of",
         "scraps of food discarded by",
-        "a piece of clothing of",
+        "a piece of clothing belonging to",
         "a piece of equipment belonging to",
         "a trail left by"
       ]
@@ -506,8 +511,8 @@
       "explanation": "",
       "entries": [
         "a treatise {containing}",
-        "a coded message disguising",
-        "a painting hiding a clue about",
+        "a coded message {containing}",
+        "an image with a clue about",
         "a riddle hinting at",
         "a scroll {containing}",
         "scratchmarks forming a crude presentation of",
@@ -555,30 +560,20 @@
         "{lib:equipment#attribute}",
         "a broken",
         "a discarded",
-        "a surprisingly well-preserved",
-        "a trapped",
-        "a weather-beaten"
+        "an ornate",
+        "a well-preserved",
+        "a weather-beaten",
+        "a wondrous"
       ]
     },
     {
       "name": "item core",
       "explanation": "",
       "entries": [
-        "almost illegible letter",
-        "backpack",
-        "coded message",
-        "coin purse",
-        "collection of rations",
-        "empty flask",
-        "flag",
-        "flagon",
-        "small key",
+        "healing item",
+        "magical weapon",
         "piece of jewelry",
-        "piece of map",
-        "rusty dagger",
-        "single boot",
-        "small cage",
-        "tiny gem"
+        "treasure chest"
       ]
     },
     {
@@ -586,6 +581,8 @@
       "explanation": "",
       "entries": [
         "cut in half",
+        "guarded by a trap",
+        "guarded by a monster",
         "partially buried in the ground",
         "torn into several pieces"
       ]
@@ -680,9 +677,9 @@
       "entries": [
         "an angered",
         "a distrustful",
+        "an enraged",
         "a hungry",
         "an insane",
-        "a phobic",
         "a plague-carrying",
         "a psychotic",
         "a ravenous",
@@ -694,9 +691,16 @@
       "explanation": "",
       "format": "singular",
       "entries": [
+        "giant",
         "group of ancestor spirits",
+        "bestial monstrosity",
         "beast man",
+        "creation of vile sorcery",
+        "creature from the spirit realms",
+        "inhuman abomination",
         "lycanthrope",
+        "nightmare horror",
+        "swarm of parasites",
         "totem spirit",
         "horde of undead creatures"
       ]
@@ -705,9 +709,12 @@
       "name": "monster feature",
       "explanation": "",
       "entries": [
-        "guarding a treasure",
-        "following the tracks of the adventurers",
-        "preparing for an ambush"
+        "chasing prey",
+        "guarding treasure",
+        "followings the tracks of the adventurers",
+        "hunting",
+        "preparing for an ambush",
+        "wanting revenge"
       ]
     },
     {
@@ -911,9 +918,11 @@
       "name": "reward core",
       "explanation": "",
       "entries": [
-        "healing item",
-        "treasure chest",
-        "weapon"
+        "demonic item",
+        "pool of healing",
+        "portal to the spirit world",
+        "rich ore of gems",
+        "concentration of magical energies"
       ]
     },
     {
@@ -975,7 +984,7 @@
         "sacrificial site",
         "seat of a tribal ruler",
         "settlement of a lost race",
-        "site for an adulthood rite",
+        "site for a local tribe's adulthood rite",
         "site for harvesting magical materials",
         "site of justice",
         "site of massacre",
@@ -1141,7 +1150,7 @@
       "name": "supernatural source",
       "explanation": "",
       "entries": [
-        "animal hide covered in writing",
+        "writing on animal hide",
         "book",
         "grimoire",
         "scroll"
@@ -1162,7 +1171,11 @@
       "name": "trap attribute",
       "explanation": "",
       "entries": [
-        "a rather obvious",
+        "a carefully constructed",
+        "a cruel",
+        "a hastily put together",
+        "a lethal",
+        "a primitive",
         "a well-hidden"
       ]
     },
@@ -1170,11 +1183,11 @@
       "name": "trap core",
       "explanation": "",
       "entries": [
-        "arrow trap",
-        "net trap",
+        "blade trap",
+        "crushing trap",
+        "magical trap",
         "pit trap",
         "poison trap",
-        "snare trap",
         "spike trap"
       ]
     },
@@ -1182,6 +1195,7 @@
       "name": "trap feature",
       "explanation": "",
       "entries": [
+        "causing grievous injuries",
         "that has already been sprung",
         "that still has the corpse of a previous victim lying nearby"
       ]
@@ -1338,7 +1352,28 @@
       "name": "exotic",
       "explanation": "Exotic alternatives.",
       "entries": [
-        ""
+        "{trinket core}"
+      ]
+    },
+    {
+      "name": "trinket core",
+      "explanation": "",
+      "entries": [
+        "almost illegible letter",
+        "backpack",
+        "coded message",
+        "coin purse",
+        "collection of rations",
+        "empty flask",
+        "flag",
+        "flagon",
+        "small key",
+        "piece of jewelry",
+        "piece of map",
+        "rusty dagger",
+        "single boot",
+        "small cage",
+        "tiny gem"
       ]
     },
     {
@@ -1362,10 +1397,9 @@
         "accommodating",
         "containing",
         "enclosing",
-        "hiding",
-        "holding",
         "including",
-        "incorporating"
+        "incorporating",
+        "with"
       ]
     },
     {

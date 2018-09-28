@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "concept, concepts, motif-*, place, theme",
-  "date": "2018-09-24",
+  "date": "2018-09-28",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -99,7 +99,6 @@
         "{color}",
         "{direction}",
         "{negative}",
-        "{plant}",
         "{positive}",
         "{time}"
       ]
@@ -111,6 +110,7 @@
         "{air}",
         "{cold}",
         "{material}",
+        "{plant}",
         "{warm}"
       ]
     },
@@ -224,7 +224,9 @@
       "name": "plant",
       "explanation": "Vegetation-related aspects.",
       "entries": [
-        "{lib:plant#summary}"
+        "{lib:plant#flower}",
+        "{lib:plant#shrub}",
+        "{lib:plant#tree}"
       ]
     },
     {
