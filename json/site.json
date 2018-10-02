@@ -16,7 +16,7 @@
   "bugs": "",
   "to do": "",
   "see": "culture, Dungeon_adventure, Five_room_dungeon, location, milieu, people, place, site",
-  "date": "2018-09-28",
+  "date": "2018-10-02",
   "authors": "ELF Vesala",
   "sources": "",
   "attribution": {
@@ -150,6 +150,7 @@
       "explanation": "Random selection.",
       "entries": [
         "{animal}",
+        "{community}",
         "{danger}",
         "{denizen}",
         "{information}",
@@ -170,6 +171,7 @@
       "name": "approach",
       "explanation": "Elements observed initially.",
       "entries": [
+        "{community}",
         "{danger}",
         "{landmark}",
         "{mood}",
@@ -185,8 +187,7 @@
         "{animal}",
         "{denizen}",
         "{monster}",
-        "{obstacle}",
-        "{trap}"
+        "{obstacle}"
       ]
     },
     {
@@ -206,23 +207,31 @@
       "name": "animal",
       "explanation": "Animals on the site.",
       "entries": [
-        "The {g:milieu} {occupied} {animal element}.",
+        "The {!synonym} {g:milieu} {occupied} {animal element}.",
         "There are {animal signs} {animal element}."
+      ]
+    },
+    {
+      "name": "community",
+      "explanation": "A community living on the site.",
+      "entries": [
+        "The {g:milieu} {inhabited} {community element}.",
+        "The {g:milieu} {accommodates} {community sign} {community element}."
       ]
     },
     {
       "name": "danger",
       "explanation": "Danger elements of the site.",
       "entries": [
-        "The {g:milieu} has {danger element}."
+        "The {g:milieu} {accommodates} {danger element}."
       ]
     },
     {
       "name": "denizen",
       "explanation": "The inhabitants of the site.",
       "entries": [
-        "The {g:milieu} {inhabited} {denizen element}.",
-        "There is {denizen sign} {denizen element}."
+        "The {!synonym} {inhabited} {denizen element}.",
+        "{|{denizen sign}|scase} {denizen element} can be found here."
       ]
     },
     {
@@ -243,14 +252,14 @@
       "name": "landmark",
       "explanation": "Landmarks on the site.",
       "entries": [
-        "The {!synonym} has {landmark element}."
+        "The {g:milieu} {accommodates} {landmark element}."
       ]
     },
     {
       "name": "monster",
       "explanation": "Monstrosities on the site.",
       "entries": [
-        "The {g:milieu} {inhabited} {monster element}."
+        "The {!synonym} {inhabited} {monster element}."
       ]
     },
     {
@@ -292,7 +301,7 @@
       "name": "structure",
       "explanation": "Structures on the site.",
       "entries": [
-        "The {!synonym} has {information element}."
+        "The {g:milieu} {accommodates} {information element}."
       ]
     },
     {
@@ -306,7 +315,7 @@
       "name": "trap",
       "explanation": "Trap elements of the site.",
       "entries": [
-        "The {!synonym} has {trap element}."
+        "The {!synonym} {accommodates} {trap element}."
       ]
     },
     {
@@ -419,6 +428,82 @@
       ]
     },
     {
+      "--------------------------------------------------": "COMMUNITY"
+    },
+    {
+      "name": "community element",
+      "explanation": "Inhabitants of the site.",
+      "entries": [
+        "{community attribute} {community core}",
+        "{community attribute} {community core} {community feature}"
+      ]
+    },
+    {
+      "name": "community attribute",
+      "explanation": "",
+      "entries": [
+        "diseased",
+        "distrustful",
+        "friendly",
+        "hostile",
+        "initially hostile",
+        "seemingly friendly",
+        "starving",
+        "suspicious",
+        "wealthy",
+        "well-stocked"
+      ]
+    },
+    {
+      "name": "community core",
+      "explanation": "",
+      "format": "plural",
+      "entries": [
+        "bandits",
+        "escaped slaves",
+        "followers of a shaman",
+        "explorers",
+        "gatherers",
+        "hunters",
+        "nomads",
+        "pilgrims",
+        "raiders",
+        "slavers",
+        "trappers"
+      ]
+    },
+    {
+      "name": "community feature",
+      "explanation": "",
+      "entries": [
+        "who are eager to trade with visitors",
+        "who are fearful of visitors",
+        "who are interested to hear news from afar",
+        "who can be befriended with suitable gifts",
+        "who do not allow visitors to enter",
+        "who require any visitors to strictly obey their customs",
+        "who respect displays of strength"
+      ]
+    },
+    {
+      "name": "community sign",
+      "explanation": "Signs left on the site by people.",
+      "format": "singular",
+      "entries": [
+        "a campsite of",
+        "an abandoned campsite of",
+        "an equipment cache belonging to",
+        "a grave site of",
+        "a holy site of",
+        "a lookout spot of",
+        "an outpost of",
+        "a resource cache belonging to",
+        "a resting place of",
+        "a temporary settlement of",
+        "a village of"
+      ]
+    },
+    {
       "--------------------------------------------------": "DENIZENS"
     },
     {
@@ -437,11 +522,12 @@
         "a distrustful",
         "a hungry",
         "an insane",
-        "a phobic",
         "a plague-carrying",
         "a psychotic",
         "a ravenous",
         "a religious",
+        "a scared",
+        "a starved",
         "a suspicious",
         "a vengeful",
         "a wounded"
@@ -489,10 +575,11 @@
       "format": "singular",
       "entries": [
         "a campsite of",
-        "scraps of food discarded by",
+        "scrap of food discarded by",
         "a piece of clothing belonging to",
         "a piece of equipment belonging to",
-        "a trail left by"
+        "a trail left by",
+        "a weapon belonging to"
       ]
     },
     {
@@ -558,9 +645,11 @@
       "explanation": "",
       "entries": [
         "{lib:equipment#attribute}",
-        "a broken",
+        "a damaged",
         "a discarded",
-        "an ornate",
+        "a forgotten",
+        "a partial",
+        "a valuable",
         "a well-preserved",
         "a weather-beaten",
         "a wondrous"
@@ -570,10 +659,14 @@
       "name": "item core",
       "explanation": "",
       "entries": [
+        "armour piece",
+        "crafting recipe",
+        "equipment cache",
         "healing item",
         "magical weapon",
         "piece of jewelry",
-        "treasure chest"
+        "rare spell component",
+        "resource cache"
       ]
     },
     {
@@ -744,7 +837,7 @@
       "entries": [
         "the air has a strange smell",
         "the atmosphere has an unnatural feel",
-        "the atmosphere is chilly",
+        "the atmosphere is cooler than the environment",
         "a barely noticeable, extremely low sound seems to emanate from somewhere",
         "being in the {synonym} seems to cause an itching feeling",
         "black mold grows on every surface",
@@ -752,9 +845,9 @@
         "the earth itself seems to be slowly breathing",
         "every now and then the ground seems to tremble slightly",
         "occasionally glimpses of light can be seen in peripheral vision",
-        "surfaces feel brittle to touch",
+        "the terrain features feel eerily brittle to touch",
         "a swarm of tiny insect-like creatures crawls on the ground",
-        "in the {synonym}, hairs stand on end",
+        "in the {synonym}, the visitors' hairs stand on end",
         "it is difficult to breathe in the {synonym}",
         "it is unusually cold",
         "light sources seem unusually dim",
@@ -903,7 +996,6 @@
         "a camouflaged",
         "a cursed",
         "a damaged",
-        "a non-human",
         "a fake",
         "a hidden",
         "an infamous",
@@ -911,6 +1003,7 @@
         "a primitive",
         "a rare",
         "a sorcerous",
+        "a strange",
         "a valuable"
       ]
     },
@@ -921,7 +1014,7 @@
         "demonic item",
         "pool of healing",
         "portal to the spirit world",
-        "rich ore of gems",
+        "ore of gems",
         "concentration of magical energies"
       ]
     },
@@ -1391,6 +1484,16 @@
       ]
     },
     {
+      "name": "accommodates",
+      "explanation": "Variant expressions for 'shelters'.",
+      "entries": [
+        "accommodates",
+        "harbors",
+        "incorporates",
+        "shelters"
+      ]
+    },
+    {
       "name": "containing",
       "explanation": "Variant expressions for 'including'.",
       "entries": [
@@ -1442,7 +1545,6 @@
         "endures",
         "grows",
         "is",
-        "lives",
         "prevails",
         "survives"
       ]
@@ -1451,8 +1553,10 @@
       "name": "hides",
       "explanation": "Variant expressions for 'shelters'.",
       "entries": [
+        "conceals",
+        "covers",
         "harbors a secret:",
-        "has a well-kept secret:",
+        "has a secret:",
         "hides",
         "is the hiding place of",
         "is the resting place of",
