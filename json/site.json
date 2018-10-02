@@ -999,12 +999,12 @@
         "a fake",
         "a hidden",
         "an infamous",
+        "an invaluable",
         "a legendary",
         "a primitive",
         "a rare",
         "a sorcerous",
-        "a strange",
-        "a valuable"
+        "a strange"
       ]
     },
     {
@@ -1244,8 +1244,8 @@
       "explanation": "",
       "entries": [
         "writing on animal hide",
-        "book",
         "grimoire",
+        "parchment",
         "scroll"
       ]
     },
