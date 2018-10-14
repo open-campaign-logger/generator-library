@@ -97,6 +97,13 @@
       ]
     },
     {
+      "name": "template",
+      "explanation": "Details as a template.",
+      "entries": [
+        "?FC\r\n{b|Place}: [[{place}]] \r\n{b|Appellation}: \r\n[[[{appellation}]]] \r\n{b|Culture}: \r\n[[[{g:culture}]]]"
+      ]
+    },
+    {
       "name": "meta",
       "explanation": "Off-game explanation of the result.",
       "entries": [

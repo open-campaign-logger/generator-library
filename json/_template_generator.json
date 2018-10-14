@@ -99,6 +99,13 @@
       ]
     },
     {
+      "name": "template",
+      "explanation": "Details as a template.",
+      "entries": [
+        "?FC\r\n{b|Name}: [[{random}]] \r\n{b|Attribute}: \r\n[[[{attribute}]]] \r\n{b|Feature}: \r\n[[[{feature}]]]"
+      ]
+    },
+    {
       "name": "meta",
       "explanation": "Off-game explanation of the result.",
       "entries": [
