@@ -53,7 +53,7 @@
   "bugs": "Developepment currently on hold, waiting for global variable support.",
   "to do": "Most of it... Starting from genre? ",
   "see": "",
-  "date": "2018-09-26",
+  "date": "2018-10-14",
   "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -128,6 +128,13 @@
       "explanation": "Details as statistics.",
       "entries": [
         "{b|First name}: {g:firstname} \r\n{b|Byname}: {g:byname} \r\n{b|Surname}: {g:surname} \r\n{basic} \r\n{b|Personality}: {personality} \r\n{b|Attire}: {attire} \r\n{b|Equipment}: {equipment}"
+      ]
+    },
+    {
+      "name": "template",
+      "explanation": "Details as a template.",
+      "entries": [
+        "?FC\r\n{b|First name}: [[{g:firstname}]] \r\n{b|Byname}: [[{g:byname}]] \r\n{b|Surname}: [[{g:surname}]] \r\n[[[{basic}]]] \r\n{b|Personality}: \r\n[[[{personality}]]] \r\n{b|Attire}: \r\n[[[{attire}]]] \r\n{b|Equipment}: \r\n[[[{equipment}]]]"
       ]
     },
     {
