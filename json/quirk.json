@@ -88,6 +88,11 @@
       "name": "rare",
       "explanation": "Rare quirk types.",
       "entries": [
+        "{body language}",
+        "{fear}",
+        "{health}",
+        "{mood}",
+        "{nourishment}",
         "{retarded}",
         "{primitive}"
       ]
@@ -117,7 +122,7 @@
       "name": "appearance",
       "explanation": "Appearance-related quirks.",
       "entries": [
-        "has few teeth and even those remaining are in a state of severe decay, but nonetheless {g:subject} frequently smiles proudly",
+        "has few teeth and even those remaining are in a state of severe decay, but nonetheless frequently smiles proudly",
         "appears to have once been severely burned on nearly every body part but still manages to function almost normally",
         "is unusually tall and skinny"
       ]
@@ -127,7 +132,8 @@
       "explanation": "behaviour-related quirks.",
       "entries": [
         "is always trying to sneak and hide from others, as if life were one big game of hide and seek",
-        "keeps repeating heard slogans"
+        "keeps repeating heard slogans",
+        "imagines themselves as a celebrity"
       ]
     },
     {
@@ -139,13 +145,42 @@
       ]
     },
     {
+      "name": "body language",
+      "explanation": "Body language related quirks.",
+      "entries": [
+        "aggressive body language",
+        "constantly frowns"
+      ]
+    },
+    {
       "name": "clothing",
       "explanation": "Clothes-related quirks.",
       "entries": [
         "wears a trophy necklace of small rodent tails that looks ridiculous and smells horribly",
         "wears clothing adorned with all manner of worthless knick-knacks, such as pieces of rotting rope, a cracked marble, or strips of colorful cloth",
         "is unusually clean and takes great pride in wearing various ridiculous outfits",
-        "wears an absurd headdress that usually looks like its about to slip off and fall to the ground"
+        "wears an absurd headdress that usually looks like its about to slip off and fall to the ground",
+        "refuses to wear anything {lib:color#prime}",
+        "always wears their favorite piece of clothing",
+        "constantly adjusts their clothes",
+        "likes to dress formally even for everyday occasions"
+      ]
+    },
+    {
+      "name": "fear",
+      "explanation": "Fear-related quirks.",
+      "entries": [
+        "does not like being higher than ground level",
+        "afraid of guards"
+      ]
+    },
+    {
+      "name": "health",
+      "explanation": "Health-related quirks",
+      "entries": [
+        "has a constant cold",
+        "has constant rashes",
+        "always feels hot"
       ]
     },
     {
@@ -166,13 +201,16 @@
         "smells especially noxious, often leaving a lingering odor behind",
         "picks their nose and then inspects findings",
         "picks their nose and eats the findings",
-        "digs deep into their ear with a bare finger"
+        "digs deep into their ear with a bare finger",
+        "keeps a toothpick in their mouth"
       ]
     },
     {
       "name": "knowledge",
       "entries": [
-        "has an unusual knowledge of uses for nearly any plant but tends to eat any of them that aren't harmful"
+        "has an unusual knowledge of uses for nearly any plant but tends to eat any of them that aren't harmful",
+        "does not want to admit to having been wrong",
+        "pretends to have knowledge in matters out of their expertise"
       ]
     },
     {
@@ -186,11 +224,33 @@
       ]
     },
     {
+      "name": "mood",
+      "explanation": "Mood-related quirks",
+      "entries": [
+        "gets into a bad mood during bad weather",
+        "does a small victory dance after winning anything",
+        "constantly feels guilty about something",
+        "likes to constantly complain about something"
+      ]
+    },
+    {
       "name": "movement",
       "explanation": "Movement-related quirks.",
       "entries": [
         "is very bow-legged and moves about in a very awkward fashion as if actually mounted",
-        "can't stand still and is constantly bouncing from one foot to the other, pacing, or fidgeting"
+        "can't stand still and is constantly bouncing from one foot to the other, pacing, or fidgeting",
+        "is unable to walk straight",
+        "clumsily bumps into others and the environment"
+      ]
+    },
+    {
+      "name": "nourishment",
+      "explanation": "Food and drink related quirks.",
+      "entries": [
+        "does not want to drink anything cold",
+        "is always eating something",
+        "addicted to a certain dish",
+        "asks others to share some of their food"
       ]
     },
     {
@@ -198,7 +258,8 @@
       "explanation": "Body-related quirks.",
       "entries": [
         "is rarely seen not eating, or at least in possession of, various foodstuffs",
-        "has eyes of two different colors and when speaking to others moves up close and opens them wide so they are easily noticed"
+        "has eyes of two different colors and when speaking to others moves up close and opens them wide so they are easily noticed",
+        "is easily exhausted"
       ]
     },
     {
@@ -207,7 +268,12 @@
       "entries": [
         "drags a very old, tattered, and barely recognizable scrap of blanket around everywhere",
         "carries around a broken sword and longs to recover the other piece, after which it will be reforged and grant great power to its owner",
-        "is accompanied by a mongrel dog that looks fierce, growling and barking, but flees at the first sign of combat"
+        "is accompanied by a mongrel dog that looks fierce, growling and barking, but flees at the first sign of combat",
+        "always carries their favorite item with them",
+        "is unable to sleep without their favorite item",
+        "always carries coins to give away",
+        "constantly borrows small items and forgets to return them",
+        "always attempts to have better equipment than others"
       ]
     },
     {
@@ -232,7 +298,8 @@
       "entries": [
         "has an unusually large nose that is particularly keen, often used for tracking by scent",
         "is missing an ear, claiming it simply fell off and was never found",
-        "has an unusually large nose that is particularly keen"
+        "has an unusually large nose that is particularly keen",
+        "likes to closely examine their surroundings"
       ]
     },
     {
@@ -242,7 +309,20 @@
         "shuns the company of people",
         "prefers the company of animals",
         "prefers small groups to large crowds",
-        "enjoys large crowds"
+        "enjoys large crowds",
+        "idolizes a public figure",
+        "idolizes an imaginary person",
+        "cannot stand any kind of animosity",
+        "greets everyone they see",
+        "is unable to act normally in the presence of someone they really like",
+        "acts dumb to attract attention",
+        "likes a commonly despised group",
+        "corrects others word choices and pronunciation",
+        "is suspicious of others",
+        "blames others for their own mistakes",
+        "likes to boast how difficult it has been for them",
+        "boasts about their love life",
+        "measures how good friends their acquaintances are"
       ]
     },
     {
@@ -250,7 +330,10 @@
       "explanation": "Talking-related quirks.",
       "entries": [
         "has a penchant for dragons, but can't pronounce the word properly, calling them 'dagorns' instead",
-        "is incapable of speaking softly and often blurts things out at the most inopportune times"
+        "is incapable of speaking softly and often blurts things out at the most inopportune times",
+        "always mispronounces a common word",
+        "answers questions with questions",
+        "mixes up sayings"
       ]
     },
     {
