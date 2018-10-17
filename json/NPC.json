@@ -53,7 +53,7 @@
   "bugs": "Developepment currently on hold, waiting for global variable support.",
   "to do": "Most of it... Starting from genre? ",
   "see": "",
-  "date": "2018-10-14",
+  "date": "2018-10-17",
   "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
@@ -282,7 +282,7 @@
       "name": "quirk",
       "explanation": "Minor quirks of the person.",
       "entries": [
-        "{|{lib:quirk}|scase}"
+        "{g:subject} {|{lib:quirk}|scase}"
       ]
     },
     {

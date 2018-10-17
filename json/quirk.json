@@ -8,7 +8,7 @@
   "bugs": "",
   "to do": "",
   "see": "edge, flaw, strategy",
-  "date": "2018-08-20",
+  "date": "2018-10-17",
   "authors": "Ron Calbick (as extracted from his goblin-names.json generator), ELF Vesala.",
   "sources": "Ron Calbick: 'Goblin Generator'.",
   "genre": "universal",
@@ -40,14 +40,14 @@
       "name": "summary",
       "explanation": "Brief result.",
       "entries": [
-        "{g:subject} {quirk}"
+        "{quirk}"
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed result.",
       "entries": [
-        "{g:subject} {quirk}"
+        "{quirk}"
       ]
     },
     {
