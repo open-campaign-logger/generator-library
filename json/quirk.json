@@ -1,16 +1,30 @@
 {
   "name": "quirk",
   "resultPattern": "{init}{result}",
-  "explanation": "Personality quirks.",
+  "globals": {
+    "variable": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Character quirks.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "Developed from the quirk generation section of 'Goblin Names' generator by Ron Calbick.",
   "format": "",
   "bugs": "",
   "to do": "",
   "see": "edge, flaw, strategy",
-  "date": "2018-10-17",
+  "date": "2018-10-18",
   "authors": "Ron Calbick (as extracted from his goblin-names.json generator), ELF Vesala.",
   "sources": "Ron Calbick: 'Goblin Generator'.",
+  "attribution": {
+    "creators": "",
+    "copyright": "",
+    "licence": "https://",
+    "disclaimer": "https://",
+    "source": "",
+    "changes": ""
+  },
   "genre": "universal",
   "categories": [
     "character"
@@ -37,6 +51,13 @@
       ]
     },
     {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{quirk}"
+      ]
+    },
+    {
       "name": "summary",
       "explanation": "Brief result.",
       "entries": [
@@ -47,7 +68,45 @@
       "name": "detail",
       "explanation": "Detailed result.",
       "entries": [
-        "{quirk}"
+        "{attribute} {quirk}",
+        "{quirk}, {feature}",
+        "{attribute} {quirk}, {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a sentence.",
+      "entries": [
+        "The {quirk} {synonym} {looks} {feature}.",
+        "The {attribute} {quirk} {synonym} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "section",
+      "explanation": "Long description as a subheading and a text paragraph.",
+      "entries": [
+        "===== {random} =====\r\n{description}"
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Quirk}: {quirk} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "name": "template",
+      "explanation": "Details as a template.",
+      "entries": [
+        "?FC\r\n{b|Quirk}: [[{quirk}]] \r\n{b|Attribute}: \r\n[[[{attribute}]]] \r\n{b|Feature}: \r\n[[[{feature}]]]"
+      ]
+    },
+    {
+      "name": "meta",
+      "explanation": "Off-game explanation of the result.",
+      "entries": [
+        ""
       ]
     },
     {
@@ -68,19 +127,18 @@
       "name": "common",
       "explanation": "Common quirk types.",
       "entries": [
-        "{appearance}",
         "{behavior}",
         "{clothing}",
+        "{communication}",
+        "{expression}",
+        "{habit}",
         "{humor}",
-        "{hygiene}",
         "{knowledge}",
         "{social}",
         "{manners}",
         "{movement}",
-        "{physical}",
         "{possession}",
         "{senses}",
-        "{speech}",
         "{superstitious}"
       ]
     },
@@ -88,21 +146,73 @@
       "name": "rare",
       "explanation": "Rare quirk types.",
       "entries": [
+        "{appearance}",
         "{body language}",
+        "{emotion}",
         "{fear}",
         "{health}",
+        "{hygiene}",
         "{mood}",
-        "{nourishment}",
-        "{retarded}",
-        "{primitive}"
+        "{nourishment}"
       ]
     },
     {
-      "name": "exceptional",
-      "explanation": "Unique quirk types not assigned randomly.",
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
       "entries": [
+        "{animalistic}",
         "{bestial}",
-        "{animalistic}"
+        "{physical}",
+        "{primitive}",
+        "{retarded}"
+      ]
+    },
+    {
+      "**************************************************": "RANGES"
+    },
+    {
+      "name": "any",
+      "explanation": "Random selection.",
+      "entries": [
+        "{animalistic}",
+        "{appearance}",
+        "{behavior}",
+        "{bestial}",
+        "{body language}",
+        "{clothing}",
+        "{communication}",
+        "{emotion}",
+        "{expression}",
+        "{fear}",
+        "{habit}",
+        "{health}",
+        "{humor}",
+        "{hygiene}",
+        "{knowledge}",
+        "{manners}",
+        "{mood}",
+        "{movement}",
+        "{nourishment}",
+        "{physical}",
+        "{possession}",
+        "{primitive}",
+        "{retarded}",
+        "{senses}",
+        "{social}",
+        "{superstitious}"
+      ]
+    },
+    {
+      "name": "goblinoid",
+      "explanation": "Special quirk tables.",
+      "entries": [
+        "{common}",
+        "{animalistic}",
+        "{appearance}",
+        "{bestial}",
+        "{hygiene}",
+        "{primitive}",
+        "{retarded}"
       ]
     },
     {
@@ -123,8 +233,7 @@
       "explanation": "Appearance-related quirks.",
       "entries": [
         "has few teeth and even those remaining are in a state of severe decay, but nonetheless frequently smiles proudly",
-        "appears to have once been severely burned on nearly every body part but still manages to function almost normally",
-        "is unusually tall and skinny"
+        "appears to have once been severely burned, but still manages to function almost normally"
       ]
     },
     {
@@ -133,13 +242,15 @@
       "entries": [
         "is always trying to sneak and hide from others, as if life were one big game of hide and seek",
         "keeps repeating heard slogans",
-        "imagines themselves as a celebrity"
+        "imagines themselves as a celebrity",
+        "likes to pick things apart"
       ]
     },
     {
       "name": "bestial",
       "explanation": "Beast-like quirks.",
       "entries": [
+        "has an unusually large nose that is particularly keen, often used for tracking by scent",
         "growls when threatened",
         "prefers to eat their meat raw"
       ]
@@ -149,21 +260,55 @@
       "explanation": "Body language related quirks.",
       "entries": [
         "aggressive body language",
-        "constantly frowns"
+        "likes to stand with their hands behind their back"
       ]
     },
     {
       "name": "clothing",
       "explanation": "Clothes-related quirks.",
       "entries": [
-        "wears a trophy necklace of small rodent tails that looks ridiculous and smells horribly",
-        "wears clothing adorned with all manner of worthless knick-knacks, such as pieces of rotting rope, a cracked marble, or strips of colorful cloth",
+        "wears clothing adorned with all manner of worthless knick-knacks",
         "is unusually clean and takes great pride in wearing various ridiculous outfits",
-        "wears an absurd headdress that usually looks like its about to slip off and fall to the ground",
+        "wears an absurd headdress that looks like its about to slip off and fall to the ground",
         "refuses to wear anything {lib:color#prime}",
         "always wears their favorite piece of clothing",
         "constantly adjusts their clothes",
-        "likes to dress formally even for everyday occasions"
+        "likes to dress formally even for everyday occasions",
+        "likes to always wear a hat",
+        "wears mismatched clothes",
+        "likes strong contrasts in their apparel",
+        "wears only light clothing, no matter what the weather is like"
+      ]
+    },
+    {
+      "name": "communication",
+      "explanation": "Talking-related quirks.",
+      "entries": [
+        "is incapable of speaking softly and often blurts things out at the most inopportune times",
+        "mispronounces a common word",
+        "answers questions with questions",
+        "mixes up sayings",
+        "speaks of themselves in the third person",
+        "likes to discuss hypothetical situations",
+        "speaks to others like to a child",
+        "inadvertedly sounds mean",
+        "demands that others say 'please' when asking for something"
+      ]
+    },
+    {
+      "name": "emotion",
+      "explanation": "Feelings-related quirks.",
+      "entries": [
+        "loves most kinds of animals"
+      ]
+    },
+    {
+      "name": "expression",
+      "explanation": "Facial expression related quirks.",
+      "entries": [
+        "constantly frowns",
+        "constantly smiles",
+        "always squints"
       ]
     },
     {
@@ -172,6 +317,14 @@
       "entries": [
         "does not like being higher than ground level",
         "afraid of guards"
+      ]
+    },
+    {
+      "name": "habit",
+      "explanation": "Habit-related quirks.",
+      "entries": [
+        "wakes up very early",
+        "always sleeps late"
       ]
     },
     {
@@ -202,7 +355,8 @@
         "picks their nose and then inspects findings",
         "picks their nose and eats the findings",
         "digs deep into their ear with a bare finger",
-        "keeps a toothpick in their mouth"
+        "keeps a toothpick in their mouth",
+        "openly picks their teeth"
       ]
     },
     {
@@ -210,7 +364,8 @@
       "entries": [
         "has an unusual knowledge of uses for nearly any plant but tends to eat any of them that aren't harmful",
         "does not want to admit to having been wrong",
-        "pretends to have knowledge in matters out of their expertise"
+        "pretends to have knowledge in matters out of their expertise",
+        "is always aware of the current phase of the moon"
       ]
     },
     {
@@ -230,7 +385,8 @@
         "gets into a bad mood during bad weather",
         "does a small victory dance after winning anything",
         "constantly feels guilty about something",
-        "likes to constantly complain about something"
+        "likes to constantly complain about something",
+        "has an exceedingly positive attitude"
       ]
     },
     {
@@ -240,25 +396,30 @@
         "is very bow-legged and moves about in a very awkward fashion as if actually mounted",
         "can't stand still and is constantly bouncing from one foot to the other, pacing, or fidgeting",
         "is unable to walk straight",
-        "clumsily bumps into others and the environment"
+        "clumsily bumps into others and the environment",
+        "hums to themselves when walking",
+        "sings when traveling",
+        "likes attempting to climb over obstacles"
       ]
     },
     {
       "name": "nourishment",
       "explanation": "Food and drink related quirks.",
       "entries": [
+        "is rarely seen not in possession of various foodstuffs",
         "does not want to drink anything cold",
         "is always eating something",
         "addicted to a certain dish",
-        "asks others to share some of their food"
+        "asks others to share some of their food",
+        "is constantly drinking something"
       ]
     },
     {
       "name": "physical",
       "explanation": "Body-related quirks.",
       "entries": [
-        "is rarely seen not eating, or at least in possession of, various foodstuffs",
-        "has eyes of two different colors and when speaking to others moves up close and opens them wide so they are easily noticed",
+        "is unusually tall and skinny",
+        "when speaking to others, moves up close and opens their eyes wide",
         "is easily exhausted"
       ]
     },
@@ -280,6 +441,7 @@
       "name": "primitive",
       "explanation": "Primitive quirks.",
       "entries": [
+        "wears a trophy necklace of small rodent tails that looks ridiculous and smells horribly",
         "has a great number of body piercings of decoratively carved pieces of bone",
         "is usually coated with a thick, dried layer of mud"
       ]
@@ -296,10 +458,10 @@
       "name": "senses",
       "explanation": "Sensing-related quirks.",
       "entries": [
-        "has an unusually large nose that is particularly keen, often used for tracking by scent",
         "is missing an ear, claiming it simply fell off and was never found",
         "has an unusually large nose that is particularly keen",
-        "likes to closely examine their surroundings"
+        "likes to closely examine their surroundings",
+        "is very suspectible to temperature changes"
       ]
     },
     {
@@ -322,18 +484,12 @@
         "blames others for their own mistakes",
         "likes to boast how difficult it has been for them",
         "boasts about their love life",
-        "measures how good friends their acquaintances are"
-      ]
-    },
-    {
-      "name": "speech",
-      "explanation": "Talking-related quirks.",
-      "entries": [
-        "has a penchant for dragons, but can't pronounce the word properly, calling them 'dagorns' instead",
-        "is incapable of speaking softly and often blurts things out at the most inopportune times",
-        "always mispronounces a common word",
-        "answers questions with questions",
-        "mixes up sayings"
+        "measures how good friends their acquaintances are",
+        "often mistakenly recognizes people",
+        "constantly thinks of what their mother would think about the matter",
+        "uses a pet name about themselves",
+        "wants that everything is done their way",
+        "must always be entertained like a small child"
       ]
     },
     {
@@ -341,38 +497,184 @@
       "explanation": "Superstition-related quirks.",
       "entries": [
         "always throws a handful of small bones and reads them before making any important decisions",
-        "believes the moon grants special powers and loves sharing that notion with others"
+        "believes the moon grants special powers and loves sharing that notion with others",
+        "makes a warding gesture whenever they see a religious symbol"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomization methods.",
+      "entries": [
+        "{component}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMPONENTS"
+    },
+    {
+      "name": "component",
+      "explanation": "Component-based terms (generated from words).",
+      "entries": [
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{compoundbegin}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
       ]
     },
     {
       "**************************************************": "WORLD-SPECIFIC"
     },
     {
-      "name": "myth",
-      "explanation": "Quirks once rumoured to have existed.",
-      "entries": [
-        "{common}"
-      ]
+      "--------------------------------------------------": "FANTASTIC"
     },
     {
       "name": "fantasy",
-      "explanation": "Quirks for fantasy worlds (with no basis in myth).",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
-        "{myth}"
+        "{myth}",
+        "{medieval}",
+        "has a penchant for dragons, but can't pronounce the word properly, calling them 'dagorns' instead"
       ]
     },
     {
-      "name": "modern",
-      "explanation": "Quirks for modern worlds.",
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
       "entries": [
         "{common}"
       ]
     },
     {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
       "name": "futuristic",
-      "explanation": "Quirks for science fiction worlds.",
+      "explanation": "Descriptions for science fiction worlds.",
       "entries": [
         "{modern}"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "seems to be"
       ]
     },
     {
@@ -380,30 +682,25 @@
     },
     {
       "name": "special",
-      "explanation": "Special quirk tables.",
+      "explanation": "Special tables.",
       "entries": [
-        "{goblinoid}"
+        "{attribute}",
+        "{feature}"
       ]
     },
     {
-      "name": "goblinoid",
-      "explanation": "Special quirk tables.",
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
       "entries": [
-        "{bestial}",
-        "{animalistic}",
-        "{retarded}",
-        "{primitive}",
-        "{superstitious}",
-        "{physical}",
-        "{senses}",
-        "{appearance}",
-        "{movement}",
-        "{hygiene}",
-        "{behavior}",
-        "{manners}",
-        "{speech}",
-        "{clothing}",
-        "{possession}"
+        ""
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
       ]
     },
     {
@@ -413,7 +710,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}, special: {special}."
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]

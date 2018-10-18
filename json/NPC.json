@@ -282,7 +282,7 @@
       "name": "quirk",
       "explanation": "Minor quirks of the person.",
       "entries": [
-        "{g:subject} {|{lib:quirk}|scase}"
+        "{|{g:subject} {lib:quirk}|scase}."
       ]
     },
     {
