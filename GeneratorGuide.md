@@ -318,8 +318,6 @@ Local variables are specified as a list of value pairs - the key (name of the va
 Note that although it is possible to use the same names for local and global variables, the variables are completely separate. Changing a global variable does not affect a local variable using a similar name, for example.
 
 
-#### Setting Variables for a Single Entry
-
 		{
 			"v": "hostage",
 			"set": {
