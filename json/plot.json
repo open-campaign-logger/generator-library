@@ -1,0 +1,404 @@
+{
+  "name": "plot",
+  "resultPattern": "{init}",
+  "globals": {
+    "plot": "generic",
+    "complication": "",
+    "goal": "",
+    "impetus": "",
+    "obstacle": "",
+    "target": "",
+    "trigger": "",
+    "twist": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Data set details for plot and story structures.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-05-30",
+  "authors": "ELF Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "story"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "complication": "{complication}",
+            "goal": "{goal}",
+            "impetus": "{impetus}",
+            "obstacle": "{obstacle}",
+            "target": "{target}",
+            "trigger": "{trigger}",
+            "twist": "{twist}"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{description}",
+        "{stats}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{plot}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {plot}",
+        "{plot} {feature}",
+        "{attribute} {plot} {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {plot} {looks} {attribute}.",
+        "The {plot} {looks} {feature}.",
+        "The {attribute} {plot} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Plot}: {g:plot} \r\n{b|Trigger}: {g:trigger} \r\n{b|Impetus}: {g:impetus} \r\n{b|Goal}: {g:goal} \r\n{b|Target}: {g:target} \r\n{b|Obstacle}: {g:obstacle} \r\n{b|Complication}: {g:complication} \r\n{b|Twist}: {g:twist} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "plot",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common types.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare types.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "complication",
+      "explanation": "A surprising difficulty along the way towards the goal.",
+      "entries": [
+        "time is running out",
+        "a competitor is trying to reach the objective first",
+        "reaching the objective involves a big, unknown factor",
+        "the objective has an unknown, dangerous side effect",
+        "an ally does not trust the protagonists",
+        "a necessary ally cannot be found"
+      ]
+    },
+    {
+      "name": "goal",
+      "explanation": "An action that the protagonists attempt to perform.",
+      "entries": [
+        "locate",
+        "investigate",
+        "capture",
+        "transport",
+        "protect",
+        "destroy"
+      ]
+    },
+    {
+      "name": "impetus",
+      "explanation": "A force that drives the protagonists towards the goal.",
+      "entries": [
+        "revenge",
+        "the will to have justice served",
+        "fear",
+        "desire",
+        "ambition"
+      ]
+    },
+    {
+      "name": "obstacle",
+      "explanation": "A known difficulty that prevents achieving the goal.",
+      "entries": [
+        "the {g:target}'s whereabouts are not known",
+        "a vital component is missing",
+        "it is not certain what is real and what is not",
+        "the person with crucial information is an enemy",
+        "a necessary ally is not cooperative",
+        "required information is not available",
+        "an important piece of information is not available",
+        "allies are not willing to work together",
+        "a difficult choice must be made",
+        "the competition is overwhelming",
+        "there are not enough resources to achieve the objective",
+        "a necessary ally is unrecognizable",
+        "the journey to the objective is rife with danger",
+        "the mission is being sabotaged by someone"
+      ]
+    },
+    {
+      "name": "target",
+      "explanation": "The objective that the goal affects.",
+      "entries": [
+        "a person",
+        "a group",
+        "an item",
+        "a location"
+      ]
+    },
+    {
+      "name": "trigger",
+      "explanation": "An event that launches the story.",
+      "entries": [
+        "a visitor",
+        "an accident",
+        "an attack",
+        "a mistaken identity",
+        "new information"
+      ]
+    },
+    {
+      "name": "twist",
+      "explanation": "A surprising event that changes the goal.",
+      "entries": [
+        "new information is revealed",
+        "a new alliance is formed",
+        "a new enemy is gained",
+        "treachery is revealed",
+        "new information is revealed and the big picture changes"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{|{beginning} the {ending}|tcase}",
+        "{|{beginning} the {descriptor} {ending}|tcase}",
+        "{|{beginning} the {ending} {extension}!|tcase}",
+        "{|{beginning} the {descriptor} {ending} {extension}|tcase}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        "{attribute}"
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{g:goal}"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "{g:target}"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        "{feature}"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}"
+      ]
+    },
+    {
+      "name": "fantasy twist",
+      "explanation": "",
+      "entries": [
+        "a character is revealed to be magically gifted",
+        "an item is revealed to be magical"
+      ]
+    },
+    {
+      "--------------------------------------------------": ""
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": ""
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": ""
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": ""
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "{futuristic twist}"
+      ]
+    },
+    {
+      "name": "futuristic twist",
+      "explanation": "",
+      "entries": [
+        "a key character is revealed to be a clone"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "looks to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        "fabled",
+        "hidden",
+        "last",
+        "lost",
+        "secret"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        "before the enemy",
+        "by dawn",
+        "or die",
+        "or you'll never see your loved ones again",
+        "right now"
+      ]
+    },
+    {
+      "name": "objective",
+      "explanation": "What must be done to what to succeed?",
+      "entries": [
+        "{goal} the {target}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
+      ]
+    }
+  ]
+}

@@ -1,6 +1,9 @@
 {
-  "name": "color table",
-  "resultPattern": "{result}",
+  "name": "color",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
   "variables": {
     "footnote": ""
   },
@@ -9,8 +12,8 @@
   "note": "",
   "to do": "Fantasy colors.",
   "see": "adjColor",
-  "date": "2018-02-24",
-  "authors": "Esko Vesala.",
+  "date": "2018-09-26",
+  "authors": "ELF Vesala.",
   "sources": "Craftsy.com, Wikipedia.org.",
   "genre": "universal",
   "categories": [
@@ -19,18 +22,41 @@
   "tags": "#sense, #sight, #color",
   "tables": [
     {
-      "name": "result",
-      "explanation": "Verbosity of the resultPattern output.",
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
       "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{word}",
         "{summary}",
         "{detail}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{color word}"
       ]
     },
     {
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{word}"
+        "{color}"
       ]
     },
     {
@@ -40,6 +66,24 @@
         "{color}",
         "{toned}"
       ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {color} {synonym} {looks} {feature}.",
+        "The {attribute} {color} {synonym} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Color}: {color} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
     },
     {
       "name": "color",
@@ -73,7 +117,36 @@
       ]
     },
     {
-      "name": "word",
+      "name": "rare",
+      "explanation": "Rare colors.",
+      "entries": [
+        "silver",
+        "gold",
+        "platinum"
+      ]
+    },
+    {
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "RANGES"
+    },
+    {
+      "name": "",
+      "explanation": "",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "color word",
       "explanation": "One-word descriptions of colors.",
       "entries": [
         "{black word}",
@@ -118,6 +191,9 @@
         "cold",
         "pale"
       ]
+    },
+    {
+      "--------------------------------------------------": "COLORS"
     },
     {
       "name": "black",
@@ -628,13 +704,82 @@
       ]
     },
     {
-      "name": "rare",
-      "explanation": "Rare colors.",
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomization methods.",
       "entries": [
-        "silver",
-        "gold",
-        "platinum"
+        "{component}"
       ]
+    },
+    {
+      "--------------------------------------------------": "COMPONENTS"
+    },
+    {
+      "name": "component",
+      "explanation": "Component-based terms (generated from words).",
+      "entries": [
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{compoundbegin}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "FANTASTIC"
     },
     {
       "name": "fantasy",
@@ -651,6 +796,49 @@
         "{fantasy}",
         "color out of space (alien hue)"
       ]
+    },
+    {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
     },
     {
       "name": "modern",
@@ -759,6 +947,9 @@
       ]
     },
     {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
       "name": "futuristic",
       "explanation": "Imaginary colors for science fiction worlds.",
       "entries": [
@@ -785,6 +976,17 @@
       ]
     },
     {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        "{chimerical}",
+        "{imaginary}"
+      ]
+    },
+    {
       "name": "chimerical",
       "explanation": "Colors that normally cannot be perceived by human eye.",
       "entries": [
@@ -802,6 +1004,80 @@
       ]
     },
     {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
+        "color",
+        "pigment"
+      ]
+    },
+    {
+      "name": "gray",
+      "explanation": "Handling the US spelling of grey.",
+      "entries": [
+        "{grey}"
+      ]
+    },
+    {
+      "name": "gray word",
+      "explanation": "Handling the US spelling of grey.",
+      "entries": [
+        "{grey word}"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{black and white}",
+        "{feature}",
+        "{prime}",
+        "{plant}",
+        "{hair}",
+        "{eye}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "black and white",
+      "explanation": "Black and white tones.",
+      "entries": [
+        "{black}",
+        "{grey}",
+        "{white}"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
+      ]
+    },
+    {
       "name": "prime",
       "explanation": "Prime colors.",
       "entries": [
@@ -812,6 +1088,9 @@
         "orange",
         "yellow"
       ]
+    },
+    {
+      "**************************************************": "PLANT COLORS"
     },
     {
       "name": "plant",
@@ -828,6 +1107,9 @@
         "{yellow word}",
         "{white word}"
       ]
+    },
+    {
+      "**************************************************": "HAIR COLOR"
     },
     {
       "name": "hair",
@@ -974,13 +1256,34 @@
       ]
     },
     {
+      "**************************************************": "EYE COLOR"
+    },
+    {
       "name": "eye",
       "explanation": "Common eye colors categorized on the Martin-Schultz scale.",
       "entries": [
+        "{pure eyes}",
+        "{mixed eyes}"
+      ]
+    },
+    {
+      "name": "eyes",
+      "explanation": "The color of eyes.",
+      "entries": [
+        "{pure eyes} eyes",
+        "{medium eyes} eyes",
+        "{dark mixed eyes} eyes with yellow spots",
+        "{dark mixed eyes} eyes with {dark eye spots} spots"
+      ]
+    },
+    {
+      "--------------------------------------------------": "UNMIXED EYES"
+    },
+    {
+      "name": "pure eyes",
+      "explanation": "Uniform-colored eyes.",
+      "entries": [
         "{dark eyes}",
-        "{dark mixed eyes}",
-        "{mixed eyes}",
-        "{light mixed eyes}",
         "{light eyes}"
       ]
     },
@@ -994,41 +1297,6 @@
       ]
     },
     {
-      "name": "dark mixed eyes",
-      "explanation": "Dark-mixed eye colors.",
-      "entries": [
-        "light-brown",
-        "hazel"
-      ]
-    },
-    {
-      "name": "mixed eyes",
-      "explanation": "Mixed eye colors.",
-      "entries": [
-        "green with brown spots",
-        "green with yellow and brown spots",
-        "blue-gray with brown spots",
-        "blue-gray with yellow and brown spots",
-        "gray-green with brown spots",
-        "gray-green with yellow and brown spots",
-        "gray with brown spots",
-        "gray with yellow and brown spots"
-      ]
-    },
-    {
-      "name": "light mixed eyes",
-      "explanation": "light-mixed eye colors.",
-      "entries": [
-        "green with yellow spots",
-        "green",
-        "blue-gray with yellow spots",
-        "blue-gray",
-        "gray-green with yellow spots",
-        "gray-green",
-        "gray with yellow spots"
-      ]
-    },
-    {
       "name": "light eyes",
       "explanation": "Light eye colors.",
       "entries": [
@@ -1037,6 +1305,54 @@
         "blue",
         "light blue"
       ]
+    },
+    {
+      "--------------------------------------------------": "MIXED EYES"
+    },
+    {
+      "name": "mixed eyes",
+      "explanation": "Multicolored eyes.",
+      "entries": [
+        "{dark mixed eyes} with {dark eye spots} spots",
+        "{medium eyes}",
+        "{light mixed eyes}"
+      ]
+    },
+    {
+      "name": "dark mixed eyes",
+      "explanation": "Mixed eye colors.",
+      "entries": [
+        "green",
+        "blue-gray",
+        "gray-green",
+        "gray"
+      ]
+    },
+    {
+      "name": "dark eye spots",
+      "explanation": "Mixed eye colors.",
+      "entries": [
+        "brown",
+        "yellow and brown"
+      ]
+    },
+    {
+      "name": "medium eyes",
+      "explanation": "Dark-mixed eye colors.",
+      "entries": [
+        "light-brown",
+        "hazel"
+      ]
+    },
+    {
+      "name": "light mixed eyes",
+      "explanation": "Light multicolored eyes.",
+      "entries": [
+        "{dark mixed eyes} with yellow spots"
+      ]
+    },
+    {
+      "--------------------------------------------------": "RARE EYES"
     },
     {
       "name": "rare eyes",
@@ -1048,7 +1364,7 @@
         "violet",
         "red",
         "{light eyes} with {dark eyes} section in one eye",
-        "{light mixed eyes} with {dark mixed eyes} section in one eye",
+        "{light mixed eyes} with {medium eyes} section in one eye",
         "{light mixed eyes} near the pupil with a dark ring around the iris",
         "dark near the pupil with a {light mixed eyes} ring around the iris",
         "{light eyes} near the pupil with a dark ring around the iris",
@@ -1056,26 +1372,13 @@
       ]
     },
     {
-      "name": "black and white",
-      "explanation": "Black and white tones.",
-      "entries": [
-        "{black}",
-        "{grey}",
-        "{white}"
-      ]
+      "--------------------------------------------------": "TESTING"
     },
     {
-      "name": "gray",
-      "explanation": "Handling the US spelling of grey.",
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{grey}"
-      ]
-    },
-    {
-      "name": "gray word",
-      "explanation": "Handling the US spelling of grey.",
-      "entries": [
-        "{grey word}"
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]

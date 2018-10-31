@@ -1,0 +1,1070 @@
+{
+  "name": "street",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Streets, roads and other passageways.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "business, district, settlement, shop",
+  "date": "2018-06-13",
+  "authors": "ELF Vesala",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{description}",
+        "{stats}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{street}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {street}",
+        "{street} {looks} {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {street} {looks} {attribute}.",
+        "The {street} {looks} {feature}.",
+        "The {attribute} {street} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Passage}: {street} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "street",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{|{common}|tcase}"
+        },
+        "{|{rare}|tcase}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common types.",
+      "entries": [
+        "{city}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare types.",
+      "entries": [
+        "{countryside}"
+      ]
+    },
+    {
+      "name": "city",
+      "explanation": "City areas.",
+      "entries": [
+        "{poor}",
+        "{lower class}",
+        "{middle class}",
+        "{upper class}",
+        "{rich}"
+      ]
+    },
+    {
+      "name": "countryside",
+      "explanation": "Countryside areas.",
+      "entries": [
+        "{suburban}",
+        "{rural}",
+        "{wilderness}"
+      ]
+    },
+    {
+      "**************************************************": "AREAS"
+    },
+    {
+      "name": "poor",
+      "explanation": "Poor areas.",
+      "entries": [
+        "{lib:occupation#poor} {poor street}",
+        "{slum} {poor street}",
+        "{harbor} {poor street}",
+        "{border} {poor street}",
+        "{warehouse} {poor street}"
+      ]
+    },
+    {
+      "name": "lower class",
+      "explanation": "Lower class areas.",
+      "entries": [
+        "{lib:occupation#lower class} {lower class street}",
+        "{residential} {lower class street}",
+        "{commercial} {lower class street}",
+        "{harbor} {lower class street}",
+        "{border} {lower class street}",
+        "{warehouse} {lower class street}",
+        "{suburb} {lower class street}",
+        "{entertainment} {lower class street}",
+        "{artisan} {lower class street}"
+      ]
+    },
+    {
+      "name": "middle class",
+      "explanation": "Middle class areas.",
+      "entries": [
+        "{lib:occupation#middle class} {middle class street}",
+        "{residential} {middle class street}",
+        "{commercial} {middle class street}",
+        "{midtown} {middle class street}",
+        "{entertainment} {middle class street}",
+        "{artisan} {middle class street}",
+        "{suburb} {middle class street}",
+        "{park} {middle class street}",
+        "{administrative} {middle class street}",
+        "{financial} {middle class street}"
+      ]
+    },
+    {
+      "name": "upper class",
+      "explanation": "Upper class areas.",
+      "entries": [
+        "{lib:occupation#upper class} {upper class street}",
+        "{residential} {upper class street}",
+        "{commercial} {upper class street}",
+        "{midtown} {upper class street}",
+        "{suburb} {upper class street}",
+        "{park} {upper class street}",
+        "{administrative} {upper class street}",
+        "{church} {upper class street}",
+        "{financial} {upper class street}",
+        "{wealthy} {upper class street}"
+      ]
+    },
+    {
+      "name": "rich",
+      "explanation": "Rich areas.",
+      "entries": [
+        "{lib:occupation#rich} {rich street}",
+        "{church} {rich street}",
+        "{financial} {rich street}",
+        "{wealthy} {rich street}"
+      ]
+    },
+    {
+      "name": "suburban",
+      "explanation": "Suburban areas.",
+      "entries": [
+        "{suburb} {suburban street}",
+        "{residential} {suburban street}"
+      ]
+    },
+    {
+      "name": "rural",
+      "explanation": "Rural areas.",
+      "entries": [
+        "{village} {rural street}"
+      ]
+    },
+    {
+      "name": "wilderness",
+      "explanation": "Wilderness areas.",
+      "entries": [
+        "{wasteland} {wilderness street}"
+      ]
+    },
+    {
+      "**************************************************": "DISTRICTS"
+    },
+    {
+      "name": "district",
+      "explanation": "Types of districts.",
+      "entries": [
+        "{administrative}",
+        "{artisan}",
+        "{border}",
+        "{church}",
+        "{commercial}",
+        "{entertainment}",
+        "{financial}",
+        "{harbor}",
+        "{midtown}",
+        "{park}",
+        "{residential}",
+        "{slum}",
+        "{suburb}",
+        "{village}",
+        "{wasteland}",
+        "{wealthy}",
+        "{warehouse}"
+      ]
+    },
+    {
+      "name": "administrative",
+      "explanation": "Governmental area.",
+      "entries": [
+        "{lib:district#administrative}",
+        "{lib:occupation#administration}",
+        "{lib:occupation#academic}",
+        "Academy",
+        "Charter",
+        "Council",
+        "Declaration",
+        "Delegate",
+        "Gold",
+        "Herald",
+        "Justice",
+        "Law",
+        "Scribe",
+        "Scrivener",
+        "Seal",
+        "Statue",
+        "Writ"
+      ]
+    },
+    {
+      "name": "artisan",
+      "explanation": "Craftsmen's and artificers' district.",
+      "entries": [
+        "{lib:district#artisan}",
+        "{lib:occupation#artisan}",
+        "Anvil",
+        "Apprentice",
+        "Artificer",
+        "Artisan",
+        "Barrel",
+        "Builder",
+        "Cauldron",
+        "Ceramic",
+        "Craft",
+        "Dye",
+        "Furnace",
+        "Guild",
+        "Hammer",
+        "Iron",
+        "Journeyman",
+        "Loom",
+        "Master",
+        "Repair",
+        "Rivet",
+        "Spark",
+        "Thread",
+        "Timber",
+        "Tool",
+        "Wicker",
+        "Wright"
+      ]
+    },
+    {
+      "name": "border",
+      "explanation": "The edges of the city.",
+      "entries": [
+        "{lib:district#border}",
+        "Boundary",
+        "Bulwark",
+        "Edge",
+        "Fringe",
+        "Guard",
+        "Lookout",
+        "Outpost",
+        "Outskirt",
+        "Palisade",
+        "Patrol",
+        "Rampart",
+        "Rim",
+        "Sentry",
+        "Terminus",
+        "Tower",
+        "Verge",
+        "Watch",
+        "Warden"
+      ]
+    },
+    {
+      "name": "church",
+      "explanation": "Church district.",
+      "entries": [
+        "{lib:district#church}",
+        "Altar",
+        "Blessing",
+        "Chantry",
+        "Chapel",
+        "Church",
+        "Communion",
+        "Congregation",
+        "Holy",
+        "Orison",
+        "Prayer",
+        "Sacrament",
+        "Sanctorium",
+        "Sanctum",
+        "Service",
+        "Shrine",
+        "Tabernacle",
+        "Temple",
+        "Worship"
+      ]
+    },
+    {
+      "name": "commercial",
+      "explanation": "Shops and stores.",
+      "entries": [
+        "{lib:district#commercial}",
+        "Auction",
+        "Bargain",
+        "Barter",
+        "Broker",
+        "Coin",
+        "Cutpurse",
+        "Emporium",
+        "Haggle",
+        "Merchants'",
+        "Mongers'",
+        "Peddlers'",
+        "Purse",
+        "Trade",
+        "Vendor"
+      ]
+    },
+    {
+      "name": "entertainment",
+      "explanation": "Show and entertainment areas.",
+      "entries": [
+        "{lib:district#entertainment}",
+        "Actors'",
+        "Applause",
+        "Artists'",
+        "Brew",
+        "Ceremony",
+        "Dance",
+        "Drunkards'",
+        "Entertainers'",
+        "Fanfare",
+        "Flourish",
+        "Garnish",
+        "Grand",
+        "Keg",
+        "Music",
+        "Musicians'",
+        "Parade",
+        "Performers'",
+        "Pomp",
+        "Revel",
+        "Show",
+        "Song",
+        "Tankard",
+        "Thirsty",
+        "Toast"
+      ]
+    },
+    {
+      "name": "financial",
+      "explanation": "Banking and large companies.",
+      "entries": [
+        "{lib:district#financial}",
+        "Bond",
+        "Commerce",
+        "Contract",
+        "Copper",
+        "Debt",
+        "Fortune",
+        "Interest",
+        "Loan",
+        "Signet",
+        "Silver",
+        "Treaty"
+      ]
+    },
+    {
+      "name": "harbor",
+      "explanation": "The dock area.",
+      "entries": [
+        "{lib:district#harbor}",
+        "{lib:animal#freshwater fish}",
+        "{lib:animal#coastal bird}",
+        "{lib:animal#waterfowl}",
+        "Aft",
+        "Anchor",
+        "Ballast",
+        "Barge",
+        "Boat",
+        "Bow",
+        "Breakwater",
+        "Dockside",
+        "Ebb",
+        "Flotilla",
+        "Freight",
+        "Mast",
+        "Oar",
+        "Quay",
+        "Rigging",
+        "Rudder",
+        "Sail",
+        "Ship",
+        "Smugglers'",
+        "Starboard",
+        "Stern",
+        "Tide",
+        "Voyage",
+        "Waterfront"
+      ]
+    },
+    {
+      "name": "midtown",
+      "explanation": "Central area.",
+      "entries": [
+        "{lib:district#midtown}",
+        "Center",
+        "Central",
+        "High",
+        "Main",
+        "Middle"
+      ]
+    },
+    {
+      "name": "park",
+      "explanation": "Outdoor recreational areas.",
+      "entries": [
+        "{lib:district#park}",
+        "{lib:plant#tree}",
+        "{lib:plant#flower}",
+        "Afternoon",
+        "Breeze",
+        "Dawn",
+        "Daybreak",
+        "Horizon",
+        "Midnight",
+        "Moon",
+        "Panorama",
+        "Pleasant",
+        "Serene",
+        "Shadowed",
+        "Starlight",
+        "Stroll",
+        "Sunlight",
+        "Sunny",
+        "Sunrise",
+        "Sunset",
+        "Tranquil"
+      ]
+    },
+    {
+      "name": "residential",
+      "explanation": "Living quarters.",
+      "entries": [
+        "{lib:district#residential}",
+        "Brick",
+        "Candle",
+        "Cinder",
+        "Common",
+        "Ember",
+        "Estate",
+        "Hearth",
+        "Home",
+        "Residence",
+        "Spoon",
+        "Tenant",
+        "Tenement"
+      ]
+    },
+    {
+      "name": "slum",
+      "explanation": "Poor neighborhood.",
+      "entries": [
+        "{lib:district#slum}",
+        "Alm",
+        "Beggars'",
+        "Cellar",
+        "Corpse",
+        "Cripple",
+        "Dirt",
+        "Fence",
+        "Filth",
+        "Hunger",
+        "Knife",
+        "Muggers'",
+        "Orphan",
+        "Pickpocket",
+        "Poverty",
+        "Robber's",
+        "Rooftop",
+        "Ruckus",
+        "Sewer",
+        "Shack",
+        "Sweat",
+        "Widow"
+      ]
+    },
+    {
+      "name": "suburb",
+      "explanation": "Residential areas away from the center.",
+      "entries": [
+        "{lib:district#suburb}"
+      ]
+    },
+    {
+      "name": "village",
+      "explanation": "Village areas in the countryside.",
+      "entries": [
+        "{lib:plant#edible}",
+        "{lib:animal#domestic}",
+        "Barn",
+        "Crop",
+        "Farmland",
+        "Grassland",
+        "Green",
+        "Herder",
+        "Meadow",
+        "Pasture",
+        "Plot",
+        "Shepherd's",
+        "Temple",
+        "Village",
+        "Well",
+        "Wreath"
+      ]
+    },
+    {
+      "name": "wasteland",
+      "explanation": "Uninhabited wilderness areas.",
+      "entries": [
+        "",
+        "nameless",
+        "unnamed"
+      ]
+    },
+    {
+      "name": "wealthy",
+      "explanation": "Affluent uptown areas for the wealthy.",
+      "entries": [
+        "{lib:district#wealthy}",
+        "Gem",
+        "Grand",
+        "Jewel",
+        "Leisure",
+        "Noble",
+        "Ornament",
+        "Palace",
+        "Pleasure",
+        "Royal",
+        "Splendor",
+        "Vista"
+      ]
+    },
+    {
+      "name": "warehouse",
+      "explanation": "Depots and depositories.",
+      "entries": [
+        "{lib:district#warehouse}",
+        "Barracks",
+        "Cargo",
+        "Cart",
+        "Casket",
+        "Crate",
+        "Depot",
+        "Dust",
+        "Haul",
+        "Pile",
+        "Pottery",
+        "Rope",
+        "Shelter",
+        "Stack",
+        "Stock",
+        "Storage",
+        "Supply",
+        "Tarpaulin",
+        "Wagon",
+        "Warehouse"
+      ]
+    },
+    {
+      "**************************************************": "STREETS"
+    },
+    {
+      "name": "street name",
+      "explanation": "All street name variants.",
+      "entries": [
+        "{city street}",
+        "{countryside street}"
+      ]
+    },
+    {
+      "name": "city street",
+      "explanation": "City street name variants.",
+      "entries": [
+        "{urban street}",
+        "{suburban street}"
+      ]
+    },
+    {
+      "name": "countryside street",
+      "explanation": "Countryside street name variants.",
+      "entries": [
+        "{rural street}",
+        "{wilderness street}"
+      ]
+    },
+    {
+      "name": "urban street",
+      "explanation": "City streets.",
+      "entries": [
+        "{poor street}",
+        "{lower class street}",
+        "{middle class street}",
+        "{upper class street}",
+        "{rich street}"
+      ]
+    },
+    {
+      "name": "poor street",
+      "explanation": "Streets in poor neighbourhoods.",
+      "entries": [
+        "Alley",
+        "Row",
+        "Corner",
+        "Cut",
+        "Crossway",
+        "Crawlway",
+        "Trench",
+        "Trough",
+        "Gutter",
+        "Close",
+        "{lower class street}"
+      ]
+    },
+    {
+      "name": "lower class street",
+      "explanation": "Streets in lower class neighbourhoods.",
+      "entries": [
+        "{poor street}",
+        "Annex",
+        "Course",
+        "Walk",
+        "Passage",
+        "Crosswalk",
+        "Underpass",
+        "Buildings",
+        "Mews",
+        "Place",
+        "End",
+        "Ginnel",
+        "{middle class street}"
+      ]
+    },
+    {
+      "name": "middle class street",
+      "explanation": "Streets in middle class neighbourhoods.",
+      "entries": [
+        "{lower class street}",
+        "Street",
+        "Lane",
+        "Drive",
+        "Yard",
+        "Arc",
+        "Arcade",
+        "Crescent",
+        "Ring",
+        "Cross",
+        "Bystreet",
+        "Houses",
+        "{upper class street}"
+      ]
+    },
+    {
+      "name": "upper class street",
+      "explanation": "Streets in upper class neighbourhoods.",
+      "entries": [
+        "{middle class street}",
+        "Avenue",
+        "Court",
+        "Boardwalk",
+        "Broadway",
+        "Terrace",
+        "Grove",
+        "Aisle",
+        "Rise",
+        "Overpass",
+        "{rich street}"
+      ]
+    },
+    {
+      "name": "rich street",
+      "explanation": "Streets in affluent neighbourhoods.",
+      "entries": [
+        "{upper class street}",
+        "Boulevard",
+        "Esplanade",
+        "Parkway",
+        "Promenade",
+        "View",
+        "Villas",
+        "Manorway",
+        "{suburban street}"
+      ]
+    },
+    {
+      "name": "suburban street",
+      "explanation": "Streets in the outskirts of cities.",
+      "entries": [
+        "{rich street}",
+        "Line",
+        "Way",
+        "Circuit",
+        "Loop",
+        "Tour",
+        "Cottages",
+        "Approach",
+        "Gateway",
+        "Bypass",
+        "{rural street}"
+      ]
+    },
+    {
+      "name": "rural street",
+      "explanation": "Roads in the countryside.",
+      "entries": [
+        "{suburban street}",
+        "road",
+        "roadway",
+        "path",
+        "pathway",
+        "route",
+        "byway",
+        "{wilderness street}"
+      ]
+    },
+    {
+      "name": "wilderness street",
+      "explanation": "Tracks in non-inhabited areas.",
+      "entries": [
+        "{rural street}",
+        "footpath",
+        "track",
+        "trail",
+        "hike"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{beginning} {ending}",
+        "{descriptor} {beginning} {ending}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        "{age}",
+        "{size}",
+        "{position}"
+      ]
+    },
+    {
+      "name": "age",
+      "explanation": "Age-based descriptors.",
+      "entries": [
+        "Old",
+        "New"
+      ]
+    },
+    {
+      "name": "size",
+      "explanation": "Magnitude-based descriptors.",
+      "entries": [
+        "Little",
+        "Short",
+        "Long",
+        "Minor",
+        "Major",
+        "Greater",
+        "Great"
+      ]
+    },
+    {
+      "name": "position",
+      "explanation": "Position-based descriptors.",
+      "entries": [
+        "Inner",
+        "Lower",
+        "Low",
+        "Upper",
+        "Outer",
+        "Far"
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{plant}",
+        "{animal}"
+      ]
+    },
+    {
+      "name": "plant",
+      "explanation": "Plant-related names.",
+      "entries": [
+        "{lib:plant#flower}",
+        "{lib:plant#shrub}",
+        "{lib:plant#tree}"
+      ]
+    },
+    {
+      "name": "animal",
+      "explanation": "Animal-related names.",
+      "entries": [
+        "{lib:animal#bird}",
+        "{lib:animal#land mammal}"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "{street name}"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        "North",
+        "East",
+        "South",
+        "West"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}",
+        "{street}"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "{street}"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{street}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}",
+        "{street}"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "{street}"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic passageways.",
+      "entries": [
+        "{underground}",
+        "{water}",
+        "{dimension}"
+      ]
+    },
+    {
+      "name": "underground",
+      "explanation": "Routes below the ground surface.",
+      "entries": [
+        "tunnel",
+        "shaft",
+        "subway",
+        "passage",
+        "passageway"
+      ]
+    },
+    {
+      "name": "water",
+      "explanation": "Routes at sea.",
+      "entries": [
+        "channel",
+        "canal",
+        "route",
+        "run",
+        "passage",
+        "waterway"
+      ]
+    },
+    {
+      "name": "dimension",
+      "explanation": "Interdimensional or planar passageways.",
+      "entries": [
+        "portal",
+        "door",
+        "gate",
+        "gateway",
+        "opening",
+        "chasm",
+        "rift",
+        "breach",
+        "discontinuity",
+        "vortex"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "street",
+        "passage",
+        "way"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "looks to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        "currently closed",
+        "quiet",
+        "lively",
+        "crowded",
+        "silent",
+        "busy",
+        "unusually dark",
+        "shady",
+        "gloomy",
+        "well-lit",
+        "steep",
+        "level"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be -- / It is --",
+      "entries": [
+        "in bad repair",
+        "in good condition",
+        "well traveled",
+        "seldom used",
+        "downright filthy",
+        "quite dirty",
+        "mostly clean",
+        "quite narrow",
+        "almost cut off in the middle",
+        "narrowing towards the other end",
+        "broadening towards the end",
+        "surprisingly broad",
+        "twisting and turning",
+        "slightly curved",
+        "mostly straight",
+        "forking in the middle",
+        "a dead end",
+        "at first sight a dead end, but actually continues"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
+      ]
+    }
+  ]
+}

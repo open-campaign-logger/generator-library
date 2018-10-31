@@ -54,14 +54,14 @@
       "name": "obtain",
       "explanation": "Missions to get something.",
       "entries": [
-        "obtain {adjective} {item} from {lib:location}"
+        "obtain {attribute} {item} from {lib:location}"
       ]
     },
     {
       "name": "destroy",
       "explanation": "Missions to obliterate something.",
       "entries": [
-        "destroy {adjective} {item} in {lib:location}"
+        "destroy {attribute} {item} in {lib:location}"
       ]
     },
     {
@@ -72,8 +72,8 @@
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives describing the quest item.",
+      "name": "attribute",
+      "explanation": "Attributes describing the quest item.",
       "entries": [
         "rare",
         "fabled",

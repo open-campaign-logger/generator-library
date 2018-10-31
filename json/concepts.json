@@ -1,0 +1,587 @@
+{
+  "name": "concepts",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Plural concepts, themes and motifs for place names, etc.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "Only include countable words in plural!",
+  "format": "Place of (the) --",
+  "bugs": "",
+  "to do": "",
+  "see": "aspect, concept, motif-*, place, theme",
+  "date": "2018-09-25",
+  "authors": "ELF Vesala",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "utility"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{word}",
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{concepts}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{attribute} {concepts}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{concepts}, {feature}",
+        "{attribute} {concepts}, {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {concepts} {synonym} {look} {feature}.",
+        "The {attribute} {concepts} {synonym} {look} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Name}: {random} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "concepts",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Usual types.",
+      "entries": [
+        "{neutral}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Unusual types.",
+      "entries": [
+        "{negative}",
+        "{positive}"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "any",
+      "explanation": "All concepts for random selection.",
+      "entries": [
+        "{negative}",
+        "{neutral}",
+        "{positive}"
+      ]
+    },
+    {
+      "name": "negative",
+      "explanation": "Ominous concepts.",
+      "entries": [
+        "{death}",
+        "{pain}",
+        "{sorrow}"
+      ]
+    },
+    {
+      "name": "neutral",
+      "explanation": "Neutral concepts.",
+      "entries": [
+        "{animal}",
+        "{aroma}",
+        "{body}",
+        "{color}",
+        "{effect}",
+        "{liquid}",
+        "{place}",
+        "{quality}",
+        "{shape}",
+        "{size}",
+        "{sky}",
+        "{time}",
+        "{weapon}",
+        "{weather}"
+      ]
+    },
+    {
+      "name": "positive",
+      "explanation": "Happy concepts.",
+      "entries": [
+        "{joy}",
+        "{life}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONCEPTS"
+    },
+    {
+      "name": "animal",
+      "explanation": "Animal-related name components.",
+      "entries": [
+        "birds",
+        "beetles",
+        "bulls",
+        "calves",
+        "chicks",
+        "colts",
+        "fawns",
+        "foals",
+        "fowls",
+        "herds",
+        "hogs",
+        "hounds",
+        "kits",
+        "lambs",
+        "mares",
+        "nags",
+        "oxen",
+        "roosters",
+        "stallions",
+        "steeds",
+        "swine",
+        "vermin",
+        "whelps"
+      ]
+    },
+    {
+      "name": "aroma",
+      "explanation": "Aroma-related name components.",
+      "entries": [
+        "bitters",
+        "sours"
+      ]
+    },
+    {
+      "name": "body",
+      "explanation": "Body part related name components.",
+      "entries": [
+        "claws",
+        "horns",
+        "ribs",
+        "spines",
+        "tooths"
+      ]
+    },
+    {
+      "name": "color",
+      "explanation": "Color-related name components.",
+      "entries": [
+        "{lib:color#prime}",
+        "ashes",
+        "lights"
+      ]
+    },
+    {
+      "name": "death",
+      "explanation": "Death-related name components.",
+      "entries": [
+        "deaths",
+        "poisons",
+        "skulls"
+      ]
+    },
+    {
+      "name": "effect",
+      "explanation": "Effect-related name components.",
+      "entries": [
+        "burns",
+        "itches",
+        "sores"
+      ]
+    },
+    {
+      "name": "joy",
+      "explanation": "Joy-related name components.",
+      "entries": [
+        "joys",
+        "lights"
+      ]
+    },
+    {
+      "name": "life",
+      "explanation": "Life-related name components.",
+      "entries": [
+        "hearts",
+        "lives",
+        "souls"
+      ]
+    },
+    {
+      "name": "liquid",
+      "explanation": "Liquid-related name components.",
+      "entries": [
+        "ales",
+        "meads",
+        "waters",
+        "wines"
+      ]
+    },
+    {
+      "name": "pain",
+      "explanation": "Pain-related name components.",
+      "entries": [
+        "ills",
+        "fevers",
+        "pains",
+        "sufferings",
+        "tears",
+        "wounds"
+      ]
+    },
+    {
+      "name": "place",
+      "explanation": "Location-related name components.",
+      "entries": [
+        "{lib:place#temperate}",
+        "fields",
+        "grounds",
+        "highlands",
+        "lowlands",
+        "marshes",
+        "sands"
+      ]
+    },
+    {
+      "name": "quality",
+      "explanation": "Quality-related name components.",
+      "entries": [
+        "elites",
+        "masters"
+      ]
+    },
+    {
+      "name": "shape",
+      "explanation": "Shape-related name components.",
+      "entries": [
+        "cones",
+        "hooks",
+        "knots",
+        "plumes"
+      ]
+    },
+    {
+      "name": "size",
+      "explanation": "Size-related name components.",
+      "entries": [
+        "dwarves",
+        "giants",
+        "midgets"
+      ]
+    },
+    {
+      "name": "sky",
+      "explanation": "Sky-related name components.",
+      "entries": [
+        "skies",
+        "stars"
+      ]
+    },
+    {
+      "name": "sorrow",
+      "explanation": "Sorrow-related name components.",
+      "entries": [
+        "sorrows"
+      ]
+    },
+    {
+      "name": "time",
+      "explanation": "Time-related name components.",
+      "entries": [
+        "dawns",
+        "days",
+        "dusks",
+        "nights",
+        "noons"
+      ]
+    },
+    {
+      "name": "weapon",
+      "explanation": "Weapon-related name components.",
+      "entries": [
+        "arrows",
+        "axes",
+        "blades",
+        "bows",
+        "dirks",
+        "spears"
+      ]
+    },
+    {
+      "name": "weather",
+      "explanation": "Weather-related name components.",
+      "entries": [
+        "clouds",
+        "mists",
+        "rains"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomization methods.",
+      "entries": [
+        "{component}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMPONENTS"
+    },
+    {
+      "name": "component",
+      "explanation": "Component-based terms (generated from words).",
+      "entries": [
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        "bleak",
+        "common",
+        "false",
+        "rare",
+        "wild"
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{compoundbegin}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "FANTASTIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}",
+        "dragons"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
+        "concepts"
+      ]
+    },
+    {
+      "name": "look",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appear to be",
+        "seem to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
+      ]
+    }
+  ]
+}

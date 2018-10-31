@@ -12,7 +12,7 @@
   "note": "Includes multiple spelling variations of the same names. Several hypotectical, reconstructed names are included as well.",
   "to do": "",
   "see": "",
-  "date": "2018-03-10",
+  "date": "2018-05-06",
   "authors": "ELF Vesala",
   "sources": "Eithni.com, PeiraeusPublicLibrary.com,  S-Gabriel.org, Wikipedia.org",
   "genre": "universal",
@@ -106,9 +106,6 @@
     },
     {
       "name": "female",
-      "export": {
-        "gender": "female"
-      },
       "entries": [
         "{female a}",
         "{female b}",
@@ -301,9 +298,6 @@
     },
     {
       "name": "male",
-      "export": {
-        "gender": "male"
-      },
       "entries": [
         "{male a}",
         "{male b}",
@@ -745,9 +739,38 @@
     },
     {
       "name": "unisex",
-      "export": {
-        "gender": "unisex"
-      },
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "**************************************************": "SURNAMES"
+    },
+    {
+      "name": "surname",
+      "entries": [
+        "{female surname}",
+        "{male surname}",
+        "{unisex surname}"
+      ]
+    },
+    {
+      "name": "female surname",
+      "explanation": "Feminine last names.",
+      "entries": [
+        "{female byname}"
+      ]
+    },
+    {
+      "name": "male surname",
+      "explanation": "Masculine last names.",
+      "entries": [
+        "{male byname}"
+      ]
+    },
+    {
+      "name": "unisex surname",
+      "explanation": "Gender-neutral last names.",
       "entries": [
         "{unisex byname}"
       ]
@@ -1050,10 +1073,32 @@
       "**************************************************": "SPECIAL TABLES"
     },
     {
+      "name": "special",
+      "explanation": "Special name tables.",
+      "entries": [
+        "{hermafrodite}",
+        "{neuter}"
+      ]
+    },
+    {
       "name": "hermafrodite",
       "explanation": "Alias for unisex naming.",
       "entries": [
         "{unisex}"
+      ]
+    },
+    {
+      "name": "hermafrodite byname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "hermafrodite surname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex surname}"
       ]
     },
     {
@@ -1064,10 +1109,27 @@
       ]
     },
     {
+      "name": "neuter byname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "neuter surname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex surname}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, byname: {byname}, initial: {initial}, special: {special}. Gender = {global:gender}."
+        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, byname: {byname}, initial: {initial}, special: {special}."
       ]
     }
   ]

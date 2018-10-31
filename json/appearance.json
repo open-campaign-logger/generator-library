@@ -16,9 +16,17 @@
   "bugs": "",
   "to do": "",
   "see": "personality, NPC_description",
-  "date": "2018-03-11",
+  "date": "2018-10-08",
   "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
+  "attribution": {
+    "creators": "",
+    "copyright": "",
+    "licence": "https://",
+    "disclaimer": "https://",
+    "source": "",
+    "changes": "Translation into Campaign Logger generator format."
+  },
   "genre": "universal",
   "categories": [
     "character"
@@ -37,28 +45,71 @@
       ]
     },
     {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
       "name": "result",
-      "explanation": "Verbosity of the resultPattern output.",
+      "explanation": "The output format.",
       "entries": [
+        "{word}",
         "{summary}",
         "{detail}"
       ]
     },
     {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{demeanor}"
+      ]
+    },
+    {
       "name": "summary",
-      "explanation": "Brief resultPattern output.",
+      "explanation": "Brief output.",
       "entries": [
         "{appearance}"
       ]
     },
     {
       "name": "detail",
-      "explanation": "Detailed resultPattern output variations.",
+      "explanation": "More detailed output variations.",
       "entries": [
-        "{adjective}, {appearance}",
-        "{appearance} {feature}",
-        "{adjective}, {appearance} {feature}"
+        "{attribute} {appearance}",
+        "{appearance}, {feature}",
+        "{attribute} {appearance}, {feature}"
       ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a sentence.",
+      "entries": [
+        "The {appearance} {synonym} {looks} {feature}.",
+        "The {attribute} {appearance} {synonym} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "section",
+      "explanation": "Long description as a subheading and a text paragraph.",
+      "entries": [
+        "===== {random} =====\r\n{b|{meta}} \r\n "
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Name}: {random} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "name": "meta",
+      "explanation": "Off-game explanation of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
     },
     {
       "name": "appearance",
@@ -87,7 +138,36 @@
       ]
     },
     {
-      "**************************************************": "BEAUTY"
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "RANGES"
+    },
+    {
+      "name": "any",
+      "explanation": "Random selection.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "demeanor",
+      "explanation": "General appearance.",
+      "entries": [
+        "busy",
+        "distracted",
+        "relaxed"
+      ]
+    },
+    {
+      "==================================================": "BEAUTY"
     },
     {
       "name": "comeliness",
@@ -105,8 +185,9 @@
         "comeliness": "ugly"
       },
       "entries": [
-        "is downright ugly",
-        "looks homely"
+        "downright ugly",
+        "homely",
+        "unpleasant-looking"
       ]
     },
     {
@@ -116,8 +197,8 @@
         "comeliness": "plain"
       },
       "entries": [
-        "is pleasant to look at",
-        "is plain-looking"
+        "pleasant to look at",
+        "plain-looking"
       ]
     },
     {
@@ -127,8 +208,9 @@
         "comeliness": "comely"
       },
       "entries": [
-        "is quite comely",
-        "is good-looking"
+        "quite comely",
+        "good-looking",
+        "pleasant-looking"
       ]
     },
     {
@@ -138,7 +220,7 @@
         "comeliness": "comely"
       },
       "entries": [
-        "is beautiful"
+        "beautiful"
       ]
     },
     {
@@ -148,8 +230,8 @@
         "comeliness": "comely"
       },
       "entries": [
-        "is handsome",
-        "has rugged good looks"
+        "handsome",
+        "rugged good looks"
       ]
     },
     {
@@ -251,7 +333,7 @@
       "name": "eyes",
       "explanation": "Eye-related aspects of appearance.",
       "entries": [
-        "eyes that are {lib:color#eye}"
+        "{lib:color#eyes}"
       ]
     },
     {
@@ -574,37 +656,181 @@
       ]
     },
     {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomization methods.",
+      "entries": [
+        "{component}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMPONENTS"
+    },
+    {
+      "name": "component",
+      "explanation": "Component-based terms (generated from words).",
+      "entries": [
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{compoundbegin}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
       "**************************************************": "WORLD-SPECIFIC"
     },
     {
-      "name": "myth",
-      "explanation": "Appearances once rumoured to have existed.",
-      "entries": [
-        "XXX"
-      ]
+      "--------------------------------------------------": "FANTASTIC"
     },
     {
       "name": "fantasy",
-      "explanation": "Appearances for fantasy worlds (with no basis in myth).",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
-        "XXX"
+        "{medieval}"
       ]
+    },
+    {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
     },
     {
       "name": "modern",
-      "explanation": "Appearances for modern worlds.",
+      "explanation": "Descriptions for modern worlds.",
       "entries": [
-        "{common}",
-        "XXX"
+        "{common}"
       ]
     },
     {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
       "name": "futuristic",
-      "explanation": "Appearances for science fiction worlds.",
+      "explanation": "Descriptions for science fiction worlds.",
       "entries": [
-        "{modern}",
-        "XXX"
+        "{modern}"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
+        "appearance",
+        "countenance",
+        "features",
+        "looks"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "seems to be"
       ]
     },
     {
@@ -612,39 +838,37 @@
     },
     {
       "name": "special",
-      "explanation": "Special appearance tables.",
+      "explanation": "Special tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{feature}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives related to appearance.",
-      "format": "Optionally prepended to the front of the result.",
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
       "entries": [
-        "pleasant",
-        "unpleasant"
+        "flamboyant",
+        "impressive"
       ]
     },
     {
       "name": "feature",
-      "explanation": "Features related to appearance.",
-      "format": "Optionally appended to the end of the result.",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
       "entries": [
-        "busy",
-        "distracted",
-        "relaxed"
+        "carefully groomed",
+        "messy countenance"
       ]
     },
     {
-      "**************************************************": "TESTING"
+      "--------------------------------------------------": "TESTING"
     },
     {
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]

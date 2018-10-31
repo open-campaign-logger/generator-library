@@ -1,0 +1,1223 @@
+{
+  "name": "age",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "age": "",
+    "an age": "",
+    "humanyears": "",
+    "humandecade": "",
+    "circa": "",
+    "a substantive": "",
+    "female": "",
+    "male": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "The age of a character.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-08-20",
+  "authors": "ELF Vesala.",
+  "sources": "Wikipedia.org",
+  "genre": "universal",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "circa": "{circa}",
+            "{age}": "{age}"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{description}",
+        "{stats}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{age}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{circa} {age}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "{looks} in {g:possessive} {g:humandecade}"
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Age}: {age} \r\n{b|Precision}: {g:circa} \r\n{b|Human years}: {g:humanyears} \r\n{b|Human decade}: {g:humandecade} \r\n{b|A substantive}: {g:a substantive}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "age",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 99,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common types.",
+      "entries": [
+        "{young}",
+        "{adult}",
+        "{middle-aged}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare types.",
+      "entries": [
+        "{child}",
+        "{adolescent}",
+        "{old}",
+        "{ancient}"
+      ]
+    },
+    {
+      "name": "expectional",
+      "explanation": "Types not generated with a standard call.",
+      "entries": [
+        "{infant}",
+        "{toddler}",
+        "{tyke}"
+      ]
+    },
+    {
+      "**************************************************": "AGES"
+    },
+    {
+      "name": "infant",
+      "explanation": "Babies under 1 year of age.",
+      "entries": [
+        {
+          "v": "infant",
+          "export": {
+            "age": "infant",
+            "an age": "a baby",
+            "humanyears": "0",
+            "humandecade": "first year of life",
+            "a substantive": "an infant",
+            "female": "girl baby",
+            "male": "boy baby"
+          }
+        }
+      ]
+    },
+    {
+      "name": "toddler",
+      "explanation": "Children from 1 to 3 years of age.",
+      "entries": [
+        {
+          "v": "toddler",
+          "export": {
+            "age": "toddler",
+            "an age": "a toddler",
+            "humanyears": "{dice:1d3}",
+            "humandecade": "first years of life",
+            "a substantive": "a toddlers",
+            "female": "toddler girl",
+            "male": "toddler boy"
+          }
+        }
+      ]
+    },
+    {
+      "name": "tyke",
+      "explanation": "Preschoolers.",
+      "entries": [
+        {
+          "v": "small child",
+          "export": {
+            "age": "small child",
+            "an age": "a small child",
+            "humanyears": "{dice:1d3+3}",
+            "humandecade": "first decade of life",
+            "a substantive": "a small child",
+            "female": "little girl",
+            "male": "little boy"
+          }
+        }
+      ]
+    },
+    {
+      "name": "child",
+      "explanation": "Children.",
+      "entries": [
+        {
+          "v": "underaged",
+          "export": {
+            "age": "underaged",
+            "an age": "an underaged",
+            "humanyears": "{dice:1d6+6}",
+            "humandecade": "preteen years",
+            "a substantive": "a child",
+            "female": "young girl",
+            "male": "young boy"
+          }
+        }
+      ]
+    },
+    {
+      "name": "adolescent",
+      "explanation": "Teenagers.",
+      "entries": [
+        {
+          "v": "adolescent",
+          "export": {
+            "age": "adolescent",
+            "an age": "an adolescent",
+            "humanyears": "{dice:1d7+12}",
+            "humandecade": "teenage years",
+            "a substantive": "an adolescent",
+            "female": "girl",
+            "male": "boy"
+          }
+        }
+      ]
+    },
+    {
+      "name": "young",
+      "explanation": "Young adults.",
+      "entries": [
+        {
+          "v": "young",
+          "export": {
+            "age": "young",
+            "an age": "a young",
+            "humanyears": "{dice:1d10+19}",
+            "humandecade": "{young decade}",
+            "a substantive": "a youngster",
+            "female": "young woman",
+            "male": "young man"
+          }
+        }
+      ]
+    },
+    {
+      "name": "adult",
+      "explanation": "Grownups.",
+      "entries": [
+        {
+          "v": "adult",
+          "export": {
+            "age": "adult",
+            "an age": "an adult",
+            "humanyears": "{dice:1d10+29}",
+            "humandecade": "{adult decade}",
+            "a substantive": "a person",
+            "female": "woman",
+            "male": "man"
+          }
+        }
+      ]
+    },
+    {
+      "name": "middle-aged",
+      "explanation": "The middle aged.",
+      "entries": [
+        {
+          "v": "middle-aged",
+          "export": {
+            "age": "middle-aged",
+            "an age": "a middle-aged",
+            "humanyears": "{dice:1d20+39}",
+            "humandecade": "{middle-aged decade}",
+            "a substantive": "a person",
+            "female": "woman",
+            "male": "man"
+          }
+        }
+      ]
+    },
+    {
+      "name": "old",
+      "explanation": "Old people.",
+      "entries": [
+        {
+          "v": "old",
+          "export": {
+            "age": "old",
+            "an age": "an old",
+            "humanyears": "{dice:1d20+59}",
+            "humandecade": "{old decade}",
+            "a substantive": "an old-timer",
+            "female": "woman",
+            "male": "man"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ancient",
+      "explanation": "Very old people.",
+      "entries": [
+        {
+          "v": "ancient",
+          "export": {
+            "age": "ancient",
+            "an age": "an ancient",
+            "humanyears": "{dice:1d20+79}",
+            "humandecade": "{ancient decade}",
+            "a substantive": "an elder",
+            "female": "crone",
+            "male": "old-timer"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "DECADES"
+    },
+    {
+      "name": "estimate",
+      "explanation": "A closer estimate of the apparent age in human decades.",
+      "format": "No space between estimate and decade!",
+      "entries": [
+        "early ",
+        "mid-",
+        "late "
+      ]
+    },
+    {
+      "name": "young decade",
+      "explanation": "Tens of years of ages for young humans.",
+      "entries": [
+        "late teens",
+        "{estimate}twenties",
+        "{estimate}thirties"
+      ]
+    },
+    {
+      "name": "adult decade",
+      "explanation": "Tens of years of ages for adult humans.",
+      "entries": [
+        "{estimate}twenties",
+        "{estimate}thirties",
+        "{estimate}forties"
+      ]
+    },
+    {
+      "name": "middle-aged decade",
+      "explanation": "Tens of years of ages for middle-aged humans.",
+      "entries": [
+        "{estimate}thirties",
+        "{estimate}forties",
+        "{estimate}fifties",
+        "forties or fifties",
+        "{estimate}sixties"
+      ]
+    },
+    {
+      "name": "old decade",
+      "explanation": "Tens of years of ages for old humans.",
+      "entries": [
+        "{estimate}fifties",
+        "{estimate}sixties",
+        "{estimate}seventies",
+        "sixties or seventies",
+        "{estimate}eighties"
+      ]
+    },
+    {
+      "name": "ancient decade",
+      "explanation": "Tens of years of ages for ancient humans.",
+      "entries": [
+        "{estimate}seventies",
+        "{estimate}eighties",
+        "{estimate}nineties",
+        "eighties or nineties",
+        "{circa} a hundred"
+      ]
+    },
+    {
+      "**************************************************": "AGE GROUPS"
+    },
+    {
+      "name": "any",
+      "explanation": "All age groups.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{infant}"
+        },
+        {
+          "m": 1,
+          "v": "{toddler}"
+        },
+        {
+          "m": 1,
+          "v": "{tyke}"
+        },
+        {
+          "m": 2,
+          "v": "{child}"
+        },
+        {
+          "m": 10,
+          "v": "{adolescent}"
+        },
+        {
+          "m": 20,
+          "v": "{young}"
+        },
+        {
+          "m": 30,
+          "v": "{adult}"
+        },
+        {
+          "m": 20,
+          "v": "{middle-aged}"
+        },
+        {
+          "m": 10,
+          "v": "{old}"
+        },
+        {
+          "m": 5,
+          "v": "{ancient}"
+        }
+      ]
+    },
+    {
+      "name": "baby",
+      "explanation": "Baby age groups.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{infant}"
+        },
+        {
+          "m": 1,
+          "v": "{toddler}"
+        }
+      ]
+    },
+    {
+      "name": "kid",
+      "explanation": "Childrens' age groups.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{tyke}"
+        },
+        {
+          "m": 5,
+          "v": "{child}"
+        }
+      ]
+    },
+    {
+      "name": "juvenile",
+      "explanation": "Preteens and teenagers.",
+      "entries": [
+        {
+          "m": 2,
+          "v": "{child}"
+        },
+        {
+          "m": 10,
+          "v": "{adolescent}"
+        }
+      ]
+    },
+    {
+      "name": "teenager",
+      "explanation": "The teen-aged.",
+      "entries": [
+        "{adolescent}"
+      ]
+    },
+    {
+      "name": "minor",
+      "explanation": "Underaged age groups.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "{infant}"
+        },
+        {
+          "m": 1,
+          "v": "{toddler}"
+        },
+        {
+          "m": 1,
+          "v": "{tyke}"
+        },
+        {
+          "m": 5,
+          "v": "{child}"
+        },
+        {
+          "m": 10,
+          "v": "{adolescent}"
+        }
+      ]
+    },
+    {
+      "name": "youth",
+      "explanation": "The teen-aged and young adults.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{adolescent}"
+        },
+        {
+          "m": 20,
+          "v": "{young}"
+        }
+      ]
+    },
+    {
+      "name": "major",
+      "explanation": "Adult age groups.",
+      "entries": [
+        {
+          "m": 20,
+          "v": "{young}"
+        },
+        {
+          "m": 30,
+          "v": "{adult}"
+        },
+        {
+          "m": 20,
+          "v": "{middle-aged}"
+        },
+        {
+          "m": 10,
+          "v": "{old}"
+        },
+        {
+          "m": 5,
+          "v": "{ancient}"
+        }
+      ]
+    },
+    {
+      "name": "prime",
+      "explanation": "Working age groups.",
+      "entries": [
+        {
+          "m": 20,
+          "v": "{young}"
+        },
+        {
+          "m": 30,
+          "v": "{adult}"
+        },
+        {
+          "m": 20,
+          "v": "{middle-aged}"
+        }
+      ]
+    },
+    {
+      "name": "elderly",
+      "explanation": "Elderly age groups.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{old}"
+        },
+        {
+          "m": 5,
+          "v": "{ancient}"
+        }
+      ]
+    },
+    {
+      "**************************************************": "SUBSTANTIVES"
+    },
+    {
+      "--------------------------------------------------": "FEMALES"
+    },
+    {
+      "name": "female",
+      "explanation": "Females of all ages.",
+      "entries": [
+        "{infant female}",
+        "{toddler female}",
+        "{tyke female}",
+        "{child female}",
+        "{adolescent female}",
+        "{young female}",
+        "{adult female}",
+        "{middle-aged female}",
+        "{old female}",
+        "{ancient female}"
+      ]
+    },
+    {
+      "name": "infant female",
+      "explanation": "females under 1 year of age.",
+      "entries": [
+        "baby",
+        "baby girl",
+        "infant"
+      ]
+    },
+    {
+      "name": "toddler female",
+      "explanation": "Females from 1 to 3 years of age.",
+      "entries": [
+        "toddler",
+        "toddler girl",
+        "tot"
+      ]
+    },
+    {
+      "name": "tyke female",
+      "explanation": "Female preschoolers.",
+      "entries": [
+        "little girl",
+        "little kid",
+        "small girl",
+        "small kid",
+        "tyke"
+      ]
+    },
+    {
+      "name": "child female",
+      "explanation": "Female children.",
+      "entries": [
+        "girl",
+        "young girl"
+      ]
+    },
+    {
+      "name": "adolescent female",
+      "explanation": "Female teenagers.",
+      "entries": [
+        "girl",
+        "lassie",
+        "young lady"
+      ]
+    },
+    {
+      "name": "young female",
+      "explanation": "Young female adults.",
+      "entries": [
+        "damsel",
+        "lass",
+        "maid",
+        "miss",
+        "young woman"
+      ]
+    },
+    {
+      "name": "adult female",
+      "explanation": "Grown-up women.",
+      "entries": [
+        "woman"
+      ]
+    },
+    {
+      "name": "middle-aged female",
+      "explanation": "Middle aged women.",
+      "entries": [
+        "woman"
+      ]
+    },
+    {
+      "name": "old female",
+      "explanation": "Old women.",
+      "entries": [
+        "grandmother",
+        "matron",
+        "old woman",
+        "woman"
+      ]
+    },
+    {
+      "name": "ancient female",
+      "explanation": "Very old women.",
+      "entries": [
+        "crone",
+        "old woman"
+      ]
+    },
+    {
+      "--------------------------------------------------": "HERMAFRODITES"
+    },
+    {
+      "name": "hermafrodite",
+      "explanation": "Hermafrodites of all ages.",
+      "entries": [
+        "{infant hermafrodite}",
+        "{toddler hermafrodite}",
+        "{tyke hermafrodite}",
+        "{child hermafrodite}",
+        "{adolescent hermafrodite}",
+        "{young hermafrodite}",
+        "{adult hermafrodite}",
+        "{middle-aged hermafrodite}",
+        "{old hermafrodite}",
+        "{ancient hermafrodite}"
+      ]
+    },
+    {
+      "name": "infant hermafrodite",
+      "explanation": "Hermafrodites under 1 year of age.",
+      "entries": [
+        "baby",
+        "infant"
+      ]
+    },
+    {
+      "name": "toddler hermafrodite",
+      "explanation": "Hermafrodites from 1 to 3 years of age.",
+      "entries": [
+        "toddler",
+        "tot"
+      ]
+    },
+    {
+      "name": "tyke hermafrodite",
+      "explanation": "Hermafrodite preschoolers.",
+      "entries": [
+        "little child",
+        "little kid",
+        "small child",
+        "small kid",
+        "tyke"
+      ]
+    },
+    {
+      "name": "child hermafrodite",
+      "explanation": "Hermafrodite children.",
+      "entries": [
+        "child",
+        "young child"
+      ]
+    },
+    {
+      "name": "adolescent hermafrodite",
+      "explanation": "Hermafrodite teenagers.",
+      "entries": [
+        "adolescent",
+        "youngster"
+      ]
+    },
+    {
+      "name": "young hermafrodite",
+      "explanation": "Young hermafrodite adults.",
+      "entries": [
+        "young fellow",
+        "young person"
+      ]
+    },
+    {
+      "name": "adult hermafrodite",
+      "explanation": "Grown-up hermafrodites.",
+      "entries": [
+        "fellow",
+        "person"
+      ]
+    },
+    {
+      "name": "middle-aged hermafrodite",
+      "explanation": "Middle aged hermafrodites.",
+      "entries": [
+        "fellow",
+        "person"
+      ]
+    },
+    {
+      "name": "old hermafrodite",
+      "explanation": "Old hermafrodites.",
+      "entries": [
+        "senior",
+        "veteran"
+      ]
+    },
+    {
+      "name": "ancient hermafrodite",
+      "explanation": "Very old hermafrodites.",
+      "entries": [
+        "elder",
+        "old-timer"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MALES"
+    },
+    {
+      "name": "male",
+      "explanation": "Males of all ages.",
+      "entries": [
+        "{infant male}",
+        "{toddler male}",
+        "{tyke male}",
+        "{child male}",
+        "{adolescent male}",
+        "{young male}",
+        "{adult male}",
+        "{middle-aged male}",
+        "{old male}",
+        "{ancient male}"
+      ]
+    },
+    {
+      "name": "infant male",
+      "explanation": "Males under 1 year of age.",
+      "entries": [
+        "baby",
+        "baby boy",
+        "infant"
+      ]
+    },
+    {
+      "name": "toddler male",
+      "explanation": "Males from 1 to 3 years of age.",
+      "entries": [
+        "toddler",
+        "toddler boy",
+        "tot"
+      ]
+    },
+    {
+      "name": "tyke male",
+      "explanation": "Male preschoolers.",
+      "entries": [
+        "little boy",
+        "little kid",
+        "small boy",
+        "small kid",
+        "tyke",
+        "urchin"
+      ]
+    },
+    {
+      "name": "child male",
+      "explanation": "Male children.",
+      "entries": [
+        "boy",
+        "kid",
+        "young boy"
+      ]
+    },
+    {
+      "name": "adolescent male",
+      "explanation": "Male teenagers.",
+      "entries": [
+        "adolescent",
+        "boy",
+        "lad",
+        "youngster"
+      ]
+    },
+    {
+      "name": "young male",
+      "explanation": "Young male adults.",
+      "entries": [
+        "guy",
+        "young fellow",
+        "young man"
+      ]
+    },
+    {
+      "name": "adult male",
+      "explanation": "Grown-up men.",
+      "entries": [
+        "fellow",
+        "gent",
+        "man"
+      ]
+    },
+    {
+      "name": "middle-aged male",
+      "explanation": "Middle aged men.",
+      "entries": [
+        "fellow",
+        "gent",
+        "man"
+      ]
+    },
+    {
+      "name": "old male",
+      "explanation": "Old men.",
+      "entries": [
+        "grandfather",
+        "old man",
+        "senior",
+        "veteran"
+      ]
+    },
+    {
+      "name": "ancient male",
+      "explanation": "Very old men.",
+      "entries": [
+        "elder",
+        "old man",
+        "old-timer"
+      ]
+    },
+    {
+      "--------------------------------------------------": "NEUTERS"
+    },
+    {
+      "name": "neuter",
+      "explanation": "Age for neuter characters (golems, automatons, homonculi, contructs, androids, etc).",
+      "entries": [
+        "{infant neuter}",
+        "{toddler neuter}",
+        "{tyke neuter}",
+        "{child neuter}",
+        "{adolescent neuter}",
+        "{young neuter}",
+        "{adult neuter}",
+        "{middle-aged neuter}",
+        "{old neuter}",
+        "{ancient neuter}"
+      ]
+    },
+    {
+      "name": "infant neuter",
+      "explanation": "Neuters under 1 year of age.",
+      "entries": [
+        "baby",
+        "infant"
+      ]
+    },
+    {
+      "name": "toddler neuter",
+      "explanation": "Neuters from 1 to 3 years of age.",
+      "entries": [
+        "toddler",
+        "tot"
+      ]
+    },
+    {
+      "name": "tyke neuter",
+      "explanation": "Neuter preschoolers.",
+      "entries": [
+        "little child",
+        "little kid",
+        "small child",
+        "small kid",
+        "tyke"
+      ]
+    },
+    {
+      "name": "child neuter",
+      "explanation": "Neuter children.",
+      "entries": [
+        "child",
+        "young child"
+      ]
+    },
+    {
+      "name": "adolescent neuter",
+      "explanation": "Neuter teenagers.",
+      "entries": [
+        "adolescent",
+        "youngster"
+      ]
+    },
+    {
+      "name": "young neuter",
+      "explanation": "Young neuter adults.",
+      "entries": [
+        "young fellow",
+        "young person"
+      ]
+    },
+    {
+      "name": "adult neuter",
+      "explanation": "Grown-up neuters.",
+      "entries": [
+        "fellow",
+        "person"
+      ]
+    },
+    {
+      "name": "middle-aged neuter",
+      "explanation": "Middle aged neuters.",
+      "entries": [
+        "fellow",
+        "person"
+      ]
+    },
+    {
+      "name": "old neuter",
+      "explanation": "Old neuters.",
+      "entries": [
+        "senior",
+        "veteran"
+      ]
+    },
+    {
+      "name": "ancient neuter",
+      "explanation": "Very old neuters.",
+      "entries": [
+        "elder",
+        "old-timer"
+      ]
+    },
+    {
+      "**************************************************": "PRECISION"
+    },
+    {
+      "name": "circa",
+      "explanation": "The accuracy of the stated age.",
+      "entries": [
+        "{under}",
+        "{approximately}",
+        "{over}"
+      ]
+    },
+    {
+      "name": "under",
+      "explanation": "Somewhat less than the stated age.",
+      "entries": [
+        "almost",
+        "bordering on",
+        "close to",
+        "not far from",
+        "not quite"
+      ]
+    },
+    {
+      "name": "approximately",
+      "explanation": "About the stated age.",
+      "entries": [
+        "just about",
+        "more or less",
+        "roughly"
+      ]
+    },
+    {
+      "name": "over",
+      "explanation": "Somewhat more than the stated age.",
+      "entries": [
+        "beyond",
+        "more than",
+        "past",
+        "upwards of"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZATION"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{beginning}-{ending}",
+        "{descriptor} {beginning}-{ending}",
+        "{beginning}-{ending} {extension}",
+        "{descriptor} {beginning}-{ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        "fairly",
+        "genuinely",
+        "moderately",
+        "positively",
+        "pretty",
+        "quite",
+        "rather",
+        "really",
+        "relatively",
+        "reasonably",
+        "somewhat",
+        "very"
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{youthful}",
+        "{mature}"
+      ]
+    },
+    {
+      "name": "youthful",
+      "explanation": "Descriptions for looking young.",
+      "entries": [
+        "active",
+        "fresh",
+        "vigorous",
+        "young",
+        "youthful"
+      ]
+    },
+    {
+      "name": "mature",
+      "explanation": "Descriptions for looking old.",
+      "entries": [
+        "decrepit",
+        "mature",
+        "old",
+        "seasoned",
+        "venerable"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "looking",
+        "mannered"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        "for {g:possessive} age",
+        "for {g:possessive} actual age",
+        "for {g:possessive} real age",
+        "for {g:possessive} true age",
+        "for {g:possessive} actual years",
+        "for {g:possessive} real years",
+        "for {g:possessive} true years",
+        "for {g:possessive} years"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}",
+        "{age}"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "{age}"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{age}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{age}"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "age",
+        "maturity"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "looks to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        "{circa}"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "Summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}. Age: {global:age}, a substantive: {g:a substantive}."
+      ]
+    }
+  ]
+}

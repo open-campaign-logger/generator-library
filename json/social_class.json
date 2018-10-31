@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-03-10",
+  "date": "2018-08-21",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -75,27 +75,27 @@
           "m": 50,
           "v": "lower class",
           "export": {
-            "socialclass": "lower class",
-            "employment": "{lib:employment#lower class}",
-            "outfitadjective": "{lib:clothing#lower class adjective}"
+            "social_class": "lower class",
+            "occupation": "{lib:occupation#lower class}",
+            "outfitattribute": "{lib:clothing#lower class attribute}"
           }
         },
         {
           "m": 30,
           "v": "middle class",
           "export": {
-            "socialclass": "middle class",
-            "employment": "{lib:employment#middle class}",
-            "outfitadjective": "{lib:clothing#middle class adjective}"
+            "social_class": "middle class",
+            "occupation": "{lib:occupation#middle class}",
+            "outfitattribute": "{lib:clothing#middle class attribute}"
           }
         },
         {
           "m": 10,
           "v": "upper class",
           "export": {
-            "socialclass": "upper class",
-            "employment": "{lib:employment#upper class}",
-            "outfitadjective": "{lib:clothing#upper class adjective}"
+            "social_class": "upper class",
+            "occupation": "{lib:occupation#upper class}",
+            "outfitattribute": "{lib:clothing#upper class attribute}"
           }
         }
       ]
@@ -108,18 +108,18 @@
           "m": 5,
           "v": "poor",
           "export": {
-            "socialclass": "poor",
-            "employment": "{lib:employment#poor}",
-            "outfitadjective": "{lib:clothing#poor adjective}"
+            "social_class": "poor",
+            "occupation": "{lib:occupation#poor}",
+            "outfitattribute": "{lib:clothing#poor attribute}"
           }
         },
         {
           "m": 5,
           "v": "rich",
           "export": {
-            "socialclass": "rich",
-            "employment": "{lib:employment#rich}",
-            "outfitadjective": "{lib:clothing#rich adjective}"
+            "socia_class": "rich",
+            "occupation": "{lib:occupation#rich}",
+            "outfitattribute": "{lib:clothing#rich attribute}"
           }
         }
       ]

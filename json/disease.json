@@ -1,0 +1,626 @@
+{
+  "name": "disease",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Disease and illness generation.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-05-30",
+  "authors": "ELF Vesala.",
+  "sources": "MedicineNet.com, Wikipedia.org",
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{disease}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {disease}",
+        "{disease} {feature}",
+        "{attribute} {disease} {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "{b|{random}|scase} spreads via {vector} and causes {symptom}. It starts to show symptoms after {incubation} and {contagion}. It typically lasts {duration}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "=== {random} ===\r\n{b|Incubation}: {incubation}.\r\n{b|Latency}: {latency}."
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "disease",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common types.",
+      "entries": [
+        "{mild}",
+        "{medium}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare types.",
+      "entries": [
+        "{severe}"
+      ]
+    },
+    {
+      "name": "mild",
+      "explanation": "Non-serious symptoms.",
+      "entries": [
+        "{fever}"
+      ]
+    },
+    {
+      "name": "medium",
+      "explanation": "Serious symptoms.",
+      "entries": [
+        "{pain}"
+      ]
+    },
+    {
+      "name": "severe",
+      "explanation": "Very  symptoms.",
+      "entries": [
+        "convulsions"
+      ]
+    },
+    {
+      "**************************************************": "SYMPTOMS"
+    },
+    {
+      "name": "symptom",
+      "explanation": "The visible signs of the disease.",
+      "entries": [
+        "{fever}",
+        "{pain}"
+      ]
+    },
+    {
+      "name": "fever",
+      "explanation": "High temperature.",
+      "entries": [
+        "mild fever",
+        "fever",
+        "high fever",
+        "extreme fever"
+      ]
+    },
+    {
+      "name": "pain",
+      "explanation": "Ache and soreness.",
+      "entries": [
+        "pain in {lib:bodypart#summary}"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "contagion",
+      "explanation": "How the disease spreads?",
+      "entries": [
+        "is not contagious",
+        "is contagiuous after {latency}"
+      ]
+    },
+    {
+      "name": "incubation",
+      "explanation": "The time between the infection and symptoms.",
+      "entries": [
+        "{dice:1d6+1} hours",
+        "{dice:2d10} hours",
+        "{dice:1d3+1} days",
+        "{dice:1d6+1} days",
+        "{dice:2d6} days"
+      ]
+    },
+    {
+      "name": "latency",
+      "explanation": "The time between the infection and spreading.",
+      "entries": [
+        "{dice:2d10} hours",
+        "{dice:1d3+1} days",
+        "{dice:1d6+1} days",
+        "{dice:2d6} days"
+      ]
+    },
+    {
+      "name": "vector",
+      "explanation": "Delivery methods.",
+      "entries": [
+        "an unknown vector",
+        "spoiled food",
+        "skin contact"
+      ]
+    },
+    {
+      "**************************************************": "DURATION"
+    },
+    {
+      "name": "duration",
+      "explanation": "How long the disease lasts?",
+      "entries": [
+        "{acute}",
+        "{chronic}",
+        "{terminal}"
+      ]
+    },
+    {
+      "name": "acute",
+      "explanation": "Short-lived disease types.",
+      "entries": [
+        "{dice:1d6+2} days",
+        "{dice:1d3+1} weeks"
+      ]
+    },
+    {
+      "name": "chronic",
+      "explanation": "Long-time disease types.",
+      "entries": [
+        "{dice:2d6} months",
+        "up to {dice:2d6} years"
+      ]
+    },
+    {
+      "name": "terminal",
+      "explanation": "Deadly diseases.",
+      "entries": [
+        "until death",
+        "until a painful death"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZATION"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{beginning}{ending}",
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        "aggressive",
+        "chronic",
+        "delirious",
+        "epidemic",
+        "inflammatory",
+        "irritable",
+        "necrotizing",
+        "recurrent",
+        "temporal",
+        "toxic",
+        "undifferentiated"
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{animal} ",
+        "{organ} ",
+        "{symptom} ",
+        "{terrain} ",
+        "failing ",
+        "mortal ",
+        "parasitic ",
+        "sleep "
+      ]
+    },
+    {
+      "name": "animal",
+      "explanation": "Animal-related disease terms.",
+      "entries": [
+        "arachnid",
+        "avian",
+        "canine",
+        "feline"
+      ]
+    },
+    {
+      "name": "organ",
+      "explanation": "Internal organs.",
+      "entries": [
+        "bowel",
+        "brain",
+        "heart",
+        "nervous",
+        "pelvic",
+        "respiratory",
+        "stomach",
+        "throat",
+        "vein"
+      ]
+    },
+    {
+      "name": "symptom",
+      "explanation": "Symptom-based names.",
+      "entries": [
+        "frenzied",
+        "numbing",
+        "shivering",
+        "shriveling",
+        "spotted",
+        "twitching",
+        "warping"
+      ]
+    },
+    {
+      "name": "terrain",
+      "explanation": "Topographical variations.",
+      "entries": [
+        "cave",
+        "mountain",
+        "river",
+        "swamp"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "ache",
+        "affection",
+        "ailment",
+        "blindness",
+        "breakdown",
+        "canker",
+        "chills",
+        "cold",
+        "condition",
+        "contagion",
+        "contamination",
+        "corruption",
+        "decay",
+        "defilement",
+        "disease",
+        "disorder",
+        "fever",
+        "flu",
+        "gangrene",
+        "illness",
+        "infection",
+        "inflammation",
+        "malady",
+        "malignancy",
+        "morbidity",
+        "paralysis",
+        "pathosis",
+        "pestilence",
+        "phenomenon",
+        "plague",
+        "pneumonia",
+        "poisoning",
+        "pox",
+        "seizure",
+        "sickness",
+        "spoliation",
+        "sores",
+        "tumor"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        "",
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "FANTASY"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Terms for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{beginning}{fantasy ending}",
+        "{fantasy beginning}{ending}",
+        "{fantasy beginning}{fantasy ending}",
+        "{fantasy beginning}{fantasy ending} {fantasy extension}",
+        "{fantasy descriptor} {fantasy beginning}{fantasy ending}",
+        "{fantasy descriptor} {fantasy beginning}{fantasy ending} {fantasy extension}"
+      ]
+    },
+    {
+      "name": "fantasy descriptor",
+      "explanation": "Fantasy-themed term descriptors.",
+      "entries": [
+        "{descriptor}",
+        "{medieval descriptor}",
+        "eldritch"
+      ]
+    },
+    {
+      "name": "fantasy beginning",
+      "explanation": "Fantasy-themed term beginnings.",
+      "entries": [
+        "{beginning}",
+        "{medieval beginning}",
+        "dragon ",
+        "fey ",
+        "lycanthtropic ",
+        "soul ",
+        "spirit ",
+        "vampiric ",
+        "witch "
+      ]
+    },
+    {
+      "name": "fantasy ending",
+      "explanation": "Fantasy-themed term endings.",
+      "entries": [
+        "{ending}",
+        "{medieval ending}",
+        "bane",
+        "blight",
+        "hex",
+        "taint",
+        "withering"
+      ]
+    },
+    {
+      "name": "fantasy extension",
+      "explanation": "Fantasy-themed term extensions.",
+      "entries": [
+        "{extension}",
+        "{medieval extension}",
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "MEDIEVAL"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Terms for medieval worlds (with no fantasy elements).",
+      "entries": [
+        "{beginning}{medieval ending}",
+        "{medieval beginning}{ending}",
+        "{medieval beginning}{medieval ending}",
+        "{medieval beginning}{medieval ending} {medieval extension}",
+        "{medieval descriptor} {medieval beginning}{medieval ending}",
+        "{medieval descriptor} {medieval beginning}{medieval ending} {medieval extension}"
+      ]
+    },
+    {
+      "name": "medieval descriptor",
+      "explanation": "Medieval term descriptors.",
+      "entries": [
+        "{descriptor}",
+        ""
+      ]
+    },
+    {
+      "name": "medieval beginning",
+      "explanation": "Medieval term beginnings.",
+      "entries": [
+        "{beginning}",
+        "vermin"
+      ]
+    },
+    {
+      "name": "medieval ending",
+      "explanation": "Medieval term endings.",
+      "entries": [
+        "{ending}",
+        "pestilence",
+        "plague",
+        "rot"
+      ]
+    },
+    {
+      "name": "medieval extension",
+      "explanation": "Medieval term extensions.",
+      "entries": [
+        "{extension}",
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "MODERN"
+    },
+    {
+      "name": "modern",
+      "explanation": "Terms for modern worlds.",
+      "entries": [
+        "{beginning}{modern ending}",
+        "{modern beginning}{ending}",
+        "{modern beginning}{modern ending}",
+        "{modern beginning}{modern ending} {modern extension}",
+        "{modern descriptor} {modern beginning}{modern ending}",
+        "{modern descriptor} {modern beginning}{modern ending} {modern extension}"
+      ]
+    },
+    {
+      "name": "modern descriptor",
+      "explanation": "Modern term descriptors.",
+      "entries": [
+        "{descriptor}",
+        ""
+      ]
+    },
+    {
+      "name": "modern beginning",
+      "explanation": "Modern term beginnings.",
+      "entries": [
+        "{beginning}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern ending",
+      "explanation": "Modern term endings.",
+      "entries": [
+        "{ending}",
+        "syndrome",
+        "virus"
+      ]
+    },
+    {
+      "name": "modern extension",
+      "explanation": "Modern term extensions.",
+      "entries": [
+        "{extension}",
+        "gravis",
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "FUTURISTIC"
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Terms for science fiction worlds.",
+      "entries": [
+        "{modern beginning}{futuristic ending}",
+        "{futuristic beginning}{modern ending}",
+        "{futuristic beginning}{futuristic ending}",
+        "{futuristic beginning}{futuristic ending} {futuristic extension}",
+        "{futuristic descriptor} {futuristic beginning}{futuristic ending}",
+        "{futuristic descriptor} {futuristic beginning}{futuristic ending} {futuristic extension}"
+      ]
+    },
+    {
+      "name": "futuristic descriptor",
+      "explanation": "Futuristic term descriptors.",
+      "entries": [
+        "{descriptor}",
+        "{modern descriptor}",
+        ""
+      ]
+    },
+    {
+      "name": "futuristic beginning",
+      "explanation": "Futuristic term beginnings.",
+      "entries": [
+        "{beginning}",
+        "{modern beginning}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic ending",
+      "explanation": "Futuristic term endings.",
+      "entries": [
+        "{ending}",
+        "{modern ending}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic extension",
+      "explanation": "Futuristic term extensions.",
+      "entries": [
+        "{extension}",
+        "{modern extension}",
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attributes prepended to the front of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+      ]
+    }
+  ]
+}

@@ -39,103 +39,103 @@
     "enemies": "",
     "enemygroup": "",
     "enemyaction": "",
-    "enemyadjective": "",
+    "enemyattribute": "",
     "enemydescription": "",
     "minion": "",
     "minions": "",
     "miniongroup": "",
     "minionaction": "",
-    "minionadjective": "",
+    "minionattribute": "",
     "miniondescription": "",
     "guardian": "",
     "guardians": "",
     "guardiangroup": "",
     "guardianaction": "",
-    "guardianadjective": "",
+    "guardianattribute": "",
     "guardiandescription": "",
     "monster": "",
     "monsters": "",
     "monstergroup": "",
     "monsteraction": "",
-    "monsteradjective": "",
+    "monsterattribute": "",
     "monsterdescription": "",
     "beast": "",
     "beasts": "",
     "beastgroup": "",
     "beastaction": "",
-    "beastadjective": "",
+    "beastattribute": "",
     "beastdescription": "",
     "traitor": "",
     "traitors": "",
     "traitorgroup": "",
     "traitoraction": "",
-    "traitoradjective": "",
+    "traitorattribute": "",
     "traitordescription": "",
     "shapeshifter": "",
     "shapeshifters": "",
     "shapeshiftergroup": "",
     "shapeshifteraction": "",
-    "shapeshifteradjective": "",
+    "shapeshifterattribute": "",
     "shapeshifterdescription": "",
     "tempter": "",
     "tempters": "",
     "temptergroup": "",
     "tempteraction": "",
-    "tempteradjective": "",
+    "tempterattribute": "",
     "tempterdescription": "",
     "rival": "",
     "rivals": "",
     "rivalgroup": "",
     "rivalaction": "",
-    "rivaladjective": "",
+    "rivalattribute": "",
     "rivaldescription": "",
     "trickster": "",
     "tricksters": "",
     "trickstergroup": "",
     "tricksteraction": "",
-    "tricksteradjective": "",
+    "tricksterattribute": "",
     "tricksterdescription": "",
     "inhabitant": "",
     "inhabitants": "",
     "inhabitantgroup": "",
     "inhabitantaction": "",
-    "inhabitantadjective": "",
+    "inhabitantattribute": "",
     "inhabitantdescription": "",
     "animal": "",
     "animals": "",
     "animalgroup": "",
     "animalaction": "",
-    "animaladjective": "",
+    "animalattribute": "",
     "animaldescription": "",
     "plant": "",
     "plants": "",
     "plantgroup": "",
     "plantaction": "",
-    "plantadjective": "",
+    "plantattribute": "",
     "plantdescription": "",
     "captive": "",
     "captives": "",
     "captivegroup": "",
     "captiveaction": "",
-    "captiveadjective": "",
+    "captiveattribute": "",
     "captivedescription": "",
     "herald": "",
     "heralds": "",
     "heraldgroup": "",
     "heraldaction": "",
-    "heraldadjective": "",
+    "heraldattribute": "",
     "heralddescription": "",
     "mentor": "",
     "mentors": "",
     "mentorgroup": "",
     "mentoraction": "",
-    "mentoradjective": "",
+    "mentorattribute": "",
     "mentordescription": "",
     "ally": "",
     "allies": "",
     "allygroup": "",
     "allyaction": "",
-    "allyadjective": "",
+    "allyattribute": "",
     "allydescription": "",
     "entrance": "",
     "room 1": "",
@@ -193,8 +193,8 @@
   "bugs": "",
   "to do": "Support for external motif files (requires global variables). More beats!",
   "see": "Dungeon_adventure, hook_line_and_sinker_adventure",
-  "date": "2018-01-16",
-  "authors": "Esko Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
+  "date": "2018-06-13",
+  "authors": "ELF Vesala, based on the 'Five Room Dungeon' formula, the Hero's Journey and scriptwriting methodology.",
   "sources": "Dream Park: The Roleplaying Game, RolePlayingTips.com",
   "genre": "universal",
   "categories": [
@@ -265,16 +265,16 @@
       "name": "adventure name",
       "explanation": "Variations for the name of the adventure based on set variables.",
       "entries": [
-        "The {var:symbol} of the {enemy adjective} {var:enemy}",
-        "{location adjective} {var:location} of the {enemy adjective} {var:enemy}",
-        "{var:goaldescription} the {enemy adjective} {var:enemy}",
-        "{var:macguffin} of the {enemy adjective} {var:enemy}",
-        "{treasure adjective} {var:treasure} of the {location adjective} {var:location}",
+        "The {var:symbol} of the {enemy attribute} {var:enemy}",
+        "{location attribute} {var:location} of the {enemy attribute} {var:enemy}",
+        "{var:goaldescription} the {enemy attribute} {var:enemy}",
+        "{var:macguffin} of the {enemy attribute} {var:enemy}",
+        "{treasure attribute} {var:treasure} of the {location attribute} {var:location}",
         "In search of a {var:treasure}",
-        "In search of the {var:treasure} of the {enemy adjective} {var:enemy}",
+        "In search of the {var:treasure} of the {enemy attribute} {var:enemy}",
         "Quest for the {var:treasure}",
-        "{lib:synonym#death} of the {enemy adjective} {var:enemy}",
-        "{minion adjective} {var:minion} of the {enemy adjective} {var:enemy}"
+        "{lib:synonym#death} of the {enemy attribute} {var:enemy}",
+        "{minion attribute} {var:minion} of the {enemy attribute} {var:enemy}"
       ]
     },
     {
@@ -429,7 +429,7 @@
           "v": "",
           "set": {
             "enemy": "traitor",
-            "enemyadjective": "scheming"
+            "enemyattribute": "scheming"
           }
         },
         {
@@ -437,7 +437,7 @@
           "v": "",
           "set": {
             "enemy": "madman",
-            "enemyadjective": "ravening"
+            "enemyattribute": "ravening"
           }
         },
         {
@@ -445,7 +445,7 @@
           "v": "",
           "set": {
             "enemy": "cultist",
-            "enemyadjective": "fanatical"
+            "enemyattribute": "fanatical"
           }
         },
         {
@@ -453,7 +453,7 @@
           "v": "",
           "set": {
             "enemy": "mistress",
-            "enemyadjective": "alluring"
+            "enemyattribute": "alluring"
           }
         },
         {
@@ -461,7 +461,7 @@
           "v": "",
           "set": {
             "enemy": "lycanthrope",
-            "enemyadjective": "shapeshifting"
+            "enemyattribute": "shapeshifting"
           }
         }
       ]
@@ -475,7 +475,7 @@
           "v": "",
           "set": {
             "enemy": "slave lord",
-            "enemyadjective": "cruel"
+            "enemyattribute": "cruel"
           }
         },
         {
@@ -483,7 +483,7 @@
           "v": "",
           "set": {
             "enemy": "tribe",
-            "enemyadjective": "hostile"
+            "enemyattribute": "hostile"
           }
         },
         {
@@ -491,7 +491,7 @@
           "v": "",
           "set": {
             "enemy": "horde",
-            "enemyadjective": "bloodthirsty"
+            "enemyattribute": "bloodthirsty"
           }
         },
         {
@@ -499,7 +499,7 @@
           "v": "",
           "set": {
             "enemy": "oracle",
-            "enemyadjective": "mysterious"
+            "enemyattribute": "mysterious"
           }
         },
         {
@@ -507,7 +507,7 @@
           "v": "",
           "set": {
             "enemy": "high priest",
-            "enemyadjective": "blood-stained"
+            "enemyattribute": "blood-stained"
           }
         },
         {
@@ -515,7 +515,7 @@
           "v": "",
           "set": {
             "enemy": "ogre",
-            "enemyadjective": "ravenous"
+            "enemyattribute": "ravenous"
           }
         },
         {
@@ -523,7 +523,7 @@
           "v": "",
           "set": {
             "enemy": "cannibal king",
-            "enemyadjective": "sharp-toothed"
+            "enemyattribute": "sharp-toothed"
           }
         },
         {
@@ -531,7 +531,7 @@
           "v": "",
           "set": {
             "enemy": "inquisitor",
-            "enemyadjective": "sadistic"
+            "enemyattribute": "sadistic"
           }
         },
         {
@@ -539,7 +539,7 @@
           "v": "",
           "set": {
             "enemy": "serpent",
-            "enemyadjective": "slithering"
+            "enemyattribute": "slithering"
           }
         },
         {
@@ -547,7 +547,7 @@
           "v": "",
           "set": {
             "enemy": "wight",
-            "enemyadjective": "undead"
+            "enemyattribute": "undead"
           }
         }
       ]
@@ -561,7 +561,7 @@
           "v": "",
           "set": {
             "enemy": "general",
-            "enemyadjective": "scheming"
+            "enemyattribute": "scheming"
           }
         },
         {
@@ -569,7 +569,7 @@
           "v": "",
           "set": {
             "enemy": "monstrosity",
-            "enemyadjective": "inhuman"
+            "enemyattribute": "inhuman"
           }
         },
         {
@@ -577,7 +577,7 @@
           "v": "",
           "set": {
             "enemy": "colossus",
-            "enemyadjective": "hulking"
+            "enemyattribute": "hulking"
           }
         },
         {
@@ -585,7 +585,7 @@
           "v": "",
           "set": {
             "enemy": "abomination",
-            "enemyadjective": "indescribable"
+            "enemyattribute": "indescribable"
           }
         },
         {
@@ -593,7 +593,7 @@
           "v": "",
           "set": {
             "enemy": "faceless evil",
-            "enemyadjective": "hellbound"
+            "enemyattribute": "hellbound"
           }
         }
       ]
@@ -607,7 +607,7 @@
           "v": "",
           "set": {
             "enemy": "phantom",
-            "enemyadjective": "spectral"
+            "enemyattribute": "spectral"
           }
         },
         {
@@ -615,7 +615,7 @@
           "v": "",
           "set": {
             "enemy": "wizard",
-            "enemyadjective": "dark"
+            "enemyattribute": "dark"
           }
         },
         {
@@ -623,7 +623,7 @@
           "v": "",
           "set": {
             "enemy": "necromancer",
-            "enemyadjective": "death-tainted"
+            "enemyattribute": "death-tainted"
           }
         },
         {
@@ -631,7 +631,7 @@
           "v": "",
           "set": {
             "enemy": "giant",
-            "enemyadjective": "enormous"
+            "enemyattribute": "enormous"
           }
         },
         {
@@ -639,7 +639,7 @@
           "v": "",
           "set": {
             "enemy": "wyvern",
-            "enemyadjective": "leather-winged"
+            "enemyattribute": "leather-winged"
           }
         }
       ]
@@ -653,7 +653,7 @@
           "v": "",
           "set": {
             "enemy": "lich",
-            "enemyadjective": "long-dead"
+            "enemyattribute": "long-dead"
           }
         },
         {
@@ -661,7 +661,7 @@
           "v": "",
           "set": {
             "enemy": "dragon",
-            "enemyadjective": "scale-armored"
+            "enemyattribute": "scale-armored"
           }
         },
         {
@@ -669,7 +669,7 @@
           "v": "",
           "set": {
             "enemy": "wyrm",
-            "enemyadjective": "ancient"
+            "enemyattribute": "ancient"
           }
         },
         {
@@ -677,7 +677,7 @@
           "v": "",
           "set": {
             "enemy": "demon lord",
-            "enemyadjective": "hateful"
+            "enemyattribute": "hateful"
           }
         },
         {
@@ -685,13 +685,13 @@
           "v": "",
           "set": {
             "enemy": "old one",
-            "enemyadjective": "great"
+            "enemyattribute": "great"
           }
         }
       ]
     },
     {
-      "name": "enemy adjective",
+      "name": "enemy attribute",
       "explanation": "",
       "entries": [
         "dark",
@@ -725,7 +725,7 @@
           "v": "{indoor location}",
           "set": {
             "milieu": "indoor",
-            "milieudescription": "indoors"
+            "milieudescription": "indoor"
           }
         },
         {
@@ -848,10 +848,10 @@
         },
         {
           "m": 1,
-          "v": "{rainforest location}",
+          "v": "{jungle location}",
           "set": {
-            "milieu": "rainforest",
-            "milieudescription": "rainforest"
+            "milieu": "jungle",
+            "milieudescription": "jungle"
           }
         },
         {
@@ -926,9 +926,9 @@
         },
         {
           "m": 1,
-          "v": "{planar location}",
+          "v": "{dimension location}",
           "set": {
-            "milieu": "planar",
+            "milieu": "dimension",
             "milieudescription": "extraplanar area"
           }
         }
@@ -1247,14 +1247,14 @@
       ]
     },
     {
-      "name": "rainforest location",
-      "explanation": "Locations in the tropical forests.",
+      "name": "jungle location",
+      "explanation": "Locations in the tropical rainforests.",
       "entries": [
         {
           "m": 1,
           "v": "",
           "set": {
-            "location": "rainforest floor",
+            "location": "jungle floor",
             "locationdescription": "sparse soil shadowed by a thick canopy of trees and other vegetation"
           }
         },
@@ -1783,7 +1783,7 @@
       ]
     },
     {
-      "name": "planar location",
+      "name": "dimension location",
       "explanation": "Locations in other planes of existence.",
       "entries": [
         {
@@ -1818,7 +1818,7 @@
       ]
     },
     {
-      "name": "location adjective",
+      "name": "location attribute",
       "explanation": "A lurid descriptor for the location.",
       "entries": [
         "forgotten",
@@ -2046,7 +2046,7 @@
       ]
     },
     {
-      "name": "macguffin adjective",
+      "name": "macguffin attribute",
       "explanation": "",
       "entries": [
         "cursed",
@@ -2098,7 +2098,7 @@
       ]
     },
     {
-      "name": "treasure adjective",
+      "name": "treasure attribute",
       "explanation": "",
       "entries": [
         "peerless",
@@ -2120,7 +2120,7 @@
             "herald": "child",
             "heralds": "children",
             "heraldgroup": "group of children",
-            "heraldadjective": "small"
+            "heraldattribute": "small"
           }
         }
       ]
@@ -2136,7 +2136,7 @@
             "guardian": "golem",
             "guardians": "golems",
             "guardiangroup": "company of golems",
-            "guardianadjective": "magically created"
+            "guardianattribute": "magically created"
           }
         },
         {
@@ -2146,7 +2146,7 @@
             "guardian": "living statue",
             "guardians": "living statues",
             "guardiangroup": "column of living statues",
-            "guardianadjective": "magically animated"
+            "guardianattribute": "magically animated"
           }
         },
         {
@@ -2156,7 +2156,7 @@
             "guardian": "construct",
             "guardians": "constructs",
             "guardiangroup": "accumulation of constructs",
-            "guardianadjective": "mechanical"
+            "guardianattribute": "mechanical"
           }
         }
       ]
@@ -2172,7 +2172,7 @@
             "minion": "automaton",
             "minions": "automata",
             "miniongroup": "assembly of automata",
-            "minionadjective": "mechanical"
+            "minionattribute": "mechanical"
           }
         },
         {
@@ -2182,7 +2182,7 @@
             "minion": "manbeast",
             "minions": "manbeasts",
             "miniongroup": "horde of manbeasts",
-            "minionadjective": "ravenous"
+            "minionattribute": "ravenous"
           }
         },
         {
@@ -2192,7 +2192,7 @@
             "minion": "beastman",
             "minions": "beastmen",
             "miniongroup": "horde of beastmen",
-            "minionadjective": "inhuman"
+            "minionattribute": "inhuman"
           }
         },
         {
@@ -2202,7 +2202,7 @@
             "minion": "frogmen",
             "minions": "frogmen",
             "miniongroup": "group of frogmen",
-            "minionadjective": "slime-covered"
+            "minionattribute": "slime-covered"
           }
         },
         {
@@ -2212,7 +2212,7 @@
             "minion": "servitor",
             "minions": "servitors",
             "miniongroup": "congregation of servitors",
-            "minionadjective": "mindless"
+            "minionattribute": "mindless"
           }
         },
         {
@@ -2222,7 +2222,7 @@
             "minion": "devotee",
             "minions": "devotees",
             "miniongroup": "congregation of devotees",
-            "minionadjective": "faithful"
+            "minionattribute": "faithful"
           }
         },
         {
@@ -2273,7 +2273,7 @@
       ]
     },
     {
-      "name": "minion adjective",
+      "name": "minion attribute",
       "explanation": "",
       "entries": [
         "cursed",
@@ -2293,7 +2293,7 @@
             "monsters": "trolls",
             "monstergroup": "group of trolls",
             "monsteraction": "looking for something to eat",
-            "monsteradjective": "hideous",
+            "monsterattribute": "hideous",
             "monsterdescription": "A huge troll is sniffing the air and looks like if it was searching for something."
           }
         },
@@ -2305,7 +2305,7 @@
             "monsters": "troglodytes",
             "monstergroup": "tribe of troglodytes",
             "monsteraction": "sharpening a stone axe",
-            "monsteradjective": "primitive",
+            "monsterattribute": "primitive",
             "monsterdescription": "A primitive-looking troglodyte is inspecting a stone axe."
           }
         }
@@ -2322,7 +2322,7 @@
             "beast": "wolf",
             "beasts": "wolves",
             "beastgroup": "wolfpack",
-            "beastadjective": "mangy"
+            "beastattribute": "mangy"
           }
         }
       ]
@@ -4256,7 +4256,7 @@
             "animals": "bats",
             "animalgroup": "colony of bats",
             "animalaction": "flying around",
-            "animaladjective": "leather-winged",
+            "animalattribute": "leather-winged",
             "animaldescription": "Dark, bat-shaped forms fly all around."
           }
         },
@@ -4268,7 +4268,7 @@
             "animals": "frogs",
             "animalgroup": "several frogs",
             "animalaction": "hopping around",
-            "animaladjective": "slimy-looking",
+            "animalattribute": "slimy-looking",
             "animaldescription": "A frog is croaking here, undisturbed by your presence."
           }
         },
@@ -4280,7 +4280,7 @@
             "animals": "flies",
             "animalgroup": "business of flies",
             "animalaction": "buzzing nervously",
-            "animaladjective": "biting",
+            "animalattribute": "biting",
             "animaldescription": "A thick swarm of flies fills the air. They start to crawl oll over your skin, biting nastily."
           }
         }

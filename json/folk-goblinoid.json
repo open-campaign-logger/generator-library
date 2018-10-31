@@ -1,0 +1,700 @@
+{
+  "name": "folk-goblinoid",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "plural": "goblinoids",
+    "folk": "{role}",
+    "folkattribute": "{attribute}",
+    "folkparticiple": "{participle}",
+    "folkbreed": "{breed}",
+    "folkpossession": "{possession}"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Goblinoid racial details.",
+  "structure": "Global variables fitting a common environment.",
+  "note": "This table does not produce immediate output, only sets global variables for later use.",
+  "format": "Global variable definitions.",
+  "bugs": "",
+  "to do": "",
+  "see": "_template_folk, folk-dwarf",
+  "date": "2018-08-15",
+  "authors": "ELF Vesala.",
+  "sources": "",
+  "genre": "fantasy",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Setting the relevant global variables.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "export": {}
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": ".",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{description}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{folk}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed description of the randomized set.",
+      "entries": [
+        "{attribute} {folk}",
+        "{participle} {folk}",
+        "{participle}, {attribute} {folk}",
+        "{attribute}, {participle} {folk}",
+        "{folk} with {possession}",
+        "{folk} wearing {clothing}",
+        "{folk} equippped with {protection}",
+        "{folk} wielding {weapon}",
+        "{folk} carrying {equipment}",
+        "{folk} holding {valuable}",
+        "{folk} accompanied by {pet}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description of the randomized set.",
+      "entries": [
+        "{attribute} {folk} with {possession}",
+        "{participle} {folk} with {possession}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "folk",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Usual types.",
+      "entries": [
+        "{role}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Unusual types.",
+      "entries": [
+        "{breed}"
+      ]
+    },
+    {
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "APPEARANCE"
+    },
+    {
+      "name": "appearance",
+      "explanation": "Outwards visible general looks.",
+      "entries": [
+        "{body appearance}",
+        "{eye appearance}",
+        "{face appearance}",
+        "{hair appearance}",
+        "{skin appearance}",
+        "{voice appearance}"
+      ]
+    },
+    {
+      "name": "body appearance",
+      "explanation": "Body description.",
+      "entries": [
+        "{body attribute}, {body} body {body feature}"
+      ]
+    },
+    {
+      "name": "eye appearance",
+      "explanation": "Eye description.",
+      "entries": [
+        "{eye attribute}, {eye color} eyes {eye feature}"
+      ]
+    },
+    {
+      "name": "face appearance",
+      "explanation": "Face description.",
+      "entries": [
+        "{face attribute}, {face} face {face feature}"
+      ]
+    },
+    {
+      "name": "hair appearance",
+      "explanation": "Hair description.",
+      "entries": [
+        "{hair attribute}, {hair color} hair {hair feature}"
+      ]
+    },
+    {
+      "name": "skin appearance",
+      "explanation": "Skin description.",
+      "entries": [
+        "{skin attribute}, {skin color} skin {skin feature}"
+      ]
+    },
+    {
+      "name": "voice appearance",
+      "explanation": "Voice description.",
+      "entries": [
+        "{voice attribute}, {voice} voice {voice feature}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "DETAILS"
+    },
+    {
+      "name": "body attribute",
+      "explanation": "Body type (before description).",
+      "entries": [
+        "hunched"
+      ]
+    },
+    {
+      "name": "body",
+      "explanation": "Bodily appearance.",
+      "entries": [
+        "bulky",
+        "stout"
+      ]
+    },
+    {
+      "name": "body feature",
+      "explanation": "Additional body detail (after description).",
+      "entries": [
+        "with short arms",
+        "with short legs"
+      ]
+    },
+    {
+      "name": "eye attribute",
+      "explanation": "Eye type (before description).",
+      "entries": [
+        "droopy"
+      ]
+    },
+    {
+      "name": "eye color",
+      "explanation": "Iris pigmentation.",
+      "entries": [
+        "{lib:color#dark eyes}",
+        "{lib:color#dark mixed eyes}",
+        "{lib:color#mixed eyes}",
+        "{lib:color#light mixed eyes}",
+        "{lib:color#light eyes}"
+      ]
+    },
+    {
+      "name": "eye feature",
+      "explanation": "Additional eye detail (after description).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "face attribute",
+      "explanation": "Face quality (before description).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "face",
+      "explanation": "Facial appearance.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "face feature",
+      "explanation": "Additional facial details (after description).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "facial hair female",
+      "explanation": "WBeard, moustache and sideburns for women.",
+      "entries": [
+        "hairless"
+      ]
+    },
+    {
+      "name": "facial hair male",
+      "explanation": "Beard, moustache and sideburns for men.",
+      "entries": [
+        "hairless",
+        "beard",
+        "moustache",
+        "sideburns"
+      ]
+    },
+    {
+      "name": "facial hair feature",
+      "explanation": "Additional facial hair details.",
+      "entries": [
+        "{adorned with} decorations",
+        "carefully groomed",
+        "carefully oiled",
+        "perfumed"
+      ]
+    },
+    {
+      "name": "hair attribute",
+      "explanation": "Hair quality (before description).",
+      "entries": [
+        "balding"
+      ]
+    },
+    {
+      "name": "hair color",
+      "explanation": "Hair pigmentation.",
+      "entries": [
+        "{lib:color#black hair}"
+      ]
+    },
+    {
+      "name": "hair feature",
+      "explanation": "Additional hair details (after description).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "mouth",
+      "explanation": "Lips, mouth and teeth described.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "nose",
+      "explanation": "Nose size and shape.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "size",
+      "explanation": "Body height and size.",
+      "entries": [
+        "short"
+      ]
+    },
+    {
+      "name": "skin attribute",
+      "explanation": "Skin quality (before description).",
+      "entries": [
+        "warty"
+      ]
+    },
+    {
+      "name": "skin color",
+      "explanation": "Skin pigmentation.",
+      "entries": [
+        "{lib:color#brown}"
+      ]
+    },
+    {
+      "name": "skin feature",
+      "explanation": "Additional skin details (after description).",
+      "entries": [
+        "{adorned with} ritual scars",
+        "{adorned with} tattoos",
+        "{adorned with} tribal markings"
+      ]
+    },
+    {
+      "name": "voice attribute",
+      "explanation": "Voice quality (before description).",
+      "entries": [
+        "high-pitched"
+      ]
+    },
+    {
+      "name": "voice",
+      "explanation": "Speech characteristics.",
+      "entries": [
+        "whimpering"
+      ]
+    },
+    {
+      "name": "voice feature",
+      "explanation": "Additional voice details (after description).",
+      "entries": [
+        "sounding like screaming"
+      ]
+    },
+    {
+      "**************************************************": "ABILITIES"
+    },
+    {
+      "name": "sense",
+      "explanation": "Senses.",
+      "entries": [
+        "darkvision"
+      ]
+    },
+    {
+      "**************************************************": "PERSONALITY"
+    },
+    {
+      "name": "personality",
+      "explanation": "Typical mental characteristics.",
+      "entries": [
+        "stubborn"
+      ]
+    },
+    {
+      "**************************************************": "ROLES"
+    },
+    {
+      "name": "group",
+      "explanation": "Groups matching the population.",
+      "entries": [
+        "group",
+        "patrol"
+      ]
+    },
+    {
+      "name": "role",
+      "explanation": "Randomized roles for the population.",
+      "entries": [
+        "{captive}",
+        "{servant}",
+        "{breed} {scout}",
+        "{breed} {guard}",
+        "{breed} {fighter}",
+        "{breed} {worker}",
+        "{breed} {artisan}",
+        "{breed} {trader}",
+        "{breed} {priest}",
+        "{breed} {magician}",
+        "{breed} {overseer}",
+        "{overlord} {leader}"
+      ]
+    },
+    {
+      "name": "captive",
+      "explanation": "Captives of the population.",
+      "entries": [
+        "captive {prisoner}"
+      ]
+    },
+    {
+      "name": "servant",
+      "explanation": "Servantfolk matching the population.",
+      "entries": [
+        "{prisoner} slave"
+      ]
+    },
+    {
+      "name": "scout",
+      "explanation": "Forerunners matching the population.",
+      "entries": [
+        "scout",
+        "runner",
+        "tracker",
+        "hunter"
+      ]
+    },
+    {
+      "name": "guard",
+      "explanation": "Guardians matching the population.",
+      "entries": [
+        "guard",
+        "guardian",
+        "watchman"
+      ]
+    },
+    {
+      "name": "fighter",
+      "explanation": "Warriors matching the population.",
+      "entries": [
+        "{melee}",
+        "{missile}",
+        "brute",
+        "grunt",
+        "cutthroat",
+        "ambusher",
+        "fighter",
+        "warrior"
+      ]
+    },
+    {
+      "name": "melee",
+      "explanation": "Close combat warriors matching the population.",
+      "entries": [
+        "spearman",
+        "pikeman"
+      ]
+    },
+    {
+      "name": "missile",
+      "explanation": "Long distance warriors matching the population.",
+      "entries": [
+        "sling shooter",
+        "spear thrower",
+        "archer"
+      ]
+    },
+    {
+      "name": "worker",
+      "explanation": "Laborers matching the population.",
+      "entries": [
+        "laborer",
+        "worker"
+      ]
+    },
+    {
+      "name": "artisan",
+      "explanation": "Craftsmen matching the population.",
+      "entries": [
+        "artisan",
+        "craftsman"
+      ]
+    },
+    {
+      "name": "trader",
+      "explanation": "Merchants matching the population.",
+      "entries": [
+        "barterer",
+        "dealer",
+        "trader",
+        "merchant"
+      ]
+    },
+    {
+      "name": "priest",
+      "explanation": "Clerics matching the population.",
+      "entries": [
+        "shaman",
+        "priest"
+      ]
+    },
+    {
+      "name": "magician",
+      "explanation": "Spellcasters matching the population.",
+      "entries": [
+        "witch doctor",
+        "hedge wizard"
+      ]
+    },
+    {
+      "name": "overseer",
+      "explanation": "Mid-level bosses matching the population.",
+      "entries": [
+        "foreman",
+        "headman",
+        "captain",
+        "elder"
+      ]
+    },
+    {
+      "name": "leader",
+      "explanation": "Chieftains matching the population.",
+      "entries": [
+        "chieftain",
+        "chief",
+        "master",
+        "warlord",
+        "ruler",
+        "king"
+      ]
+    },
+    {
+      "**************************************************": "POSSESSIONS"
+    },
+    {
+      "name": "possession",
+      "explanation": "Randomized possessions for the population.",
+      "entries": [
+        "{food}",
+        "{clothing}",
+        "{protection}",
+        "{weapon}",
+        "{equipment}",
+        "{valuable}",
+        "{pet}",
+        "{captive}"
+      ]
+    },
+    {
+      "name": "food",
+      "explanation": "Nourishment for the population.",
+      "entries": [
+        "dried meat"
+      ]
+    },
+    {
+      "name": "clothing",
+      "explanation": "Equipment for the population.",
+      "entries": [
+        "baggy sack"
+      ]
+    },
+    {
+      "name": "protection",
+      "explanation": "Equipment for the population.",
+      "entries": [
+        "chain mail shirt"
+      ]
+    },
+    {
+      "name": "weapon",
+      "explanation": "Equipment for the population.",
+      "entries": [
+        "club",
+        "spiked club",
+        "dagger",
+        "blunt sword",
+        "shortbow"
+      ]
+    },
+    {
+      "name": "equipment",
+      "explanation": "Equipment for the population.",
+      "entries": [
+        "patched sack"
+      ]
+    },
+    {
+      "name": "valuable",
+      "explanation": "Equipment for the population.",
+      "entries": [
+        "copper coins",
+        "tattered leather purse"
+      ]
+    },
+    {
+      "name": "pet",
+      "explanation": "Animal companions for the population.",
+      "entries": [
+        "warg pup",
+        "warg runt",
+        "warg"
+      ]
+    },
+    {
+      "**************************************************": "BREEDS"
+    },
+    {
+      "name": "breed",
+      "explanation": "Breeds of the population.",
+      "entries": [
+        "goblin",
+        "hobgoblin",
+        "bugbear",
+        "orc"
+      ]
+    },
+    {
+      "name": "overlord",
+      "explanation": "Ruler breed of the population.",
+      "entries": [
+        "goblin",
+        "hobgoblin",
+        "bugbear",
+        "orc",
+        "half-orc",
+        "troll"
+      ]
+    },
+    {
+      "name": "prisoner",
+      "explanation": "Hostage and slave breed of the population.",
+      "entries": [
+        "kobold",
+        "enemy tribe goblin"
+      ]
+    },
+    {
+      "name": "relative",
+      "explanation": "Related species.",
+      "entries": [
+        "bugbear",
+        "orc"
+      ]
+    },
+    {
+      "**************************************************": "DESCRIPTIONS"
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attributes for the population.",
+      "entries": [
+        "barbaric",
+        "dirty"
+      ]
+    },
+    {
+      "name": "participle",
+      "explanation": "Verbs for the population.",
+      "entries": [
+        "snickering",
+        "leering"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the folk.",
+      "entries": [
+        "goblin",
+        "gobbo"
+      ]
+    },
+    {
+      "name": "adorned with",
+      "explanation": "Variant expressions for 'embellished with'.",
+      "entries": [
+        "adorned with",
+        "decorated with",
+        "embellished with"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, special: {special}."
+      ]
+    }
+  ]
+}

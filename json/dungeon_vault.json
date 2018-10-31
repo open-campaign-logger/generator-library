@@ -37,14 +37,14 @@
       "name": "summary",
       "explanation": "Brief resultPattern output.",
       "entries": [
-        "{adjective} {vault}."
+        "{attribute} {vault}."
       ]
     },
     {
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {vault}. {global:para}{extra}"
+        "{attribute} {vault}. {global:para}{extra}"
       ]
     },
     {
@@ -146,13 +146,13 @@
       "name": "special",
       "explanation": "Special vault tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{extra}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives for dungeon vaults.",
+      "name": "attribute",
+      "explanation": "Attributes for dungeon vaults.",
       "entries": [
         "concealed",
         "alien",

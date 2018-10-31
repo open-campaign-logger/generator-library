@@ -848,7 +848,8 @@
       "explanation": "Beats that reveal the whole story to the proragonists.",
       "entries": [
         "If an agreement can be negotiated, {lib:actant#mentor} can reveal {revelation}.",
-        "If convinced of the motivations of the {lib:synonym#troupe}, a {lib:actant#traitor} here may reveal {revelation}."
+        "If convinced of the motivations of the {lib:synonym#troupe}, a {lib:actant#traitor} here may reveal {revelation}.",
+        "{g:source} reveals {revelation}"
       ]
     },
     {

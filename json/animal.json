@@ -1,53 +1,95 @@
 {
   "name": "animal",
-  "resultPattern": "{result}",
+  "resultPattern": "{init}{result}",
   "variables": {
-    "actant": "animal",
-    "actants": "animals",
-    "actantgroup": "pack",
-    "actantaction": "searching for food",
-    "actantadjective": "wild",
-    "actantdescription": "The animal looks alert.",
-    "attitude": "neutral",
+    "actant": "",
+    "actants": "",
+    "actantgroup": "",
+    "actantaction": "",
+    "actantattribute": "",
+    "actantdescription": "",
+    "attitude": "",
     "footnote": ""
   },
   "explanation": "Animals from insects to mammals.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
-  "bugs": "Different regions (tropical, polar, etc.)",
-  "to do": "",
+  "bugs": "",
+  "to do": "Different regions (tropical, polar, etc).",
   "see": "activity, citizen, encounter, monster, nonhuman, plant",
-  "date": "2018-03-04",
-  "authors": "",
+  "date": "2018-09-25",
+  "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
-  "genre": "",
+  "genre": "universal",
   "categories": [
-    ""
+    "world"
   ],
   "tables": [
     {
-      "name": "result",
-      "explanation": "Verbosity of the resultPattern output.",
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
       "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{word}",
         "{summary}",
         "{detail}"
       ]
     },
     {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{animal}"
+      ]
+    },
+    {
       "name": "summary",
-      "explanation": "Brief resultPattern output.",
+      "explanation": "Brief output.",
       "entries": [
         "{animal}"
       ]
     },
     {
       "name": "detail",
-      "explanation": "Detailed resultPattern output variations.",
+      "explanation": "More detailed output variations.",
       "entries": [
-        "{adjective} {animal}",
+        "{attribute} {animal}",
         "{animal} {lib:activity#animal}",
-        "{adjective} {animal} {lib:activity#animal}"
+        "{attribute} {animal} {lib:activity#animal}"
       ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {animal} {looks} {attribute}.",
+        "The {animal} {looks} {feature}.",
+        "The {attribute} {animal} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Animal}: {animal} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
     },
     {
       "name": "animal",
@@ -64,7 +106,6 @@
       "name": "common",
       "explanation": "Common animal types.",
       "entries": [
-        "{invertebrate}",
         "{vertebrate}"
       ]
     },
@@ -72,20 +113,232 @@
       "name": "rare",
       "explanation": "Rare animal types.",
       "entries": [
-        "{coral}"
+        "{invertebrate}"
       ]
     },
     {
-      "**************************************************": "ANIMALS"
+      "**************************************************": "RANGES"
+    },
+    {
+      "name": "any",
+      "explanation": "Any range.",
+      "entries": [
+        "{coast}",
+        "{desert}",
+        "{domestic}",
+        "{extinct}",
+        "{flightless bird}",
+        "{flying}",
+        "{land}",
+        "{pet}",
+        "{predator}",
+        "{urban}",
+        "{water}"
+      ]
+    },
+    {
+      "name": "coast",
+      "explanation": "Animals living by water.",
+      "entries": [
+        "{crustacean}",
+        "{amphibian}",
+        "{coast mammal}"
+      ]
+    },
+    {
+      "name": "desert",
+      "explanation": "Desert animals.",
+      "entries": [
+        "lizard",
+        "snake",
+        "camel"
+      ]
+    },
+    {
+      "name": "domestic",
+      "explanation": "Animals living with people.",
+      "entries": [
+        "{domestic bird}",
+        "{domestic mammal}"
+      ]
+    },
+    {
+      "name": "extinct",
+      "explanation": "Extinct animals.",
+      "entries": [
+        "dinosaur",
+        "mammoth"
+      ]
+    },
+    {
+      "name": "flightless bird",
+      "explanation": "Birds incapable of flight.",
+      "entries": [
+        "kiwi",
+        "emu",
+        "ostrich"
+      ]
+    },
+    {
+      "name": "flying",
+      "explanation": "Flying animals.",
+      "entries": [
+        "{flying insect}",
+        "{flying bird}",
+        "{bat}"
+      ]
+    },
+    {
+      "name": "land",
+      "explanation": "Land animals.",
+      "entries": [
+        "{crawling insect}",
+        "{land mollusc}",
+        "{arachnid}",
+        "{reptile}",
+        "{bird}",
+        "{land mammal}"
+      ]
+    },
+    {
+      "name": "pet",
+      "explanation": "Animals kept as pets.",
+      "entries": [
+        "{pet insect}",
+        "{pet arachnid}",
+        "{pet amphibian}",
+        "{pet reptile}",
+        "{pet bird}",
+        "{pet mammal}"
+      ]
+    },
+    {
+      "name": "predator",
+      "explanation": "Predatory animal",
+      "entries": [
+        "{predatory reptile}",
+        "{predatory bird}",
+        "{predatory mammal}"
+      ]
+    },
+    {
+      "name": "urban",
+      "explanation": "Animals living in cities and towns.",
+      "entries": [
+        "{urban mammal}"
+      ]
+    },
+    {
+      "name": "water",
+      "explanation": "Water animals.",
+      "entries": [
+        "{coral}",
+        "{echinoderm}",
+        "jellyfish",
+        "{water mollusc}",
+        "{crustacean}",
+        "{fish}",
+        "{amphibian}",
+        "{whale}"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "--------------------------------------------------": "INVERTEBRATEA"
     },
     {
       "name": "invertebrate",
       "explanation": "Invertebrates.",
       "entries": [
-        "{insect}",
-        "{mollusc}",
+        "{worm}",
+        "{land mollusc}",
+        "{arthropod}"
+      ]
+    },
+    {
+      "name": "echinoderm",
+      "explanation": "Echinodermata.",
+      "entries": [
+        "sea cucumber",
+        "sea urchin",
+        "sea lily",
+        "sea star"
+      ]
+    },
+    {
+      "name": "worm",
+      "explanation": "Spiralia types.",
+      "entries": [
+        "worm",
+        "earthworm",
+        "leech"
+      ]
+    },
+    {
+      "name": "mollusc",
+      "explanation": "Mollusc types.",
+      "entries": [
+        "{water mollusc}",
+        "{land mollusc}"
+      ]
+    },
+    {
+      "name": "water mollusc",
+      "explanation": "Water-based mollusc types.",
+      "entries": [
+        "mussel",
+        "oyster",
+        "clam",
+        "conch",
+        "sea butterfly",
+        "sea snail",
+        "sea hare",
+        "nautilus",
+        "cuttlefish",
+        "squid",
+        "octopus"
+      ]
+    },
+    {
+      "name": "land mollusc",
+      "explanation": "Land-based mollusc types.",
+      "entries": [
+        "slug",
+        "snail"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ARTHROPODS"
+    },
+    {
+      "name": "arthropod",
+      "explanation": "Arthropoda.",
+      "entries": [
         "{crustacean}",
+        "{myriapod}",
+        "{insect}",
         "{arachnid}"
+      ]
+    },
+    {
+      "name": "crustacean",
+      "explanation": "Crustacean types.",
+      "entries": [
+        "shrimp",
+        "krill",
+        "crayfish",
+        "crab",
+        "lobster"
+      ]
+    },
+    {
+      "name": "myriapod",
+      "explanation": "Myriapod types.",
+      "entries": [
+        "centipede",
+        "millipede"
       ]
     },
     {
@@ -100,55 +353,100 @@
       "name": "crawling insect",
       "explanation": "Insects that move by crawling.",
       "entries": [
+        "{beetle}",
+        "flea",
+        "louse",
+        "bug",
         "ant",
-        "beetle"
+        "cockroach",
+        "termite",
+        "stick insect",
+        "grasshopper",
+        "mantis",
+        "grub",
+        "maggot"
+      ]
+    },
+    {
+      "name": "beetle",
+      "explanation": "Beetles.",
+      "entries": [
+        "beetle",
+        "leaf beetle",
+        "flower beetle",
+        "jewel beetle",
+        "deathwatch beetle",
+        "scarab",
+        "ladybird",
+        "firefly"
       ]
     },
     {
       "name": "flying insect",
       "explanation": "Insects that move flying.",
       "entries": [
-        "beetle",
+        "{bee}",
+        "{butterfly}",
         "gnat",
         "mosquito",
-        "wasp",
+        "fly",
+        "damselfly",
+        "dragonfly",
+        "wasp"
+      ]
+    },
+    {
+      "name": "bee",
+      "explanation": "Bees.",
+      "entries": [
         "bee",
-        "{butterfly}"
+        "bumblebee",
+        "honey bee"
       ]
     },
     {
       "name": "butterfly",
       "explanation": "Butterflies.",
       "entries": [
-        "butterfly",
-        "moth"
+        "moth",
+        "butterfly"
       ]
     },
     {
-      "name": "mollusc",
-      "explanation": "Mollusc types.",
+      "name": "pet insect",
+      "explanation": "Insects kept as pets.",
       "entries": [
-        "snail"
-      ]
-    },
-    {
-      "name": "crustacean",
-      "explanation": "Crustacean types.",
-      "entries": [
-        "crab"
+        "flea",
+        "beetle",
+        "cockroach",
+        "stick insect"
       ]
     },
     {
       "name": "arachnid",
       "explanation": "Arachnid types.",
       "entries": [
+        "mite",
+        "tick",
         "spider",
+        "false scorpion",
         "scorpion"
       ]
     },
     {
+      "name": "pet arachnid",
+      "explanation": "Arachnids kept as pets.",
+      "entries": [
+        "pet spider",
+        "pet scorpion"
+      ]
+    },
+    {
+      "--------------------------------------------------": "VERTEBRATEA"
+    },
+    {
       "name": "vertebrate",
-      "explanation": "Vertebratea.",
+      "explanation": "Vertebrates.",
       "entries": [
         "{fish}",
         "{amphibian}",
@@ -161,16 +459,49 @@
       "name": "fish",
       "explanation": "Fish types.",
       "entries": [
+        "{freshwater fish}",
+        "{sea fish}"
+      ]
+    },
+    {
+      "name": "freshwater fish",
+      "explanation": "Fish of lakes and rivers.",
+      "entries": [
+        "hagfish",
+        "lamprey",
+        "eel",
+        "sturgeon",
+        "whitefish",
         "perch",
         "pike",
-        "salmon"
+        "carp",
+        "tench",
+        "trout",
+        "salmon",
+        "catfish"
+      ]
+    },
+    {
+      "name": "sea fish",
+      "explanation": "Fish of the seas and oceans.",
+      "entries": [
+        "herring",
+        "cod",
+        "seabass",
+        "haddock",
+        "redfish",
+        "mackerel",
+        "mullet",
+        "tuna",
+        "ray",
+        "swordfish",
+        "shark"
       ]
     },
     {
       "name": "amphibian",
       "explanation": "Amphibians.",
       "entries": [
-        "{pet amphibian}",
         "salamander",
         "newt",
         "frog",
@@ -190,7 +521,6 @@
       "name": "reptile",
       "explanation": "Reptile types.",
       "entries": [
-        "{pet reptile}",
         "{lizard}",
         "{turtle}",
         "{snake}"
@@ -229,43 +559,33 @@
       ]
     },
     {
-      "name": "bird",
-      "explanation": "Bird types.",
+      "name": "predatory reptile",
+      "explanation": "Reptiles that hunt.",
       "entries": [
-        "{flightless bird}",
-        "{flying bird}"
+        "{snake}"
       ]
     },
     {
-      "name": "flightless bird",
-      "explanation": "Birds incapable of flight.",
+      "name": "bird",
+      "explanation": "Bird types.",
       "entries": [
-        "kiwi",
-        "emu",
-        "ostrich"
+        "{flying bird}",
+        "{domestic bird}"
       ]
     },
     {
       "name": "flying bird",
       "explanation": "Birds capable of flight.",
       "entries": [
-        "{pet bird}",
-        "{domestic bird}",
         "{small bird}",
         "{coastal bird}",
         "{waterfowl}",
         "{predatory bird}",
         "nightjar",
         "woodpecker",
-        "gull",
+        "dove",
+        "cuckoo",
         "crane"
-      ]
-    },
-    {
-      "name": "pet bird",
-      "explanation": "Birds kept as pets.",
-      "entries": [
-        "canary bird"
       ]
     },
     {
@@ -278,25 +598,49 @@
       ]
     },
     {
+      "name": "pet bird",
+      "explanation": "Birds kept as pets.",
+      "entries": [
+        "pet sparrow",
+        "canary bird"
+      ]
+    },
+    {
       "name": "small bird",
       "explanation": "Small-sized birds.",
       "entries": [
         "sparrow",
+        "lark",
+        "wagtail",
+        "crossbill",
+        "robin",
         "swallow",
         "nightingale"
       ]
     },
     {
-      "name": "coastal birds",
+      "name": "coastal bird",
       "explanation": "Birds that live by water.",
       "entries": [
-        "stork"
+        "gull",
+        "seagull",
+        "tern",
+        "albatross",
+        "cormorant",
+        "stork",
+        "heron",
+        "peregrine",
+        "osprey",
+        "sea eagle"
       ]
     },
     {
       "name": "waterfowl",
       "explanation": "Birds that live in water.",
       "entries": [
+        "duck",
+        "goose",
+        "teal",
         "swan",
         "stork"
       ]
@@ -305,10 +649,45 @@
       "name": "predatory bird",
       "explanation": "Birds that hunt.",
       "entries": [
+        "{owl}",
+        "{falcon}",
+        "{hawk}",
+        "{eagle}"
+      ]
+    },
+    {
+      "name": "owl",
+      "explanation": "Owl species.",
+      "entries": [
         "owl",
-        "hawk",
+        "barn-owl",
+        "horned owl"
+      ]
+    },
+    {
+      "name": "falcon",
+      "explanation": "Falcon species.",
+      "entries": [
         "falcon",
-        "eagle"
+        "kestrel",
+        "merlin"
+      ]
+    },
+    {
+      "name": "hawk",
+      "explanation": "Hawk species.",
+      "entries": [
+        "hawk",
+        "sparrowhawk",
+        "goshawk"
+      ]
+    },
+    {
+      "name": "eagle",
+      "explanation": "Eagle species.",
+      "entries": [
+        "eagle",
+        "sea eagle"
       ]
     },
     {
@@ -332,6 +711,7 @@
       "name": "whale",
       "explanation": "Whales.",
       "entries": [
+        "whale",
         "dolphin",
         "killer whale",
         "bluewhale"
@@ -348,13 +728,12 @@
       "name": "land mammal",
       "explanation": "Mammals living on land.",
       "entries": [
-        "{pet mammal}",
         "{domestic mammal}",
         "{urban mammal}",
         "{small mammal}",
         "{large mammal}",
         "{scavenger}",
-        "{predator}"
+        "{predatory mammal}"
       ]
     },
     {
@@ -365,8 +744,9 @@
         "pet rat",
         "pet rabbit",
         "pet ferret",
+        "pet hedgehog",
         "cat",
-        "piglet",
+        "pig",
         "lapdog",
         "pony"
       ]
@@ -408,7 +788,8 @@
         "mouse",
         "squirrel",
         "beaver",
-        "badger"
+        "badger",
+        "hedgehog"
       ]
     },
     {
@@ -428,9 +809,10 @@
       ]
     },
     {
-      "name": "predator",
+      "name": "predatory mammal",
       "explanation": "Predatory mammals living on land.",
       "entries": [
+        "lynx",
         "fox",
         "wolf",
         "bear"
@@ -460,11 +842,105 @@
       ]
     },
     {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{beginning}{ending}",
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "BIOTOPES"
+    },
+    {
+      "--------------------------------------------------": "POLAR"
+    },
+    {
+      "name": "polar",
+      "explanation": "Animals of polar regions.",
+      "entries": [
+        "{polar beast}"
+      ]
+    },
+    {
+      "name": "polar beast",
+      "explanation": "Beasts of polar regions.",
+      "entries": [
+        "arctic fox",
+        "polar bear",
+        "walrus"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SUBPOLAR"
+    },
+    {
+      "name": "subpolar",
+      "explanation": "Animals of subpolar regions.",
+      "entries": [
+        "{subpolar beast}"
+      ]
+    },
+    {
+      "name": "subpolar beast",
+      "explanation": "Beasts of subpolar regions.",
+      "entries": [
+        "bear",
+        "fox",
+        "lynx",
+        "wolf",
+        "wolverine"
+      ]
+    },
+    {
       "**************************************************": "WORLD-SPECIFIC"
     },
     {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}",
+        "talking {mammal}",
+        "{vertebrate} spirit"
+      ]
+    },
+    {
       "name": "myth",
-      "explanation": "Animals once rumoured to have existed.",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
       "entries": [
         "unicorn",
         "dragon",
@@ -472,26 +948,24 @@
       ]
     },
     {
-      "name": "fantasy",
-      "explanation": "Animals for fantasy world (with no basis in myth).",
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
       "entries": [
-        "{myth}",
-        "talking {mammal}",
-        "{vertebrate} spirit"
-      ]
-    },
-    {
-      "name": "modern",
-      "explanation": "Animals for modern worlds.",
-      "entries": [
-        "{pet}",
-        "{domestic}",
         "{common}"
       ]
     },
     {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}",
+        "{pet}",
+        "{domestic}"
+      ]
+    },
+    {
       "name": "futuristic",
-      "explanation": "Animals for science fiction worlds.",
+      "explanation": "Descriptions for science fiction worlds.",
       "entries": [
         "{modern}",
         "genetically engineered {vertebrate}",
@@ -502,114 +976,84 @@
       ]
     },
     {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        "{coral}"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "animal",
+        "beast",
+        "creature"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "looks to be",
+        "seems to be"
+      ]
+    },
+    {
       "**************************************************": "SPECIAL TABLES"
     },
     {
       "name": "special",
       "explanation": "Special animal types.",
       "entries": [
-        "{adjective}",
-        "{extinct}",
-        "{pet}",
-        "{domestic}",
-        "{urban}",
-        "{land}",
-        "{desert}",
-        "{coast}",
-        "{water}",
-        "{flying}"
+        "{attribute}",
+        "{feature}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives for animals.",
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
       "entries": [
-        "young",
-        "hungry",
-        "curious"
+        "an aggressive",
+        "a curious",
+        "a hungry",
+        "a ravenous",
+        "a scared",
+        "a tired",
+        "a wounded",
+        "a young"
       ]
     },
     {
-      "name": "extinct",
-      "explanation": "Extinct animals.",
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
       "entries": [
-        "dinosaur",
-        "mammoth"
+        "guarding an offspring",
+        "guarding another of its kind",
+        "looking for a good location",
+        "looking for nourishment",
+        "observing its environs",
+        "sleeping",
+        "trying to find something to eat"
       ]
     },
     {
-      "name": "pet",
-      "explanation": "Animals kept as pets.",
-      "entries": [
-        "{pet amphibian}",
-        "{pet reptile}",
-        "{pet bird}",
-        "{pet mammal}"
-      ]
+      "--------------------------------------------------": "TESTING"
     },
     {
-      "name": "domestic",
-      "explanation": "Animals living with people.",
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{domestic bird}",
-        "{domestic mammal}"
-      ]
-    },
-    {
-      "name": "urban",
-      "explanation": "Animals living in cities and towns.",
-      "entries": [
-        "{urban mammal}"
-      ]
-    },
-    {
-      "name": "land",
-      "explanation": "Land animals.",
-      "entries": [
-        "{crawling insect}",
-        "{mollusc}",
-        "{arachnid}",
-        "{reptile}",
-        "{bird}",
-        "{land mammal}"
-      ]
-    },
-    {
-      "name": "desert",
-      "explanation": "Desert animals.",
-      "entries": [
-        "lizard",
-        "snake",
-        "camel"
-      ]
-    },
-    {
-      "name": "coast",
-      "explanation": "Animals living by water.",
-      "entries": [
-        "{crustacean}",
-        "{amphibian}",
-        "{coast mammal}"
-      ]
-    },
-    {
-      "name": "water",
-      "explanation": "Water animals.",
-      "entries": [
-        "{coral}",
-        "{crustacean}",
-        "{fish}",
-        "{amphibian}",
-        "{whale}"
-      ]
-    },
-    {
-      "name": "flying",
-      "explanation": "Flying animals.",
-      "entries": [
-        "{flying insect}",
-        "{flying bird}",
-        "{bat}"
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]

@@ -12,7 +12,7 @@
   "note": "",
   "to do": "",
   "see": "",
-  "date": "2018-03-10",
+  "date": "2018-08-20",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -106,9 +106,6 @@
     },
     {
       "name": "female",
-      "export": {
-        "gender": "female"
-      },
       "entries": [
         "{female a}",
         "{female b}",
@@ -638,9 +635,6 @@
     },
     {
       "name": "male",
-      "export": {
-        "gender": "male"
-      },
       "entries": [
         "{male a}",
         "{male b}",
@@ -1622,6 +1616,27 @@
     },
     {
       "**************************************************": "SURNAMES"
+    },
+    {
+      "name": "female surname",
+      "explanation": "Feminine last names.",
+      "entries": [
+        "{surname}"
+      ]
+    },
+    {
+      "name": "male surname",
+      "explanation": "Masculine last names.",
+      "entries": [
+        "{surname}"
+      ]
+    },
+    {
+      "name": "unisex surname",
+      "explanation": "Gender-neutral last names.",
+      "entries": [
+        "{surname}"
+      ]
     },
     {
       "name": "surname",
@@ -2812,6 +2827,536 @@
       ]
     },
     {
+      "**************************************************": "BYNAMES"
+    },
+    {
+      "name": "byname",
+      "entries": [
+        "{female byname}",
+        "{male byname}",
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "female prepend",
+      "entries": [
+        "{female byname}",
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "female append",
+      "entries": [
+        "the {female byname}",
+        "the {unisex byname}"
+      ]
+    },
+    {
+      "name": "male prepend",
+      "entries": [
+        "{male byname}",
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "male append",
+      "entries": [
+        "the {male byname}",
+        "the {unisex byname}"
+      ]
+    },
+    {
+      "name": "unisex prepend",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "unisex append",
+      "entries": [
+        "the {unisex byname}"
+      ]
+    },
+    {
+      "name": "female byname",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "male byname",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "unisex byname",
+      "entries": [
+        "{unisex negative byname}",
+        "{unisex neutral byname}",
+        "{unisex positive byname}"
+      ]
+    },
+    {
+      "name": "unisex negative byname",
+      "entries": [
+        "{lib:epithet#negative}"
+      ]
+    },
+    {
+      "name": "unisex neutral byname",
+      "entries": [
+        "{lib:epithet#neutral}"
+      ]
+    },
+    {
+      "name": "unisex positive byname",
+      "entries": [
+        "{lib:epithet#positive}"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomization methods.",
+      "entries": [
+        "{component}",
+        "{syllable}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMPONENTS"
+    },
+    {
+      "name": "component",
+      "explanation": "Component-based terms (generated from words).",
+      "entries": [
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{compoundbegin}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "SYLLABLES"
+    },
+    {
+      "name": "syllable",
+      "explanation": "Syllable-based terms (generated from word parts).",
+      "entries": [
+        "{short}",
+        "{medium}",
+        "{long}"
+      ]
+    },
+    {
+      "name": "short",
+      "explanation": "Short place names.",
+      "entries": [
+        "{beginning}{short stem}"
+      ]
+    },
+    {
+      "name": "medium",
+      "explanation": "Medium-length place names.",
+      "entries": [
+        "{beginning}{medium stem}"
+      ]
+    },
+    {
+      "name": "long",
+      "explanation": "Long place names.",
+      "entries": [
+        "{beginning}{long stem}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "STEMS"
+    },
+    {
+      "name": "stem",
+      "explanation": "Variable-length place name stems.",
+      "entries": [
+        "{short stem}",
+        "{medium stem}",
+        "{long stem}"
+      ]
+    },
+    {
+      "name": "short stem",
+      "explanation": "Short place name stem.",
+      "entries": [
+        "",
+        "{ending}"
+      ]
+    },
+    {
+      "name": "medium stem",
+      "explanation": "Medium-length place name stems.",
+      "entries": [
+        "{short middle}{ending}",
+        "{medium middle}{ending}"
+      ]
+    },
+    {
+      "name": "long stem",
+      "explanation": "Long place name stems.",
+      "entries": [
+        "{short middle}{medium middle}{ending}",
+        "{medium middle}{short middle}{ending}",
+        "{!medium middle}{!medium middle}{ending}",
+        "{long middle}{ending}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "BEGINNING"
+    },
+    {
+      "name": "beginning",
+      "explanation": "Name starting components.",
+      "entries": [
+        "{beginning a}",
+        "{beginning b}",
+        "{beginning c}",
+        "{beginning d}",
+        "{beginning e}",
+        "{beginning f}",
+        "{beginning g}",
+        "{beginning h}",
+        "{beginning i}",
+        "{beginning j}",
+        "{beginning k}",
+        "{beginning l}",
+        "{beginning m}",
+        "{beginning n}",
+        "{beginning o}",
+        "{beginning p}",
+        "{beginning q}",
+        "{beginning r}",
+        "{beginning s}",
+        "{beginning t}",
+        "{beginning u}",
+        "{beginning v}",
+        "{beginning w}",
+        "{beginning x}",
+        "{beginning y}",
+        "{beginning z}"
+      ]
+    },
+    {
+      "name": "beginning a",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning b",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning c",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning d",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning e",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning f",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning g",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning h",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning i",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning j",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning k",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning l",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning m",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning n",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning o",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning p",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning q",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning r",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning s",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning t",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning u",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning v",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning w",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning x",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning y",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "beginning z",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE"
+    },
+    {
+      "name": "middle",
+      "explanation": "Optional middle sections.",
+      "entries": [
+        "{short middle}",
+        "{medium middle}",
+        "{long middle}"
+      ]
+    },
+    {
+      "name": "short middle",
+      "explanation": "Optional short middle sections.",
+      "entries": [
+        "a",
+        "e",
+        "i",
+        "o",
+        "u"
+      ]
+    },
+    {
+      "name": "medium middle",
+      "explanation": "Optional medium-length middle sections.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "long middle",
+      "explanation": "Optional long middle sections.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ENDINGS"
+    },
+    {
+      "name": "ending",
+      "explanation": "Place name endings.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "APPELLATIONS"
+    },
+    {
+      "name": "appellation",
+      "entries": [
+        "the {prepend} {place}",
+        "{place} the {append}",
+        "{place}, {alias} {moniker}"
+      ]
+    },
+    {
+      "name": "byname",
+      "entries": [
+        "{prepend}",
+        "{append}"
+      ]
+    },
+    {
+      "name": "prepend",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "append",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MONIKERS"
+    },
+    {
+      "name": "moniker",
+      "entries": [
+        "{negative moniker}",
+        "{neutral moniker}",
+        "{positive moniker}"
+      ]
+    },
+    {
+      "name": "negative moniker",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "neutral moniker",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "positive moniker",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
       "**************************************************": "INITIALS"
     },
     {
@@ -3068,6 +3613,20 @@
       ]
     },
     {
+      "name": "hermafrodite byname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "hermafrodite surname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex surname}"
+      ]
+    },
+    {
       "name": "neuter",
       "explanation": "Alias for unisex naming.",
       "entries": [
@@ -3075,13 +3634,27 @@
       ]
     },
     {
-      "**************************************************": "TESTING"
+      "name": "neuter byname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "neuter surname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex surname}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
     },
     {
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, surname: {surname}, byname: {byname}, initial: {initial}, special: {special}. Gender = {global:gender}."
+        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, surname: {surname}, byname: {byname}, initial: {initial}, special: {special}."
       ]
     }
   ]

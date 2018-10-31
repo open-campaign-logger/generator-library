@@ -4,36 +4,85 @@
   "variables": {
     "footnote": ""
   },
-  "explanation": "equipment table",
+  "explanation": "Equipment generator for shop inventories, character possessions, etc.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "bugs": "",
   "to do": "More equipment types.",
   "see": "business, gem, jewelry, treasure",
-  "date": "2017-12-31",
-  "authors": "Esko Vesala.",
+  "date": "2018-09-26",
+  "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
   "categories": [
-    ""
+    "item"
   ],
   "tables": [
     {
-      "name": "result",
-      "explanation": "Variations for resultPattern output.",
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
       "entries": [
-        "{equipment}",
-        "{equipment} (which is {lib:condition})",
-        "{adjective} {equipment}",
-        "{adjective} {equipment} (which is {lib:condition})",
-        "{lib:complication#item} {equipment}",
-        "{lib:complication#item} {equipment} (which is {lib:condition})",
-        "{adjective}, {lib:complication#item} {equipment} (which is {lib:condition})"
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
       ]
     },
     {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{equipment}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{equipment}",
+        "{equipment} (which is {lib:condition})",
+        "{attribute} {equipment}",
+        "{attribute} {equipment} (which is {lib:condition})",
+        "{lib:complication#item} {equipment}",
+        "{lib:complication#item} {equipment} (which is {lib:condition})",
+        "{attribute}, {lib:complication#item} {equipment} (which is {lib:condition})"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {equipment} {lib:synonym#looks} {attribute}.",
+        "The {equipment} {lib:synonym#looks} {feature}.",
+        "The {attribute} {equipment} {lib:synonym#looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "Name: {random}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
       "name": "equipment",
-      "explanation": "Equipment types by rarity.",
+      "explanation": "Types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -62,8 +111,7 @@
         "{riding}",
         "{climbing}",
         "{transportation}",
-        "{miscellaneous}",
-        "{lib:musical_instrument}"
+        "{miscellaneous}"
       ]
     },
     {
@@ -75,13 +123,16 @@
       ]
     },
     {
+      "**************************************************": "DETAILS"
+    },
+    {
       "name": "provisions",
       "explanation": "Food for the trail.",
       "entries": [
-        "rations",
-        "salted fish",
-        "pickled eggs",
-        "flour"
+        "set of rations",
+        "pack of salted fish",
+        "pack of pickled eggs",
+        "sack of flour"
       ]
     },
     {
@@ -91,7 +142,7 @@
         "pot",
         "kettle",
         "funnel",
-        "mortar abd pestle"
+        "mortar and pestle"
       ]
     },
     {
@@ -219,7 +270,7 @@
       "name": "marking",
       "explanation": "Marking equipment.",
       "entries": [
-        "chalk"
+        "piece of chalk"
       ]
     },
     {
@@ -227,10 +278,10 @@
       "explanation": "Medical equipment.",
       "entries": [
         "bandages",
-        "crutches",
+        "pair of crutches",
         "healing potion",
-        "antitoxin",
-        "antivenom"
+        "vial of antitoxin",
+        "vial of antivenom"
       ]
     },
     {
@@ -333,8 +384,8 @@
       "name": "snow vehicle",
       "explanation": "Transportation equipment for winter.",
       "entries": [
-        "snow shoes",
-        "skis",
+        "pair of snow shoes",
+        "pair of skis",
         "sleigh"
       ]
     },
@@ -431,6 +482,53 @@
       ]
     },
     {
+      "**************************************************": "RANDOMIZATION"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{beginning}{ending}",
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "MYTH"
+    },
+    {
       "name": "myth",
       "explanation": "Equipment once rumoured to have existed.",
       "entries": [
@@ -455,6 +553,9 @@
       ]
     },
     {
+      "--------------------------------------------------": "FANTASY"
+    },
+    {
       "name": "fantasy",
       "explanation": "Equipment for fantasy worlds (with no basis in myth).",
       "entries": [
@@ -463,12 +564,18 @@
       ]
     },
     {
+      "--------------------------------------------------": "MODERN"
+    },
+    {
       "name": "modern",
       "explanation": "Equipment for modern worlds.",
       "entries": [
         "{common}",
         "XXX"
       ]
+    },
+    {
+      "--------------------------------------------------": "FUTURISTIC"
     },
     {
       "name": "futuristic",
@@ -483,18 +590,56 @@
     },
     {
       "name": "special",
-      "explanation": "Special equipment types.",
+      "explanation": "Special tables.",
       "entries": [
-        "{adjective}"
+        "{attribute}",
+        "{feature}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives describing the equipment.",
+      "name": "attribute",
+      "explanation": "Attributes prepended to the front of the result.",
       "entries": [
-        "cheaply made",
-        "old-fashioned",
-        "customized"
+        "an ancient",
+        "a badly kept",
+        "a cheaply made",
+        "a composite",
+        "a crude",
+        "a customized",
+        "a damaged",
+        "a double",
+        "an expensive-looking",
+        "a fake",
+        "a fine-looking",
+        "a finely detailed",
+        "a heavy",
+        "a light",
+        "an old",
+        "an old-fashioned",
+        "an outdated",
+        "a smelly",
+        "a suspicious-looking",
+        "a tainted",
+        "a valuable",
+        "a well-preserved"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It appears/feels/looks/seems -- ",
+      "entries": [
+        "like it has fallen into disrepair"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, description: {description} Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
       ]
     }
   ]

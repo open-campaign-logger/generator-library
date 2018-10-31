@@ -1,0 +1,630 @@
+{
+  "name": "culture-american-modern",
+  "resultPattern": "{init}{stats}",
+  "globals": {
+    "culture": "american-modern",
+    "trial": "",
+    "trap": "",
+    "aim": "",
+    "belief": "",
+    "ritual": "",
+    "newssource": "",
+    "armor": "",
+    "artifact": "",
+    "fabric": "",
+    "key": "",
+    "material": "",
+    "metal": "",
+    "style": "",
+    "technology": "",
+    "treasure": "",
+    "weapon": "",
+    "door": "",
+    "furnishing": "",
+    "lock": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Data set details for cultures and civilizations.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "_template_culture, culture",
+  "date": "2018-08-20",
+  "authors": "ELF Vesala",
+  "sources": "Johnn Four's RolePlaying Tips newsletter #599: '3 Line Cultures: How To Inject Races and Factions With Flavour'.",
+  "genre": "modern",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "trial": "{trial}",
+            "trap": "{trap}",
+            "aim": "{aim}",
+            "belief": "{ritual}",
+            "ritual": "{ritual}",
+            "newssource": "{newssource}",
+            "armor": "{armor}",
+            "artifact": "{artifact}",
+            "fabric": "{fabric}",
+            "key": "{key}",
+            "material": "{material}",
+            "metal": "{metal}",
+            "style": "{style}",
+            "technology": "{technology}",
+            "treasure": "{treasure}",
+            "weapon": "{weapon}",
+            "furnishing": "{furnishing}",
+            "door": "{door}",
+            "lock": "{lock}"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{description}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{culture}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {culture}",
+        "{culture} {feature}",
+        "{attribute} {culture} {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {culture} {looks} {attribute}.",
+        "The {culture} {looks} {feature}.",
+        "The {attribute} {culture} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Culture}: {g:culture} \r\n{b|Trial}: {g:trial} \r\n{b|Trap}: {g:trap} \r\n{b|Aim}: {g:aim} \r\n{b|Belief}: {g:belief} \r\n{b|Ritual}: {g:ritual} \r\n{b|Information source}: {g:newssource} \r\n{b|Armor}: {g:armor} \r\n{b|Artifact}: {g:artifact} \r\n{b|Fabric}: {g:fabric} \r\n{b|Key}: {g:key} \r\n{b|Material}: {g:material} \r\n{b|Metal}: {g:metal} \r\n{b|Style}: {g:style} \r\n{b|Technology}: {g:technology} \r\n{b|Treasure}: {g:treasure} \r\n{b|Weapon}: {g:weapon} \r\n{b|Door}: {g:door} \r\n{b|Furnishing}: {g:furnishing} \r\n{b|Lock}: {g:lock} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "culture",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common types.",
+      "entries": [
+        "{aspect}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare types.",
+      "entries": [
+        "{aspect}"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "aspect",
+      "explanation": "Random aspect of the culture",
+      "entries": [
+        "{event}",
+        "{heritage}",
+        "{information}",
+        "{item}",
+        "{naming}",
+        "{place}",
+        "{social}",
+        "{society}"
+      ]
+    },
+    {
+      "**************************************************": "EVENTS"
+    },
+    {
+      "name": "event",
+      "explanation": "Events matching the culture.",
+      "entries": [
+        "{trial}",
+        "{trap}"
+      ]
+    },
+    {
+      "name": "trial",
+      "explanation": "Trials matching the culture.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "trap",
+      "explanation": "Traps matching the culture.",
+      "entries": [
+        "{lib:trap#modern}"
+      ]
+    },
+    {
+      "**************************************************": "HERITAGE"
+    },
+    {
+      "name": "heritage",
+      "explanation": "Heritage details matching the culture.",
+      "entries": [
+        "{belief}",
+        "{aim}",
+        "{ritual}"
+      ]
+    },
+    {
+      "name": "aim",
+      "explanation": "Common goals in the culture.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "belief",
+      "explanation": "Common beliefs in the culture.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ritual",
+      "explanation": "Common rituals in the culture.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "INFORMATION"
+    },
+    {
+      "name": "information",
+      "explanation": "Knowledge about the culture.",
+      "entries": [
+        "{newssource}"
+      ]
+    },
+    {
+      "name": "newssource",
+      "explanation": "Information sources for intelligence and revelations.",
+      "format": "-- reveals",
+      "entries": [
+        "{rare source}",
+        "blog",
+        "news site",
+        "magazine",
+        "newspaper",
+        "TV broadcast"
+      ]
+    },
+    {
+      "name": "rare source",
+      "explanation": "Non-generic information sources.",
+      "note": "XXX To be moved to suitable culture templates!",
+      "entries": [
+        "book"
+      ]
+    },
+    {
+      "**************************************************": "ITEMS"
+    },
+    {
+      "name": "item",
+      "explanation": "Items matching the culture.",
+      "entries": [
+        "{adornment}",
+        "{armor}",
+        "{artifact}",
+        "{clothing}",
+        "{equipment}",
+        "{fabric}",
+        "{key}",
+        "{material}",
+        "{metal}",
+        "{style}",
+        "{technology}",
+        "{treasure}",
+        "{vehicle}",
+        "{weapon}"
+      ]
+    },
+    {
+      "name": "adornment",
+      "explanation": "Jewelry and accessories.",
+      "entries": [
+        "{lib:adornment#modern}"
+      ]
+    },
+    {
+      "name": "armor",
+      "explanation": "Armoring that matches the culture.",
+      "entries": [
+        "{lib:armor#modern}"
+      ]
+    },
+    {
+      "name": "artifact",
+      "explanation": "Fabled items matching the culture.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "clothing",
+      "explanation": "Items of apparel.",
+      "entries": [
+        "{lib:clothing#modern}"
+      ]
+    },
+    {
+      "name": "equipment",
+      "explanation": "Carried items.",
+      "entries": [
+        "{lib:equipment#modern}"
+      ]
+    },
+    {
+      "name": "fabric",
+      "explanation": "Clothing materials matching the culture.",
+      "entries": [
+        "{lib:fabric#modern}"
+      ]
+    },
+    {
+      "name": "key",
+      "explanation": "Keys matching the culture.",
+      "entries": [
+        "{lib:key#modern}"
+      ]
+    },
+    {
+      "name": "material",
+      "explanation": "Miscellaneous materials matching the culture.",
+      "entries": [
+        "{lib:material#modern}"
+      ]
+    },
+    {
+      "name": "metal",
+      "explanation": "Metals matching the culture.",
+      "entries": [
+        "{lib:metal#modern}"
+      ]
+    },
+    {
+      "name": "money",
+      "explanation": "Currency matching the culture.",
+      "entries": [
+        "dollar"
+      ]
+    },
+    {
+      "name": "style",
+      "explanation": "Styles matching the culture.",
+      "entries": [
+        "{lib:style#modern}"
+      ]
+    },
+    {
+      "name": "technology",
+      "explanation": "Techcnologies matching the culture.",
+      "entries": [
+        "muscle-powered",
+        "clockwork-operated"
+      ]
+    },
+    {
+      "name": "treasure",
+      "explanation": "Valuables matching the culture.",
+      "entries": [
+        "{lib:treasure#modern}"
+      ]
+    },
+    {
+      "name": "vehicle",
+      "explanation": "Typical mounts or vehicles.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "weapon",
+      "explanation": "Weapons matching the culture.",
+      "entries": [
+        "{lib:weapon#modern}"
+      ]
+    },
+    {
+      "**************************************************": "NAMING"
+    },
+    {
+      "name": "naming",
+      "explanation": "Naming patterns matching the culture.",
+      "entries": [
+        "{byname}",
+        "{firstname}",
+        "{fullname}",
+        "{surname}"
+      ]
+    },
+    {
+      "name": "byname",
+      "explanation": "Naming patterns matching the culture.",
+      "entries": [
+        "{lib:name-{g:culture}#{g:gender} byname}"
+      ]
+    },
+    {
+      "name": "firstname",
+      "explanation": "Naming patterns matching the culture.",
+      "entries": [
+        "{lib:name-{g:culture}#{g:gender}}"
+      ]
+    },
+    {
+      "name": "fullname",
+      "explanation": "Naming patterns matching the culture.",
+      "entries": [
+        "{g:firstname} {g:surname}"
+      ]
+    },
+    {
+      "name": "surname",
+      "explanation": "Naming patterns matching the culture.",
+      "entries": [
+        "{lib:name-{g:culture}#{g:gender} surname}"
+      ]
+    },
+    {
+      "**************************************************": "PLACES"
+    },
+    {
+      "name": "place",
+      "explanation": "Places matching the culture.",
+      "entries": [
+        "{door}",
+        "{furnishing}",
+        "{lock}"
+      ]
+    },
+    {
+      "name": "door",
+      "explanation": "Portals matching the culture.",
+      "entries": [
+        "{lib:door#modern}"
+      ]
+    },
+    {
+      "name": "furnishing",
+      "explanation": "Furniture and paraphernalia matching the culture.",
+      "entries": [
+        "table",
+        "chair",
+        "bed"
+      ]
+    },
+    {
+      "name": "lock",
+      "explanation": "Locks matching the culture.",
+      "entries": [
+        "{lib:lock#modern}"
+      ]
+    },
+    {
+      "**************************************************": "SOCIAL"
+    },
+    {
+      "name": "social",
+      "explanation": "Social details matching the culture.",
+      "entries": [
+        "{gesturing}",
+        "{personality}",
+        "{quirk}"
+      ]
+    },
+    {
+      "name": "gesturing",
+      "explanation": "Gestigulations matching the culture.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "personality",
+      "explanation": "Personality traits matching the culture.",
+      "entries": [
+        "{lib:personality#modern}"
+      ]
+    },
+    {
+      "name": "quirk",
+      "explanation": "Quirks matching the culture.",
+      "entries": [
+        "{lib:quirk#modern}"
+      ]
+    },
+    {
+      "**************************************************": "SOCIETY"
+    },
+    {
+      "name": "society",
+      "explanation": "Societal details of the culture.",
+      "entries": [
+        "{background}",
+        "{occupation}"
+      ]
+    },
+    {
+      "name": "background",
+      "explanation": "Character backgrounds matching the culture.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "occupation",
+      "explanation": "Employments matching the culture.",
+      "export": {
+        "": ""
+      },
+      "entries": [
+        "{lib:occupation#modern {g:social_class}}"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZATION"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{beginning}{ending}",
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "civilization",
+        "community",
+        "convenance",
+        "culture",
+        "custom",
+        "fashion",
+        "habit",
+        "lifestyle",
+        "practice",
+        "praxis",
+        "society",
+        "style of living",
+        "tradition",
+        "way of life",
+        "wont"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "looks to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
+      ]
+    }
+  ]
+}

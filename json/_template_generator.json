@@ -2,7 +2,7 @@
   "name": "generator template",
   "resultPattern": "{init}{result}",
   "globals": {
-    "variable": "value"
+    "variable": ""
   },
   "variables": {
     "footnote": ""
@@ -17,6 +17,14 @@
   "date": "@timestamp@ XXX",
   "authors": "@author@. XXX",
   "sources": "",
+  "attribution": {
+    "creators": "",
+    "copyright": "",
+    "licence": "https://",
+    "disclaimer": "https://",
+    "source": "",
+    "changes": ""
+  },
   "genre": "",
   "categories": [
     ""
@@ -35,32 +43,81 @@
       ]
     },
     {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
       "name": "result",
-      "explanation": "Verbosity of the resultPattern output.",
+      "explanation": "The output format.",
       "entries": [
+        "{word}",
         "{summary}",
         "{detail}"
       ]
     },
     {
-      "name": "summary",
-      "explanation": "Brief resultPattern output.",
+      "name": "word",
+      "explanation": "One-word output.",
       "entries": [
         "{XXX}"
       ]
     },
     {
-      "name": "detail",
-      "explanation": "Detailed resultPattern output variations.",
+      "name": "summary",
+      "explanation": "Brief output.",
       "entries": [
-        "{adjective} {XXX}",
-        "{XXX} {feature}",
-        "{adjective} {XXX} {feature}"
+        "{attribute} {XXX}"
       ]
     },
     {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{XXX}, {feature}",
+        "{attribute} {XXX}, {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a sentence.",
+      "entries": [
+        "The {XXX} {synonym} {looks} {feature}.",
+        "The {attribute} {XXX} {synonym} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "section",
+      "explanation": "Long description as a subheading and a text paragraph.",
+      "entries": [
+        "===== {random} =====\r\n{description}"
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Name}: {random} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "name": "template",
+      "explanation": "Details as a template.",
+      "entries": [
+        "?FC\r\n{b|Name}: [[{random}]] \r\n{b|Attribute}: \r\n[[[{attribute}]]] \r\n{b|Feature}: \r\n[[[{feature}]]]"
+      ]
+    },
+    {
+      "name": "meta",
+      "explanation": "Off-game explanation of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
       "name": "XXX",
-      "explanation": "The XXX types by rarity.",
+      "explanation": "Types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -71,50 +128,218 @@
     },
     {
       "name": "common",
-      "explanation": "Common XXX types.",
+      "explanation": "Usual types.",
       "entries": [
         "XXX"
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare XXX types.",
+      "explanation": "Unusual types.",
       "entries": [
         "XXX"
+      ]
+    },
+    {
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "RANGES"
+    },
+    {
+      "name": "any",
+      "explanation": "Random selection.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "",
+      "explanation": "",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomization methods.",
+      "entries": [
+        "{component}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMPONENTS"
+    },
+    {
+      "name": "component",
+      "explanation": "Component-based terms (generated from words).",
+      "entries": [
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{compoundbegin}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
       ]
     },
     {
       "**************************************************": "WORLD-SPECIFIC"
     },
     {
-      "name": "myth",
-      "explanation": "XXX once rumoured to have existed.",
-      "entries": [
-        "XXX"
-      ]
+      "--------------------------------------------------": "FANTASTIC"
     },
     {
       "name": "fantasy",
-      "explanation": "XXX for fantasy worlds (with no basis in myth).",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
-        "XXX"
+        "{medieval}"
       ]
+    },
+    {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
     },
     {
       "name": "modern",
-      "explanation": "XXX for modern worlds.",
+      "explanation": "Descriptions for modern worlds.",
       "entries": [
-        "{common}",
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
         "XXX"
       ]
     },
     {
-      "name": "futuristic",
-      "explanation": "XXX for science fiction worlds.",
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition / approaching",
       "entries": [
-        "{modern}",
-        "XXX"
+        "appears to be",
+        "seems to be"
       ]
     },
     {
@@ -122,26 +347,25 @@
     },
     {
       "name": "special",
-      "explanation": "Special XXX tables.",
+      "explanation": "Special tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{feature}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives related to XXX.",
-      "format": "Optionally prepended to the front of the result.",
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
       "entries": [
-        "XXX"
+        ""
       ]
     },
     {
       "name": "feature",
-      "explanation": "Features related to XXX.",
-      "format": "Optionally appended to the end of the result.",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
       "entries": [
-        "XXX"
+        ""
       ]
     },
     {
@@ -151,7 +375,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]

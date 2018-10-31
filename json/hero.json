@@ -13,14 +13,14 @@
     "actants": "heroes",
     "actantgroup": "troupe",
     "actantaction": "seems to be preparing for something",
-    "actantadjective": "brave",
+    "actantattribute": "brave",
     "actantdescription": "The hero looks burdened by something.",
     "attitude": "friendly",
     "hero": "hero",
     "heroes": "heroes",
     "herogroup": "troupe",
     "heroaction": "seems to be preparing for something",
-    "heroadjective": "brave",
+    "heroattribute": "brave",
     "herodescription": "The hero looks burdened by something",
     "footnote": ""
   },
@@ -69,9 +69,9 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {hero}",
+        "{attribute} {hero}",
         "{hero} {complication}",
-        "{adjective} {hero} {complication}"
+        "{attribute} {hero} {complication}"
       ]
     },
     {
@@ -190,15 +190,15 @@
       "name": "special",
       "explanation": "Special hero types.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{substantive}",
         "{strategy}",
         "{goal}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives describing the hero.",
+      "name": "attribute",
+      "explanation": "Attributes describing the hero.",
       "entries": [
         "brave",
         "fearless",
@@ -208,7 +208,7 @@
     },
     {
       "name": "substantive",
-      "explanation": "Adjectives describing the hero.",
+      "explanation": "Substantives describing the hero.",
       "entries": [
         "hero",
         "adventurer",

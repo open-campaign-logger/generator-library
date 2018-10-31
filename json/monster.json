@@ -1,12 +1,13 @@
 {
   "name": "monster",
-  "resultPattern": "{result}",
+  "resultPattern": "{lib:formatting#cl}{init}{result}",
   "globals": {
+    "monster": "{monster}",
     "actant": "monster",
     "actants": "monsters",
     "actantgroup": "pack",
     "actantaction": "on the prowl",
-    "actantadjective": "hideous",
+    "actantattribute": "hideous",
     "actantdescription": "The monster seems to be looking for something to eat.",
     "attitude": "hostile"
   },
@@ -19,52 +20,82 @@
   "bugs": "",
   "to do": "Categorize monsters by type.",
   "see": "animal, attack, citizen, complication, encounter, nonhuman",
-  "date": "2018-01-29",
-  "authors": "Esko Vesala.",
-  "sources": "D20SRD.org, DanDWiki.com, Wikia.com, Wikipedia.org",
+  "date": "2018-06-06",
+  "authors": "ELF Vesala.",
+  "sources": "D20SRD.org, DanDWiki.com, Johnn Four's Musings newsletter 2018-06-08, Wikia.com, Wikipedia.org",
   "genre": "fantasy",
   "categories": [
     "monster"
   ],
   "tables": [
     {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "monster": "{monster}"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
       "name": "result",
-      "explanation": "Verbosity of the resultPattern output.",
+      "explanation": "The output format.",
       "entries": [
         "{summary}",
-        "{detail}"
+        "{detail}",
+        "{description}",
+        "{stats}"
       ]
     },
     {
       "name": "summary",
-      "explanation": "Brief resultPattern output.",
+      "explanation": "Brief output.",
       "entries": [
-        "{monster}"
+        "{g:monster}"
       ]
     },
     {
       "name": "detail",
-      "explanation": "Detailed resultPattern output variations.",
+      "explanation": "More detailed output variations.",
       "entries": [
-        "{monster}",
-        "{adjective} {monster}",
-        "{adjective}, {lib:complication#creature} {monster}",
-        "{lib:creature_template} {monster}",
-        "{lib:complication#creature}, {lib:creature_template} {monster}",
-        "{monster} specialized {lib:attack} attacks",
-        "{adjective} {monster} specialized in {lib:attack} attacks",
-        "{lib:complication#creature} {monster} specialized in {lib:attack} attacks",
-        "{lib:creature_template} {monster} specialized in {lib:attack} attacks"
+        "{attribute} {g:monster}",
+        "{g:monster}, {activity}",
+        "{attribute} {g:monster}, {activity}",
+        "{attribute} {g:monster}, {lib:complication#creature}",
+        "{lib:aspect-creature#summary} {g:monster}",
+        "{lib:aspect-creature#summary} {g:monster}, {lib:complication#creature}",
+        "{g:monster} specialized in {lib:attack#summary} attacks",
+        "{attribute} {g:monster} specialized in {lib:attack#summary} attacks",
+        "{g:monster} specialized in {lib:attack#summary} attacks, {lib:complication#creature}",
+        "{lib:aspect-creature#summary} {g:monster} specialized in {lib:attack#summary} attacks"
       ]
     },
     {
-      "name": "result",
-      "explanation": "Variations for resultPattern output.",
-      "entries": []
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "{g:startheading}{name}{g:endheading} {g:para}The {attribute} {g:monster} {looks} {activity}. The {synonym} is of {personality} nature and {distinction}.  {g:para}{g:startbold}Strategy{g:endbold}: When entering battle, it {strategy}.  {g:para}{g:startbold}Melee{g:endbold}: In close combat, it {often} {signature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{g:startbold}Name{g:endbold}: {name}  {g:para}{g:startbold}Monster{g:endbold}: {g:monster}  {g:para}{g:startbold}Activity{g:endbold}: {looks} {activity}  {g:para}{g:startbold}Personality{g:endbold}: The {synonym} is of {personality} nature.  {g:para}{g:startbold}Strategy{g:endbold}: {!often} {strategy}. {g:para}{g:startbold}Melee{g:endbold}: {!often} {signature}."
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
     },
     {
       "name": "monster",
-      "explanation": "Monsters by rarity.",
+      "explanation": "Types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -75,35 +106,120 @@
     },
     {
       "name": "common",
-      "explanation": "Common monster types.",
+      "explanation": "Usual types.",
       "entries": [
-        "{humanoid}"
+        "{humanoid}",
+        "{reptilian}",
+        "{amphibian}",
+        "{undead}"
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare monster types.",
+      "explanation": "Unusual types.",
       "entries": [
-        "{vermin}"
+        "{construct}",
+        "{halfhuman}",
+        "{fey}",
+        "{lycanthrope}",
+        "{spirit}",
+        "{dragon}",
+        "{demonic}",
+        "{infernal}"
       ]
     },
     {
-      "**************************************************": "MONSTERS"
+      "**************************************************": "NUMBERS"
+    },
+    {
+      "name": "number",
+      "explanation": "",
+      "entries": [
+        "{single}",
+        "{group}"
+      ]
+    },
+    {
+      "name": "single",
+      "explanation": "The formation of the monster(s).",
+      "entries": [
+        "one {g:monster}",
+        "a lone {g:monster}",
+        "a sole {g:monster}",
+        "a single {g:monster}",
+        "a separate {g:monster}",
+        "a singular {g:monster}",
+        "a solitary {g:monster}",
+        "an isolated {g:monster}",
+        "an individual {g:monster}"
+      ]
+    },
+    {
+      "name": "group",
+      "explanation": "The formation of the monster(s).",
+      "entries": [
+        "one {g:monster}",
+        "a lone {g:monster}",
+        "a single {g:monster}",
+        "two {g:monster}s",
+        "pair of {g:monster}s",
+        "three {g:monster}s",
+        "a trio of {g:monster}s",
+        "four {g:monster}s",
+        "a quartet of {g:monster}s",
+        "five {g:monster}s",
+        "{dice:2d6} {g:monster}s",
+        "a group of {g:monster}s",
+        "a pack of {g:monster}s",
+        "a team of {g:monster}s",
+        "{rare group}"
+      ]
+    },
+    {
+      "name": "rare group",
+      "explanation": "Rare formations of monsters.",
+      "entries": [
+        "a company of {g:monster}s",
+        "a brigage of {g:monster}s",
+        "an army of {g:monster}s",
+        "a horde of {g:monster}s",
+        "a swarm of {g:monster}s"
+      ]
+    },
+    {
+      "**************************************************": "SPECIES"
+    },
+    {
+      "--------------------------------------------------": "HUMANOIDS"
     },
     {
       "name": "humanoid",
       "explanation": "Monsters with the approximate shape of a human.",
       "entries": [
+        "{goblinoid}",
         "{crossbreed}",
         "{troll}",
         "{giant}"
       ]
     },
     {
+      "name": "goblinoid",
+      "explanation": "Goblin-like creatures",
+      "entries": [
+        "goblin",
+        "hobgoblin",
+        "bugbear",
+        "orc"
+      ]
+    },
+    {
       "name": "crossbreed",
       "explanation": "Crossbred monsters.",
       "entries": [
-        "half-ogre"
+        "half-orc",
+        "half-ogre",
+        "half-troll",
+        "half-giant"
       ]
     },
     {
@@ -111,7 +227,11 @@
       "explanation": "Trollkin.",
       "entries": [
         "troll",
-        "cave troll"
+        "mountain troll",
+        "cave troll",
+        "hill troll",
+        "forest troll",
+        "swamp troll"
       ]
     },
     {
@@ -133,179 +253,308 @@
       ]
     },
     {
-      "name": "vermin",
-      "explanation": "Monstrous insects, worms, etc.",
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
       "entries": [
-        "monster bug",
-        "monster rat"
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        "abyssal",
+        "aerial",
+        "arcane",
+        "aquatic",
+        "astral",
+        "barbed",
+        "colossal",
+        "corrupted",
+        "deadly",
+        "dreary",
+        "forsaken",
+        "foul",
+        "giant",
+        "greater",
+        "grim",
+        "grotesque",
+        "gruesome",
+        "horned",
+        "howling",
+        "hunting",
+        "hybrid",
+        "infernal",
+        "malevolent",
+        "masked",
+        "monstrous",
+        "necrous",
+        "parasitic",
+        "phantasmal",
+        "preying",
+        "psionic",
+        "rotting",
+        "silent",
+        "scaly",
+        "spectral",
+        "striped",
+        "sylvan",
+        "tentacled",
+        "tusked",
+        "unborn",
+        "unholy",
+        "vampiric",
+        "venomous",
+        "vicious",
+        "vile",
+        "wild"
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{compoundbegin}",
+        "black",
+        "coffin",
+        "hell",
+        "hollow",
+        "pale",
+        "poison",
+        "slug",
+        "trap"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "format": "-ling",
+      "entries": [
+        "acid",
+        "ash",
+        "bane",
+        "bark",
+        "blade",
+        "blood",
+        "bone",
+        "crypt",
+        "dark",
+        "death",
+        "dire",
+        "doom",
+        "fire",
+        "flame",
+        "frost",
+        "ghost",
+        "grave",
+        "ice",
+        "mist",
+        "night",
+        "plague",
+        "rot",
+        "scythe",
+        "shadow",
+        "sky",
+        "spike",
+        "stone",
+        "taint",
+        "thorn",
+        "thunder",
+        "warp",
+        "web"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "face",
+        "let",
+        "ling",
+        "morph",
+        "skull"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "{fungus}",
+        "{plant ending}",
+        "{ooze}",
+        "{animal ending}",
+        "{fey}",
+        "{lycanthrope}",
+        "{undead}",
+        "{demonic}",
+        "{infernal}",
+        "{celestial}",
+        "beast",
+        "brood",
+        "brute",
+        "butcher",
+        "claw",
+        "corpse",
+        "drake",
+        "eater",
+        "guardian",
+        "hunter",
+        "lurker",
+        "mirage",
+        "piercer",
+        "predator",
+        "prowler",
+        "screamer",
+        "seeker",
+        "sentinel",
+        "shrieker",
+        "slayer",
+        "spitter",
+        "stalker",
+        "statue",
+        "strider",
+        "swarm",
+        "talon",
+        "terror",
+        "tormentor",
+        "vagrant",
+        "vermin",
+        "wailer",
+        "walker",
+        "wing"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ENDING TYPES"
+    },
+    {
+      "name": "animal ending",
+      "explanation": "Word endings for animal monsters.",
+      "entries": [
+        "{mollusc ending}",
+        "{arachnid ending}",
+        "{insect ending}",
+        "{amphibian ending}",
+        "{reptile ending}",
+        "{bird ending}",
+        "{mammal ending}",
+        "worm"
+      ]
+    },
+    {
+      "name": "amphibian ending",
+      "explanation": "Word endings for amphibian monsters.",
+      "entries": [
+        "frog",
+        "toad"
+      ]
+    },
+    {
+      "name": "arachnid ending",
+      "explanation": "Word endings for arachnid monsters.",
+      "entries": [
+        "scorpion",
+        "spider"
+      ]
+    },
+    {
+      "name": "bird ending",
+      "explanation": "Word endings for bird monsters.",
+      "entries": [
+        "eagle",
+        "falcon",
+        "hawk"
+      ]
+    },
+    {
+      "name": "insect ending",
+      "explanation": "Word endings for insect monsters.",
+      "entries": [
+        "beetle",
+        "bug",
+        "mantis"
+      ]
+    },
+    {
+      "name": "mammal ending",
+      "explanation": "Word endings for mammal monsters.",
+      "entries": [
+        "bat",
+        "bear",
+        "hound",
+        "wolf"
+      ]
+    },
+    {
+      "name": "mollusc ending",
+      "explanation": "Word endings for mollusc monsters.",
+      "entries": [
+        "{lib:animal#mollusc}"
+      ]
+    },
+    {
+      "name": "plant ending",
+      "explanation": "Word endings for plant monsters.",
+      "entries": [
+        "bush",
+        "creeper",
+        "plant",
+        "shrub",
+        "tree",
+        "vine"
+      ]
+    },
+    {
+      "name": "reptile ending",
+      "explanation": "Word endings for reptile monsters.",
+      "entries": [
+        "adder",
+        "constrictor",
+        "serpent",
+        "viper"
+      ]
+    },
+    {
+      "--------------------------------------------------": "EXTENSIONS"
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        "amalgamation",
+        "from beyond",
+        "from the void",
+        "of chaos",
+        "of doom",
+        "of horror",
+        "of the wastes"
       ]
     },
     {
       "**************************************************": "WORLD-SPECIFIC"
     },
     {
-      "name": "myth",
-      "explanation": "Monsters once rumoured to have existed.",
-      "entries": [
-        "{halfhuman}",
-        "{mythic beast}",
-        "{fey}",
-        "{lycanthrope}",
-        "{spirit}",
-        "{undead}",
-        "{dragon}",
-        "{demonic}",
-        "{infernal}",
-        "{celestial}"
-      ]
-    },
-    {
-      "name": "halfhuman",
-      "explanation": "Composites of human and animal.",
-      "entries": [
-        "medusa",
-        "gorgon",
-        "centaur",
-        "lamia",
-        "naga"
-      ]
-    },
-    {
-      "name": "mythic beast",
-      "explanation": "Mythological animals.",
-      "entries": [
-        "gargoyle",
-        "catoblepas",
-        "unicorn",
-        "{chimerical}"
-      ]
-    },
-    {
-      "name": "chimerical",
-      "explanation": "Composites of several animals.",
-      "entries": [
-        "cockatrice",
-        "chimera",
-        "manticore"
-      ]
-    },
-    {
-      "name": "fey",
-      "explanation": "Faeries and other feyfolk.",
-      "entries": [
-        "fairy",
-        "sprite",
-        "sylph",
-        "fey",
-        "hag"
-      ]
-    },
-    {
-      "name": "lycanthrope",
-      "explanation": "Shapeshifters.",
-      "entries": [
-        "werewolf",
-        "werebear",
-        "wererat"
-      ]
-    },
-    {
-      "name": "spirit",
-      "explanation": "Dead creatures animated to unlife.",
-      "entries": [
-        "banshee",
-        "{incorporeal}",
-        "{djinni}"
-      ]
-    },
-    {
-      "name": "incorporeal",
-      "explanation": "Spirits of the dead.",
-      "entries": [
-        "ghost",
-        "phantom",
-        "wraith"
-      ]
-    },
-    {
-      "name": "djinni",
-      "explanation": "Djinnis and their kin.",
-      "entries": [
-        "efreeti",
-        "mephit",
-        "marid",
-        "djinni"
-      ]
-    },
-    {
-      "name": "undead",
-      "explanation": "Dead creatures animated to unlife.",
-      "entries": [
-        "{incorporeal}",
-        "{corporeal}"
-      ]
-    },
-    {
-      "name": "corporeal",
-      "explanation": "Dead creatures animated to unlife.",
-      "entries": [
-        "skeleton",
-        "mummy",
-        "revenant",
-        "wight",
-        "lich",
-        "{vampire}"
-      ]
-    },
-    {
-      "name": "vampire",
-      "explanation": "Vampiric undead.",
-      "entries": [
-        "vampire"
-      ]
-    },
-    {
-      "name": "dragon",
-      "explanation": "Dragonkin.",
-      "entries": [
-        "linnorm",
-        "wyvern",
-        "dragon",
-        "wyrm",
-        "tarasque"
-      ]
-    },
-    {
-      "name": "demonic",
-      "explanation": "Demons.",
-      "entries": [
-        "demon"
-      ]
-    },
-    {
-      "name": "infernal",
-      "explanation": "Denizens of the hells.",
-      "entries": [
-        "devil"
-      ]
-    },
-    {
-      "name": "celestial",
-      "explanation": "Denizens of the heavens.",
-      "entries": [
-        "angel",
-        "archangel",
-        "archon"
-      ]
+      "--------------------------------------------------": "FANTASTIC"
     },
     {
       "name": "fantasy",
-      "explanation": "Monsters for fantasy worlds (with no basis in myth).",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
         "{ooze}",
-        "{magical beast}",
-        "{monstrous humanoid}",
+        "{fungus}",
         "{avian}",
         "{reptilian}",
         "{amphibian}",
@@ -319,34 +568,29 @@
       "name": "ooze",
       "explanation": "Amorphous ooze and jelly creatures.",
       "entries": [
-        "giant amoeba",
         "blob",
-        "ooze",
+        "goo",
         "jelly",
-        "slime mold"
+        "ooze",
+        "pudding",
+        "slime"
       ]
     },
     {
-      "name": "magical beast",
-      "explanation": "Magic-imbued animals.",
+      "name": "fungus",
+      "explanation": "Mushroom and fungi creatures.",
       "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "monstrous humanoid",
-      "explanation": "Humanoid creature with monstrous features.",
-      "entries": [
-        "orc"
+        "fungus",
+        "mold",
+        "mushroom"
       ]
     },
     {
       "name": "avian",
       "explanation": "Humanoid creature with bird-like features.",
       "entries": [
-        "swan maiden",
+        "bird {synonym}",
         "tengu",
-        "bird people",
         "avian"
       ]
     },
@@ -356,7 +600,7 @@
       "entries": [
         "serpent man",
         "snakeman",
-        "lizardfolk",
+        "lizard {synonym}",
         "reptilian",
         "saurian",
         "draconian",
@@ -367,7 +611,10 @@
       "name": "amphibian",
       "explanation": "Humanoid creature with frog-like features.",
       "entries": [
-        "frog folk"
+        "frog {synonym}",
+        "toad {synonym}",
+        "newt {synonym}",
+        "salamander {synonym}"
       ]
     },
     {
@@ -449,14 +696,220 @@
       "name": "outsider",
       "explanation": "Extraplanar creatures from other states of existence.",
       "entries": [
-        "XXX"
+        "extraplanar {synonym}",
+        "alien {synonym}",
+        "{synonym} from another world"
       ]
     },
     {
-      "name": "modern",
-      "explanation": "Monsters for modern worlds.",
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
       "entries": [
-        "{common}",
+        "{halfhuman}",
+        "{mythic beast}",
+        "{fey}",
+        "{lycanthrope}",
+        "{spirit}",
+        "{undead}",
+        "{dragon}",
+        "{demonic}",
+        "{infernal}",
+        "{celestial}"
+      ]
+    },
+    {
+      "name": "halfhuman",
+      "explanation": "Composites of human and animal.",
+      "entries": [
+        "medusa",
+        "gorgon",
+        "centaur",
+        "lamia",
+        "naga"
+      ]
+    },
+    {
+      "name": "mythic beast",
+      "explanation": "Mythological animals.",
+      "entries": [
+        "{chimerical}",
+        "alicorn",
+        "catoblepas",
+        "gargoyle",
+        "pegasus",
+        "unicorn"
+      ]
+    },
+    {
+      "name": "chimerical",
+      "explanation": "Composites of several animals.",
+      "entries": [
+        "cockatrice",
+        "chimera",
+        "griffon",
+        "manticore",
+        "sphinx"
+      ]
+    },
+    {
+      "name": "fey",
+      "explanation": "Faeries and other feyfolk.",
+      "entries": [
+        "fairy",
+        "sprite",
+        "sylph",
+        "fey",
+        "hag"
+      ]
+    },
+    {
+      "name": "lycanthrope",
+      "explanation": "Shapeshifters.",
+      "entries": [
+        "werewolf",
+        "werebear",
+        "wererat"
+      ]
+    },
+    {
+      "name": "spirit",
+      "explanation": "Dead creatures animated to unlife.",
+      "entries": [
+        "banshee",
+        "{incorporeal}",
+        "{djinni}"
+      ]
+    },
+    {
+      "name": "incorporeal",
+      "explanation": "Spirits of the dead.",
+      "entries": [
+        "apparition",
+        "eidolon",
+        "ghost",
+        "haunt",
+        "phantasm",
+        "phantom",
+        "shade",
+        "shadow",
+        "soul",
+        "spectre",
+        "spirit",
+        "wraith"
+      ]
+    },
+    {
+      "name": "djinni",
+      "explanation": "Djinnis and their kin.",
+      "entries": [
+        "efreeti",
+        "mephit",
+        "marid",
+        "djinni"
+      ]
+    },
+    {
+      "name": "undead",
+      "explanation": "Dead creatures animated to unlife.",
+      "entries": [
+        "{incorporeal}",
+        "{corporeal}"
+      ]
+    },
+    {
+      "name": "corporeal",
+      "explanation": "Dead creatures animated to unlife.",
+      "entries": [
+        "ghoul",
+        "lich",
+        "mummy",
+        "revenant",
+        "skeleton",
+        "wight",
+        "wraith",
+        "vampire"
+      ]
+    },
+    {
+      "name": "dragon",
+      "explanation": "Dragonkin.",
+      "entries": [
+        "linnorm",
+        "wyvern",
+        "drake",
+        "dragon",
+        "wyrm"
+      ]
+    },
+    {
+      "name": "demonic",
+      "explanation": "Demons.",
+      "entries": [
+        "demon",
+        "incubus",
+        "succubus"
+      ]
+    },
+    {
+      "name": "infernal",
+      "explanation": "Denizens of the hells.",
+      "entries": [
+        "imp",
+        "fiend",
+        "devilkin",
+        "devil"
+      ]
+    },
+    {
+      "name": "celestial",
+      "explanation": "Denizens of the heavens.",
+      "entries": [
+        "angel",
+        "archangel",
+        "archon"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "{lib:animal#predator}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "{lib:animal#predator}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{lib:animal#predator}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{lib:animal#predator}",
         "{cryptid}"
       ]
     },
@@ -470,8 +923,11 @@
       ]
     },
     {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
       "name": "futuristic",
-      "explanation": "Monsters for science fiction worlds.",
+      "explanation": "Descriptions for science fiction worlds.",
       "entries": [
         "{modern}",
         "{alien}"
@@ -510,7 +966,7 @@
       "name": "piscine",
       "explanation": "Humanoid creature with fish-like features.",
       "entries": [
-        "merfolk",
+        "mer{synonym}",
         "merrow",
         "selkie",
         "siren",
@@ -520,22 +976,154 @@
       ]
     },
     {
-      "**************************************************": "SPECIAL CASES"
+      "**************************************************": "EXOTIC"
     },
     {
-      "name": "special",
-      "explanation": "Special monster tables.",
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
       "entries": [
-        "{adjective}"
+        ""
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives describing the monster.",
+      "**************************************************": "INDIVIDUALIZATION"
+    },
+    {
+      "name": "name",
+      "explanation": "Names for monsters.",
       "entries": [
-        "vengeful",
-        "bloodthirsty",
-        "savage"
+        "{lib:name-monster#description}"
+      ]
+    },
+    {
+      "name": "activity",
+      "explanation": "Pursuits when an encounter starts.",
+      "entries": [
+        "{lib:activity#monster}"
+      ]
+    },
+    {
+      "name": "distinction",
+      "explanation": "Recognizable traits for monsters.",
+      "entries": [
+        "{lib:distinction#monster}"
+      ]
+    },
+    {
+      "name": "personality",
+      "explanation": "",
+      "entries": [
+        "{lib:personality#monster}"
+      ]
+    },
+    {
+      "name": "signature",
+      "explanation": "Signature moves in combat.",
+      "entries": [
+        "{lib:signature#summary}"
+      ]
+    },
+    {
+      "name": "strategy",
+      "explanation": "Combat tactics.",
+      "entries": [
+        "{lib:strategy#melee}"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
+        "beast",
+        "creature",
+        "fiend",
+        "horror",
+        "monster"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "seems to be"
+      ]
+    },
+    {
+      "name": "often",
+      "explanation": "Variant expressions for 'often'.",
+      "entries": [
+        "commonly",
+        "customarily",
+        "generally",
+        "habitually",
+        "frequently",
+        "mostly",
+        "often",
+        "primarily",
+        "regularly",
+        "routinely",
+        "typically",
+        "usually"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}",
+        "{plantlike}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        "dying",
+        "burnt",
+        "scarred",
+        "diseased",
+        "sickly",
+        "crazed",
+        "leprous",
+        "filthy",
+        "hungry",
+        "tired",
+        "alert"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "plantlike",
+      "explanation": "Plant-like monsters.",
+      "entries": [
+        "{ooze}",
+        "{fungus}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]

@@ -1,13 +1,17 @@
 {
-  "name": "set_city",
+  "name": "set-forest",
   "resultPattern": "{init}{result}",
   "globals": {
     "setadjective": "{adjective}",
+    "setarea": "{area}",
+    "setlocale": "{locale}",
+    "setboundary": "{boundary}",
     "setentrance": "{entrance}",
     "setlocation": "{location}",
     "setpassage": "{passage}",
     "setvault": "{vault}",
     "setdoor": "{door}",
+    "setnook": "{nook}",
     "setprop": "{prop}"
   },
   "variables": {
@@ -20,8 +24,8 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-02-14",
-  "authors": "Esko Vesala.",
+  "date": "2018-09-20",
+  "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
   "categories": [
@@ -64,8 +68,8 @@
       ]
     },
     {
-      "name": "area",
-      "explanation": "Area types on the set.",
+      "name": "locale",
+      "explanation": "Location types on the set.",
       "entries": [
         "{entrance}",
         "{location}",
@@ -80,45 +84,56 @@
       "name": "entrance",
       "explanation": "Entrances matching the set.",
       "entries": [
-        "city gate",
-        "city gates",
-        "toll gate"
+        "pathway to forest",
+        "forest entrance"
+      ]
+    },
+    {
+      "name": "area",
+      "explanation": "Areas containing several locations.",
+      "entries": [
+        "forest edge",
+        "hear of the forest"
       ]
     },
     {
       "name": "location",
       "explanation": "Locations matching the set.",
       "entries": [
-        "tavern",
-        "inn",
-        "market square",
-        "guildhall",
-        "warehouse",
-        "bath house",
-        "docks"
+        "thicket",
+        "shrubbery",
+        "undergrowth",
+        "coppice",
+        "copse of trees",
+        "weald",
+        "woods",
+        "wildwood",
+        "backwoods"
       ]
     },
     {
       "name": "passage",
       "explanation": "Corridors matching the set.",
       "entries": [
-        "passageway",
-        "alleyway",
-        "alley",
-        "back street",
-        "street",
-        "lane",
-        "avenue"
+        "walk",
+        "stroll",
+        "hike",
+        "path",
+        "pathway",
+        "logging road",
+        "forest road"
       ]
     },
     {
       "name": "vault",
       "explanation": "Centerpiece locations matching the set.",
       "entries": [
-        "mansion",
-        "town hall",
-        "temple",
-        "courthouse"
+        "orchard",
+        "grove",
+        "tall oak tree",
+        "spring",
+        "mound",
+        "standing stones"
       ]
     },
     {
@@ -128,25 +143,33 @@
       "name": "adjective",
       "explanation": "Adjectives for the set locations.",
       "entries": [
-        "soot-covered",
-        "noisy"
+        "cobwebbed",
+        "mist-filled"
       ]
     },
     {
       "name": "door",
       "explanation": "Doors matching the set.",
       "entries": [
-        "door",
-        "gate",
-        "arched entranceway"
+        "fallen treetrunk",
+        "thick vines"
       ]
     },
     {
       "name": "prop",
       "explanation": "Potential properties for the set.",
       "entries": [
-        "cart",
-        "street-vendor's stall"
+        "mushroom ring",
+        "anthill",
+        "dead tree",
+        "fallen tree",
+        "tall tree stump",
+        "two trees grown together",
+        "giant boulder",
+        "old firepit",
+        "old campsite",
+        "menhir",
+        "circle of stones"
       ]
     },
     {
@@ -156,7 +179,7 @@
       "name": "test",
       "explanation": "Testing tool for dumping the set global variables.",
       "entries": [
-        "{global:set} walkthrough: {global:setentrance} to {global:setpassage} leads to {global:setadjective} {global:setlocation} with {global:setprop}. Behind {global:setdoor} is the {global:setvault}."
+        "{global:setlocale} walkthrough: {global:setentrance} to {global:setpassage} leads to {global:setadjective} {global:setlocation} with {global:setprop}. Behind {global:setdoor} is the {global:setvault}."
       ]
     }
   ]

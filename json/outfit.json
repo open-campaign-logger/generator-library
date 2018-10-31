@@ -2,9 +2,9 @@
   "name": "outfit",
   "resultPattern": "{init}{result}",
   "globals": {
-    "socialclass": "social class",
+    "social_class": "social class",
     "outfit": "outfit",
-    "outfitadjective": "adjective",
+    "outfitattribute": "attribute",
     "outfitfeature": "feature"
   },
   "variables": {
@@ -17,12 +17,13 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-03-10",
+  "date": "2018-08-21",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
   "categories": [
-    "character"
+    "character",
+    "item"
   ],
   "tables": [
     {
@@ -32,8 +33,8 @@
         {
           "v": "",
           "export": {
-            "socialclass": "{lib:social_class}",
-            "outfit": "{{global:socialclass}}"
+            "social_class": "{lib:social_class}",
+            "outfit": "{{global:social_class}}"
           }
         }
       ]
@@ -57,9 +58,9 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{global:outfitadjective} {global:outfit}",
+        "{global:outfitattribute} {global:outfit}",
         "{global:outfit} {global:outfitfeature}",
-        "{global:outfitadjective} {global:outfit} {global:outfitfeature}"
+        "{global:outfitattribute} {global:outfit} {global:outfitfeature}"
       ]
     },
     {
@@ -97,7 +98,7 @@
       "name": "poor",
       "explanation": "Outfits for poor characters.",
       "export": {
-        "outfitadjective": "{poor adjective}",
+        "outfitattribute": "{poor attribute}",
         "outfitfeature": "{poor feature}"
       },
       "entries": [
@@ -112,7 +113,7 @@
       "name": "lower class",
       "explanation": "Outfits for lower class characters.",
       "export": {
-        "outfitadjective": "{lower class adjective}",
+        "outfitattribute": "{lower class attribute}",
         "outfitfeature": "{lower class feature}"
       },
       "entries": [
@@ -125,7 +126,7 @@
       "name": "middle class",
       "explanation": "Outfits for middle class characters.",
       "export": {
-        "outfitadjective": "{middle class adjective}",
+        "outfitattribute": "{middle class attribute}",
         "outfitfeature": "{middle class feature}"
       },
       "entries": [
@@ -138,7 +139,7 @@
       "name": "upper class",
       "explanation": "Outfits for upper class characters.",
       "export": {
-        "outfitadjective": "{upper class adjective}",
+        "outfitattribute": "{upper class attribute}",
         "outfitfeature": "{upper class feature}"
       },
       "entries": [
@@ -152,7 +153,7 @@
       "name": "rich",
       "explanation": "Outfits for rich characters.",
       "export": {
-        "outfitadjective": "{rich adjective}",
+        "outfitattribute": "{rich attribute}",
         "outfitfeature": "{rich feature}"
       },
       "entries": [
@@ -196,23 +197,23 @@
       ]
     },
     {
-      "**************************************************": "ADJECTIVES"
+      "**************************************************": "ATTRIBUTES"
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives for outfits",
+      "name": "attribute",
+      "explanation": "Attributes for outfits",
       "format": "Optionally prepended to the front of the result.",
       "entries": [
-        "{poor adjective}",
-        "{lower class adjective}",
-        "{middle class adjective}",
-        "{upper class adjective}",
-        "{rich adjective}"
+        "{poor attribute}",
+        "{lower class attribute}",
+        "{middle class attribute}",
+        "{upper class attribute}",
+        "{rich attribute}"
       ]
     },
     {
-      "name": "poor adjective",
-      "explanation": "Adjectives for poor outfits",
+      "name": "poor attribute",
+      "explanation": "Attributes for poor outfits",
       "entries": [
         "threadbare",
         "shabby",
@@ -225,14 +226,14 @@
         "dirty",
         "muddy",
         "stained",
-        "{lower class adjective}"
+        "{lower class attribute}"
       ]
     },
     {
-      "name": "lower class adjective",
-      "explanation": "Adjectives for lower class outfits",
+      "name": "lower class attribute",
+      "explanation": "Attributes for lower class outfits",
       "entries": [
-        "{poor adjective}",
+        "{poor attribute}",
         "poorly made",
         "unkempt",
         "faded",
@@ -241,14 +242,15 @@
         "modest",
         "humble",
         "simple",
-        "{middle class adjective}"
+        "unfashionable",
+        "{middle class attribute}"
       ]
     },
     {
-      "name": "middle class adjective",
-      "explanation": "Adjectives middle class outfits",
+      "name": "middle class attribute",
+      "explanation": "Attributes middle class outfits",
       "entries": [
-        "{lower class adjective}",
+        "{lower class attribute}",
         "well-kept",
         "carefully washed",
         "clean",
@@ -260,14 +262,14 @@
         "nice",
         "colorfol",
         "decorated",
-        "{upper class adjective}"
+        "{upper class attribute}"
       ]
     },
     {
-      "name": "upper class adjective",
-      "explanation": "Adjectives for upper class outfits",
+      "name": "upper class attribute",
+      "explanation": "Attributes for upper class outfits",
       "entries": [
-        "{middle class adjective}",
+        "{middle class attribute}",
         "flashy",
         "gaudy",
         "garish",
@@ -281,14 +283,14 @@
         "flamboyant",
         "vainglorious",
         "peacockish",
-        "{rich adjective}"
+        "{rich attribute}"
       ]
     },
     {
-      "name": "rich adjective",
-      "explanation": "Adjectives for rich outfits",
+      "name": "rich attribute",
+      "explanation": "Attributes for rich outfits",
       "entries": [
-        "{upper class adjective}",
+        "{upper class attribute}",
         "finely detailed",
         "gracefully cut",
         "embroidered",
@@ -372,7 +374,7 @@
       "name": "special",
       "explanation": "Special outfit tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{feature}"
       ]
     },
@@ -383,7 +385,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Social class: {global:socialclass}, adjective: {global:outfitadjective}, outfit: {global:outfit}, feature: {global:outfitfeature}. Special: {special}."
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Social class: {global:social_class}, attribute: {global:outfitattribute}, outfit: {global:outfit}, feature: {global:outfitfeature}. Special: {special}."
       ]
     }
   ]

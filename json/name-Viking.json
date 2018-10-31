@@ -12,7 +12,7 @@
   "note": "Requires UTF-8 character set to correctly display the Old Norse special characters (such as th, ae, and oe).",
   "to do": "The list of patronyms should be heavily expanded. Sadly the rules for Old Norse patronym creation are not completely regular.",
   "see": "",
-  "date": "2018-03-10",
+  "date": "2018-05-06",
   "authors": "ELF Vesala",
   "sources": "NordicNames.de",
   "genre": "historical",
@@ -83,9 +83,6 @@
     },
     {
       "name": "female full",
-      "export": {
-        "gender": "female"
-      },
       "entries": [
         "{female} {female patronym}",
         "{unisex} {female patronym}",
@@ -101,9 +98,6 @@
     },
     {
       "name": "male full",
-      "export": {
-        "gender": "male"
-      },
       "entries": [
         "{male} {male patronym}",
         "{unisex} {male patronym}",
@@ -119,9 +113,6 @@
     },
     {
       "name": "unisex full",
-      "export": {
-        "gender": "unisex"
-      },
       "entries": [
         "{unisex} {unisex byname}",
         "{unisex byname} {unisex}"
@@ -132,9 +123,6 @@
     },
     {
       "name": "female",
-      "export": {
-        "gender": "female"
-      },
       "entries": [
         "{female a}",
         "{female b}",
@@ -1354,9 +1342,6 @@
     },
     {
       "name": "male",
-      "export": {
-        "gender": "male"
-      },
       "entries": [
         "{male a}",
         "{male b}",
@@ -5197,6 +5182,40 @@
       ]
     },
     {
+      "**************************************************": "SURNAMES"
+    },
+    {
+      "name": "surname",
+      "entries": [
+        "{female surname}",
+        "{male surname}",
+        "{unisex surname}"
+      ]
+    },
+    {
+      "name": "female surname",
+      "explanation": "Feminine last names.",
+      "entries": [
+        "{female byname}",
+        "{female patronym}"
+      ]
+    },
+    {
+      "name": "male surname",
+      "explanation": "Masculine last names.",
+      "entries": [
+        "{male byname}",
+        "{male patronym}"
+      ]
+    },
+    {
+      "name": "unisex surname",
+      "explanation": "Gender-neutral last names.",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
       "**************************************************": "PATRONYMS"
     },
     {
@@ -5725,6 +5744,20 @@
       ]
     },
     {
+      "name": "hermafrodite byname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "hermafrodite surname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex surname}"
+      ]
+    },
+    {
       "name": "neuter",
       "explanation": "Alias for unisex naming.",
       "entries": [
@@ -5732,13 +5765,27 @@
       ]
     },
     {
-      "**************************************************": "TESTING"
+      "name": "neuter byname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex byname}"
+      ]
+    },
+    {
+      "name": "neuter surname",
+      "explanation": "Alias for unisex naming.",
+      "entries": [
+        "{unisex surname}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
     },
     {
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, surname: {surname}, byname: {byname}, initial: {initial}, special: {special}. Gender = {global:gender}."
+        "{init}result: {result}, female: {female}, male: {male}, unisex: {unisex}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}, surname: {surname}, byname: {byname}, initial: {initial}, special: {special}."
       ]
     }
   ]

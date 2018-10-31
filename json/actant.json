@@ -6,7 +6,7 @@
     "actants": "persons",
     "actantgroup": "group",
     "actantaction": "wandering aimlessly",
-    "actantadjective": "strange",
+    "actantattribute": "strange",
     "actantdescription": "A strange-looking person is acting suspiciously.",
     "attitude": "wary"
   },
@@ -46,7 +46,7 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {actant}"
+        "{attribute} {actant}"
       ]
     },
     {
@@ -408,7 +408,7 @@
         "actants": "heralds",
         "actantgroup": "group",
         "actantaction": "looking for someone who could help",
-        "actantadjective": "news-bearing",
+        "actantattribute": "news-bearing",
         "actantdescription": "The herald looks like they have something to tell."
       },
       "entries": [
@@ -423,7 +423,7 @@
         "actants": "guardians",
         "actantgroup": "company",
         "actantaction": "standing on guard",
-        "actanttadjective": "imposing",
+        "actanttattribute": "imposing",
         "actantdescription": "The guardian is keenly watching their surroundings."
       },
       "entries": [
@@ -440,7 +440,7 @@
         "actants": "monsters",
         "actantgroup": "pack",
         "actantaction": "on the prowl",
-        "actantadjective": "hideous",
+        "actantattribute": "hideous",
         "actantdescription": "The monster seems to be looking for something to eat."
       },
       "entries": [
@@ -455,7 +455,7 @@
         "actant": "beast",
         "actants": "beasts",
         "actantgroup": "pack",
-        "actantadjective": "vicious",
+        "actantattribute": "vicious",
         "actantaction": "turning around restlessly",
         "actantdescription": "The beast is sniffing the air and seems to be tracking something."
       },
@@ -471,7 +471,7 @@
         "actants": "traitors",
         "actantgroup": "group",
         "actantaction": "keenly eying the group",
-        "actantadjective": "scheming",
+        "actantattribute": "scheming",
         "actantdescription": "The person seems curious and is asking a lot of questions."
       },
       "entries": [
@@ -486,7 +486,7 @@
         "actants": "shapeshifters",
         "actantgroup": "group",
         "actantaction": "adjusting their clothing",
-        "actantadjective": "restless",
+        "actantattribute": "restless",
         "actantdescription": "The person seems to be evaluating the group."
       },
       "entries": [
@@ -515,7 +515,7 @@
         "actants": "tempters",
         "actantgroup": "group",
         "actantaction": "smiling",
-        "actantadjective": "alluring",
+        "actantattribute": "alluring",
         "actantdescription": "The person is casting a long look at one of the group."
       },
       "entries": [
@@ -532,7 +532,7 @@
         "actants": "rivals",
         "actantgroup": "group",
         "actantaction": "flexing their muscles",
-        "actantadjective": "competitive",
+        "actantattribute": "competitive",
         "actantdescription": "keenly following the actions of the group."
       },
       "entries": [
@@ -551,7 +551,7 @@
         "actants": "inhabitants",
         "actantgroup": "group",
         "actantaction": "taking care of their business",
-        "actantadjective": "native",
+        "actantattribute": "native",
         "actantdescription": "The inhabitant seems undisturbed by the presence of the group."
       },
       "entries": [
@@ -568,7 +568,7 @@
         "actants": "captives",
         "actantgroup": "group",
         "actantaction": "apparently not having any interest in their surroundings",
-        "actantadjective": "helpless",
+        "actantattribute": "helpless",
         "actantdescription": "The captive seems fearful."
       },
       "entries": [
@@ -585,7 +585,7 @@
         "actants": "tricksters",
         "actantgroup": "ensemble",
         "actantaction": "smiling to themselves",
-        "actantadjective": "curious",
+        "actantattribute": "curious",
         "actantdescription": "The person is constantly fidgeting with something."
       },
       "entries": [
@@ -604,7 +604,7 @@
         "actants": "mentors",
         "actantgroup": "school",
         "actantaction": "studying their surroundings keenly",
-        "actantadjective": "wise",
+        "actantattribute": "wise",
         "actantdescription": "The person seems to be constantly making mental notes of something."
       },
       "entries": [
@@ -621,7 +621,7 @@
         "actants": "allies",
         "actantgroup": "group",
         "actantaction": "constantly alert",
-        "actantadjective": "trustworthy",
+        "actantattribute": "trustworthy",
         "actantdescription": "The ally is looking at the group approvingly."
       },
       "entries": [
@@ -636,7 +636,7 @@
         "actants": "hindrances",
         "actantgroup": "group",
         "actantaction": "trying to keep up with the others",
-        "actantadjective": "pitiful",
+        "actantattribute": "pitiful",
         "actantdescription": "The person looks stressed and fearful."
       },
       "entries": [
@@ -686,14 +686,14 @@
       "name": "special",
       "explanation": "Special actants.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{hero}",
         "{villain}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives for actants.",
+      "name": "attribute",
+      "explanation": "Attributes for actants.",
       "entries": [
         "strong",
         "tenacious",
@@ -713,7 +713,7 @@
         "actants": "heroes",
         "actantgroup": "team",
         "actantaction": "keeping their weapons ready",
-        "actantadjective": "noble",
+        "actantattribute": "noble",
         "actantdescription": "The hero seems to be constantly on alert."
       },
       "entries": [
@@ -729,7 +729,7 @@
         "actants": "villains",
         "actantgroup": "band",
         "actantaction": "concentrating on something on their mind",
-        "actantadjective": "vicious",
+        "actantattribute": "vicious",
         "actantdescription": "The villain seems to be preparing for something."
       },
       "entries": [

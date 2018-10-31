@@ -2,7 +2,7 @@
   "name": "key",
   "resultPattern": "{result}",
   "globals": {
-    "key": ""
+    "variable": ""
   },
   "variables": {
     "footnote": ""
@@ -14,8 +14,8 @@
   "bugs": "",
   "to do": "",
   "see": "lock",
-  "date": "2018-01-26",
-  "authors": "Esko Vesala.",
+  "date": "2018-05-27",
+  "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
   "categories": [

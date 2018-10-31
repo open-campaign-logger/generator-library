@@ -1,6 +1,6 @@
 {
-  "name": "fabric table",
-  "resultPattern": "{fabric}",
+  "name": "fabric",
+  "resultPattern": "{init}{result}",
   "variables": {
     "footnote": ""
   },
@@ -9,8 +9,8 @@
   "note": "",
   "to do": "",
   "see": "material",
-  "date": "2017-10-06",
-  "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "date": "2018-06-05",
+  "authors": "Johnn Four, Jochen Linnemann, ELF Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
   "categories": [
@@ -18,6 +18,65 @@
   ],
   "tags": "#material, #resource, #clothing",
   "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{description}",
+        "{stats}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{fabric}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {fabric}",
+        "{fabric}, {feature}",
+        "{attribute} {fabric}, {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {fabric} {synonym} {looks} {feature}.",
+        "The {attribute} {fabric} {synonym} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Fabric}: {fabric} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
     {
       "name": "fabric",
       "explanation": "Fabric types.",
@@ -36,6 +95,24 @@
         "{animal}",
         "{plant}"
       ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare fabric types.",
+      "entries": [
+        "tafetta",
+        "velvet",
+        "linen lace",
+        "silk",
+        "silk damask",
+        "silk lace",
+        "silk gauze",
+        "wild silk (from non-cultivated silk worms)",
+        "sea silk (produced from seashell filaments)"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
     },
     {
       "name": "animal",
@@ -73,27 +150,27 @@
       "explanation": "Variations of common leather.",
       "entries": [
         "{leather type}",
-        "{leather type} dyed {lib:color}",
-        "full sauvage (finely dyed) {lib:color} {leather type}",
+        "{leather type} dyed {lib:color#prime}",
+        "full sauvage (finely dyed) {lib:color#prime} {leather type}",
         "{leather finishing} {leather type}",
-        "{leather finishing} {leather type} dyed {lib:color}",
-        "full sauvage (finely dyed) {lib:color} {leather finishing} {leather type}"
+        "{leather finishing} {leather type} dyed {lib:color#prime}",
+        "full sauvage (finely dyed) {lib:color#prime} {leather finishing} {leather type}"
       ]
     },
     {
       "name": "leather type",
       "explanation": "Common leather types.",
       "entries": [
-        "rawhide (untanned leather)",
+        "rawhide",
         "shagreen (rough untanned leather)",
         "deerskin leather",
         "pigskin leather",
-        "goatskin leather (soft but tough)",
-        "sheepskin leather (soft and thin)",
+        "goatskin leather",
+        "sheepskin leather",
         "shearling leather (tanned sheep skin with short wool)",
         "oxskin leather",
-        "chamois leather (soft and porous)",
-        "buckskin leather (suede-like)",
+        "chamois leather",
+        "buckskin leather",
         "horse leather",
         "cordovan (high-quality horse leather)",
         "{rare leather}"
@@ -103,9 +180,9 @@
       "name": "soft leather",
       "explanation": "Soft leather types.",
       "entries": [
-        "lambskin leather (very soft leather from young sheep)",
-        "kidskin leather (very soft leather from young goats)",
-        "calfskin leather (soft and fine leather from young cows)",
+        "lambskin leather",
+        "kidskin leather",
+        "calfskin leather",
         "slink leather (soft skin of unborn calves)"
       ]
     },
@@ -123,18 +200,18 @@
       "name": "fishskin",
       "explanation": "Variations of fishskin leather.",
       "entries": [
-        "salmon skin (strong, fine scales)",
-        "cod skin (fine scales)",
-        "perch skin (large, soft scales)",
+        "salmon skin",
+        "cod skin",
+        "perch skin",
         "sturgeon leather",
-        "eelskin (smooth and shiny)"
+        "eelskin"
       ]
     },
     {
       "name": "leather finishing",
       "explanation": "Types of leather finish.",
       "entries": [
-        "cuir bouilli (boiled hard)"
+        "cuir bouilli"
       ]
     },
     {
@@ -163,7 +240,7 @@
       "entries": [
         "sheep wool",
         "weaner fleece (from young sheep)",
-        "lambswool (soft)",
+        "lambswool",
         "goat wool"
       ]
     },
@@ -171,51 +248,65 @@
       "name": "plant",
       "explanation": "Plant-based fabrics.",
       "entries": [
-        "jute (coarse and strong)",
+        "jute",
         "cotton",
         "hemp",
-        "linen (from the flax plant)",
+        "linen",
         "cotton damask",
         "wool damask",
         "linen damask"
       ]
     },
     {
-      "name": "rare",
-      "explanation": "Rare fabric types.",
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
       "entries": [
-        "tafetta",
-        "velvet",
-        "linen lace",
-        "silk",
-        "silk damask",
-        "silk lace",
-        "silk gauze (thin and translucent)",
-        "wild silk (from non-cultivated silk worms)",
-        "sea silk (produced from seashell filaments)"
+        "{beginning}{ending}",
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
       ]
     },
     {
-      "name": "myth",
-      "explanation": "Imaginary fabrics once rumoured to have existed.",
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
       "entries": [
-        "fairy silk",
-        "{rare myth}"
+        ""
       ]
     },
     {
-      "name": "rare myth",
-      "explanation": "Rare imaginary fabrics once rumoured to have existed.",
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
       "entries": [
-        "{myth}",
-        "fabric spun from the thread of the Fates"
+        "XXX"
       ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
     },
     {
       "name": "fantasy",
-      "explanation": "Imaginary fabrics for fantasy (with no basis in myth).",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
+        "{medieval}",
         "hair",
         "spider silk",
         "{rare fantasy}"
@@ -234,8 +325,49 @@
       ]
     },
     {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "fairy silk",
+        "{rare myth}"
+      ]
+    },
+    {
+      "name": "rare myth",
+      "explanation": "Rare imaginary fabrics once rumoured to have existed.",
+      "entries": [
+        "{myth}",
+        "fabric spun from the thread of the Fates"
+      ]
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "{fur}"
+      ]
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "{plant}",
+        "{wool}",
+        "{leather}"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{plant}",
+        "{wool}",
+        "{leather}"
+      ]
+    },
+    {
       "name": "modern",
-      "explanation": "Fabrics for modern worlds.",
+      "explanation": "Descriptions for modern worlds.",
       "entries": [
         "{common}",
         "denim",
@@ -267,54 +399,13 @@
         "composition leather (hide trimmings bonded to a fabric layer)",
         "bonded (layered with fiber backer)",
         "bicast leather (with polyurethane finishing)",
-        "nubuck leather (suede-like, sanded surface)",
-        "suede (soft, vulnerable leather)",
-        "napa leather (soft)",
+        "nubuck leather",
+        "suede",
+        "napa leather",
         "patent leather (with a shiny coating)",
         "pull-up aniline leather (slightly dyed high-quality leather with wax coating)",
         "semi aniline leather (slightly dyed leather with a protective layer added)",
         "full aniline leather (slightly dyed high-quality leather)"
-      ]
-    },
-    {
-      "name": "exotic leather",
-      "explanation": "Exotic leather types.",
-      "entries": [
-        "bison leather",
-        "kangaroo leather (thin but strong)",
-        "ostrich leather (with distinct quill follicles)",
-        "alligator skin",
-        "shark skin"
-      ]
-    },
-    {
-      "name": "exotic plant",
-      "explanation": "Exotic plant-based fabrics.",
-      "entries": [
-        "bamboo fiber",
-        "ramie (plant fiber)",
-        "coir (coconut fiber)",
-        "piña (pineapple fiber)",
-        "banana fiber"
-      ]
-    },
-    {
-      "name": "exotic animal",
-      "explanation": "Exotic animal-based fabrics.",
-      "entries": [
-        "camel hair",
-        "merino wool",
-        "cashmere wool (fine and soft)",
-        "pashmina (fine cashmere wool)",
-        "mohair (goat) wool",
-        "angora (fluffy rabbit) wool",
-        "chiengora (dog wool)",
-        "alpaca fleece (soft and luxurious)",
-        "llama wool",
-        "vicuña wool",
-        "yak wool",
-        "nutria fur",
-        "qiviut (musk ox wool)"
       ]
     },
     {
@@ -339,8 +430,8 @@
       "name": "synthetic",
       "explanation": "Synthetic fabrics.",
       "entries": [
-        "nylon (imitation silk)",
-        "acrylic (imitation wool)",
+        "nylon",
+        "acrylic",
         "polyester",
         "faux fur",
         "spandex",
@@ -382,7 +473,7 @@
     },
     {
       "name": "futuristic",
-      "explanation": "Imaginary fabrics for science fiction worlds.",
+      "explanation": "Descriptions for science fiction worlds.",
       "entries": [
         "{modern}",
         "glass fiber",
@@ -400,18 +491,120 @@
       ]
     },
     {
-      "name": "special",
-      "explanation": "Special fabric tables.",
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
       "entries": [
-        "{medieval}"
+        "{exotic plant}",
+        "{exotic leather}",
+        "{exotic animal}"
       ]
     },
     {
-      "name": "medieval",
-      "explanation": "Medieval fabrics.",
+      "name": "exotic plant",
+      "explanation": "Exotic plant-based fabrics.",
       "entries": [
-        "{wool}",
-        "{plant}"
+        "bamboo fiber",
+        "ramie (plant fiber)",
+        "coir (coconut fiber)",
+        "piña (pineapple fiber)",
+        "banana fiber"
+      ]
+    },
+    {
+      "name": "exotic leather",
+      "explanation": "Exotic leather types.",
+      "entries": [
+        "bison leather",
+        "kangaroo leather",
+        "ostrich leather (with distinct quill follicles)",
+        "alligator skin",
+        "shark skin"
+      ]
+    },
+    {
+      "name": "exotic animal",
+      "explanation": "Exotic animal-based fabrics.",
+      "entries": [
+        "camel hair",
+        "merino wool",
+        "cashmere wool",
+        "pashmina (fine cashmere wool)",
+        "mohair wool",
+        "angora wool",
+        "chiengora (dog wool)",
+        "alpaca fleece",
+        "llama wool",
+        "vicuña wool",
+        "yak wool",
+        "nutria fur",
+        "qiviut (musk ox wool)"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "fabric",
+        "material"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "looks to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        "thin",
+        "medium-thick",
+        "thick"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        "has a gaping hole in it",
+        "has a small hole in it",
+        "badly worn",
+        "slightly worn",
+        "in good condition",
+        "in pristine condition"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]

@@ -2,7 +2,7 @@
 
 [//]: # (Authors: ELF Vesala, Peter Sotos.)
 
-[//]: # (Date: 2018-03-10.)
+[//]: # (Date: 2018-06-18.)
 
 
 # Generator Guide
@@ -33,11 +33,22 @@ For documentation on other Campaign Logger topics, please refer to the Campaign 
 		- [Private Library Calls](#private-library-calls)
 		- [External Subtable Calls](#external-subtable-calls)
 	- [Weighing Values](#weighing-values)
-	- [Variables](#variables)
 	- [Random Number Generation](#random-number-generation)
+	- [Variables](#variables)
+		- [Local Variables](#local-variables)
+			- [Setting Variables for a Single Entry](#setting-variables-for-a-single-entry)
+			- [Setting Variables for a Table](#setting-variables-for-a-table)
+		- [Global Variables](#global-variables)
+	- [Pattern Matching and Replacing](#pattern-matching-and-replacing)
+		- [Extending variable content](#extending-variable-content)
+	- [Non-Repeating Results](#non-repeating-results)
 	- [Formatting the output](#formatting-the-output)
+		- [Emphasis](#emphasis)
 		- [Linebreaks and Tabulation](#linebreaks-and-tabulation)
+		- [Headings and Subheadings](#headings-and-subheadings)
+		- [Colors](#colors)
 		- [Table Formatting](#table-formatting)
+	- [Text Transformation](#text-transformation)
 	- [Templates](#templates)
 - [Recommended Practices](#recommended-practices)
 	- [A Closer Look at Table Properties](#a-closer-look-at-table-properties)
@@ -166,9 +177,6 @@ Each entry must be enclosed within quotes, and separated by commas (again, no co
 
 Entries can be strings ranging from a single character to an entire paragraph of text, as long as the text is included between quotation marks.
 
-### Using your custom generators
-
-There is a button underneath the Log Entry section of the Campaign Logger called "Show Generators". Clicking on this button will show your custom generators.
 
 ### That's It!
 
@@ -251,35 +259,64 @@ Note that there are no spaces in front of after the `#` character. The subtable 
 
 ## Weighing Values
 
-If you want some table entries to be more common than others, you can specify the *multiplicity* property (`m`) to it.
+If you want some table entries to be more common than others, one way to do that is to add more entries for the more common result. For example, a generator randomizing the fingers of a hand could look like the following:
 
-This example defines an entry that appears thee times more likely than unweighed values:
+				{
+					"name": "finger",
+					"entries": [
+						"thumb",
+						"finger",
+						"finger",
+						"finger",
+						"finger"
+					]
+				},
 
-        {
-          "m": 3,
-          "v": "three times as common entry"
-        },
+But the same effect can be achieved with a handier method (sorry!). The  *multiplicity* property (`m`) defines a value specifying how many times more likely that entry will be selected, when compared to an ordinary single entry. The above finger example could be written like this:
 
-The "m" property causes this entry to appear three times as often as an ordinary entry. The "v" property contains the output produced by that entry.
+				{
+					"name": "finger",
+					"entries": [
+						"thumb",
+						{
+							"m": 4,
+							"v": "finger"
+						},
+					]
+				},
+
+The `"m"` property causes this entry to appear four times as often as an ordinary entry. The `"v"` property contains the output produced by that entry.
+
+
+## Random Number Generation
+
+The `dice:` function allows you to simulate dice rolls - even for dice for which there is no physical die available. The following dice call would produce results between 13 and 31:
+
+    {dice:3d7+10}
+
+Note that only one modifier (such as the `+10` in the above example) is supported. The modifier can only be a plus (`+`) or minus (`-`) operation, not for example multiplier (~~*~~) or another die roll.
 
 
 ## Variables
 
-Variables can be a powerful feature when designing advanced generators. They can be defined using the optional `variables` property.
-
-Variables are specified as a list of value pairs - the key (name of the variable) and its default value:
-
-    "variables": {
-      "variable 1": "1",
-      "variable 2": "another value"
-    },
+Variables can be a powerful feature when designing advanced generators.
 
 **Note**: Variable names cannot begin with a number. Otherwise they can contain alphanumeric characters (`a` - `z`, `A` - `Z`, `0` - `9`), as well as underscore (`_`) and space (` `) characters. Note that for example a dash (`-`) is not allowed.
 
 
 ### Local Variables
 
-#### Setting Variables for a Single Entry
+Local variables can be defined using the optional `variables` property.
+
+Local variables are specified as a list of value pairs - the key (name of the variable) and its default value:
+
+    "variables": {
+      "variable 1": "1",
+      "variable 2": "another value"
+    },
+
+Note that although it is possible to use the same names for local and global variables, the variables are completely separate. Changing a global variable does not affect a local variable using a similar name, for example.
+
 
 		{
 			"v": "hostage",
@@ -306,6 +343,15 @@ Variables are specified as a list of value pairs - the key (name of the variable
 
 
 ### Global Variables
+
+Global variables (also known as just 'globals') can be defined using the optional `globals` property.
+
+Just like local variables, also globals are specified as a list of value pairs - the key (name of the variable) and its default value:
+
+    "globals": {
+      "variable 1": "1",
+      "variable 2": "another value"
+    },
 
 
 ## Pattern Matching and Replacing
@@ -368,30 +414,55 @@ Add more content into a variable:
 			{ "x": "{var:x} new text" }
 
 
+
+
 ## Non-Repeating Results
 
-{!table} selects a result from table by removing it from the unique instance of that table, i.e. {table} might produce this same result, but {!table}
-won't.
+Let's say you have created a *treasure* generator. A `{treasure}` call could well produce the following result:
 
-Technically {table} references the normal instance of the table while {!table} references the unique instance. The normal instance's entries stay as they are. The unique instance's entries get fewer and fewer until depleted.
+> a golden scepter, a crown, a golden scepter, a golden scepter
 
-Unique instances share the same variables and globals with normal instances, just entries are handled differently. Unique instances have the same scope as variables, i.e. strictly local.
+Luckily it is easy to avoid duplicated results like the scepter in the example above. Just add an exclamation mark to the front of the table name, and call the treasure table like this:
 
+				{!treasure}
 
-## Random Number Generation
+A non-repeating call to the generator library would have the exclamation mark just before the table name, after the `lib:` prefix:
 
-The `dice:` function allows you to simulate dice rolls - even for dice for which there is no physical die available. The following dice call would produce results between 13 and 31:
+				{lib:!color}
 
-    {dice:3d7+10}
+This kind of a *non-repeating* call creates a temporary copy of the table, and with each call removes the selected result from the temporary table. This means that a result will not occur more than once.
 
-Note that only one modifier (such as the `+10` in the above example) is supported. The modifier can only be a plus (`+`) or minus (`-`) operation, not for example multiplier (~~*~~) or another die roll.
+Technically the standard `{table}` call refers to the normal instance of the table, while a non-repeating `{!table}` call refers to a temporary copy. The normal instance's entries remain unchanged. The entries in the temporary copy get fewer and fewer until the temporary table is empty. When the temporary table is empty, non-repeating calls return only empty results.
+
+Unique table instances share the same variables and globals with the normal table instances. Unique instances have the same scope as local variables, i.e. the results remain unique only when called from the same generator file.
 
 
 ## Formatting the output
 
+### Emphasis
+
+The following formatting commands can be used to add emphasis to output:
+
+* The `b|bolded}` string will be displayed as **bold**.
+
+* The `i|italics}` string will be displayed as *italics*.
+
+* The `s|strike-through}` string will be displayed as ~~strike-through~~.
+
+* The `{\|Subscript}` string is displayed as <sub>subscript</sub>.
+
+* The `{/|Superscript}` string is displayed  as <sup>superscript</sup>.
+
+* The `{u|underlined}` string will be displayed as _underlined_.
+
+It is also possible to combine several formatting commands:
+
+		{bisu│bolded, italic, struck-through and underlined text}
+
+
 ### Linebreaks and Tabulation
 
-It's possible to add the following formatting controls to table output:
+It's possible to control horizontal and vertical spacing with the following control characters:
 
 * **`\r`** - return
 * **`\n`** - newline
@@ -400,6 +471,38 @@ It's possible to add the following formatting controls to table output:
 To add an indented footnote on the next line after an oracle's statement, you could use a `resultPattern` like this:
 
     "resultPattern": "{oracle statement} \r\n\t 1) This may not come true.",
+
+
+### Headings and Subheadings
+
+Start a line with two equal signs `==` and a space, write your text, and end the line with a space and two equal signs. Now you have a first level headline. Use three equal signs for level two, four for level three, etc. The lowest subheading level is 6, marked with 7 equal signs.
+
+		== Level 1 Headline ==
+
+		=== Level 2 Headline ===
+
+		==== Level 3 Headline ====
+
+		===== Level 4 Headline =====
+
+		====== Level 5 Headline ======
+
+		======= Level 6 Headline =======
+
+
+### Colors
+
+Text can be colored by using the hash character `#` followed by a six-digit hexadecimal RGB color value.
+
+In the RGB color value, the first 2 characters (0 - F) specify the intensity of the red color component, the following 2 the intensity of the green color component and the last 2 character the intensity of the blue color component. The lowest value for each component is `00`, and the highest value `FF`.
+
+For example the following formatting would produce bright red text:
+
+		{#CC0000|red}
+
+RR - the red component 0-255 in hexadecimal notation, i.e. 0 = 00, 255 = FF
+GG - the green component ...
+BB - the blue component ...
 
 
 ### Table Formatting
@@ -422,6 +525,20 @@ Note that the pairs of vertical bars (`||`) must be separated from table cell co
 		||<space>one<space>||<space>two<space>||<space>three\n||<space>a<space>||<space>b<space>||<space>c
 
 **Tip**: If you create a table with only one cell, that will produce a box around the output. Just start the output with the `|| `string. This could be used for example to highlight readout sections in an adventure generator.
+
+
+## Text Transformation
+
+* Upper case: The `{b|THIS is an example|ucase}` string is displayed as "THIS IS AN EXAMPLE".
+
+* Lower case: The `{b|THIS is an example|lcase}` string is displayed as "this is an example".
+
+* Capitalization: The `{b|THIS is an example|caps}` string is displayed as "This Is An Example".
+
+* Title case: The `{b|THIS is an example|tcase}` string is displayed as "This Is an Example".
+
+* Sentense case: The `{b|THIS is an example|scase}` string is displayed as "THIS is an example".
+
 
 ## Templates
 
@@ -510,11 +627,14 @@ The following optional properties can be used:
 
 * **`genre`**: If the table is intended for only certain genres, it can be specified here. This presents one way to scan for suitable tables. Commonly used genres are the following:
 
+  * **ancient** (the earliest civilizations and antiquity; Bronze and Iron Ages)
   * **fantasy** (imaginary realms of myth and magic)
-  * **futuristic** (science fiction worlds in)
-  * **historical** (some period of real-world history)
+  * **futuristic** (science fiction worlds from the near to the far future)
+  * **historical** (a period of history; details in the `explanation` field)
+	* **medieval** (from the Dark Ages to the Late Middle Ages)
   * **modern** (contemporary settings resembling the real world)
   * **myth** (mundane world with hidden, mythic secrets)
+	* **primitive** (the prehistoric time period; Stone Age)
   * **universal** (not specific to a genre)
 
   Using these common categories helps to organize the tables in a standard way, but any genre definition can be used.
@@ -522,6 +642,7 @@ The following optional properties can be used:
 * **`categories`**: The categories property specifies a class in which the file belongs to. This is used for organizing the generator files in the Campaign Logger user interface. It is recommended to select one of the following values:
 
   * **character** (PC and NPC generation)
+  * **combat** (fighting and conflict resolution)
   * **encounter** (events and random encounters)
   * **item** (equipment and treasure generation)
   * **magic** (spells and magic items)

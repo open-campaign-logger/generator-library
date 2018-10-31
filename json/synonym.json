@@ -8,10 +8,10 @@
   "structure": "",
   "note": "Intended usage: lib:synonym#word. Please retain the alphabetical order of the subtables!",
   "bugs": "",
-  "to do": "Expansion.",
+  "to do": "",
   "see": "",
-  "date": "2018-02-22",
-  "authors": "Esko Vesala.",
+  "date": "2018-05-29",
+  "authors": "ELF Vesala.",
   "sources": "Thesaurus.com, TvTropes.org, Wikipedia.org",
   "genre": "universal",
   "categories": [
@@ -20,7 +20,7 @@
   "tables": [
     {
       "name": "adventure",
-      "explanation": "Synonyms for adventuring (for something).",
+      "explanation": "Variant expressions for adventuring (for something).",
       "entries": [
         "task",
         "quest",
@@ -36,7 +36,7 @@
     },
     {
       "name": "adventurer",
-      "explanation": "Synonyms for an adventurer.",
+      "explanation": "Variant expressions for an adventurer.",
       "entries": [
         "adventurer",
         "champion",
@@ -47,8 +47,18 @@
       ]
     },
     {
+      "name": "animal",
+      "explanation": "Variant expressions for a beast.",
+      "entries": [
+        "animal",
+        "beast",
+        "creature",
+        "critter"
+      ]
+    },
+    {
       "name": "and",
-      "explanation": "Synonyms for 'and'.",
+      "explanation": "Variant expressions for 'and'.",
       "entries": [
         "&",
         "and",
@@ -66,7 +76,7 @@
     },
     {
       "name": "area",
-      "explanation": "Synonyms for an area (an outdoors location).",
+      "explanation": "Variant expressions for an area (an outdoors location).",
       "entries": [
         "area",
         "spot",
@@ -80,7 +90,7 @@
     },
     {
       "name": "big",
-      "explanation": "Synonyms for 'huge' (size).",
+      "explanation": "Variant expressions for 'huge' (size).",
       "entries": [
         "big",
         "huge",
@@ -97,7 +107,7 @@
     },
     {
       "name": "castle",
-      "explanation": "Synonyms for a castle.",
+      "explanation": "Variant expressions for a castle.",
       "entries": [
         "castle",
         "citadel",
@@ -113,7 +123,7 @@
     },
     {
       "name": "clothing",
-      "explanation": "Synonyms for clothes.",
+      "explanation": "Variant expressions for clothes.",
       "entries": [
         "clothing",
         "garb",
@@ -127,7 +137,7 @@
     },
     {
       "name": "corpse",
-      "explanation": "Synonyms for a dead corpse (singular).",
+      "explanation": "Variant expressions for a dead corpse (singular).",
       "entries": [
         "corpse",
         "dead body",
@@ -139,7 +149,7 @@
     },
     {
       "name": "corridor",
-      "explanation": "Synonyms for passageways.",
+      "explanation": "Variant expressions for passageways.",
       "entries": [
         "corridor",
         "hall",
@@ -155,7 +165,7 @@
     },
     {
       "name": "darkness",
-      "explanation": "Synonyms for darkness.",
+      "explanation": "Variant expressions for darkness.",
       "entries": [
         "darkness",
         "dark",
@@ -168,7 +178,7 @@
     },
     {
       "name": "death",
-      "explanation": "Synonyms for death (of something).",
+      "explanation": "Variant expressions for death (of something).",
       "entries": [
         "bane",
         "death",
@@ -179,7 +189,7 @@
     },
     {
       "name": "demon",
-      "explanation": "Synonyms for demons and devils.",
+      "explanation": "Variant expressions for demons and devils.",
       "entries": [
         "devil",
         "fiend",
@@ -193,7 +203,7 @@
     },
     {
       "name": "destiny",
-      "explanation": "Synonyms for fate and destiny.",
+      "explanation": "Variant expressions for fate and destiny.",
       "entries": [
         "destiny",
         "fate",
@@ -204,7 +214,7 @@
     },
     {
       "name": "doom",
-      "explanation": "Synonyms for doom (of something).",
+      "explanation": "Variant expressions for doom (of something).",
       "entries": [
         "doom",
         "end",
@@ -217,7 +227,7 @@
     },
     {
       "name": "evil",
-      "explanation": "Synonyms for evil (adjective).",
+      "explanation": "Variant expressions for evil (adjective).",
       "entries": [
         "evil",
         "sinister",
@@ -234,7 +244,7 @@
     },
     {
       "name": "factor",
-      "explanation": "Synonyms for 'factor' (element, component).",
+      "explanation": "Variant expressions for 'factor' (element, component).",
       "entries": [
         "a part",
         "a factor",
@@ -247,14 +257,14 @@
     },
     {
       "name": "fighter",
-      "explanation": "Synonyms for a fighter.",
+      "explanation": "Variant expressions for a fighter.",
       "entries": [
         "{lib:fighter}"
       ]
     },
     {
       "name": "find",
-      "explanation": "Synonyms for finding (something).",
+      "explanation": "Variant expressions for finding (something).",
       "entries": [
         "find",
         "locate",
@@ -266,7 +276,7 @@
     },
     {
       "name": "fire",
-      "explanation": "Synonyms for fire (singular noun).",
+      "explanation": "Variant expressions for fire (singular noun).",
       "entries": [
         "fire",
         "flame",
@@ -278,7 +288,7 @@
     },
     {
       "name": "forest",
-      "explanation": "Synonyms for a forest.",
+      "explanation": "Variant expressions for a forest.",
       "entries": [
         "forest",
         "woods",
@@ -293,7 +303,7 @@
     },
     {
       "name": "ghost",
-      "explanation": "Synonyms for a spirit or phantom.",
+      "explanation": "Variant expressions for a spirit or phantom.",
       "entries": [
         "ghost",
         "spirit",
@@ -310,7 +320,7 @@
     },
     {
       "name": "group",
-      "explanation": "Synonyms for a group.",
+      "explanation": "Variant expressions for a group.",
       "entries": [
         "band",
         "company",
@@ -322,7 +332,7 @@
     },
     {
       "name": "hint",
-      "explanation": "Synonyms for 'notion' (small amount).",
+      "explanation": "Variant expressions for 'notion' (small amount).",
       "entries": [
         "a bit of",
         "a hint of",
@@ -345,7 +355,7 @@
     },
     {
       "name": "horror",
-      "explanation": "Synonyms for horror (the emotion).",
+      "explanation": "Variant expressions for horror (the emotion).",
       "entries": [
         "horror",
         "fear",
@@ -358,7 +368,7 @@
     },
     {
       "name": "including",
-      "explanation": "Synonyms for 'including' (something).",
+      "explanation": "Variant expressions for 'including' (something).",
       "entries": [
         "including",
         "containing",
@@ -371,21 +381,21 @@
     },
     {
       "name": "journey",
-      "explanation": "Synonyms for a journey (to somewhere).",
+      "explanation": "Variant expressions for a journey (to somewhere).",
       "entries": [
         "{travel}"
       ]
     },
     {
       "name": "jungle",
-      "explanation": "Synonyms for a jungle.",
+      "explanation": "Variant expressions for a jungle.",
       "entries": [
         "{forest}"
       ]
     },
     {
       "name": "kill",
-      "explanation": "Synonyms for killing.",
+      "explanation": "Variant expressions for killing.",
       "entries": [
         "annihilate",
         "destroy",
@@ -401,15 +411,26 @@
       ]
     },
     {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- well kept.",
+      "entries": [
+        "appears",
+        "feels",
+        "looks",
+        "seems"
+      ]
+    },
+    {
       "name": "magician",
-      "explanation": "Synonyms for a magician.",
+      "explanation": "Variant expressions for a magician.",
       "entries": [
         "{lib:magician}"
       ]
     },
     {
       "name": "medium",
-      "explanation": "Synonyms for 'medium' qualities.",
+      "explanation": "Variant expressions for 'medium' qualities.",
       "entries": [
         "fair",
         "medium",
@@ -425,7 +446,7 @@
     },
     {
       "name": "minion",
-      "explanation": "Synonyms for an underling.",
+      "explanation": "Variant expressions for an underling.",
       "entries": [
         "minion",
         "henchman",
@@ -442,19 +463,14 @@
     },
     {
       "name": "monster",
-      "explanation": "Synonyms for a monster.",
+      "explanation": "Variant expressions for a monster.",
       "entries": [
-        "beast",
-        "creature",
-        "fiend",
-        "horror",
-        "monster",
-        "monstrosity"
+        "{lib:monster#synonym}"
       ]
     },
     {
       "name": "now",
-      "explanation": "Synonyms for 'now'.",
+      "explanation": "Variant expressions for 'now'.",
       "entries": [
         "now",
         "just now",
@@ -468,7 +484,7 @@
     },
     {
       "name": "number",
-      "explanation": "Synonyms for 'number'.",
+      "explanation": "Variant expressions for 'number'.",
       "entries": [
         "sum",
         "count",
@@ -481,14 +497,14 @@
     },
     {
       "name": "priest",
-      "explanation": "Synonyms for a priest (of a religion).",
+      "explanation": "Variant expressions for a priest (of a religion).",
       "entries": [
         "{lib:priest}"
       ]
     },
     {
       "name": "region",
-      "explanation": "Synonyms for a territory (large outdoors area).",
+      "explanation": "Variant expressions for a territory (large outdoors area).",
       "entries": [
         "area",
         "region",
@@ -498,7 +514,7 @@
     },
     {
       "name": "room",
-      "explanation": "Synonyms for a room (an enclosed area).",
+      "explanation": "Variant expressions for a room (an enclosed area).",
       "entries": [
         "room",
         "area",
@@ -511,7 +527,7 @@
     },
     {
       "name": "ruler",
-      "explanation": "Synonyms for a ruler (of an area).",
+      "explanation": "Variant expressions for a ruler (of an area).",
       "entries": [
         "ruler",
         "sovereign",
@@ -527,7 +543,7 @@
     },
     {
       "name": "says",
-      "explanation": "Synonyms for saying (present third person singular).",
+      "explanation": "Variant expressions for saying (present third person singular).",
       "entries": [
         "says",
         "remarks",
@@ -545,7 +561,7 @@
     },
     {
       "name": "slight",
-      "explanation": "Synonyms for 'faint' qualities.",
+      "explanation": "Variant expressions for 'faint' qualities.",
       "entries": [
         "mild",
         "weak",
@@ -562,7 +578,7 @@
     },
     {
       "name": "small",
-      "explanation": "Synonyms for 'little' (size).",
+      "explanation": "Variant expressions for 'little' (size).",
       "entries": [
         "tiny",
         "small",
@@ -573,30 +589,21 @@
     },
     {
       "name": "smell",
-      "explanation": "Neutral synonyms for 'smell' (good or bad odour).",
+      "explanation": "Neutral expressions for 'smell' (good or bad odour).",
       "entries": [
-        "odor",
-        "tang",
-        "smell",
-        "scent",
-        "aroma",
-        "whiff",
-        "flatus",
-        "bouquet",
-        "fragrance",
-        "redolence"
+        "{lib:aroma#odor}"
       ]
     },
     {
       "name": "sorcerer",
-      "explanation": "Synonyms for a sorcerer.",
+      "explanation": "Variant expressions for a sorcerer.",
       "entries": [
         "{lib:magician}"
       ]
     },
     {
       "name": "strange",
-      "explanation": "Synonyms for 'weird' qualities.",
+      "explanation": "Variant expressions for 'weird' qualities.",
       "entries": [
         "odd",
         "weird",
@@ -614,7 +621,7 @@
     },
     {
       "name": "strong",
-      "explanation": "Synonyms for 'strong' qualities.",
+      "explanation": "Variant expressions for 'strong' qualities.",
       "entries": [
         "firm",
         "solid",
@@ -632,23 +639,14 @@
     },
     {
       "name": "taste",
-      "explanation": "Synonyms for 'taste' (good or bad).",
+      "explanation": "Variant expressions for 'taste' (good or bad).",
       "entries": [
-        "zest",
-        "taste",
-        "savor",
-        "spice",
-        "flavor",
-        "flavoring",
-        "condiment",
-        "aftertaste",
-        "savoriness",
-        "palatableness"
+        "{lib:aroma#savor}"
       ]
     },
     {
       "name": "travel",
-      "explanation": "Synonyms for travel (to somewhere).",
+      "explanation": "Variant expressions for travel (to somewhere).",
       "entries": [
         "expedition",
         "journey",
@@ -663,7 +661,7 @@
     },
     {
       "name": "treasure",
-      "explanation": "Synonyms for treasure.",
+      "explanation": "Variant expressions for treasure.",
       "entries": [
         "fortune",
         "hoard",
@@ -674,7 +672,8 @@
     },
     {
       "name": "troupe",
-      "explanation": "Alternative expressions for the PC party. Note: The values should match verbs in the third person singular form (like 'is')!",
+      "explanation": "Alternative expressions for an adventuring party.",
+      "note": "Values should match verbs in third person singular (like 'is')!",
       "entries": [
         "adventurer party",
         "adventuring party",
@@ -687,7 +686,7 @@
     },
     {
       "name": "undead",
-      "explanation": "Synonyms for undead (singular noun).",
+      "explanation": "Variant expressions for undead (singular noun).",
       "entries": [
         "undead",
         "revenant",
@@ -700,7 +699,7 @@
     },
     {
       "name": "villain",
-      "explanation": "Synonyms for an enemy.",
+      "explanation": "Variant expressions for an enemy.",
       "entries": [
         "scoundrel",
         "culprit",
@@ -720,14 +719,14 @@
     },
     {
       "name": "warrior",
-      "explanation": "Synonyms for a warrior.",
+      "explanation": "Variant expressions for a warrior.",
       "entries": [
         "{lib:fighter}"
       ]
     },
     {
       "name": "wearing",
-      "explanation": "Synonyms for wearing clothes.",
+      "explanation": "Variant expressions for wearing clothes.",
       "entries": [
         "wearing",
         "dressed in",
@@ -739,7 +738,7 @@
     },
     {
       "name": "with",
-      "explanation": "Synonyms for 'with'.",
+      "explanation": "Variant expressions for 'with'.",
       "entries": [
         "with",
         "accompanying",
@@ -753,14 +752,14 @@
     },
     {
       "name": "wizard",
-      "explanation": "Synonyms for a wizard.",
+      "explanation": "Variant expressions for a wizard.",
       "entries": [
         "{lib:magician}"
       ]
     },
     {
       "name": "wrath",
-      "explanation": "Synonyms for hate (of somebody).",
+      "explanation": "Variant expressions for hate (of somebody).",
       "entries": [
         "fury",
         "hatred",

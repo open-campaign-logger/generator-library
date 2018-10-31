@@ -6,7 +6,7 @@
     "actants": "nonhumans",
     "actantgroup": "group",
     "actantaction": "taking care of their own business",
-    "actantadjective": "strange",
+    "actantattribute": "strange",
     "actantdescription": "The nonhuman looks cautious.",
     "attitude": "neutral",
     "footnote": ""
@@ -17,8 +17,8 @@
   "bugs": "",
   "to do": "Categorize nonhumans by type.",
   "see": "activity, animal, citizen, encounter, monster",
-  "date": "2018-01-21",
-  "authors": "Esko Vesala.",
+  "date": "2018-06-01",
+  "authors": "ELF Vesala.",
   "sources": "Wikia.com, Wikipedia.org",
   "genre": "fantasy",
   "categories": [
@@ -45,8 +45,8 @@
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
         "{nonhuman} {lib:activity}",
-        "{adjective} {nonhuman}",
-        "{adjective} {nonhuman} {lib:activity}",
+        "{attribute} {nonhuman}",
+        "{attribute} {nonhuman} {lib:activity}",
         "{lib:creature_template} {nonhuman}",
         "{lib:creature_template} {nonhuman} {lib:activity}"
       ]
@@ -154,8 +154,7 @@
       "name": "myth",
       "explanation": "Nonhumans once rumoured to have existed.",
       "entries": [
-        "Atlantean",
-        "Lemurian"
+        "swan maiden"
       ]
     },
     {
@@ -170,7 +169,9 @@
       "explanation": "Nonhumans for modern worlds.",
       "entries": [
         "{cryptid}",
-        "{ufology}"
+        "{ufology}",
+        "Atlantean",
+        "Lemurian"
       ]
     },
     {
@@ -222,8 +223,8 @@
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives describing the nonhuman.",
+      "name": "attribute",
+      "explanation": "Attributes describing the nonhuman.",
       "entries": [
         "{psychology}"
       ]

@@ -1,0 +1,404 @@
+{
+  "name": "pet",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Pet and animal companion generator.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-05-30",
+  "authors": "ELF Vesala",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{pet}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {pet}",
+        "{pet} {feature}",
+        "{attribute} {pet} {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {pet} {lib:synonym#looks} {attribute}. It {personality}.",
+        "The {pet} {lib:synonym#looks} {feature}. It {personality}.",
+        "The {attribute} {pet} {lib:synonym#looks} {feature}. It  {personality}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "Name: {random}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "pet",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common types.",
+      "entries": [
+        "{lib:animal#pet}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare types.",
+      "entries": [
+        "goat",
+        "skunk"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "personality",
+      "explanation": "The nature of the pet.",
+      "entries": [
+        "{lib:synonym#looks} {lib:personality#animal}"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZATION"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{beginning}{ending}",
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "FANTASY"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Terms for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{beginning}{fantasy ending}",
+        "{fantasy beginning}{ending}",
+        "{fantasy beginning}{fantasy ending}",
+        "{fantasy beginning}{fantasy ending} {fantasy extension}",
+        "{fantasy descriptor} {fantasy beginning}{fantasy ending}",
+        "{fantasy descriptor} {fantasy beginning}{fantasy ending} {fantasy extension}"
+      ]
+    },
+    {
+      "name": "fantasy descriptor",
+      "explanation": "Fantasy-themed term descriptors.",
+      "entries": [
+        "{descriptor}",
+        "{medieval descriptor}",
+        ""
+      ]
+    },
+    {
+      "name": "fantasy beginning",
+      "explanation": "Fantasy-themed term beginnings.",
+      "entries": [
+        "{beginning}",
+        "{medieval beginning}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy ending",
+      "explanation": "Fantasy-themed term endings.",
+      "entries": [
+        "{ending}",
+        "{medieval ending}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "fantasy extension",
+      "explanation": "Fantasy-themed term extensions.",
+      "entries": [
+        "{extension}",
+        "{medieval extension}",
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "MEDIEVAL"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Terms for medieval worlds (with no fantasy elements).",
+      "entries": [
+        "{beginning}{medieval ending}",
+        "{medieval beginning}{ending}",
+        "{medieval beginning}{medieval ending}",
+        "{medieval beginning}{medieval ending} {medieval extension}",
+        "{medieval descriptor} {medieval beginning}{medieval ending}",
+        "{medieval descriptor} {medieval beginning}{medieval ending} {medieval extension}"
+      ]
+    },
+    {
+      "name": "medieval descriptor",
+      "explanation": "Medieval term descriptors.",
+      "entries": [
+        "{descriptor}",
+        ""
+      ]
+    },
+    {
+      "name": "medieval beginning",
+      "explanation": "Medieval term beginnings.",
+      "entries": [
+        "{beginning}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "medieval ending",
+      "explanation": "Medieval term endings.",
+      "entries": [
+        "{ending}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "medieval extension",
+      "explanation": "Medieval term extensions.",
+      "entries": [
+        "{extension}",
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "MODERN"
+    },
+    {
+      "name": "modern",
+      "explanation": "Terms for modern worlds.",
+      "entries": [
+        "{beginning}{modern ending}",
+        "{modern beginning}{ending}",
+        "{modern beginning}{modern ending}",
+        "{modern beginning}{modern ending} {modern extension}",
+        "{modern descriptor} {modern beginning}{modern ending}",
+        "{modern descriptor} {modern beginning}{modern ending} {modern extension}"
+      ]
+    },
+    {
+      "name": "modern descriptor",
+      "explanation": "Modern term descriptors.",
+      "entries": [
+        "{descriptor}",
+        ""
+      ]
+    },
+    {
+      "name": "modern beginning",
+      "explanation": "Modern term beginnings.",
+      "entries": [
+        "{beginning}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern ending",
+      "explanation": "Modern term endings.",
+      "entries": [
+        "{ending}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "modern extension",
+      "explanation": "Modern term extensions.",
+      "entries": [
+        "{extension}",
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "FUTURISTIC"
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Terms for science fiction worlds.",
+      "entries": [
+        "{modern beginning}{futuristic ending}",
+        "{futuristic beginning}{modern ending}",
+        "{futuristic beginning}{futuristic ending}",
+        "{futuristic beginning}{futuristic ending} {futuristic extension}",
+        "{futuristic descriptor} {futuristic beginning}{futuristic ending}",
+        "{futuristic descriptor} {futuristic beginning}{futuristic ending} {futuristic extension}"
+      ]
+    },
+    {
+      "name": "futuristic descriptor",
+      "explanation": "Futuristic term descriptors.",
+      "entries": [
+        "{descriptor}",
+        "{modern descriptor}",
+        ""
+      ]
+    },
+    {
+      "name": "futuristic beginning",
+      "explanation": "Futuristic term beginnings.",
+      "entries": [
+        "{beginning}",
+        "{modern beginning}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic ending",
+      "explanation": "Futuristic term endings.",
+      "entries": [
+        "{ending}",
+        "{modern ending}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "futuristic extension",
+      "explanation": "Futuristic term extensions.",
+      "entries": [
+        "{extension}",
+        "{modern extension}",
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attributes prepended to the front of the result.",
+      "entries": [
+        "a baby",
+        "a young",
+        "an adult",
+        "a full-grown",
+        "a mature",
+        "an old",
+        "an aging"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It appears --",
+      "entries": [
+        "frequently trying to escape",
+        "not completely accustomed to captivity",
+        "not fully house-trained"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+      ]
+    }
+  ]
+}

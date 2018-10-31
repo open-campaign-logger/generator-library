@@ -1,5 +1,5 @@
 {
-  "name": "set_dungeon",
+  "name": "set-castle",
   "resultPattern": "{init}{result}",
   "globals": {
     "setadjective": "{adjective}",
@@ -17,17 +17,17 @@
   "variables": {
     "footnote": ""
   },
-  "explanation": "Dungeon-themed locations.",
+  "explanation": "Template for a themed location.",
   "structure": "Global variables fitting a common environment.",
   "note": "This table does not produce immediate output, only sets global variables for later use.",
   "format": "Global variable definitions.",
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-02-14",
-  "authors": "Esko Vesala.",
-  "sources": "",
-  "genre": "fantasy",
+  "date": "2018-09-20",
+  "authors": "ELF Vesala.",
+  "sources": "CastlesAndManorHouses.com, Wikipedia.org",
+  "genre": "universal",
   "categories": [
     "world"
   ],
@@ -84,58 +84,131 @@
       "name": "boundary",
       "explanation": "Borders around the set.",
       "entries": [
-        "outer wall"
+        "moat",
+        "drawbridge",
+        "outer wall",
+        "courtyard"
       ]
     },
     {
       "name": "entrance",
       "explanation": "Entrances matching the set.",
       "entries": [
-        "entrance",
-        "entranceway",
-        "entryway",
-        "opening",
-        "doorway",
-        "gateway",
-        "gate",
-        "double gates",
-        "portcullis gate"
+        "gate"
       ]
     },
     {
       "name": "area",
       "explanation": "Areas containing several locations.",
       "entries": [
-        "first level",
-        "second level",
-        "third level"
+        "wall",
+        "tower",
+        "servant's quarters",
+        "guest quarters",
+        "lady's quarters",
+        "lord's quarters"
       ]
     },
     {
       "name": "location",
       "explanation": "Locations matching the set.",
       "entries": [
-        "room",
-        "chamber",
-        "hall",
-        "forge",
-        "library",
-        "armory",
-        "distillery",
-        "dormitory",
+        "{wall}",
+        "{storage}",
+        "{servant}",
+        "{chapel}",
+        "{hall}",
+        "{private}"
+      ]
+    },
+    {
+      "name": "wall",
+      "explanation": "Locations around the outer wall.",
+      "entries": [
+        "gatehouse",
         "guardroom",
-        "laboratory",
-        "torture chamber"
+        "barracks",
+        "casemate (vaulted chamber under the ramparts)",
+        "place of arms (covered area for assembling troops)",
+        "dovecote (pigeon housing)",
+        "stables"
+      ]
+    },
+    {
+      "name": "storage",
+      "explanation": "Locations for the servants.",
+      "entries": [
+        "cellar",
+        "storage room",
+        "buttery (beer storage)",
+        "wine cellar",
+        "undercroft",
+        "ice house (insulated storage for ice)",
+        "prison"
+      ]
+    },
+    {
+      "name": "servant",
+      "explanation": "Locations for the servants.",
+      "entries": [
+        "kitchen",
+        "saucery (office responsible for sauces)",
+        "spicery (office responsible for spices)",
+        "scullery (room for washing dishes and laundering)",
+        "servants' hall"
+      ]
+    },
+    {
+      "name": "chapel",
+      "explanation": "Locations for religious functions.",
+      "entries": [
+        "chapel",
+        "oratory (private chapel)"
+      ]
+    },
+    {
+      "name": "hall",
+      "explanation": "Large chambers.",
+      "entries": [
+        "hall",
+        "main hall",
+        "dining hall",
+        "reception hall",
+        "great chamber"
+      ]
+    },
+    {
+      "name": "administration",
+      "explanation": "Locations for administrative tasks.",
+      "entries": [
+        "council chamber",
+        "war room"
+      ]
+    },
+    {
+      "name": "private",
+      "explanation": "Locations for the household.",
+      "entries": [
+        "study",
+        "library",
+        "cabinet (private room)",
+        "solar (drawing room)",
+        "dressing room",
+        "bed chamber"
       ]
     },
     {
       "name": "nook",
       "explanation": "Compartments matching the set.",
       "entries": [
-        "pit",
-        "cell",
-        "store room",
-        "storage room"
+        "cess pit",
+        "lavatory",
+        "boudouir (women's lavatory)",
+        "garderobe (closet with a latrine)",
+        "bathroom",
+        "pantry (warm food storage)",
+        "larder (cool food storage)",
+        "closet"
       ]
     },
     {
@@ -143,22 +216,17 @@
       "explanation": "Corridors matching the set.",
       "entries": [
         "corridor",
-        "passage",
-        "passageway"
+        "staircase"
       ]
     },
     {
       "name": "vault",
       "explanation": "Centerpiece locations matching the set.",
       "entries": [
+        "great hall",
+        "throne room",
         "vault",
-        "crypt",
-        "tomb",
-        "sepulcher",
-        "catacomb",
-        "mausoleum",
-        "treasure chamber",
-        "invocation chamber"
+        "strongroom (treasure store)"
       ]
     },
     {
@@ -168,8 +236,7 @@
       "name": "adjective",
       "explanation": "Adjectives for the set locations.",
       "entries": [
-        "candle-lit",
-        "darkness-engulfed"
+        "drafty"
       ]
     },
     {
@@ -177,18 +244,19 @@
       "explanation": "Doors matching the set.",
       "entries": [
         "door",
-        "double doors",
-        "gate",
-        "double gates",
-        "portcullis"
+        "double doors"
       ]
     },
     {
       "name": "prop",
       "explanation": "Potential properties for the set.",
       "entries": [
-        "extinguished torch",
-        "empty chest"
+        "chamber pot",
+        "tripod",
+        "decorative woodwork",
+        "coat of arms",
+        "wall hanging",
+        "tapestry"
       ]
     },
     {
@@ -198,7 +266,7 @@
       "name": "test",
       "explanation": "Testing tool for dumping the set global variables.",
       "entries": [
-        "{global:set} walkthrough: to pass the {global:setboundary}, enter {global:setentrance} to {global:setarea} via {global:setpassage} that leads to {global:setadjective} {global:setlocation} and {global:setnook}  with {global:setprop} inside. Behind {global:setdoor} is the {global:setvault}."
+        "{global:setlocale} walkthrough: to pass the {global:setboundary}, enter {global:setentrance} to {global:setarea} via {global:setpassage} that leads to {global:setadjective} {global:setlocation} and {global:setnook}  with {global:setprop} inside. Behind {global:setdoor} is the {global:setvault}."
       ]
     }
   ]
