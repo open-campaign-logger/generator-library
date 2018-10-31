@@ -9,8 +9,8 @@
   "note": "Still a work in progress. Would benefit from extending the available library tables.",
   "to do": "myth and fantasy subtables. Modern clothing.",
   "see": "jewelry",
-  "date": "2017-10-06",
-  "authors": "Esko Vesala",
+  "date": "2018-06-05",
+  "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
   "categories": [
@@ -89,7 +89,7 @@
       "name": "myth",
       "explanation": "Imaginary adornment once rumoured to have existed.",
       "entries": [
-        "third eye symbol (to be affixed to the forehead)",
+        "third eye symbol (affixed to the forehead)",
         "eye make up warding from the effects of the evil eye",
         "{rare myth}"
       ]

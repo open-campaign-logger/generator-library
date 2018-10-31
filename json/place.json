@@ -1,0 +1,2121 @@
+{
+  "name": "place",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "culture": "universal"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Place names for various milieus.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "_template_place, encounter, location, milieu, site",
+  "date": "2018-09-28",
+  "authors": "ELF Vesala",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{place}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{appellation}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "{place} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Place}: {place} \r\n{b|Aspect}: {aspectual} \r\n{b|Concept}: {conceptual} \r\n{b|Milieu}: {milieu} \r\n{b|Appellation}: {appellation} \r\n{b|Culture}: {g:culture}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "place",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Usual types.",
+      "entries": [
+        "{|{aspectual}|tcase}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Unusual types.",
+      "entries": [
+        "{|{conceptual}|tcase}"
+      ]
+    },
+    {
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "aspectual",
+      "explanation": "Aspect-based place names.",
+      "entries": [
+        "{lib:aspect#summary} {wilderness}"
+      ]
+    },
+    {
+      "name": "conceptual",
+      "explanation": "Concept-based place names.",
+      "entries": [
+        "{wilderness} of {lib:concept#summary}"
+      ]
+    },
+    {
+      "**************************************************": "MILIEUS"
+    },
+    {
+      "name": "milieu",
+      "explanation": "Milieu types.",
+      "entries": [
+        "{any}",
+        "{city}",
+        "{civilized}",
+        "{continental}",
+        "{extreme}",
+        "{freshwater}",
+        "{highland}",
+        "{ocean}",
+        "{offworld}",
+        "{plain}",
+        "{polar}",
+        "{seawater}",
+        "{submerged}",
+        "{subpolar}",
+        "{subterranean}",
+        "{subtropical}",
+        "{temperate}",
+        "{tropical}",
+        "{water}",
+        "{wilderness}"
+      ]
+    },
+    {
+      "name": "any",
+      "explanation": "Any milieu.",
+      "entries": [
+        "{indoor}",
+        "{urban}",
+        "{suburban}",
+        "{village}",
+        "{rural}",
+        "{road}",
+        "{outpost}",
+        "{barren}",
+        "{grassland}",
+        "{shrubland}",
+        "{forest}",
+        "{hill}",
+        "{mountain}",
+        "{valley}",
+        "{river}",
+        "{lake}",
+        "{wetland}",
+        "{coast}",
+        "{ship}",
+        "{sea}",
+        "{island}",
+        "{taiga}",
+        "{tundra}",
+        "{jungle}",
+        "{savanna}",
+        "{desert}",
+        "{underground}",
+        "{volcanic}",
+        "{glacier}",
+        "{underwater}",
+        "{seabed}",
+        "{soil}",
+        "{air}",
+        "{space}",
+        "{netherworld}",
+        "{dimension}"
+      ]
+    },
+    {
+      "name": "city",
+      "explanation": "City milieu.",
+      "entries": [
+        "{indoor}",
+        "{urban}",
+        "{suburban}"
+      ]
+    },
+    {
+      "name": "civilized",
+      "explanation": "Inhabited milieus.",
+      "entries": [
+        "{indoor}",
+        "{urban}",
+        "{suburban}",
+        "{village}",
+        "{rural}",
+        "{road}",
+        "{outpost}"
+      ]
+    },
+    {
+      "name": "continental",
+      "explanation": "Inland temperate terrain milieus.",
+      "entries": [
+        "{grassland}",
+        "{shrubland}",
+        "{forest}",
+        "{hill}",
+        "{mountain}",
+        "{valley}"
+      ]
+    },
+    {
+      "name": "extreme",
+      "explanation": "Extreme terrain milieus.",
+      "entries": [
+        "{volcanic}",
+        "{glacier}"
+      ]
+    },
+    {
+      "name": "freshwater",
+      "explanation": "Milieus in or by water.",
+      "entries": [
+        "{river}",
+        "{lake}",
+        "{wetland}",
+        "{underwater}"
+      ]
+    },
+    {
+      "name": "highland",
+      "explanation": "Elevated milieus.",
+      "entries": [
+        "{hill}",
+        "{mountain}",
+        "{valley}"
+      ]
+    },
+    {
+      "name": "ocean",
+      "explanation": "Oceanic milieus.",
+      "entries": [
+        "{sea}",
+        "{ship}",
+        "{seabed}"
+      ]
+    },
+    {
+      "name": "offworld",
+      "explanation": "Milieus outside the world.",
+      "entries": [
+        "{space}",
+        "{netherworld}",
+        "{dimension}"
+      ]
+    },
+    {
+      "name": "plain",
+      "explanation": "Temperate flatland terrain milieus.",
+      "entries": [
+        "{barren}",
+        "{grassland}",
+        "{shrubland}"
+      ]
+    },
+    {
+      "name": "polar",
+      "explanation": "Cold wilderness terrain milieus.",
+      "entries": [
+        "{tundra}",
+        "{glacier}"
+      ]
+    },
+    {
+      "name": "seawater",
+      "explanation": "Milieus in or by water.",
+      "entries": [
+        "{coast}",
+        "{sea}",
+        "{island}",
+        "{seabed}"
+      ]
+    },
+    {
+      "name": "submerged",
+      "explanation": "Subaquatic milieus.",
+      "entries": [
+        "{underwater}",
+        "{seabed}"
+      ]
+    },
+    {
+      "name": "subpolar",
+      "explanation": "Terrain milieus between temperate and polar regions.",
+      "entries": [
+        "{barren}",
+        "{shrubland}",
+        "{mountain}",
+        "{taiga}",
+        "{tundra}"
+      ]
+    },
+    {
+      "name": "subterranean",
+      "explanation": "Locations under the surface of the earth.",
+      "entries": [
+        "{underground}",
+        "{soil}"
+      ]
+    },
+    {
+      "name": "subtropical",
+      "explanation": "Terrain milieus between temperate and tropical regions.",
+      "entries": [
+        "{barren}",
+        "{grassland}",
+        "{shrubland}",
+        "{forest}",
+        "{hill}",
+        "{valley}"
+      ]
+    },
+    {
+      "name": "temperate",
+      "explanation": "Medium-temperature wilderness milieus.",
+      "entries": [
+        "{barren}",
+        "{grassland}",
+        "{shrubland}",
+        "{forest}",
+        "{hill}",
+        "{mountain}",
+        "{valley}",
+        "{river}",
+        "{lake}",
+        "{wetland}"
+      ]
+    },
+    {
+      "name": "tropical",
+      "explanation": "Hot wilderness terrain milieus.",
+      "entries": [
+        "{jungle}",
+        "{savanna}",
+        "{desert}"
+      ]
+    },
+    {
+      "name": "water",
+      "explanation": "Milieus in or by water.",
+      "entries": [
+        "{freshwater}",
+        "{seawater}"
+      ]
+    },
+    {
+      "name": "wilderness",
+      "explanation": "Wilderness terrain milieus.",
+      "entries": [
+        "{polar}",
+        "{subpolar}",
+        "{temperate}",
+        "{subtropical}",
+        "{tropical}"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "air",
+      "explanation": "Locations in the sky.",
+      "export": {
+        "milieu": "air"
+      },
+      "entries": [
+        "air",
+        "blue",
+        "breeze",
+        "breezes",
+        "cloud",
+        "clouds",
+        "fog",
+        "draft",
+        "drafts",
+        "draught",
+        "draughts",
+        "flurry",
+        "flurries",
+        "flutter",
+        "flutters",
+        "gale",
+        "gales",
+        "gloom",
+        "gust",
+        "gusts",
+        "haze",
+        "mist",
+        "mistral",
+        "mists",
+        "puff",
+        "puffs",
+        "skies",
+        "sky",
+        "smoke",
+        "tempest",
+        "tempests",
+        "vapor",
+        "waft",
+        "wafting",
+        "wafts",
+        "whiff",
+        "whiffs",
+        "whisk",
+        "whisks",
+        "wind",
+        "winds",
+        "wisp",
+        "wisps",
+        "zephyr",
+        "zephyrs"
+      ]
+    },
+    {
+      "name": "barren",
+      "explanation": "Locations in desolate areas.",
+      "export": {
+        "milieu": "barren"
+      },
+      "entries": [
+        "arid",
+        "arids",
+        "badland",
+        "badlands",
+        "barren",
+        "barrens",
+        "cairn",
+        "desolation",
+        "drumlin",
+        "dustbowl",
+        "flats",
+        "hinterland",
+        "lowland",
+        "lowlands",
+        "land",
+        "lands",
+        "outback",
+        "rock desert",
+        "solitude",
+        "waste",
+        "wastes",
+        "wasteland",
+        "wastelands",
+        "wilderness",
+        "wilds"
+      ]
+    },
+    {
+      "name": "coast",
+      "explanation": "Locations on the coast.",
+      "export": {
+        "milieu": "coast"
+      },
+      "entries": [
+        "anchorage",
+        "bank",
+        "basin",
+        "bay",
+        "bayou",
+        "beach",
+        "beaches",
+        "berth",
+        "bight",
+        "board",
+        "breakwater",
+        "channel",
+        "coast",
+        "coastline",
+        "cove",
+        "dam",
+        "delta",
+        "dock",
+        "docks",
+        "earthwork",
+        "embankment",
+        "enclave",
+        "estuary",
+        "firth",
+        "fjord",
+        "grotto",
+        "gulf",
+        "harbor",
+        "haven",
+        "inlet",
+        "jetty",
+        "landing",
+        "levee",
+        "marina",
+        "mooring",
+        "mouth",
+        "narrows",
+        "peninsula",
+        "pier",
+        "quay",
+        "seaboard",
+        "seacoast",
+        "seaport",
+        "seashore",
+        "seaside",
+        "shore",
+        "shores",
+        "shoreline",
+        "sound",
+        "strait",
+        "strand",
+        "wharf"
+      ]
+    },
+    {
+      "name": "desert",
+      "explanation": "Locations in the desert.",
+      "export": {
+        "milieu": "desert"
+      },
+      "entries": [
+        "badland",
+        "barren",
+        "desert",
+        "desolation",
+        "dunes",
+        "dust",
+        "field",
+        "fields",
+        "sands",
+        "solitude",
+        "wilds"
+      ]
+    },
+    {
+      "name": "dimension",
+      "explanation": "Locations in other dimensions or planes of existence.",
+      "export": {
+        "milieu": "dimension"
+      },
+      "entries": [
+        "cosm",
+        "cosmos",
+        "creation",
+        "dimension",
+        "domain",
+        "dominion",
+        "haunt",
+        "plane",
+        "reality",
+        "realm",
+        "sphere",
+        "universe",
+        "world"
+      ]
+    },
+    {
+      "name": "soil",
+      "explanation": "Locations in the earth (not just underground).",
+      "export": {
+        "milieu": "soil"
+      },
+      "entries": [
+        "clay",
+        "ground",
+        "earth",
+        "fill",
+        "gravel",
+        "humus",
+        "land",
+        "marl",
+        "mud",
+        "peat",
+        "rock",
+        "roots",
+        "sand",
+        "sod",
+        "soil",
+        "stone",
+        "subsoil",
+        "terra",
+        "terrain",
+        "turf"
+      ]
+    },
+    {
+      "name": "forest",
+      "explanation": "Deciduous woodland locations.",
+      "export": {
+        "milieu": "forest"
+      },
+      "entries": [
+        "bosk",
+        "coppice",
+        "copse",
+        "forest",
+        "grove",
+        "mound",
+        "thicket",
+        "thickets",
+        "timberland",
+        "timberlands",
+        "weald",
+        "wildwood",
+        "wildwoods",
+        "wood",
+        "woodland",
+        "woodlands",
+        "woods"
+      ]
+    },
+    {
+      "name": "glacier",
+      "explanation": "Locations on snow and ice covered areas.",
+      "export": {
+        "milieu": "glacier"
+      },
+      "entries": [
+        "bank",
+        "banks",
+        "berg",
+        "blanket",
+        "cap",
+        "drift",
+        "expanse",
+        "field",
+        "fields",
+        "floe",
+        "frost",
+        "glacier",
+        "glaze",
+        "ice cave",
+        "ice lake",
+        "sleet",
+        "sleets",
+        "slide",
+        "slush",
+        "snow"
+      ]
+    },
+    {
+      "name": "grassland",
+      "explanation": "Locations on grasslands.",
+      "export": {
+        "milieu": "grassland"
+      },
+      "entries": [
+        "carpet",
+        "field",
+        "fields",
+        "grass",
+        "grassland",
+        "heath",
+        "land",
+        "lawn",
+        "lea",
+        "meadow",
+        "moor",
+        "pasture",
+        "plain",
+        "plains",
+        "prairie",
+        "range",
+        "rug",
+        "steppe",
+        "steppes",
+        "sward",
+        "turf",
+        "veldt"
+      ]
+    },
+    {
+      "name": "hill",
+      "explanation": "Locations in the hills.",
+      "export": {
+        "milieu": "hill"
+      },
+      "entries": [
+        "ascent",
+        "barrow",
+        "crest",
+        "dell",
+        "hill",
+        "hillock",
+        "hills",
+        "hummock",
+        "knoll",
+        "mound",
+        "slope",
+        "tor",
+        "tumulus"
+      ]
+    },
+    {
+      "name": "indoor",
+      "explanation": "Locations inside buildings.",
+      "export": {
+        "milieu": "indoor"
+      },
+      "entries": [
+        "alcove",
+        "antechamber",
+        "anteroom",
+        "arcade",
+        "atrium",
+        "balcony",
+        "cellar",
+        "chamber",
+        "chambers",
+        "colonnade",
+        "entrance",
+        "entrancehall",
+        "foyer",
+        "foyers",
+        "gallery",
+        "gateway",
+        "hall",
+        "halls",
+        "hallway",
+        "home",
+        "lobby",
+        "passage",
+        "passages",
+        "passageway",
+        "patio",
+        "porch",
+        "portico",
+        "room",
+        "rooms",
+        "rotunda",
+        "stoa",
+        "storage",
+        "suite",
+        "underbuilding",
+        "vault",
+        "veranda",
+        "vestibule",
+        "walkway"
+      ]
+    },
+    {
+      "name": "island",
+      "explanation": "Locations on ocean islands.",
+      "export": {
+        "milieu": "island"
+      },
+      "entries": [
+        "ait",
+        "archipelago",
+        "atoll",
+        "beach",
+        "cay",
+        "isle",
+        "islet",
+        "island",
+        "key",
+        "lagoon",
+        "reef",
+        "rock",
+        "sandbank",
+        "sandbar",
+        "shallow",
+        "shallows",
+        "shoal"
+      ]
+    },
+    {
+      "name": "jungle",
+      "explanation": "Locations in the tropical rainforests.",
+      "export": {
+        "milieu": "jungle"
+      },
+      "entries": [
+        "boscage",
+        "garden",
+        "gardens",
+        "growth",
+        "hell",
+        "inferno",
+        "jungle",
+        "labyrinth",
+        "maze",
+        "menagerie",
+        "rainforest",
+        "skein",
+        "snarl",
+        "tangle",
+        "thicket",
+        "thickets",
+        "undergrowth",
+        "wasteland",
+        "woods"
+      ]
+    },
+    {
+      "name": "lake",
+      "explanation": "Locations on still freshwater (lakes, ponds, etc).",
+      "export": {
+        "milieu": "lake"
+      },
+      "entries": [
+        "basin",
+        "fountain",
+        "inland sea",
+        "lake",
+        "lakelet",
+        "loch",
+        "mere",
+        "pond",
+        "pool",
+        "puddle",
+        "reservoir",
+        "spring",
+        "tarn"
+      ]
+    },
+    {
+      "name": "mountain",
+      "explanation": "Locations in the mountains.",
+      "export": {
+        "milieu": "mountain"
+      },
+      "entries": [
+        "bluff",
+        "cliff",
+        "crag",
+        "dome",
+        "eyrie",
+        "heights",
+        "highlands",
+        "mount",
+        "mountain",
+        "mountains",
+        "peak",
+        "range",
+        "ranges",
+        "rise",
+        "summit",
+        "vale"
+      ]
+    },
+    {
+      "name": "netherworld",
+      "explanation": "Locations beyond the lands of the living.",
+      "export": {
+        "milieu": "netherworld"
+      },
+      "entries": [
+        "abyss",
+        "blazes",
+        "fire",
+        "inferno",
+        "netherworld",
+        "perdition",
+        "pit",
+        "purgatory",
+        "underworld"
+      ]
+    },
+    {
+      "name": "outpost",
+      "explanation": "Locations in outposts, such as camps and fortifications.",
+      "export": {
+        "milieu": "outpost"
+      },
+      "entries": [
+        "balustrade",
+        "barricade",
+        "barrier",
+        "bastion",
+        "battlements",
+        "belfry",
+        "bulwark",
+        "camp",
+        "campanile",
+        "castle",
+        "citadel",
+        "defense",
+        "donjon",
+        "earthwork",
+        "embankment",
+        "embattlement",
+        "encampment",
+        "entrenchment",
+        "escarpment",
+        "fort",
+        "fortification",
+        "fortress",
+        "garrison",
+        "guard",
+        "keep",
+        "moat",
+        "outpost",
+        "parapet",
+        "rampart",
+        "reinforcement",
+        "steeple",
+        "stronghold",
+        "tower",
+        "trench",
+        "turret",
+        "wall"
+      ]
+    },
+    {
+      "name": "river",
+      "explanation": "Locations on running freshwater (rivers, streams, etc).",
+      "export": {
+        "milieu": "river"
+      },
+      "entries": [
+        "brook",
+        "brooklet",
+        "burn",
+        "channel",
+        "creek",
+        "delta",
+        "ditch",
+        "flow",
+        "ford",
+        "gush",
+        "rill",
+        "rille",
+        "river",
+        "rivulet",
+        "run",
+        "runnel",
+        "rush",
+        "sluice",
+        "spout",
+        "spray",
+        "stream",
+        "streamlet",
+        "surge",
+        "watercourse"
+      ]
+    },
+    {
+      "name": "road",
+      "explanation": "Locations on and along the roadways.",
+      "export": {
+        "milieu": "road"
+      },
+      "entries": [
+        "approach",
+        "bend",
+        "byway",
+        "circuit",
+        "connection",
+        "course",
+        "detour",
+        "entry",
+        "highway",
+        "journey",
+        "lane",
+        "line",
+        "march",
+        "passage",
+        "path",
+        "pathway",
+        "range",
+        "ride",
+        "road",
+        "roadway",
+        "route",
+        "run",
+        "thoroughfare",
+        "track",
+        "trail",
+        "turn",
+        "walk",
+        "way"
+      ]
+    },
+    {
+      "name": "rural",
+      "explanation": "Locations in the countryside.",
+      "export": {
+        "milieu": "rural"
+      },
+      "entries": [
+        "backwoods",
+        "belt",
+        "community",
+        "country",
+        "farm",
+        "farmland",
+        "field",
+        "fields",
+        "grove",
+        "hinerland",
+        "homeland",
+        "land",
+        "landscape",
+        "manor",
+        "outback",
+        "outland",
+        "pasture",
+        "pastures",
+        "province",
+        "scenery",
+        "soil",
+        "village"
+      ]
+    },
+    {
+      "name": "savanna",
+      "explanation": "Locations in the tropical grasslands.",
+      "export": {
+        "milieu": "savanna"
+      },
+      "entries": [
+        "fields",
+        "grassland",
+        "grasslands",
+        "outcrop",
+        "pasture",
+        "pastures",
+        "plain",
+        "plains",
+        "range",
+        "savanna",
+        "steppe",
+        "veldt"
+      ]
+    },
+    {
+      "name": "sea",
+      "explanation": "Locations on the sea.",
+      "export": {
+        "milieu": "sea"
+      },
+      "entries": [
+        "deep",
+        "expanse",
+        "ocean",
+        "sea",
+        "seas",
+        "seaway",
+        "tides"
+      ]
+    },
+    {
+      "name": "seabed",
+      "explanation": "Locations under the sea surface.",
+      "export": {
+        "milieu": "seabed"
+      },
+      "entries": [
+        "bed",
+        "bottom",
+        "depth",
+        "depths",
+        "floor",
+        "seabed"
+      ]
+    },
+    {
+      "name": "ship",
+      "explanation": "Locations on boats and other vessels.",
+      "export": {
+        "milieu": "ship"
+      },
+      "entries": [
+        "ship",
+        "vessel"
+      ]
+    },
+    {
+      "name": "shrubland",
+      "explanation": "Locations with scrubland and bushes.",
+      "export": {
+        "milieu": "shrubland"
+      },
+      "entries": [
+        "bramble",
+        "brambles",
+        "brier",
+        "briers",
+        "brush",
+        "brushes",
+        "bush",
+        "bushes",
+        "hedge",
+        "hedges",
+        "scrub",
+        "scrubs",
+        "scrubland",
+        "scrublands",
+        "shrub",
+        "shrubs",
+        "shrubland",
+        "shrublands",
+        "weeds",
+        "weedlands"
+      ]
+    },
+    {
+      "name": "space",
+      "explanation": "Locations in outer space.",
+      "export": {
+        "milieu": "space"
+      },
+      "entries": [
+        "expanse",
+        "firmament",
+        "space",
+        "void"
+      ]
+    },
+    {
+      "name": "suburban",
+      "explanation": "Locations in the outskirts of a city.",
+      "export": {
+        "milieu": "suburban"
+      },
+      "entries": [
+        "suburb"
+      ]
+    },
+    {
+      "name": "taiga",
+      "explanation": "Coniferous woodland locations.",
+      "export": {
+        "milieu": "taiga"
+      },
+      "entries": [
+        "forest",
+        "wood",
+        "woods",
+        "taiga",
+        "wasteland",
+        "wastelands"
+      ]
+    },
+    {
+      "name": "tundra",
+      "explanation": "Locations in low temperature wilderness.",
+      "export": {
+        "milieu": "tundra"
+      },
+      "entries": [
+        "wilderness",
+        "wasteland",
+        "plain"
+      ]
+    },
+    {
+      "name": "underground",
+      "explanation": "Locations under the earth's surface.",
+      "export": {
+        "milieu": "underground"
+      },
+      "entries": [
+        "catacomb",
+        "cave",
+        "cavern",
+        "crypt",
+        "dungeon",
+        "hollow",
+        "grave",
+        "labyrinth",
+        "lair",
+        "mine",
+        "netherworld",
+        "pit",
+        "tomb",
+        "tunnel",
+        "underground",
+        "underrealm",
+        "underworld",
+        "vault"
+      ]
+    },
+    {
+      "name": "underwater",
+      "explanation": "Locations under the freshwater surface.",
+      "export": {
+        "milieu": "underwater"
+      },
+      "entries": [
+        "deep",
+        "depth",
+        "depths"
+      ]
+    },
+    {
+      "name": "urban",
+      "explanation": "Locations in a city.",
+      "export": {
+        "milieu": "urban"
+      },
+      "entries": [
+        "borough",
+        "burg",
+        "city",
+        "metropolis",
+        "port",
+        "town",
+        "undercity"
+      ]
+    },
+    {
+      "name": "valley",
+      "explanation": "Lowlands between hills or mountains.",
+      "entries": [
+        "canyon",
+        "chasm",
+        "clove",
+        "crevasse",
+        "gap",
+        "gorge",
+        "gulch",
+        "pass",
+        "ravine",
+        "valley"
+      ]
+    },
+    {
+      "name": "village",
+      "explanation": "Locations in a hamlet.",
+      "export": {
+        "milieu": "village"
+      },
+      "entries": [
+        "hamlet",
+        "thorp",
+        "town",
+        "township"
+      ]
+    },
+    {
+      "name": "volcanic",
+      "explanation": "Volcanic locations.",
+      "export": {
+        "milieu": "volcanic"
+      },
+      "entries": [
+        "caldera",
+        "crater",
+        "geyser",
+        "pit",
+        "spring",
+        "volcanic lake",
+        "volcano"
+      ]
+    },
+    {
+      "name": "wetland",
+      "explanation": "Locations on bogs, swamps, etc.",
+      "export": {
+        "milieu": "wetland"
+      },
+      "entries": [
+        "bog",
+        "fen",
+        "marsh",
+        "marshland",
+        "marshlands",
+        "mire",
+        "morass",
+        "moss",
+        "muddle",
+        "peat",
+        "slough",
+        "sump",
+        "swamp",
+        "swampland",
+        "swamplands"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomization methods.",
+      "entries": [
+        "{component}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMPONENTS"
+    },
+    {
+      "name": "component",
+      "explanation": "Component-based terms (generated from words).",
+      "entries": [
+        "{compoundbegin}{compoundend}",
+        "{begin} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {begin} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{begin} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        "{lib:direction#adjective}",
+        "Trackless",
+        "Tractless",
+        "Uncharted"
+      ]
+    },
+    {
+      "name": "begin",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{beginning}",
+        "{compoundbegin}"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "{lib:aspect#summary}",
+        "moss",
+        "mud",
+        "rock",
+        "stone"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "field",
+        "home",
+        "land"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "{milieu}"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        "of {lib:concept#negative}",
+        "of lost {lib:concepts#life}",
+        "of the {lib:concepts#word}",
+        "of no return",
+        "without end"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SYLLABLES"
+    },
+    {
+      "name": "syllable",
+      "explanation": "Syllable-based terms (generated from word parts).",
+      "entries": [
+        "{short}",
+        "{medium}",
+        "{long}"
+      ]
+    },
+    {
+      "name": "short",
+      "explanation": "Short place names.",
+      "entries": [
+        "{beginning}{short stem}"
+      ]
+    },
+    {
+      "name": "medium",
+      "explanation": "Medium-length place names.",
+      "entries": [
+        "{beginning}{medium stem}"
+      ]
+    },
+    {
+      "name": "long",
+      "explanation": "Long place names.",
+      "entries": [
+        "{beginning}{long stem}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "STEMS"
+    },
+    {
+      "name": "stem",
+      "explanation": "Variable-length place name stems.",
+      "entries": [
+        "{short stem}",
+        "{medium stem}",
+        "{long stem}"
+      ]
+    },
+    {
+      "name": "short stem",
+      "explanation": "Short place name stem.",
+      "entries": [
+        "",
+        "{ending}"
+      ]
+    },
+    {
+      "name": "medium stem",
+      "explanation": "Medium-length place name stems.",
+      "entries": [
+        "{short middle}{ending}",
+        "{medium middle}{ending}"
+      ]
+    },
+    {
+      "name": "long stem",
+      "explanation": "Long place name stems.",
+      "entries": [
+        "{short middle}{medium middle}{ending}",
+        "{medium middle}{short middle}{ending}",
+        "{!medium middle}{!medium middle}{ending}",
+        "{long middle}{ending}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "BEGINNING"
+    },
+    {
+      "name": "beginning",
+      "explanation": "Name starting components.",
+      "entries": [
+        "{beginning a}",
+        "{beginning b}",
+        "{beginning c}",
+        "{beginning d}",
+        "{beginning e}",
+        "{beginning f}",
+        "{beginning g}",
+        "{beginning h}",
+        "{beginning i}",
+        "{beginning j}",
+        "{beginning k}",
+        "{beginning l}",
+        "{beginning m}",
+        "{beginning n}",
+        "{beginning o}",
+        "{beginning p}",
+        "{beginning q}",
+        "{beginning r}",
+        "{beginning s}",
+        "{beginning t}",
+        "{beginning u}",
+        "{beginning v}",
+        "{beginning w}",
+        "{beginning x}",
+        "{beginning y}",
+        "{beginning z}"
+      ]
+    },
+    {
+      "name": "beginning a",
+      "entries": [
+        "Ash"
+      ]
+    },
+    {
+      "name": "beginning b",
+      "entries": [
+        "Beast",
+        "Birch"
+      ]
+    },
+    {
+      "name": "beginning c",
+      "entries": [
+        "Cursed"
+      ]
+    },
+    {
+      "name": "beginning d",
+      "entries": [
+        "Dark"
+      ]
+    },
+    {
+      "name": "beginning e",
+      "entries": [
+        "Evil"
+      ]
+    },
+    {
+      "name": "beginning f",
+      "entries": [
+        "Fey",
+        "Forbidden"
+      ]
+    },
+    {
+      "name": "beginning g",
+      "entries": [
+        "Gloomy"
+      ]
+    },
+    {
+      "name": "beginning h",
+      "entries": [
+        "Haunted"
+      ]
+    },
+    {
+      "name": "beginning i",
+      "entries": [
+        "Imp",
+        "Ivy"
+      ]
+    },
+    {
+      "name": "beginning j",
+      "entries": [
+        "Jagged"
+      ]
+    },
+    {
+      "name": "beginning k",
+      "entries": [
+        "King's"
+      ]
+    },
+    {
+      "name": "beginning l",
+      "entries": [
+        "Lone"
+      ]
+    },
+    {
+      "name": "beginning m",
+      "entries": [
+        "Misty"
+      ]
+    },
+    {
+      "name": "beginning n",
+      "entries": [
+        "Night"
+      ]
+    },
+    {
+      "name": "beginning o",
+      "entries": [
+        "Oak"
+      ]
+    },
+    {
+      "name": "beginning p",
+      "entries": [
+        "Prayer"
+      ]
+    },
+    {
+      "name": "beginning q",
+      "entries": [
+        "Quiet"
+      ]
+    },
+    {
+      "name": "beginning r",
+      "entries": [
+        "Red"
+      ]
+    },
+    {
+      "name": "beginning s",
+      "entries": [
+        "Shadow"
+      ]
+    },
+    {
+      "name": "beginning t",
+      "entries": [
+        "Trading"
+      ]
+    },
+    {
+      "name": "beginning u",
+      "entries": [
+        "Upper"
+      ]
+    },
+    {
+      "name": "beginning v",
+      "entries": [
+        "Vile"
+      ]
+    },
+    {
+      "name": "beginning w",
+      "entries": [
+        "Winter",
+        "Wraith"
+      ]
+    },
+    {
+      "name": "beginning x",
+      "entries": [
+        "{beginning}"
+      ]
+    },
+    {
+      "name": "beginning y",
+      "entries": [
+        "Yellow"
+      ]
+    },
+    {
+      "name": "beginning z",
+      "entries": [
+        "Zombie"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE"
+    },
+    {
+      "name": "middle",
+      "explanation": "Optional middle sections.",
+      "entries": [
+        "{short middle}",
+        "{medium middle}",
+        "{long middle}"
+      ]
+    },
+    {
+      "name": "short middle",
+      "explanation": "Optional short middle sections.",
+      "entries": [
+        "a",
+        "e",
+        "i",
+        "o",
+        "u"
+      ]
+    },
+    {
+      "name": "medium middle",
+      "explanation": "Optional medium-length middle sections.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "long middle",
+      "explanation": "Optional long middle sections.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ENDINGS"
+    },
+    {
+      "name": "ending",
+      "explanation": "Place name endings.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "APPELLATIONS"
+    },
+    {
+      "name": "appellation",
+      "entries": [
+        "the {prepend} {place}",
+        "{place} the {append}",
+        "{place}, {alias} {moniker}"
+      ]
+    },
+    {
+      "name": "byname",
+      "entries": [
+        "{prepend}",
+        "{append}"
+      ]
+    },
+    {
+      "name": "prepend",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "append",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MONIKERS"
+    },
+    {
+      "name": "moniker",
+      "entries": [
+        "{negative moniker}",
+        "{neutral moniker}",
+        "{positive moniker}"
+      ]
+    },
+    {
+      "name": "negative moniker",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "neutral moniker",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "positive moniker",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "INITIALS"
+    },
+    {
+      "name": "initial",
+      "explanation": "Place names grouped by their first letter.",
+      "entries": [
+        "{a}",
+        "{b}",
+        "{c}",
+        "{d}",
+        "{e}",
+        "{f}",
+        "{g}",
+        "{h}",
+        "{i}",
+        "{j}",
+        "{k}",
+        "{l}",
+        "{m}",
+        "{n}",
+        "{o}",
+        "{p}",
+        "{q}",
+        "{r}",
+        "{s}",
+        "{t}",
+        "{u}",
+        "{v}",
+        "{w}",
+        "{x}",
+        "{y}",
+        "{z}"
+      ]
+    },
+    {
+      "name": "a",
+      "entries": [
+        "{beginning a}{stem}"
+      ]
+    },
+    {
+      "name": "b",
+      "entries": [
+        "{beginning b}{stem}"
+      ]
+    },
+    {
+      "name": "c",
+      "entries": [
+        "{beginning c}{stem}"
+      ]
+    },
+    {
+      "name": "d",
+      "entries": [
+        "{beginning d}{stem}"
+      ]
+    },
+    {
+      "name": "e",
+      "entries": [
+        "{beginning e}{stem}"
+      ]
+    },
+    {
+      "name": "f",
+      "entries": [
+        "{beginning f}{stem}"
+      ]
+    },
+    {
+      "name": "g",
+      "entries": [
+        "{beginning g}{stem}"
+      ]
+    },
+    {
+      "name": "h",
+      "entries": [
+        "{beginning h}{stem}"
+      ]
+    },
+    {
+      "name": "i",
+      "entries": [
+        "{beginning i}{stem}"
+      ]
+    },
+    {
+      "name": "j",
+      "entries": [
+        "{beginning j}{stem}"
+      ]
+    },
+    {
+      "name": "k",
+      "entries": [
+        "{beginning k}{stem}"
+      ]
+    },
+    {
+      "name": "l",
+      "entries": [
+        "{beginning l}{stem}"
+      ]
+    },
+    {
+      "name": "m",
+      "entries": [
+        "{beginning m}{stem}"
+      ]
+    },
+    {
+      "name": "n",
+      "entries": [
+        "{beginning n}{stem}"
+      ]
+    },
+    {
+      "name": "o",
+      "entries": [
+        "{beginning o}{stem}"
+      ]
+    },
+    {
+      "name": "p",
+      "entries": [
+        "{beginning p}{stem}"
+      ]
+    },
+    {
+      "name": "q",
+      "entries": [
+        "{beginning q}{stem}"
+      ]
+    },
+    {
+      "name": "r",
+      "entries": [
+        "{beginning r}{stem}"
+      ]
+    },
+    {
+      "name": "s",
+      "entries": [
+        "{beginning s}{stem}"
+      ]
+    },
+    {
+      "name": "t",
+      "entries": [
+        "{beginning t}{stem}"
+      ]
+    },
+    {
+      "name": "u",
+      "entries": [
+        "{beginning u}{stem}"
+      ]
+    },
+    {
+      "name": "v",
+      "entries": [
+        "{beginning v}{stem}"
+      ]
+    },
+    {
+      "name": "w",
+      "entries": [
+        "{beginning w}{stem}"
+      ]
+    },
+    {
+      "name": "x",
+      "entries": [
+        "{beginning x}{stem}"
+      ]
+    },
+    {
+      "name": "y",
+      "entries": [
+        "{beginning y}{stem}"
+      ]
+    },
+    {
+      "name": "z",
+      "entries": [
+        "{beginning z}{stem}"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "FANTASTIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}",
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}",
+        "XXX"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "XXX"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        "{volcanic}",
+        "{glacier}",
+        "{underwater}",
+        "{seabed}",
+        "{air}",
+        "{space}",
+        "{dimension}"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "area",
+        "belt",
+        "district",
+        "locale",
+        "place",
+        "region",
+        "site",
+        "stretch",
+        "territory",
+        "tract"
+      ]
+    },
+    {
+      "name": "alias",
+      "explanation": "Variant expressions for 'Also Known As'.",
+      "entries": [
+        "alias",
+        "also called",
+        "also known as",
+        "better known as",
+        "known as",
+        "named as",
+        "often described as",
+        "otherwise known as",
+        "variously known as",
+        "widely known as"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "is gossiped to be",
+        "is reputed to be",
+        "is rumored to be",
+        "is said to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
+      ]
+    }
+  ]
+}

@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-03-05",
+  "date": "2018-08-03",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -53,7 +53,7 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {decoration}"
+        "{attribute} {decoration}"
       ]
     },
     {
@@ -154,17 +154,18 @@
       "name": "pattern",
       "explanation": "Decorative patterns.",
       "entries": [
-        "chaotic",
         "asymmetric",
-        "symmetric",
-        "dotted",
-        "spiral",
-        "circular",
-        "wavy",
-        "striped",
+        "chaotic",
         "chequered",
+        "circular",
+        "dotted",
         "geometric",
-        "tiled"
+        "speckled",
+        "spiral",
+        "striped",
+        "symmetric",
+        "tiled",
+        "wavy"
       ]
     },
     {
@@ -334,12 +335,12 @@
       "name": "special",
       "explanation": "Special decoration tables.",
       "entries": [
-        "{adjective}"
+        "{attribute}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives related to decoration.",
+      "name": "attribute",
+      "explanation": "Attributes related to decoration.",
       "entries": [
         "crude",
         "sketchy",

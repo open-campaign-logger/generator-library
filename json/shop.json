@@ -1,0 +1,1407 @@
+{
+  "name": "shop",
+  "resultPattern": "{init}{section}",
+  "globals": {
+    "business": "",
+    "commodity": "",
+    "establishment": "establishment"
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Stores, boutiques and emporiums.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "business, district",
+  "date": "2018-09-14",
+  "authors": "ELF Vesala.",
+  "sources": "",
+  "attribution": {
+    "creators": "",
+    "copyright": "",
+    "licence": "https://",
+    "disclaimer": "https://",
+    "source": "",
+    "changes": "Translation into Campaign Logger generator format."
+  },
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{word}",
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{establishment}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{shop}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "\"{shop}\" [{meta}]"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a sentence.",
+      "entries": [
+        "{shop} operates from {premises}. The place has {selection}, the prices are {pricing}. {personnel}. {staff}. {customers}."
+      ]
+    },
+    {
+      "name": "section",
+      "explanation": "Long description as a subheading and a text paragraph.",
+      "entries": [
+        "===== {shop} =====\r\n{b|{meta}} \r\nThe {store} operates from {premises}. The place has {selection} and the prices are {pricing}. \r\n{personnel}.\r\nThe place is {attribute}. It {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "- {b|Name}: {shop} \r\n- {b|Class}: {meta} \r\n- {b|Premises}: {premises} \r\n- {b|Selection}: {selection} \r\n- {b|Pricing}: {pricing} \r\n- {b|Proprietor}: {proprietor} \r\n- {b|Staff}: {staff} \r\n- {b|Customers}: {customers} \r\n- {b|Attribute}: {attribute} \r\n- {b|Feature}: {feature} "
+      ]
+    },
+    {
+      "name": "meta",
+      "explanation": "Off-game explanation of the result.",
+      "entries": [
+        "{g:establishment} for {g:business} {g:commodity}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "shop",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{|{common}|scase}"
+        },
+        "{|{rare}|scase}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Usual types.",
+      "entries": [
+        "{commodity}",
+        "{lib:name-random#summary}'s {commodity}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Unusual types.",
+      "entries": [
+        "{title} {commodity}"
+      ]
+    },
+    {
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "RANGES"
+    },
+    {
+      "name": "any",
+      "explanation": "Random selection.",
+      "entries": [
+        "{commodity}"
+      ]
+    },
+    {
+      "**************************************************": "COMMODITIES"
+    },
+    {
+      "name": "commodity",
+      "explanation": "Items and services offered for sale.",
+      "entries": [
+        "{goods} {goods establishment}",
+        "{goods title} {goods} {goods establishment}",
+        "{perishables} {perishables establishment}",
+        "{perishable title} {perishables} {perishables establishment}",
+        "{secondhand} {secondhand establishment}",
+        "{secondhand title} {secondhand} {secondhand establishment}",
+        "{service} {service establishment}",
+        "{service title} {service} {service establishment}"
+      ]
+    },
+    {
+      "==================================================": "GOODS"
+    },
+    {
+      "name": "goods",
+      "explanation": "Permanent goods for sale",
+      "export": {
+        "commodity": "goods"
+      },
+      "entries": [
+        "{!armor}",
+        "{!blacksmith}",
+        "{!carpenter}",
+        "{!clothing}",
+        "{!weapons}"
+      ]
+    },
+    {
+      "name": "armor",
+      "explanation": "Armours.",
+      "export": {
+        "business": "armoury"
+      },
+      "entries": [
+        "{!armor} & {!armor}",
+        "{lib:armor#word}",
+        "armour",
+        "protection",
+        "safe and sound",
+        "shield"
+      ]
+    },
+    {
+      "name": "blacksmith",
+      "explanation": "Smithy.",
+      "export": {
+        "business": "blacksmithing"
+      },
+      "entries": [
+        "anvil",
+        "arsenal",
+        "furnace",
+        "hammer",
+        "ironmonger",
+        "sledgehammer",
+        "steelwork"
+      ]
+    },
+    {
+      "name": "carpenter",
+      "explanation": "Carpentry.",
+      "export": {
+        "business": "carpentry"
+      },
+      "entries": [
+        "carpentry",
+        "timber",
+        "woodwork"
+      ]
+    },
+    {
+      "name": "clothing",
+      "explanation": "Clothes and apparel.",
+      "export": {
+        "business": "clothing"
+      },
+      "entries": [
+        "{!clothing} & {!clothing}",
+        "apparel",
+        "clothing",
+        "fashion",
+        "style",
+        "wardrobe"
+      ]
+    },
+    {
+      "name": "weapons",
+      "explanation": "Arms and weapons.",
+      "export": {
+        "business": "weaponry"
+      },
+      "entries": [
+        "{!weapons} & {!weapons}",
+        "{lib:weapon#word}",
+        "arms",
+        "arms locker",
+        "blades",
+        "knives",
+        "weapons",
+        "weapon stand"
+      ]
+    },
+    {
+      "==================================================": "PERISHABLES"
+    },
+    {
+      "name": "perishables",
+      "explanation": "One-time use items for sale.",
+      "export": {
+        "commodity": "perishables"
+      },
+      "entries": [
+        "{!grocer}"
+      ]
+    },
+    {
+      "name": "grocer",
+      "explanation": "Food and groceries.",
+      "export": {
+        "business": "grocery"
+      },
+      "entries": [
+        "{!grocer} & {!grocer}",
+        "banquet",
+        "delight",
+        "delicacy",
+        "dish",
+        "feast",
+        "fish",
+        "food",
+        "foodstuff",
+        "gourmet",
+        "grocery",
+        "meat",
+        "morsel",
+        "treat"
+      ]
+    },
+    {
+      "==================================================": "SECONDHAND"
+    },
+    {
+      "name": "secondhand",
+      "explanation": "Used items for sale.",
+      "export": {
+        "commodity": "secondhand"
+      },
+      "entries": [
+        "{!secondhand} & {!secondhand}",
+        "{armor}",
+        "{clothing}",
+        "{weapons}"
+      ]
+    },
+    {
+      "==================================================": "SERVICES"
+    },
+    {
+      "name": "service",
+      "explanation": "Services for sale.",
+      "export": {
+        "commodity": "services"
+      },
+      "entries": [
+        "{!service} & {!service}",
+        "{lodging}",
+        "{moneychanger}",
+        "{pawnshop}",
+        "{tavern}",
+        "{usurer}"
+      ]
+    },
+    {
+      "name": "lodging",
+      "explanation": "Boarding house services.",
+      "export": {
+        "business": "lodging"
+      },
+      "entries": [
+        "bed and breakfast",
+        "boarding",
+        "haven",
+        "home away from home",
+        "lodge",
+        "lodging",
+        "lodgment",
+        "palace",
+        "quarters",
+        "refuge",
+        "residence",
+        "retreat",
+        "room and board",
+        "rooming",
+        "rooms",
+        "room",
+        "sanctuary",
+        "shelter",
+        "suite"
+      ]
+    },
+    {
+      "name": "moneychanger",
+      "explanation": "Changing currencies to others.",
+      "export": {
+        "business": "pawnshop"
+      },
+      "entries": [
+        "capital",
+        "cash",
+        "currency",
+        "exchange",
+        "fund",
+        "money",
+        "tender"
+      ]
+    },
+    {
+      "name": "pawnshop",
+      "explanation": "Lending money against a valuable deposit.",
+      "export": {
+        "business": "pawnshop"
+      },
+      "entries": [
+        "deposit",
+        "financing",
+        "mortgage",
+        "pawnbroker",
+        "pawning",
+        "pawnshop"
+      ]
+    },
+    {
+      "name": "tavern",
+      "explanation": "Inn services.",
+      "export": {
+        "business": "lodging"
+      },
+      "entries": [
+        "alehouse",
+        "brewhouse",
+        "burrow",
+        "canteen",
+        "club",
+        "den",
+        "drinkery",
+        "hall",
+        "hideaway",
+        "house",
+        "inn",
+        "kitchen",
+        "lair",
+        "lobby",
+        "parlor",
+        "salon",
+        "pub",
+        "public house",
+        "tavern"
+      ]
+    },
+    {
+      "name": "usurer",
+      "explanation": "Lending money against interest.",
+      "export": {
+        "business": "usurer"
+      },
+      "entries": [
+        "banker",
+        "creditor",
+        "financier",
+        "financing",
+        "lender",
+        "loan",
+        "moneylender",
+        "moneymonger",
+        "usurer"
+      ]
+    },
+    {
+      "**************************************************": "TITLES"
+    },
+    {
+      "name": "any title",
+      "explanation": "Fully random descriptor.",
+      "entries": [
+        "{title}",
+        "{goods title}",
+        "{perishable title}",
+        "{secondhand title}",
+        "{service title}"
+      ]
+    },
+    {
+      "name": "title",
+      "explanation": "Universal shop descriptors.",
+      "entries": [
+        "best quality",
+        "cheap",
+        "exotic",
+        "fine",
+        "finest",
+        "first-rate",
+        "high-quality",
+        "quality",
+        "state-of-the-art",
+        "top quality"
+      ]
+    },
+    {
+      "name": "goods title",
+      "explanation": "",
+      "entries": [
+        "benign",
+        "brand-new",
+        "current",
+        "exemplary",
+        "faultless",
+        "foreign",
+        "immaculate",
+        "imported",
+        "just out",
+        "latest",
+        "modern",
+        "newfangled",
+        "novel",
+        "original",
+        "perfect",
+        "sound",
+        "up-to-date",
+        "virtuous",
+        "worthy"
+      ]
+    },
+    {
+      "name": "perishable title",
+      "explanation": "",
+      "entries": [
+        "{goods title}",
+        "fresh",
+        "healthy",
+        "invigorating",
+        "juicy",
+        "natural",
+        "nourishing",
+        "pure",
+        "raw",
+        "restorative",
+        "season's",
+        "seasonal",
+        "sparkling",
+        "stimulating",
+        "taintless",
+        "unblemished",
+        "unpolluted",
+        "unprocessed",
+        "virginal",
+        "wholesome"
+      ]
+    },
+    {
+      "name": "secondhand title",
+      "explanation": "",
+      "entries": [
+        "{goods title}",
+        "almost new",
+        "as good as new",
+        "buy and sell",
+        "intact",
+        "mint",
+        "new and used",
+        "pre-loved",
+        "pre-used",
+        "previously owned",
+        "second-hand",
+        "spotless",
+        "unstained",
+        "untarnished",
+        "used"
+      ]
+    },
+    {
+      "name": "service title",
+      "explanation": "",
+      "entries": [
+        "{goods title}",
+        "amicable",
+        "cheap",
+        "cheerful",
+        "cheery",
+        "cordial",
+        "easy",
+        "efficient",
+        "fast",
+        "friendly",
+        "genial",
+        "guaranteed",
+        "helpful",
+        "honest",
+        "jolly",
+        "kind",
+        "merry",
+        "quick",
+        "trustworthy"
+      ]
+    },
+    {
+      "**************************************************": "ESTABLISHMENTS"
+    },
+    {
+      "name": "establishment",
+      "explanation": "Classes of shops.",
+      "entries": [
+        "{agency}",
+        "{auction}",
+        "{exchange}",
+        "{illicit}",
+        "{large}",
+        "{market}",
+        "{medium}",
+        "{premium}",
+        "{small}",
+        "{specialty}",
+        "{street}",
+        "{thrift}",
+        "{wholesale}"
+      ]
+    },
+    {
+      "--------------------------------------------------": ""
+    },
+    {
+      "name": "goods establishment",
+      "explanation": "Establishment types for sellers of goods.",
+      "entries": [
+        "{store}",
+        "{vendor}",
+        "{agency}",
+        "{auction}",
+        "{exchange}",
+        "{illicit}",
+        "{large}",
+        "{market}",
+        "{medium}",
+        "{premium}",
+        "{small}",
+        "{specialty}",
+        "{street}",
+        "{thrift}",
+        "{wholesale}"
+      ]
+    },
+    {
+      "name": "perishables establishment",
+      "explanation": "Establishment types for sellers of perishables.",
+      "entries": [
+        "{store}",
+        "{vendor}",
+        "{large}",
+        "{market}",
+        "{medium}",
+        "{small}",
+        "{street}",
+        "{wholesale}"
+      ]
+    },
+    {
+      "name": "secondhand establishment",
+      "explanation": "Establishment types for sellers of secondhand goods.",
+      "entries": [
+        "{store}",
+        "{vendor}",
+        "{auction}",
+        "{exchange}",
+        "{illicit}",
+        "{market}",
+        "{small}",
+        "{specialty}",
+        "{street}",
+        "{thrift}"
+      ]
+    },
+    {
+      "name": "service establishment",
+      "explanation": "Establishment types for sellers of services.",
+      "entries": [
+        "{agency}",
+        "{market}",
+        "{small}",
+        "{specialty}",
+        "{street}"
+      ]
+    },
+    {
+      "--------------------------------------------------": ""
+    },
+    {
+      "name": "agency",
+      "explanation": "Agency establishments.",
+      "export": {
+        "establishment": "agency"
+      },
+      "entries": [
+        "{wholesale}",
+        "agency",
+        "agent",
+        "agreements",
+        "appraiser",
+        "arbitrator",
+        "arrangements",
+        "assessor",
+        "auditor",
+        "bonds",
+        "bureau",
+        "conciliator",
+        "contracts",
+        "deals",
+        "delegate",
+        "emissary",
+        "financier",
+        "fixer",
+        "interagent",
+        "intermediary",
+        "intermedium",
+        "mediator",
+        "middleman",
+        "moderator",
+        "negotiations",
+        "negotiator",
+        "office",
+        "overseer",
+        "pacts",
+        "pledges",
+        "settlements",
+        "transactions",
+        "treaties"
+      ]
+    },
+    {
+      "name": "auction",
+      "explanation": "Auction establishments.",
+      "export": {
+        "establishment": "auction"
+      },
+      "entries": [
+        "{exchange}",
+        "auction",
+        "auctioneer",
+        "auctioneers",
+        "auctioning",
+        "auctions",
+        "barter",
+        "bartering",
+        "depository",
+        "haggle",
+        "haggling",
+        "pawnshop"
+      ]
+    },
+    {
+      "name": "exchange",
+      "explanation": "Exchange establishments.",
+      "export": {
+        "establishment": "exchange"
+      },
+      "entries": [
+        "{auction}",
+        "broker",
+        "exchange",
+        "swap",
+        "swapping",
+        "swop",
+        "swopping",
+        "trade",
+        "trading"
+      ]
+    },
+    {
+      "name": "illicit",
+      "explanation": "Shady establishments.",
+      "export": {
+        "establishment": "illicit trader"
+      },
+      "entries": [
+        "{small}",
+        "cartel",
+        "fence",
+        "handler",
+        "jobber",
+        "operator",
+        "ring",
+        "smuggler",
+        "syndicate",
+        "trafficker"
+      ]
+    },
+    {
+      "name": "large",
+      "explanation": "",
+      "export": {
+        "establishment": "large establishment"
+      },
+      "entries": [
+        "{medium}",
+        "arcade",
+        "center",
+        "depot",
+        "emporium",
+        "enterprise",
+        "galleria",
+        "mart",
+        "piazza",
+        "plaza",
+        "warehouse"
+      ]
+    },
+    {
+      "name": "market",
+      "explanation": "Marketplace style establishments.",
+      "export": {
+        "establishment": "market stand"
+      },
+      "entries": [
+        "{small}",
+        "bazaar",
+        "booth",
+        "fair",
+        "flea fair",
+        "flea market",
+        "market",
+        "stables",
+        "stall"
+      ]
+    },
+    {
+      "name": "medium",
+      "explanation": "Types of shops.",
+      "export": {
+        "establishment": "medium-sized establishment"
+      },
+      "entries": [
+        "{large}",
+        "house",
+        "marketer",
+        "merchandise",
+        "shop",
+        "store",
+        "vending"
+      ]
+    },
+    {
+      "name": "premium",
+      "explanation": "Expensive shops.",
+      "export": {
+        "establishment": "premium establishment"
+      },
+      "entries": [
+        "{specialty}",
+        "boutique",
+        "chamber",
+        "hall",
+        "purveyor",
+        "showroom"
+      ]
+    },
+    {
+      "name": "small",
+      "explanation": "Little establishments.",
+      "export": {
+        "establishment": "small establishment"
+      },
+      "entries": [
+        "{medium}",
+        "alcove",
+        "attic",
+        "basement",
+        "cabin",
+        "cellar",
+        "closet",
+        "cottage",
+        "hovel",
+        "hut",
+        "pantry",
+        "room",
+        "shack",
+        "shed",
+        "vault"
+      ]
+    },
+    {
+      "name": "specialty",
+      "explanation": "Specialized establishments.",
+      "export": {
+        "establishment": "specialty establishment"
+      },
+      "entries": [
+        "{agency}",
+        "adept",
+        "authority",
+        "connoisseur",
+        "expert",
+        "guidance",
+        "guide",
+        "master",
+        "mastery",
+        "masterpieces",
+        "professionals",
+        "sage",
+        "savant",
+        "scholar",
+        "specialist",
+        "specialties",
+        "speciality",
+        "specialty shop",
+        "virtuoso"
+      ]
+    },
+    {
+      "name": "street",
+      "explanation": "Vendors on the street.",
+      "export": {
+        "establishment": "street vendor"
+      },
+      "entries": [
+        "{market}",
+        "cart",
+        "colporteur",
+        "costard",
+        "coster",
+        "costermonger",
+        "hawker",
+        "huckster",
+        "peddler",
+        "pitcher",
+        "street seller",
+        "street vendor"
+      ]
+    },
+    {
+      "name": "thrift",
+      "explanation": "Cheap stores.",
+      "export": {
+        "establishment": "thrift store"
+      },
+      "entries": [
+        "{small}",
+        "bargains",
+        "clearance",
+        "closeout",
+        "cut-rate store",
+        "discount house",
+        "discount store",
+        "discounts",
+        "outlet",
+        "sales",
+        "thrift shop",
+        "variety store"
+      ]
+    },
+    {
+      "name": "wholesale",
+      "explanation": "Wholesale establishments.",
+      "export": {
+        "establishment": "wholesale establishment"
+      },
+      "entries": [
+        "{large}",
+        "bulk trade",
+        "bulk trading",
+        "commerce",
+        "dealer",
+        "dealing",
+        "mass trade",
+        "mass trading",
+        "quantity discounts",
+        "volume trade",
+        "volume trading",
+        "wholesale"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "==================================================": "PREMISES"
+    },
+    {
+      "name": "premises",
+      "explanation": "Details of the building.",
+      "format": "The shop operates from --",
+      "entries": [
+        "a cart",
+        "a market stall",
+        "a small building",
+        "a basement of a house",
+        "a large building"
+      ]
+    },
+    {
+      "==================================================": "STOCK"
+    },
+    {
+      "name": "pricing",
+      "explanation": "Details of the shop price level.",
+      "entries": [
+        "cheap",
+        "average",
+        "expensive",
+        "outrageous"
+      ]
+    },
+    {
+      "name": "sale items",
+      "explanation": "Item groups that are on sale.",
+      "format": "a sale for --",
+      "entries": [
+        "a failed type of product",
+        "clearance items",
+        "currently unfashionable items",
+        "customer returns",
+        "damaged goods",
+        "items that seem perfectly fine",
+        "items with cosmetic defects",
+        "last items of a product category to be removed",
+        "last season's items that are no longer in vogue",
+        "obviously used goods",
+        "old stock",
+        "poorly selling items",
+        "popular but overstocked items",
+        "sample items",
+        "some dust-covered old items",
+        "some garish-looking items",
+        "ugly but functional items"
+      ]
+    },
+    {
+      "name": "selection",
+      "explanation": "Details of the shop inventory.",
+      "entries": [
+        "a small selection",
+        "a wide selection"
+      ]
+    },
+    {
+      "==================================================": "PERSONNEL"
+    },
+    {
+      "name": "personnel",
+      "explanation": "The people present in the establishment.",
+      "entries": [
+        "{proprietor}. {staff}",
+        "{proprietor}. {customers}",
+        "{proprietor}. {staff}. {customers}"
+      ]
+    },
+    {
+      "name": "proprietor",
+      "explanation": "",
+      "entries": [
+        "The proprietor appears not to be present",
+        "The proprietor is {lib:NPC#init}{lib:NPC#basic}. {g:name} is {mood}, {proprietor activity}"
+      ]
+    },
+    {
+      "name": "personality",
+      "explanation": "Characteristics of the shop proprietor and workers.",
+      "entries": [
+        "{lib:personality#summary}",
+        "rude",
+        "eccentric",
+        "talkative",
+        "polite"
+      ]
+    },
+    {
+      "name": "mood",
+      "explanation": "States of mind.",
+      "entries": [
+        "{lib:emotion#summary}"
+      ]
+    },
+    {
+      "name": "staff",
+      "explanation": "Employers in the shop",
+      "entries": [
+        "There is no staff visible",
+        "There is an assistant present: {lib:NPC#init}{g:name} - {lib:NPC#basic}, {staff activity}"
+      ]
+    },
+    {
+      "name": "customers",
+      "explanation": "Other visitors in the shop",
+      "entries": [
+        "There are no other customers visible",
+        "There is a customer present: {lib:NPC#init}{lib:NPC#basic}, {customer activity}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ACTIVITIES"
+    },
+    {
+      "name": "activity",
+      "explanation": "",
+      "entries": [
+        "{proprietor activity}",
+        "{staff activity}",
+        "{customer activity}"
+      ]
+    },
+    {
+      "name": "proprietor activity",
+      "explanation": "",
+      "entries": [
+        "lost in their thoughts",
+        "studying the inventory"
+      ]
+    },
+    {
+      "name": "staff activity",
+      "explanation": "",
+      "entries": [
+        "cleaning",
+        "organizing the store"
+      ]
+    },
+    {
+      "name": "customer activity",
+      "explanation": "",
+      "entries": [
+        "browsing the selection",
+        "comparing prices"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomization methods.",
+      "entries": [
+        "{component}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMPONENTS"
+    },
+    {
+      "name": "component",
+      "explanation": "Component-based terms (generated from words).",
+      "entries": [
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{compoundbegin}",
+        "{lib:name-random#summary}'s"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "FANTASTIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
+        "{store}",
+        "{vendor}"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "seems to be"
+      ]
+    },
+    {
+      "name": "services",
+      "explanation": "Variant expressions for 'assistance'.",
+      "entries": [
+        "aid",
+        "assistance",
+        "facilitation",
+        "help",
+        "relief",
+        "service",
+        "services",
+        "support"
+      ]
+    },
+    {
+      "name": "store",
+      "explanation": "Variant expressions for 'shop'.",
+      "entries": [
+        "business",
+        "establishment",
+        "shop",
+        "store"
+      ]
+    },
+    {
+      "name": "vendor",
+      "explanation": "Variant expressions for 'seller'.",
+      "entries": [
+        "dealer",
+        "merchant",
+        "owner",
+        "proprietor",
+        "retailer",
+        "seller",
+        "shopkeeper",
+        "store owner",
+        "vendor"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special shop tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ATTRIBUTES"
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attributes related to the shop.",
+      "format": "The -- store",
+      "entries": [
+        "{lighting}",
+        "{organization}"
+      ]
+    },
+    {
+      "name": "lighting",
+      "explanation": "The brightness level of the shop.",
+      "format": "The -- store",
+      "entries": [
+        "brightly lit",
+        "dimly-lit",
+        "somewhat hazy",
+        "well lit"
+      ]
+    },
+    {
+      "name": "organization",
+      "explanation": "The orderliness of the shop.",
+      "entries": [
+        "chaotic",
+        "disarrayed",
+        "orderly",
+        "overstocked",
+        "well-organized"
+      ]
+    },
+    {
+      "--------------------------------------------------": ""
+    },
+    {
+      "name": "feature",
+      "explanation": "Features related to the shop.",
+      "format": "The store --",
+      "entries": [
+        "{air}",
+        "{closed}",
+        "{event}"
+      ]
+    },
+    {
+      "name": "air",
+      "explanation": "The air in the shop.",
+      "entries": [
+        "has an odd smell lingering in the air",
+        "has a slight smell of smoke permeating the premises",
+        "smells strongly of stale sweat"
+      ]
+    },
+    {
+      "name": "closed",
+      "explanation": "The shop is closed.",
+      "format": "The store --",
+      "entries": [
+        "is closed until the {vendor} returns from an errand",
+        "is temporarily closed",
+        "is apparently closed until further notice"
+      ]
+    },
+    {
+      "name": "event",
+      "explanation": "Events in the shop.",
+      "entries": [
+        "has a sale for {sale items}",
+        "has recently been robbed",
+        "is being renovated",
+        "is reorganizing its premises and the wares are in disarray",
+        "is having an inventory over its stock",
+        "suffered a fire some time ago"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+      ]
+    }
+  ]
+}

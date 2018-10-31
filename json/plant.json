@@ -6,7 +6,7 @@
     "actants": "plants",
     "actantgroup": "patch",
     "actantaction": "rooted",
-    "actantadjective": "plain",
+    "actantattribute": "plain",
     "actantdescription": "The plant seems oblivious to their surroundings.",
     "attitude": "passive",
     "footnote": ""
@@ -16,8 +16,8 @@
   "note": "",
   "to do": "Expanding special biotopes (such as water plants).",
   "see": "",
-  "date": "2018-01-21",
-  "authors": "Esko Vesala",
+  "date": "2018-08-04",
+  "authors": "ELF Vesala",
   "sources": "Wikipedia.org",
   "genre": "universal",
   "categories": [
@@ -97,7 +97,7 @@
       "name": "mushroom",
       "explanation": "Edible mushrooms.",
       "entries": [
-        "some type of mushroom",
+        "mushroom",
         "chanterelle mushroom",
         "champignon mushroom",
         "penny bun mushroom",
@@ -427,6 +427,9 @@
       "**************************************************": "WORLD-SPECIFIC"
     },
     {
+      "--------------------------------------------------": "MYTH"
+    },
+    {
       "name": "myth",
       "explanation": "Imaginary plants once rumoured to have existed.",
       "entries": [
@@ -461,12 +464,34 @@
       ]
     },
     {
+      "--------------------------------------------------": "FANTASY"
+    },
+    {
       "name": "fantasy",
       "explanation": "Fantasy plants (with no basis in myth).",
       "entries": [
         "{myth}",
+        "{fantasy beginning} {ending}",
+        "{descriptor} {fantasy beginning}{ending}",
+        "{fantasy beginning}{ending}{extension}",
+        "{descriptor} {fantasy beginning}{ending}{extension}",
         "{random}"
       ]
+    },
+    {
+      "name": "fantasy beginning",
+      "explanation": "Fantasy-related initial name components.",
+      "entries": [
+        "{lib:nonhuman#summary}",
+        "elf",
+        "fairy",
+        "goblin",
+        "mage",
+        "witch"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MODERN"
     },
     {
       "name": "modern",
@@ -478,6 +503,9 @@
       ]
     },
     {
+      "--------------------------------------------------": "FUTURISTIC"
+    },
+    {
       "name": "futuristic",
       "explanation": "Imaginary plants for science fiction worlds.",
       "entries": [
@@ -486,71 +514,193 @@
       ]
     },
     {
-      "**************************************************": "RANDOM CREATION"
+      "**************************************************": "RANDOMIZATION"
     },
     {
       "name": "random",
       "explanation": "Randomized plants (names generated from components).",
       "entries": [
         "{beginning}{ending}",
-        "{descriptor}{beginning}{ending}"
+        "{descriptor} {plant}",
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending}{extension}",
+        "{descriptor} {beginning}{ending}{extension}"
       ]
     },
     {
       "name": "descriptor",
       "explanation": "Descriptors for randomized plant names.",
       "entries": [
-        "",
-        "lingering ",
-        "poisonous ",
-        "deadly ",
-        "{lib:color#plant} "
+        "{lib:aspect#summary}",
+        "{lib:concept#descriptor}",
+        "{lib:concept#shape}-leaved",
+        "{lib:color#prime}-eyed",
+        "{lib:color#prime}-headed",
+        "{lib:color#prime}-leaved",
+        "{lib:color#prime}-rooted",
+        "bleeding",
+        "blessed",
+        "crawling",
+        "creeping",
+        "cutleaf",
+        "dancing",
+        "evergreen",
+        "flowering",
+        "five-leaved",
+        "four-leaved",
+        "garden",
+        "greater",
+        "hairy",
+        "hanging",
+        "lush",
+        "majestic",
+        "perennial",
+        "pleasant",
+        "poisonous",
+        "royal",
+        "running",
+        "speckled",
+        "spicy",
+        "spiky",
+        "spiny",
+        "stinking",
+        "striped",
+        "three-leaved",
+        "trailing",
+        "two-leaved",
+        "twisted",
+        "weeping"
       ]
     },
     {
       "name": "beginning",
       "explanation": "Beginnings for randomized plant names.",
       "entries": [
-        "night",
-        "dawn",
-        "rain",
-        "moon",
-        "sun",
-        "ash",
-        "goblin",
-        "elf",
-        "fairy",
-        "silver",
-        "gold",
-        "{lib:nonhuman#summary}",
-        "{lib:color#prime}"
+        "{lib:concept#summary}",
+        "{person beginning}"
+      ]
+    },
+    {
+      "name": "person beginning",
+      "explanation": "Person-related initial name components.",
+      "entries": [
+        "angels",
+        "beggars",
+        "devils",
+        "felons",
+        "hags",
+        "kings",
+        "knights",
+        "ladys",
+        "maids",
+        "monks",
+        "queens",
+        "sages",
+        "witchs"
       ]
     },
     {
       "name": "ending",
       "explanation": "Endings for randomized plant names.",
       "entries": [
-        "wort",
-        "weed",
-        "grass",
-        "root",
-        "seed",
-        "vine",
-        "creeper",
-        "leaf",
-        "herb",
-        "nut",
-        "clove",
-        "spore",
-        "spice",
-        "shade",
-        "petal",
-        "bloom",
-        "flower"
+        "{function ending}",
+        "{plant ending}",
+        "{shape ending}"
       ]
     },
     {
-      "**************************************************": "SPECIAL TABLES"
+      "name": "function ending",
+      "explanation": "Function-related final name components.",
+      "entries": [
+        "bane",
+        "bite",
+        "cure",
+        "foe",
+        "friend",
+        "shade"
+      ]
+    },
+    {
+      "name": "plant ending",
+      "explanation": "Plant-related final name components.",
+      "entries": [
+        "bark",
+        "berry",
+        "bloom",
+        "blossom",
+        "bud",
+        "bur",
+        "bush",
+        "cabbage",
+        "cane",
+        "clove",
+        "corm",
+        "creeper",
+        "fern",
+        "flower",
+        "fruit",
+        "grain",
+        "grass",
+        "hay",
+        "herb",
+        "ivy",
+        "leaf",
+        "lily",
+        "moss",
+        "nut",
+        "petal",
+        "plant",
+        "plum",
+        "reed",
+        "root",
+        "rose",
+        "seed",
+        "shoot",
+        "spice",
+        "spore",
+        "tree",
+        "vine",
+        "weed",
+        "wood",
+        "wort"
+      ]
+    },
+    {
+      "name": "shape ending",
+      "explanation": "Shape-related final name components.",
+      "entries": [
+        "beard",
+        "bell",
+        "button",
+        "cap",
+        "comb",
+        "cup",
+        "feather",
+        "finger",
+        "fork",
+        "foot",
+        "lace",
+        "needle",
+        "nest",
+        "rod",
+        "snout",
+        "spoon",
+        "spur",
+        "tail",
+        "toe",
+        "tongue",
+        "trumpet"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized names.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL CASES"
     },
     {
       "name": "special",

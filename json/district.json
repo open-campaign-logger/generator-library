@@ -1,0 +1,863 @@
+{
+  "name": "district",
+  "resultPattern": "{init}{lib:formatting#CL}{result}",
+  "globals": {
+    "variable": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Neighborhoods for settlements.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "Separate proper names from district types!",
+  "see": "business, settlement, shop, street",
+  "date": "2018-08-30",
+  "authors": "ELF Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{word}",
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{neighborhood}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{district}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {district}",
+        "{district} {feature}."
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {district} {synonym} {looks} {attribute}.",
+        "The {district} {synonym} {feature}.",
+        "The {attribute} {district} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{g:bullet}{g:startbold}District{g:endbold}: {district}. \r\n{g:bullet}{g:startbold}Attribute{g:endbold}: {attribute}. \r\n{g:bullet}{g:startbold}Feature{g:endbold}: This {synonym} {feature}."
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "district",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common types.",
+      "entries": [
+        "{poor}",
+        "{lower class}",
+        "{middle class}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare types.",
+      "entries": [
+        "{upper class}",
+        "{rich}"
+      ]
+    },
+    {
+      "**************************************************": "STATUS"
+    },
+    {
+      "name": "poor",
+      "explanation": "Poor neighborhoods.",
+      "entries": [
+        "{poor area} {poor neighborhood}"
+      ]
+    },
+    {
+      "name": "lower class",
+      "explanation": "Lower class neighborhoods.",
+      "entries": [
+        "{lower class area} {lower class neighborhood}"
+      ]
+    },
+    {
+      "name": "middle class",
+      "explanation": "Middle class neighborhoods.",
+      "entries": [
+        "{middle class area} {middle class neighborhood}"
+      ]
+    },
+    {
+      "name": "upper class",
+      "explanation": "Upper class neighborhoods.",
+      "entries": [
+        "{upper class area} {upper class neighborhood}"
+      ]
+    },
+    {
+      "name": "rich",
+      "explanation": "Rich neighborhoods.",
+      "entries": [
+        "{rich area} {rich neighborhood}"
+      ]
+    },
+    {
+      "**************************************************": "AREAS"
+    },
+    {
+      "name": "area",
+      "explanation": "Inhabitants of the district.",
+      "entries": [
+        "{poor area}",
+        "{lower class area}",
+        "{middle class area}",
+        "{upper class area}",
+        "{rich area}"
+      ]
+    },
+    {
+      "name": "poor area",
+      "explanation": "Poor inhabitants.",
+      "entries": [
+        "{lib:occupation#poor}s'",
+        "thieves'",
+        "beggars'",
+        "{lower class area}"
+      ]
+    },
+    {
+      "name": "lower class area",
+      "explanation": "Lower class inhabitants.",
+      "entries": [
+        "{poor area}",
+        "{lib:occupation#lower class}s'",
+        "adventurers'",
+        "travelers'",
+        "workers'",
+        "{middle class area}"
+      ]
+    },
+    {
+      "name": "middle class area",
+      "explanation": "Middle class inhabitants.",
+      "entries": [
+        "{lower class area}",
+        "{lib:occupation#middle class}s'",
+        "craftsmen's",
+        "artificiers'",
+        "cobblers'",
+        "{upper class area}"
+      ]
+    },
+    {
+      "name": "upper class area",
+      "explanation": "Upper class inhabitants.",
+      "entries": [
+        "{middle class area}",
+        "{lib:occupation#upper class}s'",
+        "merchants'",
+        "priests'",
+        "scholars'",
+        "{rich area}"
+      ]
+    },
+    {
+      "name": "rich area",
+      "explanation": "Affluent inhabitants.",
+      "entries": [
+        "{upper class area}",
+        "{lib:occupation#rich}s'",
+        "nobles'"
+      ]
+    },
+    {
+      "**************************************************": "NEIGHBORHOODS"
+    },
+    {
+      "name": "neighborhood",
+      "explanation": "Types of neighborhoods.",
+      "entries": [
+        "{poor neighborhood}",
+        "{lower class neighborhood}",
+        "{middle class neighborhood}",
+        "{upper class neighborhood}",
+        "{rich neighborhood}"
+      ]
+    },
+    {
+      "name": "poor neighborhood",
+      "explanation": "Poor neighborhoods.",
+      "entries": [
+        "{slum}",
+        "{harbor}",
+        "{border}",
+        "{warehouse}"
+      ]
+    },
+    {
+      "name": "lower class neighborhood",
+      "explanation": "Lower class neighborhoods.",
+      "entries": [
+        "{residential}",
+        "{commercial}",
+        "{harbor}",
+        "{border}",
+        "{warehouse}",
+        "{suburb}",
+        "{entertainment}",
+        "{artisan}"
+      ]
+    },
+    {
+      "name": "middle class neighborhood",
+      "explanation": "Middle class neighborhoods.",
+      "entries": [
+        "{residential}",
+        "{commercial}",
+        "{entertainment}",
+        "{artisan}",
+        "{suburb}",
+        "{park}",
+        "{administrative}",
+        "{financial}",
+        "{midtown}"
+      ]
+    },
+    {
+      "name": "upper class neighborhood",
+      "explanation": "Upper class neighborhoods.",
+      "entries": [
+        "{residential}",
+        "{commercial}",
+        "{midtown}",
+        "{suburb}",
+        "{park}",
+        "{administrative}",
+        "{church}",
+        "{financial}",
+        "{wealthy}"
+      ]
+    },
+    {
+      "name": "rich neighborhood",
+      "explanation": "Rich neighborhoods.",
+      "entries": [
+        "{church}",
+        "{financial}",
+        "{wealthy}"
+      ]
+    },
+    {
+      "name": "administrative",
+      "explanation": "Governmental area.",
+      "entries": [
+        "district",
+        "court",
+        "forum",
+        "embassy",
+        "library",
+        "domain",
+        "dominion",
+        "demesne",
+        "presidium"
+      ]
+    },
+    {
+      "name": "artisan",
+      "explanation": "Craftsmen's and artificers' district.",
+      "entries": [
+        "forge",
+        "smithy",
+        "crafts",
+        "stalls",
+        "tannery",
+        "shed"
+      ]
+    },
+    {
+      "name": "border",
+      "explanation": "The edges of the city.",
+      "entries": [
+        "rampart",
+        "moat",
+        "ditch",
+        "wall",
+        "hedge",
+        "gate",
+        "lip",
+        "hem",
+        "skirt",
+        "rim",
+        "brim",
+        "edge",
+        "brink",
+        "verge",
+        "fringe",
+        "frontier",
+        "border",
+        "boundary",
+        "terminus"
+      ]
+    },
+    {
+      "name": "church",
+      "explanation": "Church district.",
+      "entries": [
+        "cathedral",
+        "church",
+        "shrine",
+        "temple",
+        "tabernacle",
+        "altar",
+        "chancel",
+        "sanctum",
+        "sanctorium",
+        "reliquary",
+        "feretory",
+        "arca",
+        "pantheon",
+        "cloister",
+        "convent",
+        "abbey",
+        "friary",
+        "priory",
+        "priorate",
+        "hermitage",
+        "monastery",
+        "community",
+        "chapterhouse"
+      ]
+    },
+    {
+      "name": "commercial",
+      "explanation": "Shops and stores.",
+      "entries": [
+        "market",
+        "bazaar",
+        "exchange",
+        "trade",
+        "monger",
+        "vend",
+        "barter"
+      ]
+    },
+    {
+      "name": "entertainment",
+      "explanation": "Show and entertainment areas.",
+      "entries": [
+        "circus",
+        "carnival",
+        "fair",
+        "gala",
+        "fete",
+        "kermis",
+        "pageant",
+        "banquet",
+        "feast",
+        "show",
+        "gilly",
+        "regale",
+        "delight"
+      ]
+    },
+    {
+      "name": "financial",
+      "explanation": "Banking and large companies.",
+      "entries": [
+        "treasury",
+        "hoard",
+        "vault",
+        "coffer",
+        "safe",
+        "plaza"
+      ]
+    },
+    {
+      "name": "harbor",
+      "explanation": "The dock area.",
+      "entries": [
+        "harbor",
+        "docks",
+        "dock",
+        "port",
+        "marina",
+        "pier",
+        "wharf",
+        "jetty",
+        "quay",
+        "berth",
+        "dam",
+        "landing",
+        "point",
+        "isle",
+        "cay",
+        "bay",
+        "cove",
+        "enclave",
+        "front",
+        "shingle",
+        "strand",
+        "waterfront",
+        "bank",
+        "shore",
+        "beach",
+        "coast",
+        "cliff"
+      ]
+    },
+    {
+      "name": "midtown",
+      "explanation": "Central area.",
+      "entries": [
+        "city",
+        "gallery",
+        "square",
+        "center",
+        "central",
+        "main"
+      ]
+    },
+    {
+      "name": "park",
+      "explanation": "Outdoor recreational areas.",
+      "entries": [
+        "park",
+        "garden",
+        "grove",
+        "lawn",
+        "green",
+        "wood",
+        "woods",
+        "menagerie",
+        "range"
+      ]
+    },
+    {
+      "name": "residential",
+      "explanation": "Living quarters.",
+      "entries": [
+        "quarter",
+        "ward",
+        "town",
+        "abode",
+        "residence",
+        "lodge",
+        "shelter",
+        "berth",
+        "refuge",
+        "cot"
+      ]
+    },
+    {
+      "name": "slum",
+      "explanation": "The abodes of the poorest.",
+      "entries": [
+        "shantytown",
+        "hideout",
+        "shelter",
+        "ghetto",
+        "slum",
+        "hive",
+        "nest",
+        "lair",
+        "den",
+        "sty",
+        "pit",
+        "pits",
+        "fen",
+        "bog",
+        "sump",
+        "quag",
+        "mire",
+        "moss",
+        "marsh",
+        "swale",
+        "slough",
+        "sewer",
+        "cesspit",
+        "cesspool",
+        "bottoms",
+        "hollow",
+        "burrow"
+      ]
+    },
+    {
+      "name": "suburb",
+      "explanation": "Residential areas away from the center.",
+      "entries": [
+        "acre",
+        "dale",
+        "vale",
+        "valley",
+        "side",
+        "nook",
+        "corner"
+      ]
+    },
+    {
+      "name": "wealthy",
+      "explanation": "Affluent uptown areas for the wealthy.",
+      "entries": [
+        "haven",
+        "sanctuary",
+        "embrace",
+        "atelier",
+        "cloister",
+        "sanctum",
+        "resort",
+        "retreat",
+        "heights",
+        "towers",
+        "hill"
+      ]
+    },
+    {
+      "name": "warehouse",
+      "explanation": "Depots and depositories.",
+      "entries": [
+        "yard",
+        "stash",
+        "stock",
+        "haul",
+        "bale",
+        "heft",
+        "load",
+        "freight",
+        "depot",
+        "store",
+        "loft",
+        "lot",
+        "tract"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZATION"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{beginning} {ending}",
+        "{descriptor} {beginning} {ending}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        "{age}",
+        "{direction}",
+        "{elevation}",
+        "{elevation} {direction}",
+        "{location}"
+      ]
+    },
+    {
+      "name": "age",
+      "explanation": "The age of the district",
+      "entries": [
+        "Old",
+        "New"
+      ]
+    },
+    {
+      "name": "direction",
+      "explanation": "Compass point.",
+      "entries": [
+        "North",
+        "East",
+        "South",
+        "West"
+      ]
+    },
+    {
+      "name": "elevation",
+      "explanation": "Vertical position.",
+      "entries": [
+        "Lower",
+        "Low",
+        "High",
+        "Upper"
+      ]
+    },
+    {
+      "name": "location",
+      "explanation": "Location.",
+      "entries": [
+        "Bayside",
+        "Hillside"
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{lib:prefix#place}"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "{district}"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Districts for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{district}",
+        "arcane {neighborhood}"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Districts once rumoured to have existed.",
+      "entries": [
+        "{district}"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Districts for Middle Age worlds (without magic).",
+      "entries": [
+        "{district}",
+        "flea {slum}"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Districts for modern worlds.",
+      "entries": [
+        "{district}",
+        "suburb",
+        "precinct",
+        "projects"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Districts for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "turf",
+        "block",
+        "sector",
+        "zone",
+        "urb"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        "zone"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "district",
+        "neighborhood",
+        "territory",
+        "area",
+        "place",
+        "site",
+        "region",
+        "locale",
+        "locality",
+        "location"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "looks to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attributes related to the district.",
+      "format": "Optionally prepended to the front of the result.",
+      "entries": [
+        "messy",
+        "littered",
+        "clean",
+        "shady",
+        "gloomy",
+        "well-lit",
+        "maze-like",
+        "orderly",
+        "hostile",
+        "friendly",
+        "historic",
+        "new",
+        "diverse"
+      ]
+    },
+    {
+      "--------------------------------------------------": "FEATURES"
+    },
+    {
+      "name": "feature",
+      "explanation": "Features related to the district.",
+      "format": "Optionally appended to the end of the result.",
+      "entries": [
+        "{poor feature}",
+        "{lower class feature}",
+        "{middle class feature}",
+        "{upper class feature}",
+        "{rich feature}"
+      ]
+    },
+    {
+      "name": "poor feature",
+      "explanation": "Features for poor districts.",
+      "entries": [
+        "is best avoided by night, say many",
+        "whose reputation is bad",
+        "{lower class feature}"
+      ]
+    },
+    {
+      "name": "lower class feature",
+      "explanation": "Features for lower class districts.",
+      "entries": [
+        "{poor feature}",
+        "has fallen in disrepair",
+        "has recently lost many of its inhabitants",
+        "has seen better days",
+        "gets livelier by evenings",
+        "{middle class feature}"
+      ]
+    },
+    {
+      "name": "middle class feature",
+      "explanation": "Features for middle class districts.",
+      "entries": [
+        "{lower class feature}",
+        "is noisy by daytime, but deadly quiet by night",
+        "has seen many new inhabitants arrive",
+        "is often crowded",
+        "{upper class feature}"
+      ]
+    },
+    {
+      "name": "upper class feature",
+      "explanation": "Features for busy districts.",
+      "entries": [
+        "{middle class feature}",
+        "is no longer as fashionable as it used to be",
+        "has recently become a fashionable area",
+        "{rich feature}"
+      ]
+    },
+    {
+      "name": "rich feature",
+      "explanation": "Features for thriving districts.",
+      "entries": [
+        "{upper class feature}",
+        "is a well guarded area",
+        "is home for many high-ranking citizens",
+        "is usually a quiet neighborhood"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
+      ]
+    }
+  ]
+}

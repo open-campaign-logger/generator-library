@@ -11,9 +11,9 @@
   "note": "",
   "bugs": "",
   "to do": "Add themes to categorize statuses and other elements.",
-  "see": "activity, animal, citizen, Five_room_dungeon, hook_line_and_sinker_adventure, location, monster",
-  "date": "2018-01-06",
-  "authors": "Esko Vesala",
+  "see": "activity, animal, citizen, Five_room_dungeon, hook_line_and_sinker_adventure, location, monster, place",
+  "date": "2018-08-16",
+  "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
   "categories": [
@@ -56,10 +56,10 @@
       "entries": [
         {
           "m": 1,
-          "v": "{indoors}",
+          "v": "{indoor}",
           "set": {
-            "milieu": "indoors",
-            "milieudescription": "indoors"
+            "milieu": "indoor",
+            "milieudescription": "indoor"
           }
         },
         {
@@ -160,6 +160,14 @@
           "set": {
             "milieu": "mountain",
             "milieudescription": "in a mountainous area"
+          }
+        },
+        {
+          "m": 1,
+          "v": "{valley}",
+          "set": {
+            "milieu": "valley",
+            "milieudescription": "in a valley"
           }
         }
       ]
@@ -292,10 +300,10 @@
         },
         {
           "m": 1,
-          "v": "{rainforest}",
+          "v": "{jungle}",
           "set": {
-            "milieu": "rainforest",
-            "milieudescription": "rainforest"
+            "milieu": "jungle",
+            "milieudescription": "jungle"
           }
         }
       ]
@@ -338,9 +346,9 @@
         },
         {
           "m": 1,
-          "v": "{planar}",
+          "v": "{dimension}",
           "set": {
-            "milieu": "planar",
+            "milieu": "dimension",
             "milieudescription": "extraplanar area"
           }
         }
@@ -350,16 +358,16 @@
       "**************************************************": "LOCATIONS"
     },
     {
-      "name": "indoors",
-      "explanation": "Indoor encounter structure.",
+      "name": "indoor",
+      "explanation": "Indoors encounter structure.",
       "entries": [
-        "{indoors encounter}",
-        "{indoors encounter} {indoors goal}",
-        "{indoors event}"
+        "{indoor encounter}",
+        "{indoor encounter} {indoor goal}",
+        "{indoor event}"
       ]
     },
     {
-      "name": "indoors encounter",
+      "name": "indoor encounter",
       "explanation": "Encounters inside buildings.",
       "entries": [
         "{lib:animal#pet}",
@@ -367,14 +375,14 @@
       ]
     },
     {
-      "name": "indoors goal",
+      "name": "indoor goal",
       "explanation": "Goals for encounters inside buildings.",
       "entries": [
         "trying to get out"
       ]
     },
     {
-      "name": "indoors event",
+      "name": "indoor event",
       "explanation": "Events indoors.",
       "entries": [
         "gambling"
@@ -661,30 +669,30 @@
       ]
     },
     {
-      "name": "rainforest",
+      "name": "jungle",
       "explanation": "Tropical forest encounter structure.",
       "entries": [
-        "{rainforest encounter}",
-        "{rainforest encounter} {rainforest goal}",
-        "{rainforest event}"
+        "{jungle encounter}",
+        "{jungle encounter} {jungle goal}",
+        "{jungle event}"
       ]
     },
     {
-      "name": "rainforest encounter",
+      "name": "jungle encounter",
       "explanation": "Encounters in a tropical forest.",
       "entries": [
         "XXX"
       ]
     },
     {
-      "name": "rainforest goal",
+      "name": "jungle goal",
       "explanation": "Goals for encounters in a tropical forest.",
       "entries": [
         "XXX"
       ]
     },
     {
-      "name": "rainforest event",
+      "name": "jungle event",
       "explanation": "Events in a tropical forest.",
       "entries": [
         "XXX"
@@ -809,6 +817,37 @@
       "explanation": "Events on the mountains.",
       "entries": [
         "avalanche"
+      ]
+    },
+    {
+      "name": "valley",
+      "explanation": "Valley encounter structure.",
+      "entries": [
+        "{valley encounter}",
+        "{valley encounter} {valley goal}",
+        "{valley event}"
+      ]
+    },
+    {
+      "name": "valley encounter",
+      "explanation": "Encounters in valleys.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "valley goal",
+      "explanation": "Goals for encounters in valleys.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "valley event",
+      "explanation": "Events in valleys.",
+      "entries": [
+        "avalanche",
+        "rock slide"
       ]
     },
     {
@@ -1205,30 +1244,30 @@
       ]
     },
     {
-      "name": "planar",
+      "name": "dimension",
       "explanation": "Extraplanar encounter structure.",
       "entries": [
-        "{planar encounter}",
-        "{planar encounter} {planar goal}",
-        "{planar event}"
+        "{dimension encounter}",
+        "{dimension encounter} {dimension goal}",
+        "{dimension event}"
       ]
     },
     {
-      "name": "planar encounter",
+      "name": "dimension encounter",
       "explanation": "Encounters in other planes of existence.",
       "entries": [
         "XXX"
       ]
     },
     {
-      "name": "planar goal",
+      "name": "dimension goal",
       "explanation": "Goals for encounters in other planes.",
       "entries": [
         "XXX"
       ]
     },
     {
-      "name": "planar event",
+      "name": "dimension event",
       "explanation": "Events in other planes.",
       "entries": [
         "XXX"

@@ -9,9 +9,9 @@
   "note": "",
   "bugs": "",
   "to do": "",
-  "see": "equipment",
-  "date": "2018-01-12",
-  "authors": "Esko Vesala.",
+  "see": "district, equipment, occupation, shop",
+  "date": "2018-04-08",
+  "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
   "categories": [
@@ -19,10 +19,56 @@
   ],
   "tables": [
     {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
       "name": "result",
-      "explanation": "Variations for resultPattern output.",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
       "entries": [
         "{business}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {business}",
+        "{business} {feature}",
+        "{attribute} {business} {feature}"
+      ]
+    },
+    {
+      "name": "name",
+      "explanation": "Just the proper name.",
+      "entries": [
+        "{lib:prefix#age} {business}",
+        "{lib:prefix#direction} {business}",
+        "{lib:prefix#elevation} {business}",
+        "{lib:prefix#elevation} {lib:prefix#direction} {business}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description.",
+      "entries": [
+        "{attribute} {business} {feature}"
       ]
     },
     {
@@ -40,19 +86,75 @@
       "name": "common",
       "explanation": "Common business types.",
       "entries": [
-        "{retailer}",
-        "{artisan}",
-        "{drinking}",
-        "{eating}",
-        "{accommodation}"
+        "{lower class}",
+        "{middle class}",
+        "{upper class}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare business types.",
       "entries": [
-        "{docks}"
+        "{poor}",
+        "{rich}"
       ]
+    },
+    {
+      "**************************************************": "STATUSES"
+    },
+    {
+      "name": "status",
+      "explanation": "The social class of the business.",
+      "entries": [
+        "{poor}",
+        "{lower class}",
+        "{middle class}",
+        "{upper class}",
+        "{rich}"
+      ]
+    },
+    {
+      "name": "poor",
+      "explanation": "Business types for the poor.",
+      "entries": [
+        "{cheap} {drinking}"
+      ]
+    },
+    {
+      "name": "lower class",
+      "explanation": "Business types for the lower class.",
+      "entries": [
+        "{drinking}",
+        "{harbor}"
+      ]
+    },
+    {
+      "name": "middle class",
+      "explanation": "Business types for the middle class.",
+      "entries": [
+        "{retailer}",
+        "{artisan}",
+        "{eating}",
+        "{accommodation}"
+      ]
+    },
+    {
+      "name": "upper class",
+      "explanation": "Business types for the upper class.",
+      "entries": [
+        "{expensive} {artisan}",
+        "{expensive} {accommodation}"
+      ]
+    },
+    {
+      "name": "rich",
+      "explanation": "Business types for the rich.",
+      "entries": [
+        "{expensive} {accommodation}"
+      ]
+    },
+    {
+      "**************************************************": "BUSINESSES"
     },
     {
       "name": "artisan",
@@ -102,7 +204,7 @@
       ]
     },
     {
-      "name": "docks",
+      "name": "harbor",
       "explanation": "Docks.",
       "entries": [
         "docks",
@@ -111,29 +213,64 @@
       ]
     },
     {
-      "name": "medieval",
-      "explanation": "Businesses for medieval worlds (no fantasy elements).",
+      "**************************************************": "PRICING"
+    },
+    {
+      "name": "pricing",
+      "explanation": "The social class of the business.",
       "entries": [
-        "{common}",
-        "{medieval artisan}",
-        "{animal care}"
+        "{cheap}",
+        "{medium}",
+        "{expensive}"
       ]
     },
     {
-      "name": "medieval artisan",
-      "explanation": "Medieval artisans.",
+      "name": "cheap",
+      "explanation": "Cheap businesses.",
       "entries": [
-        "armory",
-        "bowyer",
-        "fletcher"
+        "cheap",
+        "low-cost",
+        "mangy",
+        "shabby",
+        "second-rate",
+        "lower-class",
+        "sleazy",
+        "trashy"
       ]
     },
     {
-      "name": "animal care",
-      "explanation": "Animal welfare.",
+      "name": "medium",
+      "explanation": "Medium price level businesses.",
       "entries": [
-        "stables"
+        ""
       ]
+    },
+    {
+      "name": "expensive",
+      "explanation": "Expensive businesses.",
+      "entries": [
+        "popular",
+        "expensive",
+        "fashionable",
+        "chic",
+        "trendy",
+        "trendsetting",
+        "upscale",
+        "extravagant",
+        "lavish",
+        "posh",
+        "fancy",
+        "high-class",
+        "upper-class",
+        "pretentious",
+        "grandiose",
+        "luxorious",
+        "palatial",
+        "exclusive"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
     },
     {
       "name": "myth",
@@ -188,6 +325,31 @@
       ]
     },
     {
+      "name": "medieval",
+      "explanation": "Businesses for medieval worlds (no fantasy elements).",
+      "entries": [
+        "{common}",
+        "{medieval artisan}",
+        "{animal care}"
+      ]
+    },
+    {
+      "name": "medieval artisan",
+      "explanation": "Medieval artisans.",
+      "entries": [
+        "armory",
+        "bowyer",
+        "fletcher"
+      ]
+    },
+    {
+      "name": "animal care",
+      "explanation": "Animal welfare.",
+      "entries": [
+        "stables"
+      ]
+    },
+    {
       "name": "modern",
       "explanation": "Businesses for modern worlds.",
       "entries": [
@@ -221,10 +383,45 @@
       ]
     },
     {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
       "name": "special",
-      "explanation": "Special business types.",
+      "explanation": "Special business tables.",
       "entries": [
-        "XXX"
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attributes related to the busines.",
+      "format": "Optionally prepended to the front of the result.",
+      "entries": [
+        "shady",
+        "well-known",
+        "famous",
+        "trusted"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features related to the business.",
+      "format": "Optionally appended to the end of the result.",
+      "entries": [
+        "(suspected of illegal activities)",
+        "(not trading with adventurers)",
+        "(for special clientele only)"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
       ]
     }
   ]

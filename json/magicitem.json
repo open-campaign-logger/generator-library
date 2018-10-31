@@ -1,17 +1,21 @@
 {
-  "name": "magic item table",
-  "resultPattern": "{magic item}",
+  "name": "magicitem",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": "value"
+  },
   "variables": {
     "footnote": ""
   },
   "explanation": "Magic items and other magical paraphernalia.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "These are not magician's tools for casting magic, but magic items that are usable by anyone.",
+  "format": "",
   "bugs": "",
   "to do": "",
   "see": "magic, magical_instrument, magical_technique, magician",
-  "date": "2017-10-14",
-  "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "date": "2018-03-30",
+  "authors": "Johnn Four, Jochen Linnemann, ELF Vesala.",
   "sources": "",
   "genre": "fantasy",
   "categories": [
@@ -19,6 +23,42 @@
   ],
   "tags": "#magic, #treasure",
   "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "Verbosity of the resultPattern output.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief resultPattern output.",
+      "entries": [
+        "{magic item} of {lib:spell_intention}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed resultPattern output variations.",
+      "entries": [
+        "{attribute} {magic item} of {lib:spell_intention}",
+        "{magic item} of {lib:spell_intention} {feature}",
+        "{attribute} {magic item} of {lib:spell_intention} {feature}"
+      ]
+    },
     {
       "name": "magic item",
       "explanation": "Magic item rarity.",
@@ -41,11 +81,19 @@
         "{object}",
         "{valuable}",
         "{lib:weapon}",
-        "{lib:jewelry}",
-        "{lib:magical_instrument}",
-        "{lib:musical_instrument}",
-        "{lib:armor}"
+        "{lib:jewelry#summary}"
       ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare magic item types.",
+      "entries": [
+        "{lib:armor}",
+        "{lib:musical_instrument}"
+      ]
+    },
+    {
+      "**************************************************": "MAGIC ITEMS"
     },
     {
       "name": "clothing",
@@ -124,23 +172,8 @@
       ]
     },
     {
-      "name": "rare",
-      "explanation": "Rare magic item types.",
-      "entries": [
-        "pipe"
-      ]
-    },
-    {
       "name": "myth",
       "explanation": "Imaginary magic items once rumoured to have existed.",
-      "entries": [
-        "XXX",
-        "{rare myth}"
-      ]
-    },
-    {
-      "name": "rare myth",
-      "explanation": "Rare imaginary magic items once rumoured to have existed.",
       "entries": [
         "XXX"
       ]
@@ -150,14 +183,6 @@
       "explanation": "Fantasy magic items (with no basis in myth).",
       "entries": [
         "{myth}",
-        "XXX",
-        "{rare fantasy}"
-      ]
-    },
-    {
-      "name": "rare fantasy",
-      "explanation": "Rare fantasy magic items (with no basis in myth).",
-      "entries": [
         "XXX"
       ]
     },
@@ -166,14 +191,6 @@
       "explanation": "Magic items for modern worlds.",
       "entries": [
         "{common}",
-        "XXX",
-        "{rare modern}"
-      ]
-    },
-    {
-      "name": "rare modern",
-      "explanation": "Rare magic items for modern worlds.",
-      "entries": [
         "XXX"
       ]
     },
@@ -182,15 +199,46 @@
       "explanation": "Imaginary magic items for science fiction worlds.",
       "entries": [
         "{modern}",
-        "XXX",
-        "{rare futuristic}"
+        "XXX"
       ]
     },
     {
-      "name": "rare futuristic",
-      "explanation": "Rare imaginary magic items for science fiction worlds.",
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special magic item tables.",
       "entries": [
-        "XXX"
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attributes related to the magic item.",
+      "format": "Optionally prepended to the front of the result.",
+      "entries": [
+        "indestructible",
+        "silent",
+        "invisible"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features related to the magic item.",
+      "format": "Optionally appended to the end of the result.",
+      "entries": [
+        "without peer"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
       ]
     }
   ]

@@ -6,7 +6,7 @@
     "actants": "fighters",
     "actantgroup": "company",
     "actantaction": "keeping their weapons ready",
-    "actantadjective": "battle-hardened",
+    "actantattribute": "battle-hardened",
     "actantdescription": "The fighter is inspecting their equipment.",
     "attitude": "neutral",
     "footnote": ""

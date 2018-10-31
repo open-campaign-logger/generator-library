@@ -14,8 +14,8 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-02-06",
-  "authors": "Esko Vesala.",
+  "date": "2018-04-29",
+  "authors": "ELF Vesala.",
   "sources": "TVtropes.org",
   "genre": "universal",
   "categories": [
@@ -445,7 +445,15 @@
         "beard",
         "father",
         "brother",
+        "sire",
         "son"
+      ]
+    },
+    {
+      "name": "unisex",
+      "explanation": "Gender-neutral epithets.",
+      "entries": [
+        "{prefix}{suffix}"
       ]
     },
     {

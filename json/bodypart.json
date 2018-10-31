@@ -1,0 +1,1127 @@
+{
+  "name": "bodypart",
+  "resultPattern": "{result}",
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Body parts and organs for wounds, diseases, etc.",
+  "structure": "",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "",
+  "date": "2018-06-05",
+  "authors": "ELF Vesala.",
+  "sources": "InnerBody.com, MedicineNet.com, TeachMeAnatomy.com, Wikipedia.org",
+  "genre": "universal",
+  "categories": [
+    "character"
+  ],
+  "tables": [
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{body}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {body}",
+        "{body} {feature}",
+        "{attribute} {body} {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {body} appears to be {attribute}.",
+        "The {body} appears to be {feature}.",
+        "The {attribute} {body} appears to be {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Body part}: {body}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "body",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common types.",
+      "entries": [
+        "{external}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare types.",
+      "entries": [
+        "{internal}"
+      ]
+    },
+    {
+      "**************************************************": "BODY PARTS"
+    },
+    {
+      "name": "part",
+      "explanation": "Body part types.",
+      "entries": [
+        "{external}",
+        "{internal}"
+      ]
+    },
+    {
+      "name": "external",
+      "explanation": "External body parts.",
+      "entries": [
+        "{humanoid}"
+      ]
+    },
+    {
+      "name": "internal",
+      "explanation": "Internal body parts.",
+      "entries": [
+        "{organ}",
+        "{bone}"
+      ]
+    },
+    {
+      "**************************************************": "BODY PLANS"
+    },
+    {
+      "name": "plan",
+      "explanation": "Arrangements of body structure.",
+      "entries": [
+        "{angel}",
+        "{bird}",
+        "{centaur}",
+        "{fish}",
+        "{dragon}",
+        "{hippocampus}",
+        "{humanoid}",
+        "{ichtyocentaur}",
+        "{insect}",
+        "{merfolk}",
+        "{monopod}",
+        "{quadruped}",
+        "{scorpion}",
+        "{scorpionfolk}",
+        "{snake}",
+        "{snakefolk}",
+        "{spider}",
+        "{sponge}",
+        "{squid}",
+        "{winged snake}"
+      ]
+    },
+    {
+      "name": "real",
+      "explanation": "Arrangements for real-world body structures.",
+      "entries": [
+        "{bird}",
+        "{fish}",
+        "{humanoid}",
+        "{insect}",
+        "{quadruped}",
+        "{scorpion}",
+        "{snake}",
+        "{spider}",
+        "{sponge}",
+        "{squid}"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Arrangements for mythological body structures.",
+      "entries": [
+        "{angel}",
+        "{centaur}",
+        "{dragon}",
+        "{hippocampus}",
+        "{ichtyocentaur}",
+        "{merfolk}",
+        "{monopod}",
+        "{scorpionfolk}",
+        "{snakefolk}",
+        "{winged snake}"
+      ]
+    },
+    {
+      "name": "angel",
+      "explanation": "Angel-like body plan.",
+      "entries": [
+        "{head}",
+        "{arm}",
+        "{arm}",
+        "{wing}",
+        "{wing}",
+        "{trunk}",
+        "{leg}",
+        "{leg}"
+      ]
+    },
+    {
+      "name": "bird",
+      "explanation": "Bird-like body plan.",
+      "entries": [
+        "{head}",
+        "{wing}",
+        "{wing}",
+        "{trunk}",
+        "{leg}",
+        "{leg}"
+      ]
+    },
+    {
+      "name": "centaur",
+      "explanation": "Centaur-like body plan.",
+      "entries": [
+        "{head}",
+        "{arm}",
+        "{arm}",
+        "{trunk}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{tail}"
+      ]
+    },
+    {
+      "name": "dragon",
+      "explanation": "Dragon-like body plan.",
+      "entries": [
+        "{head}",
+        "{wing}",
+        "{wing}",
+        "{trunk}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{tail}"
+      ]
+    },
+    {
+      "name": "fish",
+      "explanation": "Fish-like body plan.",
+      "entries": [
+        "{head}",
+        "{trunk}",
+        "{fin}",
+        "{fin}",
+        "{fin}",
+        "{fin}",
+        "{tailfin}"
+      ]
+    },
+    {
+      "name": "hippocampus",
+      "explanation": "Mythological sea horse like body plan.",
+      "entries": [
+        "{head}",
+        "{leg}",
+        "{leg}",
+        "{trunk}",
+        "{tailfin}"
+      ]
+    },
+    {
+      "name": "humanoid",
+      "explanation": "Human-like body plan.",
+      "entries": [
+        "{head}",
+        "{arm}",
+        "{arm}",
+        "{trunk}",
+        "{leg}",
+        "{leg}"
+      ]
+    },
+    {
+      "name": "ichtyocentaur",
+      "explanation": "Fish-tailed quadruped like body plan.",
+      "entries": [
+        "{head}",
+        "{arm}",
+        "{arm}",
+        "{trunk}",
+        "{leg}",
+        "{leg}",
+        "{tailfin}"
+      ]
+    },
+    {
+      "name": "insect",
+      "explanation": "Insect-like body plan.",
+      "entries": [
+        "{head}",
+        "{trunk}",
+        "{wing}",
+        "{wing}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}"
+      ]
+    },
+    {
+      "name": "merfolk",
+      "explanation": "Fish-tailed humanoid like body plan.",
+      "entries": [
+        "{head}",
+        "{arm}",
+        "{arm}",
+        "{trunk}",
+        "{tailfin}"
+      ]
+    },
+    {
+      "name": "monopod",
+      "explanation": "Body plan for single-footed humanoids.",
+      "entries": [
+        "{head}",
+        "{arm}",
+        "{arm}",
+        "{trunk}",
+        "{leg}"
+      ]
+    },
+    {
+      "name": "quadruped",
+      "explanation": "Four-legged body plan.",
+      "entries": [
+        "{head}",
+        "{trunk}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{tail}"
+      ]
+    },
+    {
+      "name": "scorpion",
+      "explanation": "Scorpion-like body plan.",
+      "entries": [
+        "{head}",
+        "{trunk}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{tail}"
+      ]
+    },
+    {
+      "name": "scorpionfolk",
+      "explanation": "Scorpion people like body plan.",
+      "entries": [
+        "{head}",
+        "{arm}",
+        "{arm}",
+        "{trunk}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{tail}"
+      ]
+    },
+    {
+      "name": "snake",
+      "explanation": "Serpent-like body plan.",
+      "entries": [
+        "{head}",
+        "{trunk}",
+        "{tail}"
+      ]
+    },
+    {
+      "name": "snakefolk",
+      "explanation": "Serpent-like body plan.",
+      "entries": [
+        "{head}",
+        "{arm}",
+        "{arm}",
+        "{trunk}",
+        "{tail}"
+      ]
+    },
+    {
+      "name": "spider",
+      "explanation": "Arachnic body plan.",
+      "entries": [
+        "{head}",
+        "{trunk}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}",
+        "{leg}"
+      ]
+    },
+    {
+      "name": "sponge",
+      "explanation": "Sponge-like body plab",
+      "entries": [
+        "{trunk}"
+      ]
+    },
+    {
+      "name": "squid",
+      "explanation": "Octopus-like body plan.",
+      "entries": [
+        "{head}",
+        "{tentacle}",
+        "{tentacle}",
+        "{tentacle}",
+        "{tentacle}",
+        "{tentacle}",
+        "{tentacle}",
+        "{tentacle}",
+        "{tentacle}"
+      ]
+    },
+    {
+      "name": "winged snake",
+      "explanation": "Wyvern-like body plan.",
+      "entries": [
+        "{head}",
+        "{wing}",
+        "{wing}",
+        "{trunk}",
+        "{tail}"
+      ]
+    },
+    {
+      "**************************************************": "BODY PARTS"
+    },
+    {
+      "name": "abdomen",
+      "explanation": "Parts of the lower front torso.",
+      "entries": [
+        "waist",
+        "midriff",
+        "stomach"
+      ]
+    },
+    {
+      "name": "arm",
+      "explanation": "Parts of the upper limb.",
+      "entries": [
+        "shoulder",
+        "armpit",
+        "upper arm",
+        "elbow",
+        "forearm",
+        "{hand}"
+      ]
+    },
+    {
+      "name": "face",
+      "explanation": "Parts of the face.",
+      "entries": [
+        "forehead",
+        "brow",
+        "eye",
+        "eye",
+        "nose",
+        "cheek",
+        "cheek",
+        "mouth",
+        "chin"
+      ]
+    },
+    {
+      "name": "fin",
+      "explanation": "Parts of a fin.",
+      "entries": [
+        "fin front",
+        "fin spine",
+        "fin tip",
+        "fin flap"
+      ]
+    },
+    {
+      "name": "foot",
+      "explanation": "Parts of the foot.",
+      "entries": [
+        "ankle",
+        "heel",
+        "midfoot",
+        "sole",
+        "forefoot"
+      ]
+    },
+    {
+      "name": "hand",
+      "explanation": "Parts of the hand.",
+      "entries": [
+        "wrist",
+        "back of the hand",
+        "palm",
+        "finger",
+        "thumb"
+      ]
+    },
+    {
+      "name": "head",
+      "explanation": "Body parts of the head.",
+      "entries": [
+        "scalp",
+        "{face}",
+        "jaw",
+        "temple",
+        "temple",
+        "ear",
+        "ear",
+        "back of the skull",
+        "{neck}"
+      ]
+    },
+    {
+      "name": "leg",
+      "explanation": "Parts of the lower limb.",
+      "entries": [
+        "thigh",
+        "knee",
+        "shin",
+        "calf",
+        "{foot}"
+      ]
+    },
+    {
+      "name": "limb",
+      "explanation": "Humanoid limbs.",
+      "entries": [
+        "{arm}",
+        "{leg}"
+      ]
+    },
+    {
+      "name": "neck",
+      "explanation": "Parts of the neck.",
+      "entries": [
+        "throat",
+        "neck",
+        "nape"
+      ]
+    },
+    {
+      "name": "pelvis",
+      "explanation": "Body parts of a humanoid torso.",
+      "entries": [
+        "hip",
+        "groin",
+        "buttock",
+        "buttock"
+      ]
+    },
+    {
+      "name": "tail",
+      "explanation": "Parts of a tail.",
+      "entries": [
+        "tail joint",
+        "tail mid-section",
+        "tail tip"
+      ]
+    },
+    {
+      "name": "tailfin",
+      "explanation": "Parts of a fishtail.",
+      "entries": [
+        "tailfin keel",
+        "tailfin mid-section",
+        "tailfin tip"
+      ]
+    },
+    {
+      "name": "tentacle",
+      "explanation": "Pars of a tentacle.",
+      "entries": [
+        "tentacle joint",
+        "tentacle mid-section",
+        "tentacle tip"
+      ]
+    },
+    {
+      "name": "trunk",
+      "explanation": "Body parts of a humanoid torso.",
+      "entries": [
+        "chest",
+        "{abdomen}",
+        "back",
+        "{pelvis}"
+      ]
+    },
+    {
+      "name": "wing",
+      "explanation": "Parts of the wing.",
+      "entries": [
+        "wing shoulder",
+        "wing wrist",
+        "wing front",
+        "wingtip"
+      ]
+    },
+    {
+      "**************************************************": "ORGANS"
+    },
+    {
+      "name": "organ",
+      "explanation": "Internal organs.",
+      "entries": [
+        "{circulatory}",
+        "{digestive}",
+        "{intestine}",
+        "{muscular}",
+        "{nervous}",
+        "{respiratory}",
+        "{sensory}",
+        "{urinary}"
+      ]
+    },
+    {
+      "name": "circulatory",
+      "explanation": "The circulatory system.",
+      "entries": [
+        "heart",
+        "aorta",
+        "artery",
+        "vein"
+      ]
+    },
+    {
+      "name": "digestive",
+      "explanation": "The digestive system.",
+      "entries": [
+        "mouth",
+        "tongue",
+        "gullet",
+        "stomach"
+      ]
+    },
+    {
+      "name": "intestine",
+      "explanation": "Intestines.",
+      "entries": [
+        "liver",
+        "gall bladder",
+        "pancreas",
+        "bowel"
+      ]
+    },
+    {
+      "name": "muscular",
+      "explanation": "The muscular system.",
+      "entries": [
+        "tongue",
+        "deltoid muscle",
+        "biceps",
+        "calf"
+      ]
+    },
+    {
+      "name": "nervous",
+      "explanation": "The nervous system.",
+      "entries": [
+        "brain",
+        "spinal cord",
+        "nerves"
+      ]
+    },
+    {
+      "name": "respiratory",
+      "explanation": "The respiratory system.",
+      "entries": [
+        "nose",
+        "voice box",
+        "lung",
+        "lung"
+      ]
+    },
+    {
+      "name": "sensory",
+      "explanation": "The sensory organs.",
+      "entries": [
+        "eye",
+        "eye",
+        "ear",
+        "ear"
+      ]
+    },
+    {
+      "name": "urinary",
+      "explanation": "The urinary system.",
+      "entries": [
+        "kidney",
+        "bladder"
+      ]
+    },
+    {
+      "name": "reproductive",
+      "explanation": "The reproductive system.",
+      "entries": [
+        "{female}",
+        "{male}",
+        "{unisex}"
+      ]
+    },
+    {
+      "name": "female",
+      "explanation": "The female reproductive system.",
+      "entries": [
+        "ovary",
+        "uterus",
+        "vagina",
+        "vulva"
+      ]
+    },
+    {
+      "name": "male",
+      "explanation": "The male reproductive system.",
+      "entries": [
+        "prostate",
+        "penis",
+        "testicle",
+        "testicle"
+      ]
+    },
+    {
+      "name": "unisex",
+      "explanation": "Unisex description of the reproductive system.",
+      "entries": [
+        "genitals"
+      ]
+    },
+    {
+      "**************************************************": "MUSCLES"
+    },
+    {
+      "name": "muscle",
+      "explanation": "Major uscles of the body.",
+      "entries": [
+        "{head muscle}",
+        "{trunk muscle}",
+        "{limb muscle}"
+      ]
+    },
+    {
+      "name": "head muscle",
+      "explanation": "Muscles of the head.",
+      "entries": [
+        "lip",
+        "tongue",
+        "neck muscle"
+      ]
+    },
+    {
+      "name": "trunk muscle",
+      "explanation": "Muscles of the torso.",
+      "entries": [
+        "shoulder muscle",
+        "shoulder muscle",
+        "chest muscle",
+        "chest muscle",
+        "abdominal muscle"
+      ]
+    },
+    {
+      "name": "limb muscle",
+      "explanation": "Muscles of the skeleton.",
+      "entries": [
+        "{arm muscle}",
+        "{arm muscle}",
+        "{leg muscle}",
+        "{leg muscle}"
+      ]
+    },
+    {
+      "name": "arm muscle",
+      "explanation": "Muscles of the arms.",
+      "entries": [
+        "biceps",
+        "biceps",
+        "triceps muscle",
+        "triceps muscle",
+        "forearm muscle",
+        "forearm muscle"
+      ]
+    },
+    {
+      "name": "leg muscle",
+      "explanation": "Muscles of the legs.",
+      "entries": [
+        "thigh muscle",
+        "thigh muscle",
+        "hamstring muscle",
+        "hamstring muscle",
+        "calf muscle",
+        "calf muscle"
+      ]
+    },
+    {
+      "**************************************************": "BONES"
+    },
+    {
+      "name": "bone",
+      "explanation": "Bones of the skeleton.",
+      "entries": [
+        "{head bone}",
+        "{trunk bone}",
+        "{limb bone}"
+      ]
+    },
+    {
+      "name": "head bone",
+      "explanation": "Bones of the head.",
+      "entries": [
+        "the cranium",
+        "jawbone",
+        "tooth",
+        "tooth",
+        "tooth",
+        "tooth",
+        "neck bone"
+      ]
+    },
+    {
+      "name": "trunk bone",
+      "explanation": "Bones of the torso.",
+      "entries": [
+        "collar bone",
+        "collar bone",
+        "breastbone",
+        "rib cage",
+        "shoulder blade",
+        "shoulder blade",
+        "spine",
+        "hip bone",
+        "tailbone"
+      ]
+    },
+    {
+      "name": "limb bone",
+      "explanation": "Bones of the skeleton.",
+      "entries": [
+        "{arm bone}",
+        "{arm bone}",
+        "{hand bone}",
+        "{leg bone}",
+        "{leg bone}",
+        "{foot bone}"
+      ]
+    },
+    {
+      "name": "arm bone",
+      "explanation": "Bones of the arms.",
+      "entries": [
+        "the humerus bone",
+        "the humerus bone",
+        "the ulna bone",
+        "the ulna bone",
+        "the radial bone",
+        "the radial bone"
+      ]
+    },
+    {
+      "name": "hand bone",
+      "explanation": "Bones of the hands.",
+      "entries": [
+        "wrist bone",
+        "wrist bone",
+        "finger bone",
+        "finger bone"
+      ]
+    },
+    {
+      "name": "leg bone",
+      "explanation": "Bones of the legs.",
+      "entries": [
+        "thigh bone",
+        "thigh bone",
+        "kneecap",
+        "kneecap",
+        "shin bone",
+        "shin bone",
+        "calf bone",
+        "calf bone"
+      ]
+    },
+    {
+      "name": "foot bone",
+      "explanation": "Bones of the feet.",
+      "entries": [
+        "tarsus bone",
+        "toe bone"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZATION"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{beginning}{ending}",
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "left ",
+        "right "
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "{arm}",
+        "{foot}"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}",
+        "{main}",
+        "{missing}",
+        "{scar}",
+        "{trophies}",
+        "{trophy}"
+      ]
+    },
+    {
+      "--------------------------------------------------": ""
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attributes prepended to the front of the result.",
+      "entries": [
+        "{sickly}",
+        "{weak}",
+        "{sore}",
+        "{healthy}"
+      ]
+    },
+    {
+      "name": "sickly",
+      "explanation": "Suffering from sickness.",
+      "entries": [
+        "diseased",
+        "afflicted",
+        "ailing",
+        "unhealthy",
+        "sickly"
+      ]
+    },
+    {
+      "name": "weak",
+      "explanation": "Infirm.",
+      "entries": [
+        "feeble",
+        "infirm",
+        "frail",
+        "weak",
+        "weakened"
+      ]
+    },
+    {
+      "name": "sore",
+      "explanation": "Aching.",
+      "entries": [
+        "inflamed",
+        "hurting",
+        "painful",
+        "tender",
+        "aching",
+        "smarting",
+        "sore"
+      ]
+    },
+    {
+      "name": "healthy",
+      "explanation": "",
+      "entries": [
+        "healthy",
+        "hearty",
+        "hardy",
+        "robust",
+        "firm",
+        "sturdy",
+        "vigorous"
+      ]
+    },
+    {
+      "--------------------------------------------------": ""
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "entries": [
+        "{bad}",
+        "{good}"
+      ]
+    },
+    {
+      "name": "bad",
+      "explanation": "In bad shape.",
+      "entries": [
+        "out of shape",
+        "in bad shape",
+        "in bad condition"
+      ]
+    },
+    {
+      "name": "good",
+      "explanation": "In good shape.",
+      "entries": [
+        "in shape",
+        "in good shape",
+        "in good condition"
+      ]
+    },
+    {
+      "--------------------------------------------------": "LOCATIONS"
+    },
+    {
+      "name": "main",
+      "explanation": "The main body parts (for a humanoid body plan).",
+      "entries": [
+        "head",
+        "arm",
+        "arm",
+        "torso",
+        "leg",
+        "leg"
+      ]
+    },
+    {
+      "name": "missing",
+      "explanation": "Missing body parts.",
+      "entries": [
+        "a tooth",
+        "several teeth",
+        "a finger",
+        "several fingers",
+        "an ear",
+        "an eye"
+      ]
+    },
+    {
+      "name": "scar",
+      "explanation": "Wound and scar locations",
+      "entries": [
+        "across the forehead",
+        "across the face",
+        "over an eye",
+        "across a cheek",
+        "on the edge of the mouth",
+        "on the jaw",
+        "on the throat",
+        "along an arm",
+        "across the chest",
+        "across the stomach",
+        "across the back",
+        "on a leg"
+      ]
+    },
+    {
+      "name": "trophies",
+      "explanation": "Cut off body parts worn as victory mementos.",
+      "entries": [
+        "teeth",
+        "ears",
+        "noses",
+        "fingers",
+        "scalps",
+        "bones",
+        "skulls",
+        "heads"
+      ]
+    },
+    {
+      "name": "trophy",
+      "explanation": "Cut off body part worn as a victory memento.",
+      "entries": [
+        "tooth",
+        "ear",
+        "nose",
+        "finger",
+        "scalp",
+        "bone",
+        "skull",
+        "head"
+      ]
+    }
+  ]
+}

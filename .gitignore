@@ -59,8 +59,11 @@ typings/
 
 # Campaign Logger files
 Staging
+.ftpconfig
+.ftpignore
 .gitignore
 json/Staging
+yaml/Staging
 *.pdf
 json/_encounterSeed_generator.json
 json/_goblinName_generator.json

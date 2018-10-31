@@ -6,7 +6,7 @@
     "actants": "citizens",
     "actantgroup": "group",
     "actantaction": "minding their own business",
-    "actantadjective": "ordinary",
+    "actantattribute": "ordinary",
     "actantdescription": "The citizen is not paying much attention to their surroundings.",
     "attitude": "neutral",
     "footnote": ""
@@ -17,8 +17,8 @@
   "bugs": "",
   "to do": "Categorize citizens by type.",
   "see": "activity, animal, encounter, monster, nonhuman",
-  "date": "2018-01-21",
-  "authors": "Esko Vesala.",
+  "date": "2018-05-30",
+  "authors": "ELF Vesala.",
   "sources": "Wikia.com, Wikipedia.org",
   "genre": "fantasy",
   "categories": [
@@ -26,18 +26,66 @@
   ],
   "tables": [
     {
-      "name": "result",
-      "explanation": "Variations for resultPattern output.",
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
       "entries": [
-        "{citizen}",
-        "{adjective} {citizen}",
-        "{citizen} {lib:activity}",
-        "{adjective} {citizen} {lib:activity}"
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
       ]
     },
     {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{citizen}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {citizen}",
+        "{citizen} {feature}",
+        "{attribute} {citizen} {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {citizen} {lib:synonym#looks} {attribute}.",
+        "The {citizen} {lib:synonym#looks} {feature}.",
+        "The {attribute} {citizen} {lib:synonym#looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "Name: {random}"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
       "name": "citizen",
-      "explanation": "Citizens by rarity.",
+      "explanation": "Types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -48,12 +96,19 @@
     },
     {
       "name": "common",
-      "explanation": "Common citizen types.",
+      "explanation": "Common types.",
       "entries": [
         "{poor}",
         "{lower class}",
-        "{middle class}",
-        "{upper class}"
+        "{middle class}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare types.",
+      "entries": [
+        "{upper class}",
+        "{rich}"
       ]
     },
     {
@@ -64,18 +119,49 @@
       ]
     },
     {
-      "name": "servant",
-      "explanation": "Citizens serving others.",
-      "entries": [
-        "hireling",
-        "servant"
-      ]
-    },
-    {
       "name": "lower class",
       "explanation": "Lower class citizens.",
       "entries": [
         "{labourer}"
+      ]
+    },
+    {
+      "name": "middle class",
+      "explanation": "Middle class citizens.",
+      "entries": [
+        "{artisan}",
+        "{merchant}"
+      ]
+    },
+    {
+      "name": "upper class",
+      "explanation": "Upper class citizens.",
+      "entries": [
+        "{politician}"
+      ]
+    },
+    {
+      "name": "rich",
+      "explanation": "Rich citizens.",
+      "entries": [
+        "{aristocrat}"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "aristocrat",
+      "explanation": "Nobles.",
+      "entries": [
+        "noble"
+      ]
+    },
+    {
+      "name": "artisan",
+      "explanation": "Citizens doing skilled work.",
+      "entries": [
+        "artisan"
       ]
     },
     {
@@ -88,40 +174,10 @@
       ]
     },
     {
-      "name": "middle class",
-      "explanation": "Middle class citizens.",
-      "entries": [
-        "{artisan}",
-        "{merchant}"
-      ]
-    },
-    {
-      "name": "artisan",
-      "explanation": "Citizens doing skilled work.",
-      "entries": [
-        "artisan"
-      ]
-    },
-    {
       "name": "merchant",
       "explanation": "Citizens living by business.",
       "entries": [
         "merchant"
-      ]
-    },
-    {
-      "name": "rare",
-      "explanation": "Rare citizen types.",
-      "entries": [
-        "{upper class}",
-        "{rich}"
-      ]
-    },
-    {
-      "name": "upper class",
-      "explanation": "Upper class citizens.",
-      "entries": [
-        "politician"
       ]
     },
     {
@@ -132,11 +188,65 @@
       ]
     },
     {
-      "name": "rich",
-      "explanation": "Rich citizens.",
+      "name": "servant",
+      "explanation": "Citizens serving others.",
       "entries": [
-        "aristocrat"
+        "hireling",
+        "servant"
       ]
+    },
+    {
+      "**************************************************": "RANDOMIZATION"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{beginning}{ending}",
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        "(student)",
+        "(apprentice)",
+        "(junior)",
+        "(experienced)",
+        "(veteran)",
+        "(senior)",
+        "(retired)"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "MYTH"
     },
     {
       "name": "myth",
@@ -146,6 +256,9 @@
       ]
     },
     {
+      "--------------------------------------------------": "FANTASY"
+    },
+    {
       "name": "fantasy",
       "explanation": "Citizens for fantasy worlds (with no basis in myths).",
       "entries": [
@@ -153,11 +266,17 @@
       ]
     },
     {
+      "--------------------------------------------------": "MODERN"
+    },
+    {
       "name": "modern",
       "explanation": "Citizens for modern worlds.",
       "entries": [
         "XXX"
       ]
+    },
+    {
+      "--------------------------------------------------": "FUTURISTIC"
     },
     {
       "name": "futuristic",
@@ -168,15 +287,19 @@
       ]
     },
     {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
       "name": "special",
-      "explanation": "Special citizen types.",
+      "explanation": "Special tables.",
       "entries": [
-        "XXX"
+        "{attribute}",
+        "{feature}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives describing citizens.",
+      "name": "attribute",
+      "explanation": "Attributes prepended to the front of the result.",
       "entries": [
         "{psychology}"
       ]
@@ -191,6 +314,24 @@
         "bored",
         "curious",
         "friendly"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It appears --",
+      "entries": [
+        "{lib:activity}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, description: {description} Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
       ]
     }
   ]

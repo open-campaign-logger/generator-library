@@ -1,18 +1,21 @@
 {
   "name": "complication",
-  "resultPattern": "{result}",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
   "variables": {
     "footnote": ""
   },
-  "explanation": "Complications for various situations.",
+  "explanation": "Twists and surprise elements for various situations.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "Forked from Dungeon_adventure on 2018-01-09. ",
   "format": "'X is/are {complication}'. No full stop in the end.",
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-01-29",
-  "authors": "Esko Vesala.",
+  "date": "2018-09-26",
+  "authors": "ELF Vesala.",
   "sources": "Dungeon_adventure",
   "genre": "universal",
   "categories": [
@@ -20,30 +23,68 @@
   ],
   "tables": [
     {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "villain": "villain",
+            "minion": "minion"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
       "name": "result",
-      "explanation": "Verbosity of the resultPattern output.",
+      "explanation": "The output format.",
       "entries": [
         "{summary}",
-        "{detail}"
+        "{detail}",
+        "{description}",
+        "{stats}"
       ]
     },
     {
       "name": "summary",
-      "explanation": "Brief resultPattern output.",
+      "explanation": "Brief output.",
       "entries": [
         "{complication}"
       ]
     },
     {
       "name": "detail",
-      "explanation": "Detailed resultPattern output variations.",
+      "explanation": "More detailed output variations.",
       "entries": [
-        "{complication}"
+        "{attribute} {complication}",
+        "{complication}, {feature}",
+        "{attribute} {complication}, {feature}"
       ]
     },
     {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {complication} {synonym} {looks} {feature}.",
+        "The {attribute} {complication} {synonym} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Name}: {random} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
       "name": "complication",
-      "explanation": "Complication types by rarity.",
+      "explanation": "Types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -54,107 +95,47 @@
     },
     {
       "name": "common",
-      "explanation": "Common complications.",
+      "explanation": "Usual types.",
       "entries": [
-        "{item}"
+        "{creature}",
+        "{item}",
+        "{location}"
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare complications.",
+      "explanation": "Unusual types.",
       "entries": [
-        "{room}"
+        "{story}"
       ]
     },
     {
-      "**************************************************": "WORLD-SPECIFIC"
+      "**************************************************": "DETAILS"
     },
     {
-      "name": "myth",
-      "explanation": "Complications once rumoured to have existed.",
-      "entries": [
-        "XXX"
-      ]
-    },
-    {
-      "name": "fantasy",
-      "explanation": "Complications for fantasy worlds (with no basis in myth).",
-      "entries": [
-        "{myth}",
-        "XXX"
-      ]
-    },
-    {
-      "name": "modern",
-      "explanation": "Complications for modern worlds.",
-      "entries": [
-        "{common}",
-        "XXX"
-      ]
-    },
-    {
-      "name": "futuristic",
-      "explanation": "Complications for science fiction worlds.",
-      "entries": [
-        "{modern}",
-        "XXX"
-      ]
-    },
-    {
-      "**************************************************": "SPECIAL TABLES"
-    },
-    {
-      "name": "special",
-      "explanation": "Special complication tables.",
-      "entries": [
-        "{captive}",
-        "{corridor}",
-        "{creature}",
-        "{dungeon}",
-        "{item}",
-        "{milieu}",
-        "{plot}",
-        "{room}"
-      ]
-    },
-    {
-      "name": "captive",
-      "explanation": "Complications for captives.",
-      "entries": [
-        "are not innocent, but suffering a sentence for their horrific crimes",
-        "are pleading to be escorted back to safety immediately",
-        "are about to be executed",
-        "do not want to be rescued after all",
-        "are enemies in disguise",
-        "are booby-trapped"
-      ]
-    },
-    {
-      "name": "corridor",
-      "explanation": "Complications for (dungeon) corridors.",
-      "entries": [
-        "In some areas the ceiling is so low that it slows down movement.",
-        "The passages slopes downwards in an almost undetectable manner.",
-        "The passages slopes downwards so sharply that it makes balancing difficult."
-      ]
-    },
-    {
-      "*******************************************": "CREATURE COMPLICATIONS"
+      "--------------------------------------------------": "CREATURES"
     },
     {
       "name": "creature",
-      "explanation": "Creature complication types by rarity.",
+      "explanation": "Complications for persons and beings.",
       "entries": [
-        {
-          "m": 10,
-          "v": "{common creature}"
-        },
-        "{rare complication}"
+        "{character}"
       ]
     },
     {
-      "name": "common creature",
-      "explanation": "Common complications for creatures.",
+      "name": "character",
+      "explanation": "Character complication types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common character}"
+        },
+        "{rare character}"
+      ]
+    },
+    {
+      "name": "common character",
+      "explanation": "Common complications for characters.",
       "entries": [
         "{handicap}",
         "{wound}",
@@ -162,6 +143,23 @@
         "{perception}",
         "{hunger}",
         "{fatigue}"
+      ]
+    },
+    {
+      "name": "rare character",
+      "explanation": "Rare complications for characters.",
+      "entries": [
+        "{immobile}",
+        "{insane}",
+        "{magic}"
+      ]
+    },
+    {
+      "name": "fatigue",
+      "explanation": "Fatigue-related complications.",
+      "entries": [
+        "fatigued",
+        "staggered"
       ]
     },
     {
@@ -177,16 +175,6 @@
       ]
     },
     {
-      "name": "wound",
-      "explanation": "Injury statuses.",
-      "entries": [
-        "wounded",
-        "injured",
-        "impaired",
-        "maimed"
-      ]
-    },
-    {
       "name": "health",
       "explanation": "Health-related complications.",
       "entries": [
@@ -197,36 +185,12 @@
       ]
     },
     {
-      "name": "perception",
-      "explanation": "Sense-related complications.",
-      "entries": [
-        "blinded",
-        "deafened"
-      ]
-    },
-    {
       "name": "hunger",
       "explanation": "Voracity-related complications.",
       "entries": [
         "ravenous",
         "voracious",
         "hungry"
-      ]
-    },
-    {
-      "name": "fatigue",
-      "explanation": "Fatigue-related complications.",
-      "entries": [
-        "fatigued",
-        "staggered"
-      ]
-    },
-    {
-      "name": "rare complication",
-      "explanation": "Rare complications for creatures.",
-      "entries": [
-        "{immobile}",
-        "{insane}"
       ]
     },
     {
@@ -247,16 +211,6 @@
       ]
     },
     {
-      "**************************************************": "SPECIAL TABLES"
-    },
-    {
-      "name": "special complication",
-      "explanation": "Special complications for monsters.",
-      "entries": [
-        "{magic}"
-      ]
-    },
-    {
       "name": "magic",
       "explanation": "Magic-related complications for monsters.",
       "entries": [
@@ -265,30 +219,32 @@
       ]
     },
     {
-      "name": "dungeon",
-      "explanation": "Complications for dungeons.",
+      "name": "perception",
+      "explanation": "Sense-related complications.",
       "entries": [
-        "The structure is about to collapse.",
-        "Rising water levels are slowly flooding the area.",
-        "In the area there is a helpless {lib:actant#helpless} that must be protected and rescued.",
-        "The otherworldly energies of the area are warped, creating unpredictable side effects each time magic is used.",
-        "A competing group of adventurers is trying to reach the goal before the protagonists, and is willing to use also dirty tricks to win.",
-        "In addition to the villain and the minions, another hostile force is present in the area.",
-        "A pestilence has contaminated the area, making most of the encountered people plague carriers.",
-        "The villain's minions have split into rival factions warring with each other.",
-        "The villain's minions are planning a mutiny against their master.",
-        "Periodic tremors cause debris to fall from the ceiling.",
-        "The location will be destroyed within a time limit, and everyone must exit before the destruction."
+        "blinded",
+        "deafened"
       ]
+    },
+    {
+      "name": "wound",
+      "explanation": "Injury statuses.",
+      "entries": [
+        "wounded",
+        "injured",
+        "impaired",
+        "maimed"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ITEMS"
     },
     {
       "name": "item",
       "explanation": "Complications for items.",
       "entries": [
-        "easily breaking",
-        "broken",
-        "parts of",
-        "unreliable",
+        "{condition}",
+        "{reliability}",
         "{rare item}"
       ]
     },
@@ -300,16 +256,111 @@
       ]
     },
     {
+      "name": "condition",
+      "explanation": "Condition-related complications.",
+      "entries": [
+        "easily breaking",
+        "broken",
+        "parts of"
+      ]
+    },
+    {
+      "name": "reliability",
+      "explanation": "Reliability-related complications.",
+      "entries": [
+        "unreliable"
+      ]
+    },
+    {
+      "--------------------------------------------------": "LOCATIONS"
+    },
+    {
+      "name": "location",
+      "explanation": "Location types.",
+      "format": "The place --",
+      "entries": [
+        "{corridor}",
+        "{dungeon}",
+        "{room}",
+        "{milieu}"
+      ]
+    },
+    {
+      "name": "corridor",
+      "explanation": "Complications for (dungeon) corridors.",
+      "entries": [
+        "has the ceiling so low that it slows down movement",
+        "slopes downwards in an almost undetectable manner",
+        "slopes downwards so sharply that it makes balancing difficult"
+      ]
+    },
+    {
+      "name": "dungeon",
+      "explanation": "Complications for dungeons.",
+      "entries": [
+        "is about to collapse",
+        "is being slowly flooded by rising water levels",
+        "has a helpless {lib:actant#helpless} that must be protected and rescued",
+        "has warped otherworldly energies, creating unpredictable side effects each time magic is used",
+        "has a competing group of adventurers trying to reach the goal before the protagonists, and are willing to use dirty tricks to win",
+        "has also another hostile force present",
+        "has been contaminated by pestilence, making most of the encountered people plague carriers",
+        "has the enemy forces split into rival factions warring with each other",
+        "has enemy forces planning a mutiny against their master",
+        "periodic tremors causing debris to fall from the ceiling",
+        "is going to be destroyed within a time limit"
+      ]
+    },
+    {
+      "name": "room",
+      "explanation": "Complications for (dungeon) rooms.",
+      "entries": [
+        "has heavy air that soon makes breathing difficult",
+        "is covered by darkness that feels magical and makes light sources seem dimmer",
+        "has noxious fumes that make everyone breathing them cough and sneeze",
+        "has an extremely foul smell that makes breathing difficult",
+        "has gusts of wind that threaten to put out torches and lanterns",
+        "has loud echoes that make communication difficult",
+        "has an infestation of spiders that has produced thick webs in the area",
+        "has an oily substance on the ground, making it slippery",
+        "has strange sounds emanating  from an unknown source",
+        "has the ceiling so low that it slows down movement",
+        "has muddy ground, which slows down progress and leaves a clear trail for anyone to follow",
+        "has noxious fumes in the air",
+        "has extremely hot and humid air, which makes all physical activities strenuous",
+        "is infested with centipedes and small insects",
+        "has most of the surfaces slime-covered, which makes floors and objects slippery",
+        "has air and horizontal surfaces filled with ash, making everyone suspectible to heavy coughing",
+        "is contaminated with a black mold that makes eyes watery and causes skin to itch",
+        "is filled with debris that makes progress slow"
+      ]
+    },
+    {
       "name": "milieu",
       "explanation": "Complications for environments.",
       "entries": [
-        "being ravaged by earthquake tremors",
-        "extreme weather conditions"
+        "contains poisonous elements",
+        "has a deep sinkhole on the ground",
+        "has extreme weather conditions",
+        "has toxic gas on the area",
+        "has treacherous pits",
+        "is neutral ground between enemy forces",
+        "is ravaged by earthquake tremors"
+      ]
+    },
+    {
+      "--------------------------------------------------": "STORIES"
+    },
+    {
+      "name": "story",
+      "explanation": "Complications for stories.",
+      "entries": [
+        "{plot}"
       ]
     },
     {
       "name": "plot",
-      "explanation": "Complications for stories.",
+      "explanation": "Complications for plots.",
       "entries": [
         "someone is mistaken for a wrong person",
         "the heroes' previous actions have turned the situation worse",
@@ -324,34 +375,235 @@
         "a helpless protege must be protected",
         "the heroes must act against the will of those in power",
         "the heroes are caught between rivals",
-        "the villain turns out to be working for a good cause",
+        "the {g:villain} turns out to be working for a good cause",
         "the public has turned against the heroes",
         "achieving the goal will destroy something valuable to the heroes",
         "achieving the goal will release an even greater threat"
       ]
     },
     {
-      "name": "room",
-      "explanation": "Complications for (dungeon) rooms.",
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
       "entries": [
-        "The air here is heavy and breathing soon becomes difficult.",
-        "The darkness here feels magical and makes light sources feel dimmer.",
-        "Noxious fumes make everyone breathing them cough and sneeze.",
-        "An extremely foul smell makes breathing difficult here.",
-        "Gusts of wind threaten to put out torches and lanterns.",
-        "Loud echoes in the room make communication difficult.",
-        "An infestation of spiders has produced thick webs in the area.",
-        "An oily substance on the floor makes it slippery.",
-        "Strange sounds emanate from an unknown source.",
-        "In some areas the ceiling is so low that it slows down movement.",
-        "The flooring is muddy, which slows down progress and leaves a clear trail for anyone to follow.",
-        "There are noxious fumes in the air.",
-        "The air is extremely hot and humid, which makes all physical activities strenuous.",
-        "The area is infested with centipedes and small insects.",
-        "Most of the surfaces are slime-covered, which makes floors and objects slippery.",
-        "Air and horizontal surfaces are filled with ash, making everyone suspectible to heavy coughing.",
-        "The area is contaminated with a black mold that makes eyes watery and causes skin to itch.",
-        "The area is filled with debris that makes progress slow."
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{compoundbegin}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "FANTASTIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
+        "complication",
+        "difficulty",
+        "dilemma",
+        "hindrance",
+        "hitch",
+        "hurdle",
+        "obstacle",
+        "obstruction",
+        "problem",
+        "quandary",
+        "snag",
+        "twist"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{captive}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "captive",
+      "explanation": "Complications for captives.",
+      "entries": [
+        "is not innocent, but suffering a sentence for their horrific crimes",
+        "is pleading to be escorted back to safety immediately",
+        "is about to be executed",
+        "does not want to be rescued after all",
+        "is an enemy in disguise",
+        "is booby-trapped"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]

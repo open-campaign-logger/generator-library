@@ -27,7 +27,7 @@
           "v": "",
           "export": {
             "actant": "villain",
-            "villainadjective": "{adjective}"
+            "villainattribute": "{attribute}"
           }
         }
       ]
@@ -51,9 +51,9 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{init}{adjective} {villain}",
+        "{init}{attribute} {villain}",
         "{init}{villain} {complication}",
-        "{init}{adjective} {villain} {complication}"
+        "{init}{attribute} {villain} {complication}"
       ]
     },
     {
@@ -408,14 +408,14 @@
       "name": "special",
       "explanation": "Special villain tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{substantive}",
         "{complication}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives describing the villain.",
+      "name": "attribute",
+      "explanation": "Attributes describing the villain.",
       "entries": [
         "dark",
         "forgotten",
@@ -437,12 +437,12 @@
         "death-tainted",
         "hellbound",
         "evil",
-        "{rare adjective}"
+        "{rare attribute}"
       ]
     },
     {
-      "name": "rare adjective",
-      "explanation": "",
+      "name": "rare attribute",
+      "explanation": "Rare attributes",
       "entries": [
         "charismatic",
         "alluring",

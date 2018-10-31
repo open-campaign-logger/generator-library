@@ -50,9 +50,9 @@
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
         "{minion} whose favorite strategy is {strategy}",
-        "{adjective} {minion}",
+        "{attribute} {minion}",
         "{minion} ({complication})",
-        "{adjective} {minion} ({complication})"
+        "{attribute} {minion} ({complication})"
       ]
     },
     {
@@ -94,7 +94,7 @@
             "minion": "servitor",
             "minions": "servitors",
             "miniongroup": "congregation of servitors",
-            "minionadjective": "mindless"
+            "minionattribute": "mindless"
           }
         },
         {
@@ -104,7 +104,7 @@
             "minion": "devotee",
             "minions": "devotees",
             "miniongroup": "congregation of devotees",
-            "minionadjective": "faithful"
+            "minionattribute": "faithful"
           }
         },
         {
@@ -156,7 +156,7 @@
             "minion": "automaton",
             "minions": "automata",
             "miniongroup": "assembly of automata",
-            "minionadjective": "mechanical"
+            "minionattribute": "mechanical"
           }
         },
         {
@@ -166,7 +166,7 @@
             "minion": "manbeast",
             "minions": "manbeasts",
             "miniongroup": "horde of manbeasts",
-            "minionadjective": "ravenous"
+            "minionattribute": "ravenous"
           }
         },
         {
@@ -176,7 +176,7 @@
             "minion": "beastman",
             "minions": "beastmen",
             "miniongroup": "horde of beastmen",
-            "minionadjective": "inhuman"
+            "minionattribute": "inhuman"
           }
         },
         {
@@ -186,7 +186,7 @@
             "minion": "frogman",
             "minions": "frogmen",
             "miniongroup": "group of frogmen",
-            "minionadjective": "slime-covered"
+            "minionattribute": "slime-covered"
           }
         },
         {
@@ -244,14 +244,14 @@
       "name": "special",
       "explanation": "Special minion types.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{complication}",
         "{strategy}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives describing the minions.",
+      "name": "attribute",
+      "explanation": "Attributes describing the minions.",
       "entries": [
         "faithful",
         "cursed",

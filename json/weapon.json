@@ -1,6 +1,6 @@
 {
   "name": "weapon",
-  "resultPattern": "{weapon}",
+  "resultPattern": "{init}{result}",
   "variables": {
     "footnote": ""
   },
@@ -10,8 +10,8 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2017-12-28",
-  "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "date": "2018-09-10",
+  "authors": "Johnn Four, Jochen Linnemann, ELF Vesala.",
   "sources": "",
   "genre": "universal",
   "categories": [
@@ -19,6 +19,71 @@
   ],
   "tags": "",
   "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{word}",
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{weapon}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{weapon}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{attribute} {weapon}",
+        "{weapon}, {feature}",
+        "{attribute} {weapon}, {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The {weapon} {synonym} {looks} {feature}.",
+        "The {attribute} {weapon} {synonym} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Weapon}: {weapon} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
     {
       "name": "weapon",
       "explanation": "Weapon rarity.",
@@ -40,13 +105,32 @@
       ]
     },
     {
+      "name": "rare",
+      "explanation": "Rare weapons.",
+      "entries": [
+        "{primitive}",
+        "{ancient}",
+        "{exotic}"
+      ]
+    },
+    {
+      "name": "unique",
+      "explanation": "One-of-a-kind weapons.",
+      "entries": [
+        "{unique myth}"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
       "name": "hand to hand",
       "explanation": "Hand-to-hand weapon types.",
       "entries": [
-        "cestus (leather strip gloves fitted with spikes)",
+        "cestus",
         "knuckledusters",
         "knuckle knives",
-        "punch dagger (short blade protruding from fist)",
+        "punch dagger",
         "{rare hand to hand}"
       ]
     },
@@ -54,7 +138,7 @@
       "name": "rare hand to hand",
       "explanation": "Rare hand-to-hand weapon types.",
       "entries": [
-        "tiger claw (4 claw-like blades affixed to a crossbar)"
+        "tiger claw"
       ]
     },
     {
@@ -81,14 +165,14 @@
       "explanation": "Clubs.",
       "entries": [
         "truncheon",
-        "cudgel (slender, round wooden rod)",
-        "shillelagh (wooden walking stick with a large knob at the top)",
-        "baton (short, round wooden club)",
-        "club (short wooden stick)",
+        "cudgel",
+        "shillelagh",
+        "baton",
+        "club",
         "mace",
         "maul",
         "morningstar",
-        "greatclub (2-handed large club)"
+        "greatclub"
       ]
     },
     {
@@ -167,8 +251,8 @@
       "name": "knife",
       "explanation": "Knives (single-edged).",
       "entries": [
-        "knife (single-edged small blade)",
-        "hunting knife (small knife used for skinning game and cutting meat)",
+        "knife",
+        "hunting knife",
         "{dagger}",
         "{rare knife}"
       ]
@@ -177,25 +261,25 @@
       "name": "rare knife",
       "explanation": "Rare knives (single-edged).",
       "entries": [
-        "kukri (knife with an inwardly curved blade)",
-        "karambit (small curved knife resembling a claw)"
+        "kukri",
+        "karambit"
       ]
     },
     {
       "name": "dagger",
       "explanation": "Daggers (double-edged knives).",
       "entries": [
-        "dagger (knife with two sharp edges and a sharp point)",
-        "misericorde (long, narrow dagger, used for delivering a mercy stroke)",
-        "hunting dagger (double-edged stabbing knife for killing game)",
-        "parrying dagger (left-hand dagger with a wide guard)",
-        "rondel dagger (slim dagger with a round handguard)",
-        "knightly dagger (cross-hilt knife resembling a small sword)",
-        "baselard (long cutting dagger)",
-        "poignard (long, lightweight thrusting knife)",
-        "stiletto (dagger with a long, slender blade and needle-like point)",
-        "cinquedea (wide, heavy blade tapering into a rounded point)",
-        "dirk (long thrusting dagger)",
+        "dagger",
+        "misericorde",
+        "hunting dagger",
+        "parrying dagger",
+        "rondel dagger",
+        "knightly dagger",
+        "baselard",
+        "poignard",
+        "stiletto",
+        "cinquedea",
+        "dirk",
         "{parrying dagger}",
         "{rare dagger}"
       ]
@@ -204,17 +288,17 @@
       "name": "parrying dagger",
       "explanation": "Off-hand daggers for defense.",
       "entries": [
-        "parrying dagger (left-hand dagger with a wide guard)",
-        "main-gauche (large left-hand parrying dagger with a heavy blade)",
-        "swordbreaker (dagger with large, deep serrations on one edge)",
-        "trident dagger (blade divided lengthwise into 3 folding parts)"
+        "parrying dagger",
+        "main-gauche",
+        "swordbreaker",
+        "trident dagger"
       ]
     },
     {
       "name": "rare dagger",
       "explanation": "Rare daggers.",
       "entries": [
-        "kris (asymmetrical dagger with a wavy blade)"
+        "kris"
       ]
     },
     {
@@ -238,22 +322,22 @@
       "name": "sword",
       "explanation": "Swords.",
       "entries": [
-        "smallsword (used for parrying)",
-        "cutting rapier (rapier with a cutting edge)",
+        "smallsword",
+        "cutting rapier",
         "shortsword",
-        "seax (1-handed sword with a large, single-edged blade)",
-        "knightly sword (straight, double-edged blade)",
-        "falchion (1-handed, single-edged sword)",
-        "cutlass (short, broad sabre with a slightly curved blade)",
-        "sabre (cavalry sword with a curved blade)",
-        "scimitar (sabre with a curved blade)",
-        "rapier (slender thrusting sword)",
-        "backsword (wide-bladed straight sword with a single sharp edge)",
-        "broadsword (two-edged straight blade with a basket-shaped hand guard)",
-        "bastard sword (sword that can be used with 1 or 2 hands)",
-        "claymore (2-handed sword with forward-sloping cross hilt)",
-        "estoc (2-handed sword with a straight, edgeless but sharp blade)",
-        "longsword (2 handed sword with a long, straight blade)",
+        "seax",
+        "knightly sword",
+        "falchion",
+        "cutlass",
+        "sabre",
+        "scimitar",
+        "rapier",
+        "backsword",
+        "broadsword",
+        "bastard sword",
+        "claymore",
+        "estoc",
+        "longsword",
         "{rare sword}"
       ]
     },
@@ -261,9 +345,9 @@
       "name": "rare sword",
       "explanation": "Rare swords.",
       "entries": [
-        "flamberge (1-handed sword with an undulating blade)",
-        "flambard (2-handed sword with an undulating blade)",
-        "Zweihänder (large 2-handed sword)",
+        "flamberge",
+        "flambard",
+        "Zweihänder",
         "greatsword",
         "{exotic sword}"
       ]
@@ -272,11 +356,11 @@
       "name": "exotic sword",
       "explanation": "Exotic swords.",
       "entries": [
-        "sickle-sword (curved sword sharpened on the outer edge)",
-        "butterfly sword (short, single-edged sword wielded in pairs)",
+        "sickle-sword",
+        "butterfly sword",
         "hook sword",
-        "kalis (double-edged sword with a wavy section in the blade)",
-        "zulfiqar (sword with a scissors-like split blade)"
+        "kalis",
+        "zulfiqar"
       ]
     },
     {
@@ -286,10 +370,10 @@
         "scythe",
         "glaive",
         "halberd",
-        "trident (three-pronged spear)",
+        "trident",
         "war pick",
         "pike",
-        "swordstaff (a blade at the end of a staff)",
+        "swordstaff",
         "lance"
       ]
     },
@@ -355,7 +439,7 @@
       "explanation": "Thrown spear weapons.",
       "entries": [
         "throwing dart",
-        "gypsy arrow (arrow-like dart thrown using a string)"
+        "gypsy arrow"
       ]
     },
     {
@@ -364,8 +448,8 @@
       "entries": [
         "throwing spear",
         "javelin",
-        "trident (three-pronged spear)",
-        "spear-thrower (a shaft for slinging short spears)"
+        "trident",
+        "spear-thrower"
       ]
     },
     {
@@ -380,7 +464,7 @@
       "name": "throwing knife",
       "explanation": "Thrown knives.",
       "entries": [
-        "throwing knife (weighted for effective throwing)",
+        "throwing knife",
         "throwing dagger"
       ]
     },
@@ -397,8 +481,8 @@
       "entries": [
         "hand sling",
         "shepherd's sling",
-        "kestros (a sling for throwing darts)",
-        "staff sling (a staff with a sling at one end)"
+        "kestros",
+        "staff sling"
       ]
     },
     {
@@ -430,43 +514,72 @@
       ]
     },
     {
-      "name": "rare",
-      "explanation": "Rare weapons.",
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
       "entries": [
-        "{primitive weapon}",
-        "{ancient weapon}",
-        "{exotic weapon}"
+        "{beginning}{ending}",
+        "{descriptor} {beginning}{ending}",
+        "{beginning}{ending} {extension}",
+        "{descriptor} {beginning}{ending} {extension}"
       ]
     },
     {
-      "name": "primitive weapon",
-      "explanation": "Primitive weapons.",
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
       "entries": [
-        "throwing stones",
-        "wooden club",
-        "{lib:material#primitive} knife",
-        "{lib:material#primitive}-tipped spear"
+        ""
       ]
     },
     {
-      "name": "ancient weapon",
-      "explanation": "Knives.",
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
       "entries": [
-        "{lib:metal#ancient} knife"
+        "XXX"
       ]
     },
     {
-      "name": "exotic weapon",
-      "explanation": "Exotic weapons.",
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
       "entries": [
-        "blowgun"
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}",
+        "sledgehammer",
+        "spike maul",
+        "{rare fantasy}"
+      ]
+    },
+    {
+      "name": "rare fantasy",
+      "explanation": "Rare fantasy weapons (with no basis in myth).",
+      "entries": [
+        "self-swinging sword"
       ]
     },
     {
       "name": "myth",
-      "explanation": "Imaginary weapons once rumoured to have existed.",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
       "entries": [
-        "cold iron sword (averts faery folk)",
+        "cold iron sword",
         "{rare myth}"
       ]
     },
@@ -568,26 +681,34 @@
       ]
     },
     {
-      "name": "fantasy",
-      "explanation": "Fantasy weapons (with no basis in myth).",
+      "name": "primitive",
+      "explanation": "Primitive weapons.",
       "entries": [
-        "{myth}",
-        "sledgehammer",
-        "spike maul",
-        "{rare fantasy}"
+        "throwing stones",
+        "wooden club",
+        "{lib:material#primitive} knife",
+        "{lib:material#primitive}-tipped spear"
       ]
     },
     {
-      "name": "rare fantasy",
-      "explanation": "Rare fantasy weapons (with no basis in myth).",
+      "name": "ancient",
+      "explanation": "Ancient weapons.",
       "entries": [
-        "self-swinging sword"
+        "{lib:metal#ancient} knife"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{common}"
       ]
     },
     {
       "name": "modern",
-      "explanation": "Weapons for modern worlds.",
+      "explanation": "Descriptions for modern worlds.",
       "entries": [
+        "{common}",
         "{modern hand to hand}",
         "{modern melee}",
         "{modern ranged}",
@@ -598,8 +719,8 @@
       "name": "modern hand to hand",
       "explanation": "Hand-to-hand weapons for modern worlds.",
       "entries": [
-        "brass knuckles (piece of metal shaped to be worn around the knuckles)",
-        "sap glove (gloves with metal sewn over knuckles)"
+        "brass knuckles",
+        "sap glove"
       ]
     },
     {
@@ -623,11 +744,11 @@
       "explanation": "Clubs for modern worlds.",
       "entries": [
         "large metal flashlight",
-        "slapjack (hard weight inside a cloth sack)",
-        "sap (flat, leather-covered lead rod with a spring handle)",
-        "blackjack (short club with leather-wrapped lead weight)",
-        "nightstick (baton with a short side handle)",
-        "stun baton (capable of administrating an electric shock)",
+        "slapjack",
+        "sap",
+        "blackjack",
+        "nightstick",
+        "stun baton",
         "telescopic baton",
         "baseball bat",
         "crowbar"
@@ -637,7 +758,7 @@
       "name": "modern flexible",
       "explanation": "Flexible weapons for modern worlds.",
       "entries": [
-        "nunchaku (two short clubs connected with a chain)"
+        "nunchaku"
       ]
     },
     {
@@ -651,31 +772,31 @@
       "name": "modern knife",
       "explanation": "Knives for modern worlds.",
       "entries": [
-        "shiv (crude, homemade knife)",
-        "utility knife (small blade designed for handicraft)",
-        "box cutter (small, sliding, straight-edged blade inside a handle)",
-        "multi-tool knife (hand tool with multiple blades and tools)",
-        "razor (blade folding into the handle)",
-        "penknife (small, foldable blade suitable for sharpening pens)",
-        "pocket knife (small, foldable knife)",
-        "lock-blade knife (foldable knife, blade locking to the open position)",
-        "switchblade (sliding blade contained in the handle)",
-        "butterfly knife (two rotating handles)",
+        "shiv",
+        "utility knife",
+        "box cutter",
+        "multi-tool knife",
+        "razor",
+        "penknife",
+        "pocket knife",
+        "lock-blade knife",
+        "switchblade",
+        "butterfly knife",
         "folding knife",
-        "boot knife (small, fixed-blade knife carried in a boot)",
-        "neck knife (small knife carried on a chain worn around the neck)",
+        "boot knife",
+        "neck knife",
         "steak knife",
         "carving knife",
         "butcher's knife",
         "chef's knife",
         "cleaver",
-        "hacking knife (strong knife with a single-sided straight edge)",
+        "hacking knife",
         "bowie knife",
-        "survival knife (hollow handle with storage space)",
+        "survival knife",
         "fighting knife",
-        "warrior knife (large, curved fighting knife with a serrated back)",
+        "warrior knife",
         "combat knife",
-        "machete (broad-bladed large knife)",
+        "machete",
         "{rare modern knife}"
       ]
     },
@@ -685,11 +806,11 @@
       "entries": [
         "ceramic knife",
         "bayonet",
-        "ballpoint pen knife (pocket knife disguised as a pen)",
+        "ballpoint pen knife",
         "swordcane",
-        "sliding knife (the blade retracts into the handle)",
-        "gravity knife (blade contained in the handle, opened by gravity)",
-        "ballistic knife (spring-propelled detachable blade)"
+        "sliding knife",
+        "gravity knife",
+        "ballistic knife"
       ]
     },
     {
@@ -757,7 +878,7 @@
     },
     {
       "name": "futuristic",
-      "explanation": "Imaginary weapons for science fiction worlds.",
+      "explanation": "Descriptions for science fiction worlds.",
       "entries": [
         "{modern}",
         "{futuristic melee}",
@@ -771,8 +892,8 @@
       "name": "futuristic melee",
       "explanation": "Futuristic melee weapons for science fiction worlds.",
       "entries": [
-        "diamond knife (very sharp edge made from diamond)",
-        "shocknife (composite knife capable of generating an electronic shock)"
+        "diamond knife",
+        "shocknife"
       ]
     },
     {
@@ -800,17 +921,23 @@
       "name": "rare futuristic",
       "explanation": "Rare imaginary weapons for science fiction worlds.",
       "entries": [
-        "monomolecular blade (cuts practically anything)",
-        "monofilament whip (slices practically anything)",
-        "energy sword (shaft projecting a force field)"
+        "monomolecular blade",
+        "monofilament whip",
+        "energy sword"
       ]
     },
     {
-      "name": "special",
-      "explanation": "Special weapon-related tables.",
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
       "entries": [
-        "{equipment}"
+        "blowgun"
       ]
+    },
+    {
+      "**************************************************": "EQUIPMENT"
     },
     {
       "name": "equipment",
@@ -824,7 +951,63 @@
       "explanation": "Equipment for bows.",
       "entries": [
         "quiver",
-        "bracer (archer's leather armguard)"
+        "bracer"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "weapon"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "looks to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]

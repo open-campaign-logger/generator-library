@@ -2,7 +2,7 @@
   "name": "treasure",
   "resultPattern": "{result}",
   "globals": {
-    "treasure": "treasure"
+    "treasure": ""
   },
   "variables": {
     "footnote": ""
@@ -11,16 +11,28 @@
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "Forked from the Five_room_dungeon generator on 2018-01-04.",
   "bugs": "",
-  "to do": "Categorize treasures by type.",
+  "to do": "Categorize treasures by value and type!",
   "see": "equipment, gem, jewelry",
-  "date": "2018-01-28",
-  "authors": "Esko Vesala.",
+  "date": "2018-07-24",
+  "authors": "ELF Vesala.",
   "sources": "",
   "genre": "fantasy",
   "categories": [
     "item"
   ],
   "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
     {
       "name": "result",
       "explanation": "Verbosity of the resultPattern output.",
@@ -40,7 +52,11 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {treasure}"
+        "{attribute} {treasure}",
+        "{treasure} ({complication})",
+        "{treasure} {feature}",
+        "{attribute} {treasure} ({complication})",
+        "{attribute} {treasure} {feature}"
       ]
     },
     {
@@ -58,56 +74,102 @@
       "name": "common",
       "explanation": "Common treasure types.",
       "entries": [
-        "{miscellany}{global:treasure}"
+        "{lib:jewelry#summary}",
+        "{accessory}",
+        "{cup}",
+        "{art object}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare treasure types.",
       "entries": [
-        "{lib:jewelry}",
-        "magical {lib:magicitem}"
+        "{information}",
+        "{storage}"
       ]
     },
     {
-      "name": "miscellany",
-      "explanation": "Miscellaneous fantasy treasure (placeholder).",
+      "name": "unique",
+      "explanation": "Treasure types not produced by random.",
       "entries": [
-        {
-          "m": 1,
-          "v": "",
-          "export": {
-            "treasure": "hoard"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "export": {
-            "treasure": "tome"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "export": {
-            "treasure": "secret"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "export": {
-            "treasure": "scroll"
-          }
-        },
-        {
-          "m": 1,
-          "v": "",
-          "export": {
-            "treasure": "treasure"
-          }
-        }
+        "{lib:money#stash}",
+        "{furniture}"
+      ]
+    },
+    {
+      "**************************************************": "TREASURES"
+    },
+    {
+      "name": "accessory",
+      "explanation": "Personal utensils.",
+      "entries": [
+        "hair brush",
+        "comb",
+        "hand mirror"
+      ]
+    },
+    {
+      "name": "art object",
+      "explanation": "Objects of art.",
+      "entries": [
+        "{painting}",
+        "figurine",
+        "statuette",
+        "game board"
+      ]
+    },
+    {
+      "name": "furniture",
+      "explanation": "Pieces of furniture and decoration.",
+      "entries": [
+        "door handle",
+        "door knocker"
+      ]
+    },
+    {
+      "name": "information",
+      "explanation": "Valuable knowledge.",
+      "entries": [
+        "tome",
+        "scroll",
+        "map",
+        "a letter revealing a valuable secret"
+      ]
+    },
+    {
+      "name": "painting",
+      "explanation": "Painted art.",
+      "entries": [
+        "miniature painting",
+        "landscape painting",
+        "portrait painting"
+      ]
+    },
+    {
+      "name": "storage",
+      "explanation": "Storage items.",
+      "entries": [
+        "jewelry box",
+        "chest"
+      ]
+    },
+    {
+      "name": "cup",
+      "explanation": "Drinking vessels.",
+      "entries": [
+        "drinking horn",
+        "cup",
+        "flagon",
+        "chalice",
+        "goblet",
+        "pitcher",
+        "decanter",
+        "bottle",
+        "vial",
+        "flask",
+        "jug",
+        "vase",
+        "amphora"
       ]
     },
     {
@@ -125,7 +187,15 @@
       "name": "fantasy",
       "explanation": "Treasure for fantasy worlds (with no basis in myth).",
       "entries": [
-        "magic item"
+        "{magic}"
+      ]
+    },
+    {
+      "name": "magic",
+      "explanation": "Magical treasure",
+      "entries": [
+        "magical {lib:magicitem}",
+        "{lib:magical_instrument}"
       ]
     },
     {
@@ -148,43 +218,114 @@
       ]
     },
     {
-      "**************************************************": "SPECIAL CASES"
+      "**************************************************": "CONTAINERS"
+    },
+    {
+      "name": "container",
+      "explanation": "Treasure storage.",
+      "entries": [
+        "{bag}",
+        "{jar}",
+        "{crate}",
+        "{chest}"
+      ]
+    },
+    {
+      "name": "bag",
+      "explanation": "Bag types for stroring treasure.",
+      "entries": [
+        "pouch",
+        "purse",
+        "bag",
+        "satchel",
+        "saddlebag",
+        "sack"
+      ]
+    },
+    {
+      "name": "jar",
+      "explanation": "Jar types for storing treasure.",
+      "entries": [
+        "jar",
+        "urn"
+      ]
+    },
+    {
+      "name": "crate",
+      "explanation": "Crate types for storing treasure.",
+      "entries": [
+        "casket",
+        "cask",
+        "barrel",
+        "crate",
+        "sarcophagus"
+      ]
+    },
+    {
+      "name": "chest",
+      "explanation": "Chest types for storing treasure",
+      "entries": [
+        "strongbox",
+        "chest",
+        "coffer",
+        "trunk",
+        "war chest"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
     },
     {
       "name": "special",
       "explanation": "Special treasure subtables.",
       "entries": [
-        "{adjective}",
-        "{bonus}",
-        "{complication}"
+        "{attribute}",
+        "{complication}",
+        "{feature}",
+        "{synonym}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives describing the treasure.",
+      "name": "attribute",
+      "explanation": "Attributes describing the treasure.",
       "entries": [
-        "hidden",
-        "lost",
-        "valuable",
-        "peerless",
-        "{rare adjective}"
+        "a valued",
+        "a valuable",
+        "an invaluable",
+        "a prized",
+        "a rare",
+        "an extraordinary",
+        "an incomparable",
+        "a strange",
+        "a mysterious",
+        "a bizarre",
+        "a curious",
+        "a peculiar",
+        "an ornamental",
+        "a delicate",
+        "a priceless",
+        "{rare attribute}"
       ]
     },
     {
-      "name": "rare adjective",
-      "explanation": "",
+      "name": "rare attribute",
+      "explanation": "Rare attributes.",
       "entries": [
-        "fabled",
-        "ancient",
-        "enchanted"
-      ]
-    },
-    {
-      "name": "bonus",
-      "explanation": "Extra treasure for the keen-eyed.",
-      "entries": [
-        "piece of a magic item",
-        "map fragment"
+        "an ancient",
+        "a peerless",
+        "a fabled",
+        "an enchanted",
+        "a magical",
+        "a sorcerous",
+        "an occult",
+        "a thaumaturgic",
+        "a miraculous",
+        "a holy",
+        "a mystical",
+        "a mythical",
+        "a legendary",
+        "an alien",
+        "an otherworldly"
       ]
     },
     {
@@ -193,8 +334,35 @@
       "entries": [
         "cursed",
         "fake",
-        "already gone",
-        "being looted by hostile adventurers"
+        "incomplete",
+        "part of an incomplete set",
+        "with a piece missing"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features related to treasure.",
+      "format": "Optionally appended to the end of the result.",
+      "entries": [
+        "in excellent condition"
+      ]
+    },
+    {
+      "name": "synonym",
+      "explanation": "Generic terms for treasure.",
+      "entries": [
+        "hoard",
+        "treasure"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
       ]
     }
   ]

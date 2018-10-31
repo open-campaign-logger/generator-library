@@ -1,13 +1,17 @@
 {
-  "name": "set_forest",
+  "name": "set-city",
   "resultPattern": "{init}{result}",
   "globals": {
     "setadjective": "{adjective}",
+    "setarea": "{area}",
+    "setlocale": "{locale}",
+    "setboundary": "{boundary}",
     "setentrance": "{entrance}",
     "setlocation": "{location}",
     "setpassage": "{passage}",
     "setvault": "{vault}",
     "setdoor": "{door}",
+    "setnook": "{nook}",
     "setprop": "{prop}"
   },
   "variables": {
@@ -20,8 +24,8 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure",
-  "date": "2018-02-14",
-  "authors": "Esko Vesala.",
+  "date": "2018-09-20",
+  "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
   "categories": [
@@ -64,8 +68,8 @@
       ]
     },
     {
-      "name": "area",
-      "explanation": "Area types on the set.",
+      "name": "locale",
+      "explanation": "Location types on the set.",
       "entries": [
         "{entrance}",
         "{location}",
@@ -80,48 +84,45 @@
       "name": "entrance",
       "explanation": "Entrances matching the set.",
       "entries": [
-        "pathway to forest",
-        "forest entrance"
+        "city gate",
+        "city gates",
+        "toll gate"
       ]
     },
     {
       "name": "location",
       "explanation": "Locations matching the set.",
       "entries": [
-        "thicket",
-        "shrubbery",
-        "undergrowth",
-        "coppice",
-        "copse of trees",
-        "weald",
-        "woods",
-        "wildwood",
-        "backwoods"
+        "tavern",
+        "inn",
+        "market square",
+        "guildhall",
+        "warehouse",
+        "bath house",
+        "docks"
       ]
     },
     {
       "name": "passage",
       "explanation": "Corridors matching the set.",
       "entries": [
-        "walk",
-        "stroll",
-        "hike",
-        "path",
-        "pathway",
-        "logging road",
-        "forest road"
+        "passageway",
+        "alleyway",
+        "alley",
+        "back street",
+        "street",
+        "lane",
+        "avenue"
       ]
     },
     {
       "name": "vault",
       "explanation": "Centerpiece locations matching the set.",
       "entries": [
-        "orchard",
-        "grove",
-        "tall oak tree",
-        "spring",
-        "mound",
-        "standing stones"
+        "mansion",
+        "town hall",
+        "temple",
+        "courthouse"
       ]
     },
     {
@@ -131,33 +132,25 @@
       "name": "adjective",
       "explanation": "Adjectives for the set locations.",
       "entries": [
-        "cobwebbed",
-        "mist-filled"
+        "soot-covered",
+        "noisy"
       ]
     },
     {
       "name": "door",
       "explanation": "Doors matching the set.",
       "entries": [
-        "fallen treetrunk",
-        "thick vines"
+        "door",
+        "gate",
+        "arched entranceway"
       ]
     },
     {
       "name": "prop",
       "explanation": "Potential properties for the set.",
       "entries": [
-        "mushroom ring",
-        "anthill",
-        "dead tree",
-        "fallen tree",
-        "tall tree stump",
-        "two trees grown together",
-        "giant boulder",
-        "old firepit",
-        "old campsite",
-        "menhir",
-        "circle of stones"
+        "cart",
+        "street-vendor's stall"
       ]
     },
     {
@@ -167,7 +160,7 @@
       "name": "test",
       "explanation": "Testing tool for dumping the set global variables.",
       "entries": [
-        "{global:set} walkthrough: {global:setentrance} to {global:setpassage} leads to {global:setadjective} {global:setlocation} with {global:setprop}. Behind {global:setdoor} is the {global:setvault}."
+        "{global:setlocale} walkthrough: {global:setentrance} to {global:setpassage} leads to {global:setadjective} {global:setlocation} with {global:setprop}. Behind {global:setdoor} is the {global:setvault}."
       ]
     }
   ]

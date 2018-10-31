@@ -6,7 +6,7 @@
     "actants": "priests",
     "actantgroup": "group",
     "actantaction": "lost in their thoughts",
-    "actantadjective": "devout",
+    "actantattribute": "devout",
     "actantdescription": "The priest seems to be praying silently.",
     "attitude": "neutral",
     "footnote": ""

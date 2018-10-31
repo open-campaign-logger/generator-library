@@ -18,8 +18,8 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-02-24",
-  "authors": "Esko Vesala.",
+  "date": "2018-04-07",
+  "authors": "ELF Vesala.",
   "sources": "",
   "genre": "fantasy",
   "categories": [
@@ -245,10 +245,10 @@
       "name": "set",
       "explanation": "List of supported set tables.",
       "entries": [
-        "set_castle",
-        "set_dungeon",
-        "set_city",
-        "set_forest"
+        "set-castle",
+        "set-dungeon",
+        "set-city",
+        "set-forest"
       ]
     },
     {

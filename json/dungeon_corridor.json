@@ -1,6 +1,6 @@
 {
   "name": "dungeon_corridor",
-  "resultPattern": "{HTML formatting}{init}",
+  "resultPattern": "{lib:formatting#HTML}{init}{result}",
   "variables": {
     "footnote": ""
   },
@@ -10,8 +10,8 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_entrance, dungeon_room, dungeon_vault, Five_room_dungeon",
-  "date": "2018-01-26",
-  "authors": "Esko Vesala",
+  "date": "2018-09-22",
+  "authors": "ELF Vesala",
   "sources": "",
   "genre": "fantasy",
   "categories": [
@@ -83,7 +83,7 @@
       "name": "rare",
       "explanation": "Rare corridor types.",
       "entries": [
-        "{adjective}, {description}"
+        "{attribute}, {description}"
       ]
     },
     {
@@ -380,52 +380,13 @@
       ]
     },
     {
-      "**************************************************": "FORMATTING"
-    },
-    {
-      "name": "HTML formatting",
-      "explanation": "Set variables for formatting the output as HTML",
-      "entries": [
-        {
-          "v": "",
-          "export": {
-            "starttitle": "<H2>",
-            "endtitle": "</H2>",
-            "startheading": "<H3>",
-            "endheading": "</H3>",
-            "startbold": "<B>",
-            "endbold": "</B>",
-            "para": "<P>"
-          }
-        }
-      ]
-    },
-    {
-      "name": "CL formatting",
-      "explanation": "Set variables for formatting the output for Campaign Logger",
-      "entries": [
-        {
-          "v": "",
-          "export": {
-            "starttitle": "{b|",
-            "endtitle": "}\r\n\r\n",
-            "startheading": "\r\n\r\n{b|",
-            "endheading": "}",
-            "startbold": "{b|",
-            "endbold": "}",
-            "para": "\r\n"
-          }
-        }
-      ]
-    },
-    {
       "**************************************************": "SPECIAL CASES"
     },
     {
       "name": "special",
       "explanation": "Special corridor tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{contents}",
         "{description}",
         "{doors}",
@@ -433,8 +394,8 @@
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives for dungeon corridors.",
+      "name": "attribute",
+      "explanation": "Attributes for dungeon corridors.",
       "entries": [
         "bleak",
         "murky",
@@ -470,7 +431,7 @@
       "explanation": "Extras for dungeon corridors.",
       "entries": [
         "",
-        "{global:startbold}Complication{global:endbold}: {lib:complication#corridor}",
+        "{global:startbold}Complication{global:endbold}: The area {lib:complication#corridor}",
         "{global:startbold}Feature{global:endbold}: {lib:dungeon_feature}"
       ]
     }

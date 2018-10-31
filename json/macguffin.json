@@ -1,6 +1,6 @@
 {
   "name": "macguffin",
-  "resultPattern": "{result}",
+  "resultPattern": "{init}{result}",
   "globals": {
     "macguffin": ""
   },
@@ -13,14 +13,28 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-01-26",
-  "authors": "Esko Vesala.",
+  "date": "2018-07-24",
+  "authors": "ELF Vesala.",
   "sources": "Five_room_dungeon",
   "genre": "universal",
   "categories": [
     "item"
   ],
   "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the parameters, if required.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "macguffin": "{detail}",
+            "villain": "villain"
+          }
+        }
+      ]
+    },
     {
       "name": "result",
       "explanation": "Verbosity of the resultPattern output.",
@@ -40,7 +54,7 @@
       "name": "detail",
       "explanation": "Detailed resultPattern output variations.",
       "entries": [
-        "{adjective} {macguffin} that {power}"
+        "{attribute} {macguffin} that {power}"
       ]
     },
     {
@@ -179,17 +193,17 @@
       "name": "special",
       "explanation": "Special macguffin types.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{power}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Macguffin adjectives.",
+      "name": "attribute",
+      "explanation": "Macguffin attributes.",
       "entries": [
-        "mysterious",
-        "cursed",
-        "rune-carved"
+        "a mysterious",
+        "a cursed",
+        "a rune-carved"
       ]
     },
     {
@@ -201,7 +215,7 @@
         "appears valuable",
         "seems to be strangely important to some people",
         "is chased by an unknown faction",
-        "is desired by the villain",
+        "is desired by the {g:villain}",
         "seems to contain a clue about something important",
         "seems to contain some strange power"
       ]

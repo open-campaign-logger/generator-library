@@ -10,8 +10,8 @@
   "bugs": "",
   "to do": "",
   "see": "Dungeon_adventure, dungeon_corridor, dungeon_room, dungeon_vault, Five_room_dungeon",
-  "date": "2018-02-03",
-  "authors": "Esko Vesala",
+  "date": "2018-06-13",
+  "authors": "ELF Vesala",
   "sources": "",
   "genre": "fantasy",
   "categories": [
@@ -226,7 +226,7 @@
       "name": "milieu",
       "explanation": "The environment of the dungeon.",
       "entries": [
-        "{indoors}",
+        "{indoor}",
         "{urban}",
         "{suburban}",
         "{rural}",
@@ -248,17 +248,17 @@
       "entries": [
         "{sea}",
         "{tundra}",
-        "{rainforest}",
+        "{jungle}",
         "{savanna}",
         "{desert}",
         "{underground}"
       ]
     },
     {
-      "name": "indoors",
-      "explanation": "Indoor entrances.",
+      "name": "indoor",
+      "explanation": "Indoors entrances.",
       "export": {
-        "milieu": "indoors"
+        "milieu": "indoor"
       },
       "entries": [
         "The basement staircase seems to continue for ever, until it suddenly stops at a strange sight: ",
@@ -420,10 +420,10 @@
       ]
     },
     {
-      "name": "rainforest",
+      "name": "jungle",
       "explanation": "Entrances in the jungle.",
       "export": {
-        "milieu": "rainforest"
+        "milieu": "jungle"
       },
       "entries": [
         "In the depths of the green hell, the jungle finally reveals its secret. Behind the thick vines, you at last see the ancient temple - and the entrance: ",
@@ -470,14 +470,14 @@
       "name": "special",
       "explanation": "Special entrance tables.",
       "entries": [
-        "{adjective}",
+        "{attribute}",
         "{extra}",
         "{key}"
       ]
     },
     {
-      "name": "adjective",
-      "explanation": "Adjectives for dungeon entrances.",
+      "name": "attribute",
+      "explanation": "Attributes for dungeon entrances.",
       "entries": [
         "bleak",
         "murky",

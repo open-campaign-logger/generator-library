@@ -1,0 +1,1651 @@
+{
+  "name": "site",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "milieu": "",
+    "milieudescription": "",
+    "site": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Sites of interest.",
+  "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
+  "note": "",
+  "format": "",
+  "bugs": "",
+  "to do": "",
+  "see": "culture, Dungeon_adventure, Five_room_dungeon, location, milieu, people, place, site",
+  "date": "2018-10-02",
+  "authors": "ELF Vesala",
+  "sources": "",
+  "attribution": {
+    "creators": "",
+    "copyright": "",
+    "licence": "https://",
+    "disclaimer": "https://",
+    "source": "",
+    "changes": "Translation into Campaign Logger generator format."
+  },
+  "genre": "",
+  "categories": [
+    ""
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "site": "{site}"
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{section}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{g:site}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{attribute} {g:site}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{g:site} {feature} {obstacle}",
+        "{attribute} {g:site} {feature} {obstacle}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a sentence.",
+      "entries": [
+        "{approach} \r\n{passage} \r\n{vault}"
+      ]
+    },
+    {
+      "name": "section",
+      "explanation": "Long description as a subheading and a text paragraph.",
+      "entries": [
+        "{init}===== {random} =====\r\n{description}"
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Name}: {random} \r\n{b|Obstacle}: {obstacle} \r\n{b|Denizen}: {denizen} \r\n{b|Reward}: {reward} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "name": "meta",
+      "explanation": "Off-game explanation of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "site",
+      "explanation": "Types by rarity.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Usual types.",
+      "entries": [
+        "{lib:place#plain}",
+        "{lib:place#polar}",
+        "{lib:place#subpolar}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Unusual types.",
+      "entries": [
+        "{lib:place#highland}",
+        "{lib:place#underground}"
+      ]
+    },
+    {
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
+      "entries": [
+        "{lib:place#exclusive}"
+      ]
+    },
+    {
+      "**************************************************": "RANGES"
+    },
+    {
+      "name": "any",
+      "explanation": "Random selection.",
+      "entries": [
+        "{animal}",
+        "{community}",
+        "{danger}",
+        "{denizen}",
+        "{information}",
+        "{item}",
+        "{landmark}",
+        "{monster}",
+        "{mood}",
+        "{obstacle}",
+        "{plant}",
+        "{reward}",
+        "{significance}",
+        "{structure}",
+        "{supernatural}",
+        "{trap}"
+      ]
+    },
+    {
+      "name": "approach",
+      "explanation": "Elements observed initially.",
+      "entries": [
+        "{community}",
+        "{danger}",
+        "{landmark}",
+        "{mood}",
+        "{plant}",
+        "{significance}",
+        "{structure}"
+      ]
+    },
+    {
+      "name": "passage",
+      "explanation": "Elements inside the structure.",
+      "entries": [
+        "{animal}",
+        "{denizen}",
+        "{monster}",
+        "{obstacle}"
+      ]
+    },
+    {
+      "name": "vault",
+      "explanation": "Elements of the inner sanctum.",
+      "entries": [
+        "{information}",
+        "{item}",
+        "{reward}",
+        "{supernatural}"
+      ]
+    },
+    {
+      "--------------------------------------------------": ""
+    },
+    {
+      "name": "animal",
+      "explanation": "Animals on the site.",
+      "entries": [
+        "The {!synonym} {g:milieu} {occupied} {animal element}.",
+        "There are {animal signs} {animal element}."
+      ]
+    },
+    {
+      "name": "community",
+      "explanation": "A community living on the site.",
+      "entries": [
+        "The {g:milieu} {inhabited} {community element}.",
+        "The {g:milieu} {accommodates} {community sign} {community element}."
+      ]
+    },
+    {
+      "name": "danger",
+      "explanation": "Danger elements of the site.",
+      "entries": [
+        "The {g:milieu} {accommodates} {danger element}."
+      ]
+    },
+    {
+      "name": "denizen",
+      "explanation": "The inhabitants of the site.",
+      "entries": [
+        "The {!synonym} {inhabited} {denizen element}.",
+        "{|{denizen sign}|scase} {denizen element} can be found here."
+      ]
+    },
+    {
+      "name": "information",
+      "explanation": "Information available on the site.",
+      "entries": [
+        "The {!synonym} hides {information element}."
+      ]
+    },
+    {
+      "name": "item",
+      "explanation": "Items on the site.",
+      "entries": [
+        "The {!synonym} hides {item element}."
+      ]
+    },
+    {
+      "name": "landmark",
+      "explanation": "Landmarks on the site.",
+      "entries": [
+        "The {g:milieu} {accommodates} {landmark element}."
+      ]
+    },
+    {
+      "name": "monster",
+      "explanation": "Monstrosities on the site.",
+      "entries": [
+        "The {!synonym} {inhabited} {monster element}."
+      ]
+    },
+    {
+      "name": "mood",
+      "explanation": "The atmosphere of the site.",
+      "entries": [
+        "In the {g:milieu} {mood element}."
+      ]
+    },
+    {
+      "name": "obstacle",
+      "explanation": "Complications on the site.",
+      "entries": [
+        "{obstacle element}."
+      ]
+    },
+    {
+      "name": "plant",
+      "explanation": "Plants on the site.",
+      "entries": [
+        "In the {g:milieu}, there {grows} {plant element}."
+      ]
+    },
+    {
+      "name": "reward",
+      "explanation": "Valuables on the site.",
+      "entries": [
+        "The {!synonym} {!hides} {reward element}."
+      ]
+    },
+    {
+      "name": "significance",
+      "explanation": "The significance of the site.",
+      "entries": [
+        "The {g:milieu} is {significance element}."
+      ]
+    },
+    {
+      "name": "structure",
+      "explanation": "Structures on the site.",
+      "entries": [
+        "The {g:milieu} {accommodates} {information element}."
+      ]
+    },
+    {
+      "name": "supernatural",
+      "explanation": "Occult elements of the site.",
+      "entries": [
+        "The {!synonym} {!hides} {supernatural element}."
+      ]
+    },
+    {
+      "name": "trap",
+      "explanation": "Trap elements of the site.",
+      "entries": [
+        "The {!synonym} {accommodates} {trap element}."
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "--------------------------------------------------": "ANIMALS"
+    },
+    {
+      "name": "animal element",
+      "explanation": "Animals on the site.",
+      "entries": [
+        "{animal attribute} {animal core}",
+        "{animal attribute} {animal core} {animal feature}"
+      ]
+    },
+    {
+      "name": "animal attribute",
+      "explanation": "",
+      "entries": [
+        "{lib:animal#attribute}"
+      ]
+    },
+    {
+      "name": "animal core",
+      "explanation": "",
+      "format": "singular",
+      "entries": [
+        "{animal polar}",
+        "{animal subpolar}"
+      ]
+    },
+    {
+      "name": "animal feature",
+      "explanation": "",
+      "entries": [
+        "{lib:animal#feature}"
+      ]
+    },
+    {
+      "name": "animal polar",
+      "explanation": "",
+      "format": "singular",
+      "entries": [
+        "{lib:animal#polar beast}"
+      ]
+    },
+    {
+      "name": "animal signs",
+      "explanation": "Signs left on the site by animals.",
+      "format": "plural",
+      "entries": [
+        "blood drippings from",
+        "droppings of",
+        "remains of a feast by",
+        "faint scent traces of",
+        "sounds of",
+        "remains of",
+        "scratch marks left by",
+        "signs of a resting spot by",
+        "traces of skin from",
+        "tracks of"
+      ]
+    },
+    {
+      "name": "animal subpolar",
+      "explanation": "",
+      "format": "singular",
+      "entries": [
+        "{lib:animal#subpolar beast}",
+        "pack of wolves"
+      ]
+    },
+    {
+      "--------------------------------------------------": "DANGERS"
+    },
+    {
+      "name": "danger element",
+      "explanation": "Magical conditions on the site.",
+      "entries": [
+        "{danger attribute} {danger core}",
+        "{danger attribute} {danger core} {danger feature}"
+      ]
+    },
+    {
+      "name": "danger attribute",
+      "explanation": "",
+      "entries": [
+        "a hard to notice",
+        "a huge",
+        "a larger than initially apparent"
+      ]
+    },
+    {
+      "name": "danger core",
+      "explanation": "",
+      "entries": [
+        "cover of brittle ice",
+        "crack spouting out sulphuric fumes",
+        "spot of quagmire"
+      ]
+    },
+    {
+      "name": "danger feature",
+      "explanation": "",
+      "entries": [
+        "that could be lethal",
+        "that has trapped a wild beast",
+        "that still hides the remains of a previous visitor"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMMUNITY"
+    },
+    {
+      "name": "community element",
+      "explanation": "Inhabitants of the site.",
+      "entries": [
+        "{community attribute} {community core}",
+        "{community attribute} {community core} {community feature}"
+      ]
+    },
+    {
+      "name": "community attribute",
+      "explanation": "",
+      "entries": [
+        "diseased",
+        "distrustful",
+        "friendly",
+        "hostile",
+        "initially hostile",
+        "seemingly friendly",
+        "starving",
+        "suspicious",
+        "wealthy",
+        "well-stocked"
+      ]
+    },
+    {
+      "name": "community core",
+      "explanation": "",
+      "format": "plural",
+      "entries": [
+        "bandits",
+        "escaped slaves",
+        "followers of a shaman",
+        "explorers",
+        "gatherers",
+        "hunters",
+        "nomads",
+        "pilgrims",
+        "raiders",
+        "slavers",
+        "trappers"
+      ]
+    },
+    {
+      "name": "community feature",
+      "explanation": "",
+      "entries": [
+        "who are eager to trade with visitors",
+        "who are fearful of visitors",
+        "who are interested to hear news from afar",
+        "who can be befriended with suitable gifts",
+        "who do not allow visitors to enter",
+        "who require any visitors to strictly obey their customs",
+        "who respect displays of strength"
+      ]
+    },
+    {
+      "name": "community sign",
+      "explanation": "Signs left on the site by people.",
+      "format": "singular",
+      "entries": [
+        "a campsite of",
+        "an abandoned campsite of",
+        "an equipment cache belonging to",
+        "a grave site of",
+        "a holy site of",
+        "a lookout spot of",
+        "an outpost of",
+        "a resource cache belonging to",
+        "a resting place of",
+        "a temporary settlement of",
+        "a village of"
+      ]
+    },
+    {
+      "--------------------------------------------------": "DENIZENS"
+    },
+    {
+      "name": "denizen element",
+      "explanation": "Inhabitants of the site.",
+      "entries": [
+        "{denizen attribute} {denizen core}",
+        "{denizen attribute} {denizen core} {denizen feature}"
+      ]
+    },
+    {
+      "name": "denizen attribute",
+      "explanation": "",
+      "entries": [
+        "an angered",
+        "a distrustful",
+        "a hungry",
+        "an insane",
+        "a plague-carrying",
+        "a psychotic",
+        "a ravenous",
+        "a religious",
+        "a scared",
+        "a starved",
+        "a suspicious",
+        "a vengeful",
+        "a wounded"
+      ]
+    },
+    {
+      "name": "denizen core",
+      "explanation": "",
+      "format": "singular",
+      "entries": [
+        "adventurer",
+        "escaped slave",
+        "stranded explorer",
+        "grave robber",
+        "halfbreed",
+        "healer",
+        "hermit",
+        "hunter",
+        "madman",
+        "seer",
+        "shaman",
+        "slaver",
+        "tracker",
+        "trader"
+      ]
+    },
+    {
+      "name": "denizen feature",
+      "explanation": "",
+      "entries": [
+        "faking a grievous injury",
+        "hiding their valuables",
+        "preparing to defend against an attack",
+        "searching for something valuable",
+        "setting up traps",
+        "waiting in a superior attack position",
+        "who is plannning to rob any visitors",
+        "who is in dire need of help",
+        "who pretends to be friendly"
+      ]
+    },
+    {
+      "name": "denizen sign",
+      "explanation": "Signs left on the site by people.",
+      "format": "singular",
+      "entries": [
+        "a campsite of",
+        "scrap of food discarded by",
+        "a piece of clothing belonging to",
+        "a piece of equipment belonging to",
+        "a trail left by",
+        "a weapon belonging to"
+      ]
+    },
+    {
+      "--------------------------------------------------": "INFORMATION"
+    },
+    {
+      "name": "information element",
+      "explanation": "Knowledge available on the site.",
+      "entries": [
+        "{information attribute} {information core}",
+        "{information attribute} {information core} {information feature}"
+      ]
+    },
+    {
+      "name": "information attribute",
+      "explanation": "",
+      "entries": [
+        "a treatise {containing}",
+        "a coded message {containing}",
+        "an image with a clue about",
+        "a riddle hinting at",
+        "a scroll {containing}",
+        "scratchmarks forming a crude presentation of",
+        "strange markings forming"
+      ]
+    },
+    {
+      "name": "information core",
+      "explanation": "",
+      "entries": [
+        "a crafting recipe",
+        "a map",
+        "a criminal plan",
+        "esoteric knowledge",
+        "evidence of a secret alliance",
+        "forgotten lore",
+        "information about local history"
+      ]
+    },
+    {
+      "name": "information feature",
+      "explanation": "",
+      "entries": [
+        "that could prove to be very valuable for the right people",
+        "that does not appear believable",
+        "that may make the possessor of the knowledge a target for hostile forces",
+        "that is not entirely truthful"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ITEMS"
+    },
+    {
+      "name": "item element",
+      "explanation": "Knowledge available on the site.",
+      "entries": [
+        "{item attribute} {item core}",
+        "{item attribute} {item core} {item feature}"
+      ]
+    },
+    {
+      "name": "item attribute",
+      "explanation": "",
+      "entries": [
+        "{lib:equipment#attribute}",
+        "a damaged",
+        "a discarded",
+        "a forgotten",
+        "a partial",
+        "a valuable",
+        "a well-preserved",
+        "a weather-beaten",
+        "a wondrous"
+      ]
+    },
+    {
+      "name": "item core",
+      "explanation": "",
+      "entries": [
+        "armour piece",
+        "crafting recipe",
+        "equipment cache",
+        "healing item",
+        "magical weapon",
+        "piece of jewelry",
+        "rare spell component",
+        "resource cache"
+      ]
+    },
+    {
+      "name": "item feature",
+      "explanation": "",
+      "entries": [
+        "cut in half",
+        "guarded by a trap",
+        "guarded by a monster",
+        "partially buried in the ground",
+        "torn into several pieces"
+      ]
+    },
+    {
+      "--------------------------------------------------": "LANDMARKS"
+    },
+    {
+      "name": "landmark element",
+      "explanation": "Landmarks on the site.",
+      "entries": [
+        "{landmark attribute} {landmark core}",
+        "{landmark attribute} {landmark core} {landmark feature}"
+      ]
+    },
+    {
+      "name": "landmark attribute",
+      "explanation": "",
+      "entries": [
+        "a dangerous",
+        "a decrepit",
+        "a hard to spot",
+        "a hidden",
+        "an isolated",
+        "a mist-covered",
+        "a peculiar-looking",
+        "a very noticeable"
+      ]
+    },
+    {
+      "name": "landmark core",
+      "explanation": "",
+      "entries": [
+        "cave",
+        "circle of stones",
+        "cliffside",
+        "crevice",
+        "field of sharp rocks",
+        "fissure in the ground",
+        "gemstone lode",
+        "geysir",
+        "gigantic boulder",
+        "glacier",
+        "grave mound",
+        "hot spring",
+        "mammoth graveyard",
+        "mound of rocks",
+        "mountain peak",
+        "mountain range",
+        "natural well",
+        "peat bog",
+        "range of hills",
+        "rock formation",
+        "small pond teeming with leeches",
+        "spring",
+        "steep cliff",
+        "stone arc",
+        "stream",
+        "tar pit",
+        "underground river",
+        "valley",
+        "vein of ore",
+        "waterfall",
+        "watering hole"
+      ]
+    },
+    {
+      "name": "landmark feature",
+      "explanation": "",
+      "entries": [
+        "connected to the spirit world",
+        "of obviously ancient age",
+        "that produces a unique look for the {synonym}",
+        "where spirits are stronger than usual",
+        "with traces of bandits present"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MONSTERS"
+    },
+    {
+      "name": "monster element",
+      "explanation": "Monsters on the site.",
+      "entries": [
+        "{monster attribute} {monster core}",
+        "{monster attribute} {monster core} {monster feature}"
+      ]
+    },
+    {
+      "name": "monster attribute",
+      "explanation": "",
+      "entries": [
+        "an angered",
+        "a distrustful",
+        "an enraged",
+        "a hungry",
+        "an insane",
+        "a plague-carrying",
+        "a psychotic",
+        "a ravenous",
+        "a vengeful"
+      ]
+    },
+    {
+      "name": "monster core",
+      "explanation": "",
+      "format": "singular",
+      "entries": [
+        "giant",
+        "group of ancestor spirits",
+        "bestial monstrosity",
+        "beast man",
+        "creation of vile sorcery",
+        "creature from the spirit realms",
+        "inhuman abomination",
+        "lycanthrope",
+        "nightmare horror",
+        "swarm of parasites",
+        "totem spirit",
+        "horde of undead creatures"
+      ]
+    },
+    {
+      "name": "monster feature",
+      "explanation": "",
+      "entries": [
+        "chasing prey",
+        "guarding treasure",
+        "followings the tracks of the adventurers",
+        "hunting",
+        "preparing for an ambush",
+        "wanting revenge"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MOOD"
+    },
+    {
+      "name": "mood element",
+      "explanation": "Atmosphere on the site.",
+      "entries": [
+        "{mood attribute} {!mood core}",
+        "{mood attribute} {!mood core} {mood feature}"
+      ]
+    },
+    {
+      "name": "mood attribute",
+      "explanation": "",
+      "entries": [
+        "an inspection reveals that",
+        "it's apparent that",
+        "it's not immediately noticeble, but",
+        "visitors soon notice that"
+      ]
+    },
+    {
+      "name": "mood core",
+      "explanation": "",
+      "entries": [
+        "the air has a strange smell",
+        "the atmosphere has an unnatural feel",
+        "the atmosphere is cooler than the environment",
+        "a barely noticeable, extremely low sound seems to emanate from somewhere",
+        "being in the {synonym} seems to cause an itching feeling",
+        "black mold grows on every surface",
+        "colors seem to be dimmer in the area",
+        "the earth itself seems to be slowly breathing",
+        "every now and then the ground seems to tremble slightly",
+        "occasionally glimpses of light can be seen in peripheral vision",
+        "the terrain features feel eerily brittle to touch",
+        "a swarm of tiny insect-like creatures crawls on the ground",
+        "in the {synonym}, the visitors' hairs stand on end",
+        "it is difficult to breathe in the {synonym}",
+        "it is unusually cold",
+        "light sources seem unusually dim",
+        "low humming can be heard emanating from somewhere",
+        "occasionally small, sparkling lights can be seen in peripheral vision",
+        "the {synonym} feels comforting",
+        "the {synonym} feels darker than the surroundings",
+        "the {synonym} is deadly quiet",
+        "the {synonym} gives goosebumps to visitors",
+        "the {synonym} seems to be strangely devoid of life",
+        "vapors seem to emanate from the ground"
+      ]
+    },
+    {
+      "name": "mood feature",
+      "explanation": "",
+      "entries": [
+        "and {!mood core}",
+        "and a foreboding feeling seems to emanate from the surroundings",
+        "- which does not feel natural",
+        "which seems to have scared other wildlife away"
+      ]
+    },
+    {
+      "--------------------------------------------------": "OBSTACLES"
+    },
+    {
+      "name": "obstacle element",
+      "explanation": "Hindrances on the site.",
+      "entries": [
+        "{|{obstacle attribute}|scase} {obstacle core}",
+        "{|{obstacle attribute}|scase} {obstacle core} {obstacle feature}"
+      ]
+    },
+    {
+      "name": "obstacle attribute",
+      "explanation": "",
+      "entries": [
+        "a nearby area",
+        "the approach to the {synonym}",
+        "the boundary of the {synonym}",
+        "the center",
+        "the entrance",
+        "the environment",
+        "the outskirts",
+        "the passageway",
+        "the surrounding area",
+        "the vicinity of the {synonym}"
+      ]
+    },
+    {
+      "name": "obstacle core",
+      "explanation": "",
+      "entries": [
+        "{lib:complication#location}",
+        "carries the taint of plague",
+        "has been blocked",
+        "has been cursed",
+        "has partially collapsed",
+        "is about to collapse",
+        "is a low magic zone",
+        "is booby trapped"
+      ]
+    },
+    {
+      "name": "obstacle feature",
+      "explanation": "",
+      "entries": [
+        "and shows signs of burn damage",
+        "without advance warning"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PLANTS"
+    },
+    {
+      "name": "plant element",
+      "explanation": "Plants on the site.",
+      "entries": [
+        "{plant attribute} {plant core}",
+        "{plant attribute} {plant core} {plant feature}"
+      ]
+    },
+    {
+      "name": "plant attribute",
+      "explanation": "",
+      "entries": [
+        "an ancient-looking",
+        "a curiously shaped",
+        "a dead",
+        "a suffering",
+        "a withered",
+        "a petrified"
+      ]
+    },
+    {
+      "name": "plant core",
+      "explanation": "",
+      "format": "singular",
+      "entries": [
+        "cover of mold blanketing the ground",
+        "curiously shaped tree",
+        "giant tree",
+        "fallen tree",
+        "stangle of gnarly roots",
+        "hollow tree",
+        "mushroom-covered tree",
+        "pair of intertwined trees",
+        "ring of mushrooms",
+        "thicket",
+        "thorny bush",
+        "tree stump",
+        "twisted tree"
+      ]
+    },
+    {
+      "name": "plant feature",
+      "explanation": "",
+      "entries": [
+        "that covers a clue to the history of the place",
+        "that guards the passageway",
+        "that has an item trapped within",
+        "that has taken over the location",
+        "with an animal skull on top of it",
+        "with dyed, geometric patterns on it",
+        "with numerous spears struck to it",
+        "with weathered ribbons tied on it",
+        "with primitive trinkets scattered around as offerings to spirits"
+      ]
+    },
+    {
+      "--------------------------------------------------": "REWARDS"
+    },
+    {
+      "name": "reward element",
+      "explanation": "Treasures and bounties available on the site.",
+      "entries": [
+        "{reward attribute} {reward core}",
+        "{reward attribute} {reward core} {reward feature}"
+      ]
+    },
+    {
+      "name": "reward attribute",
+      "explanation": "",
+      "entries": [
+        "a camouflaged",
+        "a cursed",
+        "a damaged",
+        "a fake",
+        "a hidden",
+        "an infamous",
+        "an invaluable",
+        "a legendary",
+        "a primitive",
+        "a rare",
+        "a sorcerous",
+        "a strange"
+      ]
+    },
+    {
+      "name": "reward core",
+      "explanation": "",
+      "entries": [
+        "demonic item",
+        "pool of healing",
+        "portal to the spirit world",
+        "ore of gems",
+        "concentration of magical energies"
+      ]
+    },
+    {
+      "name": "reward feature",
+      "explanation": "",
+      "entries": [
+        "that is not as valuable as initially seems",
+        "that is sought by hostile forces"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SIGNIFICANCE"
+    },
+    {
+      "name": "significance element",
+      "explanation": "Significance of the site.",
+      "entries": [
+        "{significance attribute} {significance core}",
+        "{significance attribute} {significance core} {significance feature}"
+      ]
+    },
+    {
+      "name": "significance attribute",
+      "explanation": "",
+      "entries": [
+        "an ancient",
+        "a cursed",
+        "a fearsome",
+        "a haunted",
+        "an infamous",
+        "a major",
+        "an once famous"
+      ]
+    },
+    {
+      "name": "significance core",
+      "explanation": "",
+      "entries": [
+        "abode of a holy hermit",
+        "animal graveyard",
+        "area known for supernatural phenomena",
+        "battleground",
+        "borderland between hostile tribes",
+        "burial site",
+        "den of a dangerous beast",
+        "exploration target",
+        "holy site",
+        "hunting ground",
+        "location of a monster lair",
+        "location of a truce between warring tribes",
+        "magical place",
+        "mass grave",
+        "source of rare herbs",
+        "place of trials",
+        "place of worship",
+        "portal to spirit world",
+        "rumored hiding place of a treasure",
+        "sacred location for local inhabitants",
+        "sacrificial site",
+        "seat of a tribal ruler",
+        "settlement of a lost race",
+        "site for a local tribe's adulthood rite",
+        "site for harvesting magical materials",
+        "site of justice",
+        "site of massacre",
+        "site of pilgrimage",
+        "territory of a rare beast",
+        "trading place"
+      ]
+    },
+    {
+      "name": "significance feature",
+      "explanation": "",
+      "entries": [
+        "but few remember it any more",
+        "that has largely been forgotten",
+        "that is only known by few people",
+        "that played a significant role in local history"
+      ]
+    },
+    {
+      "--------------------------------------------------": "STRUCTURES"
+    },
+    {
+      "name": "structure element",
+      "explanation": "Knowledge available on the site.",
+      "entries": [
+        "{structure attribute} {structure core}",
+        "{structure attribute} {structure core} {structure feature}"
+      ]
+    },
+    {
+      "name": "structure attribute",
+      "explanation": "",
+      "entries": [
+        "an apparently recently used",
+        "a blackened",
+        "a forgotten",
+        "a frozen",
+        "a lichen-coated",
+        "a long since abandoned",
+        "a tainted",
+        "a weather-worn",
+        "a well-preserved"
+      ]
+    },
+    {
+      "name": "structure core",
+      "explanation": "",
+      "entries": [
+        "abstract carving",
+        "altar",
+        "animal trap",
+        "animal warren",
+        "arrow shape made of small stones",
+        "beacon",
+        "bird snare",
+        "boundary mark",
+        "burial site",
+        "cache of cheap trinkets",
+        "cairn",
+        "campsite",
+        "catacomb",
+        "corpse",
+        "den",
+        "fort",
+        "grave",
+        "hunting platform",
+        "menhir",
+        "monolith",
+        "mummified corpse",
+        "path",
+        "pile of rocks",
+        "pillar of balanced boulders",
+        "roasting pit",
+        "remains of a campfire",
+        "sacrificial stone",
+        "shrine",
+        "sign",
+        "stack of stones",
+        "tent",
+        "tomb",
+        "tombstone",
+        "totem",
+        "trench"
+      ]
+    },
+    {
+      "name": "structure feature",
+      "explanation": "",
+      "entries": [
+        "that has apparently been hastily abandoned",
+        "that has been covered by moss",
+        "that has been trapped"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SUPERNATURAL"
+    },
+    {
+      "name": "supernatural element",
+      "explanation": "Magical conditions on the site.",
+      "entries": [
+        "{supernatural attribute} {supernatural core}",
+        "{supernatural attribute} {supernatural core} {supernatural feature}"
+      ]
+    },
+    {
+      "name": "supernatural attribute",
+      "explanation": "",
+      "entries": [
+        "a coded",
+        "a hidden",
+        "an indecipherable"
+      ]
+    },
+    {
+      "name": "supernatural core",
+      "explanation": "",
+      "entries": [
+        "{supernatural source} {containing} {supernatural knowledge} {supernatural purpose}"
+      ]
+    },
+    {
+      "name": "supernatural feature",
+      "explanation": "",
+      "entries": [
+        "that can bring forth the ire of the gods",
+        "that requires blood sacrifice"
+      ]
+    },
+    {
+      "name": "supernatural knowledge",
+      "explanation": "",
+      "entries": [
+        "ancient wisdom about",
+        "a chant for",
+        "a ceremony of",
+        "a description of an artifact for",
+        "inaccurate folklore about",
+        "information about the hiding place of a magic item for",
+        "a liturgy for",
+        "a magical sigil for",
+        "a prayer for",
+        "a recipe for a potion of",
+        "a magical rite for",
+        "manufacturing instructions for a talisman of",
+        "a rare material component for a spell of",
+        "a ritual for",
+        "a sacrificial tradition for",
+        "a spell of"
+      ]
+    },
+    {
+      "name": "supernatural purpose",
+      "explanation": "",
+      "entries": [
+        "{lib:spell_intention#summary}",
+        "healing",
+        "plague cure",
+        "travel to the spirit world"
+      ]
+    },
+    {
+      "name": "supernatural source",
+      "explanation": "",
+      "entries": [
+        "writing on animal hide",
+        "grimoire",
+        "parchment",
+        "scroll"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TRAPS"
+    },
+    {
+      "name": "trap element",
+      "explanation": "Magical conditions on the site.",
+      "entries": [
+        "{trap attribute} {trap core}",
+        "{trap attribute} {trap core} {trap feature}"
+      ]
+    },
+    {
+      "name": "trap attribute",
+      "explanation": "",
+      "entries": [
+        "a carefully constructed",
+        "a cruel",
+        "a hastily put together",
+        "a lethal",
+        "a primitive",
+        "a well-hidden"
+      ]
+    },
+    {
+      "name": "trap core",
+      "explanation": "",
+      "entries": [
+        "blade trap",
+        "crushing trap",
+        "magical trap",
+        "pit trap",
+        "poison trap",
+        "spike trap"
+      ]
+    },
+    {
+      "name": "trap feature",
+      "explanation": "",
+      "entries": [
+        "causing grievous injuries",
+        "that has already been sprung",
+        "that still has the corpse of a previous victim lying nearby"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomization methods.",
+      "entries": [
+        "{|{component}|tcase}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMPONENTS"
+    },
+    {
+      "name": "component",
+      "explanation": "Component-based terms (generated from words).",
+      "entries": [
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {beginning} {ending}",
+        "{beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        "{lib:adjPlace#negative}",
+        "{lib:place#descriptor}",
+        "{lib:prefix#place}"
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{lib:aspect#cold}",
+        "{lib:aspect#common}",
+        "{lib:aspect#negative}",
+        "{compoundbegin}"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "{lib:place#compoundbegin}"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "{lib:place#compoundend}"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "{g:site}"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        "{lib:place#extension}"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "FANTASTIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        "{trinket core}"
+      ]
+    },
+    {
+      "name": "trinket core",
+      "explanation": "",
+      "entries": [
+        "almost illegible letter",
+        "backpack",
+        "coded message",
+        "coin purse",
+        "collection of rations",
+        "empty flask",
+        "flag",
+        "flagon",
+        "small key",
+        "piece of jewelry",
+        "piece of map",
+        "rusty dagger",
+        "single boot",
+        "small cage",
+        "tiny gem"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
+        "area",
+        "location",
+        "milieu",
+        "place",
+        "site"
+      ]
+    },
+    {
+      "name": "accommodates",
+      "explanation": "Variant expressions for 'shelters'.",
+      "entries": [
+        "accommodates",
+        "harbors",
+        "incorporates",
+        "shelters"
+      ]
+    },
+    {
+      "name": "containing",
+      "explanation": "Variant expressions for 'including'.",
+      "entries": [
+        "accommodating",
+        "containing",
+        "enclosing",
+        "including",
+        "incorporating",
+        "with"
+      ]
+    },
+    {
+      "name": "den",
+      "explanation": "Variant expressions for a 'lair'.",
+      "entries": [
+        "den",
+        "habitat",
+        "lair",
+        "nest"
+      ]
+    },
+    {
+      "name": "exhibits",
+      "explanation": "Variant expressions for 'exhibits'.",
+      "entries": [
+        "displays",
+        "exhibits",
+        "shows"
+      ]
+    },
+    {
+      "name": "features",
+      "explanation": "Variant expressions for 'calls attention to'.",
+      "entries": [
+        "accentuates",
+        "brings attention to",
+        "calls attention to",
+        "draws attention to",
+        "features",
+        "gives prominence to",
+        "highlights",
+        "showcases"
+      ]
+    },
+    {
+      "name": "grows",
+      "explanation": "Variant expressions for 'extends'.",
+      "entries": [
+        "endures",
+        "grows",
+        "is",
+        "prevails",
+        "survives"
+      ]
+    },
+    {
+      "name": "hides",
+      "explanation": "Variant expressions for 'shelters'.",
+      "entries": [
+        "conceals",
+        "covers",
+        "harbors a secret:",
+        "has a secret:",
+        "hides",
+        "is the hiding place of",
+        "is the resting place of",
+        "shelters"
+      ]
+    },
+    {
+      "name": "home",
+      "explanation": "Variant expressions for a 'dwelling'.",
+      "entries": [
+        "abode",
+        "dwelling",
+        "habitat",
+        "haunt",
+        "hideaway",
+        "hideout",
+        "hiding place",
+        "home",
+        "refuge",
+        "shelter"
+      ]
+    },
+    {
+      "name": "inhabited",
+      "explanation": "Variant expressions for 'frequented by' (for people).",
+      "format": "The site --",
+      "entries": [
+        "has been settled by",
+        "has been taken over by",
+        "is frequented by",
+        "is inhabited by",
+        "is the {home} of"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "seems to be"
+      ]
+    },
+    {
+      "name": "occupied",
+      "explanation": "Variant expressions for 'settled by' (for animals).",
+      "format": "The site --",
+      "entries": [
+        "has been settled by",
+        "has been taken over by",
+        "is frequented by",
+        "is the {den} of"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
+      ]
+    }
+  ]
+}

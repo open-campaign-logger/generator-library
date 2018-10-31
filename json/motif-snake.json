@@ -1,0 +1,728 @@
+{
+  "name": "motif-snake",
+  "resultPattern": "{init}{stats}",
+  "globals": {
+    "motif": "snake",
+    "animal": "",
+    "creature": "",
+    "minion": "",
+    "villain": "",
+    "danger": "",
+    "landmark": "",
+    "location": "",
+    "artifact": "",
+    "object": "",
+    "treasure": "",
+    "adjective": "",
+    "aroma": "",
+    "sound": "",
+    "symbol": "",
+    "characteristic": "",
+    "culture": "",
+    "situation": ""
+  },
+  "variables": {
+    "footnote": ""
+  },
+  "explanation": "Data set details for snake motifs.",
+  "structure": "Global variables fitting a common motif.",
+  "note": "This motif table does not produce immediate output, only sets global variables for later use.",
+  "format": "Global variable definitions.",
+  "bugs": "",
+  "to do": "",
+  "see": "Dungeon_adventure",
+  "date": "2018-05-30",
+  "authors": "ELF Vesala.",
+  "sources": "",
+  "genre": "universal",
+  "categories": [
+    "world"
+  ],
+  "tables": [
+    {
+      "name": "init",
+      "explanation": "Setting the relevant global variables.",
+      "entries": [
+        {
+          "m": 1,
+          "v": "",
+          "export": {
+            "animal": "{animal}",
+            "creature": "{creature}",
+            "minion": "{minion}",
+            "villain": "{villain}",
+            "danger": "{danger}",
+            "landmark": "{landmark}",
+            "location": "{location}",
+            "artifact": "{artifact}",
+            "object": "{object}",
+            "treasure": "{treasure}",
+            "adjective": "{adjective}",
+            "aroma": "{aroma}",
+            "sound": "{sound}",
+            "symbol": "{symbol}",
+            "characteristic": "{characteristic}",
+            "culture": "{culture}",
+            "situation": "{situation}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{summary}",
+        "{detail}",
+        "{description}",
+        "{stats}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief description of the randomized motif.",
+      "entries": [
+        "The heroes travel via {!creature}-{!situation} {!landmark} and {!creature}-{!situation} {!landmark}, encountering a {creature} {culture} in order to enter the {global:location} to face an evil, {creature}-{characteristic} {global:villain} and a horde of {global:minion} minions."
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "Detailed description of the randomized motif.",
+      "entries": [
+        "The heroes travel via {!creature}-{!situation} {!landmark} and {!creature}-{!situation} {!landmark}, encountering a {creature} {culture} in order to enter the {g:location} to face an evil, {creature}-{characteristic} {g:villain} and a horde of {g:minion} minions. They must face dangers such as a {g:danger} to find the {g:artifact} and hopefully be able to recover the {g:treasure}."
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "The heroes travel via {!creature}-{!situation} {!landmark} and {!creature}-{!situation} {!landmark}, encountering a {creature} {culture} in order to enter the {g:location} to face an evil, {creature}-{characteristic} {g:villain} and a horde of {g:minion} minions. They must face dangers such as a {g:danger} to find the {g:artifact} and hopefully be able to recover the {g:treasure}."
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Motif}: {g:motif} \r\n{b|Landmark}: {g:landmark}\r\n{b|Location}: {g:location} \r\n{b|Danger}: {g:danger} \r\n{b|Creature}: {g:creature} \r\n{b|Minion}: {g:minion} \r\n{b|Villain}: {g:villain} \r\n{b|Artifact}: {g:artifact} \r\n{b|Object}: {g:object} \r\n{b|Treasure}: {g:treasure} \r\n{b|Adjective}: {g:adjective} \r\n{b|Aroma}: {g:aroma} \r\n{b|Sound}: {g:sound} \r\n{b|Symbol}: {g:symbol} \r\n{b|Characteristic}: {g:characteristic} \r\n{b|Culture}: {g:culture} \r\n{b|Situation}: {g:situation} \r\n"
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
+    {
+      "name": "motif",
+      "explanation": "Types by rarity.",
+      "format": "Dummy output to retain a standard subtable as functional.",
+      "entries": [
+        {
+          "m": 10,
+          "v": "{common}"
+        },
+        "{rare}"
+      ]
+    },
+    {
+      "name": "common",
+      "explanation": "Common types.",
+      "format": "Dummy output to retain a standard subtable as functional.",
+      "entries": [
+        "{g:motif}"
+      ]
+    },
+    {
+      "name": "rare",
+      "explanation": "Rare types.",
+      "format": "Dummy output to retain a standard subtable as functional.",
+      "entries": [
+        "{special}"
+      ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "--------------------------------------------------": "ACTANTS"
+    },
+    {
+      "name": "actant",
+      "explanation": "Randomized actor in the plot.",
+      "entries": [
+        "{ally}",
+        "{animal}",
+        "{beast}",
+        "{captive}",
+        "{guardian}",
+        "{herald}",
+        "{inhabitant}",
+        "{mentor}",
+        "{minion}",
+        "{monster}",
+        "{rival}",
+        "{shapeshifter}",
+        "{tempter}",
+        "{traitor}",
+        "{trickster}",
+        "{villain}"
+      ]
+    },
+    {
+      "name": "creature",
+      "explanation": "Randomized non-human being.",
+      "entries": [
+        "{animal}",
+        "{beast}",
+        "{monster}"
+      ]
+    },
+    {
+      "name": "ally",
+      "explanation": "Accomplices and partners associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "animal",
+      "explanation": "Neutral animals associated with the motif.",
+      "entries": [
+        "adder",
+        "asp",
+        "reptile",
+        "serpent",
+        "snake",
+        "viper",
+        "worm"
+      ]
+    },
+    {
+      "name": "beast",
+      "explanation": "Hostile animals associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "captive",
+      "explanation": "Prisoners and hostages associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "guardian",
+      "explanation": "Guards and sentinels associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "herald",
+      "explanation": "Harbingers and messengers associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "inhabitant",
+      "explanation": "Common people associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "mentor",
+      "explanation": "Guides and advisers associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "minion",
+      "explanation": "Antagonist's accomplices associated with the motif.",
+      "entries": [
+        "cultist",
+        "priest",
+        "follower"
+      ]
+    },
+    {
+      "name": "monster",
+      "explanation": "Supernatural beasts associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "rival",
+      "explanation": "Competing characters associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "shapeshifter",
+      "explanation": "Impostors and transforming characters.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "tempter",
+      "explanation": "Seducers and allurers associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "traitor",
+      "explanation": "Deceivers and turncoats associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "trickster",
+      "explanation": "Charlatans and frauds associated with the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "villain",
+      "explanation": "Enemies and antagonists associated with the motif.",
+      "entries": [
+        "cult leader",
+        "high priest",
+        "snake priest"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ATMOSPHERE"
+    },
+    {
+      "name": "adjective",
+      "explanation": "Adjectives for motif-themed concepts.",
+      "entries": [
+        "circuitous",
+        "circular",
+        "coiled",
+        "crawling",
+        "creeping",
+        "crooked",
+        "curved",
+        "elongated",
+        "encircled",
+        "entwined",
+        "fanged",
+        "meandering",
+        "ophidian",
+        "ophite",
+        "poisonous",
+        "reptant",
+        "reptilian",
+        "scaled",
+        "scaly",
+        "seething",
+        "serpentiform",
+        "serpentine",
+        "sinous",
+        "slimy",
+        "slithering",
+        "snakelike",
+        "twisting",
+        "undulating",
+        "venomous",
+        "winding",
+        "writhing"
+      ]
+    },
+    {
+      "name": "aroma",
+      "explanation": "Odors and tastes related to the motif.",
+      "entries": [
+        "acrid",
+        "acrimonious",
+        "biting",
+        "bitter",
+        "ophidian",
+        "pungent",
+        "putrid",
+        "reptilian",
+        "sour",
+        "stinging",
+        "virulent"
+      ]
+    },
+    {
+      "name": "color",
+      "explanation": "Colors and shades related to the motif.",
+      "entries": [
+        "venom green"
+      ]
+    },
+    {
+      "name": "sound",
+      "explanation": "Sounds related to the motif.",
+      "entries": [
+        "hissing",
+        "sibilating",
+        "sliding",
+        "slithering",
+        "undulating"
+      ]
+    },
+    {
+      "name": "symbol",
+      "explanation": "Symbols related to the motif.",
+      "entries": [
+        "a feathered serpent",
+        "a snake biting its own tail",
+        "a two-headed snake",
+        "a winged serpent"
+      ]
+    },
+    {
+      "--------------------------------------------------": "LOCATIONS"
+    },
+    {
+      "name": "danger",
+      "explanation": "Dangers matching the motif.",
+      "entries": [
+        "snake trap",
+        "venom-coated door handle"
+      ]
+    },
+    {
+      "name": "landmark",
+      "explanation": "Terrain details associated with the motif.",
+      "entries": [
+        "pillar",
+        "temple",
+        "viper nest"
+      ]
+    },
+    {
+      "name": "location",
+      "explanation": "The area where the events take place.",
+      "entries": [
+        "temple of a snake cult",
+        "accursed tower of snakes"
+      ]
+    },
+    {
+      "--------------------------------------------------": "OBJECTS"
+    },
+    {
+      "name": "artifact",
+      "explanation": "Artifacts matching the motif.",
+      "entries": [
+        "spellbook bound in snake skin",
+        "fang of a long-dead serpent deity"
+      ]
+    },
+    {
+      "name": "object",
+      "explanation": "Details for motif-themed concepts.",
+      "entries": [
+        "snake",
+        "serpent",
+        "snake egg",
+        "loose scale",
+        "shed snake skin"
+      ]
+    },
+    {
+      "name": "treasure",
+      "explanation": "Treasures matching the motif.",
+      "entries": [
+        "snake idol",
+        "snake statuette",
+        "snake-crested helmet",
+        "snake scale armor"
+      ]
+    },
+    {
+      "name": "weapon",
+      "explanation": "Weapons matching the motif.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZATION"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomized terms (generated from components).",
+      "entries": [
+        "{beginning}-{ending}",
+        "{descriptor} {beginning}-{ending}",
+        "{beginning}-{ending} {extension}",
+        "{descriptor} {beginning}-{ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        "{adjective}"
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{animal}",
+        "{exotic}",
+        "{synonym}"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Endings for randomized terms.",
+      "entries": [
+        "{characteristic}"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        "{culture}"
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "name": "fantasy",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
+      "entries": [
+        "{myth}",
+        "{medieval}",
+        "basilisk"
+      ]
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "ouroboros"
+      ]
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "asp"
+      ]
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}",
+        "cobra"
+      ]
+    },
+    {
+      "name": "futuristic",
+      "explanation": "Descriptions for science fiction worlds.",
+      "entries": [
+        "{modern}",
+        "viper"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        "constrictor"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "adder",
+        "asp",
+        "reptile",
+        "serpent",
+        "snake",
+        "viper",
+        "worm"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition.",
+      "entries": [
+        "appears to be",
+        "looks to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "STANDARD TABLES"
+    },
+    {
+      "name": "standard",
+      "explanation": "Standard tables.",
+      "entries": [
+        "{characteristic}",
+        "{culture}",
+        "{situation}"
+      ]
+    },
+    {
+      "name": "characteristic",
+      "explanation": "Standard personal characteristics.",
+      "entries": [
+        "armed",
+        "bodied",
+        "born",
+        "controlled",
+        "eyed",
+        "formed",
+        "handed",
+        "headed",
+        "minded",
+        "sired",
+        "skinned",
+        "taught",
+        "tongued",
+        "worshipping"
+      ]
+    },
+    {
+      "name": "culture",
+      "explanation": "Standard terms for societies.",
+      "entries": [
+        "affiliation",
+        "alliance",
+        "cabal",
+        "cartel",
+        "citizenry",
+        "civilization",
+        "clan",
+        "clique",
+        "colony",
+        "coterie",
+        "community",
+        "company",
+        "conclave",
+        "conspiracy",
+        "cult",
+        "culture",
+        "dominion",
+        "dynasty",
+        "faction",
+        "folk",
+        "gang",
+        "guild",
+        "hegemony",
+        "horde",
+        "kin",
+        "kindred",
+        "league",
+        "lineage",
+        "lodge",
+        "mob",
+        "nation",
+        "order",
+        "people",
+        "populace",
+        "population",
+        "race",
+        "regime",
+        "reign",
+        "sect",
+        "settlement",
+        "society",
+        "species",
+        "supremacy",
+        "syndicate",
+        "tribe",
+        "union"
+      ]
+    },
+    {
+      "name": "situation",
+      "explanation": "Standard situation descriptions.",
+      "entries": [
+        "demolished",
+        "desecrated",
+        "despoiled",
+        "destroyed",
+        "dominated",
+        "encroached",
+        "engulfed",
+        "governed",
+        "infested",
+        "invaded",
+        "occupied",
+        "overrun",
+        "overwhelmed",
+        "populated",
+        "preyed",
+        "raided",
+        "ransacked",
+        "ravaged",
+        "razed",
+        "ruined",
+        "ruled",
+        "seized",
+        "sieged",
+        "spoiled",
+        "tortured",
+        "usurped",
+        "wasted",
+        "wrecked"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "format": "Dummy output to retain a standard subtable as functional.",
+      "entries": [
+        "{descriptor}"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "Dummy output to retain a standard subtable as functional.",
+      "entries": [
+        "{extension}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
+      ]
+    }
+  ]
+}
