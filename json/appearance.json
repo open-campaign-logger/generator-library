@@ -16,7 +16,7 @@
   "bugs": "",
   "to do": "",
   "see": "personality, NPC_description",
-  "date": "2018-10-08",
+  "date": "2018-11-18",
   "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
   "attribution": {
@@ -126,7 +126,7 @@
       "name": "common",
       "explanation": "Common appearance types.",
       "entries": [
-        "{hair} and {eyes}"
+        "{lib:face}, {hair} and {lib:eyes} eyes"
       ]
     },
     {
@@ -151,7 +151,10 @@
       "name": "any",
       "explanation": "Random selection.",
       "entries": [
-        ""
+        "{lib:ears}",
+        "{lib:eyes}",
+        "{lib:mouth}",
+        "{lib:nose}"
       ]
     },
     {
@@ -297,71 +300,6 @@
       "explanation": "Manner of locomotion.",
       "entries": [
         "walks taking long strides"
-      ]
-    },
-    {
-      "**************************************************": "FACE"
-    },
-    {
-      "name": "face",
-      "explanation": "Face-related details of appearance.",
-      "entries": [
-        "{face}",
-        "{eyebrows}",
-        "{eyes}",
-        "{nose}",
-        "{mouth}",
-        "{ears}",
-        "{jaw}"
-      ]
-    },
-    {
-      "name": "ears",
-      "explanation": "Ear-related aspects of appearance.",
-      "entries": [
-        "prominent ears"
-      ]
-    },
-    {
-      "name": "eyebrows",
-      "explanation": "Eyebrow-related aspects of appearance.",
-      "entries": [
-        "unibrow"
-      ]
-    },
-    {
-      "name": "eyes",
-      "explanation": "Eye-related aspects of appearance.",
-      "entries": [
-        "{lib:color#eyes}"
-      ]
-    },
-    {
-      "name": "face",
-      "explanation": "Face shape related aspects of appearance.",
-      "entries": [
-        "square face"
-      ]
-    },
-    {
-      "name": "jaw",
-      "explanation": "Jaw-related aspects of appearance.",
-      "entries": [
-        "square-jawed"
-      ]
-    },
-    {
-      "name": "mouth",
-      "explanation": "Mouth-related aspects of appearance.",
-      "entries": [
-        "wide mouth"
-      ]
-    },
-    {
-      "name": "nose",
-      "explanation": "Nose-related aspects of appearance.",
-      "entries": [
-        "bulbous nose"
       ]
     },
     {
