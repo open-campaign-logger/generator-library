@@ -15,8 +15,8 @@
   "format": "",
   "bugs": "",
   "to do": "",
-  "see": "personality, NPC_description",
-  "date": "2018-11-18",
+  "see": "eyes, face, hair, mouth, nose, personality, NPC_description",
+  "date": "2018-11-19",
   "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
   "attribution": {
@@ -126,7 +126,7 @@
       "name": "common",
       "explanation": "Common appearance types.",
       "entries": [
-        "{lib:face}, {hair} and {lib:eyes} eyes"
+        "{lib:face}, {lib:hair} and {lib:eyes}"
       ]
     },
     {
@@ -300,116 +300,6 @@
       "explanation": "Manner of locomotion.",
       "entries": [
         "walks taking long strides"
-      ]
-    },
-    {
-      "**************************************************": "HAIR"
-    },
-    {
-      "name": "hair",
-      "explanation": "Hair-related details of appearance.",
-      "entries": [
-        "{lib:color#hair}, {hairstyle}"
-      ]
-    },
-    {
-      "name": "hairstyle",
-      "explanation": "Haircuts.",
-      "entries": [
-        "{female haircut}",
-        "{male haircut}"
-      ]
-    },
-    {
-      "name": "female haircut",
-      "explanation": "",
-      "entries": [
-        "{long female}",
-        "{medium female}",
-        "{short female}"
-      ]
-    },
-    {
-      "name": "short female",
-      "explanation": "Traditionally female cuts for short hair.",
-      "export": {
-        "hairlength": "short"
-      },
-      "entries": [
-        "cropped hair",
-        "short hair"
-      ]
-    },
-    {
-      "name": "medium female",
-      "explanation": "Traditionally female cuts for medium hair.",
-      "export": {
-        "hairlength": "medium"
-      },
-      "entries": [
-        "medium-length hair",
-        "messy hair"
-      ]
-    },
-    {
-      "name": "long female",
-      "explanation": "Traditionally female cuts for long hair.",
-      "export": {
-        "hairlength": "long"
-      },
-      "entries": [
-        "long",
-        "long, curled",
-        "asymmetrically cut hair",
-        "hair collected into a beehive",
-        "bun",
-        "pigtails",
-        "braided hair",
-        "hair braided into a crown across the head"
-      ]
-    },
-    {
-      "name": "male haircut",
-      "explanation": "",
-      "entries": [
-        "{short male}",
-        "{medium male}",
-        "{long male}"
-      ]
-    },
-    {
-      "name": "short male",
-      "explanation": "Traditionally female cuts for short hair.",
-      "export": {
-        "hairlength": "short"
-      },
-      "entries": [
-        "crewcut hair",
-        "cropped hair",
-        "short hair"
-      ]
-    },
-    {
-      "name": "medium male",
-      "explanation": "Traditionally female cuts for medium hair.",
-      "export": {
-        "hairlength": "medium"
-      },
-      "entries": [
-        "bowl-cut hair",
-        "combed back hair",
-        "undercut hair",
-        "combed over hair"
-      ]
-    },
-    {
-      "name": "long male",
-      "explanation": "Traditionally female cuts for long hair.",
-      "export": {
-        "hairlength": "long"
-      },
-      "entries": [
-        "long hair"
       ]
     },
     {
