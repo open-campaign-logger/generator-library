@@ -1,35 +1,33 @@
 {
-  "name": "appearance",
+  "name": "body",
   "resultPattern": "{init}{result}",
   "globals": {
-    "bodytype": "",
-    "comeliness": "",
-    "hairlength": ""
+    "variable": ""
   },
   "variables": {
     "footnote": ""
   },
-  "explanation": "The countenance and facial features of a character.",
+  "explanation": "Body types.",
   "structure": "Produces entries for different types of genres and worlds. The 'common' and 'rare' tables are generic and should be compatible with almost any world. To retain compatibility with most settings, the  non-generic tables should be called only from other tables by specifying their name directly.",
   "note": "",
   "format": "",
   "bugs": "",
   "to do": "",
-  "see": "body, eyes, face, hair, mouth, nose, personality, NPC_description",
+  "see": "appearance, eyes, face, hair, mouth, nose",
   "date": "2018-11-20",
-  "authors": "ELF Vesala.",
-  "sources": "Wikipedia.org",
+  "authors": "ELF Vesala",
+  "sources": "",
   "attribution": {
     "creators": "",
     "copyright": "",
     "licence": "https://",
     "disclaimer": "https://",
     "source": "",
-    "changes": "Translation into Campaign Logger generator format."
+    "changes": ""
   },
-  "genre": "universal",
+  "genre": "",
   "categories": [
-    "character"
+    ""
   ],
   "tables": [
     {
@@ -60,38 +58,37 @@
       "name": "word",
       "explanation": "One-word output.",
       "entries": [
-        "{demeanor}"
+        "{body}"
       ]
     },
     {
       "name": "summary",
       "explanation": "Brief output.",
       "entries": [
-        "{appearance}"
+        "{attribute} {body}"
       ]
     },
     {
       "name": "detail",
       "explanation": "More detailed output variations.",
       "entries": [
-        "{attribute} {appearance}",
-        "{appearance}, {feature}",
-        "{attribute} {appearance}, {feature}"
+        "{body}, {feature}",
+        "{attribute} {body}, {feature}"
       ]
     },
     {
       "name": "description",
       "explanation": "Long description as a sentence.",
       "entries": [
-        "The {appearance} {synonym} {looks} {feature}.",
-        "The {attribute} {appearance} {synonym} {looks} {feature}."
+        "The {body} {synonym} {looks} {feature}.",
+        "The {attribute} {body} {synonym} {looks} {feature}."
       ]
     },
     {
       "name": "section",
       "explanation": "Long description as a subheading and a text paragraph.",
       "entries": [
-        "===== {random} =====\r\n{b|{meta}} \r\n "
+        "===== {random} =====\r\n{description}"
       ]
     },
     {
@@ -99,6 +96,13 @@
       "explanation": "Details as statistics.",
       "entries": [
         "{b|Name}: {random} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "name": "template",
+      "explanation": "Details as a template.",
+      "entries": [
+        "?FC\r\n{b|Name}: [[{random}]] \r\n{b|Attribute}: \r\n[[[{attribute}]]] \r\n{b|Feature}: \r\n[[[{feature}]]]"
       ]
     },
     {
@@ -112,8 +116,8 @@
       "**************************************************": "TYPES"
     },
     {
-      "name": "appearance",
-      "explanation": "The appearance types by rarity.",
+      "name": "body",
+      "explanation": "Types by rarity.",
       "entries": [
         {
           "m": 10,
@@ -124,17 +128,17 @@
     },
     {
       "name": "common",
-      "explanation": "Common appearance types.",
+      "explanation": "Usual types.",
       "entries": [
-        "{lib:face}, {lib:hair} and {lib:eyes}"
+        "{height}, {type} {synonym}",
+        "{height} {synonym} in {posture}"
       ]
     },
     {
       "name": "rare",
-      "explanation": "Rare appearance types.",
+      "explanation": "Unusual types.",
       "entries": [
-        "{body}",
-        "{voice}"
+        "{height}, {type} {synonym} {gait}"
       ]
     },
     {
@@ -151,271 +155,215 @@
       "name": "any",
       "explanation": "Random selection.",
       "entries": [
-        "{lib:ears}",
-        "{lib:eyes}",
-        "{lib:mouth}",
-        "{lib:nose}"
+        "{height}",
+        "{type}",
+        "{posture}",
+        "{gait}"
       ]
     },
     {
       "**************************************************": "DETAILS"
     },
     {
-      "name": "demeanor",
-      "explanation": "General appearance.",
+      "--------------------------------------------------": "HEIGHT"
+    },
+    {
+      "name": "height",
+      "explanation": "How tall the character is?",
       "entries": [
-        "busy",
-        "distracted",
-        "relaxed"
+        "short",
+        "medium-sized",
+        "tall"
       ]
     },
     {
-      "==================================================": "BEAUTY"
-    },
-    {
-      "name": "comeliness",
-      "explanation": "The level of beauty.",
-      "entries": [
-        "{ugly}",
-        "{plain}",
-        "{comely}"
-      ]
-    },
-    {
-      "name": "ugly",
-      "explanation": "Ugly appearances.",
-      "export": {
-        "comeliness": "ugly"
-      },
-      "entries": [
-        "downright ugly",
-        "homely",
-        "unpleasant-looking"
-      ]
-    },
-    {
-      "name": "plain",
-      "explanation": "Plain appearances.",
-      "export": {
-        "comeliness": "plain"
-      },
-      "entries": [
-        "pleasant to look at",
-        "plain-looking"
-      ]
-    },
-    {
-      "name": "comely",
-      "explanation": "Good-looking appearances.",
-      "export": {
-        "comeliness": "comely"
-      },
-      "entries": [
-        "quite comely",
-        "good-looking",
-        "pleasant-looking"
-      ]
-    },
-    {
-      "name": "comely female",
-      "explanation": "Good-looking female appearances.",
-      "export": {
-        "comeliness": "comely"
-      },
-      "entries": [
-        "beautiful"
-      ]
-    },
-    {
-      "name": "comely male",
-      "explanation": "Good-looking male appearances.",
-      "export": {
-        "comeliness": "comely"
-      },
-      "entries": [
-        "handsome",
-        "rugged good looks"
-      ]
-    },
-    {
-      "**************************************************": "VOICE"
-    },
-    {
-      "name": "voice",
-      "explanation": "Sound-related details of appearance.",
-      "entries": [
-        "{female voice}",
-        "{male voice}",
-        "{unisex voice}"
-      ]
-    },
-    {
-      "name": "female voice",
-      "explanation": "Voices for female characters.",
-      "entries": [
-        "shrill voice"
-      ]
-    },
-    {
-      "name": "male voice",
-      "explanation": "Voices for male characters.",
-      "entries": [
-        "deep bass voice"
-      ]
-    },
-    {
-      "name": "unisex voice",
-      "explanation": "Voices for all characters.",
-      "entries": [
-        "soft voice",
-        "raspy voice"
-      ]
-    },
-    {
-      "**************************************************": "GENDER-SPECIFIC"
+      "--------------------------------------------------": "GENDER"
     },
     {
       "name": "gender",
-      "explanation": "Gender-specific aspects of appearance.",
+      "explanation": "Sexes for body types.",
       "entries": [
-        "{female}",
-        "{male}"
+        "{female type}",
+        "{hermafrodite type}",
+        "{male type}",
+        "{neuter type}"
       ]
     },
     {
-      "name": "female",
-      "explanation": "Female aspects of appearance.",
+      "name": "female type",
+      "explanation": "Female body types.",
       "entries": [
-        "{bosom}"
+        "{ectomorph}",
+        "{mesomorph}",
+        "{endomorph}",
+        "{curvaceous}"
       ]
     },
     {
-      "name": "hermafrodite",
-      "explanation": "Hermafrodite aspects of appearance.",
+      "name": "hermafrodite type",
+      "explanation": "Unisex body types.",
       "entries": [
-        "{female}",
-        "{male}"
+        "{ectomorph}",
+        "{mesomorph}",
+        "{endomorph}",
+        "{potbellied}",
+        "{curvaceous}"
       ]
     },
     {
-      "name": "male",
-      "explanation": "Male aspects of appearance.",
+      "name": "male type",
+      "explanation": "Male body types.",
       "entries": [
-        "{facial hair}"
+        "{ectomorph}",
+        "{mesomorph}",
+        "{endomorph}",
+        "{potbellied}"
       ]
     },
     {
-      "name": "neuter",
-      "explanation": "Genders-specific aspects f appearance for neuter characters.",
+      "name": "neuter type",
+      "explanation": "Gender-neutral body types.",
       "entries": [
-        ""
+        "{ectomorph}",
+        "{mesomorph}",
+        "{endomorph}"
       ]
     },
     {
-      "name": "bosom",
-      "explanation": "Bust-related aspects of appearance",
+      "--------------------------------------------------": "TYPE"
+    },
+    {
+      "name": "type",
+      "explanation": "Generic body types.",
       "entries": [
-        "flat-chested",
-        "voluptuous"
+        "{ectomorph}",
+        "{mesomorph}",
+        "{endomorph}"
       ]
     },
     {
-      "name": "facial hair",
-      "explanation": "Beard and moustache styles.",
+      "name": "ectomorph",
+      "explanation": "Delicate frame.",
+      "export": {
+        "bodytype": "ectomorph"
+      },
       "entries": [
-        "{shaven}",
-        "{stubble}",
-        "{beard}",
-        "{moustache}",
-        "{sideburns}",
-        "{beard and moustache}",
-        "{sideburns and moustache}",
-        "{sideburns and beard}",
-        "{beard with sideburns and moustache}"
+        "lanky",
+        "lean",
+        "sinewy",
+        "slim",
+        "thin",
+        "wiry"
       ]
     },
     {
-      "name": "shaven",
-      "explanation": "Shaved styles.",
+      "name": "mesomorph",
+      "explanation": "Athletic frame.",
+      "export": {
+        "bodytype": "mesomorph"
+      },
       "entries": [
-        "clean-shaven"
+        "able-bodied",
+        "athletic",
+        "beefy",
+        "brawny",
+        "burly",
+        "chubby",
+        "corpulent",
+        "fleshy",
+        "heavyset",
+        "hefty",
+        "hulky",
+        "husky",
+        "muscular",
+        "paunchy",
+        "plumpish",
+        "portly",
+        "powerful",
+        "powerfully built",
+        "robust",
+        "ropy"
       ]
     },
     {
-      "name": "stubble",
-      "explanation": "Stubble styles.",
+      "name": "endomorph",
+      "explanation": "Soft and round frame.",
+      "export": {
+        "bodytype": "endomorph"
+      },
       "entries": [
-        "stubble"
+        "bulging",
+        "chunky",
+        "fat",
+        "hefty",
+        "meaty",
+        "obese",
+        "plumpy",
+        "stout",
+        "sturdy"
       ]
     },
     {
-      "name": "beard",
-      "explanation": "Beard styles.",
+      "name": "potbellied",
+      "explanation": "Frame with a big stomach.",
       "entries": [
-        "incipient beard",
-        "soul patch beard above the chin",
-        "goatee beard on the chin",
-        "bearded",
-        "tangled beard",
-        "full beard",
-        "long beard"
+        "pot-bellied"
       ]
     },
     {
-      "name": "moustache",
-      "explanation": "Moustache styles.",
+      "name": "curvaceous",
+      "explanation": "Curvaceous frame.",
       "entries": [
-        "toothbrush moustache under the nose",
-        "narrow pencil moustache",
-        "narrow, long moustache",
-        "narrow, long moustache bent updwards",
-        "narrow, long moustache bent downwards",
-        "thick, long moustache bent downwards",
-        "narrow, slightly curved moustache",
-        "thick, slightly curved moustache",
-        "handlebar moustache",
-        "bushy walrus moustache covering the mouth",
-        "horseshow moustache extending to the jawline",
-        "big and bushy moustache",
-        "moustache covering just the upper lip",
-        "whiskers growing on the upper lip and cheeks"
+        "bosomy",
+        "busty",
+        "buxom",
+        "curvaceous",
+        "curvy",
+        "full-bosomed",
+        "shapelys"
       ]
     },
     {
-      "name": "sideburns",
-      "explanation": "Sideburn styles.",
+      "--------------------------------------------------": "POSTURE"
+    },
+    {
+      "name": "posture",
+      "explanation": "Typically assumed positioning of the body.",
+      "form": "with --",
       "entries": [
-        "mutton chop sideburns"
+        "{crooked} {pose}",
+        "{straight} {pose}"
       ]
     },
     {
-      "name": "beard and moustache",
-      "explanation": "Beard + moustache styles.",
+      "name": "crooked",
+      "explanation": "Sloughed postures.",
       "entries": [
-        "moustache and goatee"
+        "a crouched",
+        "a hunched",
+        "a slightly bent"
       ]
     },
     {
-      "name": "sideburns and moustache",
-      "explanation": "Sideburn + moustache styles.",
+      "name": "straight",
+      "explanation": "Straight postures.",
       "entries": [
-        "joined mutton chop sideburns",
-        "clean-shaven chin with mutton chops connecting at the moustache"
+        "a straight",
+        "an upright"
       ]
     },
     {
-      "name": "sideburns and beard",
-      "explanation": "Sideburn + beard styles.",
-      "entries": [
-        "chinstrap beard with long sideburns",
-        "sideburns with chin curtain beard covering the entire chin"
-      ]
+      "--------------------------------------------------": "GAIT"
     },
     {
-      "name": "beard with sideburns and moustache",
-      "explanation": "Sideburn + moustache styles.",
+      "name": "gait",
+      "explanation": "Manner of locomotion.",
       "entries": [
-        "joined mutton chop sideburns"
+        "moving briskly",
+        "moving carefully",
+        "moving slowly",
+        "taking long strides",
+        "taking short steps"
       ]
     },
     {
@@ -581,10 +529,11 @@
       "name": "synonym",
       "explanation": "Variant expressions for generator subject matter.",
       "entries": [
-        "appearance",
-        "countenance",
-        "features",
-        "looks"
+        "anatomy",
+        "body",
+        "figure",
+        "frame",
+        "physique"
       ]
     },
     {
@@ -597,6 +546,15 @@
       ]
     },
     {
+      "name": "pose",
+      "explanation": "",
+      "entries": [
+        "pose",
+        "posture",
+        "stance"
+      ]
+    },
+    {
       "**************************************************": "SPECIAL TABLES"
     },
     {
@@ -604,15 +562,18 @@
       "explanation": "Special tables.",
       "entries": [
         "{attribute}",
-        "{feature}"
+        "{feature}",
+        "{female}",
+        "{hermafrodite}",
+        "{male}",
+        "{neuter}"
       ]
     },
     {
       "name": "attribute",
       "explanation": "Attribute prepended to the front of the result.",
       "entries": [
-        "flamboyant",
-        "impressive"
+        ""
       ]
     },
     {
@@ -620,8 +581,46 @@
       "explanation": "Features appended to the end of the result.",
       "format": "It seems to be --",
       "entries": [
-        "carefully groomed",
-        "messy countenance"
+        ""
+      ]
+    },
+    {
+      "--------------------------------------------------": "GENDER-SPECIFIC"
+    },
+    {
+      "name": "female",
+      "explanation": "Female body types.",
+      "entries": [
+        "{height}, {female type} {synonym}",
+        "{height} {synonym} in {posture}",
+        "{height}, {female type} {synonym} {gait}"
+      ]
+    },
+    {
+      "name": "hermafrodite",
+      "explanation": "Hermafrodite body types.",
+      "entries": [
+        "{height}, {hermafrodite type} {synonym}",
+        "{height} {synonym} in {posture}",
+        "{height}, {hermafrodite type} {synonym} {gait}"
+      ]
+    },
+    {
+      "name": "male",
+      "explanation": "Male body types.",
+      "entries": [
+        "{height}, {male type} {synonym}",
+        "{height} {synonym} in {posture}",
+        "{height}, {male type} {synonym} {gait}"
+      ]
+    },
+    {
+      "name": "neuter",
+      "explanation": "Neuter body types.",
+      "entries": [
+        "{height}, {neuter type} {synonym}",
+        "{height} {synonym} in {posture}",
+        "{height}, {neuter type} {synonym} {gait}"
       ]
     },
     {
