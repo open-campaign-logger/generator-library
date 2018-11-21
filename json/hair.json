@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "",
-  "date": "2018-11-19",
+  "date": "2018-11-21",
   "authors": "ELF Vesala",
   "sources": "",
   "attribution": {
@@ -131,6 +131,7 @@
       "explanation": "Usual types.",
       "entries": [
         "{style}, {color} hair",
+        "{style}, {color} hair",
         "{condition}, {color} hair",
         "{grooming}, {color} hair",
         "{thickness}, {color} hair",
@@ -141,11 +142,7 @@
       "name": "rare",
       "explanation": "Unusual types.",
       "entries": [
-        "{color}, {condition} hair",
-        "{color}, {grooming} hair",
-        "{color}, {style} hair",
-        "{color}, {thickness} hair",
-        "{color}, {type} hair"
+        "{common} {adornment}"
       ]
     },
     {
@@ -174,10 +171,59 @@
       "**************************************************": "DETAILS"
     },
     {
+      "name": "adornment",
+      "explanation": "Hair adornments.",
+      "format": "Hair --",
+      "entries": [
+        "{female adornment}",
+        "{hermafrodite adornment}",
+        "{male adornment}",
+        "{neuter adornment}"
+      ]
+    },
+    {
+      "name": "female adornment",
+      "explanation": "Feminine hair adornments.",
+      "entries": [
+        "adorned with a ribbon",
+        "bearing a flower garland",
+        "with no adornments"
+      ]
+    },
+    {
+      "name": "hermafrodite adornment",
+      "explanation": "Feminine hair adornments.",
+      "entries": [
+        "{female adornment}",
+        "{male adornment}"
+      ]
+    },
+    {
+      "name": "male adornment",
+      "explanation": "Masculine hair adornments.",
+      "entries": [
+        "with no adornments",
+        "with a faint coat of oil",
+        "with a heavy coat of oil"
+      ]
+    },
+    {
+      "name": "neuter adornment",
+      "explanation": "Neuter hair adornments.",
+      "entries": [
+        "{male adornment}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "BALD"
+    },
+    {
       "name": "bald",
       "explanation": "No hair.",
       "entries": [
         "bald",
+        "balding",
+        "bald spot",
         "hairless"
       ]
     },
@@ -189,6 +235,17 @@
       "explanation": "",
       "entries": [
         "{lib:color#hair}"
+      ]
+    },
+    {
+      "name": "old color",
+      "explanation": "Hair colors for elder people.",
+      "entries": [
+        "dark gray",
+        "grayed",
+        "light gray",
+        "off-white",
+        "white"
       ]
     },
     {
@@ -216,6 +273,16 @@
       "entries": [
         "shiny",
         "silky"
+      ]
+    },
+    {
+      "--------------------------------------------------": "DYE"
+    },
+    {
+      "name": "dye",
+      "explanation": "Hair coloring.",
+      "entries": [
+        "dyed {lib:color#word}"
       ]
     },
     {
@@ -259,15 +326,15 @@
       "name": "style",
       "explanation": "Haircuts.",
       "entries": [
-        "{female}",
-        "{male}"
+        "{female style}",
+        "{male style}"
       ]
     },
     {
       "--------------------------------------------------": "FEMALE"
     },
     {
-      "name": "female",
+      "name": "female style",
       "explanation": "",
       "entries": [
         "{long female}",
@@ -319,7 +386,7 @@
       "--------------------------------------------------": "MALE"
     },
     {
-      "name": "male",
+      "name": "male style",
       "explanation": "",
       "entries": [
         "{short male}",
@@ -546,7 +613,13 @@
       "name": "modern",
       "explanation": "Descriptions for modern worlds.",
       "entries": [
-        "{common}"
+        "{common}",
+        "{common}",
+        "{common}",
+        "{common}",
+        "{common} with stripes {dye}",
+        "{common} partially {dye}",
+        "{common} {dye}"
       ]
     },
     {
@@ -556,7 +629,8 @@
       "name": "futuristic",
       "explanation": "Descriptions for science fiction worlds.",
       "entries": [
-        "{modern}"
+        "{modern}",
+        "{common} {dye}"
       ]
     },
     {
@@ -605,7 +679,12 @@
       "explanation": "Special tables.",
       "entries": [
         "{attribute}",
-        "{feature}"
+        "{feature}",
+        "{female}",
+        "{hermafrodite}",
+        "{male}",
+        "{neuter}",
+        "{old}"
       ]
     },
     {
@@ -622,10 +701,125 @@
       "explanation": "Features appended to the end of the result.",
       "format": "It seems to be --",
       "entries": [
-        "adorned with a ribbon",
-        "bearing a flower garland",
         "streaked with gray",
         "with thin strands hanging"
+      ]
+    },
+    {
+      "--------------------------------------------------": "GENDER-SPECIFIC"
+    },
+    {
+      "name": "female",
+      "explanation": "Female characters.",
+      "entries": [
+        "{female style} hair",
+        "{female style} hair {female adornment}",
+        "{female style}, {color} hair",
+        "{female style}, {color} hair {female adornment}",
+        "{condition}, {color} hair",
+        "{condition}, {color} hair {female adornment}",
+        "{grooming}, {color} hair",
+        "{grooming}, {color} hair {female adornment}",
+        "{thickness}, {color} hair",
+        "{thickness}, {color} hair {female adornment}",
+        "{type}, {color} hair",
+        "{type}, {color} hair {female adornment}"
+      ]
+    },
+    {
+      "name": "hermafrodite",
+      "explanation": "Hermafrodite characters.",
+      "entries": [
+        "{hair}"
+      ]
+    },
+    {
+      "name": "male",
+      "explanation": "Male characters.",
+      "entries": [
+        "{male style} hair",
+        "{male style} hair {male adornment}",
+        "{male style}, {color} hair",
+        "{male style}, {color} hair {male adornment}",
+        "{condition}, {color} hair",
+        "{condition}, {color} hair {male adornment}",
+        "{grooming}, {color} hair",
+        "{grooming}, {color} hair {male adornment}",
+        "{thickness}, {color} hair",
+        "{thickness}, {color} hair {male adornment}",
+        "{type}, {color} hair",
+        "{type}, {color} hair {male adornment}"
+      ]
+    },
+    {
+      "name": "neuter",
+      "explanation": "Neuter characters.",
+      "entries": [
+        "{male}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "OLD"
+    },
+    {
+      "name": "old",
+      "explanation": "Hair for elder characters.",
+      "entries": [
+        "{old female}",
+        "{old hermafrodite}",
+        "{old male}",
+        "{old neuter}"
+      ]
+    },
+    {
+      "name": "old female",
+      "explanation": "Hair for elder females.",
+      "entries": [
+        "{female style} hair",
+        "{female style} hair {female adornment}",
+        "{female style}, {old color} hair",
+        "{female style}, {old color} hair {female adornment}",
+        "{condition}, {old color} hair",
+        "{condition}, {old color} hair {female adornment}",
+        "{grooming}, {old color} hair",
+        "{grooming}, {old color} hair {female adornment}",
+        "{thickness}, {old color} hair",
+        "{thickness}, {old color} hair {female adornment}",
+        "{type}, {old color} hair",
+        "{type}, {old color} hair {female adornment}"
+      ]
+    },
+    {
+      "name": "old hermafrodite",
+      "explanation": "Hair for elder hermafrodites.",
+      "entries": [
+        "{old male}",
+        "{old female}"
+      ]
+    },
+    {
+      "name": "old male",
+      "explanation": "Hair for elder males.",
+      "entries": [
+        "{male style} hair",
+        "{male style} hair {male adornment}",
+        "{male style}, {old color} hair",
+        "{male style}, {old color} hair {male adornment}",
+        "{condition}, {old color} hair",
+        "{condition}, {old color} hair {male adornment}",
+        "{grooming}, {old color} hair",
+        "{grooming}, {old color} hair {male adornment}",
+        "{thickness}, {old color} hair",
+        "{thickness}, {old color} hair {male adornment}",
+        "{type}, {old color} hair",
+        "{type}, {old color} hair {male adornment}"
+      ]
+    },
+    {
+      "name": "old neuter",
+      "explanation": "Hair for elder neuters.",
+      "entries": [
+        "{old male}"
       ]
     },
     {

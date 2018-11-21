@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "appearance, ears, face, mouth, nose",
-  "date": "2018-11-18",
+  "date": "2018-11-21",
   "authors": "ELF Vesala",
   "sources": "",
   "attribution": {
@@ -162,6 +162,7 @@
         "{color}",
         "{eyebrows}",
         "{eyelashes}",
+        "{makeup}",
         "{shape}",
         "{size}"
       ]
@@ -247,6 +248,26 @@
         "long",
         "thick",
         "thin"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MAKEUP"
+    },
+    {
+      "name": "makeup",
+      "explanation": "Eyeliner, mascara & other eye makeup.",
+      "format": "with --",
+      "entries": [
+        "barely noticeable makeup",
+        "bright eye paint",
+        "faint eye lining",
+        "faint eye paint",
+        "faintly darkened eyebrows",
+        "heavily darkened eyebrows",
+        "faintly made up eyelashes",
+        "heavily made up eyelashes",
+        "heavy eye lining",
+        "heavy eye paint"
       ]
     },
     {
@@ -497,6 +518,39 @@
         "a heavy squint",
         "a slight squint",
         "one lazy eye"
+      ]
+    },
+    {
+      "--------------------------------------------------": "GENDER-SPECIFIC"
+    },
+    {
+      "name": "female",
+      "explanation": "Female characters.",
+      "entries": [
+        "{eyes}",
+        "{eyes} with {makeup}"
+      ]
+    },
+    {
+      "name": "hermafrodite",
+      "explanation": "Hermafrodite characters.",
+      "entries": [
+        "{eyes}",
+        "{eyes} with {makeup}"
+      ]
+    },
+    {
+      "name": "male",
+      "explanation": "Male characters.",
+      "entries": [
+        "{eyes}"
+      ]
+    },
+    {
+      "name": "neuter",
+      "explanation": "Neuter characters.",
+      "entries": [
+        "{eyes}"
       ]
     },
     {
