@@ -14,9 +14,17 @@
   "bugs": "",
   "to do": "",
   "see": "district",
-  "date": "2018-04-06",
+  "date": "2018-11-27",
   "authors": "ELF Vesala",
   "sources": "",
+  "attribution": {
+    "creators": "",
+    "copyright": "",
+    "licence": "https://",
+    "disclaimer": "https://",
+    "source": "",
+    "changes": ""
+  },
   "genre": "universal",
   "categories": [
     "world"
@@ -35,12 +43,22 @@
       ]
     },
     {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
       "name": "result",
-      "explanation": "Verbosity of the resultPattern output.",
+      "explanation": "The output format.",
       "entries": [
+        "{word}",
         "{summary}",
-        "{detail}",
-        "{description}"
+        "{detail}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{settlement}"
       ]
     },
     {
@@ -63,8 +81,39 @@
       "name": "description",
       "explanation": "Detailed description of the settlement.",
       "entries": [
-        "The {settlement} {established} {location} {origin} {present} {purpose}. It is famous for {fame}."
+        "The {settlement} {established} {location} {origin} {and is now} {purpose}. It is famous for its {fame}."
       ]
+    },
+    {
+      "name": "section",
+      "explanation": "Long description as a subheading and a text paragraph.",
+      "entries": [
+        "===== {random} =====\r\n{description}"
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Name}: {random} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "name": "template",
+      "explanation": "Details as a template.",
+      "entries": [
+        "?FC\r\n{b|Name}: [[{random}]] \r\n{b|Attribute}: \r\n[[[{attribute}]]] \r\n{b|Feature}: \r\n[[[{feature}]]]"
+      ]
+    },
+    {
+      "name": "meta",
+      "explanation": "Off-game explanation of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
     },
     {
       "name": "settlement",
@@ -92,39 +141,34 @@
       "entries": [
         "{camp}",
         "{cottage}",
-        "{outpost}",
+        "{outpost}"
+      ]
+    },
+    {
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
+      "entries": [
         "{region}"
       ]
     },
     {
-      "**************************************************": "ORIGIN"
+      "**************************************************": "RANGES"
     },
     {
-      "name": "established",
-      "explanation": "Variant expressions for establishing the settlement.",
-      "format": "The settlement --",
+      "name": "any",
+      "explanation": "Random selection.",
       "entries": [
-        "was established",
-        "was originally built",
-        "has been built",
-        "was formed",
-        "started as"
+        "{camp}",
+        "{cottage}",
+        "{outpost}",
+        "{village}",
+        "{town}",
+        "{city}",
+        "{region}"
       ]
     },
     {
-      "name": "origin",
-      "explanation": "Why the settlement was originally established?",
-      "entries": [
-        "in a safe location",
-        "near good hunting grounds",
-        "in a fertile area",
-        "on crossroads of travel routes",
-        "on a trade route",
-        "as a trading post",
-        "to offer protection to the surrounding area",
-        "as a military garrison",
-        "as a center of administration"
-      ]
+      "**************************************************": "DETAILS"
     },
     {
       "name": "activity",
@@ -136,13 +180,60 @@
       ]
     },
     {
-      "name": "present",
-      "explanation": "Variant expressions for the ",
-      "format": "The settlement was established as a trading place --",
+      "--------------------------------------------------": "ADMINISTRATION"
+    },
+    {
+      "name": "administration",
+      "explanation": "How the settlement is governed?",
       "entries": [
-        "and is now",
-        "but is nowadays",
-        "but has grown into"
+        "{benign}",
+        "{corrupt}"
+      ]
+    },
+    {
+      "name": "benign",
+      "explanation": "Good government.",
+      "entries": [
+        "reliable",
+        "trustworthy"
+      ]
+    },
+    {
+      "name": "corrupt",
+      "explanation": "Bad government.",
+      "entries": [
+        "corrupt",
+        "unfair"
+      ]
+    },
+    {
+      "--------------------------------------------------": "FAME"
+    },
+    {
+      "name": "fame",
+      "explanation": "The settlement's claim for fame (or notoriety).",
+      "entries": [
+        "architecture",
+        "festivals",
+        "colorful buildings",
+        "craftworks",
+        "folktales",
+        "peculiar customs"
+      ]
+    },
+    {
+      "name": "origin",
+      "explanation": "Why the settlement was originally established?",
+      "entries": [
+        "in a safe location",
+        "near good hunting grounds",
+        "in a fertile area",
+        "on the crossroads of travel routes",
+        "on a trade route",
+        "as a trading post",
+        "to offer protection to the surrounding area",
+        "as a military garrison",
+        "as a center of administration"
       ]
     },
     {
@@ -153,34 +244,14 @@
       ]
     },
     {
-      "name": "fame",
-      "explanation": "The settlement's claim for fame (or notoriety).",
-      "entries": [
-        "it's architecture"
-      ]
-    },
-    {
-      "**************************************************": "LOCATION"
-    },
-    {
-      "name": "location",
-      "explanation": "The position of the settlement.",
-      "entries": [
-        "in a valley",
-        "on rolling hills",
-        "on plains",
-        "by a river",
-        "in a forest clearing",
-        "near the coast",
-        "on an island"
-      ]
-    },
-    {
-      "**************************************************": "WORLD-SPECIFIC"
+      "==================================================": "SETTLEMENTS"
     },
     {
       "name": "camp",
       "explanation": "Temporary settlements in the wilderness.",
+      "export": {
+        "settlement": "camp"
+      },
       "entries": [
         "campfire",
         "camp",
@@ -192,6 +263,9 @@
     {
       "name": "cottage",
       "explanation": "Permanent lone settlements in the wilderness.",
+      "export": {
+        "settlement": "cottage"
+      },
       "entries": [
         "hovel",
         "shack",
@@ -205,6 +279,9 @@
     {
       "name": "outpost",
       "explanation": "Outposts in the wilderness.",
+      "export": {
+        "settlement": "outpost"
+      },
       "entries": [
         "fort",
         "fortress",
@@ -217,6 +294,9 @@
     {
       "name": "region",
       "explanation": "Inhabited areas in the countryside.",
+      "export": {
+        "settlement": "region"
+      },
       "entries": [
         "municipality",
         "township",
@@ -232,6 +312,9 @@
     {
       "name": "village",
       "explanation": "Small settlements in the countryside.",
+      "export": {
+        "settlement": "village"
+      },
       "entries": [
         "thorp",
         "hamlet",
@@ -241,6 +324,9 @@
     {
       "name": "town",
       "explanation": "Medium-sized settlements.",
+      "export": {
+        "settlement": "town"
+      },
       "entries": [
         "smalltown",
         "town",
@@ -251,6 +337,9 @@
     {
       "name": "city",
       "explanation": "Large settlements.",
+      "export": {
+        "settlement": "city"
+      },
       "entries": [
         "burg",
         "city",
@@ -258,33 +347,215 @@
       ]
     },
     {
+      "==================================================": "LOCATION"
+    },
+    {
+      "name": "location",
+      "explanation": "The position of the settlement.",
+      "entries": [
+        "{lowland}",
+        "{highland}",
+        "{shore}",
+        "{wilderness}"
+      ]
+    },
+    {
+      "name": "lowland",
+      "explanation": "The position of the settlement.",
+      "export": {
+        "location": "lowland"
+      },
+      "entries": [
+        "in a valley",
+        "on fertile farmland",
+        "on grassland",
+        "on a plain"
+      ]
+    },
+    {
+      "name": "highland",
+      "explanation": "The position of the settlement.",
+      "export": {
+        "location": "highland"
+      },
+      "entries": [
+        "by a mountain",
+        "on rolling hills",
+        "on a mountainside"
+      ]
+    },
+    {
+      "name": "shore",
+      "explanation": "The position of the settlement.",
+      "export": {
+        "location": "shore"
+      },
+      "entries": [
+        "on a lakeshore",
+        "on a river delta",
+        "on a riverbank",
+        "on a shoreline",
+        "near the coast",
+        "on an island",
+        "spread across several islands"
+      ]
+    },
+    {
+      "name": "wilderness",
+      "explanation": "",
+      "export": {
+        "location": "wilderness"
+      },
+      "entries": [
+        "in a forest clearing",
+        "on swampland",
+        "on wasteland"
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomization methods.",
+      "entries": [
+        "{component}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMPONENTS"
+    },
+    {
+      "name": "component",
+      "explanation": "Component-based terms (generated from words).",
+      "entries": [
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{compoundbegin}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
       "**************************************************": "WORLD-SPECIFIC"
     },
     {
-      "name": "myth",
-      "explanation": "Settlements once rumoured to have existed.",
-      "entries": [
-        "XXX"
-      ]
+      "--------------------------------------------------": "FANTASTIC"
     },
     {
       "name": "fantasy",
-      "explanation": "Settlements for fantasy worlds (with no basis in myth).",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
-        "XXX"
+        "{medieval}"
       ]
     },
     {
-      "name": "modern",
-      "explanation": "Settlements for modern worlds.",
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
       "entries": [
         "{common}"
       ]
     },
     {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{common}",
+        "fief",
+        "shire"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
+    },
+    {
+      "name": "modern",
+      "explanation": "Descriptions for modern worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
       "name": "futuristic",
-      "explanation": "Settlements for science fiction worlds.",
+      "explanation": "Descriptions for science fiction worlds.",
       "entries": [
         "{modern}",
         "{futuristic city}"
@@ -302,11 +573,64 @@
       ]
     },
     {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
+        "community",
+        "habitation",
+        "settlement"
+      ]
+    },
+    {
+      "name": "and is now",
+      "explanation": "Variant expressions for 'and is now'.",
+      "format": "The settlement was established as a trading place --",
+      "entries": [
+        "and is now",
+        "but is nowadays",
+        "but has grown into"
+      ]
+    },
+    {
+      "name": "established",
+      "explanation": "Variant expressions for establishing the settlement.",
+      "format": "The settlement --",
+      "entries": [
+        "was established",
+        "was originally built",
+        "has been built",
+        "was formed",
+        "started as"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "seems to be"
+      ]
+    },
+    {
       "**************************************************": "SPECIAL TABLES"
     },
     {
       "name": "special",
-      "explanation": "Special settlement tables.",
+      "explanation": "Special tables.",
       "entries": [
         "{attribute}",
         "{feature}"
@@ -314,16 +638,15 @@
     },
     {
       "name": "attribute",
-      "explanation": "Attributes related to the settlement.",
-      "format": "Optionally prepended to the front of the result.",
+      "explanation": "Attribute prepended to the front of the result.",
       "entries": [
         "beautiful"
       ]
     },
     {
       "name": "feature",
-      "explanation": "Features related to the settlement.",
-      "format": "Optionally appended to the end of the result.",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
       "entries": [
         "with strict border control"
       ]
@@ -335,7 +658,7 @@
       "name": "test",
       "explanation": "Test routine for checking the generator functionality.",
       "entries": [
-        "result: {result}, summary: {summary}, detail: {detail}, common: {common}, rare: {rare}. Myth: {myth}, fantasy: {fantasy}, modern: {modern}, futuristic: {futuristic}. Special: {special}, feature: {feature}."
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]
