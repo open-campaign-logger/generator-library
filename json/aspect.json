@@ -14,9 +14,17 @@
   "bugs": "",
   "to do": "",
   "see": "concept, concepts, motif-*, place, theme",
-  "date": "2018-09-28",
+  "date": "2018-12-02",
   "authors": "ELF Vesala",
   "sources": "",
+  "attribution": {
+    "creators": "",
+    "copyright": "",
+    "licence": "https://",
+    "disclaimer": "https://",
+    "source": "",
+    "changes": ""
+  },
   "genre": "universal",
   "categories": [
     "utility"
@@ -41,8 +49,16 @@
       "name": "result",
       "explanation": "The output format.",
       "entries": [
+        "{word}",
         "{summary}",
         "{detail}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{aspect}"
       ]
     },
     {
@@ -70,10 +86,31 @@
       ]
     },
     {
+      "name": "section",
+      "explanation": "Long description as a subheading and a text paragraph.",
+      "entries": [
+        "===== {random} =====\r\n{description}"
+      ]
+    },
+    {
       "name": "stats",
       "explanation": "Details as statistics.",
       "entries": [
         "{b|Name}: {random} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "name": "template",
+      "explanation": "Details as a template.",
+      "entries": [
+        "?FC\r\n{b|Name}: [[{random}]] \r\n{b|Attribute}: \r\n[[[{attribute}]]] \r\n{b|Feature}: \r\n[[[{feature}]]]"
+      ]
+    },
+    {
+      "name": "meta",
+      "explanation": "Off-game explanation of the result.",
+      "entries": [
+        ""
       ]
     },
     {
@@ -112,6 +149,13 @@
         "{material}",
         "{plant}",
         "{warm}"
+      ]
+    },
+    {
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
+      "entries": [
+        ""
       ]
     },
     {
@@ -349,7 +393,7 @@
       "name": "myth",
       "explanation": "Descriptions for mythic worlds (once thought true).",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
@@ -359,7 +403,7 @@
       "name": "primitive",
       "explanation": "Descriptions for prehistoric worlds.",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
@@ -369,7 +413,7 @@
       "name": "ancient",
       "explanation": "Descriptions for ancient worlds.",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
@@ -379,7 +423,7 @@
       "name": "medieval",
       "explanation": "Descriptions for medieval worlds (with no magic).",
       "entries": [
-        "XXX"
+        "{common}"
       ]
     },
     {
@@ -389,8 +433,7 @@
       "name": "modern",
       "explanation": "Descriptions for modern worlds.",
       "entries": [
-        "{common}",
-        "XXX"
+        "{common}"
       ]
     },
     {
@@ -400,8 +443,7 @@
       "name": "futuristic",
       "explanation": "Descriptions for science fiction worlds.",
       "entries": [
-        "{modern}",
-        "XXX"
+        "{modern}"
       ]
     },
     {

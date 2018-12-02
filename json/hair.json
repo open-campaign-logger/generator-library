@@ -159,8 +159,10 @@
       "name": "any",
       "explanation": "Random selection.",
       "entries": [
+        "{adornment}",
         "{color}",
         "{condition}",
+        "{dye}",
         "{grooming}",
         "{style}",
         "{thickness}",
@@ -169,6 +171,9 @@
     },
     {
       "**************************************************": "DETAILS"
+    },
+    {
+      "--------------------------------------------------": "ADORNMENT"
     },
     {
       "name": "adornment",

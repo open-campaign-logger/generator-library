@@ -16,7 +16,7 @@
   "bugs": "",
   "to do": "",
   "see": "body, eyes, face, hair, mouth, nose, personality, NPC_description",
-  "date": "2018-11-20",
+  "date": "2018-12-02",
   "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
   "attribution": {
@@ -133,7 +133,7 @@
       "name": "rare",
       "explanation": "Rare appearance types.",
       "entries": [
-        "{body}",
+        "{lib:body}",
         "{voice}"
       ]
     },

@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "Separate proper names from district types!",
   "see": "business, settlement, shop, street",
-  "date": "2018-08-30",
+  "date": "2018-11-27",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -72,9 +72,9 @@
       "name": "description",
       "explanation": "Long description as a paragraph of text.",
       "entries": [
-        "The {district} {synonym} {looks} {attribute}.",
-        "The {district} {synonym} {feature}.",
-        "The {attribute} {district} {feature}."
+        "The {|{district}|tcase} {looks} {attribute}.",
+        "The {|{district}|tcase} {feature}.",
+        "The {attribute} {|{district}|tcase} {feature}."
       ]
     },
     {
@@ -802,7 +802,7 @@
       "explanation": "Features for poor districts.",
       "entries": [
         "is best avoided by night, say many",
-        "whose reputation is bad",
+        "has a bad reputation",
         "{lower class feature}"
       ]
     },

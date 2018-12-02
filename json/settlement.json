@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "district",
-  "date": "2018-11-27",
+  "date": "2018-12-02",
   "authors": "ELF Vesala",
   "sources": "",
   "attribution": {
@@ -130,48 +130,826 @@
       "name": "common",
       "explanation": "Common settlement types.",
       "entries": [
-        "{village}",
-        "{town}",
-        "{city}"
+        "{rural}",
+        "{urban}"
       ]
     },
     {
       "name": "rare",
       "explanation": "Rare settlement types.",
       "entries": [
-        "{camp}",
-        "{cottage}",
-        "{outpost}"
+        "{wilderness}"
       ]
     },
     {
       "name": "exclusive",
       "explanation": "Extra rare types (not produced by random).",
       "entries": [
-        "{region}"
+        "{area}"
       ]
     },
     {
-      "**************************************************": "RANGES"
+      "**************************************************": "ENVIRONMENT"
     },
     {
-      "name": "any",
-      "explanation": "Random selection.",
+      "name": "environment",
+      "explanation": "Environment types.",
       "entries": [
+        "{wilderness}",
+        "{rural}",
+        "{urban}",
+        "{area}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "WILDERNESS"
+    },
+    {
+      "name": "wilderness",
+      "explanation": "Communities in the wilds.",
+      "export": {
+        "environment": "wilderness"
+      },
+      "entries": [
+        "{caravan}",
         "{camp}",
-        "{cottage}",
+        "{fort}",
         "{outpost}",
-        "{village}",
+        "{sanctuary}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "RURAL"
+    },
+    {
+      "name": "rural",
+      "explanation": "Agricultural communities.",
+      "export": {
+        "environment": "rural"
+      },
+      "entries": [
+        "{cottage}",
+        "{farm}",
+        "{manor}",
+        "{commune}",
+        "{thorp}",
+        "{hamlet}",
+        "{village}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "URBAN"
+    },
+    {
+      "name": "urban",
+      "explanation": "Non-rural communities.",
+      "export": {
+        "environment": "urban"
+      },
+      "entries": [
         "{town}",
         "{city}",
-        "{region}"
+        "{metropolis}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "AREA"
+    },
+    {
+      "name": "area",
+      "explanation": "Inhabited zones.",
+      "export": {
+        "environment": "area"
+      },
+      "entries": [
+        "{region}",
+        "{province}",
+        "{country}"
+      ]
+    },
+    {
+      "**************************************************": "SETTLEMENTS"
+    },
+    {
+      "--------------------------------------------------": "CAMP"
+    },
+    {
+      "name": "camp",
+      "explanation": "Temporary settlements in the wilderness.",
+      "export": {
+        "settlement": "camp"
+      },
+      "entries": [
+        "The {camp noun} is called {camp name}."
+      ]
+    },
+    {
+      "name": "camp name",
+      "explanation": "Name structures.",
+      "entries": [
+        "{|Camp {lib:concept#word}|tcase}",
+        "The {|{lib:concept#word} {camp noun}|tcase}",
+        "The {|{lib:concept#word}{camp ending}|tcase}"
+      ]
+    },
+    {
+      "name": "camp noun",
+      "explanation": "Name components.",
+      "entries": [
+        "camp",
+        "campfire",
+        "campground",
+        "campsite",
+        "encampment"
+      ]
+    },
+    {
+      "name": "camp ending",
+      "explanation": "Name components.",
+      "entries": [
+        "rest",
+        "site"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CARAVAN"
+    },
+    {
+      "name": "caravan",
+      "explanation": "A small, mobile community.",
+      "export": {
+        "settlement": "caravan"
+      },
+      "entries": [
+        "caravan"
+      ]
+    },
+    {
+      "name": "caravan name",
+      "explanation": "Name structures.",
+      "entries": [
+        "The {|{lib:aspect#word}|tcase} {caravan noun}",
+        "The {|{lib:aspect#word}|tcase}{caravan ending}"
+      ]
+    },
+    {
+      "name": "caravan noun",
+      "explanation": "Name components.",
+      "entries": [
+        "caravan",
+        "convoy",
+        "expedition",
+        "patrol",
+        "procession"
+      ]
+    },
+    {
+      "name": "caravan ending",
+      "explanation": "Name components.",
+      "entries": [
+        " band",
+        " trail"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CITY"
+    },
+    {
+      "name": "city",
+      "explanation": "Medium urban settlement.",
+      "export": {
+        "settlement": "city"
+      },
+      "entries": [
+        "city"
+      ]
+    },
+    {
+      "name": "city name",
+      "explanation": "Name structures.",
+      "entries": [
+        "{|{lib:aspect#word}|tcase} {city noun}",
+        "{|{lib:aspect#word}|tcase}{city ending}"
+      ]
+    },
+    {
+      "name": "city noun",
+      "explanation": "Name components.",
+      "entries": [
+        "borough",
+        "burg",
+        "city"
+      ]
+    },
+    {
+      "name": "city ending",
+      "explanation": "Name ending.",
+      "entries": [
+        "{town ending}",
+        "borough",
+        "burg",
+        "burgh",
+        "bury",
+        "by",
+        "ham",
+        "ing",
+        "ton",
+        "ville"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMMUNE"
+    },
+    {
+      "name": "commune",
+      "explanation": "Small secluded community.",
+      "export": {
+        "settlement": "commune"
+      },
+      "entries": [
+        "commune"
+      ]
+    },
+    {
+      "name": "commune name",
+      "explanation": "Commune names.",
+      "entries": [
+        "{|{lib:concept#word}{commune ending}|tcase}"
+      ]
+    },
+    {
+      "name": "commune noun",
+      "explanation": "Small secluded community.",
+      "entries": [
+        "abbey",
+        "chapter house",
+        "cloister",
+        "commune",
+        "convent",
+        "friary",
+        "hermitage",
+        "monastery",
+        "order",
+        "priorate",
+        "priory",
+        "retreat",
+        "sect",
+        "temple"
+      ]
+    },
+    {
+      "name": "commune ending",
+      "explanation": "Small secluded community.",
+      "entries": [
+        "{farm ending}",
+        "{thorp ending}",
+        "hold"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COTTAGE"
+    },
+    {
+      "name": "cottage",
+      "explanation": "Permanent lone settlements in the wilderness.",
+      "export": {
+        "settlement": "cottage"
+      },
+      "entries": [
+        "cottage"
+      ]
+    },
+    {
+      "name": "cottage name",
+      "explanation": "Cottage names.",
+      "entries": [
+        "{|{lib:aspect#word}|tcase} {cottage noun}"
+      ]
+    },
+    {
+      "name": "cottage noun",
+      "explanation": "Permanent lone settlements in the wilderness.",
+      "entries": [
+        "hovel",
+        "shack",
+        "cabin",
+        "cottage",
+        "hut",
+        "lodge",
+        "log house"
+      ]
+    },
+    {
+      "name": "cottage ending",
+      "explanation": "Permanent lone settlements in the wilderness.",
+      "entries": [
+        "{farm ending}",
+        "hut"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COUNTRY"
+    },
+    {
+      "name": "country",
+      "explanation": "A nation.",
+      "export": {
+        "settlement": "country"
+      },
+      "entries": [
+        "country"
+      ]
+    },
+    {
+      "name": "country name",
+      "explanation": "Country names.",
+      "entries": [
+        "{|{lib:aspect#word}|tcase} {country noun}",
+        "{|{lib:aspect#word}|tcase}{country ending}"
+      ]
+    },
+    {
+      "name": "country noun",
+      "explanation": "Permanent lone settlements in the wilderness.",
+      "entries": [
+        "country",
+        "nation"
+      ]
+    },
+    {
+      "name": "country ending",
+      "explanation": "Permanent lone settlements in the wilderness.",
+      "entries": [
+        "{province ending}",
+        "land"
+      ]
+    },
+    {
+      "--------------------------------------------------": "FARM"
+    },
+    {
+      "name": "farm",
+      "explanation": "An agricultural settlement",
+      "export": {
+        "settlement": "farm"
+      },
+      "entries": [
+        "farm"
+      ]
+    },
+    {
+      "name": "farm name",
+      "explanation": "Farm names.",
+      "entries": [
+        "{|{lib:aspect#word}|tcase}{farm ending}"
+      ]
+    },
+    {
+      "name": "farm noun",
+      "explanation": "An agricultural settlement",
+      "entries": [
+        "farm",
+        "farmstead",
+        "freehold",
+        "holding",
+        "homestead",
+        "ranch"
+      ]
+    },
+    {
+      "name": "farm ending",
+      "explanation": "An agricultural settlement",
+      "entries": [
+        "{cottage ending}",
+        "hold",
+        "stead"
+      ]
+    },
+    {
+      "--------------------------------------------------": "FORT"
+    },
+    {
+      "name": "fort",
+      "explanation": "Fortress in the wilderness.",
+      "export": {
+        "settlement": "fort"
+      },
+      "entries": [
+        "fort"
+      ]
+    },
+    {
+      "name": "fort name",
+      "explanation": "Fort names.",
+      "entries": [
+        "{|{fort noun} {lib:concept#word}|tcase}",
+        "{|{lib:aspect#word}{fort ending}|tcase}"
+      ]
+    },
+    {
+      "name": "fort noun",
+      "explanation": "Fortress in the wilderness.",
+      "entries": [
+        "fort",
+        "fortress",
+        "keep",
+        "tower"
+      ]
+    },
+    {
+      "name": "fort ending",
+      "explanation": "Fortress in the wilderness.",
+      "entries": [
+        "{sanctuary ending}",
+        "shield",
+        "wall"
+      ]
+    },
+    {
+      "--------------------------------------------------": "HAMLET"
+    },
+    {
+      "name": "hamlet",
+      "explanation": "A rural community without government.",
+      "export": {
+        "settlement": "hamlet"
+      },
+      "entries": [
+        "hamlet"
+      ]
+    },
+    {
+      "name": "hamlet name",
+      "explanation": "Hamlet names.",
+      "entries": [
+        "{|{lib:aspect#word}|tcase}{hamlet ending}"
+      ]
+    },
+    {
+      "name": "hamlet noun",
+      "explanation": "Hamlet names.",
+      "entries": [
+        "hamlet",
+        "village"
+      ]
+    },
+    {
+      "name": "hamlet ending",
+      "explanation": "Hamlet names.",
+      "entries": [
+        "{thorp ending}",
+        "ham",
+        "heem",
+        "heim"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MANOR"
+    },
+    {
+      "name": "manor",
+      "explanation": "Noble estate.",
+      "export": {
+        "settlement": "manor"
+      },
+      "entries": [
+        "manor"
+      ]
+    },
+    {
+      "name": "manor name",
+      "explanation": "Manor names.",
+      "entries": [
+        "{|{lib:aspect#word} {manor noun}|tcase}",
+        "{|{lib:aspect#word}|tcase} Court"
+      ]
+    },
+    {
+      "name": "manor noun",
+      "explanation": "Noble estate.",
+      "entries": [
+        "estate",
+        "manor"
+      ]
+    },
+    {
+      "name": "manor ending",
+      "explanation": "Noble estate.",
+      "entries": [
+        "{farm ending}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "METROPOLIS"
+    },
+    {
+      "name": "metropolis",
+      "explanation": "Large city.",
+      "export": {
+        "settlement": "metropolis"
+      },
+      "entries": [
+        "metropolis"
+      ]
+    },
+    {
+      "name": "metropolis name",
+      "explanation": "Metropolis names.",
+      "entries": [
+        "{|{lib:aspect#word}|tcase}{metropolis ending}"
+      ]
+    },
+    {
+      "name": "metropolis noun",
+      "explanation": "Large city.",
+      "entries": [
+        "megalopolis",
+        "metropolis"
+      ]
+    },
+    {
+      "name": "metropolis ending",
+      "explanation": "Large city.",
+      "entries": [
+        "polis"
+      ]
+    },
+    {
+      "--------------------------------------------------": "OUTPOST"
+    },
+    {
+      "name": "outpost",
+      "explanation": "Outpost in the wilderness.",
+      "export": {
+        "settlement": "outpost"
+      },
+      "entries": [
+        "outpost"
+      ]
+    },
+    {
+      "name": "outpost name",
+      "explanation": "Outpost names.",
+      "entries": [
+        "The {|{lib:aspect#word}|tcase} {outpost noun}",
+        "The {|{lib:aspect#word}|tcase}{outpost ending}"
+      ]
+    },
+    {
+      "name": "outpost noun",
+      "explanation": "Outpost in the wilderness.",
+      "entries": [
+        "colony",
+        "outpost",
+        "settlement"
+      ]
+    },
+    {
+      "name": "outpost ending",
+      "explanation": "Outpost in the wilderness.",
+      "entries": [
+        "{fort ending}",
+        "{thorp ending}",
+        "hold"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PROVINCE"
+    },
+    {
+      "name": "province",
+      "explanation": "A policitical territory.",
+      "export": {
+        "settlement": "province"
+      },
+      "entries": [
+        "province"
+      ]
+    },
+    {
+      "name": "province name",
+      "explanation": "Province names.",
+      "entries": [
+        "{|{lib:aspect#word}land|tcase}"
+      ]
+    },
+    {
+      "name": "province noun",
+      "explanation": "",
+      "entries": [
+        "province"
+      ]
+    },
+    {
+      "name": "province ending",
+      "explanation": "",
+      "entries": [
+        "{region ending}",
+        "land"
+      ]
+    },
+    {
+      "--------------------------------------------------": "REGION"
+    },
+    {
+      "name": "region",
+      "explanation": "Inhabited areas in the countryside.",
+      "export": {
+        "settlement": "region"
+      },
+      "entries": [
+        "region"
+      ]
+    },
+    {
+      "name": "region name",
+      "explanation": "Region names.",
+      "entries": [
+        "{|{lib:aspect#word}|tcase} {region noun}",
+        "{|{lib:aspect#word}|tcase}{region ending}"
+      ]
+    },
+    {
+      "name": "region noun",
+      "explanation": "Inhabited areas in the countryside.",
+      "entries": [
+        "municipality",
+        "township",
+        "barony",
+        "county",
+        "principality",
+        "shire",
+        "territory",
+        "province",
+        "protectorate"
+      ]
+    },
+    {
+      "name": "region ending",
+      "explanation": "Inhabited areas in the countryside.",
+      "entries": [
+        "shire"
+      ]
+    },
+    {
+      "--------------------------------------------------": "SANCTUARY"
+    },
+    {
+      "name": "sanctuary",
+      "explanation": "Safe havens in the wilderness.",
+      "export": {
+        "settlement": "sanctuary"
+      },
+      "entries": [
+        "sanctuary"
+      ]
+    },
+    {
+      "name": "sanctuary name",
+      "explanation": "Outpost names.",
+      "entries": [
+        "{|{lib:aspect#word}|tcase} {sanctuary noun}",
+        "{|{lib:aspect#word}|tcase}{sanctuary ending}"
+      ]
+    },
+    {
+      "name": "sanctuary noun",
+      "explanation": "Safe havens in the wilderness.",
+      "entries": [
+        "refuge",
+        "haven",
+        "hideaway",
+        "sanctuary",
+        "shelter"
+      ]
+    },
+    {
+      "name": "sanctuary ending",
+      "explanation": "Safe havens in the wilderness.",
+      "entries": [
+        "{fort ending}",
+        "haven"
+      ]
+    },
+    {
+      "--------------------------------------------------": "THORP"
+    },
+    {
+      "name": "thorp",
+      "explanation": "A rural community without businesses.",
+      "export": {
+        "settlement": "thorp"
+      },
+      "entries": [
+        "thorp"
+      ]
+    },
+    {
+      "name": "thorp name",
+      "explanation": "Thorp names.",
+      "entries": [
+        "{|{lib:aspect#word}|tcase}{thorp ending}"
+      ]
+    },
+    {
+      "name": "thorp noun",
+      "explanation": "A rural community without businesses.",
+      "entries": [
+        "thorp"
+      ]
+    },
+    {
+      "name": "thorp ending",
+      "explanation": "A rural community without businesses.",
+      "entries": [
+        "{farm ending}",
+        "dorf",
+        "dorp",
+        "porp",
+        "thorp",
+        "thorpe"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TOWN"
+    },
+    {
+      "name": "town",
+      "explanation": "Small city.",
+      "export": {
+        "settlement": "town"
+      },
+      "entries": [
+        "town"
+      ]
+    },
+    {
+      "name": "town name",
+      "explanation": "Town names.",
+      "entries": [
+        "{|{lib:aspect#word}|tcase}{town ending}"
+      ]
+    },
+    {
+      "name": "town noun",
+      "explanation": "Small city.",
+      "entries": [
+        "smalltown",
+        "town",
+        "freetown",
+        "borough"
+      ]
+    },
+    {
+      "name": "town ending",
+      "explanation": "Small city.",
+      "entries": [
+        "{village ending}",
+        "town",
+        "borough"
+      ]
+    },
+    {
+      "--------------------------------------------------": "VILLAGE"
+    },
+    {
+      "name": "village",
+      "explanation": "A rural community with government.",
+      "export": {
+        "settlement": "village"
+      },
+      "entries": [
+        "village"
+      ]
+    },
+    {
+      "name": "village name",
+      "explanation": "Village names.",
+      "entries": [
+        "{|{lib:aspect#word}|tcase}{village ending}"
+      ]
+    },
+    {
+      "name": "village noun",
+      "explanation": "A rural community with government.",
+      "entries": [
+        "village"
+      ]
+    },
+    {
+      "name": "village ending",
+      "explanation": "A rural community with government.",
+      "entries": [
+        "{hamlet ending}",
+        "ham",
+        "ville"
       ]
     },
     {
       "**************************************************": "DETAILS"
     },
     {
-      "name": "activity",
+      "name": "success",
       "explanation": "How successful the settlement is?",
       "entries": [
         "a thriving",
@@ -241,109 +1019,6 @@
       "explanation": "The current role of the settlement.",
       "entries": [
         "a center of trade"
-      ]
-    },
-    {
-      "==================================================": "SETTLEMENTS"
-    },
-    {
-      "name": "camp",
-      "explanation": "Temporary settlements in the wilderness.",
-      "export": {
-        "settlement": "camp"
-      },
-      "entries": [
-        "campfire",
-        "camp",
-        "encampment",
-        "campground",
-        "campsite"
-      ]
-    },
-    {
-      "name": "cottage",
-      "explanation": "Permanent lone settlements in the wilderness.",
-      "export": {
-        "settlement": "cottage"
-      },
-      "entries": [
-        "hovel",
-        "shack",
-        "cabin",
-        "cottage",
-        "hut",
-        "lodge",
-        "log house"
-      ]
-    },
-    {
-      "name": "outpost",
-      "explanation": "Outposts in the wilderness.",
-      "export": {
-        "settlement": "outpost"
-      },
-      "entries": [
-        "fort",
-        "fortress",
-        "keep",
-        "settlement",
-        "outpost",
-        "colony"
-      ]
-    },
-    {
-      "name": "region",
-      "explanation": "Inhabited areas in the countryside.",
-      "export": {
-        "settlement": "region"
-      },
-      "entries": [
-        "municipality",
-        "township",
-        "shire",
-        "barony",
-        "county",
-        "principality",
-        "territory",
-        "province",
-        "protectorate"
-      ]
-    },
-    {
-      "name": "village",
-      "explanation": "Small settlements in the countryside.",
-      "export": {
-        "settlement": "village"
-      },
-      "entries": [
-        "thorp",
-        "hamlet",
-        "village"
-      ]
-    },
-    {
-      "name": "town",
-      "explanation": "Medium-sized settlements.",
-      "export": {
-        "settlement": "town"
-      },
-      "entries": [
-        "smalltown",
-        "town",
-        "freetown",
-        "borough"
-      ]
-    },
-    {
-      "name": "city",
-      "explanation": "Large settlements.",
-      "export": {
-        "settlement": "city"
-      },
-      "entries": [
-        "burg",
-        "city",
-        "metropolis"
       ]
     },
     {
@@ -430,15 +1105,15 @@
       "explanation": "Component-based terms (generated from words).",
       "entries": [
         "{compoundbegin}{compoundend}",
-        "{beginning} {ending}",
-        "{ending} {extension}",
-        "{descriptor} {ending}",
+        "{beginning} {name}",
+        "{name} {extension}",
+        "{descriptor} {name}",
         "{descriptor} {compoundbegin}{compoundend}",
-        "{descriptor} {beginning} {ending}",
+        "{descriptor} {beginning} {name}",
         "{compoundbegin}{compoundend} {extension}",
-        "{beginning} {ending} {extension}",
+        "{beginning} {name} {extension}",
         "{descriptor} {compoundbegin}{compoundend} {extension}",
-        "{descriptor} {beginning} {ending} {extension}"
+        "{descriptor} {beginning} {name} {extension}"
       ]
     },
     {
@@ -465,14 +1140,14 @@
     },
     {
       "name": "compoundend",
-      "explanation": "Compound word endings for randomized terms.",
+      "explanation": "Compound word names for randomized terms.",
       "entries": [
         "XXX"
       ]
     },
     {
-      "name": "ending",
-      "explanation": "Separate word endings for randomized terms.",
+      "name": "name",
+      "explanation": "Separate word names for randomized terms.",
       "entries": [
         "XXX"
       ]
@@ -565,11 +1240,11 @@
       "name": "futuristic city",
       "explanation": "Cities for science fiction worlds.",
       "entries": [
-        "habitat",
+        "cosmopolis",
         "dome",
+        "habitat",
         "polis",
-        "megalopolis",
-        "cosmopolis"
+        "sprawl"
       ]
     },
     {

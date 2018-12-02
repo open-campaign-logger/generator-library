@@ -1,6 +1,9 @@
 {
   "name": "Stone table",
-  "resultPattern": "{stone}",
+  "resultPattern": "{init}{result}",
+  "globals": {
+    "variable": ""
+  },
   "variables": {
     "footnote": ""
   },
@@ -9,15 +12,108 @@
   "note": "",
   "to do": "",
   "see": "material, metal",
-  "date": "2017-10-06",
-  "authors": "Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "date": "2018-12-02",
+  "authors": "Johnn Four, Jochen Linnemann, ELF Vesala.",
   "sources": "Wikipedia.org.",
+  "attribution": {
+    "creators": "",
+    "copyright": "",
+    "licence": "https://",
+    "disclaimer": "https://",
+    "source": "",
+    "changes": ""
+  },
   "genre": "universal",
   "categories": [
     "world"
   ],
   "tags": "#material, #resource",
   "tables": [
+    {
+      "name": "init",
+      "explanation": "Initializing the required global variables, if any.",
+      "entries": [
+        {
+          "v": "",
+          "export": {
+            "": ""
+          }
+        }
+      ]
+    },
+    {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
+      "name": "result",
+      "explanation": "The output format.",
+      "entries": [
+        "{word}",
+        "{summary}",
+        "{detail}"
+      ]
+    },
+    {
+      "name": "word",
+      "explanation": "One-word output.",
+      "entries": [
+        "{stone}"
+      ]
+    },
+    {
+      "name": "summary",
+      "explanation": "Brief output.",
+      "entries": [
+        "{attribute} {stone}"
+      ]
+    },
+    {
+      "name": "detail",
+      "explanation": "More detailed output variations.",
+      "entries": [
+        "{stone}, {feature}",
+        "{attribute} {stone}, {feature}"
+      ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a sentence.",
+      "entries": [
+        "The {stone} {synonym} {looks} {feature}.",
+        "The {attribute} {stone} {synonym} {looks} {feature}."
+      ]
+    },
+    {
+      "name": "section",
+      "explanation": "Long description as a subheading and a text paragraph.",
+      "entries": [
+        "===== {random} =====\r\n{description}"
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|Name}: {random} \r\n{b|Attribute}: {attribute} \r\n{b|Feature}: {feature} "
+      ]
+    },
+    {
+      "name": "template",
+      "explanation": "Details as a template.",
+      "entries": [
+        "?FC\r\n{b|Name}: [[{random}]] \r\n{b|Attribute}: \r\n[[[{attribute}]]] \r\n{b|Feature}: \r\n[[[{feature}]]]"
+      ]
+    },
+    {
+      "name": "meta",
+      "explanation": "Off-game explanation of the result.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "TYPES"
+    },
     {
       "name": "stone",
       "explanation": "Stone types.",
@@ -54,25 +150,116 @@
       ]
     },
     {
-      "name": "myth",
-      "explanation": "Imaginary stone types once rumoured to have existed.",
+      "name": "exclusive",
+      "explanation": "Extra rare types (not produced by random).",
       "entries": [
-        "lodestone",
-        "{rare myth}"
+        ""
       ]
     },
     {
-      "name": "rare myth",
-      "explanation": "Rare imaginary stone types once rumoured to have existed.",
+      "**************************************************": "RANGES"
+    },
+    {
+      "name": "any",
+      "explanation": "Random selection.",
       "entries": [
-        "piece of the Symplegade (clashing rocks destroying boats)"
+        ""
       ]
+    },
+    {
+      "**************************************************": "DETAILS"
+    },
+    {
+      "name": "",
+      "explanation": "",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "RANDOMIZED"
+    },
+    {
+      "name": "random",
+      "explanation": "Randomization methods.",
+      "entries": [
+        "{component}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "COMPONENTS"
+    },
+    {
+      "name": "component",
+      "explanation": "Component-based terms (generated from words).",
+      "entries": [
+        "{compoundbegin}{compoundend}",
+        "{beginning} {ending}",
+        "{ending} {extension}",
+        "{descriptor} {ending}",
+        "{descriptor} {compoundbegin}{compoundend}",
+        "{descriptor} {beginning} {ending}",
+        "{compoundbegin}{compoundend} {extension}",
+        "{beginning} {ending} {extension}",
+        "{descriptor} {compoundbegin}{compoundend} {extension}",
+        "{descriptor} {beginning} {ending} {extension}"
+      ]
+    },
+    {
+      "name": "descriptor",
+      "explanation": "Descriptors for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "name": "beginning",
+      "explanation": "Beginnings for randomized terms.",
+      "entries": [
+        "{compoundbegin}",
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundbegin",
+      "explanation": "Compound word beginnings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "compoundend",
+      "explanation": "Compound word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "ending",
+      "explanation": "Separate word endings for randomized terms.",
+      "entries": [
+        "XXX"
+      ]
+    },
+    {
+      "name": "extension",
+      "explanation": "Extensions for randomized terms.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "WORLD-SPECIFIC"
+    },
+    {
+      "--------------------------------------------------": "FANTASTIC"
     },
     {
       "name": "fantasy",
-      "explanation": "Fantasy stone types (with no basis in myth).",
+      "explanation": "Descriptions for fantasy worlds (with no basis in myth).",
       "entries": [
         "{myth}",
+        "{medieval}",
         "weirdstone (containing captured magical essence)",
         "wyrdstone (containing magical energy)",
         "{rare fantasy}"
@@ -89,8 +276,60 @@
       ]
     },
     {
+      "--------------------------------------------------": "MYTHIC"
+    },
+    {
+      "name": "myth",
+      "explanation": "Descriptions for mythic worlds (once thought true).",
+      "entries": [
+        "{common}",
+        "lodestone",
+        "{rare myth}"
+      ]
+    },
+    {
+      "name": "rare myth",
+      "explanation": "Rare imaginary stone types once rumoured to have existed.",
+      "entries": [
+        "piece of the Symplegade (clashing rocks destroying boats)"
+      ]
+    },
+    {
+      "--------------------------------------------------": "PREHISTORIC"
+    },
+    {
+      "name": "primitive",
+      "explanation": "Descriptions for prehistoric worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "ANTIQUITY"
+    },
+    {
+      "name": "ancient",
+      "explanation": "Descriptions for ancient worlds.",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "MIDDLE AGES"
+    },
+    {
+      "name": "medieval",
+      "explanation": "Descriptions for medieval worlds (with no magic).",
+      "entries": [
+        "{common}"
+      ]
+    },
+    {
+      "--------------------------------------------------": "CONTEMPORARY"
+    },
+    {
       "name": "modern",
-      "explanation": "Stone types for modern worlds.",
+      "explanation": "Descriptions for modern worlds.",
       "entries": [
         "{common}",
         "spectrolite",
@@ -107,8 +346,11 @@
       ]
     },
     {
+      "--------------------------------------------------": "SCIENCE FICTION"
+    },
+    {
       "name": "futuristic",
-      "explanation": "Imaginary stone types for science fiction worlds.",
+      "explanation": "Descriptions for science fiction worlds.",
       "entries": [
         "{modern}",
         "meteor stone",
@@ -121,6 +363,74 @@
       "explanation": "Rare imaginary stone types for science fiction worlds.",
       "entries": [
         "growing stone (self-replicating nano structure)"
+      ]
+    },
+    {
+      "**************************************************": "EXOTIC"
+    },
+    {
+      "name": "exotic",
+      "explanation": "Exotic alternatives.",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for generator subject matter.",
+      "entries": [
+        "mineral",
+        "rock",
+        "stone"
+      ]
+    },
+    {
+      "name": "looks",
+      "explanation": "Variant expressions for looking like something.",
+      "format": "-- in good condition / approaching",
+      "entries": [
+        "appears to be",
+        "seems to be"
+      ]
+    },
+    {
+      "**************************************************": "SPECIAL TABLES"
+    },
+    {
+      "name": "special",
+      "explanation": "Special tables.",
+      "entries": [
+        "{attribute}",
+        "{feature}"
+      ]
+    },
+    {
+      "name": "attribute",
+      "explanation": "Attribute prepended to the front of the result.",
+      "entries": [
+        "scratched",
+        "polished"
+      ]
+    },
+    {
+      "name": "feature",
+      "explanation": "Features appended to the end of the result.",
+      "format": "It seems to be --",
+      "entries": [
+        "with faint cracks"
+      ]
+    },
+    {
+      "--------------------------------------------------": "TESTING"
+    },
+    {
+      "name": "test",
+      "explanation": "Test routine for checking the generator functionality.",
+      "entries": [
+        "{init}Result: {result}, summary: {summary}, detail: {detail}, description: {description}, stats: {stats}. Common: {common}, rare: {rare}. Random: {random}. Fantasy: {fantasy}, myth: {myth}, medieval: {medieval}, modern: {modern}, futuristic: {futuristic}. Synonym: {synonym}. Special: {special}, attribute: {attribute}, feature: {feature}."
       ]
     }
   ]

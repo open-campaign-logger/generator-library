@@ -9,7 +9,7 @@
   "note": "",
   "to do": "",
   "see": "metal, stone, temperature",
-  "date": "2018-08-17",
+  "date": "2018-12-02",
   "authors": "ELF Vesala",
   "sources": "Conservation-Wiki.com, Wikipedia.org.",
   "genre": "universal",
@@ -122,7 +122,7 @@
       "name": "stone",
       "explanation": "Common stone materials.",
       "entries": [
-        "{lib:stone#summary}"
+        "{lib:stone#word}"
       ]
     },
     {
