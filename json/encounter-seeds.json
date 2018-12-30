@@ -1,0 +1,135 @@
+{
+  "name": "Encounter Seed Generator",
+  "resultPattern": "What if {encounterSeed}?",
+  "authors": "Johnn Four",
+  "tables": [
+    {
+      "name": "encounterSeed",
+      "entries": [
+        "it was discovered that two {lib:placeAdventure_pl} were magically linked and their inhabitants had been traveling between them for years",
+        "the Village of {lib:nameVillage} had a law that required everyone living there to be marked with a magical symbol or tattoo that is associated with an ancient cult or religion",
+        "all of the inhabitants of {lib:nameVillage} mysteriously vanished, each replaced by a single {lib:metal} coin of unknown origin",
+        "a {lib:placeAdventure} where criminals are tried and punishments are carried out became a portal to {lib:placePlane} correlating to the nature of the proceedings that have transpired there",
+        "a parallel version of the Village of {lib:nameVillage} existed on {lib:placePlane} and the characters were unwittingly transported there for a time",
+        "the Village of {lib:nameVillage}, which was destroyed years ago by invading {monster pl}, suddenly reappeared completely intact as if nothing had ever happened",
+        "the water drawn from the well in the Village of {lib:nameVillage} began turning townsfolk into {monster pl}",
+        "the characters traveled to the small Village of {lib:nameVillage} and eventually discovered that the entire town was populated by dopplegangers who have replaced the original inhabitants",
+        "the gravesite of {hero}, in the {lib:placeTerrain_formal_pl} of {lib:nameLocation}, was discovered unearthed with tracks leading to a nearby {lib:placeAdventure}",
+        "a pair of identical, mentally linked {monster pl} from a nearby {lib:adjPlace} {lib:placeAdventure} are responsible for the recent death of the local {job}",
+        "{monster wia} in a nearby {lib:adjPlace} {lib:placeAdventure} believed itself to be a deity and started inducting townsfolk into its new faith",
+        "{monster wia} temporarily acquired the ability to detect {lib:metal} and now desperately searches for and somehow consumes it in any form",
+        "an animated seat or throne that is discovered harbors the trapped soul of a {monster} that is desperate to be freed",
+        "variants of normal {monster pl} fleeing some disastrous event on {lib:placePlane} started appearing in the Village of {lib:nameVillage}",
+        "a noted {monster} slain years ago by {hero} reappeared and began organizing attacks across the {lib:placeState_formal} of {lib:nameLocation}",
+        "a water elemental suddenly appeared in the middle of {lib:nameVillage} offering water in its purest form in return for {lib:adjColor} {lib:magicitem_pl}",
+        "a horribly wounded {monster} stumbled into the Village of {lib:nameVillage} and died, with a number of dolls in its possession that resemble some of the townsfolk and characters",
+        "the characters came upon some sort of sacred {monster} burial ground in the middle of the {lib:placeTerrain_formal_pl} of {lib:nameLocation}",
+        "the local {job} was found dead shortly after two {lib:personRace_pl} arrived in town and began asking questions about him/her",
+        "{lib:titleFantasy_wia} recently arrived in town bearing {lib:adjThing_wia} {thing} engraved with a cryptic symbol that somehow makes people very susceptible to suggestion",
+        "the {lib:placeState_formal} of {lib:nameLocation} suddenly outlawed any items made of {lib:metal} and violators were being put to death",
+        "the local magistrate was killed by the {job} who recently found {lib:adjThing_wia} {thing} and the characters are asked to preside over the trial",
+        "the {job} was also once a noted {lib:titleFantasy} who had traveled to {lib:placePlane} and began seeking assitance from the characters to return there",
+        "the local {job}, who perished in a fire years ago, suddenly reappeared in the Village of {lib:nameVillage} and acted as if it had never happened",
+        "it were discovered that the town {job} had been going down into the town well late at night and claimed there were {lib:gem_pl} in its depths",
+        "{lib:titleFantasy_wia} wandered into the Village of {lib:nameVillage} posing as {hero} and began spreading lies about the characters at the {lib:nameInn} Inn",
+        "the town gravedigger is discovered burying a dead {monster} in the town cemetery, which he claims to have known personally and recovered from a nearby {lib:placeAdventure}",
+        "two {thing pl} were recently recovered from a nearby {lib:adjPlace} {lib:placeAdventure} and the Village of {lib:nameVillage} has been afflicted with unfortunate events ever since",
+        "{thing wia} that was recently discovered by the characters is actually sentient and suddenly begins trying to convince its bearer to find living sacrifices for an ancient religion",
+        "{thing wia} displayed in the {lib:nameInn} Inn, a gift from {hero}, suddenly turned to {lib:metal} and the characters find themselves facing an angry mob",
+        "{lib:personRace_wia} was found imprisoned in a cage hanging from a tree at the crossroads outside the Village of {lib:nameVillage} and nobody knew how or why he was there",
+        "{lib:adjThing_wia} {thing} suddenly appeared in the middle of the Village of {lib:nameVillage} and opened a portal to {lib:placePlane} and began pulling people there",
+        "the {lib:magicitem_formal} of {lib:nameLocation}, destroyed years ago by {hero}, suddenly reappeared in the Village of {lib:nameVillage} in the hands of a disreputable {lib:titleFantasy}",
+        "the {job} told characters that he once captained a sailing ship, which can be found completely intact in the {lib:placeAdventure_formal} of {lib:nameLocation}",
+        "while exploring the {lib:placeAdventure_formal} of {lib:nameLocation} the party came across an animated, life-size target dummy resembling one of the characters",
+        "{lib:adjThing_wia} {thing} that had been lost by {hero} long ago was now being used to by a {monster} to wreak havoc on the characters",
+        "the characters wandered into the Village of {lib:nameVillage} and their actions were treated by the townsfolk as if they were nothing more than shadows or ghosts",
+        "the ghost of {monster wia} that perished in a nearby {lib:placeAdventure} began following the characters and pleaded with them to recover and bury its body",
+        "the town {job} came seeking the aid of the characters in putting to rest the ghost of {lib:titleFantasy_wia}, who happens to still be alive and well and staying at the {lib:nameInn} Inn",
+        "all {thing pl} became cursed and lifting that curse required traveling to {lib:placePlane} and defeating the dark shadow of {hero} who fell there long ago",
+        "the {lib:personCraft} and the {lib:personProfession} began petitioning townsfolk for money to hire someone or something to rid them of the characters",
+        "the {lib:placeState} has decided to build a prison near the Village of {lib:nameVillage}, which itself is full of criminals and outcasts",
+        "a giant sinkhole opened in the middle of {lib:nameVillage} and swallowed several local businesses, leaving behind a number of distraught townsfolk who have lost their loved ones",
+        "{lib:monsterHumanoid} bodies were occasionally being spotted in the {lib:nameRiver}, where the Village of {lib:nameVillage} conducts much of its trade and commerce",
+        "{lib:nameVillage} was built over an ancient {lib:monsterHumanoid} burial ground and their living descendants started trying to retake the land",
+        "in the midst of summer large chunks of ice began flowing down the {lib:nameRiver} and began lowering the temperature in those regions bordering it",
+        "the {lib:placeTerrain_pl} near the Village of {lib:nameVillage} began to encroach on the village itself, as if they were somehow growing or spreading",
+        "creatures began suffering horrible mutations after an unusual flying vessel made of {lib:metal} crash landed in the {lib:placeTerrain_formal_pl} of {lib:nameLocation}",
+        "a party member was accused of being a witch by the {job}, claiming his/her exact likeness came to them in a dream and was asking for aid in summoning the {lib:monsterEpic} of {lib:nameLocation}",
+        "a strange creature comprised entirely of {lib:gem_pl} found its way into town and exploded, harming or killing townsfolk but also leaving behind the valuable gems",
+        "a small demonic or fey creature began tormenting the town {job} and continually left messages behind about something called {lib:weaponEpic}",
+        "a {lib:stone} statue appeared in the town square, crafted in the likeness of {hero}, seemingly wounded and bound in chains",
+        "overnight detailed paintings began appearing on the buildings in {lib:nameVillage}, each depicting the grisly death of the first person to view them, who shortly thereafter dies as in the depiction",
+        "a shrouded {lib:titleFantasy} arrived in town and all light sources began shedding darkness rather than light afterwards",
+        "one morning after dreaming of the {lib:monsterEpic} of {lib:nameLocation} everything in the immediate vicinity seemed off kilter, as if the world were sliding into its open maw",
+        "a {lib:personClass} appealed to the characters to hide a shard of {lib:weaponEpic}, claiming a powerful {lib:titleFantasy} was trying to reassemble the pieces",
+        "at dusk each evening the deep clanging of a large bell was heard across the countryside and {lib:monsterHumanoid_pl} materialized nearby in numbers equal to the number of clangs",
+        "the characters awakened to the realization that they were now in the stomach of some immense creature, along with the now ruined {lib:nameInn} Inn",
+        "{lib:personRace_wia} riding a very large tortoise arrived and informed the party that he was sent by the {lib:titleNoble_formal} of {lib:nameLocation} to make record of their exploits",
+        "{lib:titleMilitary_wia} informed the players that they were being conscripted into the armies of {lib:nameLocation} as {lib:titleSoldier_pl} in the war against the {lib:placeState_formal} of {lib:nameLocation}"
+      ]
+    },
+    {
+      "name": "hero",
+      "entries": [
+        "{lib:name_f_1} the {lib:personAppellationHero_adj}",
+        "{lib:name_f_1} the {lib:personAppellationHero}",
+        "{lib:name_f_1} the {lib:personAppellationHero_adj} {lib:personAppellationHero}",
+        "{lib:name_m_1} the {lib:personAppellationHero_adj}",
+        "{lib:name_m_1} the {lib:personAppellationHero}",
+        "{lib:name_m_1} the {lib:personAppellationHero_adj} {lib:personAppellationHero}"
+      ]
+    },
+    {
+      "name": "job",
+      "entries": ["{lib:personCraft}", "{lib:personProfession}"]
+    },
+    {
+      "name": "monster",
+      "entries": [
+        "{lib:monsterAberration}",
+        "{lib:monsterConstruct}",
+        "{lib:monsterElemental}",
+        "{lib:monsterGiant}",
+        "{lib:monsterHumanoid}"
+      ]
+    },
+    {
+      "name": "monster pl",
+      "entries": [
+        "{lib:monsterAberration_pl}",
+        "{lib:monsterConstruct_pl}",
+        "{lib:monsterElemental_pl}",
+        "{lib:monsterGiant_pl}",
+        "{lib:monsterHumanoid_pl}"
+      ]
+    },
+    {
+      "name": "monster wia",
+      "entries": [
+        "{lib:monsterAberration_wia}",
+        "{lib:monsterConstruct_pl}",
+        "{lib:monsterElemental_pl}",
+        "{lib:monsterGiant_wia}",
+        "{lib:monsterHumanoid_wia}"
+      ]
+    },
+    {
+      "name": "thing",
+      "entries": ["{lib:gem}", "{lib:jewelry}", "{lib:magicitem}", "{lib:weaponMelee}", "{lib:weaponRanged}"]
+    },
+    {
+      "name": "thing pl",
+      "entries": ["{lib:gem_pl}", "{lib:jewelry_pl}", "{lib:magicitem_pl}", "{lib:weaponMelee}s", "{lib:weaponRanged}s"]
+    },
+    {
+      "name": "thing wia",
+      "entries": [
+        "{lib:gem_wia}",
+        "{lib:jewelry_wia}",
+        "{lib:magicitem_wia}",
+        "a {lib:weaponMelee}",
+        "a {lib:weaponRanged}"
+      ]
+    }
+  ]
+}
