@@ -16,7 +16,7 @@
   "bugs": "",
   "to do": "",
   "see": "business, district",
-  "date": "2018-09-14",
+  "date": "2018-12-07",
   "authors": "ELF Vesala.",
   "sources": "",
   "attribution": {
@@ -1086,7 +1086,9 @@
       "explanation": "",
       "entries": [
         "browsing the selection",
-        "comparing prices"
+        "comparing prices",
+        "comparing products",
+        "looking for advice"
       ]
     },
     {
@@ -1323,8 +1325,16 @@
       "explanation": "Attributes related to the shop.",
       "format": "The -- store",
       "entries": [
+        "{cleanliness}",
         "{lighting}",
         "{organization}"
+      ]
+    },
+    {
+      "name": "cleanliness",
+      "explanation": "",
+      "entries": [
+        "clean"
       ]
     },
     {
