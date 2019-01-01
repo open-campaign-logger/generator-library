@@ -85,6 +85,13 @@
       ]
     },
     {
+      "name": "list",
+      "explanation": "Multiple results for manual selection.",
+      "entries": [
+        "- {word} \r\n- {word} \r\n- {word} \r\r\n- {summary} \r\n- {summary} \r\n- {summary} \r\r\n- {detail} \r\n- {detail} \r\n- {detail} \r\r\n- {description} \r\n- {description} \r\n- {description}\r\n--"
+      ]
+    },
+    {
       "name": "section",
       "explanation": "Long description as a subheading and a text paragraph.",
       "entries": [
