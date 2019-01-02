@@ -58,7 +58,24 @@
       "name": "word",
       "explanation": "One-word output.",
       "entries": [
-        "{settlement}"
+        "{camp name}",
+        "{caravan name}",
+        "{city name}",
+        "{commune name}",
+        "{cottage name}",
+        "{country name}",
+        "{farm name}",
+        "{fort name}",
+        "{hamlet name}",
+        "{manor name}",
+        "{metropolis name}",
+        "{outpost name}",
+        "{province name}",
+        "{region name}",
+        "{sanctuary name}",
+        "{torp name}",
+        "{town name}",
+        "{village name}"
       ]
     },
     {
@@ -1414,7 +1431,7 @@
       "entries": [
         "has been regarded noteworthy for its",
         "is famous for its",
-        "is widely known for the home of"
+        "is widely known as the home of"
       ]
     },
     {
