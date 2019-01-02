@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "district",
-  "date": "2018-12-02",
+  "date": "2019-01-02",
   "authors": "ELF Vesala",
   "sources": "",
   "attribution": {
@@ -81,7 +81,7 @@
       "name": "description",
       "explanation": "Detailed description of the settlement.",
       "entries": [
-        "The {settlement} {established} {location} {origin} {and is now} {purpose}. It is famous for its {fame}."
+        "{settlement} {established} {location} {origin} {and is now} {purpose}. It {is famous for} {fame}."
       ]
     },
     {
@@ -159,8 +159,8 @@
       "**************************************************": "ENVIRONMENT"
     },
     {
-      "name": "environment",
-      "explanation": "Environment types.",
+      "name": "any",
+      "explanation": "Any type.",
       "entries": [
         "{wilderness}",
         "{rural}",
@@ -247,7 +247,8 @@
         "settlement": "camp"
       },
       "entries": [
-        "The {camp noun} is called {camp name}."
+        "{camp name}",
+        "{camp noun} {called} {camp name}"
       ]
     },
     {
@@ -256,7 +257,7 @@
       "entries": [
         "{|Camp {lib:concept#word}|tcase}",
         "The {|{lib:concept#word} {camp noun}|tcase}",
-        "The {|{lib:concept#word}{camp ending}|tcase}"
+        "{|{lib:concept#word}{camp ending}|tcase}"
       ]
     },
     {
@@ -288,7 +289,8 @@
         "settlement": "caravan"
       },
       "entries": [
-        "caravan"
+        "{caravan name}",
+        "{caravan noun} {called} {caravan name}"
       ]
     },
     {
@@ -296,7 +298,7 @@
       "explanation": "Name structures.",
       "entries": [
         "The {|{lib:aspect#word}|tcase} {caravan noun}",
-        "The {|{lib:aspect#word}|tcase}{caravan ending}"
+        "{|{lib:aspect#word}|tcase}{caravan ending}"
       ]
     },
     {
@@ -328,7 +330,9 @@
         "settlement": "city"
       },
       "entries": [
-        "city"
+        "{city name}",
+        "{city noun} {called} {city name}",
+        "{city noun} {of} {city name}"
       ]
     },
     {
@@ -344,7 +348,6 @@
       "explanation": "Name components.",
       "entries": [
         "borough",
-        "burg",
         "city"
       ]
     },
@@ -353,15 +356,23 @@
       "explanation": "Name ending.",
       "entries": [
         "{town ending}",
-        "borough",
+        "berg",
+        "brough",
         "burg",
         "burgh",
         "bury",
-        "by",
-        "ham",
+        "cester",
+        "chester",
+        "ford",
+        "gate",
+        "ia",
         "ing",
-        "ton",
-        "ville"
+        "mont",
+        "port",
+        "seat",
+        "stan",
+        "ville",
+        "worth"
       ]
     },
     {
@@ -374,7 +385,9 @@
         "settlement": "commune"
       },
       "entries": [
-        "commune"
+        "{commune name}",
+        "{commune noun} {called} {commune name}",
+        "{commune noun} {of} {commune name}"
       ]
     },
     {
@@ -423,7 +436,8 @@
         "settlement": "cottage"
       },
       "entries": [
-        "cottage"
+        "{cottage name}",
+        "{cottage noun} {called} {cottage name}"
       ]
     },
     {
@@ -464,7 +478,9 @@
         "settlement": "country"
       },
       "entries": [
-        "country"
+        "{country name}",
+        "{country noun} {called} {country name}",
+        "{country noun} {of} {country name}"
       ]
     },
     {
@@ -501,7 +517,8 @@
         "settlement": "farm"
       },
       "entries": [
-        "farm"
+        "{farm name}",
+        "{farm noun} {called} {farm name}"
       ]
     },
     {
@@ -528,8 +545,10 @@
       "explanation": "An agricultural settlement",
       "entries": [
         "{cottage ending}",
+        "grove",
         "hold",
-        "stead"
+        "stead",
+        "yard"
       ]
     },
     {
@@ -542,15 +561,18 @@
         "settlement": "fort"
       },
       "entries": [
-        "fort"
+        "{fort name}",
+        "{fort noun} {called} {fort name}",
+        "{fort noun} {of} {fort name}"
       ]
     },
     {
       "name": "fort name",
       "explanation": "Fort names.",
       "entries": [
-        "{|{fort noun} {lib:concept#word}|tcase}",
-        "{|{lib:aspect#word}{fort ending}|tcase}"
+        "{|{lib:concept#word} {fort noun}|tcase}",
+        "{|{lib:aspect#word}{fort ending}|tcase}",
+        "{|Fort {lib:concept#word}|tcase}"
       ]
     },
     {
@@ -582,7 +604,9 @@
         "settlement": "hamlet"
       },
       "entries": [
-        "hamlet"
+        "{hamlet name}",
+        "{hamlet noun} {called} {hamlet name}",
+        "{hamlet noun} {of} {hamlet name}"
       ]
     },
     {
@@ -606,8 +630,11 @@
       "entries": [
         "{thorp ending}",
         "ham",
+        "head",
         "heem",
-        "heim"
+        "heim",
+        "neck",
+        "{village ending}"
       ]
     },
     {
@@ -620,7 +647,9 @@
         "settlement": "manor"
       },
       "entries": [
-        "manor"
+        "{manor name}",
+        "{manor noun} {called} {manor name}",
+        "{manor noun} {of} {manor name}"
       ]
     },
     {
@@ -656,7 +685,9 @@
         "settlement": "metropolis"
       },
       "entries": [
-        "metropolis"
+        "{metropolis name}",
+        "{metropolis noun} {called} {metropolis name}",
+        "{metropolis noun} {of} {metropolis name}"
       ]
     },
     {
@@ -678,6 +709,10 @@
       "name": "metropolis ending",
       "explanation": "Large city.",
       "entries": [
+        "{city ending}",
+        "center",
+        "dome",
+        "heart",
         "polis"
       ]
     },
@@ -691,7 +726,9 @@
         "settlement": "outpost"
       },
       "entries": [
-        "outpost"
+        "{outpost name}",
+        "{outpost noun} {called} {outpost name}",
+        "{outpost noun} {of} {outpost name}"
       ]
     },
     {
@@ -699,7 +736,7 @@
       "explanation": "Outpost names.",
       "entries": [
         "The {|{lib:aspect#word}|tcase} {outpost noun}",
-        "The {|{lib:aspect#word}|tcase}{outpost ending}"
+        "{|{lib:aspect#word}|tcase}{outpost ending}"
       ]
     },
     {
@@ -730,7 +767,9 @@
         "settlement": "province"
       },
       "entries": [
-        "province"
+        "{province name}",
+        "{province noun} {called} {province name}",
+        "{province noun} {of} {province name}"
       ]
     },
     {
@@ -765,7 +804,9 @@
         "settlement": "region"
       },
       "entries": [
-        "region"
+        "{region name}",
+        "{region noun} {called} {region name}",
+        "{region noun} {of} {region name}"
       ]
     },
     {
@@ -785,6 +826,7 @@
         "barony",
         "county",
         "principality",
+        "region",
         "shire",
         "territory",
         "province",
@@ -795,7 +837,9 @@
       "name": "region ending",
       "explanation": "Inhabited areas in the countryside.",
       "entries": [
-        "shire"
+        "land",
+        "shire",
+        "turf"
       ]
     },
     {
@@ -808,7 +852,9 @@
         "settlement": "sanctuary"
       },
       "entries": [
-        "sanctuary"
+        "{sanctuary name}",
+        "{sanctuary noun} {called} {sanctuary name}",
+        "{sanctuary noun} {of} {sanctuary name}"
       ]
     },
     {
@@ -823,10 +869,11 @@
       "name": "sanctuary noun",
       "explanation": "Safe havens in the wilderness.",
       "entries": [
-        "refuge",
         "haven",
         "hideaway",
+        "refuge",
         "sanctuary",
+        "sanctum",
         "shelter"
       ]
     },
@@ -835,7 +882,9 @@
       "explanation": "Safe havens in the wilderness.",
       "entries": [
         "{fort ending}",
-        "haven"
+        "den",
+        "haven",
+        "nest"
       ]
     },
     {
@@ -848,7 +897,9 @@
         "settlement": "thorp"
       },
       "entries": [
-        "thorp"
+        "{thorp name}",
+        "{thorp noun} {called} {thorp name}",
+        "{thorp noun} {of} {thorp name}"
       ]
     },
     {
@@ -870,11 +921,17 @@
       "explanation": "A rural community without businesses.",
       "entries": [
         "{farm ending}",
+        "cliff",
+        "cliffe",
         "dorf",
         "dorp",
+        "fen",
+        "kill",
         "porp",
         "thorp",
-        "thorpe"
+        "thorpe",
+        "wood",
+        "{hamlet ending}"
       ]
     },
     {
@@ -887,7 +944,9 @@
         "settlement": "town"
       },
       "entries": [
-        "town"
+        "{town name}",
+        "{town noun} {called} {town name}",
+        "{town noun} {of} {town name}"
       ]
     },
     {
@@ -901,10 +960,10 @@
       "name": "town noun",
       "explanation": "Small city.",
       "entries": [
-        "smalltown",
-        "town",
         "freetown",
-        "borough"
+        "market",
+        "smalltown",
+        "town"
       ]
     },
     {
@@ -912,8 +971,27 @@
       "explanation": "Small city.",
       "entries": [
         "{village ending}",
+        "borough",
+        "bridge",
+        "by",
+        "cot",
+        "cott",
+        "hampton",
+        "kirk",
+        "lea",
+        "leigh",
+        "ley",
+        "mere",
+        "more",
+        "mouth",
+        "ogue",
+        "over",
+        "pool",
+        "stone",
         "town",
-        "borough"
+        "wich",
+        "wick",
+        "{city ending}"
       ]
     },
     {
@@ -926,7 +1004,9 @@
         "settlement": "village"
       },
       "entries": [
-        "village"
+        "{village name}",
+        "{village noun} {called} {village name}",
+        "{village noun} {of} {village name}"
       ]
     },
     {
@@ -948,8 +1028,14 @@
       "explanation": "A rural community with government.",
       "entries": [
         "{hamlet ending}",
+        "borne",
+        "bourne",
+        "dale",
+        "field",
         "ham",
-        "ville"
+        "stead",
+        "ton",
+        "{city ending}"
       ]
     },
     {
@@ -1025,7 +1111,9 @@
       "name": "purpose",
       "explanation": "The current role of the settlement.",
       "entries": [
-        "a center of trade"
+        "a center of trade",
+        "a military base",
+        "a religious site"
       ]
     },
     {
@@ -1090,6 +1178,7 @@
       },
       "entries": [
         "in a forest clearing",
+        "in the depths of a forest",
         "on swampland",
         "on wasteland"
       ]
@@ -1247,11 +1336,13 @@
       "name": "futuristic city",
       "explanation": "Cities for science fiction worlds.",
       "entries": [
+        "core",
         "cosmopolis",
         "dome",
         "habitat",
         "polis",
-        "sprawl"
+        "sprawl",
+        "urbs"
       ]
     },
     {
@@ -1287,6 +1378,15 @@
       ]
     },
     {
+      "name": "called",
+      "explanation": "Variant expressions for 'known as'.",
+      "entries": [
+        "best known as",
+        "called",
+        "known as"
+      ]
+    },
+    {
       "name": "established",
       "explanation": "Variant expressions for establishing the settlement.",
       "format": "The settlement --",
@@ -1299,12 +1399,42 @@
       ]
     },
     {
+      "name": "is called",
+      "explanation": "Variant expressions for 'is known as'.",
+      "entries": [
+        "bears the name of",
+        "is best known as",
+        "is called",
+        "is known as"
+      ]
+    },
+    {
+      "name": "is famous for",
+      "explanation": "Variant expressions for 'is known for its'.",
+      "entries": [
+        "has been regarded noteworthy for its",
+        "is famous for its",
+        "is widely known for the home of"
+      ]
+    },
+    {
       "name": "looks",
       "explanation": "Variant expressions for looking like something.",
       "format": "-- in good condition / approaching",
       "entries": [
         "appears to be",
         "seems to be"
+      ]
+    },
+    {
+      "name": "of",
+      "explanation": "Variant expressions for 'with the name of'.",
+      "entries": [
+        "bearing the name of",
+        "having the name of",
+        "of",
+        "possessing the name of",
+        "with the name of"
       ]
     },
     {
