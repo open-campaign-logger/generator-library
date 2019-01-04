@@ -14,7 +14,7 @@
   "bugs": "",
   "to do": "",
   "see": "district",
-  "date": "2019-01-02",
+  "date": "2019-01-04",
   "authors": "ELF Vesala",
   "sources": "",
   "attribution": {
@@ -73,7 +73,7 @@
         "{province name}",
         "{region name}",
         "{sanctuary name}",
-        "{torp name}",
+        "{thorp name}",
         "{town name}",
         "{village name}"
       ]
