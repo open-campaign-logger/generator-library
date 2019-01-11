@@ -1,5 +1,5 @@
 {
-  "name": "plant table",
+  "name": "plant",
   "resultPattern": "{result}",
   "variables": {
     "actant": "plant",

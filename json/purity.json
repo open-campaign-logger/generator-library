@@ -1,5 +1,5 @@
 {
-  "name": "purity table",
+  "name": "purity",
   "resultPattern": "{purity}",
   "variables": {
     "footnote": ""
