@@ -1,5 +1,5 @@
 {
-  "name": "magical technique table",
+  "name": "magical technique",
   "resultPattern": "{magic}",
   "variables": {
     "footnote": ""

@@ -1,5 +1,5 @@
 {
-  "name": "musical instrument table",
+  "name": "musical instrument",
   "resultPattern": "{musical instrument}",
   "variables": {
     "footnote": ""

@@ -1,5 +1,5 @@
 {
-  "name": "item_template",
+  "name": "aspect-item",
   "resultPattern": "{result}",
   "variables": {
     "footnote": ""
@@ -10,8 +10,8 @@
   "bugs": "",
   "to do": "Expand the list of templates and categories.",
   "see": "armor, condition, creature_template, equipment, weapon",
-  "date": "2018-01-29",
-  "authors": "Esko Vesala.",
+  "date": "2019-01-10",
+  "authors": "ELF Vesala.",
   "sources": "",
   "genre": "fantasy",
   "categories": [

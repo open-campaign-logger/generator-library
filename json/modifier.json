@@ -1,5 +1,5 @@
 {
-  "name": "modifier table",
+  "name": "modifier",
   "resultPattern": "{modifier}",
   "variables": {
     "footnote": ""

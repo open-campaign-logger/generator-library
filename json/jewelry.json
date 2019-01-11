@@ -1,5 +1,5 @@
 {
-  "name": "jewelry table",
+  "name": "jewelry",
   "resultPattern": "{result}",
   "variables": {
     "footnote": ""
@@ -9,8 +9,8 @@
   "note": "",
   "to do": "Implement the explanations as footnotes instead of additional text in parenthesis.",
   "see": "gem",
-  "date": "2018-01-03",
-  "authors": "Authors: Johnn Four, Jochen Linnemann, Esko Vesala.",
+  "date": "2019-01-10",
+  "authors": "Authors: Johnn Four, Jochen Linnemann, ELF Vesala.",
   "sources": "EngagementRings.LoveToKnow.com, Wikipedia.org",
   "genre": "universal",
   "categories": [

@@ -1,5 +1,5 @@
 {
-  "name": "liquid table",
+  "name": "liquid",
   "resultPattern": "{liquid}",
   "variables": {
     "footnote": ""
@@ -9,8 +9,8 @@
   "note": "",
   "to do": "",
   "see": "drink, material, metal, potion, purity, temperature",
-  "date": "2017-12-31",
-  "authors": "Esko Vesala",
+  "date": "2019-01-10",
+  "authors": "ELF Vesala",
   "sources": "MyVocabulary.com, Wikipedia.org.",
   "genre": "universal",
   "categories": [

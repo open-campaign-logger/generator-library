@@ -1,5 +1,5 @@
 {
-  "name": "Faction",
+  "name": "faction",
   "resultPattern": "{init}{result}",
   "globals": {
     "variable": "value"

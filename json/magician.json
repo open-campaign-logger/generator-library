@@ -1,5 +1,5 @@
 {
-  "name": "magician table",
+  "name": "magician",
   "resultPattern": "{result}",
   "variables": {
     "actant": "magician",
