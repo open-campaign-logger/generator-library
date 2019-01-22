@@ -1519,9 +1519,9 @@
     {
       "name": "appellation",
       "entries": [
-        "the {prepend} {place}",
-        "{place} the {append}",
-        "{place}, {alias} {moniker}"
+        "the {prepend} {name}",
+        "{name} the {append}",
+        "{name}, {alias} {moniker}"
       ]
     },
     {
