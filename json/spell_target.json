@@ -1,5 +1,5 @@
 {
-  "name": "spell target",
+  "name": "spell_target",
   "resultPattern": "{result}",
   "variables": {
     "footnote": ""
@@ -10,8 +10,8 @@
   "bugs": "",
   "to do": "",
   "see": "energy, magic, magical_technique, magical_instrument, spell_name, spell_intention, spellcasting",
-  "date": "2017-12-10",
-  "authors": "Esko Vesala.",
+  "date": "2019-01-22",
+  "authors": "ELF Vesala.",
   "sources": "",
   "genre": "fantasy",
   "categories": [

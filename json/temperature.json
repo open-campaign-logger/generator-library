@@ -1,5 +1,5 @@
 {
-  "name": "temperature table",
+  "name": "temperature",
   "resultPattern": "{temperature}",
   "variables": {
     "footnote": ""
@@ -9,8 +9,8 @@
   "note": "",
   "to do": "myth, fantasy and modern subtables.",
   "see": "energy, liquid, material",
-  "date": "2017-10-06",
-  "authors": "Esko Vesala.",
+  "date": "2019-01-22",
+  "authors": "ELF Vesala.",
   "sources": "Wikipedia.org",
   "genre": "universal",
   "categories": [

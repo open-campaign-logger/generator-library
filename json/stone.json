@@ -1,5 +1,5 @@
 {
-  "name": "Stone table",
+  "name": "stone",
   "resultPattern": "{init}{result}",
   "globals": {
     "variable": ""
@@ -12,7 +12,7 @@
   "note": "",
   "to do": "",
   "see": "material, metal",
-  "date": "2018-12-02",
+  "date": "2019-01-22",
   "authors": "Johnn Four, Jochen Linnemann, ELF Vesala.",
   "sources": "Wikipedia.org.",
   "attribution": {
