@@ -1218,21 +1218,21 @@
     },
     {
       "name": "short",
-      "explanation": "Short place names.",
+      "explanation": "Short names.",
       "entries": [
         "{beginning}{short stem}"
       ]
     },
     {
       "name": "medium",
-      "explanation": "Medium-length place names.",
+      "explanation": "Medium-length names.",
       "entries": [
         "{beginning}{medium stem}"
       ]
     },
     {
       "name": "long",
-      "explanation": "Long place names.",
+      "explanation": "Long names.",
       "entries": [
         "{beginning}{long stem}"
       ]
@@ -1242,7 +1242,7 @@
     },
     {
       "name": "stem",
-      "explanation": "Variable-length place name stems.",
+      "explanation": "Variable-length name stems.",
       "entries": [
         "{short stem}",
         "{medium stem}",
@@ -1251,7 +1251,7 @@
     },
     {
       "name": "short stem",
-      "explanation": "Short place name stem.",
+      "explanation": "Short name stem.",
       "entries": [
         "",
         "{ending}"
@@ -1259,7 +1259,7 @@
     },
     {
       "name": "medium stem",
-      "explanation": "Medium-length place name stems.",
+      "explanation": "Medium-length name stems.",
       "entries": [
         "{short middle}{ending}",
         "{medium middle}{ending}"
@@ -1267,7 +1267,7 @@
     },
     {
       "name": "long stem",
-      "explanation": "Long place name stems.",
+      "explanation": "Long name stems.",
       "entries": [
         "{short middle}{medium middle}{ending}",
         "{medium middle}{short middle}{ending}",
@@ -1508,7 +1508,7 @@
     },
     {
       "name": "ending",
-      "explanation": "Place name endings.",
+      "explanation": "Name endings.",
       "entries": [
         "XXX"
       ]
