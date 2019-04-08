@@ -32,27 +32,56 @@
       ]
     },
     {
+      "**************************************************": "OUTPUT VARIANTS"
+    },
+    {
       "name": "result",
-      "explanation": "Verbosity of the resultPattern output.",
+      "explanation": "The output format.",
       "entries": [
-        "{name}"
+        "{summary}",
+        "{detail}",
+        "{description}",
+        "{stats}"
       ]
     },
     {
       "name": "summary",
-      "explanation": "Brief resultPattern output.",
+      "explanation": "Brief output.",
       "entries": [
         "{female}",
-        "{male}"
+        "{male}",
+        "{unisex}"
       ]
     },
     {
       "name": "detail",
-      "explanation": "Detailed resultPattern output variations.",
+      "explanation": "More detailed output variations.",
       "entries": [
         "{female full}",
-        "{male full}"
+        "{male full}",
+        "{unisex full}"
       ]
+    },
+    {
+      "name": "description",
+      "explanation": "Long description as a paragraph of text.",
+      "entries": [
+        "{female} '{female byname}' {female surname}",
+        "{male} '{male byname}' {male surname}",
+        "{unisex} '{unisex byname}' {unisex surname}"
+      ]
+    },
+    {
+      "name": "stats",
+      "explanation": "Details as statistics.",
+      "entries": [
+        "{b|First name}: {female} \r\n{b|Surname}: {female surname} \r\n{b|Byname}: {female byname} \r\n{b|Gender}: female\r\n{b|Culture}: {g:culture}",
+        "{b|First name}: {male} \r\n{b|Surname}: {male surname} \r\n{b|Byname}: {male byname} \r\n{b|Gender}: male\r\n{b|Culture}: {g:culture}",
+        "{b|First name}: {unisex} \r\n{b|Surname}: {unisex surname} \r\n{b|Byname}: {unisex byname} \r\n{b|Gender}: undetermined \r\n{b|Culture}: {g:culture}"
+      ]
+    },
+    {
+      "**************************************************": "GENDERS"
     },
     {
       "name": "name",
@@ -80,6 +109,18 @@
       "explanation": "Rare name types.",
       "entries": [
         "{unisex}",
+        "{unisex full}"
+      ]
+    },
+    {
+      "**************************************************": "FULL NAMES"
+    },
+    {
+      "name": "full",
+      "explanation": "Full name of any gender.",
+      "entries": [
+        "{female full}",
+        "{male full}",
         "{unisex full}"
       ]
     },
