@@ -12,7 +12,7 @@
   "note": "",
   "to do": "",
   "see": "",
-  "date": "2018-08-20",
+  "date": "2019-04-08",
   "authors": "ELF Vesala.",
   "sources": "",
   "genre": "universal",
@@ -3002,21 +3002,21 @@
     },
     {
       "name": "short",
-      "explanation": "Short place names.",
+      "explanation": "Short names.",
       "entries": [
         "{beginning}{short stem}"
       ]
     },
     {
       "name": "medium",
-      "explanation": "Medium-length place names.",
+      "explanation": "Medium-length names.",
       "entries": [
         "{beginning}{medium stem}"
       ]
     },
     {
       "name": "long",
-      "explanation": "Long place names.",
+      "explanation": "Long names.",
       "entries": [
         "{beginning}{long stem}"
       ]
@@ -3026,7 +3026,7 @@
     },
     {
       "name": "stem",
-      "explanation": "Variable-length place name stems.",
+      "explanation": "Variable-length name stems.",
       "entries": [
         "{short stem}",
         "{medium stem}",
@@ -3035,7 +3035,7 @@
     },
     {
       "name": "short stem",
-      "explanation": "Short place name stem.",
+      "explanation": "Short name stem.",
       "entries": [
         "",
         "{ending}"
@@ -3043,7 +3043,7 @@
     },
     {
       "name": "medium stem",
-      "explanation": "Medium-length place name stems.",
+      "explanation": "Medium-length name stems.",
       "entries": [
         "{short middle}{ending}",
         "{medium middle}{ending}"
@@ -3051,7 +3051,7 @@
     },
     {
       "name": "long stem",
-      "explanation": "Long place name stems.",
+      "explanation": "Long name stems.",
       "entries": [
         "{short middle}{medium middle}{ending}",
         "{medium middle}{short middle}{ending}",
@@ -3292,7 +3292,7 @@
     },
     {
       "name": "ending",
-      "explanation": "Place name endings.",
+      "explanation": "Name endings.",
       "entries": [
         "XXX"
       ]
@@ -3303,9 +3303,9 @@
     {
       "name": "appellation",
       "entries": [
-        "the {prepend} {place}",
-        "{place} the {append}",
-        "{place}, {alias} {moniker}"
+        "the {prepend} {name}",
+        "{name} the {append}",
+        "{name}, {alias} {moniker}"
       ]
     },
     {
@@ -3592,6 +3592,32 @@
         "{female z}",
         "{male z}",
         "{unisex z}"
+      ]
+    },
+    {
+      "**************************************************": "SYNONYMS"
+    },
+    {
+      "name": "synonym",
+      "explanation": "Variant expressions for the generator subject matter.",
+      "entries": [
+        "name"
+      ]
+    },
+    {
+      "name": "alias",
+      "explanation": "Variant expressions for 'Also Known As'.",
+      "entries": [
+        "alias",
+        "also called",
+        "also known as",
+        "better known as",
+        "known as",
+        "named as",
+        "often described as",
+        "otherwise known as",
+        "variously known as",
+        "widely known as"
       ]
     },
     {
