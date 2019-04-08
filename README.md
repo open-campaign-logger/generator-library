@@ -1,6 +1,6 @@
 # generator-library
 
-This repository contains the generator library files for the Campaign Logger random generator (https://campaign-logger.com/generator).
+This repository contains the generator library files for the Campaign Logger random generator (https://generator.campaign-logger.com/).
 
 The library tables can be called from other tables by using syntax like this:
 
