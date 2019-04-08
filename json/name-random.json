@@ -12,7 +12,7 @@
   "note": "",
   "to do": "",
   "see": "",
-  "date": "2018-06-04",
+  "date": "2019-04-08",
   "authors": "ELF Vesala",
   "sources": "",
   "genre": "universal",
@@ -114,6 +114,15 @@
     },
     {
       "**************************************************": "FULL NAMES"
+    },
+    {
+      "name": "full",
+      "explanation": "Full name of any gender.",
+      "entries": [
+        "{female full}",
+        "{male full}",
+        "{unisex full}"
+      ]
     },
     {
       "name": "female full",
