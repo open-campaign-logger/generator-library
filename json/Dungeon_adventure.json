@@ -877,7 +877,7 @@
       "name": "reward",
       "explanation": "",
       "entries": [
-        "A {lib:treasure#bonus} is discovered that leads to another adventure."
+        "A {lib:treasure} is discovered that leads to another adventure."
       ]
     },
     {
