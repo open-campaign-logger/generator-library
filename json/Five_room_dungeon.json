@@ -4907,7 +4907,6 @@
         "{flavoring}",
         "{plant}",
         "{animal}",
-        "{item}",
         "{wonder}"
       ]
     },
@@ -4928,7 +4927,6 @@
         "{var:treasure}",
         "{plant}",
         "{animal}",
-        "{information}",
         "{red herring}"
       ]
     },
