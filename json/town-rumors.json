@@ -1,0 +1,83 @@
+{
+  "name": "Town Rumor Generator",
+  "resultPattern": "{rumorTown}",
+  "authors": "Ron Calbick",
+  "tables": [
+    {
+      "name": "rumorTown",
+      "entries": [
+        "The local {job}'s shop burned down. People are blaming the {job} that recently opened a new business in town.",
+        "There has been {lib:personAppearance_wia} {lib:titleFantasy} lurking on the outskirts of town recently.",
+        "The town {lib:personCraft} has been having an affair with the wife of the {lib:personProfession}. They are always seen near the market whispering with one another.",
+        "The {job} has been behaving differently since visiting {lib:placeAdventure_wia} nearby.",
+        "The resident {job} claims {lib:personRace_wia} that recently arrived in town started a fight at the {lib:nameInn} Inn last night.",
+        "There is {lib:personRace_wia} from {lib:nameVillage} saying the {job} has stolen her {treasure}.",
+        "The {job} from {lib:nameVillage} is hawking wares on the outskirts of town. The {job} is none too happy about it.",
+        "The body of a {lib:personGender} {lib:personRace} was found near the {job}'s shop.",
+        "The {job} has been spending a great deal of gold recently, claiming an inheritance from a distant {lib:titleNoble}.",
+        "The {job} hasn't been seen since {lib:personRace_wia} from {lib:nameVillage} arrived in town.",
+        "A traveling {lib:titleFantasy} has been arrested for stealing {treasure_wia} from the {lib:personProfession}.",
+        "There is {lib:personAppearance_wia} {lib:titleFantasy} staying at the {lib:nameInn} Inn who is supposedly related to the {job}.",
+        "A descendent of the {lib:titleNoble_formal} of {lib:nameLocation} has been hiding in town as {lib:personProfession_wia} for many years.",
+        "The {job}'s daughter is with child. They say the father is {lib:titleFantasy_wia} that passed through town months ago.",
+        "Prices with the {job} have more than doubled since the {lib:placeState} has gone to war with the {lib:placeState_formal} of {lib:nameLocation}.",
+        "The {job} has been trying to sell {treasure_wia} that {lib:titleFantasy_wia} left in his shop.",
+        "The {job} recently died from a strange disease after visiting {lib:placeAdventure_wia} near the Village of {lib:nameVillage}.",
+        "A farmer has unearthed a {weapon} in his field, along with a small chest full of {lib:gem_pl} and {lib:jewelry_wia}. He believes the items are cursed.",
+        "A contingent of {lib:titleSoldier_pl} led by the {lib:titleMilitary_formal} of {lib:nameLocation} have set up camp near the Village of {lib:nameVillage}.",
+        "The {job} has been behaving strangely, often seen {lib:verb_ingForm} and talking about dreams of {lib:personAppearance_wia}, {lib:verb_ingForm} {lib:titleFantasy}.",
+        "The ghost of the {lib:personReputation} {lib:titleMilitary_formal} of {lib:nameLocation} has been spotted wandering the streets late at night.",
+        "People have gone missing near the {lib:adjPlace} {lib:placeAdventure} recently.",
+        "A baby was recently left on the front step of the {job}'s shop late one night and {treasure_wia} was found laying nearby.",
+        "Recently {lib:personAppearance_wia} traveler came to visit the {job}, who has been {lib:personDisposition} ever since.",
+        "The daughter of the {job} has run away after being promised to a noble from {lib:nameLocation}.",
+        "Townsfolk claim the {job} is part of a cult that holds ceremonies somewhere near the {lib:placeAdventure} outside of town.",
+        "The {lib:personCraft} was once {lib:titleMilitary_wia} in the army of {lib:nameLocation} and has a {weapon} to prove it.",
+        "The mayor's only child was lost in the {lib:adjPlace} {lib:placeAdventure} near the Village of {lib:nameVillage} several years back.",
+        "Many people have gone missing in the {lib:adjPlace} {lib:placeTerrain_pl} outside of town over the years, including the {job} most recently.",
+        "The {job} claims there is a secret tunnel beneath the {lib:nameInn} Inn that leads to {lib:adjPlace_wia} {lib:placeAdventure}.",
+        "A caravan of {lib:personRace_pl} has arrived in town selling goods from the {lib:placeState_formal} of {lib:nameLocation}.",
+        "There has been {lib:personDisposition_wia} {lib:titleFantasy} staying at the {lib:nameInn} Inn, drowning his sorrows in ale for days now.",
+        "The {lib:personCraft} claims the drinks at the {lib:nameInn} turned his best friend into a beast of some sort. He hasn't been seen for days.",
+        "The {lib:personProfession} says she once visited the {lib:placeTerrain_formal_pl} of {lib:nameLocation} and believes she was taken by the fey for a time.",
+        "Now and then {lib:personAppearance_wia} {lib:personRace} is seen wandering about town performing good deeds, but nobody seems know who she is.",
+        "A traveler says he stayed at the {lib:nameInn} Inn along the road from {lib:nameVillage}, but as far as anyone in town knows, there is no such inn.",
+        "The {job} is looking for anyone willing to invest in an expedition to {lib:placeAdventure_wia} near {lib:nameVillage}.",
+        "Last month the {job} was attacked in his shop late one night. Now he just wanders around town {lib:verb_ingForm} and doesn't work at all.",
+        "A large block of {lib:stone} sits in the town square. The {job}'s name is engraved in it, but it mysteriously changes each year and nobody knows why.",
+        "The {job} is reclusive and lives just outside of town. They say she owns {lib:adjThing_wia} {treasure} to ward off those who are not welcome.",
+        "The {job} spotted a rainbow the last time it rained that was only {lib:adjColor} in color. What do you suppose that portends?"
+      ]
+    },
+    {
+      "name": "job",
+      "entries": [
+        "{lib:personCraft}",
+        "{lib:personProfession}"
+      ]
+    },
+    {
+      "name": "treasure",
+      "entries": [
+        "{lib:gem}",
+        "{lib:jewelry}",
+        "{lib:magicitem}"
+      ]
+    },
+    {
+      "name": "treasure_wia",
+      "entries": [
+        "{lib:gem_wia}",
+        "{lib:jewelry_wia}",
+        "{lib:magicitem_wia}"
+      ]
+    },
+    {
+      "name": "weapon",
+      "entries": [
+        "{lib:weaponMelee}",
+        "{lib:weaponRanged}"
+      ]
+    }
+  ]
+}
