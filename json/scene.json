@@ -780,7 +780,7 @@
         "A {lib:actant#friendly} can be found here. If treated well, they can reveal a secret that can be used against the {global:villain}.",
         "A {lib:actant#mentor} knows about the {global:villain}'s fear that maybe could be used to gain an advantage.",
         "Hidden here is a weapon that can be an effective asset against the {global:villain}.",
-        "If a {actant#traitor} found here can be befriended, they can tell the {lib:synonym#troupe} about a traitor in the {global:villain}'s faction."
+        "If a {lib:actant#traitor} found here can be befriended, they can tell the {lib:synonym#troupe} about a traitor in the {global:villain}'s faction."
       ]
     },
     {
